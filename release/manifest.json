@@ -1,5 +1,5 @@
 {
-  "aco_version": "0.4.2",
+  "aco_version": "0.4.3",
   "files": {
     ".github/workflows/validate.yml": {
       "mode": 420,
@@ -11,19 +11,23 @@
     },
     "ACO-INDEX.md": {
       "mode": 420,
-      "sha256": "b3560783ebc207998409b37dbff58e771f8a95633eccab84f1fcd3742997754f"
+      "sha256": "afa449c72f47f9a9b4c090114eb6ca58a76c6f183a34d42da49967d5a43fc146"
     },
     "AGENTS.md": {
       "mode": 420,
       "sha256": "7dd7bcc6f48c8a072669957d4b490de5b318815516d40f408c79e5d9dd67384d"
     },
+    "BEGINNER-GUIDE.md": {
+      "mode": 420,
+      "sha256": "c8514cfd73946572f31b53d688def99f3bfd5a8b6436991b020fa43c089cc52f"
+    },
     "CHANGELOG.md": {
       "mode": 420,
-      "sha256": "0e287bdb008efabac760ad7b47eaf868ab2ea1e886c0259182b5408da31b1eb6"
+      "sha256": "696a41274ebd52d5ecb0bbcaad93a3fd9bd6995039cbb41f2239262c44b1c781"
     },
     "CHATGPT.md": {
       "mode": 420,
-      "sha256": "8f6c1ca392a1116b98cf09fc72d612609060ec90e3fcd3e09652f008ff16d2df"
+      "sha256": "204ad2c5d8dfe8276f9c87d50a338528c4e8a36fcb7672100a85da1840f97ca3"
     },
     "CONCIERGE.md": {
       "mode": 420,
@@ -35,7 +39,7 @@
     },
     "Install ACO.command": {
       "mode": 493,
-      "sha256": "1ccf8d2b094b2aa02abf9f33eaa8edefc8a52dbd41c850b6a1c51e6027d6d1e0"
+      "sha256": "9aeb20848eb6bfdb833ab0cb44e99bc8dc2e569d6927e2cd5f0a5ad3173426ba"
     },
     "LICENSE": {
       "mode": 420,
@@ -47,23 +51,19 @@
     },
     "README.md": {
       "mode": 420,
-      "sha256": "d6ae945411b4634903c3dafafae747032ea7874919b3caae11c23a6481795c78"
+      "sha256": "c80675ff41adaab01e62d0092a7791a3391ab3bccbf336b0a3b6569e5e74161c"
     },
     "SECURITY.md": {
       "mode": 420,
       "sha256": "6cbd7eb74c81b14bccc2e3f1d3f2923bbaec28466bc6b8d7eb6073685ecf0a28"
     },
-    "START-HERE-IT.md": {
-      "mode": 420,
-      "sha256": "aca3bba2a9e471056596cd8da6eebb0765478589520972ad19d450196c5586bc"
-    },
     "Uninstall ACO.command": {
       "mode": 493,
-      "sha256": "033991fd8ecd85b1c4ad05791df88d246f3cbdfac8777199748c5f96f1e22998"
+      "sha256": "5db2d3153d1bd16117959d5380881fb37fb829c4f1a1ad5fe85a1fee0a55a3db"
     },
     "VERSION": {
       "mode": 420,
-      "sha256": "e2f7bb608ebc9e24092ffcb796ad0aa83f0015afe23635f017df52273150f00d"
+      "sha256": "520a19075780a38b440395e2c70e20d7cddd96b8c2e2c2403b265cbb74a1b333"
     },
     "assets/context-templates/ACTIVITY-CONTEXT.template.md": {
       "mode": 420,
@@ -155,7 +155,7 @@
     },
     "catalog.json": {
       "mode": 420,
-      "sha256": "482cd972346f08b2103c67fa46de21add74f7a2f9963b8c1a9783c5d70766d8b"
+      "sha256": "f679a68474a71be227ecd21fa3bda6e3371ab8a3e67fc282d9d69d3433c491e6"
     },
     "config/offices.json": {
       "mode": 420,
@@ -167,11 +167,11 @@
     },
     "docs/AGENT-CATALOG.md": {
       "mode": 420,
-      "sha256": "d26d255e8490c280fd13167dbe9962a5401a3a5f91bba715e5469b1dcf09d802"
+      "sha256": "fcff7d94b8498302b0c2d48ff06def32f15f5006606043a2499935c3b9edbb38"
     },
     "docs/ALL-ROLES.md": {
       "mode": 420,
-      "sha256": "5cbf28480077505ae129b42f5dfe79f7d39707110264bdf7d13454903a09d67d"
+      "sha256": "ad82401bad2dcd039b8b5961a24b182cbd51d06aaba6f7977e81377f5d10a595"
     },
     "docs/ARCHITECTURE.md": {
       "mode": 420,
@@ -187,7 +187,7 @@
     },
     "docs/CODEX-MIGRATION-PROMPT.txt": {
       "mode": 420,
-      "sha256": "2df437a75f61dd73e5b82307c4a39332159ac826aa852e1a7d763e53a3cd6f21"
+      "sha256": "2dd12bac55350c7b26e9464d040b38f66665f95bbe16ed8b16935f371bea5fa8"
     },
     "docs/DRIVE-KNOWLEDGE.md": {
       "mode": 420,
@@ -207,7 +207,7 @@
     },
     "docs/MIGRATION-FROM-PLUGIN.md": {
       "mode": 420,
-      "sha256": "3a9e6271966366457f537ed7f82dd2b5457dd8dfd025106844f30685a766f509"
+      "sha256": "d99742cd35b6036f7c8c56db48c93d334286a68caa3426dd4f334ebe75384095"
     },
     "docs/OFFICE-MAP.md": {
       "mode": 420,
@@ -231,15 +231,15 @@
     },
     "docs/START-HERE.md": {
       "mode": 420,
-      "sha256": "ef8b5a75b52558ff65a8702f35aba978ee3967ab7d525a9818c0e11df0b6dd73"
+      "sha256": "fb85d5e55d51b85c2f04403ef7ebf34956c730687941d561e3ca1e13b3e0d9eb"
     },
     "docs/UPGRADE-0.4.0.md": {
       "mode": 420,
-      "sha256": "8b2d5ed7799f38009ed09b0fd52d1bf88bcc880a588053560d4848ee142f6bae"
+      "sha256": "719a3c5f5ae113765879110604b7038e547f7c28518caee335672fb85a20f4c6"
     },
     "docs/VALIDATION.md": {
       "mode": 420,
-      "sha256": "596242b1b4badfd179ca571e0f28d30b2a98d51a4388c2485545ad053e450d8a"
+      "sha256": "0a599b409fc2b056a782c125c2f0d1662ebcba7e773bbc281ff3578e3d6b45b6"
     },
     "examples/action-whatsapp-draft.json": {
       "mode": 420,
@@ -2531,7 +2531,7 @@
     },
     "skills/aco-office-concierge/references/CATALOG.json": {
       "mode": 420,
-      "sha256": "482cd972346f08b2103c67fa46de21add74f7a2f9963b8c1a9783c5d70766d8b"
+      "sha256": "f679a68474a71be227ecd21fa3bda6e3371ab8a3e67fc282d9d69d3433c491e6"
     },
     "skills/aco-office-concierge/references/ROLE-INDEX.md": {
       "mode": 420,
@@ -2655,7 +2655,7 @@
     },
     "skills/aco-office-concierge/runtime/VERSION": {
       "mode": 420,
-      "sha256": "e2f7bb608ebc9e24092ffcb796ad0aa83f0015afe23635f017df52273150f00d"
+      "sha256": "520a19075780a38b440395e2c70e20d7cddd96b8c2e2c2403b265cbb74a1b333"
     },
     "skills/aco-office-concierge/runtime/assets/context-templates/ACTIVITY-CONTEXT.template.md": {
       "mode": 420,

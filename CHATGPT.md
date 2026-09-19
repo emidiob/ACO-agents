@@ -1,6 +1,6 @@
 # ACO — ChatGPT entry point
 
-Version 0.4.2. This is a public skill library, not an installed plugin or a source of access permissions.
+Version 0.4.3. This is a public skill library, not an installed plugin or a source of access permissions.
 
 Read `skills/aco-office-concierge/SKILL.md`, its `references/protocols/CONCIERGE.md`, and the needed portion of `ACO-INDEX.md`; use `catalog.json` only as a path lookup fallback. Select the smallest relevant office and read its SKILL.md plus exact role methods. Pin a repository revision when possible and record it in the private session.
 

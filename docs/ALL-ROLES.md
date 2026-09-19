@@ -1,6 +1,6 @@
 # ACO catalogue
 
-Version 0.4.2. 349 generic role definitions; not 349 autonomous running processes.
+Version 0.4.3. 349 generic role definitions; not 349 autonomous running processes.
 
 Start with [CHATGPT.md](../CHATGPT.md) or [AGENTS.md](../AGENTS.md). Read only relevant skills and role methods.
 

@@ -1,4 +1,4 @@
-# ACO v0.4.2 — validation record
+# ACO v0.4.3 — validation record
 
 Checked 2026-09-19 with Python 3.13.5 on Linux.
 
@@ -47,7 +47,7 @@ For live acceptance tests use [HOST-ACCEPTANCE-TESTS.md](HOST-ACCEPTANCE-TESTS.m
 ## Package
 
 ```bash
-python3 scripts/build_release.py --output ../ACO-agents-v0.4.2-complete.zip
+python3 scripts/build_release.py --output ../ACO-agents-v0.4.3-complete.zip
 ```
 
 The release includes only fingerprinted public files, with hidden files and executable modes. SHA-256 detects transfer differences; it is not a developer digital signature.

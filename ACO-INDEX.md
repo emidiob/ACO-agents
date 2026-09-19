@@ -1,6 +1,6 @@
 # ACO — routing index
 
-Version 0.4.2; 349 role definitions and 16 skills. These are not permanently running agents.
+Version 0.4.3; 349 role definitions and 16 skills. These are not permanently running agents.
 
 Start with CHATGPT.md or AGENTS.md. Select an office below, then read its local ROLE-INDEX and only selected methods. Do not load the full catalogue by default.
 

@@ -1,8 +1,15 @@
 # Changelog
 
+## 0.4.3 — 2026-09-19
+
+- Made the public release documentation English-only.
+- Replaced the non-English quickstart with `BEGINNER-GUIDE.md`, a complete English beginner guide requiring no Git knowledge.
+- Updated README, installer hints, upgrade documentation and cross-references so every public workflow and user-facing instruction is English-only.
+- No role keys, office routing, private knowledge schema, licensing permissions, integration semantics or automation behavior changed from v0.4.2.
+
 ## 0.4.2 — 2026-09-19
 
-- Replaced the MIT license for this release with the ACO Proprietary Source-Available License v1.0.
+- Replaced the earlier permissive license for this release with the ACO Proprietary Source-Available License v1.0.
 - Personal/internal use, private modification and commercial use of outputs remain permitted; redistribution, public forks, resale, sublicensing and distributed embedding are prohibited without written permission.
 - Updated README, migration guidance, beginner documentation and agent instructions to describe the current license consistently.
 - No role keys, office routing, private knowledge schema, account permissions or messaging/automation semantics changed from v0.4.1.
@@ -37,6 +44,6 @@
 - Added collision-safe managed installation, backups, rollback/recovery and targeted uninstall.
 - Added reviewed Git migration with legacy fingerprints, backup/work branches and preservation of unrelated/private files.
 - Added optional explicitly authorized immutable Drive event transport; no bundled connection or background sync.
-- Added beginner manual, Italian quickstart, ChatGPT project instructions, migration prompt, security limits and tests.
+- Added beginner manual, quickstart, ChatGPT project instructions, migration prompt, security limits and tests.
 
 This release does not claim a live end-to-end validation of every ChatGPT/Codex/VS Code environment or Google account. See docs/VALIDATION.md.

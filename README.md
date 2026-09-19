@@ -2,13 +2,13 @@
 
 **A generic skill library for creative and professional work, with private context and auditable work history.**
 
-Version **0.4.2** · 16 entry-point skills · 349 role definitions · **proprietary source-available license; redistribution prohibited**.
+Version **0.4.3** · 16 entry-point skills · 349 role definitions · **proprietary source-available license; redistribution prohibited**.
 
 ACO is **not a ChatGPT plugin** and is not submitted to an app directory. ChatGPT can read its Markdown instructions through an available authorized repository/file tool. Codex can also install the skills and optional native agent profiles locally. The library does not include a model, an always-on agent service, account credentials or anyone's private knowledge.
 
 **Upgrading from v0.3.0?** Read [Upgrade guide](docs/UPGRADE-0.4.0.md). This release adds 103 roles and seven office entry points, without changing the private registry schema or requiring a plugin.
 
-**New here?** Read [Start here — English](docs/START-HERE.md) or [Inizia qui — Italiano](START-HERE-IT.md).
+**New here?** Read [Start here](docs/START-HERE.md) or the [Beginner Guide — no Git knowledge required](BEGINNER-GUIDE.md).
 
 ### 👥 Agent directory
 
@@ -322,7 +322,7 @@ The manifest detects accidental changes; it is not a signed proof of publisher i
 
 See [validation report and limits](docs/VALIDATION.md), [security model](SECURITY.md), [architecture](docs/ARCHITECTURE.md) and [dated official documentation](docs/SOURCES.md).
 
-ACO v0.4.2 is distributed under the **ACO Proprietary Source-Available License v1.0**. Personal use, internal organizational use, private modifications and commercial use of outputs are permitted. Redistribution, public forks, resale, sublicensing and embedding substantial portions of ACO in a product or service distributed to third parties are prohibited without prior written permission. See [LICENSE](LICENSE). Earlier releases lawfully distributed under another license remain governed by the license that accompanied those releases.
+ACO v0.4.3 is distributed under the **ACO Proprietary Source-Available License v1.0**. Personal use, internal organizational use, private modifications and commercial use of outputs are permitted. Redistribution, public forks, resale, sublicensing and embedding substantial portions of ACO in a product or service distributed to third parties are prohibited without prior written permission. See [LICENSE](LICENSE). Earlier releases lawfully distributed under another license remain governed by the license that accompanied those releases.
 
 No private knowledge is distributed here. The number of roles is not a professional-quality certification or a guarantee that every host/integration has been tested.
 
