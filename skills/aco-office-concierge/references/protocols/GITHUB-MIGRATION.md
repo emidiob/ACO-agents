@@ -1,6 +1,6 @@
 # Repository migration is not knowledge migration
 
-Keep .git, commit history, the remote and the license. Preserve all untracked private data and unrelated tracked files. No rm -rf, git clean, reset --hard or force push.
+Keep .git, commit history and the remote. Apply the LICENSE supplied by the target release; never alter licensing silently or outside an explicit versioned release. Preserve all untracked private data and unrelated tracked files. No rm -rf, git clean, reset --hard or force push.
 
 Use the supplied migration script from the newly extracted release OUTSIDE the existing repository. It checks a clean tracked worktree, verifies the release manifest, compares old files to known hashes, and lists additions/replacements/removals. --apply creates a backup branch and a work branch, changes only recognized ACO-owned paths, and stages an exact path list. Unknown or locally edited files block the operation; reconcile them before proceeding.
 

@@ -9,3 +9,6 @@ Resolve a task-local scope using stable entity IDs. Do not use a global current 
 Canonical context, immutable work events, approved decisions, open loops and handoffs are distinct. Context promotion needs evidence/approval and a fresh base revision. A failed/absent remote write must remain pending or not saved, never silently “remembered”.
 
 Authoritative procedures: [Entity model](skills/aco-office-concierge/references/protocols/ENTITY-MODEL.md), [Bootstrap](skills/aco-office-concierge/references/protocols/BOOTSTRAP.md), [History](skills/aco-office-concierge/references/protocols/HISTORY.md), [Permissions](skills/aco-office-concierge/references/protocols/PERMISSIONS.md).
+
+## Short actions and early questions
+Read the relevant already-authorized material, ask essential missing facts at the first stage, then execute. Use the `INTERACTION.md` and `COMMUNICATIONS.md` protocols under `skills/aco-office-concierge/references/protocols/`. Routine tasks need no office-by-office narration. Full commissioned deliverables remain complete. Finance, Commercial, People, Delivery, Administration, Production and Publishing offices are indexed in ACO-INDEX.md; engineering remains Product Office. WhatsApp via a user-connected MCP is optional and never presumed connected.

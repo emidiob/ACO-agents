@@ -1,21 +1,63 @@
-MIT License
+ACO — Art & Commerce Office
+Proprietary Source-Available License v1.0
 
-Copyright (c) 2026 ACO — Art & Commerce Office contributors
+Copyright © 2026 Emidio Battipaglia. All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. Scope
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+This license applies to the ACO — Art & Commerce Office software, agent and skill definitions, prompts, workflows, documentation, configuration files, scripts, templates, catalogues and other materials distributed with this release (collectively, the “ACO Materials”).
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. Permission granted
+
+Subject to these terms, you may:
+
+- download and use the ACO Materials for your own personal use;
+- use the ACO Materials internally within your organization;
+- make reasonable local backup copies;
+- modify the ACO Materials privately for your own personal or internal organizational use; and
+- use ACO internally to create commercial or non-commercial work, services, documents, code, designs, media and other outputs for yourself or for clients.
+
+The permission above does not transfer ownership of the ACO Materials.
+
+3. Redistribution and public availability prohibited
+
+Without prior written permission from the copyright holder, you may not:
+
+- redistribute, republish, upload, mirror, share or otherwise make the ACO Materials, or any substantial portion of them, available to third parties;
+- publish a public fork, clone, derivative distribution or modified version of the ACO Materials;
+- sell, rent, sublicense, license, assign or otherwise commercially distribute the ACO Materials;
+- bundle or embed the ACO Materials, or substantial portions of them, in another agent library, framework, template collection, application, product or distributed service;
+- provide third parties with downloadable or reusable access to the ACO Materials through a hosted service whose primary purpose is to expose ACO itself; or
+- remove, obscure or alter copyright, attribution or license notices included with the ACO Materials.
+
+4. Client work and outputs
+
+You may use ACO as an internal tool while providing services to clients or customers. Outputs you create with the assistance of ACO are not restricted by this license merely because ACO helped create them, provided those outputs do not themselves reproduce or distribute substantial portions of the ACO Materials. Rights in third-party material and generated outputs may be subject to separate laws, contracts, platform terms or licenses.
+
+5. Private modifications
+
+Private modifications are permitted only for personal or internal organizational use. Distribution of modified versions is prohibited unless the copyright holder gives prior written permission.
+
+6. Third-party materials
+
+This license does not change the license of any third-party software, model, font, library, media or other material used with ACO. Third-party materials remain governed by their own terms.
+
+7. Earlier releases
+
+This license applies only to releases that include it. Any earlier ACO release that was lawfully distributed under a different license remains governed by the license that accompanied that release.
+
+8. No trademark license
+
+No right is granted to use ACO, Art & Commerce Office, associated logos or other branding as a trademark, except as reasonably necessary to identify genuine use of the software.
+
+9. Termination
+
+Your permission under this license ends automatically if you materially violate these terms. Upon termination, you must stop using and distributing copies governed by this license, except to the extent retention is required by law.
+
+10. No warranty
+
+THE ACO MATERIALS ARE PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE COPYRIGHT HOLDER IS NOT LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM OR RELATED TO THE ACO MATERIALS OR THEIR USE.
+
+11. Additional permissions
+
+Redistribution, public forks, sublicensing, OEM use, embedding, enterprise distribution or other permissions not granted above require prior written authorization from the copyright holder.

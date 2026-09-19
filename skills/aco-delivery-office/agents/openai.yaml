@@ -1,0 +1,4 @@
+interface:
+  display_name: "ACO Project & Programme Delivery"
+  short_description: "Project & Programme Delivery workflows"
+  default_prompt: "Use ACO Project & Programme Delivery. Clarify essential missing information first, then produce the requested result."

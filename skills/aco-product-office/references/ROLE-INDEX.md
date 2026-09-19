@@ -8,6 +8,7 @@ Lead: `product_software_orchestrator`. Read only selected role instructions; nat
 - [`ai_product_engineer`](agents/ai-product-engineer.md) — Bridge role between product and AI engineering for user-facing AI feature design and implementation.
 - [`api_integration_engineer`](agents/api-integration-engineer.md) — Engineer for third-party service integration, authentication flows, webhooks and API reliability.
 - [`api_researcher`](agents/api-researcher.md) — Researcher for third-party API capabilities, docs, pricing, limits and integration implications.
+- [`automation_integration_engineer`](agents/automation-integration-engineer.md) — Implement scoped integrations and safe office automations.
 - [`backend_engineer`](agents/backend-engineer.md) — Backend engineer for server-side features, APIs, business logic and integrations.
 - [`bug_investigator`](agents/bug-investigator.md) — Specialist for reproducing, isolating and diagnosing bugs across environments and layers.
 - [`business_analyst`](agents/business-analyst.md) — Analyst for business rules, process requirements, operational needs and stakeholder constraints.
@@ -26,6 +27,7 @@ Lead: `product_software_orchestrator`. Read only selected role instructions; nat
 - [`interaction_designer`](agents/interaction-designer.md) — Specialist for interaction behavior, states, transitions, affordances and micro-interactions.
 - [`junior_developer`](agents/junior-developer.md) — Junior developer for well-scoped implementation tasks, fixes and guided build work.
 - [`llm_engineer`](agents/llm-engineer.md) — Engineer for LLM prompting, RAG patterns, tool use, evaluation and agentic behavior.
+- [`mcp_integration_reviewer`](agents/mcp-integration-reviewer.md) — Review MCP connections for scope, safety and practical compatibility.
 - [`migration_specialist`](agents/migration-specialist.md) — Specialist for migrations between stacks, systems, schemas, services or versions.
 - [`ml_ops_engineer`](agents/ml-ops-engineer.md) — Engineer for model deployment, monitoring, versioning and production ML operations.
 - [`mobile_engineer`](agents/mobile-engineer.md) — Engineer for mobile app implementation, platform conventions and native/hybrid delivery.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "ACO Publishing & Media"
+  short_description: "Publishing & Media workflows"
+  default_prompt: "Use ACO Publishing & Media. Clarify essential missing information first, then produce the requested result."

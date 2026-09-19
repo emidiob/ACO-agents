@@ -1,6 +1,26 @@
 {
   "schema_version": 1,
-  "aco_version": "0.3.0",
+  "aco_version": "0.4.2",
+  "skill_count": 16,
+  "role_count": 349,
+  "skills": [
+    "aco-administration-office",
+    "aco-agency-office",
+    "aco-artist-office",
+    "aco-commercial-office",
+    "aco-context-setup",
+    "aco-context-steward",
+    "aco-delivery-office",
+    "aco-finance-office",
+    "aco-legal-office",
+    "aco-office-concierge",
+    "aco-organization-office",
+    "aco-people-office",
+    "aco-product-office",
+    "aco-production-office",
+    "aco-publishing-office",
+    "aco-recruitment-office"
+  ],
   "offices": {
     "artist-office": {
       "lead": "creative_orchestrator",
@@ -39,7 +59,7 @@
       "dependencies": [
         "frontend_prototyper"
       ],
-      "count": 51
+      "count": 53
     },
     "legal-office": {
       "lead": "legal_orchestrator",
@@ -55,9 +75,182 @@
       "lead": "office_concierge",
       "dependencies": [],
       "count": 10
+    },
+    "finance-office": {
+      "lead": "finance_orchestrator",
+      "dependencies": [
+        "studio_finance_manager",
+        "commercial_strategy_director",
+        "art_contracts_rights_advisor"
+      ],
+      "count": 11
+    },
+    "commercial-office": {
+      "lead": "commercial_orchestrator",
+      "dependencies": [
+        "business_development_director",
+        "commercial_strategy_director",
+        "client_strategy_director",
+        "account_director",
+        "proposal_pitch_director",
+        "partnerships_director",
+        "revenue_innovation_strategist",
+        "brand_strategist",
+        "marketing_strategist",
+        "pricing_margin_analyst"
+      ],
+      "count": 8
+    },
+    "people-office": {
+      "lead": "people_orchestrator",
+      "dependencies": [
+        "talent_contributors_manager",
+        "traffic_resource_manager",
+        "operations_director",
+        "legal_orchestrator"
+      ],
+      "count": 10
+    },
+    "delivery-office": {
+      "lead": "delivery_orchestrator",
+      "dependencies": [
+        "project_manager",
+        "project_coordinator",
+        "traffic_resource_manager",
+        "traffic_coordinator",
+        "executive_producer",
+        "account_director",
+        "release_manager"
+      ],
+      "count": 5
+    },
+    "administration-office": {
+      "lead": "administration_orchestrator",
+      "dependencies": [
+        "communications_editor",
+        "studio_manager",
+        "studio_comms_manager",
+        "project_coordinator",
+        "billing_receivables_coordinator"
+      ],
+      "count": 9
+    },
+    "production-office": {
+      "lead": "production_orchestrator",
+      "dependencies": [
+        "executive_producer",
+        "integrated_producer",
+        "film_producer",
+        "photography_producer",
+        "junior_producer",
+        "production_coordinator",
+        "postproduction_supervisor",
+        "postproduction_coordinator",
+        "casting_researcher",
+        "location_researcher",
+        "business_affairs_manager",
+        "cgi_vfx_supervisor",
+        "motion_design_director",
+        "creative_director",
+        "art_director",
+        "asset_manager",
+        "technical_art_producer",
+        "production_cost_controller"
+      ],
+      "count": 34
+    },
+    "publishing-office": {
+      "lead": "publishing_media_orchestrator",
+      "dependencies": [
+        "publishing_director",
+        "publication_manager",
+        "commissioning_editor",
+        "editor",
+        "art_writer",
+        "research_editor_fact_checker",
+        "content_director",
+        "community_editor",
+        "communications_pr_director",
+        "contracts_ip_manager",
+        "royalty_revenue_accountant",
+        "art_director"
+      ],
+      "count": 24
     }
   },
   "agents": {
+    "administration_orchestrator": {
+      "office": "administration-office",
+      "description": "Route administration & secretariat tasks through a small accountable team with early clarification and verified outputs.",
+      "path": "skills/aco-administration-office/references/agents/administration-orchestrator.md",
+      "skill_path": "aco-administration-office/references/agents/administration-orchestrator.md",
+      "native_name": "aco_administration_orchestrator",
+      "codex_path": "extras/codex-custom-agents/administration-office/aco-administration-orchestrator.toml"
+    },
+    "communications_operator": {
+      "office": "administration-office",
+      "description": "Execute authorized email, WhatsApp, SMS or phone actions through verified capabilities.",
+      "path": "skills/aco-administration-office/references/agents/communications-operator.md",
+      "skill_path": "aco-administration-office/references/agents/communications-operator.md",
+      "native_name": "aco_communications_operator",
+      "codex_path": "extras/codex-custom-agents/administration-office/aco-communications-operator.toml"
+    },
+    "executive_assistant": {
+      "office": "administration-office",
+      "description": "Turn priorities into concise daily office coordination.",
+      "path": "skills/aco-administration-office/references/agents/executive-assistant.md",
+      "skill_path": "aco-administration-office/references/agents/executive-assistant.md",
+      "native_name": "aco_executive_assistant",
+      "codex_path": "extras/codex-custom-agents/administration-office/aco-executive-assistant.toml"
+    },
+    "inbox_correspondence_manager": {
+      "office": "administration-office",
+      "description": "Triage email and prepare context-aware replies.",
+      "path": "skills/aco-administration-office/references/agents/inbox-correspondence-manager.md",
+      "skill_path": "aco-administration-office/references/agents/inbox-correspondence-manager.md",
+      "native_name": "aco_inbox_correspondence_manager",
+      "codex_path": "extras/codex-custom-agents/administration-office/aco-inbox-correspondence-manager.toml"
+    },
+    "meeting_calendar_coordinator": {
+      "office": "administration-office",
+      "description": "Prepare and coordinate meetings and minutes.",
+      "path": "skills/aco-administration-office/references/agents/meeting-calendar-coordinator.md",
+      "skill_path": "aco-administration-office/references/agents/meeting-calendar-coordinator.md",
+      "native_name": "aco_meeting_calendar_coordinator",
+      "codex_path": "extras/codex-custom-agents/administration-office/aco-meeting-calendar-coordinator.toml"
+    },
+    "office_administrator": {
+      "office": "administration-office",
+      "description": "Handle routine supplier, facilities and office coordination.",
+      "path": "skills/aco-administration-office/references/agents/office-administrator.md",
+      "skill_path": "aco-administration-office/references/agents/office-administrator.md",
+      "native_name": "aco_office_administrator",
+      "codex_path": "extras/codex-custom-agents/administration-office/aco-office-administrator.toml"
+    },
+    "records_document_controller": {
+      "office": "administration-office",
+      "description": "Maintain document versions, approvals and distribution.",
+      "path": "skills/aco-administration-office/references/agents/records-document-controller.md",
+      "skill_path": "aco-administration-office/references/agents/records-document-controller.md",
+      "native_name": "aco_records_document_controller",
+      "codex_path": "extras/codex-custom-agents/administration-office/aco-records-document-controller.toml"
+    },
+    "service_desk_coordinator": {
+      "office": "administration-office",
+      "description": "Triage office requests and route support.",
+      "path": "skills/aco-administration-office/references/agents/service-desk-coordinator.md",
+      "skill_path": "aco-administration-office/references/agents/service-desk-coordinator.md",
+      "native_name": "aco_service_desk_coordinator",
+      "codex_path": "extras/codex-custom-agents/administration-office/aco-service-desk-coordinator.toml"
+    },
+    "travel_logistics_coordinator": {
+      "office": "administration-office",
+      "description": "Research travel and coordinate office logistics.",
+      "path": "skills/aco-administration-office/references/agents/travel-logistics-coordinator.md",
+      "skill_path": "aco-administration-office/references/agents/travel-logistics-coordinator.md",
+      "native_name": "aco_travel_logistics_coordinator",
+      "codex_path": "extras/codex-custom-agents/administration-office/aco-travel-logistics-coordinator.toml"
+    },
     "agency_orchestrator": {
       "office": "agency-office",
       "description": "Orchestrator for a creative production, brand strategy, design and marketing agency. Routes work through directors, specialists and execution makers without overstaffing tasks.",
@@ -770,6 +963,198 @@
       "native_name": "aco_technical_art_producer",
       "codex_path": "extras/codex-custom-agents/artist-office/aco-technical-art-producer.toml"
     },
+    "commercial_orchestrator": {
+      "office": "commercial-office",
+      "description": "Route commercial & sales tasks through a small accountable team with early clarification and verified outputs.",
+      "path": "skills/aco-commercial-office/references/agents/commercial-orchestrator.md",
+      "skill_path": "aco-commercial-office/references/agents/commercial-orchestrator.md",
+      "native_name": "aco_commercial_orchestrator",
+      "codex_path": "extras/codex-custom-agents/commercial-office/aco-commercial-orchestrator.toml"
+    },
+    "customer_success_manager": {
+      "office": "commercial-office",
+      "description": "Plan onboarding, adoption, retention and renewals for delivered services.",
+      "path": "skills/aco-commercial-office/references/agents/customer-success-manager.md",
+      "skill_path": "aco-commercial-office/references/agents/customer-success-manager.md",
+      "native_name": "aco_customer_success_manager",
+      "codex_path": "extras/codex-custom-agents/commercial-office/aco-customer-success-manager.toml"
+    },
+    "lead_qualification_researcher": {
+      "office": "commercial-office",
+      "description": "Research and qualify potential clients against a supplied ideal-client profile.",
+      "path": "skills/aco-commercial-office/references/agents/lead-qualification-researcher.md",
+      "skill_path": "aco-commercial-office/references/agents/lead-qualification-researcher.md",
+      "native_name": "aco_lead_qualification_researcher",
+      "codex_path": "extras/codex-custom-agents/commercial-office/aco-lead-qualification-researcher.toml"
+    },
+    "revenue_operations_analyst": {
+      "office": "commercial-office",
+      "description": "Connect sales, delivery and finance evidence.",
+      "path": "skills/aco-commercial-office/references/agents/revenue-operations-analyst.md",
+      "skill_path": "aco-commercial-office/references/agents/revenue-operations-analyst.md",
+      "native_name": "aco_revenue_operations_analyst",
+      "codex_path": "extras/codex-custom-agents/commercial-office/aco-revenue-operations-analyst.toml"
+    },
+    "sales_enablement_specialist": {
+      "office": "commercial-office",
+      "description": "Prepare accurate reusable sales materials.",
+      "path": "skills/aco-commercial-office/references/agents/sales-enablement-specialist.md",
+      "skill_path": "aco-commercial-office/references/agents/sales-enablement-specialist.md",
+      "native_name": "aco_sales_enablement_specialist",
+      "codex_path": "extras/codex-custom-agents/commercial-office/aco-sales-enablement-specialist.toml"
+    },
+    "sales_operations_manager": {
+      "office": "commercial-office",
+      "description": "Maintain a reliable opportunity pipeline and sales operating process.",
+      "path": "skills/aco-commercial-office/references/agents/sales-operations-manager.md",
+      "skill_path": "aco-commercial-office/references/agents/sales-operations-manager.md",
+      "native_name": "aco_sales_operations_manager",
+      "codex_path": "extras/codex-custom-agents/commercial-office/aco-sales-operations-manager.toml"
+    },
+    "sales_proposal_specialist": {
+      "office": "commercial-office",
+      "description": "Turn an agreed solution into a precise commercial proposal.",
+      "path": "skills/aco-commercial-office/references/agents/sales-proposal-specialist.md",
+      "skill_path": "aco-commercial-office/references/agents/sales-proposal-specialist.md",
+      "native_name": "aco_sales_proposal_specialist",
+      "codex_path": "extras/codex-custom-agents/commercial-office/aco-sales-proposal-specialist.toml"
+    },
+    "tender_bid_coordinator": {
+      "office": "commercial-office",
+      "description": "Coordinate bids and formal tender responses.",
+      "path": "skills/aco-commercial-office/references/agents/tender-bid-coordinator.md",
+      "skill_path": "aco-commercial-office/references/agents/tender-bid-coordinator.md",
+      "native_name": "aco_tender_bid_coordinator",
+      "codex_path": "extras/codex-custom-agents/commercial-office/aco-tender-bid-coordinator.toml"
+    },
+    "agile_delivery_facilitator": {
+      "office": "delivery-office",
+      "description": "Run lightweight iterative delivery without ceremonial overhead.",
+      "path": "skills/aco-delivery-office/references/agents/agile-delivery-facilitator.md",
+      "skill_path": "aco-delivery-office/references/agents/agile-delivery-facilitator.md",
+      "native_name": "aco_agile_delivery_facilitator",
+      "codex_path": "extras/codex-custom-agents/delivery-office/aco-agile-delivery-facilitator.toml"
+    },
+    "delivery_orchestrator": {
+      "office": "delivery-office",
+      "description": "Route project & programme delivery tasks through a small accountable team with early clarification and verified outputs.",
+      "path": "skills/aco-delivery-office/references/agents/delivery-orchestrator.md",
+      "skill_path": "aco-delivery-office/references/agents/delivery-orchestrator.md",
+      "native_name": "aco_delivery_orchestrator",
+      "codex_path": "extras/codex-custom-agents/delivery-office/aco-delivery-orchestrator.toml"
+    },
+    "programme_delivery_manager": {
+      "office": "delivery-office",
+      "description": "Coordinate multiple connected projects.",
+      "path": "skills/aco-delivery-office/references/agents/programme-delivery-manager.md",
+      "skill_path": "aco-delivery-office/references/agents/programme-delivery-manager.md",
+      "native_name": "aco_programme_delivery_manager",
+      "codex_path": "extras/codex-custom-agents/delivery-office/aco-programme-delivery-manager.toml"
+    },
+    "project_controls_analyst": {
+      "office": "delivery-office",
+      "description": "Measure schedule, scope and cost change accurately.",
+      "path": "skills/aco-delivery-office/references/agents/project-controls-analyst.md",
+      "skill_path": "aco-delivery-office/references/agents/project-controls-analyst.md",
+      "native_name": "aco_project_controls_analyst",
+      "codex_path": "extras/codex-custom-agents/delivery-office/aco-project-controls-analyst.toml"
+    },
+    "quality_acceptance_coordinator": {
+      "office": "delivery-office",
+      "description": "Coordinate acceptance evidence and final handover.",
+      "path": "skills/aco-delivery-office/references/agents/quality-acceptance-coordinator.md",
+      "skill_path": "aco-delivery-office/references/agents/quality-acceptance-coordinator.md",
+      "native_name": "aco_quality_acceptance_coordinator",
+      "codex_path": "extras/codex-custom-agents/delivery-office/aco-quality-acceptance-coordinator.toml"
+    },
+    "billing_receivables_coordinator": {
+      "office": "finance-office",
+      "description": "Prepare invoices, payment milestones and courteous collections.",
+      "path": "skills/aco-finance-office/references/agents/billing-receivables-coordinator.md",
+      "skill_path": "aco-finance-office/references/agents/billing-receivables-coordinator.md",
+      "native_name": "aco_billing_receivables_coordinator",
+      "codex_path": "extras/codex-custom-agents/finance-office/aco-billing-receivables-coordinator.toml"
+    },
+    "bookkeeping_coordinator": {
+      "office": "finance-office",
+      "description": "Prepare clean records for a bookkeeper or accountant.",
+      "path": "skills/aco-finance-office/references/agents/bookkeeping-coordinator.md",
+      "skill_path": "aco-finance-office/references/agents/bookkeeping-coordinator.md",
+      "native_name": "aco_bookkeeping_coordinator",
+      "codex_path": "extras/codex-custom-agents/finance-office/aco-bookkeeping-coordinator.toml"
+    },
+    "cashflow_treasury_analyst": {
+      "office": "finance-office",
+      "description": "Plan cash runway and timing of project receipts and payments.",
+      "path": "skills/aco-finance-office/references/agents/cashflow-treasury-analyst.md",
+      "skill_path": "aco-finance-office/references/agents/cashflow-treasury-analyst.md",
+      "native_name": "aco_cashflow_treasury_analyst",
+      "codex_path": "extras/codex-custom-agents/finance-office/aco-cashflow-treasury-analyst.toml"
+    },
+    "finance_orchestrator": {
+      "office": "finance-office",
+      "description": "Route finance & business control tasks through a small accountable team with early clarification and verified outputs.",
+      "path": "skills/aco-finance-office/references/agents/finance-orchestrator.md",
+      "skill_path": "aco-finance-office/references/agents/finance-orchestrator.md",
+      "native_name": "aco_finance_orchestrator",
+      "codex_path": "extras/codex-custom-agents/finance-office/aco-finance-orchestrator.toml"
+    },
+    "financial_controller": {
+      "office": "finance-office",
+      "description": "Control project and company accounts, reconciliations and financial reporting.",
+      "path": "skills/aco-finance-office/references/agents/financial-controller.md",
+      "skill_path": "aco-finance-office/references/agents/financial-controller.md",
+      "native_name": "aco_financial_controller",
+      "codex_path": "extras/codex-custom-agents/finance-office/aco-financial-controller.toml"
+    },
+    "fp_and_a_analyst": {
+      "office": "finance-office",
+      "description": "Build operational forecasts and scenario-based planning.",
+      "path": "skills/aco-finance-office/references/agents/fp-and-a-analyst.md",
+      "skill_path": "aco-finance-office/references/agents/fp-and-a-analyst.md",
+      "native_name": "aco_fp_and_a_analyst",
+      "codex_path": "extras/codex-custom-agents/finance-office/aco-fp-and-a-analyst.toml"
+    },
+    "payables_procurement_analyst": {
+      "office": "finance-office",
+      "description": "Compare suppliers and prepare purchase approvals and payment checks.",
+      "path": "skills/aco-finance-office/references/agents/payables-procurement-analyst.md",
+      "skill_path": "aco-finance-office/references/agents/payables-procurement-analyst.md",
+      "native_name": "aco_payables_procurement_analyst",
+      "codex_path": "extras/codex-custom-agents/finance-office/aco-payables-procurement-analyst.toml"
+    },
+    "pricing_margin_analyst": {
+      "office": "finance-office",
+      "description": "Price creative and production work with explicit costs, margins and rights.",
+      "path": "skills/aco-finance-office/references/agents/pricing-margin-analyst.md",
+      "skill_path": "aco-finance-office/references/agents/pricing-margin-analyst.md",
+      "native_name": "aco_pricing_margin_analyst",
+      "codex_path": "extras/codex-custom-agents/finance-office/aco-pricing-margin-analyst.toml"
+    },
+    "production_cost_controller": {
+      "office": "finance-office",
+      "description": "Track committed and actual production spend against approved estimates.",
+      "path": "skills/aco-finance-office/references/agents/production-cost-controller.md",
+      "skill_path": "aco-finance-office/references/agents/production-cost-controller.md",
+      "native_name": "aco_production_cost_controller",
+      "codex_path": "extras/codex-custom-agents/finance-office/aco-production-cost-controller.toml"
+    },
+    "royalty_revenue_accountant": {
+      "office": "finance-office",
+      "description": "Prepare reconciled author, artist and licensing royalty statements.",
+      "path": "skills/aco-finance-office/references/agents/royalty-revenue-accountant.md",
+      "skill_path": "aco-finance-office/references/agents/royalty-revenue-accountant.md",
+      "native_name": "aco_royalty_revenue_accountant",
+      "codex_path": "extras/codex-custom-agents/finance-office/aco-royalty-revenue-accountant.toml"
+    },
+    "tax_compliance_coordinator": {
+      "office": "finance-office",
+      "description": "Organize tax-related inputs and questions for qualified advisers.",
+      "path": "skills/aco-finance-office/references/agents/tax-compliance-coordinator.md",
+      "skill_path": "aco-finance-office/references/agents/tax-compliance-coordinator.md",
+      "native_name": "aco_tax_compliance_coordinator",
+      "codex_path": "extras/codex-custom-agents/finance-office/aco-tax-compliance-coordinator.toml"
+    },
     "ai_technology_law_advisor": {
       "office": "legal-office",
       "description": "Legal issue-spotter for AI, datasets, model providers, generated content, automated decisions, platform terms and technology licensing.",
@@ -1338,6 +1723,86 @@
       "native_name": "aco_ux_service_designer",
       "codex_path": "extras/codex-custom-agents/organization-office/aco-ux-service-designer.toml"
     },
+    "compensation_benefits_coordinator": {
+      "office": "people-office",
+      "description": "Prepare compensation structures and benefit administration.",
+      "path": "skills/aco-people-office/references/agents/compensation-benefits-coordinator.md",
+      "skill_path": "aco-people-office/references/agents/compensation-benefits-coordinator.md",
+      "native_name": "aco_compensation_benefits_coordinator",
+      "codex_path": "extras/codex-custom-agents/people-office/aco-compensation-benefits-coordinator.toml"
+    },
+    "employee_relations_coordinator": {
+      "office": "people-office",
+      "description": "Organize sensitive workplace concerns neutrally.",
+      "path": "skills/aco-people-office/references/agents/employee-relations-coordinator.md",
+      "skill_path": "aco-people-office/references/agents/employee-relations-coordinator.md",
+      "native_name": "aco_employee_relations_coordinator",
+      "codex_path": "extras/codex-custom-agents/people-office/aco-employee-relations-coordinator.toml"
+    },
+    "hiring_coordinator": {
+      "office": "people-office",
+      "description": "Coordinate an authorized hiring process and applicant communication.",
+      "path": "skills/aco-people-office/references/agents/hiring-coordinator.md",
+      "skill_path": "aco-people-office/references/agents/hiring-coordinator.md",
+      "native_name": "aco_hiring_coordinator",
+      "codex_path": "extras/codex-custom-agents/people-office/aco-hiring-coordinator.toml"
+    },
+    "learning_development_specialist": {
+      "office": "people-office",
+      "description": "Design practical team learning and skill development.",
+      "path": "skills/aco-people-office/references/agents/learning-development-specialist.md",
+      "skill_path": "aco-people-office/references/agents/learning-development-specialist.md",
+      "native_name": "aco_learning_development_specialist",
+      "codex_path": "extras/codex-custom-agents/people-office/aco-learning-development-specialist.toml"
+    },
+    "onboarding_offboarding_coordinator": {
+      "office": "people-office",
+      "description": "Prepare onboarding and safe departures.",
+      "path": "skills/aco-people-office/references/agents/onboarding-offboarding-coordinator.md",
+      "skill_path": "aco-people-office/references/agents/onboarding-offboarding-coordinator.md",
+      "native_name": "aco_onboarding_offboarding_coordinator",
+      "codex_path": "extras/codex-custom-agents/people-office/aco-onboarding-offboarding-coordinator.toml"
+    },
+    "people_operations_manager": {
+      "office": "people-office",
+      "description": "Organize policies, personnel process and restricted HR records.",
+      "path": "skills/aco-people-office/references/agents/people-operations-manager.md",
+      "skill_path": "aco-people-office/references/agents/people-operations-manager.md",
+      "native_name": "aco_people_operations_manager",
+      "codex_path": "extras/codex-custom-agents/people-office/aco-people-operations-manager.toml"
+    },
+    "people_orchestrator": {
+      "office": "people-office",
+      "description": "Route people & hr tasks through a small accountable team with early clarification and verified outputs.",
+      "path": "skills/aco-people-office/references/agents/people-orchestrator.md",
+      "skill_path": "aco-people-office/references/agents/people-orchestrator.md",
+      "native_name": "aco_people_orchestrator",
+      "codex_path": "extras/codex-custom-agents/people-office/aco-people-orchestrator.toml"
+    },
+    "structured_interview_designer": {
+      "office": "people-office",
+      "description": "Design fair job-relevant interviews and work samples.",
+      "path": "skills/aco-people-office/references/agents/structured-interview-designer.md",
+      "skill_path": "aco-people-office/references/agents/structured-interview-designer.md",
+      "native_name": "aco_structured_interview_designer",
+      "codex_path": "extras/codex-custom-agents/people-office/aco-structured-interview-designer.toml"
+    },
+    "talent_sourcing_specialist": {
+      "office": "people-office",
+      "description": "Find potential employees or freelance collaborators.",
+      "path": "skills/aco-people-office/references/agents/talent-sourcing-specialist.md",
+      "skill_path": "aco-people-office/references/agents/talent-sourcing-specialist.md",
+      "native_name": "aco_talent_sourcing_specialist",
+      "codex_path": "extras/codex-custom-agents/people-office/aco-talent-sourcing-specialist.toml"
+    },
+    "workforce_planner": {
+      "office": "people-office",
+      "description": "Translate workload into staffing and contractor needs.",
+      "path": "skills/aco-people-office/references/agents/workforce-planner.md",
+      "skill_path": "aco-people-office/references/agents/workforce-planner.md",
+      "native_name": "aco_workforce_planner",
+      "codex_path": "extras/codex-custom-agents/people-office/aco-workforce-planner.toml"
+    },
     "accessibility_specialist": {
       "office": "product-office",
       "description": "Accessibility specialist for inclusive product design, compliance, assistive-tech behavior and remediation.",
@@ -1385,6 +1850,14 @@
       "skill_path": "aco-product-office/references/agents/api-researcher.md",
       "native_name": "aco_api_researcher",
       "codex_path": "extras/codex-custom-agents/product-office/aco-api-researcher.toml"
+    },
+    "automation_integration_engineer": {
+      "office": "product-office",
+      "description": "Implement scoped integrations and safe office automations.",
+      "path": "skills/aco-product-office/references/agents/automation-integration-engineer.md",
+      "skill_path": "aco-product-office/references/agents/automation-integration-engineer.md",
+      "native_name": "aco_automation_integration_engineer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-automation-integration-engineer.toml"
     },
     "backend_engineer": {
       "office": "product-office",
@@ -1529,6 +2002,14 @@
       "skill_path": "aco-product-office/references/agents/llm-engineer.md",
       "native_name": "aco_llm_engineer",
       "codex_path": "extras/codex-custom-agents/product-office/aco-llm-engineer.toml"
+    },
+    "mcp_integration_reviewer": {
+      "office": "product-office",
+      "description": "Review MCP connections for scope, safety and practical compatibility.",
+      "path": "skills/aco-product-office/references/agents/mcp-integration-reviewer.md",
+      "skill_path": "aco-product-office/references/agents/mcp-integration-reviewer.md",
+      "native_name": "aco_mcp_integration_reviewer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-mcp-integration-reviewer.toml"
     },
     "migration_specialist": {
       "office": "product-office",
@@ -1745,6 +2226,470 @@
       "skill_path": "aco-product-office/references/agents/ux-researcher.md",
       "native_name": "aco_ux_researcher",
       "codex_path": "extras/codex-custom-agents/product-office/aco-ux-researcher.toml"
+    },
+    "assistant_video_editor": {
+      "office": "production-office",
+      "description": "Prepare organized editorial projects and turnovers.",
+      "path": "skills/aco-production-office/references/agents/assistant-video-editor.md",
+      "skill_path": "aco-production-office/references/agents/assistant-video-editor.md",
+      "native_name": "aco_assistant_video_editor",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-assistant-video-editor.toml"
+    },
+    "beauty_fashion_retouch_artist": {
+      "office": "production-office",
+      "description": "Retouch fashion and beauty while preserving texture and agreed identity.",
+      "path": "skills/aco-production-office/references/agents/beauty-fashion-retouch-artist.md",
+      "skill_path": "aco-production-office/references/agents/beauty-fashion-retouch-artist.md",
+      "native_name": "aco_beauty_fashion_retouch_artist",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-beauty-fashion-retouch-artist.toml"
+    },
+    "cg_lighting_render_artist": {
+      "office": "production-office",
+      "description": "Light, shade and render CG with budget and color controls.",
+      "path": "skills/aco-production-office/references/agents/cg-lighting-render-artist.md",
+      "skill_path": "aco-production-office/references/agents/cg-lighting-render-artist.md",
+      "native_name": "aco_cg_lighting_render_artist",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-cg-lighting-render-artist.toml"
+    },
+    "cinematographer": {
+      "office": "production-office",
+      "description": "Plan capture, lighting and image continuity.",
+      "path": "skills/aco-production-office/references/agents/cinematographer.md",
+      "skill_path": "aco-production-office/references/agents/cinematographer.md",
+      "native_name": "aco_cinematographer",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-cinematographer.toml"
+    },
+    "color_pipeline_engineer": {
+      "office": "production-office",
+      "description": "Design and validate cross-application color management.",
+      "path": "skills/aco-production-office/references/agents/color-pipeline-engineer.md",
+      "skill_path": "aco-production-office/references/agents/color-pipeline-engineer.md",
+      "native_name": "aco_color_pipeline_engineer",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-color-pipeline-engineer.toml"
+    },
+    "colorist": {
+      "office": "production-office",
+      "description": "Develop grades and shot matching with a defined color pipeline.",
+      "path": "skills/aco-production-office/references/agents/colorist.md",
+      "skill_path": "aco-production-office/references/agents/colorist.md",
+      "native_name": "aco_colorist",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-colorist.toml"
+    },
+    "comfyui_node_developer": {
+      "office": "production-office",
+      "description": "Develop focused custom ComfyUI nodes and tests.",
+      "path": "skills/aco-production-office/references/agents/comfyui-node-developer.md",
+      "skill_path": "aco-production-office/references/agents/comfyui-node-developer.md",
+      "native_name": "aco_comfyui_node_developer",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-comfyui-node-developer.toml"
+    },
+    "comfyui_workflow_engineer": {
+      "office": "production-office",
+      "description": "Build and diagnose ComfyUI graphs against the user’s real environment.",
+      "path": "skills/aco-production-office/references/agents/comfyui-workflow-engineer.md",
+      "skill_path": "aco-production-office/references/agents/comfyui-workflow-engineer.md",
+      "native_name": "aco_comfyui_workflow_engineer",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-comfyui-workflow-engineer.toml"
+    },
+    "compositor": {
+      "office": "production-office",
+      "description": "Combine live action, CG and graphics consistently.",
+      "path": "skills/aco-production-office/references/agents/compositor.md",
+      "skill_path": "aco-production-office/references/agents/compositor.md",
+      "native_name": "aco_compositor",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-compositor.toml"
+    },
+    "dialogue_editor": {
+      "office": "production-office",
+      "description": "Prepare clean, synchronized and intelligible dialogue.",
+      "path": "skills/aco-production-office/references/agents/dialogue-editor.md",
+      "skill_path": "aco-production-office/references/agents/dialogue-editor.md",
+      "native_name": "aco_dialogue_editor",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-dialogue-editor.toml"
+    },
+    "digital_imaging_technician": {
+      "office": "production-office",
+      "description": "Manage capture monitoring, dailies and color metadata.",
+      "path": "skills/aco-production-office/references/agents/digital-imaging-technician.md",
+      "skill_path": "aco-production-office/references/agents/digital-imaging-technician.md",
+      "native_name": "aco_digital_imaging_technician",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-digital-imaging-technician.toml"
+    },
+    "fashion_stylist": {
+      "office": "production-office",
+      "description": "Plan wardrobe and styling for stills and moving image.",
+      "path": "skills/aco-production-office/references/agents/fashion-stylist.md",
+      "skill_path": "aco-production-office/references/agents/fashion-stylist.md",
+      "native_name": "aco_fashion_stylist",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-fashion-stylist.toml"
+    },
+    "film_director": {
+      "office": "production-office",
+      "description": "Translate approved concepts into performance, blocking and cinematic treatment.",
+      "path": "skills/aco-production-office/references/agents/film-director.md",
+      "skill_path": "aco-production-office/references/agents/film-director.md",
+      "native_name": "aco_film_director",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-film-director.toml"
+    },
+    "first_assistant_director": {
+      "office": "production-office",
+      "description": "Plan safe, feasible shooting days.",
+      "path": "skills/aco-production-office/references/agents/first-assistant-director.md",
+      "skill_path": "aco-production-office/references/agents/first-assistant-director.md",
+      "native_name": "aco_first_assistant_director",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-first-assistant-director.toml"
+    },
+    "generative_media_director": {
+      "office": "production-office",
+      "description": "Direct generative image/video production inside approved intent.",
+      "path": "skills/aco-production-office/references/agents/generative-media-director.md",
+      "skill_path": "aco-production-office/references/agents/generative-media-director.md",
+      "native_name": "aco_generative_media_director",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-generative-media-director.toml"
+    },
+    "generative_model_training_engineer": {
+      "office": "production-office",
+      "description": "Plan and implement rights-aware fine-tuning and LoRA experiments.",
+      "path": "skills/aco-production-office/references/agents/generative-model-training-engineer.md",
+      "skill_path": "aco-production-office/references/agents/generative-model-training-engineer.md",
+      "native_name": "aco_generative_model_training_engineer",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-generative-model-training-engineer.toml"
+    },
+    "line_producer": {
+      "office": "production-office",
+      "description": "Cost and organize day-to-day production delivery.",
+      "path": "skills/aco-production-office/references/agents/line-producer.md",
+      "skill_path": "aco-production-office/references/agents/line-producer.md",
+      "native_name": "aco_line_producer",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-line-producer.toml"
+    },
+    "localization_subtitles_editor": {
+      "office": "production-office",
+      "description": "Prepare translated, timed and accessible text/audio versions.",
+      "path": "skills/aco-production-office/references/agents/localization-subtitles-editor.md",
+      "skill_path": "aco-production-office/references/agents/localization-subtitles-editor.md",
+      "native_name": "aco_localization_subtitles_editor",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-localization-subtitles-editor.toml"
+    },
+    "media_data_wrangler": {
+      "office": "production-office",
+      "description": "Protect media through ingest and backup verification.",
+      "path": "skills/aco-production-office/references/agents/media-data-wrangler.md",
+      "skill_path": "aco-production-office/references/agents/media-data-wrangler.md",
+      "native_name": "aco_media_data_wrangler",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-media-data-wrangler.toml"
+    },
+    "media_delivery_qc": {
+      "office": "production-office",
+      "description": "Verify media deliveries against explicit specifications.",
+      "path": "skills/aco-production-office/references/agents/media-delivery-qc.md",
+      "skill_path": "aco-production-office/references/agents/media-delivery-qc.md",
+      "native_name": "aco_media_delivery_qc",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-media-delivery-qc.toml"
+    },
+    "media_pipeline_engineer": {
+      "office": "production-office",
+      "description": "Automate secure DCC/media handoffs and reproducible production.",
+      "path": "skills/aco-production-office/references/agents/media-pipeline-engineer.md",
+      "skill_path": "aco-production-office/references/agents/media-pipeline-engineer.md",
+      "native_name": "aco_media_pipeline_engineer",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-media-pipeline-engineer.toml"
+    },
+    "motion_designer": {
+      "office": "production-office",
+      "description": "Build motion graphics from an approved system.",
+      "path": "skills/aco-production-office/references/agents/motion-designer.md",
+      "skill_path": "aco-production-office/references/agents/motion-designer.md",
+      "native_name": "aco_motion_designer",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-motion-designer.toml"
+    },
+    "music_supervisor": {
+      "office": "production-office",
+      "description": "Research music and coordinate rights/creative fit.",
+      "path": "skills/aco-production-office/references/agents/music-supervisor.md",
+      "skill_path": "aco-production-office/references/agents/music-supervisor.md",
+      "native_name": "aco_music_supervisor",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-music-supervisor.toml"
+    },
+    "online_editor_conform": {
+      "office": "production-office",
+      "description": "Rebuild locked edits at final source quality.",
+      "path": "skills/aco-production-office/references/agents/online-editor-conform.md",
+      "skill_path": "aco-production-office/references/agents/online-editor-conform.md",
+      "native_name": "aco_online_editor_conform",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-online-editor-conform.toml"
+    },
+    "photo_retouch_artist": {
+      "office": "production-office",
+      "description": "Retouch photographic assets non-destructively.",
+      "path": "skills/aco-production-office/references/agents/photo-retouch-artist.md",
+      "skill_path": "aco-production-office/references/agents/photo-retouch-artist.md",
+      "native_name": "aco_photo_retouch_artist",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-photo-retouch-artist.toml"
+    },
+    "product_retouch_artist": {
+      "office": "production-office",
+      "description": "Produce accurate product and still-life finishing.",
+      "path": "skills/aco-production-office/references/agents/product-retouch-artist.md",
+      "skill_path": "aco-production-office/references/agents/product-retouch-artist.md",
+      "native_name": "aco_product_retouch_artist",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-product-retouch-artist.toml"
+    },
+    "production_orchestrator": {
+      "office": "production-office",
+      "description": "Route production & postproduction tasks through a small accountable team with early clarification and verified outputs.",
+      "path": "skills/aco-production-office/references/agents/production-orchestrator.md",
+      "skill_path": "aco-production-office/references/agents/production-orchestrator.md",
+      "native_name": "aco_production_orchestrator",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-production-orchestrator.toml"
+    },
+    "prop_stylist": {
+      "office": "production-office",
+      "description": "Prepare objects, surfaces and still-life arrangements.",
+      "path": "skills/aco-production-office/references/agents/prop-stylist.md",
+      "skill_path": "aco-production-office/references/agents/prop-stylist.md",
+      "native_name": "aco_prop_stylist",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-prop-stylist.toml"
+    },
+    "re_recording_mixer": {
+      "office": "production-office",
+      "description": "Mix dialogue, music and effects for a specified delivery.",
+      "path": "skills/aco-production-office/references/agents/re-recording-mixer.md",
+      "skill_path": "aco-production-office/references/agents/re-recording-mixer.md",
+      "native_name": "aco_re_recording_mixer",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-re-recording-mixer.toml"
+    },
+    "set_designer": {
+      "office": "production-office",
+      "description": "Design physical sets and spatial production environments.",
+      "path": "skills/aco-production-office/references/agents/set-designer.md",
+      "skill_path": "aco-production-office/references/agents/set-designer.md",
+      "native_name": "aco_set_designer",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-set-designer.toml"
+    },
+    "sound_designer": {
+      "office": "production-office",
+      "description": "Design sound for moving image, installation and media.",
+      "path": "skills/aco-production-office/references/agents/sound-designer.md",
+      "skill_path": "aco-production-office/references/agents/sound-designer.md",
+      "native_name": "aco_sound_designer",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-sound-designer.toml"
+    },
+    "three_d_generalist": {
+      "office": "production-office",
+      "description": "Build general-purpose CG assets and scenes.",
+      "path": "skills/aco-production-office/references/agents/three-d-generalist.md",
+      "skill_path": "aco-production-office/references/agents/three-d-generalist.md",
+      "native_name": "aco_three_d_generalist",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-three-d-generalist.toml"
+    },
+    "video_editor": {
+      "office": "production-office",
+      "description": "Edit narrative and campaign video from supplied footage.",
+      "path": "skills/aco-production-office/references/agents/video-editor.md",
+      "skill_path": "aco-production-office/references/agents/video-editor.md",
+      "native_name": "aco_video_editor",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-video-editor.toml"
+    },
+    "visual_prompt_engineer": {
+      "office": "production-office",
+      "description": "Engineer testable prompts for image, video and multimodal production.",
+      "path": "skills/aco-production-office/references/agents/visual-prompt-engineer.md",
+      "skill_path": "aco-production-office/references/agents/visual-prompt-engineer.md",
+      "native_name": "aco_visual_prompt_engineer",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-visual-prompt-engineer.toml"
+    },
+    "acquisitions_editor": {
+      "office": "publishing-office",
+      "description": "Assess and develop prospective titles and commissions.",
+      "path": "skills/aco-publishing-office/references/agents/acquisitions-editor.md",
+      "skill_path": "aco-publishing-office/references/agents/acquisitions-editor.md",
+      "native_name": "aco_acquisitions_editor",
+      "codex_path": "extras/codex-custom-agents/publishing-office/aco-acquisitions-editor.toml"
+    },
+    "audience_development_editor": {
+      "office": "publishing-office",
+      "description": "Connect editorial work to readers without corrupting it.",
+      "path": "skills/aco-publishing-office/references/agents/audience-development-editor.md",
+      "skill_path": "aco-publishing-office/references/agents/audience-development-editor.md",
+      "native_name": "aco_audience_development_editor",
+      "codex_path": "extras/codex-custom-agents/publishing-office/aco-audience-development-editor.toml"
+    },
+    "audiobook_producer": {
+      "office": "publishing-office",
+      "description": "Plan audiobook casting, recording, edit and distribution.",
+      "path": "skills/aco-publishing-office/references/agents/audiobook-producer.md",
+      "skill_path": "aco-publishing-office/references/agents/audiobook-producer.md",
+      "native_name": "aco_audiobook_producer",
+      "codex_path": "extras/codex-custom-agents/publishing-office/aco-audiobook-producer.toml"
+    },
+    "author_relations_manager": {
+      "office": "publishing-office",
+      "description": "Coordinate authors and contributors professionally.",
+      "path": "skills/aco-publishing-office/references/agents/author-relations-manager.md",
+      "skill_path": "aco-publishing-office/references/agents/author-relations-manager.md",
+      "native_name": "aco_author_relations_manager",
+      "codex_path": "extras/codex-custom-agents/publishing-office/aco-author-relations-manager.toml"
+    },
+    "book_distribution_manager": {
+      "office": "publishing-office",
+      "description": "Plan book sales channels, orders and returns.",
+      "path": "skills/aco-publishing-office/references/agents/book-distribution-manager.md",
+      "skill_path": "aco-publishing-office/references/agents/book-distribution-manager.md",
+      "native_name": "aco_book_distribution_manager",
+      "codex_path": "extras/codex-custom-agents/publishing-office/aco-book-distribution-manager.toml"
+    },
+    "branded_content_editor": {
+      "office": "publishing-office",
+      "description": "Produce clearly identified sponsored editorial formats.",
+      "path": "skills/aco-publishing-office/references/agents/branded-content-editor.md",
+      "skill_path": "aco-publishing-office/references/agents/branded-content-editor.md",
+      "native_name": "aco_branded_content_editor",
+      "codex_path": "extras/codex-custom-agents/publishing-office/aco-branded-content-editor.toml"
+    },
+    "circulation_subscription_manager": {
+      "office": "publishing-office",
+      "description": "Manage publication subscriptions and membership operations.",
+      "path": "skills/aco-publishing-office/references/agents/circulation-subscription-manager.md",
+      "skill_path": "aco-publishing-office/references/agents/circulation-subscription-manager.md",
+      "native_name": "aco_circulation_subscription_manager",
+      "codex_path": "extras/codex-custom-agents/publishing-office/aco-circulation-subscription-manager.toml"
+    },
+    "copy_editor": {
+      "office": "publishing-office",
+      "description": "Perform consistent sentence-level and house-style editing.",
+      "path": "skills/aco-publishing-office/references/agents/copy-editor.md",
+      "skill_path": "aco-publishing-office/references/agents/copy-editor.md",
+      "native_name": "aco_copy_editor",
+      "codex_path": "extras/codex-custom-agents/publishing-office/aco-copy-editor.toml"
+    },
+    "developmental_editor": {
+      "office": "publishing-office",
+      "description": "Improve manuscript argument, structure and reader experience.",
+      "path": "skills/aco-publishing-office/references/agents/developmental-editor.md",
+      "skill_path": "aco-publishing-office/references/agents/developmental-editor.md",
+      "native_name": "aco_developmental_editor",
+      "codex_path": "extras/codex-custom-agents/publishing-office/aco-developmental-editor.toml"
+    },
+    "ebook_accessibility_engineer": {
+      "office": "publishing-office",
+      "description": "Build and validate accessible digital publications.",
+      "path": "skills/aco-publishing-office/references/agents/ebook-accessibility-engineer.md",
+      "skill_path": "aco-publishing-office/references/agents/ebook-accessibility-engineer.md",
+      "native_name": "aco_ebook_accessibility_engineer",
+      "codex_path": "extras/codex-custom-agents/publishing-office/aco-ebook-accessibility-engineer.toml"
+    },
+    "editorial_designer": {
+      "office": "publishing-office",
+      "description": "Design books, magazines and publication systems.",
+      "path": "skills/aco-publishing-office/references/agents/editorial-designer.md",
+      "skill_path": "aco-publishing-office/references/agents/editorial-designer.md",
+      "native_name": "aco_editorial_designer",
+      "codex_path": "extras/codex-custom-agents/publishing-office/aco-editorial-designer.toml"
+    },
+    "journalist_reporter": {
+      "office": "publishing-office",
+      "description": "Research and draft sourced reporting.",
+      "path": "skills/aco-publishing-office/references/agents/journalist-reporter.md",
+      "skill_path": "aco-publishing-office/references/agents/journalist-reporter.md",
+      "native_name": "aco_journalist_reporter",
+      "codex_path": "extras/codex-custom-agents/publishing-office/aco-journalist-reporter.toml"
+    },
+    "literary_translator": {
+      "office": "publishing-office",
+      "description": "Translate publication text with voice and terminology control.",
+      "path": "skills/aco-publishing-office/references/agents/literary-translator.md",
+      "skill_path": "aco-publishing-office/references/agents/literary-translator.md",
+      "native_name": "aco_literary_translator",
+      "codex_path": "extras/codex-custom-agents/publishing-office/aco-literary-translator.toml"
+    },
+    "managing_editor": {
+      "office": "publishing-office",
+      "description": "Manage an editorial list, issue or publication pipeline.",
+      "path": "skills/aco-publishing-office/references/agents/managing-editor.md",
+      "skill_path": "aco-publishing-office/references/agents/managing-editor.md",
+      "native_name": "aco_managing_editor",
+      "codex_path": "extras/codex-custom-agents/publishing-office/aco-managing-editor.toml"
+    },
+    "media_ad_operations_manager": {
+      "office": "publishing-office",
+      "description": "Coordinate advertising inventory and delivery for a media publisher.",
+      "path": "skills/aco-publishing-office/references/agents/media-ad-operations-manager.md",
+      "skill_path": "aco-publishing-office/references/agents/media-ad-operations-manager.md",
+      "native_name": "aco_media_ad_operations_manager",
+      "codex_path": "extras/codex-custom-agents/publishing-office/aco-media-ad-operations-manager.toml"
+    },
+    "newsroom_editor": {
+      "office": "publishing-office",
+      "description": "Manage reported coverage, verification and corrections.",
+      "path": "skills/aco-publishing-office/references/agents/newsroom-editor.md",
+      "skill_path": "aco-publishing-office/references/agents/newsroom-editor.md",
+      "native_name": "aco_newsroom_editor",
+      "codex_path": "extras/codex-custom-agents/publishing-office/aco-newsroom-editor.toml"
+    },
+    "podcast_audio_producer": {
+      "office": "publishing-office",
+      "description": "Produce podcast episodes and audio series.",
+      "path": "skills/aco-publishing-office/references/agents/podcast-audio-producer.md",
+      "skill_path": "aco-publishing-office/references/agents/podcast-audio-producer.md",
+      "native_name": "aco_podcast_audio_producer",
+      "codex_path": "extras/codex-custom-agents/publishing-office/aco-podcast-audio-producer.toml"
+    },
+    "prepress_specialist": {
+      "office": "publishing-office",
+      "description": "Prepare print-ready files and proof checks.",
+      "path": "skills/aco-publishing-office/references/agents/prepress-specialist.md",
+      "skill_path": "aco-publishing-office/references/agents/prepress-specialist.md",
+      "native_name": "aco_prepress_specialist",
+      "codex_path": "extras/codex-custom-agents/publishing-office/aco-prepress-specialist.toml"
+    },
+    "print_production_manager": {
+      "office": "publishing-office",
+      "description": "Coordinate publication manufacturing and physical distribution preparation.",
+      "path": "skills/aco-publishing-office/references/agents/print-production-manager.md",
+      "skill_path": "aco-publishing-office/references/agents/print-production-manager.md",
+      "native_name": "aco_print_production_manager",
+      "codex_path": "extras/codex-custom-agents/publishing-office/aco-print-production-manager.toml"
+    },
+    "proofreader": {
+      "office": "publishing-office",
+      "description": "Check final proofs against approved text and production requirements.",
+      "path": "skills/aco-publishing-office/references/agents/proofreader.md",
+      "skill_path": "aco-publishing-office/references/agents/proofreader.md",
+      "native_name": "aco_proofreader",
+      "codex_path": "extras/codex-custom-agents/publishing-office/aco-proofreader.toml"
+    },
+    "publishing_media_orchestrator": {
+      "office": "publishing-office",
+      "description": "Route publishing & media tasks through a small accountable team with early clarification and verified outputs.",
+      "path": "skills/aco-publishing-office/references/agents/publishing-media-orchestrator.md",
+      "skill_path": "aco-publishing-office/references/agents/publishing-media-orchestrator.md",
+      "native_name": "aco_publishing_media_orchestrator",
+      "codex_path": "extras/codex-custom-agents/publishing-office/aco-publishing-media-orchestrator.toml"
+    },
+    "publishing_metadata_specialist": {
+      "office": "publishing-office",
+      "description": "Prepare identifiers and discoverability metadata for publications.",
+      "path": "skills/aco-publishing-office/references/agents/publishing-metadata-specialist.md",
+      "skill_path": "aco-publishing-office/references/agents/publishing-metadata-specialist.md",
+      "native_name": "aco_publishing_metadata_specialist",
+      "codex_path": "extras/codex-custom-agents/publishing-office/aco-publishing-metadata-specialist.toml"
+    },
+    "publishing_rights_permissions_manager": {
+      "office": "publishing-office",
+      "description": "Track text, image, translation and format permissions.",
+      "path": "skills/aco-publishing-office/references/agents/publishing-rights-permissions-manager.md",
+      "skill_path": "aco-publishing-office/references/agents/publishing-rights-permissions-manager.md",
+      "native_name": "aco_publishing_rights_permissions_manager",
+      "codex_path": "extras/codex-custom-agents/publishing-office/aco-publishing-rights-permissions-manager.toml"
+    },
+    "typesetter": {
+      "office": "publishing-office",
+      "description": "Apply approved publication design consistently.",
+      "path": "skills/aco-publishing-office/references/agents/typesetter.md",
+      "skill_path": "aco-publishing-office/references/agents/typesetter.md",
+      "native_name": "aco_typesetter",
+      "codex_path": "extras/codex-custom-agents/publishing-office/aco-typesetter.toml"
     },
     "application_manager": {
       "office": "recruitment-office",

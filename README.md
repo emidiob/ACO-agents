@@ -2,15 +2,21 @@
 
 **A generic skill library for creative and professional work, with private context and auditable work history.**
 
-Version **0.3.0** · 9 entry-point skills · 246 role definitions · MIT license.
+Version **0.4.2** · 16 entry-point skills · 349 role definitions · **proprietary source-available license; redistribution prohibited**.
 
 ACO is **not a ChatGPT plugin** and is not submitted to an app directory. ChatGPT can read its Markdown instructions through an available authorized repository/file tool. Codex can also install the skills and optional native agent profiles locally. The library does not include a model, an always-on agent service, account credentials or anyone's private knowledge.
 
+**Upgrading from v0.3.0?** Read [Upgrade guide](docs/UPGRADE-0.4.0.md). This release adds 103 roles and seven office entry points, without changing the private registry schema or requiring a plugin.
+
 **New here?** Read [Start here — English](docs/START-HERE.md) or [Inizia qui — Italiano](START-HERE-IT.md).
+
+### 👥 Agent directory
+
+ACO includes **349 specialist role definitions**. Browse the visual [Agent Catalogue](docs/AGENT-CATALOG.md) for the icon-based overview, or [All Roles](docs/ALL-ROLES.md) for descriptions and implementation paths. You normally do **not** choose agents manually: the Concierge routes the task to the smallest useful team.
 
 ## Contents of this manual
 
-[1. What it does](#1-what-you-can-use-aco-for) · [2. How it works](#2-how-it-works) · [3. ChatGPT setup](#3-use-in-chatgpt-no-local-installation-required) · [4. Codex setup](#4-use-in-codex-or-vs-code) · [5. Private knowledge](#5-private-knowledge-and-first-setup) · [6. Multiple businesses and clients](#6-multiple-organizations-activities-clients-and-brands) · [7. Everyday use](#7-everyday-use) · [8. History](#8-history-and-handoffs) · [9. Local tools](#9-executable-local-tools) · [10. Updates](#10-update-uninstall-and-recover) · [11. Old repository migration](#11-replace-the-old-plugin-repository-safely) · [12. Limits](#12-what-is-and-is-not-automatic) · [13. Troubleshooting](#13-troubleshooting) · [14. Files](#14-repository-layout) · [15. Testing](#15-testing-and-contributing).
+[1. What it does](#1-what-you-can-use-aco-for) · [2. How it works](#2-how-it-works) · [3. ChatGPT setup](#3-use-in-chatgpt-no-local-installation-required) · [4. Codex setup](#4-use-in-codex-or-vs-code) · [5. Private knowledge](#5-private-knowledge-and-first-setup) · [6. Multiple businesses and clients](#6-multiple-organizations-activities-clients-and-brands) · [7. Everyday use](#7-everyday-use) · [8. History](#8-history-and-handoffs) · [9. Local tools](#9-executable-local-tools) · [10. Updates](#10-update-uninstall-and-recover) · [11. Old repository migration](#11-replace-the-old-plugin-repository-safely) · [12. Limits](#12-what-is-and-is-not-automatic) · [13. Troubleshooting](#13-troubleshooting) · [14. Files](#14-repository-layout) · [15. Testing](#15-testing-and-contributing) · [16. Short actions](#16-short-actions-early-clarification) · [17. Secretariat](#17-secretariat-email-whatsapp-and-calls) · [18. Production/publishing](#18-production-company-and-publishingmedia-work) · [19. Offline checks](#19-optional-offline-checks-added-in-v040) · [20. Restricted data](#20-restricted-people-and-financial-data).
 
 ## 1. What you can use ACO for
 
@@ -22,6 +28,13 @@ ACO is **not a ChatGPT plugin** and is not submitted to an app directory. ChatGP
 | Product | Websites, apps, UX, frontend/backend, AI features, testing and release preparation | Requirements, prototype, code, test evidence, bug diagnosis, documentation |
 | Legal | First-pass legal research, contracts, rights and matter organization | Clause review, draft language, rights matrix, questions for qualified counsel |
 | Recruitment | Candidate-side job search, CV/portfolio, applications, interviews and offer preparation | Verified shortlist, tailored materials, interview preparation, application history |
+| Finance | Budgets, project pricing/margins, cash flow, invoices, bookkeeping coordination, cost controls and royalties | Costed offer, cash forecast, reconciliation and adviser packet |
+| Commercial | Offers, qualified leads, pipeline, pitches/tenders, renewals and revenue operations | Sales plan, qualified brief, proposal and retention plan |
+| People & HR | Employer-side staffing, sourcing, hiring coordination, interviews, onboarding and restricted people operations | Job brief, evidence packets, human review process and onboarding checklist |
+| Delivery | Project/programme coordination, risk, resourcing, changes and acceptance | Workback plan, decision board, recovery plan and handover |
+| Administration | Secretariat, inbox, appointments, records, travel and authorized email/WhatsApp/calls | Priority brief, copy-ready messages, meeting plan or actual tool receipt |
+| Production & Post | Film/photo/CG, video editing, conform, grading, retouch, sound, generative media and ComfyUI | Production/finish plan, actual files when tools exist, dependency manifest and QC |
+| Publishing & Media | Books, magazines, newsrooms, newsletters, podcasts/audiobooks, rights, metadata, distribution, subscriptions and ads | Editorial package, publication files, rights/corrections ledger and distribution plan |
 
 The Concierge routes natural-language requests. Context Setup initializes/extends private records. Context Steward records work, decisions, open loops and handoffs. You rarely need to name a specialist.
 
@@ -40,7 +53,7 @@ Your request
 
 **Expertise is public and generic. Context is private and changeable.** A company changing direction updates its context, not 33 agents. A different user can use the same library with their own files and permissions.
 
-There are 246 role definitions, not 246 constantly running agents. Only a few are selected for a task. Native Codex subagents may run independently when supported and enabled; ordinary ChatGPT role-based analysis does not become a parallel agent system merely by naming roles. “Junior” describes scope, not a lower price or a different configured model.
+There are 349 role definitions, not 349 constantly running agents. Only a few are selected for a task. Native Codex subagents may run independently when supported and enabled; ordinary ChatGPT role-based analysis does not become a parallel agent system merely by naming roles. “Junior” describes scope, not a lower price or a different configured model.
 
 The user retains authority. On an artwork, technical or marketing convenience must not silently redefine artistic intent.
 
@@ -62,7 +75,7 @@ In a shared ChatGPT project, check member access before adding private client co
 
 ### Mac: easiest path
 
-Download/extract the release to a normal folder. Open **Install ACO.command**. It checks the Python environment and asks whether to install the nine skills and, optionally, all native agents. The terminal may require macOS approval to run a downloaded script. Do not disable system security globally; inspect the script and follow your organization's policy.
+Download/extract the release to a normal folder. Open **Install ACO.command**. It checks the Python environment and asks whether to install the 16 skills and, optionally, all native agents. The terminal may require macOS approval to run a downloaded script. Do not disable system security globally; inspect the script and follow your organization's policy.
 
 **Prerequisite:** Python 3.11 or newer. Run `python3 --version`. If missing, install a current Python from [python.org](https://www.python.org/downloads/) or your approved package manager. Native local tools support macOS/Linux; use WSL on Windows. No Python is required merely to read the skills in ChatGPT.
 
@@ -82,7 +95,7 @@ The last command is a **dry run**. To install:
 python3 scripts/aco_cli.py install --apply
 ```
 
-This installs nine skills, **without** all 246 optional native agents. For selected native agents:
+This installs 16 skills, **without** all 349 optional native agents. For selected native agents:
 
 ```bash
 python3 scripts/aco_cli.py install --offices artist-office agency-office product-office --apply
@@ -277,7 +290,7 @@ The user still authorizes accounts, selects the initial root, supplies unknowabl
 ```
 CHATGPT.md / AGENTS.md       entry points
 ACO-INDEX.md / catalog.json exact role routing and dependencies
-skills/                     9 skills, canonical role methods and protocols
+skills/                     16 skills, canonical role methods and protocols
 assets/context-templates/   blank generic templates
 extras/codex-custom-agents/ generated prefixed native profiles
 scripts/                    installer, migration, local records, optional bridge, validation
@@ -309,4 +322,70 @@ The manifest detects accidental changes; it is not a signed proof of publisher i
 
 See [validation report and limits](docs/VALIDATION.md), [security model](SECURITY.md), [architecture](docs/ARCHITECTURE.md) and [dated official documentation](docs/SOURCES.md).
 
-ACO is distributed under the existing **MIT License**, which permits reuse and redistribution under its terms. No private knowledge is distributed here. The number of roles is not a professional-quality certification or a guarantee that every host/integration has been tested.
+ACO v0.4.2 is distributed under the **ACO Proprietary Source-Available License v1.0**. Personal use, internal organizational use, private modifications and commercial use of outputs are permitted. Redistribution, public forks, resale, sublicensing and embedding substantial portions of ACO in a product or service distributed to third parties are prohibited without prior written permission. See [LICENSE](LICENSE). Earlier releases lawfully distributed under another license remain governed by the license that accompanied those releases.
+
+No private knowledge is distributed here. The number of roles is not a professional-quality certification or a guarantee that every host/integration has been tested.
+
+
+## 16. Short actions, early clarification
+
+ACO now defaults to **ACTION mode**. It reads already-supplied authorized facts, asks up to three essential missing questions together at the first stage, then acts. It should not confidently choose a client, recipient, budget or media delivery specification. It should not ask a question twice.
+
+For nonblocking uncertainty it states a reversible assumption and continues. For decisive uncertainty it asks before producing an expensive, misleading or irreversible result. A simple request does not trigger company onboarding or a committee of directors.
+
+Typical answer: **result → actual status → essential blocker, if any**. The commissioned output can still be a full strategy, codebase or manuscript. Ask for **EXPLAIN** when you want teaching or detailed rationale; **DECISION** for concise options and tradeoffs.
+
+Examples:
+
+> ACO, prepare this email in English. Draft only; give me only the subject and message.
+
+> ACO, build this ComfyUI workflow. Ask the essential environment questions first, then give me the graph and test instructions.
+
+> ACO, EXPLAIN: help me understand the financial model behind this publication.
+
+See the [interaction protocol](skills/aco-office-concierge/references/protocols/INTERACTION.md).
+
+## 17. Secretariat, email, WhatsApp and calls
+
+The Administration Office includes an executive assistant, correspondence manager, meeting/calendar coordinator, records controller and communications operator. They use **actual available authorized connectors/MCPs**, not a hard-coded imaginary tool.
+
+| Task | What must really be available | Otherwise |
+|---|---|---|
+| Email | Correct account, thread/contact resolution and an actual send-email action | To/subject/body/attachment notes, **NOT SENT** |
+| WhatsApp | User-connected MCP/provider with the required text/media action and a verified recipient/group | Copy-ready WhatsApp text, **NOT SENT** |
+| Phone | Actual outbound calling, verified number, approved purpose/disclosure/language/limits | Opening, questions, boundaries and voicemail script, **NOT CALLED** |
+| Calendar | Availability read and the required event-write action | Invitation/date/timezone/agenda draft, **NOT BOOKED** |
+| Public content | Authorized CMS/social/publishing write and approved final content | Publish-ready text/files, **NOT PUBLISHED** |
+
+An installed app may be read-only. A WhatsApp messenger does not imply WhatsApp voice calls. A phone app may expose call history but no outbound calls. A synthesized voice is not a live conversation. A sent message is not necessarily delivered or read. Uncertain timeouts are reconciled before retrying to avoid duplicates.
+
+ACO never gains account access by being downloaded. It does not include WhatsApp credentials or a phone bridge, and it does not silently connect third-party services. See [integrations and fallback](docs/INTEGRATIONS.md) and [communications policy](skills/aco-office-concierge/references/protocols/COMMUNICATIONS.md).
+
+## 18. Production company and publishing/media work
+
+The production team reuses existing executive, integrated, film and photography producers. It adds hands-on methods for direction/camera/set/styling planning, ingest, editing, conform, color, retouch, compositing, CG, audio, localization and QC. Generative specialists include visual prompt engineering, ComfyUI workflows and custom nodes, model-training experiments and pipeline engineering.
+
+These roles may plan and instruct, generate files/code, or operate real applications **only when the environment provides the needed tools**. They are not bundled Photoshop, DaVinci Resolve, ComfyUI, a renderer, a recording studio or a physical crew. Software/model/font/music licenses and actual production services are not included.
+
+The Publishing & Media Office covers acquisitions, development, copy editing, proofing, translation, design/typesetting, prepress, EPUB accessibility, printing, rights, authors, metadata, distribution, subscriptions, reporting, podcasts/audiobooks and advertising operations. Editorial, sponsored content and advertising remain distinct. No fictional sources, interviews or rights clearance.
+
+Read [production playbooks](docs/PRODUCTION-PLAYBOOKS.md), [publishing playbooks](docs/PUBLISHING-PLAYBOOKS.md), the [office map](docs/OFFICE-MAP.md) and [24 task recipes](docs/ACTIVITY-RECIPES.md).
+
+## 19. Optional offline checks added in v0.4.1
+
+These helpers run locally with the same Python prerequisite. They perform **no external sending, calling, payment or rendering**:
+
+```bash
+python3 scripts/aco_cli.py intake --workflow book --facts examples/intake-book.json
+python3 scripts/aco_cli.py action-plan --request examples/action-whatsapp-draft.json
+python3 scripts/aco_cli.py budget-check --input examples/project-estimate.json
+python3 scripts/aco_cli.py comfy-preflight --workflow examples/comfy-api-synthetic.json --object-info examples/comfy-object-info-synthetic.json
+```
+
+The ComfyUI examples are **synthetic test fixtures, not runnable ComfyUI nodes**. Use a real API graph and node-schema snapshot for a real preflight. Passing static checks is not proof of a successful render. A budget result is arithmetic on supplied numbers, not validated tax treatment or a promise of profit. An action-plan pass is not authorization: the host must verify real account/permissions/consent and call the connector itself.
+
+## 20. Restricted people and financial data
+
+Hiring, payroll, employee relations and financial records do not belong in broad public/shared company context. Use separately restricted provider locations or exact approved documents. Ordinary organization/client/project IDs organize work; they are **not access controls**. Do not export entire personnel folders in a general project handoff.
+
+Human owners decide hiring/rejection, salary changes, disciplinary action, payment and legal commitments. ACO supports evidence preparation and administration. Do not infer protected traits, health or personality from names, images or unrelated correspondence.

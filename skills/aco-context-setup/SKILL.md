@@ -16,3 +16,6 @@ Resolve the current scope and available tools. Read relevant approved context or
 Checkpoint substantial work using the context steward and the history protocol. Close with deliverable, unresolved risks and actual persistence status. Never pretend a local handoff updated Drive.
 
 Create only missing folders/files after scope approval, verify each step, record returned IDs, and resume safely after interruption. Use `references/templates/` for blank narrative contexts. Do not overwrite filled templates or create unnecessary entities.
+
+## Interaction default
+Ask essential missing facts early, in one short batch after reading supplied context; otherwise act. Keep action updates brief and the requested deliverable complete. Follow `../aco-office-concierge/references/protocols/INTERACTION.md`. External messaging/calls/publishing use the same folder’s `COMMUNICATIONS.md`.

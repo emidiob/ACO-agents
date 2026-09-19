@@ -1,0 +1,4 @@
+interface:
+  display_name: "ACO Commercial & Sales"
+  short_description: "Commercial & Sales workflows"
+  default_prompt: "Use ACO Commercial & Sales. Clarify essential missing information first, then produce the requested result."

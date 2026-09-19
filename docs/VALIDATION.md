@@ -1,35 +1,40 @@
-# ACO v0.3.0 — validation record
+# ACO v0.4.2 — validation record
 
-This document records executed checks, not a guarantee that every agent behaves correctly in every AI host. Release candidate checked on 2026-09-19.
+Checked 2026-09-19 with Python 3.13.5 on Linux.
 
-**Executed result: 86 automated tests passed** under Python 3.13.5 on Linux, plus an end-to-end disposable Git migration of the actual v0.2.1 package, installation/read-back of the native skills, an initialized private store from the installed runtime, relative documentation link checks and Bash syntax checks. The migrated repository retained its Git history and an untracked sentinel file. No remote push or Google Drive write was performed by these tests.
+**166 automated tests passed.** This is local implementation evidence, not certification of agent expertise or live application integrations.
 
-## What is tested locally
+## Executed checks
 
-- All 246 canonical roles have one Markdown source and matching generated native TOML.
-- All nine skills have valid entry metadata; referenced role dependencies and generated files resolve.
-- Release SHA-256 fingerprints, no active old plugin machinery, basic secret/private-path scanning.
-- Repeatable private local initialization, stable entity keys and parent relationships, multi-organization isolation, project/client/brand consistency, session-specific scope.
-- Immutable event IDs and payloads, approval/evidence requirements, context proposal stale-write rejection, closed loops, interruption recovery.
-- Safe install/update/uninstall, collisions and local edits, backups, failed-copy rollback, inventory/read-back checks.
-- Git migration with known-file fingerprints, backup branches, dirty-tree rejection, untracked/private/unrelated file preservation.
-- Immutable Drive event bridge using a simulated provider: retry/lost response, duplicate detection, content and parent verification, read-back receipts and pending states.
+- 349 distinct canonical Markdown role definitions and 349 generated Codex TOMLs; original 246 role keys retained.
+- 16 skill entry points and 24 workflow recipes; role paths, leads and dependency references resolve.
+- Short-action/early-question contract present in every canonical and native role.
+- Existing local memory, entity isolation, event, approval-reference, installer rollback and simulated Drive bridge tests retained.
+- Early intake questions do not repeat supplied facts; no-work output is explicit.
+- Action-planning tests distinguish missing/read-only/denied tools, exact sending account/target/action/payload approval, drafts, phone-vs-message capabilities and reconciliation of uncertain outcomes. The helper does not send, call or grant permissions.
+- Budget checks use Decimal arithmetic, distinguish margin and markup, reject duplicate cost lines/mixed currency and do not invent tax rates.
+- ComfyUI preflight tests inspect a synthetic API graph against a synthetic node-schema snapshot, including missing nodes/inputs, link bounds/types, cycles and literal validation. No real ComfyUI graph was executed.
+- Generated parity, release hashes, relative documentation links and limited private-path/secret scans pass.
 
-## Integration boundaries
+## Upgrade integration actually exercised
 
-The automated suite runs in the supplied Linux container. macOS and Python 3.11/3.13 runs are configured in CI but are not claimed as completed until GitHub actually executes them. A beginner Mac launcher is shell-syntax checked, not tested on the user's Mac.
+An extracted copy of the supplied v0.3.0 archive was initialized as a disposable Git repository. Its original 246 native agents were installed in a temporary home. The new migration ran in preview and apply modes, created a backup/work branch, preserved the Git commit and an untracked sentinel file, and left the separate private knowledge registry unchanged.
 
-No live Codex model session, ChatGPT Project onboarding, authenticated Google OAuth upload, real Drive mutation or automatic multi-agent quality benchmark is certified by these unit tests. A native role file being valid TOML does not guarantee that a particular installed host version exposes the subagent capability.
+Updating the managed installation produced **349 native ACO profiles and 16 skills**, preserved an unrelated native profile, and retained the original private registry data/IDs. Intake, action-plan, budget-check and static ComfyUI preflight ran successfully from the **installed minimal runtime**, not just the source folder.
 
-The Drive event bridge is **not** a full bidirectional context sync service. It transfers immutable events after explicit configuration and execution. The connected-tool procedures handle mutable Drive knowledge; they must report actual available permissions and individual write results. No daemon or scheduler is bundled.
+No remote push, email, WhatsApp, voice call, bank action, real rendering, publishing or Drive write was performed by this integration test.
 
-Evidence and approval fields are checked for structure/presence. The host and user must still verify that their contents are genuine. Scoping is organizational/application logic, not OS or Google Drive access control.
+## Not tested / important boundaries
 
-The basic secrets scan is deliberately limited; it is not an exhaustive DLP/security audit of all historical Git commits or user files.
+No live Codex model session, ChatGPT project onboarding, macOS host run, authenticated messaging/calling integration, real Photoshop/Resolve/ComfyUI/EPUB production workflow or full professional-output quality benchmark is claimed. CI is configured for Linux/macOS and Python 3.11/3.13; those remote jobs are not passed until GitHub actually runs them.
+
+Host capabilities and user/provider permission remain authoritative. Self-reported action-plan authorization/capability fields are checked for structure and binding only, not cryptographically authenticated. Native scope and folder names are not a security boundary for HR/client/financial data.
+
+The optional Drive event bridge remains an immutable-event transport with simulated-provider tests; it is not a general synchronized filesystem or an always-on daemon. The connectors used by a real session must verify writes and receipts separately.
+
+The basic secrets scan is not an exhaustive DLP audit of all user files, Git history, forks or remote releases.
 
 ## Reproduce
-
-From the extracted release:
 
 ```bash
 python3 scripts/generate.py --check
@@ -37,14 +42,12 @@ python3 scripts/aco_cli.py validate
 python3 -m unittest discover -s tests -v
 ```
 
-Checks do not need private knowledge, cloud tokens, paid model calls or a plugin.
+For live acceptance tests use [HOST-ACCEPTANCE-TESTS.md](HOST-ACCEPTANCE-TESTS.md) with synthetic data and explicit scoped authorization.
 
-For host testing, run `docs/HOST-ACCEPTANCE-TESTS.md` with synthetic data before using confidential clients. Keep the real report private and never claim a test passed merely because an expected-result paragraph exists.
-
-## Build the public ZIP
+## Package
 
 ```bash
-python3 scripts/build_release.py --output ../ACO-agents-v0.3.0.zip
+python3 scripts/build_release.py --output ../ACO-agents-v0.4.2-complete.zip
 ```
 
-This includes only files listed in the validated public manifest plus the manifest itself. Hidden files and executable permissions are preserved. The accompanying SHA-256 file detects transfer differences; it is not a cryptographic developer signature. The same release inputs produce the same archive.
+The release includes only fingerprinted public files, with hidden files and executable modes. SHA-256 detects transfer differences; it is not a developer digital signature.

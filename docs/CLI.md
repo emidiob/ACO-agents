@@ -50,3 +50,16 @@ For `executed` or `verified`, include actual evidence, e.g. an artifact hash or 
 
 ## Optional event bridge
 `drive-bind --root-id ID --approval-ref REF` explicitly binds an accessible approved root and creates/reuses its ACO Session Events folder. `drive-sync [--session ID]` sends pending immutable event JSON and verifies read-back. A locally configured OAuth access token is required; see OPTIONAL-DRIVE-BRIDGE.md. No token is printed or stored.
+
+
+## Intake, action planning, finance and production checks (0.4.0)
+
+`intake --workflow KEY --facts JSON [--mode ACTION|DECISION|EXPLAIN]`: check an explicitly selected playbook's essential fields. Returns at most three early questions or brief_ready. It does not infer the correct playbook from arbitrary prose or execute work; the Concierge does that using the task.
+
+`action-plan --request JSON [--capability JSON] [--authorization JSON] [--previous JSON]`: pure offline packet check. intent=draft always returns draft_only. execute requires declared connected/schema-verified exact action capability, matching account, verified target, action ID, scope/content and an approval reference bound to that action and payload fingerprint. Denial blocks; previous accepted/uncertain outcomes require reconciliation. These supplied fields do not prove real consent or authorization. The host must verify both and invoke its actual connector. This command never sends/calls/publishes.
+
+`budget-check --input JSON`: one supplied currency, nonnegative integer/decimal-string quantity/rates, explicit overhead/contingency and optional net quote/target margin/supplied tax percentage. Computes cost and distinguishes margin from markup. No exchange rate or tax applicability inference; no payment.
+
+`comfy-preflight --workflow API_JSON --object-info SNAPSHOT_JSON`: offline shape, registered node, required inputs, literal choices/basic bounds, links/types and cycle checks. UI JSON is rejected with guidance. Errors return process status 2. Dynamic node behavior, real model files, VRAM, rendering, licenses and visual quality are not validated. Synthetic examples exist only to test the checker.
+
+The installed minimal runtime includes these helpers. Full installation, generation, validation and repository migration still require the complete release checkout.

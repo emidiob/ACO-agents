@@ -1,0 +1,10 @@
+{
+  "channel": "whatsapp",
+  "operation": "send_message",
+  "intent": "draft",
+  "scope_id": "example-project",
+  "account_id": "example-account",
+  "target_id": "example-unverified-contact",
+  "body": "Hello, could you confirm receipt of the production brief?",
+  "attachments": []
+}

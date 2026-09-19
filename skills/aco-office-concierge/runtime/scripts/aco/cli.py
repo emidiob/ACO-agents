@@ -28,6 +28,20 @@ def main() -> None:
     q = sub.add_parser('migrate', help='Replace only known ACO files in an existing clean Git checkout')
     q.add_argument('--target', type=Path, required=True)
     q.add_argument('--apply', action='store_true')
+    q=sub.add_parser('intake', help='Offline early-question/brief check; does not execute the workflow')
+    q.add_argument('--workflow', required=True)
+    q.add_argument('--facts', type=Path, required=True)
+    q.add_argument('--mode', choices=['ACTION','DECISION','EXPLAIN'], default='ACTION')
+    q=sub.add_parser('action-plan', help='Check an external-action packet; never sends or calls')
+    q.add_argument('--request', type=Path, required=True)
+    q.add_argument('--capability', type=Path)
+    q.add_argument('--authorization', type=Path)
+    q.add_argument('--previous', type=Path)
+    q=sub.add_parser('budget-check', help='Decimal project-estimate arithmetic; no payments or tax advice')
+    q.add_argument('--input', type=Path, required=True)
+    q=sub.add_parser('comfy-preflight', help='Offline API-prompt checks against a node-schema snapshot; never renders')
+    q.add_argument('--workflow', type=Path, required=True)
+    q.add_argument('--object-info', type=Path, required=True)
     commands = ('workspace-init', 'entity-add', 'status', 'session-start', 'session-export',
                 'checkpoint', 'session-close', 'context-propose', 'context-apply', 'drive-bind', 'drive-sync')
     for verb in commands:
@@ -84,6 +98,20 @@ def main() -> None:
                 raise ACOError('Run validation from the complete ACO release checkout, not the installed minimal runtime.')
             from .validate import validate
             result = validate()
+        elif a.command == 'intake':
+            from .planning import intake
+            result=intake(a.workflow,read_json(a.facts),mode=a.mode)
+        elif a.command == 'action-plan':
+            from .planning import plan_action
+            result=plan_action(read_json(a.request),read_json(a.capability) if a.capability else None,
+                               read_json(a.authorization) if a.authorization else None,
+                               read_json(a.previous) if a.previous else None)
+        elif a.command == 'budget-check':
+            from .finance import budget_check
+            result=budget_check(read_json(a.input))
+        elif a.command == 'comfy-preflight':
+            from .production import comfy_preflight
+            result=comfy_preflight(read_json(a.workflow),read_json(a.object_info))
         elif a.command.startswith('install') or a.command == 'uninstall':
             if not (ROOT / 'catalog.json').exists():
                 raise ACOError('Run installation/update commands from the complete ACO release checkout, not the installed minimal runtime.')
@@ -132,6 +160,8 @@ def main() -> None:
             else:
                 raise ACOError('Unsupported command')
         print(json.dumps(result, indent=2, ensure_ascii=False))
+        if a.command == 'comfy-preflight' and result.get('errors'):
+            sys.exit(2)
     except (ACOError, OSError, ValueError, KeyError) as exc:
         print(json.dumps({'status': 'error', 'error': str(exc)}, ensure_ascii=False), file=sys.stderr)
         sys.exit(1)

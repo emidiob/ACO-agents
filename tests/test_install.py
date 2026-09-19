@@ -14,11 +14,11 @@ class InstallTests(unittest.TestCase):
  def tearDown(self):self.tmp.cleanup()
  def test_dry_run_does_not_install(self):
   r=self.i.install(['none']);self.assertEqual(r['status'],'dry_run');self.assertFalse(self.i.skill_root.exists())
- def test_all_agents_and_nine_skills(self):
+ def test_all_agents_and_catalogued_skills(self):
   r=self.i.install(['all'],True)
   self.assertEqual(r['status'],'installed_verified')
-  self.assertEqual(len(list(self.i.agent_root.glob('*.toml'))),246)
-  self.assertEqual(len(list(self.i.skill_root.glob('*/SKILL.md'))),9)
+  self.assertEqual(len(list(self.i.agent_root.glob('*.toml'))),len(read_json(ROOT/'catalog.json')['agents']))
+  self.assertEqual(len(list(self.i.skill_root.glob('*/SKILL.md'))),read_json(ROOT/'catalog.json')['skill_count'])
  def test_skills_only(self):
   self.i.install(['none'],True);self.assertFalse(self.i.agent_root.exists())
  def test_repeat_install_no_changes(self):

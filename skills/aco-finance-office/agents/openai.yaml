@@ -1,0 +1,4 @@
+interface:
+  display_name: "ACO Finance & Business Control"
+  short_description: "Finance & Business Control workflows"
+  default_prompt: "Use ACO Finance & Business Control. Clarify essential missing information first, then produce the requested result."

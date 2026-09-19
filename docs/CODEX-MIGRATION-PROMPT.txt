@@ -1,6 +1,6 @@
-Convert the existing emidiob/ACO-agents checkout to the supplied ACO v0.3.0 skill-library release. The new ZIP/extracted release is outside the existing checkout. Use the actual supplied path, not an invented one.
+Convert the existing emidiob/ACO-agents checkout to the supplied ACO v0.4.2 skill-library release. The new ZIP/extracted release is outside the existing checkout. Use the actual supplied path, not an invented one.
 
-Preserve .git, repository history, origin, MIT License, unrelated tracked files and all untracked/private files. Do not delete the repository, run git clean/reset --hard, use rm -rf on it, or force push. Do not touch Google Drive in this Git migration.
+Preserve .git, repository history, origin, the supplied v0.4.2 proprietary LICENSE, unrelated tracked files and all untracked/private files. Do not delete the repository, run git clean/reset --hard, use rm -rf on it, or force push. Do not touch Google Drive in this Git migration.
 
 1. Read the supplied README.md, docs/CLI.md and the source migration script. Verify the release checksum/manifest. Confirm the target is the root of emidiob/ACO-agents and inspect tracked/staged/untracked status. If tracked work is dirty, preserve it and stop before replacement; do not stash or discard it without permission.
 2. Run the new release's `python3 scripts/aco_cli.py migrate --target <existing-checkout>` as a dry run. Review the exact add/replace/remove plan. It removes only known obsolete ACO files and blocks unrecognized edits or collisions.
@@ -9,9 +9,9 @@ Preserve .git, repository history, origin, MIT License, unrelated tracked files 
    python3 scripts/generate.py --check
    python3 scripts/aco_cli.py validate
    python3 -m unittest discover -s tests -v
-5. The release was locally tested; independently rerun those checks here. Inspect git diff --cached --stat and the staged diff. Confirm no filled contexts, session logs, personal data, credentials, real private Drive IDs or private artifacts are staged. Confirm no plugin manifest/marketplace/submission files remain as active repository files. Preserve the intentional generic legacy-test fixture and legacy file fingerprints.
+5. The release was locally tested; independently rerun those checks here. Inspect git diff --cached --stat and the staged diff. Confirm that LICENSE is the ACO Proprietary Source-Available License v1.0 and that README does not describe the current release as MIT or open source. Confirm no filled contexts, session logs, personal data, credentials, real private Drive IDs or private artifacts are staged. Confirm no plugin manifest/marketplace/submission files remain as active repository files. Preserve the intentional generic legacy-test fixture and legacy file fingerprints.
 6. If validation succeeds, commit with:
-   Refactor ACO v0.3.0: scoped skills, safe setup, history and local tools
+   Refactor ACO v0.4.2: scoped skills, safe setup, history and local tools
 7. The user authorizes publishing this reviewed update to origin/main. Fetch origin/main, check for new remote work, and merge/fast-forward the reviewed branch to main only if safe. Do not force or overwrite remote changes. Push without force. If a permission error occurs, stop and report it accurately rather than trying alternate unauthorized write routes.
 8. Report deleted/added/changed file counts, test results, privacy check limitations, backup branch, commit SHA and confirmed push result. Do not claim that the user's Codex installation or Google Drive was updated by this repository push.
 

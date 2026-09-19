@@ -1,0 +1,867 @@
+{
+  "schema_version": 1,
+  "workflows": {
+    "practice-plan": {
+      "title": "Plan an artistic practice",
+      "office": "artist-office",
+      "lead": "practice_strategist",
+      "team": [
+        "studio_chief_of_staff",
+        "artist_revenue_strategist"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which artistic practice is this for?",
+          "essential": true
+        },
+        {
+          "key": "goal",
+          "question": "What should improve: making, opportunities, income, or a balance?",
+          "essential": true
+        },
+        {
+          "key": "capacity",
+          "question": "How much time and budget are realistically available?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Priority plan",
+        "Protected making time",
+        "Next actions"
+      ],
+      "gates": [
+        "Do not reshape the work around revenue without approval"
+      ],
+      "default_mode": "ACTION"
+    },
+    "brand-identity": {
+      "title": "Create a brand identity",
+      "office": "agency-office",
+      "lead": "brand_strategist",
+      "team": [
+        "design_researcher",
+        "design_director",
+        "verbal_identity_director",
+        "brand_identity_designer"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which organization, client and brand is this for?",
+          "essential": true
+        },
+        {
+          "key": "goal",
+          "question": "What must this identity communicate and to whom?",
+          "essential": true
+        },
+        {
+          "key": "deliverables",
+          "question": "Which applications must be designed?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Positioning",
+        "Distinct creative territories",
+        "Approved system and applications"
+      ],
+      "gates": [
+        "Approve strategic direction before production adaptations"
+      ],
+      "default_mode": "ACTION"
+    },
+    "website": {
+      "title": "Build a website",
+      "office": "product-office",
+      "lead": "product_manager",
+      "team": [
+        "ux_lead",
+        "digital_design_director",
+        "fullstack_engineer",
+        "qa_engineer",
+        "accessibility_tester"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Who owns this website and which project should we use?",
+          "essential": true
+        },
+        {
+          "key": "goal",
+          "question": "What should visitors be able to do?",
+          "essential": true
+        },
+        {
+          "key": "deliverables",
+          "question": "Is this a prototype or production website, and what content/features are essential?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Requirements and flows",
+        "Working implementation",
+        "Test and deployment handoff"
+      ],
+      "gates": [
+        "No unapproved infrastructure spend or public deployment"
+      ],
+      "default_mode": "ACTION"
+    },
+    "software": {
+      "title": "Build or change software",
+      "office": "product-office",
+      "lead": "tech_lead",
+      "team": [
+        "software_architect",
+        "fullstack_engineer",
+        "code_reviewer",
+        "qa_engineer"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which codebase/product and approved workspace should be used?",
+          "essential": true
+        },
+        {
+          "key": "goal",
+          "question": "What behavior should be built or changed?",
+          "essential": true
+        },
+        {
+          "key": "constraints",
+          "question": "Which stack, data, security or delivery constraints are binding?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Implementation",
+        "Tests and evidence",
+        "Release notes"
+      ],
+      "gates": [
+        "Prototype is not production; no destructive migrations without authorization"
+      ],
+      "default_mode": "ACTION"
+    },
+    "ai-feature": {
+      "title": "Build an AI-enabled product feature",
+      "office": "product-office",
+      "lead": "ai_product_engineer",
+      "team": [
+        "llm_engineer",
+        "automation_integration_engineer",
+        "security_reviewer",
+        "qa_engineer"
+      ],
+      "intake": [
+        {
+          "key": "goal",
+          "question": "What user task should AI accomplish?",
+          "essential": true
+        },
+        {
+          "key": "data",
+          "question": "Which data may be used and sent to which services?",
+          "essential": true
+        },
+        {
+          "key": "constraints",
+          "question": "What are the quality, cost and latency limits?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Feature spec",
+        "Implementation and evaluation",
+        "Failure and escalation paths"
+      ],
+      "gates": [
+        "Consent/data boundary and evaluation before rollout"
+      ],
+      "default_mode": "ACTION"
+    },
+    "estimate": {
+      "title": "Cost and price a project",
+      "office": "finance-office",
+      "lead": "pricing_margin_analyst",
+      "team": [
+        "production_cost_controller",
+        "studio_finance_manager"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which entity/client/project is the quote for?",
+          "essential": true
+        },
+        {
+          "key": "deliverables",
+          "question": "What is included, in what quantities and usage scope?",
+          "essential": true
+        },
+        {
+          "key": "costs",
+          "question": "What costs/rates and currency are confirmed?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Cost breakdown",
+        "Margin/markup scenarios",
+        "Quote draft"
+      ],
+      "gates": [
+        "Unknown taxes/rates remain unknown; owner approves offer"
+      ],
+      "default_mode": "ACTION"
+    },
+    "cash-flow": {
+      "title": "Plan studio/company cash flow",
+      "office": "finance-office",
+      "lead": "cashflow_treasury_analyst",
+      "team": [
+        "financial_controller",
+        "billing_receivables_coordinator"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which entity and planning period?",
+          "essential": true
+        },
+        {
+          "key": "balances",
+          "question": "What cash is available versus restricted?",
+          "essential": true
+        },
+        {
+          "key": "schedule",
+          "question": "Which receipts/payments and due dates are evidenced?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Weekly cash plan",
+        "Downside scenario",
+        "Collection and timing actions"
+      ],
+      "gates": [
+        "No bank movement or financing commitment"
+      ],
+      "default_mode": "ACTION"
+    },
+    "sales-pipeline": {
+      "title": "Develop offers and a client pipeline",
+      "office": "commercial-office",
+      "lead": "commercial_orchestrator",
+      "team": [
+        "lead_qualification_researcher",
+        "sales_operations_manager",
+        "business_development_director"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which company/activity is selling?",
+          "essential": true
+        },
+        {
+          "key": "offer",
+          "question": "What are we offering and to which client segment?",
+          "essential": true
+        },
+        {
+          "key": "constraints",
+          "question": "What capacity, geography, pricing floor or exclusions apply?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Offer/lead plan",
+        "Qualified evidence",
+        "Outreach drafts and next actions"
+      ],
+      "gates": [
+        "No invented clients/cases; no unapproved outreach"
+      ],
+      "default_mode": "ACTION"
+    },
+    "hire": {
+      "title": "Organize employer-side hiring",
+      "office": "people-office",
+      "lead": "people_orchestrator",
+      "team": [
+        "workforce_planner",
+        "talent_sourcing_specialist",
+        "hiring_coordinator",
+        "structured_interview_designer"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which employer and hiring decision owner?",
+          "essential": true
+        },
+        {
+          "key": "role",
+          "question": "What tasks/skills and employment or freelance arrangement?",
+          "essential": true
+        },
+        {
+          "key": "constraints",
+          "question": "What compensation band, location and start window?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Job brief",
+        "Evidence-based sourcing",
+        "Human interview process"
+      ],
+      "gates": [
+        "No automated employment decisions; personnel confidentiality"
+      ],
+      "default_mode": "ACTION"
+    },
+    "onboard": {
+      "title": "Onboard a colleague or freelancer",
+      "office": "people-office",
+      "lead": "onboarding_offboarding_coordinator",
+      "team": [
+        "people_operations_manager",
+        "executive_assistant"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which person/role and organization?",
+          "essential": true
+        },
+        {
+          "key": "dates",
+          "question": "What is the agreed start date?",
+          "essential": true
+        },
+        {
+          "key": "access",
+          "question": "Which systems, equipment and access are approved?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Onboarding checklist",
+        "Introductions/drafts",
+        "Access handoff"
+      ],
+      "gates": [
+        "No implied account creation/sharing authority"
+      ],
+      "default_mode": "ACTION"
+    },
+    "project-rescue": {
+      "title": "Recover a blocked or late project",
+      "office": "delivery-office",
+      "lead": "project_manager",
+      "team": [
+        "project_controls_analyst",
+        "traffic_resource_manager",
+        "quality_acceptance_coordinator"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which project and decision owner?",
+          "essential": true
+        },
+        {
+          "key": "baseline",
+          "question": "What was approved and what is the actual status?",
+          "essential": true
+        },
+        {
+          "key": "blocker",
+          "question": "What is blocked or at risk now?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Recovery options",
+        "Revised forecast",
+        "Decisions and owners"
+      ],
+      "gates": [
+        "Do not rewrite approved baseline or promise dates without authority"
+      ],
+      "default_mode": "ACTION"
+    },
+    "office-triage": {
+      "title": "Triage office work and correspondence",
+      "office": "administration-office",
+      "lead": "executive_assistant",
+      "team": [
+        "inbox_correspondence_manager",
+        "meeting_calendar_coordinator"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which account and organization/personal scope?",
+          "essential": true
+        },
+        {
+          "key": "goal",
+          "question": "Which period and outcomes should this triage cover?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Short priority brief",
+        "Ready-to-copy replies",
+        "Pending actions"
+      ],
+      "gates": [
+        "Read only the relevant threads; no auto-send"
+      ],
+      "default_mode": "ACTION"
+    },
+    "email": {
+      "title": "Prepare/send email",
+      "office": "administration-office",
+      "lead": "communications_operator",
+      "team": [
+        "inbox_correspondence_manager"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "From which account and for which project?",
+          "essential": true
+        },
+        {
+          "key": "recipient",
+          "question": "Who is the verified recipient?",
+          "essential": true
+        },
+        {
+          "key": "goal",
+          "question": "What is the exact message or call objective, and is this draft-only or authorized to send/call?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Copy-ready draft or authorized action",
+        "Exact outcome/receipt"
+      ],
+      "gates": [
+        "Check actual email capability",
+        "No automatic channel switching",
+        "Reconcile uncertain previous outcomes before retry"
+      ],
+      "default_mode": "ACTION"
+    },
+    "whatsapp": {
+      "title": "Prepare/send WhatsApp message",
+      "office": "administration-office",
+      "lead": "communications_operator",
+      "team": [],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "From which account and for which project?",
+          "essential": true
+        },
+        {
+          "key": "recipient",
+          "question": "Who is the verified recipient?",
+          "essential": true
+        },
+        {
+          "key": "goal",
+          "question": "What is the exact message or call objective, and is this draft-only or authorized to send/call?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Copy-ready draft or authorized action",
+        "Exact outcome/receipt"
+      ],
+      "gates": [
+        "Check actual whatsapp capability",
+        "No automatic channel switching",
+        "Reconcile uncertain previous outcomes before retry"
+      ],
+      "default_mode": "ACTION"
+    },
+    "call": {
+      "title": "Prepare/place a phone call",
+      "office": "administration-office",
+      "lead": "communications_operator",
+      "team": [],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "From which account and for which project?",
+          "essential": true
+        },
+        {
+          "key": "recipient",
+          "question": "Who is the verified recipient?",
+          "essential": true
+        },
+        {
+          "key": "goal",
+          "question": "What is the exact message or call objective, and is this draft-only or authorized to send/call?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Copy-ready draft or authorized action",
+        "Exact outcome/receipt"
+      ],
+      "gates": [
+        "Check actual phone capability",
+        "No automatic channel switching",
+        "Reconcile uncertain previous outcomes before retry"
+      ],
+      "default_mode": "ACTION"
+    },
+    "production": {
+      "title": "Produce a film/photo/CG project",
+      "office": "production-office",
+      "lead": "production_orchestrator",
+      "team": [
+        "line_producer",
+        "film_producer",
+        "photography_producer",
+        "production_cost_controller"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which client/project and creative approver?",
+          "essential": true
+        },
+        {
+          "key": "deliverables",
+          "question": "What must be captured/generated and delivered?",
+          "essential": true
+        },
+        {
+          "key": "constraints",
+          "question": "What budget, dates, rights and resources are available?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Production plan",
+        "Crew/shot/cost plan",
+        "Delivery and handover"
+      ],
+      "gates": [
+        "Qualified physical safety review",
+        "Approve bookings and spend"
+      ],
+      "default_mode": "ACTION"
+    },
+    "video-post": {
+      "title": "Edit, finish and deliver video",
+      "office": "production-office",
+      "lead": "postproduction_supervisor",
+      "team": [
+        "video_editor",
+        "online_editor_conform",
+        "colorist",
+        "re_recording_mixer",
+        "media_delivery_qc"
+      ],
+      "intake": [
+        {
+          "key": "assets",
+          "question": "Where are the actual source footage/cut and references?",
+          "essential": true
+        },
+        {
+          "key": "goal",
+          "question": "What is the intended story/look and final duration?",
+          "essential": true
+        },
+        {
+          "key": "delivery",
+          "question": "Which aspect ratios, frame rate, color and audio delivery specifications?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Versioned edit",
+        "Conform/grade/mix",
+        "QC and delivery"
+      ],
+      "gates": [
+        "Picture-lock and finishing approvals",
+        "A queued render is not completed"
+      ],
+      "default_mode": "ACTION"
+    },
+    "retouch": {
+      "title": "Retouch photography",
+      "office": "production-office",
+      "lead": "photo_retouch_artist",
+      "team": [
+        "product_retouch_artist",
+        "beauty_fashion_retouch_artist",
+        "color_pipeline_engineer"
+      ],
+      "intake": [
+        {
+          "key": "assets",
+          "question": "Which original images and approved references?",
+          "essential": true
+        },
+        {
+          "key": "goal",
+          "question": "What corrections or changes are intended and forbidden?",
+          "essential": true
+        },
+        {
+          "key": "delivery",
+          "question": "What output use, profiles, sizes and layer requirements?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Retouch or precise retouch plan",
+        "Before-after review",
+        "Master/exports and notes"
+      ],
+      "gates": [
+        "Preserve originals and identity/product constraints"
+      ],
+      "default_mode": "ACTION"
+    },
+    "comfyui": {
+      "title": "Build or repair a ComfyUI workflow",
+      "office": "production-office",
+      "lead": "comfyui_workflow_engineer",
+      "team": [
+        "visual_prompt_engineer",
+        "comfyui_node_developer",
+        "media_pipeline_engineer"
+      ],
+      "intake": [
+        {
+          "key": "goal",
+          "question": "What output or workflow error are we solving?",
+          "essential": true
+        },
+        {
+          "key": "environment",
+          "question": "Which ComfyUI version, GPU/VRAM, installed nodes and models?",
+          "essential": true
+        },
+        {
+          "key": "assets",
+          "question": "Can we use the actual workflow/API export and relevant inputs?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Verified graph or labeled blueprint",
+        "Dependency manifest",
+        "Preflight and test evidence"
+      ],
+      "gates": [
+        "Do not invent nodes/model files",
+        "No unapproved installs or paid queues"
+      ],
+      "default_mode": "ACTION"
+    },
+    "book": {
+      "title": "Publish a book or catalogue",
+      "office": "publishing-office",
+      "lead": "managing_editor",
+      "team": [
+        "developmental_editor",
+        "copy_editor",
+        "editorial_designer",
+        "publishing_rights_permissions_manager",
+        "print_production_manager",
+        "ebook_accessibility_engineer"
+      ],
+      "intake": [
+        {
+          "key": "goal",
+          "question": "What is the book for and who is the reader?",
+          "essential": true
+        },
+        {
+          "key": "assets",
+          "question": "What manuscript/images and rights are actually available?",
+          "essential": true
+        },
+        {
+          "key": "formats",
+          "question": "Which print/digital/audio formats, schedule and budget?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Editorial/production plan",
+        "Edited/designed publication",
+        "Rights, metadata and delivery"
+      ],
+      "gates": [
+        "Author sign-off",
+        "Rights clearances",
+        "Print/release approval"
+      ],
+      "default_mode": "ACTION"
+    },
+    "media-issue": {
+      "title": "Produce an editorial issue or newsroom package",
+      "office": "publishing-office",
+      "lead": "newsroom_editor",
+      "team": [
+        "journalist_reporter",
+        "copy_editor",
+        "research_editor_fact_checker",
+        "audience_development_editor"
+      ],
+      "intake": [
+        {
+          "key": "goal",
+          "question": "Which publication, audience and editorial question?",
+          "essential": true
+        },
+        {
+          "key": "sources",
+          "question": "Which verified sources, interviews or access are available?",
+          "essential": true
+        },
+        {
+          "key": "deadline",
+          "question": "What format and publication deadline?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Assignment and source plan",
+        "Verified drafts",
+        "Distribution and corrections plan"
+      ],
+      "gates": [
+        "Do not fabricate reporting",
+        "Separate advertising/sponsored content"
+      ],
+      "default_mode": "ACTION"
+    },
+    "podcast": {
+      "title": "Produce a podcast episode/series",
+      "office": "publishing-office",
+      "lead": "podcast_audio_producer",
+      "team": [
+        "dialogue_editor",
+        "sound_designer",
+        "re_recording_mixer"
+      ],
+      "intake": [
+        {
+          "key": "goal",
+          "question": "What is the premise, audience and episode length?",
+          "essential": true
+        },
+        {
+          "key": "assets",
+          "question": "Who participates and what recordings/rights exist?",
+          "essential": true
+        },
+        {
+          "key": "delivery",
+          "question": "Which languages/platforms and dates?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Rundown",
+        "Audio or edit plan",
+        "Transcript and show notes"
+      ],
+      "gates": [
+        "Voice and guest consent",
+        "Actual mix/QC evidence"
+      ],
+      "default_mode": "ACTION"
+    },
+    "subscriptions": {
+      "title": "Manage publication subscriptions",
+      "office": "publishing-office",
+      "lead": "circulation_subscription_manager",
+      "team": [
+        "customer_success_manager",
+        "billing_receivables_coordinator"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which publication and authorized subscriber dataset?",
+          "essential": true
+        },
+        {
+          "key": "goal",
+          "question": "What should improve: onboarding, fulfillment, renewals or retention?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Lifecycle plan",
+        "Cohort/report definitions",
+        "Customer drafts"
+      ],
+      "gates": [
+        "No unsolicited enrollment, silent billing or ignored opt-outs"
+      ],
+      "default_mode": "ACTION"
+    },
+    "media-advertising": {
+      "title": "Plan publisher advertising or sponsorship delivery",
+      "office": "publishing-office",
+      "lead": "media_ad_operations_manager",
+      "team": [
+        "branded_content_editor",
+        "commercial_orchestrator"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which publisher, sponsor/client and campaign?",
+          "essential": true
+        },
+        {
+          "key": "deliverables",
+          "question": "Which approved ad inventory or sponsored formats?",
+          "essential": true
+        },
+        {
+          "key": "terms",
+          "question": "What dates, labeling, budget and reporting terms?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Insertion/delivery plan",
+        "Labeled assets",
+        "Delivery/billing report"
+      ],
+      "gates": [
+        "Editorial-commercial separation",
+        "No unapproved live trafficking"
+      ],
+      "default_mode": "ACTION"
+    }
+  },
+  "note": "Playbooks guide selection, not a mandate to run every listed role. Intake helper does not execute work."
+}

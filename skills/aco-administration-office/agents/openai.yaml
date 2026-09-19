@@ -1,0 +1,4 @@
+interface:
+  display_name: "ACO Administration & Secretariat"
+  short_description: "Administration & Secretariat workflows"
+  default_prompt: "Use ACO Administration & Secretariat. Clarify essential missing information first, then produce the requested result."

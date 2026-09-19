@@ -31,21 +31,14 @@ def outputs():
                       'native_name': 'aco_' + key,
                       'codex_path': f'extras/codex-custom-agents/{office}/aco-{key.replace("_","-")}.toml',
                       'instructions': t.split('## Instructions\n',1)[1].strip()}
-    leads = {'artist-office': 'creative_orchestrator', 'organization-office': 'organization_orchestrator',
-             'agency-office': 'agency_orchestrator', 'product-office': 'product_software_orchestrator',
-             'legal-office': 'legal_orchestrator', 'recruitment-office': 'recruitment_orchestrator',
-             'shared': 'office_concierge'}
-    dependencies = {
-        'agency-office': ['creative_director','account_director','business_development_director',
-                         'client_strategy_director','operations_director','executive_producer','creative_technologist',
-                         'proposal_pitch_director','contracts_ip_manager','data_insights_analyst',
-                         'product_experience_director','ux_service_designer','communications_pr_director',
-                         'events_experience_producer','commercial_strategy_director','digital_product_manager'],
-        'product-office': ['frontend_prototyper'],
-    }
+    office_spec=json.loads((R/'config/offices.json').read_text())['offices']
+    leads={k:v['lead'] for k,v in office_spec.items()}
+    dependencies={k:v.get('dependencies',[]) for k,v in office_spec.items()}
+    skill_names=sorted(p.parent.name for p in (R/'skills').glob('*/SKILL.md'))
     for dep in sum(dependencies.values(), []):
         if dep not in roles:raise ValueError('Missing dependency: '+dep)
     cat = {'schema_version':1, 'aco_version':(R/'VERSION').read_text().strip(),
+           'skill_count':len(skill_names), 'role_count':len(roles), 'skills':skill_names,
            'offices':{o:{'lead':l,'dependencies':dependencies.get(o,[]),
                          'count':sum(a['office']==o for a in roles.values())} for o,l in leads.items()},
            'agents':{k:{f:v for f,v in d.items() if f!='instructions'} for k,d in roles.items()}}
@@ -63,10 +56,11 @@ def outputs():
     base='skills/aco-office-concierge/runtime/'
     out[base+'VERSION']=(R/'VERSION').read_bytes()
     out[base+'RUNTIME-ONLY']=b'Local knowledge/session/event commands only. Use the full source release for install, migrate and validate.\n'
-    for name in ('aco_cli.py','aco/__init__.py','aco/common.py','aco/memory.py','aco/drive.py','aco/cli.py'):
+    for name in ('aco_cli.py','aco/__init__.py','aco/common.py','aco/memory.py','aco/drive.py','aco/cli.py','aco/planning.py','aco/production.py','aco/finance.py'):
         out[base+'scripts/'+name]=(R/'scripts'/name).read_bytes()
     for p in (R/'assets/context-templates').glob('*.md'):
         out[base+'assets/context-templates/'+p.name]=p.read_bytes()
+    out[base+'config/workflows.json']=(R/'skills/aco-office-concierge/references/WORKFLOWS.json').read_bytes()
     # Human index is generated, too: every role has a concrete canonical link.
     lines=['# ACO catalogue','',f'Version {cat["aco_version"]}. {len(roles)} generic role definitions; not {len(roles)} autonomous running processes.','',
            'Start with [CHATGPT.md](CHATGPT.md) or [AGENTS.md](AGENTS.md). Read only relevant skills and role methods.','']
@@ -79,7 +73,7 @@ def outputs():
         lines += ['']
     # The full catalogue is available for inspection, but is not the startup payload.
     out['docs/ALL-ROLES.md']='\n'.join(lines).replace('](skills/','](../skills/').replace('](CHATGPT.md)','](../CHATGPT.md)').replace('](AGENTS.md)','](../AGENTS.md)').encode()
-    short=['# ACO — routing index','',f'Version {cat["aco_version"]}; {len(roles)} role definitions and 9 skills. These are not permanently running agents.','',
+    short=['# ACO — routing index','',f'Version {cat["aco_version"]}; {len(roles)} role definitions and {len(skill_names)} skills. These are not permanently running agents.','',
            'Start with CHATGPT.md or AGENTS.md. Select an office below, then read its local ROLE-INDEX and only selected methods. Do not load the full catalogue by default.','']
     for office,meta in cat['offices'].items():
         skill='aco-office-concierge' if office=='shared' else 'aco-'+office
@@ -96,7 +90,7 @@ def outputs():
         short += [f'- **{office}** ({meta["count"]}): [start](skills/{skill}/SKILL.md) · [roles]({dest})']
     short += ['', '- **Context setup**: [start](skills/aco-context-setup/SKILL.md).',
               '- **Context steward**: [start](skills/aco-context-steward/SKILL.md).','',
-              'Optional: [all roles](docs/ALL-ROLES.md); `catalog.json` is the machine-readable path/dependency registry, not the default conversational context.']
+              'Optional: [visual agent catalogue](docs/AGENT-CATALOG.md) · [all roles with descriptions](docs/ALL-ROLES.md); `catalog.json` is the machine-readable path/dependency registry, not the default conversational context.']
     out['ACO-INDEX.md']='\n'.join(short).encode()
     return out
 

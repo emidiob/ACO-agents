@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "offices": {
+    "artist-office": {
+      "lead": "creative_orchestrator",
+      "dependencies": [],
+      "title": "Artist Office"
+    },
+    "organization-office": {
+      "lead": "organization_orchestrator",
+      "dependencies": [],
+      "title": "Organization Office"
+    },
+    "agency-office": {
+      "lead": "agency_orchestrator",
+      "dependencies": [
+        "creative_director",
+        "account_director",
+        "business_development_director",
+        "client_strategy_director",
+        "operations_director",
+        "executive_producer",
+        "creative_technologist",
+        "proposal_pitch_director",
+        "contracts_ip_manager",
+        "data_insights_analyst",
+        "product_experience_director",
+        "ux_service_designer",
+        "communications_pr_director",
+        "events_experience_producer",
+        "commercial_strategy_director",
+        "digital_product_manager"
+      ],
+      "title": "Agency Office"
+    },
+    "product-office": {
+      "lead": "product_software_orchestrator",
+      "dependencies": [
+        "frontend_prototyper"
+      ],
+      "title": "Product Office"
+    },
+    "legal-office": {
+      "lead": "legal_orchestrator",
+      "dependencies": [],
+      "title": "Legal Office"
+    },
+    "recruitment-office": {
+      "lead": "recruitment_orchestrator",
+      "dependencies": [],
+      "title": "Recruitment Office"
+    },
+    "shared": {
+      "lead": "office_concierge",
+      "dependencies": [],
+      "title": "Shared"
+    },
+    "finance-office": {
+      "lead": "finance_orchestrator",
+      "title": "Finance & Business Control",
+      "dependencies": [
+        "studio_finance_manager",
+        "commercial_strategy_director",
+        "art_contracts_rights_advisor"
+      ],
+      "description": "Project economics, budgets, cash flow, billing, bookkeeping coordination and royalties; not banking execution or certified tax advice."
+    },
+    "commercial-office": {
+      "lead": "commercial_orchestrator",
+      "title": "Commercial & Sales",
+      "dependencies": [
+        "business_development_director",
+        "commercial_strategy_director",
+        "client_strategy_director",
+        "account_director",
+        "proposal_pitch_director",
+        "partnerships_director",
+        "revenue_innovation_strategist",
+        "brand_strategist",
+        "marketing_strategist",
+        "pricing_margin_analyst"
+      ],
+      "description": "Offers, sales pipelines, qualifying leads, pitches, tenders and client retention; art sales remain led by Artist Office."
+    },
+    "people-office": {
+      "lead": "people_orchestrator",
+      "title": "People & HR",
+      "dependencies": [
+        "talent_contributors_manager",
+        "traffic_resource_manager",
+        "operations_director",
+        "legal_orchestrator"
+      ],
+      "description": "Employer-side workforce planning, job briefs, recruitment coordination, onboarding and people operations; candidate job search stays with Recruitment Office."
+    },
+    "delivery-office": {
+      "lead": "delivery_orchestrator",
+      "title": "Project & Programme Delivery",
+      "dependencies": [
+        "project_manager",
+        "project_coordinator",
+        "traffic_resource_manager",
+        "traffic_coordinator",
+        "executive_producer",
+        "account_director",
+        "release_manager"
+      ],
+      "description": "Cross-project plans, dependencies, resourcing, change control and acceptance; reuse existing project managers, do not duplicate them."
+    },
+    "administration-office": {
+      "lead": "administration_orchestrator",
+      "title": "Administration & Secretariat",
+      "dependencies": [
+        "communications_editor",
+        "studio_manager",
+        "studio_comms_manager",
+        "project_coordinator",
+        "billing_receivables_coordinator"
+      ],
+      "description": "Inbox, appointments, meetings, files, travel, email, WhatsApp and call preparation or authorized tool execution."
+    },
+    "production-office": {
+      "lead": "production_orchestrator",
+      "title": "Production & Postproduction",
+      "dependencies": [
+        "executive_producer",
+        "integrated_producer",
+        "film_producer",
+        "photography_producer",
+        "junior_producer",
+        "production_coordinator",
+        "postproduction_supervisor",
+        "postproduction_coordinator",
+        "casting_researcher",
+        "location_researcher",
+        "business_affairs_manager",
+        "cgi_vfx_supervisor",
+        "motion_design_director",
+        "creative_director",
+        "art_director",
+        "asset_manager",
+        "technical_art_producer",
+        "production_cost_controller"
+      ],
+      "description": "Film, photography, CGI, editing, grading, retouching, sound, generative media and ComfyUI. Operate real software only through available authorized tools."
+    },
+    "publishing-office": {
+      "lead": "publishing_media_orchestrator",
+      "title": "Publishing & Media",
+      "dependencies": [
+        "publishing_director",
+        "publication_manager",
+        "commissioning_editor",
+        "editor",
+        "art_writer",
+        "research_editor_fact_checker",
+        "content_director",
+        "community_editor",
+        "communications_pr_director",
+        "contracts_ip_manager",
+        "royalty_revenue_accountant",
+        "art_director"
+      ],
+      "description": "Books, catalogues, magazines, digital publications, newsrooms, newsletters, podcasts, rights, distribution, subscriptions and advertising."
+    }
+  }
+}

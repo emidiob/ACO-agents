@@ -1,0 +1,4 @@
+interface:
+  display_name: "ACO Production & Postproduction"
+  short_description: "Production & Postproduction workflows"
+  default_prompt: "Use ACO Production & Postproduction. Clarify essential missing information first, then produce the requested result."

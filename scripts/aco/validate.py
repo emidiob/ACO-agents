@@ -24,7 +24,9 @@ def validate() -> dict:
         if data['name']!='aco_'+key:errors.append('Invalid native name '+key)
         if not data.get('developer_instructions'):errors.append('Empty instructions '+key)
     skills=list((ROOT/'skills').glob('*/SKILL.md'))
-    if len(skills)!=9:errors.append('Expected 9 entry-point skills')
+    if len(skills)!=cat.get('skill_count'):errors.append('Skill count differs from catalogue')
+    if sorted(p.parent.name for p in skills)!=cat.get('skills'):errors.append('Skill names differ from catalogue')
+    if len(cat['agents'])!=cat.get('role_count'):errors.append('Role count differs from catalogue')
     for p in skills:
         text=p.read_text()
         if not text.startswith('---\n') or f'name: {p.parent.name}\n' not in text:
@@ -32,6 +34,12 @@ def validate() -> dict:
     for office,d in cat['offices'].items():
         for key in [d['lead'],*d['dependencies']]:
             if key not in cat['agents']:errors.append('Missing role dependency '+key)
+    workflows=read_json(ROOT/'skills/aco-office-concierge/references/WORKFLOWS.json')['workflows']
+    for key,w in workflows.items():
+        if w['office'] not in cat['offices']:errors.append('Unknown workflow office '+key)
+        for role in [w['lead'],*w['team']]:
+            if role not in cat['agents']:errors.append('Unknown workflow role '+key+': '+role)
+        if len({i['key'] for i in w['intake']})!=len(w['intake']):errors.append('Duplicate intake field '+key)
     # Check actual dangerous files, not intentional references in migration documentation.
     for name in ('plugin.json','.codex-plugin','.agents/plugins','docs/PUBLIC-SUBMISSION.md','PRIVACY.md','TERMS.md','MCP-ROADMAP.md'):
         if (ROOT/name).exists():errors.append('Obsolete plugin artifact '+name)
@@ -66,6 +74,6 @@ def validate() -> dict:
     verify_release()
     if errors:raise ACOError('Validation failed:\n'+'\n'.join(errors))
     return {'status':'validated','version':VERSION,'canonical_agents':len(cat['agents']),
-            'native_agents':len(names),'skills':len(skills),'text_files_scanned':scanned,'relative_links_checked':links_checked,
+            'native_agents':len(names),'skills':len(skills),'workflows':len(workflows),'text_files_scanned':scanned,'relative_links_checked':links_checked,
             'checks':['TOML','role catalogue and dependencies','generated parity','no plugin artifacts','basic secret/private-path scan','release hashes','relative documentation links'],
             'limitations':'Static/local checks; no professional-quality certification or live-host/Drive end-to-end test.'}

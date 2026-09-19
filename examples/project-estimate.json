@@ -1,0 +1,19 @@
+{
+  "currency": "EUR",
+  "lines": [
+    {
+      "id": "crew",
+      "quantity": "2",
+      "unit_cost": "500"
+    },
+    {
+      "id": "post",
+      "quantity": "1",
+      "unit_cost": "400"
+    }
+  ],
+  "overhead": "100",
+  "contingency_percent": "10",
+  "quote_net": "2200",
+  "target_margin_percent": "30"
+}

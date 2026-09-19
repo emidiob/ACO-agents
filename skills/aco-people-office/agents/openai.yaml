@@ -1,0 +1,4 @@
+interface:
+  display_name: "ACO People & HR"
+  short_description: "People & HR workflows"
+  default_prompt: "Use ACO People & HR. Clarify essential missing information first, then produce the requested result."

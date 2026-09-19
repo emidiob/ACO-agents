@@ -1,6 +1,6 @@
 # ACO catalogue
 
-Version 0.3.0. 246 generic role definitions; not 246 autonomous running processes.
+Version 0.4.2. 349 generic role definitions; not 349 autonomous running processes.
 
 Start with [CHATGPT.md](../CHATGPT.md) or [AGENTS.md](../AGENTS.md). Read only relevant skills and role methods.
 
@@ -153,6 +153,7 @@ Lead: `product_software_orchestrator`. Native agents use the `aco_` prefix.
 - [`ai_product_engineer`](../skills/aco-product-office/references/agents/ai-product-engineer.md) — Bridge role between product and AI engineering for user-facing AI feature design and implementation.
 - [`api_integration_engineer`](../skills/aco-product-office/references/agents/api-integration-engineer.md) — Engineer for third-party service integration, authentication flows, webhooks and API reliability.
 - [`api_researcher`](../skills/aco-product-office/references/agents/api-researcher.md) — Researcher for third-party API capabilities, docs, pricing, limits and integration implications.
+- [`automation_integration_engineer`](../skills/aco-product-office/references/agents/automation-integration-engineer.md) — Implement scoped integrations and safe office automations.
 - [`backend_engineer`](../skills/aco-product-office/references/agents/backend-engineer.md) — Backend engineer for server-side features, APIs, business logic and integrations.
 - [`bug_investigator`](../skills/aco-product-office/references/agents/bug-investigator.md) — Specialist for reproducing, isolating and diagnosing bugs across environments and layers.
 - [`business_analyst`](../skills/aco-product-office/references/agents/business-analyst.md) — Analyst for business rules, process requirements, operational needs and stakeholder constraints.
@@ -171,6 +172,7 @@ Lead: `product_software_orchestrator`. Native agents use the `aco_` prefix.
 - [`interaction_designer`](../skills/aco-product-office/references/agents/interaction-designer.md) — Specialist for interaction behavior, states, transitions, affordances and micro-interactions.
 - [`junior_developer`](../skills/aco-product-office/references/agents/junior-developer.md) — Junior developer for well-scoped implementation tasks, fixes and guided build work.
 - [`llm_engineer`](../skills/aco-product-office/references/agents/llm-engineer.md) — Engineer for LLM prompting, RAG patterns, tool use, evaluation and agentic behavior.
+- [`mcp_integration_reviewer`](../skills/aco-product-office/references/agents/mcp-integration-reviewer.md) — Review MCP connections for scope, safety and practical compatibility.
 - [`migration_specialist`](../skills/aco-product-office/references/agents/migration-specialist.md) — Specialist for migrations between stacks, systems, schemas, services or versions.
 - [`ml_ops_engineer`](../skills/aco-product-office/references/agents/ml-ops-engineer.md) — Engineer for model deployment, monitoring, versioning and production ML operations.
 - [`mobile_engineer`](../skills/aco-product-office/references/agents/mobile-engineer.md) — Engineer for mobile app implementation, platform conventions and native/hybrid delivery.
@@ -288,3 +290,153 @@ Lead: `office_concierge`. Native agents use the `aco_` prefix.
 - [`office_concierge`](../skills/aco-office-concierge/references/agents/office-concierge.md) — Front-door concierge for a multi-office agent system. Translates natural requests into clear briefs, identifies the right office or cross-office team, asks only essential clarifying questions, and protects the user from having to know agent names.
 - [`studio_finance_manager`](../skills/aco-office-concierge/references/agents/studio-finance-manager.md) — Studio finance and project-budget manager for artists: production budgets, quotes, cash flow, fees, cost scenarios, margins, commissions, travel, shipping and financial decision support.
 - [`studio_manager`](../skills/aco-office-concierge/references/agents/studio-manager.md) — Studio and office operations agent for briefs, timelines, deliverables, task breakdowns, meeting preparation, notes, handoffs and project administration.
+
+## finance-office
+
+Lead: `finance_orchestrator`. Native agents use the `aco_` prefix.
+
+- [`billing_receivables_coordinator`](../skills/aco-finance-office/references/agents/billing-receivables-coordinator.md) — Prepare invoices, payment milestones and courteous collections.
+- [`bookkeeping_coordinator`](../skills/aco-finance-office/references/agents/bookkeeping-coordinator.md) — Prepare clean records for a bookkeeper or accountant.
+- [`cashflow_treasury_analyst`](../skills/aco-finance-office/references/agents/cashflow-treasury-analyst.md) — Plan cash runway and timing of project receipts and payments.
+- [`finance_orchestrator`](../skills/aco-finance-office/references/agents/finance-orchestrator.md) — Route finance & business control tasks through a small accountable team with early clarification and verified outputs.
+- [`financial_controller`](../skills/aco-finance-office/references/agents/financial-controller.md) — Control project and company accounts, reconciliations and financial reporting.
+- [`fp_and_a_analyst`](../skills/aco-finance-office/references/agents/fp-and-a-analyst.md) — Build operational forecasts and scenario-based planning.
+- [`payables_procurement_analyst`](../skills/aco-finance-office/references/agents/payables-procurement-analyst.md) — Compare suppliers and prepare purchase approvals and payment checks.
+- [`pricing_margin_analyst`](../skills/aco-finance-office/references/agents/pricing-margin-analyst.md) — Price creative and production work with explicit costs, margins and rights.
+- [`production_cost_controller`](../skills/aco-finance-office/references/agents/production-cost-controller.md) — Track committed and actual production spend against approved estimates.
+- [`royalty_revenue_accountant`](../skills/aco-finance-office/references/agents/royalty-revenue-accountant.md) — Prepare reconciled author, artist and licensing royalty statements.
+- [`tax_compliance_coordinator`](../skills/aco-finance-office/references/agents/tax-compliance-coordinator.md) — Organize tax-related inputs and questions for qualified advisers.
+
+Reused dependencies: `studio_finance_manager`, `commercial_strategy_director`, `art_contracts_rights_advisor`
+
+## commercial-office
+
+Lead: `commercial_orchestrator`. Native agents use the `aco_` prefix.
+
+- [`commercial_orchestrator`](../skills/aco-commercial-office/references/agents/commercial-orchestrator.md) — Route commercial & sales tasks through a small accountable team with early clarification and verified outputs.
+- [`customer_success_manager`](../skills/aco-commercial-office/references/agents/customer-success-manager.md) — Plan onboarding, adoption, retention and renewals for delivered services.
+- [`lead_qualification_researcher`](../skills/aco-commercial-office/references/agents/lead-qualification-researcher.md) — Research and qualify potential clients against a supplied ideal-client profile.
+- [`revenue_operations_analyst`](../skills/aco-commercial-office/references/agents/revenue-operations-analyst.md) — Connect sales, delivery and finance evidence.
+- [`sales_enablement_specialist`](../skills/aco-commercial-office/references/agents/sales-enablement-specialist.md) — Prepare accurate reusable sales materials.
+- [`sales_operations_manager`](../skills/aco-commercial-office/references/agents/sales-operations-manager.md) — Maintain a reliable opportunity pipeline and sales operating process.
+- [`sales_proposal_specialist`](../skills/aco-commercial-office/references/agents/sales-proposal-specialist.md) — Turn an agreed solution into a precise commercial proposal.
+- [`tender_bid_coordinator`](../skills/aco-commercial-office/references/agents/tender-bid-coordinator.md) — Coordinate bids and formal tender responses.
+
+Reused dependencies: `business_development_director`, `commercial_strategy_director`, `client_strategy_director`, `account_director`, `proposal_pitch_director`, `partnerships_director`, `revenue_innovation_strategist`, `brand_strategist`, `marketing_strategist`, `pricing_margin_analyst`
+
+## people-office
+
+Lead: `people_orchestrator`. Native agents use the `aco_` prefix.
+
+- [`compensation_benefits_coordinator`](../skills/aco-people-office/references/agents/compensation-benefits-coordinator.md) — Prepare compensation structures and benefit administration.
+- [`employee_relations_coordinator`](../skills/aco-people-office/references/agents/employee-relations-coordinator.md) — Organize sensitive workplace concerns neutrally.
+- [`hiring_coordinator`](../skills/aco-people-office/references/agents/hiring-coordinator.md) — Coordinate an authorized hiring process and applicant communication.
+- [`learning_development_specialist`](../skills/aco-people-office/references/agents/learning-development-specialist.md) — Design practical team learning and skill development.
+- [`onboarding_offboarding_coordinator`](../skills/aco-people-office/references/agents/onboarding-offboarding-coordinator.md) — Prepare onboarding and safe departures.
+- [`people_operations_manager`](../skills/aco-people-office/references/agents/people-operations-manager.md) — Organize policies, personnel process and restricted HR records.
+- [`people_orchestrator`](../skills/aco-people-office/references/agents/people-orchestrator.md) — Route people & hr tasks through a small accountable team with early clarification and verified outputs.
+- [`structured_interview_designer`](../skills/aco-people-office/references/agents/structured-interview-designer.md) — Design fair job-relevant interviews and work samples.
+- [`talent_sourcing_specialist`](../skills/aco-people-office/references/agents/talent-sourcing-specialist.md) — Find potential employees or freelance collaborators.
+- [`workforce_planner`](../skills/aco-people-office/references/agents/workforce-planner.md) — Translate workload into staffing and contractor needs.
+
+Reused dependencies: `talent_contributors_manager`, `traffic_resource_manager`, `operations_director`, `legal_orchestrator`
+
+## delivery-office
+
+Lead: `delivery_orchestrator`. Native agents use the `aco_` prefix.
+
+- [`agile_delivery_facilitator`](../skills/aco-delivery-office/references/agents/agile-delivery-facilitator.md) — Run lightweight iterative delivery without ceremonial overhead.
+- [`delivery_orchestrator`](../skills/aco-delivery-office/references/agents/delivery-orchestrator.md) — Route project & programme delivery tasks through a small accountable team with early clarification and verified outputs.
+- [`programme_delivery_manager`](../skills/aco-delivery-office/references/agents/programme-delivery-manager.md) — Coordinate multiple connected projects.
+- [`project_controls_analyst`](../skills/aco-delivery-office/references/agents/project-controls-analyst.md) — Measure schedule, scope and cost change accurately.
+- [`quality_acceptance_coordinator`](../skills/aco-delivery-office/references/agents/quality-acceptance-coordinator.md) — Coordinate acceptance evidence and final handover.
+
+Reused dependencies: `project_manager`, `project_coordinator`, `traffic_resource_manager`, `traffic_coordinator`, `executive_producer`, `account_director`, `release_manager`
+
+## administration-office
+
+Lead: `administration_orchestrator`. Native agents use the `aco_` prefix.
+
+- [`administration_orchestrator`](../skills/aco-administration-office/references/agents/administration-orchestrator.md) — Route administration & secretariat tasks through a small accountable team with early clarification and verified outputs.
+- [`communications_operator`](../skills/aco-administration-office/references/agents/communications-operator.md) — Execute authorized email, WhatsApp, SMS or phone actions through verified capabilities.
+- [`executive_assistant`](../skills/aco-administration-office/references/agents/executive-assistant.md) — Turn priorities into concise daily office coordination.
+- [`inbox_correspondence_manager`](../skills/aco-administration-office/references/agents/inbox-correspondence-manager.md) — Triage email and prepare context-aware replies.
+- [`meeting_calendar_coordinator`](../skills/aco-administration-office/references/agents/meeting-calendar-coordinator.md) — Prepare and coordinate meetings and minutes.
+- [`office_administrator`](../skills/aco-administration-office/references/agents/office-administrator.md) — Handle routine supplier, facilities and office coordination.
+- [`records_document_controller`](../skills/aco-administration-office/references/agents/records-document-controller.md) — Maintain document versions, approvals and distribution.
+- [`service_desk_coordinator`](../skills/aco-administration-office/references/agents/service-desk-coordinator.md) — Triage office requests and route support.
+- [`travel_logistics_coordinator`](../skills/aco-administration-office/references/agents/travel-logistics-coordinator.md) — Research travel and coordinate office logistics.
+
+Reused dependencies: `communications_editor`, `studio_manager`, `studio_comms_manager`, `project_coordinator`, `billing_receivables_coordinator`
+
+## production-office
+
+Lead: `production_orchestrator`. Native agents use the `aco_` prefix.
+
+- [`assistant_video_editor`](../skills/aco-production-office/references/agents/assistant-video-editor.md) — Prepare organized editorial projects and turnovers.
+- [`beauty_fashion_retouch_artist`](../skills/aco-production-office/references/agents/beauty-fashion-retouch-artist.md) — Retouch fashion and beauty while preserving texture and agreed identity.
+- [`cg_lighting_render_artist`](../skills/aco-production-office/references/agents/cg-lighting-render-artist.md) — Light, shade and render CG with budget and color controls.
+- [`cinematographer`](../skills/aco-production-office/references/agents/cinematographer.md) — Plan capture, lighting and image continuity.
+- [`color_pipeline_engineer`](../skills/aco-production-office/references/agents/color-pipeline-engineer.md) — Design and validate cross-application color management.
+- [`colorist`](../skills/aco-production-office/references/agents/colorist.md) — Develop grades and shot matching with a defined color pipeline.
+- [`comfyui_node_developer`](../skills/aco-production-office/references/agents/comfyui-node-developer.md) — Develop focused custom ComfyUI nodes and tests.
+- [`comfyui_workflow_engineer`](../skills/aco-production-office/references/agents/comfyui-workflow-engineer.md) — Build and diagnose ComfyUI graphs against the user’s real environment.
+- [`compositor`](../skills/aco-production-office/references/agents/compositor.md) — Combine live action, CG and graphics consistently.
+- [`dialogue_editor`](../skills/aco-production-office/references/agents/dialogue-editor.md) — Prepare clean, synchronized and intelligible dialogue.
+- [`digital_imaging_technician`](../skills/aco-production-office/references/agents/digital-imaging-technician.md) — Manage capture monitoring, dailies and color metadata.
+- [`fashion_stylist`](../skills/aco-production-office/references/agents/fashion-stylist.md) — Plan wardrobe and styling for stills and moving image.
+- [`film_director`](../skills/aco-production-office/references/agents/film-director.md) — Translate approved concepts into performance, blocking and cinematic treatment.
+- [`first_assistant_director`](../skills/aco-production-office/references/agents/first-assistant-director.md) — Plan safe, feasible shooting days.
+- [`generative_media_director`](../skills/aco-production-office/references/agents/generative-media-director.md) — Direct generative image/video production inside approved intent.
+- [`generative_model_training_engineer`](../skills/aco-production-office/references/agents/generative-model-training-engineer.md) — Plan and implement rights-aware fine-tuning and LoRA experiments.
+- [`line_producer`](../skills/aco-production-office/references/agents/line-producer.md) — Cost and organize day-to-day production delivery.
+- [`localization_subtitles_editor`](../skills/aco-production-office/references/agents/localization-subtitles-editor.md) — Prepare translated, timed and accessible text/audio versions.
+- [`media_data_wrangler`](../skills/aco-production-office/references/agents/media-data-wrangler.md) — Protect media through ingest and backup verification.
+- [`media_delivery_qc`](../skills/aco-production-office/references/agents/media-delivery-qc.md) — Verify media deliveries against explicit specifications.
+- [`media_pipeline_engineer`](../skills/aco-production-office/references/agents/media-pipeline-engineer.md) — Automate secure DCC/media handoffs and reproducible production.
+- [`motion_designer`](../skills/aco-production-office/references/agents/motion-designer.md) — Build motion graphics from an approved system.
+- [`music_supervisor`](../skills/aco-production-office/references/agents/music-supervisor.md) — Research music and coordinate rights/creative fit.
+- [`online_editor_conform`](../skills/aco-production-office/references/agents/online-editor-conform.md) — Rebuild locked edits at final source quality.
+- [`photo_retouch_artist`](../skills/aco-production-office/references/agents/photo-retouch-artist.md) — Retouch photographic assets non-destructively.
+- [`product_retouch_artist`](../skills/aco-production-office/references/agents/product-retouch-artist.md) — Produce accurate product and still-life finishing.
+- [`production_orchestrator`](../skills/aco-production-office/references/agents/production-orchestrator.md) — Route production & postproduction tasks through a small accountable team with early clarification and verified outputs.
+- [`prop_stylist`](../skills/aco-production-office/references/agents/prop-stylist.md) — Prepare objects, surfaces and still-life arrangements.
+- [`re_recording_mixer`](../skills/aco-production-office/references/agents/re-recording-mixer.md) — Mix dialogue, music and effects for a specified delivery.
+- [`set_designer`](../skills/aco-production-office/references/agents/set-designer.md) — Design physical sets and spatial production environments.
+- [`sound_designer`](../skills/aco-production-office/references/agents/sound-designer.md) — Design sound for moving image, installation and media.
+- [`three_d_generalist`](../skills/aco-production-office/references/agents/three-d-generalist.md) — Build general-purpose CG assets and scenes.
+- [`video_editor`](../skills/aco-production-office/references/agents/video-editor.md) — Edit narrative and campaign video from supplied footage.
+- [`visual_prompt_engineer`](../skills/aco-production-office/references/agents/visual-prompt-engineer.md) — Engineer testable prompts for image, video and multimodal production.
+
+Reused dependencies: `executive_producer`, `integrated_producer`, `film_producer`, `photography_producer`, `junior_producer`, `production_coordinator`, `postproduction_supervisor`, `postproduction_coordinator`, `casting_researcher`, `location_researcher`, `business_affairs_manager`, `cgi_vfx_supervisor`, `motion_design_director`, `creative_director`, `art_director`, `asset_manager`, `technical_art_producer`, `production_cost_controller`
+
+## publishing-office
+
+Lead: `publishing_media_orchestrator`. Native agents use the `aco_` prefix.
+
+- [`acquisitions_editor`](../skills/aco-publishing-office/references/agents/acquisitions-editor.md) — Assess and develop prospective titles and commissions.
+- [`audience_development_editor`](../skills/aco-publishing-office/references/agents/audience-development-editor.md) — Connect editorial work to readers without corrupting it.
+- [`audiobook_producer`](../skills/aco-publishing-office/references/agents/audiobook-producer.md) — Plan audiobook casting, recording, edit and distribution.
+- [`author_relations_manager`](../skills/aco-publishing-office/references/agents/author-relations-manager.md) — Coordinate authors and contributors professionally.
+- [`book_distribution_manager`](../skills/aco-publishing-office/references/agents/book-distribution-manager.md) — Plan book sales channels, orders and returns.
+- [`branded_content_editor`](../skills/aco-publishing-office/references/agents/branded-content-editor.md) — Produce clearly identified sponsored editorial formats.
+- [`circulation_subscription_manager`](../skills/aco-publishing-office/references/agents/circulation-subscription-manager.md) — Manage publication subscriptions and membership operations.
+- [`copy_editor`](../skills/aco-publishing-office/references/agents/copy-editor.md) — Perform consistent sentence-level and house-style editing.
+- [`developmental_editor`](../skills/aco-publishing-office/references/agents/developmental-editor.md) — Improve manuscript argument, structure and reader experience.
+- [`ebook_accessibility_engineer`](../skills/aco-publishing-office/references/agents/ebook-accessibility-engineer.md) — Build and validate accessible digital publications.
+- [`editorial_designer`](../skills/aco-publishing-office/references/agents/editorial-designer.md) — Design books, magazines and publication systems.
+- [`journalist_reporter`](../skills/aco-publishing-office/references/agents/journalist-reporter.md) — Research and draft sourced reporting.
+- [`literary_translator`](../skills/aco-publishing-office/references/agents/literary-translator.md) — Translate publication text with voice and terminology control.
+- [`managing_editor`](../skills/aco-publishing-office/references/agents/managing-editor.md) — Manage an editorial list, issue or publication pipeline.
+- [`media_ad_operations_manager`](../skills/aco-publishing-office/references/agents/media-ad-operations-manager.md) — Coordinate advertising inventory and delivery for a media publisher.
+- [`newsroom_editor`](../skills/aco-publishing-office/references/agents/newsroom-editor.md) — Manage reported coverage, verification and corrections.
+- [`podcast_audio_producer`](../skills/aco-publishing-office/references/agents/podcast-audio-producer.md) — Produce podcast episodes and audio series.
+- [`prepress_specialist`](../skills/aco-publishing-office/references/agents/prepress-specialist.md) — Prepare print-ready files and proof checks.
+- [`print_production_manager`](../skills/aco-publishing-office/references/agents/print-production-manager.md) — Coordinate publication manufacturing and physical distribution preparation.
+- [`proofreader`](../skills/aco-publishing-office/references/agents/proofreader.md) — Check final proofs against approved text and production requirements.
+- [`publishing_media_orchestrator`](../skills/aco-publishing-office/references/agents/publishing-media-orchestrator.md) — Route publishing & media tasks through a small accountable team with early clarification and verified outputs.
+- [`publishing_metadata_specialist`](../skills/aco-publishing-office/references/agents/publishing-metadata-specialist.md) — Prepare identifiers and discoverability metadata for publications.
+- [`publishing_rights_permissions_manager`](../skills/aco-publishing-office/references/agents/publishing-rights-permissions-manager.md) — Track text, image, translation and format permissions.
+- [`typesetter`](../skills/aco-publishing-office/references/agents/typesetter.md) — Apply approved publication design consistently.
+
+Reused dependencies: `publishing_director`, `publication_manager`, `commissioning_editor`, `editor`, `art_writer`, `research_editor_fact_checker`, `content_director`, `community_editor`, `communications_pr_director`, `contracts_ip_manager`, `royalty_revenue_accountant`, `art_director`
