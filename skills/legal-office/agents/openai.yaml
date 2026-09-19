@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legal Office"
+  short_description: "Review contracts, rights, legal risk, and legal research"
+  default_prompt: "Use the Legal Office. Review this matter, identify risks and assumptions, and tell me what requires qualified counsel."

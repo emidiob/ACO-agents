@@ -1,83 +1,114 @@
 # ACO — Art & Commerce Office
 
-A modular, context-first agent framework for art, creative practice, commerce, professional work, and technical production across ChatGPT and Codex.
+ACO is a modular, context-first agent framework for creative and professional work across ChatGPT and Codex.
 
-## What it includes
+## Offices
 
 - `office-concierge` — front door and cross-office router
 - `artist-office` — contemporary artist practice and studio operations
 - `organization-office` — cultural/research organizations
 - `agency-office` — brand, creative, design, production, marketing, social
 - `product-office` — websites, apps, software, AI, QA, infrastructure
-- `legal-office` — first-pass legal workflows and legal research
+- `legal-office` — legal research, contracts, rights, risk, and legal operations
 - `recruitment-office` — candidate-side job search and career operations
-- `context-steward` — work history, decisions, open loops, context changes
-- `context-setup` — private context templates
+- `context-steward` — work history, decisions, open loops, context changes, handoffs
+- `context-setup` — private context templates and knowledge-base initialization
 
-The plugin itself is generic. It does **not** include the creator's private artist/company/career/legal context.
-
-## Architecture
+## Core architecture
 
 ```text
-PLUGIN / SKILLS = reusable expertise + routing
-PRIVATE CONTEXT = who/what the system is working for
+AGENT / SKILL = stable expertise
+PRIVATE CONTEXT = who or what the work is for
 BRIEF = the current task
 HISTORY = what happened, what was decided, what remains open
 ```
 
-Recommended deployment:
+The public plugin is generic. It contains **no private artist, company, client, career, legal, or project knowledge**.
+
+## Optional private knowledge with Google Drive
+
+ACO v0.2.1 is distributed publicly as a **skills-only plugin**. Google Drive is not bundled or republished by ACO.
+
+If a user separately connects the official Google Drive app, ACO can use a user-approved private knowledge folder for continuity:
+
+### What ACO tells the user
+
+When persistent context would help and no knowledge source is connected, the Concierge can explain:
+
+> **Want ACO to remember your projects, decisions, history, and context across sessions? Connect Google Drive and choose or create a private ACO knowledge folder. Or continue without persistent memory.**
+
+Connecting Drive is optional. ACO remains fully usable without it, and installation of ACO never grants Drive access automatically.
 
 ```text
-GitHub = public plugin / skills / generic agents
-Google Drive = private knowledge + history
-Project .agent-context/ = temporary VS Code handoff
+ACO — Art & Commerce Office/
+  Contexts/
+  History/
+  Projects/
+  Clients/
+  Handoffs/
+  Archive/
 ```
 
-## ChatGPT / Codex plugin format
+ACO should use only the minimum relevant files. If Drive is unavailable, it can work statelessly or from context supplied directly in the conversation.
 
-The root `plugin.json` is the portable Agent Plugins manifest. `.codex-plugin/plugin.json` is included as a compatibility fallback. The package is skills-only in v0.1.0; no MCP server is bundled yet.
+See [`docs/DRIVE-KNOWLEDGE.md`](docs/DRIVE-KNOWLEDGE.md).
 
-## Private knowledge
+## IDE handoff
 
-Filled context should live outside this public plugin. The recommended source of truth is a private Google Drive folder such as `ACO — Art & Commerce Office/`, with separate `Contexts`, `History`, `Projects`, `Clients` and `Handoffs` folders. See [`docs/DRIVE-KNOWLEDGE.md`](docs/DRIVE-KNOWLEDGE.md).
+For work that moves from ChatGPT/Codex Desktop into VS Code, use a project-local temporary context layer:
 
-The public GitHub repository contains only generic expertise, routing logic and empty templates. Never commit filled private context.
+```text
+.agent-context/
+  CURRENT-BRIEF.md
+  RELEVANT-CONTEXT.md
+  DECISIONS.md
+  OPEN-LOOPS.md
+  WORK-LOG.md
+  CHANGES.md
+  HANDOFF.md
+```
 
-A private MCP server remains an optional future layer when direct structured read/write tools are needed beyond the connected Drive workflow.
+At the end of substantial IDE work, record what changed and what remains open. The Context Steward can later promote durable updates back to the private knowledge source.
 
-Possible future MCP tools:
+## Public plugin format
 
-- `get_context(scope)`
-- `get_work_history(scope)`
-- `get_decisions(scope)`
-- `get_open_loops(scope)`
-- `append_work_log(entry)`
-- `record_decision(entry)`
-- `update_open_loop(entry)`
-- `propose_context_update(change)`
+- portable manifest: `plugin.json`
+- OpenAI compatibility manifest: `.codex-plugin/plugin.json`
+- skills: `skills/<skill>/SKILL.md`
+- optional local/repository marketplace metadata: `.agents/plugins/marketplace.json`
 
-This keeps public expertise separate from private memory.
+The repository contains no `.app.json` and no MCP dependency for the public v0.2.0 submission.
 
 ## Codex custom subagents
 
-The plugin skills work as workflow instructions in ChatGPT and Codex. For Codex users who also want the original true custom-agent TOMLs, they are bundled under `extras/codex-custom-agents/` with an optional installer:
+For Codex users who also want the original true custom-agent TOMLs, the repository includes them under `extras/codex-custom-agents/` with an optional installer:
 
 ```bash
 ./extras/install-codex-custom-agents.sh
 ```
 
-## Test prompts
+## Public submission
+
+See [`docs/PUBLIC-SUBMISSION.md`](docs/PUBLIC-SUBMISSION.md) for listing copy, starter prompts, and review test cases.
+
+## Privacy and terms
+
+- [Privacy](PRIVACY.md)
+- [Terms](TERMS.md)
+- [MIT License](LICENSE)
+
+## Example prompts
 
 ```text
 Use the Concierge. I want to plan my artistic practice for the next year and build a realistic revenue strategy.
 ```
 
 ```text
-Use the Agency Office. Create a brand identity process for this client; research first, then strategy, then creative routes, then design system.
+Use the Agency Office. Create a brand identity process for this client: research, strategy, creative routes, design system, production.
 ```
 
 ```text
-Use the Product Office. Audit this codebase, identify the biggest architecture and UX risks, and propose a prioritized implementation plan.
+Use the Product Office. Audit this codebase and propose a prioritized implementation plan.
 ```
 
 ```text

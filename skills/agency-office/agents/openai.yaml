@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agency Office"
+  short_description: "Strategy, brand, design, creative production, and marketing"
+  default_prompt: "Use the Agency Office. Turn this brief into a clear strategy, creative direction, production plan, and execution."

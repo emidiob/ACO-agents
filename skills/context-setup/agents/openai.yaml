@@ -1,0 +1,4 @@
+interface:
+  display_name: "Context Setup"
+  short_description: "Create or refresh private ACO knowledge context"
+  default_prompt: "Use Context Setup. Help me initialize or update my private ACO knowledge context."

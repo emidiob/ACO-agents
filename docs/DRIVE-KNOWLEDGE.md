@@ -1,29 +1,49 @@
-# Google Drive as the private knowledge layer
+# Google Drive as ACO's optional private knowledge layer
 
-ACO — Art & Commerce Office keeps reusable agent logic public and private knowledge outside the repository.
+ACO keeps reusable agent logic public and private knowledge outside the repository.
 
-## Recommended architecture
+## Important public-distribution rule
+
+The public ACO plugin is **skills-only**. It does not bundle, publish, or repackage Google Drive. Users who want persistent Drive-backed knowledge connect the official Google Drive app separately and authorize their own account. Installing ACO alone never grants access to Drive.
+
+This separation is intentional:
 
 ```text
-GitHub repository
-  plugin + skills + generic agents + templates
+ACO public plugin
+  generic skills + routing + templates
           |
+          | optional, separately authorized
           v
-Google Drive — private source of truth
-  ACO — Art & Commerce Office/
-    Contexts/
-    History/
-    Projects/
-    Clients/
-    Handoffs/
-    Archive/
+Google Drive app
+  user's private knowledge + history
 ```
 
-The public repository should never contain filled artist, company, career, client, legal, or project context.
+
+## User-facing onboarding
+
+ACO may proactively explain the optional Drive workflow when persistent context would materially help:
+
+> **Want ACO to remember your projects, decisions, history, and context across sessions? Connect Google Drive and choose or create a private ACO knowledge folder. Or continue without persistent memory.**
+
+If Drive is connected but an ACO folder has not been approved, ask whether to use an existing folder or create `ACO — Art & Commerce Office`. Never scan unrelated Drive content just to discover context.
+
+## Recommended private structure
+
+```text
+ACO — Art & Commerce Office/
+  Contexts/
+  History/
+  Projects/
+  Clients/
+  Handoffs/
+  Archive/
+```
+
+Users may choose a different folder name or storage system. ACO should only use locations the user explicitly identifies or approves.
 
 ## Context loading
 
-Load only what a task needs. Use blind-first research or critique when existing context could bias the result.
+Load only what a task needs. Use BLIND-FIRST research or critique when existing context could bias the result.
 
 Typical context files include:
 
@@ -45,9 +65,16 @@ Maintain continuity separately from canonical context:
 - `APPLICATIONS.md` — job-search pipeline
 - `LEGAL-MATTERS.md` — legal matters/deadlines
 
+## Privacy / least context
+
+- Do not search an entire Drive when an approved ACO folder or explicit file can answer the task.
+- Do not store credentials, passwords, access tokens, or unnecessary sensitive data in context.
+- Do not copy private context into the public GitHub repository.
+- Treat context as mutable and versioned; separate facts from hypotheses and preferences.
+
 ## ChatGPT / Codex Desktop to VS Code handoff
 
-For a coding or production task, export only the relevant subset of private knowledge into a temporary local folder:
+For coding or production work, export only the relevant subset of private knowledge into a temporary project-local folder:
 
 ```text
 .agent-context/
@@ -55,10 +82,12 @@ For a coding or production task, export only the relevant subset of private know
   RELEVANT-CONTEXT.md
   DECISIONS.md
   OPEN-LOOPS.md
+  WORK-LOG.md
+  CHANGES.md
   HANDOFF.md
 ```
 
-The IDE session should update its local work log and handoff. A later Context Steward pass promotes only durable changes back into Google Drive.
+At the end of substantial IDE work, record what changed, what was decided, what remains unresolved, tests performed, and the recommended next step. A later Context Steward pass should promote only durable changes back to the private knowledge store.
 
 ## Authority rule for artist practice
 

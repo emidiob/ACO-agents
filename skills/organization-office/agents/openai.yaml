@@ -1,0 +1,4 @@
+interface:
+  display_name: "Organization Office"
+  short_description: "Run cultural, research, publishing, and institutional work"
+  default_prompt: "Use the Organization Office. Structure this cultural or research-led organization task."

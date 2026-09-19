@@ -1,0 +1,4 @@
+interface:
+  display_name: "Artist Office"
+  short_description: "Plan, develop, produce, and sustain an artistic practice"
+  default_prompt: "Use the Artist Office. Help me with my artistic practice while preserving artistic independence."
