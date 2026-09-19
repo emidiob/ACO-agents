@@ -1,0 +1,9 @@
+# Repository migration is not knowledge migration
+
+Keep .git, commit history, the remote and the license. Preserve all untracked private data and unrelated tracked files. No rm -rf, git clean, reset --hard or force push.
+
+Use the supplied migration script from the newly extracted release OUTSIDE the existing repository. It checks a clean tracked worktree, verifies the release manifest, compares old files to known hashes, and lists additions/replacements/removals. --apply creates a backup branch and a work branch, changes only recognized ACO-owned paths, and stages an exact path list. Unknown or locally edited files block the operation; reconcile them before proceeding.
+
+After applying, run validate and the full tests in the target repository. Review git diff --cached, privacy scan and deleted paths. Only then commit, fast-forward/merge the reviewed branch into main, and push without force under user authorization. A failed push is not a successful publication.
+
+Drive data is not touched by this script. Private context migration is separately journaled through BOOTSTRAP.md. A source-code release and an installed copy are different: update the local managed install explicitly after pulling an approved version.

@@ -1,0 +1,1870 @@
+{
+  "files": {
+    ".agents/plugins/marketplace.json": [
+      "5a72e703be2ae36a7390e69cc0b7de3b3be8a4fba26ad6bdfd9543394ac40c81"
+    ],
+    ".codex-plugin/plugin.json": [
+      "487a0bb8abf92531658e7a77116b011ca6546ed9a86695d49778e9a6f22977bc"
+    ],
+    ".gitignore": [
+      "eba46f7a8fa692fc8a024e1ddd0394325ee571696ac061500090c97355a9b9ff"
+    ],
+    "ACO-INDEX.md": [
+      "b21c5d57fe08105c125781c5cf0d5b5d18dde4b3b056a1bf94009023317d6a70"
+    ],
+    "AGENTS.md": [
+      "775e36806f87c1c29af1ff0cafa388bc48570415c5d771b916b156534c2130cf"
+    ],
+    "CHATGPT.md": [
+      "3960ae09dddd7ab043d35cdacdec19bb8a8218ad97b3ce1211052fcc435c46a7"
+    ],
+    "CONCIERGE.md": [
+      "8e5b366f862c35dd67e3eec69be9012d5941097ef4b97bc7d609a7442b5af55a"
+    ],
+    "CONTEXT-POLICY.md": [
+      "2e7d8f4f79f6e2624ea179999e1f1cb9033b74682b0358ae51a1c74c8205dcc4"
+    ],
+    "LICENSE": [
+      "9681e9ef0daba8e1a2d1f763af2a57df60fda40493465b2dc85a7e5144d4207e"
+    ],
+    "MCP-ROADMAP.md": [
+      "69dea70e33fba75c72d988c48e133f2f86660d9e182bf3603687daf7ae6ce4bc"
+    ],
+    "PRIVACY.md": [
+      "7720b97326e6ad7e821cc32bcbe9d88a804d9f69b3a27a5c09673c9988e9ef3a"
+    ],
+    "README.md": [
+      "6c61dc4660b88b04d79c6042ca266d9de87ec81baa24424da18e0949e4c67754",
+      "8463bd48aca16b96236de16a77e17a08af182fc172be72c915443d08b3a1d7fc"
+    ],
+    "TERMS.md": [
+      "e95f68db6eae4bc0074c38777f0e1969ec299519daea35aba37edee8440f94b5"
+    ],
+    "assets/context-templates/ARTIST-CONTEXT.template.md": [
+      "383b7f90e7b82bba892ac132a0707da0712cd5751a0a38a1347f0e7dcb561c7e"
+    ],
+    "assets/context-templates/BRAND-CONTEXT.template.md": [
+      "d3b709398c809d71c3351e3ff8eaced636a572978d6206a15fc9b71070d8d95c"
+    ],
+    "assets/context-templates/CAMPAIGN-CONTEXT.template.md": [
+      "ef46707aa4f38c073248ade061cff9295cec467fa08060a73be11a4893167f88"
+    ],
+    "assets/context-templates/CAREER-CONTEXT.template.md": [
+      "90481a6cb5b14b265626b170c9d139190c592abc811620526685fdd96ed6fd38"
+    ],
+    "assets/context-templates/CLIENT-CONTEXT.template.md": [
+      "918476ad47eb9410a20352ac1cf28f50dd444afc7d26d336430675f1738b8817"
+    ],
+    "assets/context-templates/COMPANY-CONTEXT.template.md": [
+      "79ef2d76426723644176ab70bb4483354025dad4e16aa652eb0de9e3144248de"
+    ],
+    "assets/context-templates/JOB-SEARCH-CONTEXT.template.md": [
+      "c63389c86a2523559b48a662e1988625380b1c7328328d4e005a826bc3cac58a"
+    ],
+    "assets/context-templates/LEGAL-CONTEXT.template.md": [
+      "4594eedeae72571f5f087c7cfa2cb1a7989d30c952fdc74420a2580d8f8fa090"
+    ],
+    "assets/context-templates/LEGAL-MATTER-CONTEXT.template.md": [
+      "66ca42e664536da96fcca0ffb03ea820275e02c3a818f6d99148c1b1a59f1c15"
+    ],
+    "assets/context-templates/PRODUCT-CONTEXT.template.md": [
+      "0464d06673938812646924cf50a4284d03be79ed615f31b27c957666b640f6d7"
+    ],
+    "assets/context-templates/PROJECT-CONTEXT.template.md": [
+      "2cdf329bd981b7d4488a730e3f9e985b2d84d674186957cd10bc3ddb4d2db8f8"
+    ],
+    "assets/context-templates/TECHNICAL-CONTEXT.template.md": [
+      "4948475e4f379b0bfc76e47f2e4fa0d44b2703d762c8ff46f659e69d21e66123"
+    ],
+    "docs/CHATGPT-PROJECT-INSTRUCTIONS.txt": [
+      "e227e2f41e7bd5447bde7c63402c1ce1c20a06eedf8a1b6d7be59995754b917d"
+    ],
+    "docs/CHATGPT-SETUP.md": [
+      "13cea85f86b2abd66ddbd275f33ee93bc3e72d2d00698ed42e663eccdec4c07c"
+    ],
+    "docs/CODEX-MIGRATION-PROMPT.txt": [
+      "7792fef8a09087c71e52aef53f8f9bf372bcd20e35c831a5d07999e6363925c4"
+    ],
+    "docs/CODEX-SETUP.md": [
+      "00d18441b4bff8932f9025575cf30e84d814b6e2b7d6221ce72f34e4fe8658c4"
+    ],
+    "docs/DRIVE-KNOWLEDGE.md": [
+      "6aa3fadc0a5c4be37da7335605f91a61b27697a763676b965e9e801424ebf7c6"
+    ],
+    "docs/MIGRATION-FROM-PLUGIN.md": [
+      "ec0f5daf5fe3b55cb30e975cf5bff868c2ca4cdbbea3711560f217f480609cd8"
+    ],
+    "docs/PUBLIC-SUBMISSION.md": [
+      "eb331b037a4611cf05c6b6b740aa577195f86b910c38095d09b956dfd01ace08"
+    ],
+    "extras/codex-custom-agents/agency-office/agency-orchestrator.toml": [
+      "be1df7a807287e42ec152ca337d363ee6756a5a4724f6d5526f5bc16a5170be2"
+    ],
+    "extras/codex-custom-agents/agency-office/asset-manager.toml": [
+      "b8d5cd45acd969915481fe7f69509f81691bd34afbf44fe1ba10e766de5bc9fe"
+    ],
+    "extras/codex-custom-agents/agency-office/audience-strategist.toml": [
+      "570846fc99211e544747e539aafb944bb5f44248efa7d5fe1cfa254df45ce1f4"
+    ],
+    "extras/codex-custom-agents/agency-office/brand-guardian.toml": [
+      "47aa941a62dd40b4d083e5d45be769f004016c99df2556b9c50522ab7cbf28ee"
+    ],
+    "extras/codex-custom-agents/agency-office/brand-identity-designer.toml": [
+      "ea23a647f30c090c451ea050b0fa9ebb29648c3697218cdb8583ea2ced17d737"
+    ],
+    "extras/codex-custom-agents/agency-office/business-affairs-manager.toml": [
+      "f6769c2c67601383b94ec919bf88525094e89bf7f18422e4ff6196dc5fc691f3"
+    ],
+    "extras/codex-custom-agents/agency-office/campaign-strategist.toml": [
+      "55a1ef1ee3e91671e413a4335fafe45d4af436e3221750c42f3afff714cec9c1"
+    ],
+    "extras/codex-custom-agents/agency-office/casting-researcher.toml": [
+      "1a81d0b527266bf464e2d5b896dcc146deb32f062f25b952dd9ca9a30fd476ff"
+    ],
+    "extras/codex-custom-agents/agency-office/cgi-vfx-supervisor.toml": [
+      "28201d20249bf9e53eb89d817b2af35124ae1a6beac3ed7f8dc0b267cf0d4e31"
+    ],
+    "extras/codex-custom-agents/agency-office/community-manager.toml": [
+      "643f5532753c8d2c0c10a044b315f3b91734545cfe144556fcf70810e2502e80"
+    ],
+    "extras/codex-custom-agents/agency-office/content-director.toml": [
+      "15a0131f7588362aa2be21aae257d065a2cece0490e360cfe4d6dbcecb4b47cb"
+    ],
+    "extras/codex-custom-agents/agency-office/content-researcher.toml": [
+      "5a60060059682a6a33340d22e53b175b6ad898b0e0b322399e516077effc165d"
+    ],
+    "extras/codex-custom-agents/agency-office/copy-researcher.toml": [
+      "73cc487a49f8227fc87516b7c3552fcd9763cf53badbe7ba107d620fec792dc9"
+    ],
+    "extras/codex-custom-agents/agency-office/copywriter.toml": [
+      "8f5604e15b8bf2319269baf189c0be88742a138a10de023fd0596fcba6811b12"
+    ],
+    "extras/codex-custom-agents/agency-office/creative-strategist.toml": [
+      "bc4de2dbe7fefd71a20aad229e88585bb4b03a7172ac853c7a535c8d9b5662e0"
+    ],
+    "extras/codex-custom-agents/agency-office/creative-technologist-prototyper.toml": [
+      "8a618c9e0a4f1c84531ff45fbaea9c74948d6386f1f21d0fddd2a8974cce97c4"
+    ],
+    "extras/codex-custom-agents/agency-office/creator-partnerships-manager.toml": [
+      "9da8965d0abef9c176b715ed1ea1d7d2316eb89cfa5443346093f9fe5c112464"
+    ],
+    "extras/codex-custom-agents/agency-office/crm-lifecycle-strategist.toml": [
+      "f45524ef9fc7b1da62ef499b9e7d9d5cf69c7b2113afdc758cbd54c5dc457f1c"
+    ],
+    "extras/codex-custom-agents/agency-office/cultural-strategist.toml": [
+      "a0cf424d1d208f38fc7a9606d05f870dbf8fe507fb5e508c8d3155ba7815d5b7"
+    ],
+    "extras/codex-custom-agents/agency-office/design-director.toml": [
+      "6e8e205bf4b3163502c69f59bdfde10681098f52b4dc85707dbaa41e6d0459af"
+    ],
+    "extras/codex-custom-agents/agency-office/design-researcher.toml": [
+      "f5048913cf1fce52372a07da1326946aa1ef4d1452f21828e8b91de942029e2c"
+    ],
+    "extras/codex-custom-agents/agency-office/digital-design-director.toml": [
+      "d80e02a3726072455d2cc77f7fa77bdbdfb4b809c19856cee8199a699efbf50a"
+    ],
+    "extras/codex-custom-agents/agency-office/fact-checker.toml": [
+      "024dd340760ef56f8fbb763a044393ce927c1ff6cbe34ad427106f098c45dce2"
+    ],
+    "extras/codex-custom-agents/agency-office/film-producer.toml": [
+      "ba2102bf01b9f476ad630c55a70b78149139b950867fe7a16809f6d263e83dbe"
+    ],
+    "extras/codex-custom-agents/agency-office/frontend-prototyper.toml": [
+      "a41f69ccabea97f2ef4335ec25a64f9f25e038c7affd4f5035527d7a29c688d2"
+    ],
+    "extras/codex-custom-agents/agency-office/integrated-producer.toml": [
+      "ed0755edc5d1d65d311cfec5a89af1c808e62e6d359debd2244337753c18d36c"
+    ],
+    "extras/codex-custom-agents/agency-office/junior-art-director.toml": [
+      "dc7e85bc77b79ac039e0f657d6cf5d645492a6fe8b0dcc997cda34c1518f5002"
+    ],
+    "extras/codex-custom-agents/agency-office/junior-brand-strategist.toml": [
+      "ab549cd8891c64e4bb9a2ddfbcce245585d63fbc30c3bc5a6ce8fd8a49400b45"
+    ],
+    "extras/codex-custom-agents/agency-office/junior-copywriter.toml": [
+      "54affb15bf39966b2f7ea4017e45c8a88d3a5a8103946660d11414d84e4cb201"
+    ],
+    "extras/codex-custom-agents/agency-office/junior-designer.toml": [
+      "8f9dc68c62e0430f28852002e54dc323d6756066cc709d608ed373b9477dd271"
+    ],
+    "extras/codex-custom-agents/agency-office/junior-media-planner.toml": [
+      "b7203c7ae6bb698f6f9807cffc8525c812aef9805fdc60ec3390d4f44be23083"
+    ],
+    "extras/codex-custom-agents/agency-office/junior-producer.toml": [
+      "0faf4b2c9c13b7c66751c2814776d6e87c70320d4cbc73c81d03f9cc159353df"
+    ],
+    "extras/codex-custom-agents/agency-office/location-researcher.toml": [
+      "1c04d62cd6cc4873a483fe78010240d602cc66bfa2224d3572440a577ed45932"
+    ],
+    "extras/codex-custom-agents/agency-office/marketing-analyst.toml": [
+      "8e2a550a8b632fbf0ab62ab1d96d0565467312eb5536856f4857d65c8177eaf5"
+    ],
+    "extras/codex-custom-agents/agency-office/media-strategy-planner.toml": [
+      "3012d48fdeee0745ccfed6ff203f4a6faf3118ed7a94185e773d654c841ad7ed"
+    ],
+    "extras/codex-custom-agents/agency-office/motion-design-director.toml": [
+      "b5162e760de32b18f316fbcd7fd3ebec39086ecd766483d735a308e858bf483a"
+    ],
+    "extras/codex-custom-agents/agency-office/organic-discovery-strategist.toml": [
+      "0d8f22b3c783743d6b43db4eb6556ec019f07c0629b43206fc96bd196c5fa30f"
+    ],
+    "extras/codex-custom-agents/agency-office/performance-marketing-manager.toml": [
+      "f501f92a22f68350416e4b63d3d9ead7d5fa275d83d5c1770e2fa55d13e670c9"
+    ],
+    "extras/codex-custom-agents/agency-office/photography-producer.toml": [
+      "cbb5a56d520beda96bd14acd063b71bb80039693ee7da0c0fa4997d7f7ba5e6d"
+    ],
+    "extras/codex-custom-agents/agency-office/postproduction-coordinator.toml": [
+      "d59b7c97398966ca957a74eeac170f6b2de5855db96f15a15126efa85b10afe1"
+    ],
+    "extras/codex-custom-agents/agency-office/postproduction-supervisor.toml": [
+      "1cfb28909dec8c022ce3a55442080672be17fdca2d9ab8d7976fc1ea1444ad81"
+    ],
+    "extras/codex-custom-agents/agency-office/presentation-designer.toml": [
+      "311a1b9195f5a4ca2d53bd28cfaa557605e26e302591a2e689cbca22adc2ee2e"
+    ],
+    "extras/codex-custom-agents/agency-office/production-coordinator.toml": [
+      "c03f858f1695924a8375832143c46bf1cb29f27fb7133030b0c749bb737a0636"
+    ],
+    "extras/codex-custom-agents/agency-office/production-designer.toml": [
+      "a7eb922b1a705359f0a5466565d3281ef6df6c64cd257f21d762a71c800ad37a"
+    ],
+    "extras/codex-custom-agents/agency-office/project-coordinator.toml": [
+      "a97f2c2da63acdb20b76171793a2f65d9b5cb4602e4e9551a4fb6a000451685e"
+    ],
+    "extras/codex-custom-agents/agency-office/project-manager.toml": [
+      "4ff199f47b2e4dedc4040b463174027148dcc1110e53a36d8f98fd70157c300a"
+    ],
+    "extras/codex-custom-agents/agency-office/research-insights-director.toml": [
+      "964103f02f88030188b5dc6a22e6baedb20ab9d0cd8eb0ed81796b050c721ce8"
+    ],
+    "extras/codex-custom-agents/agency-office/seo-content-researcher.toml": [
+      "80168ef30ea8005485c4f0cd7f44b8bc0e546ee0f1084acf6911afdc0216d62d"
+    ],
+    "extras/codex-custom-agents/agency-office/social-content-creator.toml": [
+      "1107691daf4154d75d5cfe876dd55ba3cb4eb55cb4a9fba6e8e5203ace145d7c"
+    ],
+    "extras/codex-custom-agents/agency-office/social-media-manager.toml": [
+      "d9564068c9003e871c69a3fd96001ed66fcc62a43409823840200b1748874775"
+    ],
+    "extras/codex-custom-agents/agency-office/strategy-director.toml": [
+      "997b65b2755dbede08d747ef79e121ff8771d7f7435d0fed6187eedea537801c"
+    ],
+    "extras/codex-custom-agents/agency-office/traffic-coordinator.toml": [
+      "dd74c49e715ca4e62b35592beca19788deb5fa546942841dde83d16ae9df91c3"
+    ],
+    "extras/codex-custom-agents/agency-office/traffic-resource-manager.toml": [
+      "b26ad2529b588be615d5356a0130c338bb0adb21d3b75fb48c2aa31eade073fa"
+    ],
+    "extras/codex-custom-agents/agency-office/verbal-identity-director.toml": [
+      "5e635aa504014ffd52e9244da83c0d32676d927d32c4a6305fc176d963f8a7ab"
+    ],
+    "extras/codex-custom-agents/agency-office/visual-researcher.toml": [
+      "ca6e012db6ac2562d6a602c267dfa6feaaa02d3d34bdd4935e525578336f5ecd"
+    ],
+    "extras/codex-custom-agents/artist-office/art-contracts-rights-advisor.toml": [
+      "793e010ae60390b4217fbe975a2c0c208c3b57eaddf22e698dd222e6a3f1f754"
+    ],
+    "extras/codex-custom-agents/artist-office/art-critic.toml": [
+      "d8b1cac52ac6103ca656146f0adb7fb4bba05b1aaf20cb6435619ac71c8aa0ad"
+    ],
+    "extras/codex-custom-agents/artist-office/art-ecosystem-analyst.toml": [
+      "4984858c376dadb008ffa68a1c29cc179295f3277ce07378f57791e40c9e0c75"
+    ],
+    "extras/codex-custom-agents/artist-office/art-historian.toml": [
+      "18867540799e061d50b4240e7c19bea5ba9fad77eebab0d7b5454195b9f93464"
+    ],
+    "extras/codex-custom-agents/artist-office/art-marketing-director.toml": [
+      "eaf42e337011a7af725fa25453f8bede941271116000153fde4ff7eccbe7fd3b"
+    ],
+    "extras/codex-custom-agents/artist-office/art-opportunities-scout.toml": [
+      "60249101201758f75336eac6e57228478efd774c82952aa26dffb4e511c70c04"
+    ],
+    "extras/codex-custom-agents/artist-office/art-publicist.toml": [
+      "9a5348b838675e954a053fcb9421b7f77fb106165907d49285e16c81802f48fb"
+    ],
+    "extras/codex-custom-agents/artist-office/art-researcher.toml": [
+      "d9f6766ce43db1f2f259557c5b9c13bab653bc1928bea9cf27de74d91d78067a"
+    ],
+    "extras/codex-custom-agents/artist-office/art-sales-director.toml": [
+      "534bfbdb3630c883ba5b794ca3e17cd797ba8a13d887ab07cbb436b65dd617db"
+    ],
+    "extras/codex-custom-agents/artist-office/artist-agent.toml": [
+      "9706dbd9ea54595f9da75ac7d9b1813f1567af5a4b6b47108a625653a711ac11"
+    ],
+    "extras/codex-custom-agents/artist-office/artist-revenue-strategist.toml": [
+      "f650dd3a79fc41bc9c25dba44e853f25e894d5c10c830477744b627792e2db25"
+    ],
+    "extras/codex-custom-agents/artist-office/artist-social-media-manager.toml": [
+      "f07f9d39f520ac0ffe568428459c5e45433ef0b32ec371dff5fc95a49622ad9e"
+    ],
+    "extras/codex-custom-agents/artist-office/artwork-documentation-manager.toml": [
+      "e55d2a7e70db6160283a01c3beb56b2f842365d081f67a091e35d6e511fe37f9"
+    ],
+    "extras/codex-custom-agents/artist-office/collection-inventory-manager.toml": [
+      "91a72d3a576ec17ce4b0980c4e36159f6a8370f34c54edb267d1948c6b172082"
+    ],
+    "extras/codex-custom-agents/artist-office/collector-relations-manager.toml": [
+      "25914f5a2a621e7141e1dc50e89a3df1a3866b302d168b74c3f52af1978b1bbc"
+    ],
+    "extras/codex-custom-agents/artist-office/commissions-licensing-manager.toml": [
+      "16e115788494137a019e192dc70f33f9c3eac78cd1830cb5a2e5b24e03df73ab"
+    ],
+    "extras/codex-custom-agents/artist-office/creative-orchestrator.toml": [
+      "b9b31511cf3661fbc5ced5f390e5208f9df12e883906c7df2788380508c60fc3"
+    ],
+    "extras/codex-custom-agents/artist-office/curator.toml": [
+      "e63ee1c478731ff39cf02cfd81603bd9471e1af83116080fe3408d9422281406"
+    ],
+    "extras/codex-custom-agents/artist-office/digital-preservation-manager.toml": [
+      "cfc6cca69a56d477927023a5f5019521a65f6aeeb2893ea2269853d5375b180e"
+    ],
+    "extras/codex-custom-agents/artist-office/edition-manager.toml": [
+      "a8618c3bbea17c6f24f5155ad71b27614e867d2e907b8c13a08b829dfbafa5c9"
+    ],
+    "extras/codex-custom-agents/artist-office/exhibition-producer.toml": [
+      "8febf9dd14398a38f25712e8c230bc140e2eaa4e1e117e113eb0c235579f87d0"
+    ],
+    "extras/codex-custom-agents/artist-office/fabrication-manager.toml": [
+      "7ee92ce617e599e0cb44a04dba371336b9b72607e918dabb3b99fb56b1000fca"
+    ],
+    "extras/codex-custom-agents/artist-office/gallery-relations-manager.toml": [
+      "00eb2e4787bba98eee2d49d4e0e938dd8b361cf2e81cd89a885ee990ba4921da"
+    ],
+    "extras/codex-custom-agents/artist-office/grants-applications-manager.toml": [
+      "6f640f9ba9bc34a7371da45636f5388077b9307de16896c3db8d069a0c218cb1"
+    ],
+    "extras/codex-custom-agents/artist-office/institutional-relations-manager.toml": [
+      "33c908a3ae87c201525dc592bc498ffbd75c2ca8e76f29127a0b7ecca85b14f6"
+    ],
+    "extras/codex-custom-agents/artist-office/practice-archivist.toml": [
+      "ad22875b6c11be0997a4f221c19ccffdaf4fe0f4f7635fcc6443085591540953"
+    ],
+    "extras/codex-custom-agents/artist-office/practice-strategist.toml": [
+      "4584f2c1e431e37fc0cc10bfec1bdcd4317c2a197b05fcf39f033dbc93205431"
+    ],
+    "extras/codex-custom-agents/artist-office/press-reputation-researcher.toml": [
+      "7cb8571188872abd35464e673eb806b71112d2410750474549523d5c3be268a2"
+    ],
+    "extras/codex-custom-agents/artist-office/publication-manager.toml": [
+      "6fb69c3dca19ccb63a2d1d0bbbc66632819b3d30e133726e2071f4a14cba5823"
+    ],
+    "extras/codex-custom-agents/artist-office/registrar-art-logistics.toml": [
+      "822998b82eb50de252b55e9d5421b499a0b4094d5f3e90022aab76e2509f63f1"
+    ],
+    "extras/codex-custom-agents/artist-office/studio-chief-of-staff.toml": [
+      "0f4116ef1f6fb571c7d51d7bd4021d9a9477358b91f58b03edf71f0e41127878"
+    ],
+    "extras/codex-custom-agents/artist-office/studio-comms-manager.toml": [
+      "37e46843ba077cff928d0035a688ce890653297dfaf2a7cc2abfa14ef6e79932"
+    ],
+    "extras/codex-custom-agents/artist-office/studio-research-librarian.toml": [
+      "0dd8acae4e17a3ef7a5a74b1ebdd209f3f0e25b9bfca1f5e48e347d754c039bd"
+    ],
+    "extras/codex-custom-agents/artist-office/technical-art-producer.toml": [
+      "beaa857709f7b5a9312e640c900b0ee21de86c820df95f9cab9bfaca5c85b407"
+    ],
+    "extras/codex-custom-agents/legal-office/ai-technology-law-advisor.toml": [
+      "4f9f035485ea9a9a8493f6221618d2f8c3eafd85d046de205d01ef3643b6f503"
+    ],
+    "extras/codex-custom-agents/legal-office/claims-correspondence-drafter.toml": [
+      "eb683f36b9e63a2f1f55d86aa718a5b4bf26cc8e473074793d2b789d8abdea68"
+    ],
+    "extras/codex-custom-agents/legal-office/commercial-contracts-advisor.toml": [
+      "86e5464f268b7f5bc8e66f7abc7ac4980a39dbe4a6e62078dc5d73535bdf5856"
+    ],
+    "extras/codex-custom-agents/legal-office/consumer-advertising-compliance-advisor.toml": [
+      "76ff9187b6d68d40e149dd210475701d988220c107a2c980d3ee9bc3cd604359"
+    ],
+    "extras/codex-custom-agents/legal-office/contract-drafter.toml": [
+      "e5f009db317a40e03e4938932ec6f8eab30a737c14368435a8978fdeb9cd79cd"
+    ],
+    "extras/codex-custom-agents/legal-office/contract-negotiation-advisor.toml": [
+      "a39fa4add417963397747f9de9a83e8142bfd11573aa2f04e0e28697d813b863"
+    ],
+    "extras/codex-custom-agents/legal-office/contract-reviewer.toml": [
+      "f4fc4aad1046cdea8576671e6d9b88fdb053e5e11a65aa10897cbcd8067edac8"
+    ],
+    "extras/codex-custom-agents/legal-office/corporate-governance-advisor.toml": [
+      "0842b707eef1033dcfc0978e8343b3ce4eadb4a9967ea3bd6b72eed525008581"
+    ],
+    "extras/codex-custom-agents/legal-office/dispute-prevention-advisor.toml": [
+      "d708b4fe6443c7009c8ade1f2dc70001490144bb279440bc534fd2c6d48ced90"
+    ],
+    "extras/codex-custom-agents/legal-office/document-review-specialist.toml": [
+      "cece80b94d60c5ca2e6dcaec39d65977ae4b8cc7970196bb5bc80835e48ea3d9"
+    ],
+    "extras/codex-custom-agents/legal-office/employment-labor-advisor.toml": [
+      "df37ac3a1f48b50da476266bafbfc4f9b3f305a6f1c766dc28f4a87621f48505"
+    ],
+    "extras/codex-custom-agents/legal-office/independent-contractor-advisor.toml": [
+      "f7996234ceafe81bf64844942dc37293f3d584067b2d7f186980b7174e938153"
+    ],
+    "extras/codex-custom-agents/legal-office/international-contracts-researcher.toml": [
+      "ead045dd6d4a03ec182fe00417418fcfe919986a96bc7fb092bcc4f3b8b14a1e"
+    ],
+    "extras/codex-custom-agents/legal-office/ip-copyright-advisor.toml": [
+      "c0f75fee585279c297f6681906fab6d95861d53beae29e4e2619ec2f56372b29"
+    ],
+    "extras/codex-custom-agents/legal-office/jurisdiction-researcher.toml": [
+      "4fd9bdecc204613b608faebe91bc5ee57fe6b2505c99f40e3d5046136ed46fe3"
+    ],
+    "extras/codex-custom-agents/legal-office/legal-deadline-tracker.toml": [
+      "05110d5c31c7c40e9aeeed865da585b3bc1755121877fd52b0037532adbcee19"
+    ],
+    "extras/codex-custom-agents/legal-office/legal-fact-checker.toml": [
+      "0856b445df9915da801ecc5824571b93580d7577797c4e4bcf1e8b88886a8114"
+    ],
+    "extras/codex-custom-agents/legal-office/legal-matter-manager.toml": [
+      "5f5cfd98861af1804bf193f21119e5741a31dfff0395cc465f0388aaa7aaf05a"
+    ],
+    "extras/codex-custom-agents/legal-office/legal-operations-manager.toml": [
+      "fbcfacda63f23439118d0fa24edf5cf92cc974471ff0af746455b5c2a43c5830"
+    ],
+    "extras/codex-custom-agents/legal-office/legal-orchestrator.toml": [
+      "348d8678c290965fb5e4c24edd6aa736a6dca6ba7cd1fd21bec1b403e3462562"
+    ],
+    "extras/codex-custom-agents/legal-office/legal-researcher.toml": [
+      "3a2d3736fdf2d401e848bf46e9abb4d3c9a752950e2c7b80effe03052382ebe3"
+    ],
+    "extras/codex-custom-agents/legal-office/legal-risk-analyst.toml": [
+      "6c350570684680e599f5e345ee63b359f12a8599960841f79df0db4a0aa6aec2"
+    ],
+    "extras/codex-custom-agents/legal-office/licensing-rights-advisor.toml": [
+      "b2649d4d97862eb2495ebeb2f06bf5e0ca31b99e024e4d97be8616a897a76821"
+    ],
+    "extras/codex-custom-agents/legal-office/paralegal.toml": [
+      "c9688211e55a98fa07f638bec069b2e146833efb4e5f118ba36d2e34b46dbf90"
+    ],
+    "extras/codex-custom-agents/legal-office/privacy-data-protection-advisor.toml": [
+      "e7b86ce4af767c8bd2b22b02560c81df4a1948c99552dc044f503115dd21fddb"
+    ],
+    "extras/codex-custom-agents/legal-office/procurement-vendor-contract-advisor.toml": [
+      "82a603c801f160d3e3e42cbff1488c9156416878dffdae6b09acc4a930e0ddfe"
+    ],
+    "extras/codex-custom-agents/legal-office/regulatory-compliance-researcher.toml": [
+      "feb9f2e9f1bf24b80bd187ba8bb8d9ee574086dab7d0218de49a25e6171055f1"
+    ],
+    "extras/codex-custom-agents/legal-office/trademark-brand-protection-advisor.toml": [
+      "e37ed4b343bcdaa7e515578cb815a6aea4b0ad1827ce0fb510109ed965df415a"
+    ],
+    "extras/codex-custom-agents/organization-office/account-director.toml": [
+      "f4ebf7c5ccf4b8e1895c217822a203fd0c7bf1351ff4207dc724f2cb1e3036ff"
+    ],
+    "extras/codex-custom-agents/organization-office/business-development-director.toml": [
+      "3681d60d67fa02d470b243f8eef31fbaf8ce9a3c579467f85b45b9f3d6da6b53"
+    ],
+    "extras/codex-custom-agents/organization-office/client-strategy-director.toml": [
+      "4514765d3362905a4bd28477ba9c4275c7ed3bed76449a822ee5459b635fd401"
+    ],
+    "extras/codex-custom-agents/organization-office/commercial-strategy-director.toml": [
+      "de2b64a3ac530f6cd6ec3ce73894449960b7a0e5856196eac757934685c45fc9"
+    ],
+    "extras/codex-custom-agents/organization-office/commissioning-editor.toml": [
+      "fcb27c548c1c4d9ce98f5b5fc06da1a2606c440f20216de89f28fae98da01231"
+    ],
+    "extras/codex-custom-agents/organization-office/communications-pr-director.toml": [
+      "b9be975f6c25436fbefc60f837cb3c98d2c8ac6d481a01e4d995b38e17361129"
+    ],
+    "extras/codex-custom-agents/organization-office/community-editor.toml": [
+      "89f952f5cb7cfa0f45debd2027a2631fe4f0cbfa1ca4238d319cd9be7d5a76f8"
+    ],
+    "extras/codex-custom-agents/organization-office/contracts-ip-manager.toml": [
+      "cf5acbc425d2bc1ba0a0333537965df06ecb0f0efb82bb252318b9788aef9b87"
+    ],
+    "extras/codex-custom-agents/organization-office/creative-director.toml": [
+      "23332c5c3080b5a1c4968af1b52c1bd30e6ca42602f14ee8f5641bd3f63f26d2"
+    ],
+    "extras/codex-custom-agents/organization-office/creative-technologist.toml": [
+      "ba9cba9e5b5daaed95ba888526dc1849c1638c789c6f7f6a5757a5599ae21e2f"
+    ],
+    "extras/codex-custom-agents/organization-office/cultural-intelligence-analyst.toml": [
+      "f168f0e7d073cd72743e6ddc481394594afcb70e8224ec626d64bacb7342512b"
+    ],
+    "extras/codex-custom-agents/organization-office/data-insights-analyst.toml": [
+      "7b212709f85bf0ff6a155ce80e71e4807678315a0c60de5e5fdf00a99e942785"
+    ],
+    "extras/codex-custom-agents/organization-office/digital-product-manager.toml": [
+      "24d094ada9e622c9ce3d1700919316556d5b6e830a6911725224c6cada2fb48b"
+    ],
+    "extras/codex-custom-agents/organization-office/events-experience-producer.toml": [
+      "8db695e11f664bf28d96ba77f297e3fe3865dadcba6fc817974fce5810a39fe8"
+    ],
+    "extras/codex-custom-agents/organization-office/executive-producer.toml": [
+      "466f58aeda024cbb2c863b26f9a162bfcbe115165e9b2e3ece7e7808a15ca88a"
+    ],
+    "extras/codex-custom-agents/organization-office/funding-partnerships-manager.toml": [
+      "5519de065d4017b2ef0c2371b365af5c6270b3f324ee91a09d836e5f63421ff5"
+    ],
+    "extras/codex-custom-agents/organization-office/impact-evaluation.toml": [
+      "02822be8867cc287ae197af869c049dfafdeca42311c5b03ec299822c6356593"
+    ],
+    "extras/codex-custom-agents/organization-office/knowledge-architect.toml": [
+      "a320410df594a14aa2ac33d15165cabeb701bbf0ac863a0ef447020b045e3b6b"
+    ],
+    "extras/codex-custom-agents/organization-office/network-mapper.toml": [
+      "55a83168cc4508dc52817717ad8f6f75c7f35d714c88c168f5eb4c54146490f9"
+    ],
+    "extras/codex-custom-agents/organization-office/operations-director.toml": [
+      "e3ba8e00a120140a8a49287c366aab1e47228f5537940337bf29cba6befe9823"
+    ],
+    "extras/codex-custom-agents/organization-office/organization-director.toml": [
+      "51b797f0829c99b1747c3d292ceefaf19db01e329f4c66f948b283dc409b4777"
+    ],
+    "extras/codex-custom-agents/organization-office/organization-orchestrator.toml": [
+      "2e86ecb873af281c32c84b5bbc791107d1212ecc074771e2c12830712bb06d65"
+    ],
+    "extras/codex-custom-agents/organization-office/partnerships-director.toml": [
+      "a6b315261e31a3fc28a687c02e8c4150ebf2f84cd1452cd098527bcdba059a5f"
+    ],
+    "extras/codex-custom-agents/organization-office/product-experience-director.toml": [
+      "06a2c3cdc710480483a0d3a9227cf58add15ca8dd28351018f45a44908747c52"
+    ],
+    "extras/codex-custom-agents/organization-office/programme-curator.toml": [
+      "c675aec1cbaecebb88c4972a3cc17f410c5143b37d6df48ae02ba371d1e07cfc"
+    ],
+    "extras/codex-custom-agents/organization-office/proposal-pitch-director.toml": [
+      "9ff8cf7237fe8c8c5d06c343390ae2ea3bd92713fd39ec262f628e884c318660"
+    ],
+    "extras/codex-custom-agents/organization-office/publishing-director.toml": [
+      "e707b0791dd46bb1edfdea2d07bb36e2fb3b4a12c150208e595f6e63bc966b12"
+    ],
+    "extras/codex-custom-agents/organization-office/research-director.toml": [
+      "9549c43bad62ca46ec5af14d96d49de64f771f68f7b02d29692f05d1f42249b6"
+    ],
+    "extras/codex-custom-agents/organization-office/research-editor-fact-checker.toml": [
+      "febad38a4e5566d582664de31c94873bebcf72985597a946148de22d2fb5c7e5"
+    ],
+    "extras/codex-custom-agents/organization-office/revenue-innovation-strategist.toml": [
+      "b19cf3cd18b5f986485ba0a2129b812c9bce0981b1b191da912bcae483c6fd7c"
+    ],
+    "extras/codex-custom-agents/organization-office/sponsorship-director.toml": [
+      "27978466e0aead4a65fef054abc5f89a879d0745eff460e05ce7cc81d0d666e1"
+    ],
+    "extras/codex-custom-agents/organization-office/talent-contributors-manager.toml": [
+      "917bf78f667ec2e5ea1cab22de3206eb69f06f962646ca1e89af2a8d509990c4"
+    ],
+    "extras/codex-custom-agents/organization-office/ux-service-designer.toml": [
+      "d04c3cdfd49c6d4236baec4017e68371b056a71d2bac2baddca9fd0761cf212f"
+    ],
+    "extras/codex-custom-agents/product-office/accessibility-specialist.toml": [
+      "59655720293b556a9737c87a155011bdf5d78d3a54255563c4bb901d80048a06"
+    ],
+    "extras/codex-custom-agents/product-office/accessibility-tester.toml": [
+      "3ea913f195f822f1bdd0ff4b34d2cd2917e4b07e05b00ec38505d8be2692ba0b"
+    ],
+    "extras/codex-custom-agents/product-office/ai-engineer.toml": [
+      "666200ba7939efa26cf0cba257c25c1257b49f06316b9e4249971f4a12393e67"
+    ],
+    "extras/codex-custom-agents/product-office/ai-product-engineer.toml": [
+      "6a46e1dd342993d2f2cbd016c0fd2697a2d4e47c2ea6b8fb462d15afe8232a3c"
+    ],
+    "extras/codex-custom-agents/product-office/api-integration-engineer.toml": [
+      "90fc1b371e51348407dd3fe9d128b1a2bf50140fa8b35609392933d0eb79b17b"
+    ],
+    "extras/codex-custom-agents/product-office/api-researcher.toml": [
+      "ec5adb62458cb45fefdbeba8712bfd38c75688e1ec41e2ea2191fe48feb5d6be"
+    ],
+    "extras/codex-custom-agents/product-office/backend-engineer.toml": [
+      "09851c94eee31685af28fd9ce7f473f4d8bca285fdfe44631dc12d44265e1063"
+    ],
+    "extras/codex-custom-agents/product-office/bug-investigator.toml": [
+      "453b23dc773080b134ae01aa8e09c2a3f98e4e2a4dc860a67f0e080b67de6ceb"
+    ],
+    "extras/codex-custom-agents/product-office/business-analyst.toml": [
+      "0a3135f6aeadc664eaa1c381449b60ad992ec758036c4f225f3700ea98c6ddd0"
+    ],
+    "extras/codex-custom-agents/product-office/cloud-architect.toml": [
+      "8b43a1896085d7823bf597940fd26917858cabf58eb3f78a74e82648537b29e0"
+    ],
+    "extras/codex-custom-agents/product-office/code-reviewer.toml": [
+      "b94350972172430cc9b3daf7682b3e160f64233dbc7dbbf510423108c68c5c6a"
+    ],
+    "extras/codex-custom-agents/product-office/data-engineer.toml": [
+      "291b59ee2711cd53bf6ccc6fc93bab585e5f26e66f6c107f39c9d6439ffd5185"
+    ],
+    "extras/codex-custom-agents/product-office/data-scientist.toml": [
+      "5e6645a23bb53cabff095709e4b0f5584f96d49ee4251fa944969e5e3d79fdb1"
+    ],
+    "extras/codex-custom-agents/product-office/database-engineer.toml": [
+      "acd7f120890796ebe9463f42b2fbbc17f8d85532c6eceb0ccfecdaa834a9997e"
+    ],
+    "extras/codex-custom-agents/product-office/dependency-researcher.toml": [
+      "43304e1655f941bd0209a69eb9173d6ee6784dd416af1a979352f44faf52ed02"
+    ],
+    "extras/codex-custom-agents/product-office/design-system-designer.toml": [
+      "19957ecee422eb32178c4003cf4a4cf46ab4cf8106ed3eaa456a5b5e91b7431d"
+    ],
+    "extras/codex-custom-agents/product-office/devops-engineer.toml": [
+      "c46c72ef853ae9790b04aaa436de6e6de58b0803ff5c1398fd64f730a4a43a84"
+    ],
+    "extras/codex-custom-agents/product-office/documentation-writer.toml": [
+      "55f45e23082d8f668fb97121f32aff21df31737392923ccdb203857d42a15587"
+    ],
+    "extras/codex-custom-agents/product-office/frontend-engineer.toml": [
+      "324507bb1fed900bf63816a96b1d0db369aa18991be7f3a794ae1e3fc1546ec0"
+    ],
+    "extras/codex-custom-agents/product-office/fullstack-engineer.toml": [
+      "43f937d6b3cd440c1cd9b81903974e1203cba23abf60544125b9b51cacbaa6fb"
+    ],
+    "extras/codex-custom-agents/product-office/information-architect.toml": [
+      "51025bc899177dc0e56f8e86e88aabda8dc7f89b893d8e3c72c9454a52f3d3cf"
+    ],
+    "extras/codex-custom-agents/product-office/interaction-designer.toml": [
+      "1d1d9c2602dddc6a41d65771053ff27e9676fb4dc2c90e9783a32d5a5a94b782"
+    ],
+    "extras/codex-custom-agents/product-office/junior-developer.toml": [
+      "9386a24e1550791765fa0744830f6ed7675d24e8efaea86610d68caf3717f385"
+    ],
+    "extras/codex-custom-agents/product-office/llm-engineer.toml": [
+      "c1a41c54a69884a32f786ab1a4dc9a0896291dcf043a933b777a1f75bd33a863"
+    ],
+    "extras/codex-custom-agents/product-office/migration-specialist.toml": [
+      "d9ac69513991a20b98dbb6b2e185a87861ee7eddc1578591ce22eaa2a649500c"
+    ],
+    "extras/codex-custom-agents/product-office/ml-ops-engineer.toml": [
+      "e4c0703c261b10ceba4423a02db93f48c632e490688597bbb1cb4352514557b9"
+    ],
+    "extras/codex-custom-agents/product-office/mobile-engineer.toml": [
+      "30ade479e47b30b9ba6514bfad17deeed2faca9ca0811652b0efe034f1468e66"
+    ],
+    "extras/codex-custom-agents/product-office/performance-engineer.toml": [
+      "303025b1a65c9ad9a5e2620d41905b6c981315686ea3397312da6d0d922e9e23"
+    ],
+    "extras/codex-custom-agents/product-office/product-analyst.toml": [
+      "15211b79341e4be03dd1bdf70924fd1bef0748ce474832004099b3381eb86986"
+    ],
+    "extras/codex-custom-agents/product-office/product-designer.toml": [
+      "0d1fd45302b3af3e5c859b40ba509297ed36a904225ee02a06b55da2a41a1359"
+    ],
+    "extras/codex-custom-agents/product-office/product-director.toml": [
+      "846e77c3f31ae25809031f1b2370e768264f2c02245e73743997c091d57605d1"
+    ],
+    "extras/codex-custom-agents/product-office/product-manager.toml": [
+      "4906f011f67c727b85318311579334c7d8c83aa17f27b9f4452d6d39fcbcfa6f"
+    ],
+    "extras/codex-custom-agents/product-office/product-researcher.toml": [
+      "2fc6b8deb2ff7a3cebccf391b3443e5e51133fe18794174c5f31b0cce6a5aa41"
+    ],
+    "extras/codex-custom-agents/product-office/product-software-orchestrator.toml": [
+      "ee2b07e8522d6c08ce9a125eae444533ed2ebb99101e05958949b3be6facffeb"
+    ],
+    "extras/codex-custom-agents/product-office/qa-engineer.toml": [
+      "1c7e0b4eac5b10ddd7ef3b264b4446507ecad6a488dee513373971fd18a71772"
+    ],
+    "extras/codex-custom-agents/product-office/qa-lead.toml": [
+      "9bfe3c3f286555f49ec8f2572f82cb8e0b3cb7b0120506be3194a3a2f4e6d991"
+    ],
+    "extras/codex-custom-agents/product-office/release-manager.toml": [
+      "7904b3447a828c47d219d1e75abd55add0dd1f695d1e4132b148b58ba33e0ed3"
+    ],
+    "extras/codex-custom-agents/product-office/security-engineer.toml": [
+      "9fa987aae018fd2c0a7236f4cbcecafe5d74995dddee11b165edff81ac3e3580"
+    ],
+    "extras/codex-custom-agents/product-office/security-reviewer.toml": [
+      "85742d0d62140f52abdf90df054024f5291ff3ab4b924bffaf8b04337c8ce522"
+    ],
+    "extras/codex-custom-agents/product-office/senior-backend-engineer.toml": [
+      "43f275927cf209a6abfb0cac2a7b8a372ce90ac3b8c4ec0dd82eb288244dd01f"
+    ],
+    "extras/codex-custom-agents/product-office/senior-frontend-engineer.toml": [
+      "de1beeed7c99cf22257212c9fe120e70a460b6eac2be5d62838007103260d8d5"
+    ],
+    "extras/codex-custom-agents/product-office/software-architect.toml": [
+      "f6ff73445d4f437ada9cda739d7b284e7de2d1f7f303404e8df233c2c94f35b1"
+    ],
+    "extras/codex-custom-agents/product-office/sre-engineer.toml": [
+      "c17c0224940554e39fd3054c569ed7ee78eb4812bbe36f73f5257ca7ff3a3b98"
+    ],
+    "extras/codex-custom-agents/product-office/tech-lead.toml": [
+      "d86624ec7a84b8be11337232443573b15b10afe061c812dd215e8c3a26d750c5"
+    ],
+    "extras/codex-custom-agents/product-office/technical-researcher.toml": [
+      "4862fa03ddbcec4f0a3dea5efd2d25fce301eb8629606d9d79c9927f8e583441"
+    ],
+    "extras/codex-custom-agents/product-office/technical-writer.toml": [
+      "09020f8a8862c8321c7ebbe1cff194ff958b61e0c28bebfe189935f114efb1aa"
+    ],
+    "extras/codex-custom-agents/product-office/test-automation-engineer.toml": [
+      "1d6085c48f316cad3438da99b5f38427fef2eb72686f0e27fb1d409d34c5e4b2"
+    ],
+    "extras/codex-custom-agents/product-office/test-writer.toml": [
+      "03c87f21f5439a469cb374bc1670ee581b5c3cf7c6b2e22a579bf5c757a99c16"
+    ],
+    "extras/codex-custom-agents/product-office/ui-prototyper.toml": [
+      "0670ed700578b68cf384069699764cb91af69ec640f6369cb3b08da5f7db0fca"
+    ],
+    "extras/codex-custom-agents/product-office/ux-lead.toml": [
+      "cb1fdc0f851833443c1e59f5efec39eb3b586380cba1d9e5ae95da61b8c9311d"
+    ],
+    "extras/codex-custom-agents/product-office/ux-researcher.toml": [
+      "9648d4d6cc6374012289d05dd220b350c14ad9b00baeda5ccb68b60c89b7011f"
+    ],
+    "extras/codex-custom-agents/recruitment-office/application-manager.toml": [
+      "9189a929bee95aff976c166e0f76d95037211d1a048d3ef89aadb7611d001ebc"
+    ],
+    "extras/codex-custom-agents/recruitment-office/application-outcomes-analyst.toml": [
+      "5d16e8b9e081c327a347f01d4004ce4038411478932f400794da70b82e97fbd1"
+    ],
+    "extras/codex-custom-agents/recruitment-office/application-tracker.toml": [
+      "c6721b4b67b7bebfa69534389eb393c9b10ad0dccd00900e57691a5816ca4d23"
+    ],
+    "extras/codex-custom-agents/recruitment-office/application-writer.toml": [
+      "df68b55345c31f2c920bdd79b68806ae981b893f0cf263a135fcf105fac34957"
+    ],
+    "extras/codex-custom-agents/recruitment-office/ats-resume-specialist.toml": [
+      "4de0792ac46dc982f1e85f68b28cb4fdcf90c528908dcf7f4cad26e1def9aac5"
+    ],
+    "extras/codex-custom-agents/recruitment-office/career-document-fact-checker.toml": [
+      "241ef9ba43fb62555ea96432a0af3faa87e126f5b4e42ad04d1a163a040ce28e"
+    ],
+    "extras/codex-custom-agents/recruitment-office/career-learning-plan-advisor.toml": [
+      "65e5a959f000a4c8b7ade9bdc996d24b0c906530c2785a71dcec48ac65144d8a"
+    ],
+    "extras/codex-custom-agents/recruitment-office/career-outreach-writer.toml": [
+      "87cc010c3112517d6ee386c0f349401b89a8c7bdec35343d8631546a65388e13"
+    ],
+    "extras/codex-custom-agents/recruitment-office/career-personal-brand-strategist.toml": [
+      "e3c8d5c0e663d0788a3149051058bcc05beb3e06ab72ee2723ffe565c0dda00d"
+    ],
+    "extras/codex-custom-agents/recruitment-office/career-strategist.toml": [
+      "2e1ec9d9f89691a09d330ec30541819c8c607750826f196ae62e17bd56d56c32"
+    ],
+    "extras/codex-custom-agents/recruitment-office/career-transition-advisor.toml": [
+      "419fcaa25ef91a20022d1d5351a782bad4dcd3f7e330a996f9bf0ed21bbb1cfd"
+    ],
+    "extras/codex-custom-agents/recruitment-office/case-interview-coach.toml": [
+      "2a044188bd7a5dd7f9f7e77a06ad2a521ca10c0a32d31e13c0b75b5b5f5c768e"
+    ],
+    "extras/codex-custom-agents/recruitment-office/compensation-analyst.toml": [
+      "e31675a28765fa14227be5a976bb90cacf21cc73ae30d8e46e69527a24fdaec4"
+    ],
+    "extras/codex-custom-agents/recruitment-office/cover-letter-writer.toml": [
+      "cd270cab768fa30f77cf1baf9bcc2e2ec7983bbfa4a25ca9653ee220cf2553ab"
+    ],
+    "extras/codex-custom-agents/recruitment-office/executive-search-researcher.toml": [
+      "818beb5663e6f02ad2d87107e7e1cde6d9a1786c29d5df9a5c0d177ccb08d6a1"
+    ],
+    "extras/codex-custom-agents/recruitment-office/freelance-consulting-opportunity-scout.toml": [
+      "1260945539664dd3748d0f5b78a78bb65759a5fe8a0df13bdba11948d37f51ba"
+    ],
+    "extras/codex-custom-agents/recruitment-office/hiring-team-mapper.toml": [
+      "bcda54e5169546ab1d796338327f64ddcf002ecc3958fd6645a618f896ceadb0"
+    ],
+    "extras/codex-custom-agents/recruitment-office/international-mobility-job-advisor.toml": [
+      "e85890c47a28c66e96c741fd9c0eee2826f605ecf32b2711782642c6ccfb4b81"
+    ],
+    "extras/codex-custom-agents/recruitment-office/interview-coach.toml": [
+      "98db0a497e1d375e8a47f334c4266b1db5ae45ca4c0a38f585d36ead506a0f92"
+    ],
+    "extras/codex-custom-agents/recruitment-office/interview-researcher.toml": [
+      "09af5eb9461d895ba8007250264e031cfd43b912793460974babdcd09fb1bb19"
+    ],
+    "extras/codex-custom-agents/recruitment-office/job-fit-analyst.toml": [
+      "9c688335863705a9fd56bea4aafbc6aefc3160d7505cbb6e1f662da24e9d1764"
+    ],
+    "extras/codex-custom-agents/recruitment-office/job-followup-manager.toml": [
+      "b700343e401b7332c3a7e41e786f942ce6935b3653cddd1101d9594a45fbd9f0"
+    ],
+    "extras/codex-custom-agents/recruitment-office/job-market-researcher.toml": [
+      "e8673a6cfa75df10d8bd3ac142c963bde2c81c718e041ba0d17476fd0f94b8c6"
+    ],
+    "extras/codex-custom-agents/recruitment-office/job-opportunity-scout.toml": [
+      "7784b9104597814ca9cca401ec56db27028f837d5078c9fa9f4701b20f2a1650"
+    ],
+    "extras/codex-custom-agents/recruitment-office/job-search-chief-of-staff.toml": [
+      "cfaec542c4738aec848a661204b3697b652d19742e0f08a142fb56c873348808"
+    ],
+    "extras/codex-custom-agents/recruitment-office/linkedin-profile-strategist.toml": [
+      "83a1c1617829ccd4dab3cca896c31924d095674f8d9336441c67f10330dc3274"
+    ],
+    "extras/codex-custom-agents/recruitment-office/networking-strategist.toml": [
+      "72cf5ce072afb638bb7bbcfad8116ff75d2d4e2c52f7e22e3efd412f54c4795c"
+    ],
+    "extras/codex-custom-agents/recruitment-office/offer-negotiation-advisor.toml": [
+      "bfff27d69d6b26919827e3f255370b9cfce8a77fb6973e24bb14e80814102e72"
+    ],
+    "extras/codex-custom-agents/recruitment-office/portfolio-career-editor.toml": [
+      "231d823288f49a2f583569dbf7344ad46b1adfa99daa455fa23a9eaa3ec7ba69"
+    ],
+    "extras/codex-custom-agents/recruitment-office/professional-reference-manager.toml": [
+      "7c4c0fe55b372b386e7e04230e4e0697e0d81990ac689537bc71236de8ac6ced"
+    ],
+    "extras/codex-custom-agents/recruitment-office/recruiter-relations-manager.toml": [
+      "3dd809ad959b72e9efc270804fb9a4940365b3ba27235e777d2fed4d6f5f0410"
+    ],
+    "extras/codex-custom-agents/recruitment-office/recruitment-orchestrator.toml": [
+      "241ebbcc0a2cb746a08255f71edab4f80b5288eeec5f0b05e2337d3055b1cee4"
+    ],
+    "extras/codex-custom-agents/recruitment-office/resume-strategist.toml": [
+      "e2bc32e1903b720d554d45505a2f2a9733a67715e9e65a02d4b04d85afda28fe"
+    ],
+    "extras/codex-custom-agents/recruitment-office/skills-gap-analyst.toml": [
+      "be4a4e07d8ddfdf750f1029681c25baa7740e042ae5af92d7f3556e87cbc09dc"
+    ],
+    "extras/codex-custom-agents/recruitment-office/target-company-researcher.toml": [
+      "36f2764e878555d7788f76714b1db07cb6a625f63f218b17f05e78a1c9c99a45"
+    ],
+    "extras/codex-custom-agents/shared/art-director.toml": [
+      "7fdda4c06b2168f22869a84c8316bf53f02e2f9dd1f780426978c431d3419b6c"
+    ],
+    "extras/codex-custom-agents/shared/art-writer.toml": [
+      "e2a286f2cf52836b10095b61ccfdeb187d0ae4134a1040d10cfcb1b6b1230afd"
+    ],
+    "extras/codex-custom-agents/shared/brand-strategist.toml": [
+      "90defd02b7bf6b59193894d60fc4137630b3792fa89669cd0f55a0101cce4a20"
+    ],
+    "extras/codex-custom-agents/shared/communications-editor.toml": [
+      "f13c931d38ef68f93ffcf6deb02da935ac41feabf8b9fc652a8acb38300ddebc"
+    ],
+    "extras/codex-custom-agents/shared/context-steward.toml": [
+      "5eb4ba9ef5caaf8f2f8d2bb829c1e9a5125efabdd1de76a67ee2f6e63b5680de"
+    ],
+    "extras/codex-custom-agents/shared/editor.toml": [
+      "7e6014e169e91b212a79ba1bc8cc78fa149762a1c108510cf7b2009f3e326b2b"
+    ],
+    "extras/codex-custom-agents/shared/marketing-strategist.toml": [
+      "0804c1945ae2755aa37787426bc62131258c1b7701d244365e2bd6bb456fcf7b"
+    ],
+    "extras/codex-custom-agents/shared/office-concierge.toml": [
+      "5a7f03409623da48838aad5fc766ab827abe0741cf4337333d5d96c67a6faec5"
+    ],
+    "extras/codex-custom-agents/shared/studio-finance-manager.toml": [
+      "0369fa86a6cb51df165edcdf9d25515f9f9791f49d985874136a2c2b1960eb42"
+    ],
+    "extras/codex-custom-agents/shared/studio-manager.toml": [
+      "fcc76b28fdf7f66c7111e224e7b6e4e64b3822653dabbcfeba74a088a03acabf"
+    ],
+    "extras/install-codex-custom-agents.sh": [
+      "506184f0d85774c25da696dcbe84c7a3f9357835f777bf80a80485f365a1de6a"
+    ],
+    "plugin.json": [
+      "068abe2c19104cbc884a4211d0f429f1a564a7612ea2a0bb755fb4ea8d2f9d57",
+      "86f1b929910ccdc85303631da86533496170dd85b824d3b732409efbe072458b"
+    ],
+    "skills/agency-office/SKILL.md": [
+      "5a5dee6cb1b15f271aa1d360f16a23be5fe0d6924ab8691507dc6bb5d41507b6"
+    ],
+    "skills/agency-office/agents/openai.yaml": [
+      "8240f91eb33ae4a797c0790cbcee10b94ef3a04e5ceabfee14643bfe1513c6f4"
+    ],
+    "skills/agency-office/references/BRIEFING.md": [
+      "b5db034d54ad86df8e6f2644984a6ece2220b722912f7930b48bce6850eb9683"
+    ],
+    "skills/agency-office/references/README.md": [
+      "b2ef38ad77d5a9b0943f0a4e2077ba913ab414974f2c0af1ff524c13415c0fa6"
+    ],
+    "skills/agency-office/references/agents/agency-orchestrator.md": [
+      "f37aa992a7ff22dbb0d185722856c1d578e9d0b67f729848588c1b2f9522cbca"
+    ],
+    "skills/agency-office/references/agents/asset-manager.md": [
+      "893075b48f6fb32d6400d0c99222f0ebdf7677c5d54383e1abb36806bab57a92"
+    ],
+    "skills/agency-office/references/agents/audience-strategist.md": [
+      "c654cee90a30e816246762344eacf45341db6b6672a793faa91e9b67242b7994"
+    ],
+    "skills/agency-office/references/agents/brand-guardian.md": [
+      "66e2fdb3c011fa7a953bea50ce3c492c6f4abd707d14c9836994aa47724fa1fa"
+    ],
+    "skills/agency-office/references/agents/brand-identity-designer.md": [
+      "1f9560a61fa34c8e9c30742a81b2438778d46c5f389ea6fdfb334136182acf2a"
+    ],
+    "skills/agency-office/references/agents/business-affairs-manager.md": [
+      "e7743bb541b8d3a5f90811ae63d7237788ba0b1cb1e6151a462fd3fa03ae8a9a"
+    ],
+    "skills/agency-office/references/agents/campaign-strategist.md": [
+      "bfed6029cfb691e8bba6449e43339005b9266df79ac82e62425415c19587b65a"
+    ],
+    "skills/agency-office/references/agents/casting-researcher.md": [
+      "3b405ae40b8b1b274d09c55ae8d068ccd9a9a670cd97f94f7313c50818e06667"
+    ],
+    "skills/agency-office/references/agents/cgi-vfx-supervisor.md": [
+      "a65711ea7972ac2cdf2db452db05ec9cdcc049c32aa50d625ec499b79ca1f291"
+    ],
+    "skills/agency-office/references/agents/community-manager.md": [
+      "e3a835bba1a2245e79565b90a47b0cb95fde1712ee1eae54e5f0eaf5e2327575"
+    ],
+    "skills/agency-office/references/agents/content-director.md": [
+      "78c2c812e066519f6de594d9ae40e0800d70a7102c060cd165af8673f83ec699"
+    ],
+    "skills/agency-office/references/agents/content-researcher.md": [
+      "6d71cdc44ac2a75b8eb91945395126b4f356368c1ba83e74dfb7333db12f2611"
+    ],
+    "skills/agency-office/references/agents/copy-researcher.md": [
+      "2836b0091fae04a74adf654900fcd3915565fd1e1ec2a25b3e8ca8eb738e0710"
+    ],
+    "skills/agency-office/references/agents/copywriter.md": [
+      "63fcf302ee0e962db9f00c814db1ca6e9f8701e4124fa891551564d52b50da0d"
+    ],
+    "skills/agency-office/references/agents/creative-strategist.md": [
+      "77bdfa42d3bffb02f2d3fba7b93bb970180a55b033c35ae0669dcc0233e4a18a"
+    ],
+    "skills/agency-office/references/agents/creative-technologist-prototyper.md": [
+      "07ec661a5137a3d7ca7b49a6645f24d40ec0dd723dccce55fd0e33334531e7d3"
+    ],
+    "skills/agency-office/references/agents/creator-partnerships-manager.md": [
+      "4b3e246d17134bc0569da024cf7779d40add825ebcbc0bd7f45fb3c06f226d43"
+    ],
+    "skills/agency-office/references/agents/crm-lifecycle-strategist.md": [
+      "d60591d57a133063684ac483b1ad3c72f0dcbe1173d087b621b9006a098f0522"
+    ],
+    "skills/agency-office/references/agents/cultural-strategist.md": [
+      "41f2c4e40c9ef22880c2df1037bbabbfc2bfd70e119d839ee502176d978189a2"
+    ],
+    "skills/agency-office/references/agents/design-director.md": [
+      "58344294ba1ddc8e15c765d1d2bf90bc5f35cc6f309329c72bdc3546ea29807a"
+    ],
+    "skills/agency-office/references/agents/design-researcher.md": [
+      "823afecc7010da87d51e546f214db7c174fc0dd71cb33349c4f430d7e9e143bf"
+    ],
+    "skills/agency-office/references/agents/digital-design-director.md": [
+      "92891622f6f2a4b246d0eeba8d793936c5d24f47d8116378cd3e339aae8f2257"
+    ],
+    "skills/agency-office/references/agents/fact-checker.md": [
+      "31f6b54fb73965f1f03bd02e716cf563d7593b457442005d1ac8f1d9c127f430"
+    ],
+    "skills/agency-office/references/agents/film-producer.md": [
+      "23fd66fee26d9dbefd1e0b692a9f56c6345a16fa94179828803a820371c0a9fa"
+    ],
+    "skills/agency-office/references/agents/frontend-prototyper.md": [
+      "1787aab44c862f5bab6304d30b36d73c55518ca304c9586eb6cbad12ffdcbaf9"
+    ],
+    "skills/agency-office/references/agents/integrated-producer.md": [
+      "99c19751137e065272b47755c52d9b705b7655f4c7e170094a40aacebaa7f515"
+    ],
+    "skills/agency-office/references/agents/junior-art-director.md": [
+      "e7727a161f630cf685f6b043bd5443608bacccf48d7f3be3a1d9460d52127ab8"
+    ],
+    "skills/agency-office/references/agents/junior-brand-strategist.md": [
+      "6ad8ef21264797574fb6ad03a236c16b335adf01fd4371618c80e1055bd53bc8"
+    ],
+    "skills/agency-office/references/agents/junior-copywriter.md": [
+      "f5de80131592aef7b73f2f849834683df6eddd7ccbe9e4ea58c43288552bd7cf"
+    ],
+    "skills/agency-office/references/agents/junior-designer.md": [
+      "daba7b0c23c5ad77af51447194116b6e84c5b18a6d798ddfe47ccd1964d4def4"
+    ],
+    "skills/agency-office/references/agents/junior-media-planner.md": [
+      "a9732f7f6bae4fb67456be54932464ab489e2a1459ee8716cb9475bef0b709c2"
+    ],
+    "skills/agency-office/references/agents/junior-producer.md": [
+      "8ae19d789ad23cdc2de5a8ae8895786cedf0c77d6d5afa9243305731f64085a5"
+    ],
+    "skills/agency-office/references/agents/location-researcher.md": [
+      "86bbfa153cd951011aaed22564daf302c6c4a27560e9f7272cd1325eb08e3998"
+    ],
+    "skills/agency-office/references/agents/marketing-analyst.md": [
+      "a647ac61d5f45ecb7b297ca7cd8944fb4e1bd4b240e93784b667282ebb63f5a5"
+    ],
+    "skills/agency-office/references/agents/media-strategy-planner.md": [
+      "99d7e1540387fa6393f8481747d5a916e420fb6828b4c2d620e25495e1badd5e"
+    ],
+    "skills/agency-office/references/agents/motion-design-director.md": [
+      "0c88c09482c6bc0230ffb04210531f296fb426e94f9ee43f4cf05a22b0cc9b91"
+    ],
+    "skills/agency-office/references/agents/organic-discovery-strategist.md": [
+      "ac6517e907fb9644cc03918c475c0f8f224f5c686e114a7e42c97277c94b8767"
+    ],
+    "skills/agency-office/references/agents/performance-marketing-manager.md": [
+      "21fc0aeb5f87b48f6ee1c52bc3d4b710331b2517caf30a43e4b9597339cf279a"
+    ],
+    "skills/agency-office/references/agents/photography-producer.md": [
+      "676709c5dd23a724d4299e5dc8db835746a9e5dafec5e933d051f0ae8a2853af"
+    ],
+    "skills/agency-office/references/agents/postproduction-coordinator.md": [
+      "0964511b010e0f4b99a7e1ca959c76bf21a2d6c313906dee5211a714f79cb934"
+    ],
+    "skills/agency-office/references/agents/postproduction-supervisor.md": [
+      "91618d156319c2c2f5bf7ec74806b5a4bd34702cb6dd28affa05c7184eda40bf"
+    ],
+    "skills/agency-office/references/agents/presentation-designer.md": [
+      "71994270c2e7e85c77f845fdcf3d645047df336993375bc239d407619bbf7ab2"
+    ],
+    "skills/agency-office/references/agents/production-coordinator.md": [
+      "30b3dc462660deec9fb7d9e4347c53c1fc3687c6830e81a76a3d572ab4715ebe"
+    ],
+    "skills/agency-office/references/agents/production-designer.md": [
+      "578d3d48113f6cd4106a5ba73a0199a44eec43993d5e2576a56bb8dd5fdf0708"
+    ],
+    "skills/agency-office/references/agents/project-coordinator.md": [
+      "4408a19206b55f15b08bd3fd704feaf9b95ad8415bf0f29c1b49d9beefb12d41"
+    ],
+    "skills/agency-office/references/agents/project-manager.md": [
+      "07f7d49a2e380ce217e31a25cdcbd5e8b183142870115fc65937378ef93b8e8b"
+    ],
+    "skills/agency-office/references/agents/research-insights-director.md": [
+      "6a311058031771ec8f17fe18cf1e4e514a762f7968e9f6a9120e260ec32e4ef8"
+    ],
+    "skills/agency-office/references/agents/seo-content-researcher.md": [
+      "dc9b4949094dcabc3e73e40ec9828a61a0f1eac9e22a127d39cc9b86e0aa5278"
+    ],
+    "skills/agency-office/references/agents/social-content-creator.md": [
+      "a772eacc37ac78e1498ef802f4478bda927f1ead7a697761a177ade94787084e"
+    ],
+    "skills/agency-office/references/agents/social-media-manager.md": [
+      "ae551e7f515bcd83c361c712b9acfaf6afce038725f8741ed4800a5e982c9ee4"
+    ],
+    "skills/agency-office/references/agents/strategy-director.md": [
+      "387db00a3b40a7bdc6f938c78911785264f4666756bf428c4c4b6e70ccce8a6f"
+    ],
+    "skills/agency-office/references/agents/traffic-coordinator.md": [
+      "d637eeb284fdd3fa167180f407fc82b86fae527e0a302973ea114bc2a6d72c49"
+    ],
+    "skills/agency-office/references/agents/traffic-resource-manager.md": [
+      "984116c9690563464ae1f50f8148d7ef26b56ee4ddf0795be4e9b8473ff8feab"
+    ],
+    "skills/agency-office/references/agents/verbal-identity-director.md": [
+      "4aa8572fab97734d797ac14e4263ac14a2ad14d9e0a23e73f610b5d4034a63d6"
+    ],
+    "skills/agency-office/references/agents/visual-researcher.md": [
+      "87d2500ca025dfa28e37099d09c3e2fe3f9131867a3977c72d3dcc9afb3aea9d"
+    ],
+    "skills/agency-office/references/shared-agents/art-director.md": [
+      "08e9a0e79614b7302a82b48d1e2b043b2492f6d6efafc52eb19d84c7648198d5"
+    ],
+    "skills/agency-office/references/shared-agents/art-writer.md": [
+      "d9c82801ba9f2bca10ce848ee98fed7172e481c149592dadbf09c0a02fdcb502"
+    ],
+    "skills/agency-office/references/shared-agents/brand-strategist.md": [
+      "712b21dff4d637a903daa45724f54744e1528fb6c39d7b086faab717c77691ef"
+    ],
+    "skills/agency-office/references/shared-agents/communications-editor.md": [
+      "bad9b218715bec635c0b72e5948dd77628ddb945424c9edca78af90446798243"
+    ],
+    "skills/agency-office/references/shared-agents/context-steward.md": [
+      "7d1d037dc09c014fd34bfbb44192a0150fd7267b8191a825c54bdf5db104236b"
+    ],
+    "skills/agency-office/references/shared-agents/editor.md": [
+      "8a2f86dbd2f559c1f510d5415d01ed800f539ef40b0d140ab410e9bf6c73e4b2"
+    ],
+    "skills/agency-office/references/shared-agents/marketing-strategist.md": [
+      "10ebeaf8a0c4719e68acac960115e1e5420dfbbc8247405c9cae4e590e2deb72"
+    ],
+    "skills/agency-office/references/shared-agents/office-concierge.md": [
+      "0653be80fab88cd7d3297b1c932ef79a58b7df2b3a5e2ab6aff18feb82e6f8ed"
+    ],
+    "skills/agency-office/references/shared-agents/studio-finance-manager.md": [
+      "530ae897d8a3a69a5ac39bfce0eabe60aeed3fba353ad7530bdcfbc0d823b09f"
+    ],
+    "skills/agency-office/references/shared-agents/studio-manager.md": [
+      "224b14dd656826aa25a2b6217d05f011bf2fc95228e30657d5d8fba14cd7d5f5"
+    ],
+    "skills/artist-office/SKILL.md": [
+      "41922e8106b7c9ce3c79e775d002f9d4938d0c3f0a145e1bef883741568823ff"
+    ],
+    "skills/artist-office/agents/openai.yaml": [
+      "f266c551eb8f7615f643c7d28d7ec9a15b32c9fb24725d6b4814ae56245fb334"
+    ],
+    "skills/artist-office/references/BRIEFING.md": [
+      "93f54825cbf228aaf8001c1502185b1562e4015bd6ce62ba06a92aba0fc63c6e"
+    ],
+    "skills/artist-office/references/PRACTICE-INTERFACES.md": [
+      "d460160ae5629e47334dc725bc1de72656e22c4e9e7d47c27f44d84d850a7172"
+    ],
+    "skills/artist-office/references/README.md": [
+      "76500b745fdc82086076aacac3d2e2f7bf0c727236fc928dc14438213e8372b2"
+    ],
+    "skills/artist-office/references/agents/art-contracts-rights-advisor.md": [
+      "32a571cc39b08a5e1175e06c7070ddd70a5773744becbc64e335768b65e4a93b"
+    ],
+    "skills/artist-office/references/agents/art-critic.md": [
+      "ea3e6d9a6770c0636f10ec8a481a3e15d52e51fe4fb046aa84175114cd1c9385"
+    ],
+    "skills/artist-office/references/agents/art-ecosystem-analyst.md": [
+      "10edca3a7adc38d4b545d3358a7e67697c5def5810b9eaa05d5244a19e2a73d3"
+    ],
+    "skills/artist-office/references/agents/art-historian.md": [
+      "490d24a3c11fdded615022df1799137af45bd7436635a6ab1035574ef7d711af"
+    ],
+    "skills/artist-office/references/agents/art-marketing-director.md": [
+      "c5014ac6e0a625523d24da541a2d91c65325f0016270cb915848b5a384aaeb26"
+    ],
+    "skills/artist-office/references/agents/art-opportunities-scout.md": [
+      "af5d77c28e3e4898a1d488a8e25da7897fefde902aeac09461a4becc20ad06d4"
+    ],
+    "skills/artist-office/references/agents/art-publicist.md": [
+      "4586fb3215e3f7c88d0d5a9ef79e822cddcfc19c0daabe77d2ee18faa513b84c"
+    ],
+    "skills/artist-office/references/agents/art-researcher.md": [
+      "ebb0ca98c415e9f670b92fb05d463f39efb80987f157b0e37310abcb7d36b9bc"
+    ],
+    "skills/artist-office/references/agents/art-sales-director.md": [
+      "0f9d4a1fe22529993b4da1b5d3cfd1fc8e6d1869b1e2512d8da016dfa33195a9"
+    ],
+    "skills/artist-office/references/agents/artist-agent.md": [
+      "af1b29ed71572f444e01d92b694471038b273f9a1ce07edbc682fcbe8875f882"
+    ],
+    "skills/artist-office/references/agents/artist-revenue-strategist.md": [
+      "b5c2d8063fb1ed8f0fdc81e7b494a59e015dad509af2f7c420e9e9f36c1990f5"
+    ],
+    "skills/artist-office/references/agents/artist-social-media-manager.md": [
+      "ae358769d9ba1e502aaf333b7f9d0cf35e847c39c33b6cbd268ee4a620eff4bd"
+    ],
+    "skills/artist-office/references/agents/artwork-documentation-manager.md": [
+      "c66370245312ddd4573cb8796d773a7908c2aecd7124feb11c1133634aaa25b4"
+    ],
+    "skills/artist-office/references/agents/collection-inventory-manager.md": [
+      "5ab0bfef5bf05a3fea6e9f405a43443e889369c49daeba1e71651d6e41415fab"
+    ],
+    "skills/artist-office/references/agents/collector-relations-manager.md": [
+      "f21df2b63e9b326fb2c9c9220f04685186c8870becc8926f65f05692eae2e8f8"
+    ],
+    "skills/artist-office/references/agents/commissions-licensing-manager.md": [
+      "06dba143945af4d5ef7292741dc70fdf5ada0a25d23edc9759bb99835215a0f4"
+    ],
+    "skills/artist-office/references/agents/creative-orchestrator.md": [
+      "162c36143e7d9d344be816cd19f65c8ee8cf010117ca63552becd0738f772e18"
+    ],
+    "skills/artist-office/references/agents/curator.md": [
+      "bfb9d1aac1616261f61fc66510adefc37652b4e5f1fb1acefcd2f914ec37fb90"
+    ],
+    "skills/artist-office/references/agents/digital-preservation-manager.md": [
+      "af8d992c14602acb691989ffb23f04960ed2afe5c57c979ad1cef1f01722ea21"
+    ],
+    "skills/artist-office/references/agents/edition-manager.md": [
+      "fadd58bae18d982c03813b8f29bbb73fd2703c85088b150df9951ca44e4ca356"
+    ],
+    "skills/artist-office/references/agents/exhibition-producer.md": [
+      "ebc82800ab498e2cadb98a103edfa875de3f00c230c9f379f7113af8aedb18b4"
+    ],
+    "skills/artist-office/references/agents/fabrication-manager.md": [
+      "9590c4daeaa6f13312012dc04f8a7198135f404268b4f6320a676f597c9d166f"
+    ],
+    "skills/artist-office/references/agents/gallery-relations-manager.md": [
+      "c1f0c41ea4c7bd1e3779f0edfb3e7e644a1c5c79168474267e6420effc9c32e0"
+    ],
+    "skills/artist-office/references/agents/grants-applications-manager.md": [
+      "0f88b34e42fea358b8f828820be94638bed117d129889b00b3781b8ab2b1be16"
+    ],
+    "skills/artist-office/references/agents/institutional-relations-manager.md": [
+      "42c65d519fc68c75474ab41f727d78930e73f77bce6d2636bbee22943113cf38"
+    ],
+    "skills/artist-office/references/agents/practice-archivist.md": [
+      "f0b395e4bccc3f37404d7cab507c0db1b46401b5fac0974648179f4d44f6681a"
+    ],
+    "skills/artist-office/references/agents/practice-strategist.md": [
+      "a1eea084a4745a8337496d7e0f638688b8288e02d01af6692d9a6589f40f594f"
+    ],
+    "skills/artist-office/references/agents/press-reputation-researcher.md": [
+      "34582f9842e2d72c506e4960e589defbfae2dcafc96a78461bf7e7228228250f"
+    ],
+    "skills/artist-office/references/agents/publication-manager.md": [
+      "73760246afba3166413825732bd715eb64ab572581bff613c1b607fdf42daaec"
+    ],
+    "skills/artist-office/references/agents/registrar-art-logistics.md": [
+      "695d9c52bae2fe62727efb95fbb3b737dbd8176dc4f7ed8b03da6e96f6af4989"
+    ],
+    "skills/artist-office/references/agents/studio-chief-of-staff.md": [
+      "200a6cf06ec07f0fec916618c9c70f6936a11d72c27cfe0673cef5c83c80f3d4"
+    ],
+    "skills/artist-office/references/agents/studio-comms-manager.md": [
+      "256e547e49873cdc7edc37ee4fedbfa1b7cc6ac63a5e60e57f758b818b61fcce"
+    ],
+    "skills/artist-office/references/agents/studio-research-librarian.md": [
+      "fcdc878ed8f535bc911349cb8a092e2271aa4899efb957515a3b72f1227b6dce"
+    ],
+    "skills/artist-office/references/agents/technical-art-producer.md": [
+      "34fbb3e5a27fe2afc6f2e68a78b06d98a3eb6e845f9163cc306c4fe39f947eea"
+    ],
+    "skills/artist-office/references/shared-agents/art-director.md": [
+      "08e9a0e79614b7302a82b48d1e2b043b2492f6d6efafc52eb19d84c7648198d5"
+    ],
+    "skills/artist-office/references/shared-agents/art-writer.md": [
+      "d9c82801ba9f2bca10ce848ee98fed7172e481c149592dadbf09c0a02fdcb502"
+    ],
+    "skills/artist-office/references/shared-agents/brand-strategist.md": [
+      "712b21dff4d637a903daa45724f54744e1528fb6c39d7b086faab717c77691ef"
+    ],
+    "skills/artist-office/references/shared-agents/communications-editor.md": [
+      "bad9b218715bec635c0b72e5948dd77628ddb945424c9edca78af90446798243"
+    ],
+    "skills/artist-office/references/shared-agents/context-steward.md": [
+      "7d1d037dc09c014fd34bfbb44192a0150fd7267b8191a825c54bdf5db104236b"
+    ],
+    "skills/artist-office/references/shared-agents/editor.md": [
+      "8a2f86dbd2f559c1f510d5415d01ed800f539ef40b0d140ab410e9bf6c73e4b2"
+    ],
+    "skills/artist-office/references/shared-agents/marketing-strategist.md": [
+      "10ebeaf8a0c4719e68acac960115e1e5420dfbbc8247405c9cae4e590e2deb72"
+    ],
+    "skills/artist-office/references/shared-agents/office-concierge.md": [
+      "0653be80fab88cd7d3297b1c932ef79a58b7df2b3a5e2ab6aff18feb82e6f8ed"
+    ],
+    "skills/artist-office/references/shared-agents/studio-finance-manager.md": [
+      "530ae897d8a3a69a5ac39bfce0eabe60aeed3fba353ad7530bdcfbc0d823b09f"
+    ],
+    "skills/artist-office/references/shared-agents/studio-manager.md": [
+      "224b14dd656826aa25a2b6217d05f011bf2fc95228e30657d5d8fba14cd7d5f5"
+    ],
+    "skills/context-setup/SKILL.md": [
+      "99a29f65c628b7841c1c06bbee5230f058eecd21f7c71a54fa2c198b1461f2b0"
+    ],
+    "skills/context-setup/agents/openai.yaml": [
+      "46929406fdd8aa46f74c1535032c72783fc7ab5e79a55addf7f075d7cb8a31b3"
+    ],
+    "skills/context-setup/references/ARTIST-CONTEXT.template.md": [
+      "383b7f90e7b82bba892ac132a0707da0712cd5751a0a38a1347f0e7dcb561c7e"
+    ],
+    "skills/context-setup/references/BRAND-CONTEXT.template.md": [
+      "d3b709398c809d71c3351e3ff8eaced636a572978d6206a15fc9b71070d8d95c"
+    ],
+    "skills/context-setup/references/CAMPAIGN-CONTEXT.template.md": [
+      "ef46707aa4f38c073248ade061cff9295cec467fa08060a73be11a4893167f88"
+    ],
+    "skills/context-setup/references/CAREER-CONTEXT.template.md": [
+      "90481a6cb5b14b265626b170c9d139190c592abc811620526685fdd96ed6fd38"
+    ],
+    "skills/context-setup/references/CLIENT-CONTEXT.template.md": [
+      "918476ad47eb9410a20352ac1cf28f50dd444afc7d26d336430675f1738b8817"
+    ],
+    "skills/context-setup/references/COMPANY-CONTEXT.template.md": [
+      "79ef2d76426723644176ab70bb4483354025dad4e16aa652eb0de9e3144248de"
+    ],
+    "skills/context-setup/references/JOB-SEARCH-CONTEXT.template.md": [
+      "c63389c86a2523559b48a662e1988625380b1c7328328d4e005a826bc3cac58a"
+    ],
+    "skills/context-setup/references/LEGAL-CONTEXT.template.md": [
+      "4594eedeae72571f5f087c7cfa2cb1a7989d30c952fdc74420a2580d8f8fa090"
+    ],
+    "skills/context-setup/references/LEGAL-MATTER-CONTEXT.template.md": [
+      "66ca42e664536da96fcca0ffb03ea820275e02c3a818f6d99148c1b1a59f1c15"
+    ],
+    "skills/context-setup/references/PRODUCT-CONTEXT.template.md": [
+      "0464d06673938812646924cf50a4284d03be79ed615f31b27c957666b640f6d7"
+    ],
+    "skills/context-setup/references/PROJECT-CONTEXT.template.md": [
+      "2cdf329bd981b7d4488a730e3f9e985b2d84d674186957cd10bc3ddb4d2db8f8"
+    ],
+    "skills/context-setup/references/TECHNICAL-CONTEXT.template.md": [
+      "4948475e4f379b0bfc76e47f2e4fa0d44b2703d762c8ff46f659e69d21e66123"
+    ],
+    "skills/context-steward/SKILL.md": [
+      "79aa517660cc5cc86676371bb01c747441cb0682b77522c87bc6c5d24fca5ed7"
+    ],
+    "skills/context-steward/agents/openai.yaml": [
+      "f3c0b7ea0d16f3fbb7768b9e5a10c63e1ec2a6fc1e2ba6099771c92a017b97e1"
+    ],
+    "skills/context-steward/references/context-steward.md": [
+      "7d1d037dc09c014fd34bfbb44192a0150fd7267b8191a825c54bdf5db104236b"
+    ],
+    "skills/legal-office/SKILL.md": [
+      "d27f6d855db3b95c27267a41e1f1e6bc1ddca5d65cab4e8dc20fb7ad50fa9170"
+    ],
+    "skills/legal-office/agents/openai.yaml": [
+      "8f4ddaee37fc58c686c53fb34db7217c933bd05e336a33c2ee248a804c1c376e"
+    ],
+    "skills/legal-office/references/BRIEFING.md": [
+      "4889d5f461441a1fb83b3a468e5278484f7b807d82fa912e80750ad921ba4b83"
+    ],
+    "skills/legal-office/references/README.md": [
+      "8240e05cc148a232a073c44b382005e7a2d79e81802079438b32923b8bb993ed"
+    ],
+    "skills/legal-office/references/agents/ai-technology-law-advisor.md": [
+      "8ddca72559015cddd585b06c50ce69f80836d47958e2c696bf12a4b76b94fcdf"
+    ],
+    "skills/legal-office/references/agents/claims-correspondence-drafter.md": [
+      "9ac7f427f3a89c1413f61ced9beb7837d90a929e0b131b8b828d881de72d7121"
+    ],
+    "skills/legal-office/references/agents/commercial-contracts-advisor.md": [
+      "0250153eff9d99c46f54dcccc09fb5e74ec9772e26335c1757ed2eaff883ea1c"
+    ],
+    "skills/legal-office/references/agents/consumer-advertising-compliance-advisor.md": [
+      "8f65358658537573aedf5864723f53f8b46c23c71f32ec044ab27ec5a235c27b"
+    ],
+    "skills/legal-office/references/agents/contract-drafter.md": [
+      "2999c3a8fc5922ea495988e4adcd5a114ceac819e819ab83bbe408020c560ec4"
+    ],
+    "skills/legal-office/references/agents/contract-negotiation-advisor.md": [
+      "49f1f2be49d9a4b2c644b2412ab3cdba4e233b2c14c221d46a5ba07e2536d440"
+    ],
+    "skills/legal-office/references/agents/contract-reviewer.md": [
+      "c8fb551d495e40eb63d77e013533af50b55c1d59fe083c2402ed42f66995b793"
+    ],
+    "skills/legal-office/references/agents/corporate-governance-advisor.md": [
+      "af32990781eef83106778bbd186c782410e612f3fbb4bbf42e89a041e64fc7d6"
+    ],
+    "skills/legal-office/references/agents/dispute-prevention-advisor.md": [
+      "ac7eab8dfbf9ab7caf789922c6d4b4d584276118cefda77ea4227025edefcff0"
+    ],
+    "skills/legal-office/references/agents/document-review-specialist.md": [
+      "5e6b25cb7e05efcfb0643d8bb2c21e199c3164a06a5d91738ab14e81735ebf77"
+    ],
+    "skills/legal-office/references/agents/employment-labor-advisor.md": [
+      "90b7620e3100b92d56ea16575bb01f884284debdb26d2e3f8b7db0b354629e6e"
+    ],
+    "skills/legal-office/references/agents/independent-contractor-advisor.md": [
+      "307e87ab9708ed1606702a2e849523d5dcf3cf674473913657a46b28d8f2ff9a"
+    ],
+    "skills/legal-office/references/agents/international-contracts-researcher.md": [
+      "4175b13188394d799383c32978612b47c17752c1ae378fddba933ca0a9c01d76"
+    ],
+    "skills/legal-office/references/agents/ip-copyright-advisor.md": [
+      "32ade0ca18e918db4f0a38057327cfebef0952b4c1ac154539c6705916747cb9"
+    ],
+    "skills/legal-office/references/agents/jurisdiction-researcher.md": [
+      "097bb9f6d203087d6aa1f0d4118d2b242db21e9975d76996d150bab947d72d99"
+    ],
+    "skills/legal-office/references/agents/legal-deadline-tracker.md": [
+      "381632e0155d040ba9d845e9366143749b8196445d4975581627e3a6cb1bfe16"
+    ],
+    "skills/legal-office/references/agents/legal-fact-checker.md": [
+      "ec7d28fab8c4560609ce4a4a70efc07fa0adfcaad5a81596632d09a06b2e955e"
+    ],
+    "skills/legal-office/references/agents/legal-matter-manager.md": [
+      "2df8d91eb8e9d404b2c92d3d7ea90da634a215590ed812ee10eeff5cd4289565"
+    ],
+    "skills/legal-office/references/agents/legal-operations-manager.md": [
+      "b4098d4b872fd17c4deaeff766efaddd5ed0627494aab38f78448c97d0a7d064"
+    ],
+    "skills/legal-office/references/agents/legal-orchestrator.md": [
+      "af475772bab5657f704b6aef309866474b1910dc21728752bc85bb7f1f3b7619"
+    ],
+    "skills/legal-office/references/agents/legal-researcher.md": [
+      "625dc74e0c287e55b68a136526825f61e4a1613e6366ef1d2cc44a44ed59f985"
+    ],
+    "skills/legal-office/references/agents/legal-risk-analyst.md": [
+      "f09f3553d776d7742c0817cedb48bf0114886f45b98bd059d076f3c927006da7"
+    ],
+    "skills/legal-office/references/agents/licensing-rights-advisor.md": [
+      "7cadf0031c4d97347967bca29151a4da722d4d19673eaf5f321fd224bf066a5a"
+    ],
+    "skills/legal-office/references/agents/paralegal.md": [
+      "025d47744963e89e6745e41e0569260c364f5c237925ef203199e5092da697aa"
+    ],
+    "skills/legal-office/references/agents/privacy-data-protection-advisor.md": [
+      "5bfb872a87ff90d1baff6485b962556d3a20595610fd7c1ac6a4d4a91e1120f3"
+    ],
+    "skills/legal-office/references/agents/procurement-vendor-contract-advisor.md": [
+      "1586e86c4c50d57d4f1f8a4685a72999e9c1c22c9b975f40827312b37266c58e"
+    ],
+    "skills/legal-office/references/agents/regulatory-compliance-researcher.md": [
+      "0c076782a536dcd3c722fa25e78846d68f6d4e3bf5606a094d7ba08fc6cf8a51"
+    ],
+    "skills/legal-office/references/agents/trademark-brand-protection-advisor.md": [
+      "bbf6869766374ee0dd8777b22b0809225f394c47eced40540d5bffadb02d9d39"
+    ],
+    "skills/legal-office/references/shared-agents/art-director.md": [
+      "08e9a0e79614b7302a82b48d1e2b043b2492f6d6efafc52eb19d84c7648198d5"
+    ],
+    "skills/legal-office/references/shared-agents/art-writer.md": [
+      "d9c82801ba9f2bca10ce848ee98fed7172e481c149592dadbf09c0a02fdcb502"
+    ],
+    "skills/legal-office/references/shared-agents/brand-strategist.md": [
+      "712b21dff4d637a903daa45724f54744e1528fb6c39d7b086faab717c77691ef"
+    ],
+    "skills/legal-office/references/shared-agents/communications-editor.md": [
+      "bad9b218715bec635c0b72e5948dd77628ddb945424c9edca78af90446798243"
+    ],
+    "skills/legal-office/references/shared-agents/context-steward.md": [
+      "7d1d037dc09c014fd34bfbb44192a0150fd7267b8191a825c54bdf5db104236b"
+    ],
+    "skills/legal-office/references/shared-agents/editor.md": [
+      "8a2f86dbd2f559c1f510d5415d01ed800f539ef40b0d140ab410e9bf6c73e4b2"
+    ],
+    "skills/legal-office/references/shared-agents/marketing-strategist.md": [
+      "10ebeaf8a0c4719e68acac960115e1e5420dfbbc8247405c9cae4e590e2deb72"
+    ],
+    "skills/legal-office/references/shared-agents/office-concierge.md": [
+      "0653be80fab88cd7d3297b1c932ef79a58b7df2b3a5e2ab6aff18feb82e6f8ed"
+    ],
+    "skills/legal-office/references/shared-agents/studio-finance-manager.md": [
+      "530ae897d8a3a69a5ac39bfce0eabe60aeed3fba353ad7530bdcfbc0d823b09f"
+    ],
+    "skills/legal-office/references/shared-agents/studio-manager.md": [
+      "224b14dd656826aa25a2b6217d05f011bf2fc95228e30657d5d8fba14cd7d5f5"
+    ],
+    "skills/office-concierge/SKILL.md": [
+      "aef0ee3e733bbbcb2cffa3a4fa865235641aae9217d434a8ec211e912a099b89"
+    ],
+    "skills/office-concierge/agents/openai.yaml": [
+      "c706c555d8900a330e0bc41c60cbf1b56df9453d2c56b75dc3154b8b6ee9f9e5"
+    ],
+    "skills/office-concierge/references/OFFICE-MAP.md": [
+      "8263fe7e9dbddd70b974a03742596a7c139ee57f7fcb2b5a0080af85c248b265"
+    ],
+    "skills/office-concierge/references/office-concierge.md": [
+      "0653be80fab88cd7d3297b1c932ef79a58b7df2b3a5e2ab6aff18feb82e6f8ed"
+    ],
+    "skills/organization-office/SKILL.md": [
+      "60fbf127a749d4aba14c1395b7905bb292191a724770f9d40365ed1956661980"
+    ],
+    "skills/organization-office/agents/openai.yaml": [
+      "93c329b93ad3dae43026211c2c48c9374a7ad94a499d15aae65e1e50d55b53e4"
+    ],
+    "skills/organization-office/references/README.md": [
+      "4c7e75581a468e62f4b04a7c20706c04aeae951297d7faaea5efa41c9209bfef"
+    ],
+    "skills/organization-office/references/agents/account-director.md": [
+      "8e9bc7700775611ddf6a290ac86ef19eaeffb33f8d87cc06ba5bfd7ca2849ef4"
+    ],
+    "skills/organization-office/references/agents/business-development-director.md": [
+      "074835a16b85f18d7f07584b1cd4cb407a3773d2c99045965e9ff027ace0f34b"
+    ],
+    "skills/organization-office/references/agents/client-strategy-director.md": [
+      "ee9cd37bf60fd6494d074accf7f61d776f45db5eb2bd83b0200000afa6fbceab"
+    ],
+    "skills/organization-office/references/agents/commercial-strategy-director.md": [
+      "c5a0bb45072df08b02961a8a0199a79ff8e4dd5acc436488d13aea87ee6f1a86"
+    ],
+    "skills/organization-office/references/agents/commissioning-editor.md": [
+      "7b715540394fb6ac4fa4a4668aed47824c89d6243229fc448903ba41825c3ad3"
+    ],
+    "skills/organization-office/references/agents/communications-pr-director.md": [
+      "c50b46f19c4ab22f0806c4f401f9d04119b33032ed9223975767b7060a10f30d"
+    ],
+    "skills/organization-office/references/agents/community-editor.md": [
+      "ef4f25212399872f3a8b845d6c4e9f98de239cd1e657293314c2b7324bc8b8fa"
+    ],
+    "skills/organization-office/references/agents/contracts-ip-manager.md": [
+      "7c15a24d148722c191fd224f2280cf36ef9569640955bed738ab23d496272e47"
+    ],
+    "skills/organization-office/references/agents/creative-director.md": [
+      "2ec89e4638f722242142e5851ad8c152a157fc650f0e2e0939e4b1b5dd1329cf"
+    ],
+    "skills/organization-office/references/agents/creative-technologist.md": [
+      "eccc67785db8d92aef8e547ecf94a4cbee0b8cb2264649652a5ec97d883a36f8"
+    ],
+    "skills/organization-office/references/agents/cultural-intelligence-analyst.md": [
+      "b309a59e01fbef5f568d045dd21de4f81eabf3758463100b8efc6237613a17bd"
+    ],
+    "skills/organization-office/references/agents/data-insights-analyst.md": [
+      "840490c913197028bc77e067542b6d15d13ab7c50bea3cb20e82e7758b00b68b"
+    ],
+    "skills/organization-office/references/agents/digital-product-manager.md": [
+      "af1006ded66cf5b722152a4a3c78fd32b6609260ba269d74ee73473c60c4fcf1"
+    ],
+    "skills/organization-office/references/agents/events-experience-producer.md": [
+      "ae6b5b448b4c3108c4665beb38cc937742d9e9f79038d335f90c827dd9da9a0c"
+    ],
+    "skills/organization-office/references/agents/executive-producer.md": [
+      "84ed1ecced9a985b3b902149fc8fc517088700caf94485a44899a0d0406e5cf1"
+    ],
+    "skills/organization-office/references/agents/funding-partnerships-manager.md": [
+      "8cc224aedeea56bc39521622b4ff5b4d511b281aca96749da575e4bcd9a0b8ae"
+    ],
+    "skills/organization-office/references/agents/impact-evaluation.md": [
+      "2efac8c072dcdbcebc9134eb41aecf931e7bf358144e80b604b5cbc5672252f3"
+    ],
+    "skills/organization-office/references/agents/knowledge-architect.md": [
+      "d9f4d13477d30ab1fb8dae426ca4752f1a3640bf6346fdb455c90c97dcdcc745"
+    ],
+    "skills/organization-office/references/agents/network-mapper.md": [
+      "df81de3ba4648de7d908be020cfa78a56053da21b422565f3b56a9aec1e86795"
+    ],
+    "skills/organization-office/references/agents/operations-director.md": [
+      "f33f4e9c386b4af4f47abe3e99f46eecbeb1ca9881d3d93737bdbf58c68acd96"
+    ],
+    "skills/organization-office/references/agents/organization-director.md": [
+      "a4271c71631423349c281da1d5a863a9a4d8bc6949fbf79dfb853275eab83715"
+    ],
+    "skills/organization-office/references/agents/organization-orchestrator.md": [
+      "07ffd76ab5ce15e4d9d8102f6384fbd346ea77f6cfdb26f85049ab76cea0fbc6"
+    ],
+    "skills/organization-office/references/agents/partnerships-director.md": [
+      "5cbdffc122a3a534ece0b72544f6b24d946a0ca33be5d210b1c8c31521c09365"
+    ],
+    "skills/organization-office/references/agents/product-experience-director.md": [
+      "6e090d76a31e2f58e82f233e28ab8391265cb947b23b591eb2f7ed0f214672df"
+    ],
+    "skills/organization-office/references/agents/programme-curator.md": [
+      "3188ba54791e86c58b28c360d036e57c3d39732c2cb39318093b71d3328e6945"
+    ],
+    "skills/organization-office/references/agents/proposal-pitch-director.md": [
+      "131d8b7aa051f2d84778557767ffe339e0717982c918e3d6b54135e616f6e17d"
+    ],
+    "skills/organization-office/references/agents/publishing-director.md": [
+      "2fb9627ff566c407f798948adb0cf62a115705fe3edda7978307541a86b308fe"
+    ],
+    "skills/organization-office/references/agents/research-director.md": [
+      "b6bdfdd61f02742578262eb103e1c50e08343373a625ecb5e7b357f52425c364"
+    ],
+    "skills/organization-office/references/agents/research-editor-fact-checker.md": [
+      "e0ded1effac9b7379e1e369df98af8bbd954c69214ba9c68f6592d4ba8284c38"
+    ],
+    "skills/organization-office/references/agents/revenue-innovation-strategist.md": [
+      "d978ee7b0f1f0d41b9f0165ce37401b810a5662eb7a08adaf74e84ba3aa831c1"
+    ],
+    "skills/organization-office/references/agents/sponsorship-director.md": [
+      "22e0d4583ead97bc7ce9df956f1b1af48e1b79962b3c3f70bac07791918a5841"
+    ],
+    "skills/organization-office/references/agents/talent-contributors-manager.md": [
+      "155cd2ddd77ff85007a4d2c3f877664311a19b78e15c5339353b8ce8a47348f5"
+    ],
+    "skills/organization-office/references/agents/ux-service-designer.md": [
+      "2b2499728048577f4f7ce8bd0ad718340e941298d973b85707296870e4fabd62"
+    ],
+    "skills/organization-office/references/shared-agents/art-director.md": [
+      "08e9a0e79614b7302a82b48d1e2b043b2492f6d6efafc52eb19d84c7648198d5"
+    ],
+    "skills/organization-office/references/shared-agents/art-writer.md": [
+      "d9c82801ba9f2bca10ce848ee98fed7172e481c149592dadbf09c0a02fdcb502"
+    ],
+    "skills/organization-office/references/shared-agents/brand-strategist.md": [
+      "712b21dff4d637a903daa45724f54744e1528fb6c39d7b086faab717c77691ef"
+    ],
+    "skills/organization-office/references/shared-agents/communications-editor.md": [
+      "bad9b218715bec635c0b72e5948dd77628ddb945424c9edca78af90446798243"
+    ],
+    "skills/organization-office/references/shared-agents/context-steward.md": [
+      "7d1d037dc09c014fd34bfbb44192a0150fd7267b8191a825c54bdf5db104236b"
+    ],
+    "skills/organization-office/references/shared-agents/editor.md": [
+      "8a2f86dbd2f559c1f510d5415d01ed800f539ef40b0d140ab410e9bf6c73e4b2"
+    ],
+    "skills/organization-office/references/shared-agents/marketing-strategist.md": [
+      "10ebeaf8a0c4719e68acac960115e1e5420dfbbc8247405c9cae4e590e2deb72"
+    ],
+    "skills/organization-office/references/shared-agents/office-concierge.md": [
+      "0653be80fab88cd7d3297b1c932ef79a58b7df2b3a5e2ab6aff18feb82e6f8ed"
+    ],
+    "skills/organization-office/references/shared-agents/studio-finance-manager.md": [
+      "530ae897d8a3a69a5ac39bfce0eabe60aeed3fba353ad7530bdcfbc0d823b09f"
+    ],
+    "skills/organization-office/references/shared-agents/studio-manager.md": [
+      "224b14dd656826aa25a2b6217d05f011bf2fc95228e30657d5d8fba14cd7d5f5"
+    ],
+    "skills/product-office/SKILL.md": [
+      "0ce77bda5cfe044f7a82d27ebee3582bd9ff52fead49e4987f004384c29f365d"
+    ],
+    "skills/product-office/agents/openai.yaml": [
+      "f92d929c46cf2e6a5b8918ddaabe7ecc0a3136614970639e0389ddee6c3fda24"
+    ],
+    "skills/product-office/references/BRIEFING.md": [
+      "6eeabc1ce966d31cdfab6f704022964509b71fafec27b75d3d9d3d2e540a1c44"
+    ],
+    "skills/product-office/references/README.md": [
+      "d337d7af3abc09511d27dc0bfc7f05186de0dfe1f2b003f53f1fb4167719c650"
+    ],
+    "skills/product-office/references/agents/accessibility-specialist.md": [
+      "194f1dcfaad3cd14efbd26b7293ab9ccdeeeb6bbd7de89b761b96112c90d907f"
+    ],
+    "skills/product-office/references/agents/accessibility-tester.md": [
+      "cbe9c36f59662c78c1ed9ccbca72709de358efb2c2b2cb56108abb2c7c761092"
+    ],
+    "skills/product-office/references/agents/ai-engineer.md": [
+      "74769cde2347a751ee32d6666cd859db0fe16074c54f9fecb67fa33d0e843c56"
+    ],
+    "skills/product-office/references/agents/ai-product-engineer.md": [
+      "a6f46a745542792e5659b31d75b4fef196f0f19fc75c9ec293ca92d8b89ceda3"
+    ],
+    "skills/product-office/references/agents/api-integration-engineer.md": [
+      "9ca0e75a892dc6de8ccea9eef664313f5d6f324bfbdcdb386481de20e12646de"
+    ],
+    "skills/product-office/references/agents/api-researcher.md": [
+      "11f54e77f84d2bf8ba155061b9e90ad41e171ba5ae01c1d4fd6018e2f6ef0b07"
+    ],
+    "skills/product-office/references/agents/backend-engineer.md": [
+      "b774cad197b5deb7990e7781165acad026ce83975e8c33d962407115dfde9410"
+    ],
+    "skills/product-office/references/agents/bug-investigator.md": [
+      "ba4d7528fdf6bddb797fd87fa49396854d35ad06ffff7c87eb596067e3f7100f"
+    ],
+    "skills/product-office/references/agents/business-analyst.md": [
+      "e9e0710e3d40896b169e08b3ca5fc25ad2a21e00ecc81c22d1fa67f70d124c0a"
+    ],
+    "skills/product-office/references/agents/cloud-architect.md": [
+      "9f753e1b09aced21f60b15f70e385fc10f578ee6f4a2152b6bc9ad4f0922783f"
+    ],
+    "skills/product-office/references/agents/code-reviewer.md": [
+      "8f9aa5ee5f362cbf73f8716cb23db421b183c3fc0534b069b2259dc133bf69a9"
+    ],
+    "skills/product-office/references/agents/data-engineer.md": [
+      "cf2af739ad311648154f6feda2a54f61305e77321db008980ba5aebd357154a8"
+    ],
+    "skills/product-office/references/agents/data-scientist.md": [
+      "1e55fde4d406755250ea2f683e3c3fa25e0421743baa826da3a7b9aa0be194ae"
+    ],
+    "skills/product-office/references/agents/database-engineer.md": [
+      "e8813c66fc0109049e8a0425e1e6e489c0c92fd238d1709de4301b1db992b802"
+    ],
+    "skills/product-office/references/agents/dependency-researcher.md": [
+      "ea1a559495ec593332f7168487b369885ba428aa77ce6a4ba6767bd338cae23e"
+    ],
+    "skills/product-office/references/agents/design-system-designer.md": [
+      "14fc8e2970b159fe3865b64b7a46fb298ab1ed368267a9015af57224dd9ab35c"
+    ],
+    "skills/product-office/references/agents/devops-engineer.md": [
+      "cb25dc52c57ed3be7e058f1cca3748c7f4178200969f7e2b996ff5f04cc33f41"
+    ],
+    "skills/product-office/references/agents/documentation-writer.md": [
+      "8125d6177565aa0965e947c1b406788bdf01b4f2d95a4af268f9df2e36fb3352"
+    ],
+    "skills/product-office/references/agents/frontend-engineer.md": [
+      "7bd9e304af341fc4df5d388601e51811fff9bcd608a1d2d7c981fc257e310cb6"
+    ],
+    "skills/product-office/references/agents/fullstack-engineer.md": [
+      "779a8ba5b072344c740e954b19f29412d5967d399721be8652918e89e89ebf38"
+    ],
+    "skills/product-office/references/agents/information-architect.md": [
+      "3a2380383ae0a0415e30281aae4e13d30c8bb9745fdfd61f6dcb7a6e12d9858b"
+    ],
+    "skills/product-office/references/agents/interaction-designer.md": [
+      "a5587d5afb5a9f282f05d7384db58f778dbba41ac635489f3a63aeb3264a12c4"
+    ],
+    "skills/product-office/references/agents/junior-developer.md": [
+      "d331a7b8d85d9f63635d2fa3c647a507d895b1d954722659e291e9cefe486e63"
+    ],
+    "skills/product-office/references/agents/llm-engineer.md": [
+      "572de826f5a3ec21ce380289b4dc0239a0b8425310d75109d04dc4e93bc9cb87"
+    ],
+    "skills/product-office/references/agents/migration-specialist.md": [
+      "658ffe0429004468ac5ff63be227836b18fab700f6216c88d0d5997e90e922aa"
+    ],
+    "skills/product-office/references/agents/ml-ops-engineer.md": [
+      "c713af8641eecc9dca780cc05d1cadcdd747cb60818d571ae2da486516e978e9"
+    ],
+    "skills/product-office/references/agents/mobile-engineer.md": [
+      "ae89fcaaa27c29bfac235090da4f665d0bbed46a0700046e11a0216d727ca0cb"
+    ],
+    "skills/product-office/references/agents/performance-engineer.md": [
+      "63563975d34724a485d23f56aeff0576e3e6f77282d16a9c87403b23750d91a2"
+    ],
+    "skills/product-office/references/agents/product-analyst.md": [
+      "8942f411db046d940915f01fbabf8e95ba5dd56f876ec776091a37277e09685d"
+    ],
+    "skills/product-office/references/agents/product-designer.md": [
+      "779ffa79d1252d2fb942085470662dfb079145dd43f9dadfb2dae79b06284072"
+    ],
+    "skills/product-office/references/agents/product-director.md": [
+      "83e0d1fec701a10e3374ff778f26294f21739b85df94bb0c7bee40dda4a244bc"
+    ],
+    "skills/product-office/references/agents/product-manager.md": [
+      "b9cc43aced25ebedc09161e548239ed166d714382ce9caec1a2421757fae03bf"
+    ],
+    "skills/product-office/references/agents/product-researcher.md": [
+      "7e53274ab01d893caf17c815d10259044d19685e92acc19f7698b89fb004e166"
+    ],
+    "skills/product-office/references/agents/product-software-orchestrator.md": [
+      "748e7c5c0572defbf5c8a84bd3fd7e44146e0736f9bad87e7fa53344325e3ffa"
+    ],
+    "skills/product-office/references/agents/qa-engineer.md": [
+      "159548fbb93cbde1c538499a597c3671b4ec937a15e7d4663eb107804092ec53"
+    ],
+    "skills/product-office/references/agents/qa-lead.md": [
+      "7f520c90536a044b35f35627be2d98c72c4d234b05f04867ed1e6b99b937250b"
+    ],
+    "skills/product-office/references/agents/release-manager.md": [
+      "c7d68eeb2ed6e63a26bb3c8ec0269f704bfc76ae33390e603a4f4cb720b7bc74"
+    ],
+    "skills/product-office/references/agents/security-engineer.md": [
+      "e6bee2e7227a3442938f14cadb61f9d8a875014fc9023a19f4c39a6995270da4"
+    ],
+    "skills/product-office/references/agents/security-reviewer.md": [
+      "df5088bd2b37571ff3b2fc7a3a461edcb8f4117da71a1705d51b8386ac4f555c"
+    ],
+    "skills/product-office/references/agents/senior-backend-engineer.md": [
+      "01ac02202d0d6a7cd458fb05fccac8ec6ea9252eb77f9eb3f33ce89459cdae24"
+    ],
+    "skills/product-office/references/agents/senior-frontend-engineer.md": [
+      "8ecfb35fa6ea337f78c3512d1d41016f15f45bf46602d70f16a6230d5d5b8dee"
+    ],
+    "skills/product-office/references/agents/software-architect.md": [
+      "eed4147b9d736dba9c5bc0763c5cace2a5a9bb421f6bdad6876de9d63f9a4793"
+    ],
+    "skills/product-office/references/agents/sre-engineer.md": [
+      "3ca0d497d65d40dea0f2161d899bc5d50a51bb69ceb6bca610a95114de03dc30"
+    ],
+    "skills/product-office/references/agents/tech-lead.md": [
+      "2e8a1a3ca32624c963242cb6168c9d79aad2ae1654aba0c28896c864978404c0"
+    ],
+    "skills/product-office/references/agents/technical-researcher.md": [
+      "df6c0ac5e8248f6393457aa60ec907707975034b65add2d0f9e529aee7cca6ee"
+    ],
+    "skills/product-office/references/agents/technical-writer.md": [
+      "011fb46c0a7a310f0c14417f48800a488f207fde2ecd9c45015e6d6428e263de"
+    ],
+    "skills/product-office/references/agents/test-automation-engineer.md": [
+      "e43b540aec742abea1226b34e5f0eb858d6dc5faf8c376f1a690f0799997b370"
+    ],
+    "skills/product-office/references/agents/test-writer.md": [
+      "b00af7ba3dd3f0b4fcd8f2c69c6fb0266398ffd85ec940e50caeb60675e79904"
+    ],
+    "skills/product-office/references/agents/ui-prototyper.md": [
+      "38b3058da21138d71ea1f52bd633080cd844b7ead5e9ca61537451d52ec7c398"
+    ],
+    "skills/product-office/references/agents/ux-lead.md": [
+      "fd272795e6048336f0a18eca648869f75f99a111a276a52bb43022c41cfe84b8"
+    ],
+    "skills/product-office/references/agents/ux-researcher.md": [
+      "cc1ed283a8e6dac83319eb00c3160a144f224f4655ad1b38074341800a521360"
+    ],
+    "skills/product-office/references/shared-agents/art-director.md": [
+      "08e9a0e79614b7302a82b48d1e2b043b2492f6d6efafc52eb19d84c7648198d5"
+    ],
+    "skills/product-office/references/shared-agents/art-writer.md": [
+      "d9c82801ba9f2bca10ce848ee98fed7172e481c149592dadbf09c0a02fdcb502"
+    ],
+    "skills/product-office/references/shared-agents/brand-strategist.md": [
+      "712b21dff4d637a903daa45724f54744e1528fb6c39d7b086faab717c77691ef"
+    ],
+    "skills/product-office/references/shared-agents/communications-editor.md": [
+      "bad9b218715bec635c0b72e5948dd77628ddb945424c9edca78af90446798243"
+    ],
+    "skills/product-office/references/shared-agents/context-steward.md": [
+      "7d1d037dc09c014fd34bfbb44192a0150fd7267b8191a825c54bdf5db104236b"
+    ],
+    "skills/product-office/references/shared-agents/editor.md": [
+      "8a2f86dbd2f559c1f510d5415d01ed800f539ef40b0d140ab410e9bf6c73e4b2"
+    ],
+    "skills/product-office/references/shared-agents/marketing-strategist.md": [
+      "10ebeaf8a0c4719e68acac960115e1e5420dfbbc8247405c9cae4e590e2deb72"
+    ],
+    "skills/product-office/references/shared-agents/office-concierge.md": [
+      "0653be80fab88cd7d3297b1c932ef79a58b7df2b3a5e2ab6aff18feb82e6f8ed"
+    ],
+    "skills/product-office/references/shared-agents/studio-finance-manager.md": [
+      "530ae897d8a3a69a5ac39bfce0eabe60aeed3fba353ad7530bdcfbc0d823b09f"
+    ],
+    "skills/product-office/references/shared-agents/studio-manager.md": [
+      "224b14dd656826aa25a2b6217d05f011bf2fc95228e30657d5d8fba14cd7d5f5"
+    ],
+    "skills/recruitment-office/SKILL.md": [
+      "63bdb1aec3456366d86e6ae5c73f559f2376a77d03bb4695bb7d96ef9b32721a"
+    ],
+    "skills/recruitment-office/agents/openai.yaml": [
+      "507cd7885bd6100022b6ea5f81226b8588978d5ef5bdb2c7b6dfe224b95bf38f"
+    ],
+    "skills/recruitment-office/references/BRIEFING.md": [
+      "a6b958422a970f8da27c04db2b73710cae1cbab191d801b33cb17f86b2c4364d"
+    ],
+    "skills/recruitment-office/references/README.md": [
+      "9925c20269ce27f9bc09683900fa932170d53a73ac21aafa55518b179faddf2b"
+    ],
+    "skills/recruitment-office/references/agents/application-manager.md": [
+      "35170d6c8993c9a68331339762e3d124ec0263eae1b9eb78472ff72f8742e11e"
+    ],
+    "skills/recruitment-office/references/agents/application-outcomes-analyst.md": [
+      "67eb70c8133e757d742e139f3454064836742c4c655db807040451717eecd81d"
+    ],
+    "skills/recruitment-office/references/agents/application-tracker.md": [
+      "d026461434b267f70ce04f48eb920d96c9c7517971d19dea9b1abe6581a80326"
+    ],
+    "skills/recruitment-office/references/agents/application-writer.md": [
+      "c83363a69d271fcdd1e336f25c88a7313137c931411cf005859ce7ef6bafe304"
+    ],
+    "skills/recruitment-office/references/agents/ats-resume-specialist.md": [
+      "59fe94b9e41b62a66b66e958cf529ff0752415b1c0b39feaa84bf531f8138d25"
+    ],
+    "skills/recruitment-office/references/agents/career-document-fact-checker.md": [
+      "ff3793b4150de5268725ee496f6b7c584d130a8992b23c4a8ce7112f3c1689b2"
+    ],
+    "skills/recruitment-office/references/agents/career-learning-plan-advisor.md": [
+      "b6c7f860bd0558310eb269858fbeda63beed0f24d138d6284f0f2e07c76f9fda"
+    ],
+    "skills/recruitment-office/references/agents/career-outreach-writer.md": [
+      "8473b0f175ff8a108182446336e0c874ca1f024e693c28e7bed7c93a46ddcdc2"
+    ],
+    "skills/recruitment-office/references/agents/career-personal-brand-strategist.md": [
+      "b4fd7f279d1d175ed14dcd9e518091ed7d46433b106e8e8f69e992bcdac429e5"
+    ],
+    "skills/recruitment-office/references/agents/career-strategist.md": [
+      "6a65fb0dfa865c789e6cebf7f1b2175002b8faf72482c5e8e53a140c3d4002c3"
+    ],
+    "skills/recruitment-office/references/agents/career-transition-advisor.md": [
+      "b04c31863678b3ba14cbcfa454532e844f574eb57c2cff42efbdbae4db60f35e"
+    ],
+    "skills/recruitment-office/references/agents/case-interview-coach.md": [
+      "7a055947e7f47e57f4e234121b72df753ac9980fd321d8d8a3b1f5219d953063"
+    ],
+    "skills/recruitment-office/references/agents/compensation-analyst.md": [
+      "fdfb5f0864f38313c9652bd49db2d42c03f38fab6a57ce8724c03ba06de47c56"
+    ],
+    "skills/recruitment-office/references/agents/cover-letter-writer.md": [
+      "6dc8a07b415e62e18356436179ea99f7faaf9cbf63264a9bc32b3adfc3dadbfd"
+    ],
+    "skills/recruitment-office/references/agents/executive-search-researcher.md": [
+      "25df9067d15708a844058f58285ac1eae687f41847a73275f43ee741fc921cf6"
+    ],
+    "skills/recruitment-office/references/agents/freelance-consulting-opportunity-scout.md": [
+      "76d0afcaf9355c336215e650c207912d4ec86ca5f76b73c4182da03dddb8e517"
+    ],
+    "skills/recruitment-office/references/agents/hiring-team-mapper.md": [
+      "8c857e27734b3055db7b5aabb81b02856cf24213256233829ea22cb715c300e6"
+    ],
+    "skills/recruitment-office/references/agents/international-mobility-job-advisor.md": [
+      "f8f1bf46976d33d05f84adcadcb8abada08e9ebc260e4f6f380fca34c6eef5b1"
+    ],
+    "skills/recruitment-office/references/agents/interview-coach.md": [
+      "0687d000227dd65e458922deeaed9e713bf9804d55b34319a71bdbe29eaaed45"
+    ],
+    "skills/recruitment-office/references/agents/interview-researcher.md": [
+      "da5490052b524a5725592d9f543c6c73254fcd98b6816e24af85f9dfc2ee35ed"
+    ],
+    "skills/recruitment-office/references/agents/job-fit-analyst.md": [
+      "7751ea9b2dbe82b27f9a816376eed863b862569f13467f480666b1c97419b92e"
+    ],
+    "skills/recruitment-office/references/agents/job-followup-manager.md": [
+      "5787e6b5cd334b3863aa30e6969d6ed5563c0925d8bcb49d736816826f4336f4"
+    ],
+    "skills/recruitment-office/references/agents/job-market-researcher.md": [
+      "1d33f95a8a52b5a0eab12131b5913b29590558b62688a4601cc9867cf7637ab2"
+    ],
+    "skills/recruitment-office/references/agents/job-opportunity-scout.md": [
+      "4198ec2694ec7492aec84e3a12c104c8adb658851a3dbaafccd3a419168014d3"
+    ],
+    "skills/recruitment-office/references/agents/job-search-chief-of-staff.md": [
+      "6aa4e5cfc65bfeaf3b04980e24710a1f1cbd921a46974c345d965faf9e2b9798"
+    ],
+    "skills/recruitment-office/references/agents/linkedin-profile-strategist.md": [
+      "14428829affb35a565ee3ccfb06839a217e93f8d4afd4c4e3d22e5618e2ff1eb"
+    ],
+    "skills/recruitment-office/references/agents/networking-strategist.md": [
+      "69bafaa0eefa1a2b9f338920c44b275bbd3d87329bba3ea713e20dea7d247dbb"
+    ],
+    "skills/recruitment-office/references/agents/offer-negotiation-advisor.md": [
+      "df70da5b404ff884ad2a83c500934fcb407545df07b5d61f60f9f7bb2d6da2b7"
+    ],
+    "skills/recruitment-office/references/agents/portfolio-career-editor.md": [
+      "e8f92334858c805e782619ad70cc9b939498493972ba38bbba39167a409ef7c9"
+    ],
+    "skills/recruitment-office/references/agents/professional-reference-manager.md": [
+      "4fa103b677b5e1906e6b6911020a2dd793fb7319673f6a4a59119cd5cd08b899"
+    ],
+    "skills/recruitment-office/references/agents/recruiter-relations-manager.md": [
+      "ee367069813b4483dc9e3744bddab820d40fcb0ba0ccb5de8c54645a98ea91a4"
+    ],
+    "skills/recruitment-office/references/agents/recruitment-orchestrator.md": [
+      "b80a9b65361fe27faeaf561fa82ce61c001cc31b297c4622e95edf7f7cd3fde5"
+    ],
+    "skills/recruitment-office/references/agents/resume-strategist.md": [
+      "421c8766c8cf9f7f0332b2bf0773f0c0ca633f363a016287f2287998db8a7937"
+    ],
+    "skills/recruitment-office/references/agents/skills-gap-analyst.md": [
+      "164ba3f7ebf79741ce3d15db05676409aa44283fc2bbe007cba6a68eff08b4f8"
+    ],
+    "skills/recruitment-office/references/agents/target-company-researcher.md": [
+      "657c8d41af44b4ddbc85126a7d2a83642da26970767bb7469ed0a119d8785cf6"
+    ],
+    "skills/recruitment-office/references/shared-agents/art-director.md": [
+      "08e9a0e79614b7302a82b48d1e2b043b2492f6d6efafc52eb19d84c7648198d5"
+    ],
+    "skills/recruitment-office/references/shared-agents/art-writer.md": [
+      "d9c82801ba9f2bca10ce848ee98fed7172e481c149592dadbf09c0a02fdcb502"
+    ],
+    "skills/recruitment-office/references/shared-agents/brand-strategist.md": [
+      "712b21dff4d637a903daa45724f54744e1528fb6c39d7b086faab717c77691ef"
+    ],
+    "skills/recruitment-office/references/shared-agents/communications-editor.md": [
+      "bad9b218715bec635c0b72e5948dd77628ddb945424c9edca78af90446798243"
+    ],
+    "skills/recruitment-office/references/shared-agents/context-steward.md": [
+      "7d1d037dc09c014fd34bfbb44192a0150fd7267b8191a825c54bdf5db104236b"
+    ],
+    "skills/recruitment-office/references/shared-agents/editor.md": [
+      "8a2f86dbd2f559c1f510d5415d01ed800f539ef40b0d140ab410e9bf6c73e4b2"
+    ],
+    "skills/recruitment-office/references/shared-agents/marketing-strategist.md": [
+      "10ebeaf8a0c4719e68acac960115e1e5420dfbbc8247405c9cae4e590e2deb72"
+    ],
+    "skills/recruitment-office/references/shared-agents/office-concierge.md": [
+      "0653be80fab88cd7d3297b1c932ef79a58b7df2b3a5e2ab6aff18feb82e6f8ed"
+    ],
+    "skills/recruitment-office/references/shared-agents/studio-finance-manager.md": [
+      "530ae897d8a3a69a5ac39bfce0eabe60aeed3fba353ad7530bdcfbc0d823b09f"
+    ],
+    "skills/recruitment-office/references/shared-agents/studio-manager.md": [
+      "224b14dd656826aa25a2b6217d05f011bf2fc95228e30657d5d8fba14cd7d5f5"
+    ]
+  },
+  "schema_version": 1
+}

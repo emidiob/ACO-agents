@@ -1,4 +1,0 @@
-interface:
-  display_name: "Recruitment Office"
-  short_description: "Job search, applications, interviews, and career strategy"
-  default_prompt: "Use the Recruitment Office. Build a high-quality job-search and application strategy for me."

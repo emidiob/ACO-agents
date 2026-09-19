@@ -1,0 +1,4 @@
+interface:
+  display_name: "Aco Recruitment Office"
+  short_description: "Candidate-side job discovery, career strategy, CV, portfolio, applications, interviews and offer pre"
+  default_prompt: "Use ACO. Candidate-side job discovery, career strategy, CV, portfolio, applications, interviews and offer preparation."

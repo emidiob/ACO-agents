@@ -1,0 +1,4 @@
+interface:
+  display_name: "Aco Office Concierge"
+  short_description: "Front door: resolve the request, minimal team, scope and context; coordinate work and verified conti"
+  default_prompt: "Use ACO. Front door: resolve the request, minimal team, scope and context; coordinate work and verified continuity."

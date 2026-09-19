@@ -1,0 +1,77 @@
+# agency-office — role index
+
+Lead: `agency_orchestrator`. Read only selected role instructions; native names use `aco_`.
+
+- [`agency_orchestrator`](agents/agency-orchestrator.md) — Orchestrator for a creative production, brand strategy, design and marketing agency. Routes work through directors, specialists and execution makers without overstaffing tasks.
+- [`asset_manager`](agents/asset-manager.md) — Digital asset manager for file structure, naming, versions, source files, metadata, rights fields and final deliverable organization.
+- [`audience_strategist`](agents/audience-strategist.md) — Audience strategist for segmentation, motivations, journeys, barriers, behaviors and communication design.
+- [`brand_guardian`](agents/brand-guardian.md) — Brand governance lead who protects consistency, quality and intentional evolution across internal and external executions.
+- [`brand_identity_designer`](agents/brand-identity-designer.md) — Brand identity designer for coherent visual systems spanning marks, typography, color, layout, imagery, iconography and applications.
+- [`business_affairs_manager`](agents/business-affairs-manager.md) — Agency business-affairs specialist for production rights, talent, music, third-party content, releases, usage and commercial terms. Flags issues for legal counsel when needed.
+- [`campaign_strategist`](agents/campaign-strategist.md) — Campaign strategist for objectives, messaging architecture, phases, channel roles and measurement across integrated campaigns.
+- [`casting_researcher`](agents/casting-researcher.md) — Casting researcher for talent discovery, character fit, reference boards, shortlist research, representation details and first-pass availability research.
+- [`cgi_vfx_supervisor`](agents/cgi-vfx-supervisor.md) — CGI/VFX supervisor for 3D, simulation, compositing, virtual production and effects-heavy creative work, balancing visual ambition with pipeline feasibility.
+- [`community_manager`](agents/community-manager.md) — Community manager for comments, inbox triage, moderation, audience questions, escalation and qualitative community signals.
+- [`content_director`](agents/content-director.md) — Content director for brand editorial systems, content pillars, formats, franchises and channel ecosystems.
+- [`content_researcher`](agents/content-researcher.md) — Content researcher for stories, examples, references, statistics, cultural hooks, subject-matter sources and editorial evidence.
+- [`copy_researcher`](agents/copy-researcher.md) — Copy and language researcher for competitor messaging, category language, terminology, naming landscapes and cultural/verbal references.
+- [`copywriter`](agents/copywriter.md) — Senior agency copywriter for concepts, headlines, scripts, manifestos, social, OOH, digital and campaign copy.
+- [`creative_strategist`](agents/creative-strategist.md) — Creative strategist who bridges evidence-led strategy and creative development, defining territories and briefs without replacing the creative director.
+- [`creative_technologist_prototyper`](agents/creative-technologist-prototyper.md) — Hands-on creative technology prototyper for fast tests of AI, APIs, interactive systems, sensors, generative media and experimental workflows.
+- [`creator_partnerships_manager`](agents/creator-partnerships-manager.md) — Creator and influencer partnerships specialist for fit, outreach, briefing, compensation, disclosure, usage and relationship management.
+- [`crm_lifecycle_strategist`](agents/crm-lifecycle-strategist.md) — CRM and lifecycle strategist for email, messaging, segmentation, automation, retention and customer journeys from acquisition through loyalty.
+- [`cultural_strategist`](agents/cultural-strategist.md) — Cultural strategist who analyzes cultural codes, emerging behaviors, scenes, aesthetics and social meaning without trendwashing or appropriation.
+- [`design_director`](agents/design-director.md) — Design director overseeing identity, digital, editorial, spatial and campaign design systems across agency work.
+- [`design_researcher`](agents/design-researcher.md) — Design researcher for visual precedents, typography, identity systems, graphic culture, material references and design-context research.
+- [`digital_design_director`](agents/digital-design-director.md) — Digital design director for websites, campaign experiences and interfaces, bridging brand expression with UX and responsive systems.
+- [`fact_checker`](agents/fact-checker.md) — Agency fact checker for names, dates, statistics, claims, quotations, credits, source quality and pre-publication verification.
+- [`film_producer`](agents/film-producer.md) — Film producer for commercials, branded films, social video and moving-image productions from preproduction through final delivery.
+- [`frontend_prototyper`](agents/frontend-prototyper.md) — Frontend prototyper for rapid landing pages, microsites, interactive demos, interface concepts and responsive proof-of-concepts.
+- [`integrated_producer`](agents/integrated-producer.md) — Integrated producer for multi-channel creative production across design, content, film, photography, digital, social and experiential deliverables.
+- [`junior_art_director`](agents/junior-art-director.md) — Junior art director for visual routes, moodboards, image systems, casting/location directions and first-pass executional concepts.
+- [`junior_brand_strategist`](agents/junior-brand-strategist.md) — Junior brand strategist for audits, competitor scans, positioning evidence, research synthesis and first-pass strategic frameworks.
+- [`junior_copywriter`](agents/junior-copywriter.md) — Junior copywriter for headline batches, captions, CTAs, body-copy variants, scripts, naming lists and first drafts.
+- [`junior_designer`](agents/junior-designer.md) — Junior multidisciplinary designer for first-pass layouts, identity applications, social assets, decks, mockups and design production.
+- [`junior_media_planner`](agents/junior-media-planner.md) — Junior media planner for channel research, placement options, reach/frequency scenarios, benchmarks and first-pass media plans.
+- [`junior_producer`](agents/junior-producer.md) — Junior producer for schedules, quote gathering, vendor coordination, checklists, status tracking and production administration.
+- [`location_researcher`](agents/location-researcher.md) — Location researcher for visual fit, practical access, permits, logistics, geography, alternatives and first-pass feasibility.
+- [`marketing_analyst`](agents/marketing-analyst.md) — Marketing analyst for campaign data QA, performance summaries, channel comparisons, dashboards, anomalies and evidence for optimization.
+- [`media_strategy_planner`](agents/media-strategy-planner.md) — Media strategist for paid/owned/earned channel roles, investment logic, reach/frequency, audience delivery and campaign distribution.
+- [`motion_design_director`](agents/motion-design-director.md) — Motion design director for brand motion systems, kinetic typography, title design, transitions and motion-led campaign expression.
+- [`organic_discovery_strategist`](agents/organic-discovery-strategist.md) — Organic discovery strategist across search engines, AI-assisted search, website information architecture and evergreen content discoverability.
+- [`performance_marketing_manager`](agents/performance-marketing-manager.md) — Performance marketing specialist for measurable acquisition and conversion across paid digital channels, experimentation and optimization.
+- [`photography_producer`](agents/photography-producer.md) — Photography producer for editorial, campaign, product and brand image production, including crew, casting, locations, usage and post.
+- [`postproduction_coordinator`](agents/postproduction-coordinator.md) — Postproduction coordinator for version tracking, review rounds, file naming, subtitles, masters, specs, approvals and delivery logistics.
+- [`postproduction_supervisor`](agents/postproduction-supervisor.md) — Postproduction supervisor for edit, color, sound, VFX, retouching, versioning, QC, mastering and delivery across moving and still image work.
+- [`presentation_designer`](agents/presentation-designer.md) — Presentation designer for turning approved thinking into clear, persuasive, visually coherent decks without changing the underlying strategy.
+- [`production_coordinator`](agents/production-coordinator.md) — Production coordinator for bookings, travel, equipment, crew information, releases, logistics and day-to-day production follow-through.
+- [`production_designer`](agents/production-designer.md) — Production designer for systematic adaptation of approved creative and identity work across formats, sizes, channels and deliverables.
+- [`project_coordinator`](agents/project-coordinator.md) — Project coordinator for task tracking, dependencies, approvals, revisions, decision logs, meeting actions and day-to-day delivery support.
+- [`project_manager`](agents/project-manager.md) — Agency project manager for scope, timeline, dependencies, approvals, status, change control and delivery coordination.
+- [`research_insights_director`](agents/research-insights-director.md) — Research and insights lead for agency work across category, competitors, consumers, behavior, brand and market context.
+- [`seo_content_researcher`](agents/seo-content-researcher.md) — SEO/content discovery researcher for search intent, keyword clusters, SERP patterns, competitor content, query gaps and content opportunities.
+- [`social_content_creator`](agents/social-content-creator.md) — Social content creator for turning approved strategy into posts, carousels, short-form concepts, captions, adaptations and publishing-ready content.
+- [`social_media_manager`](agents/social-media-manager.md) — Social media manager for brand and organization accounts, focused on platform-native publishing, community operations and measurable communication rather than generic creator tactics.
+- [`strategy_director`](agents/strategy-director.md) — Senior integrated strategy lead for agency engagements. Defines the real problem, strategic choice and cross-disciplinary direction before creative execution.
+- [`traffic_coordinator`](agents/traffic-coordinator.md) — Traffic coordinator for daily workload visibility, assignment tracking, deadline collisions and resource-status updates.
+- [`traffic_resource_manager`](agents/traffic-resource-manager.md) — Agency traffic and resource manager for capacity planning, staffing, scheduling, utilization and workload balancing across teams and freelancers.
+- [`verbal_identity_director`](agents/verbal-identity-director.md) — Verbal identity specialist for brand voice, tone, messaging systems, naming logic and language governance.
+- [`visual_researcher`](agents/visual-researcher.md) — Visual researcher for photography, film, art, fashion, design, archives, image culture, directors, photographers and visual references.
+- [`creative_director`](../../aco-organization-office/references/agents/creative-director.md) — Creative director for the organization across cultural projects and client work. Converts strategy and research into a strong creative idea and coherent multi-format expression.
+- [`account_director`](../../aco-organization-office/references/agents/account-director.md) — Account director for ongoing the organization client relationships, scope, feedback, satisfaction, renewals and commercial health after a project is engaged.
+- [`business_development_director`](../../aco-organization-office/references/agents/business-development-director.md) — Business development director for the organization client acquisition, qualified leads, proposals, new relationships and commercial pipeline.
+- [`client_strategy_director`](../../aco-organization-office/references/agents/client-strategy-director.md) — Client strategy director who turns commercial briefs into sharp cultural, brand, experience and communications problems for the organization to solve.
+- [`operations_director`](../../aco-organization-office/references/agents/operations-director.md) — COO-style operations director for a research-led cultural/creative organization. Owns workflows, capacity, resourcing, operational systems and organisational execution.
+- [`executive_producer`](../../aco-organization-office/references/agents/executive-producer.md) — Executive producer for the organization across exhibitions, films, digital projects, publications, installations, campaigns and interdisciplinary productions.
+- [`creative_technologist`](../../aco-organization-office/references/agents/creative-technologist.md) — Creative technologist for culturally meaningful uses of AI, generative media, web, interaction, sensors, physical computing and emerging technologies.
+- [`proposal_pitch_director`](../../aco-organization-office/references/agents/proposal-pitch-director.md) — Proposal and pitch director for the organization client proposals, institutional tenders, partnership decks and competitive presentations.
+- [`contracts_ip_manager`](../../aco-organization-office/references/agents/contracts-ip-manager.md) — Contracts and IP manager for the organization commissioning, client, contributor, partnership, licensing, image, data and AI terms; first-pass issue spotting, not legal representation.
+- [`data_insights_analyst`](../../aco-organization-office/references/agents/data-insights-analyst.md) — Data and insights analyst for the organization web, newsletter, social, campaigns, events, client acquisition, publishing and community evidence.
+- [`product_experience_director`](../../aco-organization-office/references/agents/product-experience-director.md) — Product and experience director for the organization digital platforms, interactive publications, tools, services and hybrid experiences.
+- [`ux_service_designer`](../../aco-organization-office/references/agents/ux-service-designer.md) — UX and service designer for the organization websites, platforms, tools, services, events and cross-channel journeys.
+- [`communications_pr_director`](../../aco-organization-office/references/agents/communications-pr-director.md) — Communications and PR director for the organization institutional narrative, press, launches, newsletters and public positioning.
+- [`events_experience_producer`](../../aco-organization-office/references/agents/events-experience-producer.md) — Producer for the organization exhibitions, launches, talks, screenings, workshops, dinners, conferences and physical/hybrid experiences.
+- [`commercial_strategy_director`](../../aco-organization-office/references/agents/commercial-strategy-director.md) — Commercial strategy director for the organization offers, pricing logic, revenue mix, margins and the relationship between cultural mission and paid work.
+- [`digital_product_manager`](../../aco-organization-office/references/agents/digital-product-manager.md) — Digital product manager for the organization-owned websites, platforms, research tools, archives and digital products after launch.
+
+Shared methods: [shared role index](../../aco-office-concierge/references/ROLE-INDEX.md).

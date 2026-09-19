@@ -1,4 +1,0 @@
-interface:
-  display_name: "Context Steward"
-  short_description: "Maintain decisions, history, open loops, and handoffs"
-  default_prompt: "Use the Context Steward. Summarize what was done, what was decided, what remains open, and what should update context."

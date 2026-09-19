@@ -1,12 +1,33 @@
-# Private / local knowledge must never be committed
+# Private working data: never distribute these directories
+.agent-context/
+.aco-install/
+.aco-private/
 contexts/private/
 private-context/
 knowledge/
-.agent-context/
+private-knowledge/
+history/
+handoffs/
+.aco-binding.json
+.aco-local.json
+# Secrets and authorization material
 .env
 .env.*
+!.env.example
+credentials.json
+token.json
+client_secret*.json
+*.pem
+*.key
+# Generated local caches and test output
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.coverage
 .DS_Store
-
-# Local caches / installs
-.codex/cache/
 node_modules/
+dist/
+build/
+# ZIPs are release artifacts, not repository sources
+*.zip

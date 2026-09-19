@@ -1,0 +1,4 @@
+interface:
+  display_name: "Aco Agency Office"
+  short_description: "Brand strategy, creative direction, design, production, marketing and client delivery."
+  default_prompt: "Use ACO. Brand strategy, creative direction, design, production, marketing and client delivery."

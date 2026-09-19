@@ -1,0 +1,4 @@
+interface:
+  display_name: "Aco Context Setup"
+  short_description: "Initialize or extend private ACO knowledge safely; multiple organizations, activities, clients, bran"
+  default_prompt: "Use ACO. Initialize or extend private ACO knowledge safely; multiple organizations, activities, clients, brands and projects."

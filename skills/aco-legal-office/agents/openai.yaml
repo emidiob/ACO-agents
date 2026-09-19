@@ -1,0 +1,4 @@
+interface:
+  display_name: "Aco Legal Office"
+  short_description: "First-pass jurisdiction-aware legal research, contract review, rights and matter organization."
+  default_prompt: "Use ACO. First-pass jurisdiction-aware legal research, contract review, rights and matter organization."

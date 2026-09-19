@@ -1,0 +1,2030 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.3.0",
+  "offices": {
+    "artist-office": {
+      "lead": "creative_orchestrator",
+      "dependencies": [],
+      "count": 34
+    },
+    "organization-office": {
+      "lead": "organization_orchestrator",
+      "dependencies": [],
+      "count": 33
+    },
+    "agency-office": {
+      "lead": "agency_orchestrator",
+      "dependencies": [
+        "creative_director",
+        "account_director",
+        "business_development_director",
+        "client_strategy_director",
+        "operations_director",
+        "executive_producer",
+        "creative_technologist",
+        "proposal_pitch_director",
+        "contracts_ip_manager",
+        "data_insights_analyst",
+        "product_experience_director",
+        "ux_service_designer",
+        "communications_pr_director",
+        "events_experience_producer",
+        "commercial_strategy_director",
+        "digital_product_manager"
+      ],
+      "count": 55
+    },
+    "product-office": {
+      "lead": "product_software_orchestrator",
+      "dependencies": [
+        "frontend_prototyper"
+      ],
+      "count": 51
+    },
+    "legal-office": {
+      "lead": "legal_orchestrator",
+      "dependencies": [],
+      "count": 28
+    },
+    "recruitment-office": {
+      "lead": "recruitment_orchestrator",
+      "dependencies": [],
+      "count": 35
+    },
+    "shared": {
+      "lead": "office_concierge",
+      "dependencies": [],
+      "count": 10
+    }
+  },
+  "agents": {
+    "agency_orchestrator": {
+      "office": "agency-office",
+      "description": "Orchestrator for a creative production, brand strategy, design and marketing agency. Routes work through directors, specialists and execution makers without overstaffing tasks.",
+      "path": "skills/aco-agency-office/references/agents/agency-orchestrator.md",
+      "skill_path": "aco-agency-office/references/agents/agency-orchestrator.md",
+      "native_name": "aco_agency_orchestrator",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-agency-orchestrator.toml"
+    },
+    "asset_manager": {
+      "office": "agency-office",
+      "description": "Digital asset manager for file structure, naming, versions, source files, metadata, rights fields and final deliverable organization.",
+      "path": "skills/aco-agency-office/references/agents/asset-manager.md",
+      "skill_path": "aco-agency-office/references/agents/asset-manager.md",
+      "native_name": "aco_asset_manager",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-asset-manager.toml"
+    },
+    "audience_strategist": {
+      "office": "agency-office",
+      "description": "Audience strategist for segmentation, motivations, journeys, barriers, behaviors and communication design.",
+      "path": "skills/aco-agency-office/references/agents/audience-strategist.md",
+      "skill_path": "aco-agency-office/references/agents/audience-strategist.md",
+      "native_name": "aco_audience_strategist",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-audience-strategist.toml"
+    },
+    "brand_guardian": {
+      "office": "agency-office",
+      "description": "Brand governance lead who protects consistency, quality and intentional evolution across internal and external executions.",
+      "path": "skills/aco-agency-office/references/agents/brand-guardian.md",
+      "skill_path": "aco-agency-office/references/agents/brand-guardian.md",
+      "native_name": "aco_brand_guardian",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-brand-guardian.toml"
+    },
+    "brand_identity_designer": {
+      "office": "agency-office",
+      "description": "Brand identity designer for coherent visual systems spanning marks, typography, color, layout, imagery, iconography and applications.",
+      "path": "skills/aco-agency-office/references/agents/brand-identity-designer.md",
+      "skill_path": "aco-agency-office/references/agents/brand-identity-designer.md",
+      "native_name": "aco_brand_identity_designer",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-brand-identity-designer.toml"
+    },
+    "business_affairs_manager": {
+      "office": "agency-office",
+      "description": "Agency business-affairs specialist for production rights, talent, music, third-party content, releases, usage and commercial terms. Flags issues for legal counsel when needed.",
+      "path": "skills/aco-agency-office/references/agents/business-affairs-manager.md",
+      "skill_path": "aco-agency-office/references/agents/business-affairs-manager.md",
+      "native_name": "aco_business_affairs_manager",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-business-affairs-manager.toml"
+    },
+    "campaign_strategist": {
+      "office": "agency-office",
+      "description": "Campaign strategist for objectives, messaging architecture, phases, channel roles and measurement across integrated campaigns.",
+      "path": "skills/aco-agency-office/references/agents/campaign-strategist.md",
+      "skill_path": "aco-agency-office/references/agents/campaign-strategist.md",
+      "native_name": "aco_campaign_strategist",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-campaign-strategist.toml"
+    },
+    "casting_researcher": {
+      "office": "agency-office",
+      "description": "Casting researcher for talent discovery, character fit, reference boards, shortlist research, representation details and first-pass availability research.",
+      "path": "skills/aco-agency-office/references/agents/casting-researcher.md",
+      "skill_path": "aco-agency-office/references/agents/casting-researcher.md",
+      "native_name": "aco_casting_researcher",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-casting-researcher.toml"
+    },
+    "cgi_vfx_supervisor": {
+      "office": "agency-office",
+      "description": "CGI/VFX supervisor for 3D, simulation, compositing, virtual production and effects-heavy creative work, balancing visual ambition with pipeline feasibility.",
+      "path": "skills/aco-agency-office/references/agents/cgi-vfx-supervisor.md",
+      "skill_path": "aco-agency-office/references/agents/cgi-vfx-supervisor.md",
+      "native_name": "aco_cgi_vfx_supervisor",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-cgi-vfx-supervisor.toml"
+    },
+    "community_manager": {
+      "office": "agency-office",
+      "description": "Community manager for comments, inbox triage, moderation, audience questions, escalation and qualitative community signals.",
+      "path": "skills/aco-agency-office/references/agents/community-manager.md",
+      "skill_path": "aco-agency-office/references/agents/community-manager.md",
+      "native_name": "aco_community_manager",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-community-manager.toml"
+    },
+    "content_director": {
+      "office": "agency-office",
+      "description": "Content director for brand editorial systems, content pillars, formats, franchises and channel ecosystems.",
+      "path": "skills/aco-agency-office/references/agents/content-director.md",
+      "skill_path": "aco-agency-office/references/agents/content-director.md",
+      "native_name": "aco_content_director",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-content-director.toml"
+    },
+    "content_researcher": {
+      "office": "agency-office",
+      "description": "Content researcher for stories, examples, references, statistics, cultural hooks, subject-matter sources and editorial evidence.",
+      "path": "skills/aco-agency-office/references/agents/content-researcher.md",
+      "skill_path": "aco-agency-office/references/agents/content-researcher.md",
+      "native_name": "aco_content_researcher",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-content-researcher.toml"
+    },
+    "copy_researcher": {
+      "office": "agency-office",
+      "description": "Copy and language researcher for competitor messaging, category language, terminology, naming landscapes and cultural/verbal references.",
+      "path": "skills/aco-agency-office/references/agents/copy-researcher.md",
+      "skill_path": "aco-agency-office/references/agents/copy-researcher.md",
+      "native_name": "aco_copy_researcher",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-copy-researcher.toml"
+    },
+    "copywriter": {
+      "office": "agency-office",
+      "description": "Senior agency copywriter for concepts, headlines, scripts, manifestos, social, OOH, digital and campaign copy.",
+      "path": "skills/aco-agency-office/references/agents/copywriter.md",
+      "skill_path": "aco-agency-office/references/agents/copywriter.md",
+      "native_name": "aco_copywriter",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-copywriter.toml"
+    },
+    "creative_strategist": {
+      "office": "agency-office",
+      "description": "Creative strategist who bridges evidence-led strategy and creative development, defining territories and briefs without replacing the creative director.",
+      "path": "skills/aco-agency-office/references/agents/creative-strategist.md",
+      "skill_path": "aco-agency-office/references/agents/creative-strategist.md",
+      "native_name": "aco_creative_strategist",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-creative-strategist.toml"
+    },
+    "creative_technologist_prototyper": {
+      "office": "agency-office",
+      "description": "Hands-on creative technology prototyper for fast tests of AI, APIs, interactive systems, sensors, generative media and experimental workflows.",
+      "path": "skills/aco-agency-office/references/agents/creative-technologist-prototyper.md",
+      "skill_path": "aco-agency-office/references/agents/creative-technologist-prototyper.md",
+      "native_name": "aco_creative_technologist_prototyper",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-creative-technologist-prototyper.toml"
+    },
+    "creator_partnerships_manager": {
+      "office": "agency-office",
+      "description": "Creator and influencer partnerships specialist for fit, outreach, briefing, compensation, disclosure, usage and relationship management.",
+      "path": "skills/aco-agency-office/references/agents/creator-partnerships-manager.md",
+      "skill_path": "aco-agency-office/references/agents/creator-partnerships-manager.md",
+      "native_name": "aco_creator_partnerships_manager",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-creator-partnerships-manager.toml"
+    },
+    "crm_lifecycle_strategist": {
+      "office": "agency-office",
+      "description": "CRM and lifecycle strategist for email, messaging, segmentation, automation, retention and customer journeys from acquisition through loyalty.",
+      "path": "skills/aco-agency-office/references/agents/crm-lifecycle-strategist.md",
+      "skill_path": "aco-agency-office/references/agents/crm-lifecycle-strategist.md",
+      "native_name": "aco_crm_lifecycle_strategist",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-crm-lifecycle-strategist.toml"
+    },
+    "cultural_strategist": {
+      "office": "agency-office",
+      "description": "Cultural strategist who analyzes cultural codes, emerging behaviors, scenes, aesthetics and social meaning without trendwashing or appropriation.",
+      "path": "skills/aco-agency-office/references/agents/cultural-strategist.md",
+      "skill_path": "aco-agency-office/references/agents/cultural-strategist.md",
+      "native_name": "aco_cultural_strategist",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-cultural-strategist.toml"
+    },
+    "design_director": {
+      "office": "agency-office",
+      "description": "Design director overseeing identity, digital, editorial, spatial and campaign design systems across agency work.",
+      "path": "skills/aco-agency-office/references/agents/design-director.md",
+      "skill_path": "aco-agency-office/references/agents/design-director.md",
+      "native_name": "aco_design_director",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-design-director.toml"
+    },
+    "design_researcher": {
+      "office": "agency-office",
+      "description": "Design researcher for visual precedents, typography, identity systems, graphic culture, material references and design-context research.",
+      "path": "skills/aco-agency-office/references/agents/design-researcher.md",
+      "skill_path": "aco-agency-office/references/agents/design-researcher.md",
+      "native_name": "aco_design_researcher",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-design-researcher.toml"
+    },
+    "digital_design_director": {
+      "office": "agency-office",
+      "description": "Digital design director for websites, campaign experiences and interfaces, bridging brand expression with UX and responsive systems.",
+      "path": "skills/aco-agency-office/references/agents/digital-design-director.md",
+      "skill_path": "aco-agency-office/references/agents/digital-design-director.md",
+      "native_name": "aco_digital_design_director",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-digital-design-director.toml"
+    },
+    "fact_checker": {
+      "office": "agency-office",
+      "description": "Agency fact checker for names, dates, statistics, claims, quotations, credits, source quality and pre-publication verification.",
+      "path": "skills/aco-agency-office/references/agents/fact-checker.md",
+      "skill_path": "aco-agency-office/references/agents/fact-checker.md",
+      "native_name": "aco_fact_checker",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-fact-checker.toml"
+    },
+    "film_producer": {
+      "office": "agency-office",
+      "description": "Film producer for commercials, branded films, social video and moving-image productions from preproduction through final delivery.",
+      "path": "skills/aco-agency-office/references/agents/film-producer.md",
+      "skill_path": "aco-agency-office/references/agents/film-producer.md",
+      "native_name": "aco_film_producer",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-film-producer.toml"
+    },
+    "frontend_prototyper": {
+      "office": "agency-office",
+      "description": "Frontend prototyper for rapid landing pages, microsites, interactive demos, interface concepts and responsive proof-of-concepts.",
+      "path": "skills/aco-agency-office/references/agents/frontend-prototyper.md",
+      "skill_path": "aco-agency-office/references/agents/frontend-prototyper.md",
+      "native_name": "aco_frontend_prototyper",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-frontend-prototyper.toml"
+    },
+    "integrated_producer": {
+      "office": "agency-office",
+      "description": "Integrated producer for multi-channel creative production across design, content, film, photography, digital, social and experiential deliverables.",
+      "path": "skills/aco-agency-office/references/agents/integrated-producer.md",
+      "skill_path": "aco-agency-office/references/agents/integrated-producer.md",
+      "native_name": "aco_integrated_producer",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-integrated-producer.toml"
+    },
+    "junior_art_director": {
+      "office": "agency-office",
+      "description": "Junior art director for visual routes, moodboards, image systems, casting/location directions and first-pass executional concepts.",
+      "path": "skills/aco-agency-office/references/agents/junior-art-director.md",
+      "skill_path": "aco-agency-office/references/agents/junior-art-director.md",
+      "native_name": "aco_junior_art_director",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-junior-art-director.toml"
+    },
+    "junior_brand_strategist": {
+      "office": "agency-office",
+      "description": "Junior brand strategist for audits, competitor scans, positioning evidence, research synthesis and first-pass strategic frameworks.",
+      "path": "skills/aco-agency-office/references/agents/junior-brand-strategist.md",
+      "skill_path": "aco-agency-office/references/agents/junior-brand-strategist.md",
+      "native_name": "aco_junior_brand_strategist",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-junior-brand-strategist.toml"
+    },
+    "junior_copywriter": {
+      "office": "agency-office",
+      "description": "Junior copywriter for headline batches, captions, CTAs, body-copy variants, scripts, naming lists and first drafts.",
+      "path": "skills/aco-agency-office/references/agents/junior-copywriter.md",
+      "skill_path": "aco-agency-office/references/agents/junior-copywriter.md",
+      "native_name": "aco_junior_copywriter",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-junior-copywriter.toml"
+    },
+    "junior_designer": {
+      "office": "agency-office",
+      "description": "Junior multidisciplinary designer for first-pass layouts, identity applications, social assets, decks, mockups and design production.",
+      "path": "skills/aco-agency-office/references/agents/junior-designer.md",
+      "skill_path": "aco-agency-office/references/agents/junior-designer.md",
+      "native_name": "aco_junior_designer",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-junior-designer.toml"
+    },
+    "junior_media_planner": {
+      "office": "agency-office",
+      "description": "Junior media planner for channel research, placement options, reach/frequency scenarios, benchmarks and first-pass media plans.",
+      "path": "skills/aco-agency-office/references/agents/junior-media-planner.md",
+      "skill_path": "aco-agency-office/references/agents/junior-media-planner.md",
+      "native_name": "aco_junior_media_planner",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-junior-media-planner.toml"
+    },
+    "junior_producer": {
+      "office": "agency-office",
+      "description": "Junior producer for schedules, quote gathering, vendor coordination, checklists, status tracking and production administration.",
+      "path": "skills/aco-agency-office/references/agents/junior-producer.md",
+      "skill_path": "aco-agency-office/references/agents/junior-producer.md",
+      "native_name": "aco_junior_producer",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-junior-producer.toml"
+    },
+    "location_researcher": {
+      "office": "agency-office",
+      "description": "Location researcher for visual fit, practical access, permits, logistics, geography, alternatives and first-pass feasibility.",
+      "path": "skills/aco-agency-office/references/agents/location-researcher.md",
+      "skill_path": "aco-agency-office/references/agents/location-researcher.md",
+      "native_name": "aco_location_researcher",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-location-researcher.toml"
+    },
+    "marketing_analyst": {
+      "office": "agency-office",
+      "description": "Marketing analyst for campaign data QA, performance summaries, channel comparisons, dashboards, anomalies and evidence for optimization.",
+      "path": "skills/aco-agency-office/references/agents/marketing-analyst.md",
+      "skill_path": "aco-agency-office/references/agents/marketing-analyst.md",
+      "native_name": "aco_marketing_analyst",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-marketing-analyst.toml"
+    },
+    "media_strategy_planner": {
+      "office": "agency-office",
+      "description": "Media strategist for paid/owned/earned channel roles, investment logic, reach/frequency, audience delivery and campaign distribution.",
+      "path": "skills/aco-agency-office/references/agents/media-strategy-planner.md",
+      "skill_path": "aco-agency-office/references/agents/media-strategy-planner.md",
+      "native_name": "aco_media_strategy_planner",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-media-strategy-planner.toml"
+    },
+    "motion_design_director": {
+      "office": "agency-office",
+      "description": "Motion design director for brand motion systems, kinetic typography, title design, transitions and motion-led campaign expression.",
+      "path": "skills/aco-agency-office/references/agents/motion-design-director.md",
+      "skill_path": "aco-agency-office/references/agents/motion-design-director.md",
+      "native_name": "aco_motion_design_director",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-motion-design-director.toml"
+    },
+    "organic_discovery_strategist": {
+      "office": "agency-office",
+      "description": "Organic discovery strategist across search engines, AI-assisted search, website information architecture and evergreen content discoverability.",
+      "path": "skills/aco-agency-office/references/agents/organic-discovery-strategist.md",
+      "skill_path": "aco-agency-office/references/agents/organic-discovery-strategist.md",
+      "native_name": "aco_organic_discovery_strategist",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-organic-discovery-strategist.toml"
+    },
+    "performance_marketing_manager": {
+      "office": "agency-office",
+      "description": "Performance marketing specialist for measurable acquisition and conversion across paid digital channels, experimentation and optimization.",
+      "path": "skills/aco-agency-office/references/agents/performance-marketing-manager.md",
+      "skill_path": "aco-agency-office/references/agents/performance-marketing-manager.md",
+      "native_name": "aco_performance_marketing_manager",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-performance-marketing-manager.toml"
+    },
+    "photography_producer": {
+      "office": "agency-office",
+      "description": "Photography producer for editorial, campaign, product and brand image production, including crew, casting, locations, usage and post.",
+      "path": "skills/aco-agency-office/references/agents/photography-producer.md",
+      "skill_path": "aco-agency-office/references/agents/photography-producer.md",
+      "native_name": "aco_photography_producer",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-photography-producer.toml"
+    },
+    "postproduction_coordinator": {
+      "office": "agency-office",
+      "description": "Postproduction coordinator for version tracking, review rounds, file naming, subtitles, masters, specs, approvals and delivery logistics.",
+      "path": "skills/aco-agency-office/references/agents/postproduction-coordinator.md",
+      "skill_path": "aco-agency-office/references/agents/postproduction-coordinator.md",
+      "native_name": "aco_postproduction_coordinator",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-postproduction-coordinator.toml"
+    },
+    "postproduction_supervisor": {
+      "office": "agency-office",
+      "description": "Postproduction supervisor for edit, color, sound, VFX, retouching, versioning, QC, mastering and delivery across moving and still image work.",
+      "path": "skills/aco-agency-office/references/agents/postproduction-supervisor.md",
+      "skill_path": "aco-agency-office/references/agents/postproduction-supervisor.md",
+      "native_name": "aco_postproduction_supervisor",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-postproduction-supervisor.toml"
+    },
+    "presentation_designer": {
+      "office": "agency-office",
+      "description": "Presentation designer for turning approved thinking into clear, persuasive, visually coherent decks without changing the underlying strategy.",
+      "path": "skills/aco-agency-office/references/agents/presentation-designer.md",
+      "skill_path": "aco-agency-office/references/agents/presentation-designer.md",
+      "native_name": "aco_presentation_designer",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-presentation-designer.toml"
+    },
+    "production_coordinator": {
+      "office": "agency-office",
+      "description": "Production coordinator for bookings, travel, equipment, crew information, releases, logistics and day-to-day production follow-through.",
+      "path": "skills/aco-agency-office/references/agents/production-coordinator.md",
+      "skill_path": "aco-agency-office/references/agents/production-coordinator.md",
+      "native_name": "aco_production_coordinator",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-production-coordinator.toml"
+    },
+    "production_designer": {
+      "office": "agency-office",
+      "description": "Production designer for systematic adaptation of approved creative and identity work across formats, sizes, channels and deliverables.",
+      "path": "skills/aco-agency-office/references/agents/production-designer.md",
+      "skill_path": "aco-agency-office/references/agents/production-designer.md",
+      "native_name": "aco_production_designer",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-production-designer.toml"
+    },
+    "project_coordinator": {
+      "office": "agency-office",
+      "description": "Project coordinator for task tracking, dependencies, approvals, revisions, decision logs, meeting actions and day-to-day delivery support.",
+      "path": "skills/aco-agency-office/references/agents/project-coordinator.md",
+      "skill_path": "aco-agency-office/references/agents/project-coordinator.md",
+      "native_name": "aco_project_coordinator",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-project-coordinator.toml"
+    },
+    "project_manager": {
+      "office": "agency-office",
+      "description": "Agency project manager for scope, timeline, dependencies, approvals, status, change control and delivery coordination.",
+      "path": "skills/aco-agency-office/references/agents/project-manager.md",
+      "skill_path": "aco-agency-office/references/agents/project-manager.md",
+      "native_name": "aco_project_manager",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-project-manager.toml"
+    },
+    "research_insights_director": {
+      "office": "agency-office",
+      "description": "Research and insights lead for agency work across category, competitors, consumers, behavior, brand and market context.",
+      "path": "skills/aco-agency-office/references/agents/research-insights-director.md",
+      "skill_path": "aco-agency-office/references/agents/research-insights-director.md",
+      "native_name": "aco_research_insights_director",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-research-insights-director.toml"
+    },
+    "seo_content_researcher": {
+      "office": "agency-office",
+      "description": "SEO/content discovery researcher for search intent, keyword clusters, SERP patterns, competitor content, query gaps and content opportunities.",
+      "path": "skills/aco-agency-office/references/agents/seo-content-researcher.md",
+      "skill_path": "aco-agency-office/references/agents/seo-content-researcher.md",
+      "native_name": "aco_seo_content_researcher",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-seo-content-researcher.toml"
+    },
+    "social_content_creator": {
+      "office": "agency-office",
+      "description": "Social content creator for turning approved strategy into posts, carousels, short-form concepts, captions, adaptations and publishing-ready content.",
+      "path": "skills/aco-agency-office/references/agents/social-content-creator.md",
+      "skill_path": "aco-agency-office/references/agents/social-content-creator.md",
+      "native_name": "aco_social_content_creator",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-social-content-creator.toml"
+    },
+    "social_media_manager": {
+      "office": "agency-office",
+      "description": "Social media manager for brand and organization accounts, focused on platform-native publishing, community operations and measurable communication rather than generic creator tactics.",
+      "path": "skills/aco-agency-office/references/agents/social-media-manager.md",
+      "skill_path": "aco-agency-office/references/agents/social-media-manager.md",
+      "native_name": "aco_social_media_manager",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-social-media-manager.toml"
+    },
+    "strategy_director": {
+      "office": "agency-office",
+      "description": "Senior integrated strategy lead for agency engagements. Defines the real problem, strategic choice and cross-disciplinary direction before creative execution.",
+      "path": "skills/aco-agency-office/references/agents/strategy-director.md",
+      "skill_path": "aco-agency-office/references/agents/strategy-director.md",
+      "native_name": "aco_strategy_director",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-strategy-director.toml"
+    },
+    "traffic_coordinator": {
+      "office": "agency-office",
+      "description": "Traffic coordinator for daily workload visibility, assignment tracking, deadline collisions and resource-status updates.",
+      "path": "skills/aco-agency-office/references/agents/traffic-coordinator.md",
+      "skill_path": "aco-agency-office/references/agents/traffic-coordinator.md",
+      "native_name": "aco_traffic_coordinator",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-traffic-coordinator.toml"
+    },
+    "traffic_resource_manager": {
+      "office": "agency-office",
+      "description": "Agency traffic and resource manager for capacity planning, staffing, scheduling, utilization and workload balancing across teams and freelancers.",
+      "path": "skills/aco-agency-office/references/agents/traffic-resource-manager.md",
+      "skill_path": "aco-agency-office/references/agents/traffic-resource-manager.md",
+      "native_name": "aco_traffic_resource_manager",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-traffic-resource-manager.toml"
+    },
+    "verbal_identity_director": {
+      "office": "agency-office",
+      "description": "Verbal identity specialist for brand voice, tone, messaging systems, naming logic and language governance.",
+      "path": "skills/aco-agency-office/references/agents/verbal-identity-director.md",
+      "skill_path": "aco-agency-office/references/agents/verbal-identity-director.md",
+      "native_name": "aco_verbal_identity_director",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-verbal-identity-director.toml"
+    },
+    "visual_researcher": {
+      "office": "agency-office",
+      "description": "Visual researcher for photography, film, art, fashion, design, archives, image culture, directors, photographers and visual references.",
+      "path": "skills/aco-agency-office/references/agents/visual-researcher.md",
+      "skill_path": "aco-agency-office/references/agents/visual-researcher.md",
+      "native_name": "aco_visual_researcher",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-visual-researcher.toml"
+    },
+    "art_contracts_rights_advisor": {
+      "office": "artist-office",
+      "description": "First-pass contracts, rights and deal-terms reviewer for artists: gallery agreements, commissions, licenses, image rights, editions, acquisitions, exclusivity, AI/data clauses and production responsibilities.",
+      "path": "skills/aco-artist-office/references/agents/art-contracts-rights-advisor.md",
+      "skill_path": "aco-artist-office/references/agents/art-contracts-rights-advisor.md",
+      "native_name": "aco_art_contracts_rights_advisor",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-art-contracts-rights-advisor.toml"
+    },
+    "art_critic": {
+      "office": "artist-office",
+      "description": "Independent contemporary-art critic for rigorous evaluation, originality checks, conceptual pressure-testing, close reading and counter-interpretation.",
+      "path": "skills/aco-artist-office/references/agents/art-critic.md",
+      "skill_path": "aco-artist-office/references/agents/art-critic.md",
+      "native_name": "aco_art_critic",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-art-critic.toml"
+    },
+    "art_ecosystem_analyst": {
+      "office": "artist-office",
+      "description": "Analyst of contemporary-art institutions, galleries, fairs, biennials, residencies, prizes, funding, representation, networks and professional positioning.",
+      "path": "skills/aco-artist-office/references/agents/art-ecosystem-analyst.md",
+      "skill_path": "aco-artist-office/references/agents/art-ecosystem-analyst.md",
+      "native_name": "aco_art_ecosystem_analyst",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-art-ecosystem-analyst.toml"
+    },
+    "art_historian": {
+      "office": "artist-office",
+      "description": "Art historian and theory researcher for historical genealogies, movements, precedents, concepts, bibliographies and source-critical contextualization.",
+      "path": "skills/aco-artist-office/references/agents/art-historian.md",
+      "skill_path": "aco-artist-office/references/agents/art-historian.md",
+      "native_name": "aco_art_historian",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-art-historian.toml"
+    },
+    "art_marketing_director": {
+      "office": "artist-office",
+      "description": "Marketing director specialized in contemporary artists, exhibitions, cultural projects and art platforms; develops audience, campaign, launch and channel strategies without flattening art into generic content marketing.",
+      "path": "skills/aco-artist-office/references/agents/art-marketing-director.md",
+      "skill_path": "aco-artist-office/references/agents/art-marketing-director.md",
+      "native_name": "aco_art_marketing_director",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-art-marketing-director.toml"
+    },
+    "art_opportunities_scout": {
+      "office": "artist-office",
+      "description": "Live opportunity scout for contemporary artists: residencies, grants, prizes, commissions, public art, exhibitions, research programmes, teaching and institutional open calls, verified from official sources.",
+      "path": "skills/aco-artist-office/references/agents/art-opportunities-scout.md",
+      "skill_path": "aco-artist-office/references/agents/art-opportunities-scout.md",
+      "native_name": "aco_art_opportunities_scout",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-art-opportunities-scout.toml"
+    },
+    "art_publicist": {
+      "office": "artist-office",
+      "description": "Contemporary-art publicist for press strategy, media mapping, story angles, press materials, journalist outreach, interviews, launches and cultural partnerships.",
+      "path": "skills/aco-artist-office/references/agents/art-publicist.md",
+      "skill_path": "aco-artist-office/references/agents/art-publicist.md",
+      "native_name": "aco_art_publicist",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-art-publicist.toml"
+    },
+    "art_researcher": {
+      "office": "artist-office",
+      "description": "Current contemporary-art researcher for artists, exhibitions, institutions, discourse, themes, references, and cultural context. Use when claims need evidence and up-to-date sources.",
+      "path": "skills/aco-artist-office/references/agents/art-researcher.md",
+      "skill_path": "aco-artist-office/references/agents/art-researcher.md",
+      "native_name": "aco_art_researcher",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-art-researcher.toml"
+    },
+    "art_sales_director": {
+      "office": "artist-office",
+      "description": "Primary-market art sales strategist for pricing, editions, offers, collector development, gallery coordination, sales pipelines, negotiations and sustainable artwork revenue.",
+      "path": "skills/aco-artist-office/references/agents/art-sales-director.md",
+      "skill_path": "aco-artist-office/references/agents/art-sales-director.md",
+      "native_name": "aco_art_sales_director",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-art-sales-director.toml"
+    },
+    "artist_agent": {
+      "office": "artist-office",
+      "description": "Artist representative and career-development agent for contemporary artists: positioning, opportunities, institutional relationships, gallery strategy, outreach, negotiation preparation and long-term career planning.",
+      "path": "skills/aco-artist-office/references/agents/artist-agent.md",
+      "skill_path": "aco-artist-office/references/agents/artist-agent.md",
+      "native_name": "aco_artist_agent",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-artist-agent.toml"
+    },
+    "artist_revenue_strategist": {
+      "office": "artist-office",
+      "description": "Revenue strategy lead for a contemporary artist: diversifies sustainable income across sales, editions, commissions, fees, grants, licensing, publications, teaching and other practice-compatible streams without distorting the practice.",
+      "path": "skills/aco-artist-office/references/agents/artist-revenue-strategist.md",
+      "skill_path": "aco-artist-office/references/agents/artist-revenue-strategist.md",
+      "native_name": "aco_artist_revenue_strategist",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-artist-revenue-strategist.toml"
+    },
+    "artist_social_media_manager": {
+      "office": "artist-office",
+      "description": "Social media manager specialized in contemporary artists and art profiles; handles profile strategy, editorial calendars, captions, launches, documentation and audience growth while preserving artistic credibility.",
+      "path": "skills/aco-artist-office/references/agents/artist-social-media-manager.md",
+      "skill_path": "aco-artist-office/references/agents/artist-social-media-manager.md",
+      "native_name": "aco_artist_social_media_manager",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-artist-social-media-manager.toml"
+    },
+    "artwork_documentation_manager": {
+      "office": "artist-office",
+      "description": "Artwork and exhibition documentation manager for photography/video standards, shot lists, filenames, metadata, captions, credits, condition imagery, masters and delivery packages.",
+      "path": "skills/aco-artist-office/references/agents/artwork-documentation-manager.md",
+      "skill_path": "aco-artist-office/references/agents/artwork-documentation-manager.md",
+      "native_name": "aco_artwork_documentation_manager",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-artwork-documentation-manager.toml"
+    },
+    "collection_inventory_manager": {
+      "office": "artist-office",
+      "description": "Operational artwork inventory manager: availability, location, ownership, consignment, reservation, price, condition status, exhibition status and movement-ready records.",
+      "path": "skills/aco-artist-office/references/agents/collection-inventory-manager.md",
+      "skill_path": "aco-artist-office/references/agents/collection-inventory-manager.md",
+      "native_name": "aco_collection_inventory_manager",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-collection-inventory-manager.toml"
+    },
+    "collector_relations_manager": {
+      "office": "artist-office",
+      "description": "Collector and patron relationship manager for contemporary artists: CRM structure, private communications, follow-up, stewardship, viewings, acquisition journeys and long-term relationship development.",
+      "path": "skills/aco-artist-office/references/agents/collector-relations-manager.md",
+      "skill_path": "aco-artist-office/references/agents/collector-relations-manager.md",
+      "native_name": "aco_collector_relations_manager",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-collector-relations-manager.toml"
+    },
+    "commissions_licensing_manager": {
+      "office": "artist-office",
+      "description": "Manager for artist commissions, licensing and reproduction rights: structures scope, fees, deliverables, usage, approvals, exclusivity, renewals and rights protections.",
+      "path": "skills/aco-artist-office/references/agents/commissions-licensing-manager.md",
+      "skill_path": "aco-artist-office/references/agents/commissions-licensing-manager.md",
+      "native_name": "aco_commissions_licensing_manager",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-commissions-licensing-manager.toml"
+    },
+    "creative_orchestrator": {
+      "office": "artist-office",
+      "description": "Orchestrator for a full contemporary-art studio and professional office: artistic research, curatorial development, career, practice planning, opportunities, production, rights, revenue, sales, marketing, communications and operations.",
+      "path": "skills/aco-artist-office/references/agents/creative-orchestrator.md",
+      "skill_path": "aco-artist-office/references/agents/creative-orchestrator.md",
+      "native_name": "aco_creative_orchestrator",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-creative-orchestrator.toml"
+    },
+    "curator": {
+      "office": "artist-office",
+      "description": "Contemporary-art curator for exhibition concepts, artist selection, commissions, spatial logic, interpretive frameworks, public programme and curatorial writing.",
+      "path": "skills/aco-artist-office/references/agents/curator.md",
+      "skill_path": "aco-artist-office/references/agents/curator.md",
+      "native_name": "aco_curator",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-curator.toml"
+    },
+    "digital_preservation_manager": {
+      "office": "artist-office",
+      "description": "Digital/time-based artwork preservation specialist for masters, checksums, codecs, software dependencies, models, environments, migration, backups and future re-installability.",
+      "path": "skills/aco-artist-office/references/agents/digital-preservation-manager.md",
+      "skill_path": "aco-artist-office/references/agents/digital-preservation-manager.md",
+      "native_name": "aco_digital_preservation_manager",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-digital-preservation-manager.toml"
+    },
+    "edition_manager": {
+      "office": "artist-office",
+      "description": "Edition-control specialist for photographs, prints, video, software and other reproducible works: edition structures, APs, certificates, numbering, production specs, availability and price ladders.",
+      "path": "skills/aco-artist-office/references/agents/edition-manager.md",
+      "skill_path": "aco-artist-office/references/agents/edition-manager.md",
+      "native_name": "aco_edition_manager",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-edition-manager.toml"
+    },
+    "exhibition_producer": {
+      "office": "artist-office",
+      "description": "Exhibition and installation producer for contemporary art: converts artistic concepts into technical riders, fabrication, AV, logistics, budgets, schedules, installation/deinstallation and venue coordination.",
+      "path": "skills/aco-artist-office/references/agents/exhibition-producer.md",
+      "skill_path": "aco-artist-office/references/agents/exhibition-producer.md",
+      "native_name": "aco_exhibition_producer",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-exhibition-producer.toml"
+    },
+    "fabrication_manager": {
+      "office": "artist-office",
+      "description": "Physical-artwork fabrication manager for vendor sourcing, RFQs, materials, prototypes, tolerances, drawings, quality control, schedules, costs and handoff to installation.",
+      "path": "skills/aco-artist-office/references/agents/fabrication-manager.md",
+      "skill_path": "aco-artist-office/references/agents/fabrication-manager.md",
+      "native_name": "aco_fabrication_manager",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-fabrication-manager.toml"
+    },
+    "gallery_relations_manager": {
+      "office": "artist-office",
+      "description": "Gallery-facing relationship and representation manager: representation talks, consignments, exclusivity, territories, fairs, inventory, reporting, commissions and gallery follow-up.",
+      "path": "skills/aco-artist-office/references/agents/gallery-relations-manager.md",
+      "skill_path": "aco-artist-office/references/agents/gallery-relations-manager.md",
+      "native_name": "aco_gallery_relations_manager",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-gallery-relations-manager.toml"
+    },
+    "grants_applications_manager": {
+      "office": "artist-office",
+      "description": "Grant and application manager for artists: builds compliant, persuasive applications, budgets, timelines, statements, supporting-material checklists and submission plans without distorting the practice to fit a call.",
+      "path": "skills/aco-artist-office/references/agents/grants-applications-manager.md",
+      "skill_path": "aco-artist-office/references/agents/grants-applications-manager.md",
+      "native_name": "aco_grants_applications_manager",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-grants-applications-manager.toml"
+    },
+    "institutional_relations_manager": {
+      "office": "artist-office",
+      "description": "Relationship manager for curators, museums, foundations, biennials, universities, publishers and cultural institutions; maintains context, follow-ups, introductions and long-term institutional relationships.",
+      "path": "skills/aco-artist-office/references/agents/institutional-relations-manager.md",
+      "skill_path": "aco-artist-office/references/agents/institutional-relations-manager.md",
+      "native_name": "aco_institutional_relations_manager",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-institutional-relations-manager.toml"
+    },
+    "practice_archivist": {
+      "office": "artist-office",
+      "description": "Canonical archive and portfolio manager for an artist practice: works, exhibitions, images, editions, credits, dimensions, technical data, texts, press, CV, bios and portfolio variants.",
+      "path": "skills/aco-artist-office/references/agents/practice-archivist.md",
+      "skill_path": "aco-artist-office/references/agents/practice-archivist.md",
+      "native_name": "aco_practice_archivist",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-practice-archivist.toml"
+    },
+    "practice_strategist": {
+      "office": "artist-office",
+      "description": "Senior strategy agent for an artist practice: periodically reviews artistic development, exhibitions, research, relationships, applications, sales, visibility, workload and opportunity cost to keep the practice coherent and moving forward.",
+      "path": "skills/aco-artist-office/references/agents/practice-strategist.md",
+      "skill_path": "aco-artist-office/references/agents/practice-strategist.md",
+      "native_name": "aco_practice_strategist",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-practice-strategist.toml"
+    },
+    "press_reputation_researcher": {
+      "office": "artist-office",
+      "description": "Due-diligence and context researcher for art-world people and institutions: recent activity, programmes, artists, writing, press, controversies, mutual context and evidence-based contact briefs.",
+      "path": "skills/aco-artist-office/references/agents/press-reputation-researcher.md",
+      "skill_path": "aco-artist-office/references/agents/press-reputation-researcher.md",
+      "native_name": "aco_press_reputation_researcher",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-press-reputation-researcher.toml"
+    },
+    "publication_manager": {
+      "office": "artist-office",
+      "description": "Artist-publication production manager for monographs, catalogues, artist books and editorial projects: contributors, captions, permissions, proofing, print, ISBN, budgets, schedules and distribution.",
+      "path": "skills/aco-artist-office/references/agents/publication-manager.md",
+      "skill_path": "aco-artist-office/references/agents/publication-manager.md",
+      "native_name": "aco_publication_manager",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-publication-manager.toml"
+    },
+    "registrar_art_logistics": {
+      "office": "artist-office",
+      "description": "Registrar and art-logistics specialist for artwork movement, packing, shipping, customs, insurance, loans, condition reports, storage, couriers and installation logistics.",
+      "path": "skills/aco-artist-office/references/agents/registrar-art-logistics.md",
+      "skill_path": "aco-artist-office/references/agents/registrar-art-logistics.md",
+      "native_name": "aco_registrar_art_logistics",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-registrar-art-logistics.toml"
+    },
+    "studio_chief_of_staff": {
+      "office": "artist-office",
+      "description": "Chief of staff for an artist studio: translates approved practice strategy into 90-day, annual and weekly execution while coordinating projects, opportunities, production, relationships, revenue and studio operations.",
+      "path": "skills/aco-artist-office/references/agents/studio-chief-of-staff.md",
+      "skill_path": "aco-artist-office/references/agents/studio-chief-of-staff.md",
+      "native_name": "aco_studio_chief_of_staff",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-studio-chief-of-staff.toml"
+    },
+    "studio_comms_manager": {
+      "office": "artist-office",
+      "description": "Artist-studio communications operations manager for routine inbound/outbound requests, triage, image/bio/material delivery, scheduling, admin follow-up and response tracking.",
+      "path": "skills/aco-artist-office/references/agents/studio-comms-manager.md",
+      "skill_path": "aco-artist-office/references/agents/studio-comms-manager.md",
+      "native_name": "aco_studio_comms_manager",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-studio-comms-manager.toml"
+    },
+    "studio_research_librarian": {
+      "office": "artist-office",
+      "description": "Research-library and knowledge-organization specialist for books, papers, catalogues, PDFs, notes, references, citations, images and durable studio research retrieval.",
+      "path": "skills/aco-artist-office/references/agents/studio-research-librarian.md",
+      "skill_path": "aco-artist-office/references/agents/studio-research-librarian.md",
+      "native_name": "aco_studio_research_librarian",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-studio-research-librarian.toml"
+    },
+    "technical_art_producer": {
+      "office": "artist-office",
+      "description": "Technical producer for AI, video, interactive, web and computational artworks; turns artistic intent into robust system architectures, prototypes, hardware/software plans and exhibition-ready technical solutions.",
+      "path": "skills/aco-artist-office/references/agents/technical-art-producer.md",
+      "skill_path": "aco-artist-office/references/agents/technical-art-producer.md",
+      "native_name": "aco_technical_art_producer",
+      "codex_path": "extras/codex-custom-agents/artist-office/aco-technical-art-producer.toml"
+    },
+    "ai_technology_law_advisor": {
+      "office": "legal-office",
+      "description": "Legal issue-spotter for AI, datasets, model providers, generated content, automated decisions, platform terms and technology licensing.",
+      "path": "skills/aco-legal-office/references/agents/ai-technology-law-advisor.md",
+      "skill_path": "aco-legal-office/references/agents/ai-technology-law-advisor.md",
+      "native_name": "aco_ai_technology_law_advisor",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-ai-technology-law-advisor.toml"
+    },
+    "claims_correspondence_drafter": {
+      "office": "legal-office",
+      "description": "Drafting specialist for formal notices, responses, reservation-of-rights letters and pre-dispute correspondence.",
+      "path": "skills/aco-legal-office/references/agents/claims-correspondence-drafter.md",
+      "skill_path": "aco-legal-office/references/agents/claims-correspondence-drafter.md",
+      "native_name": "aco_claims_correspondence_drafter",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-claims-correspondence-drafter.toml"
+    },
+    "commercial_contracts_advisor": {
+      "office": "legal-office",
+      "description": "Commercial agreements specialist for client, supplier, services, SOW, production and B2B terms.",
+      "path": "skills/aco-legal-office/references/agents/commercial-contracts-advisor.md",
+      "skill_path": "aco-legal-office/references/agents/commercial-contracts-advisor.md",
+      "native_name": "aco_commercial_contracts_advisor",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-commercial-contracts-advisor.toml"
+    },
+    "consumer_advertising_compliance_advisor": {
+      "office": "legal-office",
+      "description": "Advertising and consumer-compliance specialist for claims, disclosures, promotions, endorsements and marketing rules.",
+      "path": "skills/aco-legal-office/references/agents/consumer-advertising-compliance-advisor.md",
+      "skill_path": "aco-legal-office/references/agents/consumer-advertising-compliance-advisor.md",
+      "native_name": "aco_consumer_advertising_compliance_advisor",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-consumer-advertising-compliance-advisor.toml"
+    },
+    "contract_drafter": {
+      "office": "legal-office",
+      "description": "Drafting specialist for contracts, amendments, releases, licenses, statements of work and related legal documents.",
+      "path": "skills/aco-legal-office/references/agents/contract-drafter.md",
+      "skill_path": "aco-legal-office/references/agents/contract-drafter.md",
+      "native_name": "aco_contract_drafter",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-contract-drafter.toml"
+    },
+    "contract_negotiation_advisor": {
+      "office": "legal-office",
+      "description": "Negotiation advisor for contract positions, fallback language, concessions and issue prioritization.",
+      "path": "skills/aco-legal-office/references/agents/contract-negotiation-advisor.md",
+      "skill_path": "aco-legal-office/references/agents/contract-negotiation-advisor.md",
+      "native_name": "aco_contract_negotiation_advisor",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-contract-negotiation-advisor.toml"
+    },
+    "contract_reviewer": {
+      "office": "legal-office",
+      "description": "Contract reviewer for risk, ambiguity, obligations, liability, termination, payment, rights and governing-law terms.",
+      "path": "skills/aco-legal-office/references/agents/contract-reviewer.md",
+      "skill_path": "aco-legal-office/references/agents/contract-reviewer.md",
+      "native_name": "aco_contract_reviewer",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-contract-reviewer.toml"
+    },
+    "corporate_governance_advisor": {
+      "office": "legal-office",
+      "description": "Corporate-governance support for entity decisions, board/shareholder approvals, delegated authority and internal records.",
+      "path": "skills/aco-legal-office/references/agents/corporate-governance-advisor.md",
+      "skill_path": "aco-legal-office/references/agents/corporate-governance-advisor.md",
+      "native_name": "aco_corporate_governance_advisor",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-corporate-governance-advisor.toml"
+    },
+    "dispute_prevention_advisor": {
+      "office": "legal-office",
+      "description": "Dispute-prevention specialist for preserving position, documenting issues, escalation paths, settlement framing and pre-dispute strategy.",
+      "path": "skills/aco-legal-office/references/agents/dispute-prevention-advisor.md",
+      "skill_path": "aco-legal-office/references/agents/dispute-prevention-advisor.md",
+      "native_name": "aco_dispute_prevention_advisor",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-dispute-prevention-advisor.toml"
+    },
+    "document_review_specialist": {
+      "office": "legal-office",
+      "description": "Specialist for reviewing supplied agreements and legal documents clause-by-clause with exact references.",
+      "path": "skills/aco-legal-office/references/agents/document-review-specialist.md",
+      "skill_path": "aco-legal-office/references/agents/document-review-specialist.md",
+      "native_name": "aco_document_review_specialist",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-document-review-specialist.toml"
+    },
+    "employment_labor_advisor": {
+      "office": "legal-office",
+      "description": "Employment/labor support for employment contracts, workplace rights, leave, working time, discipline and termination issues.",
+      "path": "skills/aco-legal-office/references/agents/employment-labor-advisor.md",
+      "skill_path": "aco-legal-office/references/agents/employment-labor-advisor.md",
+      "native_name": "aco_employment_labor_advisor",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-employment-labor-advisor.toml"
+    },
+    "independent_contractor_advisor": {
+      "office": "legal-office",
+      "description": "Contractor/freelancer support for classification, scope, fees, IP, confidentiality, termination and cross-border contractor terms.",
+      "path": "skills/aco-legal-office/references/agents/independent-contractor-advisor.md",
+      "skill_path": "aco-legal-office/references/agents/independent-contractor-advisor.md",
+      "native_name": "aco_independent_contractor_advisor",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-independent-contractor-advisor.toml"
+    },
+    "international_contracts_researcher": {
+      "office": "legal-office",
+      "description": "Cross-border contracts researcher for governing law, jurisdiction, international terms and execution/formality issues.",
+      "path": "skills/aco-legal-office/references/agents/international-contracts-researcher.md",
+      "skill_path": "aco-legal-office/references/agents/international-contracts-researcher.md",
+      "native_name": "aco_international_contracts_researcher",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-international-contracts-researcher.toml"
+    },
+    "ip_copyright_advisor": {
+      "office": "legal-office",
+      "description": "IP/copyright support for ownership, authorship, assignments, licenses, moral rights, reproductions and derivative uses.",
+      "path": "skills/aco-legal-office/references/agents/ip-copyright-advisor.md",
+      "skill_path": "aco-legal-office/references/agents/ip-copyright-advisor.md",
+      "native_name": "aco_ip_copyright_advisor",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-ip-copyright-advisor.toml"
+    },
+    "jurisdiction_researcher": {
+      "office": "legal-office",
+      "description": "Researcher for determining applicable jurisdictions, governing-law issues, forum rules and cross-border legal differences.",
+      "path": "skills/aco-legal-office/references/agents/jurisdiction-researcher.md",
+      "skill_path": "aco-legal-office/references/agents/jurisdiction-researcher.md",
+      "native_name": "aco_jurisdiction_researcher",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-jurisdiction-researcher.toml"
+    },
+    "legal_deadline_tracker": {
+      "office": "legal-office",
+      "description": "Deadline specialist for notices, renewals, filings, response windows, option dates and contractual milestones.",
+      "path": "skills/aco-legal-office/references/agents/legal-deadline-tracker.md",
+      "skill_path": "aco-legal-office/references/agents/legal-deadline-tracker.md",
+      "native_name": "aco_legal_deadline_tracker",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-legal-deadline-tracker.toml"
+    },
+    "legal_fact_checker": {
+      "office": "legal-office",
+      "description": "Fact and citation verifier for legal documents, dates, clause references, authorities and legal claims.",
+      "path": "skills/aco-legal-office/references/agents/legal-fact-checker.md",
+      "skill_path": "aco-legal-office/references/agents/legal-fact-checker.md",
+      "native_name": "aco_legal_fact_checker",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-legal-fact-checker.toml"
+    },
+    "legal_matter_manager": {
+      "office": "legal-office",
+      "description": "Matter manager for status, deadlines, owners, dependencies, documents and next actions across a legal issue.",
+      "path": "skills/aco-legal-office/references/agents/legal-matter-manager.md",
+      "skill_path": "aco-legal-office/references/agents/legal-matter-manager.md",
+      "native_name": "aco_legal_matter_manager",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-legal-matter-manager.toml"
+    },
+    "legal_operations_manager": {
+      "office": "legal-office",
+      "description": "Legal operations specialist for matter intake, process, counsel coordination, templates, approvals and legal spend/workflow tracking.",
+      "path": "skills/aco-legal-office/references/agents/legal-operations-manager.md",
+      "skill_path": "aco-legal-office/references/agents/legal-operations-manager.md",
+      "native_name": "aco_legal_operations_manager",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-legal-operations-manager.toml"
+    },
+    "legal_orchestrator": {
+      "office": "legal-office",
+      "description": "Orchestrator for a generic Legal Office. Routes legal research, contracts, IP, privacy, employment, compliance, disputes and legal operations while enforcing jurisdiction and verification discipline.",
+      "path": "skills/aco-legal-office/references/agents/legal-orchestrator.md",
+      "skill_path": "aco-legal-office/references/agents/legal-orchestrator.md",
+      "native_name": "aco_legal_orchestrator",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-legal-orchestrator.toml"
+    },
+    "legal_researcher": {
+      "office": "legal-office",
+      "description": "Legal researcher for statutes, regulations, cases, regulator guidance and authoritative source synthesis.",
+      "path": "skills/aco-legal-office/references/agents/legal-researcher.md",
+      "skill_path": "aco-legal-office/references/agents/legal-researcher.md",
+      "native_name": "aco_legal_researcher",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-legal-researcher.toml"
+    },
+    "legal_risk_analyst": {
+      "office": "legal-office",
+      "description": "Analyst for translating legal issues into likelihood/impact, reversibility, financial, operational and reputational risk.",
+      "path": "skills/aco-legal-office/references/agents/legal-risk-analyst.md",
+      "skill_path": "aco-legal-office/references/agents/legal-risk-analyst.md",
+      "native_name": "aco_legal_risk_analyst",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-legal-risk-analyst.toml"
+    },
+    "licensing_rights_advisor": {
+      "office": "legal-office",
+      "description": "Licensing specialist for artwork, images, software, media, content, music and other usage rights.",
+      "path": "skills/aco-legal-office/references/agents/licensing-rights-advisor.md",
+      "skill_path": "aco-legal-office/references/agents/licensing-rights-advisor.md",
+      "native_name": "aco_licensing_rights_advisor",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-licensing-rights-advisor.toml"
+    },
+    "paralegal": {
+      "office": "legal-office",
+      "description": "Paralegal-style support for fact organization, document indexing, chronologies, filing preparation and counsel-ready bundles.",
+      "path": "skills/aco-legal-office/references/agents/paralegal.md",
+      "skill_path": "aco-legal-office/references/agents/paralegal.md",
+      "native_name": "aco_paralegal",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-paralegal.toml"
+    },
+    "privacy_data_protection_advisor": {
+      "office": "legal-office",
+      "description": "Privacy/data-protection support for personal data, notices, processors, transfers, retention, consent/legal basis and privacy-by-design.",
+      "path": "skills/aco-legal-office/references/agents/privacy-data-protection-advisor.md",
+      "skill_path": "aco-legal-office/references/agents/privacy-data-protection-advisor.md",
+      "native_name": "aco_privacy_data_protection_advisor",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-privacy-data-protection-advisor.toml"
+    },
+    "procurement_vendor_contract_advisor": {
+      "office": "legal-office",
+      "description": "Specialist for supplier/procurement agreements, SLAs, indemnities, warranties, service levels and vendor risk.",
+      "path": "skills/aco-legal-office/references/agents/procurement-vendor-contract-advisor.md",
+      "skill_path": "aco-legal-office/references/agents/procurement-vendor-contract-advisor.md",
+      "native_name": "aco_procurement_vendor_contract_advisor",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-procurement-vendor-contract-advisor.toml"
+    },
+    "regulatory_compliance_researcher": {
+      "office": "legal-office",
+      "description": "Researcher for industry/regulator obligations, official guidance, licensing requirements and compliance change tracking.",
+      "path": "skills/aco-legal-office/references/agents/regulatory-compliance-researcher.md",
+      "skill_path": "aco-legal-office/references/agents/regulatory-compliance-researcher.md",
+      "native_name": "aco_regulatory_compliance_researcher",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-regulatory-compliance-researcher.toml"
+    },
+    "trademark_brand_protection_advisor": {
+      "office": "legal-office",
+      "description": "Trademark and brand-protection support for clearance issues, classes, filings, watch strategy and brand-use rules.",
+      "path": "skills/aco-legal-office/references/agents/trademark-brand-protection-advisor.md",
+      "skill_path": "aco-legal-office/references/agents/trademark-brand-protection-advisor.md",
+      "native_name": "aco_trademark_brand_protection_advisor",
+      "codex_path": "extras/codex-custom-agents/legal-office/aco-trademark-brand-protection-advisor.toml"
+    },
+    "art_director": {
+      "office": "shared",
+      "description": "Visual art director for photography, film, editorial, campaigns, exhibitions and image systems. Develops concrete visual direction rather than generic moodboards.",
+      "path": "skills/aco-office-concierge/references/agents/art-director.md",
+      "skill_path": "aco-office-concierge/references/agents/art-director.md",
+      "native_name": "aco_art_director",
+      "codex_path": "extras/codex-custom-agents/shared/aco-art-director.toml"
+    },
+    "art_writer": {
+      "office": "shared",
+      "description": "Contemporary-art writer for original criticism, reviews, catalogue essays, artist profiles, exhibition texts, commissioned essays and intellectually serious cultural writing.",
+      "path": "skills/aco-office-concierge/references/agents/art-writer.md",
+      "skill_path": "aco-office-concierge/references/agents/art-writer.md",
+      "native_name": "aco_art_writer",
+      "codex_path": "extras/codex-custom-agents/shared/aco-art-writer.toml"
+    },
+    "brand_strategist": {
+      "office": "shared",
+      "description": "Brand strategist for positioning, naming, architecture, voice, identity logic and cultural differentiation. Especially suited to creative, cultural and design-led organizations.",
+      "path": "skills/aco-office-concierge/references/agents/brand-strategist.md",
+      "skill_path": "aco-office-concierge/references/agents/brand-strategist.md",
+      "native_name": "aco_brand_strategist",
+      "codex_path": "extras/codex-custom-agents/shared/aco-brand-strategist.toml"
+    },
+    "communications_editor": {
+      "office": "shared",
+      "description": "Professional communications specialist for email, follow-ups, introductions, applications and sensitive correspondence. Reads full threads when mail tools are available.",
+      "path": "skills/aco-office-concierge/references/agents/communications-editor.md",
+      "skill_path": "aco-office-concierge/references/agents/communications-editor.md",
+      "native_name": "aco_communications_editor",
+      "codex_path": "extras/codex-custom-agents/shared/aco-communications-editor.toml"
+    },
+    "context_steward": {
+      "office": "shared",
+      "description": "Context and history steward for a multi-office agent system. Maintains an auditable work history, decisions, open loops and proposed context updates without silently turning provisional ideas into permanent facts.",
+      "path": "skills/aco-office-concierge/references/agents/context-steward.md",
+      "skill_path": "aco-office-concierge/references/agents/context-steward.md",
+      "native_name": "aco_context_steward",
+      "codex_path": "extras/codex-custom-agents/shared/aco-context-steward.toml"
+    },
+    "editor": {
+      "office": "shared",
+      "description": "Editor for artist statements, curatorial texts, applications, proposals, press releases, decks, publications, website copy and long-form cultural writing.",
+      "path": "skills/aco-office-concierge/references/agents/editor.md",
+      "skill_path": "aco-office-concierge/references/agents/editor.md",
+      "native_name": "aco_editor",
+      "codex_path": "extras/codex-custom-agents/shared/aco-editor.toml"
+    },
+    "marketing_strategist": {
+      "office": "shared",
+      "description": "Marketing strategist for creative and cultural projects: audience, launch, campaigns, channels, partnerships, content systems, conversion and measurement.",
+      "path": "skills/aco-office-concierge/references/agents/marketing-strategist.md",
+      "skill_path": "aco-office-concierge/references/agents/marketing-strategist.md",
+      "native_name": "aco_marketing_strategist",
+      "codex_path": "extras/codex-custom-agents/shared/aco-marketing-strategist.toml"
+    },
+    "office_concierge": {
+      "office": "shared",
+      "description": "Front-door concierge for a multi-office agent system. Translates natural requests into clear briefs, identifies the right office or cross-office team, asks only essential clarifying questions, and protects the user from having to know agent names.",
+      "path": "skills/aco-office-concierge/references/agents/office-concierge.md",
+      "skill_path": "aco-office-concierge/references/agents/office-concierge.md",
+      "native_name": "aco_office_concierge",
+      "codex_path": "extras/codex-custom-agents/shared/aco-office-concierge.toml"
+    },
+    "studio_finance_manager": {
+      "office": "shared",
+      "description": "Studio finance and project-budget manager for artists: production budgets, quotes, cash flow, fees, cost scenarios, margins, commissions, travel, shipping and financial decision support.",
+      "path": "skills/aco-office-concierge/references/agents/studio-finance-manager.md",
+      "skill_path": "aco-office-concierge/references/agents/studio-finance-manager.md",
+      "native_name": "aco_studio_finance_manager",
+      "codex_path": "extras/codex-custom-agents/shared/aco-studio-finance-manager.toml"
+    },
+    "studio_manager": {
+      "office": "shared",
+      "description": "Studio and office operations agent for briefs, timelines, deliverables, task breakdowns, meeting preparation, notes, handoffs and project administration.",
+      "path": "skills/aco-office-concierge/references/agents/studio-manager.md",
+      "skill_path": "aco-office-concierge/references/agents/studio-manager.md",
+      "native_name": "aco_studio_manager",
+      "codex_path": "extras/codex-custom-agents/shared/aco-studio-manager.toml"
+    },
+    "account_director": {
+      "office": "organization-office",
+      "description": "Account director for ongoing the organization client relationships, scope, feedback, satisfaction, renewals and commercial health after a project is engaged.",
+      "path": "skills/aco-organization-office/references/agents/account-director.md",
+      "skill_path": "aco-organization-office/references/agents/account-director.md",
+      "native_name": "aco_account_director",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-account-director.toml"
+    },
+    "business_development_director": {
+      "office": "organization-office",
+      "description": "Business development director for the organization client acquisition, qualified leads, proposals, new relationships and commercial pipeline.",
+      "path": "skills/aco-organization-office/references/agents/business-development-director.md",
+      "skill_path": "aco-organization-office/references/agents/business-development-director.md",
+      "native_name": "aco_business_development_director",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-business-development-director.toml"
+    },
+    "client_strategy_director": {
+      "office": "organization-office",
+      "description": "Client strategy director who turns commercial briefs into sharp cultural, brand, experience and communications problems for the organization to solve.",
+      "path": "skills/aco-organization-office/references/agents/client-strategy-director.md",
+      "skill_path": "aco-organization-office/references/agents/client-strategy-director.md",
+      "native_name": "aco_client_strategy_director",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-client-strategy-director.toml"
+    },
+    "commercial_strategy_director": {
+      "office": "organization-office",
+      "description": "Commercial strategy director for the organization offers, pricing logic, revenue mix, margins and the relationship between cultural mission and paid work.",
+      "path": "skills/aco-organization-office/references/agents/commercial-strategy-director.md",
+      "skill_path": "aco-organization-office/references/agents/commercial-strategy-director.md",
+      "native_name": "aco_commercial_strategy_director",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-commercial-strategy-director.toml"
+    },
+    "commissioning_editor": {
+      "office": "organization-office",
+      "description": "Commissioning editor for external writers, artists, curators, designers, technologists and researchers contributing to the organization.",
+      "path": "skills/aco-organization-office/references/agents/commissioning-editor.md",
+      "skill_path": "aco-organization-office/references/agents/commissioning-editor.md",
+      "native_name": "aco_commissioning_editor",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-commissioning-editor.toml"
+    },
+    "communications_pr_director": {
+      "office": "organization-office",
+      "description": "Communications and PR director for the organization institutional narrative, press, launches, newsletters and public positioning.",
+      "path": "skills/aco-organization-office/references/agents/communications-pr-director.md",
+      "skill_path": "aco-organization-office/references/agents/communications-pr-director.md",
+      "native_name": "aco_communications_pr_director",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-communications-pr-director.toml"
+    },
+    "community_editor": {
+      "office": "organization-office",
+      "description": "Community editor for the organization contributors, readers, participants, collaborators and recurring publics; focused on meaningful participation rather than vanity metrics.",
+      "path": "skills/aco-organization-office/references/agents/community-editor.md",
+      "skill_path": "aco-organization-office/references/agents/community-editor.md",
+      "native_name": "aco_community_editor",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-community-editor.toml"
+    },
+    "contracts_ip_manager": {
+      "office": "organization-office",
+      "description": "Contracts and IP manager for the organization commissioning, client, contributor, partnership, licensing, image, data and AI terms; first-pass issue spotting, not legal representation.",
+      "path": "skills/aco-organization-office/references/agents/contracts-ip-manager.md",
+      "skill_path": "aco-organization-office/references/agents/contracts-ip-manager.md",
+      "native_name": "aco_contracts_ip_manager",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-contracts-ip-manager.toml"
+    },
+    "creative_director": {
+      "office": "organization-office",
+      "description": "Creative director for the organization across cultural projects and client work. Converts strategy and research into a strong creative idea and coherent multi-format expression.",
+      "path": "skills/aco-organization-office/references/agents/creative-director.md",
+      "skill_path": "aco-organization-office/references/agents/creative-director.md",
+      "native_name": "aco_creative_director",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-creative-director.toml"
+    },
+    "creative_technologist": {
+      "office": "organization-office",
+      "description": "Creative technologist for culturally meaningful uses of AI, generative media, web, interaction, sensors, physical computing and emerging technologies.",
+      "path": "skills/aco-organization-office/references/agents/creative-technologist.md",
+      "skill_path": "aco-organization-office/references/agents/creative-technologist.md",
+      "native_name": "aco_creative_technologist",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-creative-technologist.toml"
+    },
+    "cultural_intelligence_analyst": {
+      "office": "organization-office",
+      "description": "Cultural intelligence analyst tracking meaningful shifts across art, design, technology, fashion, media, internet culture and social behaviour.",
+      "path": "skills/aco-organization-office/references/agents/cultural-intelligence-analyst.md",
+      "skill_path": "aco-organization-office/references/agents/cultural-intelligence-analyst.md",
+      "native_name": "aco_cultural_intelligence_analyst",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-cultural-intelligence-analyst.toml"
+    },
+    "data_insights_analyst": {
+      "office": "organization-office",
+      "description": "Data and insights analyst for the organization web, newsletter, social, campaigns, events, client acquisition, publishing and community evidence.",
+      "path": "skills/aco-organization-office/references/agents/data-insights-analyst.md",
+      "skill_path": "aco-organization-office/references/agents/data-insights-analyst.md",
+      "native_name": "aco_data_insights_analyst",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-data-insights-analyst.toml"
+    },
+    "digital_product_manager": {
+      "office": "organization-office",
+      "description": "Digital product manager for the organization-owned websites, platforms, research tools, archives and digital products after launch.",
+      "path": "skills/aco-organization-office/references/agents/digital-product-manager.md",
+      "skill_path": "aco-organization-office/references/agents/digital-product-manager.md",
+      "native_name": "aco_digital_product_manager",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-digital-product-manager.toml"
+    },
+    "events_experience_producer": {
+      "office": "organization-office",
+      "description": "Producer for the organization exhibitions, launches, talks, screenings, workshops, dinners, conferences and physical/hybrid experiences.",
+      "path": "skills/aco-organization-office/references/agents/events-experience-producer.md",
+      "skill_path": "aco-organization-office/references/agents/events-experience-producer.md",
+      "native_name": "aco_events_experience_producer",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-events-experience-producer.toml"
+    },
+    "executive_producer": {
+      "office": "organization-office",
+      "description": "Executive producer for the organization across exhibitions, films, digital projects, publications, installations, campaigns and interdisciplinary productions.",
+      "path": "skills/aco-organization-office/references/agents/executive-producer.md",
+      "skill_path": "aco-organization-office/references/agents/executive-producer.md",
+      "native_name": "aco_executive_producer",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-executive-producer.toml"
+    },
+    "funding_partnerships_manager": {
+      "office": "organization-office",
+      "description": "Funding and institutional finance manager for grants, foundations, public funding, cultural programmes and non-commercial partnerships relevant to the organization.",
+      "path": "skills/aco-organization-office/references/agents/funding-partnerships-manager.md",
+      "skill_path": "aco-organization-office/references/agents/funding-partnerships-manager.md",
+      "native_name": "aco_funding_partnerships_manager",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-funding-partnerships-manager.toml"
+    },
+    "impact_evaluation": {
+      "office": "organization-office",
+      "description": "Impact and evaluation specialist for the organization programmes, projects, partnerships and commercial work.",
+      "path": "skills/aco-organization-office/references/agents/impact-evaluation.md",
+      "skill_path": "aco-organization-office/references/agents/impact-evaluation.md",
+      "native_name": "aco_impact_evaluation",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-impact-evaluation.toml"
+    },
+    "knowledge_architect": {
+      "office": "organization-office",
+      "description": "Knowledge architect for the organization research, project history, contacts, sources, decisions, taxonomies and institutional memory.",
+      "path": "skills/aco-organization-office/references/agents/knowledge-architect.md",
+      "skill_path": "aco-organization-office/references/agents/knowledge-architect.md",
+      "native_name": "aco_knowledge_architect",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-knowledge-architect.toml"
+    },
+    "network_mapper": {
+      "office": "organization-office",
+      "description": "Network mapper for people, institutions, publications, funders, communities and relationships around the organization research and partnership topics.",
+      "path": "skills/aco-organization-office/references/agents/network-mapper.md",
+      "skill_path": "aco-organization-office/references/agents/network-mapper.md",
+      "native_name": "aco_network_mapper",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-network-mapper.toml"
+    },
+    "operations_director": {
+      "office": "organization-office",
+      "description": "COO-style operations director for a research-led cultural/creative organization. Owns workflows, capacity, resourcing, operational systems and organisational execution.",
+      "path": "skills/aco-organization-office/references/agents/operations-director.md",
+      "skill_path": "aco-organization-office/references/agents/operations-director.md",
+      "native_name": "aco_operations_director",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-operations-director.toml"
+    },
+    "organization_director": {
+      "office": "organization-office",
+      "description": "Executive strategic director for a research-led cultural/creative organization. Holds the mission, portfolio logic, organisational coherence and boundary between cultural platform, research lab and commercial practice.",
+      "path": "skills/aco-organization-office/references/agents/organization-director.md",
+      "skill_path": "aco-organization-office/references/agents/organization-director.md",
+      "native_name": "aco_organization_director",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-organization-director.toml"
+    },
+    "organization_orchestrator": {
+      "office": "organization-office",
+      "description": "Orchestrator for the organization across research, culture, creative, publishing, clients, partnerships, funding, products, operations and growth.",
+      "path": "skills/aco-organization-office/references/agents/organization-orchestrator.md",
+      "skill_path": "aco-organization-office/references/agents/organization-orchestrator.md",
+      "native_name": "aco_organization_orchestrator",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-organization-orchestrator.toml"
+    },
+    "partnerships_director": {
+      "office": "organization-office",
+      "description": "Strategic partnerships director for the organization across cultural institutions, universities, publishers, foundations, brands and technology organisations.",
+      "path": "skills/aco-organization-office/references/agents/partnerships-director.md",
+      "skill_path": "aco-organization-office/references/agents/partnerships-director.md",
+      "native_name": "aco_partnerships_director",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-partnerships-director.toml"
+    },
+    "product_experience_director": {
+      "office": "organization-office",
+      "description": "Product and experience director for the organization digital platforms, interactive publications, tools, services and hybrid experiences.",
+      "path": "skills/aco-organization-office/references/agents/product-experience-director.md",
+      "skill_path": "aco-organization-office/references/agents/product-experience-director.md",
+      "native_name": "aco_product_experience_director",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-product-experience-director.toml"
+    },
+    "programme_curator": {
+      "office": "organization-office",
+      "description": "Programme curator for the organization exhibitions, screenings, talks, workshops, residencies and interdisciplinary cultural programmes.",
+      "path": "skills/aco-organization-office/references/agents/programme-curator.md",
+      "skill_path": "aco-organization-office/references/agents/programme-curator.md",
+      "native_name": "aco_programme_curator",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-programme-curator.toml"
+    },
+    "proposal_pitch_director": {
+      "office": "organization-office",
+      "description": "Proposal and pitch director for the organization client proposals, institutional tenders, partnership decks and competitive presentations.",
+      "path": "skills/aco-organization-office/references/agents/proposal-pitch-director.md",
+      "skill_path": "aco-organization-office/references/agents/proposal-pitch-director.md",
+      "native_name": "aco_proposal_pitch_director",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-proposal-pitch-director.toml"
+    },
+    "publishing_director": {
+      "office": "organization-office",
+      "description": "Publishing director for the organization digital and print publications, editorial products, dossiers, books and distribution strategy.",
+      "path": "skills/aco-organization-office/references/agents/publishing-director.md",
+      "skill_path": "aco-organization-office/references/agents/publishing-director.md",
+      "native_name": "aco_publishing_director",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-publishing-director.toml"
+    },
+    "research_director": {
+      "office": "organization-office",
+      "description": "Research director for a research-led cultural/creative organization. Defines research programmes, questions, methods and outputs across art, design, technology, media and social systems.",
+      "path": "skills/aco-organization-office/references/agents/research-director.md",
+      "skill_path": "aco-organization-office/references/agents/research-director.md",
+      "native_name": "aco_research_director",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-research-director.toml"
+    },
+    "research_editor_fact_checker": {
+      "office": "organization-office",
+      "description": "Research editor and fact checker for the organization publications, research outputs, decks and public claims.",
+      "path": "skills/aco-organization-office/references/agents/research-editor-fact-checker.md",
+      "skill_path": "aco-organization-office/references/agents/research-editor-fact-checker.md",
+      "native_name": "aco_research_editor_fact_checker",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-research-editor-fact-checker.toml"
+    },
+    "revenue_innovation_strategist": {
+      "office": "organization-office",
+      "description": "Revenue innovation strategist exploring new the organization income models such as memberships, subscriptions, research products, tools, licensing, editions and education.",
+      "path": "skills/aco-organization-office/references/agents/revenue-innovation-strategist.md",
+      "skill_path": "aco-organization-office/references/agents/revenue-innovation-strategist.md",
+      "native_name": "aco_revenue_innovation_strategist",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-revenue-innovation-strategist.toml"
+    },
+    "sponsorship_director": {
+      "office": "organization-office",
+      "description": "Sponsorship director for cultural programmes, events and research partnerships, balancing funding with the organization editorial and curatorial independence.",
+      "path": "skills/aco-organization-office/references/agents/sponsorship-director.md",
+      "skill_path": "aco-organization-office/references/agents/sponsorship-director.md",
+      "native_name": "aco_sponsorship_director",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-sponsorship-director.toml"
+    },
+    "talent_contributors_manager": {
+      "office": "organization-office",
+      "description": "Talent and contributors manager for the organization external artists, writers, curators, designers, filmmakers, technologists and specialist collaborators.",
+      "path": "skills/aco-organization-office/references/agents/talent-contributors-manager.md",
+      "skill_path": "aco-organization-office/references/agents/talent-contributors-manager.md",
+      "native_name": "aco_talent_contributors_manager",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-talent-contributors-manager.toml"
+    },
+    "ux_service_designer": {
+      "office": "organization-office",
+      "description": "UX and service designer for the organization websites, platforms, tools, services, events and cross-channel journeys.",
+      "path": "skills/aco-organization-office/references/agents/ux-service-designer.md",
+      "skill_path": "aco-organization-office/references/agents/ux-service-designer.md",
+      "native_name": "aco_ux_service_designer",
+      "codex_path": "extras/codex-custom-agents/organization-office/aco-ux-service-designer.toml"
+    },
+    "accessibility_specialist": {
+      "office": "product-office",
+      "description": "Accessibility specialist for inclusive product design, compliance, assistive-tech behavior and remediation.",
+      "path": "skills/aco-product-office/references/agents/accessibility-specialist.md",
+      "skill_path": "aco-product-office/references/agents/accessibility-specialist.md",
+      "native_name": "aco_accessibility_specialist",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-accessibility-specialist.toml"
+    },
+    "accessibility_tester": {
+      "office": "product-office",
+      "description": "Tester for keyboard flows, screen-reader behavior, contrast, semantics and accessibility bugs.",
+      "path": "skills/aco-product-office/references/agents/accessibility-tester.md",
+      "skill_path": "aco-product-office/references/agents/accessibility-tester.md",
+      "native_name": "aco_accessibility_tester",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-accessibility-tester.toml"
+    },
+    "ai_engineer": {
+      "office": "product-office",
+      "description": "Engineer for applied AI features, model integration, pipelines and evaluation.",
+      "path": "skills/aco-product-office/references/agents/ai-engineer.md",
+      "skill_path": "aco-product-office/references/agents/ai-engineer.md",
+      "native_name": "aco_ai_engineer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-ai-engineer.toml"
+    },
+    "ai_product_engineer": {
+      "office": "product-office",
+      "description": "Bridge role between product and AI engineering for user-facing AI feature design and implementation.",
+      "path": "skills/aco-product-office/references/agents/ai-product-engineer.md",
+      "skill_path": "aco-product-office/references/agents/ai-product-engineer.md",
+      "native_name": "aco_ai_product_engineer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-ai-product-engineer.toml"
+    },
+    "api_integration_engineer": {
+      "office": "product-office",
+      "description": "Engineer for third-party service integration, authentication flows, webhooks and API reliability.",
+      "path": "skills/aco-product-office/references/agents/api-integration-engineer.md",
+      "skill_path": "aco-product-office/references/agents/api-integration-engineer.md",
+      "native_name": "aco_api_integration_engineer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-api-integration-engineer.toml"
+    },
+    "api_researcher": {
+      "office": "product-office",
+      "description": "Researcher for third-party API capabilities, docs, pricing, limits and integration implications.",
+      "path": "skills/aco-product-office/references/agents/api-researcher.md",
+      "skill_path": "aco-product-office/references/agents/api-researcher.md",
+      "native_name": "aco_api_researcher",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-api-researcher.toml"
+    },
+    "backend_engineer": {
+      "office": "product-office",
+      "description": "Backend engineer for server-side features, APIs, business logic and integrations.",
+      "path": "skills/aco-product-office/references/agents/backend-engineer.md",
+      "skill_path": "aco-product-office/references/agents/backend-engineer.md",
+      "native_name": "aco_backend_engineer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-backend-engineer.toml"
+    },
+    "bug_investigator": {
+      "office": "product-office",
+      "description": "Specialist for reproducing, isolating and diagnosing bugs across environments and layers.",
+      "path": "skills/aco-product-office/references/agents/bug-investigator.md",
+      "skill_path": "aco-product-office/references/agents/bug-investigator.md",
+      "native_name": "aco_bug_investigator",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-bug-investigator.toml"
+    },
+    "business_analyst": {
+      "office": "product-office",
+      "description": "Analyst for business rules, process requirements, operational needs and stakeholder constraints.",
+      "path": "skills/aco-product-office/references/agents/business-analyst.md",
+      "skill_path": "aco-product-office/references/agents/business-analyst.md",
+      "native_name": "aco_business_analyst",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-business-analyst.toml"
+    },
+    "cloud_architect": {
+      "office": "product-office",
+      "description": "Architect for cloud topology, managed services, cost/performance tradeoffs and cloud governance.",
+      "path": "skills/aco-product-office/references/agents/cloud-architect.md",
+      "skill_path": "aco-product-office/references/agents/cloud-architect.md",
+      "native_name": "aco_cloud_architect",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-cloud-architect.toml"
+    },
+    "code_reviewer": {
+      "office": "product-office",
+      "description": "Reviewer for code quality, maintainability, clarity and adherence to standards.",
+      "path": "skills/aco-product-office/references/agents/code-reviewer.md",
+      "skill_path": "aco-product-office/references/agents/code-reviewer.md",
+      "native_name": "aco_code_reviewer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-code-reviewer.toml"
+    },
+    "data_engineer": {
+      "office": "product-office",
+      "description": "Engineer for data pipelines, ingestion, transformation and analytics-readiness.",
+      "path": "skills/aco-product-office/references/agents/data-engineer.md",
+      "skill_path": "aco-product-office/references/agents/data-engineer.md",
+      "native_name": "aco_data_engineer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-data-engineer.toml"
+    },
+    "data_scientist": {
+      "office": "product-office",
+      "description": "Data scientist for modeling, experimentation, analysis and statistical interpretation.",
+      "path": "skills/aco-product-office/references/agents/data-scientist.md",
+      "skill_path": "aco-product-office/references/agents/data-scientist.md",
+      "native_name": "aco_data_scientist",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-data-scientist.toml"
+    },
+    "database_engineer": {
+      "office": "product-office",
+      "description": "Engineer for database schema, query design, performance, migrations and data integrity.",
+      "path": "skills/aco-product-office/references/agents/database-engineer.md",
+      "skill_path": "aco-product-office/references/agents/database-engineer.md",
+      "native_name": "aco_database_engineer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-database-engineer.toml"
+    },
+    "dependency_researcher": {
+      "office": "product-office",
+      "description": "Researcher for package selection, dependency health, maintenance risk and compatibility.",
+      "path": "skills/aco-product-office/references/agents/dependency-researcher.md",
+      "skill_path": "aco-product-office/references/agents/dependency-researcher.md",
+      "native_name": "aco_dependency_researcher",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-dependency-researcher.toml"
+    },
+    "design_system_designer": {
+      "office": "product-office",
+      "description": "Designer of reusable component systems, tokens, patterns and documentation for product consistency.",
+      "path": "skills/aco-product-office/references/agents/design-system-designer.md",
+      "skill_path": "aco-product-office/references/agents/design-system-designer.md",
+      "native_name": "aco_design_system_designer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-design-system-designer.toml"
+    },
+    "devops_engineer": {
+      "office": "product-office",
+      "description": "Engineer for deployment pipelines, CI/CD, environments and operational tooling.",
+      "path": "skills/aco-product-office/references/agents/devops-engineer.md",
+      "skill_path": "aco-product-office/references/agents/devops-engineer.md",
+      "native_name": "aco_devops_engineer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-devops-engineer.toml"
+    },
+    "documentation_writer": {
+      "office": "product-office",
+      "description": "Writer for user manuals, onboarding docs, support guides and operational runbooks.",
+      "path": "skills/aco-product-office/references/agents/documentation-writer.md",
+      "skill_path": "aco-product-office/references/agents/documentation-writer.md",
+      "native_name": "aco_documentation_writer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-documentation-writer.toml"
+    },
+    "frontend_engineer": {
+      "office": "product-office",
+      "description": "Frontend engineer for building user interfaces, state management and browser-side logic.",
+      "path": "skills/aco-product-office/references/agents/frontend-engineer.md",
+      "skill_path": "aco-product-office/references/agents/frontend-engineer.md",
+      "native_name": "aco_frontend_engineer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-frontend-engineer.toml"
+    },
+    "fullstack_engineer": {
+      "office": "product-office",
+      "description": "Fullstack engineer for end-to-end web product implementation across frontend and backend.",
+      "path": "skills/aco-product-office/references/agents/fullstack-engineer.md",
+      "skill_path": "aco-product-office/references/agents/fullstack-engineer.md",
+      "native_name": "aco_fullstack_engineer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-fullstack-engineer.toml"
+    },
+    "information_architect": {
+      "office": "product-office",
+      "description": "Designer of information architecture, content structure, navigation and system logic.",
+      "path": "skills/aco-product-office/references/agents/information-architect.md",
+      "skill_path": "aco-product-office/references/agents/information-architect.md",
+      "native_name": "aco_information_architect",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-information-architect.toml"
+    },
+    "interaction_designer": {
+      "office": "product-office",
+      "description": "Specialist for interaction behavior, states, transitions, affordances and micro-interactions.",
+      "path": "skills/aco-product-office/references/agents/interaction-designer.md",
+      "skill_path": "aco-product-office/references/agents/interaction-designer.md",
+      "native_name": "aco_interaction_designer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-interaction-designer.toml"
+    },
+    "junior_developer": {
+      "office": "product-office",
+      "description": "Junior developer for well-scoped implementation tasks, fixes and guided build work.",
+      "path": "skills/aco-product-office/references/agents/junior-developer.md",
+      "skill_path": "aco-product-office/references/agents/junior-developer.md",
+      "native_name": "aco_junior_developer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-junior-developer.toml"
+    },
+    "llm_engineer": {
+      "office": "product-office",
+      "description": "Engineer for LLM prompting, RAG patterns, tool use, evaluation and agentic behavior.",
+      "path": "skills/aco-product-office/references/agents/llm-engineer.md",
+      "skill_path": "aco-product-office/references/agents/llm-engineer.md",
+      "native_name": "aco_llm_engineer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-llm-engineer.toml"
+    },
+    "migration_specialist": {
+      "office": "product-office",
+      "description": "Specialist for migrations between stacks, systems, schemas, services or versions.",
+      "path": "skills/aco-product-office/references/agents/migration-specialist.md",
+      "skill_path": "aco-product-office/references/agents/migration-specialist.md",
+      "native_name": "aco_migration_specialist",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-migration-specialist.toml"
+    },
+    "ml_ops_engineer": {
+      "office": "product-office",
+      "description": "Engineer for model deployment, monitoring, versioning and production ML operations.",
+      "path": "skills/aco-product-office/references/agents/ml-ops-engineer.md",
+      "skill_path": "aco-product-office/references/agents/ml-ops-engineer.md",
+      "native_name": "aco_ml_ops_engineer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-ml-ops-engineer.toml"
+    },
+    "mobile_engineer": {
+      "office": "product-office",
+      "description": "Engineer for mobile app implementation, platform conventions and native/hybrid delivery.",
+      "path": "skills/aco-product-office/references/agents/mobile-engineer.md",
+      "skill_path": "aco-product-office/references/agents/mobile-engineer.md",
+      "native_name": "aco_mobile_engineer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-mobile-engineer.toml"
+    },
+    "performance_engineer": {
+      "office": "product-office",
+      "description": "Engineer for profiling, load behavior, optimization and performance budgets.",
+      "path": "skills/aco-product-office/references/agents/performance-engineer.md",
+      "skill_path": "aco-product-office/references/agents/performance-engineer.md",
+      "native_name": "aco_performance_engineer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-performance-engineer.toml"
+    },
+    "product_analyst": {
+      "office": "product-office",
+      "description": "Analyst for product usage, funnels, events, KPIs and behavioral data interpretation.",
+      "path": "skills/aco-product-office/references/agents/product-analyst.md",
+      "skill_path": "aco-product-office/references/agents/product-analyst.md",
+      "native_name": "aco_product_analyst",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-product-analyst.toml"
+    },
+    "product_designer": {
+      "office": "product-office",
+      "description": "Product designer for translating requirements into coherent UI/UX across flows and screens.",
+      "path": "skills/aco-product-office/references/agents/product-designer.md",
+      "skill_path": "aco-product-office/references/agents/product-designer.md",
+      "native_name": "aco_product_designer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-product-designer.toml"
+    },
+    "product_director": {
+      "office": "product-office",
+      "description": "Senior product lead who sets product direction, value proposition, decision criteria and cross-functional priorities.",
+      "path": "skills/aco-product-office/references/agents/product-director.md",
+      "skill_path": "aco-product-office/references/agents/product-director.md",
+      "native_name": "aco_product_director",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-product-director.toml"
+    },
+    "product_manager": {
+      "office": "product-office",
+      "description": "Product manager for planning requirements, prioritization, user stories and delivery coordination.",
+      "path": "skills/aco-product-office/references/agents/product-manager.md",
+      "skill_path": "aco-product-office/references/agents/product-manager.md",
+      "native_name": "aco_product_manager",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-product-manager.toml"
+    },
+    "product_researcher": {
+      "office": "product-office",
+      "description": "Researcher for product opportunities, user problems, category benchmarks and concept validation.",
+      "path": "skills/aco-product-office/references/agents/product-researcher.md",
+      "skill_path": "aco-product-office/references/agents/product-researcher.md",
+      "native_name": "aco_product_researcher",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-product-researcher.toml"
+    },
+    "product_software_orchestrator": {
+      "office": "product-office",
+      "description": "Orchestrator for websites, web apps, software products, internal tools, APIs and AI products. Routes work across product, UX, engineering, AI/data, quality and infrastructure.",
+      "path": "skills/aco-product-office/references/agents/product-software-orchestrator.md",
+      "skill_path": "aco-product-office/references/agents/product-software-orchestrator.md",
+      "native_name": "aco_product_software_orchestrator",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-product-software-orchestrator.toml"
+    },
+    "qa_engineer": {
+      "office": "product-office",
+      "description": "QA engineer for manual and structured testing of product behavior, edge cases and regressions.",
+      "path": "skills/aco-product-office/references/agents/qa-engineer.md",
+      "skill_path": "aco-product-office/references/agents/qa-engineer.md",
+      "native_name": "aco_qa_engineer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-qa-engineer.toml"
+    },
+    "qa_lead": {
+      "office": "product-office",
+      "description": "QA lead for test strategy, quality risk, release readiness and coverage priorities.",
+      "path": "skills/aco-product-office/references/agents/qa-lead.md",
+      "skill_path": "aco-product-office/references/agents/qa-lead.md",
+      "native_name": "aco_qa_lead",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-qa-lead.toml"
+    },
+    "release_manager": {
+      "office": "product-office",
+      "description": "Manager for release planning, versioning, rollout, rollback and cross-team release coordination.",
+      "path": "skills/aco-product-office/references/agents/release-manager.md",
+      "skill_path": "aco-product-office/references/agents/release-manager.md",
+      "native_name": "aco_release_manager",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-release-manager.toml"
+    },
+    "security_engineer": {
+      "office": "product-office",
+      "description": "Engineer for implementing security controls, secrets handling, infra hardening and monitoring.",
+      "path": "skills/aco-product-office/references/agents/security-engineer.md",
+      "skill_path": "aco-product-office/references/agents/security-engineer.md",
+      "native_name": "aco_security_engineer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-security-engineer.toml"
+    },
+    "security_reviewer": {
+      "office": "product-office",
+      "description": "Reviewer for application security, common vulnerabilities, auth patterns and risk assessment.",
+      "path": "skills/aco-product-office/references/agents/security-reviewer.md",
+      "skill_path": "aco-product-office/references/agents/security-reviewer.md",
+      "native_name": "aco_security_reviewer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-security-reviewer.toml"
+    },
+    "senior_backend_engineer": {
+      "office": "product-office",
+      "description": "Senior backend engineer for service architecture, APIs, data flow and backend reliability.",
+      "path": "skills/aco-product-office/references/agents/senior-backend-engineer.md",
+      "skill_path": "aco-product-office/references/agents/senior-backend-engineer.md",
+      "native_name": "aco_senior_backend_engineer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-senior-backend-engineer.toml"
+    },
+    "senior_frontend_engineer": {
+      "office": "product-office",
+      "description": "Senior frontend engineer for complex web interfaces, architecture and performance-sensitive UI.",
+      "path": "skills/aco-product-office/references/agents/senior-frontend-engineer.md",
+      "skill_path": "aco-product-office/references/agents/senior-frontend-engineer.md",
+      "native_name": "aco_senior_frontend_engineer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-senior-frontend-engineer.toml"
+    },
+    "software_architect": {
+      "office": "product-office",
+      "description": "Architect for application structure, technical boundaries, scalability and major engineering decisions.",
+      "path": "skills/aco-product-office/references/agents/software-architect.md",
+      "skill_path": "aco-product-office/references/agents/software-architect.md",
+      "native_name": "aco_software_architect",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-software-architect.toml"
+    },
+    "sre_engineer": {
+      "office": "product-office",
+      "description": "Site reliability engineer for uptime, observability, incident prevention and operational resilience.",
+      "path": "skills/aco-product-office/references/agents/sre-engineer.md",
+      "skill_path": "aco-product-office/references/agents/sre-engineer.md",
+      "native_name": "aco_sre_engineer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-sre-engineer.toml"
+    },
+    "tech_lead": {
+      "office": "product-office",
+      "description": "Technical lead for implementation direction, code quality, integration decisions and team guidance.",
+      "path": "skills/aco-product-office/references/agents/tech-lead.md",
+      "skill_path": "aco-product-office/references/agents/tech-lead.md",
+      "native_name": "aco_tech_lead",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-tech-lead.toml"
+    },
+    "technical_researcher": {
+      "office": "product-office",
+      "description": "Researcher for libraries, frameworks, approaches, tradeoffs and implementation options.",
+      "path": "skills/aco-product-office/references/agents/technical-researcher.md",
+      "skill_path": "aco-product-office/references/agents/technical-researcher.md",
+      "native_name": "aco_technical_researcher",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-technical-researcher.toml"
+    },
+    "technical_writer": {
+      "office": "product-office",
+      "description": "Writer for technical docs, developer guides, architecture notes and user-facing documentation.",
+      "path": "skills/aco-product-office/references/agents/technical-writer.md",
+      "skill_path": "aco-product-office/references/agents/technical-writer.md",
+      "native_name": "aco_technical_writer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-technical-writer.toml"
+    },
+    "test_automation_engineer": {
+      "office": "product-office",
+      "description": "Engineer for automated test suites, integration tests and regression coverage.",
+      "path": "skills/aco-product-office/references/agents/test-automation-engineer.md",
+      "skill_path": "aco-product-office/references/agents/test-automation-engineer.md",
+      "native_name": "aco_test_automation_engineer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-test-automation-engineer.toml"
+    },
+    "test_writer": {
+      "office": "product-office",
+      "description": "Writer for structured test cases, scenarios and acceptance criteria.",
+      "path": "skills/aco-product-office/references/agents/test-writer.md",
+      "skill_path": "aco-product-office/references/agents/test-writer.md",
+      "native_name": "aco_test_writer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-test-writer.toml"
+    },
+    "ui_prototyper": {
+      "office": "product-office",
+      "description": "Rapid UI prototyper for quick visual/interaction proofs before full implementation.",
+      "path": "skills/aco-product-office/references/agents/ui-prototyper.md",
+      "skill_path": "aco-product-office/references/agents/ui-prototyper.md",
+      "native_name": "aco_ui_prototyper",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-ui-prototyper.toml"
+    },
+    "ux_lead": {
+      "office": "product-office",
+      "description": "Senior UX lead for product experience principles, user flows, information structure and design quality.",
+      "path": "skills/aco-product-office/references/agents/ux-lead.md",
+      "skill_path": "aco-product-office/references/agents/ux-lead.md",
+      "native_name": "aco_ux_lead",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-ux-lead.toml"
+    },
+    "ux_researcher": {
+      "office": "product-office",
+      "description": "Researcher for interviews, usability testing, journey analysis and behavior evidence.",
+      "path": "skills/aco-product-office/references/agents/ux-researcher.md",
+      "skill_path": "aco-product-office/references/agents/ux-researcher.md",
+      "native_name": "aco_ux_researcher",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-ux-researcher.toml"
+    },
+    "application_manager": {
+      "office": "recruitment-office",
+      "description": "Manager for coordinating tailored materials, submissions, deadlines, documents and approval before application.",
+      "path": "skills/aco-recruitment-office/references/agents/application-manager.md",
+      "skill_path": "aco-recruitment-office/references/agents/application-manager.md",
+      "native_name": "aco_application_manager",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-application-manager.toml"
+    },
+    "application_outcomes_analyst": {
+      "office": "recruitment-office",
+      "description": "Analyst for rejection, interview, response and conversion patterns across the job-search pipeline.",
+      "path": "skills/aco-recruitment-office/references/agents/application-outcomes-analyst.md",
+      "skill_path": "aco-recruitment-office/references/agents/application-outcomes-analyst.md",
+      "native_name": "aco_application_outcomes_analyst",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-application-outcomes-analyst.toml"
+    },
+    "application_tracker": {
+      "office": "recruitment-office",
+      "description": "Tracker for applications, sources, dates, status, contacts, follow-up dates, materials used and outcomes.",
+      "path": "skills/aco-recruitment-office/references/agents/application-tracker.md",
+      "skill_path": "aco-recruitment-office/references/agents/application-tracker.md",
+      "native_name": "aco_application_tracker",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-application-tracker.toml"
+    },
+    "application_writer": {
+      "office": "recruitment-office",
+      "description": "Writer for application questions, motivation statements and role-specific written responses.",
+      "path": "skills/aco-recruitment-office/references/agents/application-writer.md",
+      "skill_path": "aco-recruitment-office/references/agents/application-writer.md",
+      "native_name": "aco_application_writer",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-application-writer.toml"
+    },
+    "ats_resume_specialist": {
+      "office": "recruitment-office",
+      "description": "ATS-aware resume specialist for machine-readable formatting, terminology alignment and requirement coverage.",
+      "path": "skills/aco-recruitment-office/references/agents/ats-resume-specialist.md",
+      "skill_path": "aco-recruitment-office/references/agents/ats-resume-specialist.md",
+      "native_name": "aco_ats_resume_specialist",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-ats-resume-specialist.toml"
+    },
+    "career_document_fact_checker": {
+      "office": "recruitment-office",
+      "description": "Fact checker for dates, titles, claims, numbers, project credits and consistency across career materials.",
+      "path": "skills/aco-recruitment-office/references/agents/career-document-fact-checker.md",
+      "skill_path": "aco-recruitment-office/references/agents/career-document-fact-checker.md",
+      "native_name": "aco_career_document_fact_checker",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-career-document-fact-checker.toml"
+    },
+    "career_learning_plan_advisor": {
+      "office": "recruitment-office",
+      "description": "Advisor for short, role-linked learning plans, portfolio proof and capability development.",
+      "path": "skills/aco-recruitment-office/references/agents/career-learning-plan-advisor.md",
+      "skill_path": "aco-recruitment-office/references/agents/career-learning-plan-advisor.md",
+      "native_name": "aco_career_learning_plan_advisor",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-career-learning-plan-advisor.toml"
+    },
+    "career_outreach_writer": {
+      "office": "recruitment-office",
+      "description": "Writer for recruiter, hiring-manager, referral, alumni and professional-network messages.",
+      "path": "skills/aco-recruitment-office/references/agents/career-outreach-writer.md",
+      "skill_path": "aco-recruitment-office/references/agents/career-outreach-writer.md",
+      "native_name": "aco_career_outreach_writer",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-career-outreach-writer.toml"
+    },
+    "career_personal_brand_strategist": {
+      "office": "recruitment-office",
+      "description": "Career-positioning specialist for public professional narrative across CV, profile, portfolio and outreach.",
+      "path": "skills/aco-recruitment-office/references/agents/career-personal-brand-strategist.md",
+      "skill_path": "aco-recruitment-office/references/agents/career-personal-brand-strategist.md",
+      "native_name": "aco_career_personal_brand_strategist",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-career-personal-brand-strategist.toml"
+    },
+    "career_strategist": {
+      "office": "recruitment-office",
+      "description": "Career strategist for target roles, seniority, positioning, trajectory and probability-adjusted career improvement.",
+      "path": "skills/aco-recruitment-office/references/agents/career-strategist.md",
+      "skill_path": "aco-recruitment-office/references/agents/career-strategist.md",
+      "native_name": "aco_career_strategist",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-career-strategist.toml"
+    },
+    "career_transition_advisor": {
+      "office": "recruitment-office",
+      "description": "Advisor for changing functions, industries, seniority, portfolio careers or returning/repositioning in the market.",
+      "path": "skills/aco-recruitment-office/references/agents/career-transition-advisor.md",
+      "skill_path": "aco-recruitment-office/references/agents/career-transition-advisor.md",
+      "native_name": "aco_career_transition_advisor",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-career-transition-advisor.toml"
+    },
+    "case_interview_coach": {
+      "office": "recruitment-office",
+      "description": "Coach for presentations, exercises, take-home tasks, case studies and portfolio reviews.",
+      "path": "skills/aco-recruitment-office/references/agents/case-interview-coach.md",
+      "skill_path": "aco-recruitment-office/references/agents/case-interview-coach.md",
+      "native_name": "aco_case_interview_coach",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-case-interview-coach.toml"
+    },
+    "compensation_analyst": {
+      "office": "recruitment-office",
+      "description": "Analyst for salary ranges, total compensation, benefits, equity and geographic compensation context.",
+      "path": "skills/aco-recruitment-office/references/agents/compensation-analyst.md",
+      "skill_path": "aco-recruitment-office/references/agents/compensation-analyst.md",
+      "native_name": "aco_compensation_analyst",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-compensation-analyst.toml"
+    },
+    "cover_letter_writer": {
+      "office": "recruitment-office",
+      "description": "Writer for concise, tailored cover letters grounded in verified candidate experience and employer needs.",
+      "path": "skills/aco-recruitment-office/references/agents/cover-letter-writer.md",
+      "skill_path": "aco-recruitment-office/references/agents/cover-letter-writer.md",
+      "native_name": "aco_cover_letter_writer",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-cover-letter-writer.toml"
+    },
+    "executive_search_researcher": {
+      "office": "recruitment-office",
+      "description": "Researcher for executive-search firms, specialist recruiters, talent partners and relevant search consultants.",
+      "path": "skills/aco-recruitment-office/references/agents/executive-search-researcher.md",
+      "skill_path": "aco-recruitment-office/references/agents/executive-search-researcher.md",
+      "native_name": "aco_executive_search_researcher",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-executive-search-researcher.toml"
+    },
+    "freelance_consulting_opportunity_scout": {
+      "office": "recruitment-office",
+      "description": "Scout for freelance, consulting, fractional, contract and project-based career opportunities.",
+      "path": "skills/aco-recruitment-office/references/agents/freelance-consulting-opportunity-scout.md",
+      "skill_path": "aco-recruitment-office/references/agents/freelance-consulting-opportunity-scout.md",
+      "native_name": "aco_freelance_consulting_opportunity_scout",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-freelance-consulting-opportunity-scout.toml"
+    },
+    "hiring_team_mapper": {
+      "office": "recruitment-office",
+      "description": "Researcher for identifying relevant recruiters, hiring leaders, team members and likely decision-makers from public professional information.",
+      "path": "skills/aco-recruitment-office/references/agents/hiring-team-mapper.md",
+      "skill_path": "aco-recruitment-office/references/agents/hiring-team-mapper.md",
+      "native_name": "aco_hiring_team_mapper",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-hiring-team-mapper.toml"
+    },
+    "international_mobility_job_advisor": {
+      "office": "recruitment-office",
+      "description": "Career researcher for cross-border job eligibility, relocation, remote constraints and employer sponsorship signals.",
+      "path": "skills/aco-recruitment-office/references/agents/international-mobility-job-advisor.md",
+      "skill_path": "aco-recruitment-office/references/agents/international-mobility-job-advisor.md",
+      "native_name": "aco_international_mobility_job_advisor",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-international-mobility-job-advisor.toml"
+    },
+    "interview_coach": {
+      "office": "recruitment-office",
+      "description": "Coach for behavioral, competency, leadership and role-specific interview performance.",
+      "path": "skills/aco-recruitment-office/references/agents/interview-coach.md",
+      "skill_path": "aco-recruitment-office/references/agents/interview-coach.md",
+      "native_name": "aco_interview_coach",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-interview-coach.toml"
+    },
+    "interview_researcher": {
+      "office": "recruitment-office",
+      "description": "Researcher for company, interviewer, role, likely format, team context and recent relevant developments.",
+      "path": "skills/aco-recruitment-office/references/agents/interview-researcher.md",
+      "skill_path": "aco-recruitment-office/references/agents/interview-researcher.md",
+      "native_name": "aco_interview_researcher",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-interview-researcher.toml"
+    },
+    "job_fit_analyst": {
+      "office": "recruitment-office",
+      "description": "Analyst for comparing a candidate’s verified background with a specific role’s documented requirements and likely gaps.",
+      "path": "skills/aco-recruitment-office/references/agents/job-fit-analyst.md",
+      "skill_path": "aco-recruitment-office/references/agents/job-fit-analyst.md",
+      "native_name": "aco_job_fit_analyst",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-job-fit-analyst.toml"
+    },
+    "job_followup_manager": {
+      "office": "recruitment-office",
+      "description": "Manager for post-application, post-interview and recruiter follow-up timing and messaging.",
+      "path": "skills/aco-recruitment-office/references/agents/job-followup-manager.md",
+      "skill_path": "aco-recruitment-office/references/agents/job-followup-manager.md",
+      "native_name": "aco_job_followup_manager",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-job-followup-manager.toml"
+    },
+    "job_market_researcher": {
+      "office": "recruitment-office",
+      "description": "Researcher for current hiring trends, role demand, compensation signals, skill expectations and geographic market differences.",
+      "path": "skills/aco-recruitment-office/references/agents/job-market-researcher.md",
+      "skill_path": "aco-recruitment-office/references/agents/job-market-researcher.md",
+      "native_name": "aco_job_market_researcher",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-job-market-researcher.toml"
+    },
+    "job_opportunity_scout": {
+      "office": "recruitment-office",
+      "description": "Live opportunity scout for identifying and verifying active roles that match the candidate’s search thesis.",
+      "path": "skills/aco-recruitment-office/references/agents/job-opportunity-scout.md",
+      "skill_path": "aco-recruitment-office/references/agents/job-opportunity-scout.md",
+      "native_name": "aco_job_opportunity_scout",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-job-opportunity-scout.toml"
+    },
+    "job_search_chief_of_staff": {
+      "office": "recruitment-office",
+      "description": "Chief of staff for translating career strategy into weekly search priorities, application targets, follow-ups and interview preparation.",
+      "path": "skills/aco-recruitment-office/references/agents/job-search-chief-of-staff.md",
+      "skill_path": "aco-recruitment-office/references/agents/job-search-chief-of-staff.md",
+      "native_name": "aco_job_search_chief_of_staff",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-job-search-chief-of-staff.toml"
+    },
+    "linkedin_profile_strategist": {
+      "office": "recruitment-office",
+      "description": "Professional-profile strategist for LinkedIn headline, about, experience, featured work and recruiter discoverability.",
+      "path": "skills/aco-recruitment-office/references/agents/linkedin-profile-strategist.md",
+      "skill_path": "aco-recruitment-office/references/agents/linkedin-profile-strategist.md",
+      "native_name": "aco_linkedin_profile_strategist",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-linkedin-profile-strategist.toml"
+    },
+    "networking_strategist": {
+      "office": "recruitment-office",
+      "description": "Strategist for building a relevant professional network around target roles, sectors and geographies.",
+      "path": "skills/aco-recruitment-office/references/agents/networking-strategist.md",
+      "skill_path": "aco-recruitment-office/references/agents/networking-strategist.md",
+      "native_name": "aco_networking_strategist",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-networking-strategist.toml"
+    },
+    "offer_negotiation_advisor": {
+      "office": "recruitment-office",
+      "description": "Advisor for compensation, title, scope, flexibility, start date and offer negotiation.",
+      "path": "skills/aco-recruitment-office/references/agents/offer-negotiation-advisor.md",
+      "skill_path": "aco-recruitment-office/references/agents/offer-negotiation-advisor.md",
+      "native_name": "aco_offer_negotiation_advisor",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-offer-negotiation-advisor.toml"
+    },
+    "portfolio_career_editor": {
+      "office": "recruitment-office",
+      "description": "Editor for professional portfolios, case studies, project selection and narrative for hiring contexts.",
+      "path": "skills/aco-recruitment-office/references/agents/portfolio-career-editor.md",
+      "skill_path": "aco-recruitment-office/references/agents/portfolio-career-editor.md",
+      "native_name": "aco_portfolio_career_editor",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-portfolio-career-editor.toml"
+    },
+    "professional_reference_manager": {
+      "office": "recruitment-office",
+      "description": "Manager for reference strategy, referee selection, briefing and permission/status tracking.",
+      "path": "skills/aco-recruitment-office/references/agents/professional-reference-manager.md",
+      "skill_path": "aco-recruitment-office/references/agents/professional-reference-manager.md",
+      "native_name": "aco_professional_reference_manager",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-professional-reference-manager.toml"
+    },
+    "recruiter_relations_manager": {
+      "office": "recruitment-office",
+      "description": "Manager for recruiter conversations, recruiter follow-ups, role referrals and search-firm relationships.",
+      "path": "skills/aco-recruitment-office/references/agents/recruiter-relations-manager.md",
+      "skill_path": "aco-recruitment-office/references/agents/recruiter-relations-manager.md",
+      "native_name": "aco_recruiter_relations_manager",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-recruiter-relations-manager.toml"
+    },
+    "recruitment_orchestrator": {
+      "office": "recruitment-office",
+      "description": "Candidate-side orchestrator for job discovery, career strategy, applications, networking, interviews, offers and job-search operations.",
+      "path": "skills/aco-recruitment-office/references/agents/recruitment-orchestrator.md",
+      "skill_path": "aco-recruitment-office/references/agents/recruitment-orchestrator.md",
+      "native_name": "aco_recruitment_orchestrator",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-recruitment-orchestrator.toml"
+    },
+    "resume_strategist": {
+      "office": "recruitment-office",
+      "description": "Strategist for overall CV/resume architecture, evidence hierarchy and career narrative.",
+      "path": "skills/aco-recruitment-office/references/agents/resume-strategist.md",
+      "skill_path": "aco-recruitment-office/references/agents/resume-strategist.md",
+      "native_name": "aco_resume_strategist",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-resume-strategist.toml"
+    },
+    "skills_gap_analyst": {
+      "office": "recruitment-office",
+      "description": "Analyst for identifying material skill/experience gaps between the candidate and target roles.",
+      "path": "skills/aco-recruitment-office/references/agents/skills-gap-analyst.md",
+      "skill_path": "aco-recruitment-office/references/agents/skills-gap-analyst.md",
+      "native_name": "aco_skills_gap_analyst",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-skills-gap-analyst.toml"
+    },
+    "target_company_researcher": {
+      "office": "recruitment-office",
+      "description": "Researcher for target employers, business health, culture signals, teams, current priorities and hiring patterns.",
+      "path": "skills/aco-recruitment-office/references/agents/target-company-researcher.md",
+      "skill_path": "aco-recruitment-office/references/agents/target-company-researcher.md",
+      "native_name": "aco_target_company_researcher",
+      "codex_path": "extras/codex-custom-agents/recruitment-office/aco-target-company-researcher.toml"
+    }
+  }
+}

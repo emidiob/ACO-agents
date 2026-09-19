@@ -1,4 +1,0 @@
-interface:
-  display_name: "Product Office"
-  short_description: "Plan and build websites, apps, software, and AI products"
-  default_prompt: "Use the Product Office. Take this product from requirements through implementation, QA, and release."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Aco Context Steward"
+  short_description: "Maintain auditable session events, approved decisions, open loops, context proposals and verified ha"
+  default_prompt: "Use ACO. Maintain auditable session events, approved decisions, open loops, context proposals and verified handoffs."

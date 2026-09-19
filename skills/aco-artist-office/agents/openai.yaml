@@ -1,0 +1,4 @@
+interface:
+  display_name: "Aco Artist Office"
+  short_description: "Develop, critique, plan, produce, document and sustain an artistic practice."
+  default_prompt: "Use ACO. Develop, critique, plan, produce, document and sustain an artistic practice."

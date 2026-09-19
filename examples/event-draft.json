@@ -1,0 +1,8 @@
+{
+  "id": "event-example-draft",
+  "kind": "work",
+  "status": "proposed",
+  "summary": "Synthetic example: a draft was prepared for review, not approved or published.",
+  "artifacts": ["example/path/to/draft.md"],
+  "next_action": "Review the draft."
+}

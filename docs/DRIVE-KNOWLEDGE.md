@@ -1,101 +1,19 @@
-# Google Drive as ACO's optional private knowledge layer
+# Drive-backed knowledge without a plugin
 
-ACO keeps reusable agent logic public and private knowledge outside the repository.
+The canonical executable instruction for the host is `skills/aco-office-concierge/references/protocols/BOOTSTRAP.md`. ACO can direct available connected Drive tools to create, read and update within a user-approved root during an authorized session. It does not install or authenticate the Drive connection itself.
 
-## Important public-distribution rule
+Use one root registry and index identified by provider ID, not by display name alone. Store context narrative in native Docs or supported Markdown; record its actual MIME type, ID and revision/hash. Keep immutable session/event documents and read-back receipts under the owning entity's history. Read only the task's scope.
 
-The public ACO plugin is **skills-only**. It does not bundle, publish, or repackage Google Drive. Users who want persistent Drive-backed knowledge connect the official Google Drive app separately and authorize their own account. Installing ACO alone never grants access to Drive.
+If the connector supports native Docs revision control, read a fresh revision and write using requiredRevisionId. A rejected/stale revision becomes a conflict. Raw files without conditional writes must be serialized or kept as immutable proposals. There is no distributed lock or uniqueness guarantee from naming a folder.
 
-This separation is intentional:
+### Bootstrap
+After user authorization: inspect root and children, recognize existing version, journal planned objects, create/reuse missing base objects, verify each provider result, register returned IDs, then create only requested entity scopes and their base histories. Re-run should preserve user content and resume after errors. Unknown or duplicate records require review, not overwrite.
 
-```text
-ACO public plugin
-  generic skills + routing + templates
-          |
-          | optional, separately authorized
-          v
-Google Drive app
-  user's private knowledge + history
-```
+### Several users
+Each user supplies their own authorized root. Nothing in the public repository points to a maintainer's private Drive. Teams needing actual access separation must configure provider permissions or separate roots/projects, not rely on a scope tag. Never share the root publicly to make an integration work.
 
+### Existing data
+Inventory files and ownership, preserve their IDs and content, move only clearly classified documents, and record old/new parents. Keep unknown legal/client records in a review/archive location until resolved. Do not delete old content because a new template exists. An empty duplicate index may be archived after verification; choose one canonical index and mark the other as legacy.
 
-## User-facing onboarding
-
-ACO may proactively explain the optional Drive workflow when persistent context would materially help:
-
-> **Want ACO to remember your projects, decisions, history, and context across sessions? Connect Google Drive and choose or create a private ACO knowledge folder. Or continue without persistent memory.**
-
-If Drive is connected but an ACO folder has not been approved, ask whether to use an existing folder or create `ACO — Art & Commerce Office`. Never scan unrelated Drive content just to discover context.
-
-## Recommended private structure
-
-```text
-ACO — Art & Commerce Office/
-  Contexts/
-  History/
-  Projects/
-  Clients/
-  Handoffs/
-  Archive/
-```
-
-Users may choose a different folder name or storage system. ACO should only use locations the user explicitly identifies or approves.
-
-## Context loading
-
-Load only what a task needs. Use BLIND-FIRST research or critique when existing context could bias the result.
-
-Typical context files include:
-
-- `artist-context.md`
-- `company-context.md`
-- `career-context.md`
-- `job-search-context.md`
-- `legal-context.md`
-- project/client-specific context as needed
-
-## History
-
-Maintain continuity separately from canonical context:
-
-- `WORK-LOG.md` — what was done
-- `DECISIONS.md` — decisions actually confirmed
-- `OPEN-LOOPS.md` — unresolved items
-- `CONTEXT-CHANGELOG.md` — how canonical context changed
-- `APPLICATIONS.md` — job-search pipeline
-- `LEGAL-MATTERS.md` — legal matters/deadlines
-
-## Privacy / least context
-
-- Do not search an entire Drive when an approved ACO folder or explicit file can answer the task.
-- Do not store credentials, passwords, access tokens, or unnecessary sensitive data in context.
-- Do not copy private context into the public GitHub repository.
-- Treat context as mutable and versioned; separate facts from hypotheses and preferences.
-
-## ChatGPT / Codex Desktop to VS Code handoff
-
-For coding or production work, export only the relevant subset of private knowledge into a temporary project-local folder:
-
-```text
-.agent-context/
-  CURRENT-BRIEF.md
-  RELEVANT-CONTEXT.md
-  DECISIONS.md
-  OPEN-LOOPS.md
-  WORK-LOG.md
-  CHANGES.md
-  HANDOFF.md
-```
-
-At the end of substantial IDE work, record what changed, what was decided, what remains unresolved, tests performed, and the recommended next step. A later Context Steward pass should promote only durable changes back to the private knowledge store.
-
-## Authority rule for artist practice
-
-When multiple offices work together on an artist's own work:
-
-- Artist Office owns artistic intent and final artistic decisions.
-- Agency Office supports communication, experience, presentation and audience work.
-- Product Office supports technical realization.
-- Organization Office supports institutional/programmatic questions when relevant.
-
-Technical or marketing convenience should not redefine the artwork by default.
+### Handoff
+Drive remains the canonical source when configured as authority. Export a minimal per-session snapshot for IDE work; record where it came from. Local checkpoints form a pending outbox. A later steward pass reads and reconciles the changes through connected tools. The optional REST bridge can transfer immutable events, but does not replace this canonical-context reconciliation.

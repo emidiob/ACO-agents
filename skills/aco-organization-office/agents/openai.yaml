@@ -1,0 +1,4 @@
+interface:
+  display_name: "Aco Organization Office"
+  short_description: "Research-led organizational strategy, culture, programmes, publishing, partnerships and operations."
+  default_prompt: "Use ACO. Research-led organizational strategy, culture, programmes, publishing, partnerships and operations."

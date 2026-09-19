@@ -1,0 +1,4 @@
+interface:
+  display_name: "Aco Product Office"
+  short_description: "Websites, applications, software, AI features, UX, engineering, tests and release preparation."
+  default_prompt: "Use ACO. Websites, applications, software, AI features, UX, engineering, tests and release preparation."
