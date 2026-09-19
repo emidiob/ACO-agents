@@ -1,0 +1,6 @@
+{
+  "name": "aco-agents",
+  "version": "0.1.0",
+  "description": "ACO — Art & Commerce Office: context-first multi-office expert workflows for artists, creative organizations, agencies, product teams, legal review, recruitment, and long-term work history.",
+  "skills": "./skills/"
+}

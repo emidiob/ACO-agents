@@ -1,0 +1,12 @@
+# Private / local knowledge must never be committed
+contexts/private/
+private-context/
+knowledge/
+.agent-context/
+.env
+.env.*
+.DS_Store
+
+# Local caches / installs
+.codex/cache/
+node_modules/
