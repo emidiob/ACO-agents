@@ -1,4 +1,4 @@
-> Current release is v0.5.1. Follow the new package migration prompt; Compact Memory affects future storage, not automatic deletion of existing private data.
+> Current release is v0.5.1. Follow the new package README update instructions; Compact Memory affects future storage, not automatic deletion of existing private data.
 
 # Migration from ACO plugin v0.2.1
 

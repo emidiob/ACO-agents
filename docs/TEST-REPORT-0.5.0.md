@@ -51,4 +51,4 @@ python3 scripts/aco_cli.py validate
 python3 -m unittest discover -s tests
 ```
 
-Keep this source folder separate from client work. Do not run unknown upstream installers or hooks merely to perform the comparison. See `SPECIALIST-TOOLS.md` for concrete sample commands and `CODEX-MIGRATION-PROMPT.txt` for the safe repository update process.
+Keep this source folder separate from client work. Do not run unknown upstream installers or hooks merely to perform the comparison. See `SPECIALIST-TOOLS.md` for concrete sample commands and the README’s “Updating GitHub and local installs” section for the safe repository update process.

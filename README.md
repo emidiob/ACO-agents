@@ -6,7 +6,7 @@
 
 Proprietary, source-available. Redistribution is restricted by [LICENSE](LICENSE). No third-party software, fonts, models or private knowledge are bundled.
 
-**Start with [BEGINNER-GUIDE.md](BEGINNER-GUIDE.md).** For an existing checkout, use the [Codex upgrade prompt](docs/CODEX-MIGRATION-PROMPT.txt). For this release's decisions, see [What's changed](docs/UPGRADE-0.7.0.md).
+**Start with [BEGINNER-GUIDE.md](BEGINNER-GUIDE.md).** For an existing checkout, see [Updating GitHub and local installs](#updating-github-and-local-installs). For this release's decisions, see [What's changed](docs/UPGRADE-0.7.0.md).
 
 ## What ACO is — and is not
 
@@ -187,7 +187,14 @@ This package does not establish that your Mac, Codex session, Drive connector, p
 
 ## Updating GitHub and local installs
 
-Use [the migration prompt](docs/CODEX-MIGRATION-PROMPT.txt) from the **new** package. The script creates a backup/work branch, changes recognized ACO-managed files, and stops on collisions or unrecognized edits. Preserve `.git`, private and unrelated files; no blanket deletion, `git clean`, hard reset or force push.
+Extract the **new** package outside the existing checkout. From that new package, preview the update, review the plan, then apply it:
+
+```bash
+python3 scripts/aco_cli.py migrate --target /absolute/path/to/existing/ACO-agents
+python3 scripts/aco_cli.py migrate --target /absolute/path/to/existing/ACO-agents --apply
+```
+
+The script creates a backup/work branch, changes recognized ACO-managed files, and stops on collisions or unrecognized edits. Preserve `.git`, private and unrelated files; no blanket deletion, `git clean`, hard reset or force push. Run the release's generation checks, validation, benchmarks and Python tests in the updated checkout, then review the staged diff before committing. Fetch the remote before publishing and stop on divergent changes; push normally only when authorized and safe.
 
 Pushing GitHub does not update local skills or reload an existing chat. Re-run the local installer from the new package when authorized; start a new host session. Do not clean Drive as part of a repository update.
 

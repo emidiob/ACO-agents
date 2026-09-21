@@ -15,7 +15,7 @@ This complete release consolidates the supplied 0.5.2 package. It does not requi
 
 ## Safe upgrade
 
-Extract the new package separately. Follow [the Codex prompt](CODEX-MIGRATION-PROMPT.txt). The migration tool must preview changes, preserve .git/history and unrelated/private/untracked files, and stop on unknown edits. Do not erase the old checkout blindly. The release includes baseline hashes from 0.5.2 and earlier supported releases.
+Extract the new package separately. Follow [the repository update instructions](../README.md#updating-github-and-local-installs). The migration tool must preview changes, preserve .git/history and unrelated/private/untracked files, and stop on unknown edits. Do not erase the old checkout blindly. The release includes baseline hashes from 0.5.2 and earlier supported releases.
 
 After the Git update, update local skills from the new source only when authorized. Reinstall the same optional offices you actually use. Start a new host session or reload the versioned instructions. Pushing GitHub is not local installation.
 

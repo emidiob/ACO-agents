@@ -6,7 +6,7 @@ The breaking behavioral change is intentional: compact storage is the default. O
 
 ## Repository first, installation second, private cleanup separately
 1. Extract the new ZIP outside your existing Git checkout.
-2. In Codex follow docs/CODEX-MIGRATION-PROMPT.txt FROM THE NEW PACKAGE. Preview, backup, apply, test, review and normal push. Do not change Drive.
+2. In Codex follow the README’s “Updating GitHub and local installs” instructions FROM THE NEW PACKAGE. Preview, backup, apply, test, review and normal push. Do not change Drive.
 3. Update local skills/profiles using the new source installer and start a fresh host session. Copy new ChatGPT project instructions or explicitly reread CHATGPT.md at the updated ref. Merely uploading GitHub does not replace old in-memory or installed instructions.
 4. Verify no proposal creates a folder. Existing legacy knowledge is intentionally refused by the default local initializer; use reviewed consolidation rather than creating another hierarchy.
 5. Ask separately for an inventory and cleanup plan for existing Drive notes. Approve exact merges/moves only after preserving useful original documents and access boundaries.

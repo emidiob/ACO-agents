@@ -9,6 +9,6 @@ This is a resource/method expansion over v0.5.1. Compact Memory and Pipeline != 
 - No upstream software or skill package is bundled or installed automatically.
 
 ## Upgrade
-Use `docs/CODEX-MIGRATION-PROMPT.txt` from the NEW package. Preview first, preserve Git history/private/unrelated files, run generation/validation/tests, then commit and push normally if safe. Do not clean Drive or install external resources during the repository migration.
+Use the README’s “Updating GitHub and local installs” instructions from the NEW package. Preview first, preserve Git history/private/unrelated files, run generation/validation/tests, then commit and push normally if safe. Do not clean Drive or install external resources during the repository migration.
 
 After updating GitHub, refresh the local ACO install and start a new host session or explicitly reload the current instructions.

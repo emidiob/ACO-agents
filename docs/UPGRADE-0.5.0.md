@@ -9,7 +9,7 @@ Read [the comparison](SPECIALIST-GAP-ANALYSIS.md) for all 15 source repositories
 
 ## Safe update
 1. Extract the new ZIP outside your existing ACO checkout.
-2. Ask Codex to follow [the migration prompt](CODEX-MIGRATION-PROMPT.txt) from the new release.
+2. Ask Codex to follow [the repository update instructions](../README.md#updating-github-and-local-installs) from the new release.
 3. Review the plan; it must preserve .git, history, private/untracked/unrelated files and remote changes. No force push or broad deletion.
 4. Rerun generation checks, validation and unit tests in the target.
 5. Commit and push only the reviewed change under your authorization.

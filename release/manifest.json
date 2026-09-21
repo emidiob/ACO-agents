@@ -19,7 +19,7 @@
     },
     "BEGINNER-GUIDE.md": {
       "mode": 420,
-      "sha256": "dcae30568143a11c0f86bc19ec356cd72cdc66e0591c798ce7badb248f8b5967"
+      "sha256": "5c28f27f9e78dac9f1d0d94b1f456caca6bd9170e0ee074698f2fe7b9d417773"
     },
     "CHANGELOG.md": {
       "mode": 420,
@@ -51,7 +51,7 @@
     },
     "README.md": {
       "mode": 420,
-      "sha256": "6196576508078d89ccaa4d748e9d66f11a297932f63c454004c3d9a945073bb4"
+      "sha256": "01848217329f937b1151814aa609a0c3468cad1f6ab736834b54a656f3619dfe"
     },
     "SECURITY.md": {
       "mode": 420,
@@ -245,10 +245,6 @@
       "mode": 420,
       "sha256": "8bed7eb4ab88cb8a214191973a24c060da3b5c37fe05b5c47a9da14788730dbf"
     },
-    "docs/CODEX-MIGRATION-PROMPT.txt": {
-      "mode": 420,
-      "sha256": "9b29b94094f25a76dcb728615fa92ea561c82d2f5ad8533fed86003cb3b0047a"
-    },
     "docs/COMPACT-MEMORY.md": {
       "mode": 420,
       "sha256": "56d913a305d52f58d31cfb386a18aee18827a2ebaf4f72d5cbf6b1c0741c523d"
@@ -291,7 +287,7 @@
     },
     "docs/MIGRATION-FROM-PLUGIN.md": {
       "mode": 420,
-      "sha256": "1893bd8b38de9f696eeddbba0c16eff8ab4a38e849520a41eea026cc8aff035b"
+      "sha256": "a6a76598e91755354090885905a974435ba4ef4cab0605d1bcbe7a7cfa1aafe9"
     },
     "docs/OFFICE-MAP.md": {
       "mode": 420,
@@ -351,7 +347,7 @@
     },
     "docs/START-HERE.md": {
       "mode": 420,
-      "sha256": "6848724edaecdc33105a1c36c7cd07ee85d64a4b79714c7d98e91e91938fe8a7"
+      "sha256": "17f9b732125e6a31d575f9e3161fccb836a96bceaa84ce57afbe2a55a86fc6c2"
     },
     "docs/STUDIO-CHECKS.md": {
       "mode": 420,
@@ -359,7 +355,7 @@
     },
     "docs/TEST-REPORT-0.5.0.md": {
       "mode": 420,
-      "sha256": "9fd63fc2789e0e823a7f8fb1e7ec779e610474823660ecb270c489989e1c9c82"
+      "sha256": "ba8ce353c9a3a8a5fa79ec5c1214d2096b069f23c4eac75fc562f4c395f28d04"
     },
     "docs/TEST-REPORT-0.5.1.md": {
       "mode": 420,
@@ -387,35 +383,35 @@
     },
     "docs/UPGRADE-0.4.0.md": {
       "mode": 420,
-      "sha256": "ad490be749533ff78adf1e0e61aa43611d54cabba93b4d89422736b4fa77b0da"
+      "sha256": "0540f3cc3cc369c1f2f7bb4dd1386822a781c223c6cd2f0879be1f86d7dc6046"
     },
     "docs/UPGRADE-0.5.0.md": {
       "mode": 420,
-      "sha256": "1f62dd47719f1f159164079387c1f1ebc9a87b6e5749f5273ba9af165b271d3d"
+      "sha256": "2933196d98efc54215396e6ab6edc019a1c9c2bf18d325ce1122bddf9a908252"
     },
     "docs/UPGRADE-0.5.1.md": {
       "mode": 420,
-      "sha256": "fb73879120cbd384e6df96b65eae691394566cab2d0b0967ca3977a77cb84f25"
+      "sha256": "a6f74eb245f2e3d6af02678b1514c598b06e7af919ddddf301c0dae26aac4383"
     },
     "docs/UPGRADE-0.5.2.md": {
       "mode": 420,
-      "sha256": "d8faa5acf96828d014c0f2c5517d168a899e0e69122a17ef4676e39099ad9334"
+      "sha256": "9dc629c98d28c2770ab27384ec5016aedd9a5e3106e943aeb8b5ca7b71e8a660"
     },
     "docs/UPGRADE-0.6.0.md": {
       "mode": 420,
-      "sha256": "6a577ea19d8099956ec3c0be9d74db62f82055e730ddd3653593b54069659ddc"
+      "sha256": "ef79152beacc6b07e8ce34bf3449aa76174a4b3c5c85b2acf8ed36e8ef92aab2"
     },
     "docs/UPGRADE-0.6.1.md": {
       "mode": 420,
-      "sha256": "b75b848b74a691898347261c22d3e5cf8194e40604d733cb1125a18db2d3e049"
+      "sha256": "10d6a39464dcabc393ade2f4439f65cfb32d56f6945c9a3690f2b3ee0d9d697d"
     },
     "docs/UPGRADE-0.6.2.md": {
       "mode": 420,
-      "sha256": "0b6a0e1284a1b9408da19c0f7af9a5a8079447457fc3fce1fa66bac8b37d22e0"
+      "sha256": "74dd6da5334f4dd0f8b44bcff16a3325e4645ba1a06eca8d4d4dc2cf511c3538"
     },
     "docs/UPGRADE-0.7.0.md": {
       "mode": 420,
-      "sha256": "ff0c2ca322a9b23da163c52558303b4e3a050046360c53b2e9a45d3ee8d076e4"
+      "sha256": "dc263e32557cef39a681baed4ff18b41befe765413f6ee1f7c863f2f80693edf"
     },
     "docs/VALIDATION.md": {
       "mode": 420,

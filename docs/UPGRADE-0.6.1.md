@@ -19,7 +19,7 @@ This is a source/package duplication metric. ACO still expects hosts to load onl
 
 ## Safe repository upgrade
 
-Extract the new ZIP outside the existing checkout and follow `docs/CODEX-MIGRATION-PROMPT.txt` from the new package. Preview first. Preserve `.git`, history, private/untracked/unrelated files and the supplied `LICENSE`. Do not use force push, `git clean`, hard reset or blanket deletion.
+Extract the new ZIP outside the existing checkout and follow the README’s “Updating GitHub and local installs” instructions from the new package. Preview first. Preserve `.git`, history, private/untracked/unrelated files and the supplied `LICENSE`. Do not use force push, `git clean`, hard reset or blanket deletion.
 
 After repository validation, update a local ACO installation separately if desired. A GitHub push does not reload existing ChatGPT/Codex sessions or clean Drive.
 

@@ -3,7 +3,7 @@
 # Upgrade to ACO 0.4.0
 
 ## From 0.3.0
-Use the full release extracted outside the current checkout. Run the included migration prompt/script, not an overlay copy or a recursive deletion. The old release manifest is used to recognize managed files. Unrecognized edits/collisions stop the migration. Preserve the repository, work and private files. For v0.4.3, replace the current-release license only with the proprietary LICENSE supplied by this release; do not alter earlier Git history. The migration makes a backup branch and stages changes on a new branch; it does not push by itself.
+Use the full release extracted outside the current checkout. Run the included migration script, not an overlay copy or a recursive deletion. The old release manifest is used to recognize managed files. Unrecognized edits/collisions stop the migration. Preserve the repository, work and private files. For v0.4.3, replace the current-release license only with the proprietary LICENSE supplied by this release; do not alter earlier Git history. The migration makes a backup branch and stages changes on a new branch; it does not push by itself.
 
 The update adds Finance, Commercial, People, Delivery, Administration, Production and Publishing offices, extends Product with integration specialists, and applies early-question/short-action behavior to all roles. Existing six offices and all 246 old role keys remain. There are 349 roles and 16 skills.
 
@@ -17,4 +17,4 @@ The same script recognizes included legacy baselines and removes only matched ob
 ## Checks
 Run generator --check, validate and the unit suite. Inspect staged diff and confirm no client/media/personnel/financial/private Drive material is staged. Compare origin/main before pushing. If the connector is read-only, use the authorized local Codex/Git workflow; do not try alternate write APIs to circumvent a denial.
 
-See [the exact Codex prompt](CODEX-MIGRATION-PROMPT.txt). [beginner step-by-step guide](../BEGINNER-GUIDE.md).
+See [the repository update instructions](../README.md#updating-github-and-local-installs). [beginner step-by-step guide](../BEGINNER-GUIDE.md).

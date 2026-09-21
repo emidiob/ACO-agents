@@ -16,7 +16,7 @@ ACO is not a plugin to submit to a directory. Downloading it does not connect Dr
 
 ```text
 Update this ACO repository using the new 0.7.0 package.
-Read docs/CODEX-MIGRATION-PROMPT.txt FROM THE NEW PACKAGE.
+Read the README’s “Updating GitHub and local installs” instructions FROM THE NEW PACKAGE.
 Follow its safe preview, backup, migration, validation and tests.
 Preserve .git, history, private, untracked and unrelated files.
 If checks pass, commit and push normally only when safe.

@@ -32,7 +32,7 @@ The included CLI **does not send, publish, purchase, sign, delete, deploy or con
 
 ## Safe repository update
 
-Use `docs/CODEX-MIGRATION-PROMPT.txt` from the new extracted package. Preview migration first; preserve `.git`, history, unrelated/private/untracked files and stop on unknown collisions. Never use `git clean`, `reset --hard`, blanket deletion or force push as an upgrade shortcut.
+Use the README’s “Updating GitHub and local installs” instructions from the new extracted package. Preview migration first; preserve `.git`, history, unrelated/private/untracked files and stop on unknown collisions. Never use `git clean`, `reset --hard`, blanket deletion or force push as an upgrade shortcut.
 
 After migration run:
 

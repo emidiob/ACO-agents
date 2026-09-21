@@ -23,7 +23,7 @@
 
 ## Safe repository update
 
-Use `docs/CODEX-MIGRATION-PROMPT.txt` from the **new extracted package**. Preview migration first, preserve `.git`, private/untracked/unrelated files, and never use `git clean`, `reset --hard`, blanket deletion or force push as a shortcut.
+Use the README’s “Updating GitHub and local installs” instructions from the **new extracted package**. Preview migration first, preserve `.git`, private/untracked/unrelated files, and never use `git clean`, `reset --hard`, blanket deletion or force push as a shortcut.
 
 After migration run:
 
