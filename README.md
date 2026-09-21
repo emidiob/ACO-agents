@@ -6,7 +6,7 @@
 
 Proprietary, source-available. Redistribution is restricted by [LICENSE](LICENSE). No third-party software, fonts, models or private knowledge are bundled.
 
-**Start with [BEGINNER-GUIDE.md](BEGINNER-GUIDE.md).** For an existing checkout, see [Updating GitHub and local installs](#updating-github-and-local-installs). For this release's decisions, see [What's changed](docs/UPGRADE-0.7.0.md).
+**Start with [BEGINNER-GUIDE.md](BEGINNER-GUIDE.md).** For this release's decisions, see [What's changed](docs/UPGRADE-0.7.0.md).
 
 ## What ACO is — and is not
 
