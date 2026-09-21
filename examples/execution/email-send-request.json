@@ -1,0 +1,9 @@
+{
+  "scope_id": "example-client",
+  "capability_id": "email.send",
+  "operation": "send",
+  "target": "recipient@example.invalid",
+  "payload_ref": "example-approved-email-v1",
+  "parameters": {"subject": "Example only"},
+  "fallback": "Return the exact final email marked NOT SENT."
+}

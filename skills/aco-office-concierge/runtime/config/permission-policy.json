@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.7.0",
+  "levels": {
+    "READ": {
+      "approval_required": false,
+      "rule": "Authorized in-scope retrieval may proceed; access boundaries still apply."
+    },
+    "DRAFT": {
+      "approval_required": false,
+      "rule": "Preparing text, plans or artifacts does not authorize external delivery."
+    },
+    "PREVIEW": {
+      "approval_required": false,
+      "rule": "Reversible local/staging operations may proceed when already in task scope; consequential submission remains separate."
+    },
+    "WRITE": {
+      "approval_required": false,
+      "rule": "Bounded non-destructive writes explicitly requested in the current scope may proceed when the host capability is authorized; access changes and destructive writes use stronger levels."
+    },
+    "SHARE": {
+      "approval_required": true,
+      "rule": "Changing access or sharing requires exact scoped approval bound to the final action."
+    },
+    "SEND": {
+      "approval_required": true,
+      "rule": "External messages, browser submissions and equivalent consequential sends require exact scoped approval."
+    },
+    "PUBLISH": {
+      "approval_required": true,
+      "rule": "Public publication or scheduling requires approval of the exact account/content/timing packet."
+    },
+    "APPLY": {
+      "approval_required": true,
+      "rule": "Submitting jobs, grants or open calls requires explicit approval of the final application."
+    },
+    "DEPLOY": {
+      "approval_required": true,
+      "rule": "Production deployment, merge/push or release requires explicit scoped authorization and rollback/reconciliation evidence."
+    },
+    "DELETE": {
+      "approval_required": true,
+      "rule": "Deletion/trashing requires exact target approval; unknown targets or broad cleanup remain blocked."
+    },
+    "PURCHASE": {
+      "approval_required": true,
+      "rule": "Payments, purchases and refunds require explicit approval of amount, counterparty and final action packet."
+    },
+    "SIGN": {
+      "approval_required": true,
+      "rule": "Signing or accepting legal commitments requires explicit human authorization; ACO never infers signature authority."
+    }
+  }
+}

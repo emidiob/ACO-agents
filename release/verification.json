@@ -1,0 +1,57 @@
+{
+  "release": "0.6.0",
+  "date": "2026-09-20",
+  "scope": "local automated and temporary-environment checks",
+  "tests": {
+    "run": 448,
+    "passed": 448,
+    "source_seconds": 56.683
+  },
+  "inventory": {
+    "roles": 363,
+    "skills": 16,
+    "workflows": 61,
+    "resources": 97,
+    "new_methods": 19,
+    "targeted_roles": 114
+  },
+  "smoke": [
+    {
+      "test": "safe_baseline_migration",
+      "baseline": "0.4.3",
+      "status": "passed",
+      "staged_files": 936,
+      "source_history_preserved": true,
+      "unrelated_and_untracked_preserved": true,
+      "license_unchanged": true,
+      "target_validation": "validated",
+      "remote_push": false
+    },
+    {
+      "test": "safe_baseline_migration",
+      "baseline": "0.5.2",
+      "status": "passed",
+      "staged_files": 568,
+      "source_history_preserved": true,
+      "unrelated_and_untracked_preserved": true,
+      "license_unchanged": true,
+      "target_validation": "validated",
+      "remote_push": false
+    },
+    {
+      "test": "temporary_full_install_and_runtime",
+      "status": "passed",
+      "roles": 363,
+      "skills": 16,
+      "new_runtime_check": "ready_for_review_not_executed",
+      "resource_search": "candidates_only",
+      "repeat_preview_changes": 0,
+      "actual_user_home_changed": false,
+      "external_software_installed": false
+    }
+  ],
+  "license_sha256": "7c5825f8f5cd2bb1f488dd72b4be710481dc78443add8d0ea42d30a9e70c155d",
+  "external_integration_tests": "not_run",
+  "creative_quality_benchmark": "not_run",
+  "source_audit": "selected overviews, not exhaustive"
+}

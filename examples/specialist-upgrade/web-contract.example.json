@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "project_id": "example-editorial-site",
+  "audience": "Readers exploring a fictional independent publication",
+  "primary_task": "Read a story and find its related issue",
+  "visual_direction": "Text-led editorial hierarchy with a compact masthead and calm reading pages",
+  "locked_decisions": [
+    "Preserve the supplied monochrome brand; colour is not added merely to avoid a stereotype."
+  ],
+  "viewport_widths": [
+    360,
+    768,
+    1440
+  ],
+  "pages": [
+    {
+      "id": "home",
+      "purpose": "Discover the current issue and selected stories",
+      "states": [
+        "default",
+        "empty",
+        "long_headline"
+      ]
+    },
+    {
+      "id": "story",
+      "purpose": "Read a complete article and navigate references",
+      "states": [
+        "default",
+        "missing_image",
+        "long_caption"
+      ]
+    }
+  ],
+  "fonts": [
+    {
+      "family": "System stack for the example only",
+      "source": "Operating system fonts; no files bundled",
+      "license_status": "verified"
+    }
+  ],
+  "acceptance": [
+    {
+      "id": "read-story",
+      "method": "browser",
+      "requirement": "A visitor can open and read the complete story using keyboard navigation."
+    },
+    {
+      "id": "reflow",
+      "method": "manual",
+      "requirement": "Essential text remains accessible at narrow widths and 200% zoom."
+    },
+    {
+      "id": "visual-direction",
+      "method": "manual",
+      "requirement": "The rendered hierarchy respects the approved direction and real content."
+    }
+  ],
+  "contrast_pairs": [
+    {
+      "foreground": "#111111",
+      "background": "#ffffff",
+      "category": "normal_text"
+    }
+  ]
+}

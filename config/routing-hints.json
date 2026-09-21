@@ -1,0 +1,2452 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.7.0",
+  "role_hints": {
+    "art_critic": [
+      "critique artwork",
+      "critique art",
+      "critical feedback",
+      "art critique",
+      "critique this work"
+    ],
+    "art_opportunities_scout": [
+      "artist residency",
+      "art residency",
+      "open call",
+      "art opportunity",
+      "artist opportunity",
+      "residency programme"
+    ],
+    "gallery_relations_manager": [
+      "gallery relationship",
+      "gallery outreach",
+      "approach gallery",
+      "gallery representation",
+      "studio visit follow up"
+    ],
+    "curator": [
+      "curate exhibition",
+      "curatorial framework",
+      "curatorial text",
+      "curatorial concept",
+      "artwork selection"
+    ],
+    "practice_strategist": [
+      "artistic practice",
+      "practice development",
+      "artist development",
+      "develop my practice",
+      "review current body of work research exhibitions commitments",
+      "three artistic development priorities",
+      "next quarter artistic development"
+    ],
+    "programme_curator": [
+      "programme exhibitions",
+      "program exhibitions",
+      "curate programme",
+      "public programme",
+      "cultural programme",
+      "exhibitions talks workshops",
+      "foundation programme",
+      "foundation program",
+      "year of exhibitions"
+    ],
+    "sponsorship_director": [
+      "sponsorship",
+      "sponsor package",
+      "sponsor deck",
+      "corporate sponsor"
+    ],
+    "operations_director": [
+      "organization operations",
+      "organisation operations",
+      "operating model",
+      "internal operations",
+      "responsibilities across organization",
+      "arts institution operational priorities capacity responsibilities",
+      "organization level capacity ownership workflows"
+    ],
+    "brand_identity_designer": [
+      "brand identity",
+      "visual identity",
+      "logo system",
+      "identity system",
+      "graphic identity"
+    ],
+    "social_media_manager": [
+      "social media",
+      "content calendar",
+      "instagram strategy",
+      "tiktok strategy",
+      "social calendar",
+      "social publishing"
+    ],
+    "digital_design_director": [
+      "web design",
+      "website art direction",
+      "digital design",
+      "web experience",
+      "responsive website",
+      "responsive client microsite approved direction",
+      "layout interaction before engineering"
+    ],
+    "verbal_identity_director": [
+      "brand voice",
+      "tone of voice",
+      "naming system",
+      "verbal identity",
+      "naming logic"
+    ],
+    "visual_design_critic": [
+      "design critique",
+      "visual review",
+      "rendered design review",
+      "review the rendered site",
+      "rendered result",
+      "spacing and rhythm",
+      "visual qa",
+      "review rendered",
+      "review rendered client website against approved design direction",
+      "hierarchy rhythm typography visual coherence"
+    ],
+    "bug_investigator": [
+      "bug",
+      "regression",
+      "debug",
+      "reproduce issue",
+      "saved projects disappear after refresh",
+      "reproduce issue isolate conditions defect report"
+    ],
+    "api_integration_engineer": [
+      "api integration",
+      "connect api",
+      "third party api",
+      "external api"
+    ],
+    "migration_specialist": [
+      "database migration",
+      "data migration",
+      "system migration",
+      "migration plan",
+      "rollback migration"
+    ],
+    "accessibility_specialist": [
+      "accessibility",
+      "wcag",
+      "a11y",
+      "accessible product"
+    ],
+    "security_reviewer": [
+      "security review",
+      "threat review",
+      "security audit",
+      "security posture",
+      "technical risk review"
+    ],
+    "contract_reviewer": [
+      "review contract",
+      "contract review",
+      "agreement review",
+      "review agreement"
+    ],
+    "commercial_contracts_advisor": [
+      "commercial agreement",
+      "commercial contract",
+      "client agreement",
+      "b2b statement of work scope payment ip liability termination",
+      "proposed b2b sow"
+    ],
+    "trademark_brand_protection_advisor": [
+      "trademark",
+      "brand protection",
+      "trade mark",
+      "name protection"
+    ],
+    "privacy_data_protection_advisor": [
+      "privacy",
+      "gdpr",
+      "data protection",
+      "personal data"
+    ],
+    "job_opportunity_scout": [
+      "find jobs",
+      "job openings",
+      "open roles",
+      "job opportunity",
+      "active jobs",
+      "roles hiring"
+    ],
+    "resume_strategist": [
+      "resume",
+      "cv",
+      "curriculum vitae",
+      "resume architecture"
+    ],
+    "interview_coach": [
+      "interview practice",
+      "interview prep",
+      "mock interview",
+      "prepare interview"
+    ],
+    "billing_receivables_coordinator": [
+      "unpaid invoice",
+      "overdue invoice",
+      "accounts receivable",
+      "receivables",
+      "invoice follow up"
+    ],
+    "fp_and_a_analyst": [
+      "forecast",
+      "financial plan",
+      "scenario planning",
+      "best base worst",
+      "budget actual variance",
+      "management forecast"
+    ],
+    "cashflow_treasury_analyst": [
+      "cash flow",
+      "cashflow",
+      "runway",
+      "liquidity"
+    ],
+    "lead_qualification_researcher": [
+      "qualify lead",
+      "qualify prospect",
+      "lead qualification",
+      "prospect research",
+      "organizations that might buy our services",
+      "ideal client criteria before outreach",
+      "prospective buyer against client profile",
+      "buyer fit before proposal",
+      "possible client ideal customer profile credible need",
+      "before anyone invests in a pitch"
+    ],
+    "tender_bid_coordinator": [
+      "tender",
+      "bid response",
+      "rfp",
+      "submission requirements",
+      "request for proposal",
+      "mandatory attachments",
+      "scoring criteria",
+      "formal rfp"
+    ],
+    "sales_proposal_specialist": [
+      "sales proposal",
+      "commercial proposal",
+      "proposal for client",
+      "turn scope into proposal"
+    ],
+    "onboarding_offboarding_coordinator": [
+      "onboarding",
+      "offboarding",
+      "new employee",
+      "new starter",
+      "joining our staff",
+      "first week tasks",
+      "staff onboarding"
+    ],
+    "compensation_benefits_coordinator": [
+      "salary bands",
+      "compensation",
+      "benefits",
+      "pay bands"
+    ],
+    "workforce_planner": [
+      "workforce",
+      "headcount plan",
+      "staffing plan",
+      "headcount",
+      "staffing needs",
+      "how many people",
+      "which capabilities the team",
+      "team will require",
+      "future staffing",
+      "forecast workload into staffing and contractor scenarios",
+      "before opening job requisitions",
+      "expected work required capabilities staffing alternatives",
+      "before recruiting anyone"
+    ],
+    "programme_delivery_manager": [
+      "programme dependencies",
+      "program dependencies",
+      "multi project",
+      "cross project dependencies",
+      "workstreams",
+      "integrated dependency view",
+      "shared milestones",
+      "cross workstream"
+    ],
+    "quality_acceptance_coordinator": [
+      "acceptance criteria",
+      "quality acceptance",
+      "sign off",
+      "delivery acceptance",
+      "handover evidence",
+      "client accept deliverables",
+      "acceptance evidence",
+      "project closeout",
+      "accept each project deliverable",
+      "approval needed to accept"
+    ],
+    "project_controls_analyst": [
+      "schedule risk",
+      "project controls",
+      "critical path",
+      "milestones risk",
+      "milestone schedule variance",
+      "schedule variance and change impacts",
+      "baseline forecast actuals",
+      "project controls variance risk",
+      "baseline versus forecast",
+      "approved scope changes on cost and milestone dates",
+      "baseline actual and forecast",
+      "schedule cost impact of approved change request",
+      "schedule scope and cost change against approved baseline",
+      "forecast impact of latest change",
+      "current variance from baseline schedule and cost",
+      "approved changes do to forecast",
+      "actual versus forecast schedule and cost",
+      "approved baseline change requests quantify impact",
+      "planned baseline actual progress forecast",
+      "schedule cost effect approved changes",
+      "approved project baseline actual forecast progress",
+      "time cost impact accepted changes"
+    ],
+    "inbox_correspondence_manager": [
+      "reply email",
+      "email reply",
+      "inbox triage",
+      "email thread"
+    ],
+    "meeting_calendar_coordinator": [
+      "schedule meeting",
+      "calendar invite",
+      "meeting invite",
+      "find a time",
+      "meeting agenda",
+      "meeting notes",
+      "decisions and actions",
+      "meeting coordination"
+    ],
+    "travel_logistics_coordinator": [
+      "travel",
+      "flight",
+      "hotel",
+      "trip logistics"
+    ],
+    "communications_operator": [
+      "send whatsapp",
+      "send email",
+      "send message",
+      "phone call",
+      "place a call",
+      "authorized messaging capability send exact approved text",
+      "tool confirmed delivery otherwise not sent"
+    ],
+    "colorist": [
+      "color grade",
+      "colour grade",
+      "grading",
+      "shot matching"
+    ],
+    "ai_video_prompt_adapter": [
+      "ai video prompt",
+      "video model prompt",
+      "text to video prompt",
+      "prompt for an ai video"
+    ],
+    "comfyui_workflow_engineer": [
+      "comfyui",
+      "comfy workflow",
+      "node graph"
+    ],
+    "re_recording_mixer": [
+      "final mix",
+      "re-recording mix",
+      "audio mix",
+      "dialogue music effects mix"
+    ],
+    "developmental_editor": [
+      "developmental edit",
+      "manuscript structure",
+      "structural edit",
+      "chapter structure",
+      "argument and chapter order",
+      "structure before sentence level editing",
+      "manuscript argument structure"
+    ],
+    "prepress_specialist": [
+      "prepress",
+      "print ready",
+      "print-ready",
+      "bleed fonts resolution"
+    ],
+    "publishing_metadata_specialist": [
+      "isbn",
+      "book metadata",
+      "publishing metadata",
+      "distributor metadata"
+    ],
+    "editor": [
+      "artist statement",
+      "edit statement",
+      "edit text",
+      "statement editing",
+      "edit curatorial text for precision structure readability",
+      "without changing its argument",
+      "polish artist facing essay",
+      "author argument factual uncertainty intact"
+    ],
+    "studio_finance_manager": [
+      "artist budget",
+      "studio budget",
+      "production budget",
+      "art project budget"
+    ],
+    "office_concierge": [
+      "which agent",
+      "route this",
+      "who should handle",
+      "which office",
+      "route request",
+      "have not explained whether this concerns",
+      "decide what you need to ask before assigning",
+      "have not explained the task entity or desired outcome",
+      "ask only what is necessary before choosing an office",
+      "have not described what i need done",
+      "which entity it concerns ask one decisive question"
+    ],
+    "collection_inventory_manager": [
+      "artwork inventory",
+      "work inventory",
+      "dimensions editions locations",
+      "condition notes",
+      "collection inventory"
+    ],
+    "practice_archivist": [
+      "practice archive",
+      "artwork archive",
+      "studio archive"
+    ],
+    "artist_agent": [
+      "studio visit",
+      "gallerist",
+      "representation relationship"
+    ],
+    "partnerships_director": [
+      "institutional collaborators",
+      "partnership approach",
+      "strategic partners",
+      "institutional partnership"
+    ],
+    "network_mapper": [
+      "map collaborators",
+      "map institutions",
+      "relationship map"
+    ],
+    "web_typography_layout_specialist": [
+      "typography spacing",
+      "type rhythm",
+      "mobile typography",
+      "responsive typography"
+    ],
+    "social_content_creator": [
+      "platform native posts",
+      "carousel ideas",
+      "prepare posts",
+      "social assets"
+    ],
+    "ux_researcher": [
+      "user interviews",
+      "usability sessions",
+      "usability research",
+      "onboarding abandonment"
+    ],
+    "product_researcher": [
+      "user research",
+      "research users",
+      "product research"
+    ],
+    "design_system_designer": [
+      "tokens components states",
+      "design tokens",
+      "component system",
+      "ui consistency"
+    ],
+    "accessibility_tester": [
+      "keyboard navigation",
+      "focus order",
+      "screen reader",
+      "test accessibility"
+    ],
+    "licensing_rights_advisor": [
+      "usage rights",
+      "license photographs",
+      "licence photographs",
+      "media rights",
+      "territory duration rights",
+      "reuse customer photos in advertising",
+      "usage rights for customer photos",
+      "licensing and consent for advertising",
+      "permissions for reproductions derivatives online use",
+      "usage permissions for commissioned photographs",
+      "licensed image usage permissions restrictions",
+      "web campaign derivative adaptations rights"
+    ],
+    "ip_copyright_advisor": [
+      "copyright use",
+      "copyright license",
+      "copyright licence",
+      "who owns commissioned photographs",
+      "permissions for reproductions derivatives online use",
+      "sourced rights analysis"
+    ],
+    "offer_negotiation_advisor": [
+      "negotiate title compensation",
+      "job offer",
+      "negotiate offer",
+      "start date flexibility",
+      "written employment offer compensation scope title flexibility start date",
+      "plan conversation around written offer"
+    ],
+    "job_fit_analyst": [
+      "compare experience",
+      "role description",
+      "fit before apply",
+      "experience gaps",
+      "compare role requirements with my cv",
+      "material gaps before tailoring",
+      "documented requirements versus actual cv"
+    ],
+    "skills_gap_analyst": [
+      "material gaps",
+      "skills gaps",
+      "experience gaps"
+    ],
+    "pricing_margin_analyst": [
+      "project price",
+      "production costs margin",
+      "quote margin",
+      "project economics"
+    ],
+    "production_cost_controller": [
+      "production costs",
+      "cost model production"
+    ],
+    "sales_operations_manager": [
+      "prospect status",
+      "sales status",
+      "next sales step",
+      "proposal not accepted",
+      "pipeline stages",
+      "crm hygiene",
+      "sales ownership",
+      "conversion fields",
+      "opportunity pipeline stages owners next actions",
+      "stale deals forecast hygiene"
+    ],
+    "customer_success_manager": [
+      "customer leaving",
+      "retention plan",
+      "recovery plan",
+      "customer at risk"
+    ],
+    "structured_interview_designer": [
+      "fair repeatable interview",
+      "interview structure",
+      "employer interview"
+    ],
+    "learning_development_specialist": [
+      "employee development",
+      "development plan employees",
+      "training plan staff"
+    ],
+    "media_delivery_qc": [
+      "final 4k master",
+      "delivery specs",
+      "audio channels captions",
+      "master qc"
+    ],
+    "music_supervisor": [
+      "music fits film",
+      "music rights",
+      "music for film",
+      "track rights"
+    ],
+    "copy_editor": [
+      "sentence level",
+      "house style",
+      "grammar consistency",
+      "copy edit"
+    ],
+    "publishing_rights_permissions_manager": [
+      "permissions quoted text",
+      "image permissions",
+      "translation permissions",
+      "publication permissions"
+    ],
+    "art_writer": [
+      "exhibition text",
+      "catalogue essay",
+      "serious art text",
+      "art criticism",
+      "original critical essay",
+      "write critical essay",
+      "observation interpretation research",
+      "critical essay",
+      "original cultural text",
+      "synthetic images and evidence"
+    ],
+    "art_publicist": [
+      "press approach",
+      "upcoming show press",
+      "press strategy artist",
+      "press plan around my exhibition",
+      "media plan for my exhibition",
+      "media targets materials follow-up",
+      "press outreach for my show"
+    ],
+    "research_director": [
+      "research agenda",
+      "source plan",
+      "research synthesis",
+      "institution research",
+      "institutional research synthesis",
+      "evidence from trend hype"
+    ],
+    "impact_evaluation": [
+      "evaluate outcomes",
+      "programme outcomes",
+      "impact without inventing",
+      "impact evaluation",
+      "programme impact on participation",
+      "changed participation and partnerships",
+      "institution programme evaluation",
+      "changed participation partnerships and learning",
+      "what cannot be concluded from evidence",
+      "programme evidence changes participation relationships learning",
+      "identify where data cannot support a claim"
+    ],
+    "strategy_director": [
+      "strategic choice",
+      "usable direction for creative",
+      "client strategy evidence"
+    ],
+    "creative_strategist": [
+      "evidence into creative direction",
+      "strategy for creative work"
+    ],
+    "community_manager": [
+      "comments and dms",
+      "moderation response escalation",
+      "community moderation"
+    ],
+    "performance_engineer": [
+      "web performance",
+      "real devices",
+      "performance bottlenecks",
+      "page speed"
+    ],
+    "mcp_integration_reviewer": [
+      "mcp connection",
+      "least privilege",
+      "exposes write delete tools"
+    ],
+    "independent_contractor_advisor": [
+      "freelancer arrangement",
+      "employment classification",
+      "independent contractor"
+    ],
+    "employment_labor_advisor": [
+      "employment classification",
+      "labor risk",
+      "labour risk",
+      "employment terms working hours leave notice dismissal",
+      "local law limits employment terms"
+    ],
+    "payables_procurement_analyst": [
+      "supplier bills",
+      "purchasing commitments",
+      "must be paid",
+      "payables"
+    ],
+    "bookkeeping_coordinator": [
+      "bookkeeping inputs",
+      "accountant still needs",
+      "reconcile bookkeeping",
+      "bank entries invoices receipts external accountant",
+      "reconciled accounting records uncertain classifications"
+    ],
+    "revenue_operations_analyst": [
+      "pipeline conversion",
+      "revenue operations",
+      "crm data",
+      "pipeline value delivery status and invoicing",
+      "revenue forecast drifting across sales delivery finance"
+    ],
+    "sales_enablement_specialist": [
+      "objections and proof",
+      "sales calls",
+      "explain the offer",
+      "sales material"
+    ],
+    "employee_relations_coordinator": [
+      "employees conflict",
+      "grievance",
+      "employee relations"
+    ],
+    "hiring_coordinator": [
+      "candidate scheduling",
+      "interview logistics",
+      "employer-side search"
+    ],
+    "agile_delivery_facilitator": [
+      "retrospectives",
+      "delivery team",
+      "agile facilitation",
+      "planning and retrospectives",
+      "run a retrospective",
+      "team delivery",
+      "retrospective and planning"
+    ],
+    "office_administrator": [
+      "supplier issue",
+      "facilities follow up",
+      "office access request"
+    ],
+    "records_document_controller": [
+      "signed documents",
+      "approval versions",
+      "distribution records",
+      "wrong file"
+    ],
+    "ebook_accessibility_engineer": [
+      "epub navigable",
+      "epub accessible",
+      "assistive technology",
+      "epub semantics"
+    ],
+    "communications_editor": [
+      "professional introduction email",
+      "sensitive correspondence",
+      "write introduction email",
+      "sensitive professional email",
+      "only need the wording not inbox action",
+      "rewrite this professional note",
+      "request context and next step unmistakable",
+      "wording without sending",
+      "return a draft only",
+      "do not perform any inbox action",
+      "improve wording of delicate professional email",
+      "professional message clarity tone return copy only",
+      "no sending or mailbox action",
+      "professional note purpose tone ask text only",
+      "not an email or messaging action"
+    ],
+    "brand_strategist": [
+      "positioning architecture",
+      "naming logic before visual design",
+      "brand strategy before design",
+      "positioning and brand architecture",
+      "before identity work starts",
+      "brand architecture before identity",
+      "brand positioning differentiation and architecture",
+      "before anyone designs the identity",
+      "positioning audience differentiation brand architecture",
+      "before visual or verbal identity work",
+      "establish positioning differentiation and brand architecture",
+      "before anyone develops visual identity or voice",
+      "strategic foundation before identity execution",
+      "positioning differentiation brand architecture"
+    ],
+    "fabrication_manager": [
+      "sculpture build",
+      "fabricator questions",
+      "materials tolerances",
+      "fabrication path",
+      "fabricator"
+    ],
+    "technical_art_producer": [
+      "artwork fabrication",
+      "technical artwork production",
+      "materials tolerances"
+    ],
+    "analytics_instrumentation_engineer": [
+      "product events",
+      "event properties",
+      "measure activation",
+      "analytics instrumentation"
+    ],
+    "product_analyst": [
+      "activation metric",
+      "onboarding completion",
+      "product metrics"
+    ],
+    "jurisdiction_researcher": [
+      "two countries",
+      "jurisdictional rules",
+      "which jurisdiction",
+      "cross border jurisdiction"
+    ],
+    "international_contracts_researcher": [
+      "parties in two countries",
+      "international agreement",
+      "cross border contract"
+    ],
+    "financial_controller": [
+      "budget versus actual",
+      "budget vs actual",
+      "material variances",
+      "management control"
+    ],
+    "typesetter": [
+      "paragraph styles",
+      "note styles",
+      "heading styles",
+      "apply approved book design",
+      "full manuscript styles"
+    ],
+    "editorial_designer": [
+      "book design system",
+      "approved book design"
+    ],
+    "security_engineer": [
+      "threat model",
+      "engineering controls",
+      "technical risks",
+      "application authentication secret storage authorization controls",
+      "evidence for security fixes"
+    ],
+    "qa_engineer": [
+      "quality plan",
+      "regressions",
+      "release quality"
+    ],
+    "qa_lead": [
+      "release quality plan",
+      "quality strategy"
+    ],
+    "compensation_analyst": [
+      "market compensation for the role",
+      "total package signals",
+      "candidate compensation",
+      "compensation with the recruiter",
+      "salary and total comp signals for this role",
+      "current compensation role and location i am considering",
+      "dated sources uncertainty candidate compensation"
+    ],
+    "service_desk_coordinator": [
+      "internal office request",
+      "track it to resolution"
+    ],
+    "cultural_intelligence_analyst": [
+      "cultural signals",
+      "social meaning",
+      "trend hype",
+      "meaningful cultural shifts",
+      "social behaviour",
+      "shifts across design technology and culture",
+      "shape next year programme",
+      "without calling every viral thing a trend"
+    ],
+    "events_experience_producer": [
+      "public-facing cultural event",
+      "audience journey",
+      "event experience",
+      "programme moments"
+    ],
+    "data_scientist": [
+      "predictive model",
+      "exploratory findings",
+      "validate a model",
+      "analyze dataset",
+      "predictive feature dataset target definition",
+      "leakage risk and evaluation metrics",
+      "dataset target leakage metrics"
+    ],
+    "documentation_writer": [
+      "developer documentation",
+      "api setup flow",
+      "write developer docs"
+    ],
+    "technical_writer": [
+      "developer documentation",
+      "technical setup documentation"
+    ],
+    "talent_sourcing_specialist": [
+      "source candidates",
+      "profiles match hiring brief",
+      "candidate sourcing",
+      "source candidates employer side",
+      "source candidate profiles for hiring",
+      "profiles matching the hiring brief"
+    ],
+    "acquisitions_editor": [
+      "prospective book proposal",
+      "editorial fit",
+      "commissioning decision",
+      "evaluate book proposal"
+    ],
+    "grants_applications_manager": [
+      "arts grant submission",
+      "artist grant application",
+      "grant narrative for my work",
+      "work samples and grant budget",
+      "funding application for my practice",
+      "grant eligibility deadline budget",
+      "application for support to produce new work",
+      "work samples and deadline requirements",
+      "support to produce a new body of work",
+      "artist funding opportunity compliant submission package",
+      "responses work samples production budget schedule"
+    ],
+    "talent_contributors_manager": [
+      "external contributors",
+      "external artists and writers",
+      "speakers and specialist collaborators",
+      "programme contributors",
+      "contributor briefs and availability",
+      "contributor network",
+      "external artists researchers speakers for our organization",
+      "availability contributor onboarding"
+    ],
+    "studio_manager": [
+      "practical studio plan",
+      "studio priorities",
+      "studio tasks owners deadlines",
+      "studio tasks and handoffs",
+      "coordinate studio tasks"
+    ],
+    "motion_design_director": [
+      "motion identity system",
+      "kinetic type transitions timing",
+      "motion language for a brand",
+      "brand motion system",
+      "logo type transitions should move",
+      "brand transitions across film social website",
+      "kinetic brand identity"
+    ],
+    "institutional_relations_manager": [
+      "museum curator asked to visit my studio",
+      "prepare for a curator studio visit"
+    ],
+    "consumer_advertising_compliance_advisor": [
+      "consent issues before campaign goes live",
+      "advertising consent and disclosures"
+    ],
+    "claims_correspondence_drafter": [
+      "reservation of rights response",
+      "supplier missed contractual milestone"
+    ],
+    "dispute_prevention_advisor": [
+      "supplier dispute chronology",
+      "preserve position before dispute"
+    ],
+    "funding_partnerships_manager": [
+      "foundations and public funding routes",
+      "nonprofit cultural programme funding"
+    ],
+    "information_architect": [
+      "application navigation labels content hierarchy",
+      "user tasks before visual redesign"
+    ],
+    "visual_prompt_engineer": [
+      "generative image prompt composition lens lighting",
+      "approved shot specification image prompt"
+    ],
+    "client_strategy_director": [
+      "museum partner brief",
+      "translate brief into cultural audience problem",
+      "before creative concepts are developed"
+    ],
+    "creator_partnerships_manager": [
+      "creator briefing and compensation",
+      "disclosure and content usage",
+      "creators for a client launch"
+    ],
+    "marketing_strategist": [
+      "launch plan across audience channels partnerships and measurement",
+      "approved proposition launch plan",
+      "launch strategy for independent cultural project",
+      "audience channels partnerships measurement not a client account"
+    ],
+    "product_manager": [
+      "user problems and business constraints",
+      "prioritized product scope with outcomes",
+      "product tradeoffs and acceptance criteria"
+    ],
+    "context_steward": [
+      "decisions open loops and verified outcomes",
+      "next session can resume",
+      "provisional ideas into facts",
+      "durable decisions and unresolved items",
+      "hypotheses rejected options permanent facts",
+      "confirmed decisions verified outcomes unresolved next actions",
+      "experiments rejected ideas provisional",
+      "durable decisions verified results unresolved tasks future sessions",
+      "discarded assumptions stay out"
+    ],
+    "art_director": [
+      "coherent visual direction",
+      "typography imagery composition and references",
+      "before individual assets are produced"
+    ],
+    "commissioning_editor": [
+      "commission essays from external writers",
+      "briefs contributor process editorial coordination"
+    ],
+    "brand_guardian": [
+      "intentional evolution versus brand drift",
+      "review assets for consistency"
+    ],
+    "art_researcher": [
+      "research current artists exhibitions and critical writing",
+      "machine vision ecological sensing art research",
+      "contemporary art practices artists exhibitions criticism",
+      "sourced research brief contemporary art"
+    ],
+    "art_historian": [
+      "critical writing and historical context for contemporary art research"
+    ],
+    "project_manager": [
+      "client project approved scope revisions dependencies sign offs",
+      "coordinate timeline change control and status",
+      "agency engagement revisions client approvals dependencies scope changes",
+      "keep agency engagement on track",
+      "manage agency project scope timings dependencies feedback client approvals"
+    ],
+    "software_architect": [
+      "splitting monolithic application into services",
+      "technical boundaries integration decisions"
+    ],
+    "test_automation_engineer": [
+      "automated regression coverage critical user flows",
+      "api integration regression coverage"
+    ],
+    "cover_letter_writer": [
+      "cover letter using cv and job requirements"
+    ],
+    "executive_producer": [
+      "institution producing exhibition film and publication",
+      "high level production plan budgets partners responsibilities",
+      "interdisciplinary cultural production"
+    ],
+    "content_director": [
+      "durable content pillars recurring formats channel franchises",
+      "client content strategy durable formats"
+    ],
+    "backend_engineer": [
+      "server side rules and api endpoints",
+      "approved feature business logic error handling"
+    ],
+    "linkedin_profile_strategist": [
+      "linkedin headline about experience sections",
+      "claims consistent with my cv"
+    ],
+    "sound_designer": [
+      "sonic world ambience effects transitions",
+      "sound design before final mix"
+    ],
+    "frontend_engineer": [
+      "implement approved responsive interface",
+      "responsive interface from design system",
+      "states interactions accessibility checks",
+      "code approved web interface responsively",
+      "design system interaction states accessibility behavior"
+    ],
+    "devops_engineer": [
+      "software deployment pipeline",
+      "environment configuration build steps secrets rollback",
+      "reproducible deployment pipeline"
+    ],
+    "regulatory_compliance_researcher": [
+      "regulator rules and official guidance",
+      "jurisdiction and effective dates"
+    ],
+    "copywriter": [
+      "campaign headlines body copy short scripts",
+      "approved client brief tone of voice"
+    ],
+    "contract_drafter": [
+      "draft contract from approved deal points",
+      "unresolved commercial and legal choices marked"
+    ],
+    "job_market_researcher": [
+      "current hiring market for my target role and geography",
+      "active demand common requirements dated compensation signals"
+    ],
+    "knowledge_architect": [
+      "institution research relationship history project decisions",
+      "organization knowledge structure recover context"
+    ],
+    "cinematographer": [
+      "plan cinematography lensing lighting movement continuity",
+      "coverage supports intended performance"
+    ],
+    "frontend_prototyper": [
+      "responsive client microsite prototype",
+      "layout interaction review before production engineering"
+    ],
+    "artwork_documentation_manager": [
+      "installation photo video views master files metadata captions credits",
+      "documentation standard after opening"
+    ]
+  },
+  "office_hints": {
+    "artist-office": [
+      "artist practice",
+      "artwork",
+      "gallery",
+      "collector",
+      "residency",
+      "open call",
+      "exhibition",
+      "artist grant",
+      "studio visit",
+      "gallerist",
+      "artwork inventory",
+      "work inventory",
+      "editions",
+      "condition notes",
+      "artist archive"
+    ],
+    "organization-office": [
+      "cultural organization",
+      "cultural organisation",
+      "institutional programme",
+      "public programme",
+      "organization strategy",
+      "organisation strategy",
+      "sponsorship",
+      "foundation",
+      "institutional collaborators",
+      "cultural programme",
+      "cultural program",
+      "public program",
+      "institutional partnership",
+      "foundation programme",
+      "foundation program",
+      "exhibitions talks workshops"
+    ],
+    "agency-office": [
+      "brand identity",
+      "campaign",
+      "social media",
+      "web design",
+      "creative agency",
+      "content calendar",
+      "tone of voice",
+      "landing page",
+      "rendered result",
+      "typography spacing",
+      "carousel",
+      "platform native posts",
+      "visual system"
+    ],
+    "product-office": [
+      "software",
+      "product",
+      "frontend",
+      "backend",
+      "api",
+      "database",
+      "migration",
+      "bug",
+      "wcag",
+      "security review",
+      "code",
+      "user interviews",
+      "usability sessions",
+      "onboarding flow",
+      "design tokens",
+      "components and states",
+      "keyboard navigation",
+      "screen reader",
+      "interface"
+    ],
+    "legal-office": [
+      "legal",
+      "contract",
+      "agreement",
+      "trademark",
+      "copyright",
+      "privacy",
+      "gdpr",
+      "compliance",
+      "data processing addendum",
+      "dpa",
+      "usage rights",
+      "license photographs",
+      "licence photographs",
+      "before we sign",
+      "rights and usage"
+    ],
+    "recruitment-office": [
+      "job",
+      "jobs",
+      "career",
+      "resume",
+      "cv",
+      "interview",
+      "recruiter",
+      "application",
+      "hiring role",
+      "job offer",
+      "role description",
+      "before i apply",
+      "negotiate title",
+      "mock interview"
+    ],
+    "finance-office": [
+      "invoice",
+      "cash flow",
+      "cashflow",
+      "forecast",
+      "budget control",
+      "receivables",
+      "payables",
+      "finance",
+      "supplier payments",
+      "liquidity risk",
+      "project price",
+      "production costs",
+      "margin",
+      "before we quote"
+    ],
+    "commercial-office": [
+      "lead",
+      "prospect",
+      "tender",
+      "sales proposal",
+      "sales pipeline",
+      "customer success",
+      "revenue operations",
+      "proposal not accepted",
+      "next sales step",
+      "customer at risk",
+      "retention plan",
+      "sales status"
+    ],
+    "people-office": [
+      "employee",
+      "onboarding",
+      "offboarding",
+      "compensation",
+      "salary",
+      "headcount",
+      "workforce",
+      "people operations",
+      "employer side",
+      "we are hiring",
+      "employees",
+      "staff development",
+      "management skills"
+    ],
+    "delivery-office": [
+      "programme delivery",
+      "program delivery",
+      "project dependencies",
+      "critical path",
+      "acceptance criteria",
+      "project controls",
+      "workstreams",
+      "integrated dependency",
+      "handover",
+      "client accept",
+      "accept deliverables"
+    ],
+    "administration-office": [
+      "email thread",
+      "calendar",
+      "meeting invite",
+      "travel logistics",
+      "office administration",
+      "send message",
+      "meeting notes",
+      "meeting agenda",
+      "email action timed out",
+      "resend",
+      "communication status"
+    ],
+    "production-office": [
+      "color grade",
+      "comfyui",
+      "video prompt",
+      "audio mix",
+      "film production",
+      "retouch",
+      "sound design",
+      "cinematography",
+      "4k master",
+      "delivery specs",
+      "audio channels",
+      "music fits the film",
+      "film rights"
+    ],
+    "publishing-office": [
+      "manuscript",
+      "isbn",
+      "prepress",
+      "publishing",
+      "typesetting",
+      "proofread",
+      "audiobook",
+      "house style",
+      "sentence level",
+      "goes to press",
+      "quoted text",
+      "publication permissions"
+    ],
+    "shared": [
+      "artist statement",
+      "studio budget",
+      "which office",
+      "route request",
+      "exhibition text",
+      "studio project budget",
+      "not explained what the task is"
+    ]
+  },
+  "synonyms": {
+    "cv": [
+      "resume"
+    ],
+    "résumé": [
+      "resume"
+    ],
+    "resume": [
+      "cv"
+    ],
+    "job": [
+      "career",
+      "hiring"
+    ],
+    "jobs": [
+      "career",
+      "hiring"
+    ],
+    "website": [
+      "web",
+      "frontend",
+      "digital"
+    ],
+    "site": [
+      "web",
+      "frontend"
+    ],
+    "landing": [
+      "web",
+      "frontend"
+    ],
+    "microsite": [
+      "web",
+      "frontend"
+    ],
+    "instagram": [
+      "social"
+    ],
+    "tiktok": [
+      "social"
+    ],
+    "linkedin": [
+      "social"
+    ],
+    "youtube": [
+      "social"
+    ],
+    "post": [
+      "social",
+      "content"
+    ],
+    "posts": [
+      "social",
+      "content"
+    ],
+    "brand": [
+      "identity",
+      "branding"
+    ],
+    "branding": [
+      "brand",
+      "identity"
+    ],
+    "logo": [
+      "identity",
+      "brand"
+    ],
+    "naming": [
+      "verbal",
+      "brand"
+    ],
+    "tone": [
+      "voice",
+      "verbal"
+    ],
+    "voice": [
+      "verbal"
+    ],
+    "gallery": [
+      "art",
+      "exhibition"
+    ],
+    "museum": [
+      "art",
+      "institution"
+    ],
+    "residency": [
+      "art",
+      "opportunities"
+    ],
+    "residencies": [
+      "art",
+      "opportunities"
+    ],
+    "grant": [
+      "funding",
+      "application"
+    ],
+    "grants": [
+      "funding",
+      "application"
+    ],
+    "exhibition": [
+      "art",
+      "curator"
+    ],
+    "show": [
+      "exhibition",
+      "art"
+    ],
+    "artwork": [
+      "art"
+    ],
+    "artist": [
+      "art"
+    ],
+    "collector": [
+      "art",
+      "sales"
+    ],
+    "invoice": [
+      "billing",
+      "receivables",
+      "finance"
+    ],
+    "invoices": [
+      "billing",
+      "receivables",
+      "finance"
+    ],
+    "cash": [
+      "cashflow",
+      "finance"
+    ],
+    "budget": [
+      "finance",
+      "cost"
+    ],
+    "margin": [
+      "pricing",
+      "finance"
+    ],
+    "contract": [
+      "legal",
+      "agreement"
+    ],
+    "agreement": [
+      "contract",
+      "legal"
+    ],
+    "trademark": [
+      "brand",
+      "protection",
+      "legal"
+    ],
+    "copyright": [
+      "ip",
+      "legal"
+    ],
+    "privacy": [
+      "data",
+      "protection",
+      "legal"
+    ],
+    "email": [
+      "inbox",
+      "correspondence",
+      "communications"
+    ],
+    "whatsapp": [
+      "communications"
+    ],
+    "message": [
+      "communications"
+    ],
+    "calendar": [
+      "meeting"
+    ],
+    "flight": [
+      "travel"
+    ],
+    "hotel": [
+      "travel"
+    ],
+    "comfyui": [
+      "workflow",
+      "generative"
+    ],
+    "grade": [
+      "color"
+    ],
+    "grading": [
+      "color"
+    ],
+    "edit": [
+      "editor",
+      "editing"
+    ],
+    "mix": [
+      "audio",
+      "sound"
+    ],
+    "subtitles": [
+      "localization"
+    ],
+    "book": [
+      "publishing"
+    ],
+    "catalogue": [
+      "publishing",
+      "editorial"
+    ],
+    "magazine": [
+      "publishing",
+      "editorial"
+    ],
+    "isbn": [
+      "metadata",
+      "publishing"
+    ],
+    "print": [
+      "prepress",
+      "printing"
+    ],
+    "api": [
+      "integration"
+    ],
+    "database": [
+      "backend",
+      "data"
+    ],
+    "migration": [
+      "database",
+      "release"
+    ],
+    "bug": [
+      "qa",
+      "debug"
+    ],
+    "accessibility": [
+      "a11y"
+    ],
+    "security": [
+      "secure"
+    ],
+    "tender": [
+      "bid",
+      "commercial"
+    ],
+    "proposal": [
+      "pitch",
+      "sales"
+    ],
+    "lead": [
+      "sales",
+      "commercial"
+    ],
+    "prospect": [
+      "lead",
+      "sales"
+    ],
+    "client": [
+      "account"
+    ],
+    "onboard": [
+      "onboarding"
+    ],
+    "onboarding": [
+      "people",
+      "hr"
+    ],
+    "salary": [
+      "compensation"
+    ],
+    "benefits": [
+      "compensation"
+    ],
+    "workforce": [
+      "people",
+      "resource"
+    ],
+    "headcount": [
+      "workforce",
+      "people"
+    ],
+    "project": [
+      "delivery"
+    ],
+    "programme": [
+      "program",
+      "delivery"
+    ],
+    "deadline": [
+      "schedule",
+      "delivery"
+    ],
+    "acceptance": [
+      "quality",
+      "delivery"
+    ],
+    "press": [
+      "publicity",
+      "communications"
+    ],
+    "pr": [
+      "communications"
+    ],
+    "sponsor": [
+      "sponsorship",
+      "partnerships"
+    ],
+    "sponsorship": [
+      "funding",
+      "partnerships"
+    ],
+    "threat": [
+      "security"
+    ],
+    "threat-model": [
+      "security"
+    ],
+    "regression": [
+      "qa",
+      "test"
+    ],
+    "regressions": [
+      "qa",
+      "test"
+    ],
+    "closeout": [
+      "delivery",
+      "acceptance"
+    ],
+    "retrospective": [
+      "delivery",
+      "agile"
+    ],
+    "staff": [
+      "people",
+      "employee"
+    ],
+    "compensation": [
+      "pay",
+      "salary"
+    ],
+    "institutional": [
+      "organization",
+      "organisation"
+    ]
+  },
+  "policy": [
+    "Hints support routing only; they do not authorize action or override role boundaries.",
+    "Use the smallest useful team; a clear task should normally start with one specialist.",
+    "When routing confidence is low, ask one decisive question or use the Concierge rather than assembling a large team."
+  ],
+  "office_profiles": {
+    "artist-office": {
+      "mission": "The artist own contemporary-art practice, artworks, exhibitions, galleries, collectors, artist archive, art sales and artist opportunities.",
+      "strong_signals": [
+        "my practice",
+        "my artwork",
+        "my work as an artist",
+        "studio visit",
+        "gallerist",
+        "gallery relationship",
+        "collector",
+        "artist residency",
+        "artist archive",
+        "artwork inventory",
+        "institutional show",
+        "sculpture concept",
+        "fabricator",
+        "artwork fabrication",
+        "arts grant",
+        "art grant",
+        "artist grant",
+        "grant submission for my work",
+        "work samples for a grant",
+        "artist funding application",
+        "funding application for my practice",
+        "press plan for my exhibition",
+        "media plan for my exhibition",
+        "produce a new body of work",
+        "work samples and deadline",
+        "application for support to produce",
+        "funding to produce new work",
+        "review my current body of work",
+        "artistic development priorities",
+        "research current artists and exhibitions",
+        "current artists exhibitions and critical writing",
+        "contemporary art research",
+        "contemporary art practices",
+        "artists exhibitions and criticism",
+        "sourced art research brief",
+        "artist funding opportunity",
+        "compliant artist submission",
+        "responses work samples production budget",
+        "installation documentation photo video views",
+        "artwork master files metadata captions credits",
+        "documented after opening artwork"
+      ],
+      "negative_signals": [
+        "cultural institution needs",
+        "our foundation",
+        "client brand",
+        "software product",
+        "original critical essay",
+        "write critical essay"
+      ]
+    },
+    "organization-office": {
+      "mission": "Cultural organization or institution strategy, programmes, research, partnerships, funding, impact, publishing and operations.",
+      "strong_signals": [
+        "our cultural institution",
+        "our foundation",
+        "cultural organization",
+        "cultural organisation",
+        "institutional programme",
+        "research agenda",
+        "programme outcomes",
+        "institutional collaborators",
+        "public programme",
+        "institutional strategy",
+        "institutional research",
+        "institutional impact",
+        "cultural signals",
+        "public-facing cultural event",
+        "cultural event experience",
+        "audience journey",
+        "external contributors",
+        "external artists and writers",
+        "speakers and collaborators",
+        "programme contributors",
+        "specialist collaborators for our programme",
+        "contributor network",
+        "availability of contributors",
+        "our institution",
+        "institution changed participation",
+        "programme changed participation",
+        "programme impact",
+        "our arts organization",
+        "shifts across design technology and culture",
+        "shape next year programme",
+        "cultural shifts for our programme",
+        "paid brief from a museum partner",
+        "translate the brief into the real cultural and audience problem",
+        "museum partner brief",
+        "institution producing exhibition film and publication",
+        "high level production plan budgets partners responsibilities",
+        "interdisciplinary cultural production",
+        "nonprofit arts organization",
+        "institution research relationship history and project decisions",
+        "organization knowledge structure",
+        "external artists researchers and speakers",
+        "contributors for our organization",
+        "contributor onboarding for our organization",
+        "programme evidence changes participation relationships and learning",
+        "assess changes in participation relationships and learning",
+        "what the programme evidence supports",
+        "arts institution operational priorities capacity and responsibilities",
+        "organization level capacity and ownership",
+        "too much work in flight and unclear ownership"
+      ],
+      "negative_signals": [
+        "project dependencies",
+        "critical path",
+        "my artwork",
+        "client brand",
+        "request for proposal",
+        "scoring criteria",
+        "not a client agency account",
+        "might buy our services",
+        "ideal client criteria before outreach",
+        "prospective buyer against our client profile",
+        "buyer fit before proposal",
+        "independent cultural project",
+        "not a client account",
+        "possible client fits our ideal customer",
+        "ideal customer before pitch"
+      ]
+    },
+    "agency-office": {
+      "mission": "Client-facing brand, campaign, design, social, marketing, content, creative production and agency strategy.",
+      "strong_signals": [
+        "the client",
+        "client brand",
+        "brand account",
+        "campaign",
+        "creative work",
+        "visual identity",
+        "social account",
+        "landing page",
+        "rendered result",
+        "tone of voice",
+        "logo type transitions",
+        "brand transitions",
+        "brand moves across film social website",
+        "kinetic brand identity",
+        "creator launch",
+        "creator briefing and compensation",
+        "disclosure and content usage",
+        "creator partnerships for a client",
+        "client project has approved scope",
+        "revisions dependencies and sign offs",
+        "client project timeline change control",
+        "campaign headlines body copy and short scripts",
+        "approved client brief and tone of voice",
+        "agency project",
+        "client approvals and feedback rounds",
+        "agency engagement scope timings dependencies",
+        "client microsite prototype",
+        "responsive client microsite",
+        "before production engineering",
+        "prototype from approved direction"
+      ],
+      "negative_signals": [
+        "software product",
+        "my artistic practice",
+        "employee grievance",
+        "before identity work starts",
+        "institutional strategy",
+        "project closeout",
+        "project deliverable",
+        "licensing and consent",
+        "reuse customer photos",
+        "usage rights for advertising",
+        "application navigation",
+        "actual user tasks before visual redesign",
+        "before anyone designs the identity",
+        "brand positioning differentiation and architecture",
+        "brand architecture before visual or verbal identity",
+        "positioning audience differentiation and brand architecture",
+        "establish positioning differentiation and brand architecture",
+        "before anyone develops the visual identity or voice",
+        "strategic foundation before identity execution",
+        "before any identity execution begins",
+        "licensed image usage permissions",
+        "usage permissions and restrictions"
+      ]
+    },
+    "product-office": {
+      "mission": "Software and digital product strategy, UX, code, APIs, databases, performance, security, accessibility and releases.",
+      "strong_signals": [
+        "software",
+        "product ui",
+        "actual interface",
+        "users abandon",
+        "usability",
+        "web performance",
+        "real devices",
+        "api",
+        "database",
+        "mcp connection",
+        "design tokens",
+        "screen reader",
+        "product events",
+        "event properties",
+        "activation reliably",
+        "codebase",
+        "services",
+        "threat model",
+        "threat-model",
+        "engineering controls",
+        "technical risks",
+        "software release",
+        "regressions",
+        "quality plan",
+        "service architecture",
+        "predictive model",
+        "analyze dataset",
+        "developer documentation",
+        "api setup flow",
+        "predictive feature",
+        "dataset target definition",
+        "leakage risk",
+        "evaluation metrics before retraining",
+        "model evaluation metrics",
+        "users report a bug",
+        "saved projects disappear",
+        "reproduce the issue",
+        "concrete defect report",
+        "application navigation",
+        "labels and content hierarchy",
+        "actual user tasks before visual redesign",
+        "user problems and business constraints",
+        "prioritized product scope",
+        "product outcomes and tradeoffs",
+        "product scope with outcomes",
+        "implement the approved responsive interface",
+        "responsive interface from the design system",
+        "deployment pipeline",
+        "environment configuration build steps rollback",
+        "software deployment pipeline",
+        "application authentication secret storage and authorization",
+        "security controls for the application",
+        "authentication secrets authorization"
+      ],
+      "negative_signals": [
+        "epub",
+        "book metadata",
+        "film production",
+        "artist exhibition",
+        "not enough information",
+        "whether it concerns",
+        "run a retrospective",
+        "retrospective and planning",
+        "client microsite prototype",
+        "responsive client microsite",
+        "before production engineering"
+      ]
+    },
+    "legal-office": {
+      "mission": "Legal research and first-pass review for contracts, rights, privacy, employment, IP, compliance, disputes and regulation.",
+      "strong_signals": [
+        "before we sign",
+        "legal risk",
+        "agreement",
+        "contract",
+        "privacy obligations",
+        "data-processing",
+        "data processing",
+        "trademark",
+        "copyright",
+        "license rights",
+        "licence rights",
+        "employment-classification",
+        "employment classification",
+        "two countries",
+        "jurisdictional rules",
+        "parties in two countries",
+        "reuse customer photos",
+        "licensing and consent",
+        "usage rights for advertising",
+        "rights before campaign goes live",
+        "who owns the commissioned",
+        "permissions for reproductions",
+        "derivatives and online use",
+        "sourced rights analysis",
+        "ownership and permissions",
+        "regulator rules and official guidance",
+        "jurisdiction and effective dates",
+        "current regulator rules",
+        "review employment terms",
+        "working hours leave notice and dismissal",
+        "employment terms local law",
+        "licensed image usage permissions",
+        "usage permissions and restrictions",
+        "rights across web campaign and derivative adaptations"
+      ],
+      "negative_signals": [
+        "sales pipeline",
+        "artist statement",
+        "predictive model",
+        "analyze dataset"
+      ]
+    },
+    "recruitment-office": {
+      "mission": "Candidate-side career development, job search, applications, interviews, networking, offers and negotiation.",
+      "strong_signals": [
+        "my cv",
+        "my resume",
+        "i apply",
+        "before i apply",
+        "open position",
+        "job offer",
+        "i received an offer",
+        "final interview",
+        "recruiter",
+        "role i am considering",
+        "market compensation for the role",
+        "candidate-side compensation",
+        "discuss compensation with the recruiter",
+        "salary and total comp signals",
+        "role and location compensation",
+        "current hiring market for my target role",
+        "target role and geography hiring market",
+        "dated compensation signals for my role",
+        "written employment offer",
+        "plan the conversation around a written offer",
+        "offer compensation scope title flexibility start date",
+        "compensation for the role and location i am considering",
+        "current compensation for my target role",
+        "dated compensation sources for candidate"
+      ],
+      "negative_signals": [
+        "employer-side",
+        "we are hiring",
+        "employees",
+        "new employee",
+        "joining our staff",
+        "person joining our staff",
+        "new staff member",
+        "next session can resume",
+        "workstream decisions and open loops"
+      ]
+    },
+    "finance-office": {
+      "mission": "Financial control, bookkeeping coordination, cash flow, receivables, payables, forecasting, pricing, margin and tax coordination.",
+      "strong_signals": [
+        "cash on hand",
+        "liquidity",
+        "supplier bills",
+        "due dates",
+        "project economics",
+        "margin",
+        "receivables",
+        "payables",
+        "forecast",
+        "bookkeeping",
+        "accountant",
+        "budget versus actual",
+        "budget vs actual",
+        "material variances",
+        "management-control",
+        "management control"
+      ],
+      "negative_signals": [
+        "sales pipeline",
+        "job offer",
+        "opportunity pipeline",
+        "stale deals",
+        "baseline versus forecast",
+        "approved scope changes",
+        "milestone dates",
+        "baseline actual and forecast",
+        "latest approved change request",
+        "schedule cost impact of change request",
+        "pipeline value delivery status and invoicing",
+        "connect pipeline delivery and finance",
+        "schedule scope and cost change against the approved baseline",
+        "forecast impact of scope change",
+        "regulator rules and official guidance",
+        "jurisdiction and effective dates",
+        "current regulator rules",
+        "forecast workload into staffing",
+        "staffing and contractor scenarios",
+        "current variance from baseline schedule and cost",
+        "approved changes do to the forecast",
+        "actual versus forecast schedule and cost",
+        "approved baseline and change requests",
+        "quantify each change impact",
+        "planned baseline with actual progress and forecast",
+        "schedule and cost effect of approved changes",
+        "approved project baseline actual and forecast progress",
+        "time and cost impact of accepted changes"
+      ]
+    },
+    "commercial-office": {
+      "mission": "Sales pipeline, lead qualification, proposals, tenders, revenue operations, customer success and retention.",
+      "strong_signals": [
+        "sales pipeline",
+        "prospect",
+        "lead qualification",
+        "tender",
+        "sales proposal",
+        "customer at risk",
+        "retention",
+        "crm hygiene",
+        "sales calls",
+        "request for proposal",
+        "mandatory attachments",
+        "scoring criteria",
+        "formal rfp",
+        "opportunity pipeline",
+        "stale deals",
+        "forecast hygiene",
+        "pipeline stages owners next actions",
+        "might buy our services",
+        "ideal client criteria before outreach",
+        "organizations that might buy our services",
+        "pipeline value delivery status and invoicing",
+        "revenue forecast is drifting",
+        "connect pipeline delivery and finance",
+        "prospective buyer against our client profile",
+        "agreed client profile before proposal",
+        "buyer fit before proposal",
+        "possible client fits our ideal customer",
+        "ideal customer before pitch",
+        "credible need before anyone invests in a pitch"
+      ],
+      "negative_signals": [
+        "job application",
+        "employee onboarding",
+        "arts grant",
+        "art grant",
+        "artist grant",
+        "work samples for a grant",
+        "funding application for my practice",
+        "produce a new body of work",
+        "work samples and deadline",
+        "funding to produce new work",
+        "client project has approved scope",
+        "revisions dependencies and sign offs"
+      ]
+    },
+    "people-office": {
+      "mission": "Employer-side hiring coordination, workforce planning, compensation, onboarding, employee relations, learning and people operations.",
+      "strong_signals": [
+        "employer-side",
+        "we are hiring",
+        "employees",
+        "employee",
+        "new employee",
+        "candidate scheduling",
+        "hiring-team",
+        "hiring team",
+        "workforce",
+        "headcount",
+        "compensation bands",
+        "grievance",
+        "staff development",
+        "how many people",
+        "which capabilities the team",
+        "team will require next year",
+        "joining our staff",
+        "person joining our staff",
+        "new staff member",
+        "employer compensation",
+        "source candidates",
+        "hiring brief",
+        "forecast workload into staffing",
+        "staffing and contractor scenarios",
+        "before opening job requisitions",
+        "expected work and required capabilities into staffing alternatives",
+        "staffing alternatives before recruiting",
+        "employer expected work required capabilities"
+      ],
+      "negative_signals": [
+        "my cv",
+        "i received an offer",
+        "before i apply",
+        "product events",
+        "activation metric",
+        "role i am considering",
+        "candidate-side compensation",
+        "creator launch",
+        "disclosure and content usage",
+        "creator partnerships for a client",
+        "discuss compensation with the recruiter",
+        "salary and total comp signals",
+        "current hiring market for my target role",
+        "target role and geography hiring market",
+        "dated compensation signals for my role",
+        "nonprofit arts organization",
+        "organization knowledge structure",
+        "project history so teams can recover context",
+        "review employment terms",
+        "employment terms local law",
+        "external artists researchers and speakers",
+        "contributors for our organization",
+        "written employment offer",
+        "plan the conversation around a written offer",
+        "compensation for the role and location i am considering",
+        "current compensation for my target role",
+        "dated compensation sources for candidate"
+      ]
+    },
+    "delivery-office": {
+      "mission": "Cross-project and programme delivery, workstreams, dependencies, project controls, agile facilitation, acceptance and handover.",
+      "strong_signals": [
+        "workstreams",
+        "cross-project",
+        "cross project",
+        "dependency view",
+        "project controls",
+        "critical path",
+        "delivery team",
+        "retrospectives",
+        "handover evidence",
+        "accept the deliverables",
+        "scope halfway",
+        "project deliverable",
+        "project deliverables",
+        "project closeout",
+        "before closeout",
+        "team delivery",
+        "run a retrospective",
+        "retrospective and planning",
+        "baseline versus forecast",
+        "approved scope changes",
+        "effect on cost and milestone dates",
+        "scope changes on cost and milestones",
+        "baseline actual and forecast",
+        "latest approved change request",
+        "schedule cost impact of change request",
+        "schedule scope and cost change against the approved baseline",
+        "forecast impact of scope change",
+        "approved baseline and forecast impact",
+        "current variance from baseline schedule and cost",
+        "approved changes do to the forecast",
+        "variance from baseline schedule",
+        "actual versus forecast schedule and cost",
+        "approved baseline and change requests",
+        "quantify each change impact",
+        "planned baseline with actual progress and forecast",
+        "schedule and cost effect of approved changes",
+        "baseline actual progress forecast",
+        "approved project baseline actual and forecast progress",
+        "time and cost impact of accepted changes",
+        "accepted changes project baseline"
+      ],
+      "negative_signals": [
+        "cultural programme",
+        "research agenda",
+        "public programme",
+        "software release",
+        "regressions",
+        "public-facing cultural event",
+        "cultural event experience",
+        "external contributors",
+        "external artists and writers",
+        "programme contributors",
+        "contributor network",
+        "practical studio plan",
+        "studio priorities",
+        "programme changed participation",
+        "programme impact",
+        "changed participation and partnerships",
+        "shifts across design technology and culture",
+        "cultural shifts for our programme",
+        "user problems and business constraints",
+        "prioritized product scope",
+        "product outcomes and tradeoffs",
+        "agency project",
+        "client approvals and feedback rounds",
+        "programme evidence changes participation relationships and learning",
+        "assess changes in participation relationships and learning",
+        "durable decisions verified results and unresolved tasks",
+        "future sessions discarded assumptions"
+      ]
+    },
+    "administration-office": {
+      "mission": "Inbox and external communication operations, calendar, meetings, records, travel, suppliers, facilities and office administration.",
+      "strong_signals": [
+        "email thread",
+        "calendar invite",
+        "meeting notes",
+        "meeting agenda",
+        "travel logistics",
+        "supplier issue",
+        "facilities",
+        "access request",
+        "signed documents",
+        "distribution records",
+        "send timed out",
+        "internal office request",
+        "track it to resolution",
+        "travel options",
+        "work trip",
+        "lodging"
+      ],
+      "negative_signals": [
+        "write a professional introduction",
+        "brand positioning",
+        "only need the wording",
+        "not an inbox action",
+        "return a draft only",
+        "do not perform any inbox action",
+        "confirmed decisions verified outcomes and unresolved next actions",
+        "experiments and rejected ideas provisional",
+        "return copy only",
+        "no sending or mailbox action",
+        "text only not an email action",
+        "not an email or messaging action",
+        "organization level capacity and ownership",
+        "too much work in flight and unclear ownership"
+      ]
+    },
+    "production-office": {
+      "mission": "Film, photography, CGI, generative media, editing, color, sound, retouching, media QC and production delivery.",
+      "strong_signals": [
+        "film",
+        "shots",
+        "4k master",
+        "captions",
+        "audio channels",
+        "color grade",
+        "retouch",
+        "storyboard",
+        "comfyui",
+        "music for the film",
+        "dialogue music effects"
+      ],
+      "negative_signals": [
+        "database",
+        "software release",
+        "epub",
+        "sculpture concept",
+        "fabricator questions",
+        "product events",
+        "threat model",
+        "engineering controls",
+        "quality plan",
+        "predictive feature",
+        "dataset target definition",
+        "leakage risk",
+        "evaluation metrics before retraining",
+        "saved projects disappear",
+        "concrete defect report",
+        "application navigation",
+        "actual user tasks before visual redesign",
+        "museum partner brief",
+        "before creative concepts are developed",
+        "cultural and audience problem",
+        "who owns the commissioned",
+        "permissions for reproductions",
+        "sourced rights analysis",
+        "ownership and permissions",
+        "coherent visual direction",
+        "typography imagery composition and references",
+        "before individual assets are produced",
+        "rewrite this professional note",
+        "wording without sending",
+        "responsive interface from the design system",
+        "software deployment pipeline",
+        "environment configuration build steps rollback",
+        "durable decisions and unresolved items",
+        "hypotheses and rejected options out of permanent facts",
+        "application authentication secret storage and authorization",
+        "security controls for the application",
+        "installation documentation photo video views",
+        "artwork master files metadata captions credits"
+      ]
+    },
+    "publishing-office": {
+      "mission": "Books, catalogues, editorial, journalism, EPUB, print, metadata, rights, podcasts and publishing operations.",
+      "strong_signals": [
+        "manuscript",
+        "catalogue goes to press",
+        "epub",
+        "house style",
+        "copy edit",
+        "isbn",
+        "publishing metadata",
+        "quoted text",
+        "podcast episode",
+        "paragraph styles",
+        "heading styles",
+        "approved book design",
+        "full manuscript",
+        "prospective book proposal",
+        "commissioning decision"
+      ],
+      "negative_signals": [
+        "software interface",
+        "product ui",
+        "edit this curatorial text",
+        "curatorial text for precision structure readability",
+        "artist facing essay",
+        "factual uncertainty intact"
+      ]
+    },
+    "shared": {
+      "mission": "Cross-office shared methods and ambiguity-safe Concierge: editing, art writing, brand strategy, communications, marketing, studio finance and routing.",
+      "strong_signals": [
+        "artist statement",
+        "professional introduction email",
+        "exhibition text",
+        "positioning architecture",
+        "naming logic before visual design",
+        "which office",
+        "which agent",
+        "positioning and brand architecture",
+        "before identity work starts",
+        "not enough information",
+        "not enough info",
+        "whether it concerns",
+        "original critical essay",
+        "write critical essay",
+        "have not described the actual problem",
+        "not described the actual problem",
+        "have not described the actual request",
+        "practical studio plan",
+        "studio priorities",
+        "studio tasks owners deadlines",
+        "studio tasks and handoffs",
+        "press plan around my exhibition",
+        "critical essay",
+        "original cultural text",
+        "not copy for a client campaign",
+        "not copy for client campaign",
+        "before anyone designs the identity",
+        "brand positioning differentiation and architecture",
+        "only need the wording",
+        "not an inbox action",
+        "sensitive professional email",
+        "approved proposition and need a launch plan",
+        "launch plan across audience channels partnerships and measurement",
+        "not a client agency account",
+        "next session can resume",
+        "decisions open loops and verified outcomes",
+        "workstream decisions and open loops",
+        "coherent visual direction",
+        "typography imagery composition and references",
+        "before individual assets are produced",
+        "rewrite this professional note",
+        "wording without sending",
+        "brand architecture before visual or verbal identity",
+        "positioning audience differentiation and brand architecture",
+        "edit this curatorial text",
+        "curatorial text for precision structure readability",
+        "durable decisions and unresolved items",
+        "hypotheses and rejected options out of permanent facts",
+        "return a draft only",
+        "draft only and do not perform any inbox action",
+        "improve wording of professional email",
+        "establish positioning differentiation and brand architecture",
+        "before anyone develops the visual identity or voice",
+        "confirmed decisions verified outcomes and unresolved next actions",
+        "experiments and rejected ideas provisional",
+        "independent cultural project",
+        "not a client account",
+        "launch strategy for this independent cultural project",
+        "polish this artist facing essay",
+        "author argument and factual uncertainty intact",
+        "edit cultural essay without changing argument",
+        "strategic foundation before identity execution",
+        "before any identity execution begins",
+        "positioning differentiation brand architecture",
+        "return copy only",
+        "no sending or mailbox action",
+        "professional message for clarity and tone",
+        "text only not an email action",
+        "professional note purpose tone and ask",
+        "not an email or messaging action",
+        "durable decisions verified results and unresolved tasks",
+        "future sessions discarded assumptions",
+        "summarize only durable decisions"
+      ],
+      "negative_signals": [
+        "research current artists and exhibitions",
+        "current artists exhibitions and critical writing",
+        "contemporary art practices",
+        "artists exhibitions and criticism",
+        "sourced art research brief",
+        "artist funding opportunity",
+        "compliant artist submission",
+        "work samples production budget"
+      ]
+    }
+  }
+}

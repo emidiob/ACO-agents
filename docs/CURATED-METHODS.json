@@ -1,0 +1,871 @@
+{
+  "version": "0.6.1",
+  "role_policy": "No new personas. Existing canonical roles receive targeted methods.",
+  "playbooks": {
+    "ARTISTIC-DEVELOPMENT": {
+      "title": "Artistic development: work before opportunities",
+      "roles": [
+        "art_critic",
+        "artist_agent",
+        "artist_revenue_strategist",
+        "creative_orchestrator",
+        "practice_strategist",
+        "studio_chief_of_staff",
+        "studio_manager"
+      ],
+      "sources": [
+        {
+          "title": "Creative Capital Artist Lab",
+          "url": "https://creative-capital.org/artist-resources/professional-development/"
+        },
+        {
+          "title": "NYFA Artist as Entrepreneur",
+          "url": "https://www.nyfa.org/professional-development/artist-as-entrepreneur-program/"
+        }
+      ]
+    },
+    "PEER-CRITIQUE": {
+      "title": "Evidence-led critique and peer dialogue",
+      "roles": [
+        "art_critic",
+        "art_writer",
+        "creative_orchestrator",
+        "curator",
+        "practice_strategist"
+      ],
+      "sources": [
+        {
+          "title": "Artquest resources",
+          "url": "https://artquest.org.uk/"
+        },
+        {
+          "title": "NYFA work-sample review context",
+          "url": "https://www.nyfa.org/professional-development/artist-as-entrepreneur-program/"
+        }
+      ]
+    },
+    "CURATORIAL-PRACTICE": {
+      "title": "Curatorial research, exhibition logic and delivery",
+      "roles": [
+        "art_historian",
+        "art_researcher",
+        "curator",
+        "events_experience_producer",
+        "exhibition_producer",
+        "programme_curator",
+        "registrar_art_logistics",
+        "technical_art_producer"
+      ],
+      "sources": [
+        {
+          "title": "Artquest curating toolkit — reference only, not reproduced",
+          "url": "https://artquest.org.uk/project/the-source/curating-tool-kit-nuts-bolts-staging-exhibition/"
+        },
+        {
+          "title": "OntoExhibit",
+          "url": "https://github.com/iArtHis-Lab/OntoExhibit"
+        }
+      ]
+    },
+    "ARTIST-RELATIONSHIPS": {
+      "title": "Artist representation, studio visits and institutional relationships",
+      "roles": [
+        "art_ecosystem_analyst",
+        "art_publicist",
+        "artist_agent",
+        "collector_relations_manager",
+        "gallery_relations_manager",
+        "institutional_relations_manager",
+        "press_reputation_researcher",
+        "studio_comms_manager"
+      ],
+      "sources": [
+        {
+          "title": "Artquest approaching galleries",
+          "url": "https://artquest.org.uk/how-to-articles/exhibiting-your-work/approaching-galleries/"
+        }
+      ]
+    },
+    "OPPORTUNITIES-AND-RESIDENCIES": {
+      "title": "Residency, public commission and opportunity fit",
+      "roles": [
+        "art_opportunities_scout",
+        "artist_agent",
+        "exhibition_producer",
+        "funding_partnerships_manager",
+        "grants_applications_manager",
+        "practice_strategist"
+      ],
+      "sources": [
+        {
+          "title": "TransArtists checklists",
+          "url": "https://www.transartists.org/en/transartists-checklists"
+        },
+        {
+          "title": "TransArtists database limitations",
+          "url": "https://www.transartists.org/en/transartists-database"
+        },
+        {
+          "title": "Creative Capital opportunity resources",
+          "url": "https://creative-capital.org/artist-resources/"
+        }
+      ]
+    },
+    "ART-PORTFOLIO-AND-WRITING": {
+      "title": "Portfolio sequencing and articulation without invention",
+      "roles": [
+        "art_director",
+        "art_writer",
+        "artist_agent",
+        "communications_editor",
+        "editor",
+        "practice_archivist",
+        "publication_manager"
+      ],
+      "sources": [
+        {
+          "title": "Creative Capital professional-development resource overview",
+          "url": "https://creative-capital.org/artist-resources/professional-development/"
+        },
+        {
+          "title": "NYFA work sample reviews",
+          "url": "https://www.nyfa.org/professional-development/artist-as-entrepreneur-program/"
+        }
+      ]
+    },
+    "ARTISTIC-RESEARCH-AND-SOURCES": {
+      "title": "Artistic research and contemporary-art source desk",
+      "roles": [
+        "art_critic",
+        "art_historian",
+        "art_researcher",
+        "art_writer",
+        "cultural_intelligence_analyst",
+        "curator",
+        "research_director",
+        "research_editor_fact_checker",
+        "studio_research_librarian"
+      ],
+      "sources": [
+        {
+          "title": "Zotero",
+          "url": "https://github.com/zotero/zotero"
+        },
+        {
+          "title": "Tropy",
+          "url": "https://github.com/tropy/tropy"
+        },
+        {
+          "title": "Mirador",
+          "url": "https://github.com/ProjectMirador/mirador"
+        },
+        {
+          "title": "e-flux Journal",
+          "url": "https://www.e-flux.com/journal/"
+        },
+        {
+          "title": "ArtReview",
+          "url": "https://artreview.com/"
+        },
+        {
+          "title": "Frieze",
+          "url": "https://www.frieze.com/"
+        },
+        {
+          "title": "Afterall",
+          "url": "https://www.afterall.org/"
+        }
+      ]
+    },
+    "ART-ARCHIVE-AND-PRESERVATION": {
+      "title": "Proportionate artwork records and preservation",
+      "roles": [
+        "artwork_documentation_manager",
+        "collection_inventory_manager",
+        "digital_preservation_manager",
+        "edition_manager",
+        "fabrication_manager",
+        "practice_archivist",
+        "registrar_art_logistics"
+      ],
+      "sources": [
+        {
+          "title": "Getty vocabularies",
+          "url": "https://www.getty.edu/research/tools/vocabularies/"
+        },
+        {
+          "title": "Spectrum licensing — reference-only",
+          "url": "https://collectionstrust.org.uk/spectrum/spectrum-licensing/"
+        },
+        {
+          "title": "Omeka S",
+          "url": "https://github.com/omeka/omeka-s"
+        }
+      ]
+    },
+    "ARTIST-ECONOMICS": {
+      "title": "Artist income without surrendering the practice",
+      "roles": [
+        "art_sales_director",
+        "artist_revenue_strategist",
+        "collector_relations_manager",
+        "commissions_licensing_manager",
+        "financial_controller",
+        "pricing_margin_analyst",
+        "studio_finance_manager"
+      ],
+      "sources": [
+        {
+          "title": "W.A.G.E. — contextual reference, not universal fees",
+          "url": "https://wageforwork.com/"
+        },
+        {
+          "title": "Artquest",
+          "url": "https://artquest.org.uk/"
+        },
+        {
+          "title": "Creative Capital artist resources",
+          "url": "https://creative-capital.org/artist-resources/"
+        }
+      ]
+    },
+    "BRAND-STRATEGY": {
+      "title": "Brand strategy with evidence and room to change",
+      "roles": [
+        "audience_strategist",
+        "brand_strategist",
+        "client_strategy_director",
+        "commercial_strategy_director",
+        "creative_strategist",
+        "junior_brand_strategist",
+        "research_insights_director",
+        "strategy_director"
+      ],
+      "sources": [
+        {
+          "title": "Brand Toolkit — methodological reference, no bundled content",
+          "url": "https://github.com/jgerton/brand-toolkit"
+        },
+        {
+          "title": "Brand-building skills — catalogue comparison",
+          "url": "https://github.com/arnabbagxd/Brand-building-skills"
+        }
+      ]
+    },
+    "BRAND-NAMING-ARCHITECTURE": {
+      "title": "Naming and multi-brand architecture",
+      "roles": [
+        "brand_guardian",
+        "brand_strategist",
+        "copy_researcher",
+        "copywriter",
+        "organization_director",
+        "verbal_identity_director"
+      ],
+      "sources": [
+        {
+          "title": "Brand-building skills — scope reference",
+          "url": "https://github.com/arnabbagxd/Brand-building-skills"
+        }
+      ]
+    },
+    "BRAND-IDENTITY-SYSTEM": {
+      "title": "Identity as a tested system, not a moodboard",
+      "roles": [
+        "art_director",
+        "brand_guardian",
+        "brand_identity_designer",
+        "design_director",
+        "digital_design_director",
+        "editorial_designer",
+        "junior_designer",
+        "visual_design_critic",
+        "web_typography_layout_specialist"
+      ],
+      "sources": [
+        {
+          "title": "Brand Toolkit — reference",
+          "url": "https://github.com/jgerton/brand-toolkit"
+        },
+        {
+          "title": "W3C accessibility quick reference",
+          "url": "https://www.w3.org/WAI/WCAG22/quickref/"
+        }
+      ]
+    },
+    "SOCIAL-OPERATIONS": {
+      "title": "Social planning, production, publishing and learning",
+      "roles": [
+        "artist_social_media_manager",
+        "communications_operator",
+        "community_manager",
+        "content_director",
+        "creator_partnerships_manager",
+        "marketing_analyst",
+        "social_content_creator",
+        "social_media_manager"
+      ],
+      "sources": [
+        {
+          "title": "Social Media Skills — catalogue/method reference",
+          "url": "https://github.com/social-media-skills/skills"
+        },
+        {
+          "title": "Postiz — optional execution system",
+          "url": "https://github.com/gitroomhq/postiz-app"
+        }
+      ]
+    },
+    "SOCIAL-PLATFORMS": {
+      "title": "Platform-specific editorial lenses",
+      "roles": [
+        "artist_social_media_manager",
+        "community_manager",
+        "content_director",
+        "marketing_analyst",
+        "social_content_creator",
+        "social_media_manager"
+      ],
+      "sources": [
+        {
+          "title": "Social Media Skills — taxonomy reference",
+          "url": "https://github.com/social-media-skills/skills"
+        }
+      ]
+    },
+    "DESIGN-TO-WEB": {
+      "title": "From identity to a real, reviewed website",
+      "roles": [
+        "accessibility_specialist",
+        "accessibility_tester",
+        "cms_content_architect",
+        "creative_frontend_engineer",
+        "design_system_designer",
+        "digital_design_director",
+        "figma_implementation_engineer",
+        "frontend_engineer",
+        "qa_engineer",
+        "senior_frontend_engineer",
+        "visual_design_critic"
+      ],
+      "sources": [
+        {
+          "title": "Radix primitives",
+          "url": "https://github.com/radix-ui/primitives"
+        },
+        {
+          "title": "Storybook",
+          "url": "https://github.com/storybookjs/storybook"
+        },
+        {
+          "title": "Lighthouse",
+          "url": "https://github.com/GoogleChrome/lighthouse"
+        },
+        {
+          "title": "axe-core",
+          "url": "https://github.com/dequelabs/axe-core"
+        },
+        {
+          "title": "W3C accessibility quick reference",
+          "url": "https://www.w3.org/WAI/WCAG22/quickref/"
+        }
+      ]
+    },
+    "PUBLISHING-AND-DOCUMENTS": {
+      "title": "Reliable publishing and document conversion",
+      "roles": [
+        "ebook_accessibility_engineer",
+        "managing_editor",
+        "prepress_specialist",
+        "publication_manager",
+        "publishing_director",
+        "publishing_media_orchestrator",
+        "records_document_controller",
+        "technical_writer",
+        "typesetter"
+      ],
+      "sources": [
+        {
+          "title": "Docling",
+          "url": "https://github.com/docling-project/docling"
+        },
+        {
+          "title": "Pandoc",
+          "url": "https://github.com/jgm/pandoc"
+        },
+        {
+          "title": "Quarto",
+          "url": "https://github.com/quarto-dev/quarto-cli"
+        },
+        {
+          "title": "Paged.js",
+          "url": "https://github.com/pagedjs/pagedjs"
+        }
+      ]
+    },
+    "MEDIA-INTERCHANGE": {
+      "title": "Editorial, image and finishing interoperability",
+      "roles": [
+        "assistant_video_editor",
+        "color_pipeline_engineer",
+        "colorist",
+        "digital_imaging_technician",
+        "media_delivery_qc",
+        "media_pipeline_engineer",
+        "online_editor_conform",
+        "photo_retouch_artist",
+        "video_editor"
+      ],
+      "sources": [
+        {
+          "title": "FFmpeg documentation",
+          "url": "https://ffmpeg.org/ffmpeg.html"
+        },
+        {
+          "title": "OpenTimelineIO",
+          "url": "https://github.com/AcademySoftwareFoundation/OpenTimelineIO"
+        },
+        {
+          "title": "OpenImageIO",
+          "url": "https://github.com/AcademySoftwareFoundation/OpenImageIO"
+        }
+      ]
+    },
+    "VERIFIED-TOOLING": {
+      "title": "Capability-first tools and office integrations",
+      "roles": [
+        "administration_orchestrator",
+        "communications_operator",
+        "context_steward",
+        "devops_engineer",
+        "office_concierge",
+        "programme_delivery_manager",
+        "sales_operations_manager",
+        "software_architect"
+      ],
+      "sources": [
+        {
+          "title": "OpenAI MCP documentation",
+          "url": "https://developers.openai.com/codex/mcp"
+        },
+        {
+          "title": "Twenty",
+          "url": "https://github.com/twentyhq/twenty"
+        },
+        {
+          "title": "Plane",
+          "url": "https://github.com/makeplane/plane"
+        },
+        {
+          "title": "n8n",
+          "url": "https://github.com/n8n-io/n8n"
+        }
+      ]
+    },
+    "QUALITY-AND-EVALUATION": {
+      "title": "Release quality, regression tests and realistic evaluation",
+      "roles": [
+        "code_reviewer",
+        "fact_checker",
+        "qa_engineer",
+        "qa_lead",
+        "release_manager",
+        "security_engineer",
+        "security_reviewer",
+        "skill_evaluation_engineer",
+        "tech_lead"
+      ],
+      "sources": [
+        {
+          "title": "Promptfoo",
+          "url": "https://github.com/promptfoo/promptfoo"
+        },
+        {
+          "title": "Gitleaks",
+          "url": "https://github.com/gitleaks/gitleaks"
+        },
+        {
+          "title": "Semgrep",
+          "url": "https://github.com/semgrep/semgrep"
+        }
+      ]
+    }
+  },
+  "updated_roles": {
+    "accessibility_specialist": [
+      "DESIGN-TO-WEB"
+    ],
+    "accessibility_tester": [
+      "DESIGN-TO-WEB"
+    ],
+    "administration_orchestrator": [
+      "VERIFIED-TOOLING"
+    ],
+    "art_critic": [
+      "ARTISTIC-DEVELOPMENT",
+      "PEER-CRITIQUE",
+      "ARTISTIC-RESEARCH-AND-SOURCES"
+    ],
+    "art_director": [
+      "ART-PORTFOLIO-AND-WRITING",
+      "BRAND-IDENTITY-SYSTEM"
+    ],
+    "art_ecosystem_analyst": [
+      "ARTIST-RELATIONSHIPS"
+    ],
+    "art_historian": [
+      "CURATORIAL-PRACTICE",
+      "ARTISTIC-RESEARCH-AND-SOURCES"
+    ],
+    "art_opportunities_scout": [
+      "OPPORTUNITIES-AND-RESIDENCIES"
+    ],
+    "art_publicist": [
+      "ARTIST-RELATIONSHIPS"
+    ],
+    "art_researcher": [
+      "CURATORIAL-PRACTICE",
+      "ARTISTIC-RESEARCH-AND-SOURCES"
+    ],
+    "art_sales_director": [
+      "ARTIST-ECONOMICS"
+    ],
+    "art_writer": [
+      "PEER-CRITIQUE",
+      "ART-PORTFOLIO-AND-WRITING",
+      "ARTISTIC-RESEARCH-AND-SOURCES"
+    ],
+    "artist_agent": [
+      "ARTISTIC-DEVELOPMENT",
+      "ARTIST-RELATIONSHIPS",
+      "OPPORTUNITIES-AND-RESIDENCIES",
+      "ART-PORTFOLIO-AND-WRITING"
+    ],
+    "artist_revenue_strategist": [
+      "ARTISTIC-DEVELOPMENT",
+      "ARTIST-ECONOMICS"
+    ],
+    "artist_social_media_manager": [
+      "SOCIAL-OPERATIONS",
+      "SOCIAL-PLATFORMS"
+    ],
+    "artwork_documentation_manager": [
+      "ART-ARCHIVE-AND-PRESERVATION"
+    ],
+    "assistant_video_editor": [
+      "MEDIA-INTERCHANGE"
+    ],
+    "audience_strategist": [
+      "BRAND-STRATEGY"
+    ],
+    "brand_guardian": [
+      "BRAND-NAMING-ARCHITECTURE",
+      "BRAND-IDENTITY-SYSTEM"
+    ],
+    "brand_identity_designer": [
+      "BRAND-IDENTITY-SYSTEM"
+    ],
+    "brand_strategist": [
+      "BRAND-STRATEGY",
+      "BRAND-NAMING-ARCHITECTURE"
+    ],
+    "client_strategy_director": [
+      "BRAND-STRATEGY"
+    ],
+    "cms_content_architect": [
+      "DESIGN-TO-WEB"
+    ],
+    "code_reviewer": [
+      "QUALITY-AND-EVALUATION"
+    ],
+    "collection_inventory_manager": [
+      "ART-ARCHIVE-AND-PRESERVATION"
+    ],
+    "collector_relations_manager": [
+      "ARTIST-RELATIONSHIPS",
+      "ARTIST-ECONOMICS"
+    ],
+    "color_pipeline_engineer": [
+      "MEDIA-INTERCHANGE"
+    ],
+    "colorist": [
+      "MEDIA-INTERCHANGE"
+    ],
+    "commercial_strategy_director": [
+      "BRAND-STRATEGY"
+    ],
+    "commissions_licensing_manager": [
+      "ARTIST-ECONOMICS"
+    ],
+    "communications_editor": [
+      "ART-PORTFOLIO-AND-WRITING"
+    ],
+    "communications_operator": [
+      "SOCIAL-OPERATIONS",
+      "VERIFIED-TOOLING"
+    ],
+    "community_manager": [
+      "SOCIAL-OPERATIONS",
+      "SOCIAL-PLATFORMS"
+    ],
+    "content_director": [
+      "SOCIAL-OPERATIONS",
+      "SOCIAL-PLATFORMS"
+    ],
+    "context_steward": [
+      "VERIFIED-TOOLING"
+    ],
+    "copy_researcher": [
+      "BRAND-NAMING-ARCHITECTURE"
+    ],
+    "copywriter": [
+      "BRAND-NAMING-ARCHITECTURE"
+    ],
+    "creative_frontend_engineer": [
+      "DESIGN-TO-WEB"
+    ],
+    "creative_orchestrator": [
+      "ARTISTIC-DEVELOPMENT",
+      "PEER-CRITIQUE"
+    ],
+    "creative_strategist": [
+      "BRAND-STRATEGY"
+    ],
+    "creator_partnerships_manager": [
+      "SOCIAL-OPERATIONS"
+    ],
+    "cultural_intelligence_analyst": [
+      "ARTISTIC-RESEARCH-AND-SOURCES"
+    ],
+    "curator": [
+      "PEER-CRITIQUE",
+      "CURATORIAL-PRACTICE",
+      "ARTISTIC-RESEARCH-AND-SOURCES"
+    ],
+    "design_director": [
+      "BRAND-IDENTITY-SYSTEM"
+    ],
+    "design_system_designer": [
+      "DESIGN-TO-WEB"
+    ],
+    "devops_engineer": [
+      "VERIFIED-TOOLING"
+    ],
+    "digital_design_director": [
+      "BRAND-IDENTITY-SYSTEM",
+      "DESIGN-TO-WEB"
+    ],
+    "digital_imaging_technician": [
+      "MEDIA-INTERCHANGE"
+    ],
+    "digital_preservation_manager": [
+      "ART-ARCHIVE-AND-PRESERVATION"
+    ],
+    "ebook_accessibility_engineer": [
+      "PUBLISHING-AND-DOCUMENTS"
+    ],
+    "edition_manager": [
+      "ART-ARCHIVE-AND-PRESERVATION"
+    ],
+    "editor": [
+      "ART-PORTFOLIO-AND-WRITING"
+    ],
+    "editorial_designer": [
+      "BRAND-IDENTITY-SYSTEM"
+    ],
+    "events_experience_producer": [
+      "CURATORIAL-PRACTICE"
+    ],
+    "exhibition_producer": [
+      "CURATORIAL-PRACTICE",
+      "OPPORTUNITIES-AND-RESIDENCIES"
+    ],
+    "fabrication_manager": [
+      "ART-ARCHIVE-AND-PRESERVATION"
+    ],
+    "fact_checker": [
+      "QUALITY-AND-EVALUATION"
+    ],
+    "figma_implementation_engineer": [
+      "DESIGN-TO-WEB"
+    ],
+    "financial_controller": [
+      "ARTIST-ECONOMICS"
+    ],
+    "frontend_engineer": [
+      "DESIGN-TO-WEB"
+    ],
+    "funding_partnerships_manager": [
+      "OPPORTUNITIES-AND-RESIDENCIES"
+    ],
+    "gallery_relations_manager": [
+      "ARTIST-RELATIONSHIPS"
+    ],
+    "grants_applications_manager": [
+      "OPPORTUNITIES-AND-RESIDENCIES"
+    ],
+    "institutional_relations_manager": [
+      "ARTIST-RELATIONSHIPS"
+    ],
+    "junior_brand_strategist": [
+      "BRAND-STRATEGY"
+    ],
+    "junior_designer": [
+      "BRAND-IDENTITY-SYSTEM"
+    ],
+    "managing_editor": [
+      "PUBLISHING-AND-DOCUMENTS"
+    ],
+    "marketing_analyst": [
+      "SOCIAL-OPERATIONS",
+      "SOCIAL-PLATFORMS"
+    ],
+    "media_delivery_qc": [
+      "MEDIA-INTERCHANGE"
+    ],
+    "media_pipeline_engineer": [
+      "MEDIA-INTERCHANGE"
+    ],
+    "office_concierge": [
+      "VERIFIED-TOOLING"
+    ],
+    "online_editor_conform": [
+      "MEDIA-INTERCHANGE"
+    ],
+    "organization_director": [
+      "BRAND-NAMING-ARCHITECTURE"
+    ],
+    "photo_retouch_artist": [
+      "MEDIA-INTERCHANGE"
+    ],
+    "practice_archivist": [
+      "ART-PORTFOLIO-AND-WRITING",
+      "ART-ARCHIVE-AND-PRESERVATION"
+    ],
+    "practice_strategist": [
+      "ARTISTIC-DEVELOPMENT",
+      "PEER-CRITIQUE",
+      "OPPORTUNITIES-AND-RESIDENCIES"
+    ],
+    "prepress_specialist": [
+      "PUBLISHING-AND-DOCUMENTS"
+    ],
+    "press_reputation_researcher": [
+      "ARTIST-RELATIONSHIPS"
+    ],
+    "pricing_margin_analyst": [
+      "ARTIST-ECONOMICS"
+    ],
+    "programme_curator": [
+      "CURATORIAL-PRACTICE"
+    ],
+    "programme_delivery_manager": [
+      "VERIFIED-TOOLING"
+    ],
+    "publication_manager": [
+      "ART-PORTFOLIO-AND-WRITING",
+      "PUBLISHING-AND-DOCUMENTS"
+    ],
+    "publishing_director": [
+      "PUBLISHING-AND-DOCUMENTS"
+    ],
+    "publishing_media_orchestrator": [
+      "PUBLISHING-AND-DOCUMENTS"
+    ],
+    "qa_engineer": [
+      "DESIGN-TO-WEB",
+      "QUALITY-AND-EVALUATION"
+    ],
+    "qa_lead": [
+      "QUALITY-AND-EVALUATION"
+    ],
+    "records_document_controller": [
+      "PUBLISHING-AND-DOCUMENTS"
+    ],
+    "registrar_art_logistics": [
+      "CURATORIAL-PRACTICE",
+      "ART-ARCHIVE-AND-PRESERVATION"
+    ],
+    "release_manager": [
+      "QUALITY-AND-EVALUATION"
+    ],
+    "research_director": [
+      "ARTISTIC-RESEARCH-AND-SOURCES"
+    ],
+    "research_editor_fact_checker": [
+      "ARTISTIC-RESEARCH-AND-SOURCES"
+    ],
+    "research_insights_director": [
+      "BRAND-STRATEGY"
+    ],
+    "sales_operations_manager": [
+      "VERIFIED-TOOLING"
+    ],
+    "security_engineer": [
+      "QUALITY-AND-EVALUATION"
+    ],
+    "security_reviewer": [
+      "QUALITY-AND-EVALUATION"
+    ],
+    "senior_frontend_engineer": [
+      "DESIGN-TO-WEB"
+    ],
+    "skill_evaluation_engineer": [
+      "QUALITY-AND-EVALUATION"
+    ],
+    "social_content_creator": [
+      "SOCIAL-OPERATIONS",
+      "SOCIAL-PLATFORMS"
+    ],
+    "social_media_manager": [
+      "SOCIAL-OPERATIONS",
+      "SOCIAL-PLATFORMS"
+    ],
+    "software_architect": [
+      "VERIFIED-TOOLING"
+    ],
+    "strategy_director": [
+      "BRAND-STRATEGY"
+    ],
+    "studio_chief_of_staff": [
+      "ARTISTIC-DEVELOPMENT"
+    ],
+    "studio_comms_manager": [
+      "ARTIST-RELATIONSHIPS"
+    ],
+    "studio_finance_manager": [
+      "ARTIST-ECONOMICS"
+    ],
+    "studio_manager": [
+      "ARTISTIC-DEVELOPMENT"
+    ],
+    "studio_research_librarian": [
+      "ARTISTIC-RESEARCH-AND-SOURCES"
+    ],
+    "tech_lead": [
+      "QUALITY-AND-EVALUATION"
+    ],
+    "technical_art_producer": [
+      "CURATORIAL-PRACTICE"
+    ],
+    "technical_writer": [
+      "PUBLISHING-AND-DOCUMENTS"
+    ],
+    "typesetter": [
+      "PUBLISHING-AND-DOCUMENTS"
+    ],
+    "verbal_identity_director": [
+      "BRAND-NAMING-ARCHITECTURE"
+    ],
+    "video_editor": [
+      "MEDIA-INTERCHANGE"
+    ],
+    "visual_design_critic": [
+      "BRAND-IDENTITY-SYSTEM",
+      "DESIGN-TO-WEB"
+    ],
+    "web_typography_layout_specialist": [
+      "BRAND-IDENTITY-SYSTEM"
+    ]
+  }
+}

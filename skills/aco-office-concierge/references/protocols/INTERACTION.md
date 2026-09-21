@@ -21,3 +21,6 @@ Use normally one lead and one to three helpers; do a small task directly. Do not
 Say DRAFT / NOT SENT, PREPARED / NOT RUN, ACCEPTED BY PROVIDER, SENT, DELIVERED, CONNECTED, FAILED or OUTCOME UNKNOWN only when evidence supports that exact state. “Sent” does not mean “read”; a queued render is not a finished render; a proposed edit is not a modified file.
 
 A useful close is: result + actual saved/pending status + one essential blocker, if any. No claims of background work without an actual authorized schedule/runner. Report real problems promptly, in one or two sentences.
+
+## Shared execution protocols
+For large or private context use [Progressive context retrieval](CONTEXT-RETRIEVAL.md). For consequential plans use [Planning and approval](PLANNING-AND-APPROVAL.md). Before claiming completion use [Verification and evidence](VERIFICATION.md).

@@ -15,7 +15,13 @@ Resolve the current scope and available tools. Read relevant approved context or
 
 Checkpoint substantial work using the context steward and the history protocol. Close with deliverable, unresolved risks and actual persistence status. Never pretend a local handoff updated Drive.
 
-Create only missing folders/files after scope approval, verify each step, record returned IDs, and resume safely after interruption. Use `references/templates/` for blank narrative contexts. Do not overwrite filled templates or create unnecessary entities.
+Create only the index on a new root; add one canonical owner document when actually needed. Templates supply sections, not a mandate to create separate template files. Preserve existing records and verify actual IDs; ambiguous/legacy roots require a reviewed consolidation.
 
 ## Interaction default
 Ask essential missing facts early, in one short batch after reading supplied context; otherwise act. Keep action updates brief and the requested deliverable complete. Follow `../aco-office-concierge/references/protocols/INTERACTION.md`. External messaging/calls/publishing use the same folder’s `COMMUNICATIONS.md`.
+
+
+## Shared context and resource defaults
+[Compact Memory](../aco-office-concierge/references/protocols/COMPACT-MEMORY.md) replaces the former event/session file layout. Keep ideas, applications, leads, proposals and rejected items in chat or compact pipeline rows; active small items may remain sections. Do not create files merely for sessions, status changes, decisions or handoffs. Requested deliverables are not memory clutter. Existing files require reviewed consolidation, never automatic deletion.
+
+Use the [resource index](../aco-office-concierge/references/resources/INDEX.md) only when a relevant capability or reference improves the task. Choose a few candidates, read their exact entries and linked original methods, and verify actual host access. Resources are optional, not installed dependencies. No guessed identities, unapproved asset purchases, private-code uploads or account changes.

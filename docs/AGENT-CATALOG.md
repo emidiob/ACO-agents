@@ -1,392 +1,410 @@
-# ACO v0.4.3 — All 349 Agents
+# ACO — visual agent catalogue
 
-## 🎨 Artist Office — 34
+Version 0.7.0 · 363 canonical roles · 16 entry-point skills.
 
-- ⚖️ **Art Contracts Rights Advisor** — `art_contracts_rights_advisor`
-- 🖼️ **Art Critic** — `art_critic`
-- 🔎 **Art Ecosystem Analyst** — `art_ecosystem_analyst`
-- 🖼️ **Art Historian** — `art_historian`
-- 🎯 **Art Marketing Director** — `art_marketing_director`
-- 🎨 **Art Opportunities Scout** — `art_opportunities_scout`
-- 📣 **Art Publicist** — `art_publicist`
-- 🔎 **Art Researcher** — `art_researcher`
-- 🎯 **Art Sales Director** — `art_sales_director`
-- 🎨 **Artist Agent** — `artist_agent`
-- ♟️ **Artist Revenue Strategist** — `artist_revenue_strategist`
-- 🗂️ **Artist Social Media Manager** — `artist_social_media_manager`
-- 🗂️ **Artwork Documentation Manager** — `artwork_documentation_manager`
-- 🗂️ **Collection Inventory Manager** — `collection_inventory_manager`
-- 🗂️ **Collector Relations Manager** — `collector_relations_manager`
-- 🗂️ **Commissions Licensing Manager** — `commissions_licensing_manager`
-- 🧭 **Creative Orchestrator** — `creative_orchestrator`
-- 🖼️ **Curator** — `curator`
-- 🗂️ **Digital Preservation Manager** — `digital_preservation_manager`
-- 🗂️ **Edition Manager** — `edition_manager`
-- 🎬 **Exhibition Producer** — `exhibition_producer`
-- 🗂️ **Fabrication Manager** — `fabrication_manager`
-- 🗂️ **Gallery Relations Manager** — `gallery_relations_manager`
-- 🗂️ **Grants Applications Manager** — `grants_applications_manager`
-- 🗂️ **Institutional Relations Manager** — `institutional_relations_manager`
-- 🎨 **Practice Archivist** — `practice_archivist`
-- ♟️ **Practice Strategist** — `practice_strategist`
-- 🔎 **Press Reputation Researcher** — `press_reputation_researcher`
-- 🗂️ **Publication Manager** — `publication_manager`
-- 🎨 **Registrar Art Logistics** — `registrar_art_logistics`
-- 🎨 **Studio Chief Of Staff** — `studio_chief_of_staff`
-- 🗂️ **Studio Comms Manager** — `studio_comms_manager`
-- 🎨 **Studio Research Librarian** — `studio_research_librarian`
-- 🎬 **Technical Art Producer** — `technical_art_producer`
+Roles are reusable methods, not constantly running employees. Usually brief the Concierge rather than choosing a large team.
 
-## 🏛️ Organization Office — 33
+## 🎨 artist-office — 34
 
-- 🎯 **Account Director** — `account_director`
-- 🎯 **Business Development Director** — `business_development_director`
-- 🎯 **Client Strategy Director** — `client_strategy_director`
-- 🎯 **Commercial Strategy Director** — `commercial_strategy_director`
-- ✂️ **Commissioning Editor** — `commissioning_editor`
-- 🎯 **Communications Pr Director** — `communications_pr_director`
-- ✂️ **Community Editor** — `community_editor`
-- 🗂️ **Contracts Ip Manager** — `contracts_ip_manager`
-- 🎯 **Creative Director** — `creative_director`
-- 🏛️ **Creative Technologist** — `creative_technologist`
-- 🔎 **Cultural Intelligence Analyst** — `cultural_intelligence_analyst`
-- 🔎 **Data Insights Analyst** — `data_insights_analyst`
-- 🗂️ **Digital Product Manager** — `digital_product_manager`
-- 🎬 **Events Experience Producer** — `events_experience_producer`
-- 🎬 **Executive Producer** — `executive_producer`
-- 🗂️ **Funding Partnerships Manager** — `funding_partnerships_manager`
-- 🏛️ **Impact Evaluation** — `impact_evaluation`
-- 🛠️ **Knowledge Architect** — `knowledge_architect`
-- 🏛️ **Network Mapper** — `network_mapper`
-- 🎯 **Operations Director** — `operations_director`
-- 🎯 **Organization Director** — `organization_director`
-- 🧭 **Organization Orchestrator** — `organization_orchestrator`
-- 🎯 **Partnerships Director** — `partnerships_director`
-- 🎯 **Product Experience Director** — `product_experience_director`
-- 🖼️ **Programme Curator** — `programme_curator`
-- 🎯 **Proposal Pitch Director** — `proposal_pitch_director`
-- 🎯 **Publishing Director** — `publishing_director`
-- 🎯 **Research Director** — `research_director`
-- ✂️ **Research Editor Fact Checker** — `research_editor_fact_checker`
-- ♟️ **Revenue Innovation Strategist** — `revenue_innovation_strategist`
-- 🎯 **Sponsorship Director** — `sponsorship_director`
-- 🗂️ **Talent Contributors Manager** — `talent_contributors_manager`
-- 🎨 **Ux Service Designer** — `ux_service_designer`
+- 🎨 **Art Contracts Rights Advisor** — [`art_contracts_rights_advisor`](../skills/aco-artist-office/references/agents/art-contracts-rights-advisor.md)
+- 🧪 **Art Critic** — [`art_critic`](../skills/aco-artist-office/references/agents/art-critic.md)
+- 🎨 **Art Ecosystem Analyst** — [`art_ecosystem_analyst`](../skills/aco-artist-office/references/agents/art-ecosystem-analyst.md)
+- 🎨 **Art Historian** — [`art_historian`](../skills/aco-artist-office/references/agents/art-historian.md)
+- 🎨 **Art Marketing Director** — [`art_marketing_director`](../skills/aco-artist-office/references/agents/art-marketing-director.md)
+- 🎨 **Art Opportunities Scout** — [`art_opportunities_scout`](../skills/aco-artist-office/references/agents/art-opportunities-scout.md)
+- 🎨 **Art Publicist** — [`art_publicist`](../skills/aco-artist-office/references/agents/art-publicist.md)
+- 🎨 **Art Researcher** — [`art_researcher`](../skills/aco-artist-office/references/agents/art-researcher.md)
+- 🎨 **Art Sales Director** — [`art_sales_director`](../skills/aco-artist-office/references/agents/art-sales-director.md)
+- 🎨 **Artist Agent** — [`artist_agent`](../skills/aco-artist-office/references/agents/artist-agent.md)
+- 🎨 **Artist Revenue Strategist** — [`artist_revenue_strategist`](../skills/aco-artist-office/references/agents/artist-revenue-strategist.md)
+- 🎨 **Artist Social Media Manager** — [`artist_social_media_manager`](../skills/aco-artist-office/references/agents/artist-social-media-manager.md)
+- 🎨 **Artwork Documentation Manager** — [`artwork_documentation_manager`](../skills/aco-artist-office/references/agents/artwork-documentation-manager.md)
+- 🎨 **Collection Inventory Manager** — [`collection_inventory_manager`](../skills/aco-artist-office/references/agents/collection-inventory-manager.md)
+- 🎨 **Collector Relations Manager** — [`collector_relations_manager`](../skills/aco-artist-office/references/agents/collector-relations-manager.md)
+- 🎨 **Commissions Licensing Manager** — [`commissions_licensing_manager`](../skills/aco-artist-office/references/agents/commissions-licensing-manager.md)
+- 🎨 **Creative Orchestrator** — [`creative_orchestrator`](../skills/aco-artist-office/references/agents/creative-orchestrator.md)
+- 🎨 **Curator** — [`curator`](../skills/aco-artist-office/references/agents/curator.md)
+- 🎨 **Digital Preservation Manager** — [`digital_preservation_manager`](../skills/aco-artist-office/references/agents/digital-preservation-manager.md)
+- 🎨 **Edition Manager** — [`edition_manager`](../skills/aco-artist-office/references/agents/edition-manager.md)
+- 🎨 **Exhibition Producer** — [`exhibition_producer`](../skills/aco-artist-office/references/agents/exhibition-producer.md)
+- 🎨 **Fabrication Manager** — [`fabrication_manager`](../skills/aco-artist-office/references/agents/fabrication-manager.md)
+- 🎨 **Gallery Relations Manager** — [`gallery_relations_manager`](../skills/aco-artist-office/references/agents/gallery-relations-manager.md)
+- 🎨 **Grants Applications Manager** — [`grants_applications_manager`](../skills/aco-artist-office/references/agents/grants-applications-manager.md)
+- 🎨 **Institutional Relations Manager** — [`institutional_relations_manager`](../skills/aco-artist-office/references/agents/institutional-relations-manager.md)
+- 🎨 **Practice Archivist** — [`practice_archivist`](../skills/aco-artist-office/references/agents/practice-archivist.md)
+- 🎨 **Practice Strategist** — [`practice_strategist`](../skills/aco-artist-office/references/agents/practice-strategist.md)
+- 🎨 **Press Reputation Researcher** — [`press_reputation_researcher`](../skills/aco-artist-office/references/agents/press-reputation-researcher.md)
+- 🎨 **Publication Manager** — [`publication_manager`](../skills/aco-artist-office/references/agents/publication-manager.md)
+- 🎨 **Registrar Art Logistics** — [`registrar_art_logistics`](../skills/aco-artist-office/references/agents/registrar-art-logistics.md)
+- 🎨 **Studio Chief Of Staff** — [`studio_chief_of_staff`](../skills/aco-artist-office/references/agents/studio-chief-of-staff.md)
+- 🎨 **Studio Comms Manager** — [`studio_comms_manager`](../skills/aco-artist-office/references/agents/studio-comms-manager.md)
+- 🎨 **Studio Research Librarian** — [`studio_research_librarian`](../skills/aco-artist-office/references/agents/studio-research-librarian.md)
+- 🎨 **Technical Art Producer** — [`technical_art_producer`](../skills/aco-artist-office/references/agents/technical-art-producer.md)
 
-## 🎯 Agency Office — 55
+## 🏛️ organization-office — 33
 
-- 🧭 **Agency Orchestrator** — `agency_orchestrator`
-- 🗂️ **Asset Manager** — `asset_manager`
-- ♟️ **Audience Strategist** — `audience_strategist`
-- 🎯 **Brand Guardian** — `brand_guardian`
-- 🎨 **Brand Identity Designer** — `brand_identity_designer`
-- 🗂️ **Business Affairs Manager** — `business_affairs_manager`
-- ♟️ **Campaign Strategist** — `campaign_strategist`
-- 🔎 **Casting Researcher** — `casting_researcher`
-- 🎯 **Cgi Vfx Supervisor** — `cgi_vfx_supervisor`
-- 🗂️ **Community Manager** — `community_manager`
-- 🎯 **Content Director** — `content_director`
-- 🔎 **Content Researcher** — `content_researcher`
-- 🔎 **Copy Researcher** — `copy_researcher`
-- ✍️ **Copywriter** — `copywriter`
-- ♟️ **Creative Strategist** — `creative_strategist`
-- 🎯 **Creative Technologist Prototyper** — `creative_technologist_prototyper`
-- 🗂️ **Creator Partnerships Manager** — `creator_partnerships_manager`
-- ♟️ **Crm Lifecycle Strategist** — `crm_lifecycle_strategist`
-- ♟️ **Cultural Strategist** — `cultural_strategist`
-- 🎯 **Design Director** — `design_director`
-- 🔎 **Design Researcher** — `design_researcher`
-- 🎯 **Digital Design Director** — `digital_design_director`
-- 🎯 **Fact Checker** — `fact_checker`
-- 🎬 **Film Producer** — `film_producer`
-- 🛠️ **Frontend Prototyper** — `frontend_prototyper`
-- 🎬 **Integrated Producer** — `integrated_producer`
-- 🎯 **Junior Art Director** — `junior_art_director`
-- ♟️ **Junior Brand Strategist** — `junior_brand_strategist`
-- ✍️ **Junior Copywriter** — `junior_copywriter`
-- 🎨 **Junior Designer** — `junior_designer`
-- 🎯 **Junior Media Planner** — `junior_media_planner`
-- 🎬 **Junior Producer** — `junior_producer`
-- 🔎 **Location Researcher** — `location_researcher`
-- 🔎 **Marketing Analyst** — `marketing_analyst`
-- 🎯 **Media Strategy Planner** — `media_strategy_planner`
-- 🎯 **Motion Design Director** — `motion_design_director`
-- ♟️ **Organic Discovery Strategist** — `organic_discovery_strategist`
-- 🗂️ **Performance Marketing Manager** — `performance_marketing_manager`
-- 🎬 **Photography Producer** — `photography_producer`
-- 🎬 **Postproduction Coordinator** — `postproduction_coordinator`
-- 🎬 **Postproduction Supervisor** — `postproduction_supervisor`
-- 🎨 **Presentation Designer** — `presentation_designer`
-- 🎬 **Production Coordinator** — `production_coordinator`
-- 🎨 **Production Designer** — `production_designer`
-- 📋 **Project Coordinator** — `project_coordinator`
-- 🗂️ **Project Manager** — `project_manager`
-- 🎯 **Research Insights Director** — `research_insights_director`
-- 🔎 **Seo Content Researcher** — `seo_content_researcher`
-- 📱 **Social Content Creator** — `social_content_creator`
-- 🗂️ **Social Media Manager** — `social_media_manager`
-- 🎯 **Strategy Director** — `strategy_director`
-- 📋 **Traffic Coordinator** — `traffic_coordinator`
-- 🗂️ **Traffic Resource Manager** — `traffic_resource_manager`
-- 🎯 **Verbal Identity Director** — `verbal_identity_director`
-- 🔎 **Visual Researcher** — `visual_researcher`
+- 🏛️ **Account Director** — [`account_director`](../skills/aco-organization-office/references/agents/account-director.md)
+- 🏛️ **Business Development Director** — [`business_development_director`](../skills/aco-organization-office/references/agents/business-development-director.md)
+- 🏛️ **Client Strategy Director** — [`client_strategy_director`](../skills/aco-organization-office/references/agents/client-strategy-director.md)
+- 🏛️ **Commercial Strategy Director** — [`commercial_strategy_director`](../skills/aco-organization-office/references/agents/commercial-strategy-director.md)
+- ✍️ **Commissioning Editor** — [`commissioning_editor`](../skills/aco-organization-office/references/agents/commissioning-editor.md)
+- 🏛️ **Communications Pr Director** — [`communications_pr_director`](../skills/aco-organization-office/references/agents/communications-pr-director.md)
+- ✍️ **Community Editor** — [`community_editor`](../skills/aco-organization-office/references/agents/community-editor.md)
+- 🏛️ **Contracts Ip Manager** — [`contracts_ip_manager`](../skills/aco-organization-office/references/agents/contracts-ip-manager.md)
+- 🏛️ **Creative Director** — [`creative_director`](../skills/aco-organization-office/references/agents/creative-director.md)
+- 🏛️ **Creative Technologist** — [`creative_technologist`](../skills/aco-organization-office/references/agents/creative-technologist.md)
+- 🏛️ **Cultural Intelligence Analyst** — [`cultural_intelligence_analyst`](../skills/aco-organization-office/references/agents/cultural-intelligence-analyst.md)
+- 🏛️ **Data Insights Analyst** — [`data_insights_analyst`](../skills/aco-organization-office/references/agents/data-insights-analyst.md)
+- 🏛️ **Digital Product Manager** — [`digital_product_manager`](../skills/aco-organization-office/references/agents/digital-product-manager.md)
+- 🏛️ **Events Experience Producer** — [`events_experience_producer`](../skills/aco-organization-office/references/agents/events-experience-producer.md)
+- 🏛️ **Executive Producer** — [`executive_producer`](../skills/aco-organization-office/references/agents/executive-producer.md)
+- 🏛️ **Funding Partnerships Manager** — [`funding_partnerships_manager`](../skills/aco-organization-office/references/agents/funding-partnerships-manager.md)
+- 🧪 **Impact Evaluation** — [`impact_evaluation`](../skills/aco-organization-office/references/agents/impact-evaluation.md)
+- 🏛️ **Knowledge Architect** — [`knowledge_architect`](../skills/aco-organization-office/references/agents/knowledge-architect.md)
+- 🏛️ **Network Mapper** — [`network_mapper`](../skills/aco-organization-office/references/agents/network-mapper.md)
+- 🏛️ **Operations Director** — [`operations_director`](../skills/aco-organization-office/references/agents/operations-director.md)
+- 🏛️ **Organization Director** — [`organization_director`](../skills/aco-organization-office/references/agents/organization-director.md)
+- 🏛️ **Organization Orchestrator** — [`organization_orchestrator`](../skills/aco-organization-office/references/agents/organization-orchestrator.md)
+- 🏛️ **Partnerships Director** — [`partnerships_director`](../skills/aco-organization-office/references/agents/partnerships-director.md)
+- 🏛️ **Product Experience Director** — [`product_experience_director`](../skills/aco-organization-office/references/agents/product-experience-director.md)
+- 🏛️ **Programme Curator** — [`programme_curator`](../skills/aco-organization-office/references/agents/programme-curator.md)
+- 🏛️ **Proposal Pitch Director** — [`proposal_pitch_director`](../skills/aco-organization-office/references/agents/proposal-pitch-director.md)
+- 🏛️ **Publishing Director** — [`publishing_director`](../skills/aco-organization-office/references/agents/publishing-director.md)
+- 🏛️ **Research Director** — [`research_director`](../skills/aco-organization-office/references/agents/research-director.md)
+- ✍️ **Research Editor Fact Checker** — [`research_editor_fact_checker`](../skills/aco-organization-office/references/agents/research-editor-fact-checker.md)
+- 🏛️ **Revenue Innovation Strategist** — [`revenue_innovation_strategist`](../skills/aco-organization-office/references/agents/revenue-innovation-strategist.md)
+- 🏛️ **Sponsorship Director** — [`sponsorship_director`](../skills/aco-organization-office/references/agents/sponsorship-director.md)
+- 🏛️ **Talent Contributors Manager** — [`talent_contributors_manager`](../skills/aco-organization-office/references/agents/talent-contributors-manager.md)
+- 🏛️ **Ux Service Designer** — [`ux_service_designer`](../skills/aco-organization-office/references/agents/ux-service-designer.md)
 
-## 💻 Product Office — 53
+## 🎯 agency-office — 58
 
-- 💻 **Accessibility Specialist** — `accessibility_specialist`
-- 💻 **Accessibility Tester** — `accessibility_tester`
-- 🛠️ **Ai Engineer** — `ai_engineer`
-- 🛠️ **Ai Product Engineer** — `ai_product_engineer`
-- 🛠️ **Api Integration Engineer** — `api_integration_engineer`
-- 🔎 **Api Researcher** — `api_researcher`
-- 🛠️ **Automation Integration Engineer** — `automation_integration_engineer`
-- 🛠️ **Backend Engineer** — `backend_engineer`
-- 💻 **Bug Investigator** — `bug_investigator`
-- 🔎 **Business Analyst** — `business_analyst`
-- 🛠️ **Cloud Architect** — `cloud_architect`
-- 💻 **Code Reviewer** — `code_reviewer`
-- 🛠️ **Data Engineer** — `data_engineer`
-- 💻 **Data Scientist** — `data_scientist`
-- 🛠️ **Database Engineer** — `database_engineer`
-- 🔎 **Dependency Researcher** — `dependency_researcher`
-- 🎨 **Design System Designer** — `design_system_designer`
-- 🛠️ **Devops Engineer** — `devops_engineer`
-- ✍️ **Documentation Writer** — `documentation_writer`
-- 🛠️ **Frontend Engineer** — `frontend_engineer`
-- 🛠️ **Fullstack Engineer** — `fullstack_engineer`
-- 🛠️ **Information Architect** — `information_architect`
-- 🎨 **Interaction Designer** — `interaction_designer`
-- 🛠️ **Junior Developer** — `junior_developer`
-- 🛠️ **Llm Engineer** — `llm_engineer`
-- 💻 **Mcp Integration Reviewer** — `mcp_integration_reviewer`
-- 💻 **Migration Specialist** — `migration_specialist`
-- 🛠️ **Ml Ops Engineer** — `ml_ops_engineer`
-- 🛠️ **Mobile Engineer** — `mobile_engineer`
-- 🛠️ **Performance Engineer** — `performance_engineer`
-- 🔎 **Product Analyst** — `product_analyst`
-- 🎨 **Product Designer** — `product_designer`
-- 🎯 **Product Director** — `product_director`
-- 🗂️ **Product Manager** — `product_manager`
-- 🔎 **Product Researcher** — `product_researcher`
-- 🧭 **Product Software Orchestrator** — `product_software_orchestrator`
-- 🛠️ **Qa Engineer** — `qa_engineer`
-- 💻 **Qa Lead** — `qa_lead`
-- 🗂️ **Release Manager** — `release_manager`
-- 🛠️ **Security Engineer** — `security_engineer`
-- 💻 **Security Reviewer** — `security_reviewer`
-- 🛠️ **Senior Backend Engineer** — `senior_backend_engineer`
-- 🛠️ **Senior Frontend Engineer** — `senior_frontend_engineer`
-- 🛠️ **Software Architect** — `software_architect`
-- 🛠️ **Sre Engineer** — `sre_engineer`
-- 💻 **Tech Lead** — `tech_lead`
-- 🔎 **Technical Researcher** — `technical_researcher`
-- ✍️ **Technical Writer** — `technical_writer`
-- 🛠️ **Test Automation Engineer** — `test_automation_engineer`
-- ✍️ **Test Writer** — `test_writer`
-- 💻 **Ui Prototyper** — `ui_prototyper`
-- 💻 **Ux Lead** — `ux_lead`
-- 🔎 **Ux Researcher** — `ux_researcher`
+- 🎯 **Agency Orchestrator** — [`agency_orchestrator`](../skills/aco-agency-office/references/agents/agency-orchestrator.md)
+- 🎯 **Asset Manager** — [`asset_manager`](../skills/aco-agency-office/references/agents/asset-manager.md)
+- 🎯 **Audience Strategist** — [`audience_strategist`](../skills/aco-agency-office/references/agents/audience-strategist.md)
+- 🎯 **Brand Guardian** — [`brand_guardian`](../skills/aco-agency-office/references/agents/brand-guardian.md)
+- 🎯 **Brand Identity Designer** — [`brand_identity_designer`](../skills/aco-agency-office/references/agents/brand-identity-designer.md)
+- 🎯 **Business Affairs Manager** — [`business_affairs_manager`](../skills/aco-agency-office/references/agents/business-affairs-manager.md)
+- 🎯 **Campaign Strategist** — [`campaign_strategist`](../skills/aco-agency-office/references/agents/campaign-strategist.md)
+- 🎯 **Casting Researcher** — [`casting_researcher`](../skills/aco-agency-office/references/agents/casting-researcher.md)
+- 🎯 **Cgi Vfx Supervisor** — [`cgi_vfx_supervisor`](../skills/aco-agency-office/references/agents/cgi-vfx-supervisor.md)
+- 🎯 **Community Manager** — [`community_manager`](../skills/aco-agency-office/references/agents/community-manager.md)
+- 🎯 **Content Director** — [`content_director`](../skills/aco-agency-office/references/agents/content-director.md)
+- 🎯 **Content Researcher** — [`content_researcher`](../skills/aco-agency-office/references/agents/content-researcher.md)
+- 🎯 **Conversion Experiment Designer** — [`conversion_experiment_designer`](../skills/aco-agency-office/references/agents/conversion-experiment-designer.md)
+- 🎯 **Copy Researcher** — [`copy_researcher`](../skills/aco-agency-office/references/agents/copy-researcher.md)
+- ✍️ **Copywriter** — [`copywriter`](../skills/aco-agency-office/references/agents/copywriter.md)
+- 🎯 **Creative Strategist** — [`creative_strategist`](../skills/aco-agency-office/references/agents/creative-strategist.md)
+- 🎯 **Creative Technologist Prototyper** — [`creative_technologist_prototyper`](../skills/aco-agency-office/references/agents/creative-technologist-prototyper.md)
+- 🎯 **Creator Partnerships Manager** — [`creator_partnerships_manager`](../skills/aco-agency-office/references/agents/creator-partnerships-manager.md)
+- 🎯 **Crm Lifecycle Strategist** — [`crm_lifecycle_strategist`](../skills/aco-agency-office/references/agents/crm-lifecycle-strategist.md)
+- 🎯 **Cultural Strategist** — [`cultural_strategist`](../skills/aco-agency-office/references/agents/cultural-strategist.md)
+- 🎯 **Design Director** — [`design_director`](../skills/aco-agency-office/references/agents/design-director.md)
+- 🎯 **Design Researcher** — [`design_researcher`](../skills/aco-agency-office/references/agents/design-researcher.md)
+- 🎯 **Digital Design Director** — [`digital_design_director`](../skills/aco-agency-office/references/agents/digital-design-director.md)
+- 🎯 **Fact Checker** — [`fact_checker`](../skills/aco-agency-office/references/agents/fact-checker.md)
+- 🎯 **Film Producer** — [`film_producer`](../skills/aco-agency-office/references/agents/film-producer.md)
+- 🎯 **Frontend Prototyper** — [`frontend_prototyper`](../skills/aco-agency-office/references/agents/frontend-prototyper.md)
+- 🎯 **Integrated Producer** — [`integrated_producer`](../skills/aco-agency-office/references/agents/integrated-producer.md)
+- 🎯 **Junior Art Director** — [`junior_art_director`](../skills/aco-agency-office/references/agents/junior-art-director.md)
+- 🎯 **Junior Brand Strategist** — [`junior_brand_strategist`](../skills/aco-agency-office/references/agents/junior-brand-strategist.md)
+- ✍️ **Junior Copywriter** — [`junior_copywriter`](../skills/aco-agency-office/references/agents/junior-copywriter.md)
+- 🎯 **Junior Designer** — [`junior_designer`](../skills/aco-agency-office/references/agents/junior-designer.md)
+- 🎯 **Junior Media Planner** — [`junior_media_planner`](../skills/aco-agency-office/references/agents/junior-media-planner.md)
+- 🎯 **Junior Producer** — [`junior_producer`](../skills/aco-agency-office/references/agents/junior-producer.md)
+- 🎯 **Location Researcher** — [`location_researcher`](../skills/aco-agency-office/references/agents/location-researcher.md)
+- 🎯 **Marketing Analyst** — [`marketing_analyst`](../skills/aco-agency-office/references/agents/marketing-analyst.md)
+- 🎯 **Media Strategy Planner** — [`media_strategy_planner`](../skills/aco-agency-office/references/agents/media-strategy-planner.md)
+- 🎯 **Motion Design Director** — [`motion_design_director`](../skills/aco-agency-office/references/agents/motion-design-director.md)
+- 🎯 **Organic Discovery Strategist** — [`organic_discovery_strategist`](../skills/aco-agency-office/references/agents/organic-discovery-strategist.md)
+- 🎯 **Performance Marketing Manager** — [`performance_marketing_manager`](../skills/aco-agency-office/references/agents/performance-marketing-manager.md)
+- 🎯 **Photography Producer** — [`photography_producer`](../skills/aco-agency-office/references/agents/photography-producer.md)
+- 🎯 **Postproduction Coordinator** — [`postproduction_coordinator`](../skills/aco-agency-office/references/agents/postproduction-coordinator.md)
+- 🎯 **Postproduction Supervisor** — [`postproduction_supervisor`](../skills/aco-agency-office/references/agents/postproduction-supervisor.md)
+- 🎯 **Presentation Designer** — [`presentation_designer`](../skills/aco-agency-office/references/agents/presentation-designer.md)
+- 🎯 **Production Coordinator** — [`production_coordinator`](../skills/aco-agency-office/references/agents/production-coordinator.md)
+- 🎯 **Production Designer** — [`production_designer`](../skills/aco-agency-office/references/agents/production-designer.md)
+- 🎯 **Project Coordinator** — [`project_coordinator`](../skills/aco-agency-office/references/agents/project-coordinator.md)
+- 🎯 **Project Manager** — [`project_manager`](../skills/aco-agency-office/references/agents/project-manager.md)
+- 🎯 **Research Insights Director** — [`research_insights_director`](../skills/aco-agency-office/references/agents/research-insights-director.md)
+- 🎯 **Seo Content Researcher** — [`seo_content_researcher`](../skills/aco-agency-office/references/agents/seo-content-researcher.md)
+- 🎯 **Social Content Creator** — [`social_content_creator`](../skills/aco-agency-office/references/agents/social-content-creator.md)
+- 🎯 **Social Media Manager** — [`social_media_manager`](../skills/aco-agency-office/references/agents/social-media-manager.md)
+- 🎯 **Strategy Director** — [`strategy_director`](../skills/aco-agency-office/references/agents/strategy-director.md)
+- 🎯 **Traffic Coordinator** — [`traffic_coordinator`](../skills/aco-agency-office/references/agents/traffic-coordinator.md)
+- 🎯 **Traffic Resource Manager** — [`traffic_resource_manager`](../skills/aco-agency-office/references/agents/traffic-resource-manager.md)
+- 🎯 **Verbal Identity Director** — [`verbal_identity_director`](../skills/aco-agency-office/references/agents/verbal-identity-director.md)
+- 🧪 **Visual Design Critic** — [`visual_design_critic`](../skills/aco-agency-office/references/agents/visual-design-critic.md)
+- 🎯 **Visual Researcher** — [`visual_researcher`](../skills/aco-agency-office/references/agents/visual-researcher.md)
+- 🎯 **Web Typography Layout Specialist** — [`web_typography_layout_specialist`](../skills/aco-agency-office/references/agents/web-typography-layout-specialist.md)
 
-## ⚖️ Legal Office — 28
+## 💻 product-office — 58
 
-- ⚖️ **Ai Technology Law Advisor** — `ai_technology_law_advisor`
-- ⚖️ **Claims Correspondence Drafter** — `claims_correspondence_drafter`
-- ⚖️ **Commercial Contracts Advisor** — `commercial_contracts_advisor`
-- ⚖️ **Consumer Advertising Compliance Advisor** — `consumer_advertising_compliance_advisor`
-- ⚖️ **Contract Drafter** — `contract_drafter`
-- ⚖️ **Contract Negotiation Advisor** — `contract_negotiation_advisor`
-- ⚖️ **Contract Reviewer** — `contract_reviewer`
-- ⚖️ **Corporate Governance Advisor** — `corporate_governance_advisor`
-- ⚖️ **Dispute Prevention Advisor** — `dispute_prevention_advisor`
-- ⚖️ **Document Review Specialist** — `document_review_specialist`
-- ⚖️ **Employment Labor Advisor** — `employment_labor_advisor`
-- ⚖️ **Independent Contractor Advisor** — `independent_contractor_advisor`
-- 🔎 **International Contracts Researcher** — `international_contracts_researcher`
-- ⚖️ **Ip Copyright Advisor** — `ip_copyright_advisor`
-- 🔎 **Jurisdiction Researcher** — `jurisdiction_researcher`
-- ⚖️ **Legal Deadline Tracker** — `legal_deadline_tracker`
-- ⚖️ **Legal Fact Checker** — `legal_fact_checker`
-- 🗂️ **Legal Matter Manager** — `legal_matter_manager`
-- 🗂️ **Legal Operations Manager** — `legal_operations_manager`
-- 🧭 **Legal Orchestrator** — `legal_orchestrator`
-- 🔎 **Legal Researcher** — `legal_researcher`
-- 🔎 **Legal Risk Analyst** — `legal_risk_analyst`
-- ⚖️ **Licensing Rights Advisor** — `licensing_rights_advisor`
-- ⚖️ **Paralegal** — `paralegal`
-- ⚖️ **Privacy Data Protection Advisor** — `privacy_data_protection_advisor`
-- ⚖️ **Procurement Vendor Contract Advisor** — `procurement_vendor_contract_advisor`
-- 🔎 **Regulatory Compliance Researcher** — `regulatory_compliance_researcher`
-- ⚖️ **Trademark Brand Protection Advisor** — `trademark_brand_protection_advisor`
+- 💻 **Accessibility Specialist** — [`accessibility_specialist`](../skills/aco-product-office/references/agents/accessibility-specialist.md)
+- 🧪 **Accessibility Tester** — [`accessibility_tester`](../skills/aco-product-office/references/agents/accessibility-tester.md)
+- 💻 **Ai Engineer** — [`ai_engineer`](../skills/aco-product-office/references/agents/ai-engineer.md)
+- 💻 **Ai Product Engineer** — [`ai_product_engineer`](../skills/aco-product-office/references/agents/ai-product-engineer.md)
+- 💻 **Analytics Instrumentation Engineer** — [`analytics_instrumentation_engineer`](../skills/aco-product-office/references/agents/analytics-instrumentation-engineer.md)
+- 💻 **Api Integration Engineer** — [`api_integration_engineer`](../skills/aco-product-office/references/agents/api-integration-engineer.md)
+- 💻 **Api Researcher** — [`api_researcher`](../skills/aco-product-office/references/agents/api-researcher.md)
+- 💻 **Automation Integration Engineer** — [`automation_integration_engineer`](../skills/aco-product-office/references/agents/automation-integration-engineer.md)
+- 💻 **Backend Engineer** — [`backend_engineer`](../skills/aco-product-office/references/agents/backend-engineer.md)
+- 💻 **Bug Investigator** — [`bug_investigator`](../skills/aco-product-office/references/agents/bug-investigator.md)
+- 💻 **Business Analyst** — [`business_analyst`](../skills/aco-product-office/references/agents/business-analyst.md)
+- 💻 **Cloud Architect** — [`cloud_architect`](../skills/aco-product-office/references/agents/cloud-architect.md)
+- 💻 **Cms Content Architect** — [`cms_content_architect`](../skills/aco-product-office/references/agents/cms-content-architect.md)
+- 🧪 **Code Reviewer** — [`code_reviewer`](../skills/aco-product-office/references/agents/code-reviewer.md)
+- 💻 **Creative Frontend Engineer** — [`creative_frontend_engineer`](../skills/aco-product-office/references/agents/creative-frontend-engineer.md)
+- 💻 **Data Engineer** — [`data_engineer`](../skills/aco-product-office/references/agents/data-engineer.md)
+- 💻 **Data Scientist** — [`data_scientist`](../skills/aco-product-office/references/agents/data-scientist.md)
+- 💻 **Database Engineer** — [`database_engineer`](../skills/aco-product-office/references/agents/database-engineer.md)
+- 💻 **Dependency Researcher** — [`dependency_researcher`](../skills/aco-product-office/references/agents/dependency-researcher.md)
+- 💻 **Design System Designer** — [`design_system_designer`](../skills/aco-product-office/references/agents/design-system-designer.md)
+- 💻 **Devops Engineer** — [`devops_engineer`](../skills/aco-product-office/references/agents/devops-engineer.md)
+- ✍️ **Documentation Writer** — [`documentation_writer`](../skills/aco-product-office/references/agents/documentation-writer.md)
+- 💻 **Figma Implementation Engineer** — [`figma_implementation_engineer`](../skills/aco-product-office/references/agents/figma-implementation-engineer.md)
+- 💻 **Frontend Engineer** — [`frontend_engineer`](../skills/aco-product-office/references/agents/frontend-engineer.md)
+- 💻 **Fullstack Engineer** — [`fullstack_engineer`](../skills/aco-product-office/references/agents/fullstack-engineer.md)
+- 💻 **Information Architect** — [`information_architect`](../skills/aco-product-office/references/agents/information-architect.md)
+- 💻 **Interaction Designer** — [`interaction_designer`](../skills/aco-product-office/references/agents/interaction-designer.md)
+- 💻 **Junior Developer** — [`junior_developer`](../skills/aco-product-office/references/agents/junior-developer.md)
+- 💻 **Llm Engineer** — [`llm_engineer`](../skills/aco-product-office/references/agents/llm-engineer.md)
+- 🧪 **Mcp Integration Reviewer** — [`mcp_integration_reviewer`](../skills/aco-product-office/references/agents/mcp-integration-reviewer.md)
+- 💻 **Migration Specialist** — [`migration_specialist`](../skills/aco-product-office/references/agents/migration-specialist.md)
+- 💻 **Ml Ops Engineer** — [`ml_ops_engineer`](../skills/aco-product-office/references/agents/ml-ops-engineer.md)
+- 💻 **Mobile Engineer** — [`mobile_engineer`](../skills/aco-product-office/references/agents/mobile-engineer.md)
+- 💻 **Performance Engineer** — [`performance_engineer`](../skills/aco-product-office/references/agents/performance-engineer.md)
+- 💻 **Product Analyst** — [`product_analyst`](../skills/aco-product-office/references/agents/product-analyst.md)
+- 💻 **Product Designer** — [`product_designer`](../skills/aco-product-office/references/agents/product-designer.md)
+- 💻 **Product Director** — [`product_director`](../skills/aco-product-office/references/agents/product-director.md)
+- 💻 **Product Manager** — [`product_manager`](../skills/aco-product-office/references/agents/product-manager.md)
+- 💻 **Product Researcher** — [`product_researcher`](../skills/aco-product-office/references/agents/product-researcher.md)
+- 💻 **Product Software Orchestrator** — [`product_software_orchestrator`](../skills/aco-product-office/references/agents/product-software-orchestrator.md)
+- 💻 **Qa Engineer** — [`qa_engineer`](../skills/aco-product-office/references/agents/qa-engineer.md)
+- 💻 **Qa Lead** — [`qa_lead`](../skills/aco-product-office/references/agents/qa-lead.md)
+- 💻 **Release Manager** — [`release_manager`](../skills/aco-product-office/references/agents/release-manager.md)
+- 💻 **Security Engineer** — [`security_engineer`](../skills/aco-product-office/references/agents/security-engineer.md)
+- 🧪 **Security Reviewer** — [`security_reviewer`](../skills/aco-product-office/references/agents/security-reviewer.md)
+- 💻 **Senior Backend Engineer** — [`senior_backend_engineer`](../skills/aco-product-office/references/agents/senior-backend-engineer.md)
+- 💻 **Senior Frontend Engineer** — [`senior_frontend_engineer`](../skills/aco-product-office/references/agents/senior-frontend-engineer.md)
+- 🧪 **Skill Evaluation Engineer** — [`skill_evaluation_engineer`](../skills/aco-product-office/references/agents/skill-evaluation-engineer.md)
+- 💻 **Software Architect** — [`software_architect`](../skills/aco-product-office/references/agents/software-architect.md)
+- 💻 **Sre Engineer** — [`sre_engineer`](../skills/aco-product-office/references/agents/sre-engineer.md)
+- 💻 **Tech Lead** — [`tech_lead`](../skills/aco-product-office/references/agents/tech-lead.md)
+- 💻 **Technical Researcher** — [`technical_researcher`](../skills/aco-product-office/references/agents/technical-researcher.md)
+- ✍️ **Technical Writer** — [`technical_writer`](../skills/aco-product-office/references/agents/technical-writer.md)
+- 🧪 **Test Automation Engineer** — [`test_automation_engineer`](../skills/aco-product-office/references/agents/test-automation-engineer.md)
+- 🧪 **Test Writer** — [`test_writer`](../skills/aco-product-office/references/agents/test-writer.md)
+- 💻 **Ui Prototyper** — [`ui_prototyper`](../skills/aco-product-office/references/agents/ui-prototyper.md)
+- 💻 **Ux Lead** — [`ux_lead`](../skills/aco-product-office/references/agents/ux-lead.md)
+- 💻 **Ux Researcher** — [`ux_researcher`](../skills/aco-product-office/references/agents/ux-researcher.md)
 
-## 💼 Recruitment Office — 35
+## ⚖️ legal-office — 28
 
-- 🗂️ **Application Manager** — `application_manager`
-- 🔎 **Application Outcomes Analyst** — `application_outcomes_analyst`
-- 💼 **Application Tracker** — `application_tracker`
-- ✍️ **Application Writer** — `application_writer`
-- 💼 **Ats Resume Specialist** — `ats_resume_specialist`
-- 💼 **Career Document Fact Checker** — `career_document_fact_checker`
-- 💼 **Career Learning Plan Advisor** — `career_learning_plan_advisor`
-- ✍️ **Career Outreach Writer** — `career_outreach_writer`
-- ♟️ **Career Personal Brand Strategist** — `career_personal_brand_strategist`
-- ♟️ **Career Strategist** — `career_strategist`
-- 💼 **Career Transition Advisor** — `career_transition_advisor`
-- 💼 **Case Interview Coach** — `case_interview_coach`
-- 🔎 **Compensation Analyst** — `compensation_analyst`
-- ✍️ **Cover Letter Writer** — `cover_letter_writer`
-- 🔎 **Executive Search Researcher** — `executive_search_researcher`
-- 💼 **Freelance Consulting Opportunity Scout** — `freelance_consulting_opportunity_scout`
-- 💼 **Hiring Team Mapper** — `hiring_team_mapper`
-- 💼 **International Mobility Job Advisor** — `international_mobility_job_advisor`
-- 💼 **Interview Coach** — `interview_coach`
-- 🔎 **Interview Researcher** — `interview_researcher`
-- 🔎 **Job Fit Analyst** — `job_fit_analyst`
-- 🗂️ **Job Followup Manager** — `job_followup_manager`
-- 🔎 **Job Market Researcher** — `job_market_researcher`
-- 💼 **Job Opportunity Scout** — `job_opportunity_scout`
-- 💼 **Job Search Chief Of Staff** — `job_search_chief_of_staff`
-- ♟️ **Linkedin Profile Strategist** — `linkedin_profile_strategist`
-- ♟️ **Networking Strategist** — `networking_strategist`
-- 💼 **Offer Negotiation Advisor** — `offer_negotiation_advisor`
-- ✂️ **Portfolio Career Editor** — `portfolio_career_editor`
-- 🗂️ **Professional Reference Manager** — `professional_reference_manager`
-- 🗂️ **Recruiter Relations Manager** — `recruiter_relations_manager`
-- 🧭 **Recruitment Orchestrator** — `recruitment_orchestrator`
-- ♟️ **Resume Strategist** — `resume_strategist`
-- 🔎 **Skills Gap Analyst** — `skills_gap_analyst`
-- 🔎 **Target Company Researcher** — `target_company_researcher`
+- ⚖️ **Ai Technology Law Advisor** — [`ai_technology_law_advisor`](../skills/aco-legal-office/references/agents/ai-technology-law-advisor.md)
+- ⚖️ **Claims Correspondence Drafter** — [`claims_correspondence_drafter`](../skills/aco-legal-office/references/agents/claims-correspondence-drafter.md)
+- ⚖️ **Commercial Contracts Advisor** — [`commercial_contracts_advisor`](../skills/aco-legal-office/references/agents/commercial-contracts-advisor.md)
+- ⚖️ **Consumer Advertising Compliance Advisor** — [`consumer_advertising_compliance_advisor`](../skills/aco-legal-office/references/agents/consumer-advertising-compliance-advisor.md)
+- ⚖️ **Contract Drafter** — [`contract_drafter`](../skills/aco-legal-office/references/agents/contract-drafter.md)
+- ⚖️ **Contract Negotiation Advisor** — [`contract_negotiation_advisor`](../skills/aco-legal-office/references/agents/contract-negotiation-advisor.md)
+- 🧪 **Contract Reviewer** — [`contract_reviewer`](../skills/aco-legal-office/references/agents/contract-reviewer.md)
+- ⚖️ **Corporate Governance Advisor** — [`corporate_governance_advisor`](../skills/aco-legal-office/references/agents/corporate-governance-advisor.md)
+- ⚖️ **Dispute Prevention Advisor** — [`dispute_prevention_advisor`](../skills/aco-legal-office/references/agents/dispute-prevention-advisor.md)
+- 🧪 **Document Review Specialist** — [`document_review_specialist`](../skills/aco-legal-office/references/agents/document-review-specialist.md)
+- ⚖️ **Employment Labor Advisor** — [`employment_labor_advisor`](../skills/aco-legal-office/references/agents/employment-labor-advisor.md)
+- ⚖️ **Independent Contractor Advisor** — [`independent_contractor_advisor`](../skills/aco-legal-office/references/agents/independent-contractor-advisor.md)
+- ⚖️ **International Contracts Researcher** — [`international_contracts_researcher`](../skills/aco-legal-office/references/agents/international-contracts-researcher.md)
+- ⚖️ **Ip Copyright Advisor** — [`ip_copyright_advisor`](../skills/aco-legal-office/references/agents/ip-copyright-advisor.md)
+- ⚖️ **Jurisdiction Researcher** — [`jurisdiction_researcher`](../skills/aco-legal-office/references/agents/jurisdiction-researcher.md)
+- ⚖️ **Legal Deadline Tracker** — [`legal_deadline_tracker`](../skills/aco-legal-office/references/agents/legal-deadline-tracker.md)
+- ⚖️ **Legal Fact Checker** — [`legal_fact_checker`](../skills/aco-legal-office/references/agents/legal-fact-checker.md)
+- ⚖️ **Legal Matter Manager** — [`legal_matter_manager`](../skills/aco-legal-office/references/agents/legal-matter-manager.md)
+- ⚖️ **Legal Operations Manager** — [`legal_operations_manager`](../skills/aco-legal-office/references/agents/legal-operations-manager.md)
+- ⚖️ **Legal Orchestrator** — [`legal_orchestrator`](../skills/aco-legal-office/references/agents/legal-orchestrator.md)
+- ⚖️ **Legal Researcher** — [`legal_researcher`](../skills/aco-legal-office/references/agents/legal-researcher.md)
+- ⚖️ **Legal Risk Analyst** — [`legal_risk_analyst`](../skills/aco-legal-office/references/agents/legal-risk-analyst.md)
+- ⚖️ **Licensing Rights Advisor** — [`licensing_rights_advisor`](../skills/aco-legal-office/references/agents/licensing-rights-advisor.md)
+- ⚖️ **Paralegal** — [`paralegal`](../skills/aco-legal-office/references/agents/paralegal.md)
+- ⚖️ **Privacy Data Protection Advisor** — [`privacy_data_protection_advisor`](../skills/aco-legal-office/references/agents/privacy-data-protection-advisor.md)
+- ⚖️ **Procurement Vendor Contract Advisor** — [`procurement_vendor_contract_advisor`](../skills/aco-legal-office/references/agents/procurement-vendor-contract-advisor.md)
+- ⚖️ **Regulatory Compliance Researcher** — [`regulatory_compliance_researcher`](../skills/aco-legal-office/references/agents/regulatory-compliance-researcher.md)
+- ⚖️ **Trademark Brand Protection Advisor** — [`trademark_brand_protection_advisor`](../skills/aco-legal-office/references/agents/trademark-brand-protection-advisor.md)
 
-## 🧭 Shared — 10
+## 💼 recruitment-office — 35
 
-- 🎯 **Art Director** — `art_director`
-- ✍️ **Art Writer** — `art_writer`
-- ♟️ **Brand Strategist** — `brand_strategist`
-- ✂️ **Communications Editor** — `communications_editor`
-- 🧭 **Context Steward** — `context_steward`
-- ✂️ **Editor** — `editor`
-- ♟️ **Marketing Strategist** — `marketing_strategist`
-- 🧭 **Office Concierge** — `office_concierge`
-- 🗂️ **Studio Finance Manager** — `studio_finance_manager`
-- 🗂️ **Studio Manager** — `studio_manager`
+- 💼 **Application Manager** — [`application_manager`](../skills/aco-recruitment-office/references/agents/application-manager.md)
+- 💼 **Application Outcomes Analyst** — [`application_outcomes_analyst`](../skills/aco-recruitment-office/references/agents/application-outcomes-analyst.md)
+- 💼 **Application Tracker** — [`application_tracker`](../skills/aco-recruitment-office/references/agents/application-tracker.md)
+- ✍️ **Application Writer** — [`application_writer`](../skills/aco-recruitment-office/references/agents/application-writer.md)
+- 💼 **Ats Resume Specialist** — [`ats_resume_specialist`](../skills/aco-recruitment-office/references/agents/ats-resume-specialist.md)
+- 💼 **Career Document Fact Checker** — [`career_document_fact_checker`](../skills/aco-recruitment-office/references/agents/career-document-fact-checker.md)
+- 💼 **Career Learning Plan Advisor** — [`career_learning_plan_advisor`](../skills/aco-recruitment-office/references/agents/career-learning-plan-advisor.md)
+- ✍️ **Career Outreach Writer** — [`career_outreach_writer`](../skills/aco-recruitment-office/references/agents/career-outreach-writer.md)
+- 💼 **Career Personal Brand Strategist** — [`career_personal_brand_strategist`](../skills/aco-recruitment-office/references/agents/career-personal-brand-strategist.md)
+- 💼 **Career Strategist** — [`career_strategist`](../skills/aco-recruitment-office/references/agents/career-strategist.md)
+- 💼 **Career Transition Advisor** — [`career_transition_advisor`](../skills/aco-recruitment-office/references/agents/career-transition-advisor.md)
+- 💼 **Case Interview Coach** — [`case_interview_coach`](../skills/aco-recruitment-office/references/agents/case-interview-coach.md)
+- 💼 **Compensation Analyst** — [`compensation_analyst`](../skills/aco-recruitment-office/references/agents/compensation-analyst.md)
+- ✍️ **Cover Letter Writer** — [`cover_letter_writer`](../skills/aco-recruitment-office/references/agents/cover-letter-writer.md)
+- 💼 **Executive Search Researcher** — [`executive_search_researcher`](../skills/aco-recruitment-office/references/agents/executive-search-researcher.md)
+- 💼 **Freelance Consulting Opportunity Scout** — [`freelance_consulting_opportunity_scout`](../skills/aco-recruitment-office/references/agents/freelance-consulting-opportunity-scout.md)
+- 💼 **Hiring Team Mapper** — [`hiring_team_mapper`](../skills/aco-recruitment-office/references/agents/hiring-team-mapper.md)
+- 💼 **International Mobility Job Advisor** — [`international_mobility_job_advisor`](../skills/aco-recruitment-office/references/agents/international-mobility-job-advisor.md)
+- 💼 **Interview Coach** — [`interview_coach`](../skills/aco-recruitment-office/references/agents/interview-coach.md)
+- 💼 **Interview Researcher** — [`interview_researcher`](../skills/aco-recruitment-office/references/agents/interview-researcher.md)
+- 💼 **Job Fit Analyst** — [`job_fit_analyst`](../skills/aco-recruitment-office/references/agents/job-fit-analyst.md)
+- 💼 **Job Followup Manager** — [`job_followup_manager`](../skills/aco-recruitment-office/references/agents/job-followup-manager.md)
+- 💼 **Job Market Researcher** — [`job_market_researcher`](../skills/aco-recruitment-office/references/agents/job-market-researcher.md)
+- 💼 **Job Opportunity Scout** — [`job_opportunity_scout`](../skills/aco-recruitment-office/references/agents/job-opportunity-scout.md)
+- 💼 **Job Search Chief Of Staff** — [`job_search_chief_of_staff`](../skills/aco-recruitment-office/references/agents/job-search-chief-of-staff.md)
+- 💼 **Linkedin Profile Strategist** — [`linkedin_profile_strategist`](../skills/aco-recruitment-office/references/agents/linkedin-profile-strategist.md)
+- 💼 **Networking Strategist** — [`networking_strategist`](../skills/aco-recruitment-office/references/agents/networking-strategist.md)
+- 💼 **Offer Negotiation Advisor** — [`offer_negotiation_advisor`](../skills/aco-recruitment-office/references/agents/offer-negotiation-advisor.md)
+- ✍️ **Portfolio Career Editor** — [`portfolio_career_editor`](../skills/aco-recruitment-office/references/agents/portfolio-career-editor.md)
+- 💼 **Professional Reference Manager** — [`professional_reference_manager`](../skills/aco-recruitment-office/references/agents/professional-reference-manager.md)
+- 💼 **Recruiter Relations Manager** — [`recruiter_relations_manager`](../skills/aco-recruitment-office/references/agents/recruiter-relations-manager.md)
+- 💼 **Recruitment Orchestrator** — [`recruitment_orchestrator`](../skills/aco-recruitment-office/references/agents/recruitment-orchestrator.md)
+- 💼 **Resume Strategist** — [`resume_strategist`](../skills/aco-recruitment-office/references/agents/resume-strategist.md)
+- 💼 **Skills Gap Analyst** — [`skills_gap_analyst`](../skills/aco-recruitment-office/references/agents/skills-gap-analyst.md)
+- 💼 **Target Company Researcher** — [`target_company_researcher`](../skills/aco-recruitment-office/references/agents/target-company-researcher.md)
 
-## 💰 Finance Office — 11
+## 🧭 shared — 10
 
-- 📋 **Billing Receivables Coordinator** — `billing_receivables_coordinator`
-- 📋 **Bookkeeping Coordinator** — `bookkeeping_coordinator`
-- 🔎 **Cashflow Treasury Analyst** — `cashflow_treasury_analyst`
-- 🧭 **Finance Orchestrator** — `finance_orchestrator`
-- 💰 **Financial Controller** — `financial_controller`
-- 🔎 **Fp & A Analyst** — `fp_and_a_analyst`
-- 🔎 **Payables Procurement Analyst** — `payables_procurement_analyst`
-- 🔎 **Pricing Margin Analyst** — `pricing_margin_analyst`
-- 🎬 **Production Cost Controller** — `production_cost_controller`
-- 💰 **Royalty Revenue Accountant** — `royalty_revenue_accountant`
-- 📋 **Tax Compliance Coordinator** — `tax_compliance_coordinator`
+- 🧭 **Art Director** — [`art_director`](../skills/aco-office-concierge/references/agents/art-director.md)
+- ✍️ **Art Writer** — [`art_writer`](../skills/aco-office-concierge/references/agents/art-writer.md)
+- 🧭 **Brand Strategist** — [`brand_strategist`](../skills/aco-office-concierge/references/agents/brand-strategist.md)
+- ✍️ **Communications Editor** — [`communications_editor`](../skills/aco-office-concierge/references/agents/communications-editor.md)
+- 🧭 **Context Steward** — [`context_steward`](../skills/aco-office-concierge/references/agents/context-steward.md)
+- ✍️ **Editor** — [`editor`](../skills/aco-office-concierge/references/agents/editor.md)
+- 🧭 **Marketing Strategist** — [`marketing_strategist`](../skills/aco-office-concierge/references/agents/marketing-strategist.md)
+- 🧭 **Office Concierge** — [`office_concierge`](../skills/aco-office-concierge/references/agents/office-concierge.md)
+- 🧭 **Studio Finance Manager** — [`studio_finance_manager`](../skills/aco-office-concierge/references/agents/studio-finance-manager.md)
+- 🧭 **Studio Manager** — [`studio_manager`](../skills/aco-office-concierge/references/agents/studio-manager.md)
 
-## 📈 Commercial Office — 8
+## 💰 finance-office — 11
 
-- 🧭 **Commercial Orchestrator** — `commercial_orchestrator`
-- 🗂️ **Customer Success Manager** — `customer_success_manager`
-- 🔎 **Lead Qualification Researcher** — `lead_qualification_researcher`
-- 🔎 **Revenue Operations Analyst** — `revenue_operations_analyst`
-- 📈 **Sales Enablement Specialist** — `sales_enablement_specialist`
-- 🗂️ **Sales Operations Manager** — `sales_operations_manager`
-- 📈 **Sales Proposal Specialist** — `sales_proposal_specialist`
-- 📋 **Tender Bid Coordinator** — `tender_bid_coordinator`
+- 💰 **Billing Receivables Coordinator** — [`billing_receivables_coordinator`](../skills/aco-finance-office/references/agents/billing-receivables-coordinator.md)
+- 💰 **Bookkeeping Coordinator** — [`bookkeeping_coordinator`](../skills/aco-finance-office/references/agents/bookkeeping-coordinator.md)
+- 💰 **Cashflow Treasury Analyst** — [`cashflow_treasury_analyst`](../skills/aco-finance-office/references/agents/cashflow-treasury-analyst.md)
+- 💰 **Finance Orchestrator** — [`finance_orchestrator`](../skills/aco-finance-office/references/agents/finance-orchestrator.md)
+- 💰 **Financial Controller** — [`financial_controller`](../skills/aco-finance-office/references/agents/financial-controller.md)
+- 💰 **Fp And A Analyst** — [`fp_and_a_analyst`](../skills/aco-finance-office/references/agents/fp-and-a-analyst.md)
+- 💰 **Payables Procurement Analyst** — [`payables_procurement_analyst`](../skills/aco-finance-office/references/agents/payables-procurement-analyst.md)
+- 💰 **Pricing Margin Analyst** — [`pricing_margin_analyst`](../skills/aco-finance-office/references/agents/pricing-margin-analyst.md)
+- 💰 **Production Cost Controller** — [`production_cost_controller`](../skills/aco-finance-office/references/agents/production-cost-controller.md)
+- 💰 **Royalty Revenue Accountant** — [`royalty_revenue_accountant`](../skills/aco-finance-office/references/agents/royalty-revenue-accountant.md)
+- 💰 **Tax Compliance Coordinator** — [`tax_compliance_coordinator`](../skills/aco-finance-office/references/agents/tax-compliance-coordinator.md)
 
-## 👥 People Office — 10
+## 📈 commercial-office — 8
 
-- 📋 **Compensation Benefits Coordinator** — `compensation_benefits_coordinator`
-- 📋 **Employee Relations Coordinator** — `employee_relations_coordinator`
-- 📋 **Hiring Coordinator** — `hiring_coordinator`
-- 👥 **Learning Development Specialist** — `learning_development_specialist`
-- 📋 **Onboarding Offboarding Coordinator** — `onboarding_offboarding_coordinator`
-- 🗂️ **People Operations Manager** — `people_operations_manager`
-- 🧭 **People Orchestrator** — `people_orchestrator`
-- 🎨 **Structured Interview Designer** — `structured_interview_designer`
-- 💼 **Talent Sourcing Specialist** — `talent_sourcing_specialist`
-- 👥 **Workforce Planner** — `workforce_planner`
+- 📈 **Commercial Orchestrator** — [`commercial_orchestrator`](../skills/aco-commercial-office/references/agents/commercial-orchestrator.md)
+- 📈 **Customer Success Manager** — [`customer_success_manager`](../skills/aco-commercial-office/references/agents/customer-success-manager.md)
+- 📈 **Lead Qualification Researcher** — [`lead_qualification_researcher`](../skills/aco-commercial-office/references/agents/lead-qualification-researcher.md)
+- 📈 **Revenue Operations Analyst** — [`revenue_operations_analyst`](../skills/aco-commercial-office/references/agents/revenue-operations-analyst.md)
+- 📈 **Sales Enablement Specialist** — [`sales_enablement_specialist`](../skills/aco-commercial-office/references/agents/sales-enablement-specialist.md)
+- 📈 **Sales Operations Manager** — [`sales_operations_manager`](../skills/aco-commercial-office/references/agents/sales-operations-manager.md)
+- 📈 **Sales Proposal Specialist** — [`sales_proposal_specialist`](../skills/aco-commercial-office/references/agents/sales-proposal-specialist.md)
+- 📈 **Tender Bid Coordinator** — [`tender_bid_coordinator`](../skills/aco-commercial-office/references/agents/tender-bid-coordinator.md)
 
-## 📋 Delivery Office — 5
+## 👥 people-office — 10
 
-- 📋 **Agile Delivery Facilitator** — `agile_delivery_facilitator`
-- 🧭 **Delivery Orchestrator** — `delivery_orchestrator`
-- 🗂️ **Programme Delivery Manager** — `programme_delivery_manager`
-- 🔎 **Project Controls Analyst** — `project_controls_analyst`
-- 📋 **Quality Acceptance Coordinator** — `quality_acceptance_coordinator`
+- 👥 **Compensation Benefits Coordinator** — [`compensation_benefits_coordinator`](../skills/aco-people-office/references/agents/compensation-benefits-coordinator.md)
+- 👥 **Employee Relations Coordinator** — [`employee_relations_coordinator`](../skills/aco-people-office/references/agents/employee-relations-coordinator.md)
+- 👥 **Hiring Coordinator** — [`hiring_coordinator`](../skills/aco-people-office/references/agents/hiring-coordinator.md)
+- 👥 **Learning Development Specialist** — [`learning_development_specialist`](../skills/aco-people-office/references/agents/learning-development-specialist.md)
+- 👥 **Onboarding Offboarding Coordinator** — [`onboarding_offboarding_coordinator`](../skills/aco-people-office/references/agents/onboarding-offboarding-coordinator.md)
+- 👥 **People Operations Manager** — [`people_operations_manager`](../skills/aco-people-office/references/agents/people-operations-manager.md)
+- 👥 **People Orchestrator** — [`people_orchestrator`](../skills/aco-people-office/references/agents/people-orchestrator.md)
+- 👥 **Structured Interview Designer** — [`structured_interview_designer`](../skills/aco-people-office/references/agents/structured-interview-designer.md)
+- 👥 **Talent Sourcing Specialist** — [`talent_sourcing_specialist`](../skills/aco-people-office/references/agents/talent-sourcing-specialist.md)
+- 👥 **Workforce Planner** — [`workforce_planner`](../skills/aco-people-office/references/agents/workforce-planner.md)
 
-## 🗂️ Administration Office — 9
+## 📋 delivery-office — 5
 
-- 🧭 **Administration Orchestrator** — `administration_orchestrator`
-- 📣 **Communications Operator** — `communications_operator`
-- 🗂️ **Executive Assistant** — `executive_assistant`
-- 🗂️ **Inbox Correspondence Manager** — `inbox_correspondence_manager`
-- 📋 **Meeting Calendar Coordinator** — `meeting_calendar_coordinator`
-- 🗓️ **Office Administrator** — `office_administrator`
-- 💰 **Records Document Controller** — `records_document_controller`
-- 📋 **Service Desk Coordinator** — `service_desk_coordinator`
-- 📋 **Travel Logistics Coordinator** — `travel_logistics_coordinator`
+- 📋 **Agile Delivery Facilitator** — [`agile_delivery_facilitator`](../skills/aco-delivery-office/references/agents/agile-delivery-facilitator.md)
+- 📋 **Delivery Orchestrator** — [`delivery_orchestrator`](../skills/aco-delivery-office/references/agents/delivery-orchestrator.md)
+- 📋 **Programme Delivery Manager** — [`programme_delivery_manager`](../skills/aco-delivery-office/references/agents/programme-delivery-manager.md)
+- 📋 **Project Controls Analyst** — [`project_controls_analyst`](../skills/aco-delivery-office/references/agents/project-controls-analyst.md)
+- 📋 **Quality Acceptance Coordinator** — [`quality_acceptance_coordinator`](../skills/aco-delivery-office/references/agents/quality-acceptance-coordinator.md)
 
-## 🎬 Production Office — 34
+## 🗂️ administration-office — 9
 
-- ✂️ **Assistant Video Editor** — `assistant_video_editor`
-- 🎞️ **Beauty Fashion Retouch Artist** — `beauty_fashion_retouch_artist`
-- 🎬 **Cg Lighting Render Artist** — `cg_lighting_render_artist`
-- 🎞️ **Cinematographer** — `cinematographer`
-- 🛠️ **Color Pipeline Engineer** — `color_pipeline_engineer`
-- 🎞️ **Colorist** — `colorist`
-- 🛠️ **Comfyui Node Developer** — `comfyui_node_developer`
-- 🛠️ **Comfyui Workflow Engineer** — `comfyui_workflow_engineer`
-- 🎞️ **Compositor** — `compositor`
-- ✂️ **Dialogue Editor** — `dialogue_editor`
-- 🎬 **Digital Imaging Technician** — `digital_imaging_technician`
-- 🎬 **Fashion Stylist** — `fashion_stylist`
-- 🎯 **Film Director** — `film_director`
-- 🎯 **First Assistant Director** — `first_assistant_director`
-- 🎯 **Generative Media Director** — `generative_media_director`
-- 🛠️ **Generative Model Training Engineer** — `generative_model_training_engineer`
-- 🎬 **Line Producer** — `line_producer`
-- ✂️ **Localization Subtitles Editor** — `localization_subtitles_editor`
-- 🎬 **Media Data Wrangler** — `media_data_wrangler`
-- 📋 **Media Delivery Qc** — `media_delivery_qc`
-- 🛠️ **Media Pipeline Engineer** — `media_pipeline_engineer`
-- 🎨 **Motion Designer** — `motion_designer`
-- 🎞️ **Music Supervisor** — `music_supervisor`
-- ✂️ **Online Editor Conform** — `online_editor_conform`
-- 🎞️ **Photo Retouch Artist** — `photo_retouch_artist`
-- 🎞️ **Product Retouch Artist** — `product_retouch_artist`
-- 🧭 **Production Orchestrator** — `production_orchestrator`
-- 🎬 **Prop Stylist** — `prop_stylist`
-- 🎬 **Re Recording Mixer** — `re_recording_mixer`
-- 🎨 **Set Designer** — `set_designer`
-- 🎨 **Sound Designer** — `sound_designer`
-- 👥 **Three D Generalist** — `three_d_generalist`
-- ✂️ **Video Editor** — `video_editor`
-- 🛠️ **Visual Prompt Engineer** — `visual_prompt_engineer`
+- 🗂️ **Administration Orchestrator** — [`administration_orchestrator`](../skills/aco-administration-office/references/agents/administration-orchestrator.md)
+- 🗂️ **Communications Operator** — [`communications_operator`](../skills/aco-administration-office/references/agents/communications-operator.md)
+- 🗂️ **Executive Assistant** — [`executive_assistant`](../skills/aco-administration-office/references/agents/executive-assistant.md)
+- 🗂️ **Inbox Correspondence Manager** — [`inbox_correspondence_manager`](../skills/aco-administration-office/references/agents/inbox-correspondence-manager.md)
+- 🗂️ **Meeting Calendar Coordinator** — [`meeting_calendar_coordinator`](../skills/aco-administration-office/references/agents/meeting-calendar-coordinator.md)
+- 🗂️ **Office Administrator** — [`office_administrator`](../skills/aco-administration-office/references/agents/office-administrator.md)
+- 🗂️ **Records Document Controller** — [`records_document_controller`](../skills/aco-administration-office/references/agents/records-document-controller.md)
+- 🗂️ **Service Desk Coordinator** — [`service_desk_coordinator`](../skills/aco-administration-office/references/agents/service-desk-coordinator.md)
+- 🗂️ **Travel Logistics Coordinator** — [`travel_logistics_coordinator`](../skills/aco-administration-office/references/agents/travel-logistics-coordinator.md)
 
-## 📚 Publishing Office — 24
+## 🎬 production-office — 40
 
-- ✂️ **Acquisitions Editor** — `acquisitions_editor`
-- ✂️ **Audience Development Editor** — `audience_development_editor`
-- 🎬 **Audiobook Producer** — `audiobook_producer`
-- 🗂️ **Author Relations Manager** — `author_relations_manager`
-- 🗂️ **Book Distribution Manager** — `book_distribution_manager`
-- ✂️ **Branded Content Editor** — `branded_content_editor`
-- 🗂️ **Circulation Subscription Manager** — `circulation_subscription_manager`
-- ✂️ **Copy Editor** — `copy_editor`
-- ✂️ **Developmental Editor** — `developmental_editor`
-- 🛠️ **Ebook Accessibility Engineer** — `ebook_accessibility_engineer`
-- ✂️ **Editorial Designer** — `editorial_designer`
-- ✍️ **Journalist Reporter** — `journalist_reporter`
-- 📚 **Literary Translator** — `literary_translator`
-- ✂️ **Managing Editor** — `managing_editor`
-- 🗂️ **Media Ad Operations Manager** — `media_ad_operations_manager`
-- ✂️ **Newsroom Editor** — `newsroom_editor`
-- 🎬 **Podcast Audio Producer** — `podcast_audio_producer`
-- 📣 **Prepress Specialist** — `prepress_specialist`
-- 🎬 **Print Production Manager** — `print_production_manager`
-- 📚 **Proofreader** — `proofreader`
-- 🧭 **Publishing Media Orchestrator** — `publishing_media_orchestrator`
-- 📚 **Publishing Metadata Specialist** — `publishing_metadata_specialist`
-- 🗂️ **Publishing Rights Permissions Manager** — `publishing_rights_permissions_manager`
-- 📚 **Typesetter** — `typesetter`
+- 🎬 **Ai Video Prompt Adapter** — [`ai_video_prompt_adapter`](../skills/aco-production-office/references/agents/ai-video-prompt-adapter.md)
+- ✍️ **Animatic Editor** — [`animatic_editor`](../skills/aco-production-office/references/agents/animatic-editor.md)
+- ✍️ **Assistant Video Editor** — [`assistant_video_editor`](../skills/aco-production-office/references/agents/assistant-video-editor.md)
+- 🎬 **Beauty Fashion Retouch Artist** — [`beauty_fashion_retouch_artist`](../skills/aco-production-office/references/agents/beauty-fashion-retouch-artist.md)
+- 🎬 **Cg Lighting Render Artist** — [`cg_lighting_render_artist`](../skills/aco-production-office/references/agents/cg-lighting-render-artist.md)
+- 🎬 **Cinematographer** — [`cinematographer`](../skills/aco-production-office/references/agents/cinematographer.md)
+- 🎬 **Color Pipeline Engineer** — [`color_pipeline_engineer`](../skills/aco-production-office/references/agents/color-pipeline-engineer.md)
+- 🎬 **Colorist** — [`colorist`](../skills/aco-production-office/references/agents/colorist.md)
+- 🎬 **Comfyui Node Developer** — [`comfyui_node_developer`](../skills/aco-production-office/references/agents/comfyui-node-developer.md)
+- 🎬 **Comfyui Workflow Engineer** — [`comfyui_workflow_engineer`](../skills/aco-production-office/references/agents/comfyui-workflow-engineer.md)
+- 🎬 **Compositor** — [`compositor`](../skills/aco-production-office/references/agents/compositor.md)
+- ✍️ **Dialogue Editor** — [`dialogue_editor`](../skills/aco-production-office/references/agents/dialogue-editor.md)
+- 🎬 **Digital Imaging Technician** — [`digital_imaging_technician`](../skills/aco-production-office/references/agents/digital-imaging-technician.md)
+- 🎬 **Fashion Stylist** — [`fashion_stylist`](../skills/aco-production-office/references/agents/fashion-stylist.md)
+- 🎬 **Film Director** — [`film_director`](../skills/aco-production-office/references/agents/film-director.md)
+- 🎬 **First Assistant Director** — [`first_assistant_director`](../skills/aco-production-office/references/agents/first-assistant-director.md)
+- 🎬 **Generative Media Director** — [`generative_media_director`](../skills/aco-production-office/references/agents/generative-media-director.md)
+- 🎬 **Generative Model Training Engineer** — [`generative_model_training_engineer`](../skills/aco-production-office/references/agents/generative-model-training-engineer.md)
+- 🧪 **Generative Video Qc** — [`generative_video_qc`](../skills/aco-production-office/references/agents/generative-video-qc.md)
+- 🎬 **Line Producer** — [`line_producer`](../skills/aco-production-office/references/agents/line-producer.md)
+- ✍️ **Localization Subtitles Editor** — [`localization_subtitles_editor`](../skills/aco-production-office/references/agents/localization-subtitles-editor.md)
+- 🎬 **Media Data Wrangler** — [`media_data_wrangler`](../skills/aco-production-office/references/agents/media-data-wrangler.md)
+- 🧪 **Media Delivery Qc** — [`media_delivery_qc`](../skills/aco-production-office/references/agents/media-delivery-qc.md)
+- 🎬 **Media Pipeline Engineer** — [`media_pipeline_engineer`](../skills/aco-production-office/references/agents/media-pipeline-engineer.md)
+- 🎬 **Motion Designer** — [`motion_designer`](../skills/aco-production-office/references/agents/motion-designer.md)
+- 🎬 **Music Supervisor** — [`music_supervisor`](../skills/aco-production-office/references/agents/music-supervisor.md)
+- ✍️ **Online Editor Conform** — [`online_editor_conform`](../skills/aco-production-office/references/agents/online-editor-conform.md)
+- 🎬 **Photo Retouch Artist** — [`photo_retouch_artist`](../skills/aco-production-office/references/agents/photo-retouch-artist.md)
+- 🎬 **Product Retouch Artist** — [`product_retouch_artist`](../skills/aco-production-office/references/agents/product-retouch-artist.md)
+- 🎬 **Production Orchestrator** — [`production_orchestrator`](../skills/aco-production-office/references/agents/production-orchestrator.md)
+- 🎬 **Prop Stylist** — [`prop_stylist`](../skills/aco-production-office/references/agents/prop-stylist.md)
+- 🎬 **Re Recording Mixer** — [`re_recording_mixer`](../skills/aco-production-office/references/agents/re-recording-mixer.md)
+- 🎬 **Remotion Video Engineer** — [`remotion_video_engineer`](../skills/aco-production-office/references/agents/remotion-video-engineer.md)
+- 🎬 **Script Continuity Supervisor** — [`script_continuity_supervisor`](../skills/aco-production-office/references/agents/script-continuity-supervisor.md)
+- 🎬 **Set Designer** — [`set_designer`](../skills/aco-production-office/references/agents/set-designer.md)
+- 🎬 **Sound Designer** — [`sound_designer`](../skills/aco-production-office/references/agents/sound-designer.md)
+- 🎬 **Storyboard Artist** — [`storyboard_artist`](../skills/aco-production-office/references/agents/storyboard-artist.md)
+- 🎬 **Three D Generalist** — [`three_d_generalist`](../skills/aco-production-office/references/agents/three-d-generalist.md)
+- ✍️ **Video Editor** — [`video_editor`](../skills/aco-production-office/references/agents/video-editor.md)
+- 🎬 **Visual Prompt Engineer** — [`visual_prompt_engineer`](../skills/aco-production-office/references/agents/visual-prompt-engineer.md)
+
+## 📚 publishing-office — 24
+
+- ✍️ **Acquisitions Editor** — [`acquisitions_editor`](../skills/aco-publishing-office/references/agents/acquisitions-editor.md)
+- ✍️ **Audience Development Editor** — [`audience_development_editor`](../skills/aco-publishing-office/references/agents/audience-development-editor.md)
+- 📚 **Audiobook Producer** — [`audiobook_producer`](../skills/aco-publishing-office/references/agents/audiobook-producer.md)
+- 📚 **Author Relations Manager** — [`author_relations_manager`](../skills/aco-publishing-office/references/agents/author-relations-manager.md)
+- 📚 **Book Distribution Manager** — [`book_distribution_manager`](../skills/aco-publishing-office/references/agents/book-distribution-manager.md)
+- ✍️ **Branded Content Editor** — [`branded_content_editor`](../skills/aco-publishing-office/references/agents/branded-content-editor.md)
+- 📚 **Circulation Subscription Manager** — [`circulation_subscription_manager`](../skills/aco-publishing-office/references/agents/circulation-subscription-manager.md)
+- ✍️ **Copy Editor** — [`copy_editor`](../skills/aco-publishing-office/references/agents/copy-editor.md)
+- ✍️ **Developmental Editor** — [`developmental_editor`](../skills/aco-publishing-office/references/agents/developmental-editor.md)
+- 📚 **Ebook Accessibility Engineer** — [`ebook_accessibility_engineer`](../skills/aco-publishing-office/references/agents/ebook-accessibility-engineer.md)
+- ✍️ **Editorial Designer** — [`editorial_designer`](../skills/aco-publishing-office/references/agents/editorial-designer.md)
+- 📚 **Journalist Reporter** — [`journalist_reporter`](../skills/aco-publishing-office/references/agents/journalist-reporter.md)
+- 📚 **Literary Translator** — [`literary_translator`](../skills/aco-publishing-office/references/agents/literary-translator.md)
+- ✍️ **Managing Editor** — [`managing_editor`](../skills/aco-publishing-office/references/agents/managing-editor.md)
+- 📚 **Media Ad Operations Manager** — [`media_ad_operations_manager`](../skills/aco-publishing-office/references/agents/media-ad-operations-manager.md)
+- ✍️ **Newsroom Editor** — [`newsroom_editor`](../skills/aco-publishing-office/references/agents/newsroom-editor.md)
+- 📚 **Podcast Audio Producer** — [`podcast_audio_producer`](../skills/aco-publishing-office/references/agents/podcast-audio-producer.md)
+- 📚 **Prepress Specialist** — [`prepress_specialist`](../skills/aco-publishing-office/references/agents/prepress-specialist.md)
+- 📚 **Print Production Manager** — [`print_production_manager`](../skills/aco-publishing-office/references/agents/print-production-manager.md)
+- 📚 **Proofreader** — [`proofreader`](../skills/aco-publishing-office/references/agents/proofreader.md)
+- 📚 **Publishing Media Orchestrator** — [`publishing_media_orchestrator`](../skills/aco-publishing-office/references/agents/publishing-media-orchestrator.md)
+- 📚 **Publishing Metadata Specialist** — [`publishing_metadata_specialist`](../skills/aco-publishing-office/references/agents/publishing-metadata-specialist.md)
+- 📚 **Publishing Rights Permissions Manager** — [`publishing_rights_permissions_manager`](../skills/aco-publishing-office/references/agents/publishing-rights-permissions-manager.md)
+- 📚 **Typesetter** — [`typesetter`](../skills/aco-publishing-office/references/agents/typesetter.md)

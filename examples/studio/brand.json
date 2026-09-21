@@ -1,0 +1,21 @@
+{
+  "scope_id": "org-fixture",
+  "brand_id": "brand-fixture",
+  "objective": "Explain a service clearly",
+  "audience": "A defined synthetic audience",
+  "proposition": "A working hypothesis",
+  "decision_status": "proposed",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "Hypothesis, not evidence",
+      "support": "assumed",
+      "evidence_refs": []
+    }
+  ],
+  "applications": [
+    "Website opening",
+    "Proposal cover"
+  ],
+  "names": []
+}

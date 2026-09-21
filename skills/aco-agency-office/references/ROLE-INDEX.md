@@ -2,7 +2,7 @@
 
 Lead: `agency_orchestrator`. Read only selected role instructions; native names use `aco_`.
 
-- [`agency_orchestrator`](agents/agency-orchestrator.md) — Orchestrator for a creative production, brand strategy, design and marketing agency. Routes work through directors, specialists and execution makers without overstaffing tasks.
+- [`agency_orchestrator`](agents/agency-orchestrator.md) — Lead router for a creative agency spanning strategy, brand, design, campaigns, production, content, media and marketing.
 - [`asset_manager`](agents/asset-manager.md) — Digital asset manager for file structure, naming, versions, source files, metadata, rights fields and final deliverable organization.
 - [`audience_strategist`](agents/audience-strategist.md) — Audience strategist for segmentation, motivations, journeys, barriers, behaviors and communication design.
 - [`brand_guardian`](agents/brand-guardian.md) — Brand governance lead who protects consistency, quality and intentional evolution across internal and external executions.
@@ -14,6 +14,7 @@ Lead: `agency_orchestrator`. Read only selected role instructions; native names 
 - [`community_manager`](agents/community-manager.md) — Community manager for comments, inbox triage, moderation, audience questions, escalation and qualitative community signals.
 - [`content_director`](agents/content-director.md) — Content director for brand editorial systems, content pillars, formats, franchises and channel ecosystems.
 - [`content_researcher`](agents/content-researcher.md) — Content researcher for stories, examples, references, statistics, cultural hooks, subject-matter sources and editorial evidence.
+- [`conversion_experiment_designer`](agents/conversion-experiment-designer.md) — Turn evidence-backed conversion hypotheses into interpretable experiments.
 - [`copy_researcher`](agents/copy-researcher.md) — Copy and language researcher for competitor messaging, category language, terminology, naming landscapes and cultural/verbal references.
 - [`copywriter`](agents/copywriter.md) — Senior agency copywriter for concepts, headlines, scripts, manifestos, social, OOH, digital and campaign copy.
 - [`creative_strategist`](agents/creative-strategist.md) — Creative strategist who bridges evidence-led strategy and creative development, defining territories and briefs without replacing the creative director.
@@ -56,7 +57,9 @@ Lead: `agency_orchestrator`. Read only selected role instructions; native names 
 - [`traffic_coordinator`](agents/traffic-coordinator.md) — Traffic coordinator for daily workload visibility, assignment tracking, deadline collisions and resource-status updates.
 - [`traffic_resource_manager`](agents/traffic-resource-manager.md) — Agency traffic and resource manager for capacity planning, staffing, scheduling, utilization and workload balancing across teams and freelancers.
 - [`verbal_identity_director`](agents/verbal-identity-director.md) — Verbal identity specialist for brand voice, tone, messaging systems, naming logic and language governance.
+- [`visual_design_critic`](agents/visual-design-critic.md) — Assess rendered design against a brief without imposing a default style.
 - [`visual_researcher`](agents/visual-researcher.md) — Visual researcher for photography, film, art, fashion, design, archives, image culture, directors, photographers and visual references.
+- [`web_typography_layout_specialist`](agents/web-typography-layout-specialist.md) — Develop and test typographic hierarchy and responsive layout systems.
 - [`creative_director`](../../aco-organization-office/references/agents/creative-director.md) — Creative director for the organization across cultural projects and client work. Converts strategy and research into a strong creative idea and coherent multi-format expression.
 - [`account_director`](../../aco-organization-office/references/agents/account-director.md) — Account director for ongoing the organization client relationships, scope, feedback, satisfaction, renewals and commercial health after a project is engaged.
 - [`business_development_director`](../../aco-organization-office/references/agents/business-development-director.md) — Business development director for the organization client acquisition, qualified leads, proposals, new relationships and commercial pipeline.

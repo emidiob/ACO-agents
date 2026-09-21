@@ -1,6 +1,8 @@
+> Current release is v0.5.1. Follow the new package migration prompt; Compact Memory affects future storage, not automatic deletion of existing private data.
+
 # Migration from ACO plugin v0.2.1
 
-The known previous repository is a generic public source package. The new release removes active plugin manifests, marketplace metadata and submission/privacy/terms documents specific to directory distribution. It keeps the generic role knowledge, now canonical in one Markdown definition per role with generated prefixed TOMLs. ACO v0.4.3 intentionally replaces the earlier permissive license with the ACO Proprietary Source-Available License v1.0; repository history is preserved.
+The known previous repository is a generic public source package. The new release removes active plugin manifests, marketplace metadata and submission/privacy/terms documents specific to directory distribution. It keeps the generic role knowledge, now canonical in one Markdown definition per role with generated prefixed TOMLs. ACO v0.4.3 intentionally replaces the current-release MIT license with the ACO Proprietary Source-Available License v1.0; repository history is preserved.
 
 Do not manually delete everything. The migration script checks recorded SHA-256 fingerprints of known legacy paths and the new release manifest. It refuses custom modified content, dirty tracked files and untracked collisions. It preserves unrelated files and history and creates a backup branch before staging changes. The source ZIP must be extracted outside the existing repository.
 

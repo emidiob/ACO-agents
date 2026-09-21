@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "project_id": "example-paper-film",
+  "fps": 24,
+  "target_frames": 288,
+  "aspect_ratio": "16:9",
+  "assets": [
+    {
+      "id": "ref-01",
+      "rights_status": "example"
+    },
+    {
+      "id": "ref-02",
+      "rights_status": "example"
+    },
+    {
+      "id": "ref-03",
+      "rights_status": "example"
+    }
+  ],
+  "shots": [
+    {
+      "id": "shot-01",
+      "scene_id": "tabletop",
+      "purpose": "Introduce the object",
+      "frames": 96,
+      "transition_in": "cut",
+      "transition_in_frames": 0,
+      "start_frame_description": "A plain paper object is folded on a neutral surface.",
+      "subject_action": "A folded paper object turns slightly to reveal a seam.",
+      "camera": "The camera holds a steady close view at object height.",
+      "end_frame_description": "The shot ends with the object folded.",
+      "continuity_in": {
+        "paper_state": "folded",
+        "light": "soft side light"
+      },
+      "continuity_out": {
+        "paper_state": "folded",
+        "light": "soft side light"
+      },
+      "reference_ids": [
+        "ref-01"
+      ],
+      "source_image_id": "ref-01",
+      "mode": "image_to_video",
+      "generation_seconds": 5,
+      "audio_requested": false
+    },
+    {
+      "id": "shot-02",
+      "scene_id": "tabletop",
+      "purpose": "Reveal the mechanism",
+      "frames": 96,
+      "transition_in": "cut",
+      "transition_in_frames": 0,
+      "start_frame_description": "A plain paper object is folded on a neutral surface.",
+      "subject_action": "The edge slowly lifts and a single fold opens.",
+      "camera": "A restrained forward camera move follows the edge.",
+      "end_frame_description": "The shot ends with the object opening.",
+      "continuity_in": {
+        "paper_state": "folded",
+        "light": "soft side light"
+      },
+      "continuity_out": {
+        "paper_state": "opening",
+        "light": "soft side light"
+      },
+      "reference_ids": [
+        "ref-02"
+      ],
+      "source_image_id": "ref-02",
+      "mode": "image_to_video",
+      "generation_seconds": 5,
+      "audio_requested": false
+    },
+    {
+      "id": "shot-03",
+      "scene_id": "tabletop",
+      "purpose": "Resolve the transformation",
+      "frames": 120,
+      "transition_in": "dissolve",
+      "transition_in_frames": 24,
+      "start_frame_description": "A plain paper object is opening on a neutral surface.",
+      "subject_action": "The paper completes its opening and settles into a flat unprinted surface.",
+      "camera": "The camera becomes still in a centered overhead view.",
+      "end_frame_description": "The shot ends with the object open.",
+      "continuity_in": {
+        "paper_state": "opening",
+        "light": "soft side light"
+      },
+      "continuity_out": {
+        "paper_state": "open",
+        "light": "soft side light"
+      },
+      "reference_ids": [
+        "ref-03"
+      ],
+      "source_image_id": "ref-03",
+      "mode": "image_to_video",
+      "generation_seconds": 5,
+      "audio_requested": false
+    }
+  ]
+}

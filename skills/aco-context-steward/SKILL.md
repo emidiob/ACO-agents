@@ -19,3 +19,9 @@ Checkpoint substantial work using the context steward and the history protocol. 
 
 ## Interaction default
 Ask essential missing facts early, in one short batch after reading supplied context; otherwise act. Keep action updates brief and the requested deliverable complete. Follow `../aco-office-concierge/references/protocols/INTERACTION.md`. External messaging/calls/publishing use the same folder’s `COMMUNICATIONS.md`.
+
+
+## Shared context and resource defaults
+[Compact Memory](../aco-office-concierge/references/protocols/COMPACT-MEMORY.md) replaces the former event/session file layout. Keep ideas, applications, leads, proposals and rejected items in chat or compact pipeline rows; active small items may remain sections. Do not create files merely for sessions, status changes, decisions or handoffs. Requested deliverables are not memory clutter. Existing files require reviewed consolidation, never automatic deletion.
+
+Use the [resource index](../aco-office-concierge/references/resources/INDEX.md) only when a relevant capability or reference improves the task. Choose a few candidates, read their exact entries and linked original methods, and verify actual host access. Resources are optional, not installed dependencies. No guessed identities, unapproved asset purchases, private-code uploads or account changes.

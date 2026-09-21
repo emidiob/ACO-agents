@@ -1,0 +1,11 @@
+{
+  "receipt_id": "fictional-receipt-001",
+  "scope_id": "example-client",
+  "capability_id": "email.send",
+  "operation": "send",
+  "action_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "status": "sent",
+  "adapter_id": "fictional-mail-adapter",
+  "provider_ref": "fictional-provider-message-id",
+  "evidence": ["fictional provider send receipt"]
+}

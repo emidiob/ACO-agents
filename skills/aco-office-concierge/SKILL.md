@@ -19,3 +19,18 @@ Checkpoint substantial work using the context steward and the history protocol. 
 
 ## Interaction default
 Ask essential missing facts early, in one short batch after reading supplied context; otherwise act. Keep action updates brief and the requested deliverable complete. Follow `references/protocols/INTERACTION.md`. External messaging/calls/publishing use the same folder’s `COMMUNICATIONS.md`.
+
+
+## Specialist work — v0.5.0
+For design/web work, distinguish creative direction, design-to-code, browser acceptance and content/measurement. For AI video, distinguish direction/boards, provider prompting, graph implementation and rendered-clip QC. Read the relevant office ROLE-INDEX and selected methods only. Do not load the research comparison matrix during normal work. Avoid imposing source-repository aesthetic bans or downloading their tools.
+
+
+## Shared context and resource defaults
+[Compact Memory](references/protocols/COMPACT-MEMORY.md) replaces the former event/session file layout. Keep ideas, applications, leads, proposals and rejected items in chat or compact pipeline rows; active small items may remain sections. Do not create files merely for sessions, status changes, decisions or handoffs. Requested deliverables are not memory clutter. Existing files require reviewed consolidation, never automatic deletion.
+
+Use the [resource index](references/resources/INDEX.md) only when a relevant capability or reference improves the task. Choose a few candidates, read their exact entries and linked original methods, and verify actual host access. Resources are optional, not installed dependencies. No guessed identities, unapproved asset purchases, private-code uploads or account changes.
+
+## Studio release selection — v0.6.0
+Start from the existing task scope, not a tour of all offices. For artist growth, route to practice work/critical development before open-call discovery. For brand/social, reuse the compact Brand section and distinguish assumptions, approved direction and validated evidence. Use the optional registry only when it adds a missing capability. A registry entry, a PATH executable, a connected action and an execution receipt are four different states.
+
+The local `capability-audit` command checks PATH presence only. It does not inspect credentials or discover remote accounts. Use the host's actual connector schemas for connected services. Optional `practice-check`, `opportunity-check`, `brand-check` and `social-check` read a supplied JSON plan and produce blockers; none writes to Drive or sends anything. Simple requests must not be burdened with forms.

@@ -7,3 +7,7 @@ The current license permits personal use, internal organizational use, private m
 A license change is not retroactive. Any earlier ACO release that was lawfully distributed under a different license remains governed by the license supplied with that release.
 
 Copyright © 2026 Emidio Battipaglia. All rights reserved.
+
+## Referenced third-party projects
+
+The specialist-upgrade research identifies external repositories and their observed licences. These references are not relicensed by ACO. This release does not vendor their prompt/code files, datasets, fonts or model weights. Preserve source attribution and actual applicable notices if a future change incorporates protected third-party material; ACO's restrictions cannot replace upstream rights. See `research/specialist-upgrade/sources.json`.

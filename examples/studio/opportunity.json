@@ -1,0 +1,18 @@
+{
+  "scope_id": "artist-fixture",
+  "title": "Synthetic residency",
+  "practice_need": "Workshop access",
+  "official_source": "https://example.org/call",
+  "source_evidence_ref": "fixture-only",
+  "checked_on": "2026-09-20",
+  "deadline_kind": "fixed",
+  "deadline_at": "2026-10-01T17:00:00+02:00",
+  "cost_support_summary": "Synthetic covered costs; not a real offer",
+  "eligibility": [
+    {
+      "criterion": "Synthetic eligibility criterion",
+      "result": "pass",
+      "evidence_ref": "fixture-only"
+    }
+  ]
+}

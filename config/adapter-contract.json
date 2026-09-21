@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.7.0",
+  "kinds": [
+    "host_native",
+    "connected_integration",
+    "mcp",
+    "local_runtime",
+    "api"
+  ],
+  "required_runtime_evidence": [
+    "adapter id",
+    "kind",
+    "capability ids",
+    "verified status",
+    "evidence reference"
+  ],
+  "rules": [
+    "ACO does not bundle credentials or infer a connection from documentation.",
+    "An adapter exposes only the capabilities/operations the host actually reports.",
+    "Provider receipts must be preserved for consequential outcomes.",
+    "A denied or unavailable adapter is not bypassed by switching providers without new authorization.",
+    "Optional tools are not execution-ready until installed/connected, authorized and verified."
+  ]
+}

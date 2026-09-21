@@ -1,0 +1,347 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.7.0",
+  "states": [
+    "LEARNED_SKILL",
+    "REFERENCE",
+    "OPTIONAL_TOOL",
+    "CONNECTED_INTEGRATION",
+    "LOCAL_RUNTIME",
+    "UNAVAILABLE",
+    "BLOCKED"
+  ],
+  "capabilities": {
+    "web.research": {
+      "operations": [
+        "search",
+        "read"
+      ],
+      "permission": "READ",
+      "risk": "low",
+      "fallback": "Return a research plan or use another authorized source."
+    },
+    "files.read": {
+      "operations": [
+        "read"
+      ],
+      "permission": "READ",
+      "risk": "low",
+      "fallback": "Ask for the relevant file or provide a file-selection plan."
+    },
+    "files.write": {
+      "operations": [
+        "create",
+        "update"
+      ],
+      "permission": "WRITE",
+      "risk": "medium",
+      "fallback": "Return the finished content/file locally without claiming it was written remotely."
+    },
+    "files.share": {
+      "operations": [
+        "share",
+        "change_access"
+      ],
+      "permission": "SHARE",
+      "risk": "high",
+      "fallback": "Prepare exact sharing instructions; do not change access."
+    },
+    "files.delete": {
+      "operations": [
+        "delete",
+        "trash"
+      ],
+      "permission": "DELETE",
+      "risk": "high",
+      "fallback": "Produce a reviewed cleanup plan only."
+    },
+    "email.read": {
+      "operations": [
+        "read",
+        "search"
+      ],
+      "permission": "READ",
+      "risk": "low",
+      "fallback": "Ask the user to supply the relevant messages."
+    },
+    "email.draft": {
+      "operations": [
+        "draft"
+      ],
+      "permission": "DRAFT",
+      "risk": "low",
+      "fallback": "Return copy-ready email text."
+    },
+    "email.send": {
+      "operations": [
+        "send",
+        "forward",
+        "reply"
+      ],
+      "permission": "SEND",
+      "risk": "high",
+      "fallback": "Return the exact final email marked NOT SENT."
+    },
+    "calendar.read": {
+      "operations": [
+        "read",
+        "search",
+        "availability"
+      ],
+      "permission": "READ",
+      "risk": "low",
+      "fallback": "Ask for the relevant calendar details."
+    },
+    "calendar.write": {
+      "operations": [
+        "create",
+        "update",
+        "respond"
+      ],
+      "permission": "WRITE",
+      "risk": "medium",
+      "fallback": "Return an event proposal marked NOT CREATED/UPDATED."
+    },
+    "calendar.delete": {
+      "operations": [
+        "delete"
+      ],
+      "permission": "DELETE",
+      "risk": "high",
+      "fallback": "Identify the event and prepare deletion instructions only."
+    },
+    "cloud.read": {
+      "operations": [
+        "list",
+        "read",
+        "search"
+      ],
+      "permission": "READ",
+      "risk": "low",
+      "fallback": "Ask for the required material."
+    },
+    "cloud.write": {
+      "operations": [
+        "create",
+        "update",
+        "upload",
+        "move",
+        "rename"
+      ],
+      "permission": "WRITE",
+      "risk": "medium",
+      "fallback": "Create the result locally and mark remote write as pending."
+    },
+    "cloud.share": {
+      "operations": [
+        "share",
+        "change_access"
+      ],
+      "permission": "SHARE",
+      "risk": "high",
+      "fallback": "Prepare access-change instructions without executing them."
+    },
+    "cloud.delete": {
+      "operations": [
+        "delete",
+        "trash"
+      ],
+      "permission": "DELETE",
+      "risk": "high",
+      "fallback": "Return a reviewed cleanup plan only."
+    },
+    "github.read": {
+      "operations": [
+        "read",
+        "search",
+        "diff"
+      ],
+      "permission": "READ",
+      "risk": "low",
+      "fallback": "Work from supplied repository material."
+    },
+    "github.write": {
+      "operations": [
+        "create_branch",
+        "commit",
+        "issue",
+        "pull_request",
+        "update_file"
+      ],
+      "permission": "WRITE",
+      "risk": "medium",
+      "fallback": "Return a patch/commit plan without claiming remote mutation."
+    },
+    "github.push": {
+      "operations": [
+        "push",
+        "merge"
+      ],
+      "permission": "DEPLOY",
+      "risk": "high",
+      "fallback": "Prepare validated local changes and exact push/merge instructions."
+    },
+    "social.read": {
+      "operations": [
+        "read",
+        "analytics",
+        "search"
+      ],
+      "permission": "READ",
+      "risk": "low",
+      "fallback": "Use supplied analytics or return a measurement plan."
+    },
+    "social.draft": {
+      "operations": [
+        "draft",
+        "prepare"
+      ],
+      "permission": "DRAFT",
+      "risk": "low",
+      "fallback": "Return platform-ready content."
+    },
+    "social.publish": {
+      "operations": [
+        "publish",
+        "schedule"
+      ],
+      "permission": "PUBLISH",
+      "risk": "high",
+      "fallback": "Return the approved publication packet marked NOT PUBLISHED."
+    },
+    "social.delete": {
+      "operations": [
+        "delete"
+      ],
+      "permission": "DELETE",
+      "risk": "high",
+      "fallback": "Identify the exact post and prepare deletion instructions only."
+    },
+    "crm.read": {
+      "operations": [
+        "read",
+        "search"
+      ],
+      "permission": "READ",
+      "risk": "low",
+      "fallback": "Use the compact pipeline or supplied CRM export."
+    },
+    "crm.write": {
+      "operations": [
+        "create",
+        "update",
+        "log"
+      ],
+      "permission": "WRITE",
+      "risk": "medium",
+      "fallback": "Return a compact pipeline update for review."
+    },
+    "browser.navigate": {
+      "operations": [
+        "open",
+        "click",
+        "type",
+        "download"
+      ],
+      "permission": "PREVIEW",
+      "risk": "medium",
+      "fallback": "Return navigation steps or use ordinary research tools."
+    },
+    "browser.submit": {
+      "operations": [
+        "submit",
+        "checkout",
+        "confirm"
+      ],
+      "permission": "SEND",
+      "risk": "high",
+      "fallback": "Prepare the completed form/steps but do not submit."
+    },
+    "media.render.local": {
+      "operations": [
+        "render",
+        "transcode",
+        "export"
+      ],
+      "permission": "WRITE",
+      "risk": "medium",
+      "fallback": "Return exact render/export settings and commands."
+    },
+    "media.generate.remote": {
+      "operations": [
+        "generate",
+        "edit",
+        "upscale"
+      ],
+      "permission": "PREVIEW",
+      "risk": "medium",
+      "fallback": "Return the final generation brief/prompt and parameters."
+    },
+    "payment.prepare": {
+      "operations": [
+        "prepare"
+      ],
+      "permission": "DRAFT",
+      "risk": "medium",
+      "fallback": "Return the payment packet without executing it."
+    },
+    "payment.execute": {
+      "operations": [
+        "pay",
+        "purchase",
+        "refund"
+      ],
+      "permission": "PURCHASE",
+      "risk": "critical",
+      "fallback": "Return exact payment/purchase instructions only."
+    },
+    "contract.prepare": {
+      "operations": [
+        "draft",
+        "revise"
+      ],
+      "permission": "DRAFT",
+      "risk": "medium",
+      "fallback": "Return the contract draft for human/legal review."
+    },
+    "contract.sign": {
+      "operations": [
+        "sign",
+        "accept"
+      ],
+      "permission": "SIGN",
+      "risk": "critical",
+      "fallback": "Prepare signature-ready documents without signing."
+    },
+    "deployment.preview": {
+      "operations": [
+        "build",
+        "preview",
+        "stage"
+      ],
+      "permission": "PREVIEW",
+      "risk": "medium",
+      "fallback": "Return build/deployment instructions and validation evidence."
+    },
+    "deployment.production": {
+      "operations": [
+        "deploy",
+        "release",
+        "rollback"
+      ],
+      "permission": "DEPLOY",
+      "risk": "high",
+      "fallback": "Prepare a deployment/rollback plan without changing production."
+    },
+    "application.submit": {
+      "operations": [
+        "submit_job",
+        "submit_grant",
+        "submit_open_call"
+      ],
+      "permission": "APPLY",
+      "risk": "high",
+      "fallback": "Return the final application packet marked NOT SUBMITTED."
+    }
+  }
+}

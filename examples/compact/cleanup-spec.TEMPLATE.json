@@ -1,0 +1,10 @@
+{
+  "scope_id": "REPLACE_WITH_ACTUAL_PRIVATE_SCOPE",
+  "sources": [{"path": "WORK-LOG.md", "sha256": "READ_ACTUAL_SHA256", "scope_id": "REPLACE_WITH_ACTUAL_PRIVATE_SCOPE", "reviewed_as_aco_note": false}],
+  "target": "ACO.md",
+  "target_sha256": null,
+  "merged_text": "",
+  "quarantine_sources": false,
+  "remove_empty_folders": [],
+  "review_note": "Template is intentionally not ready to apply. Read and review actual source contents and boundaries first."
+}

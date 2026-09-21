@@ -1,19 +1,20 @@
-# Drive-backed knowledge without a plugin
+# Google Drive — compact canonical-document protocol
 
-The canonical executable instruction for the host is `skills/aco-office-concierge/references/protocols/BOOTSTRAP.md`. ACO can direct available connected Drive tools to create, read and update within a user-approved root during an authorized session. It does not install or authenticate the Drive connection itself.
+ACO remains a skill library, not a Google app or synchronization daemon. The user connects Drive separately in the host. Verify the actual tools and account in this session; do not assume that connected means writable.
 
-Use one root registry and index identified by provider ID, not by display name alone. Store context narrative in native Docs or supported Markdown; record its actual MIME type, ID and revision/hash. Keep immutable session/event documents and read-back receipts under the owning entity's history. Read only the task's scope.
+Read [Compact Memory](COMPACT-MEMORY.md) before write and [cleanup](CLEANUP.md) before consolidation. Default: one canonical index and one ACO.md/native Doc for genuinely independent real owners/projects. Activities, brands, small clients and speculative items remain sections/rows. No file per session, decision, event, proposal, rejection or handoff. Actual requested deliverables stay legitimate files.
 
-If the connector supports native Docs revision control, read a fresh revision and write using requiredRevisionId. A rejected/stale revision becomes a conflict. Raw files without conditional writes must be serialized or kept as immutable proposals. There is no distributed lock or uniqueness guarantee from naming a folder.
+## Execution protocol for the host
+1. Use the user-approved root and known canonical ID. Paginate discovery when necessary. If several plausible files exist, inspect and reconcile; do not choose merely by newest title or create another index.
+2. Read current content, provider revision and access/owner boundary. Identify a minimal change, preserve unrelated sections, decisions, open obligations and source links. A local cached mirror is not current remote evidence.
+3. For low-risk ordinary updates within explicit ongoing authority, do not ask repeatedly. Strategic identity changes, merges, moves, deletions, sharing and external communications need their applicable approval. A suggestion is not a committed project.
+4. Use an actual provider revision guard where exposed. Native Google Docs may expose revision-controlled edits, but do not assume this is available for raw Markdown in every connector. If safe competing edits cannot be guarded, coordinate one writer or return a pending in-chat patch instead of blindly replacing the file.
+5. Read back the same file ID and verify intended text. Report DRIVE VERIFIED only then. A lost response is reconciled against this ID, not retried as a new create.
+6. Update the existing index only when a real independent canonical document/reference changed. Do not write a new Drive receipt document. Keep technical retry state in one local private record or the private session.
 
-### Bootstrap
-After user authorization: inspect root and children, recognize existing version, journal planned objects, create/reuse missing base objects, verify each provider result, register returned IDs, then create only requested entity scopes and their base histories. Re-run should preserve user content and resume after errors. Unknown or duplicate records require review, not overwrite.
+A first setup creates only missing necessary records, never a full set of placeholder folders. A discovered client/idea/lead is not permission to promote it. An actual small active project can remain an inline section.
 
-### Several users
-Each user supplies their own authorized root. Nothing in the public repository points to a maintainer's private Drive. Teams needing actual access separation must configure provider permissions or separate roots/projects, not rely on a scope tag. Never share the root publicly to make an integration work.
+## Offline tooling
+`canonical_sync.py` defines a small provider-neutral read/guarded-update/read-back contract and is tested with a simulated provider. It has no bundled Google authentication or live connector adapter. A host can apply the same protocol with its authorized tools. Source CLI drive-bind/drive-sync defaults are blocked in compact mode; old event uploads require explicit legacy mode and are not recommended for this layout.
 
-### Existing data
-Inventory files and ownership, preserve their IDs and content, move only clearly classified documents, and record old/new parents. Keep unknown legal/client records in a review/archive location until resolved. Do not delete old content because a new template exists. An empty duplicate index may be archived after verification; choose one canonical index and mark the other as legacy.
-
-### Handoff
-Drive remains the canonical source when configured as authority. Export a minimal per-session snapshot for IDE work; record where it came from. Local checkpoints form a pending outbox. A later steward pass reads and reconciles the changes through connected tools. The optional REST bridge can transfer immutable events, but does not replace this canonical-context reconciliation.
+Folders, metadata and prompt scopes do not enforce confidentiality by themselves. Preserve provider permissions and separate restricted records. Never place private IDs or knowledge in public GitHub.

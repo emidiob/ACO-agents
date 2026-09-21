@@ -1,3 +1,5 @@
+> Historical/previous release material. For current storage, follow [v0.5.1 Compact Memory](COMPACT-MEMORY.md); do not initialize old event/session folder layouts.
+
 # Manual host acceptance — synthetic data only
 
 These are runnable scenarios with acceptance criteria, NOT completed test results.

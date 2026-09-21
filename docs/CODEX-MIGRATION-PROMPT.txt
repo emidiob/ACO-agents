@@ -1,18 +1,35 @@
-Convert the existing emidiob/ACO-agents checkout to the supplied ACO v0.4.3 skill-library release. The new ZIP/extracted release is outside the existing checkout. Use the actual supplied path, not an invented one.
+Update the intended ACO repository using the supplied ACO v0.7.0 package.
 
-Preserve .git, repository history, origin, the supplied v0.4.3 proprietary LICENSE, unrelated tracked files and all untracked/private files. Do not delete the repository, run git clean/reset --hard, use rm -rf on it, or force push. Do not touch Google Drive in this Git migration.
+Read these instructions FROM THE NEW PACKAGE, not the old checkout.
+Confirm the exact source and target directories, current Git branch and origin remote.
+The new source is a complete release; preserve its proprietary LICENSE unchanged.
 
-1. Read the supplied README.md, docs/CLI.md and the source migration script. Verify the release checksum/manifest. Confirm the target is the root of emidiob/ACO-agents and inspect tracked/staged/untracked status. If tracked work is dirty, preserve it and stop before replacement; do not stash or discard it without permission.
-2. Run the new release's `python3 scripts/aco_cli.py migrate --target <existing-checkout>` as a dry run. Review the exact add/replace/remove plan. It removes only known obsolete ACO files and blocks unrecognized edits or collisions.
-3. Run the same command with --apply. It creates a backup branch and a migration branch, then stages the exact managed changes. Do not replace this with broad folder deletion or copying only visible files.
-4. In the updated checkout run:
+1. Extract the ZIP outside the target repository. Do not commit the outer ZIP folder as a nested ACO-agents directory.
+2. Inspect `git status`, current branch, origin and recent log. Preserve .git, history and all unrelated, untracked or private material. Stop if tracked user changes need a decision.
+3. From the NEW source folder, run the safe migration preview:
+   python3 scripts/aco_cli.py migrate --target /ABSOLUTE/PATH/TO/EXISTING/ACO-agents
+4. Review managed-file changes. Stop on unknown hashes/collisions. Do not use git clean, reset --hard, blanket deletion or force push.
+5. Apply only through the included migration tool:
+   python3 scripts/aco_cli.py migrate --target /ABSOLUTE/PATH/TO/EXISTING/ACO-agents --apply
+6. In the TARGET checkout run:
    python3 scripts/generate.py --check
    python3 scripts/aco_cli.py validate
+   python3 scripts/aco_cli.py role-stocktake
+   python3 scripts/aco_cli.py route-benchmark --input config/routing-final-holdout.json
+   python3 scripts/aco_cli.py execution-benchmark --input config/execution-benchmark.json
+   python3 scripts/aco_cli.py eval-score --input release/behavioral-simulation.json
    python3 -m unittest discover -s tests -v
-5. The release was locally tested; independently rerun those checks here. Inspect git diff --cached --stat and the staged diff. Confirm that LICENSE is the ACO Proprietary Source-Available License v1.0 and that README describes the current release as proprietary source-available with redistribution prohibited. Confirm no filled contexts, session logs, personal data, credentials, real private Drive IDs or private artifacts are staged. Confirm no plugin manifest/marketplace/submission files remain as active repository files. Preserve the intentional generic legacy-test fixture and legacy file fingerprints.
-6. If validation succeeds, commit with:
-   Refactor ACO v0.4.3: scoped skills, safe setup, history and local tools
-7. The user authorizes publishing this reviewed update to origin/main. Fetch origin/main, check for new remote work, and merge/fast-forward the reviewed branch to main only if safe. Do not force or overwrite remote changes. Push without force. If a permission error occurs, stop and report it accurately rather than trying alternate unauthorized write routes.
-8. Report deleted/added/changed file counts, test results, privacy check limitations, backup branch, commit SHA and confirmed push result. Do not claim that the user's Codex installation or Google Drive was updated by this repository push.
+7. Verify version 0.7.0; 363 canonical roles; 16 skills; 61 workflows; 97 optional resources; Compact Memory remains default.
+8. Verify the execution layer exists: capabilities.json, permission-policy.json, adapter-contract.json, workflow-states.json, execution-benchmark.json; execution-plan / permission-check / receipt-check / adapter-check / workflow-check / execution-summary commands; EXECUTION.md protocol.
+9. Confirm that these local commands are validators/planners only and do not claim a live service was connected or invoked.
+10. Review staged diff and secret/private-path checks. Preserve legitimate historical/upstream licensing notices. LICENSE must remain byte-identical to the supplied release.
+11. If checks pass, I authorize a commit:
+   ACO v0.7.0 — Art & Commerce Office
+12. Fetch origin. Bring the validated commit to main only if a safe fast-forward or reviewed merge is possible. Stop on divergence/conflicts; do not overwrite remote work. Push normally to origin/main when safe, never force.
+13. Report the backup branch, work branch, tests/gates, commit SHA, final git status and actual push result.
 
-After publishing, native installations can be updated separately with the safe installer using the user's chosen offices. No plugin directory submission is required.
+Do NOT modify Drive/private knowledge, install optional third-party software, connect accounts, send messages, publish content, submit applications, make payments, sign documents, delete remote data, run paid generation or create schedules as part of this repository update.
+
+A GitHub push does not update locally installed ACO files or reload an existing ChatGPT/Codex session. Local installation is a separate authorized step:
+   python3 scripts/aco_cli.py install --apply
+Optional native profiles still require an explicit office selection, for example --offices all.

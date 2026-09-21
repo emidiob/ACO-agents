@@ -57,7 +57,7 @@ def migrate(target: Path, apply: bool = False) -> dict:
             raise Conflict('New release collides with a non-ACO tracked file: ' + rel)
         if rel not in tracked:
             adds.append(rel)
-        elif digest(p.read_bytes()) != meta['sha256']:
+        elif digest(p.read_bytes()) != meta['sha256'] or (p.stat().st_mode & 0o777) != meta.get('mode', 0o644):
             changes.append(rel)
     result = {'status': 'dry_run', 'target': str(target), 'add': adds,
               'replace': changes, 'remove': removes,

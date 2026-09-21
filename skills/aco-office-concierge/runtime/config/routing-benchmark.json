@@ -1,0 +1,625 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.7.0",
+  "cases": [
+    {
+      "id": "a1",
+      "split": "development",
+      "prompt": "I want a rigorous critique of this new artwork, not career advice",
+      "expected_office": "artist-office",
+      "acceptable_roles": [
+        "art_critic"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "a3",
+      "split": "development",
+      "prompt": "How should I build a relationship with this gallery after the studio visit?",
+      "expected_office": "artist-office",
+      "acceptable_roles": [
+        "gallery_relations_manager",
+        "artist_agent"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "o2",
+      "split": "development",
+      "prompt": "We need a sponsorship package for an institutional cultural programme",
+      "expected_office": "organization-office",
+      "acceptable_roles": [
+        "sponsorship_director",
+        "funding_partnerships_manager"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "g1",
+      "split": "development",
+      "prompt": "Develop a visual identity system for this new brand",
+      "expected_office": "agency-office",
+      "acceptable_roles": [
+        "brand_identity_designer"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "g3",
+      "split": "development",
+      "prompt": "Art-direct the responsive website so it expresses the brand, not just UX",
+      "expected_office": "agency-office",
+      "acceptable_roles": [
+        "digital_design_director"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "p1",
+      "split": "development",
+      "prompt": "Users report a regression after the last frontend release; isolate the bug",
+      "expected_office": "product-office",
+      "acceptable_roles": [
+        "bug_investigator"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "p3",
+      "split": "development",
+      "prompt": "Plan a safe migration of the production database with rollback evidence",
+      "expected_office": "product-office",
+      "acceptable_roles": [
+        "migration_specialist",
+        "database_engineer"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "l1",
+      "split": "development",
+      "prompt": "Review this commercial agreement and flag problematic clauses",
+      "expected_office": "legal-office",
+      "acceptable_roles": [
+        "contract_reviewer",
+        "commercial_contracts_advisor"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "l3",
+      "split": "development",
+      "prompt": "Map GDPR and privacy obligations for this customer-data flow",
+      "expected_office": "legal-office",
+      "acceptable_roles": [
+        "privacy_data_protection_advisor"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r2",
+      "split": "development",
+      "prompt": "Rebuild my CV architecture for a senior international role",
+      "expected_office": "recruitment-office",
+      "acceptable_roles": [
+        "resume_strategist"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "f1",
+      "split": "development",
+      "prompt": "Three client invoices are overdue; organize receivables follow-up",
+      "expected_office": "finance-office",
+      "acceptable_roles": [
+        "billing_receivables_coordinator"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "f3",
+      "split": "development",
+      "prompt": "Show our cash-flow runway and upcoming liquidity pressure",
+      "expected_office": "finance-office",
+      "acceptable_roles": [
+        "cashflow_treasury_analyst"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "c2",
+      "split": "development",
+      "prompt": "Coordinate our response to this formal tender and submission requirements",
+      "expected_office": "commercial-office",
+      "acceptable_roles": [
+        "tender_bid_coordinator"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h1",
+      "split": "development",
+      "prompt": "Create a clean onboarding plan for a new employee joining next week",
+      "expected_office": "people-office",
+      "acceptable_roles": [
+        "onboarding_offboarding_coordinator"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h3",
+      "split": "development",
+      "prompt": "Model our headcount and staffing needs for the next two quarters",
+      "expected_office": "people-office",
+      "acceptable_roles": [
+        "workforce_planner"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "d2",
+      "split": "development",
+      "prompt": "Define acceptance criteria and sign-off evidence for this delivery",
+      "expected_office": "delivery-office",
+      "acceptable_roles": [
+        "quality_acceptance_coordinator"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "ad1",
+      "split": "development",
+      "prompt": "Read this email thread and draft the appropriate reply",
+      "expected_office": "administration-office",
+      "acceptable_roles": [
+        "inbox_correspondence_manager",
+        "communications_editor"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "ad3",
+      "split": "development",
+      "prompt": "Research flights, hotel and practical travel logistics for the trip",
+      "expected_office": "administration-office",
+      "acceptable_roles": [
+        "travel_logistics_coordinator"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "pr2",
+      "split": "development",
+      "prompt": "Adapt this creative direction into a prompt for an AI video model",
+      "expected_office": "production-office",
+      "acceptable_roles": [
+        "ai_video_prompt_adapter",
+        "visual_prompt_engineer"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "pr4",
+      "split": "development",
+      "prompt": "Prepare the final dialogue/music/effects mix for delivery",
+      "expected_office": "production-office",
+      "acceptable_roles": [
+        "re_recording_mixer"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "pub2",
+      "split": "development",
+      "prompt": "Check bleed, fonts, image resolution and make the PDF print-ready",
+      "expected_office": "publishing-office",
+      "acceptable_roles": [
+        "prepress_specialist"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "s1",
+      "split": "development",
+      "prompt": "Edit my artist statement without turning it into marketing copy",
+      "expected_office": "shared",
+      "acceptable_roles": [
+        "editor",
+        "art_writer"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "s3",
+      "split": "development",
+      "prompt": "I do not know which ACO office should handle this request; route it",
+      "expected_office": "shared",
+      "acceptable_roles": [
+        "office_concierge"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-art-studio-visit",
+      "split": "holdout",
+      "prompt": "I have a studio visit with a gallerist next week. Help me choose what to show and how to continue the relationship afterward.",
+      "expected_office": "artist-office",
+      "acceptable_roles": [
+        "gallery_relations_manager",
+        "artist_agent"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-art-archive",
+      "split": "holdout",
+      "prompt": "I need a durable inventory for works, dimensions, editions, locations and condition notes without turning every item into a project.",
+      "expected_office": "artist-office",
+      "acceptable_roles": [
+        "collection_inventory_manager",
+        "practice_archivist"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-org-programme",
+      "split": "holdout",
+      "prompt": "Our foundation wants a twelve-month sequence of exhibitions, talks and workshops around ecology, with a coherent curatorial logic.",
+      "expected_office": "organization-office",
+      "acceptable_roles": [
+        "programme_curator"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-org-partner",
+      "split": "holdout",
+      "prompt": "Map potential institutional collaborators and structure a partnership approach for the cultural programme.",
+      "expected_office": "organization-office",
+      "acceptable_roles": [
+        "partnerships_director",
+        "network_mapper"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-agency-identity",
+      "split": "holdout",
+      "prompt": "We have a rough wordmark, typeface and two colors. Turn them into a coherent visual system with applications.",
+      "expected_office": "agency-office",
+      "acceptable_roles": [
+        "brand_identity_designer",
+        "design_director"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-agency-mobile-qa",
+      "split": "holdout",
+      "prompt": "The landing page compiles, but the typography, spacing and rhythm feel wrong on mobile. Review the rendered result.",
+      "expected_office": "agency-office",
+      "acceptable_roles": [
+        "visual_design_critic",
+        "web_typography_layout_specialist",
+        "digital_design_director"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-agency-social-draft",
+      "split": "holdout",
+      "prompt": "Prepare a week of platform-native posts and carousel ideas for Instagram; nothing should be published yet.",
+      "expected_office": "agency-office",
+      "acceptable_roles": [
+        "social_content_creator",
+        "social_media_manager"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-product-user-research",
+      "split": "holdout",
+      "prompt": "We need interviews and usability sessions to understand why users abandon the onboarding flow.",
+      "expected_office": "product-office",
+      "acceptable_roles": [
+        "ux_researcher",
+        "product_researcher"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-product-design-system",
+      "split": "holdout",
+      "prompt": "Define reusable tokens, components and states so the product UI stops drifting between screens.",
+      "expected_office": "product-office",
+      "acceptable_roles": [
+        "design_system_designer"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-product-a11y-test",
+      "split": "holdout",
+      "prompt": "Test keyboard navigation, focus order and screen-reader behavior in the actual interface.",
+      "expected_office": "product-office",
+      "acceptable_roles": [
+        "accessibility_tester",
+        "accessibility_specialist"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-legal-dpa",
+      "split": "holdout",
+      "prompt": "A vendor sent us a data-processing addendum. Identify privacy obligations and risky clauses before we sign.",
+      "expected_office": "legal-office",
+      "acceptable_roles": [
+        "privacy_data_protection_advisor",
+        "contract_reviewer",
+        "procurement_vendor_contract_advisor"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-legal-image-rights",
+      "split": "holdout",
+      "prompt": "Can we license these photographs for a paid campaign across Europe for two years? Review rights and usage terms.",
+      "expected_office": "legal-office",
+      "acceptable_roles": [
+        "licensing_rights_advisor",
+        "ip_copyright_advisor"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-recruit-offer",
+      "split": "holdout",
+      "prompt": "I received an offer. Help me negotiate title, compensation, flexibility and start date.",
+      "expected_office": "recruitment-office",
+      "acceptable_roles": [
+        "offer_negotiation_advisor"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-recruit-fit",
+      "split": "holdout",
+      "prompt": "Compare my verified experience with this role description and show the material gaps before I apply.",
+      "expected_office": "recruitment-office",
+      "acceptable_roles": [
+        "job_fit_analyst",
+        "skills_gap_analyst"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-finance-runway",
+      "split": "holdout",
+      "prompt": "We have limited cash on hand, several supplier payments due and client money arriving later. Show the liquidity risk.",
+      "expected_office": "finance-office",
+      "acceptable_roles": [
+        "cashflow_treasury_analyst"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-finance-margin",
+      "split": "holdout",
+      "prompt": "This project price looks healthy but production costs may erase the margin. Model the economics before we quote.",
+      "expected_office": "finance-office",
+      "acceptable_roles": [
+        "pricing_margin_analyst",
+        "production_cost_controller"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-commercial-not-client",
+      "split": "holdout",
+      "prompt": "The prospect likes the idea but has not accepted the proposal. What status should it have and what is the next sales step?",
+      "expected_office": "commercial-office",
+      "acceptable_roles": [
+        "sales_operations_manager",
+        "lead_qualification_researcher",
+        "commercial_orchestrator"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-commercial-retention",
+      "split": "holdout",
+      "prompt": "A current customer is at risk of leaving after a difficult delivery. Build a retention and recovery plan.",
+      "expected_office": "commercial-office",
+      "acceptable_roles": [
+        "customer_success_manager"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-people-interview",
+      "split": "holdout",
+      "prompt": "We are hiring three designers. Create a fair, repeatable interview structure for the employer side.",
+      "expected_office": "people-office",
+      "acceptable_roles": [
+        "structured_interview_designer",
+        "hiring_coordinator"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-people-ld",
+      "split": "holdout",
+      "prompt": "Create a development plan for employees who need stronger management and presentation skills.",
+      "expected_office": "people-office",
+      "acceptable_roles": [
+        "learning_development_specialist"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-delivery-program",
+      "split": "holdout",
+      "prompt": "Eight workstreams share milestones and resources. I need one integrated dependency view and escalation path.",
+      "expected_office": "delivery-office",
+      "acceptable_roles": [
+        "programme_delivery_manager",
+        "project_controls_analyst"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-delivery-accept",
+      "split": "holdout",
+      "prompt": "Before handover, define exactly what evidence is required for the client to accept the deliverables.",
+      "expected_office": "delivery-office",
+      "acceptable_roles": [
+        "quality_acceptance_coordinator"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-admin-uncertain-send",
+      "split": "holdout",
+      "prompt": "The email action timed out and I have no receipt. Figure out the communication status before anything is resent.",
+      "expected_office": "administration-office",
+      "acceptable_roles": [
+        "communications_operator",
+        "inbox_correspondence_manager"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-admin-minutes",
+      "split": "holdout",
+      "prompt": "Prepare the agenda, capture decisions and actions, and circulate concise meeting notes.",
+      "expected_office": "administration-office",
+      "acceptable_roles": [
+        "meeting_calendar_coordinator",
+        "executive_assistant"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-production-qc",
+      "split": "holdout",
+      "prompt": "Check the final 4K master, captions, audio channels and delivery specs before handoff.",
+      "expected_office": "production-office",
+      "acceptable_roles": [
+        "media_delivery_qc"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-production-music",
+      "split": "holdout",
+      "prompt": "Find music that fits the film and determine what rights information production needs before use.",
+      "expected_office": "production-office",
+      "acceptable_roles": [
+        "music_supervisor"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-publishing-copy",
+      "split": "holdout",
+      "prompt": "The argument is approved; now I need sentence-level consistency, grammar and house-style cleanup without structural rewriting.",
+      "expected_office": "publishing-office",
+      "acceptable_roles": [
+        "copy_editor"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-publishing-rights",
+      "split": "holdout",
+      "prompt": "Track permissions for quoted text, images and translated material before the catalogue goes to press.",
+      "expected_office": "publishing-office",
+      "acceptable_roles": [
+        "publishing_rights_permissions_manager"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "h-shared-ambiguous",
+      "split": "holdout",
+      "prompt": "I need help with something important tomorrow, but I have not explained what the task is yet.",
+      "expected_office": "shared",
+      "acceptable_roles": [
+        "office_concierge"
+      ],
+      "max_selected_roles": 1,
+      "critical": true
+    },
+    {
+      "id": "h-shared-art-writing",
+      "split": "holdout",
+      "prompt": "Turn these notes into a serious exhibition text, preserving the ambiguity of the work rather than selling it.",
+      "expected_office": "shared",
+      "acceptable_roles": [
+        "art_writer",
+        "editor"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    }
+  ],
+  "gate": {
+    "minimum_score": 90.0,
+    "minimum_office_accuracy": 0.9,
+    "minimum_top1_role_accuracy": 0.85,
+    "minimum_top3_role_recall": 0.95,
+    "maximum_overstaff_rate": 0.05,
+    "maximum_critical_failures": 0
+  }
+}

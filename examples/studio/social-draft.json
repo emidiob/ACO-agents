@@ -1,0 +1,21 @@
+{
+  "packet": {
+    "scope_id": "org-fixture",
+    "brand_id": "brand-fixture",
+    "account_id": "account-fixture",
+    "platform": "synthetic-platform",
+    "version": "1",
+    "action": "draft",
+    "posts": [
+      {
+        "id": "post1",
+        "text": "Synthetic test copy. Not for publication.",
+        "media": [],
+        "claims": [],
+        "privacy_review_ref": "fixture-review",
+        "accessibility_review_ref": "fixture-review",
+        "disclosure_review_ref": "fixture-review"
+      }
+    ]
+  }
+}

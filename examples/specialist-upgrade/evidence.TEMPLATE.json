@@ -1,0 +1,22 @@
+{
+  "expected_revision": "REPLACE_WITH_ACTUAL_BUILD_OR_COMMIT",
+  "required_ids": [
+    "read-story",
+    "reflow",
+    "visual-direction"
+  ],
+  "claims": [
+    {
+      "id": "read-story",
+      "status": "not_run"
+    },
+    {
+      "id": "reflow",
+      "status": "not_run"
+    },
+    {
+      "id": "visual-direction",
+      "status": "not_run"
+    }
+  ]
+}

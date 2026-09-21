@@ -1,0 +1,12 @@
+{
+  "durability": "temporary_or_existing_compact_record",
+  "history": [
+    {"state": "proposed"},
+    {"state": "prepared"},
+    {"state": "approved"},
+    {"state": "executing"},
+    {"state": "executed", "evidence_ref": "fictional execution receipt"},
+    {"state": "checked", "evidence_ref": "fictional readback/check"},
+    {"state": "closed", "evidence_ref": "fictional completion review"}
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "aco_version": "0.4.3",
+  "aco_version": "0.7.0",
   "skill_count": 16,
-  "role_count": 349,
+  "role_count": 363,
   "skills": [
     "aco-administration-office",
     "aco-agency-office",
@@ -52,14 +52,14 @@
         "commercial_strategy_director",
         "digital_product_manager"
       ],
-      "count": 55
+      "count": 58
     },
     "product-office": {
       "lead": "product_software_orchestrator",
       "dependencies": [
         "frontend_prototyper"
       ],
-      "count": 53
+      "count": 58
     },
     "legal-office": {
       "lead": "legal_orchestrator",
@@ -157,7 +157,7 @@
         "technical_art_producer",
         "production_cost_controller"
       ],
-      "count": 34
+      "count": 40
     },
     "publishing-office": {
       "lead": "publishing_media_orchestrator",
@@ -253,7 +253,7 @@
     },
     "agency_orchestrator": {
       "office": "agency-office",
-      "description": "Orchestrator for a creative production, brand strategy, design and marketing agency. Routes work through directors, specialists and execution makers without overstaffing tasks.",
+      "description": "Lead router for a creative agency spanning strategy, brand, design, campaigns, production, content, media and marketing.",
       "path": "skills/aco-agency-office/references/agents/agency-orchestrator.md",
       "skill_path": "aco-agency-office/references/agents/agency-orchestrator.md",
       "native_name": "aco_agency_orchestrator",
@@ -346,6 +346,14 @@
       "skill_path": "aco-agency-office/references/agents/content-researcher.md",
       "native_name": "aco_content_researcher",
       "codex_path": "extras/codex-custom-agents/agency-office/aco-content-researcher.toml"
+    },
+    "conversion_experiment_designer": {
+      "office": "agency-office",
+      "description": "Turn evidence-backed conversion hypotheses into interpretable experiments.",
+      "path": "skills/aco-agency-office/references/agents/conversion-experiment-designer.md",
+      "skill_path": "aco-agency-office/references/agents/conversion-experiment-designer.md",
+      "native_name": "aco_conversion_experiment_designer",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-conversion-experiment-designer.toml"
     },
     "copy_researcher": {
       "office": "agency-office",
@@ -683,6 +691,14 @@
       "native_name": "aco_verbal_identity_director",
       "codex_path": "extras/codex-custom-agents/agency-office/aco-verbal-identity-director.toml"
     },
+    "visual_design_critic": {
+      "office": "agency-office",
+      "description": "Assess rendered design against a brief without imposing a default style.",
+      "path": "skills/aco-agency-office/references/agents/visual-design-critic.md",
+      "skill_path": "aco-agency-office/references/agents/visual-design-critic.md",
+      "native_name": "aco_visual_design_critic",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-visual-design-critic.toml"
+    },
     "visual_researcher": {
       "office": "agency-office",
       "description": "Visual researcher for photography, film, art, fashion, design, archives, image culture, directors, photographers and visual references.",
@@ -690,6 +706,14 @@
       "skill_path": "aco-agency-office/references/agents/visual-researcher.md",
       "native_name": "aco_visual_researcher",
       "codex_path": "extras/codex-custom-agents/agency-office/aco-visual-researcher.toml"
+    },
+    "web_typography_layout_specialist": {
+      "office": "agency-office",
+      "description": "Develop and test typographic hierarchy and responsive layout systems.",
+      "path": "skills/aco-agency-office/references/agents/web-typography-layout-specialist.md",
+      "skill_path": "aco-agency-office/references/agents/web-typography-layout-specialist.md",
+      "native_name": "aco_web_typography_layout_specialist",
+      "codex_path": "extras/codex-custom-agents/agency-office/aco-web-typography-layout-specialist.toml"
     },
     "art_contracts_rights_advisor": {
       "office": "artist-office",
@@ -821,7 +845,7 @@
     },
     "creative_orchestrator": {
       "office": "artist-office",
-      "description": "Orchestrator for a full contemporary-art studio and professional office: artistic research, curatorial development, career, practice planning, opportunities, production, rights, revenue, sales, marketing, communications and operations.",
+      "description": "Lead router for a contemporary-art practice across artistic development, research, curating, opportunities, production, career, rights, archive, revenue and studio operations.",
       "path": "skills/aco-artist-office/references/agents/creative-orchestrator.md",
       "skill_path": "aco-artist-office/references/agents/creative-orchestrator.md",
       "native_name": "aco_creative_orchestrator",
@@ -1629,7 +1653,7 @@
     },
     "organization_orchestrator": {
       "office": "organization-office",
-      "description": "Orchestrator for the organization across research, culture, creative, publishing, clients, partnerships, funding, products, operations and growth.",
+      "description": "Lead router for a cultural/research organization across programme, research, publishing, partnerships, clients, funding, products, operations and growth.",
       "path": "skills/aco-organization-office/references/agents/organization-orchestrator.md",
       "skill_path": "aco-organization-office/references/agents/organization-orchestrator.md",
       "native_name": "aco_organization_orchestrator",
@@ -1835,6 +1859,14 @@
       "native_name": "aco_ai_product_engineer",
       "codex_path": "extras/codex-custom-agents/product-office/aco-ai-product-engineer.toml"
     },
+    "analytics_instrumentation_engineer": {
+      "office": "product-office",
+      "description": "Implement testable, privacy-aware product and marketing event instrumentation.",
+      "path": "skills/aco-product-office/references/agents/analytics-instrumentation-engineer.md",
+      "skill_path": "aco-product-office/references/agents/analytics-instrumentation-engineer.md",
+      "native_name": "aco_analytics_instrumentation_engineer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-analytics-instrumentation-engineer.toml"
+    },
     "api_integration_engineer": {
       "office": "product-office",
       "description": "Engineer for third-party service integration, authentication flows, webhooks and API reliability.",
@@ -1891,6 +1923,14 @@
       "native_name": "aco_cloud_architect",
       "codex_path": "extras/codex-custom-agents/product-office/aco-cloud-architect.toml"
     },
+    "cms_content_architect": {
+      "office": "product-office",
+      "description": "Design maintainable content models and editorial publishing workflows.",
+      "path": "skills/aco-product-office/references/agents/cms-content-architect.md",
+      "skill_path": "aco-product-office/references/agents/cms-content-architect.md",
+      "native_name": "aco_cms_content_architect",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-cms-content-architect.toml"
+    },
     "code_reviewer": {
       "office": "product-office",
       "description": "Reviewer for code quality, maintainability, clarity and adherence to standards.",
@@ -1898,6 +1938,14 @@
       "skill_path": "aco-product-office/references/agents/code-reviewer.md",
       "native_name": "aco_code_reviewer",
       "codex_path": "extras/codex-custom-agents/product-office/aco-code-reviewer.toml"
+    },
+    "creative_frontend_engineer": {
+      "office": "product-office",
+      "description": "Build expressive interactive websites with accessible low-resource fallbacks.",
+      "path": "skills/aco-product-office/references/agents/creative-frontend-engineer.md",
+      "skill_path": "aco-product-office/references/agents/creative-frontend-engineer.md",
+      "native_name": "aco_creative_frontend_engineer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-creative-frontend-engineer.toml"
     },
     "data_engineer": {
       "office": "product-office",
@@ -1954,6 +2002,14 @@
       "skill_path": "aco-product-office/references/agents/documentation-writer.md",
       "native_name": "aco_documentation_writer",
       "codex_path": "extras/codex-custom-agents/product-office/aco-documentation-writer.toml"
+    },
+    "figma_implementation_engineer": {
+      "office": "product-office",
+      "description": "Reconcile authorized Figma designs with actual code components and runtime behaviour.",
+      "path": "skills/aco-product-office/references/agents/figma-implementation-engineer.md",
+      "skill_path": "aco-product-office/references/agents/figma-implementation-engineer.md",
+      "native_name": "aco_figma_implementation_engineer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-figma-implementation-engineer.toml"
     },
     "frontend_engineer": {
       "office": "product-office",
@@ -2085,7 +2141,7 @@
     },
     "product_software_orchestrator": {
       "office": "product-office",
-      "description": "Orchestrator for websites, web apps, software products, internal tools, APIs and AI products. Routes work across product, UX, engineering, AI/data, quality and infrastructure.",
+      "description": "Lead router for software, websites, digital products, AI systems and engineering delivery.",
       "path": "skills/aco-product-office/references/agents/product-software-orchestrator.md",
       "skill_path": "aco-product-office/references/agents/product-software-orchestrator.md",
       "native_name": "aco_product_software_orchestrator",
@@ -2146,6 +2202,14 @@
       "skill_path": "aco-product-office/references/agents/senior-frontend-engineer.md",
       "native_name": "aco_senior_frontend_engineer",
       "codex_path": "extras/codex-custom-agents/product-office/aco-senior-frontend-engineer.toml"
+    },
+    "skill_evaluation_engineer": {
+      "office": "product-office",
+      "description": "Evaluate agent methods with reproducible tasks, evidence and controlled baselines.",
+      "path": "skills/aco-product-office/references/agents/skill-evaluation-engineer.md",
+      "skill_path": "aco-product-office/references/agents/skill-evaluation-engineer.md",
+      "native_name": "aco_skill_evaluation_engineer",
+      "codex_path": "extras/codex-custom-agents/product-office/aco-skill-evaluation-engineer.toml"
     },
     "software_architect": {
       "office": "product-office",
@@ -2226,6 +2290,22 @@
       "skill_path": "aco-product-office/references/agents/ux-researcher.md",
       "native_name": "aco_ux_researcher",
       "codex_path": "extras/codex-custom-agents/product-office/aco-ux-researcher.toml"
+    },
+    "ai_video_prompt_adapter": {
+      "office": "production-office",
+      "description": "Translate a shot specification into model- and interface-specific video prompting.",
+      "path": "skills/aco-production-office/references/agents/ai-video-prompt-adapter.md",
+      "skill_path": "aco-production-office/references/agents/ai-video-prompt-adapter.md",
+      "native_name": "aco_ai_video_prompt_adapter",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-ai-video-prompt-adapter.toml"
+    },
+    "animatic_editor": {
+      "office": "production-office",
+      "description": "Test narrative pacing in a frame-accurate storyboard edit before full production.",
+      "path": "skills/aco-production-office/references/agents/animatic-editor.md",
+      "skill_path": "aco-production-office/references/agents/animatic-editor.md",
+      "native_name": "aco_animatic_editor",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-animatic-editor.toml"
     },
     "assistant_video_editor": {
       "office": "production-office",
@@ -2355,6 +2435,14 @@
       "native_name": "aco_generative_model_training_engineer",
       "codex_path": "extras/codex-custom-agents/production-office/aco-generative-model-training-engineer.toml"
     },
+    "generative_video_qc": {
+      "office": "production-office",
+      "description": "Inspect generated clips for temporal, reference, continuity and delivery failures.",
+      "path": "skills/aco-production-office/references/agents/generative-video-qc.md",
+      "skill_path": "aco-production-office/references/agents/generative-video-qc.md",
+      "native_name": "aco_generative_video_qc",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-generative-video-qc.toml"
+    },
     "line_producer": {
       "office": "production-office",
       "description": "Cost and organize day-to-day production delivery.",
@@ -2459,6 +2547,22 @@
       "native_name": "aco_re_recording_mixer",
       "codex_path": "extras/codex-custom-agents/production-office/aco-re-recording-mixer.toml"
     },
+    "remotion_video_engineer": {
+      "office": "production-office",
+      "description": "Implement deterministic frame-based videos and graphics in authorized Remotion projects.",
+      "path": "skills/aco-production-office/references/agents/remotion-video-engineer.md",
+      "skill_path": "aco-production-office/references/agents/remotion-video-engineer.md",
+      "native_name": "aco_remotion_video_engineer",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-remotion-video-engineer.toml"
+    },
+    "script_continuity_supervisor": {
+      "office": "production-office",
+      "description": "Maintain story, prop, wardrobe, action and spatial continuity across shots.",
+      "path": "skills/aco-production-office/references/agents/script-continuity-supervisor.md",
+      "skill_path": "aco-production-office/references/agents/script-continuity-supervisor.md",
+      "native_name": "aco_script_continuity_supervisor",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-script-continuity-supervisor.toml"
+    },
     "set_designer": {
       "office": "production-office",
       "description": "Design physical sets and spatial production environments.",
@@ -2474,6 +2578,14 @@
       "skill_path": "aco-production-office/references/agents/sound-designer.md",
       "native_name": "aco_sound_designer",
       "codex_path": "extras/codex-custom-agents/production-office/aco-sound-designer.toml"
+    },
+    "storyboard_artist": {
+      "office": "production-office",
+      "description": "Translate scene beats into readable storyboard panels and shot-to-shot geography.",
+      "path": "skills/aco-production-office/references/agents/storyboard-artist.md",
+      "skill_path": "aco-production-office/references/agents/storyboard-artist.md",
+      "native_name": "aco_storyboard_artist",
+      "codex_path": "extras/codex-custom-agents/production-office/aco-storyboard-artist.toml"
     },
     "three_d_generalist": {
       "office": "production-office",

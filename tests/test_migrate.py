@@ -58,4 +58,20 @@ class MigrationTests(unittest.TestCase):
   self.assertEqual((d/'user-notes.txt').read_text(),'preserve')
   self.assertFalse(p.exists())
 
+ def test_mode_only_managed_change_is_migrated(self):
+  # Identical bytes do not imply an identical executable installation.
+  source=ROOT/'Install ACO.command';target=self.repo/source.name
+  self.assertEqual(source.stat().st_mode & 0o777,0o755)
+  target.write_bytes(source.read_bytes());target.chmod(0o644)
+  meta=self.repo/'release';meta.mkdir()
+  (meta/'manifest.json').write_text(json.dumps({'files':{source.name:{
+   'sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'mode':0o644}}}))
+  git(self.repo,'add','.');git(self.repo,'commit','-m','mode-only managed fixture')
+  preview=migrate(self.repo)
+  self.assertIn(source.name,preview['replace'])
+  result=migrate(self.repo,True)
+  self.assertEqual(result['status'],'staged_not_committed')
+  self.assertEqual(target.stat().st_mode & 0o777,0o755)
+  self.assertEqual(target.read_bytes(),source.read_bytes())
+
 if __name__=='__main__':unittest.main()

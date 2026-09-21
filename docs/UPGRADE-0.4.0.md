@@ -1,3 +1,5 @@
+> Historical/previous release material. For current storage, follow [v0.5.1 Compact Memory](COMPACT-MEMORY.md); do not initialize old event/session folder layouts.
+
 # Upgrade to ACO 0.4.0
 
 ## From 0.3.0

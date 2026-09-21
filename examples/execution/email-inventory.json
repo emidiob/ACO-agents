@@ -1,0 +1,14 @@
+{
+  "capabilities": [
+    {
+      "id": "email.send",
+      "resource_state": "CONNECTED_INTEGRATION",
+      "operations": ["send"],
+      "available": true,
+      "authorized": true,
+      "verified": true,
+      "evidence_ref": "fictional-fixture-host-schema",
+      "adapter_id": "fictional-mail-adapter"
+    }
+  ]
+}

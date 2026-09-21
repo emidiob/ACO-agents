@@ -1,0 +1,5143 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.7.0",
+  "purpose": "Curated routing examples from consumed development/evaluation cases only. Final release holdouts must never be merged into this file before they are scored.",
+  "source_files": [
+    "routing-benchmark.json",
+    "routing-final-validation.json",
+    "routing-independent-gate-a.json",
+    "routing-independent-gate-b.json",
+    "routing-independent-gate-c.json",
+    "routing-independent-gate-d.json",
+    "routing-independent-gate-e.json",
+    "routing-independent-gate-f.json",
+    "routing-independent-gate-g.json",
+    "routing-independent-gate-h.json",
+    "routing-independent-gate-i.json",
+    "routing-independent-gate-j.json",
+    "routing-independent-gate-k.json",
+    "routing-independent-gate-l.json",
+    "routing-independent-gate-m.json",
+    "routing-independent-gate-n.json",
+    "routing-independent-gate-o.json",
+    "routing-independent-gate-p.json",
+    "routing-release-gate.json",
+    "routing-release-validation.json",
+    "routing-validation.json"
+  ],
+  "examples": [
+    {
+      "prompt": "I want a rigorous critique of this new artwork, not career advice",
+      "office": "artist-office",
+      "roles": [
+        "art_critic"
+      ]
+    },
+    {
+      "prompt": "How should I build a relationship with this gallery after the studio visit?",
+      "office": "artist-office",
+      "roles": [
+        "gallery_relations_manager",
+        "artist_agent"
+      ]
+    },
+    {
+      "prompt": "We need a sponsorship package for an institutional cultural programme",
+      "office": "organization-office",
+      "roles": [
+        "sponsorship_director",
+        "funding_partnerships_manager"
+      ]
+    },
+    {
+      "prompt": "Develop a visual identity system for this new brand",
+      "office": "agency-office",
+      "roles": [
+        "brand_identity_designer"
+      ]
+    },
+    {
+      "prompt": "Art-direct the responsive website so it expresses the brand, not just UX",
+      "office": "agency-office",
+      "roles": [
+        "digital_design_director"
+      ]
+    },
+    {
+      "prompt": "Users report a regression after the last frontend release; isolate the bug",
+      "office": "product-office",
+      "roles": [
+        "bug_investigator"
+      ]
+    },
+    {
+      "prompt": "Plan a safe migration of the production database with rollback evidence",
+      "office": "product-office",
+      "roles": [
+        "migration_specialist",
+        "database_engineer"
+      ]
+    },
+    {
+      "prompt": "Review this commercial agreement and flag problematic clauses",
+      "office": "legal-office",
+      "roles": [
+        "contract_reviewer",
+        "commercial_contracts_advisor"
+      ]
+    },
+    {
+      "prompt": "Map GDPR and privacy obligations for this customer-data flow",
+      "office": "legal-office",
+      "roles": [
+        "privacy_data_protection_advisor"
+      ]
+    },
+    {
+      "prompt": "Rebuild my CV architecture for a senior international role",
+      "office": "recruitment-office",
+      "roles": [
+        "resume_strategist"
+      ]
+    },
+    {
+      "prompt": "Three client invoices are overdue; organize receivables follow-up",
+      "office": "finance-office",
+      "roles": [
+        "billing_receivables_coordinator"
+      ]
+    },
+    {
+      "prompt": "Show our cash-flow runway and upcoming liquidity pressure",
+      "office": "finance-office",
+      "roles": [
+        "cashflow_treasury_analyst"
+      ]
+    },
+    {
+      "prompt": "Coordinate our response to this formal tender and submission requirements",
+      "office": "commercial-office",
+      "roles": [
+        "tender_bid_coordinator"
+      ]
+    },
+    {
+      "prompt": "Create a clean onboarding plan for a new employee joining next week",
+      "office": "people-office",
+      "roles": [
+        "onboarding_offboarding_coordinator"
+      ]
+    },
+    {
+      "prompt": "Model our headcount and staffing needs for the next two quarters",
+      "office": "people-office",
+      "roles": [
+        "workforce_planner"
+      ]
+    },
+    {
+      "prompt": "Define acceptance criteria and sign-off evidence for this delivery",
+      "office": "delivery-office",
+      "roles": [
+        "quality_acceptance_coordinator"
+      ]
+    },
+    {
+      "prompt": "Read this email thread and draft the appropriate reply",
+      "office": "administration-office",
+      "roles": [
+        "inbox_correspondence_manager",
+        "communications_editor"
+      ]
+    },
+    {
+      "prompt": "Research flights, hotel and practical travel logistics for the trip",
+      "office": "administration-office",
+      "roles": [
+        "travel_logistics_coordinator"
+      ]
+    },
+    {
+      "prompt": "Adapt this creative direction into a prompt for an AI video model",
+      "office": "production-office",
+      "roles": [
+        "ai_video_prompt_adapter",
+        "visual_prompt_engineer"
+      ]
+    },
+    {
+      "prompt": "Prepare the final dialogue/music/effects mix for delivery",
+      "office": "production-office",
+      "roles": [
+        "re_recording_mixer"
+      ]
+    },
+    {
+      "prompt": "Check bleed, fonts, image resolution and make the PDF print-ready",
+      "office": "publishing-office",
+      "roles": [
+        "prepress_specialist"
+      ]
+    },
+    {
+      "prompt": "Edit my artist statement without turning it into marketing copy",
+      "office": "shared",
+      "roles": [
+        "editor",
+        "art_writer"
+      ]
+    },
+    {
+      "prompt": "I do not know which ACO office should handle this request; route it",
+      "office": "shared",
+      "roles": [
+        "office_concierge"
+      ]
+    },
+    {
+      "prompt": "I have a studio visit with a gallerist next week. Help me choose what to show and how to continue the relationship afterward.",
+      "office": "artist-office",
+      "roles": [
+        "gallery_relations_manager",
+        "artist_agent"
+      ]
+    },
+    {
+      "prompt": "I need a durable inventory for works, dimensions, editions, locations and condition notes without turning every item into a project.",
+      "office": "artist-office",
+      "roles": [
+        "collection_inventory_manager",
+        "practice_archivist"
+      ]
+    },
+    {
+      "prompt": "Our foundation wants a twelve-month sequence of exhibitions, talks and workshops around ecology, with a coherent curatorial logic.",
+      "office": "organization-office",
+      "roles": [
+        "programme_curator"
+      ]
+    },
+    {
+      "prompt": "Map potential institutional collaborators and structure a partnership approach for the cultural programme.",
+      "office": "organization-office",
+      "roles": [
+        "partnerships_director",
+        "network_mapper"
+      ]
+    },
+    {
+      "prompt": "We have a rough wordmark, typeface and two colors. Turn them into a coherent visual system with applications.",
+      "office": "agency-office",
+      "roles": [
+        "brand_identity_designer",
+        "design_director"
+      ]
+    },
+    {
+      "prompt": "The landing page compiles, but the typography, spacing and rhythm feel wrong on mobile. Review the rendered result.",
+      "office": "agency-office",
+      "roles": [
+        "visual_design_critic",
+        "web_typography_layout_specialist",
+        "digital_design_director"
+      ]
+    },
+    {
+      "prompt": "Prepare a week of platform-native posts and carousel ideas for Instagram; nothing should be published yet.",
+      "office": "agency-office",
+      "roles": [
+        "social_content_creator",
+        "social_media_manager"
+      ]
+    },
+    {
+      "prompt": "We need interviews and usability sessions to understand why users abandon the onboarding flow.",
+      "office": "product-office",
+      "roles": [
+        "ux_researcher",
+        "product_researcher"
+      ]
+    },
+    {
+      "prompt": "Define reusable tokens, components and states so the product UI stops drifting between screens.",
+      "office": "product-office",
+      "roles": [
+        "design_system_designer"
+      ]
+    },
+    {
+      "prompt": "Test keyboard navigation, focus order and screen-reader behavior in the actual interface.",
+      "office": "product-office",
+      "roles": [
+        "accessibility_tester",
+        "accessibility_specialist"
+      ]
+    },
+    {
+      "prompt": "A vendor sent us a data-processing addendum. Identify privacy obligations and risky clauses before we sign.",
+      "office": "legal-office",
+      "roles": [
+        "privacy_data_protection_advisor",
+        "contract_reviewer",
+        "procurement_vendor_contract_advisor"
+      ]
+    },
+    {
+      "prompt": "Can we license these photographs for a paid campaign across Europe for two years? Review rights and usage terms.",
+      "office": "legal-office",
+      "roles": [
+        "licensing_rights_advisor",
+        "ip_copyright_advisor"
+      ]
+    },
+    {
+      "prompt": "I received an offer. Help me negotiate title, compensation, flexibility and start date.",
+      "office": "recruitment-office",
+      "roles": [
+        "offer_negotiation_advisor"
+      ]
+    },
+    {
+      "prompt": "Compare my verified experience with this role description and show the material gaps before I apply.",
+      "office": "recruitment-office",
+      "roles": [
+        "job_fit_analyst",
+        "skills_gap_analyst"
+      ]
+    },
+    {
+      "prompt": "We have limited cash on hand, several supplier payments due and client money arriving later. Show the liquidity risk.",
+      "office": "finance-office",
+      "roles": [
+        "cashflow_treasury_analyst"
+      ]
+    },
+    {
+      "prompt": "This project price looks healthy but production costs may erase the margin. Model the economics before we quote.",
+      "office": "finance-office",
+      "roles": [
+        "pricing_margin_analyst",
+        "production_cost_controller"
+      ]
+    },
+    {
+      "prompt": "The prospect likes the idea but has not accepted the proposal. What status should it have and what is the next sales step?",
+      "office": "commercial-office",
+      "roles": [
+        "sales_operations_manager",
+        "lead_qualification_researcher",
+        "commercial_orchestrator"
+      ]
+    },
+    {
+      "prompt": "A current customer is at risk of leaving after a difficult delivery. Build a retention and recovery plan.",
+      "office": "commercial-office",
+      "roles": [
+        "customer_success_manager"
+      ]
+    },
+    {
+      "prompt": "We are hiring three designers. Create a fair, repeatable interview structure for the employer side.",
+      "office": "people-office",
+      "roles": [
+        "structured_interview_designer",
+        "hiring_coordinator"
+      ]
+    },
+    {
+      "prompt": "Create a development plan for employees who need stronger management and presentation skills.",
+      "office": "people-office",
+      "roles": [
+        "learning_development_specialist"
+      ]
+    },
+    {
+      "prompt": "Eight workstreams share milestones and resources. I need one integrated dependency view and escalation path.",
+      "office": "delivery-office",
+      "roles": [
+        "programme_delivery_manager",
+        "project_controls_analyst"
+      ]
+    },
+    {
+      "prompt": "Before handover, define exactly what evidence is required for the client to accept the deliverables.",
+      "office": "delivery-office",
+      "roles": [
+        "quality_acceptance_coordinator"
+      ]
+    },
+    {
+      "prompt": "The email action timed out and I have no receipt. Figure out the communication status before anything is resent.",
+      "office": "administration-office",
+      "roles": [
+        "communications_operator",
+        "inbox_correspondence_manager"
+      ]
+    },
+    {
+      "prompt": "Prepare the agenda, capture decisions and actions, and circulate concise meeting notes.",
+      "office": "administration-office",
+      "roles": [
+        "meeting_calendar_coordinator",
+        "executive_assistant"
+      ]
+    },
+    {
+      "prompt": "Check the final 4K master, captions, audio channels and delivery specs before handoff.",
+      "office": "production-office",
+      "roles": [
+        "media_delivery_qc"
+      ]
+    },
+    {
+      "prompt": "Find music that fits the film and determine what rights information production needs before use.",
+      "office": "production-office",
+      "roles": [
+        "music_supervisor"
+      ]
+    },
+    {
+      "prompt": "The argument is approved; now I need sentence-level consistency, grammar and house-style cleanup without structural rewriting.",
+      "office": "publishing-office",
+      "roles": [
+        "copy_editor"
+      ]
+    },
+    {
+      "prompt": "Track permissions for quoted text, images and translated material before the catalogue goes to press.",
+      "office": "publishing-office",
+      "roles": [
+        "publishing_rights_permissions_manager"
+      ]
+    },
+    {
+      "prompt": "I need help with something important tomorrow, but I have not explained what the task is yet.",
+      "office": "shared",
+      "roles": [
+        "office_concierge"
+      ]
+    },
+    {
+      "prompt": "Turn these notes into a serious exhibition text, preserving the ambiguity of the work rather than selling it.",
+      "office": "shared",
+      "roles": [
+        "art_writer",
+        "editor"
+      ]
+    },
+    {
+      "prompt": "A collector asked about acquiring two works. Organize the relationship, available-work information and follow-up without turning it into generic sales spam.",
+      "office": "artist-office",
+      "roles": [
+        "collector_relations_manager",
+        "art_sales_director"
+      ]
+    },
+    {
+      "prompt": "The sculpture concept is approved; translate it into materials, fabricator questions, tolerances and a feasible build path.",
+      "office": "artist-office",
+      "roles": [
+        "fabrication_manager",
+        "technical_art_producer"
+      ]
+    },
+    {
+      "prompt": "Place this body of work in relation to relevant historical precedents and movements without pretending influence where none is documented.",
+      "office": "artist-office",
+      "roles": [
+        "art_historian",
+        "art_researcher"
+      ]
+    },
+    {
+      "prompt": "Our nonprofit programme needs a funding mix and external partners, with responsibilities separated from pure sales sponsorship.",
+      "office": "organization-office",
+      "roles": [
+        "funding_partnerships_manager",
+        "partnerships_director",
+        "sponsorship_director"
+      ]
+    },
+    {
+      "prompt": "The institution wants to launch a small digital service for its audience; define ownership, roadmap and organizational fit.",
+      "office": "organization-office",
+      "roles": [
+        "digital_product_manager",
+        "product_experience_director"
+      ]
+    },
+    {
+      "prompt": "Choose creators for this campaign, define outreach, usage, disclosure and compensation considerations.",
+      "office": "agency-office",
+      "roles": [
+        "creator_partnerships_manager"
+      ]
+    },
+    {
+      "prompt": "Research people who fit these character notes and build a casting shortlist with representation details.",
+      "office": "agency-office",
+      "roles": [
+        "casting_researcher"
+      ]
+    },
+    {
+      "prompt": "Restructure the site content around search intent, query clusters and evergreen discoverability without keyword stuffing.",
+      "office": "agency-office",
+      "roles": [
+        "seo_content_researcher",
+        "organic_discovery_strategist"
+      ]
+    },
+    {
+      "prompt": "The codebase is growing into three services. Propose boundaries, interfaces and trade-offs before implementation.",
+      "office": "product-office",
+      "roles": [
+        "software_architect",
+        "tech_lead"
+      ]
+    },
+    {
+      "prompt": "Define product events and properties so we can measure onboarding completion and activation reliably.",
+      "office": "product-office",
+      "roles": [
+        "analytics_instrumentation_engineer",
+        "product_analyst"
+      ]
+    },
+    {
+      "prompt": "Prepare a controlled software release with rollback criteria, release notes and evidence from tests.",
+      "office": "product-office",
+      "roles": [
+        "release_manager",
+        "qa_lead"
+      ]
+    },
+    {
+      "prompt": "A client dispute is escalating. Organize the factual record and options that may reduce escalation before formal proceedings.",
+      "office": "legal-office",
+      "roles": [
+        "dispute_prevention_advisor",
+        "legal_matter_manager"
+      ]
+    },
+    {
+      "prompt": "The agreement involves parties in two countries. Research which jurisdictional rules may matter and label uncertainty.",
+      "office": "legal-office",
+      "roles": [
+        "jurisdiction_researcher",
+        "international_contracts_researcher"
+      ]
+    },
+    {
+      "prompt": "Review the consumer claims in this campaign for substantiation and advertising-compliance risk.",
+      "office": "legal-office",
+      "roles": [
+        "consumer_advertising_compliance_advisor",
+        "legal_fact_checker"
+      ]
+    },
+    {
+      "prompt": "This role is in another country. Check sponsorship, relocation and remote-work eligibility signals before I invest in the application.",
+      "office": "recruitment-office",
+      "roles": [
+        "international_mobility_job_advisor",
+        "job_fit_analyst"
+      ]
+    },
+    {
+      "prompt": "Build a networking plan around the sectors and senior roles I am targeting, with meaningful reasons to contact people.",
+      "office": "recruitment-office",
+      "roles": [
+        "networking_strategist"
+      ]
+    },
+    {
+      "prompt": "Select and sequence the case studies that best support this hiring narrative, without rewriting the underlying facts.",
+      "office": "recruitment-office",
+      "roles": [
+        "portfolio_career_editor"
+      ]
+    },
+    {
+      "prompt": "Reconcile royalty statements, revenue shares and amounts due for the publication and flag discrepancies.",
+      "office": "finance-office",
+      "roles": [
+        "royalty_revenue_accountant"
+      ]
+    },
+    {
+      "prompt": "Build a monthly management-control view of budget versus actual and material variances.",
+      "office": "finance-office",
+      "roles": [
+        "financial_controller",
+        "fp_and_a_analyst"
+      ]
+    },
+    {
+      "prompt": "We received a formal request for proposal with mandatory attachments, scoring criteria and a deadline. Coordinate the bid.",
+      "office": "commercial-office",
+      "roles": [
+        "tender_bid_coordinator",
+        "sales_proposal_specialist"
+      ]
+    },
+    {
+      "prompt": "A long-term client is unhappy after delivery. Structure recovery actions, ownership and retention signals.",
+      "office": "commercial-office",
+      "roles": [
+        "customer_success_manager"
+      ]
+    },
+    {
+      "prompt": "Create employer-side compensation ranges and benefits guidance for two levels of the same role.",
+      "office": "people-office",
+      "roles": [
+        "compensation_benefits_coordinator"
+      ]
+    },
+    {
+      "prompt": "We need to decide how many people and which capabilities the team will require next year.",
+      "office": "people-office",
+      "roles": [
+        "workforce_planner"
+      ]
+    },
+    {
+      "prompt": "Build a milestone, dependency, risk and change-control view for this multi-team programme.",
+      "office": "delivery-office",
+      "roles": [
+        "project_controls_analyst",
+        "programme_delivery_manager"
+      ]
+    },
+    {
+      "prompt": "Prepare travel options, local transfers and accommodation logistics for the team trip; do not purchase anything.",
+      "office": "administration-office",
+      "roles": [
+        "travel_logistics_coordinator"
+      ]
+    },
+    {
+      "prompt": "Maintain an auditable register of document versions, approvals and who received each final file.",
+      "office": "administration-office",
+      "roles": [
+        "records_document_controller"
+      ]
+    },
+    {
+      "prompt": "Plan on-set media ingest, backup verification, monitoring and color metadata for the shoot.",
+      "office": "production-office",
+      "roles": [
+        "digital_imaging_technician",
+        "media_data_wrangler"
+      ]
+    },
+    {
+      "prompt": "Prepare translated subtitles with timing, reading speed and delivery versions for three languages.",
+      "office": "production-office",
+      "roles": [
+        "localization_subtitles_editor"
+      ]
+    },
+    {
+      "prompt": "Track wardrobe, props, eyelines and action continuity across the shooting days.",
+      "office": "production-office",
+      "roles": [
+        "script_continuity_supervisor"
+      ]
+    },
+    {
+      "prompt": "Apply the approved book design across the full manuscript with consistent paragraph, note and heading styles.",
+      "office": "publishing-office",
+      "roles": [
+        "typesetter",
+        "editorial_designer"
+      ]
+    },
+    {
+      "prompt": "Coordinate proofs, printer requirements, manufacturing schedule and physical production of the book.",
+      "office": "publishing-office",
+      "roles": [
+        "print_production_manager",
+        "prepress_specialist"
+      ]
+    },
+    {
+      "prompt": "Plan trade and direct sales channels, orders and returns for the finished title.",
+      "office": "publishing-office",
+      "roles": [
+        "book_distribution_manager"
+      ]
+    },
+    {
+      "prompt": "Build a launch and channel strategy for a cultural project, with audience and measurement, before we make content.",
+      "office": "shared",
+      "roles": [
+        "marketing_strategist"
+      ]
+    },
+    {
+      "prompt": "Define the positioning and brand architecture for a design-led initiative before identity work starts.",
+      "office": "shared",
+      "roles": [
+        "brand_strategist"
+      ]
+    },
+    {
+      "prompt": "I have a request, but there is not enough information yet to know whether it concerns legal, production or communications.",
+      "office": "shared",
+      "roles": [
+        "office_concierge"
+      ]
+    },
+    {
+      "prompt": "I am applying for support to produce a new body of work. I need the application answers, budget, work samples and deadline requirements checked as one coherent submission.",
+      "office": "artist-office",
+      "roles": [
+        "grants_applications_manager"
+      ]
+    },
+    {
+      "prompt": "A museum curator has asked to visit my studio next month. Help me prepare the works, context and conversation without turning it into a sales pitch.",
+      "office": "artist-office",
+      "roles": [
+        "institutional_relations_manager",
+        "artist_agent"
+      ]
+    },
+    {
+      "prompt": "I need a durable record of each artwork: dimensions, materials, edition, images, exhibitions, ownership status and current location.",
+      "office": "artist-office",
+      "roles": [
+        "practice_archivist",
+        "collection_inventory_manager"
+      ]
+    },
+    {
+      "prompt": "Our cultural foundation is inviting outside artists, writers and speakers for a year-long programme. We need a sourcing, availability and contributor-onboarding system.",
+      "office": "organization-office",
+      "roles": [
+        "talent_contributors_manager"
+      ]
+    },
+    {
+      "prompt": "We are planning a public series of screenings, talks and dinners. I need the visitor flow, run of show and practical event experience organized.",
+      "office": "organization-office",
+      "roles": [
+        "events_experience_producer"
+      ]
+    },
+    {
+      "prompt": "Our institution needs to know whether its research programme changed participation and partnerships, not just count attendance.",
+      "office": "organization-office",
+      "roles": [
+        "impact_evaluation"
+      ]
+    },
+    {
+      "prompt": "A client has approved the visual identity. Now define how the logo, type and transitions should move consistently across film, social and the website.",
+      "office": "agency-office",
+      "roles": [
+        "motion_design_director"
+      ]
+    },
+    {
+      "prompt": "For a client brand, turn the approved content strategy into a month of platform-native posts and carousels, but do not publish anything.",
+      "office": "agency-office",
+      "roles": [
+        "social_content_creator",
+        "social_media_manager"
+      ]
+    },
+    {
+      "prompt": "The client site works technically, but I need someone to inspect the rendered pages against the brief for hierarchy, spacing and visual coherence.",
+      "office": "agency-office",
+      "roles": [
+        "visual_design_critic",
+        "digital_design_director"
+      ]
+    },
+    {
+      "prompt": "Our app needs a third-party payments API. Check authentication, webhooks, failure modes and integration constraints before engineering starts.",
+      "office": "product-office",
+      "roles": [
+        "api_researcher",
+        "api_integration_engineer"
+      ]
+    },
+    {
+      "prompt": "A predictive feature is giving unstable results. I need the dataset, target definition, leakage risk and evaluation metrics reviewed before retraining.",
+      "office": "product-office",
+      "roles": [
+        "data_scientist",
+        "ai_engineer"
+      ]
+    },
+    {
+      "prompt": "Keyboard users cannot complete our checkout flow. Reproduce the accessibility failures and document concrete bugs for engineering.",
+      "office": "product-office",
+      "roles": [
+        "accessibility_tester",
+        "accessibility_specialist"
+      ]
+    },
+    {
+      "prompt": "Review this client services agreement for payment, liability, IP ownership, termination and governing law before I sign.",
+      "office": "legal-office",
+      "roles": [
+        "contract_reviewer",
+        "commercial_contracts_advisor"
+      ]
+    },
+    {
+      "prompt": "We want to reuse customer photos in paid advertising. I need the licensing and consent issues identified before the campaign goes live.",
+      "office": "legal-office",
+      "roles": [
+        "licensing_rights_advisor",
+        "consumer_advertising_compliance_advisor"
+      ]
+    },
+    {
+      "prompt": "A supplier missed a contractual milestone and is blaming us. Organize the chronology and draft a neutral reservation-of-rights response for counsel review.",
+      "office": "legal-office",
+      "roles": [
+        "claims_correspondence_drafter",
+        "dispute_prevention_advisor"
+      ]
+    },
+    {
+      "prompt": "I found a senior creative role I may apply for. Compare the documented requirements with my actual CV and identify material gaps before we tailor anything.",
+      "office": "recruitment-office",
+      "roles": [
+        "job_fit_analyst",
+        "career_strategist"
+      ]
+    },
+    {
+      "prompt": "I have a final interview next week. Research the company, team and likely interview format, then build an evidence-based prep brief.",
+      "office": "recruitment-office",
+      "roles": [
+        "interview_researcher",
+        "interview_coach"
+      ]
+    },
+    {
+      "prompt": "I received an offer. Help me evaluate salary, title, scope, flexibility and what I could negotiate without inventing market data.",
+      "office": "recruitment-office",
+      "roles": [
+        "offer_negotiation_advisor",
+        "compensation_analyst"
+      ]
+    },
+    {
+      "prompt": "I have several studio priorities, loose deadlines and handoffs across collaborators. Turn them into one practical weekly operating plan.",
+      "office": "shared",
+      "roles": [
+        "studio_manager"
+      ]
+    },
+    {
+      "prompt": "Write a critical essay about the relationship between synthetic images and evidence. This is an original cultural text, not copy for a client campaign.",
+      "office": "shared",
+      "roles": [
+        "art_writer"
+      ]
+    },
+    {
+      "prompt": "I have not explained whether this concerns my art practice, a client, a product or my company. Decide what you need to ask before assigning it.",
+      "office": "shared",
+      "roles": [
+        "office_concierge"
+      ]
+    },
+    {
+      "prompt": "We have deposits arriving late and large production payments due next month. Build a cash timing view and show the runway risk.",
+      "office": "finance-office",
+      "roles": [
+        "cashflow_treasury_analyst"
+      ]
+    },
+    {
+      "prompt": "Price this creative production using supplier costs, internal time, contingency and target margin; keep assumptions explicit.",
+      "office": "finance-office",
+      "roles": [
+        "pricing_margin_analyst"
+      ]
+    },
+    {
+      "prompt": "Prepare a clean reconciliation of invoices, bank entries and receipts for the accountant; do not file taxes.",
+      "office": "finance-office",
+      "roles": [
+        "bookkeeping_coordinator",
+        "financial_controller"
+      ]
+    },
+    {
+      "prompt": "A potential client entered our pipeline. Research whether they fit our ideal client profile before anyone treats them as an active customer.",
+      "office": "commercial-office",
+      "roles": [
+        "lead_qualification_researcher"
+      ]
+    },
+    {
+      "prompt": "We received a formal procurement document with scoring criteria, mandatory attachments and a submission deadline. Coordinate the bid response.",
+      "office": "commercial-office",
+      "roles": [
+        "tender_bid_coordinator"
+      ]
+    },
+    {
+      "prompt": "An existing customer has stopped using the service and renewal is approaching. Build a retention and re-engagement plan from the actual account evidence.",
+      "office": "commercial-office",
+      "roles": [
+        "customer_success_manager"
+      ]
+    },
+    {
+      "prompt": "We are the employer and need to find candidates for a new design lead role. Build a sourcing map from the approved hiring brief.",
+      "office": "people-office",
+      "roles": [
+        "talent_sourcing_specialist"
+      ]
+    },
+    {
+      "prompt": "An employee raised a workplace concern involving their manager. Organize the facts, process and escalation neutrally without making a disciplinary decision.",
+      "office": "people-office",
+      "roles": [
+        "employee_relations_coordinator"
+      ]
+    },
+    {
+      "prompt": "Next year the team will have three new workstreams. Estimate the capabilities and headcount we may need before opening roles.",
+      "office": "people-office",
+      "roles": [
+        "workforce_planner"
+      ]
+    },
+    {
+      "prompt": "Across three connected projects, map dependencies, sequencing and decisions that could move the overall programme date.",
+      "office": "delivery-office",
+      "roles": [
+        "programme_delivery_manager"
+      ]
+    },
+    {
+      "prompt": "The baseline says launch in November, but scope changes and supplier delays have accumulated. Quantify schedule and cost variance without rewriting the baseline.",
+      "office": "delivery-office",
+      "roles": [
+        "project_controls_analyst"
+      ]
+    },
+    {
+      "prompt": "Before project closeout, assemble the evidence needed to decide whether the agreed deliverables are actually accepted.",
+      "office": "delivery-office",
+      "roles": [
+        "quality_acceptance_coordinator"
+      ]
+    },
+    {
+      "prompt": "Find sensible train and hotel options for a two-day work trip and prepare the itinerary, but do not book anything.",
+      "office": "administration-office",
+      "roles": [
+        "travel_logistics_coordinator"
+      ]
+    },
+    {
+      "prompt": "My inbox contains several threads that need replies. Read the full context, prioritize them and draft responses without sending.",
+      "office": "administration-office",
+      "roles": [
+        "inbox_correspondence_manager"
+      ]
+    },
+    {
+      "prompt": "Schedule preparation for a meeting: agenda, attendees, decision points and a place to capture actions afterward.",
+      "office": "administration-office",
+      "roles": [
+        "meeting_calendar_coordinator"
+      ]
+    },
+    {
+      "prompt": "The edit is picture-locked. Reconnect the original camera media and prepare a clean high-resolution conform for grade and online.",
+      "office": "production-office",
+      "roles": [
+        "online_editor_conform"
+      ]
+    },
+    {
+      "prompt": "A generated video shot has identity drift and geometry popping between frames. Inspect the clip and specify what failed before another generation.",
+      "office": "production-office",
+      "roles": [
+        "generative_video_qc"
+      ]
+    },
+    {
+      "prompt": "We need a shooting plan for a dialogue scene: lensing, camera movement, lighting approach and image continuity.",
+      "office": "production-office",
+      "roles": [
+        "cinematographer",
+        "film_director"
+      ]
+    },
+    {
+      "prompt": "The book layout is approved. Prepare the final files for the printer and check bleeds, image resolution, fonts and output intent.",
+      "office": "publishing-office",
+      "roles": [
+        "prepress_specialist"
+      ]
+    },
+    {
+      "prompt": "This manuscript has the right subject but the argument and chapter order do not work yet. Improve the structure before sentence-level editing.",
+      "office": "publishing-office",
+      "roles": [
+        "developmental_editor"
+      ]
+    },
+    {
+      "prompt": "Prepare identifiers, contributor data, keywords and distribution metadata for a new publication so it can be discovered correctly.",
+      "office": "publishing-office",
+      "roles": [
+        "publishing_metadata_specialist"
+      ]
+    },
+    {
+      "prompt": "Find currently open residencies and commissions that genuinely fit the practice I described, verify eligibility and deadlines from official sources, and rank by fit rather than urgency.",
+      "office": "artist-office",
+      "roles": [
+        "art_opportunities_scout"
+      ]
+    },
+    {
+      "prompt": "This sculpture is approved conceptually. Turn it into fabrication questions, materials, tolerances, vendor quotes and a prototype/QC plan.",
+      "office": "artist-office",
+      "roles": [
+        "fabrication_manager",
+        "exhibition_producer"
+      ]
+    },
+    {
+      "prompt": "A gallery sent me an agreement covering exclusivity, image use, commissions and unsold works. Flag the artist-side deal issues before I respond.",
+      "office": "artist-office",
+      "roles": [
+        "art_contracts_rights_advisor",
+        "gallery_relations_manager"
+      ]
+    },
+    {
+      "prompt": "Our arts organization wants a researched view of shifts across design, technology and culture that could shape next year’s programme, without calling every viral thing a trend.",
+      "office": "organization-office",
+      "roles": [
+        "cultural_intelligence_analyst",
+        "research_director"
+      ]
+    },
+    {
+      "prompt": "Our nonprofit cultural programme needs a map of suitable foundations and public funding routes, including eligibility and partnership requirements.",
+      "office": "organization-office",
+      "roles": [
+        "funding_partnerships_manager"
+      ]
+    },
+    {
+      "prompt": "Prepare the institutional communications plan for our annual programme launch: press narrative, newsletter, announcements and public positioning.",
+      "office": "organization-office",
+      "roles": [
+        "communications_pr_director"
+      ]
+    },
+    {
+      "prompt": "The client’s positioning is approved. Build the verbal identity: voice principles, message hierarchy, naming logic and examples across channels.",
+      "office": "agency-office",
+      "roles": [
+        "verbal_identity_director"
+      ]
+    },
+    {
+      "prompt": "We need a fast responsive proof of concept for a client landing page so the team can test layout and interaction before full engineering.",
+      "office": "agency-office",
+      "roles": [
+        "frontend_prototyper",
+        "digital_design_director"
+      ]
+    },
+    {
+      "prompt": "The brand account is receiving questions, complaints and spam. Define moderation, reply patterns and escalation while tracking qualitative community signals.",
+      "office": "agency-office",
+      "roles": [
+        "community_manager",
+        "social_media_manager"
+      ]
+    },
+    {
+      "prompt": "Users report that saved projects disappear after refresh. Reproduce the issue, isolate the conditions and hand engineering a concrete defect report.",
+      "office": "product-office",
+      "roles": [
+        "bug_investigator",
+        "qa_engineer"
+      ]
+    },
+    {
+      "prompt": "Coordinate a software release with versioning, readiness checks, rollback notes and a clear go/no-go record; do not call it shipped until deployment is verified.",
+      "office": "product-office",
+      "roles": [
+        "release_manager"
+      ]
+    },
+    {
+      "prompt": "Our application has grown messy. Rework the navigation, labels and content hierarchy from actual user tasks before visual redesign.",
+      "office": "product-office",
+      "roles": [
+        "information_architect",
+        "ux_lead"
+      ]
+    },
+    {
+      "prompt": "Before we file this new brand name, identify trademark clearance issues, relevant classes and questions that need qualified counsel or official searches.",
+      "office": "legal-office",
+      "roles": [
+        "trademark_brand_protection_advisor"
+      ]
+    },
+    {
+      "prompt": "A new signup flow collects names, analytics identifiers and marketing preferences. Map privacy issues, data roles, retention and notice/consent questions.",
+      "office": "legal-office",
+      "roles": [
+        "privacy_data_protection_advisor"
+      ]
+    },
+    {
+      "prompt": "I need first-pass guidance on an employment agreement clause covering notice, leave and termination; identify jurisdiction-dependent issues rather than guessing.",
+      "office": "legal-office",
+      "roles": [
+        "employment_labor_advisor"
+      ]
+    },
+    {
+      "prompt": "Search for active senior creative-technology roles matching my stated geography and background, and verify that each vacancy is still open.",
+      "office": "recruitment-office",
+      "roles": [
+        "job_opportunity_scout"
+      ]
+    },
+    {
+      "prompt": "Resequence my professional portfolio for hiring: choose the case studies that prove the target role and tighten their evidence without inventing outcomes.",
+      "office": "recruitment-office",
+      "roles": [
+        "portfolio_career_editor"
+      ]
+    },
+    {
+      "prompt": "Build a networking approach around the sectors and senior roles I am targeting, including who to approach and a reason for each contact.",
+      "office": "recruitment-office",
+      "roles": [
+        "networking_strategist",
+        "hiring_team_mapper"
+      ]
+    },
+    {
+      "prompt": "Before anyone designs the identity, define the brand positioning, differentiation and architecture from the evidence we have, with assumptions clearly labeled.",
+      "office": "shared",
+      "roles": [
+        "brand_strategist"
+      ]
+    },
+    {
+      "prompt": "Edit this artist statement for clarity and structure while preserving the author’s voice and not adding claims that are not in the source.",
+      "office": "shared",
+      "roles": [
+        "editor",
+        "art_writer"
+      ]
+    },
+    {
+      "prompt": "Tighten this sensitive professional email so it is clear, calm and precise. I only need the wording, not an inbox action.",
+      "office": "shared",
+      "roles": [
+        "communications_editor"
+      ]
+    },
+    {
+      "prompt": "Prepare the invoice schedule and payment follow-up plan from the signed milestones, including what is overdue and what is not yet due.",
+      "office": "finance-office",
+      "roles": [
+        "billing_receivables_coordinator"
+      ]
+    },
+    {
+      "prompt": "Compare three supplier quotes against the approved need, payment terms and budget, then prepare a purchase recommendation without authorizing payment.",
+      "office": "finance-office",
+      "roles": [
+        "payables_procurement_analyst"
+      ]
+    },
+    {
+      "prompt": "Track committed versus actual spend on this shoot and show where production is moving away from the approved estimate.",
+      "office": "finance-office",
+      "roles": [
+        "production_cost_controller"
+      ]
+    },
+    {
+      "prompt": "The solution and scope are agreed. Turn them into a client proposal with deliverables, assumptions, price, exclusions and next steps.",
+      "office": "commercial-office",
+      "roles": [
+        "sales_proposal_specialist"
+      ]
+    },
+    {
+      "prompt": "Our CRM says deals are healthy but delivery and invoice data disagree. Reconcile sales, delivery and finance signals into one revenue view.",
+      "office": "commercial-office",
+      "roles": [
+        "revenue_operations_analyst"
+      ]
+    },
+    {
+      "prompt": "Clean up the opportunity pipeline: stages, owners, next actions, stale deals and forecast hygiene.",
+      "office": "commercial-office",
+      "roles": [
+        "sales_operations_manager"
+      ]
+    },
+    {
+      "prompt": "A new employee starts Monday. Build the employer-side onboarding checklist for access, documents, team introductions and first-week ownership.",
+      "office": "people-office",
+      "roles": [
+        "onboarding_offboarding_coordinator"
+      ]
+    },
+    {
+      "prompt": "We need a compensation framework for this team: salary bands, benefit assumptions and the questions that require local HR/legal input.",
+      "office": "people-office",
+      "roles": [
+        "compensation_benefits_coordinator"
+      ]
+    },
+    {
+      "prompt": "The team repeatedly struggles with client presentations. Design a practical learning plan tied to real work and evidence of improvement.",
+      "office": "people-office",
+      "roles": [
+        "learning_development_specialist"
+      ]
+    },
+    {
+      "prompt": "This small product team needs a lightweight cadence for iteration, blockers and retrospectives without adding ceremonial process.",
+      "office": "delivery-office",
+      "roles": [
+        "agile_delivery_facilitator"
+      ]
+    },
+    {
+      "prompt": "The vendor says the work is finished. Check acceptance criteria, evidence, defects and outstanding items before we sign off.",
+      "office": "delivery-office",
+      "roles": [
+        "quality_acceptance_coordinator"
+      ]
+    },
+    {
+      "prompt": "Two exhibitions, a publication and a website launch share people and dates. Coordinate the connected workstreams and dependency decisions.",
+      "office": "delivery-office",
+      "roles": [
+        "programme_delivery_manager"
+      ]
+    },
+    {
+      "prompt": "Create a controlled document register for signed agreements, approved versions and distribution so the team knows which file is authoritative.",
+      "office": "administration-office",
+      "roles": [
+        "records_document_controller"
+      ]
+    },
+    {
+      "prompt": "Send the already approved message through the authorized communication channel and report the actual tool outcome; if no sending capability exists, return NOT SENT.",
+      "office": "administration-office",
+      "roles": [
+        "communications_operator"
+      ]
+    },
+    {
+      "prompt": "Turn today’s confirmed priorities, appointments and open office tasks into a concise action list with owners and timing.",
+      "office": "administration-office",
+      "roles": [
+        "executive_assistant"
+      ]
+    },
+    {
+      "prompt": "The edit is locked and the color pipeline is defined. Develop the grade, match shots and flag source problems that cannot be solved safely in grading.",
+      "office": "production-office",
+      "roles": [
+        "colorist"
+      ]
+    },
+    {
+      "prompt": "Translate this approved shot specification into a precise generative-image prompt with composition, lens, lighting and continuity constraints; do not invent unsupported model controls.",
+      "office": "production-office",
+      "roles": [
+        "visual_prompt_engineer"
+      ]
+    },
+    {
+      "prompt": "Check the final video masters against the required codec, resolution, audio, subtitles and naming specs before delivery.",
+      "office": "production-office",
+      "roles": [
+        "media_delivery_qc"
+      ]
+    },
+    {
+      "prompt": "Translate this essay for publication while preserving voice, terminology and ambiguous passages; flag decisions that need author input.",
+      "office": "publishing-office",
+      "roles": [
+        "literary_translator"
+      ]
+    },
+    {
+      "prompt": "Design the approved manuscript as a coherent book system with hierarchy, grids, image treatment and production-aware typography.",
+      "office": "publishing-office",
+      "roles": [
+        "editorial_designer",
+        "typesetter"
+      ]
+    },
+    {
+      "prompt": "Before the book goes to print, confirm the permission status for quoted text, photographs, translations and third-party material.",
+      "office": "publishing-office",
+      "roles": [
+        "publishing_rights_permissions_manager"
+      ]
+    },
+    {
+      "prompt": "I am releasing a photographic work in a limited edition. Set up numbering, artist proofs, certificates, production specs, availability and the price ladder.",
+      "office": "artist-office",
+      "roles": [
+        "edition_manager"
+      ]
+    },
+    {
+      "prompt": "A collector who bought my work two years ago asked about the new series. Prepare the relationship context and a thoughtful follow-up without treating them as a generic sales lead.",
+      "office": "artist-office",
+      "roles": [
+        "collector_relations_manager",
+        "art_sales_director"
+      ]
+    },
+    {
+      "prompt": "Our cultural organization has research notes, project histories, contacts and decisions scattered across teams. Design a usable taxonomy and knowledge structure without creating a file for every thought.",
+      "office": "organization-office",
+      "roles": [
+        "knowledge_architect"
+      ]
+    },
+    {
+      "prompt": "Our organization received a paid brief from a museum partner. Translate the brief into the real cultural and audience problem before creative concepts are developed.",
+      "office": "organization-office",
+      "roles": [
+        "client_strategy_director",
+        "strategy_director"
+      ]
+    },
+    {
+      "prompt": "For a client launch, identify suitable creators, prepare briefing and compensation questions, and track disclosure and content-usage terms.",
+      "office": "agency-office",
+      "roles": [
+        "creator_partnerships_manager"
+      ]
+    },
+    {
+      "prompt": "The client site needs an evidence-based organic discovery plan. Research search intent, query clusters, competitor results and content gaps before proposing pages.",
+      "office": "agency-office",
+      "roles": [
+        "seo_content_researcher",
+        "organic_discovery_strategist"
+      ]
+    },
+    {
+      "prompt": "Review the proposed application architecture for authentication, secrets, data exposure and obvious security risks before release.",
+      "office": "product-office",
+      "roles": [
+        "security_reviewer",
+        "security_engineer"
+      ]
+    },
+    {
+      "prompt": "Define the product events we need to measure activation and retention, including event names, properties and QA criteria without collecting unnecessary data.",
+      "office": "product-office",
+      "roles": [
+        "analytics_instrumentation_engineer",
+        "product_analyst"
+      ]
+    },
+    {
+      "prompt": "We plan to fine-tune a model on licensed and user-supplied material. Identify AI, dataset, provider-term and generated-content legal issues that need resolution.",
+      "office": "legal-office",
+      "roles": [
+        "ai_technology_law_advisor",
+        "ip_copyright_advisor"
+      ]
+    },
+    {
+      "prompt": "Review this SaaS supplier agreement for SLA, warranty, indemnity, security responsibilities and termination before procurement approves it.",
+      "office": "legal-office",
+      "roles": [
+        "procurement_vendor_contract_advisor",
+        "contract_reviewer"
+      ]
+    },
+    {
+      "prompt": "I am considering a role in another country. Research sponsorship, relocation and remote-work constraints from current official/employer information before I apply.",
+      "office": "recruitment-office",
+      "roles": [
+        "international_mobility_job_advisor"
+      ]
+    },
+    {
+      "prompt": "Coordinate my application for this role: required documents, deadline, tailored materials and a final approval checkpoint before submission.",
+      "office": "recruitment-office",
+      "roles": [
+        "application_manager"
+      ]
+    },
+    {
+      "prompt": "I have a cultural project with an approved proposition and need a launch plan across audience, channels, partnerships and measurement; this is not a client-agency account.",
+      "office": "shared",
+      "roles": [
+        "marketing_strategist"
+      ]
+    },
+    {
+      "prompt": "For my small creative studio, model the project budget, cash timing, artist fee and shipping scenarios so I can decide what is financially feasible.",
+      "office": "shared",
+      "roles": [
+        "studio_finance_manager"
+      ]
+    },
+    {
+      "prompt": "Reconcile units, license terms and receipts into a royalty statement for contributors, and flag discrepancies rather than estimating missing sales.",
+      "office": "finance-office",
+      "roles": [
+        "royalty_revenue_accountant"
+      ]
+    },
+    {
+      "prompt": "Organize the records and questions my accountant needs for the upcoming tax filing; do not give jurisdiction-specific tax conclusions without verified authority.",
+      "office": "finance-office",
+      "roles": [
+        "tax_compliance_coordinator"
+      ]
+    },
+    {
+      "prompt": "Create reusable sales material from the approved offer: accurate case-study facts, objection handling and a concise capability summary for the commercial team.",
+      "office": "commercial-office",
+      "roles": [
+        "sales_enablement_specialist"
+      ]
+    },
+    {
+      "prompt": "We have a list of organizations that might buy our services. Research which ones actually match the agreed ideal-client criteria before outreach.",
+      "office": "commercial-office",
+      "roles": [
+        "lead_qualification_researcher"
+      ]
+    },
+    {
+      "prompt": "We are hiring and want a fair interview pack with job-relevant questions, scoring anchors and a work sample that avoids protected-characteristic proxies.",
+      "office": "people-office",
+      "roles": [
+        "structured_interview_designer"
+      ]
+    },
+    {
+      "prompt": "The employer has approved a vacancy. Coordinate candidate communications, interview scheduling and hiring-team handoffs without making the hiring decision.",
+      "office": "people-office",
+      "roles": [
+        "hiring_coordinator"
+      ]
+    },
+    {
+      "prompt": "Compare baseline versus forecast on this project and quantify the effect of approved scope changes on cost and milestone dates.",
+      "office": "delivery-office",
+      "roles": [
+        "project_controls_analyst"
+      ]
+    },
+    {
+      "prompt": "The delivery team needs a short retrospective and next-iteration plan focused on blockers and learning, not a heavy agile ceremony.",
+      "office": "delivery-office",
+      "roles": [
+        "agile_delivery_facilitator"
+      ]
+    },
+    {
+      "prompt": "Coordinate a routine office issue with a supplier and facilities contact, tracking what is agreed and what still needs approval.",
+      "office": "administration-office",
+      "roles": [
+        "office_administrator"
+      ]
+    },
+    {
+      "prompt": "A colleague submitted an internal support request but it is unclear whether it belongs to IT, finance or facilities. Triage it and route it to the right owner.",
+      "office": "administration-office",
+      "roles": [
+        "service_desk_coordinator"
+      ]
+    },
+    {
+      "prompt": "This ComfyUI graph crashes after a node update. Diagnose the workflow against the actual installed nodes and versions before changing the graph.",
+      "office": "production-office",
+      "roles": [
+        "comfyui_workflow_engineer"
+      ]
+    },
+    {
+      "prompt": "Prepare production dialogue for the mix: clean edits, room tone, sync and intelligibility while preserving performance.",
+      "office": "production-office",
+      "roles": [
+        "dialogue_editor"
+      ]
+    },
+    {
+      "prompt": "Turn the approved book into an audiobook production plan covering casting, recording, edit, QC and distribution deliverables.",
+      "office": "publishing-office",
+      "roles": [
+        "audiobook_producer"
+      ]
+    },
+    {
+      "prompt": "A reported story is ready for editorial review. Check sourcing, verification, corrections risk and whether the evidence supports publication.",
+      "office": "publishing-office",
+      "roles": [
+        "newsroom_editor",
+        "journalist_reporter"
+      ]
+    },
+    {
+      "prompt": "I have six finished works and a room plan. Develop an exhibition logic, sequence and interpretive framework from the actual pieces rather than inventing a theme first.",
+      "office": "artist-office",
+      "roles": [
+        "curator"
+      ]
+    },
+    {
+      "prompt": "This software-based artwork depends on a model, runtime, codecs and custom files. Build a preservation package so it can be reinstalled years from now.",
+      "office": "artist-office",
+      "roles": [
+        "digital_preservation_manager"
+      ]
+    },
+    {
+      "prompt": "Three works are being loaned abroad for an exhibition. Prepare packing, condition, insurance, customs, courier and movement requirements.",
+      "office": "artist-office",
+      "roles": [
+        "registrar_art_logistics"
+      ]
+    },
+    {
+      "prompt": "Our institution wants to commission essays from external writers for a research publication. Define the briefs, contributor process and editorial coordination.",
+      "office": "organization-office",
+      "roles": [
+        "commissioning_editor"
+      ]
+    },
+    {
+      "prompt": "Our cultural organization has too many parallel initiatives and unclear capacity. Redesign operational workflows, ownership and resourcing at organization level.",
+      "office": "organization-office",
+      "roles": [
+        "operations_director"
+      ]
+    },
+    {
+      "prompt": "Map the relationships among institutions, funders, publications and people around our research topic so partnership gaps become visible.",
+      "office": "organization-office",
+      "roles": [
+        "network_mapper"
+      ]
+    },
+    {
+      "prompt": "The client has a business objective and audience evidence but no campaign shape yet. Define the message architecture, phases, channel roles and measurement logic.",
+      "office": "agency-office",
+      "roles": [
+        "campaign_strategist"
+      ]
+    },
+    {
+      "prompt": "For the approved campaign, decide how paid, owned and earned channels should work together and what each channel is meant to deliver.",
+      "office": "agency-office",
+      "roles": [
+        "media_strategy_planner"
+      ]
+    },
+    {
+      "prompt": "Several teams are producing assets from the same identity. Review them for consistency and decide what is intentional evolution versus brand drift.",
+      "office": "agency-office",
+      "roles": [
+        "brand_guardian"
+      ]
+    },
+    {
+      "prompt": "Before we connect this MCP server to the application, inspect its capabilities, permissions, trust boundary and integration risks.",
+      "office": "product-office",
+      "roles": [
+        "mcp_integration_reviewer",
+        "security_reviewer"
+      ]
+    },
+    {
+      "prompt": "The web application is slow under realistic load. Profile the bottlenecks and propose measurable performance fixes instead of cosmetic optimization.",
+      "office": "product-office",
+      "roles": [
+        "performance_engineer"
+      ]
+    },
+    {
+      "prompt": "Turn these user problems and business constraints into a prioritized product scope with outcomes, tradeoffs and acceptance criteria.",
+      "office": "product-office",
+      "roles": [
+        "product_manager",
+        "product_director"
+      ]
+    },
+    {
+      "prompt": "Review the freelancer arrangement for classification, scope, fee, IP, confidentiality and termination issues before we engage them.",
+      "office": "legal-office",
+      "roles": [
+        "independent_contractor_advisor"
+      ]
+    },
+    {
+      "prompt": "Who owns the commissioned photographs and what permissions do we need for reproductions, derivatives and online use? Give a sourced first-pass rights analysis.",
+      "office": "legal-office",
+      "roles": [
+        "ip_copyright_advisor",
+        "licensing_rights_advisor"
+      ]
+    },
+    {
+      "prompt": "Extract every notice, renewal, option and response deadline from this agreement and identify what triggers each date.",
+      "office": "legal-office",
+      "roles": [
+        "legal_deadline_tracker"
+      ]
+    },
+    {
+      "prompt": "Before I discuss compensation with the recruiter, research current salary and total-comp signals for this role and location, with source dates and uncertainty.",
+      "office": "recruitment-office",
+      "roles": [
+        "compensation_analyst"
+      ]
+    },
+    {
+      "prompt": "Rebuild my CV hierarchy for the target senior role using only verified experience, making the strongest evidence easy to scan.",
+      "office": "recruitment-office",
+      "roles": [
+        "resume_strategist",
+        "ats_resume_specialist"
+      ]
+    },
+    {
+      "prompt": "A recruiter has sent me two roles over the last month. Help me manage the relationship and follow up without pretending either opportunity is active.",
+      "office": "recruitment-office",
+      "roles": [
+        "recruiter_relations_manager"
+      ]
+    },
+    {
+      "prompt": "Summarize the decisions, open loops and verified outcomes from this workstream so the next session can resume without turning provisional ideas into facts.",
+      "office": "shared",
+      "roles": [
+        "context_steward"
+      ]
+    },
+    {
+      "prompt": "The concept is approved. Define a coherent visual direction across typography, imagery, composition and references before individual assets are produced.",
+      "office": "shared",
+      "roles": [
+        "art_director"
+      ]
+    },
+    {
+      "prompt": "I need help with something important, but I have not told you whether it is about employment, a client, my practice, software or administration.",
+      "office": "shared",
+      "roles": [
+        "office_concierge"
+      ]
+    },
+    {
+      "prompt": "Reconcile project accounts to source records and prepare a management view of actuals, accruals and discrepancies.",
+      "office": "finance-office",
+      "roles": [
+        "financial_controller"
+      ]
+    },
+    {
+      "prompt": "Model when confirmed receipts and payments hit the bank over the next twelve weeks and show the lowest cash point.",
+      "office": "finance-office",
+      "roles": [
+        "cashflow_treasury_analyst"
+      ]
+    },
+    {
+      "prompt": "A public buyer issued a tender with mandatory forms, weighted criteria and a fixed submission portal deadline. Build the response plan and compliance matrix.",
+      "office": "commercial-office",
+      "roles": [
+        "tender_bid_coordinator"
+      ]
+    },
+    {
+      "prompt": "The service is delivered but adoption is weak before renewal. Use account evidence to plan onboarding fixes, adoption and retention actions.",
+      "office": "commercial-office",
+      "roles": [
+        "customer_success_manager"
+      ]
+    },
+    {
+      "prompt": "Management has approved next year’s workload assumptions. Translate them into capability and staffing scenarios before opening requisitions.",
+      "office": "people-office",
+      "roles": [
+        "workforce_planner"
+      ]
+    },
+    {
+      "prompt": "An employee complaint needs a neutral chronology, process options and careful documentation; do not decide guilt or discipline.",
+      "office": "people-office",
+      "roles": [
+        "employee_relations_coordinator"
+      ]
+    },
+    {
+      "prompt": "Show baseline, actual and forecast for this project and quantify the schedule/cost impact of the latest approved change request.",
+      "office": "delivery-office",
+      "roles": [
+        "project_controls_analyst"
+      ]
+    },
+    {
+      "prompt": "Before final handover, match each agreed acceptance criterion to evidence and list unresolved defects or missing approvals.",
+      "office": "delivery-office",
+      "roles": [
+        "quality_acceptance_coordinator"
+      ]
+    },
+    {
+      "prompt": "Research travel and accommodation for a work visit, compare practical options and prepare a proposed itinerary; leave all bookings unexecuted.",
+      "office": "administration-office",
+      "roles": [
+        "travel_logistics_coordinator"
+      ]
+    },
+    {
+      "prompt": "The team has multiple versions of the same signed and approved documents. Establish version control, authoritative copies and distribution status.",
+      "office": "administration-office",
+      "roles": [
+        "records_document_controller"
+      ]
+    },
+    {
+      "prompt": "Convert the approved scene into storyboard beats that clarify framing, screen direction, action and transitions before shooting.",
+      "office": "production-office",
+      "roles": [
+        "storyboard_artist"
+      ]
+    },
+    {
+      "prompt": "Ingest today’s camera media with verified copies, checksums, naming and backup status before cards are cleared.",
+      "office": "production-office",
+      "roles": [
+        "media_data_wrangler"
+      ]
+    },
+    {
+      "prompt": "The manuscript structure is locked. Do sentence-level editing for grammar, consistency, terminology and house style without rewriting the author’s argument.",
+      "office": "publishing-office",
+      "roles": [
+        "copy_editor"
+      ]
+    },
+    {
+      "prompt": "The book is printed. Plan trade, direct and institutional sales channels, order flow and returns rather than redesigning the publication.",
+      "office": "publishing-office",
+      "roles": [
+        "book_distribution_manager"
+      ]
+    },
+    {
+      "prompt": "Review my current body of work, research, exhibitions and commitments and help me choose the three artistic-development priorities for the next quarter.",
+      "office": "artist-office",
+      "roles": [
+        "practice_strategist"
+      ]
+    },
+    {
+      "prompt": "Research current artists, exhibitions and critical writing around machine vision and ecological sensing, with sources and clear separation between evidence and interpretation.",
+      "office": "artist-office",
+      "roles": [
+        "art_researcher",
+        "art_historian"
+      ]
+    },
+    {
+      "prompt": "Our foundation wants to develop a multi-year collaboration with universities and cultural institutions. Map partner fit, mutual value and a relationship approach.",
+      "office": "organization-office",
+      "roles": [
+        "partnerships_director",
+        "network_mapper"
+      ]
+    },
+    {
+      "prompt": "Use our event, newsletter and website evidence to explain what audiences actually did and where the data is too weak for a conclusion.",
+      "office": "organization-office",
+      "roles": [
+        "data_insights_analyst"
+      ]
+    },
+    {
+      "prompt": "The client brief jumps straight to executions. Reframe the real brand and communication problem, strategic choice and creative brief before concepts start.",
+      "office": "agency-office",
+      "roles": [
+        "strategy_director",
+        "creative_strategist"
+      ]
+    },
+    {
+      "prompt": "A client project has approved scope but many revisions, dependencies and sign-offs. Coordinate timeline, change control and status without changing the creative direction.",
+      "office": "agency-office",
+      "roles": [
+        "project_manager",
+        "project_coordinator"
+      ]
+    },
+    {
+      "prompt": "We are splitting a monolithic application into services. Define technical boundaries, major integration decisions and migration risks before implementation.",
+      "office": "product-office",
+      "roles": [
+        "software_architect",
+        "tech_lead"
+      ]
+    },
+    {
+      "prompt": "Build automated regression coverage for the critical user flows and API integrations so future releases can be verified consistently.",
+      "office": "product-office",
+      "roles": [
+        "test_automation_engineer",
+        "qa_engineer"
+      ]
+    },
+    {
+      "prompt": "The other side rejected our contract edits. Prepare negotiation priorities, fallback positions and alternative wording without accepting terms on my behalf.",
+      "office": "legal-office",
+      "roles": [
+        "contract_negotiation_advisor"
+      ]
+    },
+    {
+      "prompt": "Find the current statute, regulator guidance and relevant authorities for this legal question in the specified jurisdiction, with citations and limits.",
+      "office": "legal-office",
+      "roles": [
+        "legal_researcher",
+        "regulatory_compliance_researcher"
+      ]
+    },
+    {
+      "prompt": "Before I invest time in this employer, research its business health, team, recent priorities and credible culture signals relevant to my target role.",
+      "office": "recruitment-office",
+      "roles": [
+        "target_company_researcher"
+      ]
+    },
+    {
+      "prompt": "Draft a concise cover letter for this vacancy using only facts from my CV and the documented job requirements.",
+      "office": "recruitment-office",
+      "roles": [
+        "cover_letter_writer",
+        "application_writer"
+      ]
+    },
+    {
+      "prompt": "Turn these confirmed studio deliverables, deadlines and collaborator handoffs into a concise operating plan with owners and next actions.",
+      "office": "shared",
+      "roles": [
+        "studio_manager"
+      ]
+    },
+    {
+      "prompt": "Develop this exhibition text into precise cultural writing while preserving uncertainty in the work and avoiding invented artist intentions.",
+      "office": "shared",
+      "roles": [
+        "art_writer",
+        "editor"
+      ]
+    },
+    {
+      "prompt": "Build a twelve-month operating forecast from the current revenue assumptions, fixed costs and scenario changes, keeping assumptions separate from actuals.",
+      "office": "finance-office",
+      "roles": [
+        "fp_and_a_analyst"
+      ]
+    },
+    {
+      "prompt": "Prepare invoices from the approved milestones and show which receivables need a reminder, but do not send anything.",
+      "office": "finance-office",
+      "roles": [
+        "billing_receivables_coordinator"
+      ]
+    },
+    {
+      "prompt": "Connect pipeline value, delivery status and invoicing evidence to explain why the revenue forecast is drifting.",
+      "office": "commercial-office",
+      "roles": [
+        "revenue_operations_analyst"
+      ]
+    },
+    {
+      "prompt": "Create the commercial proposal from the agreed solution, including scope, fee, exclusions, assumptions and validity.",
+      "office": "commercial-office",
+      "roles": [
+        "sales_proposal_specialist"
+      ]
+    },
+    {
+      "prompt": "Organize employer-side people records, policies and recurring HR processes with appropriate access boundaries; do not make personnel judgments.",
+      "office": "people-office",
+      "roles": [
+        "people_operations_manager"
+      ]
+    },
+    {
+      "prompt": "Create a targeted development plan for the team’s weak production-planning skills, tied to real assignments and observable improvement.",
+      "office": "people-office",
+      "roles": [
+        "learning_development_specialist"
+      ]
+    },
+    {
+      "prompt": "Coordinate several related projects that share resources and deadlines, maintaining a dependency view and programme-level decisions.",
+      "office": "delivery-office",
+      "roles": [
+        "programme_delivery_manager"
+      ]
+    },
+    {
+      "prompt": "Verify that the final handover satisfies the agreed acceptance criteria and identify missing evidence before closure.",
+      "office": "delivery-office",
+      "roles": [
+        "quality_acceptance_coordinator"
+      ]
+    },
+    {
+      "prompt": "Review the complete email threads, identify what requires action and draft the replies for approval without sending.",
+      "office": "administration-office",
+      "roles": [
+        "inbox_correspondence_manager"
+      ]
+    },
+    {
+      "prompt": "Prepare the meeting agenda around the decisions we need, coordinate timing and capture actions and owners afterward.",
+      "office": "administration-office",
+      "roles": [
+        "meeting_calendar_coordinator"
+      ]
+    },
+    {
+      "prompt": "Direct this approved film scene through blocking, performance, camera intent and pacing while keeping production constraints visible.",
+      "office": "production-office",
+      "roles": [
+        "film_director"
+      ]
+    },
+    {
+      "prompt": "Grade the locked sequence inside the defined color pipeline, match shots and flag image problems that require VFX or source fixes.",
+      "office": "production-office",
+      "roles": [
+        "colorist"
+      ]
+    },
+    {
+      "prompt": "The draft has strong material but weak argument flow and chapter architecture. Reshape the manuscript before copyediting begins.",
+      "office": "publishing-office",
+      "roles": [
+        "developmental_editor"
+      ]
+    },
+    {
+      "prompt": "Coordinate the approved book into manufacturing: printer specs, proofs, quantities, schedule and production handoff.",
+      "office": "publishing-office",
+      "roles": [
+        "print_production_manager",
+        "prepress_specialist"
+      ]
+    },
+    {
+      "prompt": "A gallery has proposed representing my work in one territory. Prepare the questions around exclusivity, consignments, fairs, reporting and relationship expectations before the meeting.",
+      "office": "artist-office",
+      "roles": [
+        "gallery_relations_manager",
+        "art_contracts_rights_advisor"
+      ]
+    },
+    {
+      "prompt": "We just installed a new work. Define the photography and video documentation, file naming, captions, credits and master-delivery package.",
+      "office": "artist-office",
+      "roles": [
+        "artwork_documentation_manager"
+      ]
+    },
+    {
+      "prompt": "Our institution is producing an exhibition, short film and publication under one cultural programme. Coordinate the high-level production plan, budgets, partners and delivery responsibilities.",
+      "office": "organization-office",
+      "roles": [
+        "executive_producer"
+      ]
+    },
+    {
+      "prompt": "We want participants and recurring readers to shape the programme meaningfully. Design the community/editorial participation loop without optimizing for vanity metrics.",
+      "office": "organization-office",
+      "roles": [
+        "community_editor"
+      ]
+    },
+    {
+      "prompt": "The client approved positioning and naming. Build the visual identity system across mark, type, color, layout, imagery and core applications.",
+      "office": "agency-office",
+      "roles": [
+        "brand_identity_designer",
+        "design_director"
+      ]
+    },
+    {
+      "prompt": "Turn the client strategy into durable content pillars, recurring formats and channel franchises rather than a one-off posting calendar.",
+      "office": "agency-office",
+      "roles": [
+        "content_director"
+      ]
+    },
+    {
+      "prompt": "We are unsure why users abandon this workflow. Plan interviews and usability sessions, collect evidence and synthesize the behavioral causes.",
+      "office": "product-office",
+      "roles": [
+        "ux_researcher"
+      ]
+    },
+    {
+      "prompt": "Implement the server-side rules and API endpoints for this approved feature, including error handling and tests.",
+      "office": "product-office",
+      "roles": [
+        "backend_engineer",
+        "senior_backend_engineer"
+      ]
+    },
+    {
+      "prompt": "A vendor will process customer data outside our region. Identify processor, transfer, retention and contractual privacy questions before integration.",
+      "office": "legal-office",
+      "roles": [
+        "privacy_data_protection_advisor"
+      ]
+    },
+    {
+      "prompt": "Review the proposed B2B statement of work for scope, payment, IP, liability and termination, and mark negotiation issues.",
+      "office": "legal-office",
+      "roles": [
+        "commercial_contracts_advisor",
+        "contract_reviewer"
+      ]
+    },
+    {
+      "prompt": "Coach me for a leadership interview using my real examples, likely competencies and concise evidence-based answers.",
+      "office": "recruitment-office",
+      "roles": [
+        "interview_coach"
+      ]
+    },
+    {
+      "prompt": "Rewrite my LinkedIn headline, about and experience sections for the target roles while keeping every claim consistent with my CV.",
+      "office": "recruitment-office",
+      "roles": [
+        "linkedin_profile_strategist",
+        "career_personal_brand_strategist"
+      ]
+    },
+    {
+      "prompt": "Rewrite this professional note so the request, context and next step are unmistakable, but do not send it or change the underlying decision.",
+      "office": "shared",
+      "roles": [
+        "communications_editor"
+      ]
+    },
+    {
+      "prompt": "Clarify positioning, audience, differentiation and brand architecture before visual or verbal identity work starts.",
+      "office": "shared",
+      "roles": [
+        "brand_strategist"
+      ]
+    },
+    {
+      "prompt": "Calculate a project price from labor, supplier costs, rights, contingency and target margin, showing what changes the margin most.",
+      "office": "finance-office",
+      "roles": [
+        "pricing_margin_analyst"
+      ]
+    },
+    {
+      "prompt": "Evaluate supplier options and prepare the approval packet for a purchase, including terms and budget fit; no payment should be executed.",
+      "office": "finance-office",
+      "roles": [
+        "payables_procurement_analyst"
+      ]
+    },
+    {
+      "prompt": "Standardize our deal stages, next-action discipline and forecast fields so the sales pipeline can be trusted.",
+      "office": "commercial-office",
+      "roles": [
+        "sales_operations_manager"
+      ]
+    },
+    {
+      "prompt": "A paying client is approaching renewal but usage and satisfaction are slipping. Build an evidence-based retention plan and ownership for follow-up.",
+      "office": "commercial-office",
+      "roles": [
+        "customer_success_manager"
+      ]
+    },
+    {
+      "prompt": "Prepare employer onboarding for a new hire: documents, access, equipment, manager responsibilities and the first week.",
+      "office": "people-office",
+      "roles": [
+        "onboarding_offboarding_coordinator"
+      ]
+    },
+    {
+      "prompt": "Design salary bands and benefit assumptions for the employer, separating market evidence from internal policy choices.",
+      "office": "people-office",
+      "roles": [
+        "compensation_benefits_coordinator"
+      ]
+    },
+    {
+      "prompt": "Four projects depend on the same vendor and launch window. Maintain the cross-project dependency map and surface programme-level decisions.",
+      "office": "delivery-office",
+      "roles": [
+        "programme_delivery_manager"
+      ]
+    },
+    {
+      "prompt": "Help a small delivery team run short planning and retrospective cycles around blockers, learning and next increments.",
+      "office": "delivery-office",
+      "roles": [
+        "agile_delivery_facilitator"
+      ]
+    },
+    {
+      "prompt": "Coordinate a routine workspace repair with the building and supplier, recording quote, access window and outstanding approval.",
+      "office": "administration-office",
+      "roles": [
+        "office_administrator"
+      ]
+    },
+    {
+      "prompt": "Compare practical transport and lodging for a work trip, assemble a proposed itinerary and leave reservations untouched.",
+      "office": "administration-office",
+      "roles": [
+        "travel_logistics_coordinator"
+      ]
+    },
+    {
+      "prompt": "Assemble the selected takes into a coherent cut, refine pacing and prepare review versions while preserving the approved narrative direction.",
+      "office": "production-office",
+      "roles": [
+        "video_editor"
+      ]
+    },
+    {
+      "prompt": "Design the sonic world for the film using ambience, effects and transitions, with clear handoff requirements for the final mix.",
+      "office": "production-office",
+      "roles": [
+        "sound_designer"
+      ]
+    },
+    {
+      "prompt": "The final designed pages are ready. Check them against approved text for typos, missing words, bad breaks and production errors without reopening structural edits.",
+      "office": "publishing-office",
+      "roles": [
+        "proofreader"
+      ]
+    },
+    {
+      "prompt": "Build and validate an accessible EPUB from the approved publication, including semantic structure, navigation and image alternatives.",
+      "office": "publishing-office",
+      "roles": [
+        "ebook_accessibility_engineer"
+      ]
+    },
+    {
+      "prompt": "I have available works and confirmed prices. Prepare a primary-market sales approach for qualified collectors, including offers, availability and negotiation boundaries.",
+      "office": "artist-office",
+      "roles": [
+        "art_sales_director",
+        "collector_relations_manager"
+      ]
+    },
+    {
+      "prompt": "The artwork design is fixed, but we still need material tests, fabrication quotes, tolerances and a production-quality checklist.",
+      "office": "artist-office",
+      "roles": [
+        "fabrication_manager"
+      ]
+    },
+    {
+      "prompt": "Our cultural institution needs a capacity and workflow reset across teams so priorities, resources and operational ownership are clear.",
+      "office": "organization-office",
+      "roles": [
+        "operations_director"
+      ]
+    },
+    {
+      "prompt": "Create the communications plan for our institution’s programme announcement across press, newsletter and public channels.",
+      "office": "organization-office",
+      "roles": [
+        "communications_pr_director"
+      ]
+    },
+    {
+      "prompt": "For this client, segment the audience by motivations, barriers and behavior and translate that into communication journeys.",
+      "office": "agency-office",
+      "roles": [
+        "audience_strategist"
+      ]
+    },
+    {
+      "prompt": "The client wants measurable paid acquisition. Build a testable media and conversion plan with budgets, hypotheses and optimization criteria.",
+      "office": "agency-office",
+      "roles": [
+        "performance_marketing_manager",
+        "media_strategy_planner"
+      ]
+    },
+    {
+      "prompt": "Implement the approved responsive interface from the design system, including states, interactions and accessibility checks.",
+      "office": "product-office",
+      "roles": [
+        "frontend_engineer",
+        "senior_frontend_engineer"
+      ]
+    },
+    {
+      "prompt": "Set up a reproducible deployment pipeline with environment configuration, build steps, secrets handling and rollback support.",
+      "office": "product-office",
+      "roles": [
+        "devops_engineer",
+        "release_manager"
+      ]
+    },
+    {
+      "prompt": "Assess trademark issues for the proposed name, relevant filing classes and clearance steps before we invest in the identity.",
+      "office": "legal-office",
+      "roles": [
+        "trademark_brand_protection_advisor"
+      ]
+    },
+    {
+      "prompt": "Review the planned customer-data workflow for lawful basis, notices, processors, transfers and retention before implementation.",
+      "office": "legal-office",
+      "roles": [
+        "privacy_data_protection_advisor"
+      ]
+    },
+    {
+      "prompt": "I interviewed five days ago and have heard nothing. Decide the follow-up timing and draft a concise message grounded in the real conversation.",
+      "office": "recruitment-office",
+      "roles": [
+        "job_followup_manager",
+        "career_outreach_writer"
+      ]
+    },
+    {
+      "prompt": "Review my recent applications, interviews and rejections to find evidence-based conversion patterns and where the search process is failing.",
+      "office": "recruitment-office",
+      "roles": [
+        "application_outcomes_analyst"
+      ]
+    },
+    {
+      "prompt": "Edit this curatorial text for precision, structure and readability without changing its argument or inventing factual support.",
+      "office": "shared",
+      "roles": [
+        "editor",
+        "art_writer"
+      ]
+    },
+    {
+      "prompt": "Record the durable decisions and unresolved items from this work while keeping hypotheses and rejected options out of permanent facts.",
+      "office": "shared",
+      "roles": [
+        "context_steward"
+      ]
+    },
+    {
+      "prompt": "Organize transactions, receipts and categories into clean records for the external accountant, marking uncertain entries rather than guessing.",
+      "office": "finance-office",
+      "roles": [
+        "bookkeeping_coordinator"
+      ]
+    },
+    {
+      "prompt": "Reconcile the company accounts and prepare a reliable management report showing actual balances and unresolved discrepancies.",
+      "office": "finance-office",
+      "roles": [
+        "financial_controller"
+      ]
+    },
+    {
+      "prompt": "Evaluate this prospective buyer against our agreed client profile, budget signals and fit before the team spends time on a proposal.",
+      "office": "commercial-office",
+      "roles": [
+        "lead_qualification_researcher"
+      ]
+    },
+    {
+      "prompt": "Coordinate a formal bid with compliance requirements, evidence, attachments and weighted evaluation criteria.",
+      "office": "commercial-office",
+      "roles": [
+        "tender_bid_coordinator"
+      ]
+    },
+    {
+      "prompt": "The company is recruiting an engineer. Find evidence-backed candidate profiles from the approved role brief without inferring protected traits.",
+      "office": "people-office",
+      "roles": [
+        "talent_sourcing_specialist"
+      ]
+    },
+    {
+      "prompt": "A staff member reported a conflict with their manager. Structure the facts and fair process while leaving employment decisions to humans.",
+      "office": "people-office",
+      "roles": [
+        "employee_relations_coordinator"
+      ]
+    },
+    {
+      "prompt": "Maintain a programme view across dependent workstreams, owners, risks and shared milestones so project decisions do not conflict.",
+      "office": "delivery-office",
+      "roles": [
+        "programme_delivery_manager"
+      ]
+    },
+    {
+      "prompt": "Quantify schedule, scope and cost change against the approved baseline and show the forecast impact.",
+      "office": "delivery-office",
+      "roles": [
+        "project_controls_analyst"
+      ]
+    },
+    {
+      "prompt": "Use the authorized messaging capability to send this exact approved text, then report whether the tool actually confirmed delivery; otherwise say NOT SENT.",
+      "office": "administration-office",
+      "roles": [
+        "communications_operator"
+      ]
+    },
+    {
+      "prompt": "Convert today’s confirmed meetings, deadlines and office priorities into a short coordinated action plan with owners.",
+      "office": "administration-office",
+      "roles": [
+        "executive_assistant"
+      ]
+    },
+    {
+      "prompt": "Plan the image capture for this scene: lens choice, lighting, camera movement and continuity across coverage.",
+      "office": "production-office",
+      "roles": [
+        "cinematographer"
+      ]
+    },
+    {
+      "prompt": "Research music options for the film with creative fit, licensing implications and handoff questions for rights clearance.",
+      "office": "production-office",
+      "roles": [
+        "music_supervisor"
+      ]
+    },
+    {
+      "prompt": "Manage the publication schedule across commissioning, edits, proofs, approvals and production so each contributor knows the next editorial milestone.",
+      "office": "publishing-office",
+      "roles": [
+        "managing_editor"
+      ]
+    },
+    {
+      "prompt": "Coordinate the author through edits, approvals and delivery requirements, keeping feedback and responsibilities clear.",
+      "office": "publishing-office",
+      "roles": [
+        "author_relations_manager"
+      ]
+    },
+    {
+      "prompt": "Bring my works, exhibition history, images, dimensions, credits and portfolio variants into one canonical practice record without duplicating every project into separate files.",
+      "office": "artist-office",
+      "roles": [
+        "practice_archivist"
+      ]
+    },
+    {
+      "prompt": "Review my current institutional and gallery relationships and identify the next few career conversations that make sense for the work, not generic outreach.",
+      "office": "artist-office",
+      "roles": [
+        "artist_agent",
+        "institutional_relations_manager",
+        "gallery_relations_manager"
+      ]
+    },
+    {
+      "prompt": "Our institute needs a research agenda for the coming year, with questions, sources, collaborators and outputs that fit its cultural mission.",
+      "office": "organization-office",
+      "roles": [
+        "research_director"
+      ]
+    },
+    {
+      "prompt": "Our organization owns an online archive that is already live. Prioritize product improvements, roadmap and stakeholder needs after launch.",
+      "office": "organization-office",
+      "roles": [
+        "digital_product_manager"
+      ]
+    },
+    {
+      "prompt": "The client wants to understand the cultural codes and emerging behaviors around this category without reducing them to trend buzzwords.",
+      "office": "agency-office",
+      "roles": [
+        "cultural_strategist"
+      ]
+    },
+    {
+      "prompt": "Produce the client photo shoot: crew, casting, location, schedule, usage assumptions and postproduction handoff.",
+      "office": "agency-office",
+      "roles": [
+        "photography_producer"
+      ]
+    },
+    {
+      "prompt": "Implement security controls for authentication, secrets and data access in the application, then verify the risky paths.",
+      "office": "product-office",
+      "roles": [
+        "security_engineer",
+        "security_reviewer"
+      ]
+    },
+    {
+      "prompt": "Redesign the database schema and migration path for this approved product change, including integrity and rollback concerns.",
+      "office": "product-office",
+      "roles": [
+        "database_engineer",
+        "migration_specialist"
+      ]
+    },
+    {
+      "prompt": "Check these marketing claims, testimonial disclosures and promotional mechanics for consumer/advertising compliance before publication.",
+      "office": "legal-office",
+      "roles": [
+        "consumer_advertising_compliance_advisor"
+      ]
+    },
+    {
+      "prompt": "Research the current regulator rules and official guidance that apply to this activity, noting jurisdiction and effective dates.",
+      "office": "legal-office",
+      "roles": [
+        "regulatory_compliance_researcher",
+        "legal_researcher"
+      ]
+    },
+    {
+      "prompt": "Compare my verified experience with the capabilities repeatedly required by my target roles and identify only the gaps that materially affect hiring.",
+      "office": "recruitment-office",
+      "roles": [
+        "skills_gap_analyst",
+        "job_fit_analyst"
+      ]
+    },
+    {
+      "prompt": "I have a written job offer and want to negotiate title, pay, flexibility and start date. Prepare priorities and wording without sending anything.",
+      "office": "recruitment-office",
+      "roles": [
+        "offer_negotiation_advisor"
+      ]
+    },
+    {
+      "prompt": "Build a studio-level budget scenario for production, travel, shipping and fees so I can choose between two feasible versions of the project.",
+      "office": "shared",
+      "roles": [
+        "studio_finance_manager"
+      ]
+    },
+    {
+      "prompt": "There is a problem I need solved, but I have not given enough detail to tell whether it belongs to my company, a client, legal, production or my art practice.",
+      "office": "shared",
+      "roles": [
+        "office_concierge"
+      ]
+    },
+    {
+      "prompt": "Prepare the organized evidence and open questions for a qualified tax adviser from our records; keep tax conclusions unverified unless sourced.",
+      "office": "finance-office",
+      "roles": [
+        "tax_compliance_coordinator"
+      ]
+    },
+    {
+      "prompt": "Show the cost base and margin at several price points for this service, including the effect of rights and contingency.",
+      "office": "finance-office",
+      "roles": [
+        "pricing_margin_analyst"
+      ]
+    },
+    {
+      "prompt": "Turn approved offer facts and case-study evidence into a concise sales deck and objection-handling material for the business-development team.",
+      "office": "commercial-office",
+      "roles": [
+        "sales_enablement_specialist"
+      ]
+    },
+    {
+      "prompt": "Draft the commercial offer from the agreed scope and solution, with fees, assumptions, exclusions and acceptance steps.",
+      "office": "commercial-office",
+      "roles": [
+        "sales_proposal_specialist"
+      ]
+    },
+    {
+      "prompt": "Translate the employer’s forecast workload into staffing and contractor scenarios before anyone opens job requisitions.",
+      "office": "people-office",
+      "roles": [
+        "workforce_planner"
+      ]
+    },
+    {
+      "prompt": "Create a structured employer interview with job-relevant questions, scoring anchors and a fair work sample.",
+      "office": "people-office",
+      "roles": [
+        "structured_interview_designer"
+      ]
+    },
+    {
+      "prompt": "Facilitate a lightweight iteration cycle with planning, blockers, review and retrospective for the delivery team.",
+      "office": "delivery-office",
+      "roles": [
+        "agile_delivery_facilitator"
+      ]
+    },
+    {
+      "prompt": "Measure the current variance from baseline schedule and cost and show what the approved changes do to the forecast.",
+      "office": "delivery-office",
+      "roles": [
+        "project_controls_analyst"
+      ]
+    },
+    {
+      "prompt": "Maintain authoritative versions, approval status and distribution records for these office documents.",
+      "office": "administration-office",
+      "roles": [
+        "records_document_controller"
+      ]
+    },
+    {
+      "prompt": "Set up the meeting around required decisions, availability and agenda, then capture agreed actions and owners.",
+      "office": "administration-office",
+      "roles": [
+        "meeting_calendar_coordinator"
+      ]
+    },
+    {
+      "prompt": "Composite the live-action and CG elements into consistent shots, preserving edges, light, grain and approved color pipeline.",
+      "office": "production-office",
+      "roles": [
+        "compositor"
+      ]
+    },
+    {
+      "prompt": "Design and validate the color-management path across camera, editorial, VFX, grading and final delivery.",
+      "office": "production-office",
+      "roles": [
+        "color_pipeline_engineer"
+      ]
+    },
+    {
+      "prompt": "Track and clear permissions for photographs, quoted passages and translated material before the publication is released.",
+      "office": "publishing-office",
+      "roles": [
+        "publishing_rights_permissions_manager"
+      ]
+    },
+    {
+      "prompt": "Prepare ISBN-related identifiers, contributor fields, keywords and discoverability metadata for the finished title.",
+      "office": "publishing-office",
+      "roles": [
+        "publishing_metadata_specialist"
+      ]
+    },
+    {
+      "prompt": "Plan the public communication for my artist profile around a new exhibition: documentation, captions, cadence and platform choices without turning the work into generic creator content.",
+      "office": "artist-office",
+      "roles": [
+        "artist_social_media_manager",
+        "art_marketing_director"
+      ]
+    },
+    {
+      "prompt": "Prepare a sales view of available works, prices, edition status and collector follow-up for my practice, keeping gallery relationships and negotiation boundaries visible.",
+      "office": "artist-office",
+      "roles": [
+        "art_sales_director",
+        "collector_relations_manager"
+      ]
+    },
+    {
+      "prompt": "Create a practical knowledge structure for our institution’s research, contacts, decisions and project history so teams can retrieve context without duplicating it.",
+      "office": "organization-office",
+      "roles": [
+        "knowledge_architect"
+      ]
+    },
+    {
+      "prompt": "Evaluate whether our cultural programme changed participation, partnerships and learning using the evidence we actually collected and state what cannot be concluded.",
+      "office": "organization-office",
+      "roles": [
+        "impact_evaluation"
+      ]
+    },
+    {
+      "prompt": "Write campaign headlines, body copy and short scripts from the approved client brief and tone of voice, without changing the strategy.",
+      "office": "agency-office",
+      "roles": [
+        "copywriter"
+      ]
+    },
+    {
+      "prompt": "Review the rendered client website against the approved design direction for hierarchy, rhythm, typography and visual coherence; do not redesign it by default.",
+      "office": "agency-office",
+      "roles": [
+        "visual_design_critic",
+        "digital_design_director"
+      ]
+    },
+    {
+      "prompt": "Implement the approved third-party API connection, including authentication, webhook handling, retries and integration tests.",
+      "office": "product-office",
+      "roles": [
+        "api_integration_engineer"
+      ]
+    },
+    {
+      "prompt": "Define the overall QA approach for this release, risk areas, test coverage and exit criteria across manual and automated checks.",
+      "office": "product-office",
+      "roles": [
+        "qa_lead"
+      ]
+    },
+    {
+      "prompt": "Review these employment terms for leave, working time, notice and termination, flagging which conclusions depend on local law.",
+      "office": "legal-office",
+      "roles": [
+        "employment_labor_advisor"
+      ]
+    },
+    {
+      "prompt": "Draft a contract from the approved deal points, keeping unresolved commercial and legal choices clearly marked for review.",
+      "office": "legal-office",
+      "roles": [
+        "contract_drafter"
+      ]
+    },
+    {
+      "prompt": "Find active vacancies that match my agreed target roles and locations, verify each listing is current, and exclude roles that miss hard constraints.",
+      "office": "recruitment-office",
+      "roles": [
+        "job_opportunity_scout"
+      ]
+    },
+    {
+      "prompt": "Help me prepare for a take-home presentation and portfolio review by structuring the case, likely questions and evidence I can defend.",
+      "office": "recruitment-office",
+      "roles": [
+        "case_interview_coach"
+      ]
+    },
+    {
+      "prompt": "Improve the wording of this delicate professional email from the supplied thread; return a draft only and do not perform any inbox action.",
+      "office": "shared",
+      "roles": [
+        "communications_editor"
+      ]
+    },
+    {
+      "prompt": "I want ACO to handle a task, but I have not said what the task is or which part of my work it concerns. Ask the minimum question needed to route it.",
+      "office": "shared",
+      "roles": [
+        "office_concierge"
+      ]
+    },
+    {
+      "prompt": "Create the invoice and receivables schedule from approved project milestones and identify overdue amounts without sending reminders.",
+      "office": "finance-office",
+      "roles": [
+        "billing_receivables_coordinator"
+      ]
+    },
+    {
+      "prompt": "Forecast bank cash over the next quarter from confirmed receipts, planned payments and timing assumptions, showing the downside scenario.",
+      "office": "finance-office",
+      "roles": [
+        "cashflow_treasury_analyst"
+      ]
+    },
+    {
+      "prompt": "Make the sales opportunity pipeline reliable by cleaning stages, owners, next steps and stale opportunities before forecasting.",
+      "office": "commercial-office",
+      "roles": [
+        "sales_operations_manager"
+      ]
+    },
+    {
+      "prompt": "Manage our response to a formal tender, including the compliance checklist, evidence owners, deadlines and final submission readiness.",
+      "office": "commercial-office",
+      "roles": [
+        "tender_bid_coordinator"
+      ]
+    },
+    {
+      "prompt": "Coordinate the employer’s approved hiring process, candidate communications, interview logistics and status tracking while humans retain selection decisions.",
+      "office": "people-office",
+      "roles": [
+        "hiring_coordinator"
+      ]
+    },
+    {
+      "prompt": "Prepare the new employee onboarding and first-week checklist across documents, access, equipment, manager actions and introductions.",
+      "office": "people-office",
+      "roles": [
+        "onboarding_offboarding_coordinator"
+      ]
+    },
+    {
+      "prompt": "Coordinate several related projects as one programme, maintaining dependencies, shared risks and cross-project decisions.",
+      "office": "delivery-office",
+      "roles": [
+        "programme_delivery_manager"
+      ]
+    },
+    {
+      "prompt": "Before handover, verify deliverables against acceptance criteria and assemble evidence for unresolved defects and approvals.",
+      "office": "delivery-office",
+      "roles": [
+        "quality_acceptance_coordinator"
+      ]
+    },
+    {
+      "prompt": "Triage these email threads, identify the required actions and draft context-aware replies for review without sending them.",
+      "office": "administration-office",
+      "roles": [
+        "inbox_correspondence_manager"
+      ]
+    },
+    {
+      "prompt": "Research practical travel and hotel choices for the work visit, compare options and prepare an itinerary without making reservations.",
+      "office": "administration-office",
+      "roles": [
+        "travel_logistics_coordinator"
+      ]
+    },
+    {
+      "prompt": "Translate the approved scene into direction for actors, blocking, camera intention and pacing while working within the production constraints.",
+      "office": "production-office",
+      "roles": [
+        "film_director"
+      ]
+    },
+    {
+      "prompt": "Inspect the final media package against the delivery specification for resolution, codec, audio, subtitles, naming and completeness.",
+      "office": "production-office",
+      "roles": [
+        "media_delivery_qc"
+      ]
+    },
+    {
+      "prompt": "Turn the approved manuscript and image set into a coherent publication design system with grids, hierarchy, typography and repeatable page logic.",
+      "office": "publishing-office",
+      "roles": [
+        "editorial_designer"
+      ]
+    },
+    {
+      "prompt": "Proof the final pages against the approved text and catch typographic, punctuation and production errors without making developmental edits.",
+      "office": "publishing-office",
+      "roles": [
+        "proofreader"
+      ]
+    },
+    {
+      "prompt": "I found an arts funding call for a project already in development. Check the official requirements and assemble the narrative, budget, timetable and portfolio material into a compliant application.",
+      "office": "artist-office",
+      "roles": [
+        "grants_applications_manager"
+      ]
+    },
+    {
+      "prompt": "Using the works I supplied, propose an exhibition sequence and curatorial frame that emerges from relationships among the pieces and the actual room.",
+      "office": "artist-office",
+      "roles": [
+        "curator"
+      ]
+    },
+    {
+      "prompt": "Our institution needs outside artists, editors and speakers for a programme. Build the contributor shortlist, availability process and collaboration records.",
+      "office": "organization-office",
+      "roles": [
+        "talent_contributors_manager"
+      ]
+    },
+    {
+      "prompt": "Produce the audience experience for our public talks and screening night, covering flow, timing, access and the event run-of-show.",
+      "office": "organization-office",
+      "roles": [
+        "events_experience_producer"
+      ]
+    },
+    {
+      "prompt": "The client identity is approved. Define its motion grammar for logo behavior, kinetic type, transitions and timing across digital touchpoints.",
+      "office": "agency-office",
+      "roles": [
+        "motion_design_director"
+      ]
+    },
+    {
+      "prompt": "Manage the client social account from the approved strategy: platform-native calendar, publishing-ready content, community handling and measurement, with publication still requiring authorization.",
+      "office": "agency-office",
+      "roles": [
+        "social_media_manager",
+        "social_content_creator"
+      ]
+    },
+    {
+      "prompt": "After the latest release, a saved setting resets when the page reloads. Reproduce the defect, narrow the cause and produce a developer-ready bug report.",
+      "office": "product-office",
+      "roles": [
+        "bug_investigator",
+        "qa_engineer"
+      ]
+    },
+    {
+      "prompt": "Build the server-side endpoint and business rules for this approved feature, including validation, errors and automated tests.",
+      "office": "product-office",
+      "roles": [
+        "backend_engineer",
+        "senior_backend_engineer"
+      ]
+    },
+    {
+      "prompt": "A commissioned image may be reused in web, print and adaptations. Explain ownership and licensing questions from the agreement and applicable rights sources before any reuse.",
+      "office": "legal-office",
+      "roles": [
+        "ip_copyright_advisor",
+        "licensing_rights_advisor"
+      ]
+    },
+    {
+      "prompt": "Read this services contract clause by clause and flag payment, scope, liability, IP, termination and governing-law risks before signature.",
+      "office": "legal-office",
+      "roles": [
+        "contract_reviewer",
+        "commercial_contracts_advisor"
+      ]
+    },
+    {
+      "prompt": "Before I apply, compare the vacancy requirements with my verified experience and identify the gaps that truly matter for this role.",
+      "office": "recruitment-office",
+      "roles": [
+        "job_fit_analyst",
+        "skills_gap_analyst"
+      ]
+    },
+    {
+      "prompt": "I have the written offer. Prepare my negotiation strategy for compensation, title, responsibilities, flexibility and start date without contacting the employer.",
+      "office": "recruitment-office",
+      "roles": [
+        "offer_negotiation_advisor"
+      ]
+    },
+    {
+      "prompt": "Establish positioning, differentiation and brand architecture before anyone develops the visual identity or voice.",
+      "office": "shared",
+      "roles": [
+        "brand_strategist"
+      ]
+    },
+    {
+      "prompt": "Capture the confirmed decisions, verified outcomes and unresolved next actions from this workstream while keeping experiments and rejected ideas provisional.",
+      "office": "shared",
+      "roles": [
+        "context_steward"
+      ]
+    },
+    {
+      "prompt": "Work out a sustainable fee from internal time, external costs, rights, contingency and target margin, showing the assumptions.",
+      "office": "finance-office",
+      "roles": [
+        "pricing_margin_analyst"
+      ]
+    },
+    {
+      "prompt": "Prepare reconciled bookkeeping records from the transactions and receipts, isolating entries that need the accountant’s judgment.",
+      "office": "finance-office",
+      "roles": [
+        "bookkeeping_coordinator",
+        "financial_controller"
+      ]
+    },
+    {
+      "prompt": "Research this prospective company against our ideal-customer criteria before we spend time pitching or treat it as a qualified opportunity.",
+      "office": "commercial-office",
+      "roles": [
+        "lead_qualification_researcher"
+      ]
+    },
+    {
+      "prompt": "The client is nearing renewal and engagement has fallen. Build a retention plan from usage, feedback and delivery evidence.",
+      "office": "commercial-office",
+      "roles": [
+        "customer_success_manager"
+      ]
+    },
+    {
+      "prompt": "We are hiring on behalf of the employer. Source potential candidates against the approved requirements and return evidence, not autonomous rankings.",
+      "office": "people-office",
+      "roles": [
+        "talent_sourcing_specialist"
+      ]
+    },
+    {
+      "prompt": "A team member has raised a workplace grievance. Organize facts, process steps and escalation neutrally while leaving decisions to authorized humans.",
+      "office": "people-office",
+      "roles": [
+        "employee_relations_coordinator"
+      ]
+    },
+    {
+      "prompt": "The project has an approved baseline and several change requests. Show actual versus forecast schedule and cost and quantify each change impact.",
+      "office": "delivery-office",
+      "roles": [
+        "project_controls_analyst"
+      ]
+    },
+    {
+      "prompt": "Three projects share a launch date and resources. Coordinate their dependencies, risks and programme-level decisions without replacing each project owner.",
+      "office": "delivery-office",
+      "roles": [
+        "programme_delivery_manager"
+      ]
+    },
+    {
+      "prompt": "Compare travel and accommodation options for the work visit and prepare the itinerary; keep every booking as a proposal only.",
+      "office": "administration-office",
+      "roles": [
+        "travel_logistics_coordinator"
+      ]
+    },
+    {
+      "prompt": "Read the full email threads, determine what each one needs and draft replies for approval. Do not send.",
+      "office": "administration-office",
+      "roles": [
+        "inbox_correspondence_manager"
+      ]
+    },
+    {
+      "prompt": "Turn this approved image shot brief into a generative prompt covering subject, composition, lens, lighting, materials and continuity, without pretending unsupported controls exist.",
+      "office": "production-office",
+      "roles": [
+        "visual_prompt_engineer"
+      ]
+    },
+    {
+      "prompt": "Before delivery, inspect the exported masters against codec, dimensions, audio, subtitle and filename requirements and report any mismatch.",
+      "office": "production-office",
+      "roles": [
+        "media_delivery_qc"
+      ]
+    },
+    {
+      "prompt": "The manuscript needs structural editing of argument, chapters and reader flow before copyediting or proofing.",
+      "office": "publishing-office",
+      "roles": [
+        "developmental_editor"
+      ]
+    },
+    {
+      "prompt": "Create the permissions status for third-party images, quotations and translations and flag anything not cleared before publication.",
+      "office": "publishing-office",
+      "roles": [
+        "publishing_rights_permissions_manager"
+      ]
+    },
+    {
+      "prompt": "Search official sources for live artist residencies or commissions that fit the practice and constraints I gave you, then compare eligibility, support, timing and relevance.",
+      "office": "artist-office",
+      "roles": [
+        "art_opportunities_scout"
+      ]
+    },
+    {
+      "prompt": "Plan production of my artist book from approved content through contributors, captions, permissions, proofs, print budget and distribution handoff.",
+      "office": "artist-office",
+      "roles": [
+        "publication_manager"
+      ]
+    },
+    {
+      "prompt": "For our cultural institution, identify grant and foundation routes that fit the programme and map eligibility, partnership and application requirements.",
+      "office": "organization-office",
+      "roles": [
+        "funding_partnerships_manager"
+      ]
+    },
+    {
+      "prompt": "Our museum archive website is already running. Prioritize the next product improvements from user needs, stakeholder constraints and evidence after launch.",
+      "office": "organization-office",
+      "roles": [
+        "digital_product_manager"
+      ]
+    },
+    {
+      "prompt": "Translate the approved client strategy into a complete visual identity system with typography, color, layout, imagery, mark behavior and applications.",
+      "office": "agency-office",
+      "roles": [
+        "brand_identity_designer"
+      ]
+    },
+    {
+      "prompt": "We have evidence that users hesitate on the client landing page. Define a conversion hypothesis, test variants and success measures without pretending causality before results.",
+      "office": "agency-office",
+      "roles": [
+        "conversion_experiment_designer"
+      ]
+    },
+    {
+      "prompt": "Test the product flow with keyboard and screen-reader behavior and document concrete accessibility defects with reproducible steps.",
+      "office": "product-office",
+      "roles": [
+        "accessibility_tester",
+        "accessibility_specialist"
+      ]
+    },
+    {
+      "prompt": "Prepare the software release decision with readiness checks, version notes, rollback path and verified deployment status.",
+      "office": "product-office",
+      "roles": [
+        "release_manager"
+      ]
+    },
+    {
+      "prompt": "Before committing to this new name, review trademark clearance risks, relevant classes and the searches or counsel work still required.",
+      "office": "legal-office",
+      "roles": [
+        "trademark_brand_protection_advisor"
+      ]
+    },
+    {
+      "prompt": "Map personal-data collection, processors, transfers, retention and notice obligations for this planned service before launch.",
+      "office": "legal-office",
+      "roles": [
+        "privacy_data_protection_advisor"
+      ]
+    },
+    {
+      "prompt": "Research the current hiring market for my target role and geography: active demand, common requirements and dated compensation signals.",
+      "office": "recruitment-office",
+      "roles": [
+        "job_market_researcher"
+      ]
+    },
+    {
+      "prompt": "Restructure my resume for the target senior position so verified evidence and relevant achievements are prioritized and machine-readable.",
+      "office": "recruitment-office",
+      "roles": [
+        "resume_strategist",
+        "ats_resume_specialist"
+      ]
+    },
+    {
+      "prompt": "Build the launch strategy for this independent cultural project across audience, channels, partnerships and measurement; it is not a client account.",
+      "office": "shared",
+      "roles": [
+        "marketing_strategist"
+      ]
+    },
+    {
+      "prompt": "I need assistance but have not explained the task, entity or desired outcome. Ask only what is necessary before choosing an office.",
+      "office": "shared",
+      "roles": [
+        "office_concierge"
+      ]
+    },
+    {
+      "prompt": "Compare the supplier offers against the approved requirement, payment terms and budget and prepare the purchase decision packet without paying anyone.",
+      "office": "finance-office",
+      "roles": [
+        "payables_procurement_analyst"
+      ]
+    },
+    {
+      "prompt": "Build the operating forecast from current assumptions and actuals, with base and downside scenarios for management planning.",
+      "office": "finance-office",
+      "roles": [
+        "fp_and_a_analyst"
+      ]
+    },
+    {
+      "prompt": "Turn the approved scope and pricing into a client-facing commercial proposal with assumptions, exclusions, validity and next steps.",
+      "office": "commercial-office",
+      "roles": [
+        "sales_proposal_specialist"
+      ]
+    },
+    {
+      "prompt": "Reconcile opportunity data with delivery progress and invoicing so the revenue outlook reflects what is actually happening.",
+      "office": "commercial-office",
+      "roles": [
+        "revenue_operations_analyst"
+      ]
+    },
+    {
+      "prompt": "Create employer compensation bands and benefits assumptions from appropriate evidence and identify choices that remain policy decisions.",
+      "office": "people-office",
+      "roles": [
+        "compensation_benefits_coordinator"
+      ]
+    },
+    {
+      "prompt": "Turn expected workload and capability needs into staffing scenarios before the employer authorizes new roles.",
+      "office": "people-office",
+      "roles": [
+        "workforce_planner"
+      ]
+    },
+    {
+      "prompt": "Run a lightweight delivery cadence for a small team around next work, blockers, review and retrospective without process theatre.",
+      "office": "delivery-office",
+      "roles": [
+        "agile_delivery_facilitator"
+      ]
+    },
+    {
+      "prompt": "Check whether the delivered work meets the documented acceptance criteria and assemble the evidence or open defects before sign-off.",
+      "office": "delivery-office",
+      "roles": [
+        "quality_acceptance_coordinator"
+      ]
+    },
+    {
+      "prompt": "Coordinate the meeting time, agenda and decision points and capture actions with owners once it happens.",
+      "office": "administration-office",
+      "roles": [
+        "meeting_calendar_coordinator"
+      ]
+    },
+    {
+      "prompt": "Execute this exact, already approved message through the available authorized communication tool and report the real result; if the capability is absent, mark it NOT SENT.",
+      "office": "administration-office",
+      "roles": [
+        "communications_operator"
+      ]
+    },
+    {
+      "prompt": "Edit the selected footage into the approved story, refining continuity and pacing and preparing clear review versions.",
+      "office": "production-office",
+      "roles": [
+        "video_editor"
+      ]
+    },
+    {
+      "prompt": "Clean and edit production dialogue for sync, intelligibility and continuity, preserving performance and preparing it for the mix.",
+      "office": "production-office",
+      "roles": [
+        "dialogue_editor"
+      ]
+    },
+    {
+      "prompt": "With manuscript structure approved, edit sentences for grammar, terminology, consistency and house style while preserving the author’s meaning.",
+      "office": "publishing-office",
+      "roles": [
+        "copy_editor"
+      ]
+    },
+    {
+      "prompt": "Prepare the final book files for print and verify bleed, fonts, image resolution, separations and output settings before manufacturing.",
+      "office": "publishing-office",
+      "roles": [
+        "prepress_specialist"
+      ]
+    },
+    {
+      "prompt": "Build a sourced research brief on recent contemporary-art practices dealing with automated vision, including exhibitions, artists and criticism, and mark interpretation separately from facts.",
+      "office": "artist-office",
+      "roles": [
+        "art_researcher",
+        "art_historian"
+      ]
+    },
+    {
+      "prompt": "Prepare the movement plan for works travelling to a museum: condition checks, packing, insurance values, customs documents and courier responsibilities.",
+      "office": "artist-office",
+      "roles": [
+        "registrar_art_logistics"
+      ]
+    },
+    {
+      "prompt": "Our nonprofit arts organization needs a coherent system for research, relationship history and project decisions so future teams can recover context efficiently.",
+      "office": "organization-office",
+      "roles": [
+        "knowledge_architect"
+      ]
+    },
+    {
+      "prompt": "Plan institutional communications for our new season, separating press outreach, newsletter, announcements and the public narrative.",
+      "office": "organization-office",
+      "roles": [
+        "communications_pr_director"
+      ]
+    },
+    {
+      "prompt": "From the signed-off creative brief, produce headline routes, campaign copy and script lines in the client’s established voice.",
+      "office": "agency-office",
+      "roles": [
+        "copywriter"
+      ]
+    },
+    {
+      "prompt": "Keep this agency engagement on track across revisions, client approvals, dependencies and scope changes without deciding the creative direction.",
+      "office": "agency-office",
+      "roles": [
+        "project_manager",
+        "project_coordinator"
+      ]
+    },
+    {
+      "prompt": "Code the approved web interface responsively from the design system and verify interaction states and accessibility behavior.",
+      "office": "product-office",
+      "roles": [
+        "frontend_engineer",
+        "senior_frontend_engineer"
+      ]
+    },
+    {
+      "prompt": "Assess and improve the application’s authentication, secret storage and authorization controls, with evidence for the fixes.",
+      "office": "product-office",
+      "roles": [
+        "security_engineer",
+        "security_reviewer"
+      ]
+    },
+    {
+      "prompt": "Before signing, analyze this agreement for obligations, ambiguous language, fees, liability, rights, termination and governing law.",
+      "office": "legal-office",
+      "roles": [
+        "contract_reviewer",
+        "commercial_contracts_advisor"
+      ]
+    },
+    {
+      "prompt": "Review the employment terms I supplied for working hours, leave, notice and dismissal issues, making jurisdiction limits explicit.",
+      "office": "legal-office",
+      "roles": [
+        "employment_labor_advisor"
+      ]
+    },
+    {
+      "prompt": "Reorganize my CV for the target position so the strongest verified experience appears first and ATS readability is preserved.",
+      "office": "recruitment-office",
+      "roles": [
+        "resume_strategist",
+        "ats_resume_specialist"
+      ]
+    },
+    {
+      "prompt": "Locate currently open roles matching my agreed seniority, discipline and geography and verify each source before adding it to the search pipeline.",
+      "office": "recruitment-office",
+      "roles": [
+        "job_opportunity_scout"
+      ]
+    },
+    {
+      "prompt": "Polish this artist-facing essay for structure and language while keeping the author’s argument and all factual uncertainty intact.",
+      "office": "shared",
+      "roles": [
+        "editor",
+        "art_writer"
+      ]
+    },
+    {
+      "prompt": "I have not described what I need done or which entity it concerns. Ask one decisive question rather than assigning a specialist from guesswork.",
+      "office": "shared",
+      "roles": [
+        "office_concierge"
+      ]
+    },
+    {
+      "prompt": "Plot incoming and outgoing cash by date from confirmed data and show where the business could fall below a safe balance.",
+      "office": "finance-office",
+      "roles": [
+        "cashflow_treasury_analyst"
+      ]
+    },
+    {
+      "prompt": "Reconcile the accounts to underlying records and produce a management view of balances, accruals and unexplained differences.",
+      "office": "finance-office",
+      "roles": [
+        "financial_controller"
+      ]
+    },
+    {
+      "prompt": "Check whether this possible client fits our ideal-customer profile and has credible need before anyone invests in a pitch.",
+      "office": "commercial-office",
+      "roles": [
+        "lead_qualification_researcher"
+      ]
+    },
+    {
+      "prompt": "Write the client proposal from the agreed solution, scope and commercial terms, clearly listing assumptions and exclusions.",
+      "office": "commercial-office",
+      "roles": [
+        "sales_proposal_specialist"
+      ]
+    },
+    {
+      "prompt": "Use the employer’s expected workload to model staffing and capability needs before recruitment begins.",
+      "office": "people-office",
+      "roles": [
+        "workforce_planner"
+      ]
+    },
+    {
+      "prompt": "Run the employer-side hiring coordination: applicant communication, interview scheduling and status, while selection remains human.",
+      "office": "people-office",
+      "roles": [
+        "hiring_coordinator"
+      ]
+    },
+    {
+      "prompt": "Manage the dependency view across several connected projects so shared resources and milestone conflicts are resolved at programme level.",
+      "office": "delivery-office",
+      "roles": [
+        "programme_delivery_manager"
+      ]
+    },
+    {
+      "prompt": "Compare planned baseline with actual progress and forecast, then calculate the schedule and cost effect of approved changes.",
+      "office": "delivery-office",
+      "roles": [
+        "project_controls_analyst"
+      ]
+    },
+    {
+      "prompt": "Read each complete correspondence thread, identify the response needed and prepare reply drafts for approval without sending.",
+      "office": "administration-office",
+      "roles": [
+        "inbox_correspondence_manager"
+      ]
+    },
+    {
+      "prompt": "Research realistic transport and lodging options for the business trip and return a proposed schedule without purchasing anything.",
+      "office": "administration-office",
+      "roles": [
+        "travel_logistics_coordinator"
+      ]
+    },
+    {
+      "prompt": "Design the capture approach for the scene across lenses, lighting, movement and visual continuity so coverage supports the director’s intent.",
+      "office": "production-office",
+      "roles": [
+        "cinematographer"
+      ]
+    },
+    {
+      "prompt": "Create the sound-design approach for the moving-image piece using ambience, effects, transitions and a clear stem handoff to mixing.",
+      "office": "production-office",
+      "roles": [
+        "sound_designer"
+      ]
+    },
+    {
+      "prompt": "Build the publication’s visual system from the approved content: grid, hierarchy, typography, image behavior and repeatable page structures.",
+      "office": "publishing-office",
+      "roles": [
+        "editorial_designer"
+      ]
+    },
+    {
+      "prompt": "Audit publication permissions for images, excerpts and translated material and keep unresolved rights from being marked cleared.",
+      "office": "publishing-office",
+      "roles": [
+        "publishing_rights_permissions_manager"
+      ]
+    },
+    {
+      "prompt": "For my upcoming solo exhibition, prepare a press approach with story angle, current media targets, required images and follow-up timing; do not claim journalist interest.",
+      "office": "artist-office",
+      "roles": [
+        "art_publicist"
+      ]
+    },
+    {
+      "prompt": "Turn this verified artist funding opportunity into a compliant submission package: responses, work samples, production budget and schedule.",
+      "office": "artist-office",
+      "roles": [
+        "grants_applications_manager"
+      ]
+    },
+    {
+      "prompt": "Consolidate the canonical record of my artworks, dimensions, materials, images, credits, exhibition history and portfolio variants.",
+      "office": "artist-office",
+      "roles": [
+        "practice_archivist",
+        "collection_inventory_manager"
+      ]
+    },
+    {
+      "prompt": "Our cultural foundation needs suitable public and philanthropic funding routes for a research programme, with eligibility and partnership requirements checked.",
+      "office": "organization-office",
+      "roles": [
+        "funding_partnerships_manager"
+      ]
+    },
+    {
+      "prompt": "Plan the operational audience experience for our institution’s live programme, including access, flow, schedule and onsite coordination.",
+      "office": "organization-office",
+      "roles": [
+        "events_experience_producer"
+      ]
+    },
+    {
+      "prompt": "Source and coordinate external artists, researchers and speakers for our organization, tracking fit, availability and contributor onboarding.",
+      "office": "organization-office",
+      "roles": [
+        "talent_contributors_manager"
+      ]
+    },
+    {
+      "prompt": "Create the client’s visual identity system from approved strategy: mark, typography, color, grid, imagery and applications.",
+      "office": "agency-office",
+      "roles": [
+        "brand_identity_designer"
+      ]
+    },
+    {
+      "prompt": "Operate the client social plan across channel calendar, platform-native formats, community responses and analytics; any publishing action still needs real authorization.",
+      "office": "agency-office",
+      "roles": [
+        "social_media_manager",
+        "social_content_creator"
+      ]
+    },
+    {
+      "prompt": "Manage the agency project across scope, timings, dependencies, feedback rounds and client approvals, escalating changes rather than silently absorbing them.",
+      "office": "agency-office",
+      "roles": [
+        "project_manager",
+        "project_coordinator"
+      ]
+    },
+    {
+      "prompt": "Implement the backend logic and API route for the approved software feature, with validation, failure handling and tests.",
+      "office": "product-office",
+      "roles": [
+        "backend_engineer",
+        "senior_backend_engineer"
+      ]
+    },
+    {
+      "prompt": "Investigate the reproducible application defect, isolate conditions and likely cause, and hand off a precise bug report with evidence.",
+      "office": "product-office",
+      "roles": [
+        "bug_investigator",
+        "qa_engineer"
+      ]
+    },
+    {
+      "prompt": "Review the software’s authentication, authorization, secrets and data exposure risks and verify remediation where possible.",
+      "office": "product-office",
+      "roles": [
+        "security_reviewer",
+        "security_engineer"
+      ]
+    },
+    {
+      "prompt": "Analyze the supplied commercial agreement for obligations, payment, IP, liability, termination and governing-law issues before signing.",
+      "office": "legal-office",
+      "roles": [
+        "contract_reviewer",
+        "commercial_contracts_advisor"
+      ]
+    },
+    {
+      "prompt": "Review this personal-data flow for notices, legal basis, processors, international transfers and retention before implementation.",
+      "office": "legal-office",
+      "roles": [
+        "privacy_data_protection_advisor"
+      ]
+    },
+    {
+      "prompt": "Give a sourced first-pass review of the employment contract terms on hours, leave, notice and termination, with jurisdiction limits explicit.",
+      "office": "legal-office",
+      "roles": [
+        "employment_labor_advisor"
+      ]
+    },
+    {
+      "prompt": "Find live vacancies matching my defined target roles, seniority and locations, and verify that each posting is active before adding it.",
+      "office": "recruitment-office",
+      "roles": [
+        "job_opportunity_scout"
+      ]
+    },
+    {
+      "prompt": "Assess this vacancy against my actual experience and identify the requirements I clearly meet, material gaps and unknowns before I apply.",
+      "office": "recruitment-office",
+      "roles": [
+        "job_fit_analyst",
+        "skills_gap_analyst"
+      ]
+    },
+    {
+      "prompt": "Prepare how I should negotiate this written offer across pay, title, remit, flexibility and start date, without contacting the employer.",
+      "office": "recruitment-office",
+      "roles": [
+        "offer_negotiation_advisor",
+        "compensation_analyst"
+      ]
+    },
+    {
+      "prompt": "Define positioning, differentiation and brand architecture as a strategic foundation before any identity execution begins.",
+      "office": "shared",
+      "roles": [
+        "brand_strategist"
+      ]
+    },
+    {
+      "prompt": "Rewrite this sensitive professional message from the provided context for clarity and tone. Return copy only; no sending or mailbox action.",
+      "office": "shared",
+      "roles": [
+        "communications_editor"
+      ]
+    },
+    {
+      "prompt": "Carry forward only confirmed decisions, outcomes and open loops from this workstream, keeping guesses, experiments and rejected ideas provisional.",
+      "office": "shared",
+      "roles": [
+        "context_steward"
+      ]
+    },
+    {
+      "prompt": "Model the fee and margin for the job from labor, suppliers, rights, contingency and overhead, clearly separating facts from assumptions.",
+      "office": "finance-office",
+      "roles": [
+        "pricing_margin_analyst"
+      ]
+    },
+    {
+      "prompt": "Build a date-based cash forecast from confirmed receivables and planned payments and show the tightest liquidity point.",
+      "office": "finance-office",
+      "roles": [
+        "cashflow_treasury_analyst"
+      ]
+    },
+    {
+      "prompt": "Prepare reconciled accounting records from bank entries, invoices and receipts for the external accountant, flagging uncertain classifications.",
+      "office": "finance-office",
+      "roles": [
+        "bookkeeping_coordinator",
+        "financial_controller"
+      ]
+    },
+    {
+      "prompt": "Qualify this prospective customer against our stated ideal-client profile and evidence of need before a proposal is developed.",
+      "office": "commercial-office",
+      "roles": [
+        "lead_qualification_researcher"
+      ]
+    },
+    {
+      "prompt": "Turn the agreed solution into a commercial proposal with deliverables, fee, assumptions, exclusions, validity and next step.",
+      "office": "commercial-office",
+      "roles": [
+        "sales_proposal_specialist"
+      ]
+    },
+    {
+      "prompt": "The existing customer is close to renewal and engagement is falling. Build a retention plan from the account, product and delivery evidence.",
+      "office": "commercial-office",
+      "roles": [
+        "customer_success_manager"
+      ]
+    },
+    {
+      "prompt": "On the employer side, find potential candidates for the approved role using job-relevant evidence and no protected-trait inference.",
+      "office": "people-office",
+      "roles": [
+        "talent_sourcing_specialist"
+      ]
+    },
+    {
+      "prompt": "Translate the organization’s projected workload and capability needs into staffing scenarios before hiring is authorized.",
+      "office": "people-office",
+      "roles": [
+        "workforce_planner"
+      ]
+    },
+    {
+      "prompt": "Prepare employer onboarding for the incoming staff member across documents, access, equipment, ownership and first-week steps.",
+      "office": "people-office",
+      "roles": [
+        "onboarding_offboarding_coordinator"
+      ]
+    },
+    {
+      "prompt": "Report baseline, actual and forecast status and quantify the schedule, scope and cost effect of approved project changes.",
+      "office": "delivery-office",
+      "roles": [
+        "project_controls_analyst"
+      ]
+    },
+    {
+      "prompt": "Coordinate the dependency picture across multiple linked projects and surface programme risks and decisions without taking over project ownership.",
+      "office": "delivery-office",
+      "roles": [
+        "programme_delivery_manager"
+      ]
+    },
+    {
+      "prompt": "Before closing the work, map every acceptance criterion to evidence and list defects, missing approvals or incomplete handover items.",
+      "office": "delivery-office",
+      "roles": [
+        "quality_acceptance_coordinator"
+      ]
+    },
+    {
+      "prompt": "Read the whole correspondence threads, prioritize what needs an answer and prepare reply drafts for approval only.",
+      "office": "administration-office",
+      "roles": [
+        "inbox_correspondence_manager"
+      ]
+    },
+    {
+      "prompt": "Compare workable transport and hotel options for the work trip and produce an itinerary proposal without booking.",
+      "office": "administration-office",
+      "roles": [
+        "travel_logistics_coordinator"
+      ]
+    },
+    {
+      "prompt": "Using the authorized communications capability, send exactly the approved message and report the actual tool result; if execution is unavailable, mark NOT SENT.",
+      "office": "administration-office",
+      "roles": [
+        "communications_operator"
+      ]
+    },
+    {
+      "prompt": "Convert the approved still-image shot specification into a detailed generative prompt for framing, lens, light, surface and continuity, without inventing controls.",
+      "office": "production-office",
+      "roles": [
+        "visual_prompt_engineer"
+      ]
+    },
+    {
+      "prompt": "Inspect the final deliverables against required dimensions, codec, audio, captions, naming and package completeness before release.",
+      "office": "production-office",
+      "roles": [
+        "media_delivery_qc"
+      ]
+    },
+    {
+      "prompt": "Plan cinematography for the scene through lensing, lighting, movement and continuity so coverage supports the intended performance.",
+      "office": "production-office",
+      "roles": [
+        "cinematographer"
+      ]
+    },
+    {
+      "prompt": "Restructure the manuscript’s argument, chapter order and reader progression before sentence-level editing begins.",
+      "office": "publishing-office",
+      "roles": [
+        "developmental_editor"
+      ]
+    },
+    {
+      "prompt": "Check and prepare final print files for bleed, resolution, fonts, color/output conditions and printer handoff.",
+      "office": "publishing-office",
+      "roles": [
+        "prepress_specialist"
+      ]
+    },
+    {
+      "prompt": "Track the permission status of photographs, excerpts and translations and block uncleared material from final publication.",
+      "office": "publishing-office",
+      "roles": [
+        "publishing_rights_permissions_manager"
+      ]
+    },
+    {
+      "prompt": "Look across the work I actually made, current research and commitments and help me set a small number of practice-development priorities for the next 90 days.",
+      "office": "artist-office",
+      "roles": [
+        "practice_strategist"
+      ]
+    },
+    {
+      "prompt": "A curator from an institution is interested in visiting the studio. Prepare the relationship context, works and follow-up without inventing commitment or turning it into cold sales.",
+      "office": "artist-office",
+      "roles": [
+        "institutional_relations_manager",
+        "artist_agent"
+      ]
+    },
+    {
+      "prompt": "Set the documentation standard for the installed artwork: required views, image/video masters, metadata, captions, credits and delivery naming.",
+      "office": "artist-office",
+      "roles": [
+        "artwork_documentation_manager"
+      ]
+    },
+    {
+      "prompt": "Define a research programme for our cultural organization with core questions, evidence sources, external collaborators and intended public outputs.",
+      "office": "organization-office",
+      "roles": [
+        "research_director"
+      ]
+    },
+    {
+      "prompt": "Use our programme evidence to assess changes in participation, relationships and learning, and identify where the data cannot support a claim.",
+      "office": "organization-office",
+      "roles": [
+        "impact_evaluation"
+      ]
+    },
+    {
+      "prompt": "Map relevant people, institutions, publishers and funders around our organization’s topic to reveal partnership pathways and gaps.",
+      "office": "organization-office",
+      "roles": [
+        "network_mapper"
+      ]
+    },
+    {
+      "prompt": "The client has supplied lots of deliverables but the actual strategic problem is unclear. Define the choice, audience tension and brief before creative development.",
+      "office": "agency-office",
+      "roles": [
+        "strategy_director",
+        "creative_strategist"
+      ]
+    },
+    {
+      "prompt": "Create a responsive client microsite prototype from the approved direction so layout and interaction can be reviewed before production engineering.",
+      "office": "agency-office",
+      "roles": [
+        "frontend_prototyper",
+        "digital_design_director"
+      ]
+    },
+    {
+      "prompt": "Manage replies and moderation for the brand’s social community, including escalation rules and qualitative audience signals.",
+      "office": "agency-office",
+      "roles": [
+        "community_manager",
+        "social_media_manager"
+      ]
+    },
+    {
+      "prompt": "Define the application architecture, technical boundaries and major integration decisions before the team starts a large implementation.",
+      "office": "product-office",
+      "roles": [
+        "software_architect",
+        "tech_lead"
+      ]
+    },
+    {
+      "prompt": "Review the dataset, target, leakage risk and evaluation plan for a predictive software feature before model training proceeds.",
+      "office": "product-office",
+      "roles": [
+        "data_scientist",
+        "ai_engineer"
+      ]
+    },
+    {
+      "prompt": "Reproduce the keyboard and screen-reader failures in this product workflow and file clear accessibility defects for engineering.",
+      "office": "product-office",
+      "roles": [
+        "accessibility_tester",
+        "accessibility_specialist"
+      ]
+    },
+    {
+      "prompt": "Identify legal issues in training an AI model on licensed, customer-supplied and generated material, including provider terms and output rights.",
+      "office": "legal-office",
+      "roles": [
+        "ai_technology_law_advisor",
+        "ip_copyright_advisor"
+      ]
+    },
+    {
+      "prompt": "Review the vendor agreement for service levels, warranties, indemnities, security obligations and exit terms before procurement signs off.",
+      "office": "legal-office",
+      "roles": [
+        "procurement_vendor_contract_advisor",
+        "contract_reviewer"
+      ]
+    },
+    {
+      "prompt": "Extract every contractual notice, option, renewal and response date, with the trigger and consequence for each.",
+      "office": "legal-office",
+      "roles": [
+        "legal_deadline_tracker"
+      ]
+    },
+    {
+      "prompt": "Research whether this employer is worth pursuing for my target career path using current business, team and role evidence.",
+      "office": "recruitment-office",
+      "roles": [
+        "target_company_researcher",
+        "career_strategist"
+      ]
+    },
+    {
+      "prompt": "Prepare me for the upcoming interview using the role, company context and my verified examples, including likely follow-up questions.",
+      "office": "recruitment-office",
+      "roles": [
+        "interview_coach",
+        "interview_researcher"
+      ]
+    },
+    {
+      "prompt": "Align my LinkedIn headline, summary and experience with the target roles while keeping every claim consistent with my documented career.",
+      "office": "recruitment-office",
+      "roles": [
+        "linkedin_profile_strategist",
+        "career_personal_brand_strategist"
+      ]
+    },
+    {
+      "prompt": "The concept is approved; establish the overall visual direction across type, imagery, composition and references before assets are executed.",
+      "office": "shared",
+      "roles": [
+        "art_director"
+      ]
+    },
+    {
+      "prompt": "Refine this professional note so the purpose, tone and ask are clear. I want text only, not an email or messaging action.",
+      "office": "shared",
+      "roles": [
+        "communications_editor"
+      ]
+    },
+    {
+      "prompt": "I have not provided enough information to know which office or specialist this belongs to. Ask the one question that would decide routing.",
+      "office": "shared",
+      "roles": [
+        "office_concierge"
+      ]
+    },
+    {
+      "prompt": "Prepare a management forecast from actuals and stated assumptions, showing base and downside scenarios without treating estimates as booked revenue.",
+      "office": "finance-office",
+      "roles": [
+        "fp_and_a_analyst"
+      ]
+    },
+    {
+      "prompt": "Compare supplier costs and terms against the approved requirement and budget and prepare the purchase approval; no payment is authorized.",
+      "office": "finance-office",
+      "roles": [
+        "payables_procurement_analyst"
+      ]
+    },
+    {
+      "prompt": "Track committed and paid production costs against the approved estimate and flag overruns and uncommitted risk.",
+      "office": "finance-office",
+      "roles": [
+        "production_cost_controller"
+      ]
+    },
+    {
+      "prompt": "Repair our sales pipeline discipline: stages, owners, next actions, ageing and forecast fields need to be reliable.",
+      "office": "commercial-office",
+      "roles": [
+        "sales_operations_manager"
+      ]
+    },
+    {
+      "prompt": "Coordinate the response to a buyer’s formal RFP, including mandatory forms, scored requirements, evidence and the submission timetable.",
+      "office": "commercial-office",
+      "roles": [
+        "tender_bid_coordinator"
+      ]
+    },
+    {
+      "prompt": "Prepare reusable sales material from approved offer and case-study facts so the commercial team can explain capabilities and objections accurately.",
+      "office": "commercial-office",
+      "roles": [
+        "sales_enablement_specialist"
+      ]
+    },
+    {
+      "prompt": "Design an employer-side structured interview and work sample with job-relevant scoring anchors and fair criteria.",
+      "office": "people-office",
+      "roles": [
+        "structured_interview_designer"
+      ]
+    },
+    {
+      "prompt": "Build salary-band and benefits options for the employer and distinguish external evidence from internal compensation policy decisions.",
+      "office": "people-office",
+      "roles": [
+        "compensation_benefits_coordinator"
+      ]
+    },
+    {
+      "prompt": "Organize a workplace complaint into a neutral chronology, process and escalation path, leaving findings and disciplinary choices to authorized humans.",
+      "office": "people-office",
+      "roles": [
+        "employee_relations_coordinator"
+      ]
+    },
+    {
+      "prompt": "Maintain programme-level sequencing and dependency decisions across several projects that share resources and dates.",
+      "office": "delivery-office",
+      "roles": [
+        "programme_delivery_manager"
+      ]
+    },
+    {
+      "prompt": "Show baseline, actual and forecast performance, then calculate how approved scope changes affect milestone dates and project cost.",
+      "office": "delivery-office",
+      "roles": [
+        "project_controls_analyst"
+      ]
+    },
+    {
+      "prompt": "Build the final acceptance record by connecting each requirement to proof, defects and outstanding approvals before handover.",
+      "office": "delivery-office",
+      "roles": [
+        "quality_acceptance_coordinator"
+      ]
+    },
+    {
+      "prompt": "Turn today’s confirmed office priorities, meetings and deadlines into a concise coordinated plan with owners and timing.",
+      "office": "administration-office",
+      "roles": [
+        "executive_assistant"
+      ]
+    },
+    {
+      "prompt": "Establish authoritative file versions, approval state and distribution records for the office documents.",
+      "office": "administration-office",
+      "roles": [
+        "records_document_controller"
+      ]
+    },
+    {
+      "prompt": "Send the exact approved text through an actually available authorized communications tool and return the tool result; otherwise state NOT SENT.",
+      "office": "administration-office",
+      "roles": [
+        "communications_operator"
+      ]
+    },
+    {
+      "prompt": "Direct the approved scene through performance, blocking, camera intention and rhythm while respecting the production plan.",
+      "office": "production-office",
+      "roles": [
+        "film_director"
+      ]
+    },
+    {
+      "prompt": "Diagnose this ComfyUI workflow using the installed node set, model versions and actual error before altering the graph.",
+      "office": "production-office",
+      "roles": [
+        "comfyui_workflow_engineer"
+      ]
+    },
+    {
+      "prompt": "Edit and clean the recorded dialogue for sync and intelligibility, preserving performance and preparing it for final mixing.",
+      "office": "production-office",
+      "roles": [
+        "dialogue_editor"
+      ]
+    },
+    {
+      "prompt": "Coordinate the editorial schedule from contributor commissioning through edits, proofs, approvals and production milestones.",
+      "office": "publishing-office",
+      "roles": [
+        "managing_editor"
+      ]
+    },
+    {
+      "prompt": "Create and validate the accessible digital edition with semantic structure, navigation and image alternatives.",
+      "office": "publishing-office",
+      "roles": [
+        "ebook_accessibility_engineer"
+      ]
+    },
+    {
+      "prompt": "Prepare identifiers, contributor metadata, keywords and discoverability fields for the publication before distribution.",
+      "office": "publishing-office",
+      "roles": [
+        "publishing_metadata_specialist"
+      ]
+    },
+    {
+      "prompt": "I need to submit an application for an artist production grant. Verify the call and coordinate the written answers, work examples, budget and delivery calendar.",
+      "office": "artist-office",
+      "roles": [
+        "grants_applications_manager"
+      ]
+    },
+    {
+      "prompt": "Build the publicity plan for my exhibition from the actual work and news hook, including relevant art media, assets and outreach sequence.",
+      "office": "artist-office",
+      "roles": [
+        "art_publicist"
+      ]
+    },
+    {
+      "prompt": "Our arts foundation is seeking external funding for a public research initiative. Identify eligible funders and partnership/application requirements.",
+      "office": "organization-office",
+      "roles": [
+        "funding_partnerships_manager"
+      ]
+    },
+    {
+      "prompt": "Our cultural programme needs guest artists, writers and speakers. Organize sourcing, availability, onboarding and contributor history.",
+      "office": "organization-office",
+      "roles": [
+        "talent_contributors_manager"
+      ]
+    },
+    {
+      "prompt": "Coordinate this client engagement through timeline, scope, feedback cycles, approvals and dependencies while leaving creative decisions with the creative team.",
+      "office": "agency-office",
+      "roles": [
+        "project_manager",
+        "project_coordinator"
+      ]
+    },
+    {
+      "prompt": "Develop the approved client strategy into a usable identity system for logo, typography, palette, layout, imagery and applications.",
+      "office": "agency-office",
+      "roles": [
+        "brand_identity_designer"
+      ]
+    },
+    {
+      "prompt": "Implement the server API and business logic for the approved product requirement, with input validation, error behavior and tests.",
+      "office": "product-office",
+      "roles": [
+        "backend_engineer",
+        "senior_backend_engineer"
+      ]
+    },
+    {
+      "prompt": "Test this software journey using keyboard and assistive technology and write reproducible accessibility issues for the engineering team.",
+      "office": "product-office",
+      "roles": [
+        "accessibility_tester",
+        "accessibility_specialist"
+      ]
+    },
+    {
+      "prompt": "Review this service agreement before execution and identify material issues in payment, responsibilities, rights, liability, termination and governing law.",
+      "office": "legal-office",
+      "roles": [
+        "contract_reviewer",
+        "commercial_contracts_advisor"
+      ]
+    },
+    {
+      "prompt": "Assess the planned handling of personal information for notices, lawful basis, processors, cross-border transfer and retention.",
+      "office": "legal-office",
+      "roles": [
+        "privacy_data_protection_advisor"
+      ]
+    },
+    {
+      "prompt": "Search for currently open positions that meet my defined role, seniority and location constraints and confirm each listing is still live.",
+      "office": "recruitment-office",
+      "roles": [
+        "job_opportunity_scout"
+      ]
+    },
+    {
+      "prompt": "Help me plan the conversation around a written employment offer: compensation, scope, title, remote flexibility and starting date.",
+      "office": "recruitment-office",
+      "roles": [
+        "offer_negotiation_advisor",
+        "compensation_analyst"
+      ]
+    },
+    {
+      "prompt": "Summarize only durable decisions, verified results and unresolved tasks from this workstream so future sessions do not inherit discarded assumptions.",
+      "office": "shared",
+      "roles": [
+        "context_steward"
+      ]
+    },
+    {
+      "prompt": "Set the positioning and brand architecture before design or verbal identity production begins, clearly labelling evidence and assumptions.",
+      "office": "shared",
+      "roles": [
+        "brand_strategist"
+      ]
+    },
+    {
+      "prompt": "Forecast the timing of real cash receipts and payments and show the lowest projected balance under base and downside assumptions.",
+      "office": "finance-office",
+      "roles": [
+        "cashflow_treasury_analyst"
+      ]
+    },
+    {
+      "prompt": "Calculate a viable project fee from staffing, external costs, usage rights, risk allowance and desired margin.",
+      "office": "finance-office",
+      "roles": [
+        "pricing_margin_analyst"
+      ]
+    },
+    {
+      "prompt": "Decide whether this potential customer is worth pursuing by checking it against the ideal-client profile and evidence of a real need.",
+      "office": "commercial-office",
+      "roles": [
+        "lead_qualification_researcher"
+      ]
+    },
+    {
+      "prompt": "Prepare the commercial proposal from the approved solution and price, including scope, assumptions, exclusions and acceptance path.",
+      "office": "commercial-office",
+      "roles": [
+        "sales_proposal_specialist"
+      ]
+    },
+    {
+      "prompt": "For an employer vacancy, identify possible candidates from the authorized brief and return job-relevant evidence without automated hire/reject decisions.",
+      "office": "people-office",
+      "roles": [
+        "talent_sourcing_specialist"
+      ]
+    },
+    {
+      "prompt": "Convert the employer’s expected work and required capabilities into staffing alternatives before recruiting anyone.",
+      "office": "people-office",
+      "roles": [
+        "workforce_planner"
+      ]
+    },
+    {
+      "prompt": "Using the approved project baseline, compare actual and forecast progress and calculate the time and cost impact of accepted changes.",
+      "office": "delivery-office",
+      "roles": [
+        "project_controls_analyst"
+      ]
+    },
+    {
+      "prompt": "Before the project is signed off, verify each acceptance requirement against evidence and record defects or missing approvals.",
+      "office": "delivery-office",
+      "roles": [
+        "quality_acceptance_coordinator"
+      ]
+    },
+    {
+      "prompt": "Review these complete email conversations, identify the needed replies and prepare drafts for approval without transmitting them.",
+      "office": "administration-office",
+      "roles": [
+        "inbox_correspondence_manager"
+      ]
+    },
+    {
+      "prompt": "Find sensible travel and lodging alternatives for the work trip and propose an itinerary, leaving purchases and reservations untouched.",
+      "office": "administration-office",
+      "roles": [
+        "travel_logistics_coordinator"
+      ]
+    },
+    {
+      "prompt": "Plan the scene’s cinematography through framing, lenses, lighting, camera motion and visual continuity.",
+      "office": "production-office",
+      "roles": [
+        "cinematographer"
+      ]
+    },
+    {
+      "prompt": "Validate the delivery masters against the technical specification for picture, audio, captions, filenames and package contents.",
+      "office": "production-office",
+      "roles": [
+        "media_delivery_qc"
+      ]
+    },
+    {
+      "prompt": "Rework the manuscript’s structure, argument progression and chapter sequence before line or copy editing starts.",
+      "office": "publishing-office",
+      "roles": [
+        "developmental_editor"
+      ]
+    },
+    {
+      "prompt": "Check that permissions are in place for external images, extracts and translations and keep unresolved items out of final publication.",
+      "office": "publishing-office",
+      "roles": [
+        "publishing_rights_permissions_manager"
+      ]
+    },
+    {
+      "prompt": "Find artist residencies and institutional commissions that are open now and fit the practice criteria I provided; verify eligibility, deadline and support from primary sources.",
+      "office": "artist-office",
+      "roles": [
+        "art_opportunities_scout"
+      ]
+    },
+    {
+      "prompt": "Prepare me for a gallery representation conversation covering territory, consignment, exclusivity, fairs, reporting and relationship expectations.",
+      "office": "artist-office",
+      "roles": [
+        "gallery_relations_manager",
+        "art_contracts_rights_advisor"
+      ]
+    },
+    {
+      "prompt": "Develop the institutional PR and communications approach for our programme launch across media, newsletter and public announcements.",
+      "office": "organization-office",
+      "roles": [
+        "communications_pr_director"
+      ]
+    },
+    {
+      "prompt": "Structure our organization’s research, contacts, decisions and project history so the team has one recoverable knowledge system rather than scattered notes.",
+      "office": "organization-office",
+      "roles": [
+        "knowledge_architect"
+      ]
+    },
+    {
+      "prompt": "Use the client evidence to define the real communication problem, audience tension and strategic direction before any creative routes are made.",
+      "office": "agency-office",
+      "roles": [
+        "strategy_director",
+        "creative_strategist"
+      ]
+    },
+    {
+      "prompt": "Translate the approved client social strategy into a platform-specific editorial calendar, content operations and community workflow without publishing unless authorized.",
+      "office": "agency-office",
+      "roles": [
+        "social_media_manager",
+        "social_content_creator"
+      ]
+    },
+    {
+      "prompt": "Coordinate the application release with readiness evidence, version notes, rollback plan and confirmation of actual deployment state.",
+      "office": "product-office",
+      "roles": [
+        "release_manager"
+      ]
+    },
+    {
+      "prompt": "Integrate the approved external API with authentication, webhooks, retry behavior and test coverage.",
+      "office": "product-office",
+      "roles": [
+        "api_integration_engineer"
+      ]
+    },
+    {
+      "prompt": "Assess clearance questions and filing classes for the proposed brand name before identity rollout, and identify searches that still require official tools or counsel.",
+      "office": "legal-office",
+      "roles": [
+        "trademark_brand_protection_advisor"
+      ]
+    },
+    {
+      "prompt": "Determine what usage permissions and restrictions apply to this licensed image across campaign, web and derivative adaptations.",
+      "office": "legal-office",
+      "roles": [
+        "licensing_rights_advisor",
+        "ip_copyright_advisor"
+      ]
+    },
+    {
+      "prompt": "Investigate this possible employer’s current priorities, business health, team and credible culture signals before I decide to apply.",
+      "office": "recruitment-office",
+      "roles": [
+        "target_company_researcher"
+      ]
+    },
+    {
+      "prompt": "Research current compensation for the role and location I am considering, with dated sources and uncertainty clearly shown.",
+      "office": "recruitment-office",
+      "roles": [
+        "compensation_analyst"
+      ]
+    },
+    {
+      "prompt": "Edit this exhibition essay for clarity, flow and precision without adding new claims or altering the core argument.",
+      "office": "shared",
+      "roles": [
+        "editor",
+        "art_writer"
+      ]
+    },
+    {
+      "prompt": "I have not supplied enough task detail for you to know whether this belongs to art, agency, product, legal or another office. Ask only the decisive routing question.",
+      "office": "shared",
+      "roles": [
+        "office_concierge"
+      ]
+    },
+    {
+      "prompt": "Reconcile the business accounts to source records and prepare a management summary of balances, accruals and unresolved differences.",
+      "office": "finance-office",
+      "roles": [
+        "financial_controller"
+      ]
+    },
+    {
+      "prompt": "Evaluate vendor quotes against the approved requirement, commercial terms and available budget and prepare the purchase approval without executing payment.",
+      "office": "finance-office",
+      "roles": [
+        "payables_procurement_analyst"
+      ]
+    },
+    {
+      "prompt": "Bring CRM opportunity status, delivery progress and billing evidence together so our revenue forecast reflects the same reality.",
+      "office": "commercial-office",
+      "roles": [
+        "revenue_operations_analyst"
+      ]
+    },
+    {
+      "prompt": "The existing client’s renewal is approaching and adoption is weakening. Plan retention actions using verified account and delivery signals.",
+      "office": "commercial-office",
+      "roles": [
+        "customer_success_manager"
+      ]
+    },
+    {
+      "prompt": "Manage the employer-side hiring process logistics and candidate communication from the approved vacancy while humans retain selection authority.",
+      "office": "people-office",
+      "roles": [
+        "hiring_coordinator"
+      ]
+    },
+    {
+      "prompt": "Handle the process around an employee concern by organizing facts, documentation and escalation neutrally without deciding the outcome.",
+      "office": "people-office",
+      "roles": [
+        "employee_relations_coordinator"
+      ]
+    },
+    {
+      "prompt": "Keep a coordinated programme view across interdependent projects, shared resources, milestone conflicts and cross-project decisions.",
+      "office": "delivery-office",
+      "roles": [
+        "programme_delivery_manager"
+      ]
+    },
+    {
+      "prompt": "Measure variance against the approved plan using actual progress and forecast, and quantify schedule and budget consequences of agreed changes.",
+      "office": "delivery-office",
+      "roles": [
+        "project_controls_analyst"
+      ]
+    },
+    {
+      "prompt": "Coordinate a meeting around availability and required decisions, prepare the agenda and record actions with owners afterward.",
+      "office": "administration-office",
+      "roles": [
+        "meeting_calendar_coordinator"
+      ]
+    },
+    {
+      "prompt": "Transmit this exact approved message only through an available authorized communication channel, then report the actual execution status.",
+      "office": "administration-office",
+      "roles": [
+        "communications_operator"
+      ]
+    },
+    {
+      "prompt": "Cut the approved footage into the intended story, refining continuity and pacing and producing review-ready versions.",
+      "office": "production-office",
+      "roles": [
+        "video_editor"
+      ]
+    },
+    {
+      "prompt": "Create the sound design for the film using ambience, effects and transitions and prepare organized stems for the mix.",
+      "office": "production-office",
+      "roles": [
+        "sound_designer"
+      ]
+    },
+    {
+      "prompt": "Prepare the approved publication files for the printer and verify technical print readiness including bleed, fonts, images and output settings.",
+      "office": "publishing-office",
+      "roles": [
+        "prepress_specialist"
+      ]
+    },
+    {
+      "prompt": "Create accurate publication metadata, identifiers, contributor fields and discovery keywords before distribution.",
+      "office": "publishing-office",
+      "roles": [
+        "publishing_metadata_specialist"
+      ]
+    },
+    {
+      "prompt": "I am preparing an arts grant submission. Coordinate requirements, narrative, work samples, budget inputs and the deadline without inventing eligibility.",
+      "office": "artist-office",
+      "roles": [
+        "grants_applications_manager"
+      ]
+    },
+    {
+      "prompt": "Build a press plan around my exhibition, including media targets, materials and follow-up, without manufacturing coverage.",
+      "office": "artist-office",
+      "roles": [
+        "art_publicist",
+        "press_reputation_researcher"
+      ]
+    },
+    {
+      "prompt": "Create a preservation plan for born-digital artworks, source files, formats, checksums and future migration risks.",
+      "office": "artist-office",
+      "roles": [
+        "digital_preservation_manager"
+      ]
+    },
+    {
+      "prompt": "Produce a public-facing cultural event experience, coordinating audience journey, programme moments and practical delivery.",
+      "office": "organization-office",
+      "roles": [
+        "events_experience_producer"
+      ]
+    },
+    {
+      "prompt": "Turn the approved institutional proposal into a persuasive pitch structure for funders and partners without changing the underlying strategy.",
+      "office": "organization-office",
+      "roles": [
+        "proposal_pitch_director"
+      ]
+    },
+    {
+      "prompt": "Coordinate external contributors, speakers and specialist collaborators for the programme, including briefs and availability.",
+      "office": "organization-office",
+      "roles": [
+        "talent_contributors_manager"
+      ]
+    },
+    {
+      "prompt": "Design lifecycle messaging across acquisition, onboarding, retention and reactivation for the client CRM.",
+      "office": "agency-office",
+      "roles": [
+        "crm_lifecycle_strategist"
+      ]
+    },
+    {
+      "prompt": "Plan measurable paid acquisition experiments across digital channels with conversion and optimization evidence.",
+      "office": "agency-office",
+      "roles": [
+        "performance_marketing_manager"
+      ]
+    },
+    {
+      "prompt": "Define a motion identity system for the brand: kinetic type, transitions, timing and reusable behavior rules.",
+      "office": "agency-office",
+      "roles": [
+        "motion_design_director"
+      ]
+    },
+    {
+      "prompt": "Design the cloud architecture and deployment boundaries for this service, including resilience and cost trade-offs.",
+      "office": "product-office",
+      "roles": [
+        "cloud_architect",
+        "devops_engineer"
+      ]
+    },
+    {
+      "prompt": "Analyze this dataset to build and validate a predictive model, clearly separating exploratory findings from production claims.",
+      "office": "product-office",
+      "roles": [
+        "data_scientist"
+      ]
+    },
+    {
+      "prompt": "Write developer documentation for this API and setup flow based on the actual implementation.",
+      "office": "product-office",
+      "roles": [
+        "documentation_writer",
+        "technical_writer"
+      ]
+    },
+    {
+      "prompt": "Prepare negotiation positions and fallback language for the disputed clauses in this contract.",
+      "office": "legal-office",
+      "roles": [
+        "contract_negotiation_advisor"
+      ]
+    },
+    {
+      "prompt": "Review board responsibilities, approvals and governance records for this company decision.",
+      "office": "legal-office",
+      "roles": [
+        "corporate_governance_advisor"
+      ]
+    },
+    {
+      "prompt": "Assess copyright ownership, permitted use and licensing implications for these creative assets.",
+      "office": "legal-office",
+      "roles": [
+        "ip_copyright_advisor",
+        "licensing_rights_advisor"
+      ]
+    },
+    {
+      "prompt": "Research the company, interviewer, likely format and relevant recent developments before my interview.",
+      "office": "recruitment-office",
+      "roles": [
+        "interview_researcher"
+      ]
+    },
+    {
+      "prompt": "Rewrite my LinkedIn headline, about section and featured-work structure for recruiter discoverability without inventing experience.",
+      "office": "recruitment-office",
+      "roles": [
+        "linkedin_profile_strategist"
+      ]
+    },
+    {
+      "prompt": "Plan the timing and wording of my follow-up after the final interview.",
+      "office": "recruitment-office",
+      "roles": [
+        "job_followup_manager"
+      ]
+    },
+    {
+      "prompt": "Track committed production spend against budget and forecast the likely final cost of the project.",
+      "office": "finance-office",
+      "roles": [
+        "production_cost_controller",
+        "financial_controller"
+      ]
+    },
+    {
+      "prompt": "Organize vendor invoices, approvals and payment timing for accounts payable.",
+      "office": "finance-office",
+      "roles": [
+        "payables_procurement_analyst"
+      ]
+    },
+    {
+      "prompt": "Build a rolling financial forecast for the next year and explain the main variance drivers.",
+      "office": "finance-office",
+      "roles": [
+        "fp_and_a_analyst"
+      ]
+    },
+    {
+      "prompt": "Research this inbound company before qualification and identify evidence that it is or is not a useful sales lead.",
+      "office": "commercial-office",
+      "roles": [
+        "lead_qualification_researcher"
+      ]
+    },
+    {
+      "prompt": "Create an account recovery plan for a customer whose satisfaction and renewal are at risk.",
+      "office": "commercial-office",
+      "roles": [
+        "customer_success_manager"
+      ]
+    },
+    {
+      "prompt": "Source candidates for an employer-side search and document why each profile matches the hiring brief.",
+      "office": "people-office",
+      "roles": [
+        "talent_sourcing_specialist"
+      ]
+    },
+    {
+      "prompt": "Create a structured scoring rubric and repeatable interview questions for our hiring panel.",
+      "office": "people-office",
+      "roles": [
+        "structured_interview_designer"
+      ]
+    },
+    {
+      "prompt": "Manage dependencies, risks and decision escalation across several linked projects under one programme.",
+      "office": "delivery-office",
+      "roles": [
+        "programme_delivery_manager"
+      ]
+    },
+    {
+      "prompt": "Track milestones, schedule variance, risks and change impacts for this project portfolio.",
+      "office": "delivery-office",
+      "roles": [
+        "project_controls_analyst"
+      ]
+    },
+    {
+      "prompt": "Coordinate attendee availability and prepare the meeting invitation with the correct time and participants.",
+      "office": "administration-office",
+      "roles": [
+        "meeting_calendar_coordinator"
+      ]
+    },
+    {
+      "prompt": "Compare practical travel options and lodging for the work trip, but do not book anything.",
+      "office": "administration-office",
+      "roles": [
+        "travel_logistics_coordinator"
+      ]
+    },
+    {
+      "prompt": "Define and validate the color-management pipeline between camera, grading, VFX and final delivery.",
+      "office": "production-office",
+      "roles": [
+        "color_pipeline_engineer"
+      ]
+    },
+    {
+      "prompt": "Combine the live-action plate, CG elements and graphics into a consistent final composite.",
+      "office": "production-office",
+      "roles": [
+        "compositor"
+      ]
+    },
+    {
+      "prompt": "Review generated video shots for temporal consistency, artifacts, continuity and delivery suitability.",
+      "office": "production-office",
+      "roles": [
+        "generative_video_qc"
+      ]
+    },
+    {
+      "prompt": "Evaluate this prospective book proposal for editorial fit, audience, development needs and commissioning decision.",
+      "office": "publishing-office",
+      "roles": [
+        "acquisitions_editor"
+      ]
+    },
+    {
+      "prompt": "Edit reported coverage for sourcing, verification, corrections and publication readiness in the newsroom.",
+      "office": "publishing-office",
+      "roles": [
+        "newsroom_editor",
+        "research_editor_fact_checker"
+      ]
+    },
+    {
+      "prompt": "Plan orders, sales channels, returns and distribution operations for the physical publication.",
+      "office": "publishing-office",
+      "roles": [
+        "book_distribution_manager"
+      ]
+    },
+    {
+      "prompt": "Write an original critical essay about the supplied work, distinguishing observation, interpretation and research.",
+      "office": "shared",
+      "roles": [
+        "art_writer"
+      ]
+    },
+    {
+      "prompt": "Turn these priorities into a practical studio plan with tasks, owners, deadlines and handoffs.",
+      "office": "shared",
+      "roles": [
+        "studio_manager"
+      ]
+    },
+    {
+      "prompt": "I need ACO to help, but I have not described the actual problem yet.",
+      "office": "shared",
+      "roles": [
+        "office_concierge"
+      ]
+    },
+    {
+      "prompt": "Prepare movement, packing, condition and location records for works traveling to an exhibition.",
+      "office": "artist-office",
+      "roles": [
+        "registrar_art_logistics",
+        "artwork_documentation_manager"
+      ]
+    },
+    {
+      "prompt": "Set edition size, numbering, proofs and inventory rules for a new limited photographic edition.",
+      "office": "artist-office",
+      "roles": [
+        "edition_manager",
+        "collection_inventory_manager"
+      ]
+    },
+    {
+      "prompt": "Map which museums and curatorial institutions are relevant to the practice and plan relationship follow-up.",
+      "office": "artist-office",
+      "roles": [
+        "institutional_relations_manager",
+        "artist_agent"
+      ]
+    },
+    {
+      "prompt": "Design how our institution captures research, decisions and reusable knowledge without duplicating everything across files.",
+      "office": "organization-office",
+      "roles": [
+        "knowledge_architect"
+      ]
+    },
+    {
+      "prompt": "Analyze cultural signals and social meaning around this topic for an institutional strategy, separating evidence from trend hype.",
+      "office": "organization-office",
+      "roles": [
+        "cultural_intelligence_analyst",
+        "research_director"
+      ]
+    },
+    {
+      "prompt": "Create a controlled naming, versioning, metadata and rights structure for campaign source files and final assets.",
+      "office": "agency-office",
+      "roles": [
+        "asset_manager"
+      ]
+    },
+    {
+      "prompt": "Decide the paid, owned and earned channel roles and investment logic for this campaign.",
+      "office": "agency-office",
+      "roles": [
+        "media_strategy_planner"
+      ]
+    },
+    {
+      "prompt": "Write headline routes and a short campaign manifesto from the approved creative concept.",
+      "office": "agency-office",
+      "roles": [
+        "copywriter"
+      ]
+    },
+    {
+      "prompt": "Investigate whether this library is healthy, maintained and compatible before we add it to the codebase.",
+      "office": "product-office",
+      "roles": [
+        "dependency_researcher",
+        "technical_researcher"
+      ]
+    },
+    {
+      "prompt": "Threat-model this service and propose concrete engineering controls for the highest technical risks.",
+      "office": "product-office",
+      "roles": [
+        "security_engineer",
+        "security_reviewer"
+      ]
+    },
+    {
+      "prompt": "Build the ingestion and transformation path for these event records into an analytics-ready dataset.",
+      "office": "product-office",
+      "roles": [
+        "data_engineer"
+      ]
+    },
+    {
+      "prompt": "Create and execute a focused quality plan for this release, including regressions and acceptance evidence.",
+      "office": "product-office",
+      "roles": [
+        "qa_engineer",
+        "qa_lead"
+      ]
+    },
+    {
+      "prompt": "Turn the agreed commercial terms into a first-pass contract draft while clearly marking clauses that need counsel review.",
+      "office": "legal-office",
+      "roles": [
+        "contract_drafter",
+        "commercial_contracts_advisor"
+      ]
+    },
+    {
+      "prompt": "Draft a factual response to this complaint without admitting liability or inventing evidence.",
+      "office": "legal-office",
+      "roles": [
+        "claims_correspondence_drafter",
+        "dispute_prevention_advisor"
+      ]
+    },
+    {
+      "prompt": "Research the current regulatory requirements that apply to this activity and identify the competent authority.",
+      "office": "legal-office",
+      "roles": [
+        "regulatory_compliance_researcher",
+        "jurisdiction_researcher"
+      ]
+    },
+    {
+      "prompt": "Research market compensation and total package signals for the role I am considering.",
+      "office": "recruitment-office",
+      "roles": [
+        "compensation_analyst"
+      ]
+    },
+    {
+      "prompt": "Assess this potential employer: business health, team, culture signals and current priorities before I apply.",
+      "office": "recruitment-office",
+      "roles": [
+        "target_company_researcher"
+      ]
+    },
+    {
+      "prompt": "Draft a concise tailored cover letter using only verified experience from my career materials.",
+      "office": "recruitment-office",
+      "roles": [
+        "cover_letter_writer"
+      ]
+    },
+    {
+      "prompt": "Coordinate the records and deadlines our tax professional needs, without giving certified tax advice.",
+      "office": "finance-office",
+      "roles": [
+        "tax_compliance_coordinator"
+      ]
+    },
+    {
+      "prompt": "Organize what customers owe us, due dates and follow-up status for outstanding bills.",
+      "office": "finance-office",
+      "roles": [
+        "billing_receivables_coordinator"
+      ]
+    },
+    {
+      "prompt": "Analyze pipeline conversion, handoffs and revenue-process data so we can see where deals stall.",
+      "office": "commercial-office",
+      "roles": [
+        "revenue_operations_analyst",
+        "sales_operations_manager"
+      ]
+    },
+    {
+      "prompt": "Give the sales team a reusable objection-handling and proof pack for this offer.",
+      "office": "commercial-office",
+      "roles": [
+        "sales_enablement_specialist"
+      ]
+    },
+    {
+      "prompt": "Coordinate access, introductions, documents and first-week tasks for a person joining our staff.",
+      "office": "people-office",
+      "roles": [
+        "onboarding_offboarding_coordinator"
+      ]
+    },
+    {
+      "prompt": "Document and route an employee-relations issue fairly, with clear escalation and confidentiality boundaries.",
+      "office": "people-office",
+      "roles": [
+        "employee_relations_coordinator"
+      ]
+    },
+    {
+      "prompt": "Before closeout, define the evidence, owner and approval needed to accept each project deliverable.",
+      "office": "delivery-office",
+      "roles": [
+        "quality_acceptance_coordinator"
+      ]
+    },
+    {
+      "prompt": "Run a retrospective and planning session that improves team delivery without taking product decisions away from the owner.",
+      "office": "delivery-office",
+      "roles": [
+        "agile_delivery_facilitator"
+      ]
+    },
+    {
+      "prompt": "Triage this internal office request, determine who owns it and track it to resolution.",
+      "office": "administration-office",
+      "roles": [
+        "service_desk_coordinator",
+        "office_administrator"
+      ]
+    },
+    {
+      "prompt": "Sort this inbox thread, identify the action required and prepare a context-aware response draft.",
+      "office": "administration-office",
+      "roles": [
+        "inbox_correspondence_manager"
+      ]
+    },
+    {
+      "prompt": "Ingest camera media, verify two independent copies and produce a clear transfer report before cards are cleared.",
+      "office": "production-office",
+      "roles": [
+        "media_data_wrangler",
+        "digital_imaging_technician"
+      ]
+    },
+    {
+      "prompt": "Cut this supplied footage into a coherent narrative version while preserving source organization and edit decisions.",
+      "office": "production-office",
+      "roles": [
+        "video_editor"
+      ]
+    },
+    {
+      "prompt": "Design the sonic environment and transitions for this moving-image installation.",
+      "office": "production-office",
+      "roles": [
+        "sound_designer"
+      ]
+    },
+    {
+      "prompt": "Coordinate author questions, revisions, approvals and communication across the book production process.",
+      "office": "publishing-office",
+      "roles": [
+        "author_relations_manager",
+        "managing_editor"
+      ]
+    },
+    {
+      "prompt": "Compare the final proof against approved text and flag typography, punctuation and production errors.",
+      "office": "publishing-office",
+      "roles": [
+        "proofreader"
+      ]
+    },
+    {
+      "prompt": "Plan narrator casting, recording, edit and distribution preparation for an audiobook edition.",
+      "office": "publishing-office",
+      "roles": [
+        "audiobook_producer"
+      ]
+    },
+    {
+      "prompt": "Define a concrete visual direction for the photography, including image logic, casting cues and composition rather than a generic moodboard.",
+      "office": "shared",
+      "roles": [
+        "art_director"
+      ]
+    },
+    {
+      "prompt": "Create an audience, launch, channel and measurement plan for an independent cultural project.",
+      "office": "shared",
+      "roles": [
+        "marketing_strategist"
+      ]
+    },
+    {
+      "prompt": "Before you route this, I need to explain the actual request because right now you do not have enough detail.",
+      "office": "shared",
+      "roles": [
+        "office_concierge"
+      ]
+    },
+    {
+      "prompt": "A curator invited me to present recent works. Help decide which pieces belong together and how the exhibition argument should develop.",
+      "office": "artist-office",
+      "roles": [
+        "curator"
+      ]
+    },
+    {
+      "prompt": "I have an upcoming institutional show and need a press approach that protects the work from hype.",
+      "office": "artist-office",
+      "roles": [
+        "art_publicist",
+        "press_reputation_researcher"
+      ]
+    },
+    {
+      "prompt": "Our cultural institution needs a research agenda, source plan and synthesis process for a new programme.",
+      "office": "organization-office",
+      "roles": [
+        "research_director"
+      ]
+    },
+    {
+      "prompt": "The funded programme is ending; define how we evaluate outcomes without inventing impact.",
+      "office": "organization-office",
+      "roles": [
+        "impact_evaluation"
+      ]
+    },
+    {
+      "prompt": "The client has lots of category data but no clear strategic choice. Turn the evidence into one usable direction for creative work.",
+      "office": "agency-office",
+      "roles": [
+        "strategy_director",
+        "creative_strategist"
+      ]
+    },
+    {
+      "prompt": "Comments and DMs are growing quickly. Set moderation, response and escalation rules for the brand account.",
+      "office": "agency-office",
+      "roles": [
+        "community_manager"
+      ]
+    },
+    {
+      "prompt": "The checkout feels slow on real devices. Diagnose rendering and web performance bottlenecks before proposing fixes.",
+      "office": "product-office",
+      "roles": [
+        "performance_engineer"
+      ]
+    },
+    {
+      "prompt": "Review this MCP connection: it exposes read, write and delete tools and I want least-privilege guidance before enabling it.",
+      "office": "product-office",
+      "roles": [
+        "mcp_integration_reviewer"
+      ]
+    },
+    {
+      "prompt": "Review whether this freelancer arrangement creates employment-classification risk and what the agreement should clarify.",
+      "office": "legal-office",
+      "roles": [
+        "independent_contractor_advisor",
+        "employment_labor_advisor"
+      ]
+    },
+    {
+      "prompt": "Assess the legal risks of an AI vendor using customer material for model improvement and generated outputs.",
+      "office": "legal-office",
+      "roles": [
+        "ai_technology_law_advisor",
+        "privacy_data_protection_advisor"
+      ]
+    },
+    {
+      "prompt": "Identify the likely recruiter, hiring lead and team decision-makers for this open position from public information.",
+      "office": "recruitment-office",
+      "roles": [
+        "hiring_team_mapper"
+      ]
+    },
+    {
+      "prompt": "I am at final interview stage. Choose and brief the right professional references without contacting them yet.",
+      "office": "recruitment-office",
+      "roles": [
+        "professional_reference_manager"
+      ]
+    },
+    {
+      "prompt": "Organize supplier bills, due dates and purchasing commitments so we can see what must be paid this month.",
+      "office": "finance-office",
+      "roles": [
+        "payables_procurement_analyst"
+      ]
+    },
+    {
+      "prompt": "Reconcile bookkeeping inputs and flag what the accountant still needs, without pretending to file taxes.",
+      "office": "finance-office",
+      "roles": [
+        "bookkeeping_coordinator",
+        "tax_compliance_coordinator"
+      ]
+    },
+    {
+      "prompt": "Our sales pipeline is messy. Define stages, ownership, conversion fields and CRM hygiene.",
+      "office": "commercial-office",
+      "roles": [
+        "sales_operations_manager",
+        "revenue_operations_analyst"
+      ]
+    },
+    {
+      "prompt": "Create reusable material that helps the team explain the offer, objections and proof consistently in sales calls.",
+      "office": "commercial-office",
+      "roles": [
+        "sales_enablement_specialist"
+      ]
+    },
+    {
+      "prompt": "Two employees are in conflict and a grievance may follow. Organize the employer-side process and escalation.",
+      "office": "people-office",
+      "roles": [
+        "employee_relations_coordinator",
+        "people_operations_manager"
+      ]
+    },
+    {
+      "prompt": "Coordinate candidate scheduling, interview logistics and hiring-team follow-up for an employer-side search.",
+      "office": "people-office",
+      "roles": [
+        "hiring_coordinator"
+      ]
+    },
+    {
+      "prompt": "The client changed scope halfway through. Map schedule/cost dependency impacts and what needs formal acceptance.",
+      "office": "delivery-office",
+      "roles": [
+        "project_controls_analyst",
+        "quality_acceptance_coordinator"
+      ]
+    },
+    {
+      "prompt": "Facilitate planning and retrospectives for a cross-functional delivery team without becoming the product owner.",
+      "office": "delivery-office",
+      "roles": [
+        "agile_delivery_facilitator"
+      ]
+    },
+    {
+      "prompt": "Keep signed documents, approval versions and distribution records under control so nobody uses the wrong file.",
+      "office": "administration-office",
+      "roles": [
+        "records_document_controller"
+      ]
+    },
+    {
+      "prompt": "Coordinate a supplier issue, access request and routine studio facilities follow-up.",
+      "office": "administration-office",
+      "roles": [
+        "office_administrator",
+        "service_desk_coordinator"
+      ]
+    },
+    {
+      "prompt": "Finish these beauty images while keeping believable skin texture and consistent fashion color.",
+      "office": "production-office",
+      "roles": [
+        "beauty_fashion_retouch_artist"
+      ]
+    },
+    {
+      "prompt": "Translate the scene into storyboard panels that make eyelines, screen direction and shot geography clear.",
+      "office": "production-office",
+      "roles": [
+        "storyboard_artist"
+      ]
+    },
+    {
+      "prompt": "Make the EPUB navigable and accessible with correct structure, semantics and assistive-technology checks.",
+      "office": "publishing-office",
+      "roles": [
+        "ebook_accessibility_engineer"
+      ]
+    },
+    {
+      "prompt": "Plan recording, edit, mix and episode delivery for this interview podcast.",
+      "office": "publishing-office",
+      "roles": [
+        "podcast_audio_producer"
+      ]
+    },
+    {
+      "prompt": "Write a concise professional introduction email that reflects the actual relationship and does not invent familiarity.",
+      "office": "shared",
+      "roles": [
+        "communications_editor"
+      ]
+    },
+    {
+      "prompt": "Clarify the organization’s positioning, architecture and naming logic before visual design begins.",
+      "office": "shared",
+      "roles": [
+        "brand_strategist"
+      ]
+    },
+    {
+      "prompt": "Can you handle this for me? I have not said what the actual task is.",
+      "office": "shared",
+      "roles": [
+        "office_concierge"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "provider": null,
+  "model": null,
+  "interface_scope": null,
+  "source_url": null,
+  "verified_on": null,
+  "modes": [],
+  "aspect_ratios": [],
+  "durations_seconds": [],
+  "supports_negative_prompt": null,
+  "supports_audio": null,
+  "supports_seed": null,
+  "max_prompt_characters": null
+}

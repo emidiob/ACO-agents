@@ -1,0 +1,329 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.7.0",
+  "name": "routing-independent-gate-r",
+  "purpose": "Frozen routing regression gate inherited from v0.6.2 and rerun unchanged for v0.7.0; excluded from routing examples.",
+  "gate": {
+    "minimum_score": 90.0,
+    "minimum_office_accuracy": 0.9,
+    "minimum_top1_role_accuracy": 0.85,
+    "minimum_top3_role_recall": 0.95,
+    "maximum_overstaff_rate": 0.05,
+    "maximum_critical_failures": 0
+  },
+  "cases": [
+    {
+      "id": "r-art-practice",
+      "split": "independent_gate",
+      "prompt": "For my contemporary-art practice, review the work and research I supplied and choose the most important development priorities for the next three months.",
+      "expected_office": "artist-office",
+      "acceptable_roles": [
+        "practice_strategist"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-art-grant",
+      "split": "independent_gate",
+      "prompt": "I am applying as an artist to a production fund. Verify the call and assemble the project answers, work samples, budget and timetable without inventing achievements.",
+      "expected_office": "artist-office",
+      "acceptable_roles": [
+        "grants_applications_manager"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-org-ops",
+      "split": "independent_gate",
+      "prompt": "At our cultural organization, clarify operating priorities, capacity, ownership and resourcing across teams so the institution can execute its programme.",
+      "expected_office": "organization-office",
+      "acceptable_roles": [
+        "operations_director"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-org-contrib",
+      "split": "independent_gate",
+      "prompt": "Our cultural organization needs external artists, writers and speakers for its programme. Organize contributor sourcing, availability and onboarding.",
+      "expected_office": "organization-office",
+      "acceptable_roles": [
+        "talent_contributors_manager"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-agency-brand",
+      "split": "independent_gate",
+      "prompt": "For the client brand, build the approved visual identity into a coherent system of mark, type, color, layout, imagery and applications.",
+      "expected_office": "agency-office",
+      "acceptable_roles": [
+        "brand_identity_designer"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-agency-pm",
+      "split": "independent_gate",
+      "prompt": "Manage this client-agency project through scope, deadlines, review rounds, approvals and dependencies, escalating changes when they affect delivery.",
+      "expected_office": "agency-office",
+      "acceptable_roles": [
+        "project_manager",
+        "project_coordinator"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-product-back",
+      "split": "independent_gate",
+      "prompt": "For our software product, implement the server-side feature and API behavior with validation, errors and test coverage.",
+      "expected_office": "product-office",
+      "acceptable_roles": [
+        "backend_engineer",
+        "senior_backend_engineer"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-product-sec",
+      "split": "independent_gate",
+      "prompt": "For our application, inspect authentication, authorization, secrets and exposed-data risks and verify the security fixes.",
+      "expected_office": "product-office",
+      "acceptable_roles": [
+        "security_reviewer",
+        "security_engineer"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-legal-contract",
+      "split": "independent_gate",
+      "prompt": "Legally review the supplied services agreement before signature for payment, obligations, IP, liability, termination and governing law.",
+      "expected_office": "legal-office",
+      "acceptable_roles": [
+        "contract_reviewer",
+        "commercial_contracts_advisor"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-legal-privacy",
+      "split": "independent_gate",
+      "prompt": "Review the privacy and data-protection implications of this planned personal-data flow, including processors, transfers, retention and notices.",
+      "expected_office": "legal-office",
+      "acceptable_roles": [
+        "privacy_data_protection_advisor"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-rec-search",
+      "split": "independent_gate",
+      "prompt": "For my job search, find active positions that match the target roles, seniority and locations I gave you and verify each vacancy.",
+      "expected_office": "recruitment-office",
+      "acceptable_roles": [
+        "job_opportunity_scout"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-rec-offer",
+      "split": "independent_gate",
+      "prompt": "I received a written job offer. Prepare how I could negotiate compensation, title, responsibilities, flexibility and start date without contacting the company.",
+      "expected_office": "recruitment-office",
+      "acceptable_roles": [
+        "offer_negotiation_advisor",
+        "compensation_analyst"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-shared-brand",
+      "split": "independent_gate",
+      "prompt": "Before any identity design begins, define the brand positioning, differentiation and architecture from evidence and clearly labeled assumptions.",
+      "expected_office": "shared",
+      "acceptable_roles": [
+        "brand_strategist"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-shared-route",
+      "split": "independent_gate",
+      "prompt": "I have not explained the actual task or which part of my work it belongs to. Ask one decisive question before routing it to an office.",
+      "expected_office": "shared",
+      "acceptable_roles": [
+        "office_concierge"
+      ],
+      "max_selected_roles": 1,
+      "critical": true
+    },
+    {
+      "id": "r-fin-cash",
+      "split": "independent_gate",
+      "prompt": "For the business, forecast actual cash receipts and payments by date and show the lowest projected cash balance under different assumptions.",
+      "expected_office": "finance-office",
+      "acceptable_roles": [
+        "cashflow_treasury_analyst"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-fin-price",
+      "split": "independent_gate",
+      "prompt": "Price this project from labor, supplier costs, rights, contingency and the target margin, showing assumptions and sensitivity.",
+      "expected_office": "finance-office",
+      "acceptable_roles": [
+        "pricing_margin_analyst"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-com-lead",
+      "split": "independent_gate",
+      "prompt": "For the sales team, qualify this prospect against our ideal-client profile and evidence of a real need before a proposal is prepared.",
+      "expected_office": "commercial-office",
+      "acceptable_roles": [
+        "lead_qualification_researcher"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-com-prop",
+      "split": "independent_gate",
+      "prompt": "Prepare the commercial client proposal from the agreed solution, scope and price, including assumptions, exclusions and validity.",
+      "expected_office": "commercial-office",
+      "acceptable_roles": [
+        "sales_proposal_specialist"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-people-plan",
+      "split": "independent_gate",
+      "prompt": "As the employer, turn forecast workload and missing capabilities into workforce and contractor scenarios before opening roles.",
+      "expected_office": "people-office",
+      "acceptable_roles": [
+        "workforce_planner"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-people-er",
+      "split": "independent_gate",
+      "prompt": "An employee has raised a workplace concern. Organize the employer-side facts, process and escalation neutrally and leave decisions to authorized humans.",
+      "expected_office": "people-office",
+      "acceptable_roles": [
+        "employee_relations_coordinator"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-del-controls",
+      "split": "independent_gate",
+      "prompt": "For this project, compare the approved baseline with actuals and forecast and quantify schedule and cost impacts of approved scope changes.",
+      "expected_office": "delivery-office",
+      "acceptable_roles": [
+        "project_controls_analyst"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-del-program",
+      "split": "independent_gate",
+      "prompt": "Coordinate the programme dependencies, shared resources and milestone conflicts across several connected projects.",
+      "expected_office": "delivery-office",
+      "acceptable_roles": [
+        "programme_delivery_manager"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-admin-inbox",
+      "split": "independent_gate",
+      "prompt": "In the office inbox, read the complete threads, decide what response is needed and draft replies for approval without sending.",
+      "expected_office": "administration-office",
+      "acceptable_roles": [
+        "inbox_correspondence_manager"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-admin-trip",
+      "split": "independent_gate",
+      "prompt": "For this business trip, compare travel and accommodation options and prepare an itinerary proposal without booking anything.",
+      "expected_office": "administration-office",
+      "acceptable_roles": [
+        "travel_logistics_coordinator"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-production-camera",
+      "split": "independent_gate",
+      "prompt": "For this film scene, plan cinematography across framing, lenses, lighting, movement and continuity.",
+      "expected_office": "production-office",
+      "acceptable_roles": [
+        "cinematographer"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-production-qc",
+      "split": "independent_gate",
+      "prompt": "For final postproduction delivery, verify picture, codec, audio, captions, file naming and package completeness against the technical spec.",
+      "expected_office": "production-office",
+      "acceptable_roles": [
+        "media_delivery_qc"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-pub-dev",
+      "split": "independent_gate",
+      "prompt": "For this book manuscript, improve the argument structure, chapter order and reader flow before copyediting begins.",
+      "expected_office": "publishing-office",
+      "acceptable_roles": [
+        "developmental_editor"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "r-pub-prepress",
+      "split": "independent_gate",
+      "prompt": "For this publication, prepare print-ready files and verify bleed, fonts, image resolution, color settings and printer requirements.",
+      "expected_office": "publishing-office",
+      "acceptable_roles": [
+        "prepress_specialist"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    }
+  ]
+}

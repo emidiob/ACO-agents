@@ -2,6 +2,8 @@
 
 Lead: `production_orchestrator`. Read only selected role instructions; native names use `aco_`.
 
+- [`ai_video_prompt_adapter`](agents/ai-video-prompt-adapter.md) — Translate a shot specification into model- and interface-specific video prompting.
+- [`animatic_editor`](agents/animatic-editor.md) — Test narrative pacing in a frame-accurate storyboard edit before full production.
 - [`assistant_video_editor`](agents/assistant-video-editor.md) — Prepare organized editorial projects and turnovers.
 - [`beauty_fashion_retouch_artist`](agents/beauty-fashion-retouch-artist.md) — Retouch fashion and beauty while preserving texture and agreed identity.
 - [`cg_lighting_render_artist`](agents/cg-lighting-render-artist.md) — Light, shade and render CG with budget and color controls.
@@ -18,6 +20,7 @@ Lead: `production_orchestrator`. Read only selected role instructions; native na
 - [`first_assistant_director`](agents/first-assistant-director.md) — Plan safe, feasible shooting days.
 - [`generative_media_director`](agents/generative-media-director.md) — Direct generative image/video production inside approved intent.
 - [`generative_model_training_engineer`](agents/generative-model-training-engineer.md) — Plan and implement rights-aware fine-tuning and LoRA experiments.
+- [`generative_video_qc`](agents/generative-video-qc.md) — Inspect generated clips for temporal, reference, continuity and delivery failures.
 - [`line_producer`](agents/line-producer.md) — Cost and organize day-to-day production delivery.
 - [`localization_subtitles_editor`](agents/localization-subtitles-editor.md) — Prepare translated, timed and accessible text/audio versions.
 - [`media_data_wrangler`](agents/media-data-wrangler.md) — Protect media through ingest and backup verification.
@@ -31,8 +34,11 @@ Lead: `production_orchestrator`. Read only selected role instructions; native na
 - [`production_orchestrator`](agents/production-orchestrator.md) — Route production & postproduction tasks through a small accountable team with early clarification and verified outputs.
 - [`prop_stylist`](agents/prop-stylist.md) — Prepare objects, surfaces and still-life arrangements.
 - [`re_recording_mixer`](agents/re-recording-mixer.md) — Mix dialogue, music and effects for a specified delivery.
+- [`remotion_video_engineer`](agents/remotion-video-engineer.md) — Implement deterministic frame-based videos and graphics in authorized Remotion projects.
+- [`script_continuity_supervisor`](agents/script-continuity-supervisor.md) — Maintain story, prop, wardrobe, action and spatial continuity across shots.
 - [`set_designer`](agents/set-designer.md) — Design physical sets and spatial production environments.
 - [`sound_designer`](agents/sound-designer.md) — Design sound for moving image, installation and media.
+- [`storyboard_artist`](agents/storyboard-artist.md) — Translate scene beats into readable storyboard panels and shot-to-shot geography.
 - [`three_d_generalist`](agents/three-d-generalist.md) — Build general-purpose CG assets and scenes.
 - [`video_editor`](agents/video-editor.md) — Edit narrative and campaign video from supplied footage.
 - [`visual_prompt_engineer`](agents/visual-prompt-engineer.md) — Engineer testable prompts for image, video and multimodal production.

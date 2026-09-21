@@ -1,6 +1,6 @@
 # ACO catalogue
 
-Version 0.4.3. 349 generic role definitions; not 349 autonomous running processes.
+Version 0.7.0. 363 generic role definitions; not 363 autonomous running processes.
 
 Start with [CHATGPT.md](../CHATGPT.md) or [AGENTS.md](../AGENTS.md). Read only relevant skills and role methods.
 
@@ -24,7 +24,7 @@ Lead: `creative_orchestrator`. Native agents use the `aco_` prefix.
 - [`collection_inventory_manager`](../skills/aco-artist-office/references/agents/collection-inventory-manager.md) — Operational artwork inventory manager: availability, location, ownership, consignment, reservation, price, condition status, exhibition status and movement-ready records.
 - [`collector_relations_manager`](../skills/aco-artist-office/references/agents/collector-relations-manager.md) — Collector and patron relationship manager for contemporary artists: CRM structure, private communications, follow-up, stewardship, viewings, acquisition journeys and long-term relationship development.
 - [`commissions_licensing_manager`](../skills/aco-artist-office/references/agents/commissions-licensing-manager.md) — Manager for artist commissions, licensing and reproduction rights: structures scope, fees, deliverables, usage, approvals, exclusivity, renewals and rights protections.
-- [`creative_orchestrator`](../skills/aco-artist-office/references/agents/creative-orchestrator.md) — Orchestrator for a full contemporary-art studio and professional office: artistic research, curatorial development, career, practice planning, opportunities, production, rights, revenue, sales, marketing, communications and operations.
+- [`creative_orchestrator`](../skills/aco-artist-office/references/agents/creative-orchestrator.md) — Lead router for a contemporary-art practice across artistic development, research, curating, opportunities, production, career, rights, archive, revenue and studio operations.
 - [`curator`](../skills/aco-artist-office/references/agents/curator.md) — Contemporary-art curator for exhibition concepts, artist selection, commissions, spatial logic, interpretive frameworks, public programme and curatorial writing.
 - [`digital_preservation_manager`](../skills/aco-artist-office/references/agents/digital-preservation-manager.md) — Digital/time-based artwork preservation specialist for masters, checksums, codecs, software dependencies, models, environments, migration, backups and future re-installability.
 - [`edition_manager`](../skills/aco-artist-office/references/agents/edition-manager.md) — Edition-control specialist for photographs, prints, video, software and other reproducible works: edition structures, APs, certificates, numbering, production specs, availability and price ladders.
@@ -68,7 +68,7 @@ Lead: `organization_orchestrator`. Native agents use the `aco_` prefix.
 - [`network_mapper`](../skills/aco-organization-office/references/agents/network-mapper.md) — Network mapper for people, institutions, publications, funders, communities and relationships around the organization research and partnership topics.
 - [`operations_director`](../skills/aco-organization-office/references/agents/operations-director.md) — COO-style operations director for a research-led cultural/creative organization. Owns workflows, capacity, resourcing, operational systems and organisational execution.
 - [`organization_director`](../skills/aco-organization-office/references/agents/organization-director.md) — Executive strategic director for a research-led cultural/creative organization. Holds the mission, portfolio logic, organisational coherence and boundary between cultural platform, research lab and commercial practice.
-- [`organization_orchestrator`](../skills/aco-organization-office/references/agents/organization-orchestrator.md) — Orchestrator for the organization across research, culture, creative, publishing, clients, partnerships, funding, products, operations and growth.
+- [`organization_orchestrator`](../skills/aco-organization-office/references/agents/organization-orchestrator.md) — Lead router for a cultural/research organization across programme, research, publishing, partnerships, clients, funding, products, operations and growth.
 - [`partnerships_director`](../skills/aco-organization-office/references/agents/partnerships-director.md) — Strategic partnerships director for the organization across cultural institutions, universities, publishers, foundations, brands and technology organisations.
 - [`product_experience_director`](../skills/aco-organization-office/references/agents/product-experience-director.md) — Product and experience director for the organization digital platforms, interactive publications, tools, services and hybrid experiences.
 - [`programme_curator`](../skills/aco-organization-office/references/agents/programme-curator.md) — Programme curator for the organization exhibitions, screenings, talks, workshops, residencies and interdisciplinary cultural programmes.
@@ -85,7 +85,7 @@ Lead: `organization_orchestrator`. Native agents use the `aco_` prefix.
 
 Lead: `agency_orchestrator`. Native agents use the `aco_` prefix.
 
-- [`agency_orchestrator`](../skills/aco-agency-office/references/agents/agency-orchestrator.md) — Orchestrator for a creative production, brand strategy, design and marketing agency. Routes work through directors, specialists and execution makers without overstaffing tasks.
+- [`agency_orchestrator`](../skills/aco-agency-office/references/agents/agency-orchestrator.md) — Lead router for a creative agency spanning strategy, brand, design, campaigns, production, content, media and marketing.
 - [`asset_manager`](../skills/aco-agency-office/references/agents/asset-manager.md) — Digital asset manager for file structure, naming, versions, source files, metadata, rights fields and final deliverable organization.
 - [`audience_strategist`](../skills/aco-agency-office/references/agents/audience-strategist.md) — Audience strategist for segmentation, motivations, journeys, barriers, behaviors and communication design.
 - [`brand_guardian`](../skills/aco-agency-office/references/agents/brand-guardian.md) — Brand governance lead who protects consistency, quality and intentional evolution across internal and external executions.
@@ -97,6 +97,7 @@ Lead: `agency_orchestrator`. Native agents use the `aco_` prefix.
 - [`community_manager`](../skills/aco-agency-office/references/agents/community-manager.md) — Community manager for comments, inbox triage, moderation, audience questions, escalation and qualitative community signals.
 - [`content_director`](../skills/aco-agency-office/references/agents/content-director.md) — Content director for brand editorial systems, content pillars, formats, franchises and channel ecosystems.
 - [`content_researcher`](../skills/aco-agency-office/references/agents/content-researcher.md) — Content researcher for stories, examples, references, statistics, cultural hooks, subject-matter sources and editorial evidence.
+- [`conversion_experiment_designer`](../skills/aco-agency-office/references/agents/conversion-experiment-designer.md) — Turn evidence-backed conversion hypotheses into interpretable experiments.
 - [`copy_researcher`](../skills/aco-agency-office/references/agents/copy-researcher.md) — Copy and language researcher for competitor messaging, category language, terminology, naming landscapes and cultural/verbal references.
 - [`copywriter`](../skills/aco-agency-office/references/agents/copywriter.md) — Senior agency copywriter for concepts, headlines, scripts, manifestos, social, OOH, digital and campaign copy.
 - [`creative_strategist`](../skills/aco-agency-office/references/agents/creative-strategist.md) — Creative strategist who bridges evidence-led strategy and creative development, defining territories and briefs without replacing the creative director.
@@ -139,7 +140,9 @@ Lead: `agency_orchestrator`. Native agents use the `aco_` prefix.
 - [`traffic_coordinator`](../skills/aco-agency-office/references/agents/traffic-coordinator.md) — Traffic coordinator for daily workload visibility, assignment tracking, deadline collisions and resource-status updates.
 - [`traffic_resource_manager`](../skills/aco-agency-office/references/agents/traffic-resource-manager.md) — Agency traffic and resource manager for capacity planning, staffing, scheduling, utilization and workload balancing across teams and freelancers.
 - [`verbal_identity_director`](../skills/aco-agency-office/references/agents/verbal-identity-director.md) — Verbal identity specialist for brand voice, tone, messaging systems, naming logic and language governance.
+- [`visual_design_critic`](../skills/aco-agency-office/references/agents/visual-design-critic.md) — Assess rendered design against a brief without imposing a default style.
 - [`visual_researcher`](../skills/aco-agency-office/references/agents/visual-researcher.md) — Visual researcher for photography, film, art, fashion, design, archives, image culture, directors, photographers and visual references.
+- [`web_typography_layout_specialist`](../skills/aco-agency-office/references/agents/web-typography-layout-specialist.md) — Develop and test typographic hierarchy and responsive layout systems.
 
 Reused dependencies: `creative_director`, `account_director`, `business_development_director`, `client_strategy_director`, `operations_director`, `executive_producer`, `creative_technologist`, `proposal_pitch_director`, `contracts_ip_manager`, `data_insights_analyst`, `product_experience_director`, `ux_service_designer`, `communications_pr_director`, `events_experience_producer`, `commercial_strategy_director`, `digital_product_manager`
 
@@ -151,6 +154,7 @@ Lead: `product_software_orchestrator`. Native agents use the `aco_` prefix.
 - [`accessibility_tester`](../skills/aco-product-office/references/agents/accessibility-tester.md) — Tester for keyboard flows, screen-reader behavior, contrast, semantics and accessibility bugs.
 - [`ai_engineer`](../skills/aco-product-office/references/agents/ai-engineer.md) — Engineer for applied AI features, model integration, pipelines and evaluation.
 - [`ai_product_engineer`](../skills/aco-product-office/references/agents/ai-product-engineer.md) — Bridge role between product and AI engineering for user-facing AI feature design and implementation.
+- [`analytics_instrumentation_engineer`](../skills/aco-product-office/references/agents/analytics-instrumentation-engineer.md) — Implement testable, privacy-aware product and marketing event instrumentation.
 - [`api_integration_engineer`](../skills/aco-product-office/references/agents/api-integration-engineer.md) — Engineer for third-party service integration, authentication flows, webhooks and API reliability.
 - [`api_researcher`](../skills/aco-product-office/references/agents/api-researcher.md) — Researcher for third-party API capabilities, docs, pricing, limits and integration implications.
 - [`automation_integration_engineer`](../skills/aco-product-office/references/agents/automation-integration-engineer.md) — Implement scoped integrations and safe office automations.
@@ -158,7 +162,9 @@ Lead: `product_software_orchestrator`. Native agents use the `aco_` prefix.
 - [`bug_investigator`](../skills/aco-product-office/references/agents/bug-investigator.md) — Specialist for reproducing, isolating and diagnosing bugs across environments and layers.
 - [`business_analyst`](../skills/aco-product-office/references/agents/business-analyst.md) — Analyst for business rules, process requirements, operational needs and stakeholder constraints.
 - [`cloud_architect`](../skills/aco-product-office/references/agents/cloud-architect.md) — Architect for cloud topology, managed services, cost/performance tradeoffs and cloud governance.
+- [`cms_content_architect`](../skills/aco-product-office/references/agents/cms-content-architect.md) — Design maintainable content models and editorial publishing workflows.
 - [`code_reviewer`](../skills/aco-product-office/references/agents/code-reviewer.md) — Reviewer for code quality, maintainability, clarity and adherence to standards.
+- [`creative_frontend_engineer`](../skills/aco-product-office/references/agents/creative-frontend-engineer.md) — Build expressive interactive websites with accessible low-resource fallbacks.
 - [`data_engineer`](../skills/aco-product-office/references/agents/data-engineer.md) — Engineer for data pipelines, ingestion, transformation and analytics-readiness.
 - [`data_scientist`](../skills/aco-product-office/references/agents/data-scientist.md) — Data scientist for modeling, experimentation, analysis and statistical interpretation.
 - [`database_engineer`](../skills/aco-product-office/references/agents/database-engineer.md) — Engineer for database schema, query design, performance, migrations and data integrity.
@@ -166,6 +172,7 @@ Lead: `product_software_orchestrator`. Native agents use the `aco_` prefix.
 - [`design_system_designer`](../skills/aco-product-office/references/agents/design-system-designer.md) — Designer of reusable component systems, tokens, patterns and documentation for product consistency.
 - [`devops_engineer`](../skills/aco-product-office/references/agents/devops-engineer.md) — Engineer for deployment pipelines, CI/CD, environments and operational tooling.
 - [`documentation_writer`](../skills/aco-product-office/references/agents/documentation-writer.md) — Writer for user manuals, onboarding docs, support guides and operational runbooks.
+- [`figma_implementation_engineer`](../skills/aco-product-office/references/agents/figma-implementation-engineer.md) — Reconcile authorized Figma designs with actual code components and runtime behaviour.
 - [`frontend_engineer`](../skills/aco-product-office/references/agents/frontend-engineer.md) — Frontend engineer for building user interfaces, state management and browser-side logic.
 - [`fullstack_engineer`](../skills/aco-product-office/references/agents/fullstack-engineer.md) — Fullstack engineer for end-to-end web product implementation across frontend and backend.
 - [`information_architect`](../skills/aco-product-office/references/agents/information-architect.md) — Designer of information architecture, content structure, navigation and system logic.
@@ -182,7 +189,7 @@ Lead: `product_software_orchestrator`. Native agents use the `aco_` prefix.
 - [`product_director`](../skills/aco-product-office/references/agents/product-director.md) — Senior product lead who sets product direction, value proposition, decision criteria and cross-functional priorities.
 - [`product_manager`](../skills/aco-product-office/references/agents/product-manager.md) — Product manager for planning requirements, prioritization, user stories and delivery coordination.
 - [`product_researcher`](../skills/aco-product-office/references/agents/product-researcher.md) — Researcher for product opportunities, user problems, category benchmarks and concept validation.
-- [`product_software_orchestrator`](../skills/aco-product-office/references/agents/product-software-orchestrator.md) — Orchestrator for websites, web apps, software products, internal tools, APIs and AI products. Routes work across product, UX, engineering, AI/data, quality and infrastructure.
+- [`product_software_orchestrator`](../skills/aco-product-office/references/agents/product-software-orchestrator.md) — Lead router for software, websites, digital products, AI systems and engineering delivery.
 - [`qa_engineer`](../skills/aco-product-office/references/agents/qa-engineer.md) — QA engineer for manual and structured testing of product behavior, edge cases and regressions.
 - [`qa_lead`](../skills/aco-product-office/references/agents/qa-lead.md) — QA lead for test strategy, quality risk, release readiness and coverage priorities.
 - [`release_manager`](../skills/aco-product-office/references/agents/release-manager.md) — Manager for release planning, versioning, rollout, rollback and cross-team release coordination.
@@ -190,6 +197,7 @@ Lead: `product_software_orchestrator`. Native agents use the `aco_` prefix.
 - [`security_reviewer`](../skills/aco-product-office/references/agents/security-reviewer.md) — Reviewer for application security, common vulnerabilities, auth patterns and risk assessment.
 - [`senior_backend_engineer`](../skills/aco-product-office/references/agents/senior-backend-engineer.md) — Senior backend engineer for service architecture, APIs, data flow and backend reliability.
 - [`senior_frontend_engineer`](../skills/aco-product-office/references/agents/senior-frontend-engineer.md) — Senior frontend engineer for complex web interfaces, architecture and performance-sensitive UI.
+- [`skill_evaluation_engineer`](../skills/aco-product-office/references/agents/skill-evaluation-engineer.md) — Evaluate agent methods with reproducible tasks, evidence and controlled baselines.
 - [`software_architect`](../skills/aco-product-office/references/agents/software-architect.md) — Architect for application structure, technical boundaries, scalability and major engineering decisions.
 - [`sre_engineer`](../skills/aco-product-office/references/agents/sre-engineer.md) — Site reliability engineer for uptime, observability, incident prevention and operational resilience.
 - [`tech_lead`](../skills/aco-product-office/references/agents/tech-lead.md) — Technical lead for implementation direction, code quality, integration decisions and team guidance.
@@ -373,6 +381,8 @@ Reused dependencies: `communications_editor`, `studio_manager`, `studio_comms_ma
 
 Lead: `production_orchestrator`. Native agents use the `aco_` prefix.
 
+- [`ai_video_prompt_adapter`](../skills/aco-production-office/references/agents/ai-video-prompt-adapter.md) — Translate a shot specification into model- and interface-specific video prompting.
+- [`animatic_editor`](../skills/aco-production-office/references/agents/animatic-editor.md) — Test narrative pacing in a frame-accurate storyboard edit before full production.
 - [`assistant_video_editor`](../skills/aco-production-office/references/agents/assistant-video-editor.md) — Prepare organized editorial projects and turnovers.
 - [`beauty_fashion_retouch_artist`](../skills/aco-production-office/references/agents/beauty-fashion-retouch-artist.md) — Retouch fashion and beauty while preserving texture and agreed identity.
 - [`cg_lighting_render_artist`](../skills/aco-production-office/references/agents/cg-lighting-render-artist.md) — Light, shade and render CG with budget and color controls.
@@ -389,6 +399,7 @@ Lead: `production_orchestrator`. Native agents use the `aco_` prefix.
 - [`first_assistant_director`](../skills/aco-production-office/references/agents/first-assistant-director.md) — Plan safe, feasible shooting days.
 - [`generative_media_director`](../skills/aco-production-office/references/agents/generative-media-director.md) — Direct generative image/video production inside approved intent.
 - [`generative_model_training_engineer`](../skills/aco-production-office/references/agents/generative-model-training-engineer.md) — Plan and implement rights-aware fine-tuning and LoRA experiments.
+- [`generative_video_qc`](../skills/aco-production-office/references/agents/generative-video-qc.md) — Inspect generated clips for temporal, reference, continuity and delivery failures.
 - [`line_producer`](../skills/aco-production-office/references/agents/line-producer.md) — Cost and organize day-to-day production delivery.
 - [`localization_subtitles_editor`](../skills/aco-production-office/references/agents/localization-subtitles-editor.md) — Prepare translated, timed and accessible text/audio versions.
 - [`media_data_wrangler`](../skills/aco-production-office/references/agents/media-data-wrangler.md) — Protect media through ingest and backup verification.
@@ -402,8 +413,11 @@ Lead: `production_orchestrator`. Native agents use the `aco_` prefix.
 - [`production_orchestrator`](../skills/aco-production-office/references/agents/production-orchestrator.md) — Route production & postproduction tasks through a small accountable team with early clarification and verified outputs.
 - [`prop_stylist`](../skills/aco-production-office/references/agents/prop-stylist.md) — Prepare objects, surfaces and still-life arrangements.
 - [`re_recording_mixer`](../skills/aco-production-office/references/agents/re-recording-mixer.md) — Mix dialogue, music and effects for a specified delivery.
+- [`remotion_video_engineer`](../skills/aco-production-office/references/agents/remotion-video-engineer.md) — Implement deterministic frame-based videos and graphics in authorized Remotion projects.
+- [`script_continuity_supervisor`](../skills/aco-production-office/references/agents/script-continuity-supervisor.md) — Maintain story, prop, wardrobe, action and spatial continuity across shots.
 - [`set_designer`](../skills/aco-production-office/references/agents/set-designer.md) — Design physical sets and spatial production environments.
 - [`sound_designer`](../skills/aco-production-office/references/agents/sound-designer.md) — Design sound for moving image, installation and media.
+- [`storyboard_artist`](../skills/aco-production-office/references/agents/storyboard-artist.md) — Translate scene beats into readable storyboard panels and shot-to-shot geography.
 - [`three_d_generalist`](../skills/aco-production-office/references/agents/three-d-generalist.md) — Build general-purpose CG assets and scenes.
 - [`video_editor`](../skills/aco-production-office/references/agents/video-editor.md) — Edit narrative and campaign video from supplied footage.
 - [`visual_prompt_engineer`](../skills/aco-production-office/references/agents/visual-prompt-engineer.md) — Engineer testable prompts for image, video and multimodal production.

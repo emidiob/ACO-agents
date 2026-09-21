@@ -1,5 +1,7 @@
 # Capability and approval checks
 
+The formal action levels and packet-bound approval rules live in [EXECUTION.md](EXECUTION.md). This file remains the human-readable permission boundary.
+
 A role definition does not grant service access. Inspect actual tool availability and schemas every environment needs. Keep account, authorization, read access, create access, update access and verified action outcomes separate. Do not assume a GitHub profile with push=true means the integration token can write.
 
 Host/client permission controls and provider scopes take precedence. The ACO registry narrows intended use, but does not cryptographically restrict the host to a folder. Strong separation requires distinct service permissions, accounts or workspaces.

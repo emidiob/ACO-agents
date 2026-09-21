@@ -1,0 +1,3147 @@
+{
+  "version": "0.4.3",
+  "archive_sha256": "3b85bc6714b046b0d9738568f8a2c0c8b66ead37d3d92dd5f0d39f4a15949d03",
+  "roles": [
+    {
+      "key": "administration_orchestrator",
+      "office": "administration-office",
+      "description": "Route administration & secretariat tasks through a small accountable team with early clarification and verified outputs.",
+      "path": "skills/aco-administration-office/references/agents/administration-orchestrator.md",
+      "sha256": "9e89a635ec2c399ce0f8fe02c3bd65761e5c0f6e114206910ed01a6c053f4308",
+      "body_chars": 6138,
+      "method_chars": null
+    },
+    {
+      "key": "communications_operator",
+      "office": "administration-office",
+      "description": "Execute authorized email, WhatsApp, SMS or phone actions through verified capabilities.",
+      "path": "skills/aco-administration-office/references/agents/communications-operator.md",
+      "sha256": "5ff3020c8f88865e41e915e596eb151fea0e923312ea91fba4f06c3902e82215",
+      "body_chars": 6210,
+      "method_chars": 1678
+    },
+    {
+      "key": "executive_assistant",
+      "office": "administration-office",
+      "description": "Turn priorities into concise daily office coordination.",
+      "path": "skills/aco-administration-office/references/agents/executive-assistant.md",
+      "sha256": "f60d2389ec4712ac20c6d0688c817e4311dfb4bc63c509a20883f1e214638760",
+      "body_chars": 5689,
+      "method_chars": 1228
+    },
+    {
+      "key": "inbox_correspondence_manager",
+      "office": "administration-office",
+      "description": "Triage email and prepare context-aware replies.",
+      "path": "skills/aco-administration-office/references/agents/inbox-correspondence-manager.md",
+      "sha256": "bc3179a1b367a1ee4dc660c171fad1c82414daee6774a80fee090e394adaac1a",
+      "body_chars": 5664,
+      "method_chars": 1246
+    },
+    {
+      "key": "meeting_calendar_coordinator",
+      "office": "administration-office",
+      "description": "Prepare and coordinate meetings and minutes.",
+      "path": "skills/aco-administration-office/references/agents/meeting-calendar-coordinator.md",
+      "sha256": "c2a955ad7a5cc9e53c711415bb12ebfd5fed59653138023b81e36c2fa7aea3c8",
+      "body_chars": 5729,
+      "method_chars": 1303
+    },
+    {
+      "key": "office_administrator",
+      "office": "administration-office",
+      "description": "Handle routine supplier, facilities and office coordination.",
+      "path": "skills/aco-administration-office/references/agents/office-administrator.md",
+      "sha256": "780fb742b4622c361ab82f991c85567f76a19f897292293ce8c55550cd501f55",
+      "body_chars": 5629,
+      "method_chars": 1187
+    },
+    {
+      "key": "records_document_controller",
+      "office": "administration-office",
+      "description": "Maintain document versions, approvals and distribution.",
+      "path": "skills/aco-administration-office/references/agents/records-document-controller.md",
+      "sha256": "c155f1bae00c72c407724c63b4097b6f9066d2775104f5e0b9df04777c27e51a",
+      "body_chars": 5655,
+      "method_chars": 1199
+    },
+    {
+      "key": "service_desk_coordinator",
+      "office": "administration-office",
+      "description": "Triage office requests and route support.",
+      "path": "skills/aco-administration-office/references/agents/service-desk-coordinator.md",
+      "sha256": "bb7cd4e7f6624a7ef9eefb0b64428e9cfa20d9828cda778e40bf767920cadb6c",
+      "body_chars": 5621,
+      "method_chars": 1209
+    },
+    {
+      "key": "travel_logistics_coordinator",
+      "office": "administration-office",
+      "description": "Research travel and coordinate office logistics.",
+      "path": "skills/aco-administration-office/references/agents/travel-logistics-coordinator.md",
+      "sha256": "f70b1dc967d53de0a2427e468025a660afffe9cc3c95a5ab4d56d91f57fa31d4",
+      "body_chars": 5652,
+      "method_chars": 1209
+    },
+    {
+      "key": "agency_orchestrator",
+      "office": "agency-office",
+      "description": "Orchestrator for a creative production, brand strategy, design and marketing agency. Routes work through directors, specialists and execution makers without overstaffing tasks.",
+      "path": "skills/aco-agency-office/references/agents/agency-orchestrator.md",
+      "sha256": "28558927945885115605dcc873136e62f67fac220d757c9fd144e2ad41397de8",
+      "body_chars": 17782,
+      "method_chars": null
+    },
+    {
+      "key": "asset_manager",
+      "office": "agency-office",
+      "description": "Digital asset manager for file structure, naming, versions, source files, metadata, rights fields and final deliverable organization.",
+      "path": "skills/aco-agency-office/references/agents/asset-manager.md",
+      "sha256": "2231ced26d2018185be3e30f3c6f27cb3cfaaad072eeff926c5d7200627d64e8",
+      "body_chars": 7255,
+      "method_chars": null
+    },
+    {
+      "key": "audience_strategist",
+      "office": "agency-office",
+      "description": "Audience strategist for segmentation, motivations, journeys, barriers, behaviors and communication design.",
+      "path": "skills/aco-agency-office/references/agents/audience-strategist.md",
+      "sha256": "dad824c4a4f58ffed91c4066f85afaa43bfecaeb412dc54529a6e1809cf3e53b",
+      "body_chars": 7356,
+      "method_chars": null
+    },
+    {
+      "key": "brand_guardian",
+      "office": "agency-office",
+      "description": "Brand governance lead who protects consistency, quality and intentional evolution across internal and external executions.",
+      "path": "skills/aco-agency-office/references/agents/brand-guardian.md",
+      "sha256": "26e883ed3bdda5ad099586a6878c6faf0473629d80a76ac863c67761fa0b6252",
+      "body_chars": 7206,
+      "method_chars": null
+    },
+    {
+      "key": "brand_identity_designer",
+      "office": "agency-office",
+      "description": "Brand identity designer for coherent visual systems spanning marks, typography, color, layout, imagery, iconography and applications.",
+      "path": "skills/aco-agency-office/references/agents/brand-identity-designer.md",
+      "sha256": "f515a1a9dae64ce8ebad54f58c640acdfe8d9a6ec5dd02f42e22b7ba00bb6e14",
+      "body_chars": 7303,
+      "method_chars": null
+    },
+    {
+      "key": "business_affairs_manager",
+      "office": "agency-office",
+      "description": "Agency business-affairs specialist for production rights, talent, music, third-party content, releases, usage and commercial terms. Flags issues for legal counsel when needed.",
+      "path": "skills/aco-agency-office/references/agents/business-affairs-manager.md",
+      "sha256": "f9ea21012ebbe58f8c6547850409bb212aacaafbc53ef8e685ecb4738254a7e2",
+      "body_chars": 7403,
+      "method_chars": null
+    },
+    {
+      "key": "campaign_strategist",
+      "office": "agency-office",
+      "description": "Campaign strategist for objectives, messaging architecture, phases, channel roles and measurement across integrated campaigns.",
+      "path": "skills/aco-agency-office/references/agents/campaign-strategist.md",
+      "sha256": "e1913a7cbb01ae0ea0b7868a54204a841058525f5ced8fffb597b1b67b0d2549",
+      "body_chars": 7368,
+      "method_chars": null
+    },
+    {
+      "key": "casting_researcher",
+      "office": "agency-office",
+      "description": "Casting researcher for talent discovery, character fit, reference boards, shortlist research, representation details and first-pass availability research.",
+      "path": "skills/aco-agency-office/references/agents/casting-researcher.md",
+      "sha256": "f10b1ac23729a35278ee425318a0208852da937fe45584dac7b3ad7c62824912",
+      "body_chars": 7371,
+      "method_chars": null
+    },
+    {
+      "key": "cgi_vfx_supervisor",
+      "office": "agency-office",
+      "description": "CGI/VFX supervisor for 3D, simulation, compositing, virtual production and effects-heavy creative work, balancing visual ambition with pipeline feasibility.",
+      "path": "skills/aco-agency-office/references/agents/cgi-vfx-supervisor.md",
+      "sha256": "519061566bc6b6ba2c1aac59ddb670a08130dbec7461b36c063b0d2be017a4e6",
+      "body_chars": 7374,
+      "method_chars": null
+    },
+    {
+      "key": "community_manager",
+      "office": "agency-office",
+      "description": "Community manager for comments, inbox triage, moderation, audience questions, escalation and qualitative community signals.",
+      "path": "skills/aco-agency-office/references/agents/community-manager.md",
+      "sha256": "42c402764e7b249338ed5999ca2c64c6c88e4404115f8df246f1046b1d4a4093",
+      "body_chars": 7288,
+      "method_chars": null
+    },
+    {
+      "key": "content_director",
+      "office": "agency-office",
+      "description": "Content director for brand editorial systems, content pillars, formats, franchises and channel ecosystems.",
+      "path": "skills/aco-agency-office/references/agents/content-director.md",
+      "sha256": "2bd67ca825f89ec51df5a1b8702b1612c27c6fc50caa127dae63fef1eabd6121",
+      "body_chars": 7300,
+      "method_chars": null
+    },
+    {
+      "key": "content_researcher",
+      "office": "agency-office",
+      "description": "Content researcher for stories, examples, references, statistics, cultural hooks, subject-matter sources and editorial evidence.",
+      "path": "skills/aco-agency-office/references/agents/content-researcher.md",
+      "sha256": "25acbeb97dc52979ad9090c771401b95a53a7178eefe36cf5db5f2fddeaddbb4",
+      "body_chars": 7279,
+      "method_chars": null
+    },
+    {
+      "key": "copy_researcher",
+      "office": "agency-office",
+      "description": "Copy and language researcher for competitor messaging, category language, terminology, naming landscapes and cultural/verbal references.",
+      "path": "skills/aco-agency-office/references/agents/copy-researcher.md",
+      "sha256": "99747c595593ffd5403b70d4df5681b5538d9370a1515e47f19fdfa7d33060f4",
+      "body_chars": 7341,
+      "method_chars": null
+    },
+    {
+      "key": "copywriter",
+      "office": "agency-office",
+      "description": "Senior agency copywriter for concepts, headlines, scripts, manifestos, social, OOH, digital and campaign copy.",
+      "path": "skills/aco-agency-office/references/agents/copywriter.md",
+      "sha256": "4bfd8075f3d02c98fdbb528090433262c1acc735a791f897acfa11b646eb3ff0",
+      "body_chars": 7264,
+      "method_chars": null
+    },
+    {
+      "key": "creative_strategist",
+      "office": "agency-office",
+      "description": "Creative strategist who bridges evidence-led strategy and creative development, defining territories and briefs without replacing the creative director.",
+      "path": "skills/aco-agency-office/references/agents/creative-strategist.md",
+      "sha256": "4430632b95e64d108206a2b9c29b0f167fe0ceb68181f7203bf4acb8805dcb0e",
+      "body_chars": 7400,
+      "method_chars": null
+    },
+    {
+      "key": "creative_technologist_prototyper",
+      "office": "agency-office",
+      "description": "Hands-on creative technology prototyper for fast tests of AI, APIs, interactive systems, sensors, generative media and experimental workflows.",
+      "path": "skills/aco-agency-office/references/agents/creative-technologist-prototyper.md",
+      "sha256": "6d836c10d9c1aa93609186b19dc007ec557e6b6bdab82968731fdfe857b6fb9f",
+      "body_chars": 7424,
+      "method_chars": null
+    },
+    {
+      "key": "creator_partnerships_manager",
+      "office": "agency-office",
+      "description": "Creator and influencer partnerships specialist for fit, outreach, briefing, compensation, disclosure, usage and relationship management.",
+      "path": "skills/aco-agency-office/references/agents/creator-partnerships-manager.md",
+      "sha256": "9d0b3025bf8eb36c2ab8cb0c685d05447d45045cd7fad90d0e00bd137920336a",
+      "body_chars": 7395,
+      "method_chars": null
+    },
+    {
+      "key": "crm_lifecycle_strategist",
+      "office": "agency-office",
+      "description": "CRM and lifecycle strategist for email, messaging, segmentation, automation, retention and customer journeys from acquisition through loyalty.",
+      "path": "skills/aco-agency-office/references/agents/crm-lifecycle-strategist.md",
+      "sha256": "44a91d242dfc30109cf70b0bca3680d4a233235362e0ba51d3fa903c19d3abda",
+      "body_chars": 7215,
+      "method_chars": null
+    },
+    {
+      "key": "cultural_strategist",
+      "office": "agency-office",
+      "description": "Cultural strategist who analyzes cultural codes, emerging behaviors, scenes, aesthetics and social meaning without trendwashing or appropriation.",
+      "path": "skills/aco-agency-office/references/agents/cultural-strategist.md",
+      "sha256": "a0497d111e6501d6b5cefeb57bfd77c3882673a843d15bd2ef189e6a929024f5",
+      "body_chars": 7703,
+      "method_chars": null
+    },
+    {
+      "key": "design_director",
+      "office": "agency-office",
+      "description": "Design director overseeing identity, digital, editorial, spatial and campaign design systems across agency work.",
+      "path": "skills/aco-agency-office/references/agents/design-director.md",
+      "sha256": "5dd0699628afb854b4c9bd978449fc0796ac5017d2b7ea90750ea4b9e56a2dd6",
+      "body_chars": 7410,
+      "method_chars": null
+    },
+    {
+      "key": "design_researcher",
+      "office": "agency-office",
+      "description": "Design researcher for visual precedents, typography, identity systems, graphic culture, material references and design-context research.",
+      "path": "skills/aco-agency-office/references/agents/design-researcher.md",
+      "sha256": "a383daf56b12db2dbdcaa7c18d8f7ade4bc623156b9e70a0a06b94b39b03c93e",
+      "body_chars": 7565,
+      "method_chars": null
+    },
+    {
+      "key": "digital_design_director",
+      "office": "agency-office",
+      "description": "Digital design director for websites, campaign experiences and interfaces, bridging brand expression with UX and responsive systems.",
+      "path": "skills/aco-agency-office/references/agents/digital-design-director.md",
+      "sha256": "754d19528422510881b4d6ad23f1ac17b37cc5c1d28d5d09a668f7ebc8606c38",
+      "body_chars": 7354,
+      "method_chars": null
+    },
+    {
+      "key": "fact_checker",
+      "office": "agency-office",
+      "description": "Agency fact checker for names, dates, statistics, claims, quotations, credits, source quality and pre-publication verification.",
+      "path": "skills/aco-agency-office/references/agents/fact-checker.md",
+      "sha256": "a1bd78a3ea80a7457b10b4d17c4280ae59d688137b7c10f60a3d1f0082bb2b95",
+      "body_chars": 7363,
+      "method_chars": null
+    },
+    {
+      "key": "film_producer",
+      "office": "agency-office",
+      "description": "Film producer for commercials, branded films, social video and moving-image productions from preproduction through final delivery.",
+      "path": "skills/aco-agency-office/references/agents/film-producer.md",
+      "sha256": "265cd4d99f629d0d03331a516b0a8e07630b88b9e4ca68a7727cab9e89471703",
+      "body_chars": 7334,
+      "method_chars": null
+    },
+    {
+      "key": "frontend_prototyper",
+      "office": "agency-office",
+      "description": "Frontend prototyper for rapid landing pages, microsites, interactive demos, interface concepts and responsive proof-of-concepts.",
+      "path": "skills/aco-agency-office/references/agents/frontend-prototyper.md",
+      "sha256": "7d8e4214b9927262cb1923f14fa54466ae8da4b253262e706471d24d8a554be6",
+      "body_chars": 7321,
+      "method_chars": null
+    },
+    {
+      "key": "integrated_producer",
+      "office": "agency-office",
+      "description": "Integrated producer for multi-channel creative production across design, content, film, photography, digital, social and experiential deliverables.",
+      "path": "skills/aco-agency-office/references/agents/integrated-producer.md",
+      "sha256": "9a980c60a232625494f70b6ffa198f55a9213010e8cc8ca8c26a8bb377f21159",
+      "body_chars": 7356,
+      "method_chars": null
+    },
+    {
+      "key": "junior_art_director",
+      "office": "agency-office",
+      "description": "Junior art director for visual routes, moodboards, image systems, casting/location directions and first-pass executional concepts.",
+      "path": "skills/aco-agency-office/references/agents/junior-art-director.md",
+      "sha256": "2bae09d35eebd041ec31a163c11dab65cc8c705e9ad18a1cc6af3076828428af",
+      "body_chars": 7482,
+      "method_chars": null
+    },
+    {
+      "key": "junior_brand_strategist",
+      "office": "agency-office",
+      "description": "Junior brand strategist for audits, competitor scans, positioning evidence, research synthesis and first-pass strategic frameworks.",
+      "path": "skills/aco-agency-office/references/agents/junior-brand-strategist.md",
+      "sha256": "7825605d9175855370ccb4e028889ef96bc72ffbe781c673e5bf9a3ac00e3eef",
+      "body_chars": 7562,
+      "method_chars": null
+    },
+    {
+      "key": "junior_copywriter",
+      "office": "agency-office",
+      "description": "Junior copywriter for headline batches, captions, CTAs, body-copy variants, scripts, naming lists and first drafts.",
+      "path": "skills/aco-agency-office/references/agents/junior-copywriter.md",
+      "sha256": "b73174707fe212c500fa58a1a4ef9d2bb227dd29280df7a9017f79de1dae11e0",
+      "body_chars": 7331,
+      "method_chars": null
+    },
+    {
+      "key": "junior_designer",
+      "office": "agency-office",
+      "description": "Junior multidisciplinary designer for first-pass layouts, identity applications, social assets, decks, mockups and design production.",
+      "path": "skills/aco-agency-office/references/agents/junior-designer.md",
+      "sha256": "b5fbb0cf94ffab1f113ae12396b5484b475c749659858d3dc760171b1c15129e",
+      "body_chars": 7418,
+      "method_chars": null
+    },
+    {
+      "key": "junior_media_planner",
+      "office": "agency-office",
+      "description": "Junior media planner for channel research, placement options, reach/frequency scenarios, benchmarks and first-pass media plans.",
+      "path": "skills/aco-agency-office/references/agents/junior-media-planner.md",
+      "sha256": "71842671f83ebac32d6868a6dbd22df9ccc676a56eaf8bd9cda604bb4375f7c2",
+      "body_chars": 7340,
+      "method_chars": null
+    },
+    {
+      "key": "junior_producer",
+      "office": "agency-office",
+      "description": "Junior producer for schedules, quote gathering, vendor coordination, checklists, status tracking and production administration.",
+      "path": "skills/aco-agency-office/references/agents/junior-producer.md",
+      "sha256": "21c2b57f8675577b25e7729dca7f45c2d51be72a51e90f1bd99cfc8e99ce8c90",
+      "body_chars": 7402,
+      "method_chars": null
+    },
+    {
+      "key": "location_researcher",
+      "office": "agency-office",
+      "description": "Location researcher for visual fit, practical access, permits, logistics, geography, alternatives and first-pass feasibility.",
+      "path": "skills/aco-agency-office/references/agents/location-researcher.md",
+      "sha256": "948e6cd60f1ef9f441bbf53a539042c9fe3bbf78a9e5efacf942b33608c0bf5e",
+      "body_chars": 7274,
+      "method_chars": null
+    },
+    {
+      "key": "marketing_analyst",
+      "office": "agency-office",
+      "description": "Marketing analyst for campaign data QA, performance summaries, channel comparisons, dashboards, anomalies and evidence for optimization.",
+      "path": "skills/aco-agency-office/references/agents/marketing-analyst.md",
+      "sha256": "42054cc99842c0c7e65c16c505f8b50c7caf7eb0511dc9349b96f26715705923",
+      "body_chars": 7313,
+      "method_chars": null
+    },
+    {
+      "key": "media_strategy_planner",
+      "office": "agency-office",
+      "description": "Media strategist for paid/owned/earned channel roles, investment logic, reach/frequency, audience delivery and campaign distribution.",
+      "path": "skills/aco-agency-office/references/agents/media-strategy-planner.md",
+      "sha256": "82c750a3b89bbab3ee20205360785963616367a4f0d2a1cef064d95c2347b078",
+      "body_chars": 7395,
+      "method_chars": null
+    },
+    {
+      "key": "motion_design_director",
+      "office": "agency-office",
+      "description": "Motion design director for brand motion systems, kinetic typography, title design, transitions and motion-led campaign expression.",
+      "path": "skills/aco-agency-office/references/agents/motion-design-director.md",
+      "sha256": "b52bba6ffafb190aacfdea5777701f53f28c84297621e8e5c89eefd0ff940563",
+      "body_chars": 7304,
+      "method_chars": null
+    },
+    {
+      "key": "organic_discovery_strategist",
+      "office": "agency-office",
+      "description": "Organic discovery strategist across search engines, AI-assisted search, website information architecture and evergreen content discoverability.",
+      "path": "skills/aco-agency-office/references/agents/organic-discovery-strategist.md",
+      "sha256": "7c1cfe0c70db1214400b63bcbc7bc067394bd2666932d5d71fc9347772980ace",
+      "body_chars": 7420,
+      "method_chars": null
+    },
+    {
+      "key": "performance_marketing_manager",
+      "office": "agency-office",
+      "description": "Performance marketing specialist for measurable acquisition and conversion across paid digital channels, experimentation and optimization.",
+      "path": "skills/aco-agency-office/references/agents/performance-marketing-manager.md",
+      "sha256": "9d7d716e48505c7b8179d50faf0ccefce86257ff2d351db843719c1f7a2fa3c5",
+      "body_chars": 7424,
+      "method_chars": null
+    },
+    {
+      "key": "photography_producer",
+      "office": "agency-office",
+      "description": "Photography producer for editorial, campaign, product and brand image production, including crew, casting, locations, usage and post.",
+      "path": "skills/aco-agency-office/references/agents/photography-producer.md",
+      "sha256": "75a1a4eb9d0fe460608f8ce9df8090a2d451e78610cfd589344d5d2560b60beb",
+      "body_chars": 7269,
+      "method_chars": null
+    },
+    {
+      "key": "postproduction_coordinator",
+      "office": "agency-office",
+      "description": "Postproduction coordinator for version tracking, review rounds, file naming, subtitles, masters, specs, approvals and delivery logistics.",
+      "path": "skills/aco-agency-office/references/agents/postproduction-coordinator.md",
+      "sha256": "f54f7381e89be3fea58d65823a93c72ddebf2f82830fd225600836dbcbb45757",
+      "body_chars": 7275,
+      "method_chars": null
+    },
+    {
+      "key": "postproduction_supervisor",
+      "office": "agency-office",
+      "description": "Postproduction supervisor for edit, color, sound, VFX, retouching, versioning, QC, mastering and delivery across moving and still image work.",
+      "path": "skills/aco-agency-office/references/agents/postproduction-supervisor.md",
+      "sha256": "a69d744d6826ff26c920f588bb38b5fc9c2353e9b1e36f12877928859823e288",
+      "body_chars": 7318,
+      "method_chars": null
+    },
+    {
+      "key": "presentation_designer",
+      "office": "agency-office",
+      "description": "Presentation designer for turning approved thinking into clear, persuasive, visually coherent decks without changing the underlying strategy.",
+      "path": "skills/aco-agency-office/references/agents/presentation-designer.md",
+      "sha256": "5d8e45a685d31c06683fd3322ab9ab78c618e427f661cfa713d7887f68b36998",
+      "body_chars": 7375,
+      "method_chars": null
+    },
+    {
+      "key": "production_coordinator",
+      "office": "agency-office",
+      "description": "Production coordinator for bookings, travel, equipment, crew information, releases, logistics and day-to-day production follow-through.",
+      "path": "skills/aco-agency-office/references/agents/production-coordinator.md",
+      "sha256": "df95b504dca0886fd5de8fab11ad347915132efdf915a2577f4e741121529b5c",
+      "body_chars": 7276,
+      "method_chars": null
+    },
+    {
+      "key": "production_designer",
+      "office": "agency-office",
+      "description": "Production designer for systematic adaptation of approved creative and identity work across formats, sizes, channels and deliverables.",
+      "path": "skills/aco-agency-office/references/agents/production-designer.md",
+      "sha256": "8c0904bcc615eef12d532bd24d9a921accede3b5d14d838eebe38c3ca0bb77ad",
+      "body_chars": 7302,
+      "method_chars": null
+    },
+    {
+      "key": "project_coordinator",
+      "office": "agency-office",
+      "description": "Project coordinator for task tracking, dependencies, approvals, revisions, decision logs, meeting actions and day-to-day delivery support.",
+      "path": "skills/aco-agency-office/references/agents/project-coordinator.md",
+      "sha256": "f7a76543b1f502a4ab3501da63052b1ad5af1faa54fa0889976ff0f0c2bdb7b5",
+      "body_chars": 7158,
+      "method_chars": null
+    },
+    {
+      "key": "project_manager",
+      "office": "agency-office",
+      "description": "Agency project manager for scope, timeline, dependencies, approvals, status, change control and delivery coordination.",
+      "path": "skills/aco-agency-office/references/agents/project-manager.md",
+      "sha256": "44c35840b07aeaaeb8814159eaa6eaced3096233a146a981253e0b1e9bddc2d5",
+      "body_chars": 7163,
+      "method_chars": null
+    },
+    {
+      "key": "research_insights_director",
+      "office": "agency-office",
+      "description": "Research and insights lead for agency work across category, competitors, consumers, behavior, brand and market context.",
+      "path": "skills/aco-agency-office/references/agents/research-insights-director.md",
+      "sha256": "6601c4e95681d144e06ff1d433b4e0109dda64a05d502bb038f6c30499dda945",
+      "body_chars": 7601,
+      "method_chars": null
+    },
+    {
+      "key": "seo_content_researcher",
+      "office": "agency-office",
+      "description": "SEO/content discovery researcher for search intent, keyword clusters, SERP patterns, competitor content, query gaps and content opportunities.",
+      "path": "skills/aco-agency-office/references/agents/seo-content-researcher.md",
+      "sha256": "00394f1bfe6e26889e34325ca839dae0f8b93ae058e56658cb96396b6a84f840",
+      "body_chars": 7313,
+      "method_chars": null
+    },
+    {
+      "key": "social_content_creator",
+      "office": "agency-office",
+      "description": "Social content creator for turning approved strategy into posts, carousels, short-form concepts, captions, adaptations and publishing-ready content.",
+      "path": "skills/aco-agency-office/references/agents/social-content-creator.md",
+      "sha256": "e85f1610c797537f5a97eb2095379e180d3bac4a0077da5cdd309e0ce85ebb2c",
+      "body_chars": 7397,
+      "method_chars": null
+    },
+    {
+      "key": "social_media_manager",
+      "office": "agency-office",
+      "description": "Social media manager for brand and organization accounts, focused on platform-native publishing, community operations and measurable communication rather than generic creator tactics.",
+      "path": "skills/aco-agency-office/references/agents/social-media-manager.md",
+      "sha256": "2787ca52ed4333e551f6a7e17c9975950da1ec4c6b61b09be7d83dedb1d4f846",
+      "body_chars": 7525,
+      "method_chars": null
+    },
+    {
+      "key": "strategy_director",
+      "office": "agency-office",
+      "description": "Senior integrated strategy lead for agency engagements. Defines the real problem, strategic choice and cross-disciplinary direction before creative execution.",
+      "path": "skills/aco-agency-office/references/agents/strategy-director.md",
+      "sha256": "97cc1b70b505e40f0cf2f72add2adf2af24d1191a7685706d1c79e02f5937126",
+      "body_chars": 7904,
+      "method_chars": null
+    },
+    {
+      "key": "traffic_coordinator",
+      "office": "agency-office",
+      "description": "Traffic coordinator for daily workload visibility, assignment tracking, deadline collisions and resource-status updates.",
+      "path": "skills/aco-agency-office/references/agents/traffic-coordinator.md",
+      "sha256": "7fc2258cb24b22f922fe3967442f4f04717f1c57e9e1ef28f14147906f4dbdd9",
+      "body_chars": 7148,
+      "method_chars": null
+    },
+    {
+      "key": "traffic_resource_manager",
+      "office": "agency-office",
+      "description": "Agency traffic and resource manager for capacity planning, staffing, scheduling, utilization and workload balancing across teams and freelancers.",
+      "path": "skills/aco-agency-office/references/agents/traffic-resource-manager.md",
+      "sha256": "3fd60d40e37ced88d97e92a37524b0905c5327efb1a61da5cf317d36124dbac8",
+      "body_chars": 7203,
+      "method_chars": null
+    },
+    {
+      "key": "verbal_identity_director",
+      "office": "agency-office",
+      "description": "Verbal identity specialist for brand voice, tone, messaging systems, naming logic and language governance.",
+      "path": "skills/aco-agency-office/references/agents/verbal-identity-director.md",
+      "sha256": "f33e67967d008e2685418ca3f5324a91301d174bc7970fc687d90fbc314c93ea",
+      "body_chars": 7498,
+      "method_chars": null
+    },
+    {
+      "key": "visual_researcher",
+      "office": "agency-office",
+      "description": "Visual researcher for photography, film, art, fashion, design, archives, image culture, directors, photographers and visual references.",
+      "path": "skills/aco-agency-office/references/agents/visual-researcher.md",
+      "sha256": "1c963ee13644e7315db250e97acb03917b39e5ff6fa19e076515c530c5c3291e",
+      "body_chars": 7333,
+      "method_chars": null
+    },
+    {
+      "key": "art_contracts_rights_advisor",
+      "office": "artist-office",
+      "description": "First-pass contracts, rights and deal-terms reviewer for artists: gallery agreements, commissions, licenses, image rights, editions, acquisitions, exclusivity, AI/data clauses and production responsibilities.",
+      "path": "skills/aco-artist-office/references/agents/art-contracts-rights-advisor.md",
+      "sha256": "c07bd1ef667a6074cc5917a0ba8c877f99c3139dcdad094788493fa0b9d8bfa0",
+      "body_chars": 7885,
+      "method_chars": null
+    },
+    {
+      "key": "art_critic",
+      "office": "artist-office",
+      "description": "Independent contemporary-art critic for rigorous evaluation, originality checks, conceptual pressure-testing, close reading and counter-interpretation.",
+      "path": "skills/aco-artist-office/references/agents/art-critic.md",
+      "sha256": "73b084990ad2586b33e10a450c5043235fa2fa27efaff051b8bc367df723ea57",
+      "body_chars": 7473,
+      "method_chars": null
+    },
+    {
+      "key": "art_ecosystem_analyst",
+      "office": "artist-office",
+      "description": "Analyst of contemporary-art institutions, galleries, fairs, biennials, residencies, prizes, funding, representation, networks and professional positioning.",
+      "path": "skills/aco-artist-office/references/agents/art-ecosystem-analyst.md",
+      "sha256": "0b59c812b4fb5a546f1e267938be103557e27e850ae7d6448e4c950f9639dd4c",
+      "body_chars": 7167,
+      "method_chars": null
+    },
+    {
+      "key": "art_historian",
+      "office": "artist-office",
+      "description": "Art historian and theory researcher for historical genealogies, movements, precedents, concepts, bibliographies and source-critical contextualization.",
+      "path": "skills/aco-artist-office/references/agents/art-historian.md",
+      "sha256": "0bd34860097f8a64a517b06ebb3af5797df96c46ca40c10c81f73afe21b42acb",
+      "body_chars": 7094,
+      "method_chars": null
+    },
+    {
+      "key": "art_marketing_director",
+      "office": "artist-office",
+      "description": "Marketing director specialized in contemporary artists, exhibitions, cultural projects and art platforms; develops audience, campaign, launch and channel strategies without flattening art into generic content marketing.",
+      "path": "skills/aco-artist-office/references/agents/art-marketing-director.md",
+      "sha256": "d15d6ae3ad0846b0692a3e44249005b5f56cdde291e55bdbcc408ea4d572c2b9",
+      "body_chars": 7878,
+      "method_chars": null
+    },
+    {
+      "key": "art_opportunities_scout",
+      "office": "artist-office",
+      "description": "Live opportunity scout for contemporary artists: residencies, grants, prizes, commissions, public art, exhibitions, research programmes, teaching and institutional open calls, verified from official sources.",
+      "path": "skills/aco-artist-office/references/agents/art-opportunities-scout.md",
+      "sha256": "9d171730ad598ace3e3f060d68cc0b2137629fc0d756f2f95151272de5b9181c",
+      "body_chars": 8445,
+      "method_chars": null
+    },
+    {
+      "key": "art_publicist",
+      "office": "artist-office",
+      "description": "Contemporary-art publicist for press strategy, media mapping, story angles, press materials, journalist outreach, interviews, launches and cultural partnerships.",
+      "path": "skills/aco-artist-office/references/agents/art-publicist.md",
+      "sha256": "33a26efb5f925ef5cc7c81f15bc76935749588619a52075d0fb04dcbd4f67ba9",
+      "body_chars": 7451,
+      "method_chars": null
+    },
+    {
+      "key": "art_researcher",
+      "office": "artist-office",
+      "description": "Current contemporary-art researcher for artists, exhibitions, institutions, discourse, themes, references, and cultural context. Use when claims need evidence and up-to-date sources.",
+      "path": "skills/aco-artist-office/references/agents/art-researcher.md",
+      "sha256": "96c67f5e5ebb2dcf25776e3d29da93bf4f50bc30b094bbf26476e88b365321d5",
+      "body_chars": 8578,
+      "method_chars": null
+    },
+    {
+      "key": "art_sales_director",
+      "office": "artist-office",
+      "description": "Primary-market art sales strategist for pricing, editions, offers, collector development, gallery coordination, sales pipelines, negotiations and sustainable artwork revenue.",
+      "path": "skills/aco-artist-office/references/agents/art-sales-director.md",
+      "sha256": "7795049fc547f9d7ec3c803bda77eddd7a1d0b089900aab1fed4e47739f1fc80",
+      "body_chars": 8793,
+      "method_chars": null
+    },
+    {
+      "key": "artist_agent",
+      "office": "artist-office",
+      "description": "Artist representative and career-development agent for contemporary artists: positioning, opportunities, institutional relationships, gallery strategy, outreach, negotiation preparation and long-term career planning.",
+      "path": "skills/aco-artist-office/references/agents/artist-agent.md",
+      "sha256": "a18f129cd9015cd99b0cd77c65b1e31972eb1362bff4d7ff880df2d8bd378989",
+      "body_chars": 9308,
+      "method_chars": null
+    },
+    {
+      "key": "artist_revenue_strategist",
+      "office": "artist-office",
+      "description": "Revenue strategy lead for a contemporary artist: diversifies sustainable income across sales, editions, commissions, fees, grants, licensing, publications, teaching and other practice-compatible streams without distorting the practice.",
+      "path": "skills/aco-artist-office/references/agents/artist-revenue-strategist.md",
+      "sha256": "31186b940e8525ec0ad80edfea058e766631bc29a4c53f9791a64bff43d4fca3",
+      "body_chars": 9654,
+      "method_chars": null
+    },
+    {
+      "key": "artist_social_media_manager",
+      "office": "artist-office",
+      "description": "Social media manager specialized in contemporary artists and art profiles; handles profile strategy, editorial calendars, captions, launches, documentation and audience growth while preserving artistic credibility.",
+      "path": "skills/aco-artist-office/references/agents/artist-social-media-manager.md",
+      "sha256": "50209059de380ef06de2c921b4cff3b25450988c5c643d9823fb0ca36a4ef3b2",
+      "body_chars": 8958,
+      "method_chars": null
+    },
+    {
+      "key": "artwork_documentation_manager",
+      "office": "artist-office",
+      "description": "Artwork and exhibition documentation manager for photography/video standards, shot lists, filenames, metadata, captions, credits, condition imagery, masters and delivery packages.",
+      "path": "skills/aco-artist-office/references/agents/artwork-documentation-manager.md",
+      "sha256": "99b0bd3acc864bce893aad56411d9880cad8288a2fe37c1818e5c7aaef4f5c7e",
+      "body_chars": 7691,
+      "method_chars": null
+    },
+    {
+      "key": "collection_inventory_manager",
+      "office": "artist-office",
+      "description": "Operational artwork inventory manager: availability, location, ownership, consignment, reservation, price, condition status, exhibition status and movement-ready records.",
+      "path": "skills/aco-artist-office/references/agents/collection-inventory-manager.md",
+      "sha256": "9d5c9194decb3330b7d7816933c0bd5004dbcaba8b2da647b2ab2f766c1ca307",
+      "body_chars": 7311,
+      "method_chars": null
+    },
+    {
+      "key": "collector_relations_manager",
+      "office": "artist-office",
+      "description": "Collector and patron relationship manager for contemporary artists: CRM structure, private communications, follow-up, stewardship, viewings, acquisition journeys and long-term relationship development.",
+      "path": "skills/aco-artist-office/references/agents/collector-relations-manager.md",
+      "sha256": "cccaa24782c55e8f788ab77b1b946e7ec594536a2717ffa707fca3d5dcd1a2b3",
+      "body_chars": 6997,
+      "method_chars": null
+    },
+    {
+      "key": "commissions_licensing_manager",
+      "office": "artist-office",
+      "description": "Manager for artist commissions, licensing and reproduction rights: structures scope, fees, deliverables, usage, approvals, exclusivity, renewals and rights protections.",
+      "path": "skills/aco-artist-office/references/agents/commissions-licensing-manager.md",
+      "sha256": "7731bde2b0f6004ded59ae6630e9747e06653581d6f7656d0a59740b11bd9915",
+      "body_chars": 8960,
+      "method_chars": null
+    },
+    {
+      "key": "creative_orchestrator",
+      "office": "artist-office",
+      "description": "Orchestrator for a full contemporary-art studio and professional office: artistic research, curatorial development, career, practice planning, opportunities, production, rights, revenue, sales, marketing, communications and operations.",
+      "path": "skills/aco-artist-office/references/agents/creative-orchestrator.md",
+      "sha256": "8c4f66b61fcd3b7c8a5be4612687901776862faf71c9284097035ab2a8c000bf",
+      "body_chars": 15146,
+      "method_chars": null
+    },
+    {
+      "key": "curator",
+      "office": "artist-office",
+      "description": "Contemporary-art curator for exhibition concepts, artist selection, commissions, spatial logic, interpretive frameworks, public programme and curatorial writing.",
+      "path": "skills/aco-artist-office/references/agents/curator.md",
+      "sha256": "6af5e8c8f766fec12a0770cf362ad93c08a7502a7722238930108f21820b5091",
+      "body_chars": 7642,
+      "method_chars": null
+    },
+    {
+      "key": "digital_preservation_manager",
+      "office": "artist-office",
+      "description": "Digital/time-based artwork preservation specialist for masters, checksums, codecs, software dependencies, models, environments, migration, backups and future re-installability.",
+      "path": "skills/aco-artist-office/references/agents/digital-preservation-manager.md",
+      "sha256": "9994c1299761cf14ac2052d18c66b10d3ae347b683cab82b9ccd200311d441cb",
+      "body_chars": 7739,
+      "method_chars": null
+    },
+    {
+      "key": "edition_manager",
+      "office": "artist-office",
+      "description": "Edition-control specialist for photographs, prints, video, software and other reproducible works: edition structures, APs, certificates, numbering, production specs, availability and price ladders.",
+      "path": "skills/aco-artist-office/references/agents/edition-manager.md",
+      "sha256": "fabece4d9c967c025d64ab247511a6abd2e9ada98866d44508bd6538a8ad1a8d",
+      "body_chars": 7524,
+      "method_chars": null
+    },
+    {
+      "key": "exhibition_producer",
+      "office": "artist-office",
+      "description": "Exhibition and installation producer for contemporary art: converts artistic concepts into technical riders, fabrication, AV, logistics, budgets, schedules, installation/deinstallation and venue coordination.",
+      "path": "skills/aco-artist-office/references/agents/exhibition-producer.md",
+      "sha256": "f8a578cb4b1db1f5297eb8c505a0b94afa2580491356cedf9e9b87f664803c30",
+      "body_chars": 8410,
+      "method_chars": null
+    },
+    {
+      "key": "fabrication_manager",
+      "office": "artist-office",
+      "description": "Physical-artwork fabrication manager for vendor sourcing, RFQs, materials, prototypes, tolerances, drawings, quality control, schedules, costs and handoff to installation.",
+      "path": "skills/aco-artist-office/references/agents/fabrication-manager.md",
+      "sha256": "eb377a46268f331b8a5b5e7f7b0465a28e28b8a65a7e572f5293e2f4c4efb5d1",
+      "body_chars": 7446,
+      "method_chars": null
+    },
+    {
+      "key": "gallery_relations_manager",
+      "office": "artist-office",
+      "description": "Gallery-facing relationship and representation manager: representation talks, consignments, exclusivity, territories, fairs, inventory, reporting, commissions and gallery follow-up.",
+      "path": "skills/aco-artist-office/references/agents/gallery-relations-manager.md",
+      "sha256": "bd876d1a5711ea81488ac3965681beae8ab75663938268f69163ef6431f193ac",
+      "body_chars": 8567,
+      "method_chars": null
+    },
+    {
+      "key": "grants_applications_manager",
+      "office": "artist-office",
+      "description": "Grant and application manager for artists: builds compliant, persuasive applications, budgets, timelines, statements, supporting-material checklists and submission plans without distorting the practice to fit a call.",
+      "path": "skills/aco-artist-office/references/agents/grants-applications-manager.md",
+      "sha256": "07ff0bdf2c1de1a84a9f1a9c0f0d4ec1ad3d527feec9b68781af89c2a1b1585b",
+      "body_chars": 8306,
+      "method_chars": null
+    },
+    {
+      "key": "institutional_relations_manager",
+      "office": "artist-office",
+      "description": "Relationship manager for curators, museums, foundations, biennials, universities, publishers and cultural institutions; maintains context, follow-ups, introductions and long-term institutional relationships.",
+      "path": "skills/aco-artist-office/references/agents/institutional-relations-manager.md",
+      "sha256": "4413859f5fb470967a36aef36ab3ded9989fbb41990c303e6d3aa79eee108604",
+      "body_chars": 7886,
+      "method_chars": null
+    },
+    {
+      "key": "practice_archivist",
+      "office": "artist-office",
+      "description": "Canonical archive and portfolio manager for an artist practice: works, exhibitions, images, editions, credits, dimensions, technical data, texts, press, CV, bios and portfolio variants.",
+      "path": "skills/aco-artist-office/references/agents/practice-archivist.md",
+      "sha256": "e6768569a149ef3dc0daf55168e5e0a0d8288e2c567b08809d1800b3f349811a",
+      "body_chars": 7810,
+      "method_chars": null
+    },
+    {
+      "key": "practice_strategist",
+      "office": "artist-office",
+      "description": "Senior strategy agent for an artist practice: periodically reviews artistic development, exhibitions, research, relationships, applications, sales, visibility, workload and opportunity cost to keep the practice coherent and moving forward.",
+      "path": "skills/aco-artist-office/references/agents/practice-strategist.md",
+      "sha256": "e53a782acc06843046335a266921ff79ba42e3ceab6182f7a5453f7316a4a2f2",
+      "body_chars": 8993,
+      "method_chars": null
+    },
+    {
+      "key": "press_reputation_researcher",
+      "office": "artist-office",
+      "description": "Due-diligence and context researcher for art-world people and institutions: recent activity, programmes, artists, writing, press, controversies, mutual context and evidence-based contact briefs.",
+      "path": "skills/aco-artist-office/references/agents/press-reputation-researcher.md",
+      "sha256": "fdeb7481a7a80eab0285a251fa657a6cbc9bae9688aca95001fc0fd1608794ab",
+      "body_chars": 7752,
+      "method_chars": null
+    },
+    {
+      "key": "publication_manager",
+      "office": "artist-office",
+      "description": "Artist-publication production manager for monographs, catalogues, artist books and editorial projects: contributors, captions, permissions, proofing, print, ISBN, budgets, schedules and distribution.",
+      "path": "skills/aco-artist-office/references/agents/publication-manager.md",
+      "sha256": "eaec50515b1f22940e04c9d163432f18dd3104f0c013ab26ca62b3bbfdc37adf",
+      "body_chars": 7419,
+      "method_chars": null
+    },
+    {
+      "key": "registrar_art_logistics",
+      "office": "artist-office",
+      "description": "Registrar and art-logistics specialist for artwork movement, packing, shipping, customs, insurance, loans, condition reports, storage, couriers and installation logistics.",
+      "path": "skills/aco-artist-office/references/agents/registrar-art-logistics.md",
+      "sha256": "c711d0cf750607fe01a8bf3075ec989cb5465924efbeab3115afd760598ec2ae",
+      "body_chars": 7813,
+      "method_chars": null
+    },
+    {
+      "key": "studio_chief_of_staff",
+      "office": "artist-office",
+      "description": "Chief of staff for an artist studio: translates approved practice strategy into 90-day, annual and weekly execution while coordinating projects, opportunities, production, relationships, revenue and studio operations.",
+      "path": "skills/aco-artist-office/references/agents/studio-chief-of-staff.md",
+      "sha256": "b6b7787e8072cdd666e9b8b88ec39c06481092268ee62600a89d35a29f7f2769",
+      "body_chars": 9597,
+      "method_chars": null
+    },
+    {
+      "key": "studio_comms_manager",
+      "office": "artist-office",
+      "description": "Artist-studio communications operations manager for routine inbound/outbound requests, triage, image/bio/material delivery, scheduling, admin follow-up and response tracking.",
+      "path": "skills/aco-artist-office/references/agents/studio-comms-manager.md",
+      "sha256": "9ab5f44d60c8a24b7632c0a59429819643912eab3ee1373d0d76a2e8fd90e575",
+      "body_chars": 7311,
+      "method_chars": null
+    },
+    {
+      "key": "studio_research_librarian",
+      "office": "artist-office",
+      "description": "Research-library and knowledge-organization specialist for books, papers, catalogues, PDFs, notes, references, citations, images and durable studio research retrieval.",
+      "path": "skills/aco-artist-office/references/agents/studio-research-librarian.md",
+      "sha256": "eecdca2bcacf6e88cb0fb8053d780becf601d7017253698f0fca73099a5f4cff",
+      "body_chars": 7480,
+      "method_chars": null
+    },
+    {
+      "key": "technical_art_producer",
+      "office": "artist-office",
+      "description": "Technical producer for AI, video, interactive, web and computational artworks; turns artistic intent into robust system architectures, prototypes, hardware/software plans and exhibition-ready technical solutions.",
+      "path": "skills/aco-artist-office/references/agents/technical-art-producer.md",
+      "sha256": "1a4a5c4ed727fb1ae23ad7f391639a29d9acc8628b39da5b4d67204e2c4f0507",
+      "body_chars": 8459,
+      "method_chars": null
+    },
+    {
+      "key": "commercial_orchestrator",
+      "office": "commercial-office",
+      "description": "Route commercial & sales tasks through a small accountable team with early clarification and verified outputs.",
+      "path": "skills/aco-commercial-office/references/agents/commercial-orchestrator.md",
+      "sha256": "ab6b1af2a2b0f9ede55bfc71aac70283c0d80ad7a8dcac5eea8b74c787528a33",
+      "body_chars": 6237,
+      "method_chars": null
+    },
+    {
+      "key": "customer_success_manager",
+      "office": "commercial-office",
+      "description": "Plan onboarding, adoption, retention and renewals for delivered services.",
+      "path": "skills/aco-commercial-office/references/agents/customer-success-manager.md",
+      "sha256": "109c08c759a550d166cd7c41bd35553609a64f99616aff8c6b72903831b10e71",
+      "body_chars": 5569,
+      "method_chars": 1100
+    },
+    {
+      "key": "lead_qualification_researcher",
+      "office": "commercial-office",
+      "description": "Research and qualify potential clients against a supplied ideal-client profile.",
+      "path": "skills/aco-commercial-office/references/agents/lead-qualification-researcher.md",
+      "sha256": "0649d49fbae184d3b16e4f1945692847003ffcdf9440bfa433ab0ddd76855c1a",
+      "body_chars": 5647,
+      "method_chars": 1168
+    },
+    {
+      "key": "revenue_operations_analyst",
+      "office": "commercial-office",
+      "description": "Connect sales, delivery and finance evidence.",
+      "path": "skills/aco-commercial-office/references/agents/revenue-operations-analyst.md",
+      "sha256": "4559d3efdc18537e646a8a75f4f45c7cc7fb680ef1f009aee53e0d869c234f2c",
+      "body_chars": 5567,
+      "method_chars": 1143
+    },
+    {
+      "key": "sales_enablement_specialist",
+      "office": "commercial-office",
+      "description": "Prepare accurate reusable sales materials.",
+      "path": "skills/aco-commercial-office/references/agents/sales-enablement-specialist.md",
+      "sha256": "2771f0928a56f05ed7397787aad95bdaa05daf1cf065423fb4774d23cc2ad422",
+      "body_chars": 5580,
+      "method_chars": 1159
+    },
+    {
+      "key": "sales_operations_manager",
+      "office": "commercial-office",
+      "description": "Maintain a reliable opportunity pipeline and sales operating process.",
+      "path": "skills/aco-commercial-office/references/agents/sales-operations-manager.md",
+      "sha256": "f8060e5c9f862e3d8f25ed346e54cea624d080d67ba17c61b090c50b279fa0ef",
+      "body_chars": 5633,
+      "method_chars": 1169
+    },
+    {
+      "key": "sales_proposal_specialist",
+      "office": "commercial-office",
+      "description": "Turn an agreed solution into a precise commercial proposal.",
+      "path": "skills/aco-commercial-office/references/agents/sales-proposal-specialist.md",
+      "sha256": "fb3e68ee5ba1e2ef049a18c629fd84d062cbd3eaf8048481755d919954b23a7d",
+      "body_chars": 5613,
+      "method_chars": 1157
+    },
+    {
+      "key": "tender_bid_coordinator",
+      "office": "commercial-office",
+      "description": "Coordinate bids and formal tender responses.",
+      "path": "skills/aco-commercial-office/references/agents/tender-bid-coordinator.md",
+      "sha256": "c8643645ca3ab518dabf76d63fead78b640bf279fa261798416a88a7df4b3b0e",
+      "body_chars": 5573,
+      "method_chars": 1158
+    },
+    {
+      "key": "agile_delivery_facilitator",
+      "office": "delivery-office",
+      "description": "Run lightweight iterative delivery without ceremonial overhead.",
+      "path": "skills/aco-delivery-office/references/agents/agile-delivery-facilitator.md",
+      "sha256": "81ed7e2be94d8fdbe955eeda9a8f93057246ff561592460bcab9c0931e4960b8",
+      "body_chars": 5578,
+      "method_chars": 1127
+    },
+    {
+      "key": "delivery_orchestrator",
+      "office": "delivery-office",
+      "description": "Route project & programme delivery tasks through a small accountable team with early clarification and verified outputs.",
+      "path": "skills/aco-delivery-office/references/agents/delivery-orchestrator.md",
+      "sha256": "b915771d60994ed004b210db64e889c169693d2b7e87c3d0274933e62d61b2cf",
+      "body_chars": 6069,
+      "method_chars": null
+    },
+    {
+      "key": "programme_delivery_manager",
+      "office": "delivery-office",
+      "description": "Coordinate multiple connected projects.",
+      "path": "skills/aco-delivery-office/references/agents/programme-delivery-manager.md",
+      "sha256": "f9b33eaaf38ad6932de08dba1dbe91004161528921d282f7f46e89be96f336f1",
+      "body_chars": 5552,
+      "method_chars": 1139
+    },
+    {
+      "key": "project_controls_analyst",
+      "office": "delivery-office",
+      "description": "Measure schedule, scope and cost change accurately.",
+      "path": "skills/aco-delivery-office/references/agents/project-controls-analyst.md",
+      "sha256": "ffea65f6ee0fc71431d0726cabddcd3f07c30a7bb5f2bf200536c0d42f7a96e5",
+      "body_chars": 5552,
+      "method_chars": 1129
+    },
+    {
+      "key": "quality_acceptance_coordinator",
+      "office": "delivery-office",
+      "description": "Coordinate acceptance evidence and final handover.",
+      "path": "skills/aco-delivery-office/references/agents/quality-acceptance-coordinator.md",
+      "sha256": "e9582f793935f5cb7a70b6002878b2115300dc2287abb72d2adf2e30946677bf",
+      "body_chars": 5549,
+      "method_chars": 1112
+    },
+    {
+      "key": "billing_receivables_coordinator",
+      "office": "finance-office",
+      "description": "Prepare invoices, payment milestones and courteous collections.",
+      "path": "skills/aco-finance-office/references/agents/billing-receivables-coordinator.md",
+      "sha256": "e69052f17236c42d556ab4a14664223123bf1f451c16d00b76d8fa42ba0e3b62",
+      "body_chars": 5669,
+      "method_chars": 1185
+    },
+    {
+      "key": "bookkeeping_coordinator",
+      "office": "finance-office",
+      "description": "Prepare clean records for a bookkeeper or accountant.",
+      "path": "skills/aco-finance-office/references/agents/bookkeeping-coordinator.md",
+      "sha256": "1dbabd34b031e5e8a20308f95afffd335b23554903629c3577f6fb6d89aacf48",
+      "body_chars": 5566,
+      "method_chars": 1144
+    },
+    {
+      "key": "cashflow_treasury_analyst",
+      "office": "finance-office",
+      "description": "Plan cash runway and timing of project receipts and payments.",
+      "path": "skills/aco-finance-office/references/agents/cashflow-treasury-analyst.md",
+      "sha256": "9bca617c12531b46811cb6cbe725f76bba85ba7a080eb6b2eae366e71370cb0f",
+      "body_chars": 5644,
+      "method_chars": 1196
+    },
+    {
+      "key": "finance_orchestrator",
+      "office": "finance-office",
+      "description": "Route finance & business control tasks through a small accountable team with early clarification and verified outputs.",
+      "path": "skills/aco-finance-office/references/agents/finance-orchestrator.md",
+      "sha256": "22a0edd29d51e25f6c8c1e146ad10d7112f3a20dbe2dc20e5c35f56535aa69b6",
+      "body_chars": 6407,
+      "method_chars": null
+    },
+    {
+      "key": "financial_controller",
+      "office": "finance-office",
+      "description": "Control project and company accounts, reconciliations and financial reporting.",
+      "path": "skills/aco-finance-office/references/agents/financial-controller.md",
+      "sha256": "598a980f753b4d23828964c809d22a3707802585e669c00952e707dd9b18ad58",
+      "body_chars": 5662,
+      "method_chars": 1190
+    },
+    {
+      "key": "fp_and_a_analyst",
+      "office": "finance-office",
+      "description": "Build operational forecasts and scenario-based planning.",
+      "path": "skills/aco-finance-office/references/agents/fp-and-a-analyst.md",
+      "sha256": "eea562452dd2571823949b860333dea4a091a0d1fe46cbbd21143a29baa05947",
+      "body_chars": 5609,
+      "method_chars": 1183
+    },
+    {
+      "key": "payables_procurement_analyst",
+      "office": "finance-office",
+      "description": "Compare suppliers and prepare purchase approvals and payment checks.",
+      "path": "skills/aco-finance-office/references/agents/payables-procurement-analyst.md",
+      "sha256": "4b51116641c900bc16418ca9dd7f07020366822216baa59c1e3d1c87bb2edaf7",
+      "body_chars": 5656,
+      "method_chars": 1178
+    },
+    {
+      "key": "pricing_margin_analyst",
+      "office": "finance-office",
+      "description": "Price creative and production work with explicit costs, margins and rights.",
+      "path": "skills/aco-finance-office/references/agents/pricing-margin-analyst.md",
+      "sha256": "f81fc87a21725f01677bf9966562998cc2ff9493d28c0615392d962bdc884c87",
+      "body_chars": 5697,
+      "method_chars": 1197
+    },
+    {
+      "key": "production_cost_controller",
+      "office": "finance-office",
+      "description": "Track committed and actual production spend against approved estimates.",
+      "path": "skills/aco-finance-office/references/agents/production-cost-controller.md",
+      "sha256": "4ca4aa0d6579efecc3b8eb5af4cdfc559342a26c7edf3530724b471c49d9bf59",
+      "body_chars": 5609,
+      "method_chars": 1127
+    },
+    {
+      "key": "royalty_revenue_accountant",
+      "office": "finance-office",
+      "description": "Prepare reconciled author, artist and licensing royalty statements.",
+      "path": "skills/aco-finance-office/references/agents/royalty-revenue-accountant.md",
+      "sha256": "c728920cc35b74638c5cc265e619fe7ecd720d2647b797232c0dac942ee2378e",
+      "body_chars": 5647,
+      "method_chars": 1161
+    },
+    {
+      "key": "tax_compliance_coordinator",
+      "office": "finance-office",
+      "description": "Organize tax-related inputs and questions for qualified advisers.",
+      "path": "skills/aco-finance-office/references/agents/tax-compliance-coordinator.md",
+      "sha256": "f3fc8d21e221bb622bcba4eb776c3426ce7782e78784912ba98cd7d8065bcc1f",
+      "body_chars": 5667,
+      "method_chars": 1192
+    },
+    {
+      "key": "ai_technology_law_advisor",
+      "office": "legal-office",
+      "description": "Legal issue-spotter for AI, datasets, model providers, generated content, automated decisions, platform terms and technology licensing.",
+      "path": "skills/aco-legal-office/references/agents/ai-technology-law-advisor.md",
+      "sha256": "ef4732e864f902a2d49aa62fcf2b259759bd49c826822ed16ea730335bc43096",
+      "body_chars": 8120,
+      "method_chars": null
+    },
+    {
+      "key": "claims_correspondence_drafter",
+      "office": "legal-office",
+      "description": "Drafting specialist for formal notices, responses, reservation-of-rights letters and pre-dispute correspondence.",
+      "path": "skills/aco-legal-office/references/agents/claims-correspondence-drafter.md",
+      "sha256": "0edfaa28b1edde8a211dc56a1f01d95eabbc6b84c7024fa2867d7fd515fa63bd",
+      "body_chars": 8104,
+      "method_chars": null
+    },
+    {
+      "key": "commercial_contracts_advisor",
+      "office": "legal-office",
+      "description": "Commercial agreements specialist for client, supplier, services, SOW, production and B2B terms.",
+      "path": "skills/aco-legal-office/references/agents/commercial-contracts-advisor.md",
+      "sha256": "1a80523208b6da45aa0c9c93fba0e16bf6a52418f6cd2d7fd7de0b9cc372adc4",
+      "body_chars": 8092,
+      "method_chars": null
+    },
+    {
+      "key": "consumer_advertising_compliance_advisor",
+      "office": "legal-office",
+      "description": "Advertising and consumer-compliance specialist for claims, disclosures, promotions, endorsements and marketing rules.",
+      "path": "skills/aco-legal-office/references/agents/consumer-advertising-compliance-advisor.md",
+      "sha256": "d5af3ffe8d3b67b926b66b215ce0da6fb967aa60c518ed8ff4b2e5efbaf81b7c",
+      "body_chars": 8079,
+      "method_chars": null
+    },
+    {
+      "key": "contract_drafter",
+      "office": "legal-office",
+      "description": "Drafting specialist for contracts, amendments, releases, licenses, statements of work and related legal documents.",
+      "path": "skills/aco-legal-office/references/agents/contract-drafter.md",
+      "sha256": "6ed484c13fb04c1263699abf99037608825abf2ba9c0c2998ad8b1b1bb7b31f0",
+      "body_chars": 8117,
+      "method_chars": null
+    },
+    {
+      "key": "contract_negotiation_advisor",
+      "office": "legal-office",
+      "description": "Negotiation advisor for contract positions, fallback language, concessions and issue prioritization.",
+      "path": "skills/aco-legal-office/references/agents/contract-negotiation-advisor.md",
+      "sha256": "e7ce9d7aa203afedd14011f5397eaaa46aa5ca1f88cfa5f8fb4650b24a840814",
+      "body_chars": 8122,
+      "method_chars": null
+    },
+    {
+      "key": "contract_reviewer",
+      "office": "legal-office",
+      "description": "Contract reviewer for risk, ambiguity, obligations, liability, termination, payment, rights and governing-law terms.",
+      "path": "skills/aco-legal-office/references/agents/contract-reviewer.md",
+      "sha256": "6596fdb84caa6eba8d341a72ee915929426033a45fdd82b026bc63538ed14588",
+      "body_chars": 8096,
+      "method_chars": null
+    },
+    {
+      "key": "corporate_governance_advisor",
+      "office": "legal-office",
+      "description": "Corporate-governance support for entity decisions, board/shareholder approvals, delegated authority and internal records.",
+      "path": "skills/aco-legal-office/references/agents/corporate-governance-advisor.md",
+      "sha256": "72596116b73816bf74c39e4f853e8291d5f38e9e50d403ac327661180f6d81b3",
+      "body_chars": 8050,
+      "method_chars": null
+    },
+    {
+      "key": "dispute_prevention_advisor",
+      "office": "legal-office",
+      "description": "Dispute-prevention specialist for preserving position, documenting issues, escalation paths, settlement framing and pre-dispute strategy.",
+      "path": "skills/aco-legal-office/references/agents/dispute-prevention-advisor.md",
+      "sha256": "1fc55137524cf25ece78ea2cd4a4452413479edda7196814c0b342cc84bef7d0",
+      "body_chars": 8154,
+      "method_chars": null
+    },
+    {
+      "key": "document_review_specialist",
+      "office": "legal-office",
+      "description": "Specialist for reviewing supplied agreements and legal documents clause-by-clause with exact references.",
+      "path": "skills/aco-legal-office/references/agents/document-review-specialist.md",
+      "sha256": "91d51c23e3b5dd1a1f5012adbc0527bd61d066131f430928be4c3ab9a3162d04",
+      "body_chars": 8122,
+      "method_chars": null
+    },
+    {
+      "key": "employment_labor_advisor",
+      "office": "legal-office",
+      "description": "Employment/labor support for employment contracts, workplace rights, leave, working time, discipline and termination issues.",
+      "path": "skills/aco-legal-office/references/agents/employment-labor-advisor.md",
+      "sha256": "e5543cab2a02ecb24979a6eef1cbfa604b7d69561fcc27203a92a5019c26129f",
+      "body_chars": 8186,
+      "method_chars": null
+    },
+    {
+      "key": "independent_contractor_advisor",
+      "office": "legal-office",
+      "description": "Contractor/freelancer support for classification, scope, fees, IP, confidentiality, termination and cross-border contractor terms.",
+      "path": "skills/aco-legal-office/references/agents/independent-contractor-advisor.md",
+      "sha256": "39f9c1ad379d61c8ef41b11765197161602aa6b716b2288cf6f6131755a5d794",
+      "body_chars": 8120,
+      "method_chars": null
+    },
+    {
+      "key": "international_contracts_researcher",
+      "office": "legal-office",
+      "description": "Cross-border contracts researcher for governing law, jurisdiction, international terms and execution/formality issues.",
+      "path": "skills/aco-legal-office/references/agents/international-contracts-researcher.md",
+      "sha256": "db5ba578d49c33e9392dd7b4ab61818801e131624768690d0ba92cd840146ee0",
+      "body_chars": 8026,
+      "method_chars": null
+    },
+    {
+      "key": "ip_copyright_advisor",
+      "office": "legal-office",
+      "description": "IP/copyright support for ownership, authorship, assignments, licenses, moral rights, reproductions and derivative uses.",
+      "path": "skills/aco-legal-office/references/agents/ip-copyright-advisor.md",
+      "sha256": "fb852009f4afed9611c6d07861bc86869cc8d68b456937410dd6102b1e72face",
+      "body_chars": 8141,
+      "method_chars": null
+    },
+    {
+      "key": "jurisdiction_researcher",
+      "office": "legal-office",
+      "description": "Researcher for determining applicable jurisdictions, governing-law issues, forum rules and cross-border legal differences.",
+      "path": "skills/aco-legal-office/references/agents/jurisdiction-researcher.md",
+      "sha256": "2074fe956fcbcb77dbd8ff2c35abfd0ccffbd407875d098a4579e5de6c6ece5f",
+      "body_chars": 8043,
+      "method_chars": null
+    },
+    {
+      "key": "legal_deadline_tracker",
+      "office": "legal-office",
+      "description": "Deadline specialist for notices, renewals, filings, response windows, option dates and contractual milestones.",
+      "path": "skills/aco-legal-office/references/agents/legal-deadline-tracker.md",
+      "sha256": "0667be0486e1ba23eb3c72ff6e542286bfb7a7cc08511f2d6ce666efe948b991",
+      "body_chars": 8042,
+      "method_chars": null
+    },
+    {
+      "key": "legal_fact_checker",
+      "office": "legal-office",
+      "description": "Fact and citation verifier for legal documents, dates, clause references, authorities and legal claims.",
+      "path": "skills/aco-legal-office/references/agents/legal-fact-checker.md",
+      "sha256": "9a779ef94f53fadddf896d8da7e18fac67a8493eaf20ced83c6c83e8d54aad5d",
+      "body_chars": 7964,
+      "method_chars": null
+    },
+    {
+      "key": "legal_matter_manager",
+      "office": "legal-office",
+      "description": "Matter manager for status, deadlines, owners, dependencies, documents and next actions across a legal issue.",
+      "path": "skills/aco-legal-office/references/agents/legal-matter-manager.md",
+      "sha256": "503774b96a13ae9a65f6b0d292d5de1e1566f60674b62f45f09e9db0192087d3",
+      "body_chars": 7970,
+      "method_chars": null
+    },
+    {
+      "key": "legal_operations_manager",
+      "office": "legal-office",
+      "description": "Legal operations specialist for matter intake, process, counsel coordination, templates, approvals and legal spend/workflow tracking.",
+      "path": "skills/aco-legal-office/references/agents/legal-operations-manager.md",
+      "sha256": "9db9a939d31f991b83ac06584a1114317ca30ea9ab37fb6fe7d6ce5c169fc92f",
+      "body_chars": 7980,
+      "method_chars": null
+    },
+    {
+      "key": "legal_orchestrator",
+      "office": "legal-office",
+      "description": "Orchestrator for a generic Legal Office. Routes legal research, contracts, IP, privacy, employment, compliance, disputes and legal operations while enforcing jurisdiction and verification discipline.",
+      "path": "skills/aco-legal-office/references/agents/legal-orchestrator.md",
+      "sha256": "c2156025824828be8ddeb1857b1e68d9207e81cc6fd86ad0bd851fd889ef552f",
+      "body_chars": 9811,
+      "method_chars": null
+    },
+    {
+      "key": "legal_researcher",
+      "office": "legal-office",
+      "description": "Legal researcher for statutes, regulations, cases, regulator guidance and authoritative source synthesis.",
+      "path": "skills/aco-legal-office/references/agents/legal-researcher.md",
+      "sha256": "1b0fcdd62e880969fadcafbb7eed9e28df2fa721242377c9b6186a000bdb4288",
+      "body_chars": 8056,
+      "method_chars": null
+    },
+    {
+      "key": "legal_risk_analyst",
+      "office": "legal-office",
+      "description": "Analyst for translating legal issues into likelihood/impact, reversibility, financial, operational and reputational risk.",
+      "path": "skills/aco-legal-office/references/agents/legal-risk-analyst.md",
+      "sha256": "5bf15156739c0a0b447dcab4ef721412c5ce37eb2ef94f81512ff3b396b62b54",
+      "body_chars": 8024,
+      "method_chars": null
+    },
+    {
+      "key": "licensing_rights_advisor",
+      "office": "legal-office",
+      "description": "Licensing specialist for artwork, images, software, media, content, music and other usage rights.",
+      "path": "skills/aco-legal-office/references/agents/licensing-rights-advisor.md",
+      "sha256": "4e5e9ccaf6244674bfdca21e83c2be66314a5496e311809bdecc783b3b6530d8",
+      "body_chars": 8081,
+      "method_chars": null
+    },
+    {
+      "key": "paralegal",
+      "office": "legal-office",
+      "description": "Paralegal-style support for fact organization, document indexing, chronologies, filing preparation and counsel-ready bundles.",
+      "path": "skills/aco-legal-office/references/agents/paralegal.md",
+      "sha256": "d7fbf34d7e915acd0863b7d99d8b7cabe20405fc81ddd84c9a64758dfef35941",
+      "body_chars": 7980,
+      "method_chars": null
+    },
+    {
+      "key": "privacy_data_protection_advisor",
+      "office": "legal-office",
+      "description": "Privacy/data-protection support for personal data, notices, processors, transfers, retention, consent/legal basis and privacy-by-design.",
+      "path": "skills/aco-legal-office/references/agents/privacy-data-protection-advisor.md",
+      "sha256": "f17f833b360d75c63061e02ca0d7dfd05c7acaee8c261c11d2c6c8794880b32f",
+      "body_chars": 8149,
+      "method_chars": null
+    },
+    {
+      "key": "procurement_vendor_contract_advisor",
+      "office": "legal-office",
+      "description": "Specialist for supplier/procurement agreements, SLAs, indemnities, warranties, service levels and vendor risk.",
+      "path": "skills/aco-legal-office/references/agents/procurement-vendor-contract-advisor.md",
+      "sha256": "a9caaecc7396bd0345f15c98e1d7afa53daa5c193f7d3b729289b4da9459236d",
+      "body_chars": 8159,
+      "method_chars": null
+    },
+    {
+      "key": "regulatory_compliance_researcher",
+      "office": "legal-office",
+      "description": "Researcher for industry/regulator obligations, official guidance, licensing requirements and compliance change tracking.",
+      "path": "skills/aco-legal-office/references/agents/regulatory-compliance-researcher.md",
+      "sha256": "bf3f32cca600995ea000d21b28b233d9f49e67c12edd00c4d0144ad045472084",
+      "body_chars": 8073,
+      "method_chars": null
+    },
+    {
+      "key": "trademark_brand_protection_advisor",
+      "office": "legal-office",
+      "description": "Trademark and brand-protection support for clearance issues, classes, filings, watch strategy and brand-use rules.",
+      "path": "skills/aco-legal-office/references/agents/trademark-brand-protection-advisor.md",
+      "sha256": "a65092902671be7f85f9acf8b4e3adef87133cd01a18dafd4e3acc8799eb933f",
+      "body_chars": 8185,
+      "method_chars": null
+    },
+    {
+      "key": "art_director",
+      "office": "shared",
+      "description": "Visual art director for photography, film, editorial, campaigns, exhibitions and image systems. Develops concrete visual direction rather than generic moodboards.",
+      "path": "skills/aco-office-concierge/references/agents/art-director.md",
+      "sha256": "91d9a3a574fdc188aa80c87becafb41f26f10d84ad84643df186ae7a84e5d2c9",
+      "body_chars": 6858,
+      "method_chars": null
+    },
+    {
+      "key": "art_writer",
+      "office": "shared",
+      "description": "Contemporary-art writer for original criticism, reviews, catalogue essays, artist profiles, exhibition texts, commissioned essays and intellectually serious cultural writing.",
+      "path": "skills/aco-office-concierge/references/agents/art-writer.md",
+      "sha256": "c4252682ca666f6845410bf8febd822590e071e97bc6fd728d146ca42cc898c9",
+      "body_chars": 10723,
+      "method_chars": null
+    },
+    {
+      "key": "brand_strategist",
+      "office": "shared",
+      "description": "Brand strategist for positioning, naming, architecture, voice, identity logic and cultural differentiation. Especially suited to creative, cultural and design-led organizations.",
+      "path": "skills/aco-office-concierge/references/agents/brand-strategist.md",
+      "sha256": "0bed03be9b75140ff72d0cc064a4c952ad2d1985d2351c7d8b6df93a464a5052",
+      "body_chars": 6878,
+      "method_chars": null
+    },
+    {
+      "key": "communications_editor",
+      "office": "shared",
+      "description": "Professional communications specialist for email, follow-ups, introductions, applications and sensitive correspondence. Reads full threads when mail tools are available.",
+      "path": "skills/aco-office-concierge/references/agents/communications-editor.md",
+      "sha256": "7dfe33bb3f3e69c3aeb52a2ba461d93c03cc2c6347feb73a3a7502ced591dbc7",
+      "body_chars": 6699,
+      "method_chars": null
+    },
+    {
+      "key": "context_steward",
+      "office": "shared",
+      "description": "Context and history steward for a multi-office agent system. Maintains an auditable work history, decisions, open loops and proposed context updates without silently turning provisional ideas into permanent facts.",
+      "path": "skills/aco-office-concierge/references/agents/context-steward.md",
+      "sha256": "384759063817bfc1057870066acf622bfca87d599196ed6e1c028cf2898633e1",
+      "body_chars": 8609,
+      "method_chars": null
+    },
+    {
+      "key": "editor",
+      "office": "shared",
+      "description": "Editor for artist statements, curatorial texts, applications, proposals, press releases, decks, publications, website copy and long-form cultural writing.",
+      "path": "skills/aco-office-concierge/references/agents/editor.md",
+      "sha256": "9f09db4da24ed2222fa9a31d1f0cb8953daf5a3e2ac31b0a0ff882804d3f305a",
+      "body_chars": 6533,
+      "method_chars": null
+    },
+    {
+      "key": "marketing_strategist",
+      "office": "shared",
+      "description": "Marketing strategist for creative and cultural projects: audience, launch, campaigns, channels, partnerships, content systems, conversion and measurement.",
+      "path": "skills/aco-office-concierge/references/agents/marketing-strategist.md",
+      "sha256": "edea98f4398bbd59257a4f505e0696a8f7e4b623240a7de4504808ec9c0357a4",
+      "body_chars": 6682,
+      "method_chars": null
+    },
+    {
+      "key": "office_concierge",
+      "office": "shared",
+      "description": "Front-door concierge for a multi-office agent system. Translates natural requests into clear briefs, identifies the right office or cross-office team, asks only essential clarifying questions, and protects the user from having to know agent names.",
+      "path": "skills/aco-office-concierge/references/agents/office-concierge.md",
+      "sha256": "4d991befd5560de13996549aaf87cfea4d4bf51271faf16f02ec95ca9f46cec0",
+      "body_chars": 10012,
+      "method_chars": null
+    },
+    {
+      "key": "studio_finance_manager",
+      "office": "shared",
+      "description": "Studio finance and project-budget manager for artists: production budgets, quotes, cash flow, fees, cost scenarios, margins, commissions, travel, shipping and financial decision support.",
+      "path": "skills/aco-office-concierge/references/agents/studio-finance-manager.md",
+      "sha256": "52902eaf953a08aba6367ad38e4e30d4f251b925758481c5ece1f8259595b0ff",
+      "body_chars": 7700,
+      "method_chars": null
+    },
+    {
+      "key": "studio_manager",
+      "office": "shared",
+      "description": "Studio and office operations agent for briefs, timelines, deliverables, task breakdowns, meeting preparation, notes, handoffs and project administration.",
+      "path": "skills/aco-office-concierge/references/agents/studio-manager.md",
+      "sha256": "22597695bef9fb50ed83c9905c7b5caaee07656f03098b7073fd0da9845ee27f",
+      "body_chars": 6566,
+      "method_chars": null
+    },
+    {
+      "key": "account_director",
+      "office": "organization-office",
+      "description": "Account director for ongoing the organization client relationships, scope, feedback, satisfaction, renewals and commercial health after a project is engaged.",
+      "path": "skills/aco-organization-office/references/agents/account-director.md",
+      "sha256": "ccd267db1ff4e4fff9f6e956978e0d73ee6ddc9db6331d69fd73587173d0f069",
+      "body_chars": 7445,
+      "method_chars": null
+    },
+    {
+      "key": "business_development_director",
+      "office": "organization-office",
+      "description": "Business development director for the organization client acquisition, qualified leads, proposals, new relationships and commercial pipeline.",
+      "path": "skills/aco-organization-office/references/agents/business-development-director.md",
+      "sha256": "769c55d12d8195be664f7dabd8c8dbde8beeddc8efc7c1909b94b7e3738c26e8",
+      "body_chars": 7714,
+      "method_chars": null
+    },
+    {
+      "key": "client_strategy_director",
+      "office": "organization-office",
+      "description": "Client strategy director who turns commercial briefs into sharp cultural, brand, experience and communications problems for the organization to solve.",
+      "path": "skills/aco-organization-office/references/agents/client-strategy-director.md",
+      "sha256": "d811b9420d26b1512f6bceed43cf43b3559d1266f0114aefcd88bd4bb5e327ef",
+      "body_chars": 7554,
+      "method_chars": null
+    },
+    {
+      "key": "commercial_strategy_director",
+      "office": "organization-office",
+      "description": "Commercial strategy director for the organization offers, pricing logic, revenue mix, margins and the relationship between cultural mission and paid work.",
+      "path": "skills/aco-organization-office/references/agents/commercial-strategy-director.md",
+      "sha256": "8b481e8f878e90ec4d6179f585efc0449d7cee407325efbba3b67ce1a84e4c2e",
+      "body_chars": 7553,
+      "method_chars": null
+    },
+    {
+      "key": "commissioning_editor",
+      "office": "organization-office",
+      "description": "Commissioning editor for external writers, artists, curators, designers, technologists and researchers contributing to the organization.",
+      "path": "skills/aco-organization-office/references/agents/commissioning-editor.md",
+      "sha256": "c206c88c98783059d9967e0df6f09dbfe16cef3f65c971f835f7e156c03099de",
+      "body_chars": 7673,
+      "method_chars": null
+    },
+    {
+      "key": "communications_pr_director",
+      "office": "organization-office",
+      "description": "Communications and PR director for the organization institutional narrative, press, launches, newsletters and public positioning.",
+      "path": "skills/aco-organization-office/references/agents/communications-pr-director.md",
+      "sha256": "3f777da38203b5307f206d988272d690e872877b39452973ddf083c0941263fe",
+      "body_chars": 7397,
+      "method_chars": null
+    },
+    {
+      "key": "community_editor",
+      "office": "organization-office",
+      "description": "Community editor for the organization contributors, readers, participants, collaborators and recurring publics; focused on meaningful participation rather than vanity metrics.",
+      "path": "skills/aco-organization-office/references/agents/community-editor.md",
+      "sha256": "58ebbbed74c23f0040210ffebc5df88ef1a03ff6b066d7007b43c66eaeccb136",
+      "body_chars": 7512,
+      "method_chars": null
+    },
+    {
+      "key": "contracts_ip_manager",
+      "office": "organization-office",
+      "description": "Contracts and IP manager for the organization commissioning, client, contributor, partnership, licensing, image, data and AI terms; first-pass issue spotting, not legal representation.",
+      "path": "skills/aco-organization-office/references/agents/contracts-ip-manager.md",
+      "sha256": "b28e120fa766900262588bca3ed173b8e2fecc5b2ae25dd52ff44b853d9e2c5f",
+      "body_chars": 7579,
+      "method_chars": null
+    },
+    {
+      "key": "creative_director",
+      "office": "organization-office",
+      "description": "Creative director for the organization across cultural projects and client work. Converts strategy and research into a strong creative idea and coherent multi-format expression.",
+      "path": "skills/aco-organization-office/references/agents/creative-director.md",
+      "sha256": "5a3f2a9fa8cf4d0d34b51ff3516653cbf13d3a7ffca898d4412ae63169c611bf",
+      "body_chars": 7564,
+      "method_chars": null
+    },
+    {
+      "key": "creative_technologist",
+      "office": "organization-office",
+      "description": "Creative technologist for culturally meaningful uses of AI, generative media, web, interaction, sensors, physical computing and emerging technologies.",
+      "path": "skills/aco-organization-office/references/agents/creative-technologist.md",
+      "sha256": "9173bd2944cdb07db46843dab139630abf5efb856b1a2344273121d4522b5aae",
+      "body_chars": 7523,
+      "method_chars": null
+    },
+    {
+      "key": "cultural_intelligence_analyst",
+      "office": "organization-office",
+      "description": "Cultural intelligence analyst tracking meaningful shifts across art, design, technology, fashion, media, internet culture and social behaviour.",
+      "path": "skills/aco-organization-office/references/agents/cultural-intelligence-analyst.md",
+      "sha256": "7f9953e4483ff51267560ab4ae652217bc1526ebf0779787b9721255a6d0c568",
+      "body_chars": 7546,
+      "method_chars": null
+    },
+    {
+      "key": "data_insights_analyst",
+      "office": "organization-office",
+      "description": "Data and insights analyst for the organization web, newsletter, social, campaigns, events, client acquisition, publishing and community evidence.",
+      "path": "skills/aco-organization-office/references/agents/data-insights-analyst.md",
+      "sha256": "5064cc63426526cc7cda01e60f5eaac0e94de9b1396dd07de0a3dbff02cbca4a",
+      "body_chars": 7427,
+      "method_chars": null
+    },
+    {
+      "key": "digital_product_manager",
+      "office": "organization-office",
+      "description": "Digital product manager for the organization-owned websites, platforms, research tools, archives and digital products after launch.",
+      "path": "skills/aco-organization-office/references/agents/digital-product-manager.md",
+      "sha256": "3a295cece1a70f1f96e82fac1321f35269e450a046528518ca71a1754bd107cd",
+      "body_chars": 7315,
+      "method_chars": null
+    },
+    {
+      "key": "events_experience_producer",
+      "office": "organization-office",
+      "description": "Producer for the organization exhibitions, launches, talks, screenings, workshops, dinners, conferences and physical/hybrid experiences.",
+      "path": "skills/aco-organization-office/references/agents/events-experience-producer.md",
+      "sha256": "6dd8302fb6e4fd605d8a0bdc485525d0a863e5513be589468ecebb8e35c77925",
+      "body_chars": 7422,
+      "method_chars": null
+    },
+    {
+      "key": "executive_producer",
+      "office": "organization-office",
+      "description": "Executive producer for the organization across exhibitions, films, digital projects, publications, installations, campaigns and interdisciplinary productions.",
+      "path": "skills/aco-organization-office/references/agents/executive-producer.md",
+      "sha256": "1ed164ae448a33d716508d6c8291d3903de1358b511f0abe48cc5dd91f3549b9",
+      "body_chars": 7597,
+      "method_chars": null
+    },
+    {
+      "key": "funding_partnerships_manager",
+      "office": "organization-office",
+      "description": "Funding and institutional finance manager for grants, foundations, public funding, cultural programmes and non-commercial partnerships relevant to the organization.",
+      "path": "skills/aco-organization-office/references/agents/funding-partnerships-manager.md",
+      "sha256": "667140f20d14f494ea6497f59c8872ab8407ce1363f2eafea9c0ab8b89372aea",
+      "body_chars": 7393,
+      "method_chars": null
+    },
+    {
+      "key": "impact_evaluation",
+      "office": "organization-office",
+      "description": "Impact and evaluation specialist for the organization programmes, projects, partnerships and commercial work.",
+      "path": "skills/aco-organization-office/references/agents/impact-evaluation.md",
+      "sha256": "231a1a2f60967e8f6e49c635f185b44de38db84a83afa59839f1fe15b1a36422",
+      "body_chars": 7392,
+      "method_chars": null
+    },
+    {
+      "key": "knowledge_architect",
+      "office": "organization-office",
+      "description": "Knowledge architect for the organization research, project history, contacts, sources, decisions, taxonomies and institutional memory.",
+      "path": "skills/aco-organization-office/references/agents/knowledge-architect.md",
+      "sha256": "429502c6a245a38964fcf2437c64a656faeff5b40639acf36e89201a55ad7b36",
+      "body_chars": 7509,
+      "method_chars": null
+    },
+    {
+      "key": "network_mapper",
+      "office": "organization-office",
+      "description": "Network mapper for people, institutions, publications, funders, communities and relationships around the organization research and partnership topics.",
+      "path": "skills/aco-organization-office/references/agents/network-mapper.md",
+      "sha256": "c02029716a9155c10814a9df5ee2f3f33e5bb2ec2e0b999e72f036737b2304f4",
+      "body_chars": 7386,
+      "method_chars": null
+    },
+    {
+      "key": "operations_director",
+      "office": "organization-office",
+      "description": "COO-style operations director for a research-led cultural/creative organization. Owns workflows, capacity, resourcing, operational systems and organisational execution.",
+      "path": "skills/aco-organization-office/references/agents/operations-director.md",
+      "sha256": "d5c6af4cc512938a6136039f4f6451b193bcdbf4b0cf8757f655ca78c32e8df3",
+      "body_chars": 7407,
+      "method_chars": null
+    },
+    {
+      "key": "organization_director",
+      "office": "organization-office",
+      "description": "Executive strategic director for a research-led cultural/creative organization. Holds the mission, portfolio logic, organisational coherence and boundary between cultural platform, research lab and commercial practice.",
+      "path": "skills/aco-organization-office/references/agents/organization-director.md",
+      "sha256": "7725782d8981261517c3f5c47bc46cf28cf98b28d90c29aa52bdd97a759e41cf",
+      "body_chars": 8009,
+      "method_chars": null
+    },
+    {
+      "key": "organization_orchestrator",
+      "office": "organization-office",
+      "description": "Orchestrator for the organization across research, culture, creative, publishing, clients, partnerships, funding, products, operations and growth.",
+      "path": "skills/aco-organization-office/references/agents/organization-orchestrator.md",
+      "sha256": "e3290f24e5c31ea0f1180f4e6263e4f1bdded9cf9e145e70885d8cdd4bf00515",
+      "body_chars": 12827,
+      "method_chars": null
+    },
+    {
+      "key": "partnerships_director",
+      "office": "organization-office",
+      "description": "Strategic partnerships director for the organization across cultural institutions, universities, publishers, foundations, brands and technology organisations.",
+      "path": "skills/aco-organization-office/references/agents/partnerships-director.md",
+      "sha256": "99608d10cd91f97bcf325440d8b6a24787ef09cf6b2618f6db62b3a6194720c1",
+      "body_chars": 7626,
+      "method_chars": null
+    },
+    {
+      "key": "product_experience_director",
+      "office": "organization-office",
+      "description": "Product and experience director for the organization digital platforms, interactive publications, tools, services and hybrid experiences.",
+      "path": "skills/aco-organization-office/references/agents/product-experience-director.md",
+      "sha256": "1e5b494b8b80eaa80a030c17b659a81d1932716b4aedf402b3cc44b459057c1c",
+      "body_chars": 7431,
+      "method_chars": null
+    },
+    {
+      "key": "programme_curator",
+      "office": "organization-office",
+      "description": "Programme curator for the organization exhibitions, screenings, talks, workshops, residencies and interdisciplinary cultural programmes.",
+      "path": "skills/aco-organization-office/references/agents/programme-curator.md",
+      "sha256": "3492eeefb0c5c19c53f56fabd1dbb6c067ad99d14da7bb7cd60dd7a3d6d72985",
+      "body_chars": 7504,
+      "method_chars": null
+    },
+    {
+      "key": "proposal_pitch_director",
+      "office": "organization-office",
+      "description": "Proposal and pitch director for the organization client proposals, institutional tenders, partnership decks and competitive presentations.",
+      "path": "skills/aco-organization-office/references/agents/proposal-pitch-director.md",
+      "sha256": "35ee1ccaf1ca81ec6c0edd2b36a05d65b0f181d56901e03fb9220db503020ce1",
+      "body_chars": 7440,
+      "method_chars": null
+    },
+    {
+      "key": "publishing_director",
+      "office": "organization-office",
+      "description": "Publishing director for the organization digital and print publications, editorial products, dossiers, books and distribution strategy.",
+      "path": "skills/aco-organization-office/references/agents/publishing-director.md",
+      "sha256": "52844024e9a1b6ff78bb80547b6c7a0903bf58444c9d21978a337644f57f9d47",
+      "body_chars": 7484,
+      "method_chars": null
+    },
+    {
+      "key": "research_director",
+      "office": "organization-office",
+      "description": "Research director for a research-led cultural/creative organization. Defines research programmes, questions, methods and outputs across art, design, technology, media and social systems.",
+      "path": "skills/aco-organization-office/references/agents/research-director.md",
+      "sha256": "db72e7103ab67475a541d7c21d44fbfb173efb732c2a4d54d85177ef584d4e83",
+      "body_chars": 7998,
+      "method_chars": null
+    },
+    {
+      "key": "research_editor_fact_checker",
+      "office": "organization-office",
+      "description": "Research editor and fact checker for the organization publications, research outputs, decks and public claims.",
+      "path": "skills/aco-organization-office/references/agents/research-editor-fact-checker.md",
+      "sha256": "30fe6c3d63303922d032a62bae14df498afe13f81df2d3e708dbe94173ecca27",
+      "body_chars": 7421,
+      "method_chars": null
+    },
+    {
+      "key": "revenue_innovation_strategist",
+      "office": "organization-office",
+      "description": "Revenue innovation strategist exploring new the organization income models such as memberships, subscriptions, research products, tools, licensing, editions and education.",
+      "path": "skills/aco-organization-office/references/agents/revenue-innovation-strategist.md",
+      "sha256": "1187ccec214603bc4dea7f7a766be1a631f3f4188c443f4ed288d26eb769662a",
+      "body_chars": 7440,
+      "method_chars": null
+    },
+    {
+      "key": "sponsorship_director",
+      "office": "organization-office",
+      "description": "Sponsorship director for cultural programmes, events and research partnerships, balancing funding with the organization editorial and curatorial independence.",
+      "path": "skills/aco-organization-office/references/agents/sponsorship-director.md",
+      "sha256": "ca8bad828a45e63787051c836772cfc106f747bf1f9a89bd1efde8ed01437f1e",
+      "body_chars": 7388,
+      "method_chars": null
+    },
+    {
+      "key": "talent_contributors_manager",
+      "office": "organization-office",
+      "description": "Talent and contributors manager for the organization external artists, writers, curators, designers, filmmakers, technologists and specialist collaborators.",
+      "path": "skills/aco-organization-office/references/agents/talent-contributors-manager.md",
+      "sha256": "eb9f6a5bc3aabd037e8d511ebb3f1fa5b59b686f88f714e31aea071ded987ebe",
+      "body_chars": 7426,
+      "method_chars": null
+    },
+    {
+      "key": "ux_service_designer",
+      "office": "organization-office",
+      "description": "UX and service designer for the organization websites, platforms, tools, services, events and cross-channel journeys.",
+      "path": "skills/aco-organization-office/references/agents/ux-service-designer.md",
+      "sha256": "64a70ddace22b5f3eae1b910e126a576b331a6b213ebf414fe34148f6be59e6e",
+      "body_chars": 7249,
+      "method_chars": null
+    },
+    {
+      "key": "compensation_benefits_coordinator",
+      "office": "people-office",
+      "description": "Prepare compensation structures and benefit administration.",
+      "path": "skills/aco-people-office/references/agents/compensation-benefits-coordinator.md",
+      "sha256": "3d75f7405957c55d5ef995b9d38c7a8ed237c5399b6fea4ff832a2f444e5aea2",
+      "body_chars": 5755,
+      "method_chars": 1291
+    },
+    {
+      "key": "employee_relations_coordinator",
+      "office": "people-office",
+      "description": "Organize sensitive workplace concerns neutrally.",
+      "path": "skills/aco-people-office/references/agents/employee-relations-coordinator.md",
+      "sha256": "3b5fb5d9b1389a6c446eadfb808688a743b8eece09acabbd1e1d5dfee7c5c000",
+      "body_chars": 5749,
+      "method_chars": 1305
+    },
+    {
+      "key": "hiring_coordinator",
+      "office": "people-office",
+      "description": "Coordinate an authorized hiring process and applicant communication.",
+      "path": "skills/aco-people-office/references/agents/hiring-coordinator.md",
+      "sha256": "b8e3c378ef862c3e457d9c15abe74c0e0d80208324a605dbe40aac5b8be4b12d",
+      "body_chars": 5733,
+      "method_chars": 1283
+    },
+    {
+      "key": "learning_development_specialist",
+      "office": "people-office",
+      "description": "Design practical team learning and skill development.",
+      "path": "skills/aco-people-office/references/agents/learning-development-specialist.md",
+      "sha256": "8cec6af2442eb0b06ab2faa744e98cef33ca1d3dd5c60c9502171fd4a4b3dc37",
+      "body_chars": 5674,
+      "method_chars": 1226
+    },
+    {
+      "key": "onboarding_offboarding_coordinator",
+      "office": "people-office",
+      "description": "Prepare onboarding and safe departures.",
+      "path": "skills/aco-people-office/references/agents/onboarding-offboarding-coordinator.md",
+      "sha256": "559e36a15338d597a43637f29059085aa03199968925d71a9bdcbb54ea3954e9",
+      "body_chars": 5735,
+      "method_chars": 1309
+    },
+    {
+      "key": "people_operations_manager",
+      "office": "people-office",
+      "description": "Organize policies, personnel process and restricted HR records.",
+      "path": "skills/aco-people-office/references/agents/people-operations-manager.md",
+      "sha256": "0fc62bc41873aeac9a3991205b45258fd334826d71442783d75f5d4ce128f109",
+      "body_chars": 5746,
+      "method_chars": 1292
+    },
+    {
+      "key": "people_orchestrator",
+      "office": "people-office",
+      "description": "Route people & hr tasks through a small accountable team with early clarification and verified outputs.",
+      "path": "skills/aco-people-office/references/agents/people-orchestrator.md",
+      "sha256": "eed49fbbfbc7d7049e5fcd8e9f4f8a1617c8fcfe7c8fca9eff3bec3f23a2dd88",
+      "body_chars": 6485,
+      "method_chars": null
+    },
+    {
+      "key": "structured_interview_designer",
+      "office": "people-office",
+      "description": "Design fair job-relevant interviews and work samples.",
+      "path": "skills/aco-people-office/references/agents/structured-interview-designer.md",
+      "sha256": "9d679b451db74773fb0f2c40aa451875d626a9cded4b32c906a6d7c28ef53524",
+      "body_chars": 5731,
+      "method_chars": 1303
+    },
+    {
+      "key": "talent_sourcing_specialist",
+      "office": "people-office",
+      "description": "Find potential employees or freelance collaborators.",
+      "path": "skills/aco-people-office/references/agents/talent-sourcing-specialist.md",
+      "sha256": "4fb9fc20e32cb38e85b8b651599632f5f13ad4b4e36ed42853b4a4747d7d1b75",
+      "body_chars": 5700,
+      "method_chars": 1263
+    },
+    {
+      "key": "workforce_planner",
+      "office": "people-office",
+      "description": "Translate workload into staffing and contractor needs.",
+      "path": "skills/aco-people-office/references/agents/workforce-planner.md",
+      "sha256": "0839829e20c84e891db3524da8513ee6234e5292e8ea30993d23b15a21d6fcbc",
+      "body_chars": 5710,
+      "method_chars": 1282
+    },
+    {
+      "key": "accessibility_specialist",
+      "office": "product-office",
+      "description": "Accessibility specialist for inclusive product design, compliance, assistive-tech behavior and remediation.",
+      "path": "skills/aco-product-office/references/agents/accessibility-specialist.md",
+      "sha256": "53188d94404c41c6ed475518abf324679d87d5b9321c1bb4f7eb2eaa05584757",
+      "body_chars": 7141,
+      "method_chars": null
+    },
+    {
+      "key": "accessibility_tester",
+      "office": "product-office",
+      "description": "Tester for keyboard flows, screen-reader behavior, contrast, semantics and accessibility bugs.",
+      "path": "skills/aco-product-office/references/agents/accessibility-tester.md",
+      "sha256": "acbfb13aef73552d9458369b43195afc18b0fbdc07e194d9c03e4952c77de982",
+      "body_chars": 7043,
+      "method_chars": null
+    },
+    {
+      "key": "ai_engineer",
+      "office": "product-office",
+      "description": "Engineer for applied AI features, model integration, pipelines and evaluation.",
+      "path": "skills/aco-product-office/references/agents/ai-engineer.md",
+      "sha256": "4a2398fb3075d082964a7c7421b0d6c6d1dd6572510f9e898fe674508577a39b",
+      "body_chars": 7026,
+      "method_chars": null
+    },
+    {
+      "key": "ai_product_engineer",
+      "office": "product-office",
+      "description": "Bridge role between product and AI engineering for user-facing AI feature design and implementation.",
+      "path": "skills/aco-product-office/references/agents/ai-product-engineer.md",
+      "sha256": "0c3b511ed16605dd91797295ea445838e882a1c17d261d536e92789b1d90f623",
+      "body_chars": 7065,
+      "method_chars": null
+    },
+    {
+      "key": "api_integration_engineer",
+      "office": "product-office",
+      "description": "Engineer for third-party service integration, authentication flows, webhooks and API reliability.",
+      "path": "skills/aco-product-office/references/agents/api-integration-engineer.md",
+      "sha256": "a94e16bea3c8c2991c374d9bfc5e7a368e0cd933b0b2f6aafa64abe35b49f7e4",
+      "body_chars": 7064,
+      "method_chars": null
+    },
+    {
+      "key": "api_researcher",
+      "office": "product-office",
+      "description": "Researcher for third-party API capabilities, docs, pricing, limits and integration implications.",
+      "path": "skills/aco-product-office/references/agents/api-researcher.md",
+      "sha256": "d521233bbb68d44b2b7cf7e64557240cd3e068b42db49816827eaa2c549c216a",
+      "body_chars": 7015,
+      "method_chars": null
+    },
+    {
+      "key": "automation_integration_engineer",
+      "office": "product-office",
+      "description": "Implement scoped integrations and safe office automations.",
+      "path": "skills/aco-product-office/references/agents/automation-integration-engineer.md",
+      "sha256": "e1ad34667f004b6048cdb0635f14b82b57e05d08d0592880c3173467085b7fa6",
+      "body_chars": 5675,
+      "method_chars": 1197
+    },
+    {
+      "key": "backend_engineer",
+      "office": "product-office",
+      "description": "Backend engineer for server-side features, APIs, business logic and integrations.",
+      "path": "skills/aco-product-office/references/agents/backend-engineer.md",
+      "sha256": "b7ec746357786370767e94da6930cfc324e44dbbc7582ebcfd831ed934a4ddaf",
+      "body_chars": 7012,
+      "method_chars": null
+    },
+    {
+      "key": "bug_investigator",
+      "office": "product-office",
+      "description": "Specialist for reproducing, isolating and diagnosing bugs across environments and layers.",
+      "path": "skills/aco-product-office/references/agents/bug-investigator.md",
+      "sha256": "25e35829821a0004720050d5da4d42c75fbf92af9038e4c198a42b97a9001fab",
+      "body_chars": 7009,
+      "method_chars": null
+    },
+    {
+      "key": "business_analyst",
+      "office": "product-office",
+      "description": "Analyst for business rules, process requirements, operational needs and stakeholder constraints.",
+      "path": "skills/aco-product-office/references/agents/business-analyst.md",
+      "sha256": "68016884209d875a9e5ef9f74fb65dc58cd93cc2395a067407ac28e360f04653",
+      "body_chars": 7086,
+      "method_chars": null
+    },
+    {
+      "key": "cloud_architect",
+      "office": "product-office",
+      "description": "Architect for cloud topology, managed services, cost/performance tradeoffs and cloud governance.",
+      "path": "skills/aco-product-office/references/agents/cloud-architect.md",
+      "sha256": "bcdc54e04472c40d7e2124513f6def27566062bc5b6ba0293ce4225b573e7aea",
+      "body_chars": 7118,
+      "method_chars": null
+    },
+    {
+      "key": "code_reviewer",
+      "office": "product-office",
+      "description": "Reviewer for code quality, maintainability, clarity and adherence to standards.",
+      "path": "skills/aco-product-office/references/agents/code-reviewer.md",
+      "sha256": "e9579a3afbdf47d2724c2516414d773d134eeafbb98b42559a6c1b8e21ba3bc2",
+      "body_chars": 7034,
+      "method_chars": null
+    },
+    {
+      "key": "data_engineer",
+      "office": "product-office",
+      "description": "Engineer for data pipelines, ingestion, transformation and analytics-readiness.",
+      "path": "skills/aco-product-office/references/agents/data-engineer.md",
+      "sha256": "d00c67230b47db333dead60405bbf661136bff4a6c238901224ccfaa95ef1eb2",
+      "body_chars": 7001,
+      "method_chars": null
+    },
+    {
+      "key": "data_scientist",
+      "office": "product-office",
+      "description": "Data scientist for modeling, experimentation, analysis and statistical interpretation.",
+      "path": "skills/aco-product-office/references/agents/data-scientist.md",
+      "sha256": "7484e12caa3cd33309ca506354fed0b81500639e99fe17b74e30298c2a93c78e",
+      "body_chars": 7054,
+      "method_chars": null
+    },
+    {
+      "key": "database_engineer",
+      "office": "product-office",
+      "description": "Engineer for database schema, query design, performance, migrations and data integrity.",
+      "path": "skills/aco-product-office/references/agents/database-engineer.md",
+      "sha256": "66a9cddee6c5079b85a8cbd9ae21ad51afdc87e09ff960ecb9a1643ee598905b",
+      "body_chars": 7092,
+      "method_chars": null
+    },
+    {
+      "key": "dependency_researcher",
+      "office": "product-office",
+      "description": "Researcher for package selection, dependency health, maintenance risk and compatibility.",
+      "path": "skills/aco-product-office/references/agents/dependency-researcher.md",
+      "sha256": "49cdf5e25da20352420367b59c374f7d29821cf086a81cccf7d70a0459a61b78",
+      "body_chars": 7042,
+      "method_chars": null
+    },
+    {
+      "key": "design_system_designer",
+      "office": "product-office",
+      "description": "Designer of reusable component systems, tokens, patterns and documentation for product consistency.",
+      "path": "skills/aco-product-office/references/agents/design-system-designer.md",
+      "sha256": "fae2840a0f11004fd6afb0cb132377899aff9327577a1d71b644a00765cd76dd",
+      "body_chars": 7061,
+      "method_chars": null
+    },
+    {
+      "key": "devops_engineer",
+      "office": "product-office",
+      "description": "Engineer for deployment pipelines, CI/CD, environments and operational tooling.",
+      "path": "skills/aco-product-office/references/agents/devops-engineer.md",
+      "sha256": "bf21bad003b6944752365fe5cb4eb5a5acd735c6e071c5a8f73b419a546cefea",
+      "body_chars": 7063,
+      "method_chars": null
+    },
+    {
+      "key": "documentation_writer",
+      "office": "product-office",
+      "description": "Writer for user manuals, onboarding docs, support guides and operational runbooks.",
+      "path": "skills/aco-product-office/references/agents/documentation-writer.md",
+      "sha256": "acf76c7bfbc624c908a3eb5d4931fcd7ea5b41732c7c880c52d840988bd646bb",
+      "body_chars": 7045,
+      "method_chars": null
+    },
+    {
+      "key": "frontend_engineer",
+      "office": "product-office",
+      "description": "Frontend engineer for building user interfaces, state management and browser-side logic.",
+      "path": "skills/aco-product-office/references/agents/frontend-engineer.md",
+      "sha256": "12bfad0be90e0a2bb432b4846dc202808aac6ce8bcd9022816fe45d98684f341",
+      "body_chars": 7047,
+      "method_chars": null
+    },
+    {
+      "key": "fullstack_engineer",
+      "office": "product-office",
+      "description": "Fullstack engineer for end-to-end web product implementation across frontend and backend.",
+      "path": "skills/aco-product-office/references/agents/fullstack-engineer.md",
+      "sha256": "ebaa658d508798379d5cbc9c0179108f29e9afb11cf969b3e917234a4edbd985",
+      "body_chars": 7040,
+      "method_chars": null
+    },
+    {
+      "key": "information_architect",
+      "office": "product-office",
+      "description": "Designer of information architecture, content structure, navigation and system logic.",
+      "path": "skills/aco-product-office/references/agents/information-architect.md",
+      "sha256": "9e6d8214c19b0bf56e71a33c272000dcdcb8766eba4cb8bfe51cd4b5cefa40b9",
+      "body_chars": 7042,
+      "method_chars": null
+    },
+    {
+      "key": "interaction_designer",
+      "office": "product-office",
+      "description": "Specialist for interaction behavior, states, transitions, affordances and micro-interactions.",
+      "path": "skills/aco-product-office/references/agents/interaction-designer.md",
+      "sha256": "8720e5ac14a437c48ebfb01c0ac0261f0db6e8721f8cf34ec1326319f15e7331",
+      "body_chars": 7035,
+      "method_chars": null
+    },
+    {
+      "key": "junior_developer",
+      "office": "product-office",
+      "description": "Junior developer for well-scoped implementation tasks, fixes and guided build work.",
+      "path": "skills/aco-product-office/references/agents/junior-developer.md",
+      "sha256": "a3427b2f2a8b99824136e8d5665b9b8d325e270a71f40e5179f540800a5b09bf",
+      "body_chars": 7087,
+      "method_chars": null
+    },
+    {
+      "key": "llm_engineer",
+      "office": "product-office",
+      "description": "Engineer for LLM prompting, RAG patterns, tool use, evaluation and agentic behavior.",
+      "path": "skills/aco-product-office/references/agents/llm-engineer.md",
+      "sha256": "2b29b62f95df3bf5846cfe952b0c628aa7049b177ba96f71026ea6bde57bb972",
+      "body_chars": 7064,
+      "method_chars": null
+    },
+    {
+      "key": "mcp_integration_reviewer",
+      "office": "product-office",
+      "description": "Review MCP connections for scope, safety and practical compatibility.",
+      "path": "skills/aco-product-office/references/agents/mcp-integration-reviewer.md",
+      "sha256": "0ccd421c5e0dfd36bdbfaadd0f9c3392d2472fcf032e635ff1d38c0193e00ff5",
+      "body_chars": 5600,
+      "method_chars": 1127
+    },
+    {
+      "key": "migration_specialist",
+      "office": "product-office",
+      "description": "Specialist for migrations between stacks, systems, schemas, services or versions.",
+      "path": "skills/aco-product-office/references/agents/migration-specialist.md",
+      "sha256": "735879957f6e9452af44575df9eab5b6fcdf39dd6b67f62f462f8d841a1076ce",
+      "body_chars": 7027,
+      "method_chars": null
+    },
+    {
+      "key": "ml_ops_engineer",
+      "office": "product-office",
+      "description": "Engineer for model deployment, monitoring, versioning and production ML operations.",
+      "path": "skills/aco-product-office/references/agents/ml-ops-engineer.md",
+      "sha256": "ce6c0396a239ee7e83f0aa0b0cec171ef349ce77cfb73146a3e986a8011a347e",
+      "body_chars": 6989,
+      "method_chars": null
+    },
+    {
+      "key": "mobile_engineer",
+      "office": "product-office",
+      "description": "Engineer for mobile app implementation, platform conventions and native/hybrid delivery.",
+      "path": "skills/aco-product-office/references/agents/mobile-engineer.md",
+      "sha256": "6d7ea04d9d50ab0125b1ce81db42c034a66d7cf2e32d9ba8c1d3f4b0ae4204f4",
+      "body_chars": 7064,
+      "method_chars": null
+    },
+    {
+      "key": "performance_engineer",
+      "office": "product-office",
+      "description": "Engineer for profiling, load behavior, optimization and performance budgets.",
+      "path": "skills/aco-product-office/references/agents/performance-engineer.md",
+      "sha256": "5ad0490318c0e14723d2a30c67f1c65261986c7171cbdf4393f480d410e0f95b",
+      "body_chars": 7064,
+      "method_chars": null
+    },
+    {
+      "key": "product_analyst",
+      "office": "product-office",
+      "description": "Analyst for product usage, funnels, events, KPIs and behavioral data interpretation.",
+      "path": "skills/aco-product-office/references/agents/product-analyst.md",
+      "sha256": "4f0f7567934640847c16d25f4e472177056c9d0a6e4bc8f5ab5abfde4044b8d0",
+      "body_chars": 7094,
+      "method_chars": null
+    },
+    {
+      "key": "product_designer",
+      "office": "product-office",
+      "description": "Product designer for translating requirements into coherent UI/UX across flows and screens.",
+      "path": "skills/aco-product-office/references/agents/product-designer.md",
+      "sha256": "b24a972244c348bc2a3646997b6486b4f3efb9212683c079157fa74659c9086b",
+      "body_chars": 7027,
+      "method_chars": null
+    },
+    {
+      "key": "product_director",
+      "office": "product-office",
+      "description": "Senior product lead who sets product direction, value proposition, decision criteria and cross-functional priorities.",
+      "path": "skills/aco-product-office/references/agents/product-director.md",
+      "sha256": "8321b4d4362f1540b8914243a0751786bc65c30aea1b69f91bbbcf4a2796e08f",
+      "body_chars": 7144,
+      "method_chars": null
+    },
+    {
+      "key": "product_manager",
+      "office": "product-office",
+      "description": "Product manager for planning requirements, prioritization, user stories and delivery coordination.",
+      "path": "skills/aco-product-office/references/agents/product-manager.md",
+      "sha256": "88a19183c6259c2e9a5ada35e2ac908cd0f2416507be6d7c1a5410a28b746595",
+      "body_chars": 7127,
+      "method_chars": null
+    },
+    {
+      "key": "product_researcher",
+      "office": "product-office",
+      "description": "Researcher for product opportunities, user problems, category benchmarks and concept validation.",
+      "path": "skills/aco-product-office/references/agents/product-researcher.md",
+      "sha256": "9f9443dd374890e99f0a69a537d1716e8100ec372d75be5643daeda26fe85c99",
+      "body_chars": 7106,
+      "method_chars": null
+    },
+    {
+      "key": "product_software_orchestrator",
+      "office": "product-office",
+      "description": "Orchestrator for websites, web apps, software products, internal tools, APIs and AI products. Routes work across product, UX, engineering, AI/data, quality and infrastructure.",
+      "path": "skills/aco-product-office/references/agents/product-software-orchestrator.md",
+      "sha256": "e20fe7e3bec57f9c52fcfecfd2def433e323923bc6a4e8e6aeb73afabc90f0bf",
+      "body_chars": 13356,
+      "method_chars": null
+    },
+    {
+      "key": "qa_engineer",
+      "office": "product-office",
+      "description": "QA engineer for manual and structured testing of product behavior, edge cases and regressions.",
+      "path": "skills/aco-product-office/references/agents/qa-engineer.md",
+      "sha256": "c2870278e3ab51cfa8091df666ffcf47c48d64c6a2ba4a2970ced3ad713e0e0d",
+      "body_chars": 7023,
+      "method_chars": null
+    },
+    {
+      "key": "qa_lead",
+      "office": "product-office",
+      "description": "QA lead for test strategy, quality risk, release readiness and coverage priorities.",
+      "path": "skills/aco-product-office/references/agents/qa-lead.md",
+      "sha256": "fb26b4e4b79a73c507b1fd54eb7ddbd52cbb1fd1f7057857e3adfb84d4fd4c4d",
+      "body_chars": 6965,
+      "method_chars": null
+    },
+    {
+      "key": "release_manager",
+      "office": "product-office",
+      "description": "Manager for release planning, versioning, rollout, rollback and cross-team release coordination.",
+      "path": "skills/aco-product-office/references/agents/release-manager.md",
+      "sha256": "99591ddeef8ae434ae97303928a8ec142ffe01ea097d09d5ebeff1e962b0bc1c",
+      "body_chars": 7055,
+      "method_chars": null
+    },
+    {
+      "key": "security_engineer",
+      "office": "product-office",
+      "description": "Engineer for implementing security controls, secrets handling, infra hardening and monitoring.",
+      "path": "skills/aco-product-office/references/agents/security-engineer.md",
+      "sha256": "e7fd11e0e943796129e3b81633a600d3421c78e5303a3799735a20bf5ebae273",
+      "body_chars": 7074,
+      "method_chars": null
+    },
+    {
+      "key": "security_reviewer",
+      "office": "product-office",
+      "description": "Reviewer for application security, common vulnerabilities, auth patterns and risk assessment.",
+      "path": "skills/aco-product-office/references/agents/security-reviewer.md",
+      "sha256": "a15987b00c3fd7b652c9bce08e00648ff5a8154ae3faae77c8a6b2ab74d8e36a",
+      "body_chars": 7032,
+      "method_chars": null
+    },
+    {
+      "key": "senior_backend_engineer",
+      "office": "product-office",
+      "description": "Senior backend engineer for service architecture, APIs, data flow and backend reliability.",
+      "path": "skills/aco-product-office/references/agents/senior-backend-engineer.md",
+      "sha256": "154926fab69e7526418f4b7f3e463d8e5ad23b72b60d2f1d3d07aaa975adc45d",
+      "body_chars": 7061,
+      "method_chars": null
+    },
+    {
+      "key": "senior_frontend_engineer",
+      "office": "product-office",
+      "description": "Senior frontend engineer for complex web interfaces, architecture and performance-sensitive UI.",
+      "path": "skills/aco-product-office/references/agents/senior-frontend-engineer.md",
+      "sha256": "f911de15e9c3f194c176a3592a6b29ad83f77a3355d609de45330aa1a9f371bc",
+      "body_chars": 7088,
+      "method_chars": null
+    },
+    {
+      "key": "software_architect",
+      "office": "product-office",
+      "description": "Architect for application structure, technical boundaries, scalability and major engineering decisions.",
+      "path": "skills/aco-product-office/references/agents/software-architect.md",
+      "sha256": "c2685e1e5d371914f61d4ff8aad01810f1c9cae31fffffc787f329e958c11ed6",
+      "body_chars": 7142,
+      "method_chars": null
+    },
+    {
+      "key": "sre_engineer",
+      "office": "product-office",
+      "description": "Site reliability engineer for uptime, observability, incident prevention and operational resilience.",
+      "path": "skills/aco-product-office/references/agents/sre-engineer.md",
+      "sha256": "89e1d905fb0a8b3ddea7ab6ff77e539ff0b0a834db4897ff4e1f833eb583c633",
+      "body_chars": 7097,
+      "method_chars": null
+    },
+    {
+      "key": "tech_lead",
+      "office": "product-office",
+      "description": "Technical lead for implementation direction, code quality, integration decisions and team guidance.",
+      "path": "skills/aco-product-office/references/agents/tech-lead.md",
+      "sha256": "c6afa6132a548c7af9bb7a16c94478847ca3c1312fa4746aa516808d71138051",
+      "body_chars": 7088,
+      "method_chars": null
+    },
+    {
+      "key": "technical_researcher",
+      "office": "product-office",
+      "description": "Researcher for libraries, frameworks, approaches, tradeoffs and implementation options.",
+      "path": "skills/aco-product-office/references/agents/technical-researcher.md",
+      "sha256": "f9e52b5ddc9300a14b0f3b99fb727505502f1e3dd20add0e1428c8e5d8c26fa9",
+      "body_chars": 6999,
+      "method_chars": null
+    },
+    {
+      "key": "technical_writer",
+      "office": "product-office",
+      "description": "Writer for technical docs, developer guides, architecture notes and user-facing documentation.",
+      "path": "skills/aco-product-office/references/agents/technical-writer.md",
+      "sha256": "4f44554744055a8bae6d94d74fb56ae612ee1c0ba538df3c075e32267e7ec85c",
+      "body_chars": 7084,
+      "method_chars": null
+    },
+    {
+      "key": "test_automation_engineer",
+      "office": "product-office",
+      "description": "Engineer for automated test suites, integration tests and regression coverage.",
+      "path": "skills/aco-product-office/references/agents/test-automation-engineer.md",
+      "sha256": "61d457aef82736822db20c23b09c25eb102214b5f650e655b58733cefe1efd7d",
+      "body_chars": 7047,
+      "method_chars": null
+    },
+    {
+      "key": "test_writer",
+      "office": "product-office",
+      "description": "Writer for structured test cases, scenarios and acceptance criteria.",
+      "path": "skills/aco-product-office/references/agents/test-writer.md",
+      "sha256": "cefb0ef5939d476cf3a43a978dfa2aa160d2658172a03598438c5560c615d486",
+      "body_chars": 6946,
+      "method_chars": null
+    },
+    {
+      "key": "ui_prototyper",
+      "office": "product-office",
+      "description": "Rapid UI prototyper for quick visual/interaction proofs before full implementation.",
+      "path": "skills/aco-product-office/references/agents/ui-prototyper.md",
+      "sha256": "d07977279bad46a28042752ff3ebf1a830536c2f7e3147584f184385fd7eac5d",
+      "body_chars": 7025,
+      "method_chars": null
+    },
+    {
+      "key": "ux_lead",
+      "office": "product-office",
+      "description": "Senior UX lead for product experience principles, user flows, information structure and design quality.",
+      "path": "skills/aco-product-office/references/agents/ux-lead.md",
+      "sha256": "cf9e201cee5a36be8ba4c87f410ae2fc65c2ec1fbbfd5e26fb3e67a49f5b68f2",
+      "body_chars": 7042,
+      "method_chars": null
+    },
+    {
+      "key": "ux_researcher",
+      "office": "product-office",
+      "description": "Researcher for interviews, usability testing, journey analysis and behavior evidence.",
+      "path": "skills/aco-product-office/references/agents/ux-researcher.md",
+      "sha256": "3cdd353368fde3871b8920843ebbcc99c95fb07502c952b97d6a00a00d7b7514",
+      "body_chars": 7040,
+      "method_chars": null
+    },
+    {
+      "key": "assistant_video_editor",
+      "office": "production-office",
+      "description": "Prepare organized editorial projects and turnovers.",
+      "path": "skills/aco-production-office/references/agents/assistant-video-editor.md",
+      "sha256": "73d0ff565fe21f4e1b903a4403cd2170e284f3fa2b925f3b6dbc996e5e883b9f",
+      "body_chars": 5615,
+      "method_chars": 1190
+    },
+    {
+      "key": "beauty_fashion_retouch_artist",
+      "office": "production-office",
+      "description": "Retouch fashion and beauty while preserving texture and agreed identity.",
+      "path": "skills/aco-production-office/references/agents/beauty-fashion-retouch-artist.md",
+      "sha256": "34a78dfd6354ea57e66c7bb7e1c8e07b3e1dfdadab4f2a95806bcdf28cf9d531",
+      "body_chars": 5750,
+      "method_chars": 1269
+    },
+    {
+      "key": "cg_lighting_render_artist",
+      "office": "production-office",
+      "description": "Light, shade and render CG with budget and color controls.",
+      "path": "skills/aco-production-office/references/agents/cg-lighting-render-artist.md",
+      "sha256": "b7e6aa9f60dbd03b2886226fcdf591c05c0976f4ec3030aeea9710c9fe688c13",
+      "body_chars": 5678,
+      "method_chars": 1231
+    },
+    {
+      "key": "cinematographer",
+      "office": "production-office",
+      "description": "Plan capture, lighting and image continuity.",
+      "path": "skills/aco-production-office/references/agents/cinematographer.md",
+      "sha256": "63d74a966289838d4b6fa9453d5f4dafd52f05ffd7d6bdb1f751deda4dcfa2ae",
+      "body_chars": 5631,
+      "method_chars": 1226
+    },
+    {
+      "key": "color_pipeline_engineer",
+      "office": "production-office",
+      "description": "Design and validate cross-application color management.",
+      "path": "skills/aco-production-office/references/agents/color-pipeline-engineer.md",
+      "sha256": "5254e29d893374effa9d4ff19ca7e97056ed332bf5b45e1a2ae138762fdeea0e",
+      "body_chars": 5687,
+      "method_chars": 1256
+    },
+    {
+      "key": "colorist",
+      "office": "production-office",
+      "description": "Develop grades and shot matching with a defined color pipeline.",
+      "path": "skills/aco-production-office/references/agents/colorist.md",
+      "sha256": "248da15f3f0dcf20a161d91585be0210a9a86d2320a68a7c1b655548e64d8223",
+      "body_chars": 5903,
+      "method_chars": 1454
+    },
+    {
+      "key": "comfyui_node_developer",
+      "office": "production-office",
+      "description": "Develop focused custom ComfyUI nodes and tests.",
+      "path": "skills/aco-production-office/references/agents/comfyui-node-developer.md",
+      "sha256": "483f4cdc5acd03cec554db0a5edf9d3e50abad7c85be933cac0a7873373a1a44",
+      "body_chars": 5772,
+      "method_chars": 1334
+    },
+    {
+      "key": "comfyui_workflow_engineer",
+      "office": "production-office",
+      "description": "Build and diagnose ComfyUI graphs against the user\u2019s real environment.",
+      "path": "skills/aco-production-office/references/agents/comfyui-workflow-engineer.md",
+      "sha256": "f1d0131f60a1555586c3dae41b7b28d043e0bed1a69a643399578b97ef5b3e72",
+      "body_chars": 6093,
+      "method_chars": 1610
+    },
+    {
+      "key": "compositor",
+      "office": "production-office",
+      "description": "Combine live action, CG and graphics consistently.",
+      "path": "skills/aco-production-office/references/agents/compositor.md",
+      "sha256": "92605fe7d22e22f444f0ce5af57cbb448fd0fa3bb4b60c45c47fa83eb0f6f7b3",
+      "body_chars": 5678,
+      "method_chars": 1274
+    },
+    {
+      "key": "dialogue_editor",
+      "office": "production-office",
+      "description": "Prepare clean, synchronized and intelligible dialogue.",
+      "path": "skills/aco-production-office/references/agents/dialogue-editor.md",
+      "sha256": "99504315ebc233396285fd0323bec94b999fe047241ba532393e40bdcd08bc7e",
+      "body_chars": 5627,
+      "method_chars": 1207
+    },
+    {
+      "key": "digital_imaging_technician",
+      "office": "production-office",
+      "description": "Manage capture monitoring, dailies and color metadata.",
+      "path": "skills/aco-production-office/references/agents/digital-imaging-technician.md",
+      "sha256": "68581cfc0468160ec7ed36f4f3b28219c31bcea9bd5443acf738a2b6ad543410",
+      "body_chars": 5673,
+      "method_chars": 1233
+    },
+    {
+      "key": "fashion_stylist",
+      "office": "production-office",
+      "description": "Plan wardrobe and styling for stills and moving image.",
+      "path": "skills/aco-production-office/references/agents/fashion-stylist.md",
+      "sha256": "a7661f96f7565e1a7e5d24d10d9bcf7a6d0fa0a9dcc307c019c9c21625c21d09",
+      "body_chars": 5641,
+      "method_chars": 1214
+    },
+    {
+      "key": "film_director",
+      "office": "production-office",
+      "description": "Translate approved concepts into performance, blocking and cinematic treatment.",
+      "path": "skills/aco-production-office/references/agents/film-director.md",
+      "sha256": "0005743abb5a751451bc86cecf259fb0d6e92b7817632fe9a4669614b617cdbc",
+      "body_chars": 5734,
+      "method_chars": 1270
+    },
+    {
+      "key": "first_assistant_director",
+      "office": "production-office",
+      "description": "Plan safe, feasible shooting days.",
+      "path": "skills/aco-production-office/references/agents/first-assistant-director.md",
+      "sha256": "649daeb46d5d44f0d96aad85a006b08c92b11b21f2d6336ec07679bb3d5cc2c8",
+      "body_chars": 5645,
+      "method_chars": 1245
+    },
+    {
+      "key": "generative_media_director",
+      "office": "production-office",
+      "description": "Direct generative image/video production inside approved intent.",
+      "path": "skills/aco-production-office/references/agents/generative-media-director.md",
+      "sha256": "acaae29bb0a9f0e8ea85902f68103581b495130e7b73ce729356897a6fb603e9",
+      "body_chars": 5696,
+      "method_chars": 1245
+    },
+    {
+      "key": "generative_model_training_engineer",
+      "office": "production-office",
+      "description": "Plan and implement rights-aware fine-tuning and LoRA experiments.",
+      "path": "skills/aco-production-office/references/agents/generative-model-training-engineer.md",
+      "sha256": "8dd524cfc9c9cf8c33084fe9eb36a404c633dbf8750eac97398b1f75f03b7ea1",
+      "body_chars": 5842,
+      "method_chars": 1363
+    },
+    {
+      "key": "line_producer",
+      "office": "production-office",
+      "description": "Cost and organize day-to-day production delivery.",
+      "path": "skills/aco-production-office/references/agents/line-producer.md",
+      "sha256": "69dad8d67160a9c590357ae9cdd55e30377b9c2e27ac5b2fc69a7f2fc7381a57",
+      "body_chars": 5637,
+      "method_chars": 1234
+    },
+    {
+      "key": "localization_subtitles_editor",
+      "office": "production-office",
+      "description": "Prepare translated, timed and accessible text/audio versions.",
+      "path": "skills/aco-production-office/references/agents/localization-subtitles-editor.md",
+      "sha256": "c873eefb193c4c0c520592db80f36fbae8ee6d6ea50d4858cab677834fe4b740",
+      "body_chars": 5696,
+      "method_chars": 1220
+    },
+    {
+      "key": "media_data_wrangler",
+      "office": "production-office",
+      "description": "Protect media through ingest and backup verification.",
+      "path": "skills/aco-production-office/references/agents/media-data-wrangler.md",
+      "sha256": "9febd4c616f3b7dc9d890aa23df866c0454704fbe0d7b8b646be166ebff22f5e",
+      "body_chars": 5670,
+      "method_chars": 1249
+    },
+    {
+      "key": "media_delivery_qc",
+      "office": "production-office",
+      "description": "Verify media deliveries against explicit specifications.",
+      "path": "skills/aco-production-office/references/agents/media-delivery-qc.md",
+      "sha256": "2a57840803701db709c5bdd34e1268c3f5d9c441714478b666ce4fdd8d5009b8",
+      "body_chars": 5710,
+      "method_chars": 1282
+    },
+    {
+      "key": "media_pipeline_engineer",
+      "office": "production-office",
+      "description": "Automate secure DCC/media handoffs and reproducible production.",
+      "path": "skills/aco-production-office/references/agents/media-pipeline-engineer.md",
+      "sha256": "078edba295651c99f9685bcb6e84de8dc9187f95762032a475f4c3bd4184934f",
+      "body_chars": 5735,
+      "method_chars": 1281
+    },
+    {
+      "key": "motion_designer",
+      "office": "production-office",
+      "description": "Build motion graphics from an approved system.",
+      "path": "skills/aco-production-office/references/agents/motion-designer.md",
+      "sha256": "ef21c41d455405abe77b2a15df1ced16a00d9ae1870476fa7e72e8ebea3f7201",
+      "body_chars": 5678,
+      "method_chars": 1269
+    },
+    {
+      "key": "music_supervisor",
+      "office": "production-office",
+      "description": "Research music and coordinate rights/creative fit.",
+      "path": "skills/aco-production-office/references/agents/music-supervisor.md",
+      "sha256": "714d3f24aa449642f104619b02a3f394ab57a89459503ff761b853a90a6766a4",
+      "body_chars": 5611,
+      "method_chars": 1208
+    },
+    {
+      "key": "online_editor_conform",
+      "office": "production-office",
+      "description": "Rebuild locked edits at final source quality.",
+      "path": "skills/aco-production-office/references/agents/online-editor-conform.md",
+      "sha256": "cc9ff7488286e2d0f0dc479fbf8bf477e6b44d2250474424c44f12720f01a8e1",
+      "body_chars": 5626,
+      "method_chars": 1205
+    },
+    {
+      "key": "photo_retouch_artist",
+      "office": "production-office",
+      "description": "Retouch photographic assets non-destructively.",
+      "path": "skills/aco-production-office/references/agents/photo-retouch-artist.md",
+      "sha256": "7f57b8f08b3c5d4b00cc10b60a90a05f4bd9a451666b478cfa19cc22d4d21ffc",
+      "body_chars": 5710,
+      "method_chars": 1293
+    },
+    {
+      "key": "product_retouch_artist",
+      "office": "production-office",
+      "description": "Produce accurate product and still-life finishing.",
+      "path": "skills/aco-production-office/references/agents/product-retouch-artist.md",
+      "sha256": "1157389a864c5abd872487e57cb6f9d8ff3cdcaf1fb4dc3e69416b9647e1e777",
+      "body_chars": 5687,
+      "method_chars": 1256
+    },
+    {
+      "key": "production_orchestrator",
+      "office": "production-office",
+      "description": "Route production & postproduction tasks through a small accountable team with early clarification and verified outputs.",
+      "path": "skills/aco-production-office/references/agents/production-orchestrator.md",
+      "sha256": "6e446f7f1cc6a4f5a24355f4990af55a6c4611256d42ba2124d983e7158d617e",
+      "body_chars": 7261,
+      "method_chars": null
+    },
+    {
+      "key": "prop_stylist",
+      "office": "production-office",
+      "description": "Prepare objects, surfaces and still-life arrangements.",
+      "path": "skills/aco-production-office/references/agents/prop-stylist.md",
+      "sha256": "ade0af9eedfae655435cb36157eb6fdcb273382cf48f8ef67d0a421378e8000d",
+      "body_chars": 5601,
+      "method_chars": 1199
+    },
+    {
+      "key": "re_recording_mixer",
+      "office": "production-office",
+      "description": "Mix dialogue, music and effects for a specified delivery.",
+      "path": "skills/aco-production-office/references/agents/re-recording-mixer.md",
+      "sha256": "33630db993d075bf45ed675225bab92d01d1978e8faf5f3a3c4615759a96170d",
+      "body_chars": 5677,
+      "method_chars": 1241
+    },
+    {
+      "key": "set_designer",
+      "office": "production-office",
+      "description": "Design physical sets and spatial production environments.",
+      "path": "skills/aco-production-office/references/agents/set-designer.md",
+      "sha256": "39d140558212484e011b53c2a082b2ab6110b3cc943cdcd830be528793e856c0",
+      "body_chars": 5639,
+      "method_chars": 1219
+    },
+    {
+      "key": "sound_designer",
+      "office": "production-office",
+      "description": "Design sound for moving image, installation and media.",
+      "path": "skills/aco-production-office/references/agents/sound-designer.md",
+      "sha256": "cd46ce269ecfbacfae21facb9268b825056a31bc0402f6ad188fe7765ca366af",
+      "body_chars": 5652,
+      "method_chars": 1232
+    },
+    {
+      "key": "three_d_generalist",
+      "office": "production-office",
+      "description": "Build general-purpose CG assets and scenes.",
+      "path": "skills/aco-production-office/references/agents/three-d-generalist.md",
+      "sha256": "b961697f8d20ebc234e38c7971357ffab4e749591890fa10b7e814c3185a01c7",
+      "body_chars": 5623,
+      "method_chars": 1225
+    },
+    {
+      "key": "video_editor",
+      "office": "production-office",
+      "description": "Edit narrative and campaign video from supplied footage.",
+      "path": "skills/aco-production-office/references/agents/video-editor.md",
+      "sha256": "026be0cd5a36725ef460c5de527e793377552850312b8e0c550e2570fcea2254",
+      "body_chars": 5732,
+      "method_chars": 1303
+    },
+    {
+      "key": "visual_prompt_engineer",
+      "office": "production-office",
+      "description": "Engineer testable prompts for image, video and multimodal production.",
+      "path": "skills/aco-production-office/references/agents/visual-prompt-engineer.md",
+      "sha256": "6adecd8e262ad38075c74328503584eb23f1cb756463d1cff83e41adbd13119e",
+      "body_chars": 5846,
+      "method_chars": 1386
+    },
+    {
+      "key": "acquisitions_editor",
+      "office": "publishing-office",
+      "description": "Assess and develop prospective titles and commissions.",
+      "path": "skills/aco-publishing-office/references/agents/acquisitions-editor.md",
+      "sha256": "553b12160869044c88782dadacae40919b02a8016305c16a51546cdd93d9e8fa",
+      "body_chars": 5644,
+      "method_chars": 1227
+    },
+    {
+      "key": "audience_development_editor",
+      "office": "publishing-office",
+      "description": "Connect editorial work to readers without corrupting it.",
+      "path": "skills/aco-publishing-office/references/agents/audience-development-editor.md",
+      "sha256": "37628c20ef654347142ed71290e5dea66b470c6e180f7d29e3aa67f49ecdc90f",
+      "body_chars": 5691,
+      "method_chars": 1244
+    },
+    {
+      "key": "audiobook_producer",
+      "office": "publishing-office",
+      "description": "Plan audiobook casting, recording, edit and distribution.",
+      "path": "skills/aco-publishing-office/references/agents/audiobook-producer.md",
+      "sha256": "dee1c7f06d44500f314c679b9eec4785c8cd40a8a193848a451e3158d52b5d91",
+      "body_chars": 5722,
+      "method_chars": 1263
+    },
+    {
+      "key": "author_relations_manager",
+      "office": "publishing-office",
+      "description": "Coordinate authors and contributors professionally.",
+      "path": "skills/aco-publishing-office/references/agents/author-relations-manager.md",
+      "sha256": "0be535d0bf22d3eb1f19743ce59b178024d2ec57c955626a80ede0a5d46f819a",
+      "body_chars": 5656,
+      "method_chars": 1231
+    },
+    {
+      "key": "book_distribution_manager",
+      "office": "publishing-office",
+      "description": "Plan book sales channels, orders and returns.",
+      "path": "skills/aco-publishing-office/references/agents/book-distribution-manager.md",
+      "sha256": "4c8a5f1379c6bf26ce3c87cf29b263b9dfd0d7ec81e0b91c4a812b7896548798",
+      "body_chars": 5656,
+      "method_chars": 1235
+    },
+    {
+      "key": "branded_content_editor",
+      "office": "publishing-office",
+      "description": "Produce clearly identified sponsored editorial formats.",
+      "path": "skills/aco-publishing-office/references/agents/branded-content-editor.md",
+      "sha256": "723742ccbbfb4771caa5b8fef1a4a0a4ed98dc577f41666ffb16d0ec97c9054c",
+      "body_chars": 5703,
+      "method_chars": 1256
+    },
+    {
+      "key": "circulation_subscription_manager",
+      "office": "publishing-office",
+      "description": "Manage publication subscriptions and membership operations.",
+      "path": "skills/aco-publishing-office/references/agents/circulation-subscription-manager.md",
+      "sha256": "dc56187a31c042e3d0167ddaa4b497e4e5c172d70f2f86ebae0bdeaa59dfbbe7",
+      "body_chars": 5724,
+      "method_chars": 1254
+    },
+    {
+      "key": "copy_editor",
+      "office": "publishing-office",
+      "description": "Perform consistent sentence-level and house-style editing.",
+      "path": "skills/aco-publishing-office/references/agents/copy-editor.md",
+      "sha256": "4619ce02fb7e1b8aa318ed78c44f710e29663d3e742e43814a55be50dff8fd56",
+      "body_chars": 5627,
+      "method_chars": 1208
+    },
+    {
+      "key": "developmental_editor",
+      "office": "publishing-office",
+      "description": "Improve manuscript argument, structure and reader experience.",
+      "path": "skills/aco-publishing-office/references/agents/developmental-editor.md",
+      "sha256": "d173b2debba1bef7e288faaf9e9efa80e283f6d3a379c0a67eae7370eb0edd4a",
+      "body_chars": 5670,
+      "method_chars": 1246
+    },
+    {
+      "key": "ebook_accessibility_engineer",
+      "office": "publishing-office",
+      "description": "Build and validate accessible digital publications.",
+      "path": "skills/aco-publishing-office/references/agents/ebook-accessibility-engineer.md",
+      "sha256": "6a531fd1ff0369d69dcd5caffda6d648bbc99a581860227d2353fb3c3175a31d",
+      "body_chars": 5733,
+      "method_chars": 1287
+    },
+    {
+      "key": "editorial_designer",
+      "office": "publishing-office",
+      "description": "Design books, magazines and publication systems.",
+      "path": "skills/aco-publishing-office/references/agents/editorial-designer.md",
+      "sha256": "d868bc3572ded00a474eb0231e19b32bbf8930b5b0dfd21e3eace627498e6069",
+      "body_chars": 5671,
+      "method_chars": 1256
+    },
+    {
+      "key": "journalist_reporter",
+      "office": "publishing-office",
+      "description": "Research and draft sourced reporting.",
+      "path": "skills/aco-publishing-office/references/agents/journalist-reporter.md",
+      "sha256": "5277a5e9e6c317231190d51a6ffd09a542cb13472b3859b2a14f6b901b35a8a6",
+      "body_chars": 5609,
+      "method_chars": 1228
+    },
+    {
+      "key": "literary_translator",
+      "office": "publishing-office",
+      "description": "Translate publication text with voice and terminology control.",
+      "path": "skills/aco-publishing-office/references/agents/literary-translator.md",
+      "sha256": "ce4d309b2432a22bcd07a6c332a9e4437c2f68b53b4f656597a85efdccca823f",
+      "body_chars": 5670,
+      "method_chars": 1231
+    },
+    {
+      "key": "managing_editor",
+      "office": "publishing-office",
+      "description": "Manage an editorial list, issue or publication pipeline.",
+      "path": "skills/aco-publishing-office/references/agents/managing-editor.md",
+      "sha256": "ac4e1756146c8802691a3d2f41df5b8059be56bbd7e619a0676decaf60054906",
+      "body_chars": 5619,
+      "method_chars": 1206
+    },
+    {
+      "key": "media_ad_operations_manager",
+      "office": "publishing-office",
+      "description": "Coordinate advertising inventory and delivery for a media publisher.",
+      "path": "skills/aco-publishing-office/references/agents/media-ad-operations-manager.md",
+      "sha256": "ebcb5b563afd9d65ce96fb30d57a74e5f6ce323ff4ecea4dbc1896e32a1b5144",
+      "body_chars": 5752,
+      "method_chars": 1275
+    },
+    {
+      "key": "newsroom_editor",
+      "office": "publishing-office",
+      "description": "Manage reported coverage, verification and corrections.",
+      "path": "skills/aco-publishing-office/references/agents/newsroom-editor.md",
+      "sha256": "0596f1633be90a411e7185d33ca6951c98ced7f928802494c292f3cfeb96d9dc",
+      "body_chars": 5670,
+      "method_chars": 1250
+    },
+    {
+      "key": "podcast_audio_producer",
+      "office": "publishing-office",
+      "description": "Produce podcast episodes and audio series.",
+      "path": "skills/aco-publishing-office/references/agents/podcast-audio-producer.md",
+      "sha256": "31f6a52828eabab1f8523bf424805a85ed94e5e0cad5cee3d022f9e5db70ee09",
+      "body_chars": 5638,
+      "method_chars": 1225
+    },
+    {
+      "key": "prepress_specialist",
+      "office": "publishing-office",
+      "description": "Prepare print-ready files and proof checks.",
+      "path": "skills/aco-publishing-office/references/agents/prepress-specialist.md",
+      "sha256": "852a2de06a19fd93895954e7dec128b1f55f4996b4f3365efa423daef4678239",
+      "body_chars": 5671,
+      "method_chars": 1268
+    },
+    {
+      "key": "print_production_manager",
+      "office": "publishing-office",
+      "description": "Coordinate publication manufacturing and physical distribution preparation.",
+      "path": "skills/aco-publishing-office/references/agents/print-production-manager.md",
+      "sha256": "84f9e4ace43980fe549b4d30fe2dabc9f99a85f90f2f1b46cb2a9fdec4f81c79",
+      "body_chars": 5717,
+      "method_chars": 1248
+    },
+    {
+      "key": "proofreader",
+      "office": "publishing-office",
+      "description": "Check final proofs against approved text and production requirements.",
+      "path": "skills/aco-publishing-office/references/agents/proofreader.md",
+      "sha256": "f256a5c54da9165421638a8341ffafdb481a0470f62bd74898c40af30504be10",
+      "body_chars": 5667,
+      "method_chars": 1238
+    },
+    {
+      "key": "publishing_media_orchestrator",
+      "office": "publishing-office",
+      "description": "Route publishing & media tasks through a small accountable team with early clarification and verified outputs.",
+      "path": "skills/aco-publishing-office/references/agents/publishing-media-orchestrator.md",
+      "sha256": "e4e116eceba432ec2fd896bfa22a94063e4acbfb924c651a846f3665e1f406f4",
+      "body_chars": 6894,
+      "method_chars": null
+    },
+    {
+      "key": "publishing_metadata_specialist",
+      "office": "publishing-office",
+      "description": "Prepare identifiers and discoverability metadata for publications.",
+      "path": "skills/aco-publishing-office/references/agents/publishing-metadata-specialist.md",
+      "sha256": "7e5043e72f2a94a7a1368fb963f3ed93fe06eafe763a18efc6fc465836403c37",
+      "body_chars": 5763,
+      "method_chars": 1279
+    },
+    {
+      "key": "publishing_rights_permissions_manager",
+      "office": "publishing-office",
+      "description": "Track text, image, translation and format permissions.",
+      "path": "skills/aco-publishing-office/references/agents/publishing-rights-permissions-manager.md",
+      "sha256": "2cd34cd38d247ccac980eab2c1fa4b6fcc6f7ed4e26e9ae5eb0bf6faf36ab473",
+      "body_chars": 5729,
+      "method_chars": 1263
+    },
+    {
+      "key": "typesetter",
+      "office": "publishing-office",
+      "description": "Apply approved publication design consistently.",
+      "path": "skills/aco-publishing-office/references/agents/typesetter.md",
+      "sha256": "a3fbfa7f34b7f818f97e9686bfd3313b0064e19e00fb4d796a55fac84abca7a6",
+      "body_chars": 5625,
+      "method_chars": 1224
+    },
+    {
+      "key": "application_manager",
+      "office": "recruitment-office",
+      "description": "Manager for coordinating tailored materials, submissions, deadlines, documents and approval before application.",
+      "path": "skills/aco-recruitment-office/references/agents/application-manager.md",
+      "sha256": "94aee862010aa810642d8a7c63d9a40aa33b62e8eabcf417c5cf535dfc28bf42",
+      "body_chars": 7402,
+      "method_chars": null
+    },
+    {
+      "key": "application_outcomes_analyst",
+      "office": "recruitment-office",
+      "description": "Analyst for rejection, interview, response and conversion patterns across the job-search pipeline.",
+      "path": "skills/aco-recruitment-office/references/agents/application-outcomes-analyst.md",
+      "sha256": "68131da67b695030a92ad355269d07bb17c3cacb213607bc7d01133f981dc774",
+      "body_chars": 7403,
+      "method_chars": null
+    },
+    {
+      "key": "application_tracker",
+      "office": "recruitment-office",
+      "description": "Tracker for applications, sources, dates, status, contacts, follow-up dates, materials used and outcomes.",
+      "path": "skills/aco-recruitment-office/references/agents/application-tracker.md",
+      "sha256": "99a9535a36d59020a692a5e5ae64b52865a590cb97d8c2d8d354e618b75bed26",
+      "body_chars": 7378,
+      "method_chars": null
+    },
+    {
+      "key": "application_writer",
+      "office": "recruitment-office",
+      "description": "Writer for application questions, motivation statements and role-specific written responses.",
+      "path": "skills/aco-recruitment-office/references/agents/application-writer.md",
+      "sha256": "4058802ff8b4184d5c7cc5d9831fb49ca0524491b92c70d319b3a42057bda876",
+      "body_chars": 7362,
+      "method_chars": null
+    },
+    {
+      "key": "ats_resume_specialist",
+      "office": "recruitment-office",
+      "description": "ATS-aware resume specialist for machine-readable formatting, terminology alignment and requirement coverage.",
+      "path": "skills/aco-recruitment-office/references/agents/ats-resume-specialist.md",
+      "sha256": "5bdebeb890919b002f85f6337bbfe67b9c6d2e165471aba6b7817089cf0adf15",
+      "body_chars": 7401,
+      "method_chars": null
+    },
+    {
+      "key": "career_document_fact_checker",
+      "office": "recruitment-office",
+      "description": "Fact checker for dates, titles, claims, numbers, project credits and consistency across career materials.",
+      "path": "skills/aco-recruitment-office/references/agents/career-document-fact-checker.md",
+      "sha256": "ef04ff09d85b271c53098b444b084b3a9273bd3cffe7e12e86927f92d721c945",
+      "body_chars": 7411,
+      "method_chars": null
+    },
+    {
+      "key": "career_learning_plan_advisor",
+      "office": "recruitment-office",
+      "description": "Advisor for short, role-linked learning plans, portfolio proof and capability development.",
+      "path": "skills/aco-recruitment-office/references/agents/career-learning-plan-advisor.md",
+      "sha256": "0ae60947d4c903e3fb20d3fc9b478541ae67410aa48f31850f9f4b5eb0e454a4",
+      "body_chars": 7437,
+      "method_chars": null
+    },
+    {
+      "key": "career_outreach_writer",
+      "office": "recruitment-office",
+      "description": "Writer for recruiter, hiring-manager, referral, alumni and professional-network messages.",
+      "path": "skills/aco-recruitment-office/references/agents/career-outreach-writer.md",
+      "sha256": "4b8d339ab14f40104ecede7fc3f9c07d4c3c5a00824bae618072fc53546d0ec6",
+      "body_chars": 7264,
+      "method_chars": null
+    },
+    {
+      "key": "career_personal_brand_strategist",
+      "office": "recruitment-office",
+      "description": "Career-positioning specialist for public professional narrative across CV, profile, portfolio and outreach.",
+      "path": "skills/aco-recruitment-office/references/agents/career-personal-brand-strategist.md",
+      "sha256": "c0b40d7b92bc03e252c69a67f111d037f1f8bf0eb71efc817efb015aaf85b027",
+      "body_chars": 7419,
+      "method_chars": null
+    },
+    {
+      "key": "career_strategist",
+      "office": "recruitment-office",
+      "description": "Career strategist for target roles, seniority, positioning, trajectory and probability-adjusted career improvement.",
+      "path": "skills/aco-recruitment-office/references/agents/career-strategist.md",
+      "sha256": "f5f6f5d6b9577700820a7d6b8d52878919bb8b4bd4451aca2d2e57b528ed9ee4",
+      "body_chars": 7424,
+      "method_chars": null
+    },
+    {
+      "key": "career_transition_advisor",
+      "office": "recruitment-office",
+      "description": "Advisor for changing functions, industries, seniority, portfolio careers or returning/repositioning in the market.",
+      "path": "skills/aco-recruitment-office/references/agents/career-transition-advisor.md",
+      "sha256": "149ba06ec0b6b938af695a11d45f5b82fb86fe091431f44b116438d2be37a4dd",
+      "body_chars": 7400,
+      "method_chars": null
+    },
+    {
+      "key": "case_interview_coach",
+      "office": "recruitment-office",
+      "description": "Coach for presentations, exercises, take-home tasks, case studies and portfolio reviews.",
+      "path": "skills/aco-recruitment-office/references/agents/case-interview-coach.md",
+      "sha256": "e1370079d13022b19af6f7c822067ecfe60761b06f8bb4cb1c6261a43a5c10bc",
+      "body_chars": 7361,
+      "method_chars": null
+    },
+    {
+      "key": "compensation_analyst",
+      "office": "recruitment-office",
+      "description": "Analyst for salary ranges, total compensation, benefits, equity and geographic compensation context.",
+      "path": "skills/aco-recruitment-office/references/agents/compensation-analyst.md",
+      "sha256": "1c1ca26b1ad74355e3e0a05430de299f3559f57c15d71e4ccb97ea04ac776f63",
+      "body_chars": 7408,
+      "method_chars": null
+    },
+    {
+      "key": "cover_letter_writer",
+      "office": "recruitment-office",
+      "description": "Writer for concise, tailored cover letters grounded in verified candidate experience and employer needs.",
+      "path": "skills/aco-recruitment-office/references/agents/cover-letter-writer.md",
+      "sha256": "bf4314b8762d79493a4b3d8f3f4eb62e19bcd32543c4d5cceb061be7b3b665c0",
+      "body_chars": 7387,
+      "method_chars": null
+    },
+    {
+      "key": "executive_search_researcher",
+      "office": "recruitment-office",
+      "description": "Researcher for executive-search firms, specialist recruiters, talent partners and relevant search consultants.",
+      "path": "skills/aco-recruitment-office/references/agents/executive-search-researcher.md",
+      "sha256": "6f7ec51151e93f6fb5d30e911ab19ca5ac75beaed6840a0cea740b170bf4cae9",
+      "body_chars": 7293,
+      "method_chars": null
+    },
+    {
+      "key": "freelance_consulting_opportunity_scout",
+      "office": "recruitment-office",
+      "description": "Scout for freelance, consulting, fractional, contract and project-based career opportunities.",
+      "path": "skills/aco-recruitment-office/references/agents/freelance-consulting-opportunity-scout.md",
+      "sha256": "25d772efb8341d490045064eb6e995454c5ab20b8351c07cd52bdad55998dd83",
+      "body_chars": 7314,
+      "method_chars": null
+    },
+    {
+      "key": "hiring_team_mapper",
+      "office": "recruitment-office",
+      "description": "Researcher for identifying relevant recruiters, hiring leaders, team members and likely decision-makers from public professional information.",
+      "path": "skills/aco-recruitment-office/references/agents/hiring-team-mapper.md",
+      "sha256": "1ef44e49301c9a0ac4d6bf7c44100353e9bc73ea7bd6082108100dcfa72898d3",
+      "body_chars": 7351,
+      "method_chars": null
+    },
+    {
+      "key": "international_mobility_job_advisor",
+      "office": "recruitment-office",
+      "description": "Career researcher for cross-border job eligibility, relocation, remote constraints and employer sponsorship signals.",
+      "path": "skills/aco-recruitment-office/references/agents/international-mobility-job-advisor.md",
+      "sha256": "e007f8cccde255f6c9175156d4eb9724b96812bbf1991125dccc6afd13c577e4",
+      "body_chars": 7367,
+      "method_chars": null
+    },
+    {
+      "key": "interview_coach",
+      "office": "recruitment-office",
+      "description": "Coach for behavioral, competency, leadership and role-specific interview performance.",
+      "path": "skills/aco-recruitment-office/references/agents/interview-coach.md",
+      "sha256": "63b70c58392e807b467d07b91a3945c97d2dfdb9535fabe334f9146d38af0fc8",
+      "body_chars": 7362,
+      "method_chars": null
+    },
+    {
+      "key": "interview_researcher",
+      "office": "recruitment-office",
+      "description": "Researcher for company, interviewer, role, likely format, team context and recent relevant developments.",
+      "path": "skills/aco-recruitment-office/references/agents/interview-researcher.md",
+      "sha256": "ec44ad56d87a5331e1252841240aca98ee3e30ad63227bf50570c07f3791de1e",
+      "body_chars": 7375,
+      "method_chars": null
+    },
+    {
+      "key": "job_fit_analyst",
+      "office": "recruitment-office",
+      "description": "Analyst for comparing a candidate\u2019s verified background with a specific role\u2019s documented requirements and likely gaps.",
+      "path": "skills/aco-recruitment-office/references/agents/job-fit-analyst.md",
+      "sha256": "7a46879e85bdfc966bc8576e03887f7d665d2c8450e2d67f17a91c5296247110",
+      "body_chars": 7451,
+      "method_chars": null
+    },
+    {
+      "key": "job_followup_manager",
+      "office": "recruitment-office",
+      "description": "Manager for post-application, post-interview and recruiter follow-up timing and messaging.",
+      "path": "skills/aco-recruitment-office/references/agents/job-followup-manager.md",
+      "sha256": "2a5dd5e5f543c4923b6bf3f4ab7cd765ebb9f6e1e2450dccbb766b883bf0b580",
+      "body_chars": 7269,
+      "method_chars": null
+    },
+    {
+      "key": "job_market_researcher",
+      "office": "recruitment-office",
+      "description": "Researcher for current hiring trends, role demand, compensation signals, skill expectations and geographic market differences.",
+      "path": "skills/aco-recruitment-office/references/agents/job-market-researcher.md",
+      "sha256": "dc28f4e7eea05a80107a21b5f6c1c8d56736fde819c1ea78db385cb44928edc2",
+      "body_chars": 7304,
+      "method_chars": null
+    },
+    {
+      "key": "job_opportunity_scout",
+      "office": "recruitment-office",
+      "description": "Live opportunity scout for identifying and verifying active roles that match the candidate\u2019s search thesis.",
+      "path": "skills/aco-recruitment-office/references/agents/job-opportunity-scout.md",
+      "sha256": "48fdfd0ee590adf79f98bbf74a6c8861d460dfc007baa0205b32a1415850dba0",
+      "body_chars": 7300,
+      "method_chars": null
+    },
+    {
+      "key": "job_search_chief_of_staff",
+      "office": "recruitment-office",
+      "description": "Chief of staff for translating career strategy into weekly search priorities, application targets, follow-ups and interview preparation.",
+      "path": "skills/aco-recruitment-office/references/agents/job-search-chief-of-staff.md",
+      "sha256": "177a3f7f06a7a537b600310d0d9f059e0ac5bb4104f702da7108d1907e2bb71f",
+      "body_chars": 7439,
+      "method_chars": null
+    },
+    {
+      "key": "linkedin_profile_strategist",
+      "office": "recruitment-office",
+      "description": "Professional-profile strategist for LinkedIn headline, about, experience, featured work and recruiter discoverability.",
+      "path": "skills/aco-recruitment-office/references/agents/linkedin-profile-strategist.md",
+      "sha256": "7fcfc6bf0877f26a462b0fb5d94357e6f4908991c1db72ecf2902a6df9d9ad22",
+      "body_chars": 7467,
+      "method_chars": null
+    },
+    {
+      "key": "networking_strategist",
+      "office": "recruitment-office",
+      "description": "Strategist for building a relevant professional network around target roles, sectors and geographies.",
+      "path": "skills/aco-recruitment-office/references/agents/networking-strategist.md",
+      "sha256": "e2354efd9d87c7a95c529d2793d1a6d89c97fa181fd0dbac2eae8a540fb0bc09",
+      "body_chars": 7320,
+      "method_chars": null
+    },
+    {
+      "key": "offer_negotiation_advisor",
+      "office": "recruitment-office",
+      "description": "Advisor for compensation, title, scope, flexibility, start date and offer negotiation.",
+      "path": "skills/aco-recruitment-office/references/agents/offer-negotiation-advisor.md",
+      "sha256": "437175b389c40ce3bc19d84a7001a1e73c5f8ba00c60183b343334195a0c0d0c",
+      "body_chars": 7380,
+      "method_chars": null
+    },
+    {
+      "key": "portfolio_career_editor",
+      "office": "recruitment-office",
+      "description": "Editor for professional portfolios, case studies, project selection and narrative for hiring contexts.",
+      "path": "skills/aco-recruitment-office/references/agents/portfolio-career-editor.md",
+      "sha256": "b0cc4e886f79173cb5c05ed7d16a3bbd9d49452083ebeb63ae89e1eb1200c1c3",
+      "body_chars": 7432,
+      "method_chars": null
+    },
+    {
+      "key": "professional_reference_manager",
+      "office": "recruitment-office",
+      "description": "Manager for reference strategy, referee selection, briefing and permission/status tracking.",
+      "path": "skills/aco-recruitment-office/references/agents/professional-reference-manager.md",
+      "sha256": "821108be3f2f3f2d615604cb3c453820f3be8687d2053f3d6bd0a5673b561428",
+      "body_chars": 7415,
+      "method_chars": null
+    },
+    {
+      "key": "recruiter_relations_manager",
+      "office": "recruitment-office",
+      "description": "Manager for recruiter conversations, recruiter follow-ups, role referrals and search-firm relationships.",
+      "path": "skills/aco-recruitment-office/references/agents/recruiter-relations-manager.md",
+      "sha256": "2e9008379bc0c6166589953221c3f2db9dccb8036085193ab31a87dc5f5b2dd2",
+      "body_chars": 7310,
+      "method_chars": null
+    },
+    {
+      "key": "recruitment_orchestrator",
+      "office": "recruitment-office",
+      "description": "Candidate-side orchestrator for job discovery, career strategy, applications, networking, interviews, offers and job-search operations.",
+      "path": "skills/aco-recruitment-office/references/agents/recruitment-orchestrator.md",
+      "sha256": "96af76db45276d2485f179b97237cb277819680058b375a9e9552edd64820694",
+      "body_chars": 9512,
+      "method_chars": null
+    },
+    {
+      "key": "resume_strategist",
+      "office": "recruitment-office",
+      "description": "Strategist for overall CV/resume architecture, evidence hierarchy and career narrative.",
+      "path": "skills/aco-recruitment-office/references/agents/resume-strategist.md",
+      "sha256": "883c744bf4ef3d29e9e89041900002490e0469c59efc565c9979fec23eecafa2",
+      "body_chars": 7352,
+      "method_chars": null
+    },
+    {
+      "key": "skills_gap_analyst",
+      "office": "recruitment-office",
+      "description": "Analyst for identifying material skill/experience gaps between the candidate and target roles.",
+      "path": "skills/aco-recruitment-office/references/agents/skills-gap-analyst.md",
+      "sha256": "64e5c70028cf5690a60de04b65fa1b97139bed22ad4414f773998f591f154b30",
+      "body_chars": 7409,
+      "method_chars": null
+    },
+    {
+      "key": "target_company_researcher",
+      "office": "recruitment-office",
+      "description": "Researcher for target employers, business health, culture signals, teams, current priorities and hiring patterns.",
+      "path": "skills/aco-recruitment-office/references/agents/target-company-researcher.md",
+      "sha256": "8f9031e56845d6d95226efc84f3646e5bb6cd9de5026ead68e9922300341ab8a",
+      "body_chars": 7334,
+      "method_chars": null
+    }
+  ]
+}

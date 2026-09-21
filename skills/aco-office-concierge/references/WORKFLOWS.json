@@ -32,9 +32,12 @@
         "Next actions"
       ],
       "gates": [
-        "Do not reshape the work around revenue without approval"
+        "Do not reshape the work around revenue without approval",
+        "Pipeline items stay inline; real requested deliverables remain allowed",
+        "Use task-specific methods proportionately; structured checks are optional validation inputs, not a questionnaire for every user."
       ],
-      "default_mode": "ACTION"
+      "default_mode": "ACTION",
+      "method": "playbooks/ARTISTIC-DEVELOPMENT.md"
     },
     "brand-identity": {
       "title": "Create a brand identity",
@@ -69,9 +72,12 @@
         "Approved system and applications"
       ],
       "gates": [
-        "Approve strategic direction before production adaptations"
+        "Approve strategic direction before production adaptations",
+        "Pipeline items stay inline; real requested deliverables remain allowed",
+        "Use task-specific methods proportionately; structured checks are optional validation inputs, not a questionnaire for every user."
       ],
-      "default_mode": "ACTION"
+      "default_mode": "ACTION",
+      "method": "playbooks/BRAND-IDENTITY-SYSTEM.md"
     },
     "website": {
       "title": "Build a website",
@@ -107,9 +113,12 @@
         "Test and deployment handoff"
       ],
       "gates": [
-        "No unapproved infrastructure spend or public deployment"
+        "No unapproved infrastructure spend or public deployment",
+        "Pipeline items stay inline; real requested deliverables remain allowed",
+        "Use task-specific methods proportionately; structured checks are optional validation inputs, not a questionnaire for every user."
       ],
-      "default_mode": "ACTION"
+      "default_mode": "ACTION",
+      "method": "playbooks/DESIGN-TO-WEB.md"
     },
     "software": {
       "title": "Build or change software",
@@ -144,7 +153,8 @@
         "Release notes"
       ],
       "gates": [
-        "Prototype is not production; no destructive migrations without authorization"
+        "Prototype is not production; no destructive migrations without authorization",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
       ],
       "default_mode": "ACTION"
     },
@@ -181,7 +191,8 @@
         "Failure and escalation paths"
       ],
       "gates": [
-        "Consent/data boundary and evaluation before rollout"
+        "Consent/data boundary and evaluation before rollout",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
       ],
       "default_mode": "ACTION"
     },
@@ -216,7 +227,8 @@
         "Quote draft"
       ],
       "gates": [
-        "Unknown taxes/rates remain unknown; owner approves offer"
+        "Unknown taxes/rates remain unknown; owner approves offer",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
       ],
       "default_mode": "ACTION"
     },
@@ -251,7 +263,8 @@
         "Collection and timing actions"
       ],
       "gates": [
-        "No bank movement or financing commitment"
+        "No bank movement or financing commitment",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
       ],
       "default_mode": "ACTION"
     },
@@ -287,7 +300,8 @@
         "Outreach drafts and next actions"
       ],
       "gates": [
-        "No invented clients/cases; no unapproved outreach"
+        "No invented clients/cases; no unapproved outreach",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
       ],
       "default_mode": "ACTION"
     },
@@ -324,7 +338,8 @@
         "Human interview process"
       ],
       "gates": [
-        "No automated employment decisions; personnel confidentiality"
+        "No automated employment decisions; personnel confidentiality",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
       ],
       "default_mode": "ACTION"
     },
@@ -359,7 +374,8 @@
         "Access handoff"
       ],
       "gates": [
-        "No implied account creation/sharing authority"
+        "No implied account creation/sharing authority",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
       ],
       "default_mode": "ACTION"
     },
@@ -395,7 +411,8 @@
         "Decisions and owners"
       ],
       "gates": [
-        "Do not rewrite approved baseline or promise dates without authority"
+        "Do not rewrite approved baseline or promise dates without authority",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
       ],
       "default_mode": "ACTION"
     },
@@ -425,7 +442,8 @@
         "Pending actions"
       ],
       "gates": [
-        "Read only the relevant threads; no auto-send"
+        "Read only the relevant threads; no auto-send",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
       ],
       "default_mode": "ACTION"
     },
@@ -460,7 +478,8 @@
       "gates": [
         "Check actual email capability",
         "No automatic channel switching",
-        "Reconcile uncertain previous outcomes before retry"
+        "Reconcile uncertain previous outcomes before retry",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
       ],
       "default_mode": "ACTION"
     },
@@ -493,7 +512,8 @@
       "gates": [
         "Check actual whatsapp capability",
         "No automatic channel switching",
-        "Reconcile uncertain previous outcomes before retry"
+        "Reconcile uncertain previous outcomes before retry",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
       ],
       "default_mode": "ACTION"
     },
@@ -526,7 +546,8 @@
       "gates": [
         "Check actual phone capability",
         "No automatic channel switching",
-        "Reconcile uncertain previous outcomes before retry"
+        "Reconcile uncertain previous outcomes before retry",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
       ],
       "default_mode": "ACTION"
     },
@@ -564,7 +585,8 @@
       ],
       "gates": [
         "Qualified physical safety review",
-        "Approve bookings and spend"
+        "Approve bookings and spend",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
       ],
       "default_mode": "ACTION"
     },
@@ -603,9 +625,12 @@
       ],
       "gates": [
         "Picture-lock and finishing approvals",
-        "A queued render is not completed"
+        "A queued render is not completed",
+        "Pipeline items stay inline; real requested deliverables remain allowed",
+        "Use task-specific methods proportionately; structured checks are optional validation inputs, not a questionnaire for every user."
       ],
-      "default_mode": "ACTION"
+      "default_mode": "ACTION",
+      "method": "playbooks/MEDIA-INTERCHANGE.md"
     },
     "retouch": {
       "title": "Retouch photography",
@@ -639,7 +664,8 @@
         "Master/exports and notes"
       ],
       "gates": [
-        "Preserve originals and identity/product constraints"
+        "Preserve originals and identity/product constraints",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
       ],
       "default_mode": "ACTION"
     },
@@ -676,7 +702,8 @@
       ],
       "gates": [
         "Do not invent nodes/model files",
-        "No unapproved installs or paid queues"
+        "No unapproved installs or paid queues",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
       ],
       "default_mode": "ACTION"
     },
@@ -717,9 +744,12 @@
       "gates": [
         "Author sign-off",
         "Rights clearances",
-        "Print/release approval"
+        "Print/release approval",
+        "Pipeline items stay inline; real requested deliverables remain allowed",
+        "Use task-specific methods proportionately; structured checks are optional validation inputs, not a questionnaire for every user."
       ],
-      "default_mode": "ACTION"
+      "default_mode": "ACTION",
+      "method": "playbooks/PUBLISHING-AND-DOCUMENTS.md"
     },
     "media-issue": {
       "title": "Produce an editorial issue or newsroom package",
@@ -755,7 +785,8 @@
       ],
       "gates": [
         "Do not fabricate reporting",
-        "Separate advertising/sponsored content"
+        "Separate advertising/sponsored content",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
       ],
       "default_mode": "ACTION"
     },
@@ -792,7 +823,8 @@
       ],
       "gates": [
         "Voice and guest consent",
-        "Actual mix/QC evidence"
+        "Actual mix/QC evidence",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
       ],
       "default_mode": "ACTION"
     },
@@ -822,7 +854,8 @@
         "Customer drafts"
       ],
       "gates": [
-        "No unsolicited enrollment, silent billing or ignored opt-outs"
+        "No unsolicited enrollment, silent billing or ignored opt-outs",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
       ],
       "default_mode": "ACTION"
     },
@@ -858,10 +891,1363 @@
       ],
       "gates": [
         "Editorial-commercial separation",
-        "No unapproved live trafficking"
+        "No unapproved live trafficking",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
       ],
       "default_mode": "ACTION"
+    },
+    "website_visual_review": {
+      "title": "Review actual website design and behaviour",
+      "office": "agency-office",
+      "lead": "visual_design_critic",
+      "team": [
+        "web_typography_layout_specialist",
+        "accessibility_tester"
+      ],
+      "intake": [
+        {
+          "key": "target",
+          "question": "Which actual page/build should be reviewed?",
+          "essential": true
+        },
+        {
+          "key": "intent",
+          "question": "What audience/task and locked brand choices should it serve?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Evidence-ranked correction list",
+        "Tested routes/viewports and remaining gaps"
+      ],
+      "gates": [
+        "Read/render actual target when available; no invented screenshot review",
+        "Separate brand taste from functional/accessibility defects",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
+      ],
+      "default_mode": "ACTION"
+    },
+    "website_from_design": {
+      "title": "Implement an approved design",
+      "office": "product-office",
+      "lead": "figma_implementation_engineer",
+      "team": [
+        "frontend_engineer",
+        "visual_design_critic"
+      ],
+      "intake": [
+        {
+          "key": "design",
+          "question": "What is the authorized design node/file and revision?",
+          "essential": true
+        },
+        {
+          "key": "repository",
+          "question": "Which actual codebase and target stack?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Component map and code",
+        "Reference/runtime comparison",
+        "Unresolved deviations"
+      ],
+      "gates": [
+        "Resolve real design assets",
+        "Reuse existing design tokens",
+        "No deployment without authorization",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
+      ],
+      "default_mode": "ACTION"
+    },
+    "editorial_website": {
+      "title": "Build a maintainable editorial website",
+      "office": "product-office",
+      "lead": "cms_content_architect",
+      "team": [
+        "digital_design_director",
+        "fullstack_engineer",
+        "organic_discovery_strategist"
+      ],
+      "intake": [
+        {
+          "key": "content",
+          "question": "What page/content types and publishing workflow?",
+          "essential": true
+        },
+        {
+          "key": "audience",
+          "question": "Who is the site for and what should visitors do?",
+          "essential": true
+        },
+        {
+          "key": "constraints",
+          "question": "Which stack/hosting/brand constraints are locked?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Content model and template plan",
+        "Implementation",
+        "Acceptance evidence"
+      ],
+      "gates": [
+        "Do not default every site to SaaS templates",
+        "Check content states and migration/redirect needs",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
+      ],
+      "default_mode": "ACTION"
+    },
+    "creative_web_prototype": {
+      "title": "Prototype an expressive web experience",
+      "office": "product-office",
+      "lead": "creative_frontend_engineer",
+      "team": [
+        "art_director",
+        "performance_engineer"
+      ],
+      "intake": [
+        {
+          "key": "experience",
+          "question": "What should the visitor experience or understand?",
+          "essential": true
+        },
+        {
+          "key": "platform",
+          "question": "Which devices/input and delivery constraints?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Working prototype if tools permit",
+        "Accessible low-resource fallback",
+        "Performance and visual evidence"
+      ],
+      "gates": [
+        "Preserve artistic/brand authority",
+        "Label mocked integrations",
+        "Do not gate content behind motion",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
+      ],
+      "default_mode": "ACTION"
+    },
+    "ai_video_preproduction": {
+      "title": "Plan a coherent AI-assisted film",
+      "office": "production-office",
+      "lead": "film_director",
+      "team": [
+        "storyboard_artist",
+        "script_continuity_supervisor",
+        "animatic_editor",
+        "ai_video_prompt_adapter"
+      ],
+      "intake": [
+        {
+          "key": "story",
+          "question": "What is the story/communication intent and target duration?",
+          "essential": true
+        },
+        {
+          "key": "assets",
+          "question": "What references or footage can actually be used?",
+          "essential": true
+        },
+        {
+          "key": "production",
+          "question": "Which generation tools, deliverables and trial budget are authorized?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Treatment and shot IDs",
+        "Continuity ledger and frame timeline",
+        "Provider-aware prompt drafts",
+        "Generation/QC plan"
+      ],
+      "gates": [
+        "Choose only the needed helpers, not every role",
+        "No paid render or upload without authorization",
+        "No false rendering/visual QC claims",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
+      ],
+      "default_mode": "ACTION"
+    },
+    "ai_video_single_shot": {
+      "title": "Prepare one model-aware video prompt",
+      "office": "production-office",
+      "lead": "ai_video_prompt_adapter",
+      "team": [
+        "visual_prompt_engineer"
+      ],
+      "intake": [
+        {
+          "key": "shot",
+          "question": "What start frame/action/camera/end state are wanted?",
+          "essential": true
+        },
+        {
+          "key": "model",
+          "question": "What exact model/interface and mode are being used?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Copy-ready prompt",
+        "Separate settings/references and unknowns"
+      ],
+      "gates": [
+        "Skip full-film planning for a single-shot request",
+        "Check provider controls rather than assuming universal syntax",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
+      ],
+      "default_mode": "ACTION"
+    },
+    "programmatic_video": {
+      "title": "Build a deterministic motion composition",
+      "office": "production-office",
+      "lead": "remotion_video_engineer",
+      "team": [
+        "motion_designer",
+        "video_editor"
+      ],
+      "intake": [
+        {
+          "key": "brief",
+          "question": "What timing, format, assets and editable behaviour are needed?",
+          "essential": true
+        },
+        {
+          "key": "environment",
+          "question": "What actual repository/Remotion version is available?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Composition code",
+        "Frame/timing checks",
+        "Render only if actually executed"
+      ],
+      "gates": [
+        "Verify engine/dependency licences separately",
+        "Preview/test before paid or final render",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
+      ],
+      "default_mode": "ACTION"
+    },
+    "agent_method_evaluation": {
+      "title": "Evaluate an agent-method change",
+      "office": "product-office",
+      "lead": "skill_evaluation_engineer",
+      "team": [
+        "code_reviewer"
+      ],
+      "intake": [
+        {
+          "key": "target",
+          "question": "Which baseline and candidate methods are compared?",
+          "essential": true
+        },
+        {
+          "key": "conditions",
+          "question": "Which model/tools/tasks/budget and evidence rubric are fixed?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Paired evaluation design",
+        "Actual run records when executed",
+        "Failure and cost report"
+      ],
+      "gates": [
+        "Keyword similarity is not capability quality",
+        "No invented A/B results",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
+      ],
+      "default_mode": "ACTION"
+    },
+    "daily-inbox-digest": {
+      "title": "Daily inbox/action digest",
+      "office": "administration-office",
+      "lead": "executive_assistant",
+      "team": [
+        "inbox_correspondence_manager",
+        "project_coordinator"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which existing owner, project and accounts are authorized?",
+          "essential": true
+        },
+        {
+          "key": "inputs",
+          "question": "An authorized inbox scope and existing action board?",
+          "essential": true
+        },
+        {
+          "key": "outcome",
+          "question": "What output or authorized action is required? Scheduling needs its own timezone and approval.",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "One digest and updates to existing actions"
+      ],
+      "gates": [
+        "Follow Compact Memory: pipeline rows are not project/client folders",
+        "Existing integrations first; exact operation authorization and verified result",
+        "Never claim a recurring schedule without a real scheduler receipt",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
+      ],
+      "default_mode": "ACTION",
+      "recipe_source": "User-supplied office workflow screenshot",
+      "schedule_enabled": false,
+      "method": "playbooks/OFFICE-RECIPES.md"
+    },
+    "weekly-lead-research": {
+      "title": "Weekly qualified lead research",
+      "office": "commercial-office",
+      "lead": "sales_operations_manager",
+      "team": [
+        "lead_qualification_researcher",
+        "sales_proposal_specialist"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which existing owner, project and accounts are authorized?",
+          "essential": true
+        },
+        {
+          "key": "inputs",
+          "question": "Ideal client profile, exclusion pipeline and research limits?",
+          "essential": true
+        },
+        {
+          "key": "outcome",
+          "question": "What output or authorized action is required? Scheduling needs its own timezone and approval.",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Verified shortlist, inline lead rows and unsent drafts"
+      ],
+      "gates": [
+        "Follow Compact Memory: pipeline rows are not project/client folders",
+        "Existing integrations first; exact operation authorization and verified result",
+        "Never claim a recurring schedule without a real scheduler receipt",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
+      ],
+      "default_mode": "ACTION",
+      "recipe_source": "User-supplied office workflow screenshot",
+      "schedule_enabled": false,
+      "method": "playbooks/OFFICE-RECIPES.md"
+    },
+    "call-notes-to-proposal": {
+      "title": "Call notes to proposal and correspondence",
+      "office": "administration-office",
+      "lead": "inbox_correspondence_manager",
+      "team": [
+        "sales_proposal_specialist",
+        "communications_operator"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which existing owner, project and accounts are authorized?",
+          "essential": true
+        },
+        {
+          "key": "inputs",
+          "question": "Approved notes, scope, sender/recipient and requested deliverable?",
+          "essential": true
+        },
+        {
+          "key": "outcome",
+          "question": "What output or authorized action is required? Scheduling needs its own timezone and approval.",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Copy-ready proposal or authorized verified send"
+      ],
+      "gates": [
+        "Follow Compact Memory: pipeline rows are not project/client folders",
+        "Existing integrations first; exact operation authorization and verified result",
+        "Never claim a recurring schedule without a real scheduler receipt",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
+      ],
+      "default_mode": "ACTION",
+      "recipe_source": "User-supplied office workflow screenshot",
+      "schedule_enabled": false,
+      "method": "playbooks/OFFICE-RECIPES.md"
+    },
+    "reviewed-filing": {
+      "title": "Reviewed filing and duplicate cleanup",
+      "office": "administration-office",
+      "lead": "records_document_controller",
+      "team": [
+        "asset_manager",
+        "context_steward"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which existing owner, project and accounts are authorized?",
+          "essential": true
+        },
+        {
+          "key": "inputs",
+          "question": "Exact authorized folder scope and desired naming/consolidation?",
+          "essential": true
+        },
+        {
+          "key": "outcome",
+          "question": "What output or authorized action is required? Scheduling needs its own timezone and approval.",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Read-only inventory and approved recoverable filing plan"
+      ],
+      "gates": [
+        "Follow Compact Memory: pipeline rows are not project/client folders",
+        "Existing integrations first; exact operation authorization and verified result",
+        "Never claim a recurring schedule without a real scheduler receipt",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
+      ],
+      "default_mode": "ACTION",
+      "recipe_source": "User-supplied office workflow screenshot",
+      "schedule_enabled": false,
+      "method": "playbooks/OFFICE-RECIPES.md"
+    },
+    "compact-client-onboarding": {
+      "title": "Compact active-client onboarding",
+      "office": "delivery-office",
+      "lead": "project_manager",
+      "team": [
+        "account_director",
+        "project_coordinator"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which existing owner, project and accounts are authorized?",
+          "essential": true
+        },
+        {
+          "key": "inputs",
+          "question": "Evidence of active client/engagement and owner scope?",
+          "essential": true
+        },
+        {
+          "key": "outcome",
+          "question": "What output or authorized action is required? Scheduling needs its own timezone and approval.",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Checklist and timeline in the existing canonical record"
+      ],
+      "gates": [
+        "Follow Compact Memory: pipeline rows are not project/client folders",
+        "Existing integrations first; exact operation authorization and verified result",
+        "Never claim a recurring schedule without a real scheduler receipt",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
+      ],
+      "default_mode": "ACTION",
+      "recipe_source": "User-supplied office workflow screenshot",
+      "schedule_enabled": false,
+      "method": "playbooks/OFFICE-RECIPES.md"
+    },
+    "weekly-ops-roundup": {
+      "title": "Weekly operations roundup",
+      "office": "delivery-office",
+      "lead": "programme_delivery_manager",
+      "team": [
+        "executive_assistant",
+        "sales_operations_manager"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which existing owner, project and accounts are authorized?",
+          "essential": true
+        },
+        {
+          "key": "inputs",
+          "question": "Authorized active projects/pipeline/board and reporting audience?",
+          "essential": true
+        },
+        {
+          "key": "outcome",
+          "question": "What output or authorized action is required? Scheduling needs its own timezone and approval.",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "One roundup, existing status updates and decision requests"
+      ],
+      "gates": [
+        "Follow Compact Memory: pipeline rows are not project/client folders",
+        "Existing integrations first; exact operation authorization and verified result",
+        "Never claim a recurring schedule without a real scheduler receipt",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
+      ],
+      "default_mode": "ACTION",
+      "recipe_source": "User-supplied office workflow screenshot",
+      "schedule_enabled": false,
+      "method": "playbooks/OFFICE-RECIPES.md"
+    },
+    "research-notebook": {
+      "title": "Build a bounded research notebook",
+      "office": "artist-office",
+      "lead": "studio_research_librarian",
+      "team": [
+        "art_researcher",
+        "research_editor_fact_checker"
+      ],
+      "intake": [
+        {
+          "key": "question",
+          "question": "What exact research question/corpus should be included?",
+          "essential": true
+        },
+        {
+          "key": "privacy",
+          "question": "Which sources are public/private and which local/hosted route is authorized?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Source-grounded research workspace or plan",
+        "Compact citation/provenance handoff"
+      ],
+      "gates": [
+        "Do not duplicate ACO canonical memory",
+        "Generated summaries are not source evidence",
+        "No private upload without explicit route approval",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
+      ],
+      "default_mode": "ACTION",
+      "method": "playbooks/RESEARCH-KNOWLEDGE-WORKSPACE.md"
+    },
+    "web-data-extraction": {
+      "title": "Extract structured web data",
+      "office": "product-office",
+      "lead": "technical_researcher",
+      "team": [
+        "data_engineer",
+        "automation_integration_engineer"
+      ],
+      "intake": [
+        {
+          "key": "target",
+          "question": "Which authorized sites/pages and fields are required?",
+          "essential": true
+        },
+        {
+          "key": "constraints",
+          "question": "What robots/terms/auth/rate/data-destination constraints apply?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Small verified sample",
+        "Extraction plan or executed dataset when tools permit"
+      ],
+      "gates": [
+        "Prefer API/fetch before browser automation",
+        "No access-control evasion",
+        "Sample before scale",
+        "Pipeline items stay inline; real requested deliverables remain allowed"
+      ],
+      "default_mode": "ACTION",
+      "method": "playbooks/WEB-DATA-EXTRACTION.md"
+    },
+    "page-change-monitor": {
+      "title": "Monitor a page for meaningful changes",
+      "office": "administration-office",
+      "lead": "automation_integration_engineer",
+      "team": [
+        "records_document_controller"
+      ],
+      "intake": [
+        {
+          "key": "target",
+          "question": "Which public/authorized page and what exact change matters?",
+          "essential": true
+        },
+        {
+          "key": "delivery",
+          "question": "What check interval and authorized alert destination?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Watch specification",
+        "Verified alert test only if actually deployed"
+      ],
+      "gates": [
+        "Respect site policies and rate limits",
+        "No recurring claim without real running service",
+        "Store one watch definition, not one file per event"
+      ],
+      "default_mode": "ACTION",
+      "method": "playbooks/MONITORING-WATCHES.md",
+      "schedule_enabled": false
+    },
+    "service-uptime-monitor": {
+      "title": "Set up service availability monitoring",
+      "office": "product-office",
+      "lead": "sre_engineer",
+      "team": [
+        "devops_engineer",
+        "release_manager"
+      ],
+      "intake": [
+        {
+          "key": "service",
+          "question": "Which endpoints/services and expected behavior?",
+          "essential": true
+        },
+        {
+          "key": "alerts",
+          "question": "What interval, maintenance windows and authorized alert route?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Monitor plan/configuration",
+        "Verified failure/alert evidence only if deployed"
+      ],
+      "gates": [
+        "Availability is not full application health",
+        "No silent deploy",
+        "No recurring claim without actual monitor receipt"
+      ],
+      "default_mode": "ACTION",
+      "method": "playbooks/MONITORING-WATCHES.md",
+      "schedule_enabled": false
+    },
+    "seo-operations": {
+      "title": "Run evidence-based SEO research or audit",
+      "office": "agency-office",
+      "lead": "seo_content_researcher",
+      "team": [
+        "marketing_strategist",
+        "data_insights_analyst"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which site, market/language and SEO objective?",
+          "essential": true
+        },
+        {
+          "key": "data",
+          "question": "Which live data sources/accounts are authorized?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Dated evidence set",
+        "Prioritized technical/content/authority actions"
+      ],
+      "gates": [
+        "Separate estimates from first-party evidence",
+        "No automatic content farm",
+        "No paid data call without spend approval"
+      ],
+      "default_mode": "ACTION",
+      "method": "playbooks/SEO-OPERATIONS.md"
+    },
+    "ai-workflow-prototype": {
+      "title": "Prototype an AI/RAG workflow",
+      "office": "product-office",
+      "lead": "llm_engineer",
+      "team": [
+        "automation_integration_engineer",
+        "ai_product_engineer"
+      ],
+      "intake": [
+        {
+          "key": "problem",
+          "question": "What user outcome and input/output contract?",
+          "essential": true
+        },
+        {
+          "key": "data",
+          "question": "What data/providers/models may be used and where may data leave?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Tool-neutral architecture",
+        "Prototype in existing/approved platform if useful",
+        "Evaluation plan"
+      ],
+      "gates": [
+        "No platform by default",
+        "No secrets in flow exports",
+        "Prototype is not production readiness"
+      ],
+      "default_mode": "ACTION",
+      "method": "playbooks/AI-WORKFLOW-BUILDERS.md"
+    },
+    "resume-production": {
+      "title": "Produce a verified resume variant",
+      "office": "recruitment-office",
+      "lead": "resume_strategist",
+      "team": [
+        "ats_resume_specialist",
+        "career_document_fact_checker"
+      ],
+      "intake": [
+        {
+          "key": "target",
+          "question": "Which role/audience and format?",
+          "essential": true
+        },
+        {
+          "key": "evidence",
+          "question": "Which verified career evidence may be used?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Tailored resume content",
+        "Optional builder/export plan",
+        "Final file checks when executed"
+      ],
+      "gates": [
+        "No invented claims",
+        "Preserve machine-readable variant",
+        "Template does not guarantee ATS success"
+      ],
+      "default_mode": "ACTION",
+      "method": "playbooks/CAREER-DOCUMENTS.md"
+    },
+    "media-reference-ingest": {
+      "title": "Ingest authorized media references",
+      "office": "production-office",
+      "lead": "media_data_wrangler",
+      "team": [
+        "asset_manager",
+        "practice_archivist"
+      ],
+      "intake": [
+        {
+          "key": "source",
+          "question": "Which sources are authorized and what rights basis applies?",
+          "essential": true
+        },
+        {
+          "key": "archive",
+          "question": "Where should approved media/metadata be stored?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Rights-aware acquisition plan",
+        "Verified files/metadata only if actually acquired"
+      ],
+      "gates": [
+        "No access-control/DRM bypass",
+        "Transfer is not backup",
+        "Keep source provenance and rights notes"
+      ],
+      "default_mode": "ACTION",
+      "method": "playbooks/FILE-TRANSFER-ARCHIVE.md"
+    },
+    "architecture-whiteboard": {
+      "title": "Sketch architecture or workflow",
+      "office": "product-office",
+      "lead": "information_architect",
+      "team": [
+        "software_architect",
+        "ui_prototyper"
+      ],
+      "intake": [
+        {
+          "key": "purpose",
+          "question": "What decision should the diagram support?",
+          "essential": true
+        },
+        {
+          "key": "audience",
+          "question": "Who will read it and what detail level is useful?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Reviewable diagram specification or actual whiteboard/export when tools permit"
+      ],
+      "gates": [
+        "Sketch is not implementation proof",
+        "Label assumptions/open questions",
+        "Do not create persistent files for throwaway sketches"
+      ],
+      "default_mode": "ACTION",
+      "method": "playbooks/WHITEBOARD-DIAGRAMS.md"
+    },
+    "artist-development-review": {
+      "title": "Review the practice before chasing opportunities",
+      "office": "artist-office",
+      "lead": "practice_strategist",
+      "team": [
+        "art_critic",
+        "studio_chief_of_staff",
+        "artist_revenue_strategist"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which practice and current work are we reviewing?",
+          "essential": true
+        },
+        {
+          "key": "need",
+          "question": "What is stalled or needs development, with actual examples?",
+          "essential": true
+        },
+        {
+          "key": "capacity",
+          "question": "What time, energy and commitments are available?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Evidence-led review of work and bottlenecks",
+        "Up to three 90-day priorities and protected making/research time",
+        "One next experiment and an optional practice-check report"
+      ],
+      "gates": [
+        "The artist retains authority; no automatic quality or career scoring",
+        "No projects created for tentative ideas",
+        "Any new cadence is a proposal, not a scheduled job"
+      ],
+      "default_mode": "ACTION",
+      "method": "playbooks/ARTISTIC-DEVELOPMENT.md",
+      "storage": "existing_canonical_section_by_default"
+    },
+    "peer-critique-session": {
+      "title": "Critique supplied work without flattering its stated intentions",
+      "office": "artist-office",
+      "lead": "art_critic",
+      "team": [
+        "curator",
+        "practice_strategist"
+      ],
+      "intake": [
+        {
+          "key": "work",
+          "question": "Which actual work or excerpt can be inspected?",
+          "essential": true
+        },
+        {
+          "key": "scope",
+          "question": "What question should the critique pressure-test?",
+          "essential": true
+        },
+        {
+          "key": "blind",
+          "question": "Is a clean, context-independent critique required?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Separate observations, interpretations and counter-readings",
+        "Questions to take to real peers",
+        "Only selected durable feedback in the existing practice record"
+      ],
+      "gates": [
+        "Reading a description is not viewing the work",
+        "A prompt cannot erase context already seen; use a clean input/session for blind critique",
+        "Do not impersonate a real critic or fabricate peer feedback"
+      ],
+      "default_mode": "ACTION",
+      "method": "playbooks/PEER-CRITIQUE.md",
+      "storage": "existing_canonical_section_by_default"
+    },
+    "curatorial-exhibition": {
+      "title": "Develop an exhibition from a curatorial question",
+      "office": "artist-office",
+      "lead": "curator",
+      "team": [
+        "art_researcher",
+        "exhibition_producer",
+        "registrar_art_logistics"
+      ],
+      "intake": [
+        {
+          "key": "question",
+          "question": "What question and audience should the exhibition engage?",
+          "essential": true
+        },
+        {
+          "key": "works",
+          "question": "Which works are documented, proposed or actually available?",
+          "essential": true
+        },
+        {
+          "key": "venue",
+          "question": "What are the space, schedule, access needs and resource constraints?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Research proposition and work-selection rationale",
+        "Spatial/temporal sequence and access considerations",
+        "Loan, rights, production and maintenance questions"
+      ],
+      "gates": [
+        "Proposed artist selection is not acceptance or a confirmed loan",
+        "Budget and spatial plans are provisional until evidence and approvals exist",
+        "Proposals remain inline unless independent work is explicitly activated"
+      ],
+      "default_mode": "ACTION",
+      "method": "playbooks/CURATORIAL-PRACTICE.md",
+      "storage": "existing_canonical_section_by_default"
+    },
+    "residency-fit": {
+      "title": "Find residency support for a real practice need",
+      "office": "artist-office",
+      "lead": "art_opportunities_scout",
+      "team": [
+        "artist_agent",
+        "grants_applications_manager"
+      ],
+      "intake": [
+        {
+          "key": "need",
+          "question": "Is the need protected time, facilities, an archive, a location or critical dialogue?",
+          "essential": true
+        },
+        {
+          "key": "constraints",
+          "question": "What geography, dates, costs and access constraints matter?",
+          "essential": true
+        },
+        {
+          "key": "scope",
+          "question": "Which practice and eligibility facts may be used?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Small source-verified shortlist including decline reasons",
+        "Support, obligations, deadlines/timezones and unresolved eligibility",
+        "Compact pipeline rows; application deliverables only when requested"
+      ],
+      "gates": [
+        "Original call beats a cached directory",
+        "No speculative success probabilities",
+        "Submitting an application does not create a project"
+      ],
+      "default_mode": "ACTION",
+      "method": "playbooks/OPPORTUNITIES-AND-RESIDENCIES.md",
+      "storage": "existing_canonical_section_by_default"
+    },
+    "institutional-relationship": {
+      "title": "Prepare a meaningful curator or gallery approach",
+      "office": "artist-office",
+      "lead": "artist_agent",
+      "team": [
+        "institutional_relations_manager",
+        "gallery_relations_manager",
+        "studio_comms_manager"
+      ],
+      "intake": [
+        {
+          "key": "target",
+          "question": "Which person or institution and verified programme fit?",
+          "essential": true
+        },
+        {
+          "key": "relationship",
+          "question": "What actual relationship or introduction exists?",
+          "essential": true
+        },
+        {
+          "key": "purpose",
+          "question": "What is the specific reason for this contact now?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Fit brief and a concrete invitation or question",
+        "Copy-ready message or verified authorized send receipt",
+        "Minimal relationship update"
+      ],
+      "gates": [
+        "No bulk scraping or inferred personal contacts",
+        "No invented introduction, interest or curator endorsement",
+        "Do not add contacts to a mailing list without applicable consent"
+      ],
+      "default_mode": "ACTION",
+      "method": "playbooks/ARTIST-RELATIONSHIPS.md",
+      "storage": "existing_canonical_section_by_default"
+    },
+    "portfolio-review": {
+      "title": "Sequence a portfolio for an actual reader",
+      "office": "artist-office",
+      "lead": "practice_archivist",
+      "team": [
+        "art_director",
+        "art_writer",
+        "artist_agent"
+      ],
+      "intake": [
+        {
+          "key": "audience",
+          "question": "Who will read this and for what decision?",
+          "essential": true
+        },
+        {
+          "key": "works",
+          "question": "Which actual works, images and verified captions can be used?",
+          "essential": true
+        },
+        {
+          "key": "format",
+          "question": "What are the page, file, language and delivery constraints?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Selection and sequence with omissions explained",
+        "Fact-checked captions and concise texts",
+        "Actual layout review when render tools are available"
+      ],
+      "gates": [
+        "Label renders and prototypes, do not invent exhibition views or credentials",
+        "Do not rewrite the artist voice into institutional jargon",
+        "Requested portfolio files are deliverables, not automatic memory documents"
+      ],
+      "default_mode": "ACTION",
+      "method": "playbooks/ART-PORTFOLIO-AND-WRITING.md",
+      "storage": "existing_canonical_section_by_default"
+    },
+    "artistic-research-dossier": {
+      "title": "Build a sourced artistic or curatorial investigation",
+      "office": "artist-office",
+      "lead": "art_researcher",
+      "team": [
+        "art_historian",
+        "studio_research_librarian",
+        "curator"
+      ],
+      "intake": [
+        {
+          "key": "question",
+          "question": "What is the research question, not just a broad theme?",
+          "essential": true
+        },
+        {
+          "key": "scope",
+          "question": "Which regions, periods, media and perspectives are relevant?",
+          "essential": true
+        },
+        {
+          "key": "output",
+          "question": "Do we need a short map, bibliography or a deeper dossier?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Primary/critical/promotional sources kept distinct",
+        "Counter-evidence and situated visual/critical readings",
+        "Compact bibliography or link to an existing library"
+      ],
+      "gates": [
+        "Do not claim to have read inaccessible full texts or inspected unseen artworks",
+        "Use multiple cultural/geographic viewpoints when pertinent",
+        "No duplicated library of all source PDFs on Drive"
+      ],
+      "default_mode": "ACTION",
+      "method": "playbooks/ARTISTIC-RESEARCH-AND-SOURCES.md",
+      "storage": "existing_canonical_section_by_default"
+    },
+    "artwork-archive": {
+      "title": "Make selected works identifiable and re-installable",
+      "office": "artist-office",
+      "lead": "practice_archivist",
+      "team": [
+        "collection_inventory_manager",
+        "digital_preservation_manager",
+        "registrar_art_logistics"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which actual works and existing records need attention?",
+          "essential": true
+        },
+        {
+          "key": "need",
+          "question": "Is this inventory, a loan, insurance, a sale, preservation or publication?",
+          "essential": true
+        },
+        {
+          "key": "rights",
+          "question": "What owner, location, edition and rights facts are verified?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Minimal stable work/edition/media identifiers",
+        "Source-linked location, rights and technical requirements",
+        "Checksums/backups or missing information clearly marked"
+      ],
+      "gates": [
+        "No bulk move or deletion under archive cleanup",
+        "Spectrum is reference-only; do not reproduce its protected standard or claim certification",
+        "Reuse an existing archive and compact practice record"
+      ],
+      "default_mode": "ACTION",
+      "method": "playbooks/ART-ARCHIVE-AND-PRESERVATION.md",
+      "storage": "existing_canonical_section_by_default"
+    },
+    "brand-positioning": {
+      "title": "Build and pressure-test a brand position",
+      "office": "agency-office",
+      "lead": "brand_strategist",
+      "team": [
+        "audience_strategist",
+        "design_researcher",
+        "verbal_identity_director"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which company, activity, client and brand?",
+          "essential": true
+        },
+        {
+          "key": "decision",
+          "question": "What business or communication decision must change?",
+          "essential": true
+        },
+        {
+          "key": "evidence",
+          "question": "What actual audience, competitor and customer evidence exists?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Evidence ledger separating assumptions, research and validation",
+        "Distinct positioning options with tradeoffs",
+        "Approved direction and open validation needs in the existing Brand section"
+      ],
+      "gates": [
+        "User approval is not market validation",
+        "No invented interviews, claims or customer insights",
+        "Do not create separate brand folders for every option"
+      ],
+      "default_mode": "ACTION",
+      "method": "playbooks/BRAND-STRATEGY.md",
+      "storage": "existing_canonical_section_by_default"
+    },
+    "brand-naming-architecture": {
+      "title": "Name and organize brands without inventing clearance",
+      "office": "agency-office",
+      "lead": "brand_strategist",
+      "team": [
+        "verbal_identity_director",
+        "legal_orchestrator"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which legal entities, brands, offers and audiences need distinction?",
+          "essential": true
+        },
+        {
+          "key": "constraints",
+          "question": "What languages, markets, naming constraints and existing rights matter?",
+          "essential": true
+        },
+        {
+          "key": "decision",
+          "question": "Is this naming exploration, architecture or review of an existing shortlist?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Distinct name/architecture options and rationale",
+        "Documented linguistic and preliminary public screening",
+        "Explicit legal clearance questions"
+      ],
+      "gates": [
+        "Domain availability is not trademark clearance",
+        "Professional review is required for consequential rights decisions",
+        "Candidate names remain options in one record"
+      ],
+      "default_mode": "ACTION",
+      "method": "playbooks/BRAND-NAMING-ARCHITECTURE.md",
+      "storage": "existing_canonical_section_by_default"
+    },
+    "brand-guidelines-rollout": {
+      "title": "Implement an approved brand across actual applications",
+      "office": "agency-office",
+      "lead": "brand_identity_designer",
+      "team": [
+        "design_director",
+        "brand_guardian",
+        "creative_frontend_engineer"
+      ],
+      "intake": [
+        {
+          "key": "direction",
+          "question": "Which positioning and identity route are actually approved?",
+          "essential": true
+        },
+        {
+          "key": "applications",
+          "question": "Which real print/digital/social applications and languages?",
+          "essential": true
+        },
+        {
+          "key": "assets",
+          "question": "Which licensed fonts, logos, imagery and production specifications?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Usable visual/verbal rules and examples",
+        "Rendered stress tests on representative applications",
+        "Exceptions, asset rights and handover requirements"
+      ],
+      "gates": [
+        "A moodboard is not a functioning identity system",
+        "No generic premium style imposed",
+        "A DESIGN.md in a code project is linked rather than duplicated into memory"
+      ],
+      "default_mode": "ACTION",
+      "method": "playbooks/BRAND-IDENTITY-SYSTEM.md",
+      "storage": "existing_canonical_section_by_default"
+    },
+    "social-editorial-cycle": {
+      "title": "Plan and review a realistic brand or artist content cycle",
+      "office": "agency-office",
+      "lead": "social_media_manager",
+      "team": [
+        "content_director",
+        "community_manager",
+        "artist_social_media_manager"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which brand or artist and which actual accounts?",
+          "essential": true
+        },
+        {
+          "key": "objective",
+          "question": "What audience relationship or outcome should improve?",
+          "essential": true
+        },
+        {
+          "key": "capacity",
+          "question": "What assets, production capacity, consent and real analytics exist?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Small channel-specific calendar and reusable format briefs",
+        "Final copy/media packets and an evidence-led review plan",
+        "Compact decisions and next experiments"
+      ],
+      "gates": [
+        "No vanity-growth guarantees or invented analytics",
+        "Select platforms deliberately, not all by default",
+        "Ideas and individual posts do not each become knowledge files"
+      ],
+      "default_mode": "ACTION",
+      "method": "playbooks/SOCIAL-OPERATIONS.md",
+      "storage": "existing_canonical_section_by_default"
+    },
+    "social-publication-preflight": {
+      "title": "Check a final publishing packet before an authorized action",
+      "office": "administration-office",
+      "lead": "communications_operator",
+      "team": [
+        "social_media_manager",
+        "records_document_controller"
+      ],
+      "intake": [
+        {
+          "key": "account",
+          "question": "Which exact account, platform and scope?",
+          "essential": true
+        },
+        {
+          "key": "packet",
+          "question": "Which final version, media, rights and claims are approved?",
+          "essential": true
+        },
+        {
+          "key": "action",
+          "question": "Draft, publish or schedule; if scheduling, what timezone and time?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Packet hash and explicit approval/capability mismatches",
+        "Copy-ready fallback when tool access is absent",
+        "Actual receipt or unresolved outcome, only after permitted execution"
+      ],
+      "gates": [
+        "Offline checks never grant publishing authority",
+        "An approval must match account, scope and content version",
+        "On timeout verify existing result before retrying"
+      ],
+      "default_mode": "ACTION",
+      "method": "playbooks/SOCIAL-OPERATIONS.md",
+      "storage": "existing_canonical_section_by_default"
+    },
+    "release-quality-gate": {
+      "title": "Verify a deliverable without inventing test results",
+      "office": "product-office",
+      "lead": "qa_lead",
+      "team": [
+        "code_reviewer",
+        "security_reviewer",
+        "release_manager",
+        "skill_evaluation_engineer"
+      ],
+      "intake": [
+        {
+          "key": "scope",
+          "question": "Which exact release or deliverable and intended environment?",
+          "essential": true
+        },
+        {
+          "key": "criteria",
+          "question": "What approved acceptance criteria and regression cases?",
+          "essential": true
+        },
+        {
+          "key": "evidence",
+          "question": "Which checks/tools have actually run and where are the results?",
+          "essential": true
+        }
+      ],
+      "outputs": [
+        "Reproducible checks and actual evidence",
+        "Failures and unrun tests clearly separated",
+        "Human review and safe release/rollback recommendation"
+      ],
+      "gates": [
+        "Do not equate unit tests with design quality, artistic merit or security certification",
+        "No secret/API uploads or paid evaluations without specific permission",
+        "Do not publish or deploy because a local report merely says ready"
+      ],
+      "default_mode": "ACTION",
+      "method": "playbooks/QUALITY-AND-EVALUATION.md",
+      "storage": "existing_canonical_section_by_default"
     }
   },
-  "note": "Playbooks guide selection, not a mandate to run every listed role. Intake helper does not execute work."
+  "note": "Task recipes, not installed schedules or autonomous workers. Resolve existing context before asking at most three decisive questions. Choose the smallest needed team. Pipeline is not a project; update compact canonical records only when material."
 }

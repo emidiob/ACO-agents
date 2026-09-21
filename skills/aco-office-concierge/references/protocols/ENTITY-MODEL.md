@@ -1,21 +1,13 @@
-# Private entity model, schema 1
+# Entities are identity records, not a requirement to create folders
 
-Organizations are the user's own businesses/organizations. Activities are business lines within one organization. Clients are counterparty relationships within one organization. Brands are owned by an organization or client. Projects have one canonical owner (organization, artist or career) and can reference several activities, one client and one brand. Matters belong to an owner, client or project.
+Default layout is Compact Memory schema 2. Organizations are the user's actual operating organizations; artist and career are personal owner scopes. Activity means business line; client means a counterparty relationship; brand belongs to an organization/client; project has one owner and may reference several activities, one client and one brand; a matter has an explicit restricted scope when necessary.
 
-Each entity record has: id, kind, stable key, display name, parent_id, owner_id, path or provider folder_id, context file reference, links, creation time and provenance. Do not put private IDs in public GitHub files.
-Use generated stable IDs; never rely on display names alone. Two organizations may each have a client called “Studio North” with different IDs. Distinct clients can also share a label within one organization if given explicit different keys. Ask when the user cannot be matched unambiguously.
+Stable IDs disambiguate identical names. Do not infer legal status or ownership from labels. Keep session scope local to that request; no global current client. Reject cross-owner relationships and misleading brand/client links. A cross-organization shared project needs explicit boundary design; the supplied local backend rejects cross-owner links.
 
-Allowed parents:
-- organization/artist/career: workspace root;
-- activity/client: organization;
-- brand: organization or client;
-- project: organization/artist/career;
-- matter: organization/artist/career/client/project.
+A pipeline item has a stable row ID, kind, status, title, concise notes, source and next action, not an entity folder. A proposed artwork, possible client, application, experiment or unaccepted collaboration cannot be registered as a project merely because it was discussed. Record nothing persistently if it is not worth retaining.
 
-A project may span multiple activities in its owner's organization. It has one folder, not duplicates under every activity. Separate legal organizations are not merely two activities. Do not invent legal entity status, tax treatment or ownership from a brand name.
+Promotion needs explicit user commitment, evidenced external activation or import of a known real entity. Activation is separate from document creation: small active items remain sections. Only genuine independence, scale or confidentiality justifies another ACO.md. No placeholder histories, event/session folders, applications directory for every application or quarterly archive by default.
 
-Reject cross-owner links by default. Cross-organization collaboration requires an explicitly approved shared-project record with a minimal information boundary, not copying one client's complete context into another organization. This release's local CLI deliberately refuses cross-owner links. Folder organization is not an ACL; use provider permissions and separate ChatGPT projects/workspaces when confidentiality requires it.
+Canonical index: logical ID, kind, parent/owner, actual canonical file/section reference and activation provenance. The local CLI maintains compact JSON metadata inside the existing index; detailed sessions and retries are private local state outside knowledge. Do not expose these IDs through the public repo.
 
-## Defaults
-Create personal artist/career scopes only when requested. Create organizations, activities, clients and brands when they are needed, not a forest of empty examples. For a legal request, create one matter if needed and record unknown jurisdiction rather than assuming it.
-Facts, current decisions, hypotheses, preferences and open questions remain separate. Declaring an entity name or approved root authorizes identity continuity, not unrestricted reading of every related record.
+Folder separation is not access control. Do not mix unrelated clients or restricted HR/legal/financial content into an owner document just to reduce file count. Use separately permissioned records when needed. Preserve primary documents and link them; compact memory does not compress an accounting ledger or replace contracts.

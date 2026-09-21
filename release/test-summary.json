@@ -1,0 +1,61 @@
+{
+  "version": "0.5.1",
+  "test_date": "2026-09-20",
+  "unittest_count": 365,
+  "unittest_result": "passed",
+  "roles": 363,
+  "skills": 16,
+  "workflows": 38,
+  "registry_resources": 40,
+  "source_review_statuses": {
+    "source_reviewed": 33,
+    "partial_review": 4,
+    "identity_unresolved": 3
+  },
+  "local_smoke": {
+    "fresh_install": {
+      "skills": 16,
+      "native_profiles": 363,
+      "verified": true
+    },
+    "installed_runtime": {
+      "resource_search": true,
+      "default_compact_init": true,
+      "only_one_knowledge_file": true
+    },
+    "repeat_install_status": "installed_verified",
+    "ACO-agents-v0.4.3-complete.zip": {
+      "preview": true,
+      "apply": "staged_not_committed",
+      "history_preserved": true,
+      "unrelated_preserved": true,
+      "private_untracked_preserved": true,
+      "validated_counts": {
+        "canonical_agents": 363,
+        "skills": 16,
+        "workflows": 38
+      }
+    },
+    "ACO-agents-v0.5.0-specialist-upgrade.zip": {
+      "preview": true,
+      "apply": "staged_not_committed",
+      "history_preserved": true,
+      "unrelated_preserved": true,
+      "private_untracked_preserved": true,
+      "validated_counts": {
+        "canonical_agents": 363,
+        "skills": 16,
+        "workflows": 38
+      }
+    },
+    "install_upgrade_from_0_4_3": {
+      "passed": true,
+      "native_profiles": 363
+    },
+    "license_identical_to_baseline": true
+  },
+  "remote_github_modified": false,
+  "remote_drive_modified": false,
+  "external_resources_installed": false,
+  "live_integration_tests": false
+}

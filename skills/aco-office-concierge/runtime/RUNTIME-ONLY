@@ -1,1 +1,1 @@
-Local knowledge/session/event commands only. Use the full source release for install, migrate and validate.
+Local compact knowledge, optional resource selection and checks only. Use the full source release for install, migrate and validate. Legacy event storage is explicit opt-in.

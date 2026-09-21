@@ -6,6 +6,7 @@ Lead: `product_software_orchestrator`. Read only selected role instructions; nat
 - [`accessibility_tester`](agents/accessibility-tester.md) — Tester for keyboard flows, screen-reader behavior, contrast, semantics and accessibility bugs.
 - [`ai_engineer`](agents/ai-engineer.md) — Engineer for applied AI features, model integration, pipelines and evaluation.
 - [`ai_product_engineer`](agents/ai-product-engineer.md) — Bridge role between product and AI engineering for user-facing AI feature design and implementation.
+- [`analytics_instrumentation_engineer`](agents/analytics-instrumentation-engineer.md) — Implement testable, privacy-aware product and marketing event instrumentation.
 - [`api_integration_engineer`](agents/api-integration-engineer.md) — Engineer for third-party service integration, authentication flows, webhooks and API reliability.
 - [`api_researcher`](agents/api-researcher.md) — Researcher for third-party API capabilities, docs, pricing, limits and integration implications.
 - [`automation_integration_engineer`](agents/automation-integration-engineer.md) — Implement scoped integrations and safe office automations.
@@ -13,7 +14,9 @@ Lead: `product_software_orchestrator`. Read only selected role instructions; nat
 - [`bug_investigator`](agents/bug-investigator.md) — Specialist for reproducing, isolating and diagnosing bugs across environments and layers.
 - [`business_analyst`](agents/business-analyst.md) — Analyst for business rules, process requirements, operational needs and stakeholder constraints.
 - [`cloud_architect`](agents/cloud-architect.md) — Architect for cloud topology, managed services, cost/performance tradeoffs and cloud governance.
+- [`cms_content_architect`](agents/cms-content-architect.md) — Design maintainable content models and editorial publishing workflows.
 - [`code_reviewer`](agents/code-reviewer.md) — Reviewer for code quality, maintainability, clarity and adherence to standards.
+- [`creative_frontend_engineer`](agents/creative-frontend-engineer.md) — Build expressive interactive websites with accessible low-resource fallbacks.
 - [`data_engineer`](agents/data-engineer.md) — Engineer for data pipelines, ingestion, transformation and analytics-readiness.
 - [`data_scientist`](agents/data-scientist.md) — Data scientist for modeling, experimentation, analysis and statistical interpretation.
 - [`database_engineer`](agents/database-engineer.md) — Engineer for database schema, query design, performance, migrations and data integrity.
@@ -21,6 +24,7 @@ Lead: `product_software_orchestrator`. Read only selected role instructions; nat
 - [`design_system_designer`](agents/design-system-designer.md) — Designer of reusable component systems, tokens, patterns and documentation for product consistency.
 - [`devops_engineer`](agents/devops-engineer.md) — Engineer for deployment pipelines, CI/CD, environments and operational tooling.
 - [`documentation_writer`](agents/documentation-writer.md) — Writer for user manuals, onboarding docs, support guides and operational runbooks.
+- [`figma_implementation_engineer`](agents/figma-implementation-engineer.md) — Reconcile authorized Figma designs with actual code components and runtime behaviour.
 - [`frontend_engineer`](agents/frontend-engineer.md) — Frontend engineer for building user interfaces, state management and browser-side logic.
 - [`fullstack_engineer`](agents/fullstack-engineer.md) — Fullstack engineer for end-to-end web product implementation across frontend and backend.
 - [`information_architect`](agents/information-architect.md) — Designer of information architecture, content structure, navigation and system logic.
@@ -37,7 +41,7 @@ Lead: `product_software_orchestrator`. Read only selected role instructions; nat
 - [`product_director`](agents/product-director.md) — Senior product lead who sets product direction, value proposition, decision criteria and cross-functional priorities.
 - [`product_manager`](agents/product-manager.md) — Product manager for planning requirements, prioritization, user stories and delivery coordination.
 - [`product_researcher`](agents/product-researcher.md) — Researcher for product opportunities, user problems, category benchmarks and concept validation.
-- [`product_software_orchestrator`](agents/product-software-orchestrator.md) — Orchestrator for websites, web apps, software products, internal tools, APIs and AI products. Routes work across product, UX, engineering, AI/data, quality and infrastructure.
+- [`product_software_orchestrator`](agents/product-software-orchestrator.md) — Lead router for software, websites, digital products, AI systems and engineering delivery.
 - [`qa_engineer`](agents/qa-engineer.md) — QA engineer for manual and structured testing of product behavior, edge cases and regressions.
 - [`qa_lead`](agents/qa-lead.md) — QA lead for test strategy, quality risk, release readiness and coverage priorities.
 - [`release_manager`](agents/release-manager.md) — Manager for release planning, versioning, rollout, rollback and cross-team release coordination.
@@ -45,6 +49,7 @@ Lead: `product_software_orchestrator`. Read only selected role instructions; nat
 - [`security_reviewer`](agents/security-reviewer.md) — Reviewer for application security, common vulnerabilities, auth patterns and risk assessment.
 - [`senior_backend_engineer`](agents/senior-backend-engineer.md) — Senior backend engineer for service architecture, APIs, data flow and backend reliability.
 - [`senior_frontend_engineer`](agents/senior-frontend-engineer.md) — Senior frontend engineer for complex web interfaces, architecture and performance-sensitive UI.
+- [`skill_evaluation_engineer`](agents/skill-evaluation-engineer.md) — Evaluate agent methods with reproducible tasks, evidence and controlled baselines.
 - [`software_architect`](agents/software-architect.md) — Architect for application structure, technical boundaries, scalability and major engineering decisions.
 - [`sre_engineer`](agents/sre-engineer.md) — Site reliability engineer for uptime, observability, incident prevention and operational resilience.
 - [`tech_lead`](agents/tech-lead.md) — Technical lead for implementation direction, code quality, integration decisions and team guidance.

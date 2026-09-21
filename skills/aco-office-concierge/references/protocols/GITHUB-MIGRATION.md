@@ -1,3 +1,5 @@
+> Current release is v0.5.1. Follow the new package migration prompt; Compact Memory affects future storage, not automatic deletion of existing private data.
+
 # Repository migration is not knowledge migration
 
 Keep .git, commit history and the remote. Apply the LICENSE supplied by the target release; never alter licensing silently or outside an explicit versioned release. Preserve all untracked private data and unrelated tracked files. No rm -rf, git clean, reset --hard or force push.

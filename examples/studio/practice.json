@@ -1,0 +1,18 @@
+{
+  "scope_id": "artist-fixture",
+  "current_question": "How does scale change the encounter?",
+  "available_hours_per_week": 10,
+  "other_commitments_hours": 2,
+  "protected_making_research_hours": 4,
+  "review_date": "2026-12-20",
+  "priorities": [
+    {
+      "id": "p1",
+      "title": "Two scale studies",
+      "next_action": "Make two maquettes",
+      "learning_signal": "Compare encounter at the same viewing distance",
+      "category": "making",
+      "hours_per_week": 5
+    }
+  ]
+}

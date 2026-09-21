@@ -1,0 +1,102 @@
+{
+  "visual-direction": {
+    "title": "Visual direction without a house-style monoculture",
+    "sources": [
+      "S01",
+      "S09",
+      "S10",
+      "S04"
+    ]
+  },
+  "typography-responsive": {
+    "title": "Typography, tokens and responsive text",
+    "sources": [
+      "S09",
+      "S10",
+      "S11"
+    ]
+  },
+  "figma-implementation": {
+    "title": "Figma-to-code reconciliation",
+    "sources": [
+      "S15",
+      "S05",
+      "S06"
+    ]
+  },
+  "web-acceptance": {
+    "title": "Evidence-led website acceptance",
+    "sources": [
+      "S01",
+      "S06",
+      "S09",
+      "S11"
+    ]
+  },
+  "web-engineering": {
+    "title": "Web architecture, CMS and performance",
+    "sources": [
+      "S11",
+      "S15",
+      "S05",
+      "S02"
+    ]
+  },
+  "growth-measurement": {
+    "title": "CRO, SEO and measurement without invented causality",
+    "sources": [
+      "S07",
+      "S11",
+      "S06"
+    ]
+  },
+  "engineering-evaluation": {
+    "title": "Engineering diagnosis and skill evaluation",
+    "sources": [
+      "S02",
+      "S03",
+      "S01",
+      "S06"
+    ]
+  },
+  "film-direction": {
+    "title": "Directing: scene purpose, blocking and coverage",
+    "sources": [
+      "S13",
+      "S04",
+      "S12"
+    ]
+  },
+  "ai-video": {
+    "title": "AI video prompting and provider adapters",
+    "sources": [
+      "S13",
+      "S14",
+      "S12"
+    ]
+  },
+  "continuity-qc": {
+    "title": "Continuity, timing and generated-video QC",
+    "sources": [
+      "S13",
+      "S12",
+      "S14"
+    ]
+  },
+  "remotion-comfy-colour": {
+    "title": "Media implementation and reproducibility",
+    "sources": [
+      "S12",
+      "S14",
+      "S11"
+    ]
+  },
+  "finance-evidence": {
+    "title": "Finance operations with traceable evidence",
+    "sources": [
+      "S08",
+      "S07",
+      "S03"
+    ]
+  }
+}

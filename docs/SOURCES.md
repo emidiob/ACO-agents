@@ -34,3 +34,32 @@ Checked 2026-09-19; re-check when executing version-sensitive work.
 The method cards are original task instructions, not copied technical manuals. They require the real application's current documentation, schemas and test evidence. No claim is made that a named provider is installed or that outbound calling exists in every communications app. WhatsApp/MCP adapters are intentionally discovered at runtime and not bundled.
 
 Existing CI release tags were checked against upstream on 2026-09-19: actions/checkout v7.0.1 (https://github.com/actions/checkout/releases) and actions/setup-python v7.0.0 (https://github.com/actions/setup-python/actions/runs/29714253785). This verifies release existence, not completion of this repository’s CI jobs.
+
+## v0.5.2 optional resource intake
+
+Reviewed 20 September 2026. ACO includes only original selection/method notes; it does not vendor these projects. Re-check current licenses, versions and service terms before installation or reuse.
+
+- https://github.com/trekhleb/javascript-algorithms
+- https://github.com/30-seconds/30-seconds-of-code
+- https://github.com/public-apis/public-apis
+- https://github.com/langflow-ai/langflow
+- https://github.com/every-app/open-seo
+- https://github.com/ayghri/i-have-adhd
+- https://github.com/petergyang/no-ai-slop
+- https://github.com/lfnovo/open-notebook
+- https://github.com/louislam/uptime-kuma
+- https://github.com/excalidraw/excalidraw
+- https://github.com/dani-garcia/vaultwarden
+- https://github.com/dgtlmoon/changedetection.io
+- https://github.com/localsend/localsend
+- https://github.com/mikf/gallery-dl
+- https://github.com/reactive-resume/reactive-resume
+- https://github.com/searxng/searxng
+- https://github.com/imputnet/cobalt
+- https://github.com/langgenius/dify
+- https://github.com/unclecode/crawl4ai
+- https://github.com/browser-use/browser-use
+- https://github.com/getmaxun/maxun
+- https://github.com/All-Hands-AI/OpenHands
+
+The registry distinguishes learned ACO methods from external software. Skill concepts are rewritten as original ACO procedures; software remains an optional external capability.

@@ -1,0 +1,797 @@
+{
+  "baseline": "0.4.3",
+  "target": "0.5.0",
+  "decisions": [
+    {
+      "key": "visual_design_critic",
+      "action": "add_distinct_role",
+      "office": "agency-office",
+      "playbook": "visual-direction",
+      "sources": [
+        "S01",
+        "S09",
+        "S10",
+        "S04"
+      ],
+      "reason": "Assess rendered design against a brief without imposing a default style."
+    },
+    {
+      "key": "web_typography_layout_specialist",
+      "action": "add_distinct_role",
+      "office": "agency-office",
+      "playbook": "typography-responsive",
+      "sources": [
+        "S09",
+        "S10",
+        "S11"
+      ],
+      "reason": "Develop and test typographic hierarchy and responsive layout systems."
+    },
+    {
+      "key": "conversion_experiment_designer",
+      "action": "add_distinct_role",
+      "office": "agency-office",
+      "playbook": "growth-measurement",
+      "sources": [
+        "S07",
+        "S11",
+        "S06"
+      ],
+      "reason": "Turn evidence-backed conversion hypotheses into interpretable experiments."
+    },
+    {
+      "key": "figma_implementation_engineer",
+      "action": "add_distinct_role",
+      "office": "product-office",
+      "playbook": "figma-implementation",
+      "sources": [
+        "S15",
+        "S05",
+        "S06"
+      ],
+      "reason": "Reconcile authorized Figma designs with actual code components and runtime behaviour."
+    },
+    {
+      "key": "creative_frontend_engineer",
+      "action": "add_distinct_role",
+      "office": "product-office",
+      "playbook": "web-engineering",
+      "sources": [
+        "S11",
+        "S15",
+        "S05",
+        "S02"
+      ],
+      "reason": "Build expressive interactive websites with accessible low-resource fallbacks."
+    },
+    {
+      "key": "cms_content_architect",
+      "action": "add_distinct_role",
+      "office": "product-office",
+      "playbook": "web-engineering",
+      "sources": [
+        "S11",
+        "S15",
+        "S05",
+        "S02"
+      ],
+      "reason": "Design maintainable content models and editorial publishing workflows."
+    },
+    {
+      "key": "analytics_instrumentation_engineer",
+      "action": "add_distinct_role",
+      "office": "product-office",
+      "playbook": "growth-measurement",
+      "sources": [
+        "S07",
+        "S11",
+        "S06"
+      ],
+      "reason": "Implement testable, privacy-aware product and marketing event instrumentation."
+    },
+    {
+      "key": "skill_evaluation_engineer",
+      "action": "add_distinct_role",
+      "office": "product-office",
+      "playbook": "engineering-evaluation",
+      "sources": [
+        "S02",
+        "S03",
+        "S01",
+        "S06"
+      ],
+      "reason": "Evaluate agent methods with reproducible tasks, evidence and controlled baselines."
+    },
+    {
+      "key": "storyboard_artist",
+      "action": "add_distinct_role",
+      "office": "production-office",
+      "playbook": "film-direction",
+      "sources": [
+        "S13",
+        "S04",
+        "S12"
+      ],
+      "reason": "Translate scene beats into readable storyboard panels and shot-to-shot geography."
+    },
+    {
+      "key": "script_continuity_supervisor",
+      "action": "add_distinct_role",
+      "office": "production-office",
+      "playbook": "continuity-qc",
+      "sources": [
+        "S13",
+        "S12",
+        "S14"
+      ],
+      "reason": "Maintain story, prop, wardrobe, action and spatial continuity across shots."
+    },
+    {
+      "key": "animatic_editor",
+      "action": "add_distinct_role",
+      "office": "production-office",
+      "playbook": "continuity-qc",
+      "sources": [
+        "S13",
+        "S12",
+        "S14"
+      ],
+      "reason": "Test narrative pacing in a frame-accurate storyboard edit before full production."
+    },
+    {
+      "key": "ai_video_prompt_adapter",
+      "action": "add_distinct_role",
+      "office": "production-office",
+      "playbook": "ai-video",
+      "sources": [
+        "S13",
+        "S14",
+        "S12"
+      ],
+      "reason": "Translate a shot specification into model- and interface-specific video prompting."
+    },
+    {
+      "key": "generative_video_qc",
+      "action": "add_distinct_role",
+      "office": "production-office",
+      "playbook": "continuity-qc",
+      "sources": [
+        "S13",
+        "S12",
+        "S14"
+      ],
+      "reason": "Inspect generated clips for temporal, reference, continuity and delivery failures."
+    },
+    {
+      "key": "remotion_video_engineer",
+      "action": "add_distinct_role",
+      "office": "production-office",
+      "playbook": "remotion-comfy-colour",
+      "sources": [
+        "S12",
+        "S14",
+        "S11"
+      ],
+      "reason": "Implement deterministic frame-based videos and graphics in authorized Remotion projects."
+    },
+    {
+      "key": "design_director",
+      "action": "deepen_existing",
+      "office": "agency-office",
+      "playbook": "visual-direction",
+      "sources": [
+        "S01",
+        "S09",
+        "S10",
+        "S04"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "digital_design_director",
+      "action": "deepen_existing",
+      "office": "agency-office",
+      "playbook": "visual-direction",
+      "sources": [
+        "S01",
+        "S09",
+        "S10",
+        "S04"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "brand_identity_designer",
+      "action": "deepen_existing",
+      "office": "agency-office",
+      "playbook": "visual-direction",
+      "sources": [
+        "S01",
+        "S09",
+        "S10",
+        "S04"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "art_director",
+      "action": "deepen_existing",
+      "office": "shared",
+      "playbook": "visual-direction",
+      "sources": [
+        "S01",
+        "S09",
+        "S10",
+        "S04"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "design_researcher",
+      "action": "deepen_existing",
+      "office": "agency-office",
+      "playbook": "visual-direction",
+      "sources": [
+        "S01",
+        "S09",
+        "S10",
+        "S04"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "product_designer",
+      "action": "deepen_existing",
+      "office": "product-office",
+      "playbook": "visual-direction",
+      "sources": [
+        "S01",
+        "S09",
+        "S10",
+        "S04"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "design_system_designer",
+      "action": "deepen_existing",
+      "office": "product-office",
+      "playbook": "typography-responsive",
+      "sources": [
+        "S09",
+        "S10",
+        "S11"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "junior_designer",
+      "action": "deepen_existing",
+      "office": "agency-office",
+      "playbook": "typography-responsive",
+      "sources": [
+        "S09",
+        "S10",
+        "S11"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "production_designer",
+      "action": "deepen_existing",
+      "office": "agency-office",
+      "playbook": "typography-responsive",
+      "sources": [
+        "S09",
+        "S10",
+        "S11"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "frontend_prototyper",
+      "action": "deepen_existing",
+      "office": "agency-office",
+      "playbook": "figma-implementation",
+      "sources": [
+        "S15",
+        "S05",
+        "S06"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "qa_engineer",
+      "action": "deepen_existing",
+      "office": "product-office",
+      "playbook": "web-acceptance",
+      "sources": [
+        "S01",
+        "S06",
+        "S09",
+        "S11"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "accessibility_specialist",
+      "action": "deepen_existing",
+      "office": "product-office",
+      "playbook": "web-acceptance",
+      "sources": [
+        "S01",
+        "S06",
+        "S09",
+        "S11"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "accessibility_tester",
+      "action": "deepen_existing",
+      "office": "product-office",
+      "playbook": "web-acceptance",
+      "sources": [
+        "S01",
+        "S06",
+        "S09",
+        "S11"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "test_automation_engineer",
+      "action": "deepen_existing",
+      "office": "product-office",
+      "playbook": "web-acceptance",
+      "sources": [
+        "S01",
+        "S06",
+        "S09",
+        "S11"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "frontend_engineer",
+      "action": "deepen_existing",
+      "office": "product-office",
+      "playbook": "web-engineering",
+      "sources": [
+        "S11",
+        "S15",
+        "S05",
+        "S02"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "senior_frontend_engineer",
+      "action": "deepen_existing",
+      "office": "product-office",
+      "playbook": "web-engineering",
+      "sources": [
+        "S11",
+        "S15",
+        "S05",
+        "S02"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "fullstack_engineer",
+      "action": "deepen_existing",
+      "office": "product-office",
+      "playbook": "web-engineering",
+      "sources": [
+        "S11",
+        "S15",
+        "S05",
+        "S02"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "performance_engineer",
+      "action": "deepen_existing",
+      "office": "product-office",
+      "playbook": "web-engineering",
+      "sources": [
+        "S11",
+        "S15",
+        "S05",
+        "S02"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "software_architect",
+      "action": "deepen_existing",
+      "office": "product-office",
+      "playbook": "web-engineering",
+      "sources": [
+        "S11",
+        "S15",
+        "S05",
+        "S02"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "organic_discovery_strategist",
+      "action": "deepen_existing",
+      "office": "agency-office",
+      "playbook": "growth-measurement",
+      "sources": [
+        "S07",
+        "S11",
+        "S06"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "seo_content_researcher",
+      "action": "deepen_existing",
+      "office": "agency-office",
+      "playbook": "growth-measurement",
+      "sources": [
+        "S07",
+        "S11",
+        "S06"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "marketing_strategist",
+      "action": "deepen_existing",
+      "office": "shared",
+      "playbook": "growth-measurement",
+      "sources": [
+        "S07",
+        "S11",
+        "S06"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "crm_lifecycle_strategist",
+      "action": "deepen_existing",
+      "office": "agency-office",
+      "playbook": "growth-measurement",
+      "sources": [
+        "S07",
+        "S11",
+        "S06"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "marketing_analyst",
+      "action": "deepen_existing",
+      "office": "agency-office",
+      "playbook": "growth-measurement",
+      "sources": [
+        "S07",
+        "S11",
+        "S06"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "bug_investigator",
+      "action": "deepen_existing",
+      "office": "product-office",
+      "playbook": "engineering-evaluation",
+      "sources": [
+        "S02",
+        "S03",
+        "S01",
+        "S06"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "code_reviewer",
+      "action": "deepen_existing",
+      "office": "product-office",
+      "playbook": "engineering-evaluation",
+      "sources": [
+        "S02",
+        "S03",
+        "S01",
+        "S06"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "dependency_researcher",
+      "action": "deepen_existing",
+      "office": "product-office",
+      "playbook": "engineering-evaluation",
+      "sources": [
+        "S02",
+        "S03",
+        "S01",
+        "S06"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "llm_engineer",
+      "action": "deepen_existing",
+      "office": "product-office",
+      "playbook": "engineering-evaluation",
+      "sources": [
+        "S02",
+        "S03",
+        "S01",
+        "S06"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "context_steward",
+      "action": "deepen_existing",
+      "office": "shared",
+      "playbook": "engineering-evaluation",
+      "sources": [
+        "S02",
+        "S03",
+        "S01",
+        "S06"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "film_director",
+      "action": "deepen_existing",
+      "office": "production-office",
+      "playbook": "film-direction",
+      "sources": [
+        "S13",
+        "S04",
+        "S12"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "cinematographer",
+      "action": "deepen_existing",
+      "office": "production-office",
+      "playbook": "film-direction",
+      "sources": [
+        "S13",
+        "S04",
+        "S12"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "junior_art_director",
+      "action": "deepen_existing",
+      "office": "agency-office",
+      "playbook": "film-direction",
+      "sources": [
+        "S13",
+        "S04",
+        "S12"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "visual_prompt_engineer",
+      "action": "deepen_existing",
+      "office": "production-office",
+      "playbook": "ai-video",
+      "sources": [
+        "S13",
+        "S14",
+        "S12"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "generative_media_director",
+      "action": "deepen_existing",
+      "office": "production-office",
+      "playbook": "ai-video",
+      "sources": [
+        "S13",
+        "S14",
+        "S12"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "video_editor",
+      "action": "deepen_existing",
+      "office": "production-office",
+      "playbook": "continuity-qc",
+      "sources": [
+        "S13",
+        "S12",
+        "S14"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "media_delivery_qc",
+      "action": "deepen_existing",
+      "office": "production-office",
+      "playbook": "continuity-qc",
+      "sources": [
+        "S13",
+        "S12",
+        "S14"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "postproduction_supervisor",
+      "action": "deepen_existing",
+      "office": "agency-office",
+      "playbook": "continuity-qc",
+      "sources": [
+        "S13",
+        "S12",
+        "S14"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "comfyui_workflow_engineer",
+      "action": "deepen_existing",
+      "office": "production-office",
+      "playbook": "remotion-comfy-colour",
+      "sources": [
+        "S12",
+        "S14",
+        "S11"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "comfyui_node_developer",
+      "action": "deepen_existing",
+      "office": "production-office",
+      "playbook": "remotion-comfy-colour",
+      "sources": [
+        "S12",
+        "S14",
+        "S11"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "color_pipeline_engineer",
+      "action": "deepen_existing",
+      "office": "production-office",
+      "playbook": "remotion-comfy-colour",
+      "sources": [
+        "S12",
+        "S14",
+        "S11"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "media_pipeline_engineer",
+      "action": "deepen_existing",
+      "office": "production-office",
+      "playbook": "remotion-comfy-colour",
+      "sources": [
+        "S12",
+        "S14",
+        "S11"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "motion_designer",
+      "action": "deepen_existing",
+      "office": "production-office",
+      "playbook": "remotion-comfy-colour",
+      "sources": [
+        "S12",
+        "S14",
+        "S11"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "financial_controller",
+      "action": "deepen_existing",
+      "office": "finance-office",
+      "playbook": "finance-evidence",
+      "sources": [
+        "S08",
+        "S07",
+        "S03"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "bookkeeping_coordinator",
+      "action": "deepen_existing",
+      "office": "finance-office",
+      "playbook": "finance-evidence",
+      "sources": [
+        "S08",
+        "S07",
+        "S03"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "pricing_margin_analyst",
+      "action": "deepen_existing",
+      "office": "finance-office",
+      "playbook": "finance-evidence",
+      "sources": [
+        "S08",
+        "S07",
+        "S03"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "production_cost_controller",
+      "action": "deepen_existing",
+      "office": "finance-office",
+      "playbook": "finance-evidence",
+      "sources": [
+        "S08",
+        "S07",
+        "S03"
+      ],
+      "reason": "Replace broad role-only guidance with a task-specific procedure, failure modes and acceptance evidence."
+    },
+    {
+      "key": "agency_orchestrator",
+      "action": "update_routing",
+      "office": "agency-office",
+      "playbook": null,
+      "sources": [
+        "S01",
+        "S04",
+        "S06",
+        "S07",
+        "S09",
+        "S10",
+        "S11"
+      ],
+      "reason": "Select new specialist only when needed, preserving existing authority and low-overhead intake."
+    },
+    {
+      "key": "product_software_orchestrator",
+      "action": "update_routing",
+      "office": "product-office",
+      "playbook": null,
+      "sources": [
+        "S01",
+        "S02",
+        "S03",
+        "S05",
+        "S06",
+        "S07",
+        "S11",
+        "S15"
+      ],
+      "reason": "Select new specialist only when needed, preserving existing authority and low-overhead intake."
+    },
+    {
+      "key": "production_orchestrator",
+      "action": "update_routing",
+      "office": "production-office",
+      "playbook": null,
+      "sources": [
+        "S04",
+        "S11",
+        "S12",
+        "S13",
+        "S14"
+      ],
+      "reason": "Select new specialist only when needed, preserving existing authority and low-overhead intake."
+    }
+  ]
+}

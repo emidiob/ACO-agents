@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.7.0",
+  "states": [
+    "proposed",
+    "prepared",
+    "approved",
+    "executing",
+    "executed",
+    "checked",
+    "reviewed",
+    "unknown",
+    "reconciled",
+    "blocked",
+    "failed",
+    "closed"
+  ],
+  "transitions": {
+    "proposed": [
+      "prepared",
+      "blocked"
+    ],
+    "prepared": [
+      "approved",
+      "executing",
+      "blocked",
+      "failed"
+    ],
+    "approved": [
+      "executing",
+      "blocked",
+      "failed"
+    ],
+    "executing": [
+      "executed",
+      "unknown",
+      "failed"
+    ],
+    "executed": [
+      "checked",
+      "unknown",
+      "failed"
+    ],
+    "checked": [
+      "reviewed",
+      "closed",
+      "failed"
+    ],
+    "reviewed": [
+      "closed",
+      "failed"
+    ],
+    "unknown": [
+      "reconciled",
+      "blocked"
+    ],
+    "reconciled": [
+      "executed",
+      "failed",
+      "blocked"
+    ],
+    "blocked": [
+      "prepared",
+      "closed"
+    ],
+    "failed": [
+      "prepared",
+      "closed"
+    ],
+    "closed": []
+  }
+}

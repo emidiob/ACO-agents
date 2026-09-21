@@ -8,7 +8,7 @@
 5. Resolve the approved private root from current project instructions, supplied link or an existing binding. A precise name-only discovery search is permissible when the user has authorized locating their ACO folder. Do not scan unrelated content. Multiple matching roots require one clarification.
 6. Resolve one task scope: personal artist/career OR organization, optional activities, client, brand and project. Read the private registry to resolve stable IDs. Use a one-line user-facing scope statement when confusion is plausible.
 7. If the user requests first setup or a new entity, run BOOTSTRAP.md/ENTITY-MODEL.md with existing authorization for low-risk folder/file creation. Do not ask separately for each file.
-8. Create a unique session record before substantial work; never maintain one global current client. If switching client or organization, close/checkpoint the old task and start a new session. Do not carry unrelated private text into a fresh task packet.
+8. Keep a unique session ID in the existing private local state or chat before substantial work; never create a Drive session file or maintain one global current client. If switching client or organization, close/checkpoint the old task and start a new session. Do not carry unrelated private text into a fresh task packet.
 9. Select usually one lead and one to three specialists. Use broader teams only when justified. Junior/maker means narrower scope, not guaranteed cheaper model or lower correctness standards. Real parallelism exists only when actual subagent tools execute.
 10. Work. Checkpoint useful milestones, not just the final turn. At the end run HISTORY.md and HANDOFF.md. Show a compact deliverable and truthful saved/pending status.
 

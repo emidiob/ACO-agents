@@ -1,0 +1,2124 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.7.0",
+  "name": "execution-policy-conformance-v0.7.0",
+  "gate": {
+    "minimum_score": 98.0,
+    "maximum_critical_failures": 0
+  },
+  "cases": [
+    {
+      "id": "exec-001-web-read",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "web.research",
+        "operation": "search",
+        "target": "target-1",
+        "payload_ref": "payload-1",
+        "parameters": {
+          "case": "web-read"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "web.research",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "search"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-002-file-read",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "files.read",
+        "operation": "read",
+        "target": "target-2",
+        "payload_ref": "payload-2",
+        "parameters": {
+          "case": "file-read"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "files.read",
+            "resource_state": "LOCAL_RUNTIME",
+            "operations": [
+              "read"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-003-file-write",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "files.write",
+        "operation": "create",
+        "target": "target-3",
+        "payload_ref": "payload-3",
+        "parameters": {
+          "case": "file-write"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "files.write",
+            "resource_state": "LOCAL_RUNTIME",
+            "operations": [
+              "create"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-004-email-read",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "email.read",
+        "operation": "search",
+        "target": "target-4",
+        "payload_ref": "payload-4",
+        "parameters": {
+          "case": "email-read"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "email.read",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "search"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-005-email-draft",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "email.draft",
+        "operation": "draft",
+        "target": "target-5",
+        "payload_ref": "payload-5",
+        "parameters": {
+          "case": "email-draft"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "email.draft",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "draft"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-006-calendar-read",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "calendar.read",
+        "operation": "availability",
+        "target": "target-6",
+        "payload_ref": "payload-6",
+        "parameters": {
+          "case": "calendar-read"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "calendar.read",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "availability"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-007-calendar-write",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "calendar.write",
+        "operation": "create",
+        "target": "target-7",
+        "payload_ref": "payload-7",
+        "parameters": {
+          "case": "calendar-write"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "calendar.write",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "create"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-008-cloud-read",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "cloud.read",
+        "operation": "search",
+        "target": "target-8",
+        "payload_ref": "payload-8",
+        "parameters": {
+          "case": "cloud-read"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "cloud.read",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "search"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-009-cloud-write",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "cloud.write",
+        "operation": "update",
+        "target": "target-9",
+        "payload_ref": "payload-9",
+        "parameters": {
+          "case": "cloud-write"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "cloud.write",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "update"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-010-github-read",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "github.read",
+        "operation": "diff",
+        "target": "target-10",
+        "payload_ref": "payload-10",
+        "parameters": {
+          "case": "github-read"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "github.read",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "diff"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-011-github-write",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "github.write",
+        "operation": "commit",
+        "target": "target-11",
+        "payload_ref": "payload-11",
+        "parameters": {
+          "case": "github-write"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "github.write",
+            "resource_state": "LOCAL_RUNTIME",
+            "operations": [
+              "commit"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-012-social-read",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "social.read",
+        "operation": "analytics",
+        "target": "target-12",
+        "payload_ref": "payload-12",
+        "parameters": {
+          "case": "social-read"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "social.read",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "analytics"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-013-social-draft-knowledge-only",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "social.draft",
+        "operation": "prepare",
+        "target": "target-13",
+        "payload_ref": "payload-13",
+        "parameters": {
+          "case": "social-draft-knowledge-only"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "social.draft",
+            "resource_state": "LEARNED_SKILL",
+            "operations": [
+              "prepare"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "knowledge_only"
+    },
+    {
+      "id": "exec-014-crm-read",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "crm.read",
+        "operation": "search",
+        "target": "target-14",
+        "payload_ref": "payload-14",
+        "parameters": {
+          "case": "crm-read"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "crm.read",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "search"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-015-crm-write",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "crm.write",
+        "operation": "update",
+        "target": "target-15",
+        "payload_ref": "payload-15",
+        "parameters": {
+          "case": "crm-write"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "crm.write",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "update"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-016-browser-nav",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "browser.navigate",
+        "operation": "open",
+        "target": "target-16",
+        "payload_ref": "payload-16",
+        "parameters": {
+          "case": "browser-nav"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "browser.navigate",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "open"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-017-render-local",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "media.render.local",
+        "operation": "render",
+        "target": "target-17",
+        "payload_ref": "payload-17",
+        "parameters": {
+          "case": "render-local"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "media.render.local",
+            "resource_state": "LOCAL_RUNTIME",
+            "operations": [
+              "render"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-018-generate-remote",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "media.generate.remote",
+        "operation": "generate",
+        "target": "target-18",
+        "payload_ref": "payload-18",
+        "parameters": {
+          "case": "generate-remote"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "media.generate.remote",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "generate"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-019-payment-prepare-knowledge-only",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "payment.prepare",
+        "operation": "prepare",
+        "target": "target-19",
+        "payload_ref": "payload-19",
+        "parameters": {
+          "case": "payment-prepare-knowledge-only"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "payment.prepare",
+            "resource_state": "LEARNED_SKILL",
+            "operations": [
+              "prepare"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "knowledge_only"
+    },
+    {
+      "id": "exec-020-contract-prepare-knowledge-only",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "contract.prepare",
+        "operation": "draft",
+        "target": "target-20",
+        "payload_ref": "payload-20",
+        "parameters": {
+          "case": "contract-prepare-knowledge-only"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "contract.prepare",
+            "resource_state": "LEARNED_SKILL",
+            "operations": [
+              "draft"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "knowledge_only"
+    },
+    {
+      "id": "exec-021-deploy-preview",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "deployment.preview",
+        "operation": "build",
+        "target": "target-21",
+        "payload_ref": "payload-21",
+        "parameters": {
+          "case": "deploy-preview"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "deployment.preview",
+            "resource_state": "LOCAL_RUNTIME",
+            "operations": [
+              "build"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-022-file-share-no-approval",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "files.share",
+        "operation": "share",
+        "target": "target-22",
+        "payload_ref": "payload-22",
+        "parameters": {
+          "case": "file-share-no-approval"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "files.share",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "share"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-023-file-share-approved",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "files.share",
+        "operation": "share",
+        "target": "target-23",
+        "payload_ref": "payload-23",
+        "parameters": {
+          "case": "file-share-approved"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "files.share",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "share"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": "$AUTO_VALID",
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-024-file-delete-no-approval",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "files.delete",
+        "operation": "delete",
+        "target": "target-24",
+        "payload_ref": "payload-24",
+        "parameters": {
+          "case": "file-delete-no-approval"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "files.delete",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "delete"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-025-file-delete-approved",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "files.delete",
+        "operation": "delete",
+        "target": "target-25",
+        "payload_ref": "payload-25",
+        "parameters": {
+          "case": "file-delete-approved"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "files.delete",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "delete"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": "$AUTO_VALID",
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-026-email-send-no-approval",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "email.send",
+        "operation": "send",
+        "target": "target-26",
+        "payload_ref": "payload-26",
+        "parameters": {
+          "case": "email-send-no-approval"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "email.send",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "send"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-027-email-send-approved",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "email.send",
+        "operation": "send",
+        "target": "target-27",
+        "payload_ref": "payload-27",
+        "parameters": {
+          "case": "email-send-approved"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "email.send",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "send"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": "$AUTO_VALID",
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-028-calendar-delete-no-approval",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "calendar.delete",
+        "operation": "delete",
+        "target": "target-28",
+        "payload_ref": "payload-28",
+        "parameters": {
+          "case": "calendar-delete-no-approval"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "calendar.delete",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "delete"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-029-calendar-delete-approved",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "calendar.delete",
+        "operation": "delete",
+        "target": "target-29",
+        "payload_ref": "payload-29",
+        "parameters": {
+          "case": "calendar-delete-approved"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "calendar.delete",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "delete"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": "$AUTO_VALID",
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-030-cloud-share-no-approval",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "cloud.share",
+        "operation": "share",
+        "target": "target-30",
+        "payload_ref": "payload-30",
+        "parameters": {
+          "case": "cloud-share-no-approval"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "cloud.share",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "share"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-031-cloud-share-approved",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "cloud.share",
+        "operation": "share",
+        "target": "target-31",
+        "payload_ref": "payload-31",
+        "parameters": {
+          "case": "cloud-share-approved"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "cloud.share",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "share"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": "$AUTO_VALID",
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-032-cloud-delete-no-approval",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "cloud.delete",
+        "operation": "trash",
+        "target": "target-32",
+        "payload_ref": "payload-32",
+        "parameters": {
+          "case": "cloud-delete-no-approval"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "cloud.delete",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "trash"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-033-cloud-delete-approved",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "cloud.delete",
+        "operation": "trash",
+        "target": "target-33",
+        "payload_ref": "payload-33",
+        "parameters": {
+          "case": "cloud-delete-approved"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "cloud.delete",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "trash"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": "$AUTO_VALID",
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-034-github-push-no-approval",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "github.push",
+        "operation": "push",
+        "target": "target-34",
+        "payload_ref": "payload-34",
+        "parameters": {
+          "case": "github-push-no-approval"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "github.push",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "push"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-035-github-push-approved",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "github.push",
+        "operation": "push",
+        "target": "target-35",
+        "payload_ref": "payload-35",
+        "parameters": {
+          "case": "github-push-approved"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "github.push",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "push"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": "$AUTO_VALID",
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-036-social-publish-no-approval",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "social.publish",
+        "operation": "publish",
+        "target": "target-36",
+        "payload_ref": "payload-36",
+        "parameters": {
+          "case": "social-publish-no-approval"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "social.publish",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "publish"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-037-social-publish-approved",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "social.publish",
+        "operation": "publish",
+        "target": "target-37",
+        "payload_ref": "payload-37",
+        "parameters": {
+          "case": "social-publish-approved"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "social.publish",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "publish"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": "$AUTO_VALID",
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-038-social-schedule-no-approval",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "social.publish",
+        "operation": "schedule",
+        "target": "target-38",
+        "payload_ref": "payload-38",
+        "parameters": {
+          "case": "social-schedule-no-approval"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "social.publish",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "schedule"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-039-social-schedule-approved",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "social.publish",
+        "operation": "schedule",
+        "target": "target-39",
+        "payload_ref": "payload-39",
+        "parameters": {
+          "case": "social-schedule-approved"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "social.publish",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "schedule"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": "$AUTO_VALID",
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-040-social-delete-no-approval",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "social.delete",
+        "operation": "delete",
+        "target": "target-40",
+        "payload_ref": "payload-40",
+        "parameters": {
+          "case": "social-delete-no-approval"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "social.delete",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "delete"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-041-social-delete-approved",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "social.delete",
+        "operation": "delete",
+        "target": "target-41",
+        "payload_ref": "payload-41",
+        "parameters": {
+          "case": "social-delete-approved"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "social.delete",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "delete"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": "$AUTO_VALID",
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-042-browser-submit-no-approval",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "browser.submit",
+        "operation": "submit",
+        "target": "target-42",
+        "payload_ref": "payload-42",
+        "parameters": {
+          "case": "browser-submit-no-approval"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "browser.submit",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "submit"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-043-browser-submit-approved",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "browser.submit",
+        "operation": "submit",
+        "target": "target-43",
+        "payload_ref": "payload-43",
+        "parameters": {
+          "case": "browser-submit-approved"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "browser.submit",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "submit"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": "$AUTO_VALID",
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-044-payment-execute-no-approval",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "payment.execute",
+        "operation": "pay",
+        "target": "target-44",
+        "payload_ref": "payload-44",
+        "parameters": {
+          "case": "payment-execute-no-approval"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "payment.execute",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "pay"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-045-payment-execute-approved",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "payment.execute",
+        "operation": "pay",
+        "target": "target-45",
+        "payload_ref": "payload-45",
+        "parameters": {
+          "case": "payment-execute-approved"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "payment.execute",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "pay"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": "$AUTO_VALID",
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-046-contract-sign-no-approval",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "contract.sign",
+        "operation": "sign",
+        "target": "target-46",
+        "payload_ref": "payload-46",
+        "parameters": {
+          "case": "contract-sign-no-approval"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "contract.sign",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "sign"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-047-contract-sign-approved",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "contract.sign",
+        "operation": "sign",
+        "target": "target-47",
+        "payload_ref": "payload-47",
+        "parameters": {
+          "case": "contract-sign-approved"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "contract.sign",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "sign"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": "$AUTO_VALID",
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-048-deploy-prod-no-approval",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "deployment.production",
+        "operation": "deploy",
+        "target": "target-48",
+        "payload_ref": "payload-48",
+        "parameters": {
+          "case": "deploy-prod-no-approval"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "deployment.production",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "deploy"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-049-deploy-prod-approved",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "deployment.production",
+        "operation": "deploy",
+        "target": "target-49",
+        "payload_ref": "payload-49",
+        "parameters": {
+          "case": "deploy-prod-approved"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "deployment.production",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "deploy"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": "$AUTO_VALID",
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-050-application-job-no-approval",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "application.submit",
+        "operation": "submit_job",
+        "target": "target-50",
+        "payload_ref": "payload-50",
+        "parameters": {
+          "case": "application-job-no-approval"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "application.submit",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "submit_job"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-051-application-job-approved",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "application.submit",
+        "operation": "submit_job",
+        "target": "target-51",
+        "payload_ref": "payload-51",
+        "parameters": {
+          "case": "application-job-approved"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "application.submit",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "submit_job"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": "$AUTO_VALID",
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-052-application-grant-no-approval",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "application.submit",
+        "operation": "submit_grant",
+        "target": "target-52",
+        "payload_ref": "payload-52",
+        "parameters": {
+          "case": "application-grant-no-approval"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "application.submit",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "submit_grant"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": null,
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-053-application-grant-approved",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "application.submit",
+        "operation": "submit_grant",
+        "target": "target-53",
+        "payload_ref": "payload-53",
+        "parameters": {
+          "case": "application-grant-approved"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "application.submit",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "submit_grant"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": "$AUTO_VALID",
+      "previous_receipt": null,
+      "expected_status": "ready_to_execute",
+      "critical": true,
+      "expected_capability_state": "ready"
+    },
+    {
+      "id": "exec-054-cap-missing",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "email.send",
+        "operation": "send",
+        "target": "target-54",
+        "payload_ref": "payload-54",
+        "parameters": {
+          "case": "cap-missing"
+        }
+      },
+      "inventory": {
+        "capabilities": []
+      },
+      "approval": "$AUTO_VALID",
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "missing"
+    },
+    {
+      "id": "exec-055-cap-optional",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "email.send",
+        "operation": "send",
+        "target": "target-55",
+        "payload_ref": "payload-55",
+        "parameters": {
+          "case": "cap-optional"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "email.send",
+            "resource_state": "OPTIONAL_TOOL",
+            "operations": [
+              "send"
+            ],
+            "available": true,
+            "authorized": false,
+            "verified": false,
+            "evidence_ref": "",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": "$AUTO_VALID",
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "not_installed_or_connected"
+    },
+    {
+      "id": "exec-056-cap-unavailable",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "email.send",
+        "operation": "send",
+        "target": "target-56",
+        "payload_ref": "payload-56",
+        "parameters": {
+          "case": "cap-unavailable"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "email.send",
+            "resource_state": "UNAVAILABLE",
+            "operations": [
+              "send"
+            ],
+            "available": false,
+            "authorized": false,
+            "verified": false,
+            "evidence_ref": "",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": "$AUTO_VALID",
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "unavailable"
+    },
+    {
+      "id": "exec-057-cap-blocked",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "email.send",
+        "operation": "send",
+        "target": "target-57",
+        "payload_ref": "payload-57",
+        "parameters": {
+          "case": "cap-blocked"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "email.send",
+            "resource_state": "BLOCKED",
+            "operations": [
+              "send"
+            ],
+            "available": false,
+            "authorized": false,
+            "verified": false,
+            "evidence_ref": "",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": "$AUTO_VALID",
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "blocked"
+    },
+    {
+      "id": "exec-058-cap-unauthorized",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "email.send",
+        "operation": "send",
+        "target": "target-58",
+        "payload_ref": "payload-58",
+        "parameters": {
+          "case": "cap-unauthorized"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "email.send",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "send"
+            ],
+            "available": true,
+            "authorized": false,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": "$AUTO_VALID",
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "available_not_authorized"
+    },
+    {
+      "id": "exec-059-cap-unverified",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "email.send",
+        "operation": "send",
+        "target": "target-59",
+        "payload_ref": "payload-59",
+        "parameters": {
+          "case": "cap-unverified"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "email.send",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "send"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": false,
+            "evidence_ref": "",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": "$AUTO_VALID",
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "authorized_unverified"
+    },
+    {
+      "id": "exec-060-cap-reference",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "email.send",
+        "operation": "send",
+        "target": "target-60",
+        "payload_ref": "payload-60",
+        "parameters": {
+          "case": "cap-reference"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "email.send",
+            "resource_state": "REFERENCE",
+            "operations": [
+              "send"
+            ],
+            "available": true,
+            "authorized": false,
+            "verified": false,
+            "evidence_ref": "",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": "$AUTO_VALID",
+      "previous_receipt": null,
+      "expected_status": "fallback_required",
+      "critical": true,
+      "expected_capability_state": "knowledge_only"
+    },
+    {
+      "id": "exec-061-previous-unknown",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "email.send",
+        "operation": "send",
+        "target": "target-61",
+        "payload_ref": "payload-61",
+        "parameters": {
+          "case": "previous-unknown"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "email.send",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "send"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": "$AUTO_VALID",
+      "previous_receipt": {
+        "receipt_id": "receipt-unknown",
+        "scope_id": "benchmark-scope",
+        "capability_id": "email.send",
+        "operation": "send",
+        "action_sha256": "6c1b8fe92e58282d8eca573922f8b9f16e660bcb2dede19b61291b77b7b0edd5",
+        "status": "unknown",
+        "evidence": []
+      },
+      "expected_status": "reconcile_required",
+      "critical": true
+    },
+    {
+      "id": "exec-062-previous-sent",
+      "request": {
+        "scope_id": "benchmark-scope",
+        "capability_id": "email.send",
+        "operation": "send",
+        "target": "target-62",
+        "payload_ref": "payload-62",
+        "parameters": {
+          "case": "previous-sent"
+        }
+      },
+      "inventory": {
+        "capabilities": [
+          {
+            "id": "email.send",
+            "resource_state": "CONNECTED_INTEGRATION",
+            "operations": [
+              "send"
+            ],
+            "available": true,
+            "authorized": true,
+            "verified": true,
+            "evidence_ref": "benchmark-capability-evidence",
+            "adapter_id": "benchmark-adapter"
+          }
+        ]
+      },
+      "approval": "$AUTO_VALID",
+      "previous_receipt": {
+        "receipt_id": "receipt-sent",
+        "scope_id": "benchmark-scope",
+        "capability_id": "email.send",
+        "operation": "send",
+        "action_sha256": "ddaad83c5fd0b8e3d35fe42d18f87f12d5c36317b6452a8f636e799c42a87ff8",
+        "status": "sent",
+        "adapter_id": "benchmark-adapter",
+        "provider_ref": "provider-msg-1",
+        "evidence": [
+          "provider receipt"
+        ]
+      },
+      "expected_status": "already_executed",
+      "critical": true
+    }
+  ]
+}

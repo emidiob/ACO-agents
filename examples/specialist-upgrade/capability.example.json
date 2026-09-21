@@ -1,0 +1,24 @@
+{
+  "example_fixture": true,
+  "provider": "Fictional offline example provider",
+  "model": "example-i2v-v1",
+  "interface_scope": "offline demonstration; not a real API",
+  "source_url": "https://example.com/provider-documentation",
+  "verified_on": "2026-09-20",
+  "modes": [
+    "image_to_video",
+    "text_to_video"
+  ],
+  "aspect_ratios": [
+    "16:9",
+    "9:16"
+  ],
+  "durations_seconds": [
+    5,
+    10
+  ],
+  "supports_negative_prompt": false,
+  "supports_audio": false,
+  "supports_seed": false,
+  "max_prompt_characters": 1000
+}
