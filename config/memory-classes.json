@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.7.2",
+  "classes": {
+    "durable_context": {
+      "primary": "canonical_aco_document",
+      "persistence": "durable_selective",
+      "drive_policy": "use_if_already_available_and_material; never prompt merely to enable memory",
+      "fallback": "continue in current context and report pending persistence only if materially relevant"
+    },
+    "code_architecture": {
+      "primary": "repository_current_source",
+      "secondary": [
+        "local_code_intelligence",
+        "canonical_aco_document_summary_if_material"
+      ],
+      "persistence": "hybrid",
+      "drive_policy": "summary only; never mirror code/indexes",
+      "fallback": "inspect repository directly"
+    },
+    "code_structure": {
+      "primary": "local_code_intelligence",
+      "secondary": [
+        "repository_search"
+      ],
+      "persistence": "rebuildable",
+      "drive_policy": "never",
+      "fallback": "repository search/read"
+    },
+    "research_corpus": {
+      "primary": "authorized_research_system_or_supplied_files",
+      "persistence": "external_or_supplied",
+      "drive_policy": "do not mirror full corpus by default",
+      "fallback": "task-scoped references"
+    },
+    "task_context": {
+      "primary": "current_chat_or_local_handoff",
+      "persistence": "temporary",
+      "drive_policy": "never create a session file",
+      "fallback": "current conversation"
+    },
+    "execution_receipt": {
+      "primary": "bounded_local_or_host_evidence",
+      "persistence": "bounded",
+      "drive_policy": "persist only material outcome/reference in existing canonical record",
+      "fallback": "report unsupported outcome as unknown/pending"
+    },
+    "tool_state": {
+      "primary": "runtime_discovery",
+      "persistence": "ephemeral",
+      "drive_policy": "never",
+      "fallback": "rediscover next time"
+    }
+  },
+  "read_policy": {
+    "modes": [
+      "NONE",
+      "BLIND",
+      "LIGHT",
+      "FULL",
+      "BLIND-FIRST"
+    ],
+    "default_mode": "LIGHT",
+    "scope_boundary": "same entity/client unless explicit cross-scope authorization",
+    "drive_prompt_policy": "never prompt merely to enable memory"
+  }
+}

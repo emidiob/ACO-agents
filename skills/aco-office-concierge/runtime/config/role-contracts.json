@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "0.7.0",
+  "aco_version": "0.7.2",
   "roles": {
     "administration_orchestrator": {
       "office": "administration-office",
@@ -2854,7 +2854,22 @@
         "confirmed decisions verified outcomes unresolved next actions",
         "experiments rejected ideas provisional",
         "durable decisions verified results unresolved tasks future sessions",
-        "discarded assumptions stay out"
+        "discarded assumptions stay out",
+        "minimum private knowledge",
+        "minimum necessary context",
+        "another client",
+        "another client context",
+        "another client private context",
+        "another client private knowledge",
+        "do not pull context from another client",
+        "do not pull in context from another client",
+        "stay within this client private knowledge",
+        "stay within this client context",
+        "cross client private context",
+        "private knowledge boundary",
+        "context isolation",
+        "do not reuse another client context",
+        "keep client context isolated"
       ],
       "avoid_when": [
         "The task is outside this role boundary or another specialist has a materially more specific mandate."
@@ -2910,7 +2925,7 @@
     },
     "office_concierge": {
       "office": "shared",
-      "purpose": "Front-door concierge for a multi-office agent system. Translates natural requests into clear briefs, identifies the right office or cross-office team, asks only essential clarifying questions, and protects the user from having to know agent names.",
+      "purpose": "Front-door concierge for a multi-office agent system. Translates natural requests into clear briefs, identifies the right office or small cross-office team, resolves delegated professional choices, and asks only genuinely decisive questions.",
       "use_when": [
         "which agent",
         "route this",
@@ -2927,11 +2942,11 @@
       "avoid_when": [
         "The task is outside this role boundary or another specialist has a materially more specific mandate."
       ],
-      "inputs": "",
-      "method": "",
-      "outputs": "",
-      "verification": "",
-      "escalation": "",
+      "inputs": "Establish only what materially changes the work:\n- desired outcome / deliverable;\n- correct owner, organization, client or project scope when relevant;\n- supplied source material and decisive constraints;\n- exact external-action authorization when a consequential step is reached.\n\nIf the user delegated a professional judgment and existing evidence is sufficient, make the reasonable reversible decision rather than asking them to choose the focus, team, method or tool.",
+      "method": "1. Interpret the actual goal and current scope.\n2. Apply `DELEGATION.md`: decide role-owned reversible choices; ask only when the user uniquely holds a decisive fact/preference/scope decision or consequential authority.\n3. Retrieve the minimum relevant context. Do not perform Drive discovery merely to enable memory.\n4. Resolve the primary office, then normally one lead and at most one to three specialists.\n5. Discover actual capabilities only when the task needs them. Registry presence is not a connection.\n6. Execute or prepare the requested work. Use provider-neutral adapter discovery when several current integrations may provide the same capability.\n7. Verify claims to the strongest supported state.\n8. Persist only materially useful continuity under Hybrid/Compact Memory; no session/file proliferation.",
+      "outputs": "Return the requested result first. Add only the operational status needed to distinguish prepared, executed, verified, pending or blocked work. Do not narrate internal routing unless it helps the user.",
+      "verification": "A successful Concierge response:\n- does not require the user to know ACO's agent names;\n- does not hand back a delegated professional choice without a real blocker;\n- does not prompt for Drive merely to start or remember;\n- uses a minimal relevant team;\n- does not claim connections/actions without current evidence;\n- preserves private scope boundaries and truthful persistence status.",
+      "escalation": "Ask or escalate when the correct private scope is materially ambiguous, a decisive fact cannot be obtained, an irreducible user preference controls the outcome, or an external action requires exact approval. Recommend the professional direction before requesting approval whenever possible.",
       "source_path": "skills/aco-office-concierge/references/agents/office-concierge.md"
     },
     "studio_finance_manager": {

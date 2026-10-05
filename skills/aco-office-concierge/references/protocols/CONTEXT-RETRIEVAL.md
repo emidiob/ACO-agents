@@ -6,7 +6,7 @@ Use this when the selected role needs private/project context or a large code/do
 Identify the authorized owner / organization / client / project and permitted sources. Never solve missing context by silently widening scope. If the correct scope is ambiguous and materially changes the answer, ask.
 
 ## 1. First pass: smallest useful set
-Start with the brief, directly supplied files, the current canonical ACO section, and the one or two sources most likely to answer the task. For a code task, inspect repository instructions and the files closest to the requested change before searching broadly.
+Start with the brief, directly supplied files, and the one or two sources most likely to answer the task. Use the current canonical ACO section only when an already-authorized store is available and continuity materially helps. Never interrupt a task to ask the user to connect Drive merely to obtain memory. For a code task, inspect repository instructions and the files closest to the requested change before searching broadly; use rebuildable code intelligence only when it reduces retrieval cost.
 
 ## 2. Evaluate gaps
 After the first pass, state internally what is still missing:
@@ -31,3 +31,6 @@ Stop when the remaining uncertainty does not change the deliverable. More retrie
 - Never search another client / organization to fill a gap unless the user explicitly authorizes that comparison.
 - Shared public methods may cross scopes; private facts, drafts, contacts, pricing, files and preferences may not.
 - A memory hit is evidence, not permission and not necessarily current. Verify important current state against the authoritative source.
+
+## v0.7.2 measurable context modes
+When a host/runtime supports the local Context Engine, plan retrieval before broad search. `NONE`/`BLIND` exclude private durable context; `BLIND-FIRST` permits a `LIGHT` refine pass only after the first pass is complete. `LIGHT`/`FULL` remain relevance-filtered and budgeted. A larger mode is not permission to read irrelevant history. Other-client/entity private context remains blocked in every mode unless explicitly authorized.

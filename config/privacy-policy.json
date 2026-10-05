@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.7.2",
+  "canonical_public_repository": "emidiob/ACO-agents",
+  "owner_name_allowed_paths": [
+    "LICENSE",
+    "LICENSE-NOTICE.md"
+  ],
+  "example_domains": [
+    "example.com",
+    "example.org",
+    "example.net",
+    "example.invalid"
+  ],
+  "allowed_local_hosts": [
+    "127.0.0.1",
+    "localhost"
+  ],
+  "note": "The copyright holder is derived from LICENSE and is allowed only in license/notice paths. The canonical public repository and synthetic fixtures are public/test identifiers; private personal/client/runtime data are not."
+}

@@ -1,6 +1,6 @@
 # Optional ACO resources
 
-Version 0.7.0; 97 deduplicated resources. NOT installed, connected or blanket-approved.
+Version 0.7.2; 99 deduplicated resources. NOT installed, connected or blanket-approved.
 
 Use only relevant entries. Read the selected category card and original ACO method before use. Source review is not execution, security audit or license clearance. No upstream code/assets/models/fonts are bundled. Three ambiguous names stay gated.
 
@@ -103,5 +103,7 @@ Use only relevant entries. Read the selected category card and original ACO meth
 | n8n | runtime | source_reviewed | [office](CATEGORY-office.md#n8n) |
 | listmonk | application | source_reviewed | [publishing](CATEGORY-publishing.md#listmonk) |
 | Postiz | application | source_reviewed | [social](CATEGORY-social.md#postiz) |
+| codebase-memory | runtime | source_reviewed | [agents](CATEGORY-agents.md#codebase-memory-yuga) |
+| Codebase Memory MCP | runtime | source_reviewed | [agents](CATEGORY-agents.md#codebase-memory-deusdata) |
 
 Read the relevant original method and `../protocols/COMPACT-MEMORY.md` before storing references; one bookmark must not create a Drive file.

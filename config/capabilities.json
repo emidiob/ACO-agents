@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "0.7.0",
+  "aco_version": "0.7.2",
   "states": [
     "LEARNED_SKILL",
     "REFERENCE",
@@ -342,6 +342,28 @@
       "permission": "APPLY",
       "risk": "high",
       "fallback": "Return the final application packet marked NOT SUBMITTED."
+    },
+    "code.intelligence.query": {
+      "operations": [
+        "query",
+        "symbol_lookup",
+        "call_graph",
+        "impact_analysis",
+        "architecture_lookup"
+      ],
+      "permission": "READ",
+      "risk": "low",
+      "fallback": "Inspect the current repository with authorized file/search tools."
+    },
+    "code.intelligence.refresh": {
+      "operations": [
+        "index",
+        "refresh",
+        "invalidate"
+      ],
+      "permission": "WRITE",
+      "risk": "medium",
+      "fallback": "Continue from current repository source without claiming the local code index was refreshed."
     }
   }
 }

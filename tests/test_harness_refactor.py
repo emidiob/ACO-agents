@@ -46,7 +46,7 @@ class HarnessRefactorTests(unittest.TestCase):
     def test_eval_definitions(self):
         p=ROOT/'config/evals.json'
         r=eval_lint(p)
-        self.assertEqual(r['cases'],18)
+        self.assertEqual(r['cases'],25)
         artist=eval_show(p,'artist-office')
         self.assertGreaterEqual(len(artist['cases']),2)
         self.assertTrue(any(c['id']=='artist-rejected-application' for c in artist['cases']))

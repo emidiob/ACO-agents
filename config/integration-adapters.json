@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.7.2",
+  "kind_priority": [
+    "host_native",
+    "connected_integration",
+    "mcp",
+    "local_runtime",
+    "api"
+  ],
+  "remote_kinds": [
+    "host_native",
+    "connected_integration",
+    "mcp",
+    "api"
+  ],
+  "rules": [
+    "Inventory must be caller/host supplied for the current environment.",
+    "Exact capability coverage, availability, connection where applicable, operation authorization and verification are separate gates.",
+    "A documented or registry-listed provider is not a current connection.",
+    "An explicitly selected blocked provider is not silently replaced unless the request is provider-neutral and alternate-provider fallback is allowed.",
+    "Resolution does not execute the adapter."
+  ]
+}

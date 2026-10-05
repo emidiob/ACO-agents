@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "aco_version": "0.7.0",
-  "reviewed_on": "2026-09-20",
+  "aco_version": "0.7.2",
+  "reviewed_on": "2026-09-22",
   "policy": "A curated menu, not an installation list. Public sources and task methods are not account access, execution evidence, quality certification or a license grant. Prefer existing tools and compact memory.",
   "resources": [
     {
@@ -4349,6 +4349,104 @@
       "selection_tier": "optional",
       "activation": "requires_current_environment_and_permissions_check",
       "license_gate": "review_exact_version_before_execution"
+    },
+    {
+      "category": "agents",
+      "review_status": "source_reviewed",
+      "review_date": "2026-09-22",
+      "roles": [
+        "software_architect",
+        "tech_lead",
+        "code_reviewer"
+      ],
+      "offices": [
+        "product-office"
+      ],
+      "requirements": [
+        "local_or_mcp_runtime",
+        "current_repository_scope",
+        "current_tool_or_connector_review"
+      ],
+      "method": "../playbooks/CODE-INTELLIGENCE-METHOD.md",
+      "cost": {
+        "status": "not_quoted",
+        "note": "ACO makes no cost promise; review the exact release/runtime and hosting model before use."
+      },
+      "installed_by_aco": false,
+      "execution_tested": false,
+      "selection": "optional_relevant_only",
+      "selection_tier": "optional",
+      "activation": "requires_current_environment_and_permissions_check",
+      "license_gate": "review_exact_version_before_execution",
+      "id": "codebase-memory-yuga",
+      "name": "codebase-memory",
+      "aliases": [
+        "codebase-memory",
+        "yuga-hashimoto/codebase-memory"
+      ],
+      "type": "runtime",
+      "source_url": "https://github.com/yuga-hashimoto/codebase-memory",
+      "repository": "yuga-hashimoto/codebase-memory",
+      "review_scope": "Repository README/source overview inspected for scope, storage model and stated MIT license; no installation, security audit or execution test.",
+      "use_when": "Recall durable codebase decisions, conventions, bugs and project context through an already-authorized local MCP when that reduces repeated repository rediscovery.",
+      "avoid_when": "Do not make its SQLite memory the authority for current code, copy all memories to Drive, or auto-remember every observation. Verify material claims against current source/revision.",
+      "notes": "Stores memories locally in SQLite/FTS5 according to its documentation. Treat remember/forget as local tool writes requiring the project scope to be correct.",
+      "license": {
+        "status": "check_current_terms_before_reuse",
+        "url": "https://github.com/yuga-hashimoto/codebase-memory",
+        "aco_bundles_upstream": false,
+        "observed": "Repository README states MIT. ACO bundles no upstream code."
+      },
+      "data_policy": "Local code/project memory may contain sensitive repository facts. Keep it project-scoped, gitignored unless intentionally shared, and never upload/copy it to Drive by default."
+    },
+    {
+      "category": "agents",
+      "review_status": "source_reviewed",
+      "review_date": "2026-09-22",
+      "roles": [
+        "software_architect",
+        "tech_lead",
+        "code_reviewer"
+      ],
+      "offices": [
+        "product-office"
+      ],
+      "requirements": [
+        "local_or_mcp_runtime",
+        "current_repository_scope",
+        "current_tool_or_connector_review"
+      ],
+      "method": "../playbooks/CODE-INTELLIGENCE-METHOD.md",
+      "cost": {
+        "status": "not_quoted",
+        "note": "ACO makes no cost promise; review the exact release/runtime and hosting model before use."
+      },
+      "installed_by_aco": false,
+      "execution_tested": false,
+      "selection": "optional_relevant_only",
+      "selection_tier": "optional",
+      "activation": "requires_current_environment_and_permissions_check",
+      "license_gate": "review_exact_version_before_execution",
+      "id": "codebase-memory-deusdata",
+      "name": "Codebase Memory MCP",
+      "aliases": [
+        "codebase-memory-mcp",
+        "DeusData/codebase-memory-mcp"
+      ],
+      "type": "runtime",
+      "source_url": "https://github.com/DeusData/codebase-memory-mcp",
+      "repository": "DeusData/codebase-memory-mcp",
+      "review_scope": "Repository overview, license and security documentation inspected for scope, local indexing/network notes and MIT license; no installation or execution test.",
+      "use_when": "Query structural code intelligence such as symbols, call chains, routes and impact surfaces through an already-authorized local MCP when a full file-by-file scan is wasteful.",
+      "avoid_when": "Do not install automatically, index unrelated repositories, treat graph output as runtime verification, or persist generated graph/index data to Drive.",
+      "notes": "Current project documentation describes local structural indexing and a background GitHub release update check. Audit exact release/filesystem/network behavior before use.",
+      "license": {
+        "status": "check_current_terms_before_reuse",
+        "url": "https://github.com/DeusData/codebase-memory-mcp/blob/main/LICENSE",
+        "aco_bundles_upstream": false,
+        "observed": "MIT license observed in repository. ACO bundles no upstream code."
+      },
+      "data_policy": "Indexes code deeply and should be scoped to the intended repository. Keep graph/index data local/rebuildable; verify current security/network behavior before deployment."
     }
   ],
   "intake_coverage": {

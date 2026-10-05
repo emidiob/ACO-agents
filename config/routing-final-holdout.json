@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "0.7.0",
+  "aco_version": "0.7.2",
   "name": "routing-independent-gate-r",
   "purpose": "Frozen routing regression gate inherited from v0.6.2 and rerun unchanged for v0.7.0; excluded from routing examples.",
   "gate": {

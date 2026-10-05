@@ -111,3 +111,39 @@ Roles: `automation_integration_engineer`, `technical_researcher`, `qa_engineer`,
 Required capabilities when executing: browser_execution.
 
 [Original ACO method](../playbooks/WEB-DATA-EXTRACTION.md). External upstream content is not bundled. No execution tests performed.
+
+## codebase-memory-yuga
+
+**codebase-memory** · runtime · source_reviewed · reviewed 2026-09-22
+
+Source: https://github.com/yuga-hashimoto/codebase-memory
+
+**Use:** Recall durable codebase decisions, conventions, bugs and project context through an already-authorized local MCP when that reduces repeated repository rediscovery.
+
+**Avoid:** Do not make its SQLite memory the authority for current code, copy all memories to Drive, or auto-remember every observation. Verify material claims against current source/revision.
+
+**Checks:** Stores memories locally in SQLite/FTS5 according to its documentation. Treat remember/forget as local tool writes requiring the project scope to be correct.
+
+Roles: `software_architect`, `tech_lead`, `code_reviewer`.
+
+Required capabilities when executing: local_or_mcp_runtime, current_repository_scope, current_tool_or_connector_review.
+
+[Original ACO method](../playbooks/CODE-INTELLIGENCE-METHOD.md). External upstream content is not bundled. No execution tests performed.
+
+## codebase-memory-deusdata
+
+**Codebase Memory MCP** · runtime · source_reviewed · reviewed 2026-09-22
+
+Source: https://github.com/DeusData/codebase-memory-mcp
+
+**Use:** Query structural code intelligence such as symbols, call chains, routes and impact surfaces through an already-authorized local MCP when a full file-by-file scan is wasteful.
+
+**Avoid:** Do not install automatically, index unrelated repositories, treat graph output as runtime verification, or persist generated graph/index data to Drive.
+
+**Checks:** Current project documentation describes local structural indexing and a background GitHub release update check. Audit exact release/filesystem/network behavior before use.
+
+Roles: `software_architect`, `tech_lead`, `code_reviewer`.
+
+Required capabilities when executing: local_or_mcp_runtime, current_repository_scope, current_tool_or_connector_review.
+
+[Original ACO method](../playbooks/CODE-INTELLIGENCE-METHOD.md). External upstream content is not bundled. No execution tests performed.

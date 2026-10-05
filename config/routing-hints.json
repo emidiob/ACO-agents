@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "0.7.0",
+  "aco_version": "0.7.2",
   "role_hints": {
     "art_critic": [
       "critique artwork",
@@ -985,7 +985,22 @@
       "confirmed decisions verified outcomes unresolved next actions",
       "experiments rejected ideas provisional",
       "durable decisions verified results unresolved tasks future sessions",
-      "discarded assumptions stay out"
+      "discarded assumptions stay out",
+      "minimum private knowledge",
+      "minimum necessary context",
+      "another client",
+      "another client context",
+      "another client private context",
+      "another client private knowledge",
+      "do not pull context from another client",
+      "do not pull in context from another client",
+      "stay within this client private knowledge",
+      "stay within this client context",
+      "cross client private context",
+      "private knowledge boundary",
+      "context isolation",
+      "do not reuse another client context",
+      "keep client context isolated"
     ],
     "art_director": [
       "coherent visual direction",
@@ -1786,7 +1801,14 @@
         "independent cultural project",
         "not a client account",
         "possible client fits our ideal customer",
-        "ideal customer before pitch"
+        "ideal customer before pitch",
+        "minimum private knowledge",
+        "another client private context",
+        "another client private knowledge",
+        "do not pull context from another client",
+        "do not pull in context from another client",
+        "cross client private context",
+        "keep client context isolated"
       ]
     },
     "agency-office": {
@@ -2435,7 +2457,22 @@
         "not an email or messaging action",
         "durable decisions verified results and unresolved tasks",
         "future sessions discarded assumptions",
-        "summarize only durable decisions"
+        "summarize only durable decisions",
+        "minimum private knowledge",
+        "minimum necessary context",
+        "another client",
+        "another client context",
+        "another client private context",
+        "another client private knowledge",
+        "do not pull context from another client",
+        "do not pull in context from another client",
+        "stay within this client private knowledge",
+        "stay within this client context",
+        "cross client private context",
+        "private knowledge boundary",
+        "context isolation",
+        "do not reuse another client context",
+        "keep client context isolated"
       ],
       "negative_signals": [
         "research current artists and exhibitions",

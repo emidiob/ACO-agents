@@ -66,6 +66,25 @@ def main() -> None:
     q = sub.add_parser('execution-benchmark', help='Run deterministic v0.7 execution-policy conformance cases')
     q.add_argument('--input', type=Path)
     q.add_argument('--root', type=Path)
+    q = sub.add_parser('delegation-resolve', help='Resolve whether delegated professional judgment should act, ask, or request approval')
+    q.add_argument('--request', type=Path, required=True)
+    q = sub.add_parser('delegation-benchmark', help='Run deterministic delegation-behavior conformance cases')
+    q.add_argument('--input', type=Path)
+    q = sub.add_parser('memory-resolve', help='Route a memory need to durable, source, local-index or temporary storage without prompting for Drive')
+    q.add_argument('--request', type=Path, required=True)
+    q = sub.add_parser('context-plan', help='Plan minimum authorized context under NONE/BLIND/LIGHT/FULL/BLIND-FIRST; no retrieval or writes')
+    q.add_argument('--request', type=Path, required=True)
+    q = sub.add_parser('context-benchmark', help='Run deterministic v0.7.2 context-scope and efficiency conformance cases')
+    q.add_argument('--input', type=Path)
+    q = sub.add_parser('real-world-benchmark', help='Run the packaged 120-scenario routing/context/memory regression benchmark')
+    q.add_argument('--input', type=Path)
+    q = sub.add_parser('integration-resolve', help='Select a ready provider-neutral host adapter from caller-supplied current inventory; no execution')
+    q.add_argument('--request', type=Path, required=True)
+    q.add_argument('--inventory', type=Path)
+    q = sub.add_parser('integration-benchmark', help='Run deterministic provider-neutral integration resolution conformance cases')
+    q.add_argument('--input', type=Path)
+    q = sub.add_parser('privacy-scan', help='Scan the release for likely personal/private data and credential leakage; read-only')
+    q.add_argument('--root', type=Path)
     for verb in ('practice-check', 'opportunity-check', 'brand-check', 'social-check'):
         q = sub.add_parser(verb, help='Offline studio readiness check, no writes or external actions')
         q.add_argument('--input', type=Path, required=True)
@@ -230,6 +249,30 @@ def main() -> None:
                 result = execution_summary(read_json(a.input))
             else:
                 result = execution_benchmark(a.input, a.root)
+        elif a.command == 'delegation-resolve':
+            from .delegation import resolve_delegation
+            result = resolve_delegation(read_json(a.request))
+        elif a.command == 'delegation-benchmark':
+            from .delegation import delegation_benchmark
+            result = delegation_benchmark(a.input)
+        elif a.command == 'memory-resolve':
+            from .hybrid import memory_resolve
+            result = memory_resolve(read_json(a.request))
+        elif a.command == 'context-plan':
+            from .context import context_plan
+            result = context_plan(read_json(a.request))
+        elif a.command in ('context-benchmark','real-world-benchmark'):
+            from .efficiency import context_benchmark, real_world_benchmark
+            result = context_benchmark(a.input) if a.command == 'context-benchmark' else real_world_benchmark(a.input)
+        elif a.command == 'integration-resolve':
+            from .integrations import integration_resolve
+            result = integration_resolve(read_json(a.request), read_json(a.inventory) if a.inventory else None)
+        elif a.command == 'integration-benchmark':
+            from .integrations import integration_benchmark
+            result = integration_benchmark(a.input)
+        elif a.command == 'privacy-scan':
+            from .privacy import privacy_scan
+            result = privacy_scan(a.root)
         elif a.command in ('practice-check', 'opportunity-check', 'brand-check', 'social-check'):
             from .readiness import practice_check, opportunity_check, brand_check, social_check, _dt
             fn = {'practice-check': practice_check, 'opportunity-check': opportunity_check, 'brand-check': brand_check, 'social-check': social_check}[a.command]

@@ -1,4 +1,4 @@
-# ACO architecture — v0.7.0
+# ACO architecture — v0.7.2
 
 ACO is organized around **selective loading**, not a giant always-on prompt.
 
@@ -155,3 +155,14 @@ Workflow states are runtime/coordination facts, not automatic entities or perman
 
 ### Observability without hidden reasoning
 `execution-summary` reports task scope, observable actions, receipt status/evidence, created files, checks, unresolved receipts and next action. It is deliberately not a chain-of-thought or internal deliberation transcript.
+
+
+## 7. Delegation, Hybrid Memory and adapter discovery — 0.7.2
+
+ACO now treats delegated professional judgment as work to resolve, not a question to bounce back. `DELEGATION.md` defines the narrow cases that still require a user fact, irreducible preference, private-scope clarification or consequential authorization.
+
+Hybrid Memory separates durable semantic context from current code/source, rebuildable code intelligence, research corpora, temporary handoffs, bounded receipts and ephemeral tool state. Drive or another canonical persistent store is optional: use it only when already authorized and materially helpful; never prompt for it merely to start a task.
+
+Provider-neutral integration discovery consumes current host-supplied adapter metadata. It checks exact capability, availability, connection where applicable, operation authorization and verification before selection. Resolution never performs the external action; permission and receipt rules remain separate.
+
+Public-release hygiene also separates repository content from release-only distribution material. Version-specific upgrade prompts stay beside ZIP artifacts, while this repository keeps only evergreen `docs/UPGRADING.md`. A privacy/PII scan blocks release packaging on unreviewed likely private identifiers or credentials.

@@ -1,0 +1,1679 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.7.2",
+  "name": "ACO v0.7.2 context-engine benchmark",
+  "purpose": "Deterministic scope, mode, budget and persistence conformance. Scenarios are package-authored, not an independent external benchmark.",
+  "gate": {
+    "minimum_score": 96.0,
+    "maximum_critical_failures": 0,
+    "maximum_mean_selection_ratio": 0.55
+  },
+  "cases": [
+    {
+      "id": "ctx-light-minimum",
+      "critical": true,
+      "request": {
+        "mode": "LIGHT",
+        "sources": [
+          {
+            "id": "brief",
+            "kind": "task",
+            "estimated_chars": 2500,
+            "relevance": 0.95,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-client-decisions",
+            "kind": "durable",
+            "estimated_chars": 4200,
+            "relevance": 0.92,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "other-client",
+            "kind": "durable",
+            "estimated_chars": 9000,
+            "relevance": 0.99,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "old-notes",
+            "kind": "durable",
+            "estimated_chars": 9000,
+            "relevance": 0.3,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "denied_reason": "cross_scope_private_blocked",
+        "max_selection_ratio": 0.45
+      }
+    },
+    {
+      "id": "ctx-full-still-isolated",
+      "critical": true,
+      "request": {
+        "mode": "FULL",
+        "sources": [
+          {
+            "id": "brief",
+            "kind": "task",
+            "estimated_chars": 2500,
+            "relevance": 0.95,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "other-client",
+            "kind": "durable",
+            "estimated_chars": 6000,
+            "relevance": 0.99,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-client",
+            "kind": "durable",
+            "estimated_chars": 6000,
+            "relevance": 0.9,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "denied_reason": "cross_scope_private_blocked",
+        "max_selection_ratio": 0.7
+      }
+    },
+    {
+      "id": "ctx-cross-scope-explicit",
+      "critical": true,
+      "request": {
+        "mode": "FULL",
+        "cross_scope_authorized": true,
+        "sources": [
+          {
+            "id": "relationship",
+            "kind": "durable",
+            "estimated_chars": 3500,
+            "relevance": 0.99,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": true,
+            "available": true
+          },
+          {
+            "id": "brief",
+            "kind": "task",
+            "estimated_chars": 1500,
+            "relevance": 0.95,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "selected_contains": [
+          "relationship"
+        ],
+        "status": "planned"
+      }
+    },
+    {
+      "id": "ctx-blind-private-block",
+      "critical": true,
+      "request": {
+        "mode": "BLIND",
+        "sources": [
+          {
+            "id": "brief",
+            "kind": "task",
+            "estimated_chars": 2000,
+            "relevance": 0.95,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "private",
+            "kind": "durable",
+            "estimated_chars": 4000,
+            "relevance": 0.99,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "effective_mode": "BLIND",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "ctx-none-private-block",
+      "critical": true,
+      "request": {
+        "mode": "NONE",
+        "sources": [
+          {
+            "id": "repo",
+            "kind": "repo",
+            "estimated_chars": 3000,
+            "relevance": 0.9,
+            "authority": 0.95,
+            "private": false,
+            "scope_relation": "repository_current_source",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "private",
+            "kind": "durable",
+            "estimated_chars": 5000,
+            "relevance": 0.99,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "effective_mode": "NONE",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "ctx-blind-first-initial",
+      "critical": true,
+      "request": {
+        "mode": "BLIND-FIRST",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "public",
+            "kind": "research",
+            "estimated_chars": 3500,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "private",
+            "kind": "durable",
+            "estimated_chars": 4500,
+            "relevance": 0.99,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "effective_mode": "BLIND",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "ctx-blind-first-refine",
+      "critical": true,
+      "request": {
+        "mode": "BLIND-FIRST",
+        "phase": "refine",
+        "first_pass_complete": true,
+        "sources": [
+          {
+            "id": "public",
+            "kind": "research",
+            "estimated_chars": 3500,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "private",
+            "kind": "durable",
+            "estimated_chars": 4500,
+            "relevance": 0.99,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "effective_mode": "LIGHT",
+        "selected_contains": [
+          "private"
+        ]
+      }
+    },
+    {
+      "id": "ctx-missing-decisive",
+      "critical": true,
+      "request": {
+        "mode": "LIGHT",
+        "sources": [
+          {
+            "id": "brief",
+            "kind": "task",
+            "estimated_chars": 2000,
+            "relevance": 0.9,
+            "authority": 0.8,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "required-contract",
+            "kind": "file",
+            "estimated_chars": 5000,
+            "relevance": 1,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": true,
+            "available": false
+          }
+        ]
+      },
+      "expect": {
+        "status": "needs_decisive_context",
+        "denied_reason": "unavailable"
+      }
+    },
+    {
+      "id": "ctx-no-drive-startup",
+      "critical": true,
+      "request": {
+        "mode": "LIGHT",
+        "persistent_store_available": false,
+        "material_change": false,
+        "sources": [
+          {
+            "id": "brief",
+            "kind": "task",
+            "estimated_chars": 2000,
+            "relevance": 0.9,
+            "authority": 0.8,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "status": "planned",
+        "no_drive_prompt": true
+      }
+    },
+    {
+      "id": "ctx-explicit-save-pending",
+      "critical": true,
+      "request": {
+        "mode": "LIGHT",
+        "persistent_store_available": false,
+        "explicit_persistence_request": true,
+        "material_change": true,
+        "sources": [
+          {
+            "id": "brief",
+            "kind": "task",
+            "estimated_chars": 2000,
+            "relevance": 0.9,
+            "authority": 0.8,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "status": "planned",
+        "no_drive_prompt": true
+      }
+    },
+    {
+      "id": "ctx-var-01",
+      "critical": true,
+      "request": {
+        "mode": "LIGHT",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-0",
+            "kind": "task",
+            "estimated_chars": 1800,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-0",
+            "kind": "durable",
+            "estimated_chars": 3600,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-0",
+            "kind": "research",
+            "estimated_chars": 3000,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-0",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "foreign-0",
+            "kind": "durable",
+            "estimated_chars": 6200,
+            "relevance": 0.95,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "LIGHT",
+        "denied_reason": "cross_scope_private_blocked"
+      }
+    },
+    {
+      "id": "ctx-var-02",
+      "critical": false,
+      "request": {
+        "mode": "FULL",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-1",
+            "kind": "task",
+            "estimated_chars": 2100,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-1",
+            "kind": "durable",
+            "estimated_chars": 4000,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-1",
+            "kind": "research",
+            "estimated_chars": 3700,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-1",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "FULL"
+      }
+    },
+    {
+      "id": "ctx-var-03",
+      "critical": false,
+      "request": {
+        "mode": "BLIND",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-2",
+            "kind": "task",
+            "estimated_chars": 2400,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-2",
+            "kind": "durable",
+            "estimated_chars": 4400,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-2",
+            "kind": "research",
+            "estimated_chars": 3000,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-2",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "BLIND",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "ctx-var-04",
+      "critical": true,
+      "request": {
+        "mode": "NONE",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-3",
+            "kind": "task",
+            "estimated_chars": 1800,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-3",
+            "kind": "durable",
+            "estimated_chars": 4800,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-3",
+            "kind": "research",
+            "estimated_chars": 3700,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-3",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "foreign-3",
+            "kind": "durable",
+            "estimated_chars": 6200,
+            "relevance": 0.95,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "NONE",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "ctx-var-05",
+      "critical": false,
+      "request": {
+        "mode": "BLIND-FIRST",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-4",
+            "kind": "task",
+            "estimated_chars": 2100,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-4",
+            "kind": "durable",
+            "estimated_chars": 3600,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-4",
+            "kind": "research",
+            "estimated_chars": 3000,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-4",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "BLIND",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "ctx-var-06",
+      "critical": false,
+      "request": {
+        "mode": "LIGHT",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-5",
+            "kind": "task",
+            "estimated_chars": 2400,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-5",
+            "kind": "durable",
+            "estimated_chars": 4000,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-5",
+            "kind": "research",
+            "estimated_chars": 3700,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-5",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "LIGHT"
+      }
+    },
+    {
+      "id": "ctx-var-07",
+      "critical": true,
+      "request": {
+        "mode": "FULL",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-6",
+            "kind": "task",
+            "estimated_chars": 1800,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-6",
+            "kind": "durable",
+            "estimated_chars": 4400,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-6",
+            "kind": "research",
+            "estimated_chars": 3000,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-6",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "foreign-6",
+            "kind": "durable",
+            "estimated_chars": 6200,
+            "relevance": 0.95,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "FULL",
+        "denied_reason": "cross_scope_private_blocked"
+      }
+    },
+    {
+      "id": "ctx-var-08",
+      "critical": false,
+      "request": {
+        "mode": "BLIND",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-7",
+            "kind": "task",
+            "estimated_chars": 2100,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-7",
+            "kind": "durable",
+            "estimated_chars": 4800,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-7",
+            "kind": "research",
+            "estimated_chars": 3700,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-7",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "BLIND",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "ctx-var-09",
+      "critical": false,
+      "request": {
+        "mode": "NONE",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-8",
+            "kind": "task",
+            "estimated_chars": 2400,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-8",
+            "kind": "durable",
+            "estimated_chars": 3600,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-8",
+            "kind": "research",
+            "estimated_chars": 3000,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-8",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "NONE",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "ctx-var-10",
+      "critical": true,
+      "request": {
+        "mode": "BLIND-FIRST",
+        "phase": "refine",
+        "first_pass_complete": true,
+        "sources": [
+          {
+            "id": "brief-9",
+            "kind": "task",
+            "estimated_chars": 1800,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-9",
+            "kind": "durable",
+            "estimated_chars": 4000,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-9",
+            "kind": "research",
+            "estimated_chars": 3700,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-9",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "foreign-9",
+            "kind": "durable",
+            "estimated_chars": 6200,
+            "relevance": 0.95,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "LIGHT",
+        "denied_reason": "cross_scope_private_blocked"
+      }
+    },
+    {
+      "id": "ctx-var-11",
+      "critical": false,
+      "request": {
+        "mode": "LIGHT",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-10",
+            "kind": "task",
+            "estimated_chars": 2100,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-10",
+            "kind": "durable",
+            "estimated_chars": 4400,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-10",
+            "kind": "research",
+            "estimated_chars": 3000,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-10",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "LIGHT"
+      }
+    },
+    {
+      "id": "ctx-var-12",
+      "critical": false,
+      "request": {
+        "mode": "FULL",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-11",
+            "kind": "task",
+            "estimated_chars": 2400,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-11",
+            "kind": "durable",
+            "estimated_chars": 4800,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-11",
+            "kind": "research",
+            "estimated_chars": 3700,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-11",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "FULL"
+      }
+    },
+    {
+      "id": "ctx-var-13",
+      "critical": true,
+      "request": {
+        "mode": "BLIND",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-12",
+            "kind": "task",
+            "estimated_chars": 1800,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-12",
+            "kind": "durable",
+            "estimated_chars": 3600,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-12",
+            "kind": "research",
+            "estimated_chars": 3000,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-12",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "foreign-12",
+            "kind": "durable",
+            "estimated_chars": 6200,
+            "relevance": 0.95,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "BLIND",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "ctx-var-14",
+      "critical": false,
+      "request": {
+        "mode": "NONE",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-13",
+            "kind": "task",
+            "estimated_chars": 2100,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-13",
+            "kind": "durable",
+            "estimated_chars": 4000,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-13",
+            "kind": "research",
+            "estimated_chars": 3700,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-13",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "NONE",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "ctx-var-15",
+      "critical": false,
+      "request": {
+        "mode": "BLIND-FIRST",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-14",
+            "kind": "task",
+            "estimated_chars": 2400,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-14",
+            "kind": "durable",
+            "estimated_chars": 4400,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-14",
+            "kind": "research",
+            "estimated_chars": 3000,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-14",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "BLIND",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "ctx-var-16",
+      "critical": true,
+      "request": {
+        "mode": "LIGHT",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-15",
+            "kind": "task",
+            "estimated_chars": 1800,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-15",
+            "kind": "durable",
+            "estimated_chars": 4800,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-15",
+            "kind": "research",
+            "estimated_chars": 3700,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-15",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "foreign-15",
+            "kind": "durable",
+            "estimated_chars": 6200,
+            "relevance": 0.95,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "LIGHT",
+        "denied_reason": "cross_scope_private_blocked"
+      }
+    },
+    {
+      "id": "ctx-var-17",
+      "critical": false,
+      "request": {
+        "mode": "FULL",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-16",
+            "kind": "task",
+            "estimated_chars": 2100,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-16",
+            "kind": "durable",
+            "estimated_chars": 3600,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-16",
+            "kind": "research",
+            "estimated_chars": 3000,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-16",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "FULL"
+      }
+    },
+    {
+      "id": "ctx-var-18",
+      "critical": false,
+      "request": {
+        "mode": "BLIND",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-17",
+            "kind": "task",
+            "estimated_chars": 2400,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-17",
+            "kind": "durable",
+            "estimated_chars": 4000,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-17",
+            "kind": "research",
+            "estimated_chars": 3700,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-17",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "BLIND",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "ctx-var-19",
+      "critical": true,
+      "request": {
+        "mode": "NONE",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-18",
+            "kind": "task",
+            "estimated_chars": 1800,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-18",
+            "kind": "durable",
+            "estimated_chars": 4400,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-18",
+            "kind": "research",
+            "estimated_chars": 3000,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-18",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "foreign-18",
+            "kind": "durable",
+            "estimated_chars": 6200,
+            "relevance": 0.95,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "NONE",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "ctx-var-20",
+      "critical": false,
+      "request": {
+        "mode": "BLIND-FIRST",
+        "phase": "refine",
+        "first_pass_complete": true,
+        "sources": [
+          {
+            "id": "brief-19",
+            "kind": "task",
+            "estimated_chars": 2100,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-19",
+            "kind": "durable",
+            "estimated_chars": 4800,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-19",
+            "kind": "research",
+            "estimated_chars": 3700,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-19",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "LIGHT"
+      }
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.7.2",
+  "name": "Delegation resolution conformance",
+  "gate": {
+    "minimum_score": 100,
+    "maximum_critical_failures": 0
+  },
+  "cases": [
+    {
+      "id": "artist-lead",
+      "input": {
+        "delegated": true,
+        "within_role": true,
+        "evidence_sufficient": true,
+        "reversible": true
+      },
+      "expect": "DECIDE_AND_ACT",
+      "critical": true
+    },
+    {
+      "id": "career-priority",
+      "input": {
+        "delegated": true,
+        "within_role": true,
+        "evidence_sufficient": true,
+        "reversible": true
+      },
+      "expect": "DECIDE_AND_ACT",
+      "critical": true
+    },
+    {
+      "id": "tool-choice",
+      "input": {
+        "delegated": true,
+        "within_role": true,
+        "evidence_sufficient": true,
+        "reversible": true
+      },
+      "expect": "DECIDE_AND_ACT",
+      "critical": false
+    },
+    {
+      "id": "portfolio-choice",
+      "input": {
+        "delegated": true,
+        "within_role": true,
+        "evidence_sufficient": true,
+        "reversible": true
+      },
+      "expect": "DECIDE_AND_ACT",
+      "critical": false
+    },
+    {
+      "id": "missing-deadline",
+      "input": {
+        "delegated": true,
+        "within_role": true,
+        "evidence_sufficient": false,
+        "missing_fact_decisive": true,
+        "reversible": true
+      },
+      "expect": "ASK_DECISIVE_FACT",
+      "critical": false
+    },
+    {
+      "id": "wrong-client-risk",
+      "input": {
+        "delegated": true,
+        "within_role": true,
+        "evidence_sufficient": false,
+        "scope_ambiguous_material": true,
+        "reversible": false
+      },
+      "expect": "CLARIFY_SCOPE",
+      "critical": true
+    },
+    {
+      "id": "send-message",
+      "input": {
+        "delegated": true,
+        "within_role": true,
+        "evidence_sufficient": true,
+        "reversible": false,
+        "consequential_authorization": true
+      },
+      "expect": "RECOMMEND_AND_REQUEST_APPROVAL",
+      "critical": true
+    },
+    {
+      "id": "publish-post",
+      "input": {
+        "delegated": true,
+        "within_role": true,
+        "evidence_sufficient": true,
+        "reversible": false,
+        "consequential_authorization": true
+      },
+      "expect": "RECOMMEND_AND_REQUEST_APPROVAL",
+      "critical": true
+    },
+    {
+      "id": "purchase",
+      "input": {
+        "delegated": true,
+        "within_role": true,
+        "evidence_sufficient": true,
+        "reversible": false,
+        "consequential_authorization": true
+      },
+      "expect": "RECOMMEND_AND_REQUEST_APPROVAL",
+      "critical": true
+    },
+    {
+      "id": "sign-contract",
+      "input": {
+        "delegated": true,
+        "within_role": true,
+        "evidence_sufficient": true,
+        "reversible": false,
+        "consequential_authorization": true
+      },
+      "expect": "RECOMMEND_AND_REQUEST_APPROVAL",
+      "critical": true
+    },
+    {
+      "id": "irreducible-taste",
+      "input": {
+        "delegated": true,
+        "within_role": true,
+        "evidence_sufficient": true,
+        "reversible": true,
+        "subjective_preference_only_user": true
+      },
+      "expect": "RECOMMEND_AND_ASK_PREFERENCE",
+      "critical": false
+    },
+    {
+      "id": "material-harm",
+      "input": {
+        "delegated": true,
+        "within_role": true,
+        "evidence_sufficient": true,
+        "reversible": false,
+        "material_harm_if_wrong": true
+      },
+      "expect": "ASK_DECISIVE_FACT",
+      "critical": true
+    },
+    {
+      "id": "not-delegated",
+      "input": {
+        "delegated": false,
+        "within_role": true,
+        "evidence_sufficient": true,
+        "reversible": true
+      },
+      "expect": "SUPPORT_USER_DECISION",
+      "critical": false
+    },
+    {
+      "id": "outside-role",
+      "input": {
+        "delegated": true,
+        "within_role": false,
+        "evidence_sufficient": true,
+        "reversible": true
+      },
+      "expect": "ROUTE_OR_ESCALATE",
+      "critical": false
+    }
+  ]
+}

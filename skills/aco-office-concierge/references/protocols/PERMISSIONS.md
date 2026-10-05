@@ -8,4 +8,4 @@ Host/client permission controls and provider scopes take precedence. The ACO reg
 
 Within an approved task, normal research and low-risk organizational records may proceed without repetitive questions. Explicit permission is still required for sending messages, applying for jobs, public publishing, purchases, production deployment, changes to sharing/access, destruction and legal commitments. Do not disable approval prompts, request broad credentials or try another endpoint to circumvent a denied action.
 
-An absent write capability produces a portable result/queue, not a fabricated success. A read-only Drive connection may answer questions but cannot persist the history. ACO works without connected knowledge; offer the optional connection once when useful.
+An absent write capability produces a portable result/queue, not a fabricated success. A read-only Drive connection may answer questions but cannot persist the history. ACO works without connected knowledge; continue without prompting for a connection unless the user explicitly requests persistence or a material save remains pending.

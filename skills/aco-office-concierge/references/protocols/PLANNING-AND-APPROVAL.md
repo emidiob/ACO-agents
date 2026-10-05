@@ -1,6 +1,6 @@
 # Planning and approval
 
-Use planning only when it reduces risk or coordination cost.
+Use planning only when it reduces risk or coordination cost. Planning does not justify returning delegated professional judgment to the user; apply [Delegation](DELEGATION.md) first.
 
 ## Small reversible work
 Do it directly after resolving decisive ambiguity. Do not create a multi-office plan for a bounded draft, crop, copy edit, lookup or simple code change.

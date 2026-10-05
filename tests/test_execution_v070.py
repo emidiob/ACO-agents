@@ -7,7 +7,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 
-from aco.common import ROOT
+from aco.common import ROOT, VERSION
 from aco.execution import (
     action_hash, adapter_check, capability_state, execution_benchmark, execution_plan,
     execution_summary, permission_check, receipt_check, workflow_check,
@@ -33,7 +33,7 @@ def approval_for(request):
 class ExecutionV070Tests(unittest.TestCase):
     def test_capability_model_has_formal_states(self):
         data = json.loads((ROOT / 'config/capabilities.json').read_text())
-        self.assertEqual(data['aco_version'], '0.7.0')
+        self.assertEqual(data['aco_version'], VERSION)
         for state in ('LEARNED_SKILL','REFERENCE','OPTIONAL_TOOL','CONNECTED_INTEGRATION','LOCAL_RUNTIME','UNAVAILABLE','BLOCKED'):
             self.assertIn(state, data['states'])
         self.assertGreaterEqual(len(data['capabilities']), 30)

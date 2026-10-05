@@ -86,3 +86,28 @@ python3 scripts/aco_cli.py execution-benchmark --input config/execution-benchmar
 ```
 
 `execution-plan` returns `ready_to_execute`, `fallback_required`, `reconcile_required` or `already_executed`; even `ready_to_execute` means only that policy/capability evidence is sufficient for the host to consider the action. The host still performs the actual action and must capture a receipt.
+
+
+## v0.7.1 behavior, memory, integration and privacy checks
+
+```bash
+python3 scripts/aco_cli.py delegation-resolve --request request.json
+python3 scripts/aco_cli.py delegation-benchmark
+python3 scripts/aco_cli.py memory-resolve --request memory-request.json
+python3 scripts/aco_cli.py integration-resolve --request request.json --inventory adapters.json
+python3 scripts/aco_cli.py integration-benchmark
+python3 scripts/aco_cli.py privacy-scan
+```
+
+These commands are offline/read-only decision or validation tools. They do not connect Drive, install MCP servers, authenticate providers, send messages or execute remote actions. `privacy-scan` is also enforced by validation/release packaging.
+
+## v0.7.2 context efficiency
+
+```bash
+python3 scripts/aco_cli.py context-plan --request examples/context/request.json
+python3 scripts/aco_cli.py context-benchmark --input config/context-benchmark.json
+python3 scripts/aco_cli.py real-world-benchmark --input config/real-world-benchmark-v072.json
+python3 scripts/aco_cli.py route-benchmark --input config/routing-v072-holdout-3.json
+```
+
+These commands are deterministic and side-effect free. `context-plan` plans only; it does not retrieve files or connect Drive.

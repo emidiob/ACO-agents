@@ -1,8 +1,15 @@
-# ACO context policy — v0.7.0
+# ACO context policy — v0.7.2
 
 # Compact memory — default in v0.5.1
 
-Progressive retrieval is defined in `skills/aco-office-concierge/references/protocols/CONTEXT-RETRIEVAL.md`: read the minimum useful context first, refine only for material gaps, and never silently widen client/project scope.
+Progressive retrieval is defined in `skills/aco-office-concierge/references/protocols/CONTEXT-RETRIEVAL.md`: read the minimum useful context first, refine only for material gaps, and never silently widen client/project scope. Hybrid storage is defined in `HYBRID-MEMORY.md`: use durable canonical knowledge only when already authorized/materially useful; code structure and runtime state stay local/rebuildable. Do not prompt for Drive merely to start a task.
+
+
+## v0.7.2 Context Engine
+
+`context-plan` makes the progressive-retrieval rule measurable before a host retrieves anything. `NONE` and `BLIND` never request private durable context; `BLIND-FIRST` stays blind for the initial pass and may use `LIGHT` only during an explicit refine phase after that first pass. `LIGHT` and `FULL` remain selective, use relevance/source/character budgets, and never treat a larger budget as permission to load irrelevant history.
+
+Private context is scope-bound. `other_private_entity` and unknown private scope are denied unless the request carries explicit cross-scope authorization. This rule still applies in `FULL`. An unavailable persistent store never becomes a startup requirement: requested saves may be marked pending, but normal work continues and `prompt_for_drive` stays false.
 
 ## The gate before every persistent write
 Use existing canonical knowledge before creating a file. A suggestion is not a project, a contacted prospect is not a client, an application is not an artwork, and a possible activity is not a business unit.

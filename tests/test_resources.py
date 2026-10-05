@@ -5,8 +5,8 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from aco.resources import load_registry,resource_plan,search_resources
 from aco.common import ROOT,ACOError
 class ResourceTests(unittest.TestCase):
- def test_all_97_distinct(self):
-  r=load_registry()['resources'];self.assertEqual(len(r),97);self.assertEqual(len({e['id'] for e in r}),97)
+ def test_all_99_distinct(self):
+  r=load_registry()['resources'];self.assertEqual(len(r),99);self.assertEqual(len({e['id'] for e in r}),99)
  def test_every_role_exists(self):
   roles=json.loads((ROOT/'catalog.json').read_text())['agents']
   for e in load_registry()['resources']:

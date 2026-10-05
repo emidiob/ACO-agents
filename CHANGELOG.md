@@ -1,5 +1,25 @@
 # Changelog
 
+## 0.7.2
+
+- Add a deterministic Context Engine for `NONE`, `BLIND`, `LIGHT`, `FULL` and `BLIND-FIRST` with explicit source/character budgets and relevance floors.
+- Enforce same-entity/client private-context boundaries: another client or unknown private scope is blocked unless cross-scope access is explicitly authorized.
+- Extend Hybrid Memory with mode-aware read resolution while keeping normal work independent of Drive/persistence availability.
+- Harden routing for artist-residency, independent brand-strategy and cross-client context-boundary requests without adding roles.
+- Add a frozen 36-case third routing holdout plus a 30-case context benchmark and a 120-scenario routing/context/memory regression benchmark.
+- Add context-efficiency metrics so release validation measures how much candidate context is actually selected, not only correctness.
+- Keep 363 roles, 16 skills, 61 workflows, 99 optional resources, Compact Memory and the proprietary LICENSE unchanged.
+
+## 0.7.1
+
+- Concierge now resolves delegated professional judgment by default instead of handing role-owned prioritization/tool/method choices back to the user.
+- Removed proactive Drive-memory invitation; unavailable persistence no longer blocks normal work.
+- Added Hybrid Memory routing for durable context, code architecture, rebuildable code intelligence, research corpora, task context, receipts and runtime state.
+- Added provider-neutral integration adapter resolution and deterministic integration/delegation benchmarks.
+- Added optional, non-bundled codebase-memory references for code decision recall and structural code intelligence.
+- Added a privacy/PII release gate and blocked packaging on unreviewed likely personal/private/credential findings.
+- Removed the version-specific Codex migration prompt from the repository; evergreen upgrade procedure remains in `docs/UPGRADING.md`, while release-specific prompts are distributed beside ZIPs.
+
 ## 0.7.0
 
 - Add a formal execution/capability layer without adding canonical roles or mandatory third-party runtimes.

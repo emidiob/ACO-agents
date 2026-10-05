@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "0.7.0",
+  "aco_version": "0.7.2",
   "skill_count": 16,
   "role_count": 363,
   "skills": [
@@ -1461,7 +1461,7 @@
     },
     "office_concierge": {
       "office": "shared",
-      "description": "Front-door concierge for a multi-office agent system. Translates natural requests into clear briefs, identifies the right office or cross-office team, asks only essential clarifying questions, and protects the user from having to know agent names.",
+      "description": "Front-door concierge for a multi-office agent system. Translates natural requests into clear briefs, identifies the right office or small cross-office team, resolves delegated professional choices, and asks only genuinely decisive questions.",
       "path": "skills/aco-office-concierge/references/agents/office-concierge.md",
       "skill_path": "aco-office-concierge/references/agents/office-concierge.md",
       "native_name": "aco_office_concierge",

@@ -1,0 +1,390 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.7.2",
+  "name": "ACO v0.7.2 fresh routing holdout 3",
+  "purpose": "Fresh post-development holdout frozen before first execution. It is excluded from routing examples and measures known office boundaries plus broad regression coverage; it is not an independent external benchmark.",
+  "gate": {
+    "minimum_score": 92.0,
+    "minimum_office_accuracy": 0.94,
+    "minimum_top1_role_accuracy": 0.86,
+    "minimum_top3_role_recall": 0.97,
+    "maximum_overstaff_rate": 0.05,
+    "maximum_critical_failures": 0
+  },
+  "cases": [
+    {
+      "id": "v72-art-residency",
+      "prompt": "I need to decide whether this artist residency is worth applying to for my own practice; check the programme, eligibility, deadline and required work samples.",
+      "expected_office": "artist-office",
+      "acceptable_roles": [
+        "art_opportunities_scout"
+      ],
+      "critical": true,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-art-gallery",
+      "prompt": "After a curator introduced me to a gallery, plan how I should handle the studio visit and relationship as an artist.",
+      "expected_office": "artist-office",
+      "acceptable_roles": [
+        "gallery_relations_manager",
+        "artist_agent"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-art-archive",
+      "prompt": "Create a reliable inventory for my artworks, editions, dimensions, locations and condition records.",
+      "expected_office": "artist-office",
+      "acceptable_roles": [
+        "collection_inventory_manager",
+        "practice_archivist"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-org-programme",
+      "prompt": "Our foundation needs a coherent public programme of exhibitions, talks and workshops for next year.",
+      "expected_office": "organization-office",
+      "acceptable_roles": [
+        "programme_curator"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-org-operations",
+      "prompt": "Our arts institution has unclear ownership and too much work in flight; define operating priorities, capacity and responsibilities.",
+      "expected_office": "organization-office",
+      "acceptable_roles": [
+        "operations_director"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-agency-identity",
+      "prompt": "The client approved the strategy; now turn the mark, typography, color, imagery and layout into a visual identity system.",
+      "expected_office": "agency-office",
+      "acceptable_roles": [
+        "brand_identity_designer",
+        "design_director"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-agency-web",
+      "prompt": "Art-direct the client website so the responsive layout, typography and imagery express the approved brand.",
+      "expected_office": "agency-office",
+      "acceptable_roles": [
+        "digital_design_director"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-product-bug",
+      "prompt": "After the software release, saved projects vanish on refresh; reproduce the regression and isolate the defect.",
+      "expected_office": "product-office",
+      "acceptable_roles": [
+        "bug_investigator"
+      ],
+      "critical": true,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-product-migration",
+      "prompt": "Plan the production database migration with rollback, validation and recovery evidence.",
+      "expected_office": "product-office",
+      "acceptable_roles": [
+        "migration_specialist",
+        "database_engineer"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-legal-contract",
+      "prompt": "Before we sign this B2B services agreement, review payment, IP, liability, termination and governing-law clauses.",
+      "expected_office": "legal-office",
+      "acceptable_roles": [
+        "contract_reviewer",
+        "commercial_contracts_advisor"
+      ],
+      "critical": true,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-legal-privacy",
+      "prompt": "Map the GDPR and data-protection obligations for this planned customer-data flow and processor setup.",
+      "expected_office": "legal-office",
+      "acceptable_roles": [
+        "privacy_data_protection_advisor"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-recruit-fit",
+      "prompt": "Before I apply for this senior role, compare my verified experience with the job description and identify the material gaps.",
+      "expected_office": "recruitment-office",
+      "acceptable_roles": [
+        "job_fit_analyst",
+        "skills_gap_analyst"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-recruit-offer",
+      "prompt": "I have a written job offer; prepare how I can negotiate title, compensation, flexibility and start date.",
+      "expected_office": "recruitment-office",
+      "acceptable_roles": [
+        "offer_negotiation_advisor"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-shared-context",
+      "prompt": "A similar project exists for another client, but do not reuse that private context; use only the minimum same-client knowledge needed here.",
+      "expected_office": "shared",
+      "acceptable_roles": [
+        "context_steward"
+      ],
+      "critical": true,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-shared-context2",
+      "prompt": "Keep this client context isolated from another client private knowledge and preserve only durable decisions and unresolved next actions.",
+      "expected_office": "shared",
+      "acceptable_roles": [
+        "context_steward"
+      ],
+      "critical": true,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-shared-brand",
+      "prompt": "For this independent cultural project, define positioning, differentiation and brand architecture before any identity execution begins.",
+      "expected_office": "shared",
+      "acceptable_roles": [
+        "brand_strategist"
+      ],
+      "critical": true,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-shared-edit",
+      "prompt": "Edit this curatorial essay for precision and structure without turning it into campaign copy or changing the argument.",
+      "expected_office": "shared",
+      "acceptable_roles": [
+        "editor",
+        "art_writer"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-finance-cash",
+      "prompt": "Forecast the business cash receipts and payments by date and show the lowest projected balance and liquidity pressure.",
+      "expected_office": "finance-office",
+      "acceptable_roles": [
+        "cashflow_treasury_analyst"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-finance-margin",
+      "prompt": "Before we quote the job, model labor, supplier costs, rights, contingency and target margin.",
+      "expected_office": "finance-office",
+      "acceptable_roles": [
+        "pricing_margin_analyst",
+        "production_cost_controller"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-commercial-lead",
+      "prompt": "Qualify this possible buyer against our ideal-client profile and credible need before anyone invests in a pitch.",
+      "expected_office": "commercial-office",
+      "acceptable_roles": [
+        "lead_qualification_researcher"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-commercial-tender",
+      "prompt": "Coordinate our response to this formal RFP, including mandatory attachments, scoring criteria and submission requirements.",
+      "expected_office": "commercial-office",
+      "acceptable_roles": [
+        "tender_bid_coordinator"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-people-onboard",
+      "prompt": "As the employer, create a clean first-week onboarding plan for the new staff member joining Monday.",
+      "expected_office": "people-office",
+      "acceptable_roles": [
+        "onboarding_offboarding_coordinator"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-people-workforce",
+      "prompt": "Turn forecast workload and required capabilities into employee and contractor staffing scenarios before recruiting anyone.",
+      "expected_office": "people-office",
+      "acceptable_roles": [
+        "workforce_planner"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-delivery-program",
+      "prompt": "Several projects share resources and milestones; build one integrated dependency view and escalation path.",
+      "expected_office": "delivery-office",
+      "acceptable_roles": [
+        "programme_delivery_manager",
+        "project_controls_analyst"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-delivery-accept",
+      "prompt": "Define the acceptance evidence and sign-off criteria required before the client can accept each deliverable.",
+      "expected_office": "delivery-office",
+      "acceptable_roles": [
+        "quality_acceptance_coordinator"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-admin-inbox",
+      "prompt": "Read the full office email thread and draft the appropriate reply for approval, without sending it.",
+      "expected_office": "administration-office",
+      "acceptable_roles": [
+        "inbox_correspondence_manager",
+        "communications_editor"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-admin-travel",
+      "prompt": "Compare flights, hotel and practical travel logistics for this business trip and prepare an itinerary without booking.",
+      "expected_office": "administration-office",
+      "acceptable_roles": [
+        "travel_logistics_coordinator"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-production-camera",
+      "prompt": "Plan the cinematography for this scene: framing, lens choices, lighting, movement and continuity.",
+      "expected_office": "production-office",
+      "acceptable_roles": [
+        "cinematographer"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-production-prompt",
+      "prompt": "Translate this approved creative direction into a precise prompt for an AI video model without claiming a render was made.",
+      "expected_office": "production-office",
+      "acceptable_roles": [
+        "ai_video_prompt_adapter",
+        "visual_prompt_engineer"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-publishing-dev",
+      "prompt": "Restructure this book manuscript for argument, chapter order and reader flow before copyediting.",
+      "expected_office": "publishing-office",
+      "acceptable_roles": [
+        "developmental_editor"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-publishing-prepress",
+      "prompt": "Prepare the publication files for print and check bleed, fonts, image resolution, color settings and printer requirements.",
+      "expected_office": "publishing-office",
+      "acceptable_roles": [
+        "prepress_specialist"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-context-ambiguous",
+      "prompt": "I need something important done tomorrow but I have not described what the task concerns. Ask one decisive question first.",
+      "expected_office": "shared",
+      "acceptable_roles": [
+        "office_concierge"
+      ],
+      "critical": true,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-art-research",
+      "prompt": "For my artistic practice, research current artists, exhibitions and critical writing relevant to the work I supplied.",
+      "expected_office": "artist-office",
+      "acceptable_roles": [
+        "art_researcher",
+        "practice_strategist"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-org-contrib",
+      "prompt": "Our cultural organization needs external artists, researchers and speakers for the programme; organize contributor sourcing and availability.",
+      "expected_office": "organization-office",
+      "acceptable_roles": [
+        "talent_contributors_manager"
+      ],
+      "critical": false,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-product-security",
+      "prompt": "Review the application authentication, authorization, secrets and exposed-data risks and verify the proposed fixes.",
+      "expected_office": "product-office",
+      "acceptable_roles": [
+        "security_reviewer",
+        "security_engineer"
+      ],
+      "critical": true,
+      "max_selected_roles": 2
+    },
+    {
+      "id": "v72-admin-status",
+      "prompt": "A communication action timed out with no receipt; determine whether it was sent before any retry is attempted.",
+      "expected_office": "administration-office",
+      "acceptable_roles": [
+        "communications_operator",
+        "inbox_correspondence_manager"
+      ],
+      "critical": true,
+      "max_selected_roles": 2
+    }
+  ]
+}

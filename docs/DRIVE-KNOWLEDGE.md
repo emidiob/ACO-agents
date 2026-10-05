@@ -1,6 +1,6 @@
 # Google Drive — compact canonical-document protocol
 
-ACO remains a skill library, not a Google app or synchronization daemon. The user connects Drive separately in the host. Verify the actual tools and account in this session; do not assume that connected means writable.
+ACO remains a skill library, not a Google app or synchronization daemon. Drive is optional. Do not ask the user to connect it merely to start a task or improve memory. When Drive is already connected/authorized or the user explicitly requests a Drive save, verify the actual tools/account in this session; do not assume that connected means writable.
 
 Read [Compact Memory](COMPACT-MEMORY.md) before write and [cleanup](CLEANUP.md) before consolidation. Default: one canonical index and one ACO.md/native Doc for genuinely independent real owners/projects. Activities, brands, small clients and speculative items remain sections/rows. No file per session, decision, event, proposal, rejection or handoff. Actual requested deliverables stay legitimate files.
 
@@ -18,3 +18,8 @@ A first setup creates only missing necessary records, never a full set of placeh
 `canonical_sync.py` defines a small provider-neutral read/guarded-update/read-back contract and is tested with a simulated provider. It has no bundled Google authentication or live connector adapter. A host can apply the same protocol with its authorized tools. Source CLI drive-bind/drive-sync defaults are blocked in compact mode; old event uploads require explicit legacy mode and are not recommended for this layout.
 
 Folders, metadata and prompt scopes do not enforce confidentiality by themselves. Preserve provider permissions and separate restricted records. Never place private IDs or knowledge in public GitHub.
+
+
+## Hybrid Memory boundary — 0.7.1
+
+Drive/canonical knowledge stores compact meaningful human continuity. It must not become a mirror of source code, ASTs, symbols, call graphs, embeddings, local code-memory databases, tool caches or per-action receipts. For code work, Git/current source is authoritative and code-intelligence indexes are local/rebuildable; only materially important architecture/decision summaries may be added to the existing canonical ACO record.

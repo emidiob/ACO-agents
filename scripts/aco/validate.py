@@ -40,7 +40,7 @@ def validate() -> dict:
         for role in [w['lead'],*w['team']]:
             if role not in cat['agents']:errors.append('Unknown workflow role '+key+': '+role)
         if len({i['key'] for i in w['intake']})!=len(w['intake']):errors.append('Duplicate intake field '+key)
-    # Quality, Routing & Execution release checks (v0.7.0). These are local/read-only.
+    # Quality, Routing, Delegation, Hybrid Memory & Execution release checks. These are local/read-only.
     contracts=read_json(ROOT/'config/role-contracts.json')
     if contracts.get('schema_version')!=1:errors.append('Role contracts schema mismatch')
     if contracts.get('aco_version')!=VERSION:errors.append('Role contracts version mismatch')
@@ -60,6 +60,12 @@ def validate() -> dict:
     trained_prompts={x.get('prompt') for x in examples.get('examples',[]) if x.get('prompt')}
     holdout_prompts={x.get('prompt') for x in holdout.get('cases',[]) if x.get('prompt')}
     if trained_prompts & holdout_prompts:errors.append('Final routing holdout overlaps training examples')
+    holdout3=read_json(ROOT/'config/routing-v072-holdout-3.json')
+    if holdout3.get('schema_version')!=1:errors.append('v0.7.2 routing holdout schema mismatch')
+    if holdout3.get('aco_version')!=VERSION:errors.append('v0.7.2 routing holdout version mismatch')
+    if len(holdout3.get('cases',[]))<30:errors.append('v0.7.2 routing holdout is too small')
+    holdout3_prompts={x.get('prompt') for x in holdout3.get('cases',[]) if x.get('prompt')}
+    if trained_prompts & holdout3_prompts:errors.append('v0.7.2 routing holdout overlaps training examples')
     simulation=read_json(ROOT/'release/behavioral-simulation.json')
     if simulation.get('schema_version')!=1:errors.append('Behavioral simulation schema mismatch')
     if simulation.get('aco_version')!=VERSION:errors.append('Behavioral simulation version mismatch')
@@ -68,12 +74,25 @@ def validate() -> dict:
     routing_gate=route_benchmark(ROOT/'config/routing-final-holdout.json')
     if routing_gate.get('status')!='passed' or routing_gate.get('critical_failures')!=0 or routing_gate.get('score',0)<90:
         errors.append('Final routing holdout gate failed')
+    routing_gate_v072=route_benchmark(ROOT/'config/routing-v072-holdout-3.json')
+    if routing_gate_v072.get('status')!='passed' or routing_gate_v072.get('critical_failures')!=0 or routing_gate_v072.get('score',0)<92:
+        errors.append('v0.7.2 fresh routing holdout gate failed')
+    context_cfg=read_json(ROOT/'config/context-engine.json')
+    if context_cfg.get('schema_version')!=1 or context_cfg.get('aco_version')!=VERSION:
+        errors.append('Context engine contract mismatch')
+    from .efficiency import context_benchmark, real_world_benchmark
+    context_gate=context_benchmark(ROOT/'config/context-benchmark.json')
+    if context_gate.get('status')!='passed' or context_gate.get('critical_failures')!=0:
+        errors.append('Context efficiency benchmark gate failed')
+    real_world_gate=real_world_benchmark(ROOT/'config/real-world-benchmark-v072.json')
+    if real_world_gate.get('status')!='passed' or real_world_gate.get('critical_failures')!=0 or real_world_gate.get('cases')!=120:
+        errors.append('120-scenario real-world regression gate failed')
     from .quality import score_simulation
     simulation_gate=score_simulation(ROOT/'release/behavioral-simulation.json')
     if simulation_gate.get('status')!='passed' or simulation_gate.get('critical_failures')!=0 or simulation_gate.get('score',0)<90:
         errors.append('Behavioral simulation gate failed')
     # v0.7 execution contracts and deterministic conformance gate.
-    for filename in ('capabilities.json','permission-policy.json','adapter-contract.json','workflow-states.json','execution-benchmark.json'):
+    for filename in ('capabilities.json','permission-policy.json','adapter-contract.json','workflow-states.json','execution-benchmark.json','memory-classes.json','integration-adapters.json','delegation-benchmark.json','integration-benchmark.json','privacy-policy.json','context-engine.json','context-benchmark.json','real-world-benchmark-v072.json','routing-v072-holdout-3.json'):
         cfg=read_json(ROOT/'config'/filename)
         if cfg.get('schema_version')!=1:errors.append(filename+' schema mismatch')
         if cfg.get('aco_version')!=VERSION:errors.append(filename+' version mismatch')
@@ -84,6 +103,18 @@ def validate() -> dict:
     execution_gate=execution_benchmark(ROOT/'config/execution-benchmark.json')
     if execution_gate.get('status')!='passed' or execution_gate.get('critical_failures')!=0 or execution_gate.get('score',0)<98:
         errors.append('Execution policy benchmark gate failed')
+    from .delegation import delegation_benchmark
+    delegation_gate=delegation_benchmark(ROOT/'config/delegation-benchmark.json')
+    if delegation_gate.get('status')!='passed' or delegation_gate.get('critical_failures')!=0 or delegation_gate.get('score',0)<100:
+        errors.append('Delegation behavior benchmark gate failed')
+    from .integrations import integration_benchmark
+    integration_gate=integration_benchmark(ROOT/'config/integration-benchmark.json')
+    if integration_gate.get('status')!='passed' or integration_gate.get('critical_failures')!=0 or integration_gate.get('score',0)<100:
+        errors.append('Integration resolution benchmark gate failed')
+    from .privacy import privacy_scan
+    privacy_gate=privacy_scan(ROOT)
+    if privacy_gate.get('status')!='passed':
+        errors.append('Privacy/PII release gate failed: '+', '.join(sorted({x['type'] for x in privacy_gate.get('findings',[])})))
     from .resources import load_registry
     rr=load_registry();resource_ids=[x['id'] for x in rr['resources']]
     if len(resource_ids)!=len(set(resource_ids)):errors.append('Duplicate resource IDs')
@@ -96,7 +127,7 @@ def validate() -> dict:
         if entry['review_status']=='identity_unresolved' and entry.get('activation')!='blocked_pending_exact_source':errors.append('Unresolved resource not gated '+entry['id'])
         if entry.get('installed_by_aco') or entry.get('execution_tested'):errors.append('Unverified installation/test claim in supplied-resource registry '+entry['id'])
     # Check actual dangerous files, not intentional references in migration documentation.
-    for name in ('plugin.json','.codex-plugin','.agents/plugins','docs/PUBLIC-SUBMISSION.md','PRIVACY.md','TERMS.md','MCP-ROADMAP.md'):
+    for name in ('plugin.json','.codex-plugin','.agents/plugins','docs/PUBLIC-SUBMISSION.md','PRIVACY.md','TERMS.md','MCP-ROADMAP.md','docs/CODEX-MIGRATION-PROMPT.txt'):
         if (ROOT/name).exists():errors.append('Obsolete plugin artifact '+name)
     private_components={'private-context','private-knowledge','.agent-context','credentials.json','token.json'}
     scanned=0
@@ -130,5 +161,5 @@ def validate() -> dict:
     if errors:raise ACOError('Validation failed:\n'+'\n'.join(errors))
     return {'status':'validated','version':VERSION,'canonical_agents':len(cat['agents']),
             'native_agents':len(names),'skills':len(skills),'workflows':len(workflows),'optional_resources':len(resource_ids),'memory_default':'compact','text_files_scanned':scanned,'relative_links_checked':links_checked,
-            'checks':['TOML','role catalogue and dependencies','generated parity','no plugin artifacts','basic secret/private-path scan','release hashes','relative documentation links','resource identities/roles/methods','role contracts','routing holdout gate','behavioral simulation gate','capability/permission/adapter/workflow contracts','execution policy benchmark gate'],
+            'delegation_score':delegation_gate.get('score'),'integration_score':integration_gate.get('score'),'privacy_findings':len(privacy_gate.get('findings',[])),'routing_v072_score':routing_gate_v072.get('score'),'context_benchmark_score':context_gate.get('score'),'context_mean_selection_ratio':context_gate.get('mean_selection_ratio'),'real_world_benchmark_score':real_world_gate.get('score'),'real_world_context_selection_ratio':real_world_gate.get('mean_context_selection_ratio'),'checks':['TOML','role catalogue and dependencies','generated parity','no plugin artifacts','basic secret/private-path scan','release hashes','relative documentation links','resource identities/roles/methods','role contracts','routing holdout gate','v0.7.2 fresh routing holdout gate','context efficiency gate','120-scenario real-world regression gate','behavioral simulation gate','delegation benchmark gate','hybrid-memory contracts','integration adapter benchmark gate','privacy/PII release gate','capability/permission/adapter/workflow contracts','execution policy benchmark gate'],
             'execution_benchmark_score':execution_gate.get('score'),'limitations':'Static/local checks; no professional-quality certification and no live external adapter/provider action is executed by validation.'}

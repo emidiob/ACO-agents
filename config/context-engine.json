@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.7.2",
+  "purpose": "Selective, scope-bounded context retrieval with measurable budgets and no proactive persistence prompt.",
+  "modes": {
+    "NONE": {
+      "allow_private": false,
+      "max_sources": 4,
+      "max_chars": 12000,
+      "description": "Use task-local, repository and public context only; no private durable retrieval.",
+      "minimum_relevance": 0.6
+    },
+    "BLIND": {
+      "allow_private": false,
+      "max_sources": 6,
+      "max_chars": 16000,
+      "description": "Independent pass without private durable context.",
+      "minimum_relevance": 0.6
+    },
+    "LIGHT": {
+      "allow_private": true,
+      "max_sources": 4,
+      "max_chars": 12000,
+      "description": "Retrieve only the smallest relevant same-scope private context.",
+      "minimum_relevance": 0.6
+    },
+    "FULL": {
+      "allow_private": true,
+      "max_sources": 10,
+      "max_chars": 32000,
+      "description": "Broader but still selective and scope-bounded retrieval.",
+      "minimum_relevance": 0.5
+    },
+    "BLIND-FIRST": {
+      "allow_private": false,
+      "max_sources": 6,
+      "max_chars": 16000,
+      "description": "Blind initial pass; after completion a refine phase may use LIGHT context.",
+      "minimum_relevance": 0.6
+    }
+  },
+  "scope_rule": "Other-private or unknown-private entity context is blocked unless cross_scope_authorized is explicit.",
+  "persistence_rule": "Do not prompt for Drive merely to enable memory. Continue work and mark an explicit unavailable save as pending."
+}

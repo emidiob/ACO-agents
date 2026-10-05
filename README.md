@@ -2,11 +2,11 @@
 
 **A working library for an artist, studio, agency or cultural business — with scoped private knowledge and evidence-aware execution.**
 
-**ACO v0.7.0 · 363 roles · 16 entry skills · 61 workflows · 97 optional resources.**
+**ACO v0.7.2 · 363 roles · 16 entry skills · 61 workflows · 99 optional resources.**
 
 Proprietary, source-available. Redistribution is restricted by [LICENSE](LICENSE). No third-party software, fonts, models or private knowledge are bundled.
 
-**Start with [BEGINNER-GUIDE.md](BEGINNER-GUIDE.md).** For this release's decisions, see [What's changed](docs/UPGRADE-0.7.0.md).
+**Start with [BEGINNER-GUIDE.md](BEGINNER-GUIDE.md).** For an existing checkout, follow the evergreen [upgrade procedure](docs/UPGRADING.md). Release-specific Codex prompts are distributed beside release ZIPs, not stored in the repository.
 
 ## What ACO is — and is not
 
@@ -22,13 +22,16 @@ The public library supplies expertise and procedures. Your private knowledge sup
 A natural request
   → resolve the actual practice / company / client / project
   → read only the relevant methods and authorized context
-  → ask up to three decisive missing questions, early
+  → resolve delegated professional judgment when evidence is sufficient
+  → ask only decisive missing facts/preferences/authorization
   → do the work with real available tools
   → inspect the result and disclose unrun checks
   → update compact memory only when something material changed
 ```
 
 No office-by-office performance or unnecessary planning ceremony. A simple request should receive a simple result. A commissioned essay, design system or codebase still needs a complete deliverable.
+
+**v0.7.2 context efficiency:** the optional local `context-plan` command makes `NONE` / `BLIND` / `LIGHT` / `FULL` / `BLIND-FIRST` retrieval budgets explicit, blocks unauthorized cross-client private context even in `FULL`, and reports selection ratios. Release validation includes a fresh routing holdout, a focused context benchmark and a 120-scenario routing/context/memory regression suite. These are deterministic package regressions, not an independent human-quality benchmark.
 
 **Artistic authority remains with the artist.** Do not construct a practice around open calls or sales metrics. Do not mistake approved strategy for validated evidence.
 
@@ -52,21 +55,27 @@ No office-by-office performance or unnecessary planning ceremony. A simple reque
 
 The **Concierge** routes; **Context Setup** initializes the minimum knowledge structure; **Context Steward** records actual work and approved changes. Browse the [visual agent catalogue](docs/AGENT-CATALOG.md) or [exact role paths](docs/ALL-ROLES.md). Usually you do not need to pick individual agents.
 
-## What makes 0.7.0 different?
+## What makes 0.7.1 different?
 
-0.7.0 is the **Execution & Integration** release. It keeps the 363 roles, 16 entry skills, 61 workflows, 97 optional resources, Compact Memory and the 0.6.2 router. The change is not more personas: ACO now has a formal boundary between knowing how to do work and being able to perform a real external action.
+0.7.1 is a behavior, memory and integration-hardening release. It keeps the 363 roles, 16 entry skills and 61 workflows while adding two reviewed code-intelligence resources. The focus is not more personas.
 
-The execution layer distinguishes `LEARNED_SKILL`, `REFERENCE`, `OPTIONAL_TOOL`, `CONNECTED_INTEGRATION`, `LOCAL_RUNTIME`, `UNAVAILABLE` and `BLOCKED`. Consequential actions use explicit permission levels, an exact action-packet hash, host-supplied adapters and evidence-bearing receipts. ACO can therefore say **prepared**, **ready to execute**, **executed**, **sent**, **delivered**, **published** or **unknown** without collapsing those states.
+**Delegation now defaults to resolving rather than deferring.** When the user delegates a professional judgment and the available evidence supports a reasonable reversible choice, ACO makes the choice and continues. It asks only for decisive missing facts, irreducible personal preference, private-scope clarification or consequential authorization. The deterministic `delegation-benchmark` guards this behavior.
 
-The local commands are deliberately non-executing: `execution-plan` resolves readiness, `permission-check` binds approval to an exact action, `receipt-check` validates outcome claims, `adapter-check` validates host metadata, `workflow-check` checks state transitions, and `execution-summary` produces an operational log without exposing hidden reasoning. Actual provider calls still belong to the authorized host.
+**Drive is no longer an onboarding prompt.** ACO works from the context already available. If an already-authorized persistent store exists and continuity materially helps, ACO may use the existing canonical document under Compact Memory. If not, it continues without persistence. It mentions missing persistence only when the user explicitly asked to save or a material durable update is still pending.
 
-A deterministic execution-policy benchmark is now part of the release gate alongside the frozen routing regression and behavioral simulation. See the [architecture guide](docs/ARCHITECTURE.md), [execution protocol](skills/aco-office-concierge/references/protocols/EXECUTION.md), [evaluation guide](docs/EVALS.md) and [upgrade notes](docs/UPGRADE-0.7.0.md).
+**Hybrid Memory separates kinds of truth.** Durable human/project decisions may live compactly in the canonical ACO record; Git/source control remains authoritative for code; symbols/call graphs/indexes stay local/rebuildable; research corpora stay in the appropriate research system; task state remains temporary. `memory-resolve` exposes this routing without writing anything.
+
+**Integration discovery is provider-neutral.** `integration-resolve` selects only from caller-supplied current adapter evidence and requires exact capability, availability, connection where applicable, operation authorization and verification. It never executes a provider. The 0.7.0 execution/permission/receipt model remains in force.
+
+**Release hygiene is stricter.** `privacy-scan` is a release gate for likely personal/private data, credential leakage, real Drive IDs and local user paths, with narrow allowances for the public copyright holder, canonical repository and synthetic example fixtures. Version-specific Codex migration prompts are no longer stored in the repository; see [Upgrading](docs/UPGRADING.md).
+
+See the [architecture guide](docs/ARCHITECTURE.md), [Delegation](skills/aco-office-concierge/references/protocols/DELEGATION.md), [Hybrid Memory](skills/aco-office-concierge/references/protocols/HYBRID-MEMORY.md), [integration discovery](skills/aco-office-concierge/references/protocols/INTEGRATION-DISCOVERY.md) and [execution protocol](skills/aco-office-concierge/references/protocols/EXECUTION.md).
 
 ## Use in ChatGPT
 
 1. Make the repository available through an authorized repository/file-reading tool, or attach the required instructions. Merely typing `Use ACO` does not load files.
 2. In a private ChatGPT project, paste [these project instructions](docs/CHATGPT-PROJECT-INSTRUCTIONS.txt).
-3. Optionally connect Drive separately and put the approved private root in the **private** instructions, never in this repository.
+3. If a private knowledge store is already connected and authorized, ACO can use the relevant existing canonical context when it materially helps. Connecting Drive is optional and must not block normal work.
 4. Ask for the work:
 
 > Use ACO from `emidiob/ACO-agents`. Read `CHATGPT.md` first. Review my current artistic development from the work I provide. Start with the work, not opportunities. Ask only what is decisive.
@@ -181,20 +190,13 @@ Use the returned action hash to bind explicit approval when the permission level
 
 ## What has and has not been verified
 
-[The release test report](docs/TEST-REPORT-0.7.0.md) records the tests actually run, with explicit scope and limitations. Unit tests check local behavior, not taste, curatorial expertise, improved revenue or legal accuracy. Supplied evidence references are not proof of truth.
+The distributed release test report records the gates actually run, with explicit scope and limitations; the repository keeps evergreen validation instructions rather than a version-specific upgrade prompt. Unit tests check local behavior, not taste, curatorial expertise, improved revenue or legal accuracy. Supplied evidence references are not proof of truth.
 
 This package does not establish that your Mac, Codex session, Drive connector, phone account, ComfyUI GPU or paid generation service works. It installs no schedules and makes no calls. [Host acceptance tests](docs/HOST-ACCEPTANCE-TESTS.md) are for your actual environment; unrun rows stay unrun.
 
 ## Updating GitHub and local installs
 
-Extract the **new** package outside the existing checkout. From that new package, preview the update, review the plan, then apply it:
-
-```bash
-python3 scripts/aco_cli.py migrate --target /absolute/path/to/existing/ACO-agents
-python3 scripts/aco_cli.py migrate --target /absolute/path/to/existing/ACO-agents --apply
-```
-
-The script creates a backup/work branch, changes recognized ACO-managed files, and stops on collisions or unrecognized edits. Preserve `.git`, private and unrelated files; no blanket deletion, `git clean`, hard reset or force push. Run the release's generation checks, validation, benchmarks and Python tests in the updated checkout, then review the staged diff before committing. Fetch the remote before publishing and stop on divergent changes; push normally only when authorized and safe.
+Follow [docs/UPGRADING.md](docs/UPGRADING.md) from the **new** package. Release-specific copy/paste prompts are distributed beside the ZIP, not kept in the repository. The migration script creates a backup/work branch, changes recognized ACO-managed files, and stops on collisions or unrecognized edits. Preserve `.git`, private and unrelated files; no blanket deletion, `git clean`, hard reset or force push.
 
 Pushing GitHub does not update local skills or reload an existing chat. Re-run the local installer from the new package when authorized; start a new host session. Do not clean Drive as part of a repository update.
 

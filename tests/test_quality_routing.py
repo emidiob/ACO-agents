@@ -6,7 +6,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 
-from aco.common import ROOT
+from aco.common import ROOT, VERSION
 from aco.quality import capability_resolve, handoff_check, score_simulation
 from aco.routing import role_contract, role_overlap, route_benchmark, suggest_route
 
@@ -15,7 +15,7 @@ class RoutingQualityTests(unittest.TestCase):
     def test_role_contracts_cover_catalog(self):
         contracts = json.loads((ROOT / 'config/role-contracts.json').read_text())
         catalog = json.loads((ROOT / 'catalog.json').read_text())
-        self.assertEqual(contracts['aco_version'], '0.7.0')
+        self.assertEqual(contracts['aco_version'], VERSION)
         self.assertEqual(set(contracts['roles']), set(catalog['agents']))
         self.assertEqual(len(contracts['roles']), 363)
         for key, contract in contracts['roles'].items():
@@ -26,7 +26,7 @@ class RoutingQualityTests(unittest.TestCase):
 
     def test_final_holdout_is_excluded_from_examples(self):
         examples = json.loads((ROOT / 'config/routing-examples.json').read_text())
-        self.assertEqual(examples['aco_version'], '0.7.0')
+        self.assertEqual(examples['aco_version'], VERSION)
         self.assertGreaterEqual(len(examples['examples']), 500)
         source_names = set(examples['source_files'])
         self.assertNotIn('routing-final-holdout.json', source_names)

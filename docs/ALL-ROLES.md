@@ -1,6 +1,6 @@
 # ACO catalogue
 
-Version 0.7.0. 363 generic role definitions; not 363 autonomous running processes.
+Version 0.7.2. 363 generic role definitions; not 363 autonomous running processes.
 
 Start with [CHATGPT.md](../CHATGPT.md) or [AGENTS.md](../AGENTS.md). Read only relevant skills and role methods.
 
@@ -295,7 +295,7 @@ Lead: `office_concierge`. Native agents use the `aco_` prefix.
 - [`context_steward`](../skills/aco-office-concierge/references/agents/context-steward.md) — Context and history steward for a multi-office agent system. Maintains an auditable work history, decisions, open loops and proposed context updates without silently turning provisional ideas into permanent facts.
 - [`editor`](../skills/aco-office-concierge/references/agents/editor.md) — Editor for artist statements, curatorial texts, applications, proposals, press releases, decks, publications, website copy and long-form cultural writing.
 - [`marketing_strategist`](../skills/aco-office-concierge/references/agents/marketing-strategist.md) — Marketing strategist for creative and cultural projects: audience, launch, campaigns, channels, partnerships, content systems, conversion and measurement.
-- [`office_concierge`](../skills/aco-office-concierge/references/agents/office-concierge.md) — Front-door concierge for a multi-office agent system. Translates natural requests into clear briefs, identifies the right office or cross-office team, asks only essential clarifying questions, and protects the user from having to know agent names.
+- [`office_concierge`](../skills/aco-office-concierge/references/agents/office-concierge.md) — Front-door concierge for a multi-office agent system. Translates natural requests into clear briefs, identifies the right office or small cross-office team, resolves delegated professional choices, and asks only genuinely decisive questions.
 - [`studio_finance_manager`](../skills/aco-office-concierge/references/agents/studio-finance-manager.md) — Studio finance and project-budget manager for artists: production budgets, quotes, cash flow, fees, cost scenarios, margins, commissions, travel, shipping and financial decision support.
 - [`studio_manager`](../skills/aco-office-concierge/references/agents/studio-manager.md) — Studio and office operations agent for briefs, timelines, deliverables, task breakdowns, meeting preparation, notes, handoffs and project administration.
 

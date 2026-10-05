@@ -1,0 +1,375 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.7.2",
+  "name": "Provider-neutral integration resolution conformance",
+  "gate": {
+    "minimum_score": 100,
+    "maximum_critical_failures": 0
+  },
+  "cases": [
+    {
+      "id": "gmail-ready",
+      "request": {
+        "capability_id": "email.send",
+        "operation": "send"
+      },
+      "inventory": {
+        "adapters": [
+          {
+            "id": "gmail",
+            "kind": "connected_integration",
+            "capabilities": [
+              "email.send"
+            ],
+            "available": true,
+            "connected": true,
+            "authorized_operations": [
+              "send"
+            ],
+            "verified": true,
+            "priority": 1
+          }
+        ]
+      },
+      "expect_status": "ready",
+      "expect_adapter": "gmail",
+      "critical": true
+    },
+    {
+      "id": "gmail-not-connected",
+      "request": {
+        "capability_id": "email.send",
+        "operation": "send"
+      },
+      "inventory": {
+        "adapters": [
+          {
+            "id": "gmail",
+            "kind": "connected_integration",
+            "capabilities": [
+              "email.send"
+            ],
+            "available": true,
+            "connected": false,
+            "authorized_operations": [
+              "send"
+            ],
+            "verified": true
+          }
+        ]
+      },
+      "expect_status": "fallback_required",
+      "critical": true
+    },
+    {
+      "id": "unauthorized-operation",
+      "request": {
+        "capability_id": "email.send",
+        "operation": "send"
+      },
+      "inventory": {
+        "adapters": [
+          {
+            "id": "mail",
+            "kind": "mcp",
+            "capabilities": [
+              "email.send"
+            ],
+            "available": true,
+            "connected": true,
+            "authorized_operations": [
+              "draft"
+            ],
+            "verified": true
+          }
+        ]
+      },
+      "expect_status": "fallback_required",
+      "critical": true
+    },
+    {
+      "id": "unverified-adapter",
+      "request": {
+        "capability_id": "calendar.write",
+        "operation": "create"
+      },
+      "inventory": {
+        "adapters": [
+          {
+            "id": "cal",
+            "kind": "connected_integration",
+            "capabilities": [
+              "calendar.write"
+            ],
+            "available": true,
+            "connected": true,
+            "authorized_operations": [
+              "create"
+            ],
+            "verified": false
+          }
+        ]
+      },
+      "expect_status": "fallback_required",
+      "critical": true
+    },
+    {
+      "id": "wrong-capability",
+      "request": {
+        "capability_id": "cloud.write",
+        "operation": "update"
+      },
+      "inventory": {
+        "adapters": [
+          {
+            "id": "drive",
+            "kind": "connected_integration",
+            "capabilities": [
+              "cloud.read"
+            ],
+            "available": true,
+            "connected": true,
+            "authorized_operations": [
+              "read",
+              "update"
+            ],
+            "verified": true
+          }
+        ]
+      },
+      "expect_status": "fallback_required",
+      "critical": true
+    },
+    {
+      "id": "provider-neutral-select-ready",
+      "request": {
+        "capability_id": "email.send",
+        "operation": "send"
+      },
+      "inventory": {
+        "adapters": [
+          {
+            "id": "blocked-mail",
+            "kind": "connected_integration",
+            "capabilities": [
+              "email.send"
+            ],
+            "available": true,
+            "connected": false,
+            "authorized_operations": [
+              "send"
+            ],
+            "verified": true,
+            "priority": 1
+          },
+          {
+            "id": "ready-mail",
+            "kind": "mcp",
+            "capabilities": [
+              "email.send"
+            ],
+            "available": true,
+            "connected": true,
+            "authorized_operations": [
+              "send"
+            ],
+            "verified": true,
+            "priority": 2
+          }
+        ]
+      },
+      "expect_status": "ready",
+      "expect_adapter": "ready-mail",
+      "critical": false
+    },
+    {
+      "id": "preferred-ready",
+      "request": {
+        "capability_id": "email.send",
+        "operation": "send",
+        "preferred_adapter_id": "mail-b"
+      },
+      "inventory": {
+        "adapters": [
+          {
+            "id": "mail-a",
+            "kind": "host_native",
+            "capabilities": [
+              "email.send"
+            ],
+            "available": true,
+            "connected": true,
+            "authorized_operations": [
+              "send"
+            ],
+            "verified": true,
+            "priority": 1
+          },
+          {
+            "id": "mail-b",
+            "kind": "mcp",
+            "capabilities": [
+              "email.send"
+            ],
+            "available": true,
+            "connected": true,
+            "authorized_operations": [
+              "send"
+            ],
+            "verified": true,
+            "priority": 8
+          }
+        ]
+      },
+      "expect_status": "ready",
+      "expect_adapter": "mail-b",
+      "critical": false
+    },
+    {
+      "id": "preferred-blocked-no-switch",
+      "request": {
+        "capability_id": "email.send",
+        "operation": "send",
+        "preferred_adapter_id": "mail-a"
+      },
+      "inventory": {
+        "adapters": [
+          {
+            "id": "mail-a",
+            "kind": "connected_integration",
+            "capabilities": [
+              "email.send"
+            ],
+            "available": true,
+            "connected": false,
+            "authorized_operations": [
+              "send"
+            ],
+            "verified": true
+          },
+          {
+            "id": "mail-b",
+            "kind": "mcp",
+            "capabilities": [
+              "email.send"
+            ],
+            "available": true,
+            "connected": true,
+            "authorized_operations": [
+              "send"
+            ],
+            "verified": true
+          }
+        ]
+      },
+      "expect_status": "fallback_required",
+      "critical": true
+    },
+    {
+      "id": "preferred-blocked-allowed-switch",
+      "request": {
+        "capability_id": "email.send",
+        "operation": "send",
+        "preferred_adapter_id": "mail-a",
+        "allow_alternate_provider": true
+      },
+      "inventory": {
+        "adapters": [
+          {
+            "id": "mail-a",
+            "kind": "connected_integration",
+            "capabilities": [
+              "email.send"
+            ],
+            "available": true,
+            "connected": false,
+            "authorized_operations": [
+              "send"
+            ],
+            "verified": true
+          },
+          {
+            "id": "mail-b",
+            "kind": "mcp",
+            "capabilities": [
+              "email.send"
+            ],
+            "available": true,
+            "connected": true,
+            "authorized_operations": [
+              "send"
+            ],
+            "verified": true
+          }
+        ]
+      },
+      "expect_status": "ready",
+      "expect_adapter": "mail-b",
+      "critical": false
+    },
+    {
+      "id": "local-runtime-no-connection-needed",
+      "request": {
+        "capability_id": "code.intelligence.query",
+        "operation": "query"
+      },
+      "inventory": {
+        "adapters": [
+          {
+            "id": "local-index",
+            "kind": "local_runtime",
+            "capabilities": [
+              "code.intelligence.query"
+            ],
+            "available": true,
+            "connected": false,
+            "authorized_operations": [
+              "query"
+            ],
+            "verified": true
+          }
+        ]
+      },
+      "expect_status": "ready",
+      "expect_adapter": "local-index",
+      "critical": false
+    },
+    {
+      "id": "no-inventory",
+      "request": {
+        "capability_id": "social.publish",
+        "operation": "publish"
+      },
+      "inventory": {
+        "adapters": []
+      },
+      "expect_status": "fallback_required",
+      "critical": true
+    },
+    {
+      "id": "available-false",
+      "request": {
+        "capability_id": "files.write",
+        "operation": "update"
+      },
+      "inventory": {
+        "adapters": [
+          {
+            "id": "fs",
+            "kind": "local_runtime",
+            "capabilities": [
+              "files.write"
+            ],
+            "available": false,
+            "authorized_operations": [
+              "update"
+            ],
+            "verified": true
+          }
+        ]
+      },
+      "expect_status": "fallback_required",
+      "critical": false
+    }
+  ]
+}

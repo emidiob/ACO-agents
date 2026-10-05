@@ -1,6 +1,6 @@
-# ACO 0.7.0 — Beginner Guide
+# ACO 0.7.2 — Beginner Guide
 
-**You do not need to know every agent, install 97 tools, or create a folder for every idea.**
+**You do not need to know every agent, install 99 optional resources, or create a folder for every idea.**
 
 ## 1. Understand the three places
 
@@ -10,14 +10,14 @@ ACO is not a plugin to submit to a directory. Downloading it does not connect Dr
 
 ## 2. You have an older ACO repository: update it first
 
-1. Download the complete 0.7.0 ZIP and extract it into a **new folder**. Do not drop it over your old checkout.
+1. Download the complete 0.7.2 ZIP and extract it into a **new folder**. Do not drop it over your old checkout.
 2. Open your existing `ACO-agents` checkout in Codex. Make the extracted new folder available to Codex too.
 3. Paste this:
 
 ```text
-Update this ACO repository using the new 0.7.0 package.
-Read the README’s “Updating GitHub and local installs” instructions FROM THE NEW PACKAGE.
-Follow its safe preview, backup, migration, validation and tests.
+Update this ACO repository using the new 0.7.2 package.
+Read docs/UPGRADING.md FROM THE NEW PACKAGE.
+Follow its safe preview, backup, migration, validation and tests. If a release-specific Codex prompt was supplied beside the ZIP, you may use it as a convenience wrapper.
 Preserve .git, history, private, untracked and unrelated files.
 If checks pass, commit and push normally only when safe.
 No force push. Do not modify Drive or install external software.
@@ -69,7 +69,7 @@ Start a new Codex session. Ask it which ACO skill it actually loaded. If discove
 
 ## 4. Add private knowledge only when useful
 
-You can use ACO without persistent memory. To use Drive, connect it separately through the host's available app controls. Authorize the specific private folder and place that reference only in your private instructions.
+You can use ACO without persistent memory, and ACO should not interrupt normal work to ask you to connect Drive. If you already use an authorized Drive/private knowledge store, ACO can use the relevant existing canonical record when it materially helps. If you explicitly want something saved there and the connection is unavailable, ACO should say the save is pending/not performed rather than blocking the work.
 
 Say:
 
@@ -102,6 +102,12 @@ Specify the owner when it is not obvious:
 Activities and brands can remain sections inside Company A. A project can link to multiple activities without multiple copies. Two clients with the same display name need separate stable identities. A “current client” belongs to the task/session, not a global setting other chats can change.
 
 Use separate account/project permissions for confidential work. Merely telling an agent “don't look” is not technical access control.
+
+## ACO should decide, not interrogate you
+
+When you delegate a professional decision, ACO should normally make it from the available evidence. For example, “lead my artistic development” should trigger an assessment and an initial priority, not “what do you want to focus on?”. ACO asks only when a missing fact, personal preference, scope or consequential authorization genuinely belongs to you.
+
+ACO also does not ask you to connect Drive merely to get started. It uses an existing authorized knowledge store when useful; otherwise it works normally and only reports a pending save when that matters.
 
 ## 7. Useful requests to copy
 
@@ -177,4 +183,4 @@ In a worktree ACO can maintain one ignored `.agent-context/HANDOFF.md`. It is no
 | Test suite passed, output still looks bad | Local tests do not judge taste. Inspect actual outputs and revise against the brief. |
 | Chat keeps the old rules | Start a fresh session or explicitly reload the new version and relevant methods. |
 
-Read the full [README](README.md), [CLI](docs/CLI.md), [Studio checks](docs/STUDIO-CHECKS.md) and [release test report](docs/TEST-REPORT-0.7.0.md) for details.
+Read the full [README](README.md), [CLI](docs/CLI.md), [Studio checks](docs/STUDIO-CHECKS.md) and [Upgrading](docs/UPGRADING.md) for details. The exact release test report is distributed next to the release artifacts.

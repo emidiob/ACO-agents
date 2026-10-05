@@ -1,8 +1,8 @@
 # ACO — routing index
 
-Version 0.7.0; 363 role definitions and 16 skills. These are not permanently running agents.
+Version 0.7.2; 363 role definitions and 16 skills. These are not permanently running agents.
 
-Use skills/aco-office-concierge/references/protocols/CONTEXT-RETRIEVAL.md for progressive context, EXECUTION.md before consequential external actions, VERIFICATION.md before completion claims, and COMPACT-MEMORY.md before persistent writes. Optional resource selection starts at skills/aco-office-concierge/references/resources/INDEX.md. Select an office below, then read its local ROLE-INDEX and only selected methods. Do not load the full catalogue by default.
+Use skills/aco-office-concierge/references/protocols/DELEGATION.md before returning delegated professional judgment, CONTEXT-RETRIEVAL.md for progressive context, EXECUTION.md before consequential external actions, VERIFICATION.md before completion claims, and HYBRID-MEMORY.md plus COMPACT-MEMORY.md before persistent writes. Optional resource selection starts at skills/aco-office-concierge/references/resources/INDEX.md. Select an office below, then read its local ROLE-INDEX and only selected methods. Do not load the full catalogue by default.
 
 - **artist-office** (34): [start](skills/aco-artist-office/SKILL.md) · [roles](skills/aco-artist-office/references/ROLE-INDEX.md)
 - **organization-office** (33): [start](skills/aco-organization-office/SKILL.md) · [roles](skills/aco-organization-office/references/ROLE-INDEX.md)

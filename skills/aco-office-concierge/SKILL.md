@@ -8,7 +8,7 @@ description: "Front door: resolve the request, minimal team, scope and context; 
 Use this skill only for the task it covers. This is a readable workflow, not a plugin, connection or guarantee of autonomous work.
 
 ## Start
-Read `references/protocols/CONCIERGE.md` and the common permissions/context contract as needed. Start from the local `references/ROLE-INDEX.md` when present, or `../aco-office-concierge/references/ROLE-INDEX.md` for shared methods. Read only the selected role files. The full `../aco-office-concierge/references/CATALOG.json` is a machine lookup fallback; do not load it wholesale by default. For GitHub reads, paths are relative to repository root under `skills/`.
+Read `references/protocols/CONCIERGE.md`; apply `references/protocols/DELEGATION.md` before returning a delegated professional judgment to the user, and use the common permissions/context contract as needed. Start from the local `references/ROLE-INDEX.md` when present, or `../aco-office-concierge/references/ROLE-INDEX.md` for shared methods. Read only the selected role files. The full `../aco-office-concierge/references/CATALOG.json` is a machine lookup fallback; do not load it wholesale by default. For GitHub reads, paths are relative to repository root under `skills/`.
 
 The lead role is `office_concierge` (native Codex name: `aco_office_concierge`). Read its full instructions using the catalogue; do not rely only on its title.
 
@@ -18,7 +18,7 @@ Resolve the current scope and available tools. Read relevant approved context or
 Checkpoint substantial work using the context steward and the history protocol. Close with deliverable, unresolved risks and actual persistence status. Never pretend a local handoff updated Drive.
 
 ## Interaction default
-Ask essential missing facts early, in one short batch after reading supplied context; otherwise act. Keep action updates brief and the requested deliverable complete. Follow `references/protocols/INTERACTION.md`. External messaging/calls/publishing use the same folder’s `COMMUNICATIONS.md`.
+When professional judgment is delegated, resolve it from sufficient evidence and act. Ask essential missing facts/preferences/scope/authorization early only when they materially change the work; otherwise do not turn the task into a questionnaire. Keep action updates brief and the requested deliverable complete. Follow `references/protocols/INTERACTION.md`. External messaging/calls/publishing use the same folder’s `COMMUNICATIONS.md`.
 
 
 ## Specialist work — v0.5.0
@@ -34,3 +34,9 @@ Use the [resource index](references/resources/INDEX.md) only when a relevant cap
 Start from the existing task scope, not a tour of all offices. For artist growth, route to practice work/critical development before open-call discovery. For brand/social, reuse the compact Brand section and distinguish assumptions, approved direction and validated evidence. Use the optional registry only when it adds a missing capability. A registry entry, a PATH executable, a connected action and an execution receipt are four different states.
 
 The local `capability-audit` command checks PATH presence only. It does not inspect credentials or discover remote accounts. Use the host's actual connector schemas for connected services. Optional `practice-check`, `opportunity-check`, `brand-check` and `social-check` read a supplied JSON plan and produce blockers; none writes to Drive or sends anything. Simple requests must not be burdened with forms.
+
+
+## Integration and Hybrid Memory — v0.7.1
+Use [Hybrid Memory](references/protocols/HYBRID-MEMORY.md) to route durable semantic context, current repository source, rebuildable code intelligence, temporary task context, research corpora and receipts to the right store. Do not ask the user to connect Drive merely to begin or improve memory.
+
+Use [Integration discovery](references/protocols/INTEGRATION-DISCOVERY.md) before a real external action when several host adapters may supply the same capability. `integration-resolve`, `memory-resolve` and `delegation-resolve` are local decision/validation tools only; they do not connect accounts or execute providers. Optional code-intelligence runtimes remain uninstalled until the current environment and authorization justify them.

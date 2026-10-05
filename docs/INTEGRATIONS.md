@@ -22,3 +22,10 @@ For an authorized send: verify scope + account + recipient + content/attachments
 The bundled `action-plan` is an **offline planner**. Its authorization fields are supplied assertions, not an access-control system or proof of user consent. It never sends messages or makes calls. Host permissions and real provider scopes remain decisive.
 
 No sample phone numbers, tokens, contact IDs or user Drive folders are configured in the public repository. Credentials belong in the provider/host's approved secret storage, never in chat or Git. Active recurring delivery requires a separate real scheduler, explicitly authorized.
+
+
+## Provider-neutral discovery — 0.7.1
+
+Use `integration-resolve` with caller-supplied current adapter inventory. Do not infer a connection from ACO documentation, a resource-registry entry or remembered past availability. A ready adapter must expose the exact capability, be available, be connected when remote, authorize the requested operation and be verified in the current environment.
+
+If the user explicitly selected a blocked provider, do not silently switch providers unless the task is provider-neutral and alternate-provider use is authorized. No adapter resolution command executes the service.

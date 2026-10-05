@@ -1,0 +1,34 @@
+{
+  "mode": "LIGHT",
+  "phase": "initial",
+  "persistent_store_available": false,
+  "sources": [
+    {
+      "id": "task-brief",
+      "kind": "task",
+      "estimated_chars": 2400,
+      "relevance": 0.98,
+      "authority": 0.9,
+      "private": false,
+      "scope_relation": "task_local"
+    },
+    {
+      "id": "same-client-decisions",
+      "kind": "durable_context",
+      "estimated_chars": 4200,
+      "relevance": 0.9,
+      "authority": 0.95,
+      "private": true,
+      "scope_relation": "same_entity"
+    },
+    {
+      "id": "other-client-history",
+      "kind": "durable_context",
+      "estimated_chars": 7200,
+      "relevance": 0.99,
+      "authority": 0.95,
+      "private": true,
+      "scope_relation": "other_private_entity"
+    }
+  ]
+}

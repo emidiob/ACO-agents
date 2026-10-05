@@ -10,6 +10,7 @@ import zipfile
 from pathlib import Path
 from aco.common import ACOError, ROOT, VERSION, no_symlinks
 from aco.install import verify_release
+from aco.privacy import privacy_scan
 
 
 def build(output: Path) -> dict:
@@ -19,6 +20,10 @@ def build(output: Path) -> dict:
         raise ACOError('Place the distributable ZIP outside the source checkout.')
     if output.suffix.lower()!='.zip':
         raise ACOError('Output must be a ZIP path.')
+    privacy=privacy_scan(ROOT)
+    if privacy.get('status')!='passed':
+        kinds=', '.join(sorted({x['type'] for x in privacy.get('findings',[])}))
+        raise ACOError('Privacy/PII release gate failed: '+kinds)
     manifest=verify_release()
     files=dict(manifest['files'])
     files['release/manifest.json']={'mode':0o644}
