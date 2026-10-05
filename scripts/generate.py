@@ -116,7 +116,7 @@ def outputs():
     base='skills/aco-office-concierge/runtime/'
     out[base+'VERSION']=(R/'VERSION').read_bytes()
     out[base+'RUNTIME-ONLY']=b'Local compact knowledge, optional resource selection and checks only. Use the full source release for install, migrate and validate. Legacy event storage is explicit opt-in.\n'
-    for name in ('aco_cli.py','aco/__init__.py','aco/common.py','aco/memory.py','aco/drive.py','aco/cli.py','aco/planning.py','aco/production.py','aco/finance.py','aco/specialist.py','aco/compact.py','aco/resources.py','aco/tidy.py','aco/canonical_sync.py','aco/readiness.py','aco/harness.py','aco/routing.py','aco/quality.py','aco/execution.py','aco/delegation.py','aco/hybrid.py','aco/context.py','aco/efficiency.py','aco/integrations.py','aco/privacy.py'):
+    for name in ('aco_cli.py','aco/__init__.py','aco/common.py','aco/memory.py','aco/drive.py','aco/cli.py','aco/planning.py','aco/production.py','aco/finance.py','aco/specialist.py','aco/compact.py','aco/resources.py','aco/tidy.py','aco/canonical_sync.py','aco/readiness.py','aco/harness.py','aco/routing.py','aco/quality.py','aco/execution.py','aco/delegation.py','aco/hybrid.py','aco/context.py','aco/scope.py','aco/efficiency.py','aco/integrations.py','aco/privacy.py'):
         out[base+'scripts/'+name]=(R/'scripts'/name).read_bytes()
     for p in (R/'assets/context-templates').glob('*.md'):
         out[base+'assets/context-templates/'+p.name]=p.read_bytes()
@@ -130,9 +130,13 @@ def outputs():
     out[base+'config/routing-examples.json']=(R/'config/routing-examples.json').read_bytes()
     out[base+'config/routing-final-holdout.json']=(R/'config/routing-final-holdout.json').read_bytes()
     out[base+'config/routing-v072-holdout-3.json']=(R/'config/routing-v072-holdout-3.json').read_bytes()
+    out[base+'config/routing-v073-holdout-4.json']=(R/'config/routing-v073-holdout-4.json').read_bytes()
+    out[base+'config/routing-v073-holdout-5.json']=(R/'config/routing-v073-holdout-5.json').read_bytes()
     out[base+'config/context-engine.json']=(R/'config/context-engine.json').read_bytes()
     out[base+'config/context-benchmark.json']=(R/'config/context-benchmark.json').read_bytes()
+    out[base+'config/scope-boundary-benchmark-v073.json']=(R/'config/scope-boundary-benchmark-v073.json').read_bytes()
     out[base+'config/real-world-benchmark-v072.json']=(R/'config/real-world-benchmark-v072.json').read_bytes()
+    out[base+'config/real-world-benchmark-v073.json']=(R/'config/real-world-benchmark-v073.json').read_bytes()
     out[base+'config/role-contracts.json']=out['config/role-contracts.json']
     for name in ('capabilities.json','permission-policy.json','adapter-contract.json','workflow-states.json','execution-benchmark.json','memory-classes.json','integration-adapters.json','delegation-benchmark.json','privacy-policy.json','integration-benchmark.json'):
         out[base+'config/'+name]=(R/'config'/name).read_bytes()

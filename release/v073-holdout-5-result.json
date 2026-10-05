@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.7.3",
+  "holdout": "config/routing-v073-holdout-5.json",
+  "frozen_sha256": "fd45fe713f055af62421ebe3328261fd616804ee6618fb4b66059f01b098959a",
+  "first_execution": {
+    "status": "passed",
+    "score": 98.0,
+    "office_accuracy": 1.0,
+    "top1_role_accuracy": 0.95,
+    "top3_role_recall": 1.0,
+    "minimal_team_rate": 1.0,
+    "critical_failures": 0,
+    "noncritical_top1_misses": [
+      "v73f-campaign-1",
+      "v73f-production-prompt"
+    ]
+  },
+  "disposition": "final_fresh_release_gate"
+}

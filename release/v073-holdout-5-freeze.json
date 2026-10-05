@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.7.3",
+  "holdout": "config/routing-v073-holdout-5.json",
+  "sha256": "fd45fe713f055af62421ebe3328261fd616804ee6618fb4b66059f01b098959a",
+  "case_count": 40,
+  "state": "frozen_before_first_execution",
+  "prior_exact_prompt_overlap": 0,
+  "rule": "No changes to routing.py, routing-hints.json, routing-examples.json, role-contracts.json, or this holdout after first execution."
+}

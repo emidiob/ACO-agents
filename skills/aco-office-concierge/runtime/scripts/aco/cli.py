@@ -74,7 +74,9 @@ def main() -> None:
     q.add_argument('--request', type=Path, required=True)
     q = sub.add_parser('context-plan', help='Plan minimum authorized context under NONE/BLIND/LIGHT/FULL/BLIND-FIRST; no retrieval or writes')
     q.add_argument('--request', type=Path, required=True)
-    q = sub.add_parser('context-benchmark', help='Run deterministic v0.7.2 context-scope and efficiency conformance cases')
+    q = sub.add_parser('context-benchmark', help='Run deterministic context-scope and efficiency conformance cases')
+    q.add_argument('--input', type=Path)
+    q = sub.add_parser('scope-boundary-benchmark', help='Run deterministic v0.7.3 exact private-scope boundary cases')
     q.add_argument('--input', type=Path)
     q = sub.add_parser('real-world-benchmark', help='Run the packaged 120-scenario routing/context/memory regression benchmark')
     q.add_argument('--input', type=Path)
@@ -261,9 +263,14 @@ def main() -> None:
         elif a.command == 'context-plan':
             from .context import context_plan
             result = context_plan(read_json(a.request))
-        elif a.command in ('context-benchmark','real-world-benchmark'):
-            from .efficiency import context_benchmark, real_world_benchmark
-            result = context_benchmark(a.input) if a.command == 'context-benchmark' else real_world_benchmark(a.input)
+        elif a.command in ('context-benchmark','scope-boundary-benchmark','real-world-benchmark'):
+            from .efficiency import context_benchmark, scope_boundary_benchmark, real_world_benchmark
+            if a.command == 'context-benchmark':
+                result = context_benchmark(a.input)
+            elif a.command == 'scope-boundary-benchmark':
+                result = scope_boundary_benchmark(a.input)
+            else:
+                result = real_world_benchmark(a.input)
         elif a.command == 'integration-resolve':
             from .integrations import integration_resolve
             result = integration_resolve(read_json(a.request), read_json(a.inventory) if a.inventory else None)

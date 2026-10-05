@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.7.3
+
+- Harden cross-scope private context so foreign sources require an exact `scope_id` match in `authorized_private_scope_ids`; reject wildcard/global authorization and keep unknown private scope blocked.
+- Centralize the private-scope decision used by both Context Engine and Hybrid Memory so retrieval policy cannot drift between subsystems.
+- Preserve relevance/source/character budgets, `BLIND-FIRST`, Compact Memory, and the no-proactive-Drive rule.
+- Generalize routing boundaries for cross-client private-context requests, independent non-client brand foundations, and client campaign work without adding roles.
+- Add a 28-case adversarial scope-boundary benchmark, preserve the 120-scenario real-world suite, retain prior routing holdouts, and add a frozen 40-case final fresh holdout scoring 98.0/100 with zero critical failures on first execution.
+- Record the failed development holdout separately instead of reusing it as fresh evidence; freeze routing semantics after the final holdout.
+- Keep 363 roles, 16 skills, 61 workflows, 99 optional resources and the proprietary LICENSE unchanged.
+
 ## 0.7.2
 
 - Add a deterministic Context Engine for `NONE`, `BLIND`, `LIGHT`, `FULL` and `BLIND-FIRST` with explicit source/character budgets and relevance floors.

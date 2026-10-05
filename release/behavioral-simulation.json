@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "0.7.2",
+  "aco_version": "0.7.3",
   "review_mode": "same-model structured simulation in the development conversation; rubric-scored against packaged ACO v0.7 rules, not an independent or blind external judge",
   "dimensions": [
     "routing_scope",

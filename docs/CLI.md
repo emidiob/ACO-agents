@@ -101,13 +101,14 @@ python3 scripts/aco_cli.py privacy-scan
 
 These commands are offline/read-only decision or validation tools. They do not connect Drive, install MCP servers, authenticate providers, send messages or execute remote actions. `privacy-scan` is also enforced by validation/release packaging.
 
-## v0.7.2 context efficiency
+## v0.7.3 context boundary and efficiency
 
 ```bash
 python3 scripts/aco_cli.py context-plan --request examples/context/request.json
 python3 scripts/aco_cli.py context-benchmark --input config/context-benchmark.json
-python3 scripts/aco_cli.py real-world-benchmark --input config/real-world-benchmark-v072.json
-python3 scripts/aco_cli.py route-benchmark --input config/routing-v072-holdout-3.json
+python3 scripts/aco_cli.py scope-boundary-benchmark --input config/scope-boundary-benchmark-v073.json
+python3 scripts/aco_cli.py real-world-benchmark --input config/real-world-benchmark-v073.json
+python3 scripts/aco_cli.py route-benchmark --input config/routing-v073-holdout-5.json
 ```
 
 These commands are deterministic and side-effect free. `context-plan` plans only; it does not retrieve files or connect Drive.

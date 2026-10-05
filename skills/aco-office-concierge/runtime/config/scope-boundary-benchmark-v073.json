@@ -1,0 +1,738 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.7.3",
+  "name": "ACO v0.7.3 exact private-scope boundary benchmark",
+  "purpose": "Adversarially verify exact cross-scope authorization, unknown-scope blocking, mode enforcement, and zero proactive Drive prompts across Context Engine and Hybrid Memory.",
+  "gate": {
+    "minimum_score": 100.0,
+    "maximum_critical_failures": 0,
+    "maximum_drive_prompts": 0
+  },
+  "cases": [
+    {
+      "id": "sb-context-same-full",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "FULL",
+        "sources": [
+          {
+            "id": "same",
+            "kind": "durable",
+            "estimated_chars": 1800,
+            "relevance": 0.95,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "selected_exact": [
+          "same"
+        ],
+        "status": "planned"
+      }
+    },
+    {
+      "id": "sb-context-foreign-blocked",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "FULL",
+        "sources": [
+          {
+            "id": "foreign",
+            "kind": "durable",
+            "estimated_chars": 1800,
+            "relevance": 0.95,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "client-b"
+          }
+        ]
+      },
+      "expect": {
+        "selected_excludes": [
+          "foreign"
+        ],
+        "denied_reason": "cross_scope_private_blocked"
+      }
+    },
+    {
+      "id": "sb-context-legacy-bool-insufficient",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "FULL",
+        "cross_scope_authorized": true,
+        "sources": [
+          {
+            "id": "foreign",
+            "kind": "durable",
+            "estimated_chars": 1800,
+            "relevance": 0.95,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "client-b"
+          }
+        ]
+      },
+      "expect": {
+        "selected_excludes": [
+          "foreign"
+        ],
+        "denied_reason": "exact_cross_scope_authorization_required"
+      }
+    },
+    {
+      "id": "sb-context-exact-allowed",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "FULL",
+        "authorized_private_scope_ids": [
+          "client-b"
+        ],
+        "sources": [
+          {
+            "id": "foreign",
+            "kind": "durable",
+            "estimated_chars": 1800,
+            "relevance": 0.95,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "client-b"
+          }
+        ]
+      },
+      "expect": {
+        "selected_exact": [
+          "foreign"
+        ],
+        "status": "planned"
+      }
+    },
+    {
+      "id": "sb-context-wrong-id-blocked",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "FULL",
+        "authorized_private_scope_ids": [
+          "client-c"
+        ],
+        "sources": [
+          {
+            "id": "foreign",
+            "kind": "durable",
+            "estimated_chars": 1800,
+            "relevance": 0.95,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "client-b"
+          }
+        ]
+      },
+      "expect": {
+        "selected_excludes": [
+          "foreign"
+        ],
+        "denied_reason": "cross_scope_private_blocked"
+      }
+    },
+    {
+      "id": "sb-context-one-of-two",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "FULL",
+        "authorized_private_scope_ids": [
+          "client-b"
+        ],
+        "sources": [
+          {
+            "id": "b",
+            "kind": "durable",
+            "estimated_chars": 1800,
+            "relevance": 0.95,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "client-b"
+          },
+          {
+            "id": "c",
+            "kind": "durable",
+            "estimated_chars": 1800,
+            "relevance": 0.95,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "client-c"
+          }
+        ]
+      },
+      "expect": {
+        "selected_contains": [
+          "b"
+        ],
+        "selected_excludes": [
+          "c"
+        ],
+        "denied_reason": "cross_scope_private_blocked"
+      }
+    },
+    {
+      "id": "sb-context-unknown-blocked",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "FULL",
+        "sources": [
+          {
+            "id": "mystery",
+            "kind": "durable",
+            "estimated_chars": 1800,
+            "relevance": 0.95,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "unknown",
+            "decisive": false,
+            "available": true,
+            "scope_id": "mystery"
+          }
+        ]
+      },
+      "expect": {
+        "selected_excludes": [
+          "mystery"
+        ],
+        "denied_reason": "unknown_private_scope_blocked"
+      }
+    },
+    {
+      "id": "sb-context-unknown-even-exact",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "FULL",
+        "authorized_private_scope_ids": [
+          "mystery"
+        ],
+        "sources": [
+          {
+            "id": "mystery",
+            "kind": "durable",
+            "estimated_chars": 1800,
+            "relevance": 0.95,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "unknown",
+            "decisive": false,
+            "available": true,
+            "scope_id": "mystery"
+          }
+        ]
+      },
+      "expect": {
+        "selected_excludes": [
+          "mystery"
+        ],
+        "denied_reason": "unknown_private_scope_blocked"
+      }
+    },
+    {
+      "id": "sb-context-missing-scope-id",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "FULL",
+        "authorized_private_scope_ids": [
+          "client-b"
+        ],
+        "sources": [
+          {
+            "id": "foreign",
+            "kind": "durable",
+            "estimated_chars": 1800,
+            "relevance": 0.95,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "selected_excludes": [
+          "foreign"
+        ],
+        "denied_reason": "cross_scope_identity_missing"
+      }
+    },
+    {
+      "id": "sb-context-blind-same",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "BLIND",
+        "sources": [
+          {
+            "id": "same",
+            "kind": "durable",
+            "estimated_chars": 1800,
+            "relevance": 0.95,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "selected_excludes": [
+          "same"
+        ],
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "sb-context-blind-exact-foreign",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "BLIND",
+        "authorized_private_scope_ids": [
+          "client-b"
+        ],
+        "sources": [
+          {
+            "id": "foreign",
+            "kind": "durable",
+            "estimated_chars": 1800,
+            "relevance": 0.95,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "client-b"
+          }
+        ]
+      },
+      "expect": {
+        "selected_excludes": [
+          "foreign"
+        ],
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "sb-context-decisive-foreign",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "FULL",
+        "sources": [
+          {
+            "id": "foreign",
+            "kind": "durable",
+            "estimated_chars": 1800,
+            "relevance": 0.95,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": true,
+            "available": true,
+            "scope_id": "client-b"
+          }
+        ]
+      },
+      "expect": {
+        "status": "needs_decisive_context",
+        "selected_excludes": [
+          "foreign"
+        ],
+        "denied_reason": "cross_scope_private_blocked"
+      }
+    },
+    {
+      "id": "sb-context-public-none",
+      "kind": "context",
+      "critical": false,
+      "request": {
+        "mode": "NONE",
+        "sources": [
+          {
+            "id": "brief",
+            "kind": "task",
+            "estimated_chars": 1800,
+            "relevance": 0.95,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "selected_exact": [
+          "brief"
+        ],
+        "status": "planned"
+      }
+    },
+    {
+      "id": "sb-context-explicit-relationship",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "LIGHT",
+        "sources": [
+          {
+            "id": "related",
+            "kind": "durable",
+            "estimated_chars": 1800,
+            "relevance": 0.95,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "explicit_relationship",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "selected_exact": [
+          "related"
+        ],
+        "status": "planned"
+      }
+    },
+    {
+      "id": "sb-context-ancestor",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "LIGHT",
+        "sources": [
+          {
+            "id": "owner",
+            "kind": "durable",
+            "estimated_chars": 1800,
+            "relevance": 0.95,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "ancestor",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "selected_exact": [
+          "owner"
+        ],
+        "status": "planned"
+      }
+    },
+    {
+      "id": "sb-context-selective-full",
+      "kind": "context",
+      "critical": false,
+      "request": {
+        "mode": "FULL",
+        "sources": [
+          {
+            "id": "brief",
+            "kind": "task",
+            "estimated_chars": 1500,
+            "relevance": 0.95,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive",
+            "kind": "durable",
+            "estimated_chars": 12000,
+            "relevance": 0.2,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "selected_exact": [
+          "brief"
+        ],
+        "denied_reason": "below_relevance_floor"
+      }
+    },
+    {
+      "id": "sb-memory-same-full",
+      "kind": "memory",
+      "critical": true,
+      "request": {
+        "memory_class": "durable_context",
+        "operation": "read",
+        "private": true,
+        "scope_relation": "same_entity",
+        "mode": "FULL"
+      },
+      "expect": {
+        "status": "resolved",
+        "read_status": "allowed",
+        "destination_contains": "canonical_aco_document",
+        "scope_reason": "same_or_bound_scope"
+      }
+    },
+    {
+      "id": "sb-memory-foreign-blocked",
+      "kind": "memory",
+      "critical": true,
+      "request": {
+        "memory_class": "durable_context",
+        "operation": "read",
+        "private": true,
+        "scope_relation": "other_private_entity",
+        "mode": "FULL",
+        "source_scope_id": "client-b"
+      },
+      "expect": {
+        "status": "scope_blocked",
+        "read_status": "scope_blocked",
+        "destination_exact": [],
+        "scope_reason": "cross_scope_private_blocked"
+      }
+    },
+    {
+      "id": "sb-memory-legacy-bool-insufficient",
+      "kind": "memory",
+      "critical": true,
+      "request": {
+        "memory_class": "durable_context",
+        "operation": "read",
+        "private": true,
+        "scope_relation": "other_private_entity",
+        "mode": "FULL",
+        "source_scope_id": "client-b",
+        "cross_scope_authorized": true
+      },
+      "expect": {
+        "status": "scope_blocked",
+        "read_status": "scope_blocked",
+        "scope_reason": "exact_cross_scope_authorization_required"
+      }
+    },
+    {
+      "id": "sb-memory-exact-allowed",
+      "kind": "memory",
+      "critical": true,
+      "request": {
+        "memory_class": "durable_context",
+        "operation": "read",
+        "private": true,
+        "scope_relation": "other_private_entity",
+        "mode": "FULL",
+        "source_scope_id": "client-b",
+        "authorized_private_scope_ids": [
+          "client-b"
+        ]
+      },
+      "expect": {
+        "status": "resolved",
+        "read_status": "allowed",
+        "destination_contains": "canonical_aco_document",
+        "scope_reason": "cross_scope_exactly_authorized"
+      }
+    },
+    {
+      "id": "sb-memory-wrong-id",
+      "kind": "memory",
+      "critical": true,
+      "request": {
+        "memory_class": "durable_context",
+        "operation": "read",
+        "private": true,
+        "scope_relation": "other_private_entity",
+        "mode": "FULL",
+        "source_scope_id": "client-b",
+        "authorized_private_scope_ids": [
+          "client-c"
+        ]
+      },
+      "expect": {
+        "status": "scope_blocked",
+        "read_status": "scope_blocked",
+        "scope_reason": "cross_scope_private_blocked"
+      }
+    },
+    {
+      "id": "sb-memory-unknown-exact-still-blocked",
+      "kind": "memory",
+      "critical": true,
+      "request": {
+        "memory_class": "durable_context",
+        "operation": "read",
+        "private": true,
+        "scope_relation": "unknown",
+        "mode": "FULL",
+        "source_scope_id": "mystery",
+        "authorized_private_scope_ids": [
+          "mystery"
+        ]
+      },
+      "expect": {
+        "status": "scope_blocked",
+        "read_status": "scope_blocked",
+        "scope_reason": "unknown_private_scope_blocked"
+      }
+    },
+    {
+      "id": "sb-memory-missing-scope-id",
+      "kind": "memory",
+      "critical": true,
+      "request": {
+        "memory_class": "durable_context",
+        "operation": "read",
+        "private": true,
+        "scope_relation": "other_private_entity",
+        "mode": "FULL",
+        "authorized_private_scope_ids": [
+          "client-b"
+        ]
+      },
+      "expect": {
+        "status": "scope_blocked",
+        "read_status": "scope_blocked",
+        "scope_reason": "cross_scope_identity_missing"
+      }
+    },
+    {
+      "id": "sb-memory-blind-same",
+      "kind": "memory",
+      "critical": true,
+      "request": {
+        "memory_class": "durable_context",
+        "operation": "read",
+        "private": true,
+        "scope_relation": "same_entity",
+        "mode": "BLIND"
+      },
+      "expect": {
+        "status": "continue_without_private_context",
+        "read_status": "mode_blocked",
+        "destination_exact": [],
+        "scope_reason": "same_or_bound_scope"
+      }
+    },
+    {
+      "id": "sb-memory-blind-exact-foreign",
+      "kind": "memory",
+      "critical": true,
+      "request": {
+        "memory_class": "durable_context",
+        "operation": "read",
+        "private": true,
+        "scope_relation": "other_private_entity",
+        "mode": "BLIND",
+        "source_scope_id": "client-b",
+        "authorized_private_scope_ids": [
+          "client-b"
+        ]
+      },
+      "expect": {
+        "status": "continue_without_private_context",
+        "read_status": "mode_blocked",
+        "destination_exact": [],
+        "scope_reason": "cross_scope_exactly_authorized"
+      }
+    },
+    {
+      "id": "sb-memory-light-exact-foreign",
+      "kind": "memory",
+      "critical": true,
+      "request": {
+        "memory_class": "durable_context",
+        "operation": "read",
+        "private": true,
+        "scope_relation": "other_private_entity",
+        "mode": "LIGHT",
+        "source_scope_id": "client-b",
+        "authorized_private_scope_ids": [
+          "client-b"
+        ]
+      },
+      "expect": {
+        "status": "resolved",
+        "read_status": "allowed",
+        "destination_contains": "canonical_aco_document",
+        "scope_reason": "cross_scope_exactly_authorized"
+      }
+    },
+    {
+      "id": "sb-memory-nonprivate-unknown",
+      "kind": "memory",
+      "critical": false,
+      "request": {
+        "memory_class": "durable_context",
+        "operation": "read",
+        "private": false,
+        "scope_relation": "unknown",
+        "mode": "NONE"
+      },
+      "expect": {
+        "status": "resolved",
+        "read_status": "allowed",
+        "destination_contains": "canonical_aco_document",
+        "scope_reason": "non_private"
+      }
+    },
+    {
+      "id": "sb-memory-public-general",
+      "kind": "memory",
+      "critical": false,
+      "request": {
+        "memory_class": "durable_context",
+        "operation": "read",
+        "private": false,
+        "scope_relation": "public_general",
+        "mode": "NONE"
+      },
+      "expect": {
+        "status": "resolved",
+        "read_status": "allowed",
+        "destination_contains": "canonical_aco_document",
+        "scope_reason": "non_private"
+      }
+    }
+  ]
+}

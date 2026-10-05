@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "0.7.2",
+  "aco_version": "0.7.3",
   "name": "ACO v0.7.2 context-engine benchmark",
   "purpose": "Deterministic scope, mode, budget and persistence conformance. Scenarios are package-authored, not an independent external benchmark.",
   "gate": {
@@ -46,7 +46,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-other-client"
           },
           {
             "id": "old-notes",
@@ -92,7 +93,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-other-client"
           },
           {
             "id": "same-client",
@@ -128,7 +130,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": true,
-            "available": true
+            "available": true,
+            "scope_id": "client-related"
           },
           {
             "id": "brief",
@@ -141,6 +144,9 @@
             "decisive": false,
             "available": true
           }
+        ],
+        "authorized_private_scope_ids": [
+          "client-related"
         ]
       },
       "expect": {
@@ -445,7 +451,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-foreign-0"
           }
         ]
       },
@@ -638,7 +645,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-foreign-3"
           }
         ]
       },
@@ -831,7 +839,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-foreign-6"
           }
         ]
       },
@@ -1025,7 +1034,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-foreign-9"
           }
         ]
       },
@@ -1217,7 +1227,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-foreign-12"
           }
         ]
       },
@@ -1411,7 +1422,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-foreign-15"
           }
         ]
       },
@@ -1604,7 +1616,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-foreign-18"
           }
         ]
       },

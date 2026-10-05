@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "0.7.2",
+  "aco_version": "0.7.3",
   "name": "ACO v0.7.2 120-scenario real-world regression benchmark",
   "purpose": "Package-authored deterministic scenarios spanning routing, scoped context retrieval and hybrid memory. This is a regression benchmark, not independent human evaluation or live-provider proof.",
   "composition": {
@@ -743,7 +743,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-other-client"
           },
           {
             "id": "old-notes",
@@ -790,7 +791,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-other-client"
           },
           {
             "id": "same-client",
@@ -827,7 +829,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": true,
-            "available": true
+            "available": true,
+            "scope_id": "client-related"
           },
           {
             "id": "brief",
@@ -840,6 +843,9 @@
             "decisive": false,
             "available": true
           }
+        ],
+        "authorized_private_scope_ids": [
+          "client-related"
         ]
       },
       "expect": {
@@ -1152,7 +1158,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-foreign-0"
           }
         ]
       },
@@ -1348,7 +1355,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-foreign-3"
           }
         ]
       },
@@ -1544,7 +1552,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-foreign-6"
           }
         ]
       },
@@ -1741,7 +1750,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-foreign-9"
           }
         ]
       },
@@ -1936,7 +1946,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-foreign-12"
           }
         ]
       },
@@ -2133,7 +2144,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-foreign-15"
           }
         ]
       },
@@ -2329,7 +2341,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-foreign-18"
           }
         ]
       },
@@ -2439,7 +2452,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-rw-foreign-0"
           },
           {
             "id": "rw-archive-0",
@@ -2498,7 +2512,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-rw-foreign-1"
           },
           {
             "id": "rw-archive-1",
@@ -2557,7 +2572,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-rw-foreign-2"
           },
           {
             "id": "rw-archive-2",
@@ -2616,7 +2632,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-rw-foreign-3"
           },
           {
             "id": "rw-archive-3",
@@ -2675,7 +2692,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-rw-foreign-4"
           },
           {
             "id": "rw-archive-4",
@@ -2734,7 +2752,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-rw-foreign-5"
           },
           {
             "id": "rw-archive-5",
@@ -2793,7 +2812,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-rw-foreign-6"
           },
           {
             "id": "rw-archive-6",
@@ -2852,7 +2872,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-rw-foreign-7"
           },
           {
             "id": "rw-archive-7",
@@ -2911,7 +2932,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-rw-foreign-8"
           },
           {
             "id": "rw-archive-8",
@@ -2970,7 +2992,8 @@
             "private": true,
             "scope_relation": "other_private_entity",
             "decisive": false,
-            "available": true
+            "available": true,
+            "scope_id": "foreign-rw-foreign-9"
           },
           {
             "id": "rw-archive-9",
@@ -3000,7 +3023,8 @@
         "operation": "read",
         "private": true,
         "scope_relation": "other_private_entity",
-        "mode": "FULL"
+        "mode": "FULL",
+        "scope_id": "foreign-foreign"
       },
       "expect": {
         "status": "scope_blocked",
@@ -3016,7 +3040,8 @@
         "operation": "read",
         "private": true,
         "scope_relation": "other_private_entity",
-        "mode": "FULL"
+        "mode": "FULL",
+        "scope_id": "foreign-foreign"
       },
       "expect": {
         "status": "scope_blocked",
@@ -3032,7 +3057,8 @@
         "operation": "read",
         "private": true,
         "scope_relation": "other_private_entity",
-        "mode": "FULL"
+        "mode": "FULL",
+        "scope_id": "foreign-foreign"
       },
       "expect": {
         "status": "scope_blocked",
@@ -3048,7 +3074,8 @@
         "operation": "read",
         "private": true,
         "scope_relation": "other_private_entity",
-        "mode": "FULL"
+        "mode": "FULL",
+        "scope_id": "foreign-foreign"
       },
       "expect": {
         "status": "scope_blocked",
@@ -3064,7 +3091,8 @@
         "operation": "read",
         "private": true,
         "scope_relation": "other_private_entity",
-        "mode": "FULL"
+        "mode": "FULL",
+        "scope_id": "foreign-foreign"
       },
       "expect": {
         "status": "scope_blocked",

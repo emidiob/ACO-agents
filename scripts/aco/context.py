@@ -1,11 +1,7 @@
 from __future__ import annotations
 from typing import Any
 from .common import ACOError, ROOT, VERSION, read_json
-
-_ALLOWED_RELATIONS = {
-    'same_entity', 'explicit_relationship', 'ancestor', 'public_general',
-    'repository_current_source', 'task_local', 'other_private_entity', 'unknown'
-}
+from .scope import normalize_authorized_scope_ids, private_scope_decision
 
 
 def _config() -> dict[str, Any]:
@@ -47,7 +43,8 @@ def context_plan(request: dict[str, Any]) -> dict[str, Any]:
     sources = request.get('sources', [])
     if not isinstance(sources, list):
         raise ACOError('sources must be a list')
-    cross_scope_authorized = bool(request.get('cross_scope_authorized', False))
+    authorized_private_scope_ids = normalize_authorized_scope_ids(request.get('authorized_private_scope_ids'))
+    legacy_cross_scope_authorized = bool(request.get('cross_scope_authorized', False))
     selected: list[dict[str, Any]] = []
     denied: list[dict[str, str]] = []
     eligible: list[dict[str, Any]] = []
@@ -59,8 +56,6 @@ def context_plan(request: dict[str, Any]) -> dict[str, Any]:
             raise ACOError('Each context source needs an id')
         source = dict(raw)
         relation = source.get('scope_relation','unknown')
-        if relation not in _ALLOWED_RELATIONS:
-            raise ACOError('Unknown scope_relation: '+str(relation))
         chars = max(0, int(source.get('estimated_chars',0)))
         candidate_chars += chars
         if not bool(source.get('available', True)):
@@ -68,8 +63,15 @@ def context_plan(request: dict[str, Any]) -> dict[str, Any]:
             if source.get('decisive'): missing_decisive.append(source['id'])
             continue
         private = bool(source.get('private', False))
-        if private and relation in {'other_private_entity','unknown'} and not cross_scope_authorized:
-            denied.append({'id':source['id'],'reason':'cross_scope_private_blocked'})
+        boundary = private_scope_decision(
+            private=private,
+            relation=relation,
+            source_scope_id=source.get('scope_id'),
+            authorized_private_scope_ids=authorized_private_scope_ids,
+            legacy_cross_scope_authorized=legacy_cross_scope_authorized,
+        )
+        if not boundary['allowed']:
+            denied.append({'id':source['id'],'reason':boundary['reason']})
             if source.get('decisive'): missing_decisive.append(source['id'])
             continue
         if private and not bool(policy.get('allow_private', False)):
@@ -129,6 +131,11 @@ def context_plan(request: dict[str, Any]) -> dict[str, Any]:
             'candidate_chars': candidate_chars, 'selected_chars': selected_chars,
             'selection_ratio': round(ratio, 4)
         },
+        'authorization': {
+            'authorized_private_scope_ids': sorted(authorized_private_scope_ids),
+            'legacy_cross_scope_boolean_seen': legacy_cross_scope_authorized,
+            'legacy_boolean_grants_access': False,
+        },
         'policy': policy,
-        'boundary': 'Private context remains entity/client scoped. Other-private or unknown private scope is blocked unless explicitly authorized.'
+        'boundary': 'Private context remains entity/client scoped. Cross-scope private retrieval requires an exact authorized scope id; unknown private scope and wildcard/global authorization stay blocked.'
     }

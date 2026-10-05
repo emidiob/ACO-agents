@@ -1,4 +1,4 @@
-# ACO evaluation gates — v0.7.2
+# ACO evaluation gates — v0.7.3
 
 Package tests establish mechanical behavior. They do **not** prove artistic quality, curatorial judgment, strategic value, legal correctness, security of third-party services or universal host reliability. ACO keeps separate gates for routing, behavior, execution policy, delegation, adapter resolution and privacy hygiene.
 
@@ -61,7 +61,7 @@ The public release must have zero unreviewed likely personal/private/credential 
 
 ## 7. Structured behavioral simulation
 
-`release/behavioral-simulation.json` contains cross-office scenarios scored on routing/scope, evidence/state, minimality, domain quality and action safety. v0.7.2 adds delegation, no-Drive-nagging, Hybrid Memory, provider-neutral adapter and privacy scenarios.
+`release/behavioral-simulation.json` contains cross-office scenarios scored on routing/scope, evidence/state, minimality, domain quality and action safety. v0.7.3 preserves delegation, no-Drive-nagging, Hybrid Memory, provider-neutral adapter and privacy scenarios and adds exact private-scope authorization regressions.
 
 ```bash
 python3 scripts/aco_cli.py eval-score --input release/behavioral-simulation.json
@@ -71,10 +71,12 @@ This remains same-model structured regression evidence from development, not an 
 
 ## Release gate
 
-v0.7.2 closes only if:
+v0.7.3 closes only if:
 
 - all local automatic tests pass;
 - routing regression is at least 90/100 with zero critical failures;
+- the exact private-scope boundary benchmark is 100/100 with zero critical failures and zero Drive prompts;
+- the final fresh v0.7.3 routing holdout is at least 92/100 with zero critical failures and no overlap with routing examples;
 - execution-policy conformance is at least 98/100 with zero critical failures;
 - delegation conformance is 100/100 with zero critical failures;
 - integration-resolution conformance is 100/100 with zero critical failures;

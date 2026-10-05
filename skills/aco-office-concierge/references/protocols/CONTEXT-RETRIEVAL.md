@@ -32,5 +32,5 @@ Stop when the remaining uncertainty does not change the deliverable. More retrie
 - Shared public methods may cross scopes; private facts, drafts, contacts, pricing, files and preferences may not.
 - A memory hit is evidence, not permission and not necessarily current. Verify important current state against the authoritative source.
 
-## v0.7.2 measurable context modes
-When a host/runtime supports the local Context Engine, plan retrieval before broad search. `NONE`/`BLIND` exclude private durable context; `BLIND-FIRST` permits a `LIGHT` refine pass only after the first pass is complete. `LIGHT`/`FULL` remain relevance-filtered and budgeted. A larger mode is not permission to read irrelevant history. Other-client/entity private context remains blocked in every mode unless explicitly authorized.
+## v0.7.3 measurable context modes
+When a host/runtime supports the local Context Engine, plan retrieval before broad search. `NONE`/`BLIND` exclude private durable context; `BLIND-FIRST` permits a `LIGHT` refine pass only after the first pass is complete. `LIGHT`/`FULL` remain relevance-filtered and budgeted. A larger mode is not permission to read irrelevant history. Other-client/entity private context remains blocked in every mode unless the exact foreign `scope_id` is explicitly listed in `authorized_private_scope_ids`; wildcard/global authorization and unknown private scope do not grant access.

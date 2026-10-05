@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.7.3",
+  "state": "frozen_after_final_holdout_first_execution",
+  "routing_py_sha256": "0097776b8cde0c7e0000f101c37d17e5c213717ff762b6170579f319166fa0d9",
+  "routing_hints_semantic_sha256": "7fbe60046e96f83803cb5415a0d2dbd15654f97cb73cc18ed3a6367101753ca6",
+  "routing_examples_semantic_sha256": "59225f55cb748045524be81a5071b50a9cd3ddab7705d154bda3b83ae257469c",
+  "role_contracts_semantic_sha256": "7f0559e69ed3216fd351bb2d6f939e8dcfefab81a1cdb4006e676a229a73cace",
+  "catalog_semantic_sha256": "68633f532ff483ab31a3567528773645538315ad9f5485cc424265731a47092b",
+  "holdout_5_sha256": "fd45fe713f055af62421ebe3328261fd616804ee6618fb4b66059f01b098959a",
+  "rule": "After this point, release metadata/version fields may change, but routing.py and normalized routing hints/examples/role contracts/catalog semantics must remain byte-equivalent to these hashes."
+}

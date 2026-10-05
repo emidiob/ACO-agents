@@ -1,5 +1,6 @@
 from __future__ import annotations
 import json
+import hashlib
 import re
 import subprocess
 import sys
@@ -66,6 +67,35 @@ def validate() -> dict:
     if len(holdout3.get('cases',[]))<30:errors.append('v0.7.2 routing holdout is too small')
     holdout3_prompts={x.get('prompt') for x in holdout3.get('cases',[]) if x.get('prompt')}
     if trained_prompts & holdout3_prompts:errors.append('v0.7.2 routing holdout overlaps training examples')
+    holdout4=read_json(ROOT/'config/routing-v073-holdout-4.json')
+    holdout5=read_json(ROOT/'config/routing-v073-holdout-5.json')
+    if holdout4.get('schema_version')!=1 or holdout4.get('aco_version')!=VERSION:errors.append('v0.7.3 development routing holdout contract mismatch')
+    if holdout5.get('schema_version')!=1 or holdout5.get('aco_version')!=VERSION:errors.append('v0.7.3 final routing holdout contract mismatch')
+    if len(holdout5.get('cases',[]))!=40:errors.append('v0.7.3 final routing holdout must contain 40 cases')
+    holdout4_prompts={x.get('prompt') for x in holdout4.get('cases',[]) if x.get('prompt')}
+    holdout5_prompts={x.get('prompt') for x in holdout5.get('cases',[]) if x.get('prompt')}
+    if trained_prompts & holdout5_prompts:errors.append('v0.7.3 final routing holdout overlaps training examples')
+    if (holdout_prompts|holdout3_prompts|holdout4_prompts) & holdout5_prompts:errors.append('v0.7.3 final routing holdout overlaps prior holdouts')
+
+    def _sha(path: Path) -> str:
+        return hashlib.sha256(path.read_bytes()).hexdigest()
+    def _semantic_json_sha(path: Path) -> str:
+        data=read_json(path)
+        if isinstance(data,dict):data.pop('aco_version',None)
+        payload=(json.dumps(data,sort_keys=True,separators=(',',':'),ensure_ascii=False)+'\n').encode()
+        return hashlib.sha256(payload).hexdigest()
+    fresh_freeze=read_json(ROOT/'release/v073-holdout-5-freeze.json')
+    fresh_result=read_json(ROOT/'release/v073-holdout-5-result.json')
+    dev_result=read_json(ROOT/'release/v073-holdout-4-result.json')
+    semantic_freeze=read_json(ROOT/'release/v073-routing-semantic-freeze.json')
+    if _sha(ROOT/'config/routing-v073-holdout-5.json')!=fresh_freeze.get('sha256'):errors.append('v0.7.3 final routing holdout hash differs from frozen pre-run hash')
+    if fresh_result.get('disposition')!='final_fresh_release_gate' or fresh_result.get('first_execution',{}).get('status')!='passed' or fresh_result.get('first_execution',{}).get('critical_failures')!=0:
+        errors.append('v0.7.3 final fresh holdout first-run evidence is invalid')
+    if dev_result.get('disposition')!='development_regression_only' or dev_result.get('first_execution',{}).get('status')!='failed':
+        errors.append('v0.7.3 development holdout chronology is invalid')
+    if _sha(ROOT/'scripts/aco/routing.py')!=semantic_freeze.get('routing_py_sha256'):errors.append('Routing logic changed after final fresh holdout')
+    for rel,key in [('config/routing-hints.json','routing_hints_semantic_sha256'),('config/routing-examples.json','routing_examples_semantic_sha256'),('config/role-contracts.json','role_contracts_semantic_sha256'),('catalog.json','catalog_semantic_sha256')]:
+        if _semantic_json_sha(ROOT/rel)!=semantic_freeze.get(key):errors.append('Routing semantics changed after final fresh holdout: '+rel)
     simulation=read_json(ROOT/'release/behavioral-simulation.json')
     if simulation.get('schema_version')!=1:errors.append('Behavioral simulation schema mismatch')
     if simulation.get('aco_version')!=VERSION:errors.append('Behavioral simulation version mismatch')
@@ -76,23 +106,32 @@ def validate() -> dict:
         errors.append('Final routing holdout gate failed')
     routing_gate_v072=route_benchmark(ROOT/'config/routing-v072-holdout-3.json')
     if routing_gate_v072.get('status')!='passed' or routing_gate_v072.get('critical_failures')!=0 or routing_gate_v072.get('score',0)<92:
-        errors.append('v0.7.2 fresh routing holdout gate failed')
+        errors.append('v0.7.2 fresh routing holdout regression gate failed')
+    routing_gate_v073_dev=route_benchmark(ROOT/'config/routing-v073-holdout-4.json')
+    if routing_gate_v073_dev.get('status')!='passed' or routing_gate_v073_dev.get('critical_failures')!=0:
+        errors.append('v0.7.3 development routing regression gate failed')
+    routing_gate_v073=route_benchmark(ROOT/'config/routing-v073-holdout-5.json')
+    if routing_gate_v073.get('status')!='passed' or routing_gate_v073.get('critical_failures')!=0 or routing_gate_v073.get('score',0)<98:
+        errors.append('v0.7.3 final fresh routing holdout gate failed')
     context_cfg=read_json(ROOT/'config/context-engine.json')
     if context_cfg.get('schema_version')!=1 or context_cfg.get('aco_version')!=VERSION:
         errors.append('Context engine contract mismatch')
-    from .efficiency import context_benchmark, real_world_benchmark
+    from .efficiency import context_benchmark, real_world_benchmark, scope_boundary_benchmark
     context_gate=context_benchmark(ROOT/'config/context-benchmark.json')
     if context_gate.get('status')!='passed' or context_gate.get('critical_failures')!=0:
         errors.append('Context efficiency benchmark gate failed')
-    real_world_gate=real_world_benchmark(ROOT/'config/real-world-benchmark-v072.json')
-    if real_world_gate.get('status')!='passed' or real_world_gate.get('critical_failures')!=0 or real_world_gate.get('cases')!=120:
-        errors.append('120-scenario real-world regression gate failed')
+    scope_gate=scope_boundary_benchmark(ROOT/'config/scope-boundary-benchmark-v073.json')
+    if scope_gate.get('status')!='passed' or scope_gate.get('critical_failures')!=0 or scope_gate.get('score')!=100.0 or scope_gate.get('drive_prompts')!=0:
+        errors.append('v0.7.3 exact-scope boundary benchmark gate failed')
+    real_world_gate=real_world_benchmark(ROOT/'config/real-world-benchmark-v073.json')
+    if real_world_gate.get('status')!='passed' or real_world_gate.get('critical_failures')!=0 or real_world_gate.get('cases')!=120 or real_world_gate.get('drive_prompts')!=0:
+        errors.append('v0.7.3 120-scenario real-world regression gate failed')
     from .quality import score_simulation
     simulation_gate=score_simulation(ROOT/'release/behavioral-simulation.json')
     if simulation_gate.get('status')!='passed' or simulation_gate.get('critical_failures')!=0 or simulation_gate.get('score',0)<90:
         errors.append('Behavioral simulation gate failed')
     # v0.7 execution contracts and deterministic conformance gate.
-    for filename in ('capabilities.json','permission-policy.json','adapter-contract.json','workflow-states.json','execution-benchmark.json','memory-classes.json','integration-adapters.json','delegation-benchmark.json','integration-benchmark.json','privacy-policy.json','context-engine.json','context-benchmark.json','real-world-benchmark-v072.json','routing-v072-holdout-3.json'):
+    for filename in ('capabilities.json','permission-policy.json','adapter-contract.json','workflow-states.json','execution-benchmark.json','memory-classes.json','integration-adapters.json','delegation-benchmark.json','integration-benchmark.json','privacy-policy.json','context-engine.json','context-benchmark.json','real-world-benchmark-v072.json','real-world-benchmark-v073.json','routing-v072-holdout-3.json','routing-v073-holdout-4.json','routing-v073-holdout-5.json','scope-boundary-benchmark-v073.json'):
         cfg=read_json(ROOT/'config'/filename)
         if cfg.get('schema_version')!=1:errors.append(filename+' schema mismatch')
         if cfg.get('aco_version')!=VERSION:errors.append(filename+' version mismatch')
@@ -161,5 +200,5 @@ def validate() -> dict:
     if errors:raise ACOError('Validation failed:\n'+'\n'.join(errors))
     return {'status':'validated','version':VERSION,'canonical_agents':len(cat['agents']),
             'native_agents':len(names),'skills':len(skills),'workflows':len(workflows),'optional_resources':len(resource_ids),'memory_default':'compact','text_files_scanned':scanned,'relative_links_checked':links_checked,
-            'delegation_score':delegation_gate.get('score'),'integration_score':integration_gate.get('score'),'privacy_findings':len(privacy_gate.get('findings',[])),'routing_v072_score':routing_gate_v072.get('score'),'context_benchmark_score':context_gate.get('score'),'context_mean_selection_ratio':context_gate.get('mean_selection_ratio'),'real_world_benchmark_score':real_world_gate.get('score'),'real_world_context_selection_ratio':real_world_gate.get('mean_context_selection_ratio'),'checks':['TOML','role catalogue and dependencies','generated parity','no plugin artifacts','basic secret/private-path scan','release hashes','relative documentation links','resource identities/roles/methods','role contracts','routing holdout gate','v0.7.2 fresh routing holdout gate','context efficiency gate','120-scenario real-world regression gate','behavioral simulation gate','delegation benchmark gate','hybrid-memory contracts','integration adapter benchmark gate','privacy/PII release gate','capability/permission/adapter/workflow contracts','execution policy benchmark gate'],
+            'delegation_score':delegation_gate.get('score'),'integration_score':integration_gate.get('score'),'privacy_findings':len(privacy_gate.get('findings',[])),'routing_v072_score':routing_gate_v072.get('score'),'routing_v073_development_score':routing_gate_v073_dev.get('score'),'routing_v073_fresh_score':routing_gate_v073.get('score'),'context_benchmark_score':context_gate.get('score'),'context_mean_selection_ratio':context_gate.get('mean_selection_ratio'),'scope_boundary_score':scope_gate.get('score'),'scope_boundary_cases':scope_gate.get('cases'),'real_world_benchmark_score':real_world_gate.get('score'),'real_world_context_selection_ratio':real_world_gate.get('mean_context_selection_ratio'),'checks':['TOML','role catalogue and dependencies','generated parity','no plugin artifacts','basic secret/private-path scan','release hashes','relative documentation links','resource identities/roles/methods','role contracts','routing holdout regression gate','v0.7.2 routing regression gate','v0.7.3 development routing regression gate','v0.7.3 frozen fresh routing holdout gate','routing semantic freeze gate','context efficiency gate','exact-scope privacy boundary gate','v0.7.3 120-scenario real-world regression gate','behavioral simulation gate','delegation benchmark gate','hybrid-memory contracts','integration adapter benchmark gate','privacy/PII release gate','capability/permission/adapter/workflow contracts','execution policy benchmark gate'],
             'execution_benchmark_score':execution_gate.get('score'),'limitations':'Static/local checks; no professional-quality certification and no live external adapter/provider action is executed by validation.'}

@@ -13,12 +13,12 @@ from aco.routing import route_benchmark, suggest_route
 
 class ContextEngine072Tests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(VERSION, '0.7.2')
+        self.assertEqual(VERSION, '0.7.3')
 
     def test_full_does_not_cross_client_boundary(self):
         r=context_plan({'mode':'FULL','sources':[
             {'id':'current','estimated_chars':3000,'relevance':.9,'authority':.9,'private':True,'scope_relation':'same_entity'},
-            {'id':'foreign','estimated_chars':3000,'relevance':1,'authority':1,'private':True,'scope_relation':'other_private_entity'}]})
+            {'id':'foreign','estimated_chars':3000,'relevance':1,'authority':1,'private':True,'scope_relation':'other_private_entity','scope_id':'client-foreign'}]})
         self.assertIn('current',r['selected_source_ids'])
         self.assertNotIn('foreign',r['selected_source_ids'])
         self.assertIn('cross_scope_private_blocked',{x['reason'] for x in r['denied_sources']})
@@ -36,8 +36,8 @@ class ContextEngine072Tests(unittest.TestCase):
         self.assertIn('below_relevance_floor',{x['reason'] for x in r['denied_sources']})
 
     def test_explicit_cross_scope_can_be_used(self):
-        r=context_plan({'mode':'FULL','cross_scope_authorized':True,'sources':[
-            {'id':'related','estimated_chars':3000,'relevance':.95,'authority':.9,'private':True,'scope_relation':'other_private_entity'}]})
+        r=context_plan({'mode':'FULL','authorized_private_scope_ids':['client-related'],'sources':[
+            {'id':'related','estimated_chars':3000,'relevance':.95,'authority':.9,'private':True,'scope_relation':'other_private_entity','scope_id':'client-related'}]})
         self.assertEqual(r['selected_source_ids'],['related'])
 
     def test_unavailable_persistence_never_prompts(self):

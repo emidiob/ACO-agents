@@ -1,6 +1,7 @@
 from __future__ import annotations
 from typing import Any
 from .common import ACOError, ROOT, VERSION, read_json
+from .scope import normalize_authorized_scope_ids, private_scope_decision
 
 
 def memory_resolve(request: dict[str, Any]) -> dict[str, Any]:
@@ -26,10 +27,16 @@ def memory_resolve(request: dict[str, Any]) -> dict[str, Any]:
         from .context import mode_policy
         relation=str(request.get('scope_relation','same_entity'))
         private=bool(request.get('private', memory_class == 'durable_context'))
-        cross_scope_authorized=bool(request.get('cross_scope_authorized',False))
+        authorized_private_scope_ids=normalize_authorized_scope_ids(request.get('authorized_private_scope_ids'))
+        legacy_cross_scope_authorized=bool(request.get('cross_scope_authorized',False))
         policy=mode_policy(request.get('mode','LIGHT'), phase=request.get('phase','initial'),
                            first_pass_complete=bool(request.get('first_pass_complete',False)))
-        if private and relation in {'other_private_entity','unknown'} and not cross_scope_authorized:
+        boundary=private_scope_decision(
+            private=private, relation=relation,
+            source_scope_id=request.get('source_scope_id') or request.get('scope_id'),
+            authorized_private_scope_ids=authorized_private_scope_ids,
+            legacy_cross_scope_authorized=legacy_cross_scope_authorized)
+        if not boundary['allowed']:
             status='scope_blocked';read_status='scope_blocked';destinations=[]
         elif private and not policy.get('allow_private',False):
             status='continue_without_private_context';read_status='mode_blocked';destinations=[]
@@ -41,7 +48,11 @@ def memory_resolve(request: dict[str, Any]) -> dict[str, Any]:
             'status':status,'aco_version':VERSION,'memory_class':memory_class,'operation':'read',
             'destinations':destinations,'read_status':read_status,'effective_mode':policy.get('effective_mode'),
             'prompt_for_drive':False,'notice':notice,'spec':spec,
-            'policy':'Read only the minimum authorized same-scope context. Cross-client/entity private context is blocked unless explicitly authorized; persistence availability never becomes a startup prompt.'
+            'scope_decision':boundary,
+            'authorization':{'authorized_private_scope_ids':sorted(authorized_private_scope_ids),
+                             'legacy_cross_scope_boolean_seen':legacy_cross_scope_authorized,
+                             'legacy_boolean_grants_access':False},
+            'policy':'Read only the minimum authorized same-scope context. Cross-client/entity private context requires an exact authorized scope id; unknown scope and legacy global booleans do not grant access. Persistence availability never becomes a startup prompt.'
         }
 
     if memory_class=='durable_context':

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "0.7.2",
+  "aco_version": "0.7.3",
   "classes": {
     "durable_context": {
       "primary": "canonical_aco_document",
@@ -61,7 +61,7 @@
       "BLIND-FIRST"
     ],
     "default_mode": "LIGHT",
-    "scope_boundary": "same entity/client unless explicit cross-scope authorization",
+    "scope_boundary": "same entity/client by default; foreign private reads require exact source_scope_id membership in authorized_private_scope_ids; unknown private scope and wildcard/global authorization stay blocked",
     "drive_prompt_policy": "never prompt merely to enable memory"
   }
 }

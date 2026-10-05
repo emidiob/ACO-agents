@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "0.7.2",
+  "aco_version": "0.7.3",
   "name": "ACO v0.7.2 fresh routing holdout 3",
   "purpose": "Fresh post-development holdout frozen before first execution. It is excluded from routing examples and measures known office boundaries plus broad regression coverage; it is not an independent external benchmark.",
   "gate": {

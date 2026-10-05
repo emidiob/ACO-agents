@@ -187,6 +187,44 @@ def suggest_route(prompt: str, *, root: Path | None = None, max_roles: int = 3) 
                 office_boost[office] -= 7.0 + min(4.0, len(phrase.split()) * 0.6)
                 office_reasons[office].append('contrast:' + phrase)
 
+    # Compact semantic boundary guards cover paraphrases that should not depend on
+    # one exact hint phrase. They only strengthen already-defined office boundaries.
+    semantic_role_boost: dict[str, float] = collections.defaultdict(float)
+    base_set = set(base)
+    privacy_terms = {'private','context','memory','history','scope','knowledge'}
+    isolation_terms = {'isolate','isolated','exclude','separate','unrelated','authorize','authorized','permission','another','minimum','outside','different','second','only','own'}
+    client_mentions = sum(1 for t in base if t in {'client','account','customer','project','organization','organisation'})
+    cross_client_boundary = (
+        bool(base_set & privacy_terms) and
+        (client_mentions >= 2 or (bool(base_set & {'another','different','second'}) and bool(base_set & {'client','account','customer','project','organization','organisation'}))) and
+        (bool(base_set & isolation_terms) or 'do not' in p0 or "don't" in p0 or 'unless' in p0)
+    )
+    if cross_client_boundary:
+        office_boost['shared'] += 30.0
+        office_boost['organization-office'] -= 20.0
+        office_boost['agency-office'] -= 12.0
+        semantic_role_boost['context_steward'] += 30.0
+        office_reasons['shared'].append('semantic:cross-client-private-boundary')
+
+    brand_foundation = (
+        'brand' in base_set and 'architecture' in base_set and
+        bool(base_set & {'position','positioning','differentiate','differentiation','strategy'})
+    )
+    independent_nonclient = (
+        ('independent' in base_set or {'self','initiated'}.issubset(base_set)) and bool(base_set & {'project','initiative','practice','venture','programme','program','platform'})
+    ) or any(x in p0 for x in ('not a client', 'not an agency account', 'not a client account', 'no client', 'rather than client'))
+    if brand_foundation and independent_nonclient:
+        office_boost['shared'] += 28.0
+        office_boost['agency-office'] -= 18.0
+        semantic_role_boost['brand_strategist'] += 28.0
+        office_reasons['shared'].append('semantic:independent-brand-foundation')
+
+    if 'campaign' in base_set and bool(base_set & {'client','account','customer'}):
+        office_boost['agency-office'] += 22.0
+        office_boost['shared'] -= 8.0
+        semantic_role_boost['campaign_strategist'] += 24.0
+        office_reasons['agency-office'].append('semantic:client-campaign')
+
     # A matched curated role example is also evidence for that role's office.
     # Cap this boost so office-level boundary signals can still override it.
     role_hint_office_boost: dict[str, float] = collections.defaultdict(float)
@@ -225,7 +263,10 @@ def suggest_route(prompt: str, *, root: Path | None = None, max_roles: int = 3) 
         exemplar_boost = example_role_boost.get(key, 0.0)
         if exemplar_boost:
             reasons.append(f'example:{exemplar_boost:.1f}')
-        raw = lexical + phrase_boost + signature_boost + exemplar_boost
+        semantic_boost = semantic_role_boost.get(key, 0.0)
+        if semantic_boost:
+            reasons.append(f'semantic:{semantic_boost:.1f}')
+        raw = lexical + phrase_boost + signature_boost + exemplar_boost + semantic_boost
         if key.endswith('_orchestrator') and not any(x in p0 for x in ('route', 'across offices', 'multi-office', 'multi office', 'which office')):
             raw = max(0.0, raw - 6.0)
         if key == 'office_concierge' and not any(x in p0 for x in ('route', 'which office', 'which agent', 'not enough information', 'not enough info', 'have not said what', 'whether it concerns')):

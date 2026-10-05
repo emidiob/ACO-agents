@@ -1,0 +1,3333 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.7.3",
+  "name": "ACO v0.7.3 real-world regression benchmark",
+  "purpose": "Preserve the 120-scenario routing/context/memory regression suite under exact private-scope authorization.",
+  "composition": {
+    "route": 60,
+    "context": 40,
+    "memory": 20
+  },
+  "gate": {
+    "minimum_score": 96.0,
+    "maximum_critical_failures": 0,
+    "maximum_drive_prompts": 0,
+    "maximum_mean_context_selection_ratio": 0.55
+  },
+  "cases": [
+    {
+      "id": "rw-route-a1",
+      "kind": "route",
+      "prompt": "I want a rigorous critique of this new artwork, not career advice",
+      "expected_office": "artist-office",
+      "acceptable_roles": [
+        "art_critic"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-a3",
+      "kind": "route",
+      "prompt": "How should I build a relationship with this gallery after the studio visit?",
+      "expected_office": "artist-office",
+      "acceptable_roles": [
+        "gallery_relations_manager",
+        "artist_agent"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-o2",
+      "kind": "route",
+      "prompt": "We need a sponsorship package for an institutional cultural programme",
+      "expected_office": "organization-office",
+      "acceptable_roles": [
+        "sponsorship_director",
+        "funding_partnerships_manager"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-g1",
+      "kind": "route",
+      "prompt": "Develop a visual identity system for this new brand",
+      "expected_office": "agency-office",
+      "acceptable_roles": [
+        "brand_identity_designer"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-g3",
+      "kind": "route",
+      "prompt": "Art-direct the responsive website so it expresses the brand, not just UX",
+      "expected_office": "agency-office",
+      "acceptable_roles": [
+        "digital_design_director"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-p1",
+      "kind": "route",
+      "prompt": "Users report a regression after the last frontend release; isolate the bug",
+      "expected_office": "product-office",
+      "acceptable_roles": [
+        "bug_investigator"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-p3",
+      "kind": "route",
+      "prompt": "Plan a safe migration of the production database with rollback evidence",
+      "expected_office": "product-office",
+      "acceptable_roles": [
+        "migration_specialist",
+        "database_engineer"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-l1",
+      "kind": "route",
+      "prompt": "Review this commercial agreement and flag problematic clauses",
+      "expected_office": "legal-office",
+      "acceptable_roles": [
+        "contract_reviewer",
+        "commercial_contracts_advisor"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-l3",
+      "kind": "route",
+      "prompt": "Map GDPR and privacy obligations for this customer-data flow",
+      "expected_office": "legal-office",
+      "acceptable_roles": [
+        "privacy_data_protection_advisor"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-r2",
+      "kind": "route",
+      "prompt": "Rebuild my CV architecture for a senior international role",
+      "expected_office": "recruitment-office",
+      "acceptable_roles": [
+        "resume_strategist"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-f1",
+      "kind": "route",
+      "prompt": "Three client invoices are overdue; organize receivables follow-up",
+      "expected_office": "finance-office",
+      "acceptable_roles": [
+        "billing_receivables_coordinator"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-f3",
+      "kind": "route",
+      "prompt": "Show our cash-flow runway and upcoming liquidity pressure",
+      "expected_office": "finance-office",
+      "acceptable_roles": [
+        "cashflow_treasury_analyst"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-c2",
+      "kind": "route",
+      "prompt": "Coordinate our response to this formal tender and submission requirements",
+      "expected_office": "commercial-office",
+      "acceptable_roles": [
+        "tender_bid_coordinator"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h1",
+      "kind": "route",
+      "prompt": "Create a clean onboarding plan for a new employee joining next week",
+      "expected_office": "people-office",
+      "acceptable_roles": [
+        "onboarding_offboarding_coordinator"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h3",
+      "kind": "route",
+      "prompt": "Model our headcount and staffing needs for the next two quarters",
+      "expected_office": "people-office",
+      "acceptable_roles": [
+        "workforce_planner"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-d2",
+      "kind": "route",
+      "prompt": "Define acceptance criteria and sign-off evidence for this delivery",
+      "expected_office": "delivery-office",
+      "acceptable_roles": [
+        "quality_acceptance_coordinator"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-ad1",
+      "kind": "route",
+      "prompt": "Read this email thread and draft the appropriate reply",
+      "expected_office": "administration-office",
+      "acceptable_roles": [
+        "inbox_correspondence_manager",
+        "communications_editor"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-ad3",
+      "kind": "route",
+      "prompt": "Research flights, hotel and practical travel logistics for the trip",
+      "expected_office": "administration-office",
+      "acceptable_roles": [
+        "travel_logistics_coordinator"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-pr2",
+      "kind": "route",
+      "prompt": "Adapt this creative direction into a prompt for an AI video model",
+      "expected_office": "production-office",
+      "acceptable_roles": [
+        "ai_video_prompt_adapter",
+        "visual_prompt_engineer"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-pr4",
+      "kind": "route",
+      "prompt": "Prepare the final dialogue/music/effects mix for delivery",
+      "expected_office": "production-office",
+      "acceptable_roles": [
+        "re_recording_mixer"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-pub2",
+      "kind": "route",
+      "prompt": "Check bleed, fonts, image resolution and make the PDF print-ready",
+      "expected_office": "publishing-office",
+      "acceptable_roles": [
+        "prepress_specialist"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-s1",
+      "kind": "route",
+      "prompt": "Edit my artist statement without turning it into marketing copy",
+      "expected_office": "shared",
+      "acceptable_roles": [
+        "editor",
+        "art_writer"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-s3",
+      "kind": "route",
+      "prompt": "I do not know which ACO office should handle this request; route it",
+      "expected_office": "shared",
+      "acceptable_roles": [
+        "office_concierge"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-art-studio-visit",
+      "kind": "route",
+      "prompt": "I have a studio visit with a gallerist next week. Help me choose what to show and how to continue the relationship afterward.",
+      "expected_office": "artist-office",
+      "acceptable_roles": [
+        "gallery_relations_manager",
+        "artist_agent"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-art-archive",
+      "kind": "route",
+      "prompt": "I need a durable inventory for works, dimensions, editions, locations and condition notes without turning every item into a project.",
+      "expected_office": "artist-office",
+      "acceptable_roles": [
+        "collection_inventory_manager",
+        "practice_archivist"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-org-programme",
+      "kind": "route",
+      "prompt": "Our foundation wants a twelve-month sequence of exhibitions, talks and workshops around ecology, with a coherent curatorial logic.",
+      "expected_office": "organization-office",
+      "acceptable_roles": [
+        "programme_curator"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-org-partner",
+      "kind": "route",
+      "prompt": "Map potential institutional collaborators and structure a partnership approach for the cultural programme.",
+      "expected_office": "organization-office",
+      "acceptable_roles": [
+        "partnerships_director",
+        "network_mapper"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-agency-identity",
+      "kind": "route",
+      "prompt": "We have a rough wordmark, typeface and two colors. Turn them into a coherent visual system with applications.",
+      "expected_office": "agency-office",
+      "acceptable_roles": [
+        "brand_identity_designer",
+        "design_director"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-agency-mobile-qa",
+      "kind": "route",
+      "prompt": "The landing page compiles, but the typography, spacing and rhythm feel wrong on mobile. Review the rendered result.",
+      "expected_office": "agency-office",
+      "acceptable_roles": [
+        "visual_design_critic",
+        "web_typography_layout_specialist",
+        "digital_design_director"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-agency-social-draft",
+      "kind": "route",
+      "prompt": "Prepare a week of platform-native posts and carousel ideas for Instagram; nothing should be published yet.",
+      "expected_office": "agency-office",
+      "acceptable_roles": [
+        "social_content_creator",
+        "social_media_manager"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-product-user-research",
+      "kind": "route",
+      "prompt": "We need interviews and usability sessions to understand why users abandon the onboarding flow.",
+      "expected_office": "product-office",
+      "acceptable_roles": [
+        "ux_researcher",
+        "product_researcher"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-product-design-system",
+      "kind": "route",
+      "prompt": "Define reusable tokens, components and states so the product UI stops drifting between screens.",
+      "expected_office": "product-office",
+      "acceptable_roles": [
+        "design_system_designer"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-product-a11y-test",
+      "kind": "route",
+      "prompt": "Test keyboard navigation, focus order and screen-reader behavior in the actual interface.",
+      "expected_office": "product-office",
+      "acceptable_roles": [
+        "accessibility_tester",
+        "accessibility_specialist"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-legal-dpa",
+      "kind": "route",
+      "prompt": "A vendor sent us a data-processing addendum. Identify privacy obligations and risky clauses before we sign.",
+      "expected_office": "legal-office",
+      "acceptable_roles": [
+        "privacy_data_protection_advisor",
+        "contract_reviewer",
+        "procurement_vendor_contract_advisor"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-legal-image-rights",
+      "kind": "route",
+      "prompt": "Can we license these photographs for a paid campaign across Europe for two years? Review rights and usage terms.",
+      "expected_office": "legal-office",
+      "acceptable_roles": [
+        "licensing_rights_advisor",
+        "ip_copyright_advisor"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-recruit-offer",
+      "kind": "route",
+      "prompt": "I received an offer. Help me negotiate title, compensation, flexibility and start date.",
+      "expected_office": "recruitment-office",
+      "acceptable_roles": [
+        "offer_negotiation_advisor"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-recruit-fit",
+      "kind": "route",
+      "prompt": "Compare my verified experience with this role description and show the material gaps before I apply.",
+      "expected_office": "recruitment-office",
+      "acceptable_roles": [
+        "job_fit_analyst",
+        "skills_gap_analyst"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-finance-runway",
+      "kind": "route",
+      "prompt": "We have limited cash on hand, several supplier payments due and client money arriving later. Show the liquidity risk.",
+      "expected_office": "finance-office",
+      "acceptable_roles": [
+        "cashflow_treasury_analyst"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-finance-margin",
+      "kind": "route",
+      "prompt": "This project price looks healthy but production costs may erase the margin. Model the economics before we quote.",
+      "expected_office": "finance-office",
+      "acceptable_roles": [
+        "pricing_margin_analyst",
+        "production_cost_controller"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-commercial-not-client",
+      "kind": "route",
+      "prompt": "The prospect likes the idea but has not accepted the proposal. What status should it have and what is the next sales step?",
+      "expected_office": "commercial-office",
+      "acceptable_roles": [
+        "sales_operations_manager",
+        "lead_qualification_researcher",
+        "commercial_orchestrator"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-commercial-retention",
+      "kind": "route",
+      "prompt": "A current customer is at risk of leaving after a difficult delivery. Build a retention and recovery plan.",
+      "expected_office": "commercial-office",
+      "acceptable_roles": [
+        "customer_success_manager"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-people-interview",
+      "kind": "route",
+      "prompt": "We are hiring three designers. Create a fair, repeatable interview structure for the employer side.",
+      "expected_office": "people-office",
+      "acceptable_roles": [
+        "structured_interview_designer",
+        "hiring_coordinator"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-people-ld",
+      "kind": "route",
+      "prompt": "Create a development plan for employees who need stronger management and presentation skills.",
+      "expected_office": "people-office",
+      "acceptable_roles": [
+        "learning_development_specialist"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-delivery-program",
+      "kind": "route",
+      "prompt": "Eight workstreams share milestones and resources. I need one integrated dependency view and escalation path.",
+      "expected_office": "delivery-office",
+      "acceptable_roles": [
+        "programme_delivery_manager",
+        "project_controls_analyst"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-delivery-accept",
+      "kind": "route",
+      "prompt": "Before handover, define exactly what evidence is required for the client to accept the deliverables.",
+      "expected_office": "delivery-office",
+      "acceptable_roles": [
+        "quality_acceptance_coordinator"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-admin-uncertain-send",
+      "kind": "route",
+      "prompt": "The email action timed out and I have no receipt. Figure out the communication status before anything is resent.",
+      "expected_office": "administration-office",
+      "acceptable_roles": [
+        "communications_operator",
+        "inbox_correspondence_manager"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-admin-minutes",
+      "kind": "route",
+      "prompt": "Prepare the agenda, capture decisions and actions, and circulate concise meeting notes.",
+      "expected_office": "administration-office",
+      "acceptable_roles": [
+        "meeting_calendar_coordinator",
+        "executive_assistant"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-production-qc",
+      "kind": "route",
+      "prompt": "Check the final 4K master, captions, audio channels and delivery specs before handoff.",
+      "expected_office": "production-office",
+      "acceptable_roles": [
+        "media_delivery_qc"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-production-music",
+      "kind": "route",
+      "prompt": "Find music that fits the film and determine what rights information production needs before use.",
+      "expected_office": "production-office",
+      "acceptable_roles": [
+        "music_supervisor"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-publishing-copy",
+      "kind": "route",
+      "prompt": "The argument is approved; now I need sentence-level consistency, grammar and house-style cleanup without structural rewriting.",
+      "expected_office": "publishing-office",
+      "acceptable_roles": [
+        "copy_editor"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-publishing-rights",
+      "kind": "route",
+      "prompt": "Track permissions for quoted text, images and translated material before the catalogue goes to press.",
+      "expected_office": "publishing-office",
+      "acceptable_roles": [
+        "publishing_rights_permissions_manager"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-shared-ambiguous",
+      "kind": "route",
+      "prompt": "I need help with something important tomorrow, but I have not explained what the task is yet.",
+      "expected_office": "shared",
+      "acceptable_roles": [
+        "office_concierge"
+      ],
+      "max_selected_roles": 1,
+      "critical": true
+    },
+    {
+      "id": "rw-route-h-shared-art-writing",
+      "kind": "route",
+      "prompt": "Turn these notes into a serious exhibition text, preserving the ambiguity of the work rather than selling it.",
+      "expected_office": "shared",
+      "acceptable_roles": [
+        "art_writer",
+        "editor"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-r-art-practice",
+      "kind": "route",
+      "prompt": "For my contemporary-art practice, review the work and research I supplied and choose the most important development priorities for the next three months.",
+      "expected_office": "artist-office",
+      "acceptable_roles": [
+        "practice_strategist"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-r-art-grant",
+      "kind": "route",
+      "prompt": "I am applying as an artist to a production fund. Verify the call and assemble the project answers, work samples, budget and timetable without inventing achievements.",
+      "expected_office": "artist-office",
+      "acceptable_roles": [
+        "grants_applications_manager"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-r-org-ops",
+      "kind": "route",
+      "prompt": "At our cultural organization, clarify operating priorities, capacity, ownership and resourcing across teams so the institution can execute its programme.",
+      "expected_office": "organization-office",
+      "acceptable_roles": [
+        "operations_director"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-r-org-contrib",
+      "kind": "route",
+      "prompt": "Our cultural organization needs external artists, writers and speakers for its programme. Organize contributor sourcing, availability and onboarding.",
+      "expected_office": "organization-office",
+      "acceptable_roles": [
+        "talent_contributors_manager"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-r-agency-brand",
+      "kind": "route",
+      "prompt": "For the client brand, build the approved visual identity into a coherent system of mark, type, color, layout, imagery and applications.",
+      "expected_office": "agency-office",
+      "acceptable_roles": [
+        "brand_identity_designer"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-r-agency-pm",
+      "kind": "route",
+      "prompt": "Manage this client-agency project through scope, deadlines, review rounds, approvals and dependencies, escalating changes when they affect delivery.",
+      "expected_office": "agency-office",
+      "acceptable_roles": [
+        "project_manager",
+        "project_coordinator"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-route-r-product-back",
+      "kind": "route",
+      "prompt": "For our software product, implement the server-side feature and API behavior with validation, errors and test coverage.",
+      "expected_office": "product-office",
+      "acceptable_roles": [
+        "backend_engineer",
+        "senior_backend_engineer"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "rw-ctx-light-minimum",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "LIGHT",
+        "sources": [
+          {
+            "id": "brief",
+            "kind": "task",
+            "estimated_chars": 2500,
+            "relevance": 0.95,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-client-decisions",
+            "kind": "durable",
+            "estimated_chars": 4200,
+            "relevance": 0.92,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "other-client",
+            "kind": "durable",
+            "estimated_chars": 9000,
+            "relevance": 0.99,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "foreign-other-client"
+          },
+          {
+            "id": "old-notes",
+            "kind": "durable",
+            "estimated_chars": 9000,
+            "relevance": 0.3,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "denied_reason": "cross_scope_private_blocked",
+        "max_selection_ratio": 0.45
+      }
+    },
+    {
+      "id": "rw-ctx-full-still-isolated",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "FULL",
+        "sources": [
+          {
+            "id": "brief",
+            "kind": "task",
+            "estimated_chars": 2500,
+            "relevance": 0.95,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "other-client",
+            "kind": "durable",
+            "estimated_chars": 6000,
+            "relevance": 0.99,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "foreign-other-client"
+          },
+          {
+            "id": "same-client",
+            "kind": "durable",
+            "estimated_chars": 6000,
+            "relevance": 0.9,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "denied_reason": "cross_scope_private_blocked",
+        "max_selection_ratio": 0.7
+      }
+    },
+    {
+      "id": "rw-ctx-cross-scope-explicit",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "FULL",
+        "cross_scope_authorized": true,
+        "sources": [
+          {
+            "id": "relationship",
+            "kind": "durable",
+            "estimated_chars": 3500,
+            "relevance": 0.99,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": true,
+            "available": true,
+            "scope_id": "client-related"
+          },
+          {
+            "id": "brief",
+            "kind": "task",
+            "estimated_chars": 1500,
+            "relevance": 0.95,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          }
+        ],
+        "authorized_private_scope_ids": [
+          "client-related"
+        ]
+      },
+      "expect": {
+        "selected_contains": [
+          "relationship"
+        ],
+        "status": "planned"
+      }
+    },
+    {
+      "id": "rw-ctx-blind-private-block",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "BLIND",
+        "sources": [
+          {
+            "id": "brief",
+            "kind": "task",
+            "estimated_chars": 2000,
+            "relevance": 0.95,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "private",
+            "kind": "durable",
+            "estimated_chars": 4000,
+            "relevance": 0.99,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "effective_mode": "BLIND",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "rw-ctx-none-private-block",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "NONE",
+        "sources": [
+          {
+            "id": "repo",
+            "kind": "repo",
+            "estimated_chars": 3000,
+            "relevance": 0.9,
+            "authority": 0.95,
+            "private": false,
+            "scope_relation": "repository_current_source",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "private",
+            "kind": "durable",
+            "estimated_chars": 5000,
+            "relevance": 0.99,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "effective_mode": "NONE",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "rw-ctx-blind-first-initial",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "BLIND-FIRST",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "public",
+            "kind": "research",
+            "estimated_chars": 3500,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "private",
+            "kind": "durable",
+            "estimated_chars": 4500,
+            "relevance": 0.99,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "effective_mode": "BLIND",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "rw-ctx-blind-first-refine",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "BLIND-FIRST",
+        "phase": "refine",
+        "first_pass_complete": true,
+        "sources": [
+          {
+            "id": "public",
+            "kind": "research",
+            "estimated_chars": 3500,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "private",
+            "kind": "durable",
+            "estimated_chars": 4500,
+            "relevance": 0.99,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "effective_mode": "LIGHT",
+        "selected_contains": [
+          "private"
+        ]
+      }
+    },
+    {
+      "id": "rw-ctx-missing-decisive",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "LIGHT",
+        "sources": [
+          {
+            "id": "brief",
+            "kind": "task",
+            "estimated_chars": 2000,
+            "relevance": 0.9,
+            "authority": 0.8,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "required-contract",
+            "kind": "file",
+            "estimated_chars": 5000,
+            "relevance": 1,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": true,
+            "available": false
+          }
+        ]
+      },
+      "expect": {
+        "status": "needs_decisive_context",
+        "denied_reason": "unavailable"
+      }
+    },
+    {
+      "id": "rw-ctx-no-drive-startup",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "LIGHT",
+        "persistent_store_available": false,
+        "material_change": false,
+        "sources": [
+          {
+            "id": "brief",
+            "kind": "task",
+            "estimated_chars": 2000,
+            "relevance": 0.9,
+            "authority": 0.8,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "status": "planned",
+        "no_drive_prompt": true
+      }
+    },
+    {
+      "id": "rw-ctx-explicit-save-pending",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "LIGHT",
+        "persistent_store_available": false,
+        "explicit_persistence_request": true,
+        "material_change": true,
+        "sources": [
+          {
+            "id": "brief",
+            "kind": "task",
+            "estimated_chars": 2000,
+            "relevance": 0.9,
+            "authority": 0.8,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "status": "planned",
+        "no_drive_prompt": true
+      }
+    },
+    {
+      "id": "rw-ctx-var-01",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "LIGHT",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-0",
+            "kind": "task",
+            "estimated_chars": 1800,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-0",
+            "kind": "durable",
+            "estimated_chars": 3600,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-0",
+            "kind": "research",
+            "estimated_chars": 3000,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-0",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "foreign-0",
+            "kind": "durable",
+            "estimated_chars": 6200,
+            "relevance": 0.95,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "foreign-foreign-0"
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "LIGHT",
+        "denied_reason": "cross_scope_private_blocked"
+      }
+    },
+    {
+      "id": "rw-ctx-var-02",
+      "kind": "context",
+      "critical": false,
+      "request": {
+        "mode": "FULL",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-1",
+            "kind": "task",
+            "estimated_chars": 2100,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-1",
+            "kind": "durable",
+            "estimated_chars": 4000,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-1",
+            "kind": "research",
+            "estimated_chars": 3700,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-1",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "FULL"
+      }
+    },
+    {
+      "id": "rw-ctx-var-03",
+      "kind": "context",
+      "critical": false,
+      "request": {
+        "mode": "BLIND",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-2",
+            "kind": "task",
+            "estimated_chars": 2400,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-2",
+            "kind": "durable",
+            "estimated_chars": 4400,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-2",
+            "kind": "research",
+            "estimated_chars": 3000,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-2",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "BLIND",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "rw-ctx-var-04",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "NONE",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-3",
+            "kind": "task",
+            "estimated_chars": 1800,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-3",
+            "kind": "durable",
+            "estimated_chars": 4800,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-3",
+            "kind": "research",
+            "estimated_chars": 3700,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-3",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "foreign-3",
+            "kind": "durable",
+            "estimated_chars": 6200,
+            "relevance": 0.95,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "foreign-foreign-3"
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "NONE",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "rw-ctx-var-05",
+      "kind": "context",
+      "critical": false,
+      "request": {
+        "mode": "BLIND-FIRST",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-4",
+            "kind": "task",
+            "estimated_chars": 2100,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-4",
+            "kind": "durable",
+            "estimated_chars": 3600,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-4",
+            "kind": "research",
+            "estimated_chars": 3000,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-4",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "BLIND",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "rw-ctx-var-06",
+      "kind": "context",
+      "critical": false,
+      "request": {
+        "mode": "LIGHT",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-5",
+            "kind": "task",
+            "estimated_chars": 2400,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-5",
+            "kind": "durable",
+            "estimated_chars": 4000,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-5",
+            "kind": "research",
+            "estimated_chars": 3700,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-5",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "LIGHT"
+      }
+    },
+    {
+      "id": "rw-ctx-var-07",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "FULL",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-6",
+            "kind": "task",
+            "estimated_chars": 1800,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-6",
+            "kind": "durable",
+            "estimated_chars": 4400,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-6",
+            "kind": "research",
+            "estimated_chars": 3000,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-6",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "foreign-6",
+            "kind": "durable",
+            "estimated_chars": 6200,
+            "relevance": 0.95,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "foreign-foreign-6"
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "FULL",
+        "denied_reason": "cross_scope_private_blocked"
+      }
+    },
+    {
+      "id": "rw-ctx-var-08",
+      "kind": "context",
+      "critical": false,
+      "request": {
+        "mode": "BLIND",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-7",
+            "kind": "task",
+            "estimated_chars": 2100,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-7",
+            "kind": "durable",
+            "estimated_chars": 4800,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-7",
+            "kind": "research",
+            "estimated_chars": 3700,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-7",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "BLIND",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "rw-ctx-var-09",
+      "kind": "context",
+      "critical": false,
+      "request": {
+        "mode": "NONE",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-8",
+            "kind": "task",
+            "estimated_chars": 2400,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-8",
+            "kind": "durable",
+            "estimated_chars": 3600,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-8",
+            "kind": "research",
+            "estimated_chars": 3000,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-8",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "NONE",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "rw-ctx-var-10",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "BLIND-FIRST",
+        "phase": "refine",
+        "first_pass_complete": true,
+        "sources": [
+          {
+            "id": "brief-9",
+            "kind": "task",
+            "estimated_chars": 1800,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-9",
+            "kind": "durable",
+            "estimated_chars": 4000,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-9",
+            "kind": "research",
+            "estimated_chars": 3700,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-9",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "foreign-9",
+            "kind": "durable",
+            "estimated_chars": 6200,
+            "relevance": 0.95,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "foreign-foreign-9"
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "LIGHT",
+        "denied_reason": "cross_scope_private_blocked"
+      }
+    },
+    {
+      "id": "rw-ctx-var-11",
+      "kind": "context",
+      "critical": false,
+      "request": {
+        "mode": "LIGHT",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-10",
+            "kind": "task",
+            "estimated_chars": 2100,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-10",
+            "kind": "durable",
+            "estimated_chars": 4400,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-10",
+            "kind": "research",
+            "estimated_chars": 3000,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-10",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "LIGHT"
+      }
+    },
+    {
+      "id": "rw-ctx-var-12",
+      "kind": "context",
+      "critical": false,
+      "request": {
+        "mode": "FULL",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-11",
+            "kind": "task",
+            "estimated_chars": 2400,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-11",
+            "kind": "durable",
+            "estimated_chars": 4800,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-11",
+            "kind": "research",
+            "estimated_chars": 3700,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-11",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "FULL"
+      }
+    },
+    {
+      "id": "rw-ctx-var-13",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "BLIND",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-12",
+            "kind": "task",
+            "estimated_chars": 1800,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-12",
+            "kind": "durable",
+            "estimated_chars": 3600,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-12",
+            "kind": "research",
+            "estimated_chars": 3000,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-12",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "foreign-12",
+            "kind": "durable",
+            "estimated_chars": 6200,
+            "relevance": 0.95,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "foreign-foreign-12"
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "BLIND",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "rw-ctx-var-14",
+      "kind": "context",
+      "critical": false,
+      "request": {
+        "mode": "NONE",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-13",
+            "kind": "task",
+            "estimated_chars": 2100,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-13",
+            "kind": "durable",
+            "estimated_chars": 4000,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-13",
+            "kind": "research",
+            "estimated_chars": 3700,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-13",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "NONE",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "rw-ctx-var-15",
+      "kind": "context",
+      "critical": false,
+      "request": {
+        "mode": "BLIND-FIRST",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-14",
+            "kind": "task",
+            "estimated_chars": 2400,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-14",
+            "kind": "durable",
+            "estimated_chars": 4400,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-14",
+            "kind": "research",
+            "estimated_chars": 3000,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-14",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "BLIND",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "rw-ctx-var-16",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "LIGHT",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-15",
+            "kind": "task",
+            "estimated_chars": 1800,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-15",
+            "kind": "durable",
+            "estimated_chars": 4800,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-15",
+            "kind": "research",
+            "estimated_chars": 3700,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-15",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "foreign-15",
+            "kind": "durable",
+            "estimated_chars": 6200,
+            "relevance": 0.95,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "foreign-foreign-15"
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "LIGHT",
+        "denied_reason": "cross_scope_private_blocked"
+      }
+    },
+    {
+      "id": "rw-ctx-var-17",
+      "kind": "context",
+      "critical": false,
+      "request": {
+        "mode": "FULL",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-16",
+            "kind": "task",
+            "estimated_chars": 2100,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-16",
+            "kind": "durable",
+            "estimated_chars": 3600,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-16",
+            "kind": "research",
+            "estimated_chars": 3000,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-16",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "FULL"
+      }
+    },
+    {
+      "id": "rw-ctx-var-18",
+      "kind": "context",
+      "critical": false,
+      "request": {
+        "mode": "BLIND",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-17",
+            "kind": "task",
+            "estimated_chars": 2400,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-17",
+            "kind": "durable",
+            "estimated_chars": 4000,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-17",
+            "kind": "research",
+            "estimated_chars": 3700,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-17",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "BLIND",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "rw-ctx-var-19",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "NONE",
+        "phase": "initial",
+        "first_pass_complete": false,
+        "sources": [
+          {
+            "id": "brief-18",
+            "kind": "task",
+            "estimated_chars": 1800,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-18",
+            "kind": "durable",
+            "estimated_chars": 4400,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-18",
+            "kind": "research",
+            "estimated_chars": 3000,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-18",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "foreign-18",
+            "kind": "durable",
+            "estimated_chars": 6200,
+            "relevance": 0.95,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "foreign-foreign-18"
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "NONE",
+        "denied_reason": "mode_blocks_private_context"
+      }
+    },
+    {
+      "id": "rw-ctx-var-20",
+      "kind": "context",
+      "critical": false,
+      "request": {
+        "mode": "BLIND-FIRST",
+        "phase": "refine",
+        "first_pass_complete": true,
+        "sources": [
+          {
+            "id": "brief-19",
+            "kind": "task",
+            "estimated_chars": 2100,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "same-19",
+            "kind": "durable",
+            "estimated_chars": 4800,
+            "relevance": 0.85,
+            "authority": 0.9,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "public-19",
+            "kind": "research",
+            "estimated_chars": 3700,
+            "relevance": 0.65,
+            "authority": 0.75,
+            "private": false,
+            "scope_relation": "public_general",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "archive-19",
+            "kind": "durable",
+            "estimated_chars": 7800,
+            "relevance": 0.25,
+            "authority": 0.5,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "no_drive_prompt": true,
+        "max_selection_ratio": 0.8,
+        "effective_mode": "LIGHT"
+      }
+    },
+    {
+      "id": "rw-context-extra-01",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "LIGHT",
+        "sources": [
+          {
+            "id": "rw-brief-0",
+            "kind": "task",
+            "estimated_chars": 2000,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "rw-current-0",
+            "kind": "durable",
+            "estimated_chars": 4000,
+            "relevance": 0.9,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "rw-foreign-0",
+            "kind": "durable",
+            "estimated_chars": 7000,
+            "relevance": 0.99,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "foreign-rw-foreign-0"
+          },
+          {
+            "id": "rw-archive-0",
+            "kind": "durable",
+            "estimated_chars": 9000,
+            "relevance": 0.2,
+            "authority": 0.4,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "denied_reason": "cross_scope_private_blocked",
+        "max_selection_ratio": 0.65,
+        "no_drive_prompt": true
+      }
+    },
+    {
+      "id": "rw-context-extra-02",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "FULL",
+        "sources": [
+          {
+            "id": "rw-brief-1",
+            "kind": "task",
+            "estimated_chars": 2000,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "rw-current-1",
+            "kind": "durable",
+            "estimated_chars": 4000,
+            "relevance": 0.9,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "rw-foreign-1",
+            "kind": "durable",
+            "estimated_chars": 7000,
+            "relevance": 0.99,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "foreign-rw-foreign-1"
+          },
+          {
+            "id": "rw-archive-1",
+            "kind": "durable",
+            "estimated_chars": 9000,
+            "relevance": 0.2,
+            "authority": 0.4,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "denied_reason": "cross_scope_private_blocked",
+        "max_selection_ratio": 0.65,
+        "no_drive_prompt": true
+      }
+    },
+    {
+      "id": "rw-context-extra-03",
+      "kind": "context",
+      "critical": true,
+      "request": {
+        "mode": "LIGHT",
+        "sources": [
+          {
+            "id": "rw-brief-2",
+            "kind": "task",
+            "estimated_chars": 2000,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "rw-current-2",
+            "kind": "durable",
+            "estimated_chars": 4000,
+            "relevance": 0.9,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "rw-foreign-2",
+            "kind": "durable",
+            "estimated_chars": 7000,
+            "relevance": 0.99,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "foreign-rw-foreign-2"
+          },
+          {
+            "id": "rw-archive-2",
+            "kind": "durable",
+            "estimated_chars": 9000,
+            "relevance": 0.2,
+            "authority": 0.4,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "denied_reason": "cross_scope_private_blocked",
+        "max_selection_ratio": 0.65,
+        "no_drive_prompt": true
+      }
+    },
+    {
+      "id": "rw-context-extra-04",
+      "kind": "context",
+      "critical": false,
+      "request": {
+        "mode": "FULL",
+        "sources": [
+          {
+            "id": "rw-brief-3",
+            "kind": "task",
+            "estimated_chars": 2000,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "rw-current-3",
+            "kind": "durable",
+            "estimated_chars": 4000,
+            "relevance": 0.9,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "rw-foreign-3",
+            "kind": "durable",
+            "estimated_chars": 7000,
+            "relevance": 0.99,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "foreign-rw-foreign-3"
+          },
+          {
+            "id": "rw-archive-3",
+            "kind": "durable",
+            "estimated_chars": 9000,
+            "relevance": 0.2,
+            "authority": 0.4,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "denied_reason": "cross_scope_private_blocked",
+        "max_selection_ratio": 0.65,
+        "no_drive_prompt": true
+      }
+    },
+    {
+      "id": "rw-context-extra-05",
+      "kind": "context",
+      "critical": false,
+      "request": {
+        "mode": "LIGHT",
+        "sources": [
+          {
+            "id": "rw-brief-4",
+            "kind": "task",
+            "estimated_chars": 2000,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "rw-current-4",
+            "kind": "durable",
+            "estimated_chars": 4000,
+            "relevance": 0.9,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "rw-foreign-4",
+            "kind": "durable",
+            "estimated_chars": 7000,
+            "relevance": 0.99,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "foreign-rw-foreign-4"
+          },
+          {
+            "id": "rw-archive-4",
+            "kind": "durable",
+            "estimated_chars": 9000,
+            "relevance": 0.2,
+            "authority": 0.4,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "denied_reason": "cross_scope_private_blocked",
+        "max_selection_ratio": 0.65,
+        "no_drive_prompt": true
+      }
+    },
+    {
+      "id": "rw-context-extra-06",
+      "kind": "context",
+      "critical": false,
+      "request": {
+        "mode": "FULL",
+        "sources": [
+          {
+            "id": "rw-brief-5",
+            "kind": "task",
+            "estimated_chars": 2000,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "rw-current-5",
+            "kind": "durable",
+            "estimated_chars": 4000,
+            "relevance": 0.9,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "rw-foreign-5",
+            "kind": "durable",
+            "estimated_chars": 7000,
+            "relevance": 0.99,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "foreign-rw-foreign-5"
+          },
+          {
+            "id": "rw-archive-5",
+            "kind": "durable",
+            "estimated_chars": 9000,
+            "relevance": 0.2,
+            "authority": 0.4,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "denied_reason": "cross_scope_private_blocked",
+        "max_selection_ratio": 0.65,
+        "no_drive_prompt": true
+      }
+    },
+    {
+      "id": "rw-context-extra-07",
+      "kind": "context",
+      "critical": false,
+      "request": {
+        "mode": "LIGHT",
+        "sources": [
+          {
+            "id": "rw-brief-6",
+            "kind": "task",
+            "estimated_chars": 2000,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "rw-current-6",
+            "kind": "durable",
+            "estimated_chars": 4000,
+            "relevance": 0.9,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "rw-foreign-6",
+            "kind": "durable",
+            "estimated_chars": 7000,
+            "relevance": 0.99,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "foreign-rw-foreign-6"
+          },
+          {
+            "id": "rw-archive-6",
+            "kind": "durable",
+            "estimated_chars": 9000,
+            "relevance": 0.2,
+            "authority": 0.4,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "denied_reason": "cross_scope_private_blocked",
+        "max_selection_ratio": 0.65,
+        "no_drive_prompt": true
+      }
+    },
+    {
+      "id": "rw-context-extra-08",
+      "kind": "context",
+      "critical": false,
+      "request": {
+        "mode": "FULL",
+        "sources": [
+          {
+            "id": "rw-brief-7",
+            "kind": "task",
+            "estimated_chars": 2000,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "rw-current-7",
+            "kind": "durable",
+            "estimated_chars": 4000,
+            "relevance": 0.9,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "rw-foreign-7",
+            "kind": "durable",
+            "estimated_chars": 7000,
+            "relevance": 0.99,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "foreign-rw-foreign-7"
+          },
+          {
+            "id": "rw-archive-7",
+            "kind": "durable",
+            "estimated_chars": 9000,
+            "relevance": 0.2,
+            "authority": 0.4,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "denied_reason": "cross_scope_private_blocked",
+        "max_selection_ratio": 0.65,
+        "no_drive_prompt": true
+      }
+    },
+    {
+      "id": "rw-context-extra-09",
+      "kind": "context",
+      "critical": false,
+      "request": {
+        "mode": "LIGHT",
+        "sources": [
+          {
+            "id": "rw-brief-8",
+            "kind": "task",
+            "estimated_chars": 2000,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "rw-current-8",
+            "kind": "durable",
+            "estimated_chars": 4000,
+            "relevance": 0.9,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "rw-foreign-8",
+            "kind": "durable",
+            "estimated_chars": 7000,
+            "relevance": 0.99,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "foreign-rw-foreign-8"
+          },
+          {
+            "id": "rw-archive-8",
+            "kind": "durable",
+            "estimated_chars": 9000,
+            "relevance": 0.2,
+            "authority": 0.4,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "denied_reason": "cross_scope_private_blocked",
+        "max_selection_ratio": 0.65,
+        "no_drive_prompt": true
+      }
+    },
+    {
+      "id": "rw-context-extra-10",
+      "kind": "context",
+      "critical": false,
+      "request": {
+        "mode": "FULL",
+        "sources": [
+          {
+            "id": "rw-brief-9",
+            "kind": "task",
+            "estimated_chars": 2000,
+            "relevance": 0.98,
+            "authority": 0.9,
+            "private": false,
+            "scope_relation": "task_local",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "rw-current-9",
+            "kind": "durable",
+            "estimated_chars": 4000,
+            "relevance": 0.9,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          },
+          {
+            "id": "rw-foreign-9",
+            "kind": "durable",
+            "estimated_chars": 7000,
+            "relevance": 0.99,
+            "authority": 0.95,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "decisive": false,
+            "available": true,
+            "scope_id": "foreign-rw-foreign-9"
+          },
+          {
+            "id": "rw-archive-9",
+            "kind": "durable",
+            "estimated_chars": 9000,
+            "relevance": 0.2,
+            "authority": 0.4,
+            "private": true,
+            "scope_relation": "same_entity",
+            "decisive": false,
+            "available": true
+          }
+        ]
+      },
+      "expect": {
+        "denied_reason": "cross_scope_private_blocked",
+        "max_selection_ratio": 0.65,
+        "no_drive_prompt": true
+      }
+    },
+    {
+      "id": "rw-memory-01",
+      "kind": "memory",
+      "critical": true,
+      "request": {
+        "memory_class": "durable_context",
+        "operation": "read",
+        "private": true,
+        "scope_relation": "other_private_entity",
+        "mode": "FULL",
+        "scope_id": "foreign-foreign"
+      },
+      "expect": {
+        "status": "scope_blocked",
+        "read_status": "scope_blocked"
+      }
+    },
+    {
+      "id": "rw-memory-02",
+      "kind": "memory",
+      "critical": true,
+      "request": {
+        "memory_class": "durable_context",
+        "operation": "read",
+        "private": true,
+        "scope_relation": "other_private_entity",
+        "mode": "FULL",
+        "scope_id": "foreign-foreign"
+      },
+      "expect": {
+        "status": "scope_blocked",
+        "read_status": "scope_blocked"
+      }
+    },
+    {
+      "id": "rw-memory-03",
+      "kind": "memory",
+      "critical": true,
+      "request": {
+        "memory_class": "durable_context",
+        "operation": "read",
+        "private": true,
+        "scope_relation": "other_private_entity",
+        "mode": "FULL",
+        "scope_id": "foreign-foreign"
+      },
+      "expect": {
+        "status": "scope_blocked",
+        "read_status": "scope_blocked"
+      }
+    },
+    {
+      "id": "rw-memory-04",
+      "kind": "memory",
+      "critical": true,
+      "request": {
+        "memory_class": "durable_context",
+        "operation": "read",
+        "private": true,
+        "scope_relation": "other_private_entity",
+        "mode": "FULL",
+        "scope_id": "foreign-foreign"
+      },
+      "expect": {
+        "status": "scope_blocked",
+        "read_status": "scope_blocked"
+      }
+    },
+    {
+      "id": "rw-memory-05",
+      "kind": "memory",
+      "critical": true,
+      "request": {
+        "memory_class": "durable_context",
+        "operation": "read",
+        "private": true,
+        "scope_relation": "other_private_entity",
+        "mode": "FULL",
+        "scope_id": "foreign-foreign"
+      },
+      "expect": {
+        "status": "scope_blocked",
+        "read_status": "scope_blocked"
+      }
+    },
+    {
+      "id": "rw-memory-06",
+      "kind": "memory",
+      "critical": true,
+      "request": {
+        "memory_class": "durable_context",
+        "operation": "read",
+        "private": true,
+        "scope_relation": "same_entity",
+        "mode": "BLIND"
+      },
+      "expect": {
+        "status": "continue_without_private_context",
+        "read_status": "mode_blocked"
+      }
+    },
+    {
+      "id": "rw-memory-07",
+      "kind": "memory",
+      "critical": true,
+      "request": {
+        "memory_class": "durable_context",
+        "operation": "read",
+        "private": true,
+        "scope_relation": "same_entity",
+        "mode": "BLIND"
+      },
+      "expect": {
+        "status": "continue_without_private_context",
+        "read_status": "mode_blocked"
+      }
+    },
+    {
+      "id": "rw-memory-08",
+      "kind": "memory",
+      "critical": true,
+      "request": {
+        "memory_class": "durable_context",
+        "operation": "read",
+        "private": true,
+        "scope_relation": "same_entity",
+        "mode": "BLIND"
+      },
+      "expect": {
+        "status": "continue_without_private_context",
+        "read_status": "mode_blocked"
+      }
+    },
+    {
+      "id": "rw-memory-09",
+      "kind": "memory",
+      "critical": true,
+      "request": {
+        "memory_class": "durable_context",
+        "operation": "read",
+        "private": true,
+        "scope_relation": "same_entity",
+        "mode": "BLIND"
+      },
+      "expect": {
+        "status": "continue_without_private_context",
+        "read_status": "mode_blocked"
+      }
+    },
+    {
+      "id": "rw-memory-10",
+      "kind": "memory",
+      "critical": true,
+      "request": {
+        "memory_class": "durable_context",
+        "operation": "read",
+        "private": true,
+        "scope_relation": "same_entity",
+        "mode": "BLIND"
+      },
+      "expect": {
+        "status": "continue_without_private_context",
+        "read_status": "mode_blocked"
+      }
+    },
+    {
+      "id": "rw-memory-11",
+      "kind": "memory",
+      "critical": false,
+      "request": {
+        "memory_class": "durable_context",
+        "persistent_store_available": false,
+        "material_change": true,
+        "explicit_persistence_request": true
+      },
+      "expect": {
+        "status": "continue_without_persistence"
+      }
+    },
+    {
+      "id": "rw-memory-12",
+      "kind": "memory",
+      "critical": false,
+      "request": {
+        "memory_class": "durable_context",
+        "persistent_store_available": false,
+        "material_change": true,
+        "explicit_persistence_request": false
+      },
+      "expect": {
+        "status": "continue_without_persistence"
+      }
+    },
+    {
+      "id": "rw-memory-13",
+      "kind": "memory",
+      "critical": false,
+      "request": {
+        "memory_class": "durable_context",
+        "persistent_store_available": false,
+        "material_change": true,
+        "explicit_persistence_request": true
+      },
+      "expect": {
+        "status": "continue_without_persistence"
+      }
+    },
+    {
+      "id": "rw-memory-14",
+      "kind": "memory",
+      "critical": false,
+      "request": {
+        "memory_class": "durable_context",
+        "persistent_store_available": false,
+        "material_change": true,
+        "explicit_persistence_request": false
+      },
+      "expect": {
+        "status": "continue_without_persistence"
+      }
+    },
+    {
+      "id": "rw-memory-15",
+      "kind": "memory",
+      "critical": false,
+      "request": {
+        "memory_class": "durable_context",
+        "persistent_store_available": false,
+        "material_change": true,
+        "explicit_persistence_request": true
+      },
+      "expect": {
+        "status": "continue_without_persistence"
+      }
+    },
+    {
+      "id": "rw-memory-16",
+      "kind": "memory",
+      "critical": false,
+      "request": {
+        "memory_class": "code_structure",
+        "persistent_store_available": true,
+        "code_index_available": true,
+        "material_change": true
+      },
+      "expect": {
+        "status": "resolved",
+        "destination_contains": "local_code_intelligence",
+        "destination_excludes": "canonical_aco_document"
+      }
+    },
+    {
+      "id": "rw-memory-17",
+      "kind": "memory",
+      "critical": false,
+      "request": {
+        "memory_class": "code_structure",
+        "persistent_store_available": true,
+        "code_index_available": true,
+        "material_change": true
+      },
+      "expect": {
+        "status": "resolved",
+        "destination_contains": "local_code_intelligence",
+        "destination_excludes": "canonical_aco_document"
+      }
+    },
+    {
+      "id": "rw-memory-18",
+      "kind": "memory",
+      "critical": false,
+      "request": {
+        "memory_class": "code_structure",
+        "persistent_store_available": true,
+        "code_index_available": true,
+        "material_change": true
+      },
+      "expect": {
+        "status": "resolved",
+        "destination_contains": "local_code_intelligence",
+        "destination_excludes": "canonical_aco_document"
+      }
+    },
+    {
+      "id": "rw-memory-19",
+      "kind": "memory",
+      "critical": false,
+      "request": {
+        "memory_class": "code_structure",
+        "persistent_store_available": true,
+        "code_index_available": true,
+        "material_change": true
+      },
+      "expect": {
+        "status": "resolved",
+        "destination_contains": "local_code_intelligence",
+        "destination_excludes": "canonical_aco_document"
+      }
+    },
+    {
+      "id": "rw-memory-20",
+      "kind": "memory",
+      "critical": false,
+      "request": {
+        "memory_class": "code_structure",
+        "persistent_store_available": true,
+        "code_index_available": true,
+        "material_change": true
+      },
+      "expect": {
+        "status": "resolved",
+        "destination_contains": "local_code_intelligence",
+        "destination_excludes": "canonical_aco_document"
+      }
+    }
+  ]
+}

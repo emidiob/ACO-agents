@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "0.7.2",
+  "aco_version": "0.7.3",
   "reviewed_on": "2026-09-22",
   "policy": "A curated menu, not an installation list. Public sources and task methods are not account access, execution evidence, quality certification or a license grant. Prefer existing tools and compact memory.",
   "resources": [

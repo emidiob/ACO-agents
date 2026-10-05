@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "aco_version": "0.7.2",
-  "purpose": "Selective, scope-bounded context retrieval with measurable budgets and no proactive persistence prompt.",
+  "aco_version": "0.7.3",
+  "purpose": "Selective, scope-bounded context retrieval with measurable budgets, exact cross-scope authorization, and no proactive persistence prompt.",
   "modes": {
     "NONE": {
       "allow_private": false,
@@ -39,6 +39,14 @@
       "minimum_relevance": 0.6
     }
   },
-  "scope_rule": "Other-private or unknown-private entity context is blocked unless cross_scope_authorized is explicit.",
-  "persistence_rule": "Do not prompt for Drive merely to enable memory. Continue work and mark an explicit unavailable save as pending."
+  "scope_rule": "Other-private entity context requires a matching source scope_id in authorized_private_scope_ids. Unknown-private scope remains blocked. Legacy cross_scope_authorized booleans do not grant access.",
+  "persistence_rule": "Do not prompt for Drive merely to enable memory. Continue work and mark an explicit unavailable save as pending.",
+  "cross_scope_authorization": {
+    "request_field": "authorized_private_scope_ids",
+    "source_field": "scope_id",
+    "matching": "exact",
+    "wildcards_allowed": false,
+    "unknown_scope_allowed": false,
+    "legacy_cross_scope_authorized_grants_access": false
+  }
 }

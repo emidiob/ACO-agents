@@ -1,0 +1,475 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.7.3",
+  "name": "ACO v0.7.3 fresh routing holdout 4",
+  "purpose": "Fresh post-v0.7.2 routing holdout. Frozen before first execution; no routing/hint/example changes are permitted after observing its result.",
+  "gate": {
+    "minimum_score": 92.0,
+    "minimum_office_accuracy": 0.94,
+    "minimum_top1_role_accuracy": 0.86,
+    "minimum_top3_role_recall": 0.97,
+    "maximum_overstaff_rate": 0.05,
+    "maximum_critical_failures": 0
+  },
+  "cases": [
+    {
+      "id": "v73-art-residency",
+      "split": "fresh_v073",
+      "prompt": "For my own art practice, assess this residency open call, confirm eligibility and deadline, and tell me what portfolio material the application needs.",
+      "expected_office": "artist-office",
+      "acceptable_roles": [
+        "art_opportunities_scout",
+        "grants_applications_manager"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "v73-art-gallery",
+      "split": "fresh_v073",
+      "prompt": "A gallery has invited me for a studio conversation after an introduction; prepare the relationship strategy and follow-up from the artist side.",
+      "expected_office": "artist-office",
+      "acceptable_roles": [
+        "gallery_relations_manager",
+        "artist_agent"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-art-grant",
+      "split": "fresh_v073",
+      "prompt": "Build a truthful application package for this artist production grant using my project, budget, timeline and work samples.",
+      "expected_office": "artist-office",
+      "acceptable_roles": [
+        "grants_applications_manager"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "v73-org-programme",
+      "split": "fresh_v073",
+      "prompt": "Our cultural foundation wants next season to connect exhibitions, public talks and workshops into one programme logic.",
+      "expected_office": "organization-office",
+      "acceptable_roles": [
+        "programme_curator"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-org-impact",
+      "split": "fresh_v073",
+      "prompt": "Evaluate what our arts programme evidence actually shows about participation, relationships and learning, without overstating impact.",
+      "expected_office": "organization-office",
+      "acceptable_roles": [
+        "impact_evaluation",
+        "data_insights_analyst"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-agency-identity",
+      "split": "fresh_v073",
+      "prompt": "The client strategy is signed off; now develop the visual identity system across logo behavior, type, color, image language and layout.",
+      "expected_office": "agency-office",
+      "acceptable_roles": [
+        "brand_identity_designer",
+        "design_director"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-agency-campaign",
+      "split": "fresh_v073",
+      "prompt": "Turn the approved client proposition into a campaign strategy with audience, message architecture, channels and measurement.",
+      "expected_office": "agency-office",
+      "acceptable_roles": [
+        "campaign_strategist",
+        "creative_strategist"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-product-bug",
+      "split": "fresh_v073",
+      "prompt": "Users lose saved work after refreshing the web app since the last deploy; reproduce it, isolate the regression and identify the failing path.",
+      "expected_office": "product-office",
+      "acceptable_roles": [
+        "bug_investigator"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "v73-product-api",
+      "split": "fresh_v073",
+      "prompt": "We need to connect this external API to the product; map authentication, request flow, failures, retries and implementation constraints.",
+      "expected_office": "product-office",
+      "acceptable_roles": [
+        "api_integration_engineer",
+        "api_researcher"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-legal-contract",
+      "split": "fresh_v073",
+      "prompt": "Review this services contract before signature, focusing on fees, IP ownership, liability, termination and governing law.",
+      "expected_office": "legal-office",
+      "acceptable_roles": [
+        "contract_reviewer",
+        "commercial_contracts_advisor"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "v73-legal-privacy",
+      "split": "fresh_v073",
+      "prompt": "Assess the privacy and GDPR implications of sending customer data through this processor and define the controls we need.",
+      "expected_office": "legal-office",
+      "acceptable_roles": [
+        "privacy_data_protection_advisor"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "v73-recruit-fit",
+      "split": "fresh_v073",
+      "prompt": "Compare my documented experience with this role before I apply and identify the genuine fit, gaps and evidence I should use.",
+      "expected_office": "recruitment-office",
+      "acceptable_roles": [
+        "job_fit_analyst",
+        "skills_gap_analyst"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "v73-recruit-followup",
+      "split": "fresh_v073",
+      "prompt": "I already applied for this job and the stated response window has passed; plan the recruiter follow-up without inventing status.",
+      "expected_office": "recruitment-office",
+      "acceptable_roles": [
+        "job_followup_manager",
+        "application_tracker"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-shared-boundary-1",
+      "split": "fresh_v073",
+      "prompt": "For Client A, use only Client A private history. Do not borrow a similar precedent from Client B unless I explicitly authorize that exact scope.",
+      "expected_office": "shared",
+      "acceptable_roles": [
+        "context_steward"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "v73-shared-boundary-2",
+      "split": "fresh_v073",
+      "prompt": "Keep this account isolated: another client has relevant private notes, but the answer must use only the minimum private context from the current client.",
+      "expected_office": "shared",
+      "acceptable_roles": [
+        "context_steward"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "v73-shared-boundary-3",
+      "split": "fresh_v073",
+      "prompt": "Before continuing, make sure unrelated client memory is excluded and preserve only durable decisions and open loops from this scope.",
+      "expected_office": "shared",
+      "acceptable_roles": [
+        "context_steward"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "v73-shared-brand",
+      "split": "fresh_v073",
+      "prompt": "This is an independent cultural initiative, not an agency account. Define positioning, differentiation and brand architecture before visual identity.",
+      "expected_office": "shared",
+      "acceptable_roles": [
+        "brand_strategist"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "v73-shared-edit",
+      "split": "fresh_v073",
+      "prompt": "Tighten this curatorial text for structure, precision and readability while preserving the author argument and factual uncertainty.",
+      "expected_office": "shared",
+      "acceptable_roles": [
+        "editor",
+        "art_writer"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-finance-cash",
+      "split": "fresh_v073",
+      "prompt": "Build a dated cash-flow forecast from expected receipts and payments and flag the lowest balance and liquidity risk.",
+      "expected_office": "finance-office",
+      "acceptable_roles": [
+        "cashflow_treasury_analyst"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-finance-margin",
+      "split": "fresh_v073",
+      "prompt": "Before quoting this production, calculate cost, contingency and target margin so we know the minimum viable price.",
+      "expected_office": "finance-office",
+      "acceptable_roles": [
+        "pricing_margin_analyst",
+        "production_cost_controller"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-commercial-lead",
+      "split": "fresh_v073",
+      "prompt": "Before sales spends time on a pitch, qualify this prospect against our ideal customer, actual need, authority and timing.",
+      "expected_office": "commercial-office",
+      "acceptable_roles": [
+        "lead_qualification_researcher"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-commercial-proposal",
+      "split": "fresh_v073",
+      "prompt": "Turn the qualified opportunity into a sales proposal with scope, value, assumptions, commercial terms and next step.",
+      "expected_office": "commercial-office",
+      "acceptable_roles": [
+        "sales_proposal_specialist"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-people-onboarding",
+      "split": "fresh_v073",
+      "prompt": "Create the employer-side onboarding plan for a new employee covering access, responsibilities, first-week meetings and handoffs.",
+      "expected_office": "people-office",
+      "acceptable_roles": [
+        "onboarding_offboarding_coordinator"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-people-interview",
+      "split": "fresh_v073",
+      "prompt": "Design a structured interview for this role with job-relevant competencies, consistent questions and a scoring rubric.",
+      "expected_office": "people-office",
+      "acceptable_roles": [
+        "structured_interview_designer"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-delivery-controls",
+      "split": "fresh_v073",
+      "prompt": "Across several linked projects, map dependencies, milestones, ownership, schedule risk and escalation in one delivery view.",
+      "expected_office": "delivery-office",
+      "acceptable_roles": [
+        "programme_delivery_manager",
+        "project_controls_analyst"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-delivery-acceptance",
+      "split": "fresh_v073",
+      "prompt": "Define objective acceptance criteria, evidence and sign-off checkpoints for each client deliverable before handover.",
+      "expected_office": "delivery-office",
+      "acceptable_roles": [
+        "quality_acceptance_coordinator"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-admin-inbox",
+      "split": "fresh_v073",
+      "prompt": "Read the complete business email thread and prepare the right reply for approval only; do not send anything.",
+      "expected_office": "administration-office",
+      "acceptable_roles": [
+        "inbox_correspondence_manager",
+        "communications_editor"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-admin-travel",
+      "split": "fresh_v073",
+      "prompt": "Plan a business-trip itinerary by comparing transport, hotel timing and local logistics, but do not book.",
+      "expected_office": "administration-office",
+      "acceptable_roles": [
+        "travel_logistics_coordinator"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-production-camera",
+      "split": "fresh_v073",
+      "prompt": "Design the cinematography for this sequence, including lensing, framing, camera movement, lighting and continuity.",
+      "expected_office": "production-office",
+      "acceptable_roles": [
+        "cinematographer"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-production-ai-video",
+      "split": "fresh_v073",
+      "prompt": "Convert this approved visual direction into a model-ready AI video prompt and shot constraints without claiming that a generation happened.",
+      "expected_office": "production-office",
+      "acceptable_roles": [
+        "ai_video_prompt_adapter",
+        "visual_prompt_engineer"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-publishing-developmental",
+      "split": "fresh_v073",
+      "prompt": "Rework the manuscript at the structural level: argument, chapter sequence, pacing and reader logic before line editing.",
+      "expected_office": "publishing-office",
+      "acceptable_roles": [
+        "developmental_editor"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-publishing-proof",
+      "split": "fresh_v073",
+      "prompt": "Proof the final laid-out publication for spelling, punctuation, consistency and obvious layout text errors without rewriting the author voice.",
+      "expected_office": "publishing-office",
+      "acceptable_roles": [
+        "proofreader",
+        "copy_editor"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-concierge-ambiguous",
+      "split": "fresh_v073",
+      "prompt": "I need you to handle something important for tomorrow, but I have not told you whether it is art, work, finance, legal or production.",
+      "expected_office": "shared",
+      "acceptable_roles": [
+        "office_concierge"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "v73-art-research",
+      "split": "fresh_v073",
+      "prompt": "Research current artists, exhibitions and critical discourse that can genuinely inform the artistic work I provided.",
+      "expected_office": "artist-office",
+      "acceptable_roles": [
+        "art_researcher",
+        "practice_strategist"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-org-contributors",
+      "split": "fresh_v073",
+      "prompt": "Our institution needs a reliable pool of outside artists, researchers and speakers for the programme; structure sourcing and availability.",
+      "expected_office": "organization-office",
+      "acceptable_roles": [
+        "talent_contributors_manager"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-product-security",
+      "split": "fresh_v073",
+      "prompt": "Review authentication, authorization, secret handling and exposed-data risks in this application and verify the proposed mitigations.",
+      "expected_office": "product-office",
+      "acceptable_roles": [
+        "security_reviewer",
+        "security_engineer"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "v73-admin-unknown-outcome",
+      "split": "fresh_v073",
+      "prompt": "A send operation timed out and there is no receipt; establish whether the message actually went out before any retry.",
+      "expected_office": "administration-office",
+      "acceptable_roles": [
+        "communications_operator",
+        "inbox_correspondence_manager"
+      ],
+      "max_selected_roles": 2,
+      "critical": true
+    },
+    {
+      "id": "v73-shared-memory",
+      "split": "fresh_v073",
+      "prompt": "Summarize only verified decisions, durable outcomes and unresolved next actions so the next session can resume without carrying experiments or rejected assumptions.",
+      "expected_office": "shared",
+      "acceptable_roles": [
+        "context_steward"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-shared-launch",
+      "split": "fresh_v073",
+      "prompt": "For this independent cultural project, build the launch strategy across audiences, channels, partnerships and measurement after the proposition is approved.",
+      "expected_office": "shared",
+      "acceptable_roles": [
+        "marketing_strategist"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    },
+    {
+      "id": "v73-agency-web",
+      "split": "fresh_v073",
+      "prompt": "Art-direct the client website from the approved brand system, resolving responsive hierarchy, typography, imagery and interaction direction.",
+      "expected_office": "agency-office",
+      "acceptable_roles": [
+        "digital_design_director",
+        "design_director"
+      ],
+      "max_selected_roles": 2,
+      "critical": false
+    }
+  ]
+}

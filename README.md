@@ -2,7 +2,7 @@
 
 **A working library for an artist, studio, agency or cultural business — with scoped private knowledge and evidence-aware execution.**
 
-**ACO v0.7.2 · 363 roles · 16 entry skills · 61 workflows · 99 optional resources.**
+**ACO v0.7.3 · 363 roles · 16 entry skills · 61 workflows · 99 optional resources.**
 
 Proprietary, source-available. Redistribution is restricted by [LICENSE](LICENSE). No third-party software, fonts, models or private knowledge are bundled.
 
@@ -31,7 +31,7 @@ A natural request
 
 No office-by-office performance or unnecessary planning ceremony. A simple request should receive a simple result. A commissioned essay, design system or codebase still needs a complete deliverable.
 
-**v0.7.2 context efficiency:** the optional local `context-plan` command makes `NONE` / `BLIND` / `LIGHT` / `FULL` / `BLIND-FIRST` retrieval budgets explicit, blocks unauthorized cross-client private context even in `FULL`, and reports selection ratios. Release validation includes a fresh routing holdout, a focused context benchmark and a 120-scenario routing/context/memory regression suite. These are deterministic package regressions, not an independent human-quality benchmark.
+**v0.7.3 context-boundary hardening:** `context-plan` and Hybrid Memory now require exact cross-scope authorization: a foreign private source must expose a concrete `scope_id` and that exact ID must be listed in `authorized_private_scope_ids`. The old global `cross_scope_authorized=true` flag no longer grants access, unknown private scope remains blocked, and `NONE` / `BLIND` / `LIGHT` / `FULL` / `BLIND-FIRST` still enforce relevance and character budgets. Release validation adds an adversarial scope-boundary benchmark plus a new frozen fresh routing holdout while preserving the 120-scenario routing/context/memory regression suite. These are deterministic package regressions, not an independent human-quality benchmark.
 
 **Artistic authority remains with the artist.** Do not construct a practice around open calls or sales metrics. Do not mistake approved strategy for validated evidence.
 

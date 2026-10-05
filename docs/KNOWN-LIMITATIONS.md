@@ -1,4 +1,4 @@
-# Known limitations — 0.7.2
+# Known limitations — 0.7.3
 
 - ACO is a role/method library plus local utilities, not an always-on service, fine-tuned model, professional staff or access-control product.
 - The 363 specialist roles are preserved. Automated checks verify structure, routing contracts and selected behavior cases; they do not establish professional quality across every role or domain.
@@ -13,7 +13,7 @@
 - No authenticated Drive/social/email/WhatsApp/phone action, real scheduler setup, paid rendering, ComfyUI GPU processing or desktop-DCC operation is established by the package test suite.
 - Drive/canonical persistence is optional at task start. If an already-authorized store is unavailable, ACO continues with available context; a requested or materially useful durable update may remain pending.
 - Hybrid Memory is a routing policy, not a new database product. Durable semantic context may live in a canonical store; code structure remains rebuildable/local; research corpora remain in their source systems; temporary task state should remain temporary.
-- Context separation is a behavioral design, not encryption or account isolation. Use real file/app permissions, separate sessions and minimum disclosure. A blind prompt cannot erase context already shown to a model.
+- Context separation is a behavioral design, not encryption or account isolation. v0.7.3 rejects wildcard/global cross-scope permission and requires exact private scope IDs in the local resolver, but real file/app permissions, separate sessions and minimum disclosure remain necessary. A blind prompt cannot erase context already shown to a model.
 - Delegation defaults to resolving reasonable reversible professional choices, but ACO must still ask for genuinely decisive missing facts, irreducible personal preference, private-scope ambiguity or consequential authorization.
 - `handoff-check` validates handoff structure/evidence presence, not whether the evidence itself is true.
 - The deterministic router is advisory and benchmark-limited. Its packaged 98.57/100 holdout score does not imply universal routing accuracy; unusual, multilingual or underspecified requests may still require Concierge clarification.

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.7.3",
+  "holdout": "config/routing-v073-holdout-4.json",
+  "frozen_sha256": "4a7374649bdd6350eb928fc929538dfc6f0c52f9f5136095e201e8825a8b66bd",
+  "first_execution": {
+    "status": "failed",
+    "score": 94.75,
+    "office_accuracy": 0.925,
+    "top1_role_accuracy": 0.95,
+    "top3_role_recall": 0.95,
+    "minimal_team_rate": 1.0,
+    "critical_failures": 2,
+    "failure_ids": [
+      "v73-agency-campaign",
+      "v73-shared-boundary-1",
+      "v73-shared-brand"
+    ]
+  },
+  "disposition": "development_regression_only",
+  "note": "Routing was changed after this first execution, so this holdout is not used as the final freshness gate. Its failing cases are retained as regression coverage."
+}
