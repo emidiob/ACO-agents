@@ -166,3 +166,24 @@ Hybrid Memory separates durable semantic context from current code/source, rebui
 Provider-neutral integration discovery consumes current host-supplied adapter metadata. It checks exact capability, availability, connection where applicable, operation authorization and verification before selection. Resolution never performs the external action; permission and receipt rules remain separate.
 
 Public-release hygiene also separates repository content from release-only distribution material. Version-specific upgrade prompts stay beside ZIP artifacts, while this repository keeps only evergreen `docs/UPGRADING.md`. A privacy/PII scan blocks release packaging on unreviewed likely private identifiers or credentials.
+
+
+## Goal Graph and autonomy layer — 0.8.0
+
+ACO 0.8 adds orchestration above the existing router and execution contracts rather than expanding the role catalogue.
+
+```text
+Program (long-horizon direction)
+  → Goal (verifiable outcome)
+    → Task (bounded work)
+      → Dependency (blocker)
+      → optional action DAG
+        → capability + permission
+        → host action
+        → receipt
+        → verification / reconciliation / bounded recovery
+```
+
+The graph is same-scope by construction. Next-best-action ranking is deterministic and advisory. Action dependencies unlock only after predecessor evidence, not after planning. Consequential actions retain exact packet-bound approvals from 0.7; uncertain receipts retain the no-blind-retry rule. Simulation and host-execution planning share the same policy, but only the host can perform an external action.
+
+This layer is intentionally not a background scheduler, a second memory vault or a chain-of-thought log. Persistent graphs are optional scoped state and must follow Compact/Hybrid Memory.

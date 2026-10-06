@@ -1,6 +1,6 @@
 # ACO — visual agent catalogue
 
-Version 0.7.3 · 363 canonical roles · 16 entry-point skills.
+Version 0.8.0 · 363 canonical roles · 16 entry-point skills.
 
 Roles are reusable methods, not constantly running employees. Usually brief the Concierge rather than choosing a large team.
 

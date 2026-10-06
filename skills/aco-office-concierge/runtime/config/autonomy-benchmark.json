@@ -1,0 +1,2314 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.8.0",
+  "description": "ACO 0.8 Goal Graph + Autonomy Engine deterministic conformance benchmark. All identities/endpoints are fictional fixtures.",
+  "gate": {
+    "minimum_score": 100.0,
+    "maximum_critical_failures": 0
+  },
+  "cases": [
+    {
+      "id": "goal-ready-single",
+      "kind": "goal_status",
+      "graph": {
+        "schema_version": 1,
+        "graph_id": "g",
+        "scope_id": "scope-a",
+        "nodes": [
+          {
+            "id": "p",
+            "kind": "program",
+            "title": "Build a durable outcome",
+            "state": "active",
+            "priority": 50,
+            "effort": 3,
+            "success_criteria": [
+              "Program outcome achieved"
+            ]
+          },
+          {
+            "id": "g1",
+            "kind": "goal",
+            "title": "Reach the next outcome",
+            "state": "active",
+            "parent_id": "p",
+            "priority": 50,
+            "effort": 3,
+            "success_criteria": [
+              "Goal criteria satisfied"
+            ]
+          },
+          {
+            "id": "t1",
+            "kind": "task",
+            "title": "t1",
+            "state": "active",
+            "parent_id": "g1",
+            "priority": 50,
+            "effort": 3,
+            "depends_on": [],
+            "success_criteria": [
+              "Task verified"
+            ]
+          }
+        ]
+      },
+      "expected_status": "actionable",
+      "expected_next_task_ids": [
+        "t1"
+      ],
+      "expected_blocked_task_ids": []
+    },
+    {
+      "id": "goal-blocked-dependency",
+      "kind": "goal_status",
+      "graph": {
+        "schema_version": 1,
+        "graph_id": "g",
+        "scope_id": "scope-a",
+        "nodes": [
+          {
+            "id": "p",
+            "kind": "program",
+            "title": "Build a durable outcome",
+            "state": "active",
+            "priority": 50,
+            "effort": 3,
+            "success_criteria": [
+              "Program outcome achieved"
+            ]
+          },
+          {
+            "id": "g1",
+            "kind": "goal",
+            "title": "Reach the next outcome",
+            "state": "active",
+            "parent_id": "p",
+            "priority": 50,
+            "effort": 3,
+            "success_criteria": [
+              "Goal criteria satisfied"
+            ]
+          },
+          {
+            "id": "d1",
+            "kind": "dependency",
+            "title": "d1",
+            "state": "active",
+            "parent_id": "t1",
+            "priority": 50,
+            "effort": 1,
+            "success_criteria": [
+              "Dependency resolved"
+            ]
+          },
+          {
+            "id": "t1",
+            "kind": "task",
+            "title": "t1",
+            "state": "active",
+            "parent_id": "g1",
+            "priority": 50,
+            "effort": 3,
+            "depends_on": [
+              "d1"
+            ],
+            "success_criteria": [
+              "Task verified"
+            ]
+          }
+        ]
+      },
+      "expected_status": "no_actionable_tasks",
+      "expected_next_task_ids": [],
+      "expected_blocked_task_ids": [
+        "t1"
+      ]
+    },
+    {
+      "id": "goal-resolved-dependency",
+      "kind": "goal_status",
+      "graph": {
+        "schema_version": 1,
+        "graph_id": "g",
+        "scope_id": "scope-a",
+        "nodes": [
+          {
+            "id": "p",
+            "kind": "program",
+            "title": "Build a durable outcome",
+            "state": "active",
+            "priority": 50,
+            "effort": 3,
+            "success_criteria": [
+              "Program outcome achieved"
+            ]
+          },
+          {
+            "id": "g1",
+            "kind": "goal",
+            "title": "Reach the next outcome",
+            "state": "active",
+            "parent_id": "p",
+            "priority": 50,
+            "effort": 3,
+            "success_criteria": [
+              "Goal criteria satisfied"
+            ]
+          },
+          {
+            "id": "d1",
+            "kind": "dependency",
+            "title": "d1",
+            "state": "done",
+            "parent_id": "t1",
+            "priority": 50,
+            "effort": 1,
+            "success_criteria": [
+              "Dependency resolved"
+            ]
+          },
+          {
+            "id": "t1",
+            "kind": "task",
+            "title": "t1",
+            "state": "active",
+            "parent_id": "g1",
+            "priority": 50,
+            "effort": 3,
+            "depends_on": [
+              "d1"
+            ],
+            "success_criteria": [
+              "Task verified"
+            ]
+          }
+        ]
+      },
+      "expected_status": "actionable",
+      "expected_next_task_ids": [
+        "t1"
+      ],
+      "expected_blocked_task_ids": []
+    },
+    {
+      "id": "goal-priority-order",
+      "kind": "goal_status",
+      "graph": {
+        "schema_version": 1,
+        "graph_id": "g",
+        "scope_id": "scope-a",
+        "nodes": [
+          {
+            "id": "p",
+            "kind": "program",
+            "title": "Build a durable outcome",
+            "state": "active",
+            "priority": 50,
+            "effort": 3,
+            "success_criteria": [
+              "Program outcome achieved"
+            ]
+          },
+          {
+            "id": "g1",
+            "kind": "goal",
+            "title": "Reach the next outcome",
+            "state": "active",
+            "parent_id": "p",
+            "priority": 50,
+            "effort": 3,
+            "success_criteria": [
+              "Goal criteria satisfied"
+            ]
+          },
+          {
+            "id": "low",
+            "kind": "task",
+            "title": "low",
+            "state": "active",
+            "parent_id": "g1",
+            "priority": 20,
+            "effort": 3,
+            "depends_on": [],
+            "success_criteria": [
+              "Task verified"
+            ]
+          },
+          {
+            "id": "high",
+            "kind": "task",
+            "title": "high",
+            "state": "active",
+            "parent_id": "g1",
+            "priority": 90,
+            "effort": 3,
+            "depends_on": [],
+            "success_criteria": [
+              "Task verified"
+            ]
+          }
+        ]
+      },
+      "limit": 2,
+      "expected_status": "actionable",
+      "expected_next_task_ids": [
+        "high",
+        "low"
+      ],
+      "expected_blocked_task_ids": []
+    },
+    {
+      "id": "goal-in-progress-continuation",
+      "kind": "goal_status",
+      "graph": {
+        "schema_version": 1,
+        "graph_id": "g",
+        "scope_id": "scope-a",
+        "nodes": [
+          {
+            "id": "p",
+            "kind": "program",
+            "title": "Build a durable outcome",
+            "state": "active",
+            "priority": 50,
+            "effort": 3,
+            "success_criteria": [
+              "Program outcome achieved"
+            ]
+          },
+          {
+            "id": "g1",
+            "kind": "goal",
+            "title": "Reach the next outcome",
+            "state": "active",
+            "parent_id": "p",
+            "priority": 50,
+            "effort": 3,
+            "success_criteria": [
+              "Goal criteria satisfied"
+            ]
+          },
+          {
+            "id": "new",
+            "kind": "task",
+            "title": "new",
+            "state": "active",
+            "parent_id": "g1",
+            "priority": 70,
+            "effort": 3,
+            "depends_on": [],
+            "success_criteria": [
+              "Task verified"
+            ]
+          },
+          {
+            "id": "cont",
+            "kind": "task",
+            "title": "cont",
+            "state": "in_progress",
+            "parent_id": "g1",
+            "priority": 50,
+            "effort": 3,
+            "depends_on": [],
+            "success_criteria": [
+              "Task verified"
+            ]
+          }
+        ]
+      },
+      "limit": 2,
+      "expected_status": "actionable",
+      "expected_next_task_ids": [
+        "cont",
+        "new"
+      ],
+      "expected_blocked_task_ids": []
+    },
+    {
+      "id": "goal-deadline-urgency",
+      "kind": "goal_status",
+      "as_of": "2026-10-06T00:00:00+00:00",
+      "graph": {
+        "schema_version": 1,
+        "graph_id": "g",
+        "scope_id": "scope-a",
+        "nodes": [
+          {
+            "id": "p",
+            "kind": "program",
+            "title": "Build a durable outcome",
+            "state": "active",
+            "priority": 50,
+            "effort": 3,
+            "success_criteria": [
+              "Program outcome achieved"
+            ]
+          },
+          {
+            "id": "g1",
+            "kind": "goal",
+            "title": "Reach the next outcome",
+            "state": "active",
+            "parent_id": "p",
+            "priority": 50,
+            "effort": 3,
+            "success_criteria": [
+              "Goal criteria satisfied"
+            ]
+          },
+          {
+            "id": "later",
+            "kind": "task",
+            "title": "later",
+            "state": "active",
+            "parent_id": "g1",
+            "priority": 60,
+            "effort": 3,
+            "depends_on": [],
+            "success_criteria": [
+              "Task verified"
+            ],
+            "due_at": "2026-11-20"
+          },
+          {
+            "id": "soon",
+            "kind": "task",
+            "title": "soon",
+            "state": "active",
+            "parent_id": "g1",
+            "priority": 50,
+            "effort": 3,
+            "depends_on": [],
+            "success_criteria": [
+              "Task verified"
+            ],
+            "due_at": "2026-10-07"
+          }
+        ]
+      },
+      "limit": 2,
+      "expected_status": "actionable",
+      "expected_next_task_ids": [
+        "soon",
+        "later"
+      ],
+      "expected_blocked_task_ids": []
+    },
+    {
+      "id": "goal-dependency-cycle",
+      "kind": "graph_check",
+      "graph": {
+        "schema_version": 1,
+        "graph_id": "g",
+        "scope_id": "scope-a",
+        "nodes": [
+          {
+            "id": "p",
+            "kind": "program",
+            "title": "Build a durable outcome",
+            "state": "active",
+            "priority": 50,
+            "effort": 3,
+            "success_criteria": [
+              "Program outcome achieved"
+            ]
+          },
+          {
+            "id": "g1",
+            "kind": "goal",
+            "title": "Reach the next outcome",
+            "state": "active",
+            "parent_id": "p",
+            "priority": 50,
+            "effort": 3,
+            "success_criteria": [
+              "Goal criteria satisfied"
+            ]
+          },
+          {
+            "id": "t1",
+            "kind": "task",
+            "title": "t1",
+            "state": "active",
+            "parent_id": "g1",
+            "priority": 50,
+            "effort": 3,
+            "depends_on": [
+              "t2"
+            ],
+            "success_criteria": [
+              "Task verified"
+            ]
+          },
+          {
+            "id": "t2",
+            "kind": "task",
+            "title": "t2",
+            "state": "active",
+            "parent_id": "g1",
+            "priority": 50,
+            "effort": 3,
+            "depends_on": [
+              "t1"
+            ],
+            "success_criteria": [
+              "Task verified"
+            ]
+          }
+        ]
+      },
+      "expected_status": "invalid",
+      "error_contains": "dependency cycle"
+    },
+    {
+      "id": "goal-cross-scope-node",
+      "kind": "graph_check",
+      "graph": {
+        "schema_version": 1,
+        "graph_id": "g",
+        "scope_id": "scope-a",
+        "nodes": [
+          {
+            "id": "p",
+            "kind": "program",
+            "title": "Build a durable outcome",
+            "state": "active",
+            "priority": 50,
+            "effort": 3,
+            "success_criteria": [
+              "Program outcome achieved"
+            ]
+          },
+          {
+            "id": "g1",
+            "kind": "goal",
+            "title": "Reach the next outcome",
+            "state": "active",
+            "parent_id": "p",
+            "priority": 50,
+            "effort": 3,
+            "success_criteria": [
+              "Goal criteria satisfied"
+            ]
+          },
+          {
+            "id": "t1",
+            "kind": "task",
+            "title": "t1",
+            "state": "active",
+            "parent_id": "g1",
+            "priority": 50,
+            "effort": 3,
+            "depends_on": [],
+            "success_criteria": [
+              "Task verified"
+            ],
+            "scope_id": "scope-b"
+          }
+        ]
+      },
+      "expected_status": "invalid",
+      "error_contains": "node scope must equal graph scope"
+    },
+    {
+      "id": "goal-invalid-parent",
+      "kind": "graph_check",
+      "graph": {
+        "schema_version": 1,
+        "graph_id": "g",
+        "scope_id": "scope-a",
+        "nodes": [
+          {
+            "id": "p",
+            "kind": "program",
+            "title": "Build a durable outcome",
+            "state": "active",
+            "priority": 50,
+            "effort": 3,
+            "success_criteria": [
+              "Program outcome achieved"
+            ]
+          },
+          {
+            "id": "g1",
+            "kind": "goal",
+            "title": "Reach the next outcome",
+            "state": "active",
+            "parent_id": "p",
+            "priority": 50,
+            "effort": 3,
+            "success_criteria": [
+              "Goal criteria satisfied"
+            ]
+          },
+          {
+            "id": "t1",
+            "kind": "task",
+            "title": "t1",
+            "state": "active",
+            "parent_id": "p",
+            "priority": 50,
+            "effort": 3,
+            "depends_on": [],
+            "success_criteria": [
+              "Task verified"
+            ]
+          }
+        ]
+      },
+      "expected_status": "invalid",
+      "error_contains": "task cannot have parent kind program"
+    },
+    {
+      "id": "simulate-read",
+      "packet": {
+        "graph": {
+          "schema_version": 1,
+          "graph_id": "g",
+          "scope_id": "scope-a",
+          "nodes": [
+            {
+              "id": "p",
+              "kind": "program",
+              "title": "Build a durable outcome",
+              "state": "active",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Program outcome achieved"
+              ]
+            },
+            {
+              "id": "g1",
+              "kind": "goal",
+              "title": "Reach the next outcome",
+              "state": "active",
+              "parent_id": "p",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Goal criteria satisfied"
+              ]
+            },
+            {
+              "id": "t1",
+              "kind": "task",
+              "title": "t1",
+              "state": "active",
+              "parent_id": "g1",
+              "priority": 50,
+              "effort": 3,
+              "depends_on": [],
+              "success_criteria": [
+                "Task verified"
+              ],
+              "actions": [
+                {
+                  "id": "a1",
+                  "capability_id": "web.research",
+                  "operation": "search",
+                  "target": "public web",
+                  "payload_ref": "payload-a1",
+                  "parameters": {}
+                }
+              ]
+            }
+          ]
+        },
+        "mode": "SIMULATE",
+        "inventory": {
+          "capabilities": [
+            {
+              "id": "web.research",
+              "resource_state": "CONNECTED_INTEGRATION",
+              "operations": [
+                "search"
+              ],
+              "available": true,
+              "authorized": true,
+              "verified": true,
+              "evidence_ref": "benchmark-capability",
+              "adapter_id": "benchmark-adapter"
+            }
+          ]
+        }
+      },
+      "expected_status": "simulation_ready",
+      "expected_host_action_count": 0,
+      "expected_action_statuses": [
+        "simulation_ready"
+      ]
+    },
+    {
+      "id": "host-read",
+      "packet": {
+        "graph": {
+          "schema_version": 1,
+          "graph_id": "g",
+          "scope_id": "scope-a",
+          "nodes": [
+            {
+              "id": "p",
+              "kind": "program",
+              "title": "Build a durable outcome",
+              "state": "active",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Program outcome achieved"
+              ]
+            },
+            {
+              "id": "g1",
+              "kind": "goal",
+              "title": "Reach the next outcome",
+              "state": "active",
+              "parent_id": "p",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Goal criteria satisfied"
+              ]
+            },
+            {
+              "id": "t1",
+              "kind": "task",
+              "title": "t1",
+              "state": "active",
+              "parent_id": "g1",
+              "priority": 50,
+              "effort": 3,
+              "depends_on": [],
+              "success_criteria": [
+                "Task verified"
+              ],
+              "actions": [
+                {
+                  "id": "a1",
+                  "capability_id": "web.research",
+                  "operation": "search",
+                  "target": "public web",
+                  "payload_ref": "payload-a1",
+                  "parameters": {}
+                }
+              ]
+            }
+          ]
+        },
+        "mode": "HOST_EXECUTION",
+        "inventory": {
+          "capabilities": [
+            {
+              "id": "web.research",
+              "resource_state": "CONNECTED_INTEGRATION",
+              "operations": [
+                "search"
+              ],
+              "available": true,
+              "authorized": true,
+              "verified": true,
+              "evidence_ref": "benchmark-capability",
+              "adapter_id": "benchmark-adapter"
+            }
+          ]
+        }
+      },
+      "expected_status": "host_action_required",
+      "expected_host_action_count": 1,
+      "expected_action_statuses": [
+        "host_action_required"
+      ]
+    },
+    {
+      "id": "send-needs-approval",
+      "packet": {
+        "graph": {
+          "schema_version": 1,
+          "graph_id": "g",
+          "scope_id": "scope-a",
+          "nodes": [
+            {
+              "id": "p",
+              "kind": "program",
+              "title": "Build a durable outcome",
+              "state": "active",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Program outcome achieved"
+              ]
+            },
+            {
+              "id": "g1",
+              "kind": "goal",
+              "title": "Reach the next outcome",
+              "state": "active",
+              "parent_id": "p",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Goal criteria satisfied"
+              ]
+            },
+            {
+              "id": "t1",
+              "kind": "task",
+              "title": "t1",
+              "state": "active",
+              "parent_id": "g1",
+              "priority": 50,
+              "effort": 3,
+              "depends_on": [],
+              "success_criteria": [
+                "Task verified"
+              ],
+              "actions": [
+                {
+                  "id": "send",
+                  "capability_id": "email.send",
+                  "operation": "send",
+                  "target": "recipient-fixture",
+                  "payload_ref": "payload-send",
+                  "parameters": {}
+                }
+              ]
+            }
+          ]
+        },
+        "mode": "HOST_EXECUTION",
+        "inventory": {
+          "capabilities": [
+            {
+              "id": "email.send",
+              "resource_state": "CONNECTED_INTEGRATION",
+              "operations": [
+                "send"
+              ],
+              "available": true,
+              "authorized": true,
+              "verified": true,
+              "evidence_ref": "benchmark-capability",
+              "adapter_id": "benchmark-adapter"
+            }
+          ]
+        }
+      },
+      "expected_status": "approval_required",
+      "expected_host_action_count": 0,
+      "expected_action_statuses": [
+        "approval_required"
+      ]
+    },
+    {
+      "id": "send-exact-approval",
+      "packet": {
+        "graph": {
+          "schema_version": 1,
+          "graph_id": "g",
+          "scope_id": "scope-a",
+          "nodes": [
+            {
+              "id": "p",
+              "kind": "program",
+              "title": "Build a durable outcome",
+              "state": "active",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Program outcome achieved"
+              ]
+            },
+            {
+              "id": "g1",
+              "kind": "goal",
+              "title": "Reach the next outcome",
+              "state": "active",
+              "parent_id": "p",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Goal criteria satisfied"
+              ]
+            },
+            {
+              "id": "t1",
+              "kind": "task",
+              "title": "t1",
+              "state": "active",
+              "parent_id": "g1",
+              "priority": 50,
+              "effort": 3,
+              "depends_on": [],
+              "success_criteria": [
+                "Task verified"
+              ],
+              "actions": [
+                {
+                  "id": "send",
+                  "capability_id": "email.send",
+                  "operation": "send",
+                  "target": "recipient-fixture",
+                  "payload_ref": "payload-send",
+                  "parameters": {}
+                }
+              ]
+            }
+          ]
+        },
+        "mode": "HOST_EXECUTION",
+        "inventory": {
+          "capabilities": [
+            {
+              "id": "email.send",
+              "resource_state": "CONNECTED_INTEGRATION",
+              "operations": [
+                "send"
+              ],
+              "available": true,
+              "authorized": true,
+              "verified": true,
+              "evidence_ref": "benchmark-capability",
+              "adapter_id": "benchmark-adapter"
+            }
+          ]
+        },
+        "approvals": [
+          {
+            "scope_id": "scope-a",
+            "capability_id": "email.send",
+            "operation": "send",
+            "action_sha256": "628b46071ec6c73b8fa405f936ca50dc8e627798a7af888867b6b3be68839b18",
+            "approval_ref": "benchmark-approval"
+          }
+        ]
+      },
+      "expected_status": "host_action_required",
+      "expected_host_action_count": 1,
+      "expected_action_statuses": [
+        "host_action_required"
+      ]
+    },
+    {
+      "id": "send-wrong-approval",
+      "packet": {
+        "graph": {
+          "schema_version": 1,
+          "graph_id": "g",
+          "scope_id": "scope-a",
+          "nodes": [
+            {
+              "id": "p",
+              "kind": "program",
+              "title": "Build a durable outcome",
+              "state": "active",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Program outcome achieved"
+              ]
+            },
+            {
+              "id": "g1",
+              "kind": "goal",
+              "title": "Reach the next outcome",
+              "state": "active",
+              "parent_id": "p",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Goal criteria satisfied"
+              ]
+            },
+            {
+              "id": "t1",
+              "kind": "task",
+              "title": "t1",
+              "state": "active",
+              "parent_id": "g1",
+              "priority": 50,
+              "effort": 3,
+              "depends_on": [],
+              "success_criteria": [
+                "Task verified"
+              ],
+              "actions": [
+                {
+                  "id": "send",
+                  "capability_id": "email.send",
+                  "operation": "send",
+                  "target": "recipient-fixture",
+                  "payload_ref": "payload-send",
+                  "parameters": {}
+                }
+              ]
+            }
+          ]
+        },
+        "mode": "HOST_EXECUTION",
+        "inventory": {
+          "capabilities": [
+            {
+              "id": "email.send",
+              "resource_state": "CONNECTED_INTEGRATION",
+              "operations": [
+                "send"
+              ],
+              "available": true,
+              "authorized": true,
+              "verified": true,
+              "evidence_ref": "benchmark-capability",
+              "adapter_id": "benchmark-adapter"
+            }
+          ]
+        },
+        "approvals": [
+          {
+            "scope_id": "scope-a",
+            "capability_id": "email.send",
+            "operation": "send",
+            "action_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+            "approval_ref": "benchmark-approval"
+          }
+        ]
+      },
+      "expected_status": "approval_required",
+      "expected_host_action_count": 0,
+      "expected_action_statuses": [
+        "approval_required"
+      ]
+    },
+    {
+      "id": "send-approved-simulation",
+      "packet": {
+        "graph": {
+          "schema_version": 1,
+          "graph_id": "g",
+          "scope_id": "scope-a",
+          "nodes": [
+            {
+              "id": "p",
+              "kind": "program",
+              "title": "Build a durable outcome",
+              "state": "active",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Program outcome achieved"
+              ]
+            },
+            {
+              "id": "g1",
+              "kind": "goal",
+              "title": "Reach the next outcome",
+              "state": "active",
+              "parent_id": "p",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Goal criteria satisfied"
+              ]
+            },
+            {
+              "id": "t1",
+              "kind": "task",
+              "title": "t1",
+              "state": "active",
+              "parent_id": "g1",
+              "priority": 50,
+              "effort": 3,
+              "depends_on": [],
+              "success_criteria": [
+                "Task verified"
+              ],
+              "actions": [
+                {
+                  "id": "send",
+                  "capability_id": "email.send",
+                  "operation": "send",
+                  "target": "recipient-fixture",
+                  "payload_ref": "payload-send",
+                  "parameters": {}
+                }
+              ]
+            }
+          ]
+        },
+        "mode": "SIMULATE",
+        "inventory": {
+          "capabilities": [
+            {
+              "id": "email.send",
+              "resource_state": "CONNECTED_INTEGRATION",
+              "operations": [
+                "send"
+              ],
+              "available": true,
+              "authorized": true,
+              "verified": true,
+              "evidence_ref": "benchmark-capability",
+              "adapter_id": "benchmark-adapter"
+            }
+          ]
+        },
+        "approvals": [
+          {
+            "scope_id": "scope-a",
+            "capability_id": "email.send",
+            "operation": "send",
+            "action_sha256": "628b46071ec6c73b8fa405f936ca50dc8e627798a7af888867b6b3be68839b18",
+            "approval_ref": "benchmark-approval"
+          }
+        ]
+      },
+      "expected_status": "simulation_ready",
+      "expected_host_action_count": 0,
+      "expected_action_statuses": [
+        "simulation_ready"
+      ]
+    },
+    {
+      "id": "verified-read-receipt",
+      "packet": {
+        "graph": {
+          "schema_version": 1,
+          "graph_id": "g",
+          "scope_id": "scope-a",
+          "nodes": [
+            {
+              "id": "p",
+              "kind": "program",
+              "title": "Build a durable outcome",
+              "state": "active",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Program outcome achieved"
+              ]
+            },
+            {
+              "id": "g1",
+              "kind": "goal",
+              "title": "Reach the next outcome",
+              "state": "active",
+              "parent_id": "p",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Goal criteria satisfied"
+              ]
+            },
+            {
+              "id": "t1",
+              "kind": "task",
+              "title": "t1",
+              "state": "active",
+              "parent_id": "g1",
+              "priority": 50,
+              "effort": 3,
+              "depends_on": [],
+              "success_criteria": [
+                "Task verified"
+              ],
+              "actions": [
+                {
+                  "id": "a1",
+                  "capability_id": "web.research",
+                  "operation": "search",
+                  "target": "public web",
+                  "payload_ref": "payload-a1",
+                  "parameters": {}
+                }
+              ]
+            }
+          ]
+        },
+        "mode": "HOST_EXECUTION",
+        "inventory": {
+          "capabilities": [
+            {
+              "id": "web.research",
+              "resource_state": "CONNECTED_INTEGRATION",
+              "operations": [
+                "search"
+              ],
+              "available": true,
+              "authorized": true,
+              "verified": true,
+              "evidence_ref": "benchmark-capability",
+              "adapter_id": "benchmark-adapter"
+            }
+          ]
+        },
+        "receipts": [
+          {
+            "receipt_id": "r1",
+            "scope_id": "scope-a",
+            "capability_id": "web.research",
+            "operation": "search",
+            "action_sha256": "f1cc254e833d735ca1584aefb7fdf9a41a1e46eb2846e8700af84477d8b787f1",
+            "status": "executed",
+            "evidence": [
+              "benchmark-evidence"
+            ]
+          }
+        ]
+      },
+      "expected_status": "task_verified",
+      "expected_host_action_count": 0,
+      "expected_action_statuses": [
+        "verified"
+      ]
+    },
+    {
+      "id": "unknown-reconcile",
+      "packet": {
+        "graph": {
+          "schema_version": 1,
+          "graph_id": "g",
+          "scope_id": "scope-a",
+          "nodes": [
+            {
+              "id": "p",
+              "kind": "program",
+              "title": "Build a durable outcome",
+              "state": "active",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Program outcome achieved"
+              ]
+            },
+            {
+              "id": "g1",
+              "kind": "goal",
+              "title": "Reach the next outcome",
+              "state": "active",
+              "parent_id": "p",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Goal criteria satisfied"
+              ]
+            },
+            {
+              "id": "t1",
+              "kind": "task",
+              "title": "t1",
+              "state": "active",
+              "parent_id": "g1",
+              "priority": 50,
+              "effort": 3,
+              "depends_on": [],
+              "success_criteria": [
+                "Task verified"
+              ],
+              "actions": [
+                {
+                  "id": "a1",
+                  "capability_id": "web.research",
+                  "operation": "search",
+                  "target": "public web",
+                  "payload_ref": "payload-a1",
+                  "parameters": {}
+                }
+              ]
+            }
+          ]
+        },
+        "mode": "HOST_EXECUTION",
+        "inventory": {
+          "capabilities": [
+            {
+              "id": "web.research",
+              "resource_state": "CONNECTED_INTEGRATION",
+              "operations": [
+                "search"
+              ],
+              "available": true,
+              "authorized": true,
+              "verified": true,
+              "evidence_ref": "benchmark-capability",
+              "adapter_id": "benchmark-adapter"
+            }
+          ]
+        },
+        "receipts": [
+          {
+            "receipt_id": "r1",
+            "scope_id": "scope-a",
+            "capability_id": "web.research",
+            "operation": "search",
+            "action_sha256": "f1cc254e833d735ca1584aefb7fdf9a41a1e46eb2846e8700af84477d8b787f1",
+            "status": "unknown",
+            "evidence": []
+          }
+        ]
+      },
+      "expected_status": "reconcile_required",
+      "expected_host_action_count": 0,
+      "expected_action_statuses": [
+        "reconcile_required"
+      ]
+    },
+    {
+      "id": "failed-safe-retry",
+      "packet": {
+        "graph": {
+          "schema_version": 1,
+          "graph_id": "g",
+          "scope_id": "scope-a",
+          "nodes": [
+            {
+              "id": "p",
+              "kind": "program",
+              "title": "Build a durable outcome",
+              "state": "active",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Program outcome achieved"
+              ]
+            },
+            {
+              "id": "g1",
+              "kind": "goal",
+              "title": "Reach the next outcome",
+              "state": "active",
+              "parent_id": "p",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Goal criteria satisfied"
+              ]
+            },
+            {
+              "id": "t1",
+              "kind": "task",
+              "title": "t1",
+              "state": "active",
+              "parent_id": "g1",
+              "priority": 50,
+              "effort": 3,
+              "depends_on": [],
+              "success_criteria": [
+                "Task verified"
+              ],
+              "actions": [
+                {
+                  "id": "a1",
+                  "capability_id": "web.research",
+                  "operation": "search",
+                  "target": "public web",
+                  "payload_ref": "payload-a1",
+                  "parameters": {},
+                  "idempotency_key": "search-1",
+                  "retry_policy": {
+                    "max_attempts": 1,
+                    "retry_on": [
+                      "failed"
+                    ],
+                    "requires_idempotency_key": true
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "mode": "HOST_EXECUTION",
+        "inventory": {
+          "capabilities": [
+            {
+              "id": "web.research",
+              "resource_state": "CONNECTED_INTEGRATION",
+              "operations": [
+                "search"
+              ],
+              "available": true,
+              "authorized": true,
+              "verified": true,
+              "evidence_ref": "benchmark-capability",
+              "adapter_id": "benchmark-adapter"
+            }
+          ]
+        },
+        "receipts": [
+          {
+            "receipt_id": "r1",
+            "scope_id": "scope-a",
+            "capability_id": "web.research",
+            "operation": "search",
+            "action_sha256": "f1cc254e833d735ca1584aefb7fdf9a41a1e46eb2846e8700af84477d8b787f1",
+            "status": "failed",
+            "evidence": []
+          }
+        ]
+      },
+      "expected_status": "host_action_required",
+      "expected_host_action_count": 1,
+      "expected_action_statuses": [
+        "retry_host_action_required"
+      ]
+    },
+    {
+      "id": "failed-no-idempotency",
+      "packet": {
+        "graph": {
+          "schema_version": 1,
+          "graph_id": "g",
+          "scope_id": "scope-a",
+          "nodes": [
+            {
+              "id": "p",
+              "kind": "program",
+              "title": "Build a durable outcome",
+              "state": "active",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Program outcome achieved"
+              ]
+            },
+            {
+              "id": "g1",
+              "kind": "goal",
+              "title": "Reach the next outcome",
+              "state": "active",
+              "parent_id": "p",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Goal criteria satisfied"
+              ]
+            },
+            {
+              "id": "t1",
+              "kind": "task",
+              "title": "t1",
+              "state": "active",
+              "parent_id": "g1",
+              "priority": 50,
+              "effort": 3,
+              "depends_on": [],
+              "success_criteria": [
+                "Task verified"
+              ],
+              "actions": [
+                {
+                  "id": "a1",
+                  "capability_id": "web.research",
+                  "operation": "search",
+                  "target": "public web",
+                  "payload_ref": "payload-a1",
+                  "parameters": {},
+                  "retry_policy": {
+                    "max_attempts": 1,
+                    "retry_on": [
+                      "failed"
+                    ],
+                    "requires_idempotency_key": true
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "mode": "HOST_EXECUTION",
+        "inventory": {
+          "capabilities": [
+            {
+              "id": "web.research",
+              "resource_state": "CONNECTED_INTEGRATION",
+              "operations": [
+                "search"
+              ],
+              "available": true,
+              "authorized": true,
+              "verified": true,
+              "evidence_ref": "benchmark-capability",
+              "adapter_id": "benchmark-adapter"
+            }
+          ]
+        },
+        "receipts": [
+          {
+            "receipt_id": "r1",
+            "scope_id": "scope-a",
+            "capability_id": "web.research",
+            "operation": "search",
+            "action_sha256": "f1cc254e833d735ca1584aefb7fdf9a41a1e46eb2846e8700af84477d8b787f1",
+            "status": "failed",
+            "evidence": []
+          }
+        ]
+      },
+      "expected_status": "manual_recovery",
+      "expected_host_action_count": 0,
+      "expected_action_statuses": [
+        "manual_recovery"
+      ]
+    },
+    {
+      "id": "failed-retry-budget-exhausted",
+      "packet": {
+        "graph": {
+          "schema_version": 1,
+          "graph_id": "g",
+          "scope_id": "scope-a",
+          "nodes": [
+            {
+              "id": "p",
+              "kind": "program",
+              "title": "Build a durable outcome",
+              "state": "active",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Program outcome achieved"
+              ]
+            },
+            {
+              "id": "g1",
+              "kind": "goal",
+              "title": "Reach the next outcome",
+              "state": "active",
+              "parent_id": "p",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Goal criteria satisfied"
+              ]
+            },
+            {
+              "id": "t1",
+              "kind": "task",
+              "title": "t1",
+              "state": "active",
+              "parent_id": "g1",
+              "priority": 50,
+              "effort": 3,
+              "depends_on": [],
+              "success_criteria": [
+                "Task verified"
+              ],
+              "actions": [
+                {
+                  "id": "a1",
+                  "capability_id": "web.research",
+                  "operation": "search",
+                  "target": "public web",
+                  "payload_ref": "payload-a1",
+                  "parameters": {},
+                  "idempotency_key": "search-1",
+                  "retry_policy": {
+                    "max_attempts": 1,
+                    "retry_on": [
+                      "failed"
+                    ],
+                    "requires_idempotency_key": true
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "mode": "HOST_EXECUTION",
+        "inventory": {
+          "capabilities": [
+            {
+              "id": "web.research",
+              "resource_state": "CONNECTED_INTEGRATION",
+              "operations": [
+                "search"
+              ],
+              "available": true,
+              "authorized": true,
+              "verified": true,
+              "evidence_ref": "benchmark-capability",
+              "adapter_id": "benchmark-adapter"
+            }
+          ]
+        },
+        "receipts": [
+          {
+            "receipt_id": "r1",
+            "scope_id": "scope-a",
+            "capability_id": "web.research",
+            "operation": "search",
+            "action_sha256": "f1cc254e833d735ca1584aefb7fdf9a41a1e46eb2846e8700af84477d8b787f1",
+            "status": "failed",
+            "evidence": []
+          },
+          {
+            "receipt_id": "r2",
+            "scope_id": "scope-a",
+            "capability_id": "web.research",
+            "operation": "search",
+            "action_sha256": "f1cc254e833d735ca1584aefb7fdf9a41a1e46eb2846e8700af84477d8b787f1",
+            "status": "failed",
+            "evidence": []
+          }
+        ]
+      },
+      "expected_status": "manual_recovery",
+      "expected_host_action_count": 0,
+      "expected_action_statuses": [
+        "manual_recovery"
+      ]
+    },
+    {
+      "id": "action-dependency-waits-for-evidence",
+      "packet": {
+        "graph": {
+          "schema_version": 1,
+          "graph_id": "g",
+          "scope_id": "scope-a",
+          "nodes": [
+            {
+              "id": "p",
+              "kind": "program",
+              "title": "Build a durable outcome",
+              "state": "active",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Program outcome achieved"
+              ]
+            },
+            {
+              "id": "g1",
+              "kind": "goal",
+              "title": "Reach the next outcome",
+              "state": "active",
+              "parent_id": "p",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Goal criteria satisfied"
+              ]
+            },
+            {
+              "id": "t1",
+              "kind": "task",
+              "title": "t1",
+              "state": "active",
+              "parent_id": "g1",
+              "priority": 50,
+              "effort": 3,
+              "depends_on": [],
+              "success_criteria": [
+                "Task verified"
+              ],
+              "actions": [
+                {
+                  "id": "read",
+                  "capability_id": "web.research",
+                  "operation": "search",
+                  "target": "public web",
+                  "payload_ref": "payload-read",
+                  "parameters": {}
+                },
+                {
+                  "id": "write",
+                  "capability_id": "files.write",
+                  "operation": "create",
+                  "target": "brief.md",
+                  "payload_ref": "payload-write",
+                  "parameters": {},
+                  "depends_on": [
+                    "read"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "mode": "SIMULATE",
+        "inventory": {
+          "capabilities": [
+            {
+              "id": "web.research",
+              "resource_state": "CONNECTED_INTEGRATION",
+              "operations": [
+                "search"
+              ],
+              "available": true,
+              "authorized": true,
+              "verified": true,
+              "evidence_ref": "benchmark-capability",
+              "adapter_id": "benchmark-adapter"
+            },
+            {
+              "id": "files.write",
+              "resource_state": "CONNECTED_INTEGRATION",
+              "operations": [
+                "create"
+              ],
+              "available": true,
+              "authorized": true,
+              "verified": true,
+              "evidence_ref": "benchmark-capability",
+              "adapter_id": "benchmark-adapter"
+            }
+          ]
+        }
+      },
+      "expected_status": "simulation_ready",
+      "expected_host_action_count": 0,
+      "expected_action_statuses": [
+        "simulation_ready",
+        "blocked_by_action_dependency"
+      ]
+    },
+    {
+      "id": "action-dependency-unlocks-after-receipt",
+      "packet": {
+        "graph": {
+          "schema_version": 1,
+          "graph_id": "g",
+          "scope_id": "scope-a",
+          "nodes": [
+            {
+              "id": "p",
+              "kind": "program",
+              "title": "Build a durable outcome",
+              "state": "active",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Program outcome achieved"
+              ]
+            },
+            {
+              "id": "g1",
+              "kind": "goal",
+              "title": "Reach the next outcome",
+              "state": "active",
+              "parent_id": "p",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Goal criteria satisfied"
+              ]
+            },
+            {
+              "id": "t1",
+              "kind": "task",
+              "title": "t1",
+              "state": "active",
+              "parent_id": "g1",
+              "priority": 50,
+              "effort": 3,
+              "depends_on": [],
+              "success_criteria": [
+                "Task verified"
+              ],
+              "actions": [
+                {
+                  "id": "read",
+                  "capability_id": "web.research",
+                  "operation": "search",
+                  "target": "public web",
+                  "payload_ref": "payload-read",
+                  "parameters": {}
+                },
+                {
+                  "id": "write",
+                  "capability_id": "files.write",
+                  "operation": "create",
+                  "target": "brief.md",
+                  "payload_ref": "payload-write",
+                  "parameters": {},
+                  "depends_on": [
+                    "read"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "mode": "SIMULATE",
+        "inventory": {
+          "capabilities": [
+            {
+              "id": "web.research",
+              "resource_state": "CONNECTED_INTEGRATION",
+              "operations": [
+                "search"
+              ],
+              "available": true,
+              "authorized": true,
+              "verified": true,
+              "evidence_ref": "benchmark-capability",
+              "adapter_id": "benchmark-adapter"
+            },
+            {
+              "id": "files.write",
+              "resource_state": "CONNECTED_INTEGRATION",
+              "operations": [
+                "create"
+              ],
+              "available": true,
+              "authorized": true,
+              "verified": true,
+              "evidence_ref": "benchmark-capability",
+              "adapter_id": "benchmark-adapter"
+            }
+          ]
+        },
+        "receipts": [
+          {
+            "receipt_id": "r1",
+            "scope_id": "scope-a",
+            "capability_id": "web.research",
+            "operation": "search",
+            "action_sha256": "4c62ffd9335f4f8c40f9f1ef1d03fdcbc2083ff54931d02b770452cf5eda4185",
+            "status": "executed",
+            "evidence": [
+              "benchmark-evidence"
+            ]
+          }
+        ]
+      },
+      "expected_status": "simulation_ready",
+      "expected_host_action_count": 0,
+      "expected_action_statuses": [
+        "verified",
+        "simulation_ready"
+      ]
+    },
+    {
+      "id": "no-actionable-done",
+      "packet": {
+        "graph": {
+          "schema_version": 1,
+          "graph_id": "g",
+          "scope_id": "scope-a",
+          "nodes": [
+            {
+              "id": "p",
+              "kind": "program",
+              "title": "Build a durable outcome",
+              "state": "active",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Program outcome achieved"
+              ]
+            },
+            {
+              "id": "g1",
+              "kind": "goal",
+              "title": "Reach the next outcome",
+              "state": "active",
+              "parent_id": "p",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Goal criteria satisfied"
+              ]
+            },
+            {
+              "id": "t1",
+              "kind": "task",
+              "title": "t1",
+              "state": "done",
+              "parent_id": "g1",
+              "priority": 50,
+              "effort": 3,
+              "depends_on": [],
+              "success_criteria": [
+                "Task verified"
+              ]
+            }
+          ]
+        },
+        "mode": "SIMULATE"
+      },
+      "expected_status": "no_actionable_tasks",
+      "expected_host_action_count": 0,
+      "expected_action_statuses": []
+    },
+    {
+      "id": "delegated-professional-work",
+      "packet": {
+        "graph": {
+          "schema_version": 1,
+          "graph_id": "g",
+          "scope_id": "scope-a",
+          "nodes": [
+            {
+              "id": "p",
+              "kind": "program",
+              "title": "Build a durable outcome",
+              "state": "active",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Program outcome achieved"
+              ]
+            },
+            {
+              "id": "g1",
+              "kind": "goal",
+              "title": "Reach the next outcome",
+              "state": "active",
+              "parent_id": "p",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Goal criteria satisfied"
+              ]
+            },
+            {
+              "id": "t1",
+              "kind": "task",
+              "title": "t1",
+              "state": "active",
+              "parent_id": "g1",
+              "priority": 50,
+              "effort": 3,
+              "depends_on": [],
+              "success_criteria": [
+                "Task verified"
+              ],
+              "role_hint": "artist_development_strategist",
+              "deliverable": "Opportunity strategy"
+            }
+          ]
+        },
+        "mode": "SIMULATE"
+      },
+      "expected_status": "delegated_work_required",
+      "expected_host_action_count": 0,
+      "expected_action_statuses": []
+    },
+    {
+      "id": "capability-missing-fallback",
+      "packet": {
+        "graph": {
+          "schema_version": 1,
+          "graph_id": "g",
+          "scope_id": "scope-a",
+          "nodes": [
+            {
+              "id": "p",
+              "kind": "program",
+              "title": "Build a durable outcome",
+              "state": "active",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Program outcome achieved"
+              ]
+            },
+            {
+              "id": "g1",
+              "kind": "goal",
+              "title": "Reach the next outcome",
+              "state": "active",
+              "parent_id": "p",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Goal criteria satisfied"
+              ]
+            },
+            {
+              "id": "t1",
+              "kind": "task",
+              "title": "t1",
+              "state": "active",
+              "parent_id": "g1",
+              "priority": 50,
+              "effort": 3,
+              "depends_on": [],
+              "success_criteria": [
+                "Task verified"
+              ],
+              "actions": [
+                {
+                  "id": "a1",
+                  "capability_id": "web.research",
+                  "operation": "search",
+                  "target": "public web",
+                  "payload_ref": "payload-a1",
+                  "parameters": {}
+                }
+              ]
+            }
+          ]
+        },
+        "mode": "HOST_EXECUTION"
+      },
+      "expected_status": "fallback_required",
+      "expected_host_action_count": 0,
+      "expected_action_statuses": [
+        "fallback_required"
+      ]
+    },
+    {
+      "id": "bounded-write-autonomous",
+      "packet": {
+        "graph": {
+          "schema_version": 1,
+          "graph_id": "g",
+          "scope_id": "scope-a",
+          "nodes": [
+            {
+              "id": "p",
+              "kind": "program",
+              "title": "Build a durable outcome",
+              "state": "active",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Program outcome achieved"
+              ]
+            },
+            {
+              "id": "g1",
+              "kind": "goal",
+              "title": "Reach the next outcome",
+              "state": "active",
+              "parent_id": "p",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Goal criteria satisfied"
+              ]
+            },
+            {
+              "id": "t1",
+              "kind": "task",
+              "title": "t1",
+              "state": "active",
+              "parent_id": "g1",
+              "priority": 50,
+              "effort": 3,
+              "depends_on": [],
+              "success_criteria": [
+                "Task verified"
+              ],
+              "actions": [
+                {
+                  "id": "write",
+                  "capability_id": "files.write",
+                  "operation": "create",
+                  "target": "out.md",
+                  "payload_ref": "payload-write",
+                  "parameters": {}
+                }
+              ]
+            }
+          ]
+        },
+        "mode": "HOST_EXECUTION",
+        "inventory": {
+          "capabilities": [
+            {
+              "id": "files.write",
+              "resource_state": "CONNECTED_INTEGRATION",
+              "operations": [
+                "create"
+              ],
+              "available": true,
+              "authorized": true,
+              "verified": true,
+              "evidence_ref": "benchmark-capability",
+              "adapter_id": "benchmark-adapter"
+            }
+          ]
+        }
+      },
+      "expected_status": "host_action_required",
+      "expected_host_action_count": 1,
+      "expected_action_statuses": [
+        "host_action_required"
+      ]
+    },
+    {
+      "id": "delete-needs-approval",
+      "packet": {
+        "graph": {
+          "schema_version": 1,
+          "graph_id": "g",
+          "scope_id": "scope-a",
+          "nodes": [
+            {
+              "id": "p",
+              "kind": "program",
+              "title": "Build a durable outcome",
+              "state": "active",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Program outcome achieved"
+              ]
+            },
+            {
+              "id": "g1",
+              "kind": "goal",
+              "title": "Reach the next outcome",
+              "state": "active",
+              "parent_id": "p",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Goal criteria satisfied"
+              ]
+            },
+            {
+              "id": "t1",
+              "kind": "task",
+              "title": "t1",
+              "state": "active",
+              "parent_id": "g1",
+              "priority": 50,
+              "effort": 3,
+              "depends_on": [],
+              "success_criteria": [
+                "Task verified"
+              ],
+              "actions": [
+                {
+                  "id": "delete",
+                  "capability_id": "files.delete",
+                  "operation": "delete",
+                  "target": "obsolete.tmp",
+                  "payload_ref": "payload-delete",
+                  "parameters": {}
+                }
+              ]
+            }
+          ]
+        },
+        "mode": "HOST_EXECUTION",
+        "inventory": {
+          "capabilities": [
+            {
+              "id": "files.delete",
+              "resource_state": "CONNECTED_INTEGRATION",
+              "operations": [
+                "delete"
+              ],
+              "available": true,
+              "authorized": true,
+              "verified": true,
+              "evidence_ref": "benchmark-capability",
+              "adapter_id": "benchmark-adapter"
+            }
+          ]
+        }
+      },
+      "expected_status": "approval_required",
+      "expected_host_action_count": 0,
+      "expected_action_statuses": [
+        "approval_required"
+      ]
+    },
+    {
+      "id": "strict-verification-not-yet-sent",
+      "packet": {
+        "graph": {
+          "schema_version": 1,
+          "graph_id": "g",
+          "scope_id": "scope-a",
+          "nodes": [
+            {
+              "id": "p",
+              "kind": "program",
+              "title": "Build a durable outcome",
+              "state": "active",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Program outcome achieved"
+              ]
+            },
+            {
+              "id": "g1",
+              "kind": "goal",
+              "title": "Reach the next outcome",
+              "state": "active",
+              "parent_id": "p",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Goal criteria satisfied"
+              ]
+            },
+            {
+              "id": "t1",
+              "kind": "task",
+              "title": "t1",
+              "state": "active",
+              "parent_id": "g1",
+              "priority": 50,
+              "effort": 3,
+              "depends_on": [],
+              "success_criteria": [
+                "Task verified"
+              ],
+              "actions": [
+                {
+                  "id": "send",
+                  "capability_id": "email.send",
+                  "operation": "send",
+                  "target": "recipient-fixture",
+                  "payload_ref": "payload-send",
+                  "parameters": {},
+                  "verification": {
+                    "success_states": [
+                      "sent",
+                      "delivered"
+                    ],
+                    "require_evidence": true
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "mode": "HOST_EXECUTION",
+        "inventory": {
+          "capabilities": [
+            {
+              "id": "email.send",
+              "resource_state": "CONNECTED_INTEGRATION",
+              "operations": [
+                "send"
+              ],
+              "available": true,
+              "authorized": true,
+              "verified": true,
+              "evidence_ref": "benchmark-capability",
+              "adapter_id": "benchmark-adapter"
+            }
+          ]
+        },
+        "receipts": [
+          {
+            "receipt_id": "r1",
+            "scope_id": "scope-a",
+            "capability_id": "email.send",
+            "operation": "send",
+            "action_sha256": "628b46071ec6c73b8fa405f936ca50dc8e627798a7af888867b6b3be68839b18",
+            "status": "accepted",
+            "evidence": [
+              "benchmark-evidence"
+            ]
+          }
+        ]
+      },
+      "expected_status": "verification_required",
+      "expected_host_action_count": 0,
+      "expected_action_statuses": [
+        "verification_required"
+      ]
+    },
+    {
+      "id": "action-cycle-error",
+      "packet": {
+        "graph": {
+          "schema_version": 1,
+          "graph_id": "g",
+          "scope_id": "scope-a",
+          "nodes": [
+            {
+              "id": "p",
+              "kind": "program",
+              "title": "Build a durable outcome",
+              "state": "active",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Program outcome achieved"
+              ]
+            },
+            {
+              "id": "g1",
+              "kind": "goal",
+              "title": "Reach the next outcome",
+              "state": "active",
+              "parent_id": "p",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "Goal criteria satisfied"
+              ]
+            },
+            {
+              "id": "t1",
+              "kind": "task",
+              "title": "t1",
+              "state": "active",
+              "parent_id": "g1",
+              "priority": 50,
+              "effort": 3,
+              "depends_on": [],
+              "success_criteria": [
+                "Task verified"
+              ],
+              "actions": [
+                {
+                  "id": "a1",
+                  "capability_id": "web.research",
+                  "operation": "search",
+                  "target": "target",
+                  "payload_ref": "payload-a1",
+                  "parameters": {},
+                  "depends_on": [
+                    "a2"
+                  ]
+                },
+                {
+                  "id": "a2",
+                  "capability_id": "files.write",
+                  "operation": "create",
+                  "target": "target",
+                  "payload_ref": "payload-a2",
+                  "parameters": {},
+                  "depends_on": [
+                    "a1"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "mode": "SIMULATE",
+        "inventory": {
+          "capabilities": [
+            {
+              "id": "web.research",
+              "resource_state": "CONNECTED_INTEGRATION",
+              "operations": [
+                "search"
+              ],
+              "available": true,
+              "authorized": true,
+              "verified": true,
+              "evidence_ref": "benchmark-capability",
+              "adapter_id": "benchmark-adapter"
+            },
+            {
+              "id": "files.write",
+              "resource_state": "CONNECTED_INTEGRATION",
+              "operations": [
+                "create"
+              ],
+              "available": true,
+              "authorized": true,
+              "verified": true,
+              "evidence_ref": "benchmark-capability",
+              "adapter_id": "benchmark-adapter"
+            }
+          ]
+        }
+      },
+      "expected_status": "error",
+      "error_contains": "action dependency cycle"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "0.7.3",
+  "aco_version": "0.8.0",
   "purpose": "Curated routing examples from consumed development/evaluation cases only. Final release holdouts must never be merged into this file before they are scored.",
   "source_files": [
     "routing-benchmark.json",

@@ -1,0 +1,157 @@
+{
+  "graph": {
+    "schema_version": 1,
+    "graph_id": "artist-career-program",
+    "scope_id": "artist-private",
+    "nodes": [
+      {
+        "id": "program-independent-practice",
+        "kind": "program",
+        "title": "Build a sustainable independent artistic practice",
+        "state": "active",
+        "priority": 95,
+        "effort": 3,
+        "success_criteria": [
+          "Sustained institutional opportunities and income"
+        ]
+      },
+      {
+        "id": "goal-curatorial-network",
+        "kind": "goal",
+        "title": "Strengthen European curatorial relationships",
+        "state": "active",
+        "parent_id": "program-independent-practice",
+        "priority": 90,
+        "effort": 3,
+        "success_criteria": [
+          "Qualified relationships move to concrete opportunities"
+        ]
+      },
+      {
+        "id": "task-opportunity-scan",
+        "kind": "task",
+        "title": "Research and qualify current opportunities",
+        "state": "active",
+        "parent_id": "goal-curatorial-network",
+        "priority": 85,
+        "effort": 2,
+        "depends_on": [],
+        "success_criteria": [
+          "Qualified shortlist produced with source evidence"
+        ],
+        "actions": [
+          {
+            "id": "research_calls",
+            "capability_id": "web.research",
+            "operation": "search",
+            "target": "current open calls",
+            "payload_ref": "payload-research_calls",
+            "parameters": {
+              "query": "institutional art opportunities"
+            }
+          },
+          {
+            "id": "prepare_followup",
+            "capability_id": "files.write",
+            "operation": "create",
+            "target": "application-notes.md",
+            "payload_ref": "payload-prepare_followup",
+            "parameters": {},
+            "depends_on": [
+              "research_calls"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "task-followup",
+        "kind": "task",
+        "title": "Send an approved curator follow-up",
+        "state": "active",
+        "parent_id": "goal-curatorial-network",
+        "priority": 80,
+        "effort": 1,
+        "depends_on": [
+          "dep-portfolio-ready"
+        ],
+        "success_criteria": [
+          "Provider receipt confirms final approved message sent"
+        ],
+        "actions": [
+          {
+            "id": "send_followup",
+            "capability_id": "email.send",
+            "operation": "send",
+            "target": "curator-fixture",
+            "payload_ref": "approved-followup",
+            "parameters": {},
+            "depends_on": [
+              "prepare_followup"
+            ],
+            "verification": {
+              "success_states": [
+                "sent",
+                "delivered"
+              ],
+              "require_evidence": true
+            }
+          }
+        ]
+      },
+      {
+        "id": "dep-portfolio-ready",
+        "kind": "dependency",
+        "title": "Final portfolio link is ready",
+        "state": "active",
+        "parent_id": "task-followup",
+        "priority": 90,
+        "effort": 1,
+        "success_criteria": [
+          "Portfolio URL verified"
+        ]
+      }
+    ]
+  },
+  "mode": "SIMULATE",
+  "as_of": "2026-10-06T00:00:00+00:00",
+  "inventory": {
+    "capabilities": [
+      {
+        "id": "web.research",
+        "resource_state": "CONNECTED_INTEGRATION",
+        "operations": [
+          "search"
+        ],
+        "available": true,
+        "authorized": true,
+        "verified": true,
+        "evidence_ref": "example-only",
+        "adapter_id": "example-adapter"
+      },
+      {
+        "id": "files.write",
+        "resource_state": "LOCAL_RUNTIME",
+        "operations": [
+          "create"
+        ],
+        "available": true,
+        "authorized": true,
+        "verified": true,
+        "evidence_ref": "example-only",
+        "adapter_id": "local"
+      },
+      {
+        "id": "email.send",
+        "resource_state": "CONNECTED_INTEGRATION",
+        "operations": [
+          "send"
+        ],
+        "available": true,
+        "authorized": true,
+        "verified": true,
+        "evidence_ref": "example-only",
+        "adapter_id": "example-mail"
+      }
+    ]
+  }
+}

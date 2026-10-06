@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "0.7.3",
+  "aco_version": "0.8.0",
   "name": "Provider-neutral integration resolution conformance",
   "gate": {
     "minimum_score": 100,

@@ -2,7 +2,7 @@
 
 **A working library for an artist, studio, agency or cultural business — with scoped private knowledge and evidence-aware execution.**
 
-**ACO v0.7.3 · 363 roles · 16 entry skills · 61 workflows · 99 optional resources.**
+**ACO v0.8.0 · 363 roles · 16 entry skills · 61 workflows · 99 optional resources.**
 
 Proprietary, source-available. Redistribution is restricted by [LICENSE](LICENSE). No third-party software, fonts, models or private knowledge are bundled.
 
@@ -30,6 +30,8 @@ A natural request
 ```
 
 No office-by-office performance or unnecessary planning ceremony. A simple request should receive a simple result. A commissioned essay, design system or codebase still needs a complete deliverable.
+
+**v0.8.0 Goal Graph + Autonomy Engine:** substantial multi-step work can now be represented as `Program → Goal → Task → Dependency`. ACO deterministically selects a bounded next task, prepares permission-aware host actions, reconciles uncertain outcomes, applies bounded idempotent recovery and requires receipt evidence before verification. `SIMULATE` never returns executable host actions; the local engine never calls providers itself. See [Goal Graph & Autonomy Engine](docs/GOAL-GRAPH.md).
 
 **v0.7.3 context-boundary hardening:** `context-plan` and Hybrid Memory now require exact cross-scope authorization: a foreign private source must expose a concrete `scope_id` and that exact ID must be listed in `authorized_private_scope_ids`. The old global `cross_scope_authorized=true` flag no longer grants access, unknown private scope remains blocked, and `NONE` / `BLIND` / `LIGHT` / `FULL` / `BLIND-FIRST` still enforce relevance and character budgets. Release validation adds an adversarial scope-boundary benchmark plus a new frozen fresh routing holdout while preserving the 120-scenario routing/context/memory regression suite. These are deterministic package regressions, not an independent human-quality benchmark.
 

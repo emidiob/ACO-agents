@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "0.7.3",
+  "aco_version": "0.8.0",
   "name": "ACO v0.7.2 context-engine benchmark",
   "purpose": "Deterministic scope, mode, budget and persistence conformance. Scenarios are package-authored, not an independent external benchmark.",
   "gate": {

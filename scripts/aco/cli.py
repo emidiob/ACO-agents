@@ -87,6 +87,20 @@ def main() -> None:
     q.add_argument('--input', type=Path)
     q = sub.add_parser('privacy-scan', help='Scan the release for likely personal/private data and credential leakage; read-only')
     q.add_argument('--root', type=Path)
+    q = sub.add_parser('goal-check', help='Validate a Program → Goal → Task → Dependency graph; no writes')
+    q.add_argument('--input', type=Path, required=True)
+    q = sub.add_parser('goal-status', help='Compute graph progress, blockers and deterministic next-best tasks; no writes')
+    q.add_argument('--input', type=Path, required=True)
+    q.add_argument('--as-of', help='ISO date/time used only for deterministic deadline ranking')
+    q.add_argument('--limit', type=int, default=5)
+    q = sub.add_parser('goal-transition', help='Apply one validated state transition in-memory and return the updated graph')
+    q.add_argument('--graph', type=Path, required=True)
+    q.add_argument('--event', type=Path, required=True)
+    q = sub.add_parser('autonomy-plan', help='Choose next graph work and prepare bounded host actions; never calls providers')
+    q.add_argument('--input', type=Path, required=True)
+    q = sub.add_parser('autonomy-benchmark', help='Run deterministic Goal Graph + Autonomy Engine conformance cases')
+    q.add_argument('--input', type=Path)
+    q.add_argument('--root', type=Path)
     for verb in ('practice-check', 'opportunity-check', 'brand-check', 'social-check'):
         q = sub.add_parser(verb, help='Offline studio readiness check, no writes or external actions')
         q.add_argument('--input', type=Path, required=True)
@@ -280,6 +294,20 @@ def main() -> None:
         elif a.command == 'privacy-scan':
             from .privacy import privacy_scan
             result = privacy_scan(a.root)
+        elif a.command in ('goal-check','goal-status','goal-transition'):
+            from .goals import goal_graph_check, goal_graph_status, goal_transition
+            if a.command == 'goal-check':
+                result = goal_graph_check(read_json(a.input))
+            elif a.command == 'goal-status':
+                result = goal_graph_status(read_json(a.input), as_of=a.as_of, limit=a.limit)
+            else:
+                result = goal_transition(read_json(a.graph), read_json(a.event))
+        elif a.command in ('autonomy-plan','autonomy-benchmark'):
+            from .autonomy import autonomy_plan, autonomy_benchmark
+            if a.command == 'autonomy-plan':
+                result = autonomy_plan(read_json(a.input))
+            else:
+                result = autonomy_benchmark(a.input, a.root)
         elif a.command in ('practice-check', 'opportunity-check', 'brand-check', 'social-check'):
             from .readiness import practice_check, opportunity_check, brand_check, social_check, _dt
             fn = {'practice-check': practice_check, 'opportunity-check': opportunity_check, 'brand-check': brand_check, 'social-check': social_check}[a.command]

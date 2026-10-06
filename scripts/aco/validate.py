@@ -56,21 +56,21 @@ def validate() -> dict:
     if 'routing-final-holdout.json' in set(examples.get('source_files',[])):errors.append('Final routing holdout listed as training source')
     holdout=read_json(ROOT/'config/routing-final-holdout.json')
     if holdout.get('schema_version')!=1:errors.append('Final routing holdout schema mismatch')
-    if holdout.get('aco_version')!=VERSION:errors.append('Final routing holdout version mismatch')
+    if holdout.get('aco_version')!='0.7.3':errors.append('Historical final routing holdout provenance/version mismatch')
     if not holdout.get('cases'):errors.append('Final routing holdout is empty')
     trained_prompts={x.get('prompt') for x in examples.get('examples',[]) if x.get('prompt')}
     holdout_prompts={x.get('prompt') for x in holdout.get('cases',[]) if x.get('prompt')}
     if trained_prompts & holdout_prompts:errors.append('Final routing holdout overlaps training examples')
     holdout3=read_json(ROOT/'config/routing-v072-holdout-3.json')
     if holdout3.get('schema_version')!=1:errors.append('v0.7.2 routing holdout schema mismatch')
-    if holdout3.get('aco_version')!=VERSION:errors.append('v0.7.2 routing holdout version mismatch')
+    if holdout3.get('aco_version')!='0.7.3':errors.append('Historical v0.7.2 routing holdout provenance/version mismatch')
     if len(holdout3.get('cases',[]))<30:errors.append('v0.7.2 routing holdout is too small')
     holdout3_prompts={x.get('prompt') for x in holdout3.get('cases',[]) if x.get('prompt')}
     if trained_prompts & holdout3_prompts:errors.append('v0.7.2 routing holdout overlaps training examples')
     holdout4=read_json(ROOT/'config/routing-v073-holdout-4.json')
     holdout5=read_json(ROOT/'config/routing-v073-holdout-5.json')
-    if holdout4.get('schema_version')!=1 or holdout4.get('aco_version')!=VERSION:errors.append('v0.7.3 development routing holdout contract mismatch')
-    if holdout5.get('schema_version')!=1 or holdout5.get('aco_version')!=VERSION:errors.append('v0.7.3 final routing holdout contract mismatch')
+    if holdout4.get('schema_version')!=1 or holdout4.get('aco_version')!='0.7.3':errors.append('Historical v0.7.3 development routing holdout contract mismatch')
+    if holdout5.get('schema_version')!=1 or holdout5.get('aco_version')!='0.7.3':errors.append('Historical v0.7.3 final routing holdout contract mismatch')
     if len(holdout5.get('cases',[]))!=40:errors.append('v0.7.3 final routing holdout must contain 40 cases')
     holdout4_prompts={x.get('prompt') for x in holdout4.get('cases',[]) if x.get('prompt')}
     holdout5_prompts={x.get('prompt') for x in holdout5.get('cases',[]) if x.get('prompt')}
@@ -131,7 +131,7 @@ def validate() -> dict:
     if simulation_gate.get('status')!='passed' or simulation_gate.get('critical_failures')!=0 or simulation_gate.get('score',0)<90:
         errors.append('Behavioral simulation gate failed')
     # v0.7 execution contracts and deterministic conformance gate.
-    for filename in ('capabilities.json','permission-policy.json','adapter-contract.json','workflow-states.json','execution-benchmark.json','memory-classes.json','integration-adapters.json','delegation-benchmark.json','integration-benchmark.json','privacy-policy.json','context-engine.json','context-benchmark.json','real-world-benchmark-v072.json','real-world-benchmark-v073.json','routing-v072-holdout-3.json','routing-v073-holdout-4.json','routing-v073-holdout-5.json','scope-boundary-benchmark-v073.json'):
+    for filename in ('capabilities.json','permission-policy.json','adapter-contract.json','workflow-states.json','execution-benchmark.json','memory-classes.json','integration-adapters.json','delegation-benchmark.json','integration-benchmark.json','privacy-policy.json','context-engine.json','context-benchmark.json','real-world-benchmark-v072.json','real-world-benchmark-v073.json','scope-boundary-benchmark-v073.json','goal-graph.json','autonomy-policy.json','autonomy-benchmark.json'):
         cfg=read_json(ROOT/'config'/filename)
         if cfg.get('schema_version')!=1:errors.append(filename+' schema mismatch')
         if cfg.get('aco_version')!=VERSION:errors.append(filename+' version mismatch')
@@ -142,6 +142,14 @@ def validate() -> dict:
     execution_gate=execution_benchmark(ROOT/'config/execution-benchmark.json')
     if execution_gate.get('status')!='passed' or execution_gate.get('critical_failures')!=0 or execution_gate.get('score',0)<98:
         errors.append('Execution policy benchmark gate failed')
+    from .autonomy import autonomy_benchmark
+    from .goals import goal_graph_check
+    autonomy_gate=autonomy_benchmark(ROOT/'config/autonomy-benchmark.json')
+    if autonomy_gate.get('status')!='passed' or autonomy_gate.get('critical_failures')!=0 or autonomy_gate.get('score')!=100.0 or autonomy_gate.get('cases')<25:
+        errors.append('ACO 0.8 Goal Graph / Autonomy Engine benchmark gate failed')
+    goal_example=goal_graph_check(read_json(ROOT/'examples/goals/artist-program.json'))
+    if goal_example.get('status')!='valid':
+        errors.append('Packaged Goal Graph example is invalid')
     from .delegation import delegation_benchmark
     delegation_gate=delegation_benchmark(ROOT/'config/delegation-benchmark.json')
     if delegation_gate.get('status')!='passed' or delegation_gate.get('critical_failures')!=0 or delegation_gate.get('score',0)<100:
@@ -200,5 +208,5 @@ def validate() -> dict:
     if errors:raise ACOError('Validation failed:\n'+'\n'.join(errors))
     return {'status':'validated','version':VERSION,'canonical_agents':len(cat['agents']),
             'native_agents':len(names),'skills':len(skills),'workflows':len(workflows),'optional_resources':len(resource_ids),'memory_default':'compact','text_files_scanned':scanned,'relative_links_checked':links_checked,
-            'delegation_score':delegation_gate.get('score'),'integration_score':integration_gate.get('score'),'privacy_findings':len(privacy_gate.get('findings',[])),'routing_v072_score':routing_gate_v072.get('score'),'routing_v073_development_score':routing_gate_v073_dev.get('score'),'routing_v073_fresh_score':routing_gate_v073.get('score'),'context_benchmark_score':context_gate.get('score'),'context_mean_selection_ratio':context_gate.get('mean_selection_ratio'),'scope_boundary_score':scope_gate.get('score'),'scope_boundary_cases':scope_gate.get('cases'),'real_world_benchmark_score':real_world_gate.get('score'),'real_world_context_selection_ratio':real_world_gate.get('mean_context_selection_ratio'),'checks':['TOML','role catalogue and dependencies','generated parity','no plugin artifacts','basic secret/private-path scan','release hashes','relative documentation links','resource identities/roles/methods','role contracts','routing holdout regression gate','v0.7.2 routing regression gate','v0.7.3 development routing regression gate','v0.7.3 frozen fresh routing holdout gate','routing semantic freeze gate','context efficiency gate','exact-scope privacy boundary gate','v0.7.3 120-scenario real-world regression gate','behavioral simulation gate','delegation benchmark gate','hybrid-memory contracts','integration adapter benchmark gate','privacy/PII release gate','capability/permission/adapter/workflow contracts','execution policy benchmark gate'],
-            'execution_benchmark_score':execution_gate.get('score'),'limitations':'Static/local checks; no professional-quality certification and no live external adapter/provider action is executed by validation.'}
+            'delegation_score':delegation_gate.get('score'),'integration_score':integration_gate.get('score'),'privacy_findings':len(privacy_gate.get('findings',[])),'routing_v072_score':routing_gate_v072.get('score'),'routing_v073_development_score':routing_gate_v073_dev.get('score'),'routing_v073_fresh_score':routing_gate_v073.get('score'),'context_benchmark_score':context_gate.get('score'),'context_mean_selection_ratio':context_gate.get('mean_selection_ratio'),'scope_boundary_score':scope_gate.get('score'),'scope_boundary_cases':scope_gate.get('cases'),'real_world_benchmark_score':real_world_gate.get('score'),'real_world_context_selection_ratio':real_world_gate.get('mean_context_selection_ratio'),'checks':['TOML','role catalogue and dependencies','generated parity','no plugin artifacts','basic secret/private-path scan','release hashes','relative documentation links','resource identities/roles/methods','role contracts','routing holdout regression gate','v0.7.2 routing regression gate','v0.7.3 development routing regression gate','v0.7.3 frozen fresh routing holdout gate','routing semantic freeze gate','context efficiency gate','exact-scope privacy boundary gate','v0.7.3 120-scenario real-world regression gate','behavioral simulation gate','delegation benchmark gate','hybrid-memory contracts','integration adapter benchmark gate','privacy/PII release gate','capability/permission/adapter/workflow contracts','execution policy benchmark gate','Goal Graph contract','ACO 0.8 autonomy benchmark gate'],
+            'execution_benchmark_score':execution_gate.get('score'),'autonomy_benchmark_score':autonomy_gate.get('score'),'autonomy_benchmark_cases':autonomy_gate.get('cases'),'limitations':'Static/local checks; no professional-quality certification and no live external adapter/provider action is executed by validation.'}

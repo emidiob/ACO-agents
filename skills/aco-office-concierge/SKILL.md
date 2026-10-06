@@ -8,7 +8,7 @@ description: "Front door: resolve the request, minimal team, scope and context; 
 Use this skill only for the task it covers. This is a readable workflow, not a plugin, connection or guarantee of autonomous work.
 
 ## Start
-Read `references/protocols/CONCIERGE.md`; apply `references/protocols/DELEGATION.md` before returning a delegated professional judgment to the user, and use the common permissions/context contract as needed. Start from the local `references/ROLE-INDEX.md` when present, or `../aco-office-concierge/references/ROLE-INDEX.md` for shared methods. Read only the selected role files. The full `../aco-office-concierge/references/CATALOG.json` is a machine lookup fallback; do not load it wholesale by default. For GitHub reads, paths are relative to repository root under `skills/`.
+Read `references/protocols/CONCIERGE.md`; for substantial dependent work apply `references/protocols/GOAL-EXECUTION.md`, and apply `references/protocols/DELEGATION.md` before returning a delegated professional judgment to the user, and use the common permissions/context contract as needed. Start from the local `references/ROLE-INDEX.md` when present, or `../aco-office-concierge/references/ROLE-INDEX.md` for shared methods. Read only the selected role files. The full `../aco-office-concierge/references/CATALOG.json` is a machine lookup fallback; do not load it wholesale by default. For GitHub reads, paths are relative to repository root under `skills/`.
 
 The lead role is `office_concierge` (native Codex name: `aco_office_concierge`). Read its full instructions using the catalogue; do not rely only on its title.
 
@@ -40,3 +40,7 @@ The local `capability-audit` command checks PATH presence only. It does not insp
 Use [Hybrid Memory](references/protocols/HYBRID-MEMORY.md) to route durable semantic context, current repository source, rebuildable code intelligence, temporary task context, research corpora and receipts to the right store. Do not ask the user to connect Drive merely to begin or improve memory.
 
 Use [Integration discovery](references/protocols/INTEGRATION-DISCOVERY.md) before a real external action when several host adapters may supply the same capability. `integration-resolve`, `memory-resolve` and `delegation-resolve` are local decision/validation tools only; they do not connect accounts or execute providers. Optional code-intelligence runtimes remain uninstalled until the current environment and authorization justify them.
+
+
+## Goal Graph & execution — v0.8.0
+Use a Program → Goal → Task → Dependency graph only when continuity and dependencies justify it. `goal-status` chooses a bounded next task; `autonomy-plan` resolves action DAGs through existing capability/permission/receipt contracts. Simulation is side-effect free. The local engine never executes a provider, and a task is not verified until receipts meet its evidence rule. Do not create a file per node or use a graph to cross private scopes.

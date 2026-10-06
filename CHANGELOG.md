@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.8.0
+
+- Add a scoped Goal Graph with `Program → Goal → Task → Dependency`, structural/cycle validation, explicit state transitions and deterministic next-best-action ranking.
+- Add an Autonomy Engine that selects bounded graph work and resolves task action DAGs through existing capability, permission, approval and receipt contracts without calling providers itself.
+- Add `SIMULATE` and `HOST_EXECUTION` modes, exact approval propagation, receipt-based verification, unknown-outcome reconciliation and bounded idempotent retry/fallback decisions.
+- Keep action dependencies locked until predecessor receipt evidence is sufficient; professional/model tasks remain distinct from host capability actions.
+- Add `goal-check`, `goal-status`, `goal-transition`, `autonomy-plan` and a 29-case deterministic autonomy benchmark gated at 100/100 with zero critical failures.
+- Preserve the frozen v0.7.3 routing holdout byte-for-byte and retain all prior routing, context, memory, integration, execution, privacy and behavioral regression gates.
+- Keep 363 roles, 16 skills, 61 workflows, 99 optional resources and the proprietary LICENSE unchanged.
+
 ## 0.7.3
 
 - Harden cross-scope private context so foreign sources require an exact `scope_id` match in `authorized_private_scope_ids`; reject wildcard/global authorization and keep unknown private scope blocked.

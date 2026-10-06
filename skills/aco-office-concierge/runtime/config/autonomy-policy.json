@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.8.0",
+  "modes": ["SIMULATE", "HOST_EXECUTION"],
+  "decision_classes": {
+    "autonomous_in_scope": "May be prepared for host execution when existing capability and permission policy already allow it.",
+    "human_approval": "Exact packet-bound approval is required before the host may act.",
+    "reconciliation_gate": "Unknown or in-flight outcomes must be reconciled before retry.",
+    "verification_gate": "Completion requires evidence sufficient for the declared verification rule.",
+    "recovery_gate": "Failed actions use bounded retry/fallback rules and never blind retry."
+  },
+  "default_retry": {
+    "max_attempts": 1,
+    "retry_on": ["failed"],
+    "requires_idempotency_key": true
+  },
+  "selection": {
+    "default_max_tasks": 1,
+    "maximum_tasks": 5,
+    "policy": "Prefer continuation of in-progress work, then approval/verification gates, then highest-scoring ready task."
+  },
+  "policy": "The autonomy layer chooses bounded next work. It does not create permissions, execute providers itself, or convert an attempted action into a verified outcome without receipt evidence."
+}

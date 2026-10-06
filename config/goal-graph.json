@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.8.0",
+  "node_kinds": ["program", "goal", "task", "dependency"],
+  "states": ["proposed", "active", "ready", "blocked", "in_progress", "awaiting_approval", "executed", "verified", "done", "cancelled"],
+  "parent_kinds": {
+    "program": [],
+    "goal": ["program"],
+    "task": ["goal"],
+    "dependency": ["goal", "task"]
+  },
+  "satisfied_dependency_states": ["verified", "done"],
+  "terminal_states": ["done", "cancelled"],
+  "transitions": {
+    "proposed": ["active", "cancelled"],
+    "active": ["ready", "blocked", "in_progress", "cancelled"],
+    "ready": ["in_progress", "awaiting_approval", "blocked", "cancelled"],
+    "blocked": ["ready", "active", "cancelled"],
+    "in_progress": ["awaiting_approval", "executed", "blocked", "cancelled"],
+    "awaiting_approval": ["in_progress", "blocked", "cancelled"],
+    "executed": ["verified", "blocked"],
+    "verified": ["done"],
+    "done": [],
+    "cancelled": []
+  },
+  "policy": "Programs express long-horizon intent; goals express outcomes; tasks express actionable work; dependencies express blockers. Graph state never grants access or approval."
+}

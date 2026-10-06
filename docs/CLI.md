@@ -1,4 +1,4 @@
-# ACO CLI — v0.6.2
+# ACO CLI — v0.8.0
 
 Python 3.11+, macOS/Linux or Windows through WSL. Run `python3 scripts/aco_cli.py COMMAND --help`. Outputs are JSON. Keep private inputs outside the ACO source checkout. Source commands and installed minimal runtime are distinct; install/migrate/generate/validate need the full release.
 
@@ -112,3 +112,18 @@ python3 scripts/aco_cli.py route-benchmark --input config/routing-v073-holdout-5
 ```
 
 These commands are deterministic and side-effect free. `context-plan` plans only; it does not retrieve files or connect Drive.
+
+
+## Goal Graph & Autonomy Engine — v0.8.0
+
+These commands are deterministic local planners/validators. They do not persist a graph or invoke a provider.
+
+```bash
+python3 scripts/aco_cli.py goal-check --input examples/goals/artist-program.json
+python3 scripts/aco_cli.py goal-status --input examples/goals/artist-program.json --as-of 2026-10-06T00:00:00+00:00
+python3 scripts/aco_cli.py goal-transition --graph graph.json --event transition.json
+python3 scripts/aco_cli.py autonomy-plan --input examples/goals/artist-program-simulation.json
+python3 scripts/aco_cli.py autonomy-benchmark --input config/autonomy-benchmark.json
+```
+
+`goal-status` returns progress, blockers and a deterministic next-task ranking. `goal-transition` returns an updated graph in stdout; it does not save it. `autonomy-plan` uses the existing capability, permission and receipt contracts to return simulation, approval, host-action, reconciliation, recovery or verification states. `SIMULATE` never emits a host action; `HOST_EXECUTION` still requires the real host to perform the action and return evidence. See [GOAL-GRAPH.md](GOAL-GRAPH.md).

@@ -1,6 +1,6 @@
 # ACO — ChatGPT entry point
 
-Version 0.7.1. This is a public skill library, not an installed plugin or a source of access permissions.
+Version 0.8.0. This is a public skill library, not an installed plugin or a source of access permissions.
 
 Read `skills/aco-office-concierge/SKILL.md`, its `references/protocols/CONCIERGE.md`, and the needed portion of `ACO-INDEX.md`; use `catalog.json` only as a path lookup fallback. Select the smallest relevant office and read its SKILL.md plus exact role methods. Pin a repository revision when possible and record it in the private session.
 
@@ -30,3 +30,6 @@ Use the task-specific method links in the selected role/office, not every method
 ## Execution boundary — 0.7.1
 
 Resolve real actions through the shared `EXECUTION.md` protocol. A role or optional resource does not prove a tool is connected. External sends, publications, applications, deployments, deletions, purchases, signatures and access changes require the exact available capability plus scoped approval where defined. Preserve actual receipts and reconcile unknown outcomes before retrying.
+
+## Goal Graph and autonomous continuation — 0.8.0
+For substantial dependent work, read `skills/aco-office-concierge/references/protocols/GOAL-EXECUTION.md`. Keep simple requests direct. A Program/Goal graph is scoped intent, not permission or a second memory vault. Select a bounded next task, preserve dependencies, use `SIMULATE` when previewing consequential flows, and never call an external action “done” until the host returns sufficient receipt evidence. Unknown outcomes are reconciled before retry; consequential approvals remain bound to the exact final packet.

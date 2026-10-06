@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "0.7.3",
+  "aco_version": "0.8.0",
   "name": "ACO v0.7.2 120-scenario real-world regression benchmark",
   "purpose": "Package-authored deterministic scenarios spanning routing, scoped context retrieval and hybrid memory. This is a regression benchmark, not independent human evaluation or live-provider proof.",
   "composition": {

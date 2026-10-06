@@ -15,3 +15,7 @@ Use the task-specific method links in the selected role/office, not every method
 ## Execution boundary — 0.7.1
 
 Resolve real actions through the shared `EXECUTION.md` protocol. A role or optional resource does not prove a tool is connected. External sends, publications, applications, deployments, deletions, purchases, signatures and access changes require the exact available capability plus scoped approval where defined. Preserve actual receipts and reconcile unknown outcomes before retrying.
+
+
+## Goal Graph and autonomous continuation — 0.8.0
+For multi-step outcomes with real dependencies, use `GOAL-EXECUTION.md`. Separate long-horizon Programs, outcome Goals, bounded Tasks and external Dependencies. Continue in-progress work where sensible, otherwise choose the highest-value ready task without bypassing the user's current instruction. Host actions remain subject to `EXECUTION.md`; unknown outcomes require reconciliation and completion requires receipt evidence. Keep simple work simple and keep graphs inside the existing private scope.
