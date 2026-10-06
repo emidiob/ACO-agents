@@ -1,7 +1,10 @@
 {
   "schema_version": 1,
-  "aco_version": "0.8.0",
-  "modes": ["SIMULATE", "HOST_EXECUTION"],
+  "aco_version": "0.9.0",
+  "modes": [
+    "SIMULATE",
+    "HOST_EXECUTION"
+  ],
   "decision_classes": {
     "autonomous_in_scope": "May be prepared for host execution when existing capability and permission policy already allow it.",
     "human_approval": "Exact packet-bound approval is required before the host may act.",
@@ -11,7 +14,9 @@
   },
   "default_retry": {
     "max_attempts": 1,
-    "retry_on": ["failed"],
+    "retry_on": [
+      "failed"
+    ],
     "requires_idempotency_key": true
   },
   "selection": {

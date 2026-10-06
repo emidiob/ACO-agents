@@ -116,7 +116,7 @@ def outputs():
     base='skills/aco-office-concierge/runtime/'
     out[base+'VERSION']=(R/'VERSION').read_bytes()
     out[base+'RUNTIME-ONLY']=b'Local compact knowledge, optional resource selection and checks only. Use the full source release for install, migrate and validate. Legacy event storage is explicit opt-in.\n'
-    for name in ('aco_cli.py','aco/__init__.py','aco/common.py','aco/memory.py','aco/drive.py','aco/cli.py','aco/planning.py','aco/production.py','aco/finance.py','aco/specialist.py','aco/compact.py','aco/resources.py','aco/tidy.py','aco/canonical_sync.py','aco/readiness.py','aco/harness.py','aco/routing.py','aco/quality.py','aco/execution.py','aco/delegation.py','aco/hybrid.py','aco/context.py','aco/scope.py','aco/efficiency.py','aco/integrations.py','aco/privacy.py','aco/goals.py','aco/autonomy.py'):
+    for name in ('aco_cli.py','aco/__init__.py','aco/common.py','aco/memory.py','aco/drive.py','aco/cli.py','aco/planning.py','aco/production.py','aco/finance.py','aco/specialist.py','aco/compact.py','aco/resources.py','aco/tidy.py','aco/canonical_sync.py','aco/readiness.py','aco/harness.py','aco/routing.py','aco/quality.py','aco/execution.py','aco/delegation.py','aco/hybrid.py','aco/context.py','aco/scope.py','aco/efficiency.py','aco/integrations.py','aco/privacy.py','aco/goals.py','aco/autonomy.py','aco/adaptive.py'):
         out[base+'scripts/'+name]=(R/'scripts'/name).read_bytes()
     for p in (R/'assets/context-templates').glob('*.md'):
         out[base+'assets/context-templates/'+p.name]=p.read_bytes()
@@ -138,7 +138,7 @@ def outputs():
     out[base+'config/real-world-benchmark-v072.json']=(R/'config/real-world-benchmark-v072.json').read_bytes()
     out[base+'config/real-world-benchmark-v073.json']=(R/'config/real-world-benchmark-v073.json').read_bytes()
     out[base+'config/role-contracts.json']=out['config/role-contracts.json']
-    for name in ('capabilities.json','permission-policy.json','adapter-contract.json','workflow-states.json','execution-benchmark.json','memory-classes.json','integration-adapters.json','delegation-benchmark.json','privacy-policy.json','integration-benchmark.json','goal-graph.json','autonomy-policy.json','autonomy-benchmark.json'):
+    for name in ('capabilities.json','permission-policy.json','adapter-contract.json','workflow-states.json','execution-benchmark.json','memory-classes.json','integration-adapters.json','delegation-benchmark.json','privacy-policy.json','integration-benchmark.json','goal-graph.json','autonomy-policy.json','autonomy-benchmark.json','adaptive-policy.json','adaptive-benchmark.json','adaptive-v090-holdout.json'):
         out[base+'config/'+name]=(R/'config'/name).read_bytes()
     # One canonical JSON; generated compact browsing cards avoid loading all entries.
     rbase='skills/aco-office-concierge/references/resources/'

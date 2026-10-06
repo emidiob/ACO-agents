@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.9.0",
+  "disposition": "final_fresh_release_gate",
+  "holdout_sha256": "9d4604a52a766d24b73608f2647003b3423ca00556f41adc0e68cb9ebb0a60fe",
+  "first_execution": {
+    "status": "passed",
+    "aco_version": "0.9.0",
+    "cases": 27,
+    "passed": 27,
+    "score": 100.0,
+    "critical_failures": 0,
+    "rows": [
+      {
+        "id": "fresh-feedback-valid",
+        "operation": "feedback_check",
+        "passed": true,
+        "critical": true,
+        "error": null
+      },
+      {
+        "id": "fresh-feedback-unsupported-signal",
+        "operation": "feedback_check",
+        "passed": true,
+        "critical": true,
+        "error": null
+      },
+      {
+        "id": "fresh-feedback-nested-scratchpad",
+        "operation": "feedback_check",
+        "passed": true,
+        "critical": true,
+        "error": null
+      },
+      {
+        "id": "fresh-feedback-bool-weight",
+        "operation": "feedback_check",
+        "passed": true,
+        "critical": false,
+        "error": null
+      },
+      {
+        "id": "fresh-feedback-outcome-evidence",
+        "operation": "feedback_check",
+        "passed": true,
+        "critical": true,
+        "error": null
+      },
+      {
+        "id": "fresh-ledger-wrong-ledger-hash",
+        "operation": "ledger_check",
+        "passed": true,
+        "critical": true,
+        "error": null
+      },
+      {
+        "id": "fresh-ledger-missing-record-hash",
+        "operation": "ledger_check",
+        "passed": true,
+        "critical": true,
+        "error": null
+      },
+      {
+        "id": "fresh-ledger-broken-previous",
+        "operation": "ledger_check",
+        "passed": true,
+        "critical": true,
+        "error": null
+      },
+      {
+        "id": "fresh-ledger-cross-scope",
+        "operation": "ledger_check",
+        "passed": true,
+        "critical": true,
+        "error": null
+      },
+      {
+        "id": "fresh-proposal-same-source-insufficient",
+        "operation": "adaptation_propose",
+        "passed": true,
+        "critical": true,
+        "error": null
+      },
+      {
+        "id": "fresh-proposal-targets-not-mixed",
+        "operation": "adaptation_propose",
+        "passed": true,
+        "critical": true,
+        "error": null
+      },
+      {
+        "id": "fresh-proposal-preference-valid",
+        "operation": "adaptation_propose",
+        "passed": true,
+        "critical": true,
+        "error": null
+      },
+      {
+        "id": "fresh-ranking-same-source-insufficient",
+        "operation": "adaptation_propose",
+        "passed": true,
+        "critical": true,
+        "error": null
+      },
+      {
+        "id": "fresh-ranking-low-consensus",
+        "operation": "adaptation_propose",
+        "passed": true,
+        "critical": true,
+        "error": null
+      },
+      {
+        "id": "fresh-ranking-strong-consensus",
+        "operation": "adaptation_propose",
+        "passed": true,
+        "critical": true,
+        "error": null
+      },
+      {
+        "id": "fresh-ranking-delta-cap",
+        "operation": "adaptation_propose",
+        "passed": true,
+        "critical": false,
+        "error": null
+      },
+      {
+        "id": "fresh-context-no-auto-policy",
+        "operation": "adaptation_propose",
+        "passed": true,
+        "critical": true,
+        "error": null
+      },
+      {
+        "id": "fresh-autonomy-no-auto-policy",
+        "operation": "adaptation_propose",
+        "passed": true,
+        "critical": true,
+        "error": null
+      },
+      {
+        "id": "fresh-shadow-unrelated-target",
+        "operation": "shadow_rank",
+        "passed": true,
+        "critical": true,
+        "error": null
+      },
+      {
+        "id": "fresh-shadow-exact-graph-target",
+        "operation": "shadow_rank",
+        "passed": true,
+        "critical": true,
+        "error": null
+      },
+      {
+        "id": "fresh-shadow-invalid-feature-shape",
+        "operation": "shadow_rank",
+        "passed": true,
+        "critical": true,
+        "error": "t-cont: adaptive_features must be a string list"
+      },
+      {
+        "id": "fresh-promotion-valid",
+        "operation": "promotion_check",
+        "passed": true,
+        "critical": true,
+        "error": null
+      },
+      {
+        "id": "fresh-promotion-score-type",
+        "operation": "promotion_check",
+        "passed": true,
+        "critical": true,
+        "error": null
+      },
+      {
+        "id": "fresh-promotion-missing-approval-ref",
+        "operation": "promotion_check",
+        "passed": true,
+        "critical": true,
+        "error": null
+      },
+      {
+        "id": "fresh-promotion-wrong-benchmark-hash",
+        "operation": "promotion_check",
+        "passed": true,
+        "critical": true,
+        "error": null
+      },
+      {
+        "id": "fresh-promotion-state-not-shadow",
+        "operation": "promotion_check",
+        "passed": true,
+        "critical": true,
+        "error": null
+      },
+      {
+        "id": "fresh-promotion-missing-rollback",
+        "operation": "promotion_check",
+        "passed": true,
+        "critical": true,
+        "error": null
+      }
+    ],
+    "policy": "This benchmark is deterministic and local. It does not prove external model learning quality or execute any provider action."
+  }
+}

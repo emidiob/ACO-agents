@@ -101,6 +101,22 @@ def main() -> None:
     q = sub.add_parser('autonomy-benchmark', help='Run deterministic Goal Graph + Autonomy Engine conformance cases')
     q.add_argument('--input', type=Path)
     q.add_argument('--root', type=Path)
+    q = sub.add_parser('feedback-check', help='Validate one structured adaptive feedback record; no persistence or learning')
+    q.add_argument('--input', type=Path, required=True)
+    q = sub.add_parser('feedback-ledger-check', help='Validate a scope-bound append-only feedback ledger hash chain')
+    q.add_argument('--input', type=Path, required=True)
+    q = sub.add_parser('feedback-append', help='Return a ledger with one validated feedback record appended; never persists it')
+    q.add_argument('--ledger', type=Path, required=True)
+    q.add_argument('--record', type=Path, required=True)
+    q = sub.add_parser('adaptation-propose', help='Derive bounded shadow-only candidates from repeated scoped feedback')
+    q.add_argument('--input', type=Path, required=True)
+    q = sub.add_parser('shadow-rank', help='Compare base Goal Graph ranking with shadow adaptive candidates; never mutates production state')
+    q.add_argument('--input', type=Path, required=True)
+    q = sub.add_parser('promotion-check', help='Check exact-hash benchmark and approval evidence for candidate promotion eligibility; never activates it')
+    q.add_argument('--input', type=Path, required=True)
+    q = sub.add_parser('adaptive-benchmark', help='Run deterministic ACO 0.9 feedback/adaptation/promotion safety cases')
+    q.add_argument('--input', type=Path)
+    q.add_argument('--root', type=Path)
     for verb in ('practice-check', 'opportunity-check', 'brand-check', 'social-check'):
         q = sub.add_parser(verb, help='Offline studio readiness check, no writes or external actions')
         q.add_argument('--input', type=Path, required=True)
@@ -308,6 +324,22 @@ def main() -> None:
                 result = autonomy_plan(read_json(a.input))
             else:
                 result = autonomy_benchmark(a.input, a.root)
+        elif a.command in ('feedback-check','feedback-ledger-check','feedback-append','adaptation-propose','shadow-rank','promotion-check','adaptive-benchmark'):
+            from .adaptive import feedback_record_check, feedback_ledger_check, feedback_append, adaptation_propose, shadow_rank, promotion_check, adaptive_benchmark
+            if a.command == 'feedback-check':
+                result = feedback_record_check(read_json(a.input))
+            elif a.command == 'feedback-ledger-check':
+                result = feedback_ledger_check(read_json(a.input))
+            elif a.command == 'feedback-append':
+                result = feedback_append(read_json(a.ledger), read_json(a.record))
+            elif a.command == 'adaptation-propose':
+                result = adaptation_propose(read_json(a.input))
+            elif a.command == 'shadow-rank':
+                result = shadow_rank(read_json(a.input))
+            elif a.command == 'promotion-check':
+                result = promotion_check(read_json(a.input))
+            else:
+                result = adaptive_benchmark(a.input, a.root)
         elif a.command in ('practice-check', 'opportunity-check', 'brand-check', 'social-check'):
             from .readiness import practice_check, opportunity_check, brand_check, social_check, _dt
             fn = {'practice-check': practice_check, 'opportunity-check': opportunity_check, 'brand-check': brand_check, 'social-check': social_check}[a.command]

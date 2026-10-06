@@ -187,3 +187,22 @@ Program (long-horizon direction)
 The graph is same-scope by construction. Next-best-action ranking is deterministic and advisory. Action dependencies unlock only after predecessor evidence, not after planning. Consequential actions retain exact packet-bound approvals from 0.7; uncertain receipts retain the no-blind-retry rule. Simulation and host-execution planning share the same policy, but only the host can perform an external action.
 
 This layer is intentionally not a background scheduler, a second memory vault or a chain-of-thought log. Persistent graphs are optional scoped state and must follow Compact/Hybrid Memory.
+
+
+## Adaptive shadow-learning layer — 0.9.0
+
+ACO 0.9 adds a learning/evaluation loop **beside** the production path rather than inside its permissions or router:
+
+```text
+explicit correction / observed outcome
+  → scope-bound structured feedback
+  → append-only hash-chained ledger
+  → evidence threshold + consensus
+  → shadow-only candidate
+  → base-vs-shadow comparison
+  → frozen benchmark + historical regressions
+  → exact-hash explicit promotion review
+  → separate versioned maintainer change (outside the adaptive engine)
+```
+
+The adaptive layer cannot grant access, weaken approval, expose another private scope or mark external work complete. In 0.9 it may propose scoped output preferences and bounded Goal Graph feature deltas only. Production remains the deterministic 0.8 Goal Graph + Autonomy stack until a separate release changes it. See [Adaptive ACO](ADAPTIVE-ACO.md) and the [adaptive feedback protocol](../skills/aco-office-concierge/references/protocols/ADAPTIVE-FEEDBACK.md).

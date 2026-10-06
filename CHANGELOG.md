@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.9.0
+
+- Add scope-bound structured feedback records and append-only SHA-256 feedback ledgers; reject hidden-reasoning/scratchpad fields.
+- Add deterministic candidate proposal from repeated evidence with minimum support/consensus; one-off corrections cannot become policy.
+- Add bounded `ranking_feature_delta` and scoped output-preference candidates in `shadow_only` state.
+- Add `shadow-rank` to compare adaptive ranking with the unchanged 0.8 Goal Graph score; the graph and production ranking are never mutated.
+- Add exact-hash `promotion-check` requiring frozen benchmark evidence, historical regressions, explicit approval and rollback reference; the check never activates a candidate.
+- Add Adaptive ACO CLI commands, runtime packaging, deterministic 32-case development benchmark, tests and release validation gate.
+- Preserve the 363-role catalogue, 16 entry skills, 61 workflows and all 0.7/0.8 routing, privacy, execution and autonomy contracts.
+
 ## 0.8.0
 
 - Add a scoped Goal Graph with `Program → Goal → Task → Dependency`, structural/cycle validation, explicit state transitions and deterministic next-best-action ranking.

@@ -1,0 +1,1654 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.9.0",
+  "description": "Frozen fresh ACO 0.9 adaptive safety holdout. Not used to tune the candidate before first execution.",
+  "gate": {
+    "minimum_score": 100.0,
+    "maximum_critical_failures": 0
+  },
+  "cases": [
+    {
+      "id": "fresh-feedback-valid",
+      "operation": "feedback_check",
+      "input": {
+        "schema_version": 1,
+        "feedback_id": "hp-1-chat-style-brief",
+        "scope_id": "holdout-scope",
+        "target_type": "output_preference",
+        "target_id": "chat-style",
+        "signal": "preferred",
+        "source_ref": "holdout-correction:1",
+        "preference": {
+          "key": "verbosity",
+          "value": "brief"
+        }
+      },
+      "expected": {
+        "status": "valid"
+      },
+      "critical": true
+    },
+    {
+      "id": "fresh-feedback-unsupported-signal",
+      "operation": "feedback_check",
+      "input": {
+        "schema_version": 1,
+        "feedback_id": "h-unsupported",
+        "scope_id": "holdout-scope",
+        "target_type": "output_preference",
+        "target_id": "chat-style",
+        "signal": "maybe",
+        "source_ref": "holdout-correction:1",
+        "preference": {
+          "key": "verbosity",
+          "value": "brief"
+        }
+      },
+      "expected": {
+        "status": "invalid"
+      },
+      "critical": true
+    },
+    {
+      "id": "fresh-feedback-nested-scratchpad",
+      "operation": "feedback_check",
+      "input": {
+        "schema_version": 1,
+        "feedback_id": "h-nested",
+        "scope_id": "holdout-scope",
+        "target_type": "output_preference",
+        "target_id": "chat-style",
+        "signal": "preferred",
+        "source_ref": "holdout-correction:1",
+        "preference": {
+          "key": "verbosity",
+          "value": "brief"
+        },
+        "metadata": {
+          "review": {
+            "scratchpad": "forbidden"
+          }
+        }
+      },
+      "expected": {
+        "status": "invalid"
+      },
+      "critical": true
+    },
+    {
+      "id": "fresh-feedback-bool-weight",
+      "operation": "feedback_check",
+      "input": {
+        "schema_version": 1,
+        "feedback_id": "h-bool-weight",
+        "scope_id": "holdout-scope",
+        "target_type": "output_preference",
+        "target_id": "chat-style",
+        "signal": "preferred",
+        "source_ref": "holdout-correction:1",
+        "preference": {
+          "key": "verbosity",
+          "value": "brief"
+        },
+        "weight": true
+      },
+      "expected": {
+        "status": "invalid"
+      },
+      "critical": false
+    },
+    {
+      "id": "fresh-feedback-outcome-evidence",
+      "operation": "feedback_check",
+      "input": {
+        "schema_version": 1,
+        "feedback_id": "h-failure-no-evidence",
+        "scope_id": "holdout-scope",
+        "target_type": "autonomy",
+        "target_id": "recovery",
+        "signal": "outcome_failure",
+        "source_ref": "holdout-failure"
+      },
+      "expected": {
+        "status": "invalid"
+      },
+      "critical": true
+    },
+    {
+      "id": "fresh-ledger-wrong-ledger-hash",
+      "operation": "ledger_check",
+      "input": {
+        "schema_version": 1,
+        "ledger_id": "chain",
+        "scope_id": "holdout-scope",
+        "records": [
+          {
+            "schema_version": 1,
+            "feedback_id": "hp-90-chat-style-brief",
+            "scope_id": "holdout-scope",
+            "target_type": "output_preference",
+            "target_id": "chat-style",
+            "signal": "preferred",
+            "source_ref": "holdout-correction:90",
+            "preference": {
+              "key": "verbosity",
+              "value": "brief"
+            },
+            "previous_sha256": null,
+            "record_sha256": "62d9beac323a42cb6a141236fc824e41cf8a8700547a2c1fd1d503ec5cca1345"
+          },
+          {
+            "schema_version": 1,
+            "feedback_id": "hp-91-chat-style-brief",
+            "scope_id": "holdout-scope",
+            "target_type": "output_preference",
+            "target_id": "chat-style",
+            "signal": "preferred",
+            "source_ref": "holdout-correction:91",
+            "preference": {
+              "key": "verbosity",
+              "value": "brief"
+            },
+            "previous_sha256": "62d9beac323a42cb6a141236fc824e41cf8a8700547a2c1fd1d503ec5cca1345",
+            "record_sha256": "bebc03eb3f85d7e9156abedc1fba900620c449df0db9ef17ab21cdd2a6f25af4"
+          },
+          {
+            "schema_version": 1,
+            "feedback_id": "hp-92-chat-style-brief",
+            "scope_id": "holdout-scope",
+            "target_type": "output_preference",
+            "target_id": "chat-style",
+            "signal": "preferred",
+            "source_ref": "holdout-correction:92",
+            "preference": {
+              "key": "verbosity",
+              "value": "brief"
+            },
+            "previous_sha256": "bebc03eb3f85d7e9156abedc1fba900620c449df0db9ef17ab21cdd2a6f25af4",
+            "record_sha256": "07ce1b22306c3755ed6f9125b4248ef4adf0f3c8542a112c8e264ce9aad13322"
+          }
+        ],
+        "ledger_sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+      },
+      "expected": {
+        "status": "invalid"
+      },
+      "critical": true
+    },
+    {
+      "id": "fresh-ledger-missing-record-hash",
+      "operation": "ledger_check",
+      "input": {
+        "schema_version": 1,
+        "ledger_id": "chain",
+        "scope_id": "holdout-scope",
+        "records": [
+          {
+            "schema_version": 1,
+            "feedback_id": "hp-90-chat-style-brief",
+            "scope_id": "holdout-scope",
+            "target_type": "output_preference",
+            "target_id": "chat-style",
+            "signal": "preferred",
+            "source_ref": "holdout-correction:90",
+            "preference": {
+              "key": "verbosity",
+              "value": "brief"
+            },
+            "previous_sha256": null,
+            "record_sha256": "62d9beac323a42cb6a141236fc824e41cf8a8700547a2c1fd1d503ec5cca1345"
+          },
+          {
+            "schema_version": 1,
+            "feedback_id": "hp-91-chat-style-brief",
+            "scope_id": "holdout-scope",
+            "target_type": "output_preference",
+            "target_id": "chat-style",
+            "signal": "preferred",
+            "source_ref": "holdout-correction:91",
+            "preference": {
+              "key": "verbosity",
+              "value": "brief"
+            },
+            "previous_sha256": "62d9beac323a42cb6a141236fc824e41cf8a8700547a2c1fd1d503ec5cca1345"
+          },
+          {
+            "schema_version": 1,
+            "feedback_id": "hp-92-chat-style-brief",
+            "scope_id": "holdout-scope",
+            "target_type": "output_preference",
+            "target_id": "chat-style",
+            "signal": "preferred",
+            "source_ref": "holdout-correction:92",
+            "preference": {
+              "key": "verbosity",
+              "value": "brief"
+            },
+            "previous_sha256": "bebc03eb3f85d7e9156abedc1fba900620c449df0db9ef17ab21cdd2a6f25af4",
+            "record_sha256": "07ce1b22306c3755ed6f9125b4248ef4adf0f3c8542a112c8e264ce9aad13322"
+          }
+        ],
+        "ledger_sha256": "e58ab0f47d97618689da1a11eccd234146bd9fd03c584050285ef76d12d8b083"
+      },
+      "expected": {
+        "status": "invalid"
+      },
+      "critical": true
+    },
+    {
+      "id": "fresh-ledger-broken-previous",
+      "operation": "ledger_check",
+      "input": {
+        "schema_version": 1,
+        "ledger_id": "chain",
+        "scope_id": "holdout-scope",
+        "records": [
+          {
+            "schema_version": 1,
+            "feedback_id": "hp-90-chat-style-brief",
+            "scope_id": "holdout-scope",
+            "target_type": "output_preference",
+            "target_id": "chat-style",
+            "signal": "preferred",
+            "source_ref": "holdout-correction:90",
+            "preference": {
+              "key": "verbosity",
+              "value": "brief"
+            },
+            "previous_sha256": null,
+            "record_sha256": "62d9beac323a42cb6a141236fc824e41cf8a8700547a2c1fd1d503ec5cca1345"
+          },
+          {
+            "schema_version": 1,
+            "feedback_id": "hp-91-chat-style-brief",
+            "scope_id": "holdout-scope",
+            "target_type": "output_preference",
+            "target_id": "chat-style",
+            "signal": "preferred",
+            "source_ref": "holdout-correction:91",
+            "preference": {
+              "key": "verbosity",
+              "value": "brief"
+            },
+            "previous_sha256": "62d9beac323a42cb6a141236fc824e41cf8a8700547a2c1fd1d503ec5cca1345",
+            "record_sha256": "bebc03eb3f85d7e9156abedc1fba900620c449df0db9ef17ab21cdd2a6f25af4"
+          },
+          {
+            "schema_version": 1,
+            "feedback_id": "hp-92-chat-style-brief",
+            "scope_id": "holdout-scope",
+            "target_type": "output_preference",
+            "target_id": "chat-style",
+            "signal": "preferred",
+            "source_ref": "holdout-correction:92",
+            "preference": {
+              "key": "verbosity",
+              "value": "brief"
+            },
+            "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+            "record_sha256": "07ce1b22306c3755ed6f9125b4248ef4adf0f3c8542a112c8e264ce9aad13322"
+          }
+        ],
+        "ledger_sha256": "e58ab0f47d97618689da1a11eccd234146bd9fd03c584050285ef76d12d8b083"
+      },
+      "expected": {
+        "status": "invalid"
+      },
+      "critical": true
+    },
+    {
+      "id": "fresh-ledger-cross-scope",
+      "operation": "ledger_check",
+      "input": {
+        "schema_version": 1,
+        "ledger_id": "chain",
+        "scope_id": "holdout-scope",
+        "records": [
+          {
+            "schema_version": 1,
+            "feedback_id": "hp-90-chat-style-brief",
+            "scope_id": "holdout-scope",
+            "target_type": "output_preference",
+            "target_id": "chat-style",
+            "signal": "preferred",
+            "source_ref": "holdout-correction:90",
+            "preference": {
+              "key": "verbosity",
+              "value": "brief"
+            },
+            "previous_sha256": null,
+            "record_sha256": "62d9beac323a42cb6a141236fc824e41cf8a8700547a2c1fd1d503ec5cca1345"
+          },
+          {
+            "schema_version": 1,
+            "feedback_id": "hp-91-chat-style-brief",
+            "scope_id": "holdout-scope",
+            "target_type": "output_preference",
+            "target_id": "chat-style",
+            "signal": "preferred",
+            "source_ref": "holdout-correction:91",
+            "preference": {
+              "key": "verbosity",
+              "value": "brief"
+            },
+            "previous_sha256": "62d9beac323a42cb6a141236fc824e41cf8a8700547a2c1fd1d503ec5cca1345",
+            "record_sha256": "bebc03eb3f85d7e9156abedc1fba900620c449df0db9ef17ab21cdd2a6f25af4"
+          },
+          {
+            "schema_version": 1,
+            "feedback_id": "hp-92-chat-style-brief",
+            "scope_id": "other-private-scope",
+            "target_type": "output_preference",
+            "target_id": "chat-style",
+            "signal": "preferred",
+            "source_ref": "holdout-correction:92",
+            "preference": {
+              "key": "verbosity",
+              "value": "brief"
+            },
+            "previous_sha256": "bebc03eb3f85d7e9156abedc1fba900620c449df0db9ef17ab21cdd2a6f25af4",
+            "record_sha256": "07ce1b22306c3755ed6f9125b4248ef4adf0f3c8542a112c8e264ce9aad13322"
+          }
+        ],
+        "ledger_sha256": "e58ab0f47d97618689da1a11eccd234146bd9fd03c584050285ef76d12d8b083"
+      },
+      "expected": {
+        "status": "invalid"
+      },
+      "critical": true
+    },
+    {
+      "id": "fresh-proposal-same-source-insufficient",
+      "operation": "adaptation_propose",
+      "input": {
+        "ledger": {
+          "schema_version": 1,
+          "ledger_id": "same-source-pref",
+          "scope_id": "holdout-scope",
+          "records": [
+            {
+              "schema_version": 1,
+              "feedback_id": "hp-1-chat-style-brief",
+              "scope_id": "holdout-scope",
+              "target_type": "output_preference",
+              "target_id": "chat-style",
+              "signal": "preferred",
+              "source_ref": "same-source",
+              "preference": {
+                "key": "verbosity",
+                "value": "brief"
+              },
+              "previous_sha256": null,
+              "record_sha256": "ba8cd75b463f98e5934160c48b1b292df524f8766bdb6852925c29df5e445a14"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hp-2-chat-style-brief",
+              "scope_id": "holdout-scope",
+              "target_type": "output_preference",
+              "target_id": "chat-style",
+              "signal": "preferred",
+              "source_ref": "same-source",
+              "preference": {
+                "key": "verbosity",
+                "value": "brief"
+              },
+              "previous_sha256": "ba8cd75b463f98e5934160c48b1b292df524f8766bdb6852925c29df5e445a14",
+              "record_sha256": "c8588d8ec449efe8dbb84a1937b51011f664f56b4168a3c794e241059bc4fb5b"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hp-3-chat-style-brief",
+              "scope_id": "holdout-scope",
+              "target_type": "output_preference",
+              "target_id": "chat-style",
+              "signal": "preferred",
+              "source_ref": "same-source",
+              "preference": {
+                "key": "verbosity",
+                "value": "brief"
+              },
+              "previous_sha256": "c8588d8ec449efe8dbb84a1937b51011f664f56b4168a3c794e241059bc4fb5b",
+              "record_sha256": "016859b1a66f0cde02341021a4ca66fc86f3544f0ca06e9d3389779ac09ae281"
+            }
+          ],
+          "ledger_sha256": "f0360b9e8ab09de7eb0b4a2ca8dc85bfbcff04fc33861c300f5034c122ec5ed1"
+        },
+        "baseline_ref": "base",
+        "rollback_ref": "rollback"
+      },
+      "expected": {
+        "status": "no_supported_adaptations",
+        "candidate_count": 0
+      },
+      "critical": true
+    },
+    {
+      "id": "fresh-proposal-targets-not-mixed",
+      "operation": "adaptation_propose",
+      "input": {
+        "ledger": {
+          "schema_version": 1,
+          "ledger_id": "target-split",
+          "scope_id": "holdout-scope",
+          "records": [
+            {
+              "schema_version": 1,
+              "feedback_id": "hp-10-email-style-brief",
+              "scope_id": "holdout-scope",
+              "target_type": "output_preference",
+              "target_id": "email-style",
+              "signal": "preferred",
+              "source_ref": "holdout-correction:10",
+              "preference": {
+                "key": "verbosity",
+                "value": "brief"
+              },
+              "previous_sha256": null,
+              "record_sha256": "ae981956a05c22f9e94252de3dd69445f7912be148677b6e379369c91b00902a"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hp-11-email-style-brief",
+              "scope_id": "holdout-scope",
+              "target_type": "output_preference",
+              "target_id": "email-style",
+              "signal": "preferred",
+              "source_ref": "holdout-correction:11",
+              "preference": {
+                "key": "verbosity",
+                "value": "brief"
+              },
+              "previous_sha256": "ae981956a05c22f9e94252de3dd69445f7912be148677b6e379369c91b00902a",
+              "record_sha256": "935d5118f13c88ea5401c3137dc9c8101fc12e9f1dec66f013bfe1b23e976b0b"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hp-12-report-style-brief",
+              "scope_id": "holdout-scope",
+              "target_type": "output_preference",
+              "target_id": "report-style",
+              "signal": "preferred",
+              "source_ref": "holdout-correction:12",
+              "preference": {
+                "key": "verbosity",
+                "value": "brief"
+              },
+              "previous_sha256": "935d5118f13c88ea5401c3137dc9c8101fc12e9f1dec66f013bfe1b23e976b0b",
+              "record_sha256": "3ee59adb5a89120063f970156e216043caf35dedcc6072f3eb4cdef9f1416ee6"
+            }
+          ],
+          "ledger_sha256": "15d0e08dc26cd382ed9c7e7b830e4b2e21bb1b005c48263dbfdf74ffa4637f67"
+        },
+        "baseline_ref": "base",
+        "rollback_ref": "rollback"
+      },
+      "expected": {
+        "status": "no_supported_adaptations",
+        "candidate_count": 0
+      },
+      "critical": true
+    },
+    {
+      "id": "fresh-proposal-preference-valid",
+      "operation": "adaptation_propose",
+      "input": {
+        "ledger": {
+          "schema_version": 1,
+          "ledger_id": "valid-pref",
+          "scope_id": "holdout-scope",
+          "records": [
+            {
+              "schema_version": 1,
+              "feedback_id": "hp-20-chat-style-brief",
+              "scope_id": "holdout-scope",
+              "target_type": "output_preference",
+              "target_id": "chat-style",
+              "signal": "preferred",
+              "source_ref": "holdout-correction:20",
+              "preference": {
+                "key": "verbosity",
+                "value": "brief"
+              },
+              "previous_sha256": null,
+              "record_sha256": "ce662166160cbcf0b51ac2b9c99a533c539843b5cddaf30ab10d7dc1a196c2b3"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hp-21-chat-style-brief",
+              "scope_id": "holdout-scope",
+              "target_type": "output_preference",
+              "target_id": "chat-style",
+              "signal": "preferred",
+              "source_ref": "holdout-correction:21",
+              "preference": {
+                "key": "verbosity",
+                "value": "brief"
+              },
+              "previous_sha256": "ce662166160cbcf0b51ac2b9c99a533c539843b5cddaf30ab10d7dc1a196c2b3",
+              "record_sha256": "eb840770df9da9e24ca223a435393d0120cce44c9e6c0aa4a0c6b5c8318a9973"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hp-22-chat-style-brief",
+              "scope_id": "holdout-scope",
+              "target_type": "output_preference",
+              "target_id": "chat-style",
+              "signal": "preferred",
+              "source_ref": "holdout-correction:22",
+              "preference": {
+                "key": "verbosity",
+                "value": "brief"
+              },
+              "previous_sha256": "eb840770df9da9e24ca223a435393d0120cce44c9e6c0aa4a0c6b5c8318a9973",
+              "record_sha256": "c572f2bd2cf58c32dc58da50986584b9b48cf829d15ad8d5a1ff5d57c0012372"
+            }
+          ],
+          "ledger_sha256": "37e7fca55fff9aba157bb369c76457efd5a40c8aa0e166c51927f74d0429a2ac"
+        },
+        "baseline_ref": "base",
+        "rollback_ref": "rollback"
+      },
+      "expected": {
+        "status": "proposals_ready",
+        "candidate_count": 1
+      },
+      "critical": true
+    },
+    {
+      "id": "fresh-ranking-same-source-insufficient",
+      "operation": "adaptation_propose",
+      "input": {
+        "ledger": {
+          "schema_version": 1,
+          "ledger_id": "same-source-rank",
+          "scope_id": "holdout-scope",
+          "records": [
+            {
+              "schema_version": 1,
+              "feedback_id": "hr-30-next-best-action-prefer",
+              "scope_id": "holdout-scope",
+              "target_type": "goal_ranking",
+              "target_id": "next-best-action",
+              "signal": "outcome_success",
+              "source_ref": "same-rank",
+              "ranking": {
+                "feature": "continuation_value",
+                "direction": "prefer"
+              },
+              "evidence_ref": "holdout-receipt:30",
+              "previous_sha256": null,
+              "record_sha256": "660f9e27231a9065407e94d77d242e025ac0554a91988f1c60c8e3ab54ed6904"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hr-31-next-best-action-prefer",
+              "scope_id": "holdout-scope",
+              "target_type": "goal_ranking",
+              "target_id": "next-best-action",
+              "signal": "outcome_success",
+              "source_ref": "same-rank",
+              "ranking": {
+                "feature": "continuation_value",
+                "direction": "prefer"
+              },
+              "evidence_ref": "holdout-receipt:31",
+              "previous_sha256": "660f9e27231a9065407e94d77d242e025ac0554a91988f1c60c8e3ab54ed6904",
+              "record_sha256": "fd8c92af644b11eee910a6ae6a4fb57535ca4da444c51e7c64443c8f3213085e"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hr-32-next-best-action-prefer",
+              "scope_id": "holdout-scope",
+              "target_type": "goal_ranking",
+              "target_id": "next-best-action",
+              "signal": "outcome_success",
+              "source_ref": "same-rank",
+              "ranking": {
+                "feature": "continuation_value",
+                "direction": "prefer"
+              },
+              "evidence_ref": "holdout-receipt:32",
+              "previous_sha256": "fd8c92af644b11eee910a6ae6a4fb57535ca4da444c51e7c64443c8f3213085e",
+              "record_sha256": "4a24634ddce0241c8c2fec0d4c29570862e234f4075f3bad8af4cdbc4023e652"
+            }
+          ],
+          "ledger_sha256": "d47521b5d88dcff00be2a3fd696e7c9b0bb1c65fa90569aa7a4cbddd6ac763bb"
+        },
+        "baseline_ref": "base",
+        "rollback_ref": "rollback"
+      },
+      "expected": {
+        "status": "no_supported_adaptations",
+        "candidate_count": 0
+      },
+      "critical": true
+    },
+    {
+      "id": "fresh-ranking-low-consensus",
+      "operation": "adaptation_propose",
+      "input": {
+        "ledger": {
+          "schema_version": 1,
+          "ledger_id": "low-consensus",
+          "scope_id": "holdout-scope",
+          "records": [
+            {
+              "schema_version": 1,
+              "feedback_id": "hr-40-next-best-action-prefer",
+              "scope_id": "holdout-scope",
+              "target_type": "goal_ranking",
+              "target_id": "next-best-action",
+              "signal": "outcome_success",
+              "source_ref": "holdout-run:40",
+              "ranking": {
+                "feature": "continuation_value",
+                "direction": "prefer"
+              },
+              "evidence_ref": "holdout-receipt:40",
+              "previous_sha256": null,
+              "record_sha256": "b9ff63cd534d1480676db5958410525e2f423dcede8423f46028da50ffbfaf29"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hr-41-next-best-action-prefer",
+              "scope_id": "holdout-scope",
+              "target_type": "goal_ranking",
+              "target_id": "next-best-action",
+              "signal": "outcome_success",
+              "source_ref": "holdout-run:41",
+              "ranking": {
+                "feature": "continuation_value",
+                "direction": "prefer"
+              },
+              "evidence_ref": "holdout-receipt:41",
+              "previous_sha256": "b9ff63cd534d1480676db5958410525e2f423dcede8423f46028da50ffbfaf29",
+              "record_sha256": "b85c82b38b49e8fdb057c819160a134bdedc23454333a4ba553f17405784f55f"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hr-42-next-best-action-prefer",
+              "scope_id": "holdout-scope",
+              "target_type": "goal_ranking",
+              "target_id": "next-best-action",
+              "signal": "outcome_success",
+              "source_ref": "holdout-run:42",
+              "ranking": {
+                "feature": "continuation_value",
+                "direction": "prefer"
+              },
+              "evidence_ref": "holdout-receipt:42",
+              "previous_sha256": "b85c82b38b49e8fdb057c819160a134bdedc23454333a4ba553f17405784f55f",
+              "record_sha256": "a05e20474ae7c980491c63cf60e81927ccf8691ecddbb6dd979acfbaae6bfd7c"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hr-43-next-best-action-avoid",
+              "scope_id": "holdout-scope",
+              "target_type": "goal_ranking",
+              "target_id": "next-best-action",
+              "signal": "corrected",
+              "source_ref": "holdout-run:43",
+              "ranking": {
+                "feature": "continuation_value",
+                "direction": "avoid"
+              },
+              "previous_sha256": "a05e20474ae7c980491c63cf60e81927ccf8691ecddbb6dd979acfbaae6bfd7c",
+              "record_sha256": "f3460ead722d46bfd53da373be49afe9a1e96806c6a10f7231c9165b4bd693f9"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hr-44-next-best-action-avoid",
+              "scope_id": "holdout-scope",
+              "target_type": "goal_ranking",
+              "target_id": "next-best-action",
+              "signal": "corrected",
+              "source_ref": "holdout-run:44",
+              "ranking": {
+                "feature": "continuation_value",
+                "direction": "avoid"
+              },
+              "previous_sha256": "f3460ead722d46bfd53da373be49afe9a1e96806c6a10f7231c9165b4bd693f9",
+              "record_sha256": "b703f1f5921e17d459724346e6404f2e4290bd21fa5789783027dbe372ced28f"
+            }
+          ],
+          "ledger_sha256": "bcda035506c365221113ce818f559ef94b923a8463149aeec105dee397f90a80"
+        },
+        "baseline_ref": "base",
+        "rollback_ref": "rollback"
+      },
+      "expected": {
+        "status": "no_supported_adaptations",
+        "candidate_count": 0
+      },
+      "critical": true
+    },
+    {
+      "id": "fresh-ranking-strong-consensus",
+      "operation": "adaptation_propose",
+      "input": {
+        "ledger": {
+          "schema_version": 1,
+          "ledger_id": "strong-rank",
+          "scope_id": "holdout-scope",
+          "records": [
+            {
+              "schema_version": 1,
+              "feedback_id": "hr-50-next-best-action-prefer",
+              "scope_id": "holdout-scope",
+              "target_type": "goal_ranking",
+              "target_id": "next-best-action",
+              "signal": "outcome_success",
+              "source_ref": "holdout-run:50",
+              "ranking": {
+                "feature": "continuation_value",
+                "direction": "prefer"
+              },
+              "evidence_ref": "holdout-receipt:50",
+              "previous_sha256": null,
+              "record_sha256": "f8a24da157aa31b82f7c81aa63db4703784be3a22b382ce0307e76a5d4f35082"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hr-51-next-best-action-prefer",
+              "scope_id": "holdout-scope",
+              "target_type": "goal_ranking",
+              "target_id": "next-best-action",
+              "signal": "outcome_success",
+              "source_ref": "holdout-run:51",
+              "ranking": {
+                "feature": "continuation_value",
+                "direction": "prefer"
+              },
+              "evidence_ref": "holdout-receipt:51",
+              "previous_sha256": "f8a24da157aa31b82f7c81aa63db4703784be3a22b382ce0307e76a5d4f35082",
+              "record_sha256": "b5a983778ca6c6a39373b9c89b82d3d1c86e21e4f60dbab3874845a26ef568cf"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hr-52-next-best-action-prefer",
+              "scope_id": "holdout-scope",
+              "target_type": "goal_ranking",
+              "target_id": "next-best-action",
+              "signal": "outcome_success",
+              "source_ref": "holdout-run:52",
+              "ranking": {
+                "feature": "continuation_value",
+                "direction": "prefer"
+              },
+              "evidence_ref": "holdout-receipt:52",
+              "previous_sha256": "b5a983778ca6c6a39373b9c89b82d3d1c86e21e4f60dbab3874845a26ef568cf",
+              "record_sha256": "d36307131f9c22faf2644fee896ce70f5ff770594d98a298fbc869ca89a3346d"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hr-53-next-best-action-prefer",
+              "scope_id": "holdout-scope",
+              "target_type": "goal_ranking",
+              "target_id": "next-best-action",
+              "signal": "outcome_success",
+              "source_ref": "holdout-run:53",
+              "ranking": {
+                "feature": "continuation_value",
+                "direction": "prefer"
+              },
+              "evidence_ref": "holdout-receipt:53",
+              "previous_sha256": "d36307131f9c22faf2644fee896ce70f5ff770594d98a298fbc869ca89a3346d",
+              "record_sha256": "c5c14e549c6a7cb02059c161b28990a7eb8f9cd0fdb4ff0ab49793aed1069676"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hr-54-next-best-action-avoid",
+              "scope_id": "holdout-scope",
+              "target_type": "goal_ranking",
+              "target_id": "next-best-action",
+              "signal": "corrected",
+              "source_ref": "holdout-run:54",
+              "ranking": {
+                "feature": "continuation_value",
+                "direction": "avoid"
+              },
+              "previous_sha256": "c5c14e549c6a7cb02059c161b28990a7eb8f9cd0fdb4ff0ab49793aed1069676",
+              "record_sha256": "037fbd1c4ab940d7d2b0b30f9876fed1a2f12de1eaacd9a0d9765ce330f78dbd"
+            }
+          ],
+          "ledger_sha256": "d989c498b9b815ae8a2f3de419519daca1bebb8a5cc5703a38e985b9c79c3128"
+        },
+        "baseline_ref": "base",
+        "rollback_ref": "rollback"
+      },
+      "expected": {
+        "status": "proposals_ready",
+        "candidate_count": 1
+      },
+      "critical": true
+    },
+    {
+      "id": "fresh-ranking-delta-cap",
+      "operation": "adaptation_propose",
+      "input": {
+        "ledger": {
+          "schema_version": 1,
+          "ledger_id": "cap-rank",
+          "scope_id": "holdout-scope",
+          "records": [
+            {
+              "schema_version": 1,
+              "feedback_id": "hr-60-next-best-action-prefer",
+              "scope_id": "holdout-scope",
+              "target_type": "goal_ranking",
+              "target_id": "next-best-action",
+              "signal": "outcome_success",
+              "source_ref": "holdout-run:60",
+              "ranking": {
+                "feature": "continuation_value",
+                "direction": "prefer"
+              },
+              "evidence_ref": "holdout-receipt:60",
+              "previous_sha256": null,
+              "record_sha256": "21317d7479fcba54e98863555091d0bfe93129bae07436c36906ba3bfeca6a1b"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hr-61-next-best-action-prefer",
+              "scope_id": "holdout-scope",
+              "target_type": "goal_ranking",
+              "target_id": "next-best-action",
+              "signal": "outcome_success",
+              "source_ref": "holdout-run:61",
+              "ranking": {
+                "feature": "continuation_value",
+                "direction": "prefer"
+              },
+              "evidence_ref": "holdout-receipt:61",
+              "previous_sha256": "21317d7479fcba54e98863555091d0bfe93129bae07436c36906ba3bfeca6a1b",
+              "record_sha256": "f2b795fa8432b4df863ed551ca21fe252ef10e2c543abd60eeabedaacef60003"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hr-62-next-best-action-prefer",
+              "scope_id": "holdout-scope",
+              "target_type": "goal_ranking",
+              "target_id": "next-best-action",
+              "signal": "outcome_success",
+              "source_ref": "holdout-run:62",
+              "ranking": {
+                "feature": "continuation_value",
+                "direction": "prefer"
+              },
+              "evidence_ref": "holdout-receipt:62",
+              "previous_sha256": "f2b795fa8432b4df863ed551ca21fe252ef10e2c543abd60eeabedaacef60003",
+              "record_sha256": "5ea7d697a720d730c61ea3f571e0eec3cb97374701c093150fd92cffff25227e"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hr-63-next-best-action-prefer",
+              "scope_id": "holdout-scope",
+              "target_type": "goal_ranking",
+              "target_id": "next-best-action",
+              "signal": "outcome_success",
+              "source_ref": "holdout-run:63",
+              "ranking": {
+                "feature": "continuation_value",
+                "direction": "prefer"
+              },
+              "evidence_ref": "holdout-receipt:63",
+              "previous_sha256": "5ea7d697a720d730c61ea3f571e0eec3cb97374701c093150fd92cffff25227e",
+              "record_sha256": "d8777779c08efc5107b9e74fbc3c1a1dc9fc604d79f2812edffc7aded09f32bd"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hr-64-next-best-action-prefer",
+              "scope_id": "holdout-scope",
+              "target_type": "goal_ranking",
+              "target_id": "next-best-action",
+              "signal": "outcome_success",
+              "source_ref": "holdout-run:64",
+              "ranking": {
+                "feature": "continuation_value",
+                "direction": "prefer"
+              },
+              "evidence_ref": "holdout-receipt:64",
+              "previous_sha256": "d8777779c08efc5107b9e74fbc3c1a1dc9fc604d79f2812edffc7aded09f32bd",
+              "record_sha256": "62f8b92abeceb384a3150fde3b5682da4968ddb9cc11702eea1861c231a3dfef"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hr-65-next-best-action-prefer",
+              "scope_id": "holdout-scope",
+              "target_type": "goal_ranking",
+              "target_id": "next-best-action",
+              "signal": "outcome_success",
+              "source_ref": "holdout-run:65",
+              "ranking": {
+                "feature": "continuation_value",
+                "direction": "prefer"
+              },
+              "evidence_ref": "holdout-receipt:65",
+              "previous_sha256": "62f8b92abeceb384a3150fde3b5682da4968ddb9cc11702eea1861c231a3dfef",
+              "record_sha256": "65ff0964b1ec8ef0d9ef92e7c89c6bb2ad1aa6ab84830db4105f957fc25d1b0f"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hr-66-next-best-action-prefer",
+              "scope_id": "holdout-scope",
+              "target_type": "goal_ranking",
+              "target_id": "next-best-action",
+              "signal": "outcome_success",
+              "source_ref": "holdout-run:66",
+              "ranking": {
+                "feature": "continuation_value",
+                "direction": "prefer"
+              },
+              "evidence_ref": "holdout-receipt:66",
+              "previous_sha256": "65ff0964b1ec8ef0d9ef92e7c89c6bb2ad1aa6ab84830db4105f957fc25d1b0f",
+              "record_sha256": "27ac362d2d15d4e7a709f0866436ad1886dd69af124e50aaff43f25063472055"
+            }
+          ],
+          "ledger_sha256": "35af5651cad9e160f4b00e8b12435edeef3b03e425094982cf1831798f0837ea"
+        },
+        "baseline_ref": "base",
+        "rollback_ref": "rollback"
+      },
+      "expected": {
+        "status": "proposals_ready",
+        "candidate_count": 1
+      },
+      "critical": false
+    },
+    {
+      "id": "fresh-context-no-auto-policy",
+      "operation": "adaptation_propose",
+      "input": {
+        "ledger": {
+          "schema_version": 1,
+          "ledger_id": "context-only",
+          "scope_id": "holdout-scope",
+          "records": [
+            {
+              "schema_version": 1,
+              "feedback_id": "hg-context-70",
+              "scope_id": "holdout-scope",
+              "target_type": "context",
+              "target_id": "context-policy",
+              "signal": "corrected",
+              "source_ref": "holdout-generic:70",
+              "previous_sha256": null,
+              "record_sha256": "a1bd869f2083529de2a5c852726da4df7437ae6a9ee170a2d9cc424db66e5229"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hg-context-71",
+              "scope_id": "holdout-scope",
+              "target_type": "context",
+              "target_id": "context-policy",
+              "signal": "corrected",
+              "source_ref": "holdout-generic:71",
+              "previous_sha256": "a1bd869f2083529de2a5c852726da4df7437ae6a9ee170a2d9cc424db66e5229",
+              "record_sha256": "59f359fb228c60e773e093364e48ebfd732581b7f0997e1f69ba905878ecea55"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hg-context-72",
+              "scope_id": "holdout-scope",
+              "target_type": "context",
+              "target_id": "context-policy",
+              "signal": "corrected",
+              "source_ref": "holdout-generic:72",
+              "previous_sha256": "59f359fb228c60e773e093364e48ebfd732581b7f0997e1f69ba905878ecea55",
+              "record_sha256": "5a13009a5cbe1dfdb6a1ba9a66b162470932f85ea2075fff75375666263fb365"
+            }
+          ],
+          "ledger_sha256": "f6b3a6e95c33ab6833c9fb1689dfd800e7182428c47f1d0dfe478294d399e0be"
+        },
+        "baseline_ref": "base",
+        "rollback_ref": "rollback"
+      },
+      "expected": {
+        "status": "no_supported_adaptations",
+        "candidate_count": 0
+      },
+      "critical": true
+    },
+    {
+      "id": "fresh-autonomy-no-auto-policy",
+      "operation": "adaptation_propose",
+      "input": {
+        "ledger": {
+          "schema_version": 1,
+          "ledger_id": "autonomy-only",
+          "scope_id": "holdout-scope",
+          "records": [
+            {
+              "schema_version": 1,
+              "feedback_id": "hg-autonomy-80",
+              "scope_id": "holdout-scope",
+              "target_type": "autonomy",
+              "target_id": "autonomy-policy",
+              "signal": "corrected",
+              "source_ref": "holdout-generic:80",
+              "previous_sha256": null,
+              "record_sha256": "31284adf833ff7e8c08674c35daf50d6ccad1f3eee1b2acafb2205338b543817"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hg-autonomy-81",
+              "scope_id": "holdout-scope",
+              "target_type": "autonomy",
+              "target_id": "autonomy-policy",
+              "signal": "corrected",
+              "source_ref": "holdout-generic:81",
+              "previous_sha256": "31284adf833ff7e8c08674c35daf50d6ccad1f3eee1b2acafb2205338b543817",
+              "record_sha256": "49625cfee45cf89bcb9e555cc6125f7976517a5995c91e6e6f1a0d1cca148882"
+            },
+            {
+              "schema_version": 1,
+              "feedback_id": "hg-autonomy-82",
+              "scope_id": "holdout-scope",
+              "target_type": "autonomy",
+              "target_id": "autonomy-policy",
+              "signal": "corrected",
+              "source_ref": "holdout-generic:82",
+              "previous_sha256": "49625cfee45cf89bcb9e555cc6125f7976517a5995c91e6e6f1a0d1cca148882",
+              "record_sha256": "6982b599ada71d8de75428003c0328d6785b871cc88c0b1c6feb8bfa82010e51"
+            }
+          ],
+          "ledger_sha256": "a85e5b7772d097de989ea015afbd0483b52d996c25b134aa87ecb9cc6b7ed1e9"
+        },
+        "baseline_ref": "base",
+        "rollback_ref": "rollback"
+      },
+      "expected": {
+        "status": "no_supported_adaptations",
+        "candidate_count": 0
+      },
+      "critical": true
+    },
+    {
+      "id": "fresh-shadow-unrelated-target",
+      "operation": "shadow_rank",
+      "input": {
+        "graph": {
+          "schema_version": 1,
+          "graph_id": "shadow-holdout-graph",
+          "scope_id": "holdout-scope",
+          "nodes": [
+            {
+              "id": "p",
+              "kind": "program",
+              "title": "Program",
+              "state": "active",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "done"
+              ]
+            },
+            {
+              "id": "g",
+              "kind": "goal",
+              "title": "Goal",
+              "state": "active",
+              "parent_id": "p",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "done"
+              ]
+            },
+            {
+              "id": "t-cont",
+              "kind": "task",
+              "title": "Continue",
+              "state": "active",
+              "parent_id": "g",
+              "priority": 50,
+              "effort": 1,
+              "depends_on": [],
+              "success_criteria": [
+                "done"
+              ],
+              "adaptive_features": [
+                "continuation_value"
+              ]
+            },
+            {
+              "id": "t-other",
+              "kind": "task",
+              "title": "Other",
+              "state": "active",
+              "parent_id": "g",
+              "priority": 52,
+              "effort": 1,
+              "depends_on": [],
+              "success_criteria": [
+                "done"
+              ],
+              "adaptive_features": [
+                "other_feature"
+              ]
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "schema_version": 1,
+            "candidate_type": "ranking_feature_delta",
+            "state": "shadow_only",
+            "scope_id": "holdout-scope",
+            "target_type": "goal_ranking",
+            "target_id": "different-graph",
+            "feature": "continuation_value",
+            "delta": 3,
+            "support": 3,
+            "observations": 3,
+            "distinct_sources": 3,
+            "consensus": 1.0,
+            "source_feedback_ids": [
+              "hr-100-shadow-holdout-graph-prefer",
+              "hr-101-shadow-holdout-graph-prefer",
+              "hr-102-shadow-holdout-graph-prefer"
+            ],
+            "baseline_ref": "base:0.8",
+            "rollback_ref": "rollback:0.8",
+            "candidate_sha256": "2c9a944880bfc07ea64e7c9addcfd44d75011a5efb4067f6d84c6eba623849f4"
+          }
+        ],
+        "limit": 2
+      },
+      "expected": {
+        "status": "shadow_comparison",
+        "ranking_changed": false,
+        "production_mutated": false
+      },
+      "critical": true
+    },
+    {
+      "id": "fresh-shadow-exact-graph-target",
+      "operation": "shadow_rank",
+      "input": {
+        "graph": {
+          "schema_version": 1,
+          "graph_id": "shadow-holdout-graph",
+          "scope_id": "holdout-scope",
+          "nodes": [
+            {
+              "id": "p",
+              "kind": "program",
+              "title": "Program",
+              "state": "active",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "done"
+              ]
+            },
+            {
+              "id": "g",
+              "kind": "goal",
+              "title": "Goal",
+              "state": "active",
+              "parent_id": "p",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "done"
+              ]
+            },
+            {
+              "id": "t-cont",
+              "kind": "task",
+              "title": "Continue",
+              "state": "active",
+              "parent_id": "g",
+              "priority": 50,
+              "effort": 1,
+              "depends_on": [],
+              "success_criteria": [
+                "done"
+              ],
+              "adaptive_features": [
+                "continuation_value"
+              ]
+            },
+            {
+              "id": "t-other",
+              "kind": "task",
+              "title": "Other",
+              "state": "active",
+              "parent_id": "g",
+              "priority": 52,
+              "effort": 1,
+              "depends_on": [],
+              "success_criteria": [
+                "done"
+              ],
+              "adaptive_features": [
+                "other_feature"
+              ]
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "schema_version": 1,
+            "candidate_type": "ranking_feature_delta",
+            "state": "shadow_only",
+            "scope_id": "holdout-scope",
+            "target_type": "goal_ranking",
+            "target_id": "shadow-holdout-graph",
+            "feature": "continuation_value",
+            "delta": 3,
+            "support": 3,
+            "observations": 3,
+            "distinct_sources": 3,
+            "consensus": 1.0,
+            "source_feedback_ids": [
+              "hr-100-shadow-holdout-graph-prefer",
+              "hr-101-shadow-holdout-graph-prefer",
+              "hr-102-shadow-holdout-graph-prefer"
+            ],
+            "baseline_ref": "base:0.8",
+            "rollback_ref": "rollback:0.8",
+            "candidate_sha256": "1297412bb0fbe3119299f071b73b75103614759cc4fb2c90a68cd86762b4fcb6"
+          }
+        ],
+        "limit": 2
+      },
+      "expected": {
+        "status": "shadow_comparison",
+        "ranking_changed": true,
+        "production_mutated": false
+      },
+      "critical": true
+    },
+    {
+      "id": "fresh-shadow-invalid-feature-shape",
+      "operation": "shadow_rank",
+      "input": {
+        "graph": {
+          "schema_version": 1,
+          "graph_id": "shadow-holdout-graph",
+          "scope_id": "holdout-scope",
+          "nodes": [
+            {
+              "id": "p",
+              "kind": "program",
+              "title": "Program",
+              "state": "active",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "done"
+              ]
+            },
+            {
+              "id": "g",
+              "kind": "goal",
+              "title": "Goal",
+              "state": "active",
+              "parent_id": "p",
+              "priority": 50,
+              "effort": 3,
+              "success_criteria": [
+                "done"
+              ]
+            },
+            {
+              "id": "t-cont",
+              "kind": "task",
+              "title": "Continue",
+              "state": "active",
+              "parent_id": "g",
+              "priority": 50,
+              "effort": 1,
+              "depends_on": [],
+              "success_criteria": [
+                "done"
+              ],
+              "adaptive_features": "bad"
+            },
+            {
+              "id": "t-other",
+              "kind": "task",
+              "title": "Other",
+              "state": "active",
+              "parent_id": "g",
+              "priority": 52,
+              "effort": 1,
+              "depends_on": [],
+              "success_criteria": [
+                "done"
+              ],
+              "adaptive_features": [
+                "other_feature"
+              ]
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "schema_version": 1,
+            "candidate_type": "ranking_feature_delta",
+            "state": "shadow_only",
+            "scope_id": "holdout-scope",
+            "target_type": "goal_ranking",
+            "target_id": "next-best-action",
+            "feature": "continuation_value",
+            "delta": 3,
+            "support": 4,
+            "observations": 5,
+            "distinct_sources": 4,
+            "consensus": 0.8,
+            "source_feedback_ids": [
+              "hr-50-next-best-action-prefer",
+              "hr-51-next-best-action-prefer",
+              "hr-52-next-best-action-prefer",
+              "hr-53-next-best-action-prefer",
+              "hr-54-next-best-action-avoid"
+            ],
+            "baseline_ref": "base:0.8",
+            "rollback_ref": "rollback:0.8",
+            "candidate_sha256": "0a96afa228668b7b2a74aefa181bc7878f29911618a13cf672f9e3eace530f0f"
+          }
+        ]
+      },
+      "expected": {},
+      "critical": true,
+      "expected_error": true
+    },
+    {
+      "id": "fresh-promotion-valid",
+      "operation": "promotion_check",
+      "input": {
+        "candidate": {
+          "schema_version": 1,
+          "candidate_type": "ranking_feature_delta",
+          "state": "shadow_only",
+          "scope_id": "holdout-scope",
+          "target_type": "goal_ranking",
+          "target_id": "next-best-action",
+          "feature": "continuation_value",
+          "delta": 3,
+          "support": 4,
+          "observations": 5,
+          "distinct_sources": 4,
+          "consensus": 0.8,
+          "source_feedback_ids": [
+            "hr-50-next-best-action-prefer",
+            "hr-51-next-best-action-prefer",
+            "hr-52-next-best-action-prefer",
+            "hr-53-next-best-action-prefer",
+            "hr-54-next-best-action-avoid"
+          ],
+          "baseline_ref": "base:0.8",
+          "rollback_ref": "rollback:0.8",
+          "candidate_sha256": "0a96afa228668b7b2a74aefa181bc7878f29911618a13cf672f9e3eace530f0f"
+        },
+        "benchmark": {
+          "candidate_sha256": "0a96afa228668b7b2a74aefa181bc7878f29911618a13cf672f9e3eace530f0f",
+          "scope_id": "holdout-scope",
+          "cases": 27,
+          "score": 100.0,
+          "critical_failures": 0,
+          "historical_regressions_passed": true,
+          "frozen_before_first_run": true
+        },
+        "approval": {
+          "approved": true,
+          "candidate_sha256": "0a96afa228668b7b2a74aefa181bc7878f29911618a13cf672f9e3eace530f0f",
+          "approval_ref": "holdout-approval"
+        }
+      },
+      "expected": {
+        "status": "eligible_for_promotion",
+        "eligible": true,
+        "execute": false
+      },
+      "critical": true
+    },
+    {
+      "id": "fresh-promotion-score-type",
+      "operation": "promotion_check",
+      "input": {
+        "candidate": {
+          "schema_version": 1,
+          "candidate_type": "ranking_feature_delta",
+          "state": "shadow_only",
+          "scope_id": "holdout-scope",
+          "target_type": "goal_ranking",
+          "target_id": "next-best-action",
+          "feature": "continuation_value",
+          "delta": 3,
+          "support": 4,
+          "observations": 5,
+          "distinct_sources": 4,
+          "consensus": 0.8,
+          "source_feedback_ids": [
+            "hr-50-next-best-action-prefer",
+            "hr-51-next-best-action-prefer",
+            "hr-52-next-best-action-prefer",
+            "hr-53-next-best-action-prefer",
+            "hr-54-next-best-action-avoid"
+          ],
+          "baseline_ref": "base:0.8",
+          "rollback_ref": "rollback:0.8",
+          "candidate_sha256": "0a96afa228668b7b2a74aefa181bc7878f29911618a13cf672f9e3eace530f0f"
+        },
+        "benchmark": {
+          "candidate_sha256": "0a96afa228668b7b2a74aefa181bc7878f29911618a13cf672f9e3eace530f0f",
+          "scope_id": "holdout-scope",
+          "cases": 27,
+          "score": "100",
+          "critical_failures": 0,
+          "historical_regressions_passed": true,
+          "frozen_before_first_run": true
+        },
+        "approval": {
+          "approved": true,
+          "candidate_sha256": "0a96afa228668b7b2a74aefa181bc7878f29911618a13cf672f9e3eace530f0f",
+          "approval_ref": "holdout-approval"
+        }
+      },
+      "expected": {
+        "status": "promotion_blocked",
+        "eligible": false
+      },
+      "critical": true
+    },
+    {
+      "id": "fresh-promotion-missing-approval-ref",
+      "operation": "promotion_check",
+      "input": {
+        "candidate": {
+          "schema_version": 1,
+          "candidate_type": "ranking_feature_delta",
+          "state": "shadow_only",
+          "scope_id": "holdout-scope",
+          "target_type": "goal_ranking",
+          "target_id": "next-best-action",
+          "feature": "continuation_value",
+          "delta": 3,
+          "support": 4,
+          "observations": 5,
+          "distinct_sources": 4,
+          "consensus": 0.8,
+          "source_feedback_ids": [
+            "hr-50-next-best-action-prefer",
+            "hr-51-next-best-action-prefer",
+            "hr-52-next-best-action-prefer",
+            "hr-53-next-best-action-prefer",
+            "hr-54-next-best-action-avoid"
+          ],
+          "baseline_ref": "base:0.8",
+          "rollback_ref": "rollback:0.8",
+          "candidate_sha256": "0a96afa228668b7b2a74aefa181bc7878f29911618a13cf672f9e3eace530f0f"
+        },
+        "benchmark": {
+          "candidate_sha256": "0a96afa228668b7b2a74aefa181bc7878f29911618a13cf672f9e3eace530f0f",
+          "scope_id": "holdout-scope",
+          "cases": 27,
+          "score": 100.0,
+          "critical_failures": 0,
+          "historical_regressions_passed": true,
+          "frozen_before_first_run": true
+        },
+        "approval": {
+          "approved": true,
+          "candidate_sha256": "0a96afa228668b7b2a74aefa181bc7878f29911618a13cf672f9e3eace530f0f"
+        }
+      },
+      "expected": {
+        "status": "promotion_blocked",
+        "eligible": false
+      },
+      "critical": true
+    },
+    {
+      "id": "fresh-promotion-wrong-benchmark-hash",
+      "operation": "promotion_check",
+      "input": {
+        "candidate": {
+          "schema_version": 1,
+          "candidate_type": "ranking_feature_delta",
+          "state": "shadow_only",
+          "scope_id": "holdout-scope",
+          "target_type": "goal_ranking",
+          "target_id": "next-best-action",
+          "feature": "continuation_value",
+          "delta": 3,
+          "support": 4,
+          "observations": 5,
+          "distinct_sources": 4,
+          "consensus": 0.8,
+          "source_feedback_ids": [
+            "hr-50-next-best-action-prefer",
+            "hr-51-next-best-action-prefer",
+            "hr-52-next-best-action-prefer",
+            "hr-53-next-best-action-prefer",
+            "hr-54-next-best-action-avoid"
+          ],
+          "baseline_ref": "base:0.8",
+          "rollback_ref": "rollback:0.8",
+          "candidate_sha256": "0a96afa228668b7b2a74aefa181bc7878f29911618a13cf672f9e3eace530f0f"
+        },
+        "benchmark": {
+          "candidate_sha256": "wrong",
+          "scope_id": "holdout-scope",
+          "cases": 27,
+          "score": 100.0,
+          "critical_failures": 0,
+          "historical_regressions_passed": true,
+          "frozen_before_first_run": true
+        },
+        "approval": {
+          "approved": true,
+          "candidate_sha256": "0a96afa228668b7b2a74aefa181bc7878f29911618a13cf672f9e3eace530f0f",
+          "approval_ref": "holdout-approval"
+        }
+      },
+      "expected": {
+        "status": "promotion_blocked",
+        "eligible": false
+      },
+      "critical": true
+    },
+    {
+      "id": "fresh-promotion-state-not-shadow",
+      "operation": "promotion_check",
+      "input": {
+        "candidate": {
+          "schema_version": 1,
+          "candidate_type": "ranking_feature_delta",
+          "state": "active",
+          "scope_id": "holdout-scope",
+          "target_type": "goal_ranking",
+          "target_id": "next-best-action",
+          "feature": "continuation_value",
+          "delta": 3,
+          "support": 4,
+          "observations": 5,
+          "distinct_sources": 4,
+          "consensus": 0.8,
+          "source_feedback_ids": [
+            "hr-50-next-best-action-prefer",
+            "hr-51-next-best-action-prefer",
+            "hr-52-next-best-action-prefer",
+            "hr-53-next-best-action-prefer",
+            "hr-54-next-best-action-avoid"
+          ],
+          "baseline_ref": "base:0.8",
+          "rollback_ref": "rollback:0.8",
+          "candidate_sha256": "0a96afa228668b7b2a74aefa181bc7878f29911618a13cf672f9e3eace530f0f"
+        },
+        "benchmark": {
+          "candidate_sha256": "0a96afa228668b7b2a74aefa181bc7878f29911618a13cf672f9e3eace530f0f",
+          "scope_id": "holdout-scope",
+          "cases": 27,
+          "score": 100.0,
+          "critical_failures": 0,
+          "historical_regressions_passed": true,
+          "frozen_before_first_run": true
+        },
+        "approval": {
+          "approved": true,
+          "candidate_sha256": "0a96afa228668b7b2a74aefa181bc7878f29911618a13cf672f9e3eace530f0f",
+          "approval_ref": "holdout-approval"
+        }
+      },
+      "expected": {
+        "status": "promotion_blocked",
+        "eligible": false
+      },
+      "critical": true
+    },
+    {
+      "id": "fresh-promotion-missing-rollback",
+      "operation": "promotion_check",
+      "input": {
+        "candidate": {
+          "schema_version": 1,
+          "candidate_type": "ranking_feature_delta",
+          "state": "shadow_only",
+          "scope_id": "holdout-scope",
+          "target_type": "goal_ranking",
+          "target_id": "next-best-action",
+          "feature": "continuation_value",
+          "delta": 3,
+          "support": 4,
+          "observations": 5,
+          "distinct_sources": 4,
+          "consensus": 0.8,
+          "source_feedback_ids": [
+            "hr-50-next-best-action-prefer",
+            "hr-51-next-best-action-prefer",
+            "hr-52-next-best-action-prefer",
+            "hr-53-next-best-action-prefer",
+            "hr-54-next-best-action-avoid"
+          ],
+          "baseline_ref": "base:0.8",
+          "candidate_sha256": "0a96afa228668b7b2a74aefa181bc7878f29911618a13cf672f9e3eace530f0f"
+        },
+        "benchmark": {
+          "candidate_sha256": "0a96afa228668b7b2a74aefa181bc7878f29911618a13cf672f9e3eace530f0f",
+          "scope_id": "holdout-scope",
+          "cases": 27,
+          "score": 100.0,
+          "critical_failures": 0,
+          "historical_regressions_passed": true,
+          "frozen_before_first_run": true
+        },
+        "approval": {
+          "approved": true,
+          "candidate_sha256": "0a96afa228668b7b2a74aefa181bc7878f29911618a13cf672f9e3eace530f0f",
+          "approval_ref": "holdout-approval"
+        }
+      },
+      "expected": {
+        "status": "promotion_blocked",
+        "eligible": false
+      },
+      "critical": true
+    }
+  ]
+}

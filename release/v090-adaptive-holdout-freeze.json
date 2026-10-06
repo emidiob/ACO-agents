@@ -1,0 +1,9 @@
+{
+  "aco_version": "0.9.0",
+  "cases": 27,
+  "disposition": "final_fresh_release_gate",
+  "frozen_before_first_execution": true,
+  "path": "config/adaptive-v090-holdout.json",
+  "schema_version": 1,
+  "sha256": "9d4604a52a766d24b73608f2647003b3423ca00556f41adc0e68cb9ebb0a60fe"
+}

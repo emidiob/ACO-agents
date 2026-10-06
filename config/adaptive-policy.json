@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "aco_version": "0.9.0",
+  "feedback": {
+    "target_types": [
+      "routing",
+      "context",
+      "goal_ranking",
+      "autonomy",
+      "output_preference"
+    ],
+    "signals": [
+      "accepted",
+      "corrected",
+      "rejected",
+      "preferred",
+      "outcome_success",
+      "outcome_failure"
+    ],
+    "maximum_weight": 5
+  },
+  "proposal": {
+    "minimum_support": 3,
+    "minimum_consensus": 0.67,
+    "minimum_distinct_sources": 2
+  },
+  "ranking": {
+    "directions": [
+      "prefer",
+      "avoid"
+    ],
+    "maximum_absolute_delta": 5
+  },
+  "promotion": {
+    "minimum_benchmark_cases": 20,
+    "minimum_score": 95.0,
+    "maximum_critical_failures": 0,
+    "requires_historical_regressions": true,
+    "requires_frozen_first_run": true,
+    "requires_explicit_approval": true,
+    "requires_rollback_ref": true
+  },
+  "forbidden_reasoning_fields": [
+    "chain_of_thought",
+    "chain-of-thought",
+    "hidden_reasoning",
+    "reasoning_trace",
+    "private_scratchpad",
+    "scratchpad",
+    "internal_monologue"
+  ],
+  "policy": "ACO may learn only from structured, scope-bound evidence. Candidate adaptations remain shadow-only until a separate exact-hash benchmarked promotion review succeeds. Feedback never grants permission or broadens private context."
+}

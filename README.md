@@ -2,7 +2,7 @@
 
 **A working library for an artist, studio, agency or cultural business — with scoped private knowledge and evidence-aware execution.**
 
-**ACO v0.8.0 · 363 roles · 16 entry skills · 61 workflows · 99 optional resources.**
+**ACO v0.9.0 · 363 roles · 16 entry skills · 61 workflows · 99 optional resources.**
 
 Proprietary, source-available. Redistribution is restricted by [LICENSE](LICENSE). No third-party software, fonts, models or private knowledge are bundled.
 
@@ -30,6 +30,8 @@ A natural request
 ```
 
 No office-by-office performance or unnecessary planning ceremony. A simple request should receive a simple result. A commissioned essay, design system or codebase still needs a complete deliverable.
+
+**v0.9.0 Adaptive ACO:** explicit corrections, scoped preferences and observable outcomes can now be stored as structured feedback evidence, aggregated into bounded **shadow-only** candidates, and compared against the deterministic Goal Graph without mutating production behavior. Feedback ledgers are scope-bound SHA-256 chains; hidden reasoning fields are rejected; one correction never becomes policy; permissions/privacy cannot be learned away; and promotion requires exact-hash benchmark evidence, historical regressions, explicit approval and a rollback reference. See [Adaptive ACO](docs/ADAPTIVE-ACO.md).
 
 **v0.8.0 Goal Graph + Autonomy Engine:** substantial multi-step work can now be represented as `Program → Goal → Task → Dependency`. ACO deterministically selects a bounded next task, prepares permission-aware host actions, reconciles uncertain outcomes, applies bounded idempotent recovery and requires receipt evidence before verification. `SIMULATE` never returns executable host actions; the local engine never calls providers itself. See [Goal Graph & Autonomy Engine](docs/GOAL-GRAPH.md).
 

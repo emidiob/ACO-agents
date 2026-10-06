@@ -1,4 +1,4 @@
-# ACO CLI — v0.8.0
+# ACO CLI — v0.9.0
 
 Python 3.11+, macOS/Linux or Windows through WSL. Run `python3 scripts/aco_cli.py COMMAND --help`. Outputs are JSON. Keep private inputs outside the ACO source checkout. Source commands and installed minimal runtime are distinct; install/migrate/generate/validate need the full release.
 
@@ -127,3 +127,20 @@ python3 scripts/aco_cli.py autonomy-benchmark --input config/autonomy-benchmark.
 ```
 
 `goal-status` returns progress, blockers and a deterministic next-task ranking. `goal-transition` returns an updated graph in stdout; it does not save it. `autonomy-plan` uses the existing capability, permission and receipt contracts to return simulation, approval, host-action, reconciliation, recovery or verification states. `SIMULATE` never emits a host action; `HOST_EXECUTION` still requires the real host to perform the action and return evidence. See [GOAL-GRAPH.md](GOAL-GRAPH.md).
+
+
+## Adaptive ACO — v0.9.0
+
+These commands are deterministic local evidence/adaptation checks. None persists feedback, changes production policy or executes a provider.
+
+```bash
+python3 scripts/aco_cli.py feedback-check --input feedback.json
+python3 scripts/aco_cli.py feedback-ledger-check --input ledger.json
+python3 scripts/aco_cli.py feedback-append --ledger ledger.json --record feedback.json
+python3 scripts/aco_cli.py adaptation-propose --input proposal.json
+python3 scripts/aco_cli.py shadow-rank --input shadow-evaluation.json
+python3 scripts/aco_cli.py promotion-check --input promotion-review.json
+python3 scripts/aco_cli.py adaptive-benchmark --input config/adaptive-benchmark.json
+```
+
+`feedback-append` prints an updated hash-chained ledger but does not save it. `adaptation-propose` requires repeated scoped evidence. `shadow-rank` returns both base and shadow task order without mutating the graph. `promotion-check` returns eligibility only; it never activates a candidate. See [ADAPTIVE-ACO.md](ADAPTIVE-ACO.md).

@@ -1,0 +1,11 @@
+{
+  "aco_version": "0.9.0",
+  "disposition": "post_fresh_holdout_semantic_freeze",
+  "files": {
+    "config/adaptive-policy.json": "5122fcd656b502c79402578c83b45ae231b0b0b8a6711e136173d3dfdd2ba9c0",
+    "config/goal-graph.json": "2cb72467dfdc93105f22b993df5131e8f4d5e66e99486987cb899f38e8068cb1",
+    "scripts/aco/adaptive.py": "767a5f3006911093214e7811668d5595cd4fed7d3d88593e43f12e9f231040de",
+    "scripts/aco/goals.py": "ab04f28e6e0980a94abef92c963e81c1a8ab51fafeaadc05cd31066a9ced747a"
+  },
+  "schema_version": 1
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "0.8.0",
+  "aco_version": "0.9.0",
   "states": [
     "proposed",
     "prepared",

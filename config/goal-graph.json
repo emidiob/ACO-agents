@@ -1,25 +1,85 @@
 {
   "schema_version": 1,
-  "aco_version": "0.8.0",
-  "node_kinds": ["program", "goal", "task", "dependency"],
-  "states": ["proposed", "active", "ready", "blocked", "in_progress", "awaiting_approval", "executed", "verified", "done", "cancelled"],
+  "aco_version": "0.9.0",
+  "node_kinds": [
+    "program",
+    "goal",
+    "task",
+    "dependency"
+  ],
+  "states": [
+    "proposed",
+    "active",
+    "ready",
+    "blocked",
+    "in_progress",
+    "awaiting_approval",
+    "executed",
+    "verified",
+    "done",
+    "cancelled"
+  ],
   "parent_kinds": {
     "program": [],
-    "goal": ["program"],
-    "task": ["goal"],
-    "dependency": ["goal", "task"]
+    "goal": [
+      "program"
+    ],
+    "task": [
+      "goal"
+    ],
+    "dependency": [
+      "goal",
+      "task"
+    ]
   },
-  "satisfied_dependency_states": ["verified", "done"],
-  "terminal_states": ["done", "cancelled"],
+  "satisfied_dependency_states": [
+    "verified",
+    "done"
+  ],
+  "terminal_states": [
+    "done",
+    "cancelled"
+  ],
   "transitions": {
-    "proposed": ["active", "cancelled"],
-    "active": ["ready", "blocked", "in_progress", "cancelled"],
-    "ready": ["in_progress", "awaiting_approval", "blocked", "cancelled"],
-    "blocked": ["ready", "active", "cancelled"],
-    "in_progress": ["awaiting_approval", "executed", "blocked", "cancelled"],
-    "awaiting_approval": ["in_progress", "blocked", "cancelled"],
-    "executed": ["verified", "blocked"],
-    "verified": ["done"],
+    "proposed": [
+      "active",
+      "cancelled"
+    ],
+    "active": [
+      "ready",
+      "blocked",
+      "in_progress",
+      "cancelled"
+    ],
+    "ready": [
+      "in_progress",
+      "awaiting_approval",
+      "blocked",
+      "cancelled"
+    ],
+    "blocked": [
+      "ready",
+      "active",
+      "cancelled"
+    ],
+    "in_progress": [
+      "awaiting_approval",
+      "executed",
+      "blocked",
+      "cancelled"
+    ],
+    "awaiting_approval": [
+      "in_progress",
+      "blocked",
+      "cancelled"
+    ],
+    "executed": [
+      "verified",
+      "blocked"
+    ],
+    "verified": [
+      "done"
+    ],
     "done": [],
     "cancelled": []
   },

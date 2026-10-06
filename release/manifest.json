@@ -1,5 +1,5 @@
 {
-  "aco_version": "0.8.0",
+  "aco_version": "0.9.0",
   "files": {
     ".github/workflows/validate.yml": {
       "mode": 420,
@@ -11,7 +11,7 @@
     },
     "ACO-INDEX.md": {
       "mode": 420,
-      "sha256": "263b1c31bea8cc38a79a308079f38614db58e0f1db707cfa9612a2c1581cc057"
+      "sha256": "02156199fbd27b5ce07d191963f8fd88543b9dfb8ac9efc3f6654980aced6018"
     },
     "ACO-TEST-REPORT-v0.7.2.md": {
       "mode": 420,
@@ -25,21 +25,25 @@
       "mode": 420,
       "sha256": "624313e5fddc7c5639cbfaa4dda88328747f70ccdb9ab8f8dcb0d23f032e097f"
     },
+    "ACO-TEST-REPORT-v0.9.0.md": {
+      "mode": 420,
+      "sha256": "3a12e17ade352e1c51dd9b072de02f300607a22cfd3c67592ffc5642dcbadf05"
+    },
     "AGENTS.md": {
       "mode": 420,
       "sha256": "375a8b13bb16f753912669c6357802e7f2263fd961f5fa04dc841fc5bcdd14af"
     },
     "BEGINNER-GUIDE.md": {
       "mode": 420,
-      "sha256": "6fa4388edbc7dfbba8ce9bbdb08332646e53f6a6ab5d2ad7bbdc40759cfada3f"
+      "sha256": "03b9748a4b4d4c87b8626e4cda43bed2822fbfd5cdf62212f0584335981c7f63"
     },
     "CHANGELOG.md": {
       "mode": 420,
-      "sha256": "521fe5da504ee5085ebb8da3139cf57f1a58ae12a78ca16e7d0d783bfdccd2a2"
+      "sha256": "1d9d7fc331bc625acc24718464819d775804611afc42b5c109083efe3da15fe8"
     },
     "CHATGPT.md": {
       "mode": 420,
-      "sha256": "6335e8005ae758b4557660f220a732dc53bed7b67bbf30699d60c75e85faba06"
+      "sha256": "99ef5a822c57abd756754fbcf1c0e576aa4f97b8b6ef4f03ad62ab0021f0e94e"
     },
     "CONCIERGE.md": {
       "mode": 420,
@@ -63,7 +67,7 @@
     },
     "README.md": {
       "mode": 420,
-      "sha256": "334e6986a836a21277411e869fed85ef46ae53b5aa996b06f322e3fcbeac75eb"
+      "sha256": "35cfde86891120b7919a2d7fc216dcba3bf8fea6db8082cad9e4d15c1e5c6262"
     },
     "SECURITY.md": {
       "mode": 420,
@@ -75,7 +79,7 @@
     },
     "VERSION": {
       "mode": 420,
-      "sha256": "a66780da23103beaf12432b418508966b31a2a3a787f9468a5b6cdaa8667c1ef"
+      "sha256": "9d8c94f1ad3ea96b1e2ac4914fda4cb93c76b4a3e0d8cc6dd8976d6c0b227d15"
     },
     "assets/context-templates/ACTIVITY-CONTEXT.template.md": {
       "mode": 420,
@@ -167,59 +171,71 @@
     },
     "catalog.json": {
       "mode": 420,
-      "sha256": "b67f2a2a82c32efd8598d45fe85c130f0365fbe4bf153958f50ffccac8d68dac"
+      "sha256": "f4cbfb32c81ed11638c0b1218e55c4706b8443879852cb678a71e2a648d954b5"
     },
     "config/adapter-contract.json": {
       "mode": 420,
-      "sha256": "e8827996c5cbea6efce63888f56441d2db70207d25d5831017800715509ea8a9"
+      "sha256": "67b481fc2bb9b32dcfb4647c359b4f2115023f8958bde31687be5ced4b648d20"
+    },
+    "config/adaptive-benchmark.json": {
+      "mode": 420,
+      "sha256": "abf0b8c1a138d11a6d3ea23ce4263afe99ff09acb3de87fd24044b0e6ed1f09a"
+    },
+    "config/adaptive-policy.json": {
+      "mode": 420,
+      "sha256": "5122fcd656b502c79402578c83b45ae231b0b0b8a6711e136173d3dfdd2ba9c0"
+    },
+    "config/adaptive-v090-holdout.json": {
+      "mode": 420,
+      "sha256": "9d4604a52a766d24b73608f2647003b3423ca00556f41adc0e68cb9ebb0a60fe"
     },
     "config/autonomy-benchmark.json": {
       "mode": 420,
-      "sha256": "d165cd717354383637023266300fffceb7323338250b1f9f8e785414b4d44e92"
+      "sha256": "fc47f6de6841df3913010607cf5d98310790bc6d00a0c6554371cdc947b3e4ef"
     },
     "config/autonomy-policy.json": {
       "mode": 420,
-      "sha256": "e0071fbb41c3af529b3b30be70a02fbf3c37240194419da13a76a45a7008c928"
+      "sha256": "57913b6e9a641e70828bb8412677800a669829abe6132f97e86bc3c61fd2e6d1"
     },
     "config/capabilities.json": {
       "mode": 420,
-      "sha256": "fa9c490614e8886fce2284a8471c1b846c847bf88ddbff616ef1aafd9475805d"
+      "sha256": "7c61d8466d174dc6f87ba174b79469a39879f1d11a578f8c4a3429ecd4772959"
     },
     "config/context-benchmark.json": {
       "mode": 420,
-      "sha256": "bde55f8740c27197927208a3deab577391f5118659c44a13746042643583410f"
+      "sha256": "64b31330b5aa4313aff87cb485aed8a31a09771bd3dd86e1b9706b7cf7ff8ab5"
     },
     "config/context-engine.json": {
       "mode": 420,
-      "sha256": "49d11991bee4b18479b72c635ec3b81b543b98763765986e359efda2fb47f3a8"
+      "sha256": "60fd3027ff09be004c4be3f9d96b41413de332e5f03175117fc9ae237eb059f8"
     },
     "config/delegation-benchmark.json": {
       "mode": 420,
-      "sha256": "f7d9f771d76244a7ff6768cf3bfb387afacb4f4cf3e7461f00cef570be40959c"
+      "sha256": "847820892d4b526ac1bacf36512f66101aaada97fa9ebaa5a11b54d2259c6066"
     },
     "config/evals.json": {
       "mode": 420,
-      "sha256": "3b31f83dd8ee06f2ec8de16d186263b249d1845a149c3448c8d1f82e7e2752ab"
+      "sha256": "3028dd12efd853b2b47281cc7f3d399077ff519ba4962c9413297a17608ef5f8"
     },
     "config/execution-benchmark.json": {
       "mode": 420,
-      "sha256": "703002dbda9c49616e07bf7f88ed17d1dc70bdc709f5c6d9d2f660744655b355"
+      "sha256": "d2dac857ac96256eebeae8441ce973e92c4325699bb821c550a28f64784ccf93"
     },
     "config/goal-graph.json": {
       "mode": 420,
-      "sha256": "c2962211257526ae04c106f1367fddd1c82f92704ab94431308fd24a82bb43e2"
+      "sha256": "2cb72467dfdc93105f22b993df5131e8f4d5e66e99486987cb899f38e8068cb1"
     },
     "config/integration-adapters.json": {
       "mode": 420,
-      "sha256": "aaa14df1686902fce319d189b3b84d794b849edcbf341c8397f4d417d3fd653c"
+      "sha256": "f81ff9774b9d1fb384cf0df8a14decf2924bb2bd0b7a374ea94b215c46d0f2a6"
     },
     "config/integration-benchmark.json": {
       "mode": 420,
-      "sha256": "f99743fa2af735231c21f8ecaed76a35de141a44831e333259d1b99d7e8423e4"
+      "sha256": "6c18e31aa5018cf4a460120323ca689039b54a87621d7c113b778f96aeee213b"
     },
     "config/memory-classes.json": {
       "mode": 420,
-      "sha256": "d4691b0f5b72efed8f08a34adc97ffffee7a6ffec65491f512d589dd207f4278"
+      "sha256": "6607f55b010d57fc91b99ce98b9d59bacb02bee8039bc71aba25da85ceaa4827"
     },
     "config/offices.json": {
       "mode": 420,
@@ -227,31 +243,31 @@
     },
     "config/permission-policy.json": {
       "mode": 420,
-      "sha256": "4e89605a0275f273e4a70da894cc99682b506b48b98e06032243c42c625a78a3"
+      "sha256": "c13d54486e0126ca98487cd47a527df52469bb20590ad74452db908992b7d7e9"
     },
     "config/privacy-policy.json": {
       "mode": 420,
-      "sha256": "c91f56f6f2cb5a11ae44a58f0245c2109c2c8efc4a01e2ab39db032620054bc9"
+      "sha256": "ebc98de83f4737517e8ea378b46ec3d796e119813a6156fe6c8f3bdea6354402"
     },
     "config/real-world-benchmark-v072.json": {
       "mode": 420,
-      "sha256": "8d6f317132c2c0df1461cff92d637ed826b65cc8be955572a310f92e7b2a3ac9"
+      "sha256": "a4a334e20fdbe21748ebb1bf7df8a47d4853b996092a03860e99e348962327c1"
     },
     "config/real-world-benchmark-v073.json": {
       "mode": 420,
-      "sha256": "1aafec855e621aa788da1f5bb144eb15af745c67eaddeeb44a94838792d69d69"
+      "sha256": "0d17fdaa7d7f17b0ffebcea1869d180cc872d2ba3f37698ea302223de5445007"
     },
     "config/role-contracts.json": {
       "mode": 420,
-      "sha256": "f8fd200a2f29375bc43cfe79096fbd85ef3b2429d3471c2ab8dc97631afcc49f"
+      "sha256": "737f3c59f7200f3dfad1dea57aea630c547daeda16d1531ad7c50a3c95ea2f8e"
     },
     "config/routing-benchmark.json": {
       "mode": 420,
-      "sha256": "b6b5a001d2ccd2d50e7cfb42efbb814791b4695f64f567fa9154020546a8b8de"
+      "sha256": "ded9bca4f1acbbc4e8edc0bf7e9339e587d41d7133207971ee3e131ceac148c4"
     },
     "config/routing-examples.json": {
       "mode": 420,
-      "sha256": "d4dba95e2892ebf398baca593a34269eae2d5987fd35bd563a4b8377ddec7690"
+      "sha256": "e36306c239092173b57f972e6c8dbf0aa6e562d12647cd4de4ceffd49d337ef9"
     },
     "config/routing-final-holdout.json": {
       "mode": 420,
@@ -259,7 +275,7 @@
     },
     "config/routing-hints.json": {
       "mode": 420,
-      "sha256": "09eed8b99b393235826c823bb2bf962259155eca03ab75221742e238a0780afe"
+      "sha256": "933f5e47396f81c65b5683c460c57a6e2b299e7fd4f4d8575901d653b39b2de1"
     },
     "config/routing-v072-holdout-3.json": {
       "mode": 420,
@@ -275,19 +291,23 @@
     },
     "config/scope-boundary-benchmark-v073.json": {
       "mode": 420,
-      "sha256": "c80ca5cdbdde0b9a75412fa6a763e8a4a59bff599adac6d5cb9d2bbcba7972d7"
+      "sha256": "2523b661f10df026c5a49bfed2b8ee8f8d7349f0f0920a53de83027ac659bb7d"
     },
     "config/workflow-states.json": {
       "mode": 420,
-      "sha256": "d2565d231dc24606684c8a75f2df89302e1af5941a1eeec181bc9dd90c021a0a"
+      "sha256": "6e6f4cdae0ef87504e1118984476ffd972750adfe94c6400bb07317136a38a92"
     },
     "docs/ACTIVITY-RECIPES.md": {
       "mode": 420,
       "sha256": "b761041e5cfe8181cefd88c26c5a7df80763c6bb2460d15ad875383023ff3b85"
     },
+    "docs/ADAPTIVE-ACO.md": {
+      "mode": 420,
+      "sha256": "346d2cad6eef08fed49dbbf521887e0eb1995c96a1fa78f3fe616e46c0a5e3dc"
+    },
     "docs/AGENT-CATALOG.md": {
       "mode": 420,
-      "sha256": "08319d4187fb923167fff9e74c4ddce885b3535c54d08b4abcdff64f007c7803"
+      "sha256": "d928cae7ad7dbac60924d483303600f307a9635449e78a4d0b40313a4d63d5dd"
     },
     "docs/AI-VIDEO-PROMPT-EXAMPLES.md": {
       "mode": 420,
@@ -295,11 +315,11 @@
     },
     "docs/ALL-ROLES.md": {
       "mode": 420,
-      "sha256": "f112652e7cb06548ed4ad27dd5f1f5976a622b13d01e6f13902f20d13774e290"
+      "sha256": "cbb91582ddbc91a5191b5d66965a57b2452ec727f76cab06523dfe7f8567b36a"
     },
     "docs/ARCHITECTURE.md": {
       "mode": 420,
-      "sha256": "ef4221fa2807542e378758696604705729f4d0c246a6323b8a72d6e581a3c311"
+      "sha256": "725576e1ac6aeb8ca6fc39a15ab51a20f999cafe2ea4ff40d2ba6dc0aae41c64"
     },
     "docs/ARTIST-DEVELOPMENT.md": {
       "mode": 420,
@@ -319,7 +339,7 @@
     },
     "docs/CLI.md": {
       "mode": 420,
-      "sha256": "33449aa48b8ac9ae426e0a1cf234922098196b4bd04ad1e88c01284d12e82322"
+      "sha256": "a7f37ab165efb0272f6125a6c70995675ca3a6389920b9a266de74a290bc7e11"
     },
     "docs/COMPACT-MEMORY.md": {
       "mode": 420,
@@ -619,1455 +639,1455 @@
     },
     "extras/codex-custom-agents/administration-office/aco-administration-orchestrator.toml": {
       "mode": 420,
-      "sha256": "59dfb23630dadc9e8173e2d3ae8ad85924ca044c0f18b770d51e3d95adbba767"
+      "sha256": "f5a74a0ce680b5acbe4403e5f5cae40f654a1b840dbff08a761a0b9864f11857"
     },
     "extras/codex-custom-agents/administration-office/aco-communications-operator.toml": {
       "mode": 420,
-      "sha256": "2072bf1b592359348ff047cc5fa94d593d84665f0013a4bb8bb29e0d80ee590a"
+      "sha256": "98bd74d782b2c1d68c393b22b702f9fff8b6d133e9e4c3d2d75bdac40189a62c"
     },
     "extras/codex-custom-agents/administration-office/aco-executive-assistant.toml": {
       "mode": 420,
-      "sha256": "7b61437fb58e3a97f6134105be45f754512e876048c5156c1d70a2ca7fa9d736"
+      "sha256": "22ec38e8ec91c736e9db80775d04f0efca2a71d4feca34a1cbaf940841b84ba7"
     },
     "extras/codex-custom-agents/administration-office/aco-inbox-correspondence-manager.toml": {
       "mode": 420,
-      "sha256": "f24b709647bfb23210016d687cbf7f517f474e93fe9f32066621c3b13c694e13"
+      "sha256": "39cddb6110b548650d3c6e3a7dcfe90118515393f4baf237ba393062f27ab255"
     },
     "extras/codex-custom-agents/administration-office/aco-meeting-calendar-coordinator.toml": {
       "mode": 420,
-      "sha256": "e63f629e79cdedc6e316333846460e8fcba010eaf79c139448f3b4fdc94cd1d0"
+      "sha256": "5319b02ff82f27b3df60a16736eb91082cc7e42e4771c0f38c450051f6a80c6e"
     },
     "extras/codex-custom-agents/administration-office/aco-office-administrator.toml": {
       "mode": 420,
-      "sha256": "d0f8f94173475e21725f07f928b91a99c74ea1121b53b084c094b426b3cb281b"
+      "sha256": "8444a75efef97fe79421439652f366dd5d09e33b708828ed1643985e7cd531c2"
     },
     "extras/codex-custom-agents/administration-office/aco-records-document-controller.toml": {
       "mode": 420,
-      "sha256": "fe1dc0c2a833687ca1e46c48ca0c8b76f330d0a2b21d81d566822cd0b03e95de"
+      "sha256": "f542f884ba328f4a79ae7235334b18864b0488ece3bf5d72e455644ac6598475"
     },
     "extras/codex-custom-agents/administration-office/aco-service-desk-coordinator.toml": {
       "mode": 420,
-      "sha256": "c2a326ac3ded2a2788ecc2a4daf396f40da590bcd58bf7a0c9cab4f18e372382"
+      "sha256": "98b9ee07b96bfddde6d990a985d8c49fc2d863702ace078b3aa5d464bbbd995d"
     },
     "extras/codex-custom-agents/administration-office/aco-travel-logistics-coordinator.toml": {
       "mode": 420,
-      "sha256": "1c6bc3e46cfa7e9faaa0dc6a7d5dbe4ad962e85ae2cbc46f7e6c05f5ad5ad3a9"
+      "sha256": "72e8db5e88871c9d4945f8b834d36c71b56c072fd1c776951f32679e78020367"
     },
     "extras/codex-custom-agents/agency-office/aco-agency-orchestrator.toml": {
       "mode": 420,
-      "sha256": "b33a7535ec5923669ba0fc9a9a8b2ebc47e52f1d63618b44c734009c79ea0873"
+      "sha256": "fe87fdeda3f2844fc2eaa0650b5ebeb40eefe97738ded645c227ddd9b7ebbdcc"
     },
     "extras/codex-custom-agents/agency-office/aco-asset-manager.toml": {
       "mode": 420,
-      "sha256": "2f3ffeb597297f49ba435cc37b64dfb407a4687d002e1da31b94aae70fc137df"
+      "sha256": "f69b514bfdc79335c6625b82197f3141322142999d8e53981e59483f7aecbcd9"
     },
     "extras/codex-custom-agents/agency-office/aco-audience-strategist.toml": {
       "mode": 420,
-      "sha256": "088b412ae10ca10494f153977ff714808f1013f9ef490cf479607ea4a91486fe"
+      "sha256": "82f55f70c878f87ce20c1693982c08f53205e4546fbb993a42f7f437e178077a"
     },
     "extras/codex-custom-agents/agency-office/aco-brand-guardian.toml": {
       "mode": 420,
-      "sha256": "3a12e7997332797698e44c77d3bb43b5f9815fd778ea59ca5cbde0a9280b1d3c"
+      "sha256": "0d1a91b4539bea3933307d06114e9586d8bdf0e9f2f00d002b15583c58d3a477"
     },
     "extras/codex-custom-agents/agency-office/aco-brand-identity-designer.toml": {
       "mode": 420,
-      "sha256": "afb3267822b74d68560f28b05f44e88bec7ee2c7135b78283f3f0dd75a04a7f2"
+      "sha256": "7126fe97f0fa95c85b1a24be1570b571e67705ea26966e3ebb8cb73144d6ba8e"
     },
     "extras/codex-custom-agents/agency-office/aco-business-affairs-manager.toml": {
       "mode": 420,
-      "sha256": "93cf0871b17d53dd63da18dca6a19cc626675d417c523ea4a3bf765b7a70bbfc"
+      "sha256": "1a36c985091d5bf7fbb7e0bdba686bdc76cb6d910db19dc2c2dadf95a2fd460b"
     },
     "extras/codex-custom-agents/agency-office/aco-campaign-strategist.toml": {
       "mode": 420,
-      "sha256": "851ea0950810b5d46823a7ad38f99130a9edcfae98b158556b0d80cedba95628"
+      "sha256": "ff4f6640231ad6e073d64c8bcc7b8249afa3c62d1b3e5b9dddae2e05ed4d05a5"
     },
     "extras/codex-custom-agents/agency-office/aco-casting-researcher.toml": {
       "mode": 420,
-      "sha256": "d48fa69246746113aa9b269162d7aaaae0730c345a042bd23bccb2b79077d1a6"
+      "sha256": "440d6856f01581a9a7ddf5d4e0f9fb814aa96066a685fedee94dbfb59bca433d"
     },
     "extras/codex-custom-agents/agency-office/aco-cgi-vfx-supervisor.toml": {
       "mode": 420,
-      "sha256": "c0ff43185211f0d0c75a1a1ca6a3a9f8721e3399d7a170641c574572d41e6cd6"
+      "sha256": "ca270687282f04fe7e57fe65bae81c87509fe20b8e8f5de21e286cad511f161c"
     },
     "extras/codex-custom-agents/agency-office/aco-community-manager.toml": {
       "mode": 420,
-      "sha256": "e775a677527e23ec659774934bd0383078754d4d367931b8c0dd5bc3cb6d3c0f"
+      "sha256": "7c9d7812feea66b93cce2bed63ad6bc21349f5c5a8a95c4ef354e40077c3420b"
     },
     "extras/codex-custom-agents/agency-office/aco-content-director.toml": {
       "mode": 420,
-      "sha256": "92efc6cd98e11d80623efe424bc0e25ca8c7445cfc22e7d36f7a8f2e000a99b2"
+      "sha256": "e1df4cb972b7648c8e28fed8ac8207bb3fb5a764dc1351b0d8096d2c5dd4524d"
     },
     "extras/codex-custom-agents/agency-office/aco-content-researcher.toml": {
       "mode": 420,
-      "sha256": "cef7c918424b615289c18762317227503e293e9deca6d33eda191a60954dfa6b"
+      "sha256": "aa6a53b21469b2257f1c949c3b9f2a9918668df5e9f1f15dbd9442b0c2253cfd"
     },
     "extras/codex-custom-agents/agency-office/aco-conversion-experiment-designer.toml": {
       "mode": 420,
-      "sha256": "6ccebdf25190695325636a7a2f54313bf0287083ccf67571d1d880101240dcb3"
+      "sha256": "b6a7b6886c4d280ad2a8ade1a66fefe85adccdb43a7830715b929d9f0f54f0e5"
     },
     "extras/codex-custom-agents/agency-office/aco-copy-researcher.toml": {
       "mode": 420,
-      "sha256": "7c252285ea2d81cf9482e03dc0ebac5788e0a13602b923e57bc4a441b4fdbc43"
+      "sha256": "9ae0196d4160c8217935d553031c03afff1ab84458255398cbd51b330bd51c35"
     },
     "extras/codex-custom-agents/agency-office/aco-copywriter.toml": {
       "mode": 420,
-      "sha256": "f0af280071181dceecb5da341f0a6055b3d0b19f2f82f8e60d880a2095f8db30"
+      "sha256": "8ad62384d15b6021cc89c54edac9454628a1361a9bc4415daf4380dc8211e14d"
     },
     "extras/codex-custom-agents/agency-office/aco-creative-strategist.toml": {
       "mode": 420,
-      "sha256": "67e53a7b404ff4c72a40a6da637184aa04e136f8c8cd42d2e1c78ea580da0cd7"
+      "sha256": "4ee01ab983b63e936cf363ecee1e6a282ef8685d6a91c0039d7e039a8c0f31b7"
     },
     "extras/codex-custom-agents/agency-office/aco-creative-technologist-prototyper.toml": {
       "mode": 420,
-      "sha256": "7864fcf87222734c941476d3cadd86841ab6f0a5496ebf8aa9cd80a4fdebb223"
+      "sha256": "3756ca2ad9ccb499c1450c829602ca373ea66b4d322cadb38f6978cb494d1a10"
     },
     "extras/codex-custom-agents/agency-office/aco-creator-partnerships-manager.toml": {
       "mode": 420,
-      "sha256": "26ee6e8a2972be52e06304fc604a629add06e4e86834fb1f291727ae859e85f7"
+      "sha256": "a0dcad3dfd1f71440b7d3f922a0258dcabdb9874396ff8a4a5e51d2562037070"
     },
     "extras/codex-custom-agents/agency-office/aco-crm-lifecycle-strategist.toml": {
       "mode": 420,
-      "sha256": "0c1a6edce27c42cf37fbdb5e826dcd332cd9a956da82cef82f5b60f8a2f2f3aa"
+      "sha256": "4fdf911bdfb74b1368f76e546ce58143e45382757e6c2ff36a36d2cfc7a65df8"
     },
     "extras/codex-custom-agents/agency-office/aco-cultural-strategist.toml": {
       "mode": 420,
-      "sha256": "f521cc19e5a788f68b40236f39fcc928364cc94d9da0a1ddf25052af59262b57"
+      "sha256": "ab0723dd5d14fee56acf3a8a78218315a9f32d66a13904f51254cc4548e7d523"
     },
     "extras/codex-custom-agents/agency-office/aco-design-director.toml": {
       "mode": 420,
-      "sha256": "561717053fb14b53def69a0e8ca892daf47043a941cdbb89a2b71fa56c941b45"
+      "sha256": "a8f6a4193276ed223a05530d3dd77f8bace27623d4a03d7709feb927128cca92"
     },
     "extras/codex-custom-agents/agency-office/aco-design-researcher.toml": {
       "mode": 420,
-      "sha256": "255d4af882284fb98ab02c4812c6b207b45a8f59d1548454526ecd804b3f744d"
+      "sha256": "def66ebf874c3d53b17b039a7be35ad28a42145f9106d39472ecae733d360f44"
     },
     "extras/codex-custom-agents/agency-office/aco-digital-design-director.toml": {
       "mode": 420,
-      "sha256": "713b78b5834fe771037180593288d469f301817795abbadc2cddf929efc574ca"
+      "sha256": "8648c4a27ecd65326363b3554c50d06d4f7da10ee7872b64877d2ec2367338ea"
     },
     "extras/codex-custom-agents/agency-office/aco-fact-checker.toml": {
       "mode": 420,
-      "sha256": "932f2b93638e4fcc49e589cff0a140efa3b893d97467215c43611d5c540fd70f"
+      "sha256": "83ae08f883a407de0d86f809548cb343becc2ae48c643fa674b67074810ac131"
     },
     "extras/codex-custom-agents/agency-office/aco-film-producer.toml": {
       "mode": 420,
-      "sha256": "82139cb151713ca8e8a507e997c00e001fbd4f46761c33827d7f778a3c7fc204"
+      "sha256": "aff45d4a683d88b3c2609273bdeb259b7bee19f78e3045cac5daf5e2dcadfb0a"
     },
     "extras/codex-custom-agents/agency-office/aco-frontend-prototyper.toml": {
       "mode": 420,
-      "sha256": "c3e79ee248e5adf06fefe091533649d8f1fd3ca7c25b20c794ed11f2b8e0a143"
+      "sha256": "554c1f7b462cd49dbea73aeebefac9a7ed2a4ed37cc2361735e79556b3712b34"
     },
     "extras/codex-custom-agents/agency-office/aco-integrated-producer.toml": {
       "mode": 420,
-      "sha256": "2b4f31764258f8891efa21364caa6a6be06e463f9abb4448964325a22a11872b"
+      "sha256": "0633ef9813d00a40a642f9909f5e723d08fcfef2fb12c447be47bc3ae2fcb669"
     },
     "extras/codex-custom-agents/agency-office/aco-junior-art-director.toml": {
       "mode": 420,
-      "sha256": "898ae967f5ea8652d8430189fa1c23d5e60cf83f392fc80a9a7b28c296a3b516"
+      "sha256": "102701d6c0d0c48d56d234872dc3bc19025b9920c3747e72de8190cf4e3c48e2"
     },
     "extras/codex-custom-agents/agency-office/aco-junior-brand-strategist.toml": {
       "mode": 420,
-      "sha256": "6fd4cea8795db2f58d02948af72f00a343ff73a09259661b370792a7dc898c65"
+      "sha256": "13dc6537611b8ed343dcad06c263892a12e9d3dc47dd160dee6d8d30926b09e1"
     },
     "extras/codex-custom-agents/agency-office/aco-junior-copywriter.toml": {
       "mode": 420,
-      "sha256": "39670de9f0ed0d2ff3c94b2ec77ee5d404ce8b0ac863e2a177a3f12b979a4df1"
+      "sha256": "2c9b79d726ac4346e60be7c6f2b52bf7ff2862857b5033aaec1d3361360ee514"
     },
     "extras/codex-custom-agents/agency-office/aco-junior-designer.toml": {
       "mode": 420,
-      "sha256": "bc57e385893001f5cbeae00f74d2faa70f6a731168ad393b6050ecc8391a7454"
+      "sha256": "88582e71e0b4d96374aac456d81d0829d45c797a386bd43766c69abba1d3716d"
     },
     "extras/codex-custom-agents/agency-office/aco-junior-media-planner.toml": {
       "mode": 420,
-      "sha256": "c02acc019a41abbb42ce6bb96f1789446580a9da9886c0e973d375bef229b379"
+      "sha256": "bd94667357f6972e892879f8495bdf036767a373f1c2f76252d1c185f2508f14"
     },
     "extras/codex-custom-agents/agency-office/aco-junior-producer.toml": {
       "mode": 420,
-      "sha256": "9968ac2cc9cd4410af8efc33ddaec3d9759f0a8044cfcabf81982233fae4cb2b"
+      "sha256": "33766d5aab934e5cddf083797eeca43b99e386ab47354d6c6f3185997c70e438"
     },
     "extras/codex-custom-agents/agency-office/aco-location-researcher.toml": {
       "mode": 420,
-      "sha256": "ff6c9c922e544495c15a9c75bf7618da4a77375f2d3d7a2c6e821f5a95fb24c5"
+      "sha256": "e77dfef648169c84cd1b28e6df6dedf155622718a172e3aa16fdcbfc3e0197d8"
     },
     "extras/codex-custom-agents/agency-office/aco-marketing-analyst.toml": {
       "mode": 420,
-      "sha256": "53bfd3ce006fd4c93d76f4a445b39e540097a251ec0202dd468030da349d01da"
+      "sha256": "122435d065623450306b8662ecc773c7785f553cd1a916bd7b756e3e298c3813"
     },
     "extras/codex-custom-agents/agency-office/aco-media-strategy-planner.toml": {
       "mode": 420,
-      "sha256": "264b0061f7a817fc4b61eb05113ce96a3591952a66a59196a1748b4ffc8020b5"
+      "sha256": "e1846f1c3acfa004715084d389a934eede42808d70300fbd9063c165cdfe15be"
     },
     "extras/codex-custom-agents/agency-office/aco-motion-design-director.toml": {
       "mode": 420,
-      "sha256": "136a312eea17576f267197ad754a284cae4aa51dc79d568cff313736f4ed73d1"
+      "sha256": "97c03aca6930a7b1c4ecb0d62b84b7ba55f8ac1578156e04f38dfbd62f62390e"
     },
     "extras/codex-custom-agents/agency-office/aco-organic-discovery-strategist.toml": {
       "mode": 420,
-      "sha256": "3fc54e125e750ac7aa284757dd8485cab9cd0a4e73bad133c9b379535acaf726"
+      "sha256": "87a270b23ad12975d334843e354aa992b12029035dc8e20216b1cb5973e786ac"
     },
     "extras/codex-custom-agents/agency-office/aco-performance-marketing-manager.toml": {
       "mode": 420,
-      "sha256": "69cf411c9cba39446c08915beabbfeac6f0356f4bacdb3db5a4d909bcf22ebe9"
+      "sha256": "1802acf0880e17889022d12d2b3cff84f64dd4b6ca4a05422fe16770ffeb2166"
     },
     "extras/codex-custom-agents/agency-office/aco-photography-producer.toml": {
       "mode": 420,
-      "sha256": "da273f3ed24dceb71c1e6ee995d4285c715955a383f6d27700458f57cd55fe1c"
+      "sha256": "2a32682714eca6d41729788398e2dc9e62e48365517b693820aeb8d2a71ccadb"
     },
     "extras/codex-custom-agents/agency-office/aco-postproduction-coordinator.toml": {
       "mode": 420,
-      "sha256": "841502f6f05b0ab87fc1ee44b4329c9e6083f6612ea12912c0d23ae842cbfdf0"
+      "sha256": "c309d681beb0a1f1671d3e3802d48c0039f47da33cb0d8035ff789657084af0e"
     },
     "extras/codex-custom-agents/agency-office/aco-postproduction-supervisor.toml": {
       "mode": 420,
-      "sha256": "ae0d7ef3e95d8379bc076aa4a856d369de64430ba2264db8bd6948b85e30f922"
+      "sha256": "8a4bf183bf897453947a008d52da3d4d804efa240805691497fee937cbd5aa7c"
     },
     "extras/codex-custom-agents/agency-office/aco-presentation-designer.toml": {
       "mode": 420,
-      "sha256": "29226b6fe4b2d38cb5130ade715f6321578088fc31355f51717885364c211156"
+      "sha256": "fbaa345fe9b4a741221b2b77234aa31432d0156321a9d34c62f6c1868ada4bce"
     },
     "extras/codex-custom-agents/agency-office/aco-production-coordinator.toml": {
       "mode": 420,
-      "sha256": "a201ef23a315efc0df2be55d8db54128a0cb127999a6fc16ff565319acb08290"
+      "sha256": "ef856a1757929651ec7e4d794c1dc774da4d26d6be7c87a58762c0e27218b49e"
     },
     "extras/codex-custom-agents/agency-office/aco-production-designer.toml": {
       "mode": 420,
-      "sha256": "1986a9693edb88703399462f6baaf6b3b4632531efcbd3b5f9497fe677b1c756"
+      "sha256": "6d49dcec8c0b0e44f55ee659f853580c7be069237f7413f491ba29d2e7dbcd9f"
     },
     "extras/codex-custom-agents/agency-office/aco-project-coordinator.toml": {
       "mode": 420,
-      "sha256": "a6189c3f5f2f51b4945156e378256646495d44e7b94367c9d8f3084af4eb9abf"
+      "sha256": "2378b83cda28d166442b4522754b4bcf573580d5712cfb1eb91ed3205fcc7e5c"
     },
     "extras/codex-custom-agents/agency-office/aco-project-manager.toml": {
       "mode": 420,
-      "sha256": "f848eea5c1b867787a03e03cc153a04dbc3f7fa869c10c146f46618c7dfd8b0e"
+      "sha256": "6251a9ec6dd6fb02d1abb8f166a924c547ba9d5d6ccb58522786151ebf97a2f4"
     },
     "extras/codex-custom-agents/agency-office/aco-research-insights-director.toml": {
       "mode": 420,
-      "sha256": "52445d6f610d4ed3c20be29ab2167c3006eb6c57d55bb5c223eafb5fd8606a90"
+      "sha256": "f6d6df0f2ca940629160970b5e8e914a49f8bd0c4e6e5f62a3db59bab0b1d48d"
     },
     "extras/codex-custom-agents/agency-office/aco-seo-content-researcher.toml": {
       "mode": 420,
-      "sha256": "854dbd7c652e2b13ad953e7cefce64c65bb3211e355450d815663cd9a8825c0a"
+      "sha256": "de2059db58b78749fbce8c699ec2f0d668a3c714f6d553c2c1bb328ab94f90a5"
     },
     "extras/codex-custom-agents/agency-office/aco-social-content-creator.toml": {
       "mode": 420,
-      "sha256": "0fd15abff1947840f317cd2bd30e534e41c75b55c564b152b99413b993420728"
+      "sha256": "c71dbbd78dded795b586e897ca7202e318d8170f8e9bd43d562d769fa7dfcc45"
     },
     "extras/codex-custom-agents/agency-office/aco-social-media-manager.toml": {
       "mode": 420,
-      "sha256": "3e5aa41b520ca89b91200ea593d3958670725158d8be225a647f33053af47bd2"
+      "sha256": "db06dce2fa00470ecf7e36c89932ca06e76e3d7e06d36f61a09a2fb029b145d3"
     },
     "extras/codex-custom-agents/agency-office/aco-strategy-director.toml": {
       "mode": 420,
-      "sha256": "e4ae804e4ba92048fda00af5a79053bcc57af46c5c5cea0bf29806972d518992"
+      "sha256": "41f25f53f0b5b85dde799c7d0a3b91856de96d275ae94e240efbff0589d10afe"
     },
     "extras/codex-custom-agents/agency-office/aco-traffic-coordinator.toml": {
       "mode": 420,
-      "sha256": "0802ad2ad04daa134d8257f37fe2855284deb7ee7634cb403742a3922185c0ed"
+      "sha256": "1b475cc7a5861681e39945bf57c66bc73512d87ff76d6746ab461c2eedfc357e"
     },
     "extras/codex-custom-agents/agency-office/aco-traffic-resource-manager.toml": {
       "mode": 420,
-      "sha256": "1140d884b6085541923c261d2fe4e6f6337036c1c24ed5001c0593c70dffe314"
+      "sha256": "c89396e9c9dd4e294a60694d2ab0ea0e6326f8c9427853095a54c6f91fd70d5d"
     },
     "extras/codex-custom-agents/agency-office/aco-verbal-identity-director.toml": {
       "mode": 420,
-      "sha256": "c4d877c32634bc063e80d809eb7ecc4ad570c759e7ef629cb4d9690f3fe2f821"
+      "sha256": "c91398bf4318f5ad4085d79f54d76cf562b55e1d0c5e0d689a834d920a316d19"
     },
     "extras/codex-custom-agents/agency-office/aco-visual-design-critic.toml": {
       "mode": 420,
-      "sha256": "71a081b8946a68ffbfcb14abd1c3b12b5e34d2bb0b8d1c7260b665423b1b4c75"
+      "sha256": "e87cc257bc4247565e85a49ec8745b2ecd92fa99d3e1054b7ab62186d594e123"
     },
     "extras/codex-custom-agents/agency-office/aco-visual-researcher.toml": {
       "mode": 420,
-      "sha256": "30fecf418c3086bed36f9946e26f80b392476729de8b66624b7ec46ed136bd52"
+      "sha256": "f381675b89beff4195e579c2002643eb99eadf8f57b675bfd28161b8c4a8b76a"
     },
     "extras/codex-custom-agents/agency-office/aco-web-typography-layout-specialist.toml": {
       "mode": 420,
-      "sha256": "2f5878ea2eed6770a0ffe3e41d4ac8b9faf8d8525e1caacdafc8a748911af4c6"
+      "sha256": "eaf87317655e09e203bb13fb09242961129139b8cae49355104b8278bc707f57"
     },
     "extras/codex-custom-agents/artist-office/aco-art-contracts-rights-advisor.toml": {
       "mode": 420,
-      "sha256": "4e3b050f6c724d04f932575a013691131d894b3a39333cd62ba2406ff4f674d1"
+      "sha256": "7098f34d1b24bc41f42f40d6399ab3a2d06e743e3e776672f13a06e81dcf88da"
     },
     "extras/codex-custom-agents/artist-office/aco-art-critic.toml": {
       "mode": 420,
-      "sha256": "466fa3e6896f35518694cb892245e0e269f7a3165d0d6ac0e403978cf098625e"
+      "sha256": "62279346a4e23cefb9499b2e4ea3d901273231ed73dc10c271d360bcaad70ba3"
     },
     "extras/codex-custom-agents/artist-office/aco-art-ecosystem-analyst.toml": {
       "mode": 420,
-      "sha256": "557263f7ce04a915b556435214dafbadb5ad9f45c4a3773a0a9a5f86a83e45dc"
+      "sha256": "e1a96d218a35ee5b00336fd589477f4d09492d3c45acc4cef9ed8d14b6d6e48a"
     },
     "extras/codex-custom-agents/artist-office/aco-art-historian.toml": {
       "mode": 420,
-      "sha256": "c87faf9e1ef0758df25955a7e3d6f213c166eebaac3fad992a8e3273a92a2c91"
+      "sha256": "71f39763c2e066259f20539a8a3aaa0a2e4468c6c17fa23480465d962e738a63"
     },
     "extras/codex-custom-agents/artist-office/aco-art-marketing-director.toml": {
       "mode": 420,
-      "sha256": "5b1395961e22208f7725f5ab8f064bd37214bbefb2125c9f9f3299f9dd0ceba3"
+      "sha256": "89ed95e0feaf1de8aafdaf90bff17a76a70e4153fc573de78da0d0ac3eb2e452"
     },
     "extras/codex-custom-agents/artist-office/aco-art-opportunities-scout.toml": {
       "mode": 420,
-      "sha256": "15251183bf99fc72db9566abff6fbc06e44f2264489a36e8f5016e72908eb9c1"
+      "sha256": "8bf63e5697fae1959b3f4eef5439b95413004b55bd60f16ce11691f2511da550"
     },
     "extras/codex-custom-agents/artist-office/aco-art-publicist.toml": {
       "mode": 420,
-      "sha256": "8cfc4089a6bede71358479afa5023d8a2229ddc944d7b284891eeb179d44417b"
+      "sha256": "123d299d5fbc4c846825610cd3ee71e74a5589c66c361ca76d41c1904481782e"
     },
     "extras/codex-custom-agents/artist-office/aco-art-researcher.toml": {
       "mode": 420,
-      "sha256": "c83dcd5e5462fc7ec3d6e477317717a40c2ad35c5c00945254faa8301120445d"
+      "sha256": "4defc16d1cc995a750644b9adbe7f255f90c699f339c057c766c47b95b020632"
     },
     "extras/codex-custom-agents/artist-office/aco-art-sales-director.toml": {
       "mode": 420,
-      "sha256": "ceddcdacb7f438c255ed9e496c64e4142768462dc85229c065c4b3b9fc93b0a1"
+      "sha256": "e98ba3f091732c103e6db653af7dad98d7f7277c5b026f237b5b0dabb04db07d"
     },
     "extras/codex-custom-agents/artist-office/aco-artist-agent.toml": {
       "mode": 420,
-      "sha256": "bf26e1f876817d8aa589bcd40572eb9f311aaf747ec447086c122c6511416e94"
+      "sha256": "36f17bf462888b2fe2f2b55c28aba134438e8f4f0b3a7831cafa156c00d8001e"
     },
     "extras/codex-custom-agents/artist-office/aco-artist-revenue-strategist.toml": {
       "mode": 420,
-      "sha256": "a9e3c01b1dcfe341dab9dc1b3c4a57b6b777f86e107e65cf1ff742980c0c6efe"
+      "sha256": "9dee6493b14ede3f59a74b55414b2423bebcd95ff9914d0558069ae02440f0e2"
     },
     "extras/codex-custom-agents/artist-office/aco-artist-social-media-manager.toml": {
       "mode": 420,
-      "sha256": "ad33273b324564ae80bd7803066bedec93240f137bb100f845ca2601a0d616a0"
+      "sha256": "e253c6187ad616af9a142b7ee4203b6a0f6dc562478f66258ff1eff50c3c9b32"
     },
     "extras/codex-custom-agents/artist-office/aco-artwork-documentation-manager.toml": {
       "mode": 420,
-      "sha256": "e3ae8e024f7b84269a2c89dd58aa588885fc2d328c303e420ec2799a32232a5d"
+      "sha256": "0e8e0ffda3f56d4c7271ccb0ba1c9a96a2737121d794587f76b9e7101ad10006"
     },
     "extras/codex-custom-agents/artist-office/aco-collection-inventory-manager.toml": {
       "mode": 420,
-      "sha256": "7b2aed0d101f548eb1be5bb12833ec5a208bd9b131bda38bc023acec37e4ea3f"
+      "sha256": "bb55ed080dbe4f3212ad877af811dae04a8d4bb3b1ccb931d37a1b7169de9c53"
     },
     "extras/codex-custom-agents/artist-office/aco-collector-relations-manager.toml": {
       "mode": 420,
-      "sha256": "ec0e5ec25a584d42b6f8740565b22b56d7775ebefb7ef3bd3009c95dc65e7238"
+      "sha256": "7580cd3e49a40dd9b766bdfdc338a9328fc487a48f03eea3fb7d9726abd349eb"
     },
     "extras/codex-custom-agents/artist-office/aco-commissions-licensing-manager.toml": {
       "mode": 420,
-      "sha256": "f6a867a40d7680f97fd25006cd0c2b219fc64ff6916000776d06b7e55eff753a"
+      "sha256": "02d742a29bcf0457f1c92939ce0bb92115a89a978b0b9e980127ee235f77ca65"
     },
     "extras/codex-custom-agents/artist-office/aco-creative-orchestrator.toml": {
       "mode": 420,
-      "sha256": "d6619e6ec5a738bd0295cf956a87bd15d2bd86f8b199e9576f38858b2fb24bd5"
+      "sha256": "ee0b1359a76dd81fa627cb0907c691644447adecb3b7c8a964d228cf88f9e5a0"
     },
     "extras/codex-custom-agents/artist-office/aco-curator.toml": {
       "mode": 420,
-      "sha256": "e5ad0648a772d9f389639129255fa0d2522ed250a37c356ba9189cb033333df6"
+      "sha256": "b1a55e92a83eba3fa8cea8ccca490ae0130abb8479c21772ba0951ad7bbabe0f"
     },
     "extras/codex-custom-agents/artist-office/aco-digital-preservation-manager.toml": {
       "mode": 420,
-      "sha256": "17a41516aa46006cf6adb1cd34c7a01792f112e71d7b7751603a26a4a209e9f2"
+      "sha256": "34167d3777e3bb38d420dd03559d00af48cbca881ddb78ca5fd2c45195c40b86"
     },
     "extras/codex-custom-agents/artist-office/aco-edition-manager.toml": {
       "mode": 420,
-      "sha256": "7e14526d13622eb32acfd5278685ce0de8cedc90747b63ae0ec411c13d8cf263"
+      "sha256": "05622d794bdf8f07020542bfb41963b2897bff10d1256cebc894c99cc75a4480"
     },
     "extras/codex-custom-agents/artist-office/aco-exhibition-producer.toml": {
       "mode": 420,
-      "sha256": "52b5c8c4dd7b7bd99a45f077244e30a1846b6baeb83351cff032c7de39767b62"
+      "sha256": "0a22f78ea81d4057b17c21f1ddd468647618568cb1d519299ccff5ef59f3680b"
     },
     "extras/codex-custom-agents/artist-office/aco-fabrication-manager.toml": {
       "mode": 420,
-      "sha256": "c105000944a31095fb8033e9269b6425f0f28cf42aae82f6378c4f8f0103babb"
+      "sha256": "67e725e43252a377c24eebb219fbb7b9a39fe21b51feb36936e292e816dcb53c"
     },
     "extras/codex-custom-agents/artist-office/aco-gallery-relations-manager.toml": {
       "mode": 420,
-      "sha256": "6c30239e237c222c9a792ede7e3dcc8177dc49c1132c080ca794717a24b2aa99"
+      "sha256": "9a97c44f2b44565d91040c3ec6511750c4a9726dc32ccf3764396eeddcfc5606"
     },
     "extras/codex-custom-agents/artist-office/aco-grants-applications-manager.toml": {
       "mode": 420,
-      "sha256": "85c768f5b9bfa22341b5a0461f41abab6fe559df5f4bdba76403b9af2c909ce8"
+      "sha256": "add867019fc540aa9183e9e5801444f3994fcf95411924f524d6f8875cc8dd22"
     },
     "extras/codex-custom-agents/artist-office/aco-institutional-relations-manager.toml": {
       "mode": 420,
-      "sha256": "d1b506105649ea33d2289a138cd6068f6ff1a591bc3240bfff28f2d387b616b8"
+      "sha256": "9ee56eb0ac926ece315f46525838706b40f0d96c2fb6fae7ad3f20951b027820"
     },
     "extras/codex-custom-agents/artist-office/aco-practice-archivist.toml": {
       "mode": 420,
-      "sha256": "184e6cd1135b5e1ea76f7e43145d825203f328885c2a4c655224c9193ce882a1"
+      "sha256": "c3e5e248ea6ff682636801a2c57873ca815f463916f2cb3299f3c599d89c368b"
     },
     "extras/codex-custom-agents/artist-office/aco-practice-strategist.toml": {
       "mode": 420,
-      "sha256": "6e457f1ea6268dcb2d5f68bfc0cc12d5c7109369c08cc66ee666e5f679823c7a"
+      "sha256": "d1d6f5dae328bf605a3aecb58fd4a8781130d689fc9f177a75ada11bf4e87de1"
     },
     "extras/codex-custom-agents/artist-office/aco-press-reputation-researcher.toml": {
       "mode": 420,
-      "sha256": "eeb341bc43b27ac1e83b2fa1363af70830445e9c8e58a4a2b8112cfe4b712a42"
+      "sha256": "58bd08123633221e799ee127a6754be87e2e3a9fd5062b8dbc7df335113d0566"
     },
     "extras/codex-custom-agents/artist-office/aco-publication-manager.toml": {
       "mode": 420,
-      "sha256": "ad5d3e995053b7e992f708b589fd4cc947d38ce2b23e0f29a4a495c6ff04a46d"
+      "sha256": "1c43bcf01b2fcd64e2b34c864b5911782e204b040116112c33277ab783b6aae6"
     },
     "extras/codex-custom-agents/artist-office/aco-registrar-art-logistics.toml": {
       "mode": 420,
-      "sha256": "1dd6e5cf1207dfeea32c94aa463c437ce16cb2b82e565c6e2ceae46e7b39431f"
+      "sha256": "8e07e6e7655407f95ee053f7535c110d310174c09445f85a67255b6c0a73cdf7"
     },
     "extras/codex-custom-agents/artist-office/aco-studio-chief-of-staff.toml": {
       "mode": 420,
-      "sha256": "e7dd1951f78aab8636c5a040dd493d8ed9a426e856ee34d587b4ed7155cb5fd2"
+      "sha256": "d72b649f0a03c65ac44a9eedc3ba530de9867445e3ff2a56384e2beba93ea2c1"
     },
     "extras/codex-custom-agents/artist-office/aco-studio-comms-manager.toml": {
       "mode": 420,
-      "sha256": "5cb7114bbdd1bab768557a703ed4dff6ef4fdb5ba6dc48c84f27cfe87a404c85"
+      "sha256": "6b53d9e0b1409b277fe14dedd8f97fce6703b1604cb028dd9c927066f2b77939"
     },
     "extras/codex-custom-agents/artist-office/aco-studio-research-librarian.toml": {
       "mode": 420,
-      "sha256": "3c1e08aaa45c68c69eedb98712c7c2959e71722c8da73ef2cb925885aa57e035"
+      "sha256": "2c596db2e00999a52e5317afb3e0964c0856c96240552b0bbb265821649ad690"
     },
     "extras/codex-custom-agents/artist-office/aco-technical-art-producer.toml": {
       "mode": 420,
-      "sha256": "ac10a397525abd0a7a302da95c625727a1e9b95b0edd5412a5475957150e7906"
+      "sha256": "d1859679981c18656fe1183241b9b7ad7c198b1f053ba89f43baace281ebf21a"
     },
     "extras/codex-custom-agents/commercial-office/aco-commercial-orchestrator.toml": {
       "mode": 420,
-      "sha256": "516238f05b07c40cc35ab1c1cd007c93ce7a605629bdefb479279b68d1959cac"
+      "sha256": "94452fc614e412cfeb1a787854baa0159900c4646f35115d2da91342dcc9c0d5"
     },
     "extras/codex-custom-agents/commercial-office/aco-customer-success-manager.toml": {
       "mode": 420,
-      "sha256": "f2e41649c7fda83ece42b68387e203032613d683674f29ce0a78dcea3d74c3c6"
+      "sha256": "370f2a382a589c5782844c7781d722a91494f2087cb39dad39a793e3dc7f337f"
     },
     "extras/codex-custom-agents/commercial-office/aco-lead-qualification-researcher.toml": {
       "mode": 420,
-      "sha256": "be166fe5ec7c29932c66addd1c058c0ae0f0466688badc6472a8cfe595edc541"
+      "sha256": "3bf829241e1671c69ba7ad5f79f4c06a5a02a014ae47840b818adba6cf2d8dfb"
     },
     "extras/codex-custom-agents/commercial-office/aco-revenue-operations-analyst.toml": {
       "mode": 420,
-      "sha256": "1f607e1170af1d0017023612bb0a7233df0f9f11c71b39edadbebac888d7727d"
+      "sha256": "01baee8d1a16ee5b1e63f5edc8737a3740a0be7b7075154e11b79eb57d79e1f3"
     },
     "extras/codex-custom-agents/commercial-office/aco-sales-enablement-specialist.toml": {
       "mode": 420,
-      "sha256": "a43b115b676d9b9d7bd4ababd88b224ba3b3359504d75c044ea95cd9c3af68c6"
+      "sha256": "240e83b4d429a0783c1655a7c15f43742e221e7caf96e21fc4f34c42729746d5"
     },
     "extras/codex-custom-agents/commercial-office/aco-sales-operations-manager.toml": {
       "mode": 420,
-      "sha256": "d291dcdea93d43dfe8b9a3cfccaed1feeaf7eb0ddb0fdb38d90dddcdb816ffcf"
+      "sha256": "4c608b75807b9e69f0bd235b357b179a3f7dbfd0dcefa66c4f7ff2171f4d7749"
     },
     "extras/codex-custom-agents/commercial-office/aco-sales-proposal-specialist.toml": {
       "mode": 420,
-      "sha256": "7fc998078e3739d49faa6b268225c8416e8adb74641d54e4491c855018c1f01f"
+      "sha256": "3085e76a2c2dd6d426537de48d829ee2668ab82989489cbe8cb50f8c651737ea"
     },
     "extras/codex-custom-agents/commercial-office/aco-tender-bid-coordinator.toml": {
       "mode": 420,
-      "sha256": "7c915ef11fc74dbfa860e78823d7d1fa44b9cbcf8d29575f0f8e551991feafd4"
+      "sha256": "e91aea58915c974c4f72f4780f18c7d0747ed50b8d6a209f6625d73cd5f6edb3"
     },
     "extras/codex-custom-agents/delivery-office/aco-agile-delivery-facilitator.toml": {
       "mode": 420,
-      "sha256": "aceb2db2526ad561d665c2de1e1ecd747c266b8d8720ecd3ac50e8d50d392f00"
+      "sha256": "feb09960b28b78f6734af7def53af72044ce93f9c30e0ebc050ab553e2d6d0ce"
     },
     "extras/codex-custom-agents/delivery-office/aco-delivery-orchestrator.toml": {
       "mode": 420,
-      "sha256": "856bdf38f09fea80836d0fe7d987a563c0fb41aa9cca92bc5a32b02844e98d35"
+      "sha256": "18e85f12343303d0ace3b9df8f1c0d21ff3978730f709f2d4e9f67c8e9d6b3f0"
     },
     "extras/codex-custom-agents/delivery-office/aco-programme-delivery-manager.toml": {
       "mode": 420,
-      "sha256": "1a56bc2cfa519d80a0e828a99b9fa198942fca36ce5162cb045bfe9ba756513a"
+      "sha256": "55bd03865ec1659e09e8b9b3a3a27a2eefa122d8c5a0bab24f30de7544f2c44e"
     },
     "extras/codex-custom-agents/delivery-office/aco-project-controls-analyst.toml": {
       "mode": 420,
-      "sha256": "d1f80e82e87439ee99313cd1717f2de441874dc680546df8f38b934cf6151708"
+      "sha256": "a5cf1a9ad1cedaff0b0254915040c685d6306f0584df8abafa7f5f7052ee7a69"
     },
     "extras/codex-custom-agents/delivery-office/aco-quality-acceptance-coordinator.toml": {
       "mode": 420,
-      "sha256": "a0c91515ed61ea448123ff7f58ece7715a97d1abb2fb5c139de48de451f90754"
+      "sha256": "acdaf202b77d6ffcd8f09eacee9d77a71565e3d63bd497ef2ac5656c1e149bbf"
     },
     "extras/codex-custom-agents/finance-office/aco-billing-receivables-coordinator.toml": {
       "mode": 420,
-      "sha256": "42162912a98275c58f66ad61d398cac9ce5b68b7ce51aa73b5adc63f7fee2caa"
+      "sha256": "8cfb7f5be88146c6eb80b4338e0e9206d4799facad5a1137fab60805e486a524"
     },
     "extras/codex-custom-agents/finance-office/aco-bookkeeping-coordinator.toml": {
       "mode": 420,
-      "sha256": "9c09e4483de550907f8b76b9378d1149e8386af068ce48b88815f93005299358"
+      "sha256": "d344acb0b80400437657829b6dd5b8a3d2c2dc06d1c0b917042bb994a5926c9e"
     },
     "extras/codex-custom-agents/finance-office/aco-cashflow-treasury-analyst.toml": {
       "mode": 420,
-      "sha256": "65abdcd07481f2fd5416b2b794d5d112f24ceab29e9ca67ae76d122ee8da4722"
+      "sha256": "d014bbfa65e1225ed2b43754ac3b8f4be7a22b5bebb925e481d5b30e11bc85a3"
     },
     "extras/codex-custom-agents/finance-office/aco-finance-orchestrator.toml": {
       "mode": 420,
-      "sha256": "c27e14fcaee47fdd9174f1b62e44b8a803b30543f35783952e7ef2f3454295f6"
+      "sha256": "491155cafd27ca654c9ef66615e83ab9b1df319640bae86e6cae40318b2f9a3d"
     },
     "extras/codex-custom-agents/finance-office/aco-financial-controller.toml": {
       "mode": 420,
-      "sha256": "e6a6e2485d4f897cb931faeb24fe9f7b7f84a116d1dbb26b63a1f456bb22ed4c"
+      "sha256": "cb57ab0e8c33a381efaa5ccc155d7ab08af0f8056f74247a3e72f52d5191655b"
     },
     "extras/codex-custom-agents/finance-office/aco-fp-and-a-analyst.toml": {
       "mode": 420,
-      "sha256": "47f502b0c458b0a4c2d087e4eef0f3fc3965f7245921ea1abe67900b39dc9f55"
+      "sha256": "df83f7cbdf1cb08cd3fca11bfbdebd0cc54a98b936d408af978d0535dd43a15a"
     },
     "extras/codex-custom-agents/finance-office/aco-payables-procurement-analyst.toml": {
       "mode": 420,
-      "sha256": "4c353a8a25edc04dcd6de3740a96a70afb8d17872501f563a165857a4f3882eb"
+      "sha256": "7c1beb45e8e9fa43e9ec19900ff70a7bf88aa1f6f3b33ebc492dd86cbd89a34f"
     },
     "extras/codex-custom-agents/finance-office/aco-pricing-margin-analyst.toml": {
       "mode": 420,
-      "sha256": "01eba39b90bc236045b2cb9b8fbcc461379b77a91c88db1dc0831605fedb7b15"
+      "sha256": "62138c98b34e7faeed20a99c86120f0076b3e0474abe99900a25508a718c7bab"
     },
     "extras/codex-custom-agents/finance-office/aco-production-cost-controller.toml": {
       "mode": 420,
-      "sha256": "df7e486617c7de18cb9a509b5ce0d86745d4cb18207dcde8a731edb27a2ebf75"
+      "sha256": "67788b9add76013ed868586ac1891a6912e2cdbcd5794aa4e731d6ee55f87d7c"
     },
     "extras/codex-custom-agents/finance-office/aco-royalty-revenue-accountant.toml": {
       "mode": 420,
-      "sha256": "171d25c894bad5f6208996e2b59bf6995b83b8a4bac3238fc6d2783c5a62f1bf"
+      "sha256": "b80e4994568d904b4c82cef09bea94dc20a1e70105b1c91caa7bfb88441606b6"
     },
     "extras/codex-custom-agents/finance-office/aco-tax-compliance-coordinator.toml": {
       "mode": 420,
-      "sha256": "9267cd63989f86b9a12b8ff377c3957a261636c1c51e48998ac2418ec454bc10"
+      "sha256": "ab76e92e1c135d002750a8903bdf05acce6ec02bda4a34967df2f289774c2b57"
     },
     "extras/codex-custom-agents/legal-office/aco-ai-technology-law-advisor.toml": {
       "mode": 420,
-      "sha256": "9905af8bd52145893c6f530429bb35c2dfb8c91ec607a852df401b764ea74953"
+      "sha256": "ba9b8167d4e9bededc4e362f648b8e76109edd806a4c198a9713dfab537e51b1"
     },
     "extras/codex-custom-agents/legal-office/aco-claims-correspondence-drafter.toml": {
       "mode": 420,
-      "sha256": "826c041d18d2aca6e2f5cdfb9574e668a83163a68123b6f334f341430c1a8a80"
+      "sha256": "357612f0ddbebb8ffc9032c6550ee120917f02c3e78ad2e53cb77e744d933c41"
     },
     "extras/codex-custom-agents/legal-office/aco-commercial-contracts-advisor.toml": {
       "mode": 420,
-      "sha256": "1810374ffb66f5037ba10d79155e23cf21ce62f41f99a9467a007d4423b98a44"
+      "sha256": "fc2fc0670e58ab51a55f763b86f3c356c2476057f8fb1c9d8f8a15d84dba5b82"
     },
     "extras/codex-custom-agents/legal-office/aco-consumer-advertising-compliance-advisor.toml": {
       "mode": 420,
-      "sha256": "1b4cb5838a32d83bcf2efaebeaa7a93a074ed98b2c416af8b35529bae21fdcb9"
+      "sha256": "df30f031b98493b627896deb8ab15e294276e7271b1c85dfa30153fcd3f7d44c"
     },
     "extras/codex-custom-agents/legal-office/aco-contract-drafter.toml": {
       "mode": 420,
-      "sha256": "e90b73ea3f72aeb195e468e7b0eb90fc97b1a90e4bb019cfa2f98a20c9b36ad8"
+      "sha256": "f18bbc2bffe0b0ec77b841e06b7dff045d2df2cc38f7a44168f143d682c3b92b"
     },
     "extras/codex-custom-agents/legal-office/aco-contract-negotiation-advisor.toml": {
       "mode": 420,
-      "sha256": "7fd438249f07be0eb3e4f89f87a586a284e3b1179c31bfdc6fa8d03a25574f6d"
+      "sha256": "53212b4014068b4e66ec519bfedc632c9932c67077c4411fdcb1965001b7d062"
     },
     "extras/codex-custom-agents/legal-office/aco-contract-reviewer.toml": {
       "mode": 420,
-      "sha256": "024cea4261fc54203e2ed90d1b1760c6a9cbf5158584a39b1374fe08c29a57fa"
+      "sha256": "906d518ed468b5ac8f57c3c8df0687f426d15d5d8d9c05543c971dc9ae3837bf"
     },
     "extras/codex-custom-agents/legal-office/aco-corporate-governance-advisor.toml": {
       "mode": 420,
-      "sha256": "7565aa5a08d31a00a7d71ad1cad0c31d6c253abe3eb7e1d489575d21ff9ee21c"
+      "sha256": "3f4f1425ce6d8819efcb4b09a065b7544151b83e94f89aaa6186719761fabc37"
     },
     "extras/codex-custom-agents/legal-office/aco-dispute-prevention-advisor.toml": {
       "mode": 420,
-      "sha256": "180e516b392cfbfd9bd2e139ad56674fab860df899e6958cec5df737ea740dd5"
+      "sha256": "2197b79c8d35ca47b4ef9e8220ff994a778a99521562f08a882ddfcd169ea73c"
     },
     "extras/codex-custom-agents/legal-office/aco-document-review-specialist.toml": {
       "mode": 420,
-      "sha256": "09379622f34ddf65fd8f0beecf633834b9c53c0fcf1cf7bf05798022a76c30d1"
+      "sha256": "8bf0aa560f187d51739d777f59f74318c5e379a0065399de66404d21af54fbb4"
     },
     "extras/codex-custom-agents/legal-office/aco-employment-labor-advisor.toml": {
       "mode": 420,
-      "sha256": "0f317682cc39686362b1fa3f1b3dd252bbf189aa7d07e90c1f453378104e86bc"
+      "sha256": "fc24e5ea15fad8fb43e56819102e64f7329838c57bd9180aa1ca4230762db09a"
     },
     "extras/codex-custom-agents/legal-office/aco-independent-contractor-advisor.toml": {
       "mode": 420,
-      "sha256": "bae5830cae4dc2596dca9cd4a725b208db1fdc860051bd55264dc888b4b7f190"
+      "sha256": "d8e57997ca6b4e8da02d66f5ef4822d00e0c104a39ba45bc8ad6e9db79e18524"
     },
     "extras/codex-custom-agents/legal-office/aco-international-contracts-researcher.toml": {
       "mode": 420,
-      "sha256": "d3fd1fbdbc9321ee044ed44871245663462def5a104bfb5451895d233b65743a"
+      "sha256": "80c0097b7e103ec26dc2cf16c5571313d0c7f271e295d0e90f4d68597e05b327"
     },
     "extras/codex-custom-agents/legal-office/aco-ip-copyright-advisor.toml": {
       "mode": 420,
-      "sha256": "620b0f85a1dd23b585cd0f9dccf919f2ec332ba299ab86ee2360555281742149"
+      "sha256": "e1dcceac29ee71decac59f4be98bb6323efbdb2257b0755f1a61bd5721a6a791"
     },
     "extras/codex-custom-agents/legal-office/aco-jurisdiction-researcher.toml": {
       "mode": 420,
-      "sha256": "b398b254262d02532644ff726d5eb9c12bb2fef21d10e5caedf1160df558f8de"
+      "sha256": "5ac1bf9a54cadaf9e2ea5c46a67437e79d15b26284096f5dd2441f2f59e25ddb"
     },
     "extras/codex-custom-agents/legal-office/aco-legal-deadline-tracker.toml": {
       "mode": 420,
-      "sha256": "4b8bba370c8c9eb2d1c4ac3dd32982633222cb7b9acefbc353722f4892cded4f"
+      "sha256": "6a692fdf124d41a9db44fe620fff9b7d9c681b9981c292919bf4038fe3eb6506"
     },
     "extras/codex-custom-agents/legal-office/aco-legal-fact-checker.toml": {
       "mode": 420,
-      "sha256": "e947d876d923d05e75f209fd65732865fd7da1f817644f9129fd1511b675e299"
+      "sha256": "158e28e349988eae7fb095c599b06b8bc6def62ed20105e5149d4e301616b027"
     },
     "extras/codex-custom-agents/legal-office/aco-legal-matter-manager.toml": {
       "mode": 420,
-      "sha256": "2847fe21e53442c9dd6731ecc21b73c05519cb381595c387534a512f73f6eaf4"
+      "sha256": "05496cc4d08e73a12aa20442b1f5333fac396ccb79ab6d3c24ab45ef87b63ea1"
     },
     "extras/codex-custom-agents/legal-office/aco-legal-operations-manager.toml": {
       "mode": 420,
-      "sha256": "7099dc2af409a0b52f04997c4049e9993ba49d1673b28b486681addad0beabb1"
+      "sha256": "6fe85e17d4f5fdac2a4015f37ab8e3139997a0b36d092b5189e37c3e4fad695d"
     },
     "extras/codex-custom-agents/legal-office/aco-legal-orchestrator.toml": {
       "mode": 420,
-      "sha256": "41550494a0f5d3af21e107d2e0a21690e1e24c11a7848a4b65ebec31e6e3c4c0"
+      "sha256": "36d8d5ebd7ec6db918ea73e35ade3814968122c4a8a51ce37fa617e899d1f030"
     },
     "extras/codex-custom-agents/legal-office/aco-legal-researcher.toml": {
       "mode": 420,
-      "sha256": "b39f670c153edd92732d0e730022b49b6293105a8da9cbf33095c73051a0199c"
+      "sha256": "050ec713ff777fe8dd8c7f0a327c57db68e21d5c3af74aa28ff828ae7aca263a"
     },
     "extras/codex-custom-agents/legal-office/aco-legal-risk-analyst.toml": {
       "mode": 420,
-      "sha256": "65993021ffb2da55eebbe20c5c9e86567dd7f9f2e6c33c17667abaa294f5f743"
+      "sha256": "6dec5ef23a0a90cdf6d8cc8c7dde0d55440711cbbc6d85ac5481c8d400e5d8d1"
     },
     "extras/codex-custom-agents/legal-office/aco-licensing-rights-advisor.toml": {
       "mode": 420,
-      "sha256": "37b7a3b2b7aa6f38ece9eed7f64665414abf1ef34dc7c05cee697f7abf113398"
+      "sha256": "91ce0757233fc527c6c61cf099ef032d5e1cf24a63f4fb86703c695936e54d7a"
     },
     "extras/codex-custom-agents/legal-office/aco-paralegal.toml": {
       "mode": 420,
-      "sha256": "610d99781211e07fbc9002347cb19b3e23072ece50c93c5ce3f8933bb00a1106"
+      "sha256": "09d699f08634dae928553f59ec96f0b881e3efa40c67c6e7b05e47a2f528e7e8"
     },
     "extras/codex-custom-agents/legal-office/aco-privacy-data-protection-advisor.toml": {
       "mode": 420,
-      "sha256": "98d459df34c6307243bffb76804d56353e143b0fdebc4a686633b59b101e1bf0"
+      "sha256": "489eb93934dca3f5eabda84037ac0b1c010ebc0c9b13ad1e26cf2aaf707b1b00"
     },
     "extras/codex-custom-agents/legal-office/aco-procurement-vendor-contract-advisor.toml": {
       "mode": 420,
-      "sha256": "3301038f319127c1cc6dd58ee022e542ad9122aed96cf3af12c5f78c67d157d5"
+      "sha256": "c23d47c720a005d030d63bccc0217179375cf46e5c3fbd161cfcd9d8e05d1f2a"
     },
     "extras/codex-custom-agents/legal-office/aco-regulatory-compliance-researcher.toml": {
       "mode": 420,
-      "sha256": "9883cc672e658f38348f84021c916b79e04f50e2b433675ce41c81bed22b600a"
+      "sha256": "8c3e9c53f275de31e0e82f71c5158a641dfab4e5f42b49686d0d16f8bccf1bff"
     },
     "extras/codex-custom-agents/legal-office/aco-trademark-brand-protection-advisor.toml": {
       "mode": 420,
-      "sha256": "a08f4f7de064ac3c698048a5221799972d509a88a9aec190cdfa8f69615a55ed"
+      "sha256": "458d3bc50a45c9ab73d67e78f52fd2c2e6ff136dfbebc5feadd72319f592075f"
     },
     "extras/codex-custom-agents/organization-office/aco-account-director.toml": {
       "mode": 420,
-      "sha256": "a1b8e8aab27ffe2d9a49479a96b897870edccda5a6a90262ffd12bed108b5acb"
+      "sha256": "0db2d63ce3d97b7b12e65175734da87273e6cc0f7f9585bd5d0adaf187f633ef"
     },
     "extras/codex-custom-agents/organization-office/aco-business-development-director.toml": {
       "mode": 420,
-      "sha256": "9fc8f015a5d55f343f297112bd34dfc8b4aad9ea2c36a1c919bd57ee04c654a4"
+      "sha256": "976f4b9243355884945bbbd6b72ded5abc304a76a5522e119b8f7343c533536c"
     },
     "extras/codex-custom-agents/organization-office/aco-client-strategy-director.toml": {
       "mode": 420,
-      "sha256": "53dd346a2e6b5243b3f08b8c78813e6ad9d8ec8de835ba01ebbb86b95831fb1e"
+      "sha256": "df750e28ddcafa5d85dbb68dd072a4742b8999aae821e6b8433fbfd58cdf7a4e"
     },
     "extras/codex-custom-agents/organization-office/aco-commercial-strategy-director.toml": {
       "mode": 420,
-      "sha256": "db5787df1c387ae5b6cad55990cd665842c9f1811087383353fcc70172b48cbe"
+      "sha256": "e8173e3349d74ec70834bb17f86d66ea64daa9c8a171424ececf1a05a1aa3150"
     },
     "extras/codex-custom-agents/organization-office/aco-commissioning-editor.toml": {
       "mode": 420,
-      "sha256": "77ffa74b5949a6e004f03aa71d0fd7b0178a607ebb07cb29a98045e551f8df1c"
+      "sha256": "f050ea9097f9f29dbc2a1b381ffc7185df197124f297e1dc03745b272ad8702a"
     },
     "extras/codex-custom-agents/organization-office/aco-communications-pr-director.toml": {
       "mode": 420,
-      "sha256": "6e6dbe4bec457e1966228a7dbbda4a7890b0a4410256cc895f90fd9bd70a20b6"
+      "sha256": "0ad1436cb924a69c734d0659ee5548ff2e5728dbb7ec1cc3b7cbfeadf0ca3e74"
     },
     "extras/codex-custom-agents/organization-office/aco-community-editor.toml": {
       "mode": 420,
-      "sha256": "ff509b680383349b5129661fdfcc0241e3196a653899e2cda2a8099a0e9f71f9"
+      "sha256": "1bf09d10ee5794526bac5b4f1aaface152b372f71079ae69e41eacaf52b84569"
     },
     "extras/codex-custom-agents/organization-office/aco-contracts-ip-manager.toml": {
       "mode": 420,
-      "sha256": "0a23ea86516ec393a6e24ff0a48598ae24523ade35577768e7d2c1e73341162f"
+      "sha256": "6008e0d80e337b12a29e1435edd0a899ed80d4196d60633fd08fc609cdb46e0a"
     },
     "extras/codex-custom-agents/organization-office/aco-creative-director.toml": {
       "mode": 420,
-      "sha256": "b8fa0bb9cd5ef612c17a2be6b8a28820e06d8c3abdc11ed0563c7f441114d7e8"
+      "sha256": "ae13958b1e861ebd1a04354334e7912dc47095e3fce58ec608db9d6bfdf94558"
     },
     "extras/codex-custom-agents/organization-office/aco-creative-technologist.toml": {
       "mode": 420,
-      "sha256": "6d070cfabb4f028297e1b0cbbe0f4ab611828b7ecf6d730292cae588a77f3f8f"
+      "sha256": "b07defaa3d61bd918cebf0c26dce7050b9f6661d7ac662cbd5ef0c12bd3a0e0b"
     },
     "extras/codex-custom-agents/organization-office/aco-cultural-intelligence-analyst.toml": {
       "mode": 420,
-      "sha256": "883e759c04ce2549577b18d791aa46832891e8da953320c6abf201bb2577a78c"
+      "sha256": "1b38113661a4e2f41c0e07e444c21562ec4f151cc3a0d3ccc12e1936f48b277e"
     },
     "extras/codex-custom-agents/organization-office/aco-data-insights-analyst.toml": {
       "mode": 420,
-      "sha256": "2c14b163bc05a83ef65439ce804e68692179bd1f486217df3de2c18dd8bddfb4"
+      "sha256": "a7562a1a2983ba2c433e956b262754cc4c4c84a2a8e6592e3b68c9d6f66383f7"
     },
     "extras/codex-custom-agents/organization-office/aco-digital-product-manager.toml": {
       "mode": 420,
-      "sha256": "a3894e635d0fc252a0d17970df5d9b22603513baf8fda6aed4e14d5b8cfe413c"
+      "sha256": "3e0e01f9adc4bb2def4db13eefeee466fef24661b81060de25188179414df6ad"
     },
     "extras/codex-custom-agents/organization-office/aco-events-experience-producer.toml": {
       "mode": 420,
-      "sha256": "5a18918fc7e82b7dad58ffe6e013c9e24237eec36fc8406912548f8abc72bb10"
+      "sha256": "4467ef7a5984ef038b4040e0625f4ba1b1e35fabe93c9c715f6889fd501b7305"
     },
     "extras/codex-custom-agents/organization-office/aco-executive-producer.toml": {
       "mode": 420,
-      "sha256": "08e5408fa9a58c65f12886abcdd264dc7a847c421f114ae72bbc61752249e120"
+      "sha256": "2f697af41057c1b3853f1248a22afb81ff969a11e12e8902a71e28b7f3925427"
     },
     "extras/codex-custom-agents/organization-office/aco-funding-partnerships-manager.toml": {
       "mode": 420,
-      "sha256": "1a598175996699b89c3de0e98c7d6993f2c30e6940dd0967153d13cd9b1c8ac4"
+      "sha256": "8c7ef771a71a298ceae7e0b722cf7b53057b154b7d5eaa5b2a4e102b16572516"
     },
     "extras/codex-custom-agents/organization-office/aco-impact-evaluation.toml": {
       "mode": 420,
-      "sha256": "a7f6753c5b2a78dffcb8fd8679b6c7f210b0e6ea4c18ef88c0c3df6fb92f30ca"
+      "sha256": "ac3ec2635dc97151f02d6dda0ecf0a3678f73c515875235efb36c9fe440d581e"
     },
     "extras/codex-custom-agents/organization-office/aco-knowledge-architect.toml": {
       "mode": 420,
-      "sha256": "a6df6f7428204d7e6a3966a6758e3ffaac4b6585279991313ce5e4282d461ec3"
+      "sha256": "262cb67d596a0f58b6d7e6bf1ae30f27a168b8b9be49df6a494c730acd7fa4ae"
     },
     "extras/codex-custom-agents/organization-office/aco-network-mapper.toml": {
       "mode": 420,
-      "sha256": "d8b705289b67a3d4a483a255ba4dc78ee464ef81c956d495e09fe37f4b5f38ff"
+      "sha256": "012da0c655046f5e0e71d75499a32ff057d2377cc7594b13482498592d15fcfb"
     },
     "extras/codex-custom-agents/organization-office/aco-operations-director.toml": {
       "mode": 420,
-      "sha256": "22af45afb73f899aef69fe8d944af1bb4ab6e9e89ae2c81fc0e6f6bdd7db4dbb"
+      "sha256": "06f6e7dd99b04e0c33da72750f216499d22e855e8c6f28c654ae7eb5ccfe74c9"
     },
     "extras/codex-custom-agents/organization-office/aco-organization-director.toml": {
       "mode": 420,
-      "sha256": "a796da623c8188830d9f39ae17f8bd738c75d1942e155aeb11247139c137cf68"
+      "sha256": "d1fb403189e75da5f886bc5247c6185fdbecf142aa16138e046cdb3dd50c8146"
     },
     "extras/codex-custom-agents/organization-office/aco-organization-orchestrator.toml": {
       "mode": 420,
-      "sha256": "2f43014d8d293eeabd9dbe39b5f9fa758049e99d0601caa3b329e2160afa3eb4"
+      "sha256": "0c13ea687d2e151fd2c3a0404acbd09e2041a3fd813ca51bf33f403936253a27"
     },
     "extras/codex-custom-agents/organization-office/aco-partnerships-director.toml": {
       "mode": 420,
-      "sha256": "8ae632d01120d114f0ab37e7fefab8c0b67285536d0cf9fa67dfd7245452c470"
+      "sha256": "d7c762273125ed965ceaaaf839e12a0ef9d4748b75588dea89014aa875def0c1"
     },
     "extras/codex-custom-agents/organization-office/aco-product-experience-director.toml": {
       "mode": 420,
-      "sha256": "ac494133f89b3241c83a6794d21b8c813f246e5fcbb3e7954a96721f9878b795"
+      "sha256": "c9ebb8f0b24671520233484f1ee4356a9bbd6a6c72e44aa24c0fd7f16f8f31af"
     },
     "extras/codex-custom-agents/organization-office/aco-programme-curator.toml": {
       "mode": 420,
-      "sha256": "0868faf4967ec82ba4aa8259c25a155be9604a4ffa408b43df7f56178f77793d"
+      "sha256": "f9683cdb457c6b59f4aa1452a6cfde9a020bf8781062e84e8ea4da29271cde48"
     },
     "extras/codex-custom-agents/organization-office/aco-proposal-pitch-director.toml": {
       "mode": 420,
-      "sha256": "d1ab84752ccdd78df1a588cfabaf711ad07eb8c166ede7d4314b774df3d59d18"
+      "sha256": "44e334b9e567239854605cdb8054435d73557f2cee798945fe9f1dce2b11596d"
     },
     "extras/codex-custom-agents/organization-office/aco-publishing-director.toml": {
       "mode": 420,
-      "sha256": "affc9c4cf4cf15d1feac499ecedec484de31ee2f3d233a23ed3d204b5252dd63"
+      "sha256": "8bd18c9be786967dfc3a9b8faa2e8946c4a9004ac25299b18f7e2f0953e067a5"
     },
     "extras/codex-custom-agents/organization-office/aco-research-director.toml": {
       "mode": 420,
-      "sha256": "f1490dd588182927e2e7db0c425a5107c029e807a1fd6cf15e66d339b7164574"
+      "sha256": "000a9c556e1ff3de3c6bea674a965a603c89c85c09436f0082d88be8ea07fb2c"
     },
     "extras/codex-custom-agents/organization-office/aco-research-editor-fact-checker.toml": {
       "mode": 420,
-      "sha256": "6a723ab227eed979325f9ce5622f4d697e9c88eff1ceef8908eb677b7f02982a"
+      "sha256": "702a860d919d53fec00a0143d51a130471790ea442ac842d4e42cd478d37f361"
     },
     "extras/codex-custom-agents/organization-office/aco-revenue-innovation-strategist.toml": {
       "mode": 420,
-      "sha256": "924d77f03042555d43e60a35d8ce9570e044093b1d504fb350fca7c9139a75d9"
+      "sha256": "553d9ce388e72dc2deda251a9eb10d4becc3627b1b7a7b1124af495cc16ad6fc"
     },
     "extras/codex-custom-agents/organization-office/aco-sponsorship-director.toml": {
       "mode": 420,
-      "sha256": "0291043ed0b346e8f997ee412c6c4e9909523e05ca0032ba7b164a6fb59a5623"
+      "sha256": "8597c5358daad4352262f7e99b86982ad492996aff3f3681fefcf2c30fcb8c39"
     },
     "extras/codex-custom-agents/organization-office/aco-talent-contributors-manager.toml": {
       "mode": 420,
-      "sha256": "d84de74c145b91f94ad912ffbc3ce0e4c9436fdb4c985be1d025e035685a041f"
+      "sha256": "4f70fdce45674f781a60ed96205bca8ef0d28dcff1c445bbc05c4cf020233da2"
     },
     "extras/codex-custom-agents/organization-office/aco-ux-service-designer.toml": {
       "mode": 420,
-      "sha256": "5139fa57f8f64c361474a43763901ee365d23c146b03f6fadbabeffca33a212a"
+      "sha256": "1ab64264ce6d8b54365fff65b6d8738038adf0119ff352c90f8122cc3d215dc3"
     },
     "extras/codex-custom-agents/people-office/aco-compensation-benefits-coordinator.toml": {
       "mode": 420,
-      "sha256": "1208768df8877a9875e235b4320ab090475018cdd73e87ba9fea7b46592e04a4"
+      "sha256": "fd95d373c25a66b46219dd61badb1ed9789fc1d4e2bebde7ae9a18be56f5f15e"
     },
     "extras/codex-custom-agents/people-office/aco-employee-relations-coordinator.toml": {
       "mode": 420,
-      "sha256": "6001eef88befdb39877488493368b246e5d652b623e11763272da082ef5d0f45"
+      "sha256": "50510412f5ceed71c55c50fd61967a42affc162ba8180c5e8be4232732d5d11a"
     },
     "extras/codex-custom-agents/people-office/aco-hiring-coordinator.toml": {
       "mode": 420,
-      "sha256": "6192386b2e936b1c1058e8f894817e08fb3e72bfb0f8ad2a52129e87250eedb7"
+      "sha256": "9ebc0f6d45d39fe7516a0a15f441f9cacdac06b640ddf8b3372dacfab6ba4575"
     },
     "extras/codex-custom-agents/people-office/aco-learning-development-specialist.toml": {
       "mode": 420,
-      "sha256": "59e8dbd368224ca063c9faab6e6218b5416822c0d824b261f8892e24fbba72fb"
+      "sha256": "ac746bd13db1cd295e7b3aacb1fd8e9f40fea051824f2ac248dccf0da021c0ae"
     },
     "extras/codex-custom-agents/people-office/aco-onboarding-offboarding-coordinator.toml": {
       "mode": 420,
-      "sha256": "ba2e68cb2947ef14ff8c19449a62e65cab1aa916378ee537bf6c926375827047"
+      "sha256": "b634e5a59f843a3a4b39287021eabbac66c27fcb9ab7196a8f97ba1728e6ba42"
     },
     "extras/codex-custom-agents/people-office/aco-people-operations-manager.toml": {
       "mode": 420,
-      "sha256": "cc99b9250116c3441b454736ad8e0ebd3b6e41dc97fa240e21c5c201058514a9"
+      "sha256": "210486bdd19689cc1d9eb063508f565bac677cd7582ca80889060b36c886d5ed"
     },
     "extras/codex-custom-agents/people-office/aco-people-orchestrator.toml": {
       "mode": 420,
-      "sha256": "1c0f2d56ae32c536d20da34699d47a06ecdb30b21f601601b6cacabd95996068"
+      "sha256": "2a935cc0c72dcde880c727dbfd4634ee17257b746df02deb654cb3fe3aeb3785"
     },
     "extras/codex-custom-agents/people-office/aco-structured-interview-designer.toml": {
       "mode": 420,
-      "sha256": "b74322fa09df824424243199b862ffc17825c7b7859701a457e000efd863250d"
+      "sha256": "0dcc9812e84c8a672e82c40da3d0a426c32da3394859e3f08d5b9d44ac529aff"
     },
     "extras/codex-custom-agents/people-office/aco-talent-sourcing-specialist.toml": {
       "mode": 420,
-      "sha256": "3d5730f73b5b78c856bd57d9e3f692514c50fa77709d722baf2538f17a7ebfa4"
+      "sha256": "3d2a632936801c316a08c565332f0f53bde089e3b761f9924616c6e64f82f539"
     },
     "extras/codex-custom-agents/people-office/aco-workforce-planner.toml": {
       "mode": 420,
-      "sha256": "7ad9c48f1a9ecfa763601c40af8d9d45044a8ff0680422225abce9de2ba0fe3f"
+      "sha256": "4e70858acaaabb1f4543a9a84615a8e6ded4c718fa8db31ebe45c57ac9b5b7a6"
     },
     "extras/codex-custom-agents/product-office/aco-accessibility-specialist.toml": {
       "mode": 420,
-      "sha256": "519121d3503ca39b4106712dfad23fbfa0b65f053431f1932dd7e1271a9d185b"
+      "sha256": "7323108b5f0c5203d7dfecc320d941061c145991256c55698db428fa1e4077ff"
     },
     "extras/codex-custom-agents/product-office/aco-accessibility-tester.toml": {
       "mode": 420,
-      "sha256": "7fcdadaa2a03dda3bdb1a0b32d8f0c1778d94ba1cdfb9208567215781bebeceb"
+      "sha256": "20362e42520466b8a960032b3d80dfa011905a66d598a4325f9803a75a8bbf18"
     },
     "extras/codex-custom-agents/product-office/aco-ai-engineer.toml": {
       "mode": 420,
-      "sha256": "80c9150abe59c7cab5e3556305f3e803bf835cf68d6e9205870b21dea67f7df5"
+      "sha256": "dd8da0281cab186c17915d897d3fc06a8b8d5639a399366d918a46a24d8ea39a"
     },
     "extras/codex-custom-agents/product-office/aco-ai-product-engineer.toml": {
       "mode": 420,
-      "sha256": "643dd8efe7df1814da569f45447d63891de5f28fe8806afda401462309648767"
+      "sha256": "8e488da6867e5b0b8a6861be8352f41bb7b58661d46ef2c1bac20205a6c1d4d7"
     },
     "extras/codex-custom-agents/product-office/aco-analytics-instrumentation-engineer.toml": {
       "mode": 420,
-      "sha256": "200fdcd0480dceb6a2075029a5900c065930baa6d35f2ae93a19eb9e9f1ff41f"
+      "sha256": "68431e71a5538653f45f34c7509dc8c6ffdf74ac7ac1769ddf1387f1fd3c9f19"
     },
     "extras/codex-custom-agents/product-office/aco-api-integration-engineer.toml": {
       "mode": 420,
-      "sha256": "556d453d3258d19c8d1b30fe25fe8127db79156762e9a5da15d28dc172b84150"
+      "sha256": "aef95e6a1839ef57e480733ee5d5353f82df9fa1dfeae2e64eeb3faf2d2e4f54"
     },
     "extras/codex-custom-agents/product-office/aco-api-researcher.toml": {
       "mode": 420,
-      "sha256": "ac39880569eff5b085c41c776b1370e7e42cf206e52ab323ba83b6e25e9a0d96"
+      "sha256": "1278684f566a21537b82f7e8a0ecac582d6874dadae1861710d377175f6322a1"
     },
     "extras/codex-custom-agents/product-office/aco-automation-integration-engineer.toml": {
       "mode": 420,
-      "sha256": "3a97b4def4abfc6e35b70f5bf56b7635aa6ca70816ed9bcbcbc73fa41c17e044"
+      "sha256": "7e8b3ea37c7f03d7cb557acd0ac7217f9d66168a6126afcd19face5f669a09c0"
     },
     "extras/codex-custom-agents/product-office/aco-backend-engineer.toml": {
       "mode": 420,
-      "sha256": "322c600c2f8b9f698c8deed144f7cdb2f79f9e5f9bc4cabbdf3bf3a57ebfd991"
+      "sha256": "f3655a2144b7e6eabe7e929c0f9e8854e47b02fc7b3de2b65ded0ece11fe29dc"
     },
     "extras/codex-custom-agents/product-office/aco-bug-investigator.toml": {
       "mode": 420,
-      "sha256": "d508fa30998b1fefbb3645c3ca1dc8b8ad69787f324f81b490aced3dcc29fdeb"
+      "sha256": "a907ab45bcf16de8677546f02941ce2773ed7780ab5f40d65d8ea3dd6cb0d2d2"
     },
     "extras/codex-custom-agents/product-office/aco-business-analyst.toml": {
       "mode": 420,
-      "sha256": "a796cd0b9c1005ca0ad6e3161db706e4b5d52606ec4e5d46a7be06d27f9d9773"
+      "sha256": "6567ba23ed886f5029bbad85150c167f4dd8ec1ffff115200e602526b6071e4d"
     },
     "extras/codex-custom-agents/product-office/aco-cloud-architect.toml": {
       "mode": 420,
-      "sha256": "31da871eaa17c491abb6e7b33efae96ba10bc143395f0617d68ffc2edfbd058d"
+      "sha256": "42af8a656d97bdec93c5d5b32fdc337e2bb65521a6c0a78f5fbff885f3b11265"
     },
     "extras/codex-custom-agents/product-office/aco-cms-content-architect.toml": {
       "mode": 420,
-      "sha256": "01448904e0d11797b7a69efb0cf2eec1280c995bf50a604388766829dbb9976e"
+      "sha256": "d1cfdf9279cebdf73e3c365ca51cc8d8c837b3d24163d470e84248e0174d1c50"
     },
     "extras/codex-custom-agents/product-office/aco-code-reviewer.toml": {
       "mode": 420,
-      "sha256": "22d2e3299d32efcf86841c623b562b649d0014ffec22644452d239dc622c0340"
+      "sha256": "27ca6944f9b0d20132a1ff12040e7285553e622d80229186cf489c117bf46727"
     },
     "extras/codex-custom-agents/product-office/aco-creative-frontend-engineer.toml": {
       "mode": 420,
-      "sha256": "78c0e9ffbad9b91f4b4ddce5e8634bc89f025e0c4f11b6cb18306475b3d20892"
+      "sha256": "4daedc94510d21f2665786aebabb2d70d0c9fb2223a633413ce0ba43be333cb7"
     },
     "extras/codex-custom-agents/product-office/aco-data-engineer.toml": {
       "mode": 420,
-      "sha256": "84bd8ed8341b020551585fefec4ad5bd9425fb0ee5ae446716f2729c7df17808"
+      "sha256": "6056114a24a72558d7bb511df22d6303b61b03ead8f60835b4d8c567613eb6bf"
     },
     "extras/codex-custom-agents/product-office/aco-data-scientist.toml": {
       "mode": 420,
-      "sha256": "90d08312be92934fe47ef53481d4f03b3c17a7939b26c88ac9cf47c8f7b03414"
+      "sha256": "9ceb2c70d690b3cbe16b2da750f323e5c88c4169509d5b2f7e5b96ededdb8423"
     },
     "extras/codex-custom-agents/product-office/aco-database-engineer.toml": {
       "mode": 420,
-      "sha256": "82515378a303b5aa13d87a2affbbdc9cc6f89c073098731e134484a75a46115b"
+      "sha256": "0aea7bc5af97be88ba5ec3dae03222ce3b7474fda9609e105f77cf34eb9e6b05"
     },
     "extras/codex-custom-agents/product-office/aco-dependency-researcher.toml": {
       "mode": 420,
-      "sha256": "442a102ded665549f4d90f0097bee165d60db969dcf8b958c91de161e1f53be0"
+      "sha256": "4c281625bc366c130e0eaeb1672bd3744093efd1b33bc0301b9add24c224edd8"
     },
     "extras/codex-custom-agents/product-office/aco-design-system-designer.toml": {
       "mode": 420,
-      "sha256": "35ff88ec27827df5726dc5c2a12ece69c4f91d33e48e5a7d71e7e0e7663a2110"
+      "sha256": "33444e15db51841445bfcf952ad8d9261ae67255e275adcf8a3df2865c06cab1"
     },
     "extras/codex-custom-agents/product-office/aco-devops-engineer.toml": {
       "mode": 420,
-      "sha256": "7cc6de35a6d64411fce5b48e52edbb79fef8aca47836bd0f718171beefc21fb6"
+      "sha256": "ffc6f4c62490739d7d5d9be7dcca5aad0cb7eccfabe772662ce31f0e45d030c8"
     },
     "extras/codex-custom-agents/product-office/aco-documentation-writer.toml": {
       "mode": 420,
-      "sha256": "c2cc4e09e398def8baf35de8b122338c5cc9f9e41bca69ee9ac8b9f706bab347"
+      "sha256": "1a1dac17362a39e473ea073df87d1dbd3d1b18949c7fe68f39269fd1c2fd4207"
     },
     "extras/codex-custom-agents/product-office/aco-figma-implementation-engineer.toml": {
       "mode": 420,
-      "sha256": "02e429150db039cb0ff728a527d49e627f9f15bb0af64496483e2d981c5cafa8"
+      "sha256": "ca96ded5c7cd44b50d3c3d935da7bc85086a6ab14bd44e5af5d72a5952bb21ab"
     },
     "extras/codex-custom-agents/product-office/aco-frontend-engineer.toml": {
       "mode": 420,
-      "sha256": "2e0c72ad22c43e5aed442065c189b3551a2758f739c8f2ef630b36a3acf90c21"
+      "sha256": "d0782575fcdd2888b95d32d4683404c8bc51a4f60211d6ab2f0e4d9fd8e7afa9"
     },
     "extras/codex-custom-agents/product-office/aco-fullstack-engineer.toml": {
       "mode": 420,
-      "sha256": "a697cdf3197ad5988d19585fbab9d6ebc440f41f36c20f765c71906a7463581e"
+      "sha256": "28fb1655a47ea6eaf23aadcd860fd83cd999c02299254422c28d72222c6e1660"
     },
     "extras/codex-custom-agents/product-office/aco-information-architect.toml": {
       "mode": 420,
-      "sha256": "b40885e0abaffe15adea141e9a301eddadd656d285ba35a79f339ef6fc3bde3d"
+      "sha256": "d4eebacf4ba394c6cfdb4b6dd6ae7c8a7e2b2058a0a4deb842317b077220ed67"
     },
     "extras/codex-custom-agents/product-office/aco-interaction-designer.toml": {
       "mode": 420,
-      "sha256": "e2f192bffe985db26763506c83a59b2609c03d7940e369893b228aa5f0b6b09d"
+      "sha256": "a901b35d7dbb4f17dfa1f2f4f1afc1ef1f4bef5efb28cd876952b27624f01c00"
     },
     "extras/codex-custom-agents/product-office/aco-junior-developer.toml": {
       "mode": 420,
-      "sha256": "8706d3055a418c415b2e8309d554c026855a30b1f224fc72eb56d7750e551028"
+      "sha256": "692e9f9c833edd144755096245d454bcf99fc0aefb0ba8adcb981e26661ff782"
     },
     "extras/codex-custom-agents/product-office/aco-llm-engineer.toml": {
       "mode": 420,
-      "sha256": "b93ff773dde7dceae2c7e76c6deb66e49d4a7744b435200f1a5c472d4fbfe839"
+      "sha256": "386a3ac8bfe16e6d495fac7e94f7bbdd4f275380e550cb23cdb0b39d6e51f34d"
     },
     "extras/codex-custom-agents/product-office/aco-mcp-integration-reviewer.toml": {
       "mode": 420,
-      "sha256": "a32207382d6b626b1c2066c7117ab5eecdcd273a00115ad7f4f937eb4f290492"
+      "sha256": "88152144b25f21041df89ccf4a3847323e7e567f43d1fe1d94aefd1aa1baa670"
     },
     "extras/codex-custom-agents/product-office/aco-migration-specialist.toml": {
       "mode": 420,
-      "sha256": "dd4ce738f1e5eff2ac8d4cdd6cb9cfa185bce0ec633e9618f955bc9e9badf7c8"
+      "sha256": "eb9f9717c2384ab30ac1c087a69dab114ca47ac1b0b6128e5eb9b99dfa51cae8"
     },
     "extras/codex-custom-agents/product-office/aco-ml-ops-engineer.toml": {
       "mode": 420,
-      "sha256": "cf155807976c084637864fa9947c008807469dce5952446db2f00981938447a9"
+      "sha256": "8962518175e176f18cc0e2861cdcec1d9d5341d8fc95deec3a2eac5f4b4917f5"
     },
     "extras/codex-custom-agents/product-office/aco-mobile-engineer.toml": {
       "mode": 420,
-      "sha256": "15004dc3ca7e4b927f7a5b4535c7b12ae5c5b7acfcef945a9f9275e420ee08d9"
+      "sha256": "f9f7bd40806cc4f593952ef67d2a4444bb69ec67b00272eabe9b6cfc52a42473"
     },
     "extras/codex-custom-agents/product-office/aco-performance-engineer.toml": {
       "mode": 420,
-      "sha256": "bcfbbdca0401de39b5fb66b931777d84ec29dd6edaa3f27b3ab3ade6b1e14cf1"
+      "sha256": "4fbbdb586de06fc924e397b31171a8ff51e68a37b3658f7f974c240aabb82e16"
     },
     "extras/codex-custom-agents/product-office/aco-product-analyst.toml": {
       "mode": 420,
-      "sha256": "9a9a105b0662339c7c4c3c40721b64deeb83f182d5da81dda89e2ac4531cd2cc"
+      "sha256": "463ebe3e65485707005b9238b8d508ed0ce2412b39611c8183f727df799b6f11"
     },
     "extras/codex-custom-agents/product-office/aco-product-designer.toml": {
       "mode": 420,
-      "sha256": "290f4a2cc174c72a6b8a088ec53a19c90cf9ae1354e508f0a138642d7fa7de2b"
+      "sha256": "c5763a7e40f27171e12a35a85aea1fd459f25ec3d2b19970c35fd3d5671b2b26"
     },
     "extras/codex-custom-agents/product-office/aco-product-director.toml": {
       "mode": 420,
-      "sha256": "b6a1a3f048472f8b74c5398ceaba535263e49ac057e47ba17b788bb05f6d90e7"
+      "sha256": "dd8f9a47285f2ef68a0208eef88cfb1c34cf4f63bccb5a1a0db73eeea940e291"
     },
     "extras/codex-custom-agents/product-office/aco-product-manager.toml": {
       "mode": 420,
-      "sha256": "697d56a181cf0a6da4fabb51681b523335edfc58ec9419f26bca703a45532a1a"
+      "sha256": "46f5381ebe923ad7c911327f14b617c89f5e3e7f92c739ad58ae7118781dd626"
     },
     "extras/codex-custom-agents/product-office/aco-product-researcher.toml": {
       "mode": 420,
-      "sha256": "3e8e5e517953403c81874cac1786f9ebfcbaf2d544c973a445a0e09b4b28f079"
+      "sha256": "cbf42742ca84608ae04eb157062a8e54ddbd2d3f1af1cf82257f37f9004160ad"
     },
     "extras/codex-custom-agents/product-office/aco-product-software-orchestrator.toml": {
       "mode": 420,
-      "sha256": "9c878eb789fd7c8e4dcbf48efd07d809fac600be9420fabc413576a8b788d1b7"
+      "sha256": "d8f42373d40dcfae33d818a7947022bca69d3f46575252316504ee21da683226"
     },
     "extras/codex-custom-agents/product-office/aco-qa-engineer.toml": {
       "mode": 420,
-      "sha256": "5038c0189aad2cd8113a773818cae24eea220c742bf33eb90015f7b9aef3e8d4"
+      "sha256": "4ce11c92dff67e132aa38d56cfe1b210ee6923b752f1532a1a09ced1c5746286"
     },
     "extras/codex-custom-agents/product-office/aco-qa-lead.toml": {
       "mode": 420,
-      "sha256": "ac749e71fbca61fe75112ca6eb0ca2de4e9d6c5c0d8b9781968f18e9f1e2bf9c"
+      "sha256": "ec871de8063e1359bcf264f29046013969c9d2381838d3490cef67577615dc98"
     },
     "extras/codex-custom-agents/product-office/aco-release-manager.toml": {
       "mode": 420,
-      "sha256": "6c19e96d74304748aa620d7990249d2c276d4d7c67b37869be0d8b0531643692"
+      "sha256": "7073b2d5c1d04d443348f3824ae9b6da926018e86b3588098135fadf7216a77e"
     },
     "extras/codex-custom-agents/product-office/aco-security-engineer.toml": {
       "mode": 420,
-      "sha256": "426992726db7f3d4d9014b5746fe149ab0c22d512fa50f30f190e1807ccd232b"
+      "sha256": "227fb545c13ba13b528d73a4ad90bf9be67f17d0ea9e50c78f5d401d1297cf6f"
     },
     "extras/codex-custom-agents/product-office/aco-security-reviewer.toml": {
       "mode": 420,
-      "sha256": "ed91dd4080aa2dafdf37beb286317c74e7171422d75be0a73c233a60b63d6bd7"
+      "sha256": "4298eb47c822061fd52a9bc89706b64df2019cb68eae705ee0029b1b585c11c1"
     },
     "extras/codex-custom-agents/product-office/aco-senior-backend-engineer.toml": {
       "mode": 420,
-      "sha256": "77c21733350bd454d20628cff1de1a1a511f7a06d7237b497fff8b0e6abb5c81"
+      "sha256": "098bae89cc471230ad635955c90affa1bddc55dc99e3ee2457f86a3401db2c71"
     },
     "extras/codex-custom-agents/product-office/aco-senior-frontend-engineer.toml": {
       "mode": 420,
-      "sha256": "9b461e3269c34f96bbbca940dd183fc16143358a75c12aacf02e43eb49eaa90a"
+      "sha256": "f0ddfa956ee40ed621909c935e1309e18f5b0ad19d73b49b84b6057fc4cfd03e"
     },
     "extras/codex-custom-agents/product-office/aco-skill-evaluation-engineer.toml": {
       "mode": 420,
-      "sha256": "d1bdb4b9b5e49f28082650c645140ea183d3db234a9e67817acebe3ad4b2d904"
+      "sha256": "4888ab65f78e521b226b264f177cb0113591639ffb0c6d94ce7fa4dc75af7fc8"
     },
     "extras/codex-custom-agents/product-office/aco-software-architect.toml": {
       "mode": 420,
-      "sha256": "f7c56ff757eb5a4727104a47644c0d7993bd77713b17125ba0e6ff2911deb834"
+      "sha256": "7093376d82fb9423c3f1dc2a55cadd9e7fca06767d579cf88e51406976d58b1a"
     },
     "extras/codex-custom-agents/product-office/aco-sre-engineer.toml": {
       "mode": 420,
-      "sha256": "cbb043a1e486826a92c0c7670e2466db2f90f53940da9b2125c16aaa5f0bedff"
+      "sha256": "8b636ff4fb2f6ca1499de11658985637d606f4c1c82e6e58c16ae7a1ef7d0591"
     },
     "extras/codex-custom-agents/product-office/aco-tech-lead.toml": {
       "mode": 420,
-      "sha256": "e1d1288cb3cd46c078401ab283288b2ba1653c7dd4c4731ca0ea1f72344f347e"
+      "sha256": "c00ecb32983bacad9ee6cb01a6620f1579fa3f7b5df8990e25a518ad4e56b611"
     },
     "extras/codex-custom-agents/product-office/aco-technical-researcher.toml": {
       "mode": 420,
-      "sha256": "9f5e50b7a5a9ba32bb067392e5e9124e18179f6c29109b858e084b9b87deb693"
+      "sha256": "29a0baed87408e78d24b6b305851873479489a5a5ba11b4f2f145d945f4437d0"
     },
     "extras/codex-custom-agents/product-office/aco-technical-writer.toml": {
       "mode": 420,
-      "sha256": "69bb35114049a9227270d84c040b7aef96145fb4614620b1a7c64a9eb7653333"
+      "sha256": "af153dbd31fe01fc577e04fa6786318dccc9300ee767d177e7b9f01ffc1e1e26"
     },
     "extras/codex-custom-agents/product-office/aco-test-automation-engineer.toml": {
       "mode": 420,
-      "sha256": "99ebc1ace6363322847661ad6eb257f3c08c82569ea94bc4d87e9bcc64b15fd6"
+      "sha256": "4c42a0551980466d87b8c97e933fdbc511e8a88be52ef0299f1a90de495cd971"
     },
     "extras/codex-custom-agents/product-office/aco-test-writer.toml": {
       "mode": 420,
-      "sha256": "c33d947ab077eb3a5f23048e1b35fd436180d044765f2a2383f33f98e12415e5"
+      "sha256": "e27210b2e2ba49156356e2afa434928a8f8b43caf96c01dcb979f61b35871466"
     },
     "extras/codex-custom-agents/product-office/aco-ui-prototyper.toml": {
       "mode": 420,
-      "sha256": "a743146379724165f9a7e900315d6882e2a8e6f53560bb550ea9b4d328210c57"
+      "sha256": "f291fb1abc0bba3a65dc39a98b20fdb4ec6857bd1b38f0dd96bcefc0057d106e"
     },
     "extras/codex-custom-agents/product-office/aco-ux-lead.toml": {
       "mode": 420,
-      "sha256": "38a06bf16291051d2a1983c544ce8b65c996c0c9aef47a4c7b0ab9f00f78c485"
+      "sha256": "aac03ced510700a3b8bdfe93dd2abbcbfe6dd91700ed00a1f8bd36327458f810"
     },
     "extras/codex-custom-agents/product-office/aco-ux-researcher.toml": {
       "mode": 420,
-      "sha256": "2a7506fffbbc049ac051b2eea3a8bae5ce835d92dc351920d17e3d70c8a73d19"
+      "sha256": "a39494c3b07cb3635a6d10155b41d4a495004b5cfab778bd34f0817baed4ae82"
     },
     "extras/codex-custom-agents/production-office/aco-ai-video-prompt-adapter.toml": {
       "mode": 420,
-      "sha256": "60c326b7c8a17ab580cbe2a29d823369277befdeca579a2dee0ae74d4154df79"
+      "sha256": "e425a634547b07b4f197fa084907a7e291f70c8c02793c49f7e1aa908975e826"
     },
     "extras/codex-custom-agents/production-office/aco-animatic-editor.toml": {
       "mode": 420,
-      "sha256": "b3ee237d92f590001612963a7be74485141e95543026b68fd075e2d9f562ebe4"
+      "sha256": "e3a178f5313b9323ae498bd23cecdcbac59c83b5eaeffb51e59cbdaaa2442d75"
     },
     "extras/codex-custom-agents/production-office/aco-assistant-video-editor.toml": {
       "mode": 420,
-      "sha256": "41efc51a9bde3a756509d0036e379e8f9d288dc4797502831a616f6272c03c6f"
+      "sha256": "294ea80d4ecf155eba2c13e69f16df1dfd1e08aae69fe784747db4826891da1f"
     },
     "extras/codex-custom-agents/production-office/aco-beauty-fashion-retouch-artist.toml": {
       "mode": 420,
-      "sha256": "b42fd14ee7c67665317a3943712142a17fa84430491c24e7e005da9da1ccd4f5"
+      "sha256": "e40f20429ac48acc3ce99e9950948bc11f15e2fd428202e31915353e2d99a0a0"
     },
     "extras/codex-custom-agents/production-office/aco-cg-lighting-render-artist.toml": {
       "mode": 420,
-      "sha256": "a08a4795caa0f1a1267b0bec8f696bcf02a19892570ae11a18ee2750189f2571"
+      "sha256": "4bfd01f14a481246e693e93ea736f891f2294ad14428aa2c5e86193dc595aef8"
     },
     "extras/codex-custom-agents/production-office/aco-cinematographer.toml": {
       "mode": 420,
-      "sha256": "bcfe39847a20671b179cbe96eb87a6cfbfa4ae9c2136009492e0fb9d6414ecc2"
+      "sha256": "c4d630a84642292d51b0d923ae24eb10cf42eb41d5790c153a6641575aed75a5"
     },
     "extras/codex-custom-agents/production-office/aco-color-pipeline-engineer.toml": {
       "mode": 420,
-      "sha256": "676ef11e3438405a4a54ef492d443869536e0a51a4eeadf72458965eadb6132e"
+      "sha256": "c2113fe7711b83437d9b012c5578e886096942ce2baefa8e6f2f7d55d12f057a"
     },
     "extras/codex-custom-agents/production-office/aco-colorist.toml": {
       "mode": 420,
-      "sha256": "d0a342747143e47fbc8d04d8c1d42ad90baa439b6aaf0a2e98da0f9994b89b1f"
+      "sha256": "ba80d1a155715bc4979bb93aeffa18e63eac6dfe961eecc398684542640814dc"
     },
     "extras/codex-custom-agents/production-office/aco-comfyui-node-developer.toml": {
       "mode": 420,
-      "sha256": "8451e900d00312c564635e1781ecc7dde71d48665bdf3d62a7cebbc16301a5e0"
+      "sha256": "e699f057b852388c485edf7dda43735cf0021eeb3bcc0b2e41e49b123f733d98"
     },
     "extras/codex-custom-agents/production-office/aco-comfyui-workflow-engineer.toml": {
       "mode": 420,
-      "sha256": "9987d73d9d76b7d7d5f957fbfdd182069faa54fda4effa37954823ed7cd61f2c"
+      "sha256": "f65dca9839ff37fa00bf4089a4e39e37250b3d5c91cca96874d37d2052b73f1c"
     },
     "extras/codex-custom-agents/production-office/aco-compositor.toml": {
       "mode": 420,
-      "sha256": "a18eb86761f8ff0d26f3f29f19cab37c6119d2bfa1791fcc4a1f247d1000e4ec"
+      "sha256": "9ce117f2a0e50ae72800bdb4e45042b72d8f69730b0e76e006e47802f7ef9cf4"
     },
     "extras/codex-custom-agents/production-office/aco-dialogue-editor.toml": {
       "mode": 420,
-      "sha256": "127edd60cce841fa2606255dd0273f71a58816988f95b0e68e7106a39f1fa800"
+      "sha256": "b41015801cdf76f4bebc504d8d0307a4c552af8b3eb0aad220c2256964b11e10"
     },
     "extras/codex-custom-agents/production-office/aco-digital-imaging-technician.toml": {
       "mode": 420,
-      "sha256": "b8f91d56ff40ebe4b8e4528df4f78725ff86009cbd7b6e175265140e8dea964a"
+      "sha256": "961be3a06dc1411c9978b425047a728e94153beb08b6003480b7c39f34b9f73f"
     },
     "extras/codex-custom-agents/production-office/aco-fashion-stylist.toml": {
       "mode": 420,
-      "sha256": "0a078a444c43da40e9e8bf01edfc8328c7ad76a31f73559e028447c536d92a46"
+      "sha256": "3ae485ecd984cd74778ae3a753a2af32764dd754324dd28a6ff3cc7a1db0550c"
     },
     "extras/codex-custom-agents/production-office/aco-film-director.toml": {
       "mode": 420,
-      "sha256": "4003b246cd80ea5ca1c37fdce8ef6a11ad80cba64b4ae9e903602d5d1f724332"
+      "sha256": "4ec4e5fba7ee1800a7799f473bae25b3d81a0301b5ceabec3cf2c76d177f5959"
     },
     "extras/codex-custom-agents/production-office/aco-first-assistant-director.toml": {
       "mode": 420,
-      "sha256": "ea45258666093e9985c6ff0bd46e54c5dff3d56c9a78d5e5194ce143523a8f98"
+      "sha256": "a47fbee54568b35321f13c290ffae209a975b446bccab5917e093819bef61753"
     },
     "extras/codex-custom-agents/production-office/aco-generative-media-director.toml": {
       "mode": 420,
-      "sha256": "34dd72f16e46af61b06c7c51c7845c92b5da8fc5aca107f2342e691aa6040794"
+      "sha256": "e3871896fbfdf258f42c05d7d4f8d0d1e6ac2c760ac769225bff169c8d492157"
     },
     "extras/codex-custom-agents/production-office/aco-generative-model-training-engineer.toml": {
       "mode": 420,
-      "sha256": "1fb4c91ace5eeb229db65bba42fba9b95a74fe17124804735741b70e582887d6"
+      "sha256": "40dad6efc5572d41832a646df3e4e89a1c7640881f3d621c965060843b5ffe12"
     },
     "extras/codex-custom-agents/production-office/aco-generative-video-qc.toml": {
       "mode": 420,
-      "sha256": "1601c178b6c1f58ca4c7207dd0e0096454696cbb0e7642f14487ed4eccca3dfb"
+      "sha256": "a8141cc81d71907d39bcdaa4037ea775e56cf251361b2aa407475cd33edd1345"
     },
     "extras/codex-custom-agents/production-office/aco-line-producer.toml": {
       "mode": 420,
-      "sha256": "1b15f2e9716ef29d306b64094101545bafe6ee250a40236f4986f594a1b50fd6"
+      "sha256": "1b74cb105e1d7376da8692fa5d1de44be0585fef39dd4c0fa51eeed13ad87aaa"
     },
     "extras/codex-custom-agents/production-office/aco-localization-subtitles-editor.toml": {
       "mode": 420,
-      "sha256": "ca8c1b852db9686707dc1f940438931ce6a9f956ceb061b0182042fd4914970c"
+      "sha256": "d744e5cd571db3e4ef85b022dd70a9791c8af71a1c9550a2f141b5adede72a0c"
     },
     "extras/codex-custom-agents/production-office/aco-media-data-wrangler.toml": {
       "mode": 420,
-      "sha256": "40105bdb28e76d20ceb66153a7f1f61f7ff899468a700560fa72f5becce7337c"
+      "sha256": "8a53756bddf4587463cb0f45da8cad14068d9458f1ef7d8d13c544a87d271fb1"
     },
     "extras/codex-custom-agents/production-office/aco-media-delivery-qc.toml": {
       "mode": 420,
-      "sha256": "6d8ddeabff96a5b16945b8c32ad129001b4cb5d19d8fea482a41f198c83eef7e"
+      "sha256": "7ccd89692be052abe3d31a03569762d7c277dd665bb32d23e9916c29d44dec4c"
     },
     "extras/codex-custom-agents/production-office/aco-media-pipeline-engineer.toml": {
       "mode": 420,
-      "sha256": "00b5bb70ef78903773d7dccc0dfaf299d86d439f01bacdca0b49743eb4b54842"
+      "sha256": "3e0a97ffb51cddb08f206fe337e6be09eb3e481d09edf9e66322e78991b51cd0"
     },
     "extras/codex-custom-agents/production-office/aco-motion-designer.toml": {
       "mode": 420,
-      "sha256": "a7ad626185b9a4f24d3da41a0ddb1807dce07272f64794a9558304d1e7a7aabf"
+      "sha256": "0907a05ec93e0e1495edcd5feb3c99288d4c4e29b4af1ba9f833013fdd5eeadd"
     },
     "extras/codex-custom-agents/production-office/aco-music-supervisor.toml": {
       "mode": 420,
-      "sha256": "43a10e935c14bcb399971a824842b8cf72a14ad4e63dce4ef590dacefd644bbd"
+      "sha256": "8f5be82b78f692e3a6c8cd71be2cb3c87deb76a50fa18ca5ee5aa0724aaca5fd"
     },
     "extras/codex-custom-agents/production-office/aco-online-editor-conform.toml": {
       "mode": 420,
-      "sha256": "c98e919f42428433c8a0d865b4a0f932dfc484fe1ef053f042cdf83c099711b6"
+      "sha256": "297070ef931106415cfb7c51c0d2c8ecb1400f16e7883bd547968d27b290fadd"
     },
     "extras/codex-custom-agents/production-office/aco-photo-retouch-artist.toml": {
       "mode": 420,
-      "sha256": "cea235c7c3430aae54e3a245f1b74fcc639f28b14ab13a01aa2c7b9aba375a2e"
+      "sha256": "f8e9227c575c14b8341ea953c401720672ddd60426a6878a84da230949bd1d4d"
     },
     "extras/codex-custom-agents/production-office/aco-product-retouch-artist.toml": {
       "mode": 420,
-      "sha256": "2be24409e397b7085d6046fec751454b20b7752fdd265fd4b91e80fc53e1b140"
+      "sha256": "4cd30c9f678ab7c4caa818be87d693b87f17da1d375bdf3cb4118a240c4c3d34"
     },
     "extras/codex-custom-agents/production-office/aco-production-orchestrator.toml": {
       "mode": 420,
-      "sha256": "36995da7e95decfd8d1ac3a751707d6e71b33db83712bb61ca93859921ceeaac"
+      "sha256": "16d775b9b7050b44f8118b784079958b99b372a3f94f0aadb54c6edf0b48e9c5"
     },
     "extras/codex-custom-agents/production-office/aco-prop-stylist.toml": {
       "mode": 420,
-      "sha256": "067294c4eb1afa0ab025a072dbacbc12c081cd1957d169c604dc958bda9d9e62"
+      "sha256": "92df2460046bb97f2b906b0d333762c3a03efdabb507a46969230a983cee1a9c"
     },
     "extras/codex-custom-agents/production-office/aco-re-recording-mixer.toml": {
       "mode": 420,
-      "sha256": "8dda91a984359b1f94fd2989a162f8c15f7541e9b50adfd4d32a421e0ed6378c"
+      "sha256": "463b3406a03fe21b952e6a81aaf6272455bc41038f01fa60de1dd9759976f84c"
     },
     "extras/codex-custom-agents/production-office/aco-remotion-video-engineer.toml": {
       "mode": 420,
-      "sha256": "2ddc2c454f723fd1ca842cf9c68e18edae732aaaf718aeb72c53ed60554d96de"
+      "sha256": "dba384e0a3d31b0d2c7cfc16080337e4d8d662cdfb22729f8a706c0ba418ae4d"
     },
     "extras/codex-custom-agents/production-office/aco-script-continuity-supervisor.toml": {
       "mode": 420,
-      "sha256": "b1b838fa5d1950b7c07c32ea32749d2e2685c64ff60b390e191f1f88cc072b83"
+      "sha256": "39fbf81c5063f3cd10d45b13a64a587280dee640d92152026c49f97d09f35f6e"
     },
     "extras/codex-custom-agents/production-office/aco-set-designer.toml": {
       "mode": 420,
-      "sha256": "c6f0a62c62c946bde61580eb74c39ca55b750058165aca4836d6c0d82712e29b"
+      "sha256": "a5ff00519bd3e02ef5c23a78ce9d50354d968f2b02fbba70faf2d31ee43cc1d6"
     },
     "extras/codex-custom-agents/production-office/aco-sound-designer.toml": {
       "mode": 420,
-      "sha256": "c3ccb230618ad94069a49dbd14bbea2ea792e0c7b5b5789dbfd27354f6581e04"
+      "sha256": "b1161d4d50374c4d1205132d3206343c9640a0f6d86840be1322f1156627ccd7"
     },
     "extras/codex-custom-agents/production-office/aco-storyboard-artist.toml": {
       "mode": 420,
-      "sha256": "04c21f3562a953c65b07727140cc75e2a51fb9981b80f3787bd8fb65bf52945e"
+      "sha256": "6796d7b705b40fd3541de93d72d1c6dfe3a5d6ecfbc6d3c7b4113440387afd72"
     },
     "extras/codex-custom-agents/production-office/aco-three-d-generalist.toml": {
       "mode": 420,
-      "sha256": "d4fcc8f94c70d4cd9deee8d18d346d3955744de30e4b4a5962770b81989e5695"
+      "sha256": "ee6a481bdb695cd7fd28691441334da7c9ca10aaff2961cd0acd2c8c40cd88f8"
     },
     "extras/codex-custom-agents/production-office/aco-video-editor.toml": {
       "mode": 420,
-      "sha256": "460e613f7d6449331718cbd8d3e14089244a55afdbc9c0cf1db85e953e869a83"
+      "sha256": "3581d48294920fefbb599f63e25097fe1890d7ccd598cb91c932feeec6b6aec9"
     },
     "extras/codex-custom-agents/production-office/aco-visual-prompt-engineer.toml": {
       "mode": 420,
-      "sha256": "415d33e36d37da30758e632a6b87b3b7d60b5b9177addc30d0b83eda7776ac3c"
+      "sha256": "d437e8f477b7758bfcf3b679a27a19521c96f9b42fc9cfa00829f478ad99cc26"
     },
     "extras/codex-custom-agents/publishing-office/aco-acquisitions-editor.toml": {
       "mode": 420,
-      "sha256": "fb70bdfc7a35fad0ada8586f7faa94091ff61773e96aac491c3726952f41af5d"
+      "sha256": "b861caa7397b092cce4dabd8b2b0a135c3383c901fc2833bc744103201a1d86b"
     },
     "extras/codex-custom-agents/publishing-office/aco-audience-development-editor.toml": {
       "mode": 420,
-      "sha256": "157e0399dcacb26dc2be48d6b2b254682f88324c67886c266abd4b252edda0ae"
+      "sha256": "731917e7db7e8b534505525f21f52dd235c402e7751059ae4a2f805abb9102f1"
     },
     "extras/codex-custom-agents/publishing-office/aco-audiobook-producer.toml": {
       "mode": 420,
-      "sha256": "ceff8c3b9b328ab8445911213c744c565e4985bec3f56f7e622dfa6164ea4015"
+      "sha256": "b7d0835d7cfd6d03c0e229c8f5bb55220b8e44f7a2667ae8fd053f5ec00d0405"
     },
     "extras/codex-custom-agents/publishing-office/aco-author-relations-manager.toml": {
       "mode": 420,
-      "sha256": "1e5b50d9048c62df80c450768c214ee4c86ca9ab8f8e0fdafc66962fee43e03f"
+      "sha256": "c448072579e03beefff7f83a881d7fccdebfae774b4a16f787ccfce7608c26fb"
     },
     "extras/codex-custom-agents/publishing-office/aco-book-distribution-manager.toml": {
       "mode": 420,
-      "sha256": "3615ee06d7e0ef0c2b099f285d0aab0e042f67c7547f5c15a6a03debe09ddf75"
+      "sha256": "b766883c40d151f7eed183f4bdacab8709381d68113bf18f36a924c37abbb032"
     },
     "extras/codex-custom-agents/publishing-office/aco-branded-content-editor.toml": {
       "mode": 420,
-      "sha256": "69d67f6a23d7b28a656faa92777574b6f5ee5553121fc5683471a5ad5ebe4e27"
+      "sha256": "94ef7ef47ba52fada3d4fd97ae16ce7ae216eee549c2ac4835a9ea0e5c36b34a"
     },
     "extras/codex-custom-agents/publishing-office/aco-circulation-subscription-manager.toml": {
       "mode": 420,
-      "sha256": "32b356456347331689cab437a40f72c97a09b98c51d8cd952b2f5d3ec05dd5d7"
+      "sha256": "583cf583f282c74b1400b1b503399a9e06c1c3fc6aec6211bdd47f20ea3518b6"
     },
     "extras/codex-custom-agents/publishing-office/aco-copy-editor.toml": {
       "mode": 420,
-      "sha256": "98ff7ed919e4282af4ae174cd5680d7854f0d3a1d23a0f38b51e9008b97662de"
+      "sha256": "dd9c3bee717f2060b856479714115d1d46dec8101befa47217b77bf89b56f3d4"
     },
     "extras/codex-custom-agents/publishing-office/aco-developmental-editor.toml": {
       "mode": 420,
-      "sha256": "5128ab4e4ffac6c05b9f3edb27524181653d7af0651239c1eaf8df76d3c47787"
+      "sha256": "71ce8e05562fc09c4447df1a4cfec37f774a825d6bccbc6b97175fe7e36ef9fd"
     },
     "extras/codex-custom-agents/publishing-office/aco-ebook-accessibility-engineer.toml": {
       "mode": 420,
-      "sha256": "1c7cb2ff6a0b09cdde73517762fd6ad16793cadef40b2866f307ac2783a4f2ad"
+      "sha256": "4b1119bf323d9f8829c3dc17da6586e73cd69b28b11d4dc22b0597ddad1d9e26"
     },
     "extras/codex-custom-agents/publishing-office/aco-editorial-designer.toml": {
       "mode": 420,
-      "sha256": "3bf1601020dbfbcc0a83d74de7e07fc3c7c8f5f40a48e3c2bab6f8a9d22629bb"
+      "sha256": "769f477e0aebf7eeacf3b6b33998749beb322666defde92ed8c7f50951ff053d"
     },
     "extras/codex-custom-agents/publishing-office/aco-journalist-reporter.toml": {
       "mode": 420,
-      "sha256": "adc43f4cd1f487ddde359925ca94a75c3eb108c51eae47001858489c63947b48"
+      "sha256": "07080511fd7a050183d032091d0ea6bf4c13d037693dddbe184c80c25b13b9a5"
     },
     "extras/codex-custom-agents/publishing-office/aco-literary-translator.toml": {
       "mode": 420,
-      "sha256": "8e77c0aa6655dcb76bb90257232168ff5143716b341323cdebbb50f82ddf2668"
+      "sha256": "c8faec569ccfaa7c331af95cc4e6fcad336d34e22eba8701678b2be3583f6961"
     },
     "extras/codex-custom-agents/publishing-office/aco-managing-editor.toml": {
       "mode": 420,
-      "sha256": "ee83ec6f8b3079ab03d714631a482228d4e3aa3261af39f969f65be64ef7c600"
+      "sha256": "92f86e634824c9ec3e55540d50a2198f60d2ea6e14cfeefdbd18576770eb3dcf"
     },
     "extras/codex-custom-agents/publishing-office/aco-media-ad-operations-manager.toml": {
       "mode": 420,
-      "sha256": "f18271e35b602772845fcce1d1d6df28e9390bb2c6ff96194e61304fd9ce1631"
+      "sha256": "753c23aabad5bbc0683e89a55b7e0ddf332ffbbbcbbd7f077db8eba3e0da6642"
     },
     "extras/codex-custom-agents/publishing-office/aco-newsroom-editor.toml": {
       "mode": 420,
-      "sha256": "180df092dcbffe34784c62ea39dba425e22ac33639c0c6cc9ee6df8cb807101a"
+      "sha256": "cfb38c4cf1b3d9bed5a40263aac4c40fccc4bcf98ee50f2a28564360c24d8394"
     },
     "extras/codex-custom-agents/publishing-office/aco-podcast-audio-producer.toml": {
       "mode": 420,
-      "sha256": "f69692cc8b371cf6c92da13a38e3746cfeb40c6d832bfb609f3ba0802907c261"
+      "sha256": "f1d95ce162b9aef835f7348d3f5d3dd96a780da4d8e4622f0de9656c00bd95ce"
     },
     "extras/codex-custom-agents/publishing-office/aco-prepress-specialist.toml": {
       "mode": 420,
-      "sha256": "a05be9780c680337e303d7399b9772e139a8a32471ca580bde9885def0f2d255"
+      "sha256": "9c6f74d3a8269cc482d4bb41e09d2e463c363ed43e5c9c28f5f3c6497648cb7e"
     },
     "extras/codex-custom-agents/publishing-office/aco-print-production-manager.toml": {
       "mode": 420,
-      "sha256": "13a7610576df1490cfacd04e647c7359cfca467f6ff29866316af16c37e3fcc6"
+      "sha256": "6fbe81f62f337d75e29e00d66a90413ed4afdb77dfcc4ec802bdd7ecf0ad611e"
     },
     "extras/codex-custom-agents/publishing-office/aco-proofreader.toml": {
       "mode": 420,
-      "sha256": "5d33af0c949c6163ee098f8bf396f71c94104320a89b87f940822b57d139a20a"
+      "sha256": "8f45f2a427e316a47e0df73e46bc088696122ba70c08dbe02e53d8e2e790b239"
     },
     "extras/codex-custom-agents/publishing-office/aco-publishing-media-orchestrator.toml": {
       "mode": 420,
-      "sha256": "cb00f90f7b4358b2651cb2f8d20e4a02b9d4d2ecf3a8b7867253f042adb795b1"
+      "sha256": "83432d898757f1f6222495597980bbfd321a61535fca9aa47fdfc6118069a4e2"
     },
     "extras/codex-custom-agents/publishing-office/aco-publishing-metadata-specialist.toml": {
       "mode": 420,
-      "sha256": "859492ae3d7cafee03a7bc40e29deb39b1e254490d6c168c6904d3793e84891a"
+      "sha256": "9313f6675d38b788ea8d57b8dedaa5ea3ed2bdb46814934a2db666d32e026e0d"
     },
     "extras/codex-custom-agents/publishing-office/aco-publishing-rights-permissions-manager.toml": {
       "mode": 420,
-      "sha256": "c7ef13216af56bb0337e606bb626b9171a320d8d6f3e09ba51692d17c0df063a"
+      "sha256": "7e66734cad30e9ffd3ef4105223e7f5487683abfbaa088c1a5ef86b4128d4292"
     },
     "extras/codex-custom-agents/publishing-office/aco-typesetter.toml": {
       "mode": 420,
-      "sha256": "34419a5f0ad34f6d7d5fa9cb9a44c97870995153d50fc2cf7cdc58d665a43b3a"
+      "sha256": "ace98b341a7ff59f43af6465baae61cf3efe671f026a83548fe492fc1487ed46"
     },
     "extras/codex-custom-agents/recruitment-office/aco-application-manager.toml": {
       "mode": 420,
-      "sha256": "e5fc719b8991cd9816c8e65e081050e136d330a0cae97090154dc4b40cb047a9"
+      "sha256": "9735a76a7b0a7668331659e9d8186cc6d07a93e52e422a46b4a34f6ebcc8c595"
     },
     "extras/codex-custom-agents/recruitment-office/aco-application-outcomes-analyst.toml": {
       "mode": 420,
-      "sha256": "c931273ab0ba95ac64553d97d358e7a4850a475c6e7e3a15b5526051b0bf38dd"
+      "sha256": "f0bc6a09cc76fc0896bb7000c59bddb8e9040f5f41262b8fb414dd70f0d950d6"
     },
     "extras/codex-custom-agents/recruitment-office/aco-application-tracker.toml": {
       "mode": 420,
-      "sha256": "a6e265b1d89d7c8a2f1d9b5b078bb61f2126f5e2d5f8cff8c66604b95b246498"
+      "sha256": "b381b4ae60ee60fbb1270528a6ace3afb903f9d8fd1daf0d15e3f5483003fd48"
     },
     "extras/codex-custom-agents/recruitment-office/aco-application-writer.toml": {
       "mode": 420,
-      "sha256": "e340f56170c1e0274fc70ffcc6609eef6e27886a2a64c3302048949cabaab76c"
+      "sha256": "40e33ee00757935ae62b09adbefee2dbdc0550c1c193eaf2baef3bd5a8a5bab8"
     },
     "extras/codex-custom-agents/recruitment-office/aco-ats-resume-specialist.toml": {
       "mode": 420,
-      "sha256": "0747afd7493a9aecce3146221302df8d35fad8c1bc5a0c4c5cdcfd873de1a8ac"
+      "sha256": "144edde99f1b2922765c56a1f75d94baf2c0e114ea0dcdbec8ab6c16df45db6e"
     },
     "extras/codex-custom-agents/recruitment-office/aco-career-document-fact-checker.toml": {
       "mode": 420,
-      "sha256": "d0888742102bee073b1851de3b98cccd5c5e923636a228c498333042e2e0a3b0"
+      "sha256": "0523ef58f00332099cbbf7a1c77eace06bdda89f746f85b72596c1cab7b76cde"
     },
     "extras/codex-custom-agents/recruitment-office/aco-career-learning-plan-advisor.toml": {
       "mode": 420,
-      "sha256": "028989449342a6d1e558e4de57fa6a8644b4414776e76370a377c9fb1bf6507e"
+      "sha256": "6889dd4bb9b26141f3c262f09e89fe7f26d50cd97c9957002b72333979c7484e"
     },
     "extras/codex-custom-agents/recruitment-office/aco-career-outreach-writer.toml": {
       "mode": 420,
-      "sha256": "0233673e26dc2ba9c9d553558f45dd27000b0b874f364fbdc79dfd2386b25bf9"
+      "sha256": "4fbdbd12732207bd0e15fb830bb1eab793576bd47677953c450d9b2c10425205"
     },
     "extras/codex-custom-agents/recruitment-office/aco-career-personal-brand-strategist.toml": {
       "mode": 420,
-      "sha256": "1f2fbb237cd5f090393d56c928be8f9935b43051ad42d6f11cd10665e01db0d5"
+      "sha256": "df0c45bee98cd2880ee07c94cb42dca74bde14f8c23aba320aac169f511e9a5a"
     },
     "extras/codex-custom-agents/recruitment-office/aco-career-strategist.toml": {
       "mode": 420,
-      "sha256": "61dba00a8298de8e818a00adbf30de70b44d907b221e4856e06c4f3857c992dd"
+      "sha256": "99ce93f67ef943d6850d1e535553631d79c1aab1cdf5e4aa7ed9c3ce1d5551b1"
     },
     "extras/codex-custom-agents/recruitment-office/aco-career-transition-advisor.toml": {
       "mode": 420,
-      "sha256": "db28479b1d969c56bd4f06a904faafabe168d596f3ed57c52ffa9f3b117a7b5c"
+      "sha256": "a0818d837ccae26f3c3a71f3d7f9d62fb2c27e3949e4f339ce4a8ef452a5d7bd"
     },
     "extras/codex-custom-agents/recruitment-office/aco-case-interview-coach.toml": {
       "mode": 420,
-      "sha256": "993377b9ad2178ab3517ea9ae012a35ee9fd2d66fbf3c835819c835c3e8c2537"
+      "sha256": "ac813d9a9343bfb4bdcb88ae35f975192bb0a9824adec9be1ee8f34559ddbe67"
     },
     "extras/codex-custom-agents/recruitment-office/aco-compensation-analyst.toml": {
       "mode": 420,
-      "sha256": "1fc0969967738715d8a1c265a1af6a323b0e89b204a5c70b68bb91169187f457"
+      "sha256": "8029d105bcf0043469610f78c1594563c057140d6a76ff222f8971d0818a944d"
     },
     "extras/codex-custom-agents/recruitment-office/aco-cover-letter-writer.toml": {
       "mode": 420,
-      "sha256": "35fc1deb53759760c43b0eb7530d61e5ac320e0378bc129f21ef9ed5b19d2833"
+      "sha256": "b0d7b44583b18fdf69c5be2f57acd4e1fe2b0f77c76614a3831c83561f88d483"
     },
     "extras/codex-custom-agents/recruitment-office/aco-executive-search-researcher.toml": {
       "mode": 420,
-      "sha256": "4aaab3d4e02bfcb13835fff4747446fb2978ac03f9f758be16f702a19e30444e"
+      "sha256": "c878ceaa51547752f08d7e539213ee658723475c7e37d2950b9e993202a9a9b8"
     },
     "extras/codex-custom-agents/recruitment-office/aco-freelance-consulting-opportunity-scout.toml": {
       "mode": 420,
-      "sha256": "9152c231feed82abcd0f93be8499e9f8942eaeaaa98e9bf47e00a1df4d0a6225"
+      "sha256": "0e026f7d710f97ee4d14ba17a2a8a80acc88eb9d68bdb2fa8ab33523af6d47a6"
     },
     "extras/codex-custom-agents/recruitment-office/aco-hiring-team-mapper.toml": {
       "mode": 420,
-      "sha256": "875df508cb26053f6aae9ef2863a2331b4ebb8c1121037f9c939fef118aef072"
+      "sha256": "48161b10cd12f39496e90dc607527e258819e99088515d33242b352da7f9ba47"
     },
     "extras/codex-custom-agents/recruitment-office/aco-international-mobility-job-advisor.toml": {
       "mode": 420,
-      "sha256": "28571f5a6a473ee642e9ae834fbd4109dc9d5fa3f267146574479d64e2459132"
+      "sha256": "a6126fe6dbdc9d03a569c3d7779729eb49c318a7087618d0d6ff3603769099ca"
     },
     "extras/codex-custom-agents/recruitment-office/aco-interview-coach.toml": {
       "mode": 420,
-      "sha256": "70ba3493d400df47ecac17567c7044566808f6e4ace831ad6f8187e2389ee5cb"
+      "sha256": "6082e0d5c6a68f8a4c8be5784b52140236a2a0c141da02acdcd7bdb6d2f0554b"
     },
     "extras/codex-custom-agents/recruitment-office/aco-interview-researcher.toml": {
       "mode": 420,
-      "sha256": "099ee9d419a9ea8127ceaca73d7e26a5c132f0c47335e10822134ab70a888646"
+      "sha256": "e833e2a33909941292ed7bda0c07cb4b59135aa4c2a53c244dade06b98ad02db"
     },
     "extras/codex-custom-agents/recruitment-office/aco-job-fit-analyst.toml": {
       "mode": 420,
-      "sha256": "efe261f877e7507334b9f9f6ab9d99dd0457adebd43511b3d91ae2794e7ba1f5"
+      "sha256": "7c7b38cf805eccc1a6194104b14f2317abf73c642f184f4d7ee9fc6ef5a71cc5"
     },
     "extras/codex-custom-agents/recruitment-office/aco-job-followup-manager.toml": {
       "mode": 420,
-      "sha256": "9d77ef356772014bb03aabe2cac5002d3f02850b1064ecc858cbee598df634ab"
+      "sha256": "8bba0f0491b9ac36075037982bdf9f9ae9b61c49d4ea903d6d2d790927bf6f2e"
     },
     "extras/codex-custom-agents/recruitment-office/aco-job-market-researcher.toml": {
       "mode": 420,
-      "sha256": "08db49b9fbd14c18f23cc258c8dae09bb63d661b53ff69a84efd5b9fc15057fe"
+      "sha256": "9ac2beb9ec4d232651678c43a1dcdac5a40be19bfe6353ecf4dd65ea51e4c2ca"
     },
     "extras/codex-custom-agents/recruitment-office/aco-job-opportunity-scout.toml": {
       "mode": 420,
-      "sha256": "21c00e739afa7e9cdd703aebe16ee20d9ad61ea9257057bbb7bf7a969109878c"
+      "sha256": "868049f6c61f751733e25108409adbdaf15a039ca13974c993675f77a59a1d5e"
     },
     "extras/codex-custom-agents/recruitment-office/aco-job-search-chief-of-staff.toml": {
       "mode": 420,
-      "sha256": "7d9dd3e6e9acc13e4c2809864aa676765b4ca38ccc94896fa21132f02e9c7e55"
+      "sha256": "fbedfb935ac6d0f3119880135bf4380b16ef03092f2060cb5c7e5b6072f04cdc"
     },
     "extras/codex-custom-agents/recruitment-office/aco-linkedin-profile-strategist.toml": {
       "mode": 420,
-      "sha256": "6bb397d6fa696b58d33ea8078d6046bdcba57dc3ecd3b4018223f24c7314c910"
+      "sha256": "814cdd25a33498e68064dc9ec07ac7740c92406fbc959c0ee479d2ff1dfe8c8b"
     },
     "extras/codex-custom-agents/recruitment-office/aco-networking-strategist.toml": {
       "mode": 420,
-      "sha256": "0764081e0e31c714601f6a00017c521a356bd6a16f00e0785657a83250a99a26"
+      "sha256": "dc809b40687088a2f1aa432afa0b06d4ceb1334d3b971c38cfeebb5a5f377d80"
     },
     "extras/codex-custom-agents/recruitment-office/aco-offer-negotiation-advisor.toml": {
       "mode": 420,
-      "sha256": "48f1546b730ffe60d21a453de4905758b5222f742966b989f82add20a74af935"
+      "sha256": "2f056088e00343334da29d7632ee05b15038c98b98f9dfa25dcc5e07816370bc"
     },
     "extras/codex-custom-agents/recruitment-office/aco-portfolio-career-editor.toml": {
       "mode": 420,
-      "sha256": "47131518f248e0046086c6366b259e5e568b63671f91a1980d991babb41cfdc9"
+      "sha256": "979210d5f02fe56b37e020c1004a611afca5ef5644c379f5eb7dc15dd771f1a8"
     },
     "extras/codex-custom-agents/recruitment-office/aco-professional-reference-manager.toml": {
       "mode": 420,
-      "sha256": "deaa9ffb88d4f479e114a4cf50e48cae15143b0901440b3d4604716c010cf91f"
+      "sha256": "4109b65cd41aad63f2740e05257bb8b97a797865509959ef731d0a0512b5a084"
     },
     "extras/codex-custom-agents/recruitment-office/aco-recruiter-relations-manager.toml": {
       "mode": 420,
-      "sha256": "d80fbe44dbf8833066d23ab8ceade7db4f0ac8faf3d4a4b28f50eef735ae6192"
+      "sha256": "ce1ffb3d3d611ed7050b9c4c5f1b150a36098c6399b8543a75f20d6314e1333e"
     },
     "extras/codex-custom-agents/recruitment-office/aco-recruitment-orchestrator.toml": {
       "mode": 420,
-      "sha256": "316efd27b6f5aaae3847d28dcd261bda113bbcba5879c9c1c96bf18fac67dbed"
+      "sha256": "42b2940c424de1314912b92d5722cd1d48427a48555a27f3f83699854b932ccd"
     },
     "extras/codex-custom-agents/recruitment-office/aco-resume-strategist.toml": {
       "mode": 420,
-      "sha256": "eeff5b0822f92a863082be4718a8aed0fffbf6d2be8a8331259098d81af4fc7a"
+      "sha256": "39545afc3588f7907a9f76563b22ab0619465d79b95405590b31f7985ff1ec77"
     },
     "extras/codex-custom-agents/recruitment-office/aco-skills-gap-analyst.toml": {
       "mode": 420,
-      "sha256": "128b39c50747ce15435686b1acf1e289b3de1fb1f33d2a3e499a04fd09fdbec2"
+      "sha256": "2e48a245276aedebc3be325febc91f9d7644ae09938279d0b9a6d3dd4a9bfefe"
     },
     "extras/codex-custom-agents/recruitment-office/aco-target-company-researcher.toml": {
       "mode": 420,
-      "sha256": "ab5d6139451a923fcbe55127124cfb4f0f157d4f4e7de9d04e426c983631e5c7"
+      "sha256": "4f44d64b083af12ccca3a366f6b60f0a66bf71d21f02c58437f99d4a7fa77eaa"
     },
     "extras/codex-custom-agents/shared/aco-art-director.toml": {
       "mode": 420,
-      "sha256": "3d45e4fbda04c642187a3f42eafbb858540985a3b9dd419d5e5a14e4e64b8c20"
+      "sha256": "9329c4d3883469f63ab409654c4161ffbc9f5522408ba8608739f24b7e358379"
     },
     "extras/codex-custom-agents/shared/aco-art-writer.toml": {
       "mode": 420,
-      "sha256": "62546c0ca38848777a0558a5bc7999ad9e9cf5678fe53198b9a136fcc42909d5"
+      "sha256": "61d64f86e1ff573692d3dfb6c0764499cd8775ac9e9a78d0c29e073008ca0120"
     },
     "extras/codex-custom-agents/shared/aco-brand-strategist.toml": {
       "mode": 420,
-      "sha256": "09809b556ee0437255b31f5c5e5dac0411d0d0b4ee5d82996742a8dd6af3ef7a"
+      "sha256": "02a56a9496600bf57a2b1f8a3c3401af0f25ec3c317a60c9af1b090fc95d4c5d"
     },
     "extras/codex-custom-agents/shared/aco-communications-editor.toml": {
       "mode": 420,
-      "sha256": "1cda1a9fff6da63a3d7f13998d29c7e2a44fb597d55544e36020753d08c628c7"
+      "sha256": "48ce254c03c8144c93e77ddbedf18d402e1835cd6af0befce8e88fd1855954c7"
     },
     "extras/codex-custom-agents/shared/aco-context-steward.toml": {
       "mode": 420,
-      "sha256": "26cfdd914097e1c2f0a87d177c0b6648f16f78ee54a4573443c06ae84d9619aa"
+      "sha256": "f726ffb3386e4f7d8ffa25dd4445295309d98d5ad77086a36a2d4939e5f816ff"
     },
     "extras/codex-custom-agents/shared/aco-editor.toml": {
       "mode": 420,
-      "sha256": "ff58ab5b86171b16a7bdb7036624cf31dc81798d339555ae9287220805ba0907"
+      "sha256": "5bcd9b0667ae3d90dd5b6ef05fe7b67ce3a7f622e0114abb08820983f67f5a6d"
     },
     "extras/codex-custom-agents/shared/aco-marketing-strategist.toml": {
       "mode": 420,
-      "sha256": "03373826e667c33091f8f2d06500bfdfff99c55857d200426a82c1140fcb485f"
+      "sha256": "9a882487ac89fd6f638503906774e25ace45107071734a8dfa724b28e0fe2b4a"
     },
     "extras/codex-custom-agents/shared/aco-office-concierge.toml": {
       "mode": 420,
-      "sha256": "e6e742843f41197f28e674aad1c9dd013860e6b8c57f5a31356334fc9cb77b60"
+      "sha256": "28809a8fa8c54922898ae6b8ba4cc4124ce73178109c0893d2cfe3aa27eb8b2a"
     },
     "extras/codex-custom-agents/shared/aco-studio-finance-manager.toml": {
       "mode": 420,
-      "sha256": "41aa9d983619cad4b8cf4e4bc3b5fa23d3732e25fe37b538d782ffbd0122cae4"
+      "sha256": "20bfff51f133631bd5912fb65c68dd556480589b71501a2cb75dc3858871d4a7"
     },
     "extras/codex-custom-agents/shared/aco-studio-manager.toml": {
       "mode": 420,
-      "sha256": "8adfa59550d2a1373ca9d3fdc7be6d6c19318aeb43519a85e4c2a84b34cc7615"
+      "sha256": "1ac85450499aeacfed496f1b580c7d00154ba04a79063f39094f76833434fb4b"
     },
     "extras/install-codex-custom-agents.sh": {
       "mode": 493,
@@ -2075,7 +2095,7 @@
     },
     "release/behavioral-simulation.json": {
       "mode": 420,
-      "sha256": "a2c6847a334d9f68d94407493936c8c5e2b4d97cdc51356af07db5010d7ad31a"
+      "sha256": "c18220b7756640b20220cdc29b9a269a7c34e43ac442ecda659ea96b451e9d92"
     },
     "release/legacy-files.json": {
       "mode": 420,
@@ -2104,6 +2124,18 @@
     "release/v073-routing-semantic-freeze.json": {
       "mode": 420,
       "sha256": "9fa93e4b19da95bb07b34f4f5d4cbb648b276326078a986ee24c2fe1c0aa8261"
+    },
+    "release/v090-adaptive-holdout-freeze.json": {
+      "mode": 420,
+      "sha256": "ce26904b2c5311e0d6538d2d4d70abf271c203822790114a2d2abad89036f404"
+    },
+    "release/v090-adaptive-holdout-result.json": {
+      "mode": 420,
+      "sha256": "d58713411bf80d09826856b9ebbb08d48af22057cf878ea71eca6dbe2a271607"
+    },
+    "release/v090-adaptive-semantic-freeze.json": {
+      "mode": 420,
+      "sha256": "537177bad9cc8012a9b7fc19303a666043b034be1c35523d5c37674e80060ab9"
     },
     "release/verification.json": {
       "mode": 420,
@@ -2145,6 +2177,10 @@
       "mode": 420,
       "sha256": "af127ccfb02d18524638b114fb2efb14527500fa780433ac36d86f3d24260758"
     },
+    "scripts/aco/adaptive.py": {
+      "mode": 420,
+      "sha256": "767a5f3006911093214e7811668d5595cd4fed7d3d88593e43f12e9f231040de"
+    },
     "scripts/aco/autonomy.py": {
       "mode": 420,
       "sha256": "d0bba3042b8d6ce47477f94ead77a4a2366b56d7fe6bafd451e92aa2022f72ed"
@@ -2155,7 +2191,7 @@
     },
     "scripts/aco/cli.py": {
       "mode": 420,
-      "sha256": "fe8b689896c0528357fbf41176cbdd65e0c5379abee64aef4f7404dddee411fc"
+      "sha256": "3bfbf0e69410141fdc499ce1b7fa6eeb5bf2462ba877b679538546096be2731b"
     },
     "scripts/aco/common.py": {
       "mode": 420,
@@ -2259,7 +2295,7 @@
     },
     "scripts/aco/validate.py": {
       "mode": 420,
-      "sha256": "bcef566ec50574cb5944b579d14d3fac1aae50e44e69773e01f62de05e63692e"
+      "sha256": "a9018a98bf5cbd3976c1c53ba3c0ad5de2b661204fa5aac406a5c690efdbc80b"
     },
     "scripts/aco_cli.py": {
       "mode": 420,
@@ -2283,7 +2319,7 @@
     },
     "scripts/generate.py": {
       "mode": 420,
-      "sha256": "e2d41fcaffc629fb4fe4e962514d1296eac51e5f59facadd16a1ea8033e80f45"
+      "sha256": "a8bddd08709f934a1ea3bfd3057a72665dd1f86ac248c083de541ebb6fc6b506"
     },
     "skills/aco-administration-office/SKILL.md": {
       "mode": 420,
@@ -3095,7 +3131,7 @@
     },
     "skills/aco-office-concierge/references/CATALOG.json": {
       "mode": 420,
-      "sha256": "b67f2a2a82c32efd8598d45fe85c130f0365fbe4bf153958f50ffccac8d68dac"
+      "sha256": "f4cbfb32c81ed11638c0b1218e55c4706b8443879852cb678a71e2a648d954b5"
     },
     "skills/aco-office-concierge/references/ROLE-INDEX.md": {
       "mode": 420,
@@ -3353,6 +3389,10 @@
       "mode": 420,
       "sha256": "2a6d66ef366bc37b9f1569faf5ce8b4703d3078eb25afb9f3fa22e7a92622da4"
     },
+    "skills/aco-office-concierge/references/protocols/ADAPTIVE-FEEDBACK.md": {
+      "mode": 420,
+      "sha256": "06f9bad853431f0effa917d5ff025b493ad789dcd180fa9baef232c7e5320a07"
+    },
     "skills/aco-office-concierge/references/protocols/BOOTSTRAP.md": {
       "mode": 420,
       "sha256": "bfc1c63da696120252b12abf5645bc81b96a4c25a109dfd4e72fd0650b659c64"
@@ -3539,11 +3579,11 @@
     },
     "skills/aco-office-concierge/references/resources/INDEX.md": {
       "mode": 420,
-      "sha256": "1be2796cf85ee86203b319dc5d4a90e7305bab5e35eae30fa3b20a3ef5b79a63"
+      "sha256": "5847894d1b0aed41ef5fa809b458ee7f07bb818e89fde996d2a9d53dd66aaac8"
     },
     "skills/aco-office-concierge/references/resources/REGISTRY.json": {
       "mode": 420,
-      "sha256": "9c0d05786b4f4f2f26908a422c9669161029a9725dd5bfcd2d925761b083cabf"
+      "sha256": "2222a7648341c69e6cb55f1cc51542a5050be891be7d8c62675265b69e7fb901"
     },
     "skills/aco-office-concierge/runtime/RUNTIME-ONLY": {
       "mode": 420,
@@ -3551,7 +3591,7 @@
     },
     "skills/aco-office-concierge/runtime/VERSION": {
       "mode": 420,
-      "sha256": "a66780da23103beaf12432b418508966b31a2a3a787f9468a5b6cdaa8667c1ef"
+      "sha256": "9d8c94f1ad3ea96b1e2ac4914fda4cb93c76b4a3e0d8cc6dd8976d6c0b227d15"
     },
     "skills/aco-office-concierge/runtime/assets/context-templates/ACTIVITY-CONTEXT.template.md": {
       "mode": 420,
@@ -3643,87 +3683,99 @@
     },
     "skills/aco-office-concierge/runtime/config/adapter-contract.json": {
       "mode": 420,
-      "sha256": "e8827996c5cbea6efce63888f56441d2db70207d25d5831017800715509ea8a9"
+      "sha256": "67b481fc2bb9b32dcfb4647c359b4f2115023f8958bde31687be5ced4b648d20"
+    },
+    "skills/aco-office-concierge/runtime/config/adaptive-benchmark.json": {
+      "mode": 420,
+      "sha256": "abf0b8c1a138d11a6d3ea23ce4263afe99ff09acb3de87fd24044b0e6ed1f09a"
+    },
+    "skills/aco-office-concierge/runtime/config/adaptive-policy.json": {
+      "mode": 420,
+      "sha256": "5122fcd656b502c79402578c83b45ae231b0b0b8a6711e136173d3dfdd2ba9c0"
+    },
+    "skills/aco-office-concierge/runtime/config/adaptive-v090-holdout.json": {
+      "mode": 420,
+      "sha256": "9d4604a52a766d24b73608f2647003b3423ca00556f41adc0e68cb9ebb0a60fe"
     },
     "skills/aco-office-concierge/runtime/config/autonomy-benchmark.json": {
       "mode": 420,
-      "sha256": "d165cd717354383637023266300fffceb7323338250b1f9f8e785414b4d44e92"
+      "sha256": "fc47f6de6841df3913010607cf5d98310790bc6d00a0c6554371cdc947b3e4ef"
     },
     "skills/aco-office-concierge/runtime/config/autonomy-policy.json": {
       "mode": 420,
-      "sha256": "e0071fbb41c3af529b3b30be70a02fbf3c37240194419da13a76a45a7008c928"
+      "sha256": "57913b6e9a641e70828bb8412677800a669829abe6132f97e86bc3c61fd2e6d1"
     },
     "skills/aco-office-concierge/runtime/config/capabilities.json": {
       "mode": 420,
-      "sha256": "fa9c490614e8886fce2284a8471c1b846c847bf88ddbff616ef1aafd9475805d"
+      "sha256": "7c61d8466d174dc6f87ba174b79469a39879f1d11a578f8c4a3429ecd4772959"
     },
     "skills/aco-office-concierge/runtime/config/context-benchmark.json": {
       "mode": 420,
-      "sha256": "bde55f8740c27197927208a3deab577391f5118659c44a13746042643583410f"
+      "sha256": "64b31330b5aa4313aff87cb485aed8a31a09771bd3dd86e1b9706b7cf7ff8ab5"
     },
     "skills/aco-office-concierge/runtime/config/context-engine.json": {
       "mode": 420,
-      "sha256": "49d11991bee4b18479b72c635ec3b81b543b98763765986e359efda2fb47f3a8"
+      "sha256": "60fd3027ff09be004c4be3f9d96b41413de332e5f03175117fc9ae237eb059f8"
     },
     "skills/aco-office-concierge/runtime/config/delegation-benchmark.json": {
       "mode": 420,
-      "sha256": "f7d9f771d76244a7ff6768cf3bfb387afacb4f4cf3e7461f00cef570be40959c"
+      "sha256": "847820892d4b526ac1bacf36512f66101aaada97fa9ebaa5a11b54d2259c6066"
     },
     "skills/aco-office-concierge/runtime/config/evals.json": {
       "mode": 420,
-      "sha256": "3b31f83dd8ee06f2ec8de16d186263b249d1845a149c3448c8d1f82e7e2752ab"
+      "sha256": "3028dd12efd853b2b47281cc7f3d399077ff519ba4962c9413297a17608ef5f8"
     },
     "skills/aco-office-concierge/runtime/config/execution-benchmark.json": {
       "mode": 420,
-      "sha256": "703002dbda9c49616e07bf7f88ed17d1dc70bdc709f5c6d9d2f660744655b355"
+      "sha256": "d2dac857ac96256eebeae8441ce973e92c4325699bb821c550a28f64784ccf93"
     },
     "skills/aco-office-concierge/runtime/config/goal-graph.json": {
       "mode": 420,
-      "sha256": "c2962211257526ae04c106f1367fddd1c82f92704ab94431308fd24a82bb43e2"
+      "sha256": "2cb72467dfdc93105f22b993df5131e8f4d5e66e99486987cb899f38e8068cb1"
     },
     "skills/aco-office-concierge/runtime/config/integration-adapters.json": {
       "mode": 420,
-      "sha256": "aaa14df1686902fce319d189b3b84d794b849edcbf341c8397f4d417d3fd653c"
+      "sha256": "f81ff9774b9d1fb384cf0df8a14decf2924bb2bd0b7a374ea94b215c46d0f2a6"
     },
     "skills/aco-office-concierge/runtime/config/integration-benchmark.json": {
       "mode": 420,
-      "sha256": "f99743fa2af735231c21f8ecaed76a35de141a44831e333259d1b99d7e8423e4"
+      "sha256": "6c18e31aa5018cf4a460120323ca689039b54a87621d7c113b778f96aeee213b"
     },
     "skills/aco-office-concierge/runtime/config/memory-classes.json": {
       "mode": 420,
-      "sha256": "d4691b0f5b72efed8f08a34adc97ffffee7a6ffec65491f512d589dd207f4278"
+      "sha256": "6607f55b010d57fc91b99ce98b9d59bacb02bee8039bc71aba25da85ceaa4827"
     },
     "skills/aco-office-concierge/runtime/config/permission-policy.json": {
       "mode": 420,
-      "sha256": "4e89605a0275f273e4a70da894cc99682b506b48b98e06032243c42c625a78a3"
+      "sha256": "c13d54486e0126ca98487cd47a527df52469bb20590ad74452db908992b7d7e9"
     },
     "skills/aco-office-concierge/runtime/config/privacy-policy.json": {
       "mode": 420,
-      "sha256": "c91f56f6f2cb5a11ae44a58f0245c2109c2c8efc4a01e2ab39db032620054bc9"
+      "sha256": "ebc98de83f4737517e8ea378b46ec3d796e119813a6156fe6c8f3bdea6354402"
     },
     "skills/aco-office-concierge/runtime/config/real-world-benchmark-v072.json": {
       "mode": 420,
-      "sha256": "8d6f317132c2c0df1461cff92d637ed826b65cc8be955572a310f92e7b2a3ac9"
+      "sha256": "a4a334e20fdbe21748ebb1bf7df8a47d4853b996092a03860e99e348962327c1"
     },
     "skills/aco-office-concierge/runtime/config/real-world-benchmark-v073.json": {
       "mode": 420,
-      "sha256": "1aafec855e621aa788da1f5bb144eb15af745c67eaddeeb44a94838792d69d69"
+      "sha256": "0d17fdaa7d7f17b0ffebcea1869d180cc872d2ba3f37698ea302223de5445007"
     },
     "skills/aco-office-concierge/runtime/config/resources.json": {
       "mode": 420,
-      "sha256": "9c0d05786b4f4f2f26908a422c9669161029a9725dd5bfcd2d925761b083cabf"
+      "sha256": "2222a7648341c69e6cb55f1cc51542a5050be891be7d8c62675265b69e7fb901"
     },
     "skills/aco-office-concierge/runtime/config/role-contracts.json": {
       "mode": 420,
-      "sha256": "f8fd200a2f29375bc43cfe79096fbd85ef3b2429d3471c2ab8dc97631afcc49f"
+      "sha256": "737f3c59f7200f3dfad1dea57aea630c547daeda16d1531ad7c50a3c95ea2f8e"
     },
     "skills/aco-office-concierge/runtime/config/routing-benchmark.json": {
       "mode": 420,
-      "sha256": "b6b5a001d2ccd2d50e7cfb42efbb814791b4695f64f567fa9154020546a8b8de"
+      "sha256": "ded9bca4f1acbbc4e8edc0bf7e9339e587d41d7133207971ee3e131ceac148c4"
     },
     "skills/aco-office-concierge/runtime/config/routing-examples.json": {
       "mode": 420,
-      "sha256": "d4dba95e2892ebf398baca593a34269eae2d5987fd35bd563a4b8377ddec7690"
+      "sha256": "e36306c239092173b57f972e6c8dbf0aa6e562d12647cd4de4ceffd49d337ef9"
     },
     "skills/aco-office-concierge/runtime/config/routing-final-holdout.json": {
       "mode": 420,
@@ -3731,7 +3783,7 @@
     },
     "skills/aco-office-concierge/runtime/config/routing-hints.json": {
       "mode": 420,
-      "sha256": "09eed8b99b393235826c823bb2bf962259155eca03ab75221742e238a0780afe"
+      "sha256": "933f5e47396f81c65b5683c460c57a6e2b299e7fd4f4d8575901d653b39b2de1"
     },
     "skills/aco-office-concierge/runtime/config/routing-v072-holdout-3.json": {
       "mode": 420,
@@ -3747,11 +3799,11 @@
     },
     "skills/aco-office-concierge/runtime/config/scope-boundary-benchmark-v073.json": {
       "mode": 420,
-      "sha256": "c80ca5cdbdde0b9a75412fa6a763e8a4a59bff599adac6d5cb9d2bbcba7972d7"
+      "sha256": "2523b661f10df026c5a49bfed2b8ee8f8d7349f0f0920a53de83027ac659bb7d"
     },
     "skills/aco-office-concierge/runtime/config/workflow-states.json": {
       "mode": 420,
-      "sha256": "d2565d231dc24606684c8a75f2df89302e1af5941a1eeec181bc9dd90c021a0a"
+      "sha256": "6e6f4cdae0ef87504e1118984476ffd972750adfe94c6400bb07317136a38a92"
     },
     "skills/aco-office-concierge/runtime/config/workflows.json": {
       "mode": 420,
@@ -3760,6 +3812,10 @@
     "skills/aco-office-concierge/runtime/scripts/aco/__init__.py": {
       "mode": 420,
       "sha256": "af127ccfb02d18524638b114fb2efb14527500fa780433ac36d86f3d24260758"
+    },
+    "skills/aco-office-concierge/runtime/scripts/aco/adaptive.py": {
+      "mode": 420,
+      "sha256": "767a5f3006911093214e7811668d5595cd4fed7d3d88593e43f12e9f231040de"
     },
     "skills/aco-office-concierge/runtime/scripts/aco/autonomy.py": {
       "mode": 420,
@@ -3771,7 +3827,7 @@
     },
     "skills/aco-office-concierge/runtime/scripts/aco/cli.py": {
       "mode": 420,
-      "sha256": "fe8b689896c0528357fbf41176cbdd65e0c5379abee64aef4f7404dddee411fc"
+      "sha256": "3bfbf0e69410141fdc499ce1b7fa6eeb5bf2462ba877b679538546096be2731b"
     },
     "skills/aco-office-concierge/runtime/scripts/aco/common.py": {
       "mode": 420,
@@ -4815,15 +4871,19 @@
     },
     "tests/test_v072.py": {
       "mode": 420,
-      "sha256": "9a905277f16e530ff0e90c9df6675897099481d9275ba59fccfb1ae0be8853c3"
+      "sha256": "3590febc4d570967279b44133ae77f3973c7766ed8ce5065314077a41d976ccb"
     },
     "tests/test_v073.py": {
       "mode": 420,
-      "sha256": "84b4ee7888672692211bcadb2e50734f048eaffb3095826a5194dc8d6f19a87e"
+      "sha256": "2a17b7ef15e401c7f13618fbb3c5e2ff32a3220061df3a5f110acd356040117d"
     },
     "tests/test_v080.py": {
       "mode": 420,
-      "sha256": "14c4fa897ba9c5e1b140c1d0f09fb727bfe1724df34b3cbf0994309976c12f92"
+      "sha256": "02b21245e05282e68dec2dfe883d248312bca2f8a1be177d2e6def1b99db2923"
+    },
+    "tests/test_v090.py": {
+      "mode": 420,
+      "sha256": "fe49cb4d135b4ffc805cde2ced871e68513995a43f822f4ca34189a1ed2f3d19"
     }
   },
   "schema_version": 1

@@ -1,4 +1,4 @@
-# ACO 0.8.0 — Beginner Guide
+# ACO 0.9.0 — Beginner Guide
 
 **You do not need to know every agent, install 99 optional resources, or create a folder for every idea.**
 
@@ -10,12 +10,12 @@ ACO is not a plugin to submit to a directory. Downloading it does not connect Dr
 
 ## 2. You have an older ACO repository: update it first
 
-1. Download the complete 0.8.0 ZIP and extract it into a **new folder**. Do not drop it over your old checkout.
+1. Download the complete 0.9.0 ZIP and extract it into a **new folder**. Do not drop it over your old checkout.
 2. Open your existing `ACO-agents` checkout in Codex. Make the extracted new folder available to Codex too.
 3. Paste this:
 
 ```text
-Update this ACO repository using the new 0.8.0 package.
+Update this ACO repository using the new 0.9.0 package.
 Read docs/UPGRADING.md FROM THE NEW PACKAGE.
 Follow its safe preview, backup, migration, validation and tests. If a release-specific Codex prompt was supplied beside the ZIP, you may use it as a convenience wrapper.
 Preserve .git, history, private, untracked and unrelated files.

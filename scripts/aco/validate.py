@@ -131,7 +131,7 @@ def validate() -> dict:
     if simulation_gate.get('status')!='passed' or simulation_gate.get('critical_failures')!=0 or simulation_gate.get('score',0)<90:
         errors.append('Behavioral simulation gate failed')
     # v0.7 execution contracts and deterministic conformance gate.
-    for filename in ('capabilities.json','permission-policy.json','adapter-contract.json','workflow-states.json','execution-benchmark.json','memory-classes.json','integration-adapters.json','delegation-benchmark.json','integration-benchmark.json','privacy-policy.json','context-engine.json','context-benchmark.json','real-world-benchmark-v072.json','real-world-benchmark-v073.json','scope-boundary-benchmark-v073.json','goal-graph.json','autonomy-policy.json','autonomy-benchmark.json'):
+    for filename in ('capabilities.json','permission-policy.json','adapter-contract.json','workflow-states.json','execution-benchmark.json','memory-classes.json','integration-adapters.json','delegation-benchmark.json','integration-benchmark.json','privacy-policy.json','context-engine.json','context-benchmark.json','real-world-benchmark-v072.json','real-world-benchmark-v073.json','scope-boundary-benchmark-v073.json','goal-graph.json','autonomy-policy.json','autonomy-benchmark.json','adaptive-policy.json','adaptive-benchmark.json','adaptive-v090-holdout.json'):
         cfg=read_json(ROOT/'config'/filename)
         if cfg.get('schema_version')!=1:errors.append(filename+' schema mismatch')
         if cfg.get('aco_version')!=VERSION:errors.append(filename+' version mismatch')
@@ -150,6 +150,33 @@ def validate() -> dict:
     goal_example=goal_graph_check(read_json(ROOT/'examples/goals/artist-program.json'))
     if goal_example.get('status')!='valid':
         errors.append('Packaged Goal Graph example is invalid')
+    from .adaptive import adaptive_benchmark
+    adaptive_gate=adaptive_benchmark(ROOT/'config/adaptive-benchmark.json')
+    if adaptive_gate.get('status')!='passed' or adaptive_gate.get('critical_failures')!=0 or adaptive_gate.get('score')!=100.0 or adaptive_gate.get('cases')<30:
+        errors.append('ACO 0.9 adaptive safety benchmark gate failed')
+    adaptive_holdout=read_json(ROOT/'config/adaptive-v090-holdout.json')
+    adaptive_freeze=read_json(ROOT/'release/v090-adaptive-holdout-freeze.json')
+    adaptive_result=read_json(ROOT/'release/v090-adaptive-holdout-result.json')
+    adaptive_semantic=read_json(ROOT/'release/v090-adaptive-semantic-freeze.json')
+    if adaptive_freeze.get('disposition')!='final_fresh_release_gate' or adaptive_freeze.get('frozen_before_first_execution') is not True:
+        errors.append('ACO 0.9 adaptive fresh holdout freeze metadata invalid')
+    if _sha(ROOT/'config/adaptive-v090-holdout.json')!=adaptive_freeze.get('sha256'):
+        errors.append('ACO 0.9 adaptive fresh holdout hash differs from frozen pre-run hash')
+    first_adaptive=adaptive_result.get('first_execution',{})
+    if adaptive_result.get('disposition')!='final_fresh_release_gate' or adaptive_result.get('holdout_sha256')!=adaptive_freeze.get('sha256') or first_adaptive.get('status')!='passed' or first_adaptive.get('critical_failures')!=0 or first_adaptive.get('score')!=100.0 or first_adaptive.get('cases')<25:
+        errors.append('ACO 0.9 adaptive fresh holdout first-run evidence invalid')
+    dev_ids={x.get('id') for x in read_json(ROOT/'config/adaptive-benchmark.json').get('cases',[])}
+    fresh_ids={x.get('id') for x in adaptive_holdout.get('cases',[])}
+    if dev_ids & fresh_ids:
+        errors.append('ACO 0.9 adaptive fresh holdout case IDs overlap development benchmark')
+    if adaptive_semantic.get('disposition')!='post_fresh_holdout_semantic_freeze':
+        errors.append('ACO 0.9 adaptive semantic freeze metadata invalid')
+    for rel,expected in adaptive_semantic.get('files',{}).items():
+        if _sha(ROOT/rel)!=expected:
+            errors.append('Adaptive semantics changed after final fresh holdout: '+rel)
+    adaptive_fresh_gate=adaptive_benchmark(ROOT/'config/adaptive-v090-holdout.json')
+    if adaptive_fresh_gate.get('status')!='passed' or adaptive_fresh_gate.get('critical_failures')!=0 or adaptive_fresh_gate.get('score')!=100.0:
+        errors.append('ACO 0.9 frozen fresh adaptive holdout regression gate failed')
     from .delegation import delegation_benchmark
     delegation_gate=delegation_benchmark(ROOT/'config/delegation-benchmark.json')
     if delegation_gate.get('status')!='passed' or delegation_gate.get('critical_failures')!=0 or delegation_gate.get('score',0)<100:
@@ -208,5 +235,5 @@ def validate() -> dict:
     if errors:raise ACOError('Validation failed:\n'+'\n'.join(errors))
     return {'status':'validated','version':VERSION,'canonical_agents':len(cat['agents']),
             'native_agents':len(names),'skills':len(skills),'workflows':len(workflows),'optional_resources':len(resource_ids),'memory_default':'compact','text_files_scanned':scanned,'relative_links_checked':links_checked,
-            'delegation_score':delegation_gate.get('score'),'integration_score':integration_gate.get('score'),'privacy_findings':len(privacy_gate.get('findings',[])),'routing_v072_score':routing_gate_v072.get('score'),'routing_v073_development_score':routing_gate_v073_dev.get('score'),'routing_v073_fresh_score':routing_gate_v073.get('score'),'context_benchmark_score':context_gate.get('score'),'context_mean_selection_ratio':context_gate.get('mean_selection_ratio'),'scope_boundary_score':scope_gate.get('score'),'scope_boundary_cases':scope_gate.get('cases'),'real_world_benchmark_score':real_world_gate.get('score'),'real_world_context_selection_ratio':real_world_gate.get('mean_context_selection_ratio'),'checks':['TOML','role catalogue and dependencies','generated parity','no plugin artifacts','basic secret/private-path scan','release hashes','relative documentation links','resource identities/roles/methods','role contracts','routing holdout regression gate','v0.7.2 routing regression gate','v0.7.3 development routing regression gate','v0.7.3 frozen fresh routing holdout gate','routing semantic freeze gate','context efficiency gate','exact-scope privacy boundary gate','v0.7.3 120-scenario real-world regression gate','behavioral simulation gate','delegation benchmark gate','hybrid-memory contracts','integration adapter benchmark gate','privacy/PII release gate','capability/permission/adapter/workflow contracts','execution policy benchmark gate','Goal Graph contract','ACO 0.8 autonomy benchmark gate'],
-            'execution_benchmark_score':execution_gate.get('score'),'autonomy_benchmark_score':autonomy_gate.get('score'),'autonomy_benchmark_cases':autonomy_gate.get('cases'),'limitations':'Static/local checks; no professional-quality certification and no live external adapter/provider action is executed by validation.'}
+            'delegation_score':delegation_gate.get('score'),'integration_score':integration_gate.get('score'),'privacy_findings':len(privacy_gate.get('findings',[])),'routing_v072_score':routing_gate_v072.get('score'),'routing_v073_development_score':routing_gate_v073_dev.get('score'),'routing_v073_fresh_score':routing_gate_v073.get('score'),'context_benchmark_score':context_gate.get('score'),'context_mean_selection_ratio':context_gate.get('mean_selection_ratio'),'scope_boundary_score':scope_gate.get('score'),'scope_boundary_cases':scope_gate.get('cases'),'real_world_benchmark_score':real_world_gate.get('score'),'real_world_context_selection_ratio':real_world_gate.get('mean_context_selection_ratio'),'checks':['TOML','role catalogue and dependencies','generated parity','no plugin artifacts','basic secret/private-path scan','release hashes','relative documentation links','resource identities/roles/methods','role contracts','routing holdout regression gate','v0.7.2 routing regression gate','v0.7.3 development routing regression gate','v0.7.3 frozen fresh routing holdout gate','routing semantic freeze gate','context efficiency gate','exact-scope privacy boundary gate','v0.7.3 120-scenario real-world regression gate','behavioral simulation gate','delegation benchmark gate','hybrid-memory contracts','integration adapter benchmark gate','privacy/PII release gate','capability/permission/adapter/workflow contracts','execution policy benchmark gate','Goal Graph contract','ACO 0.8 autonomy benchmark gate','ACO 0.9 adaptive shadow-learning benchmark gate','ACO 0.9 frozen fresh adaptive holdout gate','ACO 0.9 adaptive semantic freeze gate'],
+            'execution_benchmark_score':execution_gate.get('score'),'autonomy_benchmark_score':autonomy_gate.get('score'),'autonomy_benchmark_cases':autonomy_gate.get('cases'),'adaptive_benchmark_score':adaptive_gate.get('score'),'adaptive_benchmark_cases':adaptive_gate.get('cases'),'adaptive_fresh_score':adaptive_fresh_gate.get('score'),'adaptive_fresh_cases':adaptive_fresh_gate.get('cases'),'limitations':'Static/local checks; no professional-quality certification and no live external adapter/provider action is executed by validation.'}
