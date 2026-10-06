@@ -1,0 +1,34 @@
+{
+  "skill_id": "frontend_motion.gsap",
+  "title": "GSAP animation orchestration",
+  "version": "1.0.0",
+  "status": "active",
+  "when_to_use": [
+    "Use when the task matches this technical capability."
+  ],
+  "inputs": [
+    "task brief",
+    "relevant constraints"
+  ],
+  "method": [
+    "Compose Tweens into Timelines when sequence matters.",
+    "Use ScrollTrigger when motion is genuinely coupled to scroll.",
+    "Include lifecycle cleanup and reduced-motion behavior."
+  ],
+  "failure_modes": [
+    "One giant unstructured timeline"
+  ],
+  "output_contract": {
+    "type": "technical_skill_output",
+    "must_include": [
+      "result",
+      "source_or_verification_note"
+    ]
+  },
+  "source_status": "verified_official",
+  "sources": [
+    {
+      "url": "https://gsap.com/docs/v3/"
+    }
+  ]
+}

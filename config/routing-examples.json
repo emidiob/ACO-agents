@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "0.9.0",
+  "aco_version": "1.0.0",
   "purpose": "Curated routing examples from consumed development/evaluation cases only. Final release holdouts must never be merged into this file before they are scored.",
   "source_files": [
     "routing-benchmark.json",
@@ -1023,7 +1023,7 @@
       ]
     },
     {
-      "prompt": "Our arts organization wants a researched view of shifts across design, technology and culture that could shape next year’s programme, without calling every viral thing a trend.",
+      "prompt": "Our arts organization wants a researched view of shifts across design, technology and culture that could shape next year\u2019s programme, without calling every viral thing a trend.",
       "office": "organization-office",
       "roles": [
         "cultural_intelligence_analyst",
@@ -1045,7 +1045,7 @@
       ]
     },
     {
-      "prompt": "The client’s positioning is approved. Build the verbal identity: voice principles, message hierarchy, naming logic and examples across channels.",
+      "prompt": "The client\u2019s positioning is approved. Build the verbal identity: voice principles, message hierarchy, naming logic and examples across channels.",
       "office": "agency-office",
       "roles": [
         "verbal_identity_director"
@@ -1141,7 +1141,7 @@
       ]
     },
     {
-      "prompt": "Edit this artist statement for clarity and structure while preserving the author’s voice and not adding claims that are not in the source.",
+      "prompt": "Edit this artist statement for clarity and structure while preserving the author\u2019s voice and not adding claims that are not in the source.",
       "office": "shared",
       "roles": [
         "editor",
@@ -1254,7 +1254,7 @@
       ]
     },
     {
-      "prompt": "Turn today’s confirmed priorities, appointments and open office tasks into a concise action list with owners and timing.",
+      "prompt": "Turn today\u2019s confirmed priorities, appointments and open office tasks into a concise action list with owners and timing.",
       "office": "administration-office",
       "roles": [
         "executive_assistant"
@@ -1687,7 +1687,7 @@
       ]
     },
     {
-      "prompt": "Management has approved next year’s workload assumptions. Translate them into capability and staffing scenarios before opening requisitions.",
+      "prompt": "Management has approved next year\u2019s workload assumptions. Translate them into capability and staffing scenarios before opening requisitions.",
       "office": "people-office",
       "roles": [
         "workforce_planner"
@@ -1736,14 +1736,14 @@
       ]
     },
     {
-      "prompt": "Ingest today’s camera media with verified copies, checksums, naming and backup status before cards are cleared.",
+      "prompt": "Ingest today\u2019s camera media with verified copies, checksums, naming and backup status before cards are cleared.",
       "office": "production-office",
       "roles": [
         "media_data_wrangler"
       ]
     },
     {
-      "prompt": "The manuscript structure is locked. Do sentence-level editing for grammar, consistency, terminology and house style without rewriting the author’s argument.",
+      "prompt": "The manuscript structure is locked. Do sentence-level editing for grammar, consistency, terminology and house style without rewriting the author\u2019s argument.",
       "office": "publishing-office",
       "roles": [
         "copy_editor"
@@ -1899,7 +1899,7 @@
       ]
     },
     {
-      "prompt": "Create a targeted development plan for the team’s weak production-planning skills, tied to real assignments and observable improvement.",
+      "prompt": "Create a targeted development plan for the team\u2019s weak production-planning skills, tied to real assignments and observable improvement.",
       "office": "people-office",
       "roles": [
         "learning_development_specialist"
@@ -2186,7 +2186,7 @@
       ]
     },
     {
-      "prompt": "Create the communications plan for our institution’s programme announcement across press, newsletter and public channels.",
+      "prompt": "Create the communications plan for our institution\u2019s programme announcement across press, newsletter and public channels.",
       "office": "organization-office",
       "roles": [
         "communications_pr_director"
@@ -2331,7 +2331,7 @@
       ]
     },
     {
-      "prompt": "Convert today’s confirmed meetings, deadlines and office priorities into a short coordinated action plan with owners.",
+      "prompt": "Convert today\u2019s confirmed meetings, deadlines and office priorities into a short coordinated action plan with owners.",
       "office": "administration-office",
       "roles": [
         "executive_assistant"
@@ -2498,7 +2498,7 @@
       ]
     },
     {
-      "prompt": "Translate the employer’s forecast workload into staffing and contractor scenarios before anyone opens job requisitions.",
+      "prompt": "Translate the employer\u2019s forecast workload into staffing and contractor scenarios before anyone opens job requisitions.",
       "office": "people-office",
       "roles": [
         "workforce_planner"
@@ -2584,7 +2584,7 @@
       ]
     },
     {
-      "prompt": "Create a practical knowledge structure for our institution’s research, contacts, decisions and project history so teams can retrieve context without duplicating it.",
+      "prompt": "Create a practical knowledge structure for our institution\u2019s research, contacts, decisions and project history so teams can retrieve context without duplicating it.",
       "office": "organization-office",
       "roles": [
         "knowledge_architect"
@@ -2697,7 +2697,7 @@
       ]
     },
     {
-      "prompt": "Coordinate the employer’s approved hiring process, candidate communications, interview logistics and status tracking while humans retain selection decisions.",
+      "prompt": "Coordinate the employer\u2019s approved hiring process, candidate communications, interview logistics and status tracking while humans retain selection decisions.",
       "office": "people-office",
       "roles": [
         "hiring_coordinator"
@@ -2878,7 +2878,7 @@
       ]
     },
     {
-      "prompt": "Prepare reconciled bookkeeping records from the transactions and receipts, isolating entries that need the accountant’s judgment.",
+      "prompt": "Prepare reconciled bookkeeping records from the transactions and receipts, isolating entries that need the accountant\u2019s judgment.",
       "office": "finance-office",
       "roles": [
         "bookkeeping_coordinator",
@@ -3154,7 +3154,7 @@
       ]
     },
     {
-      "prompt": "With manuscript structure approved, edit sentences for grammar, terminology, consistency and house style while preserving the author’s meaning.",
+      "prompt": "With manuscript structure approved, edit sentences for grammar, terminology, consistency and house style while preserving the author\u2019s meaning.",
       "office": "publishing-office",
       "roles": [
         "copy_editor"
@@ -3197,7 +3197,7 @@
       ]
     },
     {
-      "prompt": "From the signed-off creative brief, produce headline routes, campaign copy and script lines in the client’s established voice.",
+      "prompt": "From the signed-off creative brief, produce headline routes, campaign copy and script lines in the client\u2019s established voice.",
       "office": "agency-office",
       "roles": [
         "copywriter"
@@ -3220,7 +3220,7 @@
       ]
     },
     {
-      "prompt": "Assess and improve the application’s authentication, secret storage and authorization controls, with evidence for the fixes.",
+      "prompt": "Assess and improve the application\u2019s authentication, secret storage and authorization controls, with evidence for the fixes.",
       "office": "product-office",
       "roles": [
         "security_engineer",
@@ -3258,7 +3258,7 @@
       ]
     },
     {
-      "prompt": "Polish this artist-facing essay for structure and language while keeping the author’s argument and all factual uncertainty intact.",
+      "prompt": "Polish this artist-facing essay for structure and language while keeping the author\u2019s argument and all factual uncertainty intact.",
       "office": "shared",
       "roles": [
         "editor",
@@ -3301,7 +3301,7 @@
       ]
     },
     {
-      "prompt": "Use the employer’s expected workload to model staffing and capability needs before recruitment begins.",
+      "prompt": "Use the employer\u2019s expected workload to model staffing and capability needs before recruitment begins.",
       "office": "people-office",
       "roles": [
         "workforce_planner"
@@ -3343,7 +3343,7 @@
       ]
     },
     {
-      "prompt": "Design the capture approach for the scene across lenses, lighting, movement and visual continuity so coverage supports the director’s intent.",
+      "prompt": "Design the capture approach for the scene across lenses, lighting, movement and visual continuity so coverage supports the director\u2019s intent.",
       "office": "production-office",
       "roles": [
         "cinematographer"
@@ -3357,7 +3357,7 @@
       ]
     },
     {
-      "prompt": "Build the publication’s visual system from the approved content: grid, hierarchy, typography, image behavior and repeatable page structures.",
+      "prompt": "Build the publication\u2019s visual system from the approved content: grid, hierarchy, typography, image behavior and repeatable page structures.",
       "office": "publishing-office",
       "roles": [
         "editorial_designer"
@@ -3400,7 +3400,7 @@
       ]
     },
     {
-      "prompt": "Plan the operational audience experience for our institution’s live programme, including access, flow, schedule and onsite coordination.",
+      "prompt": "Plan the operational audience experience for our institution\u2019s live programme, including access, flow, schedule and onsite coordination.",
       "office": "organization-office",
       "roles": [
         "events_experience_producer"
@@ -3414,7 +3414,7 @@
       ]
     },
     {
-      "prompt": "Create the client’s visual identity system from approved strategy: mark, typography, color, grid, imagery and applications.",
+      "prompt": "Create the client\u2019s visual identity system from approved strategy: mark, typography, color, grid, imagery and applications.",
       "office": "agency-office",
       "roles": [
         "brand_identity_designer"
@@ -3453,7 +3453,7 @@
       ]
     },
     {
-      "prompt": "Review the software’s authentication, authorization, secrets and data exposure risks and verify remediation where possible.",
+      "prompt": "Review the software\u2019s authentication, authorization, secrets and data exposure risks and verify remediation where possible.",
       "office": "product-office",
       "roles": [
         "security_reviewer",
@@ -3577,7 +3577,7 @@
       ]
     },
     {
-      "prompt": "Translate the organization’s projected workload and capability needs into staffing scenarios before hiring is authorized.",
+      "prompt": "Translate the organization\u2019s projected workload and capability needs into staffing scenarios before hiring is authorized.",
       "office": "people-office",
       "roles": [
         "workforce_planner"
@@ -3654,7 +3654,7 @@
       ]
     },
     {
-      "prompt": "Restructure the manuscript’s argument, chapter order and reader progression before sentence-level editing begins.",
+      "prompt": "Restructure the manuscript\u2019s argument, chapter order and reader progression before sentence-level editing begins.",
       "office": "publishing-office",
       "roles": [
         "developmental_editor"
@@ -3711,7 +3711,7 @@
       ]
     },
     {
-      "prompt": "Map relevant people, institutions, publishers and funders around our organization’s topic to reveal partnership pathways and gaps.",
+      "prompt": "Map relevant people, institutions, publishers and funders around our organization\u2019s topic to reveal partnership pathways and gaps.",
       "office": "organization-office",
       "roles": [
         "network_mapper"
@@ -3734,7 +3734,7 @@
       ]
     },
     {
-      "prompt": "Manage replies and moderation for the brand’s social community, including escalation rules and qualitative audience signals.",
+      "prompt": "Manage replies and moderation for the brand\u2019s social community, including escalation rules and qualitative audience signals.",
       "office": "agency-office",
       "roles": [
         "community_manager",
@@ -3862,7 +3862,7 @@
       ]
     },
     {
-      "prompt": "Coordinate the response to a buyer’s formal RFP, including mandatory forms, scored requirements, evidence and the submission timetable.",
+      "prompt": "Coordinate the response to a buyer\u2019s formal RFP, including mandatory forms, scored requirements, evidence and the submission timetable.",
       "office": "commercial-office",
       "roles": [
         "tender_bid_coordinator"
@@ -3918,7 +3918,7 @@
       ]
     },
     {
-      "prompt": "Turn today’s confirmed office priorities, meetings and deadlines into a concise coordinated plan with owners and timing.",
+      "prompt": "Turn today\u2019s confirmed office priorities, meetings and deadlines into a concise coordinated plan with owners and timing.",
       "office": "administration-office",
       "roles": [
         "executive_assistant"
@@ -4119,7 +4119,7 @@
       ]
     },
     {
-      "prompt": "Convert the employer’s expected work and required capabilities into staffing alternatives before recruiting anyone.",
+      "prompt": "Convert the employer\u2019s expected work and required capabilities into staffing alternatives before recruiting anyone.",
       "office": "people-office",
       "roles": [
         "workforce_planner"
@@ -4154,7 +4154,7 @@
       ]
     },
     {
-      "prompt": "Plan the scene’s cinematography through framing, lenses, lighting, camera motion and visual continuity.",
+      "prompt": "Plan the scene\u2019s cinematography through framing, lenses, lighting, camera motion and visual continuity.",
       "office": "production-office",
       "roles": [
         "cinematographer"
@@ -4168,7 +4168,7 @@
       ]
     },
     {
-      "prompt": "Rework the manuscript’s structure, argument progression and chapter sequence before line or copy editing starts.",
+      "prompt": "Rework the manuscript\u2019s structure, argument progression and chapter sequence before line or copy editing starts.",
       "office": "publishing-office",
       "roles": [
         "developmental_editor"
@@ -4204,7 +4204,7 @@
       ]
     },
     {
-      "prompt": "Structure our organization’s research, contacts, decisions and project history so the team has one recoverable knowledge system rather than scattered notes.",
+      "prompt": "Structure our organization\u2019s research, contacts, decisions and project history so the team has one recoverable knowledge system rather than scattered notes.",
       "office": "organization-office",
       "roles": [
         "knowledge_architect"
@@ -4256,7 +4256,7 @@
       ]
     },
     {
-      "prompt": "Investigate this possible employer’s current priorities, business health, team and credible culture signals before I decide to apply.",
+      "prompt": "Investigate this possible employer\u2019s current priorities, business health, team and credible culture signals before I decide to apply.",
       "office": "recruitment-office",
       "roles": [
         "target_company_researcher"
@@ -4306,7 +4306,7 @@
       ]
     },
     {
-      "prompt": "The existing client’s renewal is approaching and adoption is weakening. Plan retention actions using verified account and delivery signals.",
+      "prompt": "The existing client\u2019s renewal is approaching and adoption is weakening. Plan retention actions using verified account and delivery signals.",
       "office": "commercial-office",
       "roles": [
         "customer_success_manager"
@@ -5126,7 +5126,7 @@
       ]
     },
     {
-      "prompt": "Clarify the organization’s positioning, architecture and naming logic before visual design begins.",
+      "prompt": "Clarify the organization\u2019s positioning, architecture and naming logic before visual design begins.",
       "office": "shared",
       "roles": [
         "brand_strategist"

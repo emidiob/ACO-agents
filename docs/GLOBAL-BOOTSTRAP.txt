@@ -1,0 +1,9 @@
+ACO GLOBAL BOOTSTRAP
+
+Use ACO for non-trivial work. Resolve the current runtime from aco://current. In a host with authorized project/repository/file retrieval, resolve an explicitly attached/project ACO release first or the canonical repository `emidiob/ACO-agents`; verify VERSION and registry/bootstrap.json and never claim ACO files were loaded when retrieval is unavailable. When local runtime access exists, prefer explicit runtime root or ACO_RUNTIME_ROOT; ACO_HOME is private state, not the code path. Read VERSION and registry/bootstrap.json first.
+
+Do not preload the ACO repository, full chat history, all roles, or all skills. Resolve only the minimum Role + Skills + Policies + Context needed for the current Task/Goal. Treat context as references until hydration is necessary. Preserve exact private-scope boundaries and approval rules. Use progressive context loading when the first capsule is insufficient. Prefer concise response contracts unless the task requires detail.
+
+Simple tasks stay simple. Persistent Goals/Programs are used only when continuity, dependencies, or future state materially matter.
+
+When repeated structured evidence reveals a reusable technical method, treat it as a skill candidate. Never silently activate it. If authorized durable ACO state is available, store the validated candidate in the compact ACO_HOME skill inbox; otherwise keep a pending candidate reference. Promotion into the active registry requires a later benchmarked, explicitly approved versioned release.

@@ -1,0 +1,955 @@
+{
+  "schema_version": 1,
+  "aco_version": "1.0.0",
+  "gate": {
+    "minimum_score": 100,
+    "maximum_critical_failures": 0,
+    "minimum_median_input_reduction": 0.7
+  },
+  "cases": [
+    {
+      "id": "token-v100-final-01",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final1",
+          "text": "Compile minimal evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 230,
+        "sources": [
+          {
+            "id": "core-1",
+            "token_estimate": 150,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-1",
+            "token_estimate": 300,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-1",
+            "token_estimate": 6100,
+            "load_level": 1,
+            "relevance": 0.03,
+            "private": false
+          },
+          {
+            "id": "cold-1",
+            "token_estimate": 3200,
+            "load_level": 2,
+            "relevance": 0.8,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-1",
+          "live-1"
+        ],
+        "forbidden_selected": [
+          "history-1",
+          "cold-1"
+        ],
+        "min_reduction": 0.82
+      }
+    },
+    {
+      "id": "token-v100-final-02",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final2",
+          "text": "Compile minimal evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 230,
+        "sources": [
+          {
+            "id": "core-2",
+            "token_estimate": 150,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-2",
+            "token_estimate": 300,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-2",
+            "token_estimate": 6200,
+            "load_level": 1,
+            "relevance": 0.03,
+            "private": false
+          },
+          {
+            "id": "cold-2",
+            "token_estimate": 3200,
+            "load_level": 2,
+            "relevance": 0.8,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-2",
+          "live-2"
+        ],
+        "forbidden_selected": [
+          "history-2",
+          "cold-2"
+        ],
+        "min_reduction": 0.82
+      }
+    },
+    {
+      "id": "token-v100-final-03",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final3",
+          "text": "Compile minimal evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 230,
+        "sources": [
+          {
+            "id": "core-3",
+            "token_estimate": 150,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-3",
+            "token_estimate": 300,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-3",
+            "token_estimate": 6300,
+            "load_level": 1,
+            "relevance": 0.03,
+            "private": false
+          },
+          {
+            "id": "cold-3",
+            "token_estimate": 3200,
+            "load_level": 2,
+            "relevance": 0.8,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-3",
+          "live-3"
+        ],
+        "forbidden_selected": [
+          "history-3",
+          "cold-3"
+        ],
+        "min_reduction": 0.82
+      }
+    },
+    {
+      "id": "token-v100-final-04",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final4",
+          "text": "Compile minimal evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 230,
+        "sources": [
+          {
+            "id": "core-4",
+            "token_estimate": 150,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-4",
+            "token_estimate": 300,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-4",
+            "token_estimate": 6400,
+            "load_level": 1,
+            "relevance": 0.03,
+            "private": false
+          },
+          {
+            "id": "cold-4",
+            "token_estimate": 3200,
+            "load_level": 2,
+            "relevance": 0.8,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-4",
+          "live-4"
+        ],
+        "forbidden_selected": [
+          "history-4",
+          "cold-4"
+        ],
+        "min_reduction": 0.82
+      }
+    },
+    {
+      "id": "token-v100-final-05",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final5",
+          "text": "Compile minimal evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 230,
+        "sources": [
+          {
+            "id": "core-5",
+            "token_estimate": 150,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-5",
+            "token_estimate": 300,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-5",
+            "token_estimate": 6500,
+            "load_level": 1,
+            "relevance": 0.03,
+            "private": false
+          },
+          {
+            "id": "cold-5",
+            "token_estimate": 3200,
+            "load_level": 2,
+            "relevance": 0.8,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-5",
+          "live-5"
+        ],
+        "forbidden_selected": [
+          "history-5",
+          "cold-5"
+        ],
+        "min_reduction": 0.82
+      }
+    },
+    {
+      "id": "token-v100-final-06",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final6",
+          "text": "Compile minimal evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 230,
+        "sources": [
+          {
+            "id": "core-6",
+            "token_estimate": 150,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-6",
+            "token_estimate": 300,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-6",
+            "token_estimate": 6600,
+            "load_level": 1,
+            "relevance": 0.03,
+            "private": false
+          },
+          {
+            "id": "cold-6",
+            "token_estimate": 3200,
+            "load_level": 2,
+            "relevance": 0.8,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-6",
+          "live-6"
+        ],
+        "forbidden_selected": [
+          "history-6",
+          "cold-6"
+        ],
+        "min_reduction": 0.82
+      }
+    },
+    {
+      "id": "token-v100-final-07",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final7",
+          "text": "Compile minimal evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 230,
+        "sources": [
+          {
+            "id": "core-7",
+            "token_estimate": 150,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-7",
+            "token_estimate": 300,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-7",
+            "token_estimate": 6700,
+            "load_level": 1,
+            "relevance": 0.03,
+            "private": false
+          },
+          {
+            "id": "cold-7",
+            "token_estimate": 3200,
+            "load_level": 2,
+            "relevance": 0.8,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-7",
+          "live-7"
+        ],
+        "forbidden_selected": [
+          "history-7",
+          "cold-7"
+        ],
+        "min_reduction": 0.82
+      }
+    },
+    {
+      "id": "token-v100-final-08",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final8",
+          "text": "Compile minimal evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 230,
+        "sources": [
+          {
+            "id": "core-8",
+            "token_estimate": 150,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-8",
+            "token_estimate": 300,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-8",
+            "token_estimate": 6800,
+            "load_level": 1,
+            "relevance": 0.03,
+            "private": false
+          },
+          {
+            "id": "cold-8",
+            "token_estimate": 3200,
+            "load_level": 2,
+            "relevance": 0.8,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-8",
+          "live-8"
+        ],
+        "forbidden_selected": [
+          "history-8",
+          "cold-8"
+        ],
+        "min_reduction": 0.82
+      }
+    },
+    {
+      "id": "token-v100-final-09",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final9",
+          "text": "Compile minimal evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 230,
+        "sources": [
+          {
+            "id": "core-9",
+            "token_estimate": 150,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-9",
+            "token_estimate": 300,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-9",
+            "token_estimate": 6900,
+            "load_level": 1,
+            "relevance": 0.03,
+            "private": false
+          },
+          {
+            "id": "cold-9",
+            "token_estimate": 3200,
+            "load_level": 2,
+            "relevance": 0.8,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-9",
+          "live-9"
+        ],
+        "forbidden_selected": [
+          "history-9",
+          "cold-9"
+        ],
+        "min_reduction": 0.82
+      }
+    },
+    {
+      "id": "token-v100-final-10",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final10",
+          "text": "Compile minimal evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 230,
+        "sources": [
+          {
+            "id": "core-10",
+            "token_estimate": 150,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-10",
+            "token_estimate": 300,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-10",
+            "token_estimate": 7000,
+            "load_level": 1,
+            "relevance": 0.03,
+            "private": false
+          },
+          {
+            "id": "cold-10",
+            "token_estimate": 3200,
+            "load_level": 2,
+            "relevance": 0.8,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-10",
+          "live-10"
+        ],
+        "forbidden_selected": [
+          "history-10",
+          "cold-10"
+        ],
+        "min_reduction": 0.82
+      }
+    },
+    {
+      "id": "token-v100-final-11",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final11",
+          "text": "Compile minimal evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 230,
+        "sources": [
+          {
+            "id": "core-11",
+            "token_estimate": 150,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-11",
+            "token_estimate": 300,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-11",
+            "token_estimate": 7100,
+            "load_level": 1,
+            "relevance": 0.03,
+            "private": false
+          },
+          {
+            "id": "cold-11",
+            "token_estimate": 3200,
+            "load_level": 2,
+            "relevance": 0.8,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-11",
+          "live-11"
+        ],
+        "forbidden_selected": [
+          "history-11",
+          "cold-11"
+        ],
+        "min_reduction": 0.82
+      }
+    },
+    {
+      "id": "token-v100-final-12",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final12",
+          "text": "Compile minimal evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 230,
+        "sources": [
+          {
+            "id": "core-12",
+            "token_estimate": 150,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-12",
+            "token_estimate": 300,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-12",
+            "token_estimate": 7200,
+            "load_level": 1,
+            "relevance": 0.03,
+            "private": false
+          },
+          {
+            "id": "cold-12",
+            "token_estimate": 3200,
+            "load_level": 2,
+            "relevance": 0.8,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-12",
+          "live-12"
+        ],
+        "forbidden_selected": [
+          "history-12",
+          "cold-12"
+        ],
+        "min_reduction": 0.82
+      }
+    },
+    {
+      "id": "token-v100-final-13",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final13",
+          "text": "Compile minimal evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 230,
+        "sources": [
+          {
+            "id": "core-13",
+            "token_estimate": 150,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-13",
+            "token_estimate": 300,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-13",
+            "token_estimate": 7300,
+            "load_level": 1,
+            "relevance": 0.03,
+            "private": false
+          },
+          {
+            "id": "cold-13",
+            "token_estimate": 3200,
+            "load_level": 2,
+            "relevance": 0.8,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-13",
+          "live-13"
+        ],
+        "forbidden_selected": [
+          "history-13",
+          "cold-13"
+        ],
+        "min_reduction": 0.82
+      }
+    },
+    {
+      "id": "token-v100-final-14",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final14",
+          "text": "Compile minimal evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 230,
+        "sources": [
+          {
+            "id": "core-14",
+            "token_estimate": 150,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-14",
+            "token_estimate": 300,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-14",
+            "token_estimate": 7400,
+            "load_level": 1,
+            "relevance": 0.03,
+            "private": false
+          },
+          {
+            "id": "cold-14",
+            "token_estimate": 3200,
+            "load_level": 2,
+            "relevance": 0.8,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-14",
+          "live-14"
+        ],
+        "forbidden_selected": [
+          "history-14",
+          "cold-14"
+        ],
+        "min_reduction": 0.82
+      }
+    },
+    {
+      "id": "token-v100-final-15",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final15",
+          "text": "Compile minimal evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 230,
+        "sources": [
+          {
+            "id": "core-15",
+            "token_estimate": 150,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-15",
+            "token_estimate": 300,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-15",
+            "token_estimate": 7500,
+            "load_level": 1,
+            "relevance": 0.03,
+            "private": false
+          },
+          {
+            "id": "cold-15",
+            "token_estimate": 3200,
+            "load_level": 2,
+            "relevance": 0.8,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-15",
+          "live-15"
+        ],
+        "forbidden_selected": [
+          "history-15",
+          "cold-15"
+        ],
+        "min_reduction": 0.82
+      }
+    },
+    {
+      "id": "token-v100-final-16",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final16",
+          "text": "Compile minimal evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 230,
+        "sources": [
+          {
+            "id": "core-16",
+            "token_estimate": 150,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-16",
+            "token_estimate": 300,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-16",
+            "token_estimate": 7600,
+            "load_level": 1,
+            "relevance": 0.03,
+            "private": false
+          },
+          {
+            "id": "cold-16",
+            "token_estimate": 3200,
+            "load_level": 2,
+            "relevance": 0.8,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-16",
+          "live-16"
+        ],
+        "forbidden_selected": [
+          "history-16",
+          "cold-16"
+        ],
+        "min_reduction": 0.82
+      }
+    }
+  ]
+}

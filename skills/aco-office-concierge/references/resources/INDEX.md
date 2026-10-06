@@ -1,6 +1,6 @@
 # Optional ACO resources
 
-Version 0.9.0; 99 deduplicated resources. NOT installed, connected or blanket-approved.
+Version 1.0.0; 99 deduplicated resources. NOT installed, connected or blanket-approved.
 
 Use only relevant entries. Read the selected category card and original ACO method before use. Source review is not execution, security audit or license clearance. No upstream code/assets/models/fonts are bundled. Three ambiguous names stay gated.
 

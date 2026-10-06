@@ -1,0 +1,490 @@
+{
+  "schema_version": 1,
+  "aco_version": "1.0.0",
+  "description": "Final fresh holdout #4; frozen before first execution after resolver generalization.",
+  "gate": {
+    "minimum_score": 100,
+    "maximum_critical_failures": 0
+  },
+  "cases": [
+    {
+      "id": "os-v100-final-fresh-01",
+      "operation": "bootstrap_check",
+      "critical": true,
+      "expected": {
+        "status": "valid",
+        "bootstrap.logical_root": "aco://current",
+        "bootstrap.host_resolution.canonical_repository": "emidiob/ACO-agents"
+      }
+    },
+    {
+      "id": "os-v100-final-fresh-02",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "frontend_motion.react_spring"
+      },
+      "query": "natural spring React motion",
+      "limit": 2
+    },
+    {
+      "id": "os-v100-final-fresh-03",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "frontend_motion.gsap"
+      },
+      "query": "scroll timeline svg animation",
+      "limit": 2
+    },
+    {
+      "id": "os-v100-final-fresh-04",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "product_design.design_spells_microinteractions"
+      },
+      "query": "micro UI interaction detail delight",
+      "limit": 2
+    },
+    {
+      "id": "os-v100-final-fresh-05",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "visual_research.letterform_archive"
+      },
+      "query": "historical type print paper archive",
+      "limit": 2
+    },
+    {
+      "id": "os-v100-final-fresh-06",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "visual_research.met_open_access"
+      },
+      "query": "public domain museum art images",
+      "limit": 2
+    },
+    {
+      "id": "os-v100-final-fresh-07",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "product_design.refero_flow_research"
+      },
+      "query": "product screens flow UX reference",
+      "limit": 2
+    },
+    {
+      "id": "os-v100-final-fresh-08",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0": null
+      },
+      "query": "Mimic app reverse engineering",
+      "limit": 2
+    },
+    {
+      "id": "os-v100-final-fresh-09",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "anchor"
+      },
+      "input": {
+        "task": {
+          "id": "cx9",
+          "text": "Use bounded authorized evidence"
+        },
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "anchor",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "old",
+            "token_estimate": 5000,
+            "load_level": 1,
+            "relevance": 0.01,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-fresh-10",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "anchor"
+      },
+      "input": {
+        "task": {
+          "id": "cx10",
+          "text": "Use bounded authorized evidence"
+        },
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "anchor",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "old",
+            "token_estimate": 5000,
+            "load_level": 1,
+            "relevance": 0.01,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-fresh-11",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "anchor"
+      },
+      "input": {
+        "task": {
+          "id": "cx11",
+          "text": "Use bounded authorized evidence"
+        },
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "anchor",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "old",
+            "token_estimate": 5000,
+            "load_level": 1,
+            "relevance": 0.01,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-fresh-12",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "anchor"
+      },
+      "input": {
+        "task": {
+          "id": "cx12",
+          "text": "Use bounded authorized evidence"
+        },
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "anchor",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "old",
+            "token_estimate": 5000,
+            "load_level": 1,
+            "relevance": 0.01,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-fresh-13",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "anchor"
+      },
+      "input": {
+        "task": {
+          "id": "cx13",
+          "text": "Use bounded authorized evidence"
+        },
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "anchor",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "old",
+            "token_estimate": 5000,
+            "load_level": 1,
+            "relevance": 0.01,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-fresh-14",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "own"
+      },
+      "input": {
+        "task": {
+          "id": "privacy",
+          "text": "Stay scoped"
+        },
+        "sources": [
+          {
+            "id": "own",
+            "token_estimate": 100,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": true,
+            "scope_relation": "same_entity",
+            "scope_id": "a"
+          },
+          {
+            "id": "other",
+            "token_estimate": 100,
+            "load_level": 0,
+            "relevance": 1,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "scope_id": "b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-fresh-15",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "needs_refine"
+      },
+      "input": {
+        "task": {
+          "id": "ref",
+          "text": "Start with shallow evidence"
+        },
+        "phase": "initial",
+        "missing_requirements": [
+          "deep evidence"
+        ],
+        "sources": [
+          {
+            "id": "brief",
+            "token_estimate": 100,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "deep",
+            "token_estimate": 900,
+            "load_level": 2,
+            "relevance": 1,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-fresh-16",
+      "operation": "os_plan",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "selected_skill_ids.0": "frontend_motion.motion_react",
+        "runtime.preload_repository": false
+      },
+      "input": {
+        "task": {
+          "id": "plan16",
+          "text": "Choose front-end motion for React layout"
+        },
+        "skill_query": "Motion React layout gestures",
+        "skill_limit": 1,
+        "sources": [
+          {
+            "id": "brief",
+            "token_estimate": 100,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-fresh-17",
+      "operation": "os_plan",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "selected_skill_ids.0": "visual_research.archive_first",
+        "runtime.preload_repository": false
+      },
+      "input": {
+        "task": {
+          "id": "plan17",
+          "text": "Build archive-first visual reference set"
+        },
+        "skill_query": "archive first visual research",
+        "skill_limit": 1,
+        "sources": [
+          {
+            "id": "brief",
+            "token_estimate": 100,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-fresh-18",
+      "operation": "skill_learn",
+      "critical": true,
+      "expected": {
+        "status": "insufficient_evidence"
+      },
+      "input": {
+        "skill_id": "fresh.final",
+        "scope_id": "x",
+        "observations": [
+          {
+            "source_ref": "a",
+            "outcome": "success",
+            "rules": [
+              "r"
+            ],
+            "failure_modes": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-fresh-19",
+      "operation": "skill_learn",
+      "critical": true,
+      "expected": {
+        "status": "candidate_proposed"
+      },
+      "input": {
+        "skill_id": "fresh.final",
+        "scope_id": "x",
+        "rollback_ref": "r",
+        "observations": [
+          {
+            "source_ref": "a",
+            "outcome": "success",
+            "rules": [
+              "r"
+            ],
+            "failure_modes": []
+          },
+          {
+            "source_ref": "b",
+            "outcome": "success",
+            "rules": [
+              "r"
+            ],
+            "failure_modes": []
+          },
+          {
+            "source_ref": "c",
+            "outcome": "success",
+            "rules": [
+              "r"
+            ],
+            "failure_modes": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-fresh-20",
+      "operation": "skill_candidate_store",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "applied": false,
+        "active_registry_mutated": false
+      },
+      "input": {
+        "schema_version": 1,
+        "skill_id": "fresh.final.store",
+        "scope_id": "x",
+        "title": "Fresh final",
+        "version": "0.1",
+        "status": "candidate",
+        "method": [
+          "r"
+        ],
+        "failure_modes": [],
+        "inputs": [],
+        "output_contract": {},
+        "evidence": [
+          {
+            "source_ref": "a",
+            "outcome": "success"
+          },
+          {
+            "source_ref": "b",
+            "outcome": "success"
+          },
+          {
+            "source_ref": "c",
+            "outcome": "success"
+          }
+        ],
+        "rollback_ref": "r"
+      }
+    }
+  ]
+}

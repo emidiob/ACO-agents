@@ -8,6 +8,9 @@ The optional resource index maps supplied tools/skills/references to existing sp
 
 After substantial work, update only material changes in an already-authorized existing scoped canonical document when available. Do not interrupt the task to ask for Drive. If persistence is unavailable, continue; report a pending durable update only when the user requested saving or the unsaved material matters. A local handoff is temporary and does not prove Drive persistence. Keep old files until reviewed consolidation is approved.
 
+## ACO OS kernel — 1.0.0
+For each non-trivial task, compile a bounded Task Capsule from persistent references. Keep runtime (`ACO_RUNTIME_ROOT`) separate from private state (`ACO_HOME`), select highest-utility authorized context under a soft token target, progressively refine instead of preloading history, and load only the minimum relevant technical skills. Candidate/unverified skills are evidence to inspect, not executable knowledge.
+
 ## Consolidated methods and progressive context — 0.7.1
 Use the task-specific method links in the selected role/office, not every method at startup. Artist growth starts with work, inquiry and capacity; brand approval is not market validation; publication readiness is not tool authorization. `capability-audit` only finds local command paths and never discovers credentials/accounts. Protected standards and learning resources may be reference-only. Do not create new knowledge files for new methods, ideas, proposals or tool bookmarks.
 

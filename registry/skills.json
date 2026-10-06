@@ -1,0 +1,283 @@
+{
+  "schema_version": 1,
+  "aco_version": "1.0.0",
+  "skills": [
+    {
+      "skill_id": "visual_research.archive_first",
+      "title": "Archive-first visual research",
+      "version": "1.0.0",
+      "status": "active",
+      "pack": "visual-research",
+      "tags": [
+        "visual-research",
+        "archives",
+        "moodboard",
+        "graphic-design",
+        "art-direction"
+      ],
+      "summary": "Start with primary institutional/design archives instead of generic trend feeds.",
+      "quality": 0.94,
+      "token_estimate": 226,
+      "body_path": "skillpacks/visual-research/archive_first.json"
+    },
+    {
+      "skill_id": "visual_research.letterform_archive",
+      "title": "Letterform Archive research",
+      "version": "1.0.0",
+      "status": "active",
+      "pack": "visual-research",
+      "tags": [
+        "typography",
+        "print",
+        "lettering",
+        "graphic-design",
+        "archive"
+      ],
+      "summary": "Search by designer, country, decade or format.",
+      "quality": 0.95,
+      "token_estimate": 208,
+      "body_path": "skillpacks/visual-research/letterform_archive.json"
+    },
+    {
+      "skill_id": "visual_research.met_open_access",
+      "title": "Met Open Access image research",
+      "version": "1.0.0",
+      "status": "active",
+      "pack": "visual-research",
+      "tags": [
+        "museum",
+        "public-domain",
+        "art-history",
+        "image-research"
+      ],
+      "summary": "Search collection metadata.",
+      "quality": 0.98,
+      "token_estimate": 204,
+      "body_path": "skillpacks/visual-research/met_open_access.json"
+    },
+    {
+      "skill_id": "visual_research.rijksmuseum_data",
+      "title": "Rijksmuseum data research",
+      "version": "1.0.0",
+      "status": "active",
+      "pack": "visual-research",
+      "tags": [
+        "museum",
+        "open-data",
+        "art-history",
+        "color",
+        "image-research"
+      ],
+      "summary": "Use collection/open-data metadata as the primary discovery source.",
+      "quality": 0.95,
+      "token_estimate": 211,
+      "body_path": "skillpacks/visual-research/rijksmuseum_data.json"
+    },
+    {
+      "skill_id": "visual_research.nypl_public_domain",
+      "title": "NYPL public-domain research",
+      "version": "1.0.0",
+      "status": "active",
+      "pack": "visual-research",
+      "tags": [
+        "public-domain",
+        "prints",
+        "maps",
+        "fashion",
+        "photography",
+        "archive"
+      ],
+      "summary": "Use Digital Collections and apply the Public Domain filter when reuse is required.",
+      "quality": 0.98,
+      "token_estimate": 211,
+      "body_path": "skillpacks/visual-research/nypl_public_domain.json"
+    },
+    {
+      "skill_id": "visual_research.archives_design",
+      "title": "archives.design discovery",
+      "version": "1.0.0",
+      "status": "active",
+      "pack": "visual-research",
+      "tags": [
+        "graphic-design",
+        "internet-archive",
+        "editorial",
+        "branding",
+        "posters",
+        "type-specimens"
+      ],
+      "summary": "Use archives.design as a discovery layer.",
+      "quality": 0.9,
+      "token_estimate": 202,
+      "body_path": "skillpacks/visual-research/archives_design.json"
+    },
+    {
+      "skill_id": "product_design.details_reference",
+      "title": "Details website reference research",
+      "version": "1.0.0",
+      "status": "active",
+      "pack": "product-design",
+      "tags": [
+        "web-design",
+        "inspiration",
+        "interaction",
+        "frontend",
+        "reference"
+      ],
+      "summary": "Search for the exact interface detail instead of generic full-page inspiration.",
+      "quality": 0.91,
+      "token_estimate": 203,
+      "body_path": "skillpacks/product-design/details_reference.json"
+    },
+    {
+      "skill_id": "product_design.refero_flow_research",
+      "title": "Refero product-flow research",
+      "version": "1.0.0",
+      "status": "active",
+      "pack": "product-design",
+      "tags": [
+        "ux",
+        "ui",
+        "product-design",
+        "user-flows",
+        "screens",
+        "patterns"
+      ],
+      "summary": "Search by flow/pattern/page type.",
+      "quality": 0.94,
+      "token_estimate": 194,
+      "body_path": "skillpacks/product-design/refero_flow_research.json"
+    },
+    {
+      "skill_id": "product_design.design_spells_microinteractions",
+      "title": "Design Spells micro-interaction research",
+      "version": "1.0.0",
+      "status": "active",
+      "pack": "product-design",
+      "tags": [
+        "microinteractions",
+        "interaction-design",
+        "ui",
+        "motion",
+        "details"
+      ],
+      "summary": "Identify the exact interaction moment.",
+      "quality": 0.88,
+      "token_estimate": 207,
+      "body_path": "skillpacks/product-design/design_spells_microinteractions.json"
+    },
+    {
+      "skill_id": "frontend_motion.library_selection",
+      "title": "Frontend motion library selection",
+      "version": "1.0.0",
+      "status": "active",
+      "pack": "frontend-motion",
+      "tags": [
+        "frontend",
+        "animation",
+        "gsap",
+        "animejs",
+        "motion",
+        "react-spring",
+        "library-selection"
+      ],
+      "summary": "Use CSS first for simple transitions.",
+      "quality": 0.96,
+      "token_estimate": 236,
+      "body_path": "skillpacks/frontend-motion/library_selection.json"
+    },
+    {
+      "skill_id": "frontend_motion.gsap",
+      "title": "GSAP animation orchestration",
+      "version": "1.0.0",
+      "status": "active",
+      "pack": "frontend-motion",
+      "tags": [
+        "frontend",
+        "animation",
+        "gsap",
+        "timeline",
+        "scroll",
+        "svg"
+      ],
+      "summary": "Compose Tweens into Timelines when sequence matters.",
+      "quality": 0.97,
+      "token_estimate": 202,
+      "body_path": "skillpacks/frontend-motion/gsap.json"
+    },
+    {
+      "skill_id": "frontend_motion.animejs",
+      "title": "Anime.js animation engineering",
+      "version": "1.0.0",
+      "status": "active",
+      "pack": "frontend-motion",
+      "tags": [
+        "frontend",
+        "animation",
+        "animejs",
+        "timeline",
+        "svg",
+        "waapi"
+      ],
+      "summary": "Choose the smallest Anime.js primitive that matches the interaction.",
+      "quality": 0.93,
+      "token_estimate": 200,
+      "body_path": "skillpacks/frontend-motion/animejs.json"
+    },
+    {
+      "skill_id": "frontend_motion.motion_react",
+      "title": "Motion for React animation",
+      "version": "1.0.0",
+      "status": "active",
+      "pack": "frontend-motion",
+      "tags": [
+        "react",
+        "animation",
+        "motion",
+        "gestures",
+        "layout",
+        "scroll"
+      ],
+      "summary": "Map animation states to motion components/props.",
+      "quality": 0.98,
+      "token_estimate": 206,
+      "body_path": "skillpacks/frontend-motion/motion_react.json"
+    },
+    {
+      "skill_id": "frontend_motion.react_spring",
+      "title": "React Spring physics animation",
+      "version": "1.0.0",
+      "status": "active",
+      "pack": "frontend-motion",
+      "tags": [
+        "react",
+        "animation",
+        "react-spring",
+        "physics",
+        "spring"
+      ],
+      "summary": "Use spring primitives when physics is the central interaction model.",
+      "quality": 0.91,
+      "token_estimate": 209,
+      "body_path": "skillpacks/frontend-motion/react_spring.json"
+    },
+    {
+      "skill_id": "software_analysis.mimic_littledavi",
+      "title": "Mimic application reverse-engineering candidate",
+      "version": "0.0.1",
+      "status": "candidate_unverified",
+      "pack": "software-analysis",
+      "tags": [
+        "software-analysis",
+        "reverse-engineering",
+        "python",
+        "mimic"
+      ],
+      "summary": "Verify the exact repository identity and primary documentation.",
+      "quality": 0.0,
+      "token_estimate": 222,
+      "body_path": "skillpacks/software-analysis/mimic_littledavi.json"
+    }
+  ],
+  "policy": "Compact index only. Load a skill body on demand; active/validated skills are selectable, candidates are fail-closed."
+}

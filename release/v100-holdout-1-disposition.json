@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "aco_version": "1.0.0",
+  "disposition": "superseded_after_requirement_gap",
+  "reason": "Release review found the persistent skill-candidate inbox requirement after the first 1.0 holdout; final certification uses holdout #2."
+}

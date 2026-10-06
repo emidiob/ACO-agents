@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.0.0
+
+- Promote Concierge into a token-aware ACO OS kernel over persistent Program, Goal, Task, Context, Policy, Execution, Receipt and Skill references.
+- Add `aco://current`, `ACO_RUNTIME_ROOT` and host-aware authorized repository/project resolution while keeping private durable `ACO_HOME` state separate from versioned code.
+- Add Context Compiler + Token Budget Manager with progressive L0/L1/L2 loading, exact private-scope authorization, soft token targets, required-evidence overflow and snapshot/delta reuse.
+- Add a technical Skill Registry, on-demand skill resolution and structured Skill Learning lifecycle; unverified candidates remain fail-closed.
+- Add private `ACO_HOME/skills/candidates.json` accumulation via dry-run-by-default, idempotent `skill-candidate-store`; candidate storage never activates a skill.
+- Seed 14 verified visual-research/product-design/frontend-motion skills; retain the unverified LittleDavi/Mimic lead as a non-selectable candidate.
+- Add deterministic 28-case skill, 31-case OS and 32-case token-economy development gates.
+- Record recovery holdout #3 as development evidence after it exposed an overly strict natural-language skill-search threshold; final fresh holdout #4 passes 20/20 OS and 10/10 token cases with 94.25% median input reduction and zero critical failures.
+- Preserve all v0.7.x routing/context/execution gates, v0.8 Goal Graph/Autonomy and v0.9 Adaptive ACO behavior.
+- Full release suite: 578/578 tests pass.
+
+
 ## 0.9.0
 
 - Add scope-bound structured feedback records and append-only SHA-256 feedback ledgers; reject hidden-reasoning/scratchpad fields.

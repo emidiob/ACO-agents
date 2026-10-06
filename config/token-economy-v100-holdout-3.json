@@ -1,0 +1,720 @@
+{
+  "schema_version": 1,
+  "aco_version": "1.0.0",
+  "description": "Recovery fresh token holdout #3 created after environment reconstruction; frozen before first execution.",
+  "gate": {
+    "minimum_score": 100,
+    "maximum_critical_failures": 0,
+    "minimum_median_input_reduction": 0.7
+  },
+  "cases": [
+    {
+      "id": "token-v100-recovery-fresh-01",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "recovery-token-1",
+          "text": "Use minimum current evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 200,
+        "sources": [
+          {
+            "id": "req-1",
+            "token_estimate": 135,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "authority": 1,
+            "dependency": 1,
+            "private": false
+          },
+          {
+            "id": "work-1",
+            "token_estimate": 290,
+            "load_level": 1,
+            "relevance": 0.96,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "chat-1",
+            "token_estimate": 6290,
+            "load_level": 1,
+            "relevance": 0.025,
+            "private": false
+          },
+          {
+            "id": "cold-1",
+            "token_estimate": 3150,
+            "load_level": 2,
+            "relevance": 0.75,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "req-1",
+          "work-1"
+        ],
+        "forbidden_selected": [
+          "chat-1",
+          "cold-1"
+        ],
+        "min_reduction": 0.84
+      }
+    },
+    {
+      "id": "token-v100-recovery-fresh-02",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "recovery-token-2",
+          "text": "Use minimum current evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 200,
+        "sources": [
+          {
+            "id": "req-2",
+            "token_estimate": 160,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "authority": 1,
+            "dependency": 1,
+            "private": false
+          },
+          {
+            "id": "work-2",
+            "token_estimate": 330,
+            "load_level": 1,
+            "relevance": 0.96,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "chat-2",
+            "token_estimate": 6380,
+            "load_level": 1,
+            "relevance": 0.025,
+            "private": false
+          },
+          {
+            "id": "cold-2",
+            "token_estimate": 3500,
+            "load_level": 2,
+            "relevance": 0.75,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "req-2",
+          "work-2"
+        ],
+        "forbidden_selected": [
+          "chat-2",
+          "cold-2"
+        ],
+        "min_reduction": 0.84
+      }
+    },
+    {
+      "id": "token-v100-recovery-fresh-03",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "recovery-token-3",
+          "text": "Use minimum current evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 200,
+        "sources": [
+          {
+            "id": "req-3",
+            "token_estimate": 110,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "authority": 1,
+            "dependency": 1,
+            "private": false
+          },
+          {
+            "id": "work-3",
+            "token_estimate": 370,
+            "load_level": 1,
+            "relevance": 0.96,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "chat-3",
+            "token_estimate": 6470,
+            "load_level": 1,
+            "relevance": 0.025,
+            "private": false
+          },
+          {
+            "id": "cold-3",
+            "token_estimate": 2800,
+            "load_level": 2,
+            "relevance": 0.75,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "req-3",
+          "work-3"
+        ],
+        "forbidden_selected": [
+          "chat-3",
+          "cold-3"
+        ],
+        "min_reduction": 0.84
+      }
+    },
+    {
+      "id": "token-v100-recovery-fresh-04",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "recovery-token-4",
+          "text": "Use minimum current evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 200,
+        "sources": [
+          {
+            "id": "req-4",
+            "token_estimate": 135,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "authority": 1,
+            "dependency": 1,
+            "private": false
+          },
+          {
+            "id": "work-4",
+            "token_estimate": 250,
+            "load_level": 1,
+            "relevance": 0.96,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "chat-4",
+            "token_estimate": 6560,
+            "load_level": 1,
+            "relevance": 0.025,
+            "private": false
+          },
+          {
+            "id": "cold-4",
+            "token_estimate": 3150,
+            "load_level": 2,
+            "relevance": 0.75,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "req-4",
+          "work-4"
+        ],
+        "forbidden_selected": [
+          "chat-4",
+          "cold-4"
+        ],
+        "min_reduction": 0.84
+      }
+    },
+    {
+      "id": "token-v100-recovery-fresh-05",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "recovery-token-5",
+          "text": "Use minimum current evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 200,
+        "sources": [
+          {
+            "id": "req-5",
+            "token_estimate": 160,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "authority": 1,
+            "dependency": 1,
+            "private": false
+          },
+          {
+            "id": "work-5",
+            "token_estimate": 290,
+            "load_level": 1,
+            "relevance": 0.96,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "chat-5",
+            "token_estimate": 6650,
+            "load_level": 1,
+            "relevance": 0.025,
+            "private": false
+          },
+          {
+            "id": "cold-5",
+            "token_estimate": 3500,
+            "load_level": 2,
+            "relevance": 0.75,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "req-5",
+          "work-5"
+        ],
+        "forbidden_selected": [
+          "chat-5",
+          "cold-5"
+        ],
+        "min_reduction": 0.84
+      }
+    },
+    {
+      "id": "token-v100-recovery-fresh-06",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "recovery-token-6",
+          "text": "Use minimum current evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 200,
+        "sources": [
+          {
+            "id": "req-6",
+            "token_estimate": 110,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "authority": 1,
+            "dependency": 1,
+            "private": false
+          },
+          {
+            "id": "work-6",
+            "token_estimate": 330,
+            "load_level": 1,
+            "relevance": 0.96,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "chat-6",
+            "token_estimate": 6740,
+            "load_level": 1,
+            "relevance": 0.025,
+            "private": false
+          },
+          {
+            "id": "cold-6",
+            "token_estimate": 2800,
+            "load_level": 2,
+            "relevance": 0.75,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "req-6",
+          "work-6"
+        ],
+        "forbidden_selected": [
+          "chat-6",
+          "cold-6"
+        ],
+        "min_reduction": 0.84
+      }
+    },
+    {
+      "id": "token-v100-recovery-fresh-07",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "recovery-token-7",
+          "text": "Use minimum current evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 200,
+        "sources": [
+          {
+            "id": "req-7",
+            "token_estimate": 135,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "authority": 1,
+            "dependency": 1,
+            "private": false
+          },
+          {
+            "id": "work-7",
+            "token_estimate": 370,
+            "load_level": 1,
+            "relevance": 0.96,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "chat-7",
+            "token_estimate": 6830,
+            "load_level": 1,
+            "relevance": 0.025,
+            "private": false
+          },
+          {
+            "id": "cold-7",
+            "token_estimate": 3150,
+            "load_level": 2,
+            "relevance": 0.75,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "req-7",
+          "work-7"
+        ],
+        "forbidden_selected": [
+          "chat-7",
+          "cold-7"
+        ],
+        "min_reduction": 0.84
+      }
+    },
+    {
+      "id": "token-v100-recovery-fresh-08",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "recovery-token-8",
+          "text": "Use minimum current evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 200,
+        "sources": [
+          {
+            "id": "req-8",
+            "token_estimate": 160,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "authority": 1,
+            "dependency": 1,
+            "private": false
+          },
+          {
+            "id": "work-8",
+            "token_estimate": 250,
+            "load_level": 1,
+            "relevance": 0.96,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "chat-8",
+            "token_estimate": 6920,
+            "load_level": 1,
+            "relevance": 0.025,
+            "private": false
+          },
+          {
+            "id": "cold-8",
+            "token_estimate": 3500,
+            "load_level": 2,
+            "relevance": 0.75,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "req-8",
+          "work-8"
+        ],
+        "forbidden_selected": [
+          "chat-8",
+          "cold-8"
+        ],
+        "min_reduction": 0.84
+      }
+    },
+    {
+      "id": "token-v100-recovery-fresh-09",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "recovery-token-9",
+          "text": "Use minimum current evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 200,
+        "sources": [
+          {
+            "id": "req-9",
+            "token_estimate": 110,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "authority": 1,
+            "dependency": 1,
+            "private": false
+          },
+          {
+            "id": "work-9",
+            "token_estimate": 290,
+            "load_level": 1,
+            "relevance": 0.96,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "chat-9",
+            "token_estimate": 7010,
+            "load_level": 1,
+            "relevance": 0.025,
+            "private": false
+          },
+          {
+            "id": "cold-9",
+            "token_estimate": 2800,
+            "load_level": 2,
+            "relevance": 0.75,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "req-9",
+          "work-9"
+        ],
+        "forbidden_selected": [
+          "chat-9",
+          "cold-9"
+        ],
+        "min_reduction": 0.84
+      }
+    },
+    {
+      "id": "token-v100-recovery-fresh-10",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "recovery-token-10",
+          "text": "Use minimum current evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 200,
+        "sources": [
+          {
+            "id": "req-10",
+            "token_estimate": 135,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "authority": 1,
+            "dependency": 1,
+            "private": false
+          },
+          {
+            "id": "work-10",
+            "token_estimate": 330,
+            "load_level": 1,
+            "relevance": 0.96,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "chat-10",
+            "token_estimate": 7100,
+            "load_level": 1,
+            "relevance": 0.025,
+            "private": false
+          },
+          {
+            "id": "cold-10",
+            "token_estimate": 3150,
+            "load_level": 2,
+            "relevance": 0.75,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "req-10",
+          "work-10"
+        ],
+        "forbidden_selected": [
+          "chat-10",
+          "cold-10"
+        ],
+        "min_reduction": 0.84
+      }
+    },
+    {
+      "id": "token-v100-recovery-fresh-11",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "recovery-token-11",
+          "text": "Use minimum current evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 200,
+        "sources": [
+          {
+            "id": "req-11",
+            "token_estimate": 160,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "authority": 1,
+            "dependency": 1,
+            "private": false
+          },
+          {
+            "id": "work-11",
+            "token_estimate": 370,
+            "load_level": 1,
+            "relevance": 0.96,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "chat-11",
+            "token_estimate": 7190,
+            "load_level": 1,
+            "relevance": 0.025,
+            "private": false
+          },
+          {
+            "id": "cold-11",
+            "token_estimate": 3500,
+            "load_level": 2,
+            "relevance": 0.75,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "req-11",
+          "work-11"
+        ],
+        "forbidden_selected": [
+          "chat-11",
+          "cold-11"
+        ],
+        "min_reduction": 0.84
+      }
+    },
+    {
+      "id": "token-v100-recovery-fresh-12",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "recovery-token-12",
+          "text": "Use minimum current evidence"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 200,
+        "sources": [
+          {
+            "id": "req-12",
+            "token_estimate": 110,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "authority": 1,
+            "dependency": 1,
+            "private": false
+          },
+          {
+            "id": "work-12",
+            "token_estimate": 250,
+            "load_level": 1,
+            "relevance": 0.96,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "chat-12",
+            "token_estimate": 7280,
+            "load_level": 1,
+            "relevance": 0.025,
+            "private": false
+          },
+          {
+            "id": "cold-12",
+            "token_estimate": 2800,
+            "load_level": 2,
+            "relevance": 0.75,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "req-12",
+          "work-12"
+        ],
+        "forbidden_selected": [
+          "chat-12",
+          "cold-12"
+        ],
+        "min_reduction": 0.84
+      }
+    }
+  ]
+}

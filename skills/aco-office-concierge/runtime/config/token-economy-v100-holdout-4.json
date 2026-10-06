@@ -1,0 +1,562 @@
+{
+  "schema_version": 1,
+  "aco_version": "1.0.0",
+  "description": "Final fresh token holdout #4; frozen before first execution.",
+  "gate": {
+    "minimum_score": 100,
+    "maximum_critical_failures": 0,
+    "minimum_median_input_reduction": 0.7
+  },
+  "cases": [
+    {
+      "id": "token-v100-final-fresh-01",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final4-1",
+          "text": "Compile minimal sufficient context"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 190,
+        "sources": [
+          {
+            "id": "core-1",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "work-1",
+            "token_estimate": 260,
+            "load_level": 1,
+            "relevance": 0.95,
+            "private": false
+          },
+          {
+            "id": "archive-1",
+            "token_estimate": 6480,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          },
+          {
+            "id": "deep-1",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.75,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-1",
+          "work-1"
+        ],
+        "forbidden_selected": [
+          "archive-1",
+          "deep-1"
+        ],
+        "min_reduction": 0.85
+      }
+    },
+    {
+      "id": "token-v100-final-fresh-02",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final4-2",
+          "text": "Compile minimal sufficient context"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 190,
+        "sources": [
+          {
+            "id": "core-2",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "work-2",
+            "token_estimate": 260,
+            "load_level": 1,
+            "relevance": 0.95,
+            "private": false
+          },
+          {
+            "id": "archive-2",
+            "token_estimate": 6560,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          },
+          {
+            "id": "deep-2",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.75,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-2",
+          "work-2"
+        ],
+        "forbidden_selected": [
+          "archive-2",
+          "deep-2"
+        ],
+        "min_reduction": 0.85
+      }
+    },
+    {
+      "id": "token-v100-final-fresh-03",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final4-3",
+          "text": "Compile minimal sufficient context"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 190,
+        "sources": [
+          {
+            "id": "core-3",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "work-3",
+            "token_estimate": 260,
+            "load_level": 1,
+            "relevance": 0.95,
+            "private": false
+          },
+          {
+            "id": "archive-3",
+            "token_estimate": 6640,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          },
+          {
+            "id": "deep-3",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.75,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-3",
+          "work-3"
+        ],
+        "forbidden_selected": [
+          "archive-3",
+          "deep-3"
+        ],
+        "min_reduction": 0.85
+      }
+    },
+    {
+      "id": "token-v100-final-fresh-04",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final4-4",
+          "text": "Compile minimal sufficient context"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 190,
+        "sources": [
+          {
+            "id": "core-4",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "work-4",
+            "token_estimate": 260,
+            "load_level": 1,
+            "relevance": 0.95,
+            "private": false
+          },
+          {
+            "id": "archive-4",
+            "token_estimate": 6720,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          },
+          {
+            "id": "deep-4",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.75,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-4",
+          "work-4"
+        ],
+        "forbidden_selected": [
+          "archive-4",
+          "deep-4"
+        ],
+        "min_reduction": 0.85
+      }
+    },
+    {
+      "id": "token-v100-final-fresh-05",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final4-5",
+          "text": "Compile minimal sufficient context"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 190,
+        "sources": [
+          {
+            "id": "core-5",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "work-5",
+            "token_estimate": 260,
+            "load_level": 1,
+            "relevance": 0.95,
+            "private": false
+          },
+          {
+            "id": "archive-5",
+            "token_estimate": 6800,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          },
+          {
+            "id": "deep-5",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.75,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-5",
+          "work-5"
+        ],
+        "forbidden_selected": [
+          "archive-5",
+          "deep-5"
+        ],
+        "min_reduction": 0.85
+      }
+    },
+    {
+      "id": "token-v100-final-fresh-06",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final4-6",
+          "text": "Compile minimal sufficient context"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 190,
+        "sources": [
+          {
+            "id": "core-6",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "work-6",
+            "token_estimate": 260,
+            "load_level": 1,
+            "relevance": 0.95,
+            "private": false
+          },
+          {
+            "id": "archive-6",
+            "token_estimate": 6880,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          },
+          {
+            "id": "deep-6",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.75,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-6",
+          "work-6"
+        ],
+        "forbidden_selected": [
+          "archive-6",
+          "deep-6"
+        ],
+        "min_reduction": 0.85
+      }
+    },
+    {
+      "id": "token-v100-final-fresh-07",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final4-7",
+          "text": "Compile minimal sufficient context"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 190,
+        "sources": [
+          {
+            "id": "core-7",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "work-7",
+            "token_estimate": 260,
+            "load_level": 1,
+            "relevance": 0.95,
+            "private": false
+          },
+          {
+            "id": "archive-7",
+            "token_estimate": 6960,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          },
+          {
+            "id": "deep-7",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.75,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-7",
+          "work-7"
+        ],
+        "forbidden_selected": [
+          "archive-7",
+          "deep-7"
+        ],
+        "min_reduction": 0.85
+      }
+    },
+    {
+      "id": "token-v100-final-fresh-08",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final4-8",
+          "text": "Compile minimal sufficient context"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 190,
+        "sources": [
+          {
+            "id": "core-8",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "work-8",
+            "token_estimate": 260,
+            "load_level": 1,
+            "relevance": 0.95,
+            "private": false
+          },
+          {
+            "id": "archive-8",
+            "token_estimate": 7040,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          },
+          {
+            "id": "deep-8",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.75,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-8",
+          "work-8"
+        ],
+        "forbidden_selected": [
+          "archive-8",
+          "deep-8"
+        ],
+        "min_reduction": 0.85
+      }
+    },
+    {
+      "id": "token-v100-final-fresh-09",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final4-9",
+          "text": "Compile minimal sufficient context"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 190,
+        "sources": [
+          {
+            "id": "core-9",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "work-9",
+            "token_estimate": 260,
+            "load_level": 1,
+            "relevance": 0.95,
+            "private": false
+          },
+          {
+            "id": "archive-9",
+            "token_estimate": 7120,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          },
+          {
+            "id": "deep-9",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.75,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-9",
+          "work-9"
+        ],
+        "forbidden_selected": [
+          "archive-9",
+          "deep-9"
+        ],
+        "min_reduction": 0.85
+      }
+    },
+    {
+      "id": "token-v100-final-fresh-10",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "final4-10",
+          "text": "Compile minimal sufficient context"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 190,
+        "sources": [
+          {
+            "id": "core-10",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "work-10",
+            "token_estimate": 260,
+            "load_level": 1,
+            "relevance": 0.95,
+            "private": false
+          },
+          {
+            "id": "archive-10",
+            "token_estimate": 7200,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          },
+          {
+            "id": "deep-10",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.75,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-10",
+          "work-10"
+        ],
+        "forbidden_selected": [
+          "archive-10",
+          "deep-10"
+        ],
+        "min_reduction": 0.85
+      }
+    }
+  ]
+}

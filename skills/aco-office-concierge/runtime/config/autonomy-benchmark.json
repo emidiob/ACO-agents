@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "0.9.0",
+  "aco_version": "1.0.0",
   "description": "ACO 0.8 Goal Graph + Autonomy Engine deterministic conformance benchmark. All identities/endpoints are fictional fixtures.",
   "gate": {
     "minimum_score": 100.0,

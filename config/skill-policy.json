@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "aco_version": "1.0.0",
+  "active_states": ["validated", "active"],
+  "lifecycle": ["discovered", "candidate", "candidate_unverified", "testing", "validated", "active", "deprecated"],
+  "learning": {"minimum_support": 3, "minimum_distinct_sources": 2, "minimum_rule_consensus": 0.67},
+  "promotion": {"minimum_benchmark_cases": 20, "minimum_score": 95.0, "maximum_critical_failures": 0, "requires_explicit_approval": true, "requires_rollback_ref": true, "requires_frozen_first_run": true},
+  "forbidden_reasoning_fields": ["chain_of_thought", "chain-of-thought", "hidden_reasoning", "reasoning_trace", "private_scratchpad", "scratchpad", "internal_monologue"],
+  "policy": "Skills may be captured from structured evidence but never from hidden reasoning. Unverified candidates are never auto-selected; promotion into a release is explicit and benchmark-gated."
+}

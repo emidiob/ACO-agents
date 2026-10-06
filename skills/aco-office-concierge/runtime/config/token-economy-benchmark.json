@@ -1,0 +1,2059 @@
+{
+  "schema_version": 1,
+  "aco_version": "1.0.0",
+  "gate": {
+    "minimum_score": 100,
+    "maximum_critical_failures": 0,
+    "minimum_median_input_reduction": 0.7
+  },
+  "cases": [
+    {
+      "id": "dev-token-01",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev1",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-1",
+            "token_estimate": 170,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-1",
+            "token_estimate": 330,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-1",
+            "token_estimate": 5100,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-1",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-1",
+          "live-1"
+        ],
+        "forbidden_selected": [
+          "history-1",
+          "cold-1"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-02",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev2",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-2",
+            "token_estimate": 190,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-2",
+            "token_estimate": 360,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-2",
+            "token_estimate": 5200,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-2",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-2",
+          "live-2"
+        ],
+        "forbidden_selected": [
+          "history-2",
+          "cold-2"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-03",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev3",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-3",
+            "token_estimate": 210,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-3",
+            "token_estimate": 390,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-3",
+            "token_estimate": 5300,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-3",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-3",
+          "live-3"
+        ],
+        "forbidden_selected": [
+          "history-3",
+          "cold-3"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-04",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev4",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-4",
+            "token_estimate": 230,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-4",
+            "token_estimate": 300,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-4",
+            "token_estimate": 5400,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-4",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-4",
+          "live-4"
+        ],
+        "forbidden_selected": [
+          "history-4",
+          "cold-4"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-05",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev5",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-5",
+            "token_estimate": 150,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-5",
+            "token_estimate": 330,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-5",
+            "token_estimate": 5500,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-5",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-5",
+          "live-5"
+        ],
+        "forbidden_selected": [
+          "history-5",
+          "cold-5"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-06",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev6",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-6",
+            "token_estimate": 170,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-6",
+            "token_estimate": 360,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-6",
+            "token_estimate": 5600,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-6",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-6",
+          "live-6"
+        ],
+        "forbidden_selected": [
+          "history-6",
+          "cold-6"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-07",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev7",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-7",
+            "token_estimate": 190,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-7",
+            "token_estimate": 390,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-7",
+            "token_estimate": 5700,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-7",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-7",
+          "live-7"
+        ],
+        "forbidden_selected": [
+          "history-7",
+          "cold-7"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-08",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev8",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-8",
+            "token_estimate": 210,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-8",
+            "token_estimate": 300,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-8",
+            "token_estimate": 5800,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-8",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-8",
+          "live-8"
+        ],
+        "forbidden_selected": [
+          "history-8",
+          "cold-8"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-09",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev9",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-9",
+            "token_estimate": 230,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-9",
+            "token_estimate": 330,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-9",
+            "token_estimate": 5900,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-9",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-9",
+          "live-9"
+        ],
+        "forbidden_selected": [
+          "history-9",
+          "cold-9"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-10",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev10",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-10",
+            "token_estimate": 150,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-10",
+            "token_estimate": 360,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-10",
+            "token_estimate": 6000,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-10",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-10",
+          "live-10"
+        ],
+        "forbidden_selected": [
+          "history-10",
+          "cold-10"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-11",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev11",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-11",
+            "token_estimate": 170,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-11",
+            "token_estimate": 390,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-11",
+            "token_estimate": 6100,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-11",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-11",
+          "live-11"
+        ],
+        "forbidden_selected": [
+          "history-11",
+          "cold-11"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-12",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev12",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-12",
+            "token_estimate": 190,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-12",
+            "token_estimate": 300,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-12",
+            "token_estimate": 6200,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-12",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-12",
+          "live-12"
+        ],
+        "forbidden_selected": [
+          "history-12",
+          "cold-12"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-13",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev13",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-13",
+            "token_estimate": 210,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-13",
+            "token_estimate": 330,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-13",
+            "token_estimate": 6300,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-13",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-13",
+          "live-13"
+        ],
+        "forbidden_selected": [
+          "history-13",
+          "cold-13"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-14",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev14",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-14",
+            "token_estimate": 230,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-14",
+            "token_estimate": 360,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-14",
+            "token_estimate": 6400,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-14",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-14",
+          "live-14"
+        ],
+        "forbidden_selected": [
+          "history-14",
+          "cold-14"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-15",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev15",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-15",
+            "token_estimate": 150,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-15",
+            "token_estimate": 390,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-15",
+            "token_estimate": 6500,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-15",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-15",
+          "live-15"
+        ],
+        "forbidden_selected": [
+          "history-15",
+          "cold-15"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-16",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev16",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-16",
+            "token_estimate": 170,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-16",
+            "token_estimate": 300,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-16",
+            "token_estimate": 6600,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-16",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-16",
+          "live-16"
+        ],
+        "forbidden_selected": [
+          "history-16",
+          "cold-16"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-17",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev17",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-17",
+            "token_estimate": 190,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-17",
+            "token_estimate": 330,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-17",
+            "token_estimate": 6700,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-17",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-17",
+          "live-17"
+        ],
+        "forbidden_selected": [
+          "history-17",
+          "cold-17"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-18",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev18",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-18",
+            "token_estimate": 210,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-18",
+            "token_estimate": 360,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-18",
+            "token_estimate": 6800,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-18",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-18",
+          "live-18"
+        ],
+        "forbidden_selected": [
+          "history-18",
+          "cold-18"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-19",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev19",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-19",
+            "token_estimate": 230,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-19",
+            "token_estimate": 390,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-19",
+            "token_estimate": 6900,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-19",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-19",
+          "live-19"
+        ],
+        "forbidden_selected": [
+          "history-19",
+          "cold-19"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-20",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev20",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-20",
+            "token_estimate": 150,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-20",
+            "token_estimate": 300,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-20",
+            "token_estimate": 7000,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-20",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-20",
+          "live-20"
+        ],
+        "forbidden_selected": [
+          "history-20",
+          "cold-20"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-21",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev21",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-21",
+            "token_estimate": 170,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-21",
+            "token_estimate": 330,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-21",
+            "token_estimate": 7100,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-21",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-21",
+          "live-21"
+        ],
+        "forbidden_selected": [
+          "history-21",
+          "cold-21"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-22",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev22",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-22",
+            "token_estimate": 190,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-22",
+            "token_estimate": 360,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-22",
+            "token_estimate": 7200,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-22",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-22",
+          "live-22"
+        ],
+        "forbidden_selected": [
+          "history-22",
+          "cold-22"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-23",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev23",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-23",
+            "token_estimate": 210,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-23",
+            "token_estimate": 390,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-23",
+            "token_estimate": 7300,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-23",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-23",
+          "live-23"
+        ],
+        "forbidden_selected": [
+          "history-23",
+          "cold-23"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-24",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev24",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-24",
+            "token_estimate": 230,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-24",
+            "token_estimate": 300,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-24",
+            "token_estimate": 7400,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-24",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-24",
+          "live-24"
+        ],
+        "forbidden_selected": [
+          "history-24",
+          "cold-24"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-25",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev25",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-25",
+            "token_estimate": 150,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-25",
+            "token_estimate": 330,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-25",
+            "token_estimate": 7500,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-25",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-25",
+          "live-25"
+        ],
+        "forbidden_selected": [
+          "history-25",
+          "cold-25"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-26",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev26",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-26",
+            "token_estimate": 170,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-26",
+            "token_estimate": 360,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-26",
+            "token_estimate": 7600,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-26",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-26",
+          "live-26"
+        ],
+        "forbidden_selected": [
+          "history-26",
+          "cold-26"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-27",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev27",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-27",
+            "token_estimate": 190,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-27",
+            "token_estimate": 390,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-27",
+            "token_estimate": 7700,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-27",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-27",
+          "live-27"
+        ],
+        "forbidden_selected": [
+          "history-27",
+          "cold-27"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-28",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev28",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-28",
+            "token_estimate": 210,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-28",
+            "token_estimate": 300,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-28",
+            "token_estimate": 7800,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-28",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-28",
+          "live-28"
+        ],
+        "forbidden_selected": [
+          "history-28",
+          "cold-28"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-29",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev29",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-29",
+            "token_estimate": 230,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-29",
+            "token_estimate": 330,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-29",
+            "token_estimate": 7900,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-29",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-29",
+          "live-29"
+        ],
+        "forbidden_selected": [
+          "history-29",
+          "cold-29"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-30",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev30",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-30",
+            "token_estimate": 150,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-30",
+            "token_estimate": 360,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-30",
+            "token_estimate": 8000,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-30",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-30",
+          "live-30"
+        ],
+        "forbidden_selected": [
+          "history-30",
+          "cold-30"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-31",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev31",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-31",
+            "token_estimate": 170,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-31",
+            "token_estimate": 390,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-31",
+            "token_estimate": 8100,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-31",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-31",
+          "live-31"
+        ],
+        "forbidden_selected": [
+          "history-31",
+          "cold-31"
+        ],
+        "min_reduction": 0.8
+      }
+    },
+    {
+      "id": "dev-token-32",
+      "critical": true,
+      "packet": {
+        "task": {
+          "id": "dev32",
+          "text": "Complete bounded task from current goal"
+        },
+        "budget_class": "STANDARD",
+        "bootstrap_tokens": 220,
+        "phase": "initial",
+        "sources": [
+          {
+            "id": "core-32",
+            "token_estimate": 190,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "live-32",
+            "token_estimate": 300,
+            "load_level": 1,
+            "relevance": 0.94,
+            "authority": 0.9,
+            "dependency": 0.8,
+            "private": false
+          },
+          {
+            "id": "history-32",
+            "token_estimate": 8200,
+            "load_level": 1,
+            "relevance": 0.03,
+            "authority": 0.4,
+            "dependency": 0,
+            "private": false
+          },
+          {
+            "id": "cold-32",
+            "token_estimate": 3000,
+            "load_level": 2,
+            "relevance": 0.8,
+            "authority": 0.8,
+            "dependency": 0.5,
+            "private": false
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "required_selected": [
+          "core-32",
+          "live-32"
+        ],
+        "forbidden_selected": [
+          "history-32",
+          "cold-32"
+        ],
+        "min_reduction": 0.8
+      }
+    }
+  ]
+}

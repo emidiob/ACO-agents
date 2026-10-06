@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "aco_version": "1.0.0",
+  "logical_root": "aco://current",
+  "runtime_env": "ACO_RUNTIME_ROOT",
+  "state_env": "ACO_HOME",
+  "manifest": "release/manifest.json",
+  "skill_registry": "registry/skills.json",
+  "token_policy": "config/token-policy.json",
+  "skill_policy": "config/skill-policy.json",
+  "global_bootstrap": "docs/GLOBAL-BOOTSTRAP.txt",
+  "resolution_order": ["explicit_root", "ACO_RUNTIME_ROOT", "enclosing_project", "packaged_runtime"],
+  "preload_repository": false,
+  "bootstrap_token_target": 420,
+  "policy": "Resolve the current ACO runtime, then load only the minimum referenced role, skill, policy and context. ACO_HOME is private state and is never treated as the code path.",
+  "host_resolution": {
+    "canonical_repository": "emidiob/ACO-agents",
+    "project_or_library_alias": "ACO-agents-current",
+    "requires_authorized_access": true,
+    "policy": "A non-local host may resolve the current ACO release from an explicitly attached/project copy or the authorized canonical repository. Verify VERSION and registry/bootstrap.json; never claim files were loaded if the host cannot retrieve them."
+  },
+  "state_paths": {"skill_candidates": "skills/candidates.json"}
+}

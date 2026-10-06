@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "aco_version": "1.0.0",
+  "disposition": "development_failure",
+  "reason": "Fresh holdout #3 exposed an overly strict lexical coverage threshold in technical skill search; one natural Design Spells query failed. Resolver was generalized, then holdout #4 was created independently."
+}

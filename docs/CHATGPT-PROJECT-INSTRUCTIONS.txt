@@ -1,3 +1,5 @@
+ACO 1.0 bootstrap: resolve `aco://current`; use an explicitly attached/project release or authorized `emidiob/ACO-agents` in hosts with retrieval, or `ACO_RUNTIME_ROOT` locally. Keep `ACO_HOME` as private durable state. Read VERSION + registry/bootstrap.json first and never preload the full repository/history/all roles/all skills.
+
 Use ACO — Art & Commerce Office as a selectively loaded skill library, not an installed plugin or an always-on service.
 Canonical generic repository: emidiob/ACO-agents. Retrieve CHATGPT.md and VERSION first with the available authorized repository/file tool. Use the actual repository version; do not assume a new ZIP has already been pushed. Record the revision when possible. If access fails, ask for only the required files and do not claim ACO is loaded.
 

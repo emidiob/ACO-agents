@@ -117,6 +117,27 @@ def main() -> None:
     q = sub.add_parser('adaptive-benchmark', help='Run deterministic ACO 0.9 feedback/adaptation/promotion safety cases')
     q.add_argument('--input', type=Path)
     q.add_argument('--root', type=Path)
+    q = sub.add_parser('bootstrap-resolve', help='Resolve aco://current without preloading the repository')
+    q.add_argument('--root', type=Path)
+    q.add_argument('--start', type=Path)
+    q = sub.add_parser('bootstrap-check', help='Validate the ACO 1.0 bootstrap contract')
+    q.add_argument('--root', type=Path)
+    q = sub.add_parser('token-plan', help='Select maximum-value authorized context under a token target')
+    q.add_argument('--input', type=Path, required=True); q.add_argument('--root', type=Path)
+    q = sub.add_parser('context-compile', help='Compile a minimal Task Capsule')
+    q.add_argument('--input', type=Path, required=True); q.add_argument('--root', type=Path)
+    q = sub.add_parser('skill-registry-check'); q.add_argument('--root', type=Path)
+    q = sub.add_parser('skill-search'); q.add_argument('--query', default=''); q.add_argument('--tags', nargs='*'); q.add_argument('--limit', type=int, default=5); q.add_argument('--include-candidates', action='store_true'); q.add_argument('--root', type=Path)
+    q = sub.add_parser('skill-resolve'); q.add_argument('--skill', required=True); q.add_argument('--allow-candidate', action='store_true'); q.add_argument('--root', type=Path)
+    q = sub.add_parser('skill-candidate-check'); q.add_argument('--input', type=Path, required=True); q.add_argument('--root', type=Path)
+    q = sub.add_parser('skill-learn'); q.add_argument('--input', type=Path, required=True); q.add_argument('--root', type=Path)
+    q = sub.add_parser('skill-promotion-check'); q.add_argument('--input', type=Path, required=True); q.add_argument('--root', type=Path)
+    q = sub.add_parser('skill-candidate-store'); q.add_argument('--input', type=Path, required=True); q.add_argument('--state-root', type=Path); q.add_argument('--root', type=Path); q.add_argument('--apply', action='store_true')
+    q = sub.add_parser('skill-candidate-store-status'); q.add_argument('--state-root', type=Path)
+    q = sub.add_parser('skill-benchmark'); q.add_argument('--input', type=Path); q.add_argument('--root', type=Path)
+    q = sub.add_parser('os-plan'); q.add_argument('--input', type=Path, required=True); q.add_argument('--root', type=Path)
+    q = sub.add_parser('token-economy-benchmark'); q.add_argument('--input', type=Path); q.add_argument('--root', type=Path)
+    q = sub.add_parser('os-benchmark'); q.add_argument('--input', type=Path); q.add_argument('--root', type=Path)
     for verb in ('practice-check', 'opportunity-check', 'brand-check', 'social-check'):
         q = sub.add_parser(verb, help='Offline studio readiness check, no writes or external actions')
         q.add_argument('--input', type=Path, required=True)
@@ -340,6 +361,30 @@ def main() -> None:
                 result = promotion_check(read_json(a.input))
             else:
                 result = adaptive_benchmark(a.input, a.root)
+        elif a.command in ('bootstrap-resolve','bootstrap-check'):
+            from .bootstrap import resolve_runtime, bootstrap_check
+            result = resolve_runtime(explicit_root=a.root, start=getattr(a,'start',None)) if a.command=='bootstrap-resolve' else bootstrap_check(a.root)
+        elif a.command in ('token-plan','context-compile'):
+            if a.command=='token-plan':
+                from .token_budget import token_plan; result=token_plan(read_json(a.input),a.root)
+            else:
+                from .context_compiler import compile_context; result=compile_context(read_json(a.input),a.root)
+        elif a.command in ('skill-registry-check','skill-search','skill-resolve','skill-candidate-check','skill-learn','skill-promotion-check','skill-candidate-store','skill-candidate-store-status','skill-benchmark'):
+            from .skills import skill_registry_check, skill_search, skill_resolve, skill_candidate_check, skill_learn, skill_promotion_check, skill_candidate_store, skill_candidate_store_status, skill_benchmark
+            if a.command=='skill-registry-check': result=skill_registry_check(a.root)
+            elif a.command=='skill-search': result=skill_search(a.query,tags=a.tags,limit=a.limit,include_candidates=a.include_candidates,root=a.root)
+            elif a.command=='skill-resolve': result=skill_resolve(a.skill,allow_candidate=a.allow_candidate,root=a.root)
+            elif a.command=='skill-candidate-check': result=skill_candidate_check(read_json(a.input),a.root)
+            elif a.command=='skill-learn': result=skill_learn(read_json(a.input),a.root)
+            elif a.command=='skill-promotion-check': result=skill_promotion_check(read_json(a.input),a.root)
+            elif a.command=='skill-candidate-store': result=skill_candidate_store(read_json(a.input),state_root=a.state_root,apply=a.apply,root=a.root)
+            elif a.command=='skill-candidate-store-status': result=skill_candidate_store_status(state_root=a.state_root)
+            else: result=skill_benchmark(a.input,a.root)
+        elif a.command=='os-plan':
+            from .kernel import os_plan; result=os_plan(read_json(a.input),a.root)
+        elif a.command in ('token-economy-benchmark','os-benchmark'):
+            from .os_benchmark import token_economy_benchmark, os_benchmark
+            result=token_economy_benchmark(a.input,a.root) if a.command=='token-economy-benchmark' else os_benchmark(a.input,a.root)
         elif a.command in ('practice-check', 'opportunity-check', 'brand-check', 'social-check'):
             from .readiness import practice_check, opportunity_check, brand_check, social_check, _dt
             fn = {'practice-check': practice_check, 'opportunity-check': opportunity_check, 'brand-check': brand_check, 'social-check': social_check}[a.command]

@@ -2,7 +2,7 @@
 
 **A working library for an artist, studio, agency or cultural business — with scoped private knowledge and evidence-aware execution.**
 
-**ACO v0.9.0 · 363 roles · 16 entry skills · 61 workflows · 99 optional resources.**
+**ACO v1.0.0 · 363 roles · 16 entry skills · 61 workflows · 99 optional resources · token-aware OS + technical skill registry.**
 
 Proprietary, source-available. Redistribution is restricted by [LICENSE](LICENSE). No third-party software, fonts, models or private knowledge are bundled.
 
@@ -30,6 +30,8 @@ A natural request
 ```
 
 No office-by-office performance or unnecessary planning ceremony. A simple request should receive a simple result. A commissioned essay, design system or codebase still needs a complete deliverable.
+
+**v1.0.0 Operating System & Token Economy:** Concierge now resolves `aco://current`, compiles bounded Task Capsules from Role + Skills + Policies + Context references, and treats tokens as a budget instead of preloading repository/history. `ACO_RUNTIME_ROOT` is versioned code; `ACO_HOME` is private durable state, including a compact learned-skill candidate inbox. Technical skills are loaded on demand from a fail-closed registry; unverified candidates such as the supplied Mimic lead cannot be auto-selected. See [ACO OS 1.0](docs/ACO-OS-1.0.md) and [Global Bootstrap](docs/GLOBAL-BOOTSTRAP.txt).
 
 **v0.9.0 Adaptive ACO:** explicit corrections, scoped preferences and observable outcomes can now be stored as structured feedback evidence, aggregated into bounded **shadow-only** candidates, and compared against the deterministic Goal Graph without mutating production behavior. Feedback ledgers are scope-bound SHA-256 chains; hidden reasoning fields are rejected; one correction never becomes policy; permissions/privacy cannot be learned away; and promotion requires exact-hash benchmark evidence, historical regressions, explicit approval and a rollback reference. See [Adaptive ACO](docs/ADAPTIVE-ACO.md).
 

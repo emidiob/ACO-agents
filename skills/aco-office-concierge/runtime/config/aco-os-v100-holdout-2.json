@@ -1,0 +1,810 @@
+{
+  "schema_version": 1,
+  "aco_version": "1.0.0",
+  "gate": {
+    "minimum_score": 100,
+    "maximum_critical_failures": 0
+  },
+  "cases": [
+    {
+      "id": "os-v100-final-01",
+      "operation": "bootstrap_check",
+      "critical": true,
+      "expected": {
+        "status": "valid",
+        "bootstrap.host_resolution.canonical_repository": "emidiob/ACO-agents",
+        "bootstrap.state_paths.skill_candidates": "skills/candidates.json"
+      }
+    },
+    {
+      "id": "os-v100-final-02",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "visual_research.archive_first"
+      },
+      "query": "archive first moodboard visual research",
+      "limit": 3
+    },
+    {
+      "id": "os-v100-final-03",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "frontend_motion.motion_react"
+      },
+      "query": "Motion React gestures layout",
+      "limit": 3
+    },
+    {
+      "id": "os-v100-final-04",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "frontend_motion.gsap"
+      },
+      "query": "GSAP timeline scroll",
+      "limit": 3
+    },
+    {
+      "id": "os-v100-final-05",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "product_design.refero_flow_research"
+      },
+      "query": "Refero user flows",
+      "limit": 3
+    },
+    {
+      "id": "os-v100-final-06",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "visual_research.nypl_public_domain"
+      },
+      "query": "NYPL public domain maps",
+      "limit": 3
+    },
+    {
+      "id": "os-v100-final-07",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "visual_research.rijksmuseum_data"
+      },
+      "query": "Rijksmuseum data color",
+      "limit": 3
+    },
+    {
+      "id": "os-v100-final-08",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0": null
+      },
+      "query": "Mimic LittleDavi",
+      "limit": 3
+    },
+    {
+      "id": "os-v100-final-09",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.selectable": false
+      },
+      "query": "Mimic LittleDavi",
+      "limit": 3,
+      "include_candidates": true
+    },
+    {
+      "id": "os-v100-final-10",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "brief"
+      },
+      "input": {
+        "task": {
+          "id": "f10",
+          "text": "Compile bounded evidence"
+        },
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "brief",
+            "token_estimate": 140,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "noise",
+            "token_estimate": 5000,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-11",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "brief"
+      },
+      "input": {
+        "task": {
+          "id": "f11",
+          "text": "Compile bounded evidence"
+        },
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "brief",
+            "token_estimate": 140,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "noise",
+            "token_estimate": 5000,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-12",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "brief"
+      },
+      "input": {
+        "task": {
+          "id": "f12",
+          "text": "Compile bounded evidence"
+        },
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "brief",
+            "token_estimate": 140,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "noise",
+            "token_estimate": 5000,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-13",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "brief"
+      },
+      "input": {
+        "task": {
+          "id": "f13",
+          "text": "Compile bounded evidence"
+        },
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "brief",
+            "token_estimate": 140,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "noise",
+            "token_estimate": 5000,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-14",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "brief"
+      },
+      "input": {
+        "task": {
+          "id": "f14",
+          "text": "Compile bounded evidence"
+        },
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "brief",
+            "token_estimate": 140,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "noise",
+            "token_estimate": 5000,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-15",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "brief"
+      },
+      "input": {
+        "task": {
+          "id": "f15",
+          "text": "Compile bounded evidence"
+        },
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "brief",
+            "token_estimate": 140,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "noise",
+            "token_estimate": 5000,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-16",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "brief"
+      },
+      "input": {
+        "task": {
+          "id": "f16",
+          "text": "Compile bounded evidence"
+        },
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "brief",
+            "token_estimate": 140,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "noise",
+            "token_estimate": 5000,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-17",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "brief"
+      },
+      "input": {
+        "task": {
+          "id": "f17",
+          "text": "Compile bounded evidence"
+        },
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "brief",
+            "token_estimate": 140,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "noise",
+            "token_estimate": 5000,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-18",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "brief"
+      },
+      "input": {
+        "task": {
+          "id": "f18",
+          "text": "Compile bounded evidence"
+        },
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "brief",
+            "token_estimate": 140,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "noise",
+            "token_estimate": 5000,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-19",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "brief"
+      },
+      "input": {
+        "task": {
+          "id": "f19",
+          "text": "Compile bounded evidence"
+        },
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "brief",
+            "token_estimate": 140,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "noise",
+            "token_estimate": 5000,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-20",
+      "operation": "os_plan",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "selected_skill_ids.0": "frontend_motion.react_spring"
+      },
+      "input": {
+        "task": {
+          "id": "fp20",
+          "text": "Spring interaction"
+        },
+        "skill_query": "React Spring physics",
+        "skill_limit": 1,
+        "sources": [
+          {
+            "id": "brief",
+            "token_estimate": 100,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-21",
+      "operation": "os_plan",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "selected_skill_ids.0": "visual_research.archive_first"
+      },
+      "input": {
+        "task": {
+          "id": "fp21",
+          "text": "Archive visual research"
+        },
+        "skill_query": "archive first moodboard",
+        "skill_limit": 1,
+        "sources": [
+          {
+            "id": "brief",
+            "token_estimate": 100,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-22",
+      "operation": "os_plan",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "selected_skill_ids.0": "product_design.details_reference"
+      },
+      "input": {
+        "task": {
+          "id": "fp22",
+          "text": "Details web reference"
+        },
+        "skill_query": "Details website inspiration",
+        "skill_limit": 1,
+        "sources": [
+          {
+            "id": "brief",
+            "token_estimate": 100,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-23",
+      "operation": "os_plan",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "selected_skill_ids.0": null
+      },
+      "input": {
+        "task": {
+          "id": "simple",
+          "text": "Simple task"
+        },
+        "skill_limit": 0,
+        "sources": []
+      }
+    },
+    {
+      "id": "os-v100-final-24",
+      "operation": "os_plan",
+      "critical": true,
+      "expected": {},
+      "input": {
+        "task": {
+          "id": "m",
+          "text": "Use Mimic"
+        },
+        "skill_ids": [
+          "software_analysis.mimic_littledavinci"
+        ],
+        "sources": []
+      },
+      "expected_error": true
+    },
+    {
+      "id": "os-v100-final-25",
+      "operation": "skill_learn",
+      "critical": true,
+      "expected": {
+        "status": "insufficient_evidence"
+      },
+      "input": {
+        "skill_id": "fresh.skill",
+        "scope_id": "s",
+        "observations": [
+          {
+            "source_ref": "a",
+            "outcome": "success",
+            "rules": [
+              "x"
+            ],
+            "failure_modes": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-26",
+      "operation": "skill_learn",
+      "critical": true,
+      "expected": {
+        "status": "candidate_proposed"
+      },
+      "input": {
+        "skill_id": "fresh.skill",
+        "scope_id": "s",
+        "rollback_ref": "r",
+        "observations": [
+          {
+            "source_ref": "a",
+            "outcome": "success",
+            "rules": [
+              "x"
+            ],
+            "failure_modes": []
+          },
+          {
+            "source_ref": "b",
+            "outcome": "success",
+            "rules": [
+              "x"
+            ],
+            "failure_modes": []
+          },
+          {
+            "source_ref": "c",
+            "outcome": "success",
+            "rules": [
+              "x"
+            ],
+            "failure_modes": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-27",
+      "operation": "skill_candidate_store",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "applied": false,
+        "active_registry_mutated": false
+      },
+      "input": {
+        "schema_version": 1,
+        "skill_id": "video.store",
+        "scope_id": "s",
+        "title": "Store",
+        "version": "0.1",
+        "status": "candidate",
+        "method": [
+          "separate motion"
+        ],
+        "failure_modes": [],
+        "inputs": [],
+        "output_contract": {},
+        "evidence": [
+          {
+            "source_ref": "a",
+            "outcome": "success"
+          },
+          {
+            "source_ref": "b",
+            "outcome": "success"
+          },
+          {
+            "source_ref": "c",
+            "outcome": "success"
+          }
+        ],
+        "rollback_ref": "r"
+      }
+    },
+    {
+      "id": "os-v100-final-28",
+      "operation": "skill_candidate_check",
+      "critical": true,
+      "expected": {
+        "status": "invalid"
+      },
+      "input": {
+        "schema_version": 1,
+        "skill_id": "video.store",
+        "scope_id": "s",
+        "title": "Store",
+        "version": "0.1",
+        "status": "candidate",
+        "method": [
+          "separate motion"
+        ],
+        "failure_modes": [],
+        "inputs": [],
+        "output_contract": {},
+        "evidence": [
+          {
+            "source_ref": "a",
+            "outcome": "success"
+          },
+          {
+            "source_ref": "b",
+            "outcome": "success"
+          },
+          {
+            "source_ref": "c",
+            "outcome": "success"
+          }
+        ],
+        "rollback_ref": "r",
+        "scratchpad": "x"
+      }
+    },
+    {
+      "id": "os-v100-final-29",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {},
+      "input": {
+        "task": {
+          "id": "b",
+          "text": "x"
+        },
+        "authorized_private_scope_ids": [
+          "*"
+        ],
+        "sources": []
+      },
+      "expected_error": true
+    },
+    {
+      "id": "os-v100-final-30",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "target_overflow"
+      },
+      "input": {
+        "task": {
+          "id": "o",
+          "text": "Required"
+        },
+        "input_target": 250,
+        "sources": [
+          {
+            "id": "req",
+            "token_estimate": 500,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-31",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "needs_refine"
+      },
+      "input": {
+        "task": {
+          "id": "r",
+          "text": "Refine"
+        },
+        "phase": "initial",
+        "missing_requirements": [
+          "deep"
+        ],
+        "sources": [
+          {
+            "id": "brief",
+            "token_estimate": 100,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "deep",
+            "token_estimate": 1000,
+            "load_level": 2,
+            "relevance": 1,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-final-32",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "frontend_motion.motion_react"
+      },
+      "query": "Motion React layout gestures",
+      "tags": [
+        "react",
+        "layout"
+      ],
+      "limit": 3
+    }
+  ]
+}

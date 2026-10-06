@@ -1,0 +1,831 @@
+{
+  "schema_version": 1,
+  "aco_version": "1.0.0",
+  "gate": {
+    "minimum_score": 100,
+    "maximum_critical_failures": 0
+  },
+  "cases": [
+    {
+      "id": "registry-valid",
+      "operation": "registry_check",
+      "critical": true,
+      "expected": {
+        "status": "valid",
+        "skills": 15,
+        "active_skills": 14,
+        "candidate_skills": 1
+      }
+    },
+    {
+      "id": "search-motion",
+      "operation": "search",
+      "query": "React layout scroll animation",
+      "expected": {
+        "results.0.skill_id": "frontend_motion.motion_react"
+      }
+    },
+    {
+      "id": "search-gsap",
+      "operation": "search",
+      "query": "complex timeline scroll svg GSAP",
+      "expected": {
+        "results.0.skill_id": "frontend_motion.gsap"
+      }
+    },
+    {
+      "id": "search-anime",
+      "operation": "search",
+      "query": "Anime.js timeline SVG WAAPI",
+      "expected": {
+        "results.0.skill_id": "frontend_motion.animejs"
+      }
+    },
+    {
+      "id": "search-spring",
+      "operation": "search",
+      "query": "React spring physics interaction",
+      "expected": {
+        "results.0.skill_id": "frontend_motion.react_spring"
+      }
+    },
+    {
+      "id": "search-letterform",
+      "operation": "search",
+      "query": "typography print lettering archive",
+      "expected": {
+        "results.0.skill_id": "visual_research.letterform_archive"
+      }
+    },
+    {
+      "id": "search-met",
+      "operation": "search",
+      "query": "museum public domain art image",
+      "expected": {
+        "results.0.skill_id": "visual_research.met_open_access"
+      }
+    },
+    {
+      "id": "search-nypl",
+      "operation": "search",
+      "query": "public domain maps fashion archive",
+      "expected": {
+        "results.0.skill_id": "visual_research.nypl_public_domain"
+      }
+    },
+    {
+      "id": "search-refero",
+      "operation": "search",
+      "query": "product UX user flows screens",
+      "expected": {
+        "results.0.skill_id": "product_design.refero_flow_research"
+      }
+    },
+    {
+      "id": "search-details",
+      "operation": "search",
+      "query": "website production inspiration interaction",
+      "expected": {
+        "results.0.skill_id": "product_design.details_reference"
+      }
+    },
+    {
+      "id": "search-spells",
+      "operation": "search",
+      "query": "microinteractions design spells",
+      "expected": {
+        "results.0.skill_id": "product_design.design_spells_microinteractions"
+      }
+    },
+    {
+      "id": "mimic-excluded",
+      "operation": "search",
+      "query": "Mimic reverse engineering",
+      "expected": {
+        "results": []
+      }
+    },
+    {
+      "id": "mimic-visible",
+      "operation": "search",
+      "query": "Mimic reverse engineering",
+      "include_candidates": true,
+      "expected": {
+        "results.0.skill_id": "software_analysis.mimic_littledavi",
+        "results.0.selectable": false
+      }
+    },
+    {
+      "id": "candidate-valid",
+      "operation": "candidate_check",
+      "input": {
+        "schema_version": 1,
+        "skill_id": "visual_research.learned_test",
+        "scope_id": "scope-a",
+        "title": "Learned test",
+        "version": "0.1.0",
+        "status": "candidate",
+        "method": [
+          "preserve provenance",
+          "verify rights before reuse"
+        ],
+        "failure_modes": [
+          "lost provenance"
+        ],
+        "inputs": [],
+        "output_contract": {},
+        "evidence": [
+          {
+            "source_ref": "run:1",
+            "outcome": "success"
+          },
+          {
+            "source_ref": "run:2",
+            "outcome": "success"
+          },
+          {
+            "source_ref": "run:3",
+            "outcome": "success"
+          }
+        ],
+        "source_status": "structured_internal_evidence",
+        "rollback_ref": "skill://visual_research.learned_test@baseline",
+        "candidate_sha256": "ae443bcb0eb1b3bf50b087b80412792b27f9437cd9358a7b663cde40b822c382"
+      },
+      "expected": {
+        "status": "valid"
+      }
+    },
+    {
+      "id": "candidate-hidden",
+      "operation": "candidate_check",
+      "input": {
+        "schema_version": 1,
+        "skill_id": "visual_research.learned_test",
+        "scope_id": "scope-a",
+        "title": "Learned test",
+        "version": "0.1.0",
+        "status": "candidate",
+        "method": [
+          "preserve provenance",
+          "verify rights before reuse"
+        ],
+        "failure_modes": [
+          "lost provenance"
+        ],
+        "inputs": [],
+        "output_contract": {},
+        "evidence": [
+          {
+            "source_ref": "run:1",
+            "outcome": "success"
+          },
+          {
+            "source_ref": "run:2",
+            "outcome": "success"
+          },
+          {
+            "source_ref": "run:3",
+            "outcome": "success"
+          }
+        ],
+        "source_status": "structured_internal_evidence",
+        "rollback_ref": "skill://visual_research.learned_test@baseline",
+        "candidate_sha256": "ae443bcb0eb1b3bf50b087b80412792b27f9437cd9358a7b663cde40b822c382",
+        "hidden_reasoning": "x"
+      },
+      "expected": {
+        "status": "invalid"
+      }
+    },
+    {
+      "id": "learn-one",
+      "operation": "learn",
+      "input": {
+        "skill_id": "visual_research.learned_test",
+        "scope_id": "scope-a",
+        "title": "Learned test",
+        "version": "0.1.0",
+        "rollback_ref": "skill://visual_research.learned_test@baseline",
+        "observations": [
+          {
+            "source_ref": "run:1",
+            "outcome": "success",
+            "rules": [
+              "preserve provenance",
+              "verify rights before reuse"
+            ],
+            "failure_modes": [
+              "lost provenance"
+            ]
+          }
+        ]
+      },
+      "expected": {
+        "status": "insufficient_evidence"
+      }
+    },
+    {
+      "id": "learn-one-source",
+      "operation": "learn",
+      "input": {
+        "skill_id": "visual_research.learned_test",
+        "scope_id": "scope-a",
+        "title": "Learned test",
+        "version": "0.1.0",
+        "rollback_ref": "skill://visual_research.learned_test@baseline",
+        "observations": [
+          {
+            "source_ref": "same",
+            "outcome": "success",
+            "rules": [
+              "preserve provenance",
+              "verify rights before reuse"
+            ],
+            "failure_modes": [
+              "lost provenance"
+            ]
+          },
+          {
+            "source_ref": "same",
+            "outcome": "success",
+            "rules": [
+              "preserve provenance",
+              "verify rights before reuse"
+            ],
+            "failure_modes": [
+              "lost provenance"
+            ]
+          },
+          {
+            "source_ref": "same",
+            "outcome": "success",
+            "rules": [
+              "preserve provenance",
+              "verify rights before reuse"
+            ],
+            "failure_modes": [
+              "lost provenance"
+            ]
+          }
+        ]
+      },
+      "expected": {
+        "status": "insufficient_evidence"
+      }
+    },
+    {
+      "id": "learn-three",
+      "operation": "learn",
+      "input": {
+        "skill_id": "visual_research.learned_test",
+        "scope_id": "scope-a",
+        "title": "Learned test",
+        "version": "0.1.0",
+        "rollback_ref": "skill://visual_research.learned_test@baseline",
+        "observations": [
+          {
+            "source_ref": "run:1",
+            "outcome": "success",
+            "rules": [
+              "preserve provenance",
+              "verify rights before reuse"
+            ],
+            "failure_modes": [
+              "lost provenance"
+            ]
+          },
+          {
+            "source_ref": "run:2",
+            "outcome": "success",
+            "rules": [
+              "preserve provenance",
+              "verify rights before reuse"
+            ],
+            "failure_modes": [
+              "lost provenance"
+            ]
+          },
+          {
+            "source_ref": "run:3",
+            "outcome": "success",
+            "rules": [
+              "preserve provenance",
+              "verify rights before reuse"
+            ],
+            "failure_modes": [
+              "lost provenance"
+            ]
+          }
+        ]
+      },
+      "expected": {
+        "status": "candidate_proposed",
+        "candidate.status": "candidate"
+      }
+    },
+    {
+      "id": "learn-no-consensus",
+      "operation": "learn",
+      "input": {
+        "skill_id": "visual_research.learned_test",
+        "scope_id": "scope-a",
+        "title": "Learned test",
+        "version": "0.1.0",
+        "rollback_ref": "skill://visual_research.learned_test@baseline",
+        "observations": [
+          {
+            "source_ref": "a",
+            "outcome": "success",
+            "rules": [
+              "r1"
+            ],
+            "failure_modes": []
+          },
+          {
+            "source_ref": "b",
+            "outcome": "success",
+            "rules": [
+              "r2"
+            ],
+            "failure_modes": []
+          },
+          {
+            "source_ref": "c",
+            "outcome": "success",
+            "rules": [
+              "r3"
+            ],
+            "failure_modes": []
+          }
+        ]
+      },
+      "expected": {
+        "status": "no_consensus"
+      }
+    },
+    {
+      "id": "promotion-ok",
+      "operation": "promotion_check",
+      "input": {
+        "candidate": {
+          "schema_version": 1,
+          "skill_id": "visual_research.learned_test",
+          "scope_id": "scope-a",
+          "title": "Learned test",
+          "version": "0.1.0",
+          "status": "candidate",
+          "method": [
+            "preserve provenance",
+            "verify rights before reuse"
+          ],
+          "failure_modes": [
+            "lost provenance"
+          ],
+          "inputs": [],
+          "output_contract": {},
+          "evidence": [
+            {
+              "source_ref": "run:1",
+              "outcome": "success"
+            },
+            {
+              "source_ref": "run:2",
+              "outcome": "success"
+            },
+            {
+              "source_ref": "run:3",
+              "outcome": "success"
+            }
+          ],
+          "source_status": "structured_internal_evidence",
+          "rollback_ref": "skill://visual_research.learned_test@baseline",
+          "candidate_sha256": "ae443bcb0eb1b3bf50b087b80412792b27f9437cd9358a7b663cde40b822c382"
+        },
+        "benchmark": {
+          "candidate_sha256": "ae443bcb0eb1b3bf50b087b80412792b27f9437cd9358a7b663cde40b822c382",
+          "cases": 25,
+          "score": 100.0,
+          "critical_failures": 0,
+          "frozen_before_first_run": true
+        },
+        "approval": {
+          "approved": true,
+          "candidate_sha256": "ae443bcb0eb1b3bf50b087b80412792b27f9437cd9358a7b663cde40b822c382",
+          "approval_ref": "maintainer:test"
+        }
+      },
+      "critical": true,
+      "expected": {
+        "status": "eligible",
+        "eligible": true,
+        "execute": false
+      }
+    },
+    {
+      "id": "promotion-no-approval",
+      "operation": "promotion_check",
+      "input": {
+        "candidate": {
+          "schema_version": 1,
+          "skill_id": "visual_research.learned_test",
+          "scope_id": "scope-a",
+          "title": "Learned test",
+          "version": "0.1.0",
+          "status": "candidate",
+          "method": [
+            "preserve provenance",
+            "verify rights before reuse"
+          ],
+          "failure_modes": [
+            "lost provenance"
+          ],
+          "inputs": [],
+          "output_contract": {},
+          "evidence": [
+            {
+              "source_ref": "run:1",
+              "outcome": "success"
+            },
+            {
+              "source_ref": "run:2",
+              "outcome": "success"
+            },
+            {
+              "source_ref": "run:3",
+              "outcome": "success"
+            }
+          ],
+          "source_status": "structured_internal_evidence",
+          "rollback_ref": "skill://visual_research.learned_test@baseline",
+          "candidate_sha256": "ae443bcb0eb1b3bf50b087b80412792b27f9437cd9358a7b663cde40b822c382"
+        },
+        "benchmark": {
+          "candidate_sha256": "ae443bcb0eb1b3bf50b087b80412792b27f9437cd9358a7b663cde40b822c382",
+          "cases": 25,
+          "score": 100.0,
+          "critical_failures": 0,
+          "frozen_before_first_run": true
+        },
+        "approval": {
+          "approved": false
+        }
+      },
+      "expected": {
+        "status": "blocked"
+      }
+    },
+    {
+      "id": "promotion-wrong-hash",
+      "operation": "promotion_check",
+      "input": {
+        "candidate": {
+          "schema_version": 1,
+          "skill_id": "visual_research.learned_test",
+          "scope_id": "scope-a",
+          "title": "Learned test",
+          "version": "0.1.0",
+          "status": "candidate",
+          "method": [
+            "preserve provenance",
+            "verify rights before reuse"
+          ],
+          "failure_modes": [
+            "lost provenance"
+          ],
+          "inputs": [],
+          "output_contract": {},
+          "evidence": [
+            {
+              "source_ref": "run:1",
+              "outcome": "success"
+            },
+            {
+              "source_ref": "run:2",
+              "outcome": "success"
+            },
+            {
+              "source_ref": "run:3",
+              "outcome": "success"
+            }
+          ],
+          "source_status": "structured_internal_evidence",
+          "rollback_ref": "skill://visual_research.learned_test@baseline",
+          "candidate_sha256": "ae443bcb0eb1b3bf50b087b80412792b27f9437cd9358a7b663cde40b822c382"
+        },
+        "benchmark": {
+          "candidate_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "cases": 25,
+          "score": 100.0,
+          "critical_failures": 0,
+          "frozen_before_first_run": true
+        },
+        "approval": {
+          "approved": true,
+          "candidate_sha256": "ae443bcb0eb1b3bf50b087b80412792b27f9437cd9358a7b663cde40b822c382",
+          "approval_ref": "maintainer:test"
+        }
+      },
+      "expected": {
+        "status": "blocked"
+      }
+    },
+    {
+      "id": "promotion-low-cases",
+      "operation": "promotion_check",
+      "input": {
+        "candidate": {
+          "schema_version": 1,
+          "skill_id": "visual_research.learned_test",
+          "scope_id": "scope-a",
+          "title": "Learned test",
+          "version": "0.1.0",
+          "status": "candidate",
+          "method": [
+            "preserve provenance",
+            "verify rights before reuse"
+          ],
+          "failure_modes": [
+            "lost provenance"
+          ],
+          "inputs": [],
+          "output_contract": {},
+          "evidence": [
+            {
+              "source_ref": "run:1",
+              "outcome": "success"
+            },
+            {
+              "source_ref": "run:2",
+              "outcome": "success"
+            },
+            {
+              "source_ref": "run:3",
+              "outcome": "success"
+            }
+          ],
+          "source_status": "structured_internal_evidence",
+          "rollback_ref": "skill://visual_research.learned_test@baseline",
+          "candidate_sha256": "ae443bcb0eb1b3bf50b087b80412792b27f9437cd9358a7b663cde40b822c382"
+        },
+        "benchmark": {
+          "candidate_sha256": "ae443bcb0eb1b3bf50b087b80412792b27f9437cd9358a7b663cde40b822c382",
+          "cases": 4,
+          "score": 100.0,
+          "critical_failures": 0,
+          "frozen_before_first_run": true
+        },
+        "approval": {
+          "approved": true,
+          "candidate_sha256": "ae443bcb0eb1b3bf50b087b80412792b27f9437cd9358a7b663cde40b822c382",
+          "approval_ref": "maintainer:test"
+        }
+      },
+      "expected": {
+        "status": "blocked"
+      }
+    },
+    {
+      "id": "promotion-low-score",
+      "operation": "promotion_check",
+      "input": {
+        "candidate": {
+          "schema_version": 1,
+          "skill_id": "visual_research.learned_test",
+          "scope_id": "scope-a",
+          "title": "Learned test",
+          "version": "0.1.0",
+          "status": "candidate",
+          "method": [
+            "preserve provenance",
+            "verify rights before reuse"
+          ],
+          "failure_modes": [
+            "lost provenance"
+          ],
+          "inputs": [],
+          "output_contract": {},
+          "evidence": [
+            {
+              "source_ref": "run:1",
+              "outcome": "success"
+            },
+            {
+              "source_ref": "run:2",
+              "outcome": "success"
+            },
+            {
+              "source_ref": "run:3",
+              "outcome": "success"
+            }
+          ],
+          "source_status": "structured_internal_evidence",
+          "rollback_ref": "skill://visual_research.learned_test@baseline",
+          "candidate_sha256": "ae443bcb0eb1b3bf50b087b80412792b27f9437cd9358a7b663cde40b822c382"
+        },
+        "benchmark": {
+          "candidate_sha256": "ae443bcb0eb1b3bf50b087b80412792b27f9437cd9358a7b663cde40b822c382",
+          "cases": 25,
+          "score": 90,
+          "critical_failures": 0,
+          "frozen_before_first_run": true
+        },
+        "approval": {
+          "approved": true,
+          "candidate_sha256": "ae443bcb0eb1b3bf50b087b80412792b27f9437cd9358a7b663cde40b822c382",
+          "approval_ref": "maintainer:test"
+        }
+      },
+      "expected": {
+        "status": "blocked"
+      }
+    },
+    {
+      "id": "promotion-critical",
+      "operation": "promotion_check",
+      "input": {
+        "candidate": {
+          "schema_version": 1,
+          "skill_id": "visual_research.learned_test",
+          "scope_id": "scope-a",
+          "title": "Learned test",
+          "version": "0.1.0",
+          "status": "candidate",
+          "method": [
+            "preserve provenance",
+            "verify rights before reuse"
+          ],
+          "failure_modes": [
+            "lost provenance"
+          ],
+          "inputs": [],
+          "output_contract": {},
+          "evidence": [
+            {
+              "source_ref": "run:1",
+              "outcome": "success"
+            },
+            {
+              "source_ref": "run:2",
+              "outcome": "success"
+            },
+            {
+              "source_ref": "run:3",
+              "outcome": "success"
+            }
+          ],
+          "source_status": "structured_internal_evidence",
+          "rollback_ref": "skill://visual_research.learned_test@baseline",
+          "candidate_sha256": "ae443bcb0eb1b3bf50b087b80412792b27f9437cd9358a7b663cde40b822c382"
+        },
+        "benchmark": {
+          "candidate_sha256": "ae443bcb0eb1b3bf50b087b80412792b27f9437cd9358a7b663cde40b822c382",
+          "cases": 25,
+          "score": 100.0,
+          "critical_failures": 1,
+          "frozen_before_first_run": true
+        },
+        "approval": {
+          "approved": true,
+          "candidate_sha256": "ae443bcb0eb1b3bf50b087b80412792b27f9437cd9358a7b663cde40b822c382",
+          "approval_ref": "maintainer:test"
+        }
+      },
+      "expected": {
+        "status": "blocked"
+      }
+    },
+    {
+      "id": "promotion-not-frozen",
+      "operation": "promotion_check",
+      "input": {
+        "candidate": {
+          "schema_version": 1,
+          "skill_id": "visual_research.learned_test",
+          "scope_id": "scope-a",
+          "title": "Learned test",
+          "version": "0.1.0",
+          "status": "candidate",
+          "method": [
+            "preserve provenance",
+            "verify rights before reuse"
+          ],
+          "failure_modes": [
+            "lost provenance"
+          ],
+          "inputs": [],
+          "output_contract": {},
+          "evidence": [
+            {
+              "source_ref": "run:1",
+              "outcome": "success"
+            },
+            {
+              "source_ref": "run:2",
+              "outcome": "success"
+            },
+            {
+              "source_ref": "run:3",
+              "outcome": "success"
+            }
+          ],
+          "source_status": "structured_internal_evidence",
+          "rollback_ref": "skill://visual_research.learned_test@baseline",
+          "candidate_sha256": "ae443bcb0eb1b3bf50b087b80412792b27f9437cd9358a7b663cde40b822c382"
+        },
+        "benchmark": {
+          "candidate_sha256": "ae443bcb0eb1b3bf50b087b80412792b27f9437cd9358a7b663cde40b822c382",
+          "cases": 25,
+          "score": 100.0,
+          "critical_failures": 0,
+          "frozen_before_first_run": false
+        },
+        "approval": {
+          "approved": true,
+          "candidate_sha256": "ae443bcb0eb1b3bf50b087b80412792b27f9437cd9358a7b663cde40b822c382",
+          "approval_ref": "maintainer:test"
+        }
+      },
+      "expected": {
+        "status": "blocked"
+      }
+    },
+    {
+      "id": "bad-evidence",
+      "operation": "candidate_check",
+      "input": {
+        "schema_version": 1,
+        "skill_id": "visual_research.learned_test",
+        "scope_id": "scope-a",
+        "title": "Learned test",
+        "version": "0.1.0",
+        "status": "candidate",
+        "method": [
+          "preserve provenance",
+          "verify rights before reuse"
+        ],
+        "failure_modes": [
+          "lost provenance"
+        ],
+        "inputs": [],
+        "output_contract": {},
+        "evidence": [
+          {
+            "source_ref": "x",
+            "outcome": "maybe"
+          }
+        ],
+        "source_status": "structured_internal_evidence",
+        "rollback_ref": "skill://visual_research.learned_test@baseline",
+        "candidate_sha256": "ae443bcb0eb1b3bf50b087b80412792b27f9437cd9358a7b663cde40b822c382"
+      },
+      "expected": {
+        "status": "invalid"
+      }
+    },
+    {
+      "id": "scratchpad",
+      "operation": "candidate_check",
+      "input": {
+        "schema_version": 1,
+        "skill_id": "visual_research.learned_test",
+        "scope_id": "scope-a",
+        "title": "Learned test",
+        "version": "0.1.0",
+        "status": "candidate",
+        "method": [
+          "preserve provenance",
+          "verify rights before reuse"
+        ],
+        "failure_modes": [
+          "lost provenance"
+        ],
+        "inputs": [],
+        "output_contract": {},
+        "evidence": [
+          {
+            "source_ref": "run:1",
+            "outcome": "success"
+          },
+          {
+            "source_ref": "run:2",
+            "outcome": "success"
+          },
+          {
+            "source_ref": "run:3",
+            "outcome": "success"
+          }
+        ],
+        "source_status": "structured_internal_evidence",
+        "rollback_ref": "skill://visual_research.learned_test@baseline",
+        "candidate_sha256": "ae443bcb0eb1b3bf50b087b80412792b27f9437cd9358a7b663cde40b822c382",
+        "metadata": {
+          "scratchpad": "x"
+        }
+      },
+      "expected": {
+        "status": "invalid"
+      }
+    }
+  ]
+}

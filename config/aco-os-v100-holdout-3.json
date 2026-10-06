@@ -1,0 +1,643 @@
+{
+  "schema_version": 1,
+  "aco_version": "1.0.0",
+  "description": "Recovery fresh holdout #3 created after environment reconstruction; frozen before first execution.",
+  "gate": {
+    "minimum_score": 100,
+    "maximum_critical_failures": 0
+  },
+  "cases": [
+    {
+      "id": "os-v100-recovery-fresh-01",
+      "operation": "bootstrap_check",
+      "critical": true,
+      "expected": {
+        "status": "valid",
+        "bootstrap.logical_root": "aco://current",
+        "bootstrap.host_resolution.canonical_repository": "emidiob/ACO-agents"
+      }
+    },
+    {
+      "id": "os-v100-recovery-fresh-02",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "frontend_motion.react_spring"
+      },
+      "query": "spring physics React component",
+      "limit": 2
+    },
+    {
+      "id": "os-v100-recovery-fresh-03",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "frontend_motion.gsap"
+      },
+      "query": "scroll choreography GSAP SVG",
+      "limit": 2
+    },
+    {
+      "id": "os-v100-recovery-fresh-04",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "visual_research.met_open_access"
+      },
+      "query": "museum public domain Met",
+      "limit": 2
+    },
+    {
+      "id": "os-v100-recovery-fresh-05",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "visual_research.letterform_archive"
+      },
+      "query": "archive typography paper ink",
+      "limit": 2
+    },
+    {
+      "id": "os-v100-recovery-fresh-06",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "product_design.refero_flow_research"
+      },
+      "query": "UX reference user flow screens",
+      "limit": 2
+    },
+    {
+      "id": "os-v100-recovery-fresh-07",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "product_design.design_spells_microinteractions"
+      },
+      "query": "small UI interaction magic detail",
+      "limit": 2
+    },
+    {
+      "id": "os-v100-recovery-fresh-08",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0": null
+      },
+      "query": "LittleDavi Mimic app reconstruction",
+      "limit": 2
+    },
+    {
+      "id": "os-v100-recovery-fresh-09",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.selectable": false
+      },
+      "query": "LittleDavi Mimic app reconstruction",
+      "limit": 2,
+      "include_candidates": true
+    },
+    {
+      "id": "os-v100-recovery-fresh-10",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "anchor"
+      },
+      "input": {
+        "task": {
+          "id": "c10",
+          "text": "Compile sufficient authorized evidence"
+        },
+        "budget_class": "SMALL",
+        "bootstrap_tokens": 170,
+        "sources": [
+          {
+            "id": "anchor",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "long-old",
+            "token_estimate": 4800,
+            "load_level": 1,
+            "relevance": 0.01,
+            "authority": 0.3,
+            "dependency": 0,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-recovery-fresh-11",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "anchor"
+      },
+      "input": {
+        "task": {
+          "id": "c11",
+          "text": "Compile sufficient authorized evidence"
+        },
+        "budget_class": "SMALL",
+        "bootstrap_tokens": 170,
+        "sources": [
+          {
+            "id": "anchor",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "long-old",
+            "token_estimate": 4830,
+            "load_level": 1,
+            "relevance": 0.01,
+            "authority": 0.3,
+            "dependency": 0,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-recovery-fresh-12",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "anchor"
+      },
+      "input": {
+        "task": {
+          "id": "c12",
+          "text": "Compile sufficient authorized evidence"
+        },
+        "budget_class": "SMALL",
+        "bootstrap_tokens": 170,
+        "sources": [
+          {
+            "id": "anchor",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "long-old",
+            "token_estimate": 4860,
+            "load_level": 1,
+            "relevance": 0.01,
+            "authority": 0.3,
+            "dependency": 0,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-recovery-fresh-13",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "anchor"
+      },
+      "input": {
+        "task": {
+          "id": "c13",
+          "text": "Compile sufficient authorized evidence"
+        },
+        "budget_class": "SMALL",
+        "bootstrap_tokens": 170,
+        "sources": [
+          {
+            "id": "anchor",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "long-old",
+            "token_estimate": 4890,
+            "load_level": 1,
+            "relevance": 0.01,
+            "authority": 0.3,
+            "dependency": 0,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-recovery-fresh-14",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "anchor"
+      },
+      "input": {
+        "task": {
+          "id": "c14",
+          "text": "Compile sufficient authorized evidence"
+        },
+        "budget_class": "SMALL",
+        "bootstrap_tokens": 170,
+        "sources": [
+          {
+            "id": "anchor",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "long-old",
+            "token_estimate": 4920,
+            "load_level": 1,
+            "relevance": 0.01,
+            "authority": 0.3,
+            "dependency": 0,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-recovery-fresh-15",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "anchor"
+      },
+      "input": {
+        "task": {
+          "id": "c15",
+          "text": "Compile sufficient authorized evidence"
+        },
+        "budget_class": "SMALL",
+        "bootstrap_tokens": 170,
+        "sources": [
+          {
+            "id": "anchor",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "long-old",
+            "token_estimate": 4950,
+            "load_level": 1,
+            "relevance": 0.01,
+            "authority": 0.3,
+            "dependency": 0,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-recovery-fresh-16",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "own"
+      },
+      "input": {
+        "task": {
+          "id": "scope",
+          "text": "Stay in client scope"
+        },
+        "sources": [
+          {
+            "id": "own",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": true,
+            "scope_relation": "same_entity",
+            "scope_id": "a"
+          },
+          {
+            "id": "other",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "scope_id": "b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-recovery-fresh-17",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "own",
+        "capsule.context_refs.1": "other"
+      },
+      "input": {
+        "task": {
+          "id": "scope2",
+          "text": "Use exact approved cross-scope source"
+        },
+        "authorized_private_scope_ids": [
+          "b"
+        ],
+        "sources": [
+          {
+            "id": "own",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": true,
+            "scope_relation": "same_entity",
+            "scope_id": "a"
+          },
+          {
+            "id": "other",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "private": true,
+            "scope_relation": "other_private_entity",
+            "scope_id": "b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-recovery-fresh-18",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "needs_refine"
+      },
+      "input": {
+        "task": {
+          "id": "deep",
+          "text": "Start shallow"
+        },
+        "phase": "initial",
+        "missing_requirements": [
+          "named deep evidence"
+        ],
+        "sources": [
+          {
+            "id": "anchor",
+            "token_estimate": 100,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "deep",
+            "token_estimate": 900,
+            "load_level": 2,
+            "relevance": 1,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-recovery-fresh-19",
+      "operation": "os_plan",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "selected_skill_ids.0": "visual_research.archive_first",
+        "runtime.preload_repository": false
+      },
+      "input": {
+        "task": {
+          "id": "p19",
+          "text": "Art direct from archival references"
+        },
+        "skill_query": "archive first visual research",
+        "skill_limit": 1,
+        "sources": [
+          {
+            "id": "brief",
+            "token_estimate": 100,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-recovery-fresh-20",
+      "operation": "os_plan",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "selected_skill_ids.0": "frontend_motion.motion_react",
+        "runtime.preload_repository": false
+      },
+      "input": {
+        "task": {
+          "id": "p20",
+          "text": "Choose modern React motion library"
+        },
+        "skill_query": "Motion React gestures layout",
+        "skill_limit": 1,
+        "sources": [
+          {
+            "id": "brief",
+            "token_estimate": 100,
+            "load_level": 0,
+            "relevance": 1,
+            "required": true,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-recovery-fresh-21",
+      "operation": "skill_learn",
+      "critical": true,
+      "expected": {
+        "status": "insufficient_evidence"
+      },
+      "input": {
+        "skill_id": "fresh.recovery",
+        "scope_id": "x",
+        "observations": [
+          {
+            "source_ref": "1",
+            "outcome": "success",
+            "rules": [
+              "r"
+            ],
+            "failure_modes": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-recovery-fresh-22",
+      "operation": "skill_learn",
+      "critical": true,
+      "expected": {
+        "status": "candidate_proposed"
+      },
+      "input": {
+        "skill_id": "fresh.recovery",
+        "scope_id": "x",
+        "rollback_ref": "r",
+        "observations": [
+          {
+            "source_ref": "1",
+            "outcome": "success",
+            "rules": [
+              "r"
+            ],
+            "failure_modes": []
+          },
+          {
+            "source_ref": "2",
+            "outcome": "success",
+            "rules": [
+              "r"
+            ],
+            "failure_modes": []
+          },
+          {
+            "source_ref": "3",
+            "outcome": "success",
+            "rules": [
+              "r"
+            ],
+            "failure_modes": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-v100-recovery-fresh-23",
+      "operation": "skill_candidate_store",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "applied": false,
+        "active_registry_mutated": false
+      },
+      "input": {
+        "schema_version": 1,
+        "skill_id": "fresh.recovery.store",
+        "scope_id": "x",
+        "title": "Fresh recovery store",
+        "version": "0.1",
+        "status": "candidate",
+        "method": [
+          "r"
+        ],
+        "failure_modes": [],
+        "inputs": [],
+        "output_contract": {},
+        "evidence": [
+          {
+            "source_ref": "1",
+            "outcome": "success"
+          },
+          {
+            "source_ref": "2",
+            "outcome": "success"
+          },
+          {
+            "source_ref": "3",
+            "outcome": "success"
+          }
+        ],
+        "rollback_ref": "r"
+      }
+    },
+    {
+      "id": "os-v100-recovery-fresh-24",
+      "operation": "skill_candidate_check",
+      "critical": true,
+      "expected": {
+        "status": "invalid"
+      },
+      "input": {
+        "schema_version": 1,
+        "skill_id": "fresh.recovery.store",
+        "scope_id": "x",
+        "title": "Fresh recovery store",
+        "version": "0.1",
+        "status": "candidate",
+        "method": [
+          "r"
+        ],
+        "failure_modes": [],
+        "inputs": [],
+        "output_contract": {},
+        "evidence": [
+          {
+            "source_ref": "1",
+            "outcome": "success"
+          },
+          {
+            "source_ref": "2",
+            "outcome": "success"
+          },
+          {
+            "source_ref": "3",
+            "outcome": "success"
+          }
+        ],
+        "rollback_ref": "r",
+        "private_scratchpad": "forbidden"
+      }
+    }
+  ]
+}

@@ -1,0 +1,668 @@
+{
+  "schema_version": 1,
+  "aco_version": "1.0.0",
+  "gate": {
+    "minimum_score": 100,
+    "maximum_critical_failures": 0
+  },
+  "cases": [
+    {
+      "id": "os-dev-01",
+      "operation": "bootstrap_check",
+      "critical": true,
+      "expected": {
+        "status": "valid",
+        "bootstrap.logical_root": "aco://current",
+        "bootstrap.preload_repository": false
+      }
+    },
+    {
+      "id": "os-dev-02",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "frontend_motion.react_spring"
+      },
+      "query": "React Spring physics animation",
+      "limit": 3
+    },
+    {
+      "id": "os-dev-03",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "frontend_motion.gsap"
+      },
+      "query": "GSAP scroll timeline",
+      "limit": 3
+    },
+    {
+      "id": "os-dev-04",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "frontend_motion.animejs"
+      },
+      "query": "Anime.js SVG timeline",
+      "limit": 3
+    },
+    {
+      "id": "os-dev-05",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "frontend_motion.motion_react"
+      },
+      "query": "Motion React gestures layout",
+      "limit": 3
+    },
+    {
+      "id": "os-dev-06",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "visual_research.letterform_archive"
+      },
+      "query": "Letterform Archive typography print",
+      "limit": 3
+    },
+    {
+      "id": "os-dev-07",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "visual_research.met_open_access"
+      },
+      "query": "Met public domain museum images",
+      "limit": 3
+    },
+    {
+      "id": "os-dev-08",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "visual_research.rijksmuseum_data"
+      },
+      "query": "Rijksmuseum data art color",
+      "limit": 3
+    },
+    {
+      "id": "os-dev-09",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "visual_research.nypl_public_domain"
+      },
+      "query": "NYPL public domain maps",
+      "limit": 3
+    },
+    {
+      "id": "os-dev-10",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "visual_research.archives_design"
+      },
+      "query": "archives design graphic design",
+      "limit": 3
+    },
+    {
+      "id": "os-dev-11",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "product_design.refero_flow_research"
+      },
+      "query": "Refero user flows product screens",
+      "limit": 3
+    },
+    {
+      "id": "os-dev-12",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "product_design.details_reference"
+      },
+      "query": "Details website inspiration",
+      "limit": 3
+    },
+    {
+      "id": "os-dev-13",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "product_design.design_spells_microinteractions"
+      },
+      "query": "Design Spells microinteractions",
+      "limit": 3
+    },
+    {
+      "id": "os-dev-14",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "candidate_results_included": false
+      },
+      "query": "Mimic reverse engineering",
+      "limit": 3
+    },
+    {
+      "id": "os-dev-15",
+      "operation": "skill_search",
+      "critical": true,
+      "expected": {
+        "status": "ok",
+        "results.0.skill_id": "software_analysis.mimic_littledavi",
+        "results.0.selectable": false
+      },
+      "query": "Mimic reverse engineering",
+      "limit": 3,
+      "include_candidates": true
+    },
+    {
+      "id": "os-dev-16",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "must"
+      },
+      "input": {
+        "task": {
+          "id": "ctx16",
+          "text": "Use bounded current evidence"
+        },
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "must",
+            "token_estimate": 160,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "history",
+            "token_estimate": 6000,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-dev-17",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "must"
+      },
+      "input": {
+        "task": {
+          "id": "ctx17",
+          "text": "Use bounded current evidence"
+        },
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "must",
+            "token_estimate": 160,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "history",
+            "token_estimate": 6000,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-dev-18",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "must"
+      },
+      "input": {
+        "task": {
+          "id": "ctx18",
+          "text": "Use bounded current evidence"
+        },
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "must",
+            "token_estimate": 160,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "history",
+            "token_estimate": 6000,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-dev-19",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "must"
+      },
+      "input": {
+        "task": {
+          "id": "ctx19",
+          "text": "Use bounded current evidence"
+        },
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "must",
+            "token_estimate": 160,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "history",
+            "token_estimate": 6000,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-dev-20",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "must"
+      },
+      "input": {
+        "task": {
+          "id": "ctx20",
+          "text": "Use bounded current evidence"
+        },
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "must",
+            "token_estimate": 160,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "history",
+            "token_estimate": 6000,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-dev-21",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "capsule.context_refs.0": "must"
+      },
+      "input": {
+        "task": {
+          "id": "ctx21",
+          "text": "Use bounded current evidence"
+        },
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "must",
+            "token_estimate": 160,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          },
+          {
+            "id": "history",
+            "token_estimate": 6000,
+            "load_level": 1,
+            "relevance": 0.02,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-dev-22",
+      "operation": "os_plan",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "selected_skill_ids.0": "frontend_motion.motion_react"
+      },
+      "input": {
+        "task": {
+          "id": "p22",
+          "text": "React layout Motion"
+        },
+        "skill_query": "Motion React gestures",
+        "skill_limit": 1,
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "brief",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-dev-23",
+      "operation": "os_plan",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "selected_skill_ids.0": "frontend_motion.gsap"
+      },
+      "input": {
+        "task": {
+          "id": "p23",
+          "text": "GSAP hero"
+        },
+        "skill_query": "GSAP scroll timeline",
+        "skill_limit": 1,
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "brief",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-dev-24",
+      "operation": "os_plan",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "selected_skill_ids.0": "visual_research.met_open_access"
+      },
+      "input": {
+        "task": {
+          "id": "p24",
+          "text": "Met research"
+        },
+        "skill_query": "Met public domain museum images",
+        "skill_limit": 1,
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "brief",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-dev-25",
+      "operation": "os_plan",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "selected_skill_ids.0": "product_design.refero_flow_research"
+      },
+      "input": {
+        "task": {
+          "id": "p25",
+          "text": "Refero onboarding"
+        },
+        "skill_query": "Refero user flows product screens",
+        "skill_limit": 1,
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "brief",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-dev-26",
+      "operation": "os_plan",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "selected_skill_ids.0": "visual_research.letterform_archive"
+      },
+      "input": {
+        "task": {
+          "id": "p26",
+          "text": "Letterform research"
+        },
+        "skill_query": "Letterform Archive typography print",
+        "skill_limit": 1,
+        "budget_class": "SMALL",
+        "sources": [
+          {
+            "id": "brief",
+            "token_estimate": 120,
+            "load_level": 0,
+            "relevance": 1,
+            "authority": 1,
+            "dependency": 1,
+            "required": true,
+            "private": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-dev-27",
+      "operation": "skill_candidate_check",
+      "critical": true,
+      "expected": {
+        "status": "invalid"
+      },
+      "input": {
+        "schema_version": 1,
+        "skill_id": "bad.skill",
+        "scope_id": "s",
+        "status": "candidate",
+        "method": [
+          "x"
+        ],
+        "evidence": [],
+        "hidden_reasoning": "x"
+      }
+    },
+    {
+      "id": "os-dev-28",
+      "operation": "skill_learn",
+      "critical": true,
+      "expected": {
+        "status": "insufficient_evidence"
+      },
+      "input": {
+        "skill_id": "new.skill",
+        "scope_id": "s",
+        "observations": [
+          {
+            "source_ref": "a",
+            "outcome": "success",
+            "rules": [
+              "r"
+            ],
+            "failure_modes": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-dev-29",
+      "operation": "skill_learn",
+      "critical": true,
+      "expected": {
+        "status": "candidate_proposed"
+      },
+      "input": {
+        "skill_id": "new.skill",
+        "scope_id": "s",
+        "rollback_ref": "r",
+        "observations": [
+          {
+            "source_ref": "a",
+            "outcome": "success",
+            "rules": [
+              "x"
+            ],
+            "failure_modes": []
+          },
+          {
+            "source_ref": "b",
+            "outcome": "success",
+            "rules": [
+              "x"
+            ],
+            "failure_modes": []
+          },
+          {
+            "source_ref": "c",
+            "outcome": "success",
+            "rules": [
+              "x"
+            ],
+            "failure_modes": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "os-dev-30",
+      "operation": "skill_candidate_store",
+      "critical": true,
+      "expected": {
+        "status": "planned",
+        "applied": false,
+        "active_registry_mutated": false
+      },
+      "input": {
+        "schema_version": 1,
+        "skill_id": "video.store",
+        "scope_id": "s",
+        "title": "Store",
+        "version": "0.1",
+        "status": "candidate",
+        "method": [
+          "separate motion"
+        ],
+        "failure_modes": [],
+        "inputs": [],
+        "output_contract": {},
+        "evidence": [
+          {
+            "source_ref": "a",
+            "outcome": "success"
+          },
+          {
+            "source_ref": "b",
+            "outcome": "success"
+          },
+          {
+            "source_ref": "c",
+            "outcome": "success"
+          }
+        ],
+        "rollback_ref": "r"
+      }
+    },
+    {
+      "id": "os-dev-31",
+      "operation": "context_compile",
+      "critical": true,
+      "expected": {},
+      "input": {
+        "task": {
+          "id": "bad",
+          "text": ""
+        }
+      },
+      "expected_error": true
+    }
+  ]
+}

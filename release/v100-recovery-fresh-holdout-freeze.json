@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "aco_version": "1.0.0",
+  "disposition": "final_recovery_fresh_release_gate",
+  "holdout_number": 3,
+  "frozen_before_first_execution": true,
+  "files": {
+    "config/aco-os-v100-holdout-3.json": {
+      "sha256": "aeda7400a54137c1cc8cdf1cd9df2678427c8077e1273fc60a1a0ee58ceb5877",
+      "cases": 24
+    },
+    "config/token-economy-v100-holdout-3.json": {
+      "sha256": "d57dc1027e190435a45184c1b5a42963af183d2593f6dddd223b8c64f2067de2",
+      "cases": 12
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "aco_version": "1.0.0",
+  "disposition": "post_final_fresh_holdout_semantic_freeze",
+  "holdout_number": 4,
+  "files": {
+    "scripts/aco/bootstrap.py": "77861d94efd1a3293d71a14c29a09ff5cf953e4b838cd50384d524106508a252",
+    "scripts/aco/token_budget.py": "54d31b25843d683565d936527cd988928974d56c617bbaa03f70228de51cf6df",
+    "scripts/aco/context_compiler.py": "ae09603ad1867f99734d22393657d1b20bd9e937e0ae28400e1077b7a2a053e1",
+    "scripts/aco/skills.py": "38df711156a2c4879af699e1a873fa2c958da51f5a750e3e35835cac29f15e86",
+    "scripts/aco/kernel.py": "c5f56917f6168cacde9a341eaf6366d827887733f7323d12fe99b8333de06228",
+    "scripts/aco/os_benchmark.py": "5a05737816a68e918c33072ad8cb2384287f3e1c42230a34f8bc6418fac132d0",
+    "config/token-policy.json": "cc19a66ade1ba8bc9267f6d69e17432749f62dd3d9331afea45df33cc32de0cb",
+    "config/skill-policy.json": "923daa268b69d5f19fe460a84b085a62afb78948ef137a26bc4d6c777ea8cc5b",
+    "registry/bootstrap.json": "c08e0bb003aece28bf60fd2fc0b6e383c487514328a47cfb6048b31a81e31511",
+    "registry/skills.json": "93458c6b289a1116128b42345915d3ebe76512222a0f0d537ddce6d78b5e4d7c",
+    "skillpacks/frontend-motion/animejs.json": "d599236d89dbbb9008f87b0e90685b48b7c5b21fd9e899b2484bbb35fbe01130",
+    "skillpacks/frontend-motion/gsap.json": "f3ab70b539ca9bfb307531f8f31f50763c3886c521c506719e1c2d7a8db291d7",
+    "skillpacks/frontend-motion/library_selection.json": "5100869ef30835b7cb33bbf476a102303db59122834194476f419825cdb77066",
+    "skillpacks/frontend-motion/motion_react.json": "37d6a32de7b3c9995266a07228ec8bb4f5e6b98c5c8734fb98772373a393719b",
+    "skillpacks/frontend-motion/react_spring.json": "bef39882167451ea4fbd0b5834fa4bffad12affa75945069dcc4b297391cf012",
+    "skillpacks/product-design/design_spells_microinteractions.json": "4a4e101e276a5caf3256a39dbcbe95f969e7831fda653ba55511484747990f10",
+    "skillpacks/product-design/details_reference.json": "9cd094c00f6668c15af0e3a9aa7f622394444ac613a13a5c5a86a8489905ac94",
+    "skillpacks/product-design/refero_flow_research.json": "af03aae40b9ff8d9abfe011077047cca23e5cfeeb7376a4b0ce29b84db155687",
+    "skillpacks/software-analysis/mimic_littledavi.json": "abedc4e4a857728a018751024d8e148ae3011309af89939fec9f7997e1c718dc",
+    "skillpacks/visual-research/archive_first.json": "feaece2717c7e34fa75d6c50d5a8643cadfdf4b80e95ff831287613c7bcca885",
+    "skillpacks/visual-research/archives_design.json": "84393c1deb3f09ee958426d1caafb184e34c1ee08fa80824adb3b822d3f94205",
+    "skillpacks/visual-research/letterform_archive.json": "9fb940ea2acf40cf2b31a98b342cbb7a28d3c7383b69e3e2ad43c70e30d7dcb7",
+    "skillpacks/visual-research/met_open_access.json": "e1026e35d1b7d97b662682d03003977f9df7753cdb966009bf84631389234eb9",
+    "skillpacks/visual-research/nypl_public_domain.json": "b61e9407521f3404e34bcc8c5866c7ca40c0c11c026ea6498aebe1c295e4b749",
+    "skillpacks/visual-research/rijksmuseum_data.json": "d58c4820e07a1a34a5d7b1184c1f188c92150e6e32f79d8336101f44ee2bc3c2"
+  }
+}

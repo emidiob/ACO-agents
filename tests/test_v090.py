@@ -57,7 +57,7 @@ def _graph():
 
 class Adaptive090Tests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(VERSION, '0.9.0')
+        self.assertEqual(VERSION, '1.0.0')
 
     def test_hidden_reasoning_rejected(self):
         r = _pref(1); r['hidden_reasoning'] = 'never store this'

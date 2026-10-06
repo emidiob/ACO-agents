@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "aco_version": "1.0.0",
+  "chars_per_token_estimate": 4.0,
+  "budget_classes": {
+    "MICRO": {"input_target": 900, "output_target": 180, "max_sources": 4},
+    "SMALL": {"input_target": 1800, "output_target": 450, "max_sources": 7},
+    "STANDARD": {"input_target": 4200, "output_target": 1000, "max_sources": 12},
+    "DEEP": {"input_target": 9000, "output_target": 2200, "max_sources": 20},
+    "RESEARCH": {"input_target": 16000, "output_target": 4000, "max_sources": 32}
+  },
+  "levels": {"initial_max_load_level": 1, "refine_max_load_level": 2},
+  "utility_weights": {"relevance": 0.38, "authority": 0.18, "recency": 0.10, "dependency": 0.24, "decisive": 0.10},
+  "minimum_relevance": 0.12,
+  "required_source_overflow_allowed": true,
+  "policy": "Token budgets are optimization targets, never privacy or safety overrides. Required/decisive authorized context may exceed a target with explicit accounting."
+}

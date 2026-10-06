@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "0.9.0",
+  "aco_version": "1.0.0",
   "canonical_public_repository": "emidiob/ACO-agents",
   "owner_name_allowed_paths": [
     "LICENSE",
