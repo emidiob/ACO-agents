@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "1.0.0",
+  "aco_version": "1.0.2",
   "gate": {
     "minimum_score": 100,
     "maximum_critical_failures": 0
@@ -12,9 +12,9 @@
       "critical": true,
       "expected": {
         "status": "valid",
-        "skills": 15,
+        "skills": 43,
         "active_skills": 14,
-        "candidate_skills": 1
+        "candidate_skills": 29
       }
     },
     {

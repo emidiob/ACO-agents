@@ -1,0 +1,43 @@
+{
+  "skill_id": "image.shared.composition",
+  "title": "Composition and spatial control",
+  "version": "0.1.0",
+  "status": "candidate",
+  "when_to_use": [
+    "When image generation or editing requires composition and spatial control."
+  ],
+  "inputs": [
+    "image brief",
+    "available references",
+    "target model/provider",
+    "creative and technical constraints"
+  ],
+  "method": [
+    "Specify spatial relationships, camera elevation/rotation, lens geometry, subject placement and physical scale. Distinguish off-center framing from position of optical center."
+  ],
+  "failure_modes": [
+    "Center bias",
+    "inconsistent perspectives",
+    "floating objects"
+  ],
+  "output_contract": {
+    "type": "technical_skill_output",
+    "must_include": [
+      "result",
+      "source_or_verification_note"
+    ]
+  },
+  "source_status": "verified_primary",
+  "sources": [
+    {
+      "url": "https://github.com/imagineVid/Awesome-nano-banana-prompts-and-skills"
+    },
+    {
+      "url": "https://github.com/imagineVid/Awesome-seedream-5-pro-prompts-and-skills"
+    },
+    {
+      "url": "https://github.com/kingbootoshi/nano-banana-2-skill"
+    }
+  ],
+  "verification": "Technique candidate grounded in referenced materials; no live model-output QA. Requires real-result benchmark and explicit promotion."
+}

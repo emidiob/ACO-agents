@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "1.0.0",
+  "aco_version": "1.0.2",
   "skills": [
     {
       "skill_id": "visual_research.archive_first",
@@ -277,6 +277,524 @@
       "quality": 0.0,
       "token_estimate": 222,
       "body_path": "skillpacks/software-analysis/mimic_littledavi.json"
+    },
+    {
+      "skill_id": "video.seedance.action",
+      "title": "Action choreography and causality",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "seedance",
+      "tags": [
+        "stunt",
+        "motion",
+        "fight",
+        "physical",
+        "choreography",
+        "movement"
+      ],
+      "summary": "Decompose motion into cause-contact-response-recovery. Fix the participants and geography, define key support/contact points and camera relationship, and avoid ",
+      "quality": 0.5,
+      "token_estimate": 250,
+      "body_path": "skillpacks/seedance/action.json"
+    },
+    {
+      "skill_id": "video.seedance.audio",
+      "title": "Sound-event alignment",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "seedance",
+      "tags": [
+        "sound",
+        "design",
+        "audio",
+        "synchronization",
+        "sound",
+        "effects",
+        "music"
+      ],
+      "summary": "Assign motivated sounds to visible events on the timeline. If reference audio exists, identify timing anchors and distinguish dialogue, ambience, effects and mu",
+      "quality": 0.5,
+      "token_estimate": 256,
+      "body_path": "skillpacks/seedance/audio.json"
+    },
+    {
+      "skill_id": "video.seedance.camera-motion",
+      "title": "Physical camera motion",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "seedance",
+      "tags": [
+        "camera",
+        "dolly",
+        "tracking",
+        "orbit",
+        "tilt",
+        "handheld",
+        "shot",
+        "movement"
+      ],
+      "summary": "Specify subject motion and camera motion as independent physical trajectories. Declare initial camera position, lens/height if known, path, speed, orientation, ",
+      "quality": 0.5,
+      "token_estimate": 273,
+      "body_path": "skillpacks/seedance/camera-motion.json"
+    },
+    {
+      "skill_id": "video.seedance.commercial",
+      "title": "Product commercial shot design",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "seedance",
+      "tags": [
+        "advertisement",
+        "luxury",
+        "product",
+        "beauty",
+        "spot",
+        "macro",
+        "hero"
+      ],
+      "summary": "Separate product-identity constraints from shot style. Use numbered or timed shots with one material/texture action each; reserve a final hero frame, with accur",
+      "quality": 0.5,
+      "token_estimate": 276,
+      "body_path": "skillpacks/seedance/commercial.json"
+    },
+    {
+      "skill_id": "video.seedance.compact",
+      "title": "Token-efficient video prompt compiler",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "seedance",
+      "tags": [
+        "compact",
+        "prompt",
+        "budget",
+        "model",
+        "concise"
+      ],
+      "summary": "Assemble only task-relevant modules: immutable subject block, shot/timeline block, audio if used, global exclusions, and requested output format. Remove repeate",
+      "quality": 0.5,
+      "token_estimate": 289,
+      "body_path": "skillpacks/seedance/compact.json"
+    },
+    {
+      "skill_id": "video.seedance.fashion",
+      "title": "Fashion editorial motion",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "seedance",
+      "tags": [
+        "fashion",
+        "editorial",
+        "lookbook",
+        "garment",
+        "beauty",
+        "portrait"
+      ],
+      "summary": "Freeze garment construction, silhouette, hairstyle, skin and accessories. Select a photographic lighting rationale, one posture or gesture per beat, and camera ",
+      "quality": 0.5,
+      "token_estimate": 276,
+      "body_path": "skillpacks/seedance/fashion.json"
+    },
+    {
+      "skill_id": "video.seedance.found-footage",
+      "title": "Found-footage camera realism",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "seedance",
+      "tags": [
+        "documentary",
+        "camcorder",
+        "DV",
+        "handheld",
+        "analog",
+        "archive",
+        "realism"
+      ],
+      "summary": "Specify an actual capture modality and constrained sensor-era imperfections (focus, exposure, cadence, handling). Pair them with a small believable action and p",
+      "quality": 0.5,
+      "token_estimate": 263,
+      "body_path": "skillpacks/seedance/found-footage.json"
+    },
+    {
+      "skill_id": "video.seedance.identity",
+      "title": "Reference identity and exclusion",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "seedance",
+      "tags": [
+        "reference",
+        "image",
+        "identity",
+        "consistency",
+        "wardrobe",
+        "character",
+        "product"
+      ],
+      "summary": "Give each reference a stable identifier. For each, describe the exact attributes to preserve and those explicitly excluded (including pose, background or lighti",
+      "quality": 0.5,
+      "token_estimate": 282,
+      "body_path": "skillpacks/seedance/identity.json"
+    },
+    {
+      "skill_id": "video.seedance.performance",
+      "title": "Dialogue and performance beats",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "seedance",
+      "tags": [
+        "dialogue",
+        "actors",
+        "facial",
+        "performance",
+        "lip",
+        "sync",
+        "reaction"
+      ],
+      "summary": "Identify language and speaker per beat. Sequence stimulus, hesitation, physical response, spoken line and ending expression. Keep dialogue brief enough for the ",
+      "quality": 0.5,
+      "token_estimate": 268,
+      "body_path": "skillpacks/seedance/performance.json"
+    },
+    {
+      "skill_id": "video.seedance.qa",
+      "title": "Seedance output critical review",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "seedance",
+      "tags": [
+        "quality",
+        "assurance",
+        "video",
+        "artifact",
+        "failures",
+        "continuity"
+      ],
+      "summary": "Evaluate the rendered clip against brief, identity, objects, geometry, timing, camera movement, audio and unexpected content. Report specific time-coded failure",
+      "quality": 0.5,
+      "token_estimate": 280,
+      "body_path": "skillpacks/seedance/qa.json"
+    },
+    {
+      "skill_id": "video.seedance.storyboard",
+      "title": "Storyboard-to-video sequence",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "seedance",
+      "tags": [
+        "storyboard",
+        "panels",
+        "shots",
+        "cinematic",
+        "sequence"
+      ],
+      "summary": "Write an image-generation storyboard sheet with numbered panels, framing, action and total runtime. Audit its order and character consistency. Convert it to a c",
+      "quality": 0.5,
+      "token_estimate": 286,
+      "body_path": "skillpacks/seedance/storyboard.json"
+    },
+    {
+      "skill_id": "video.seedance.timeline",
+      "title": "Timed shot choreography",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "seedance",
+      "tags": [
+        "timeline",
+        "shot",
+        "beats",
+        "seconds",
+        "duration",
+        "continuity"
+      ],
+      "summary": "For a multi-beat clip, draft a global look and immutable subjects, then partition the complete duration into adjacent intervals. Assign each interval one visibl",
+      "quality": 0.5,
+      "token_estimate": 283,
+      "body_path": "skillpacks/seedance/timeline.json"
+    },
+    {
+      "skill_id": "image.shared.reference-decomposition",
+      "title": "Reference role decomposition",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "generative-image",
+      "tags": [
+        "reference",
+        "image",
+        "input",
+        "identity",
+        "style"
+      ],
+      "summary": "Assign each reference a stable identifier and one explicit role: subject identity, composition, pose, lighting, material, wardrobe or color; list inheritance and exclusions.",
+      "quality": 0.5,
+      "token_estimate": 230,
+      "body_path": "skillpacks/generative-image/shared/reference-decomposition.json"
+    },
+    {
+      "skill_id": "image.shared.identity",
+      "title": "Identity and character preservation",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "generative-image",
+      "tags": [
+        "identity",
+        "person",
+        "face",
+        "continuity",
+        "portrait"
+      ],
+      "summary": "Lock characteristic facial geometry, age appearance, hair, proportions and wardrobe while identifying permissible changes; compare decisive facial details across outputs.",
+      "quality": 0.5,
+      "token_estimate": 230,
+      "body_path": "skillpacks/generative-image/shared/identity.json"
+    },
+    {
+      "skill_id": "image.shared.photo-realism",
+      "title": "Physically grounded photography",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "generative-image",
+      "tags": [
+        "photography",
+        "realism",
+        "documentary",
+        "editorial"
+      ],
+      "summary": "Describe a plausible camera position, sensor/lens behavior, lighting direction, dynamic range and physical contact. Prioritize causal image formation over vague 8K hyperrealism.",
+      "quality": 0.5,
+      "token_estimate": 230,
+      "body_path": "skillpacks/generative-image/shared/photo-realism.json"
+    },
+    {
+      "skill_id": "image.shared.optics",
+      "title": "Lighting and optical constraints",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "generative-image",
+      "tags": [
+        "light",
+        "lens",
+        "focus",
+        "depth",
+        "scanning",
+        "exposure"
+      ],
+      "summary": "Specify illumination geometry, falloff, focal plane, glass contact, occlusion, motion blur and lens artifacts only when physically plausible; distinguish scanner from camera optics.",
+      "quality": 0.5,
+      "token_estimate": 230,
+      "body_path": "skillpacks/generative-image/shared/optics.json"
+    },
+    {
+      "skill_id": "image.shared.fashion",
+      "title": "Fashion and beauty editorial direction",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "generative-image",
+      "tags": [
+        "fashion",
+        "beauty",
+        "editorial",
+        "wardrobe",
+        "posing"
+      ],
+      "summary": "Start with art direction and photographic mechanism. Control garment cut, fabric physics, model pose, skin texture and styling; exclude unrequested graphic overlays.",
+      "quality": 0.5,
+      "token_estimate": 230,
+      "body_path": "skillpacks/generative-image/shared/fashion.json"
+    },
+    {
+      "skill_id": "image.shared.product",
+      "title": "Product fidelity and commercial photography",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "generative-image",
+      "tags": [
+        "product",
+        "advertising",
+        "commercial",
+        "packshot",
+        "material"
+      ],
+      "summary": "Lock brand/product geometry, construction, color and labels; define material-light interaction and compositional negative space; suggest typography in post when text exactness is essential.",
+      "quality": 0.5,
+      "token_estimate": 230,
+      "body_path": "skillpacks/generative-image/shared/product.json"
+    },
+    {
+      "skill_id": "image.shared.composition",
+      "title": "Composition and spatial control",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "generative-image",
+      "tags": [
+        "composition",
+        "framing",
+        "perspective",
+        "negative-space",
+        "camera"
+      ],
+      "summary": "Specify spatial relationships, camera elevation/rotation, lens geometry, subject placement and physical scale. Distinguish off-center framing from position of optical center.",
+      "quality": 0.5,
+      "token_estimate": 230,
+      "body_path": "skillpacks/generative-image/shared/composition.json"
+    },
+    {
+      "skill_id": "image.shared.textures",
+      "title": "Material and surface authenticity",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "generative-image",
+      "tags": [
+        "texture",
+        "material",
+        "skin",
+        "glass",
+        "ink",
+        "paper"
+      ],
+      "summary": "Define surface response from material microstructure, reflectance and local wear; separate believable pores and imperfections from over-sharpened synthetic detail.",
+      "quality": 0.5,
+      "token_estimate": 230,
+      "body_path": "skillpacks/generative-image/shared/textures.json"
+    },
+    {
+      "skill_id": "image.shared.editing",
+      "title": "Localized image-to-image edits",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "generative-image",
+      "tags": [
+        "edit",
+        "image-to-image",
+        "mask",
+        "repair",
+        "local"
+      ],
+      "summary": "Freeze untouched regions, name permitted edits, preservation priorities and reference ownership. Verify adjacent boundaries and request minimal targeted changes.",
+      "quality": 0.5,
+      "token_estimate": 230,
+      "body_path": "skillpacks/generative-image/shared/editing.json"
+    },
+    {
+      "skill_id": "image.shared.multiref",
+      "title": "Multi-reference conflict resolution",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "generative-image",
+      "tags": [
+        "references",
+        "style",
+        "identity",
+        "composite",
+        "merge"
+      ],
+      "summary": "Order constraints by priority; assign each input a scoped property list; detect conflicts and exclude irrelevant properties. Avoid claims about numerical reference capacity without provider verification.",
+      "quality": 0.5,
+      "token_estimate": 230,
+      "body_path": "skillpacks/generative-image/shared/multiref.json"
+    },
+    {
+      "skill_id": "image.shared.qa",
+      "title": "Image quality and resolution verification",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "generative-image",
+      "tags": [
+        "qa",
+        "resolution",
+        "detail",
+        "artifact",
+        "upscale"
+      ],
+      "summary": "Inspect actual output, record native dimensions when measurable, test geometry/typography/identity/fidelity against brief; distinguish native resolution from requested prompt and post-upscale.",
+      "quality": 0.5,
+      "token_estimate": 230,
+      "body_path": "skillpacks/generative-image/shared/qa.json"
+    },
+    {
+      "skill_id": "image.shared.artifact-diagnosis",
+      "title": "Visual failure diagnosis and corrective prompting",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "generative-image",
+      "tags": [
+        "artifact",
+        "diagnosis",
+        "iteration",
+        "failed",
+        "prompt"
+      ],
+      "summary": "Identify a single dominant defect, attribute likely prompt/reference/engine cause with uncertainty, adjust smallest effective constraint, and retest without changing unrelated variables.",
+      "quality": 0.5,
+      "token_estimate": 230,
+      "body_path": "skillpacks/generative-image/shared/artifact-diagnosis.json"
+    },
+    {
+      "skill_id": "image.adapter.nano-banana-2",
+      "title": "Nano Banana 2 provider-aware prompt adapter",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "generative-image",
+      "tags": [
+        "image",
+        "nano-banana-2",
+        "model-adapter",
+        "prompt"
+      ],
+      "summary": "Provider/model version must be confirmed in the executing host; use provider verified controls for aspect ratio, size and reference count.",
+      "quality": 0.5,
+      "token_estimate": 185,
+      "body_path": "skillpacks/generative-image/adapters/nano-banana-2.json"
+    },
+    {
+      "skill_id": "image.adapter.nano-banana-2-1",
+      "title": "Nano Banana 2.1 provider-aware prompt adapter",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "generative-image",
+      "tags": [
+        "image",
+        "nano-banana-2-1",
+        "model-adapter",
+        "prompt"
+      ],
+      "summary": "Treat 2.1 as a separately identified capability variant and verify exact model identifier and supported parameters at execution time.",
+      "quality": 0.5,
+      "token_estimate": 185,
+      "body_path": "skillpacks/generative-image/adapters/nano-banana-2-1.json"
+    },
+    {
+      "skill_id": "image.adapter.seedream-4-5",
+      "title": "Seedream 4.5 provider-aware prompt adapter",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "generative-image",
+      "tags": [
+        "image",
+        "seedream-4-5",
+        "model-adapter",
+        "prompt"
+      ],
+      "summary": "Confirm provider and model endpoint before promising multi-image edits, image count, or output quality.",
+      "quality": 0.5,
+      "token_estimate": 185,
+      "body_path": "skillpacks/generative-image/adapters/seedream-4-5.json"
+    },
+    {
+      "skill_id": "image.adapter.seedream-5",
+      "title": "Seedream 5 family provider-aware prompt adapter",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "generative-image",
+      "tags": [
+        "image",
+        "seedream-5",
+        "model-adapter",
+        "prompt"
+      ],
+      "summary": "Distinguish version branding from provider API availability, required asset types and output resolution.",
+      "quality": 0.5,
+      "token_estimate": 185,
+      "body_path": "skillpacks/generative-image/adapters/seedream-5.json"
     }
   ],
   "policy": "Compact index only. Load a skill body on demand; active/validated skills are selectable, candidates are fail-closed."

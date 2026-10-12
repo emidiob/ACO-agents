@@ -1,0 +1,37 @@
+{
+  "skill_id": "video.seedance.compact",
+  "title": "Token-efficient video prompt compiler",
+  "version": "0.1.0",
+  "status": "candidate",
+  "when_to_use": [
+    "Use when a Seedance video task requires token-efficient video prompt compiler; this candidate is for explicit inspection only."
+  ],
+  "inputs": [
+    "brief",
+    "available visual references",
+    "target model/provider capabilities",
+    "duration and aspect ratio"
+  ],
+  "method": [
+    "Assemble only task-relevant modules: immutable subject block, shot/timeline block, audio if used, global exclusions, and requested output format. Remove repeated descriptions; keep safety-critical and temporal constraints. Expand only when generation tests indicate missing context."
+  ],
+  "failure_modes": [
+    "Overcompressing and losing decisive constraints",
+    "redundant stylistic adjectives",
+    "inventing unsupported model parameters."
+  ],
+  "output_contract": {
+    "type": "technical_skill_output",
+    "must_include": [
+      "result",
+      "source_or_verification_note"
+    ]
+  },
+  "source_status": "verified_primary",
+  "sources": [
+    {
+      "url": "https://github.com/LearnPrompt/awesome-seedance"
+    }
+  ],
+  "verification": "Candidate; no real Seedance output validation. Do not auto-activate."
+}

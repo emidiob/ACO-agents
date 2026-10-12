@@ -1,0 +1,37 @@
+{
+  "skill_id": "video.seedance.storyboard",
+  "title": "Storyboard-to-video sequence",
+  "version": "0.1.0",
+  "status": "candidate",
+  "when_to_use": [
+    "Use when a Seedance video task requires storyboard-to-video sequence; this candidate is for explicit inspection only."
+  ],
+  "inputs": [
+    "brief",
+    "available visual references",
+    "target model/provider capabilities",
+    "duration and aspect ratio"
+  ],
+  "method": [
+    "Write an image-generation storyboard sheet with numbered panels, framing, action and total runtime. Audit its order and character consistency. Convert it to a concise video instruction that maps one panel to one temporal stage without skipped or reordered panels."
+  ],
+  "failure_modes": [
+    "Panel count conflicts with duration",
+    "mismatched subject between panels",
+    "prompt accidentally recreates the storyboard layout as a static image."
+  ],
+  "output_contract": {
+    "type": "technical_skill_output",
+    "must_include": [
+      "result",
+      "source_or_verification_note"
+    ]
+  },
+  "source_status": "verified_primary",
+  "sources": [
+    {
+      "url": "https://github.com/LearnPrompt/awesome-seedance"
+    }
+  ],
+  "verification": "Candidate; no real Seedance output validation. Do not auto-activate."
+}

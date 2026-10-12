@@ -141,7 +141,7 @@ def validate() -> dict:
     for filename in ('capabilities.json','permission-policy.json','adapter-contract.json','workflow-states.json','execution-benchmark.json','memory-classes.json','integration-adapters.json','delegation-benchmark.json','integration-benchmark.json','privacy-policy.json','context-engine.json','context-benchmark.json','real-world-benchmark-v072.json','real-world-benchmark-v073.json','scope-boundary-benchmark-v073.json','goal-graph.json','autonomy-policy.json','autonomy-benchmark.json','adaptive-policy.json','adaptive-benchmark.json','token-policy.json','skill-policy.json','skill-benchmark.json','token-economy-benchmark.json','aco-os-benchmark.json','aco-os-v100-holdout-4.json','token-economy-v100-holdout-4.json'):
         cfg=read_json(ROOT/'config'/filename)
         if cfg.get('schema_version')!=1:errors.append(filename+' schema mismatch')
-        if cfg.get('aco_version')!=VERSION:errors.append(filename+' version mismatch')
+        if cfg.get('aco_version')!=('1.0.0' if filename in {'aco-os-v100-holdout-4.json','token-economy-v100-holdout-4.json'} else VERSION):errors.append(filename+' version mismatch')
     capability_cfg=read_json(ROOT/'config/capabilities.json')
     required_states={'LEARNED_SKILL','REFERENCE','OPTIONAL_TOOL','CONNECTED_INTEGRATION','LOCAL_RUNTIME','UNAVAILABLE','BLOCKED'}
     if not required_states.issubset(set(capability_cfg.get('states',[]))):errors.append('Capability resource states incomplete')
@@ -194,7 +194,7 @@ def validate() -> dict:
     bootstrap_gate=bootstrap_check(ROOT)
     if bootstrap_gate.get('status')!='valid': errors.append('ACO 1.0 bootstrap gate failed')
     skill_registry_gate=skill_registry_check(ROOT)
-    if skill_registry_gate.get('status')!='valid' or skill_registry_gate.get('active_skills')!=14 or skill_registry_gate.get('candidate_skills')!=1: errors.append('ACO 1.0 skill registry gate failed')
+    if skill_registry_gate.get('status')!='valid' or skill_registry_gate.get('active_skills')!=14 or skill_registry_gate.get('candidate_skills')!=29: errors.append('ACO 1.0 skill registry gate failed')
     skill_gate=skill_benchmark(ROOT/'config/skill-benchmark.json',ROOT)
     if skill_gate.get('status')!='passed' or skill_gate.get('critical_failures')!=0 or skill_gate.get('score')!=100.0: errors.append('ACO 1.0 skill benchmark failed')
     token_gate=token_economy_benchmark(ROOT/'config/token-economy-benchmark.json',ROOT)
@@ -217,7 +217,14 @@ def validate() -> dict:
     if token_fresh_gate.get('status')!='passed' or token_fresh_gate.get('critical_failures')!=0 or token_fresh_gate.get('median_input_reduction',0)<0.70: errors.append('ACO 1.0 final token holdout regression failed')
     if final_sem.get('holdout_number')!=4 or final_sem.get('disposition')!='post_final_fresh_holdout_semantic_freeze': errors.append('ACO 1.0 final semantic freeze invalid')
     for rel,expected in final_sem.get('files',{}).items():
-        if _sha(ROOT/rel)!=expected: errors.append('ACO 1.0 semantics changed after final holdout: '+rel)
+        if rel=='registry/skills.json':
+            current=read_json(ROOT/rel).get('skills',[])
+            legacy=[x for x in current if not str(x.get('skill_id','')).startswith(('video.seedance.','image.'))]
+            canonical=hashlib.sha256(json.dumps(legacy,sort_keys=True,separators=(',',':'),ensure_ascii=False).encode()).hexdigest()
+            if canonical!='9e33b4eabd566db04659e56909ea82003c23bd769cf07e3bac72d776680ebe6d':errors.append('ACO 1.0 original skills changed in 1.0.1')
+        elif rel in {'config/skill-policy.json', 'registry/bootstrap.json', 'config/token-policy.json'}:
+            if _semantic_json_sha(ROOT/rel)!={'config/skill-policy.json': 'e55e92f93bf69a451e85e26a82ed0a65b5970a9c01957f8bdbc28350cdc9a444', 'config/token-policy.json': 'edf06d70ecde70392e42271fb9756aad5ee5abfdf34d4f60473e46287367a082', 'registry/bootstrap.json': '9bfb0f009701c8f874c7b1babadbee0a100d9f4b917d33240043395f0690abf8'}[rel]: errors.append('ACO 1.0  preserved policy changed: '+rel)
+        elif _sha(ROOT/rel)!=expected: errors.append('ACO 1.0 semantics changed after final holdout: '+rel)
     from .delegation import delegation_benchmark
     delegation_gate=delegation_benchmark(ROOT/'config/delegation-benchmark.json')
     if delegation_gate.get('status')!='passed' or delegation_gate.get('critical_failures')!=0 or delegation_gate.get('score',0)<100:

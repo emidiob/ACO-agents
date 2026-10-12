@@ -1,0 +1,36 @@
+{
+  "skill_id": "video.seedance.found-footage",
+  "title": "Found-footage camera realism",
+  "version": "0.1.0",
+  "status": "candidate",
+  "when_to_use": [
+    "Use when a Seedance video task requires found-footage camera realism; this candidate is for explicit inspection only."
+  ],
+  "inputs": [
+    "brief",
+    "available visual references",
+    "target model/provider capabilities",
+    "duration and aspect ratio"
+  ],
+  "method": [
+    "Specify an actual capture modality and constrained sensor-era imperfections (focus, exposure, cadence, handling). Pair them with a small believable action and practical camera handling; do not combine every defect."
+  ],
+  "failure_modes": [
+    "Generic VHS filter with impossible camera behaviour",
+    "simultaneous incompatible capture technologies."
+  ],
+  "output_contract": {
+    "type": "technical_skill_output",
+    "must_include": [
+      "result",
+      "source_or_verification_note"
+    ]
+  },
+  "source_status": "verified_primary",
+  "sources": [
+    {
+      "url": "https://github.com/LearnPrompt/awesome-seedance"
+    }
+  ],
+  "verification": "Candidate; no real Seedance output validation. Do not auto-activate."
+}

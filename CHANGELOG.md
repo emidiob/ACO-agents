@@ -1,5 +1,26 @@
 # Changelog
 
+## 1.0.2
+
+- Add 12 shared generative-image skill candidates and four provider-specific candidate adapters for Nano Banana 2/2.1 and Seedream 4.5/5.
+- Distinguish source-guided method extraction from actual model output validation: all 16 remain non-selectable candidate skills.
+- Preserve the 1.0.1 Seedance candidates, 363 roles, 16 canonical entry skills, and all OS, security and token-economy behavior.
+- Add image-skill regression gate and release report.
+
+## 1.0.1
+
+- Add 12 attributed, independently distilled Seedance technical modules as non-active skill candidates.
+- Preserve 14 active foundational technical skills and original Mimic candidate without changing the 1.0 kernel.
+- Expand skill-registry and skill-benchmark contracts to 27 technical entries; hold original 15 entries byte-equivalent in semantic content.
+- Require real provider testing, explicit approval and release gate before Seedance activation.
+
+
+## 1.1.0 (candidate build)
+
+- Add 12 Seedance technical skill candidates with upstream provenance and per-skill token estimates.
+- Preserve fail-closed candidate selection: no production activation without real output evaluation and release gates.
+- Separate video prompting techniques from the ACO kernel; active 1.0 roles and permissions remain unchanged.
+
 ## 1.0.0
 
 - Promote Concierge into a token-aware ACO OS kernel over persistent Program, Goal, Task, Context, Policy, Execution, Receipt and Skill references.

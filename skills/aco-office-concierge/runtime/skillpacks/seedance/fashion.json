@@ -1,0 +1,38 @@
+{
+  "skill_id": "video.seedance.fashion",
+  "title": "Fashion editorial motion",
+  "version": "0.1.0",
+  "status": "candidate",
+  "when_to_use": [
+    "Use when a Seedance video task requires fashion editorial motion; this candidate is for explicit inspection only."
+  ],
+  "inputs": [
+    "brief",
+    "available visual references",
+    "target model/provider capabilities",
+    "duration and aspect ratio"
+  ],
+  "method": [
+    "Freeze garment construction, silhouette, hairstyle, skin and accessories. Select a photographic lighting rationale, one posture or gesture per beat, and camera coverage that reveals fabric behaviour. Prefer believable editorial materiality over generic luxury adjectives."
+  ],
+  "failure_modes": [
+    "Garment morphing",
+    "duplicated accessories",
+    "excessive beautification",
+    "conflicting wardrobe descriptions."
+  ],
+  "output_contract": {
+    "type": "technical_skill_output",
+    "must_include": [
+      "result",
+      "source_or_verification_note"
+    ]
+  },
+  "source_status": "verified_primary",
+  "sources": [
+    {
+      "url": "https://github.com/LearnPrompt/awesome-seedance"
+    }
+  ],
+  "verification": "Candidate; no real Seedance output validation. Do not auto-activate."
+}

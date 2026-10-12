@@ -9,7 +9,7 @@ from aco.skills import skill_benchmark,skill_candidate_store,skill_candidate_sto
 from aco.token_budget import token_plan
 
 class Bootstrap100Tests(unittest.TestCase):
- def test_version(self):self.assertEqual(VERSION,'1.0.0')
+ def test_version(self):self.assertEqual(VERSION,'1.0.2')
  def test_bootstrap(self):
   r=bootstrap_check(ROOT);self.assertEqual(r['status'],'valid',r['errors']);self.assertEqual(r['bootstrap']['logical_root'],'aco://current');self.assertEqual(r['bootstrap']['host_resolution']['canonical_repository'],'emidiob/ACO-agents')
  def test_runtime_state_separate(self):
@@ -32,7 +32,7 @@ class Context100Tests(unittest.TestCase):
 class Skills100Tests(unittest.TestCase):
  def candidate(self):return {'schema_version':1,'skill_id':'video.test.reusable','scope_id':'scope-a','title':'Reusable','version':'0.1','status':'candidate','method':['separate camera and subject motion'],'failure_modes':[],'inputs':[],'output_contract':{},'evidence':[{'source_ref':'1','outcome':'success'},{'source_ref':'2','outcome':'success'},{'source_ref':'3','outcome':'success'}],'rollback_ref':'r'}
  def test_registry(self):
-  r=skill_registry_check(ROOT);self.assertEqual((r['status'],r['skills'],r['active_skills'],r['candidate_skills']),('valid',15,14,1))
+  r=skill_registry_check(ROOT);self.assertEqual((r['status'],r['skills'],r['active_skills'],r['candidate_skills']),('valid',43,14,29))
  def test_search(self):self.assertEqual(skill_search('React spring physics animation',root=ROOT)['results'][0]['skill_id'],'frontend_motion.react_spring')
  def test_mimic_closed(self):
   with self.assertRaises(ACOError):skill_resolve('software_analysis.mimic_littledavi',root=ROOT)

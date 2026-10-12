@@ -1,0 +1,37 @@
+{
+  "skill_id": "video.seedance.identity",
+  "title": "Reference identity and exclusion",
+  "version": "0.1.0",
+  "status": "candidate",
+  "when_to_use": [
+    "Use when a Seedance video task requires reference identity and exclusion; this candidate is for explicit inspection only."
+  ],
+  "inputs": [
+    "brief",
+    "available visual references",
+    "target model/provider capabilities",
+    "duration and aspect ratio"
+  ],
+  "method": [
+    "Give each reference a stable identifier. For each, describe the exact attributes to preserve and those explicitly excluded (including pose, background or lighting when not needed). Set a persistent subject/product lock and check head turns, occlusion, or motion for drift."
+  ],
+  "failure_modes": [
+    "Copying an unintended background or pose",
+    "cross-reference attribute leakage",
+    "vague preserve-identity language."
+  ],
+  "output_contract": {
+    "type": "technical_skill_output",
+    "must_include": [
+      "result",
+      "source_or_verification_note"
+    ]
+  },
+  "source_status": "verified_primary",
+  "sources": [
+    {
+      "url": "https://github.com/LearnPrompt/awesome-seedance"
+    }
+  ],
+  "verification": "Candidate; no real Seedance output validation. Do not auto-activate."
+}

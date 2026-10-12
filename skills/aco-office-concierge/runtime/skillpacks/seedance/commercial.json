@@ -1,0 +1,37 @@
+{
+  "skill_id": "video.seedance.commercial",
+  "title": "Product commercial shot design",
+  "version": "0.1.0",
+  "status": "candidate",
+  "when_to_use": [
+    "Use when a Seedance video task requires product commercial shot design; this candidate is for explicit inspection only."
+  ],
+  "inputs": [
+    "brief",
+    "available visual references",
+    "target model/provider capabilities",
+    "duration and aspect ratio"
+  ],
+  "method": [
+    "Separate product-identity constraints from shot style. Use numbered or timed shots with one material/texture action each; reserve a final hero frame, with accurate geometry and clean space for post-produced typography. State motion and lighting, not only aesthetic adjectives."
+  ],
+  "failure_modes": [
+    "Distorted logos/labels",
+    "too many shots for duration",
+    "contradictory material physics."
+  ],
+  "output_contract": {
+    "type": "technical_skill_output",
+    "must_include": [
+      "result",
+      "source_or_verification_note"
+    ]
+  },
+  "source_status": "verified_primary",
+  "sources": [
+    {
+      "url": "https://github.com/LearnPrompt/awesome-seedance"
+    }
+  ],
+  "verification": "Candidate; no real Seedance output validation. Do not auto-activate."
+}
