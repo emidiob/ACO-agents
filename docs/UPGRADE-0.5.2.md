@@ -1,3 +1,5 @@
+> Historical upgrade notes. For the current package, follow [Upgrading](UPGRADING.md) and the [Beginner Guide](../BEGINNER-GUIDE.md).
+
 # Upgrade to ACO v0.5.2
 
 This is a resource/method expansion over v0.5.1. Compact Memory and Pipeline != Project remain unchanged.

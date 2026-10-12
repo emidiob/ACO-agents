@@ -2,7 +2,7 @@
 
 **A working library for an artist, studio, agency or cultural business — with scoped private knowledge and evidence-aware execution.**
 
-**ACO v1.0.0 · 363 roles · 16 entry skills · 61 workflows · 99 optional resources · token-aware OS + technical skill registry.**
+**ACO v1.0.3 · 363 roles · 16 entry skills · 61 workflows · 99 optional resources · token-aware OS + technical skill registry.**
 
 Proprietary, source-available. Redistribution is restricted by [LICENSE](LICENSE). No third-party software, fonts, models or private knowledge are bundled.
 
@@ -31,13 +31,11 @@ A natural request
 
 No office-by-office performance or unnecessary planning ceremony. A simple request should receive a simple result. A commissioned essay, design system or codebase still needs a complete deliverable.
 
-**v1.0.0 Operating System & Token Economy:** Concierge now resolves `aco://current`, compiles bounded Task Capsules from Role + Skills + Policies + Context references, and treats tokens as a budget instead of preloading repository/history. `ACO_RUNTIME_ROOT` is versioned code; `ACO_HOME` is private durable state, including a compact learned-skill candidate inbox. Technical skills are loaded on demand from a fail-closed registry; unverified candidates such as the supplied Mimic lead cannot be auto-selected. See [ACO OS 1.0](docs/ACO-OS-1.0.md) and [Global Bootstrap](docs/GLOBAL-BOOTSTRAP.txt).
+**1.0.3 consolidates the existing fixes and documentation.** Standard macOS `/var`, `/tmp` and `/etc` system aliases work with the path checks, and Git-backed memory/handoff paths use canonical locations after safety validation. README, beginner setup, upgrade instructions and release metadata now describe the same package. See [Changelog](CHANGELOG.md) and the [1.0.3 test report](ACO-TEST-REPORT-v1.0.3.md).
 
-**v0.9.0 Adaptive ACO:** explicit corrections, scoped preferences and observable outcomes can now be stored as structured feedback evidence, aggregated into bounded **shadow-only** candidates, and compared against the deterministic Goal Graph without mutating production behavior. Feedback ledgers are scope-bound SHA-256 chains; hidden reasoning fields are rejected; one correction never becomes policy; permissions/privacy cannot be learned away; and promotion requires exact-hash benchmark evidence, historical regressions, explicit approval and a rollback reference. See [Adaptive ACO](docs/ADAPTIVE-ACO.md).
+The current runtime resolves `aco://current` and loads the minimum role, skills, policies and context for a task. It keeps versioned code (`ACO_RUNTIME_ROOT`) separate from private saved state (`ACO_HOME`). Goal planning, execution receipts and shadow-only feedback support continuity without granting account access. See [ACO OS](docs/ACO-OS-1.0.md), [Goal Graph](docs/GOAL-GRAPH.md) and [Adaptive ACO](docs/ADAPTIVE-ACO.md).
 
-**v0.8.0 Goal Graph + Autonomy Engine:** substantial multi-step work can now be represented as `Program → Goal → Task → Dependency`. ACO deterministically selects a bounded next task, prepares permission-aware host actions, reconciles uncertain outcomes, applies bounded idempotent recovery and requires receipt evidence before verification. `SIMULATE` never returns executable host actions; the local engine never calls providers itself. See [Goal Graph & Autonomy Engine](docs/GOAL-GRAPH.md).
-
-**v0.7.3 context-boundary hardening:** `context-plan` and Hybrid Memory now require exact cross-scope authorization: a foreign private source must expose a concrete `scope_id` and that exact ID must be listed in `authorized_private_scope_ids`. The old global `cross_scope_authorized=true` flag no longer grants access, unknown private scope remains blocked, and `NONE` / `BLIND` / `LIGHT` / `FULL` / `BLIND-FIRST` still enforce relevance and character budgets. Release validation adds an adversarial scope-boundary benchmark plus a new frozen fresh routing holdout while preserving the 120-scenario routing/context/memory regression suite. These are deterministic package regressions, not an independent human-quality benchmark.
+The technical registry has **43 entries: 14 active and 29 candidates**. Seedance and generative-image candidates remain available for explicit inspection and evaluation; inclusion does not establish live model availability or measured output quality.
 
 **Artistic authority remains with the artist.** Do not construct a practice around open calls or sales metrics. Do not mistake approved strategy for validated evidence.
 
@@ -61,9 +59,9 @@ No office-by-office performance or unnecessary planning ceremony. A simple reque
 
 The **Concierge** routes; **Context Setup** initializes the minimum knowledge structure; **Context Steward** records actual work and approved changes. Browse the [visual agent catalogue](docs/AGENT-CATALOG.md) or [exact role paths](docs/ALL-ROLES.md). Usually you do not need to pick individual agents.
 
-## What makes 0.7.1 different?
+## Working rules
 
-0.7.1 is a behavior, memory and integration-hardening release. It keeps the 363 roles, 16 entry skills and 61 workflows while adding two reviewed code-intelligence resources. The focus is not more personas.
+These rules apply across the current release. They are explained in the task protocols rather than requiring every role to be loaded.
 
 **Delegation now defaults to resolving rather than deferring.** When the user delegates a professional judgment and the available evidence supports a reasonable reversible choice, ACO makes the choice and continues. It asks only for decisive missing facts, irreducible personal preference, private-scope clarification or consequential authorization. The deterministic `delegation-benchmark` guards this behavior.
 
@@ -71,7 +69,7 @@ The **Concierge** routes; **Context Setup** initializes the minimum knowledge st
 
 **Hybrid Memory separates kinds of truth.** Durable human/project decisions may live compactly in the canonical ACO record; Git/source control remains authoritative for code; symbols/call graphs/indexes stay local/rebuildable; research corpora stay in the appropriate research system; task state remains temporary. `memory-resolve` exposes this routing without writing anything.
 
-**Integration discovery is provider-neutral.** `integration-resolve` selects only from caller-supplied current adapter evidence and requires exact capability, availability, connection where applicable, operation authorization and verification. It never executes a provider. The 0.7.0 execution/permission/receipt model remains in force.
+**Integration discovery is provider-neutral.** `integration-resolve` selects only from caller-supplied current adapter evidence and requires exact capability, availability, connection where applicable, operation authorization and verification. It never executes a provider. The shared execution, permission and receipt checks remain in force.
 
 **Release hygiene is stricter.** `privacy-scan` is a release gate for likely personal/private data, credential leakage, real Drive IDs and local user paths, with narrow allowances for the public copyright holder, canonical repository and synthetic example fixtures. Version-specific Codex migration prompts are no longer stored in the repository; see [Upgrading](docs/UPGRADING.md).
 
@@ -153,7 +151,7 @@ Existing clutter is a separate migration: inventory → reviewed consolidation �
 
 ## A small toolkit, chosen per task
 
-The [resource catalogue](docs/RESOURCE-CATALOG.html) includes the user's earlier selections plus 35 curated additions. **None is installed or connected by this package.** Existing entries retain their review provenance; only the new selection was reviewed for this consolidation.
+The [resource catalogue](docs/RESOURCE-CATALOG.html) contains 99 optional references with their recorded review provenance. **None is installed or connected by this package.** This maintenance release does not claim a fresh security or availability audit of those services.
 
 Default: use the current host and current software. For artistic research, Zotero/Tropy/Mirador can help when the task warrants them. For web QA, existing browser tools plus optional axe-core/Lighthouse can provide evidence. FFmpeg/OTIO/OIIO can support media delivery. Twenty, Plane, n8n and Omeka are scale-dependent options, not a mandatory office stack.
 
@@ -196,7 +194,7 @@ Use the returned action hash to bind explicit approval when the permission level
 
 ## What has and has not been verified
 
-The distributed release test report records the gates actually run, with explicit scope and limitations; the repository keeps evergreen validation instructions rather than a version-specific upgrade prompt. Unit tests check local behavior, not taste, curatorial expertise, improved revenue or legal accuracy. Supplied evidence references are not proof of truth.
+The included [1.0.3 test report](ACO-TEST-REPORT-v1.0.3.md) records the gates actually run, with explicit scope and limitations. [Validation](docs/VALIDATION.md) explains how to reproduce the checks; earlier reports retain their historical results. Unit tests check local behavior, not taste, curatorial expertise, improved revenue or legal accuracy. Supplied evidence references are not proof of truth.
 
 This package does not establish that your Mac, Codex session, Drive connector, phone account, ComfyUI GPU or paid generation service works. It installs no schedules and makes no calls. [Host acceptance tests](docs/HOST-ACCEPTANCE-TESTS.md) are for your actual environment; unrun rows stay unrun.
 

@@ -1,3 +1,5 @@
+> Historical upgrade notes. For the current package, follow [Upgrading](UPGRADING.md) and the [Beginner Guide](../BEGINNER-GUIDE.md).
+
 # Upgrade to ACO v0.5.1
 
 This full release uses the latest 363-role v0.5.0 specialist-upgrade package as its baseline, not the earlier alternative 361-role v0.5.0 ZIP. It preserves all 363 roles and 16 entry-point skills. Six office recipes bring the workflow total to 38. A 40-entry optional resource registry captures both screenshot batches. Three ambiguous identities remain gated; all source/asset/runtime claims are dated, conditional and not execution-tested.

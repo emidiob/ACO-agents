@@ -1,6 +1,6 @@
 # Historical supplied-resource review — 0.5.2
 
-This is the inherited review record for the earlier 62 resources. For the current 0.6.0 consolidation and 35 additions, see [SOURCE-REVIEW.md](SOURCE-REVIEW.md). It is not a claim of a fresh execution or security audit.
+This is the inherited review record for the earlier 62 resources. For the recorded 0.6.0 consolidation and 35 additions, see [SOURCE-REVIEW.md](SOURCE-REVIEW.md). It is not a claim of a fresh execution or security audit.
 
 
 Scope: 62 deduplicated resource identities from the accumulated supplied screenshots, plus the ACO workflows that route to them when useful. Reviewed public pages, READMEs and selected skill instructions; no full security/license audit, package installation or execution benchmark. No star counts used as proof of quality. The registry records source URLs, scope/uncertainty, role routing and requirements.

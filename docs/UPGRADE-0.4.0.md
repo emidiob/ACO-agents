@@ -1,3 +1,5 @@
+> Historical upgrade notes. For the current package, follow [Upgrading](UPGRADING.md) and the [Beginner Guide](../BEGINNER-GUIDE.md).
+
 > Historical/previous release material. For current storage, follow [v0.5.1 Compact Memory](COMPACT-MEMORY.md); do not initialize old event/session folder layouts.
 
 # Upgrade to ACO 0.4.0

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "1.0.2",
+  "aco_version": "1.0.3",
   "chars_per_token_estimate": 4.0,
   "budget_classes": {
     "MICRO": {

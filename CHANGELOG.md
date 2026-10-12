@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.3
+
+- Consolidate the merged macOS fixes: allow only verified root-owned standard `/var`, `/tmp` and `/etc` aliases; preserve rejection of user-created symlinks and unsafe traversal.
+- Canonicalize Git-backed memory and compact handoff paths after path safety checks, including nested workspaces.
+- Refresh README, beginner setup, start page, CLI, upgrade and validation guides; distinguish current instructions from historical reports.
+- Align current version metadata, generated profiles and packaged runtime with 1.0.3; include the complete documentation, license, integrity manifest and release test report.
+- Preserve role counts, technical candidate status, integration resolver and existing permission policies. No new provider access or model activation.
+
 ## 1.0.2
 
 - Add 12 shared generative-image skill candidates and four provider-specific candidate adapters for Nano Banana 2/2.1 and Seedream 4.5/5.

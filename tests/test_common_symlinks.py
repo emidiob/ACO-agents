@@ -69,7 +69,7 @@ class SymlinkTests(unittest.TestCase):
             with self.subTest(alias=alias):
                 no_symlinks(Path(alias))
 
-        with tempfile.TemporaryDirectory(dir='/var/tmp') as directory:
+        with tempfile.TemporaryDirectory(dir='/tmp') as directory:
             root = Path(directory)
             path = root / 'data.json'
             write_json(path, {"ok": True})

@@ -1,4 +1,4 @@
-# ACO CLI — v0.9.0
+# ACO CLI — v1.0.3
 
 Python 3.11+, macOS/Linux or Windows through WSL. Run `python3 scripts/aco_cli.py COMMAND --help`. Outputs are JSON. Keep private inputs outside the ACO source checkout. Source commands and installed minimal runtime are distinct; install/migrate/generate/validate need the full release.
 
@@ -144,3 +144,26 @@ python3 scripts/aco_cli.py adaptive-benchmark --input config/adaptive-benchmark.
 ```
 
 `feedback-append` prints an updated hash-chained ledger but does not save it. `adaptation-propose` requires repeated scoped evidence. `shadow-rank` returns both base and shadow task order without mutating the graph. `promotion-check` returns eligibility only; it never activates a candidate. See [ADAPTIVE-ACO.md](ADAPTIVE-ACO.md).
+
+
+## Runtime bootstrap and technical skills
+
+These commands inspect the current release and its registry. They do not connect accounts or activate candidate methods.
+
+```bash
+python3 scripts/aco_cli.py bootstrap-resolve --root .
+python3 scripts/aco_cli.py skill-registry-check --root .
+python3 scripts/aco_cli.py skill-search --query "frontend" --root .
+python3 scripts/aco_cli.py skill-search --query "seedream" --include-candidates --root .
+python3 scripts/aco_cli.py os-benchmark
+python3 scripts/aco_cli.py token-economy-benchmark
+python3 scripts/aco_cli.py skill-benchmark
+```
+
+`bootstrap-resolve` reports the resolved versioned code location. `skill-resolve --skill ID` loads an active registry entry; `--allow-candidate` permits inspection while leaving that candidate non-selectable. The 1.0.3 registry contains 14 active and 29 candidate entries. No live image/video output evaluation is implied.
+
+`token-plan`, `context-compile` and `os-plan` accept `--input` JSON and return bounded planning results. `skill-candidate-check`, `skill-learn` and `skill-promotion-check` validate learning evidence and promotion eligibility. `skill-candidate-store` uses a preview by default; an explicit `--apply` stores an approved candidate in private `ACO_HOME` state without activating it. See [ACO OS](ACO-OS-1.0.md) and each command's `--help` before supplying private inputs.
+
+## macOS paths in 1.0.3
+
+The runtime accepts the verified root-owned standard `/var`, `/tmp` and `/etc` aliases to their `/private` targets. Git-backed memory and handoff paths are canonicalized after safety validation. User-created symlinks and unsafe traversal remain rejected. This is a filesystem compatibility fix; it does not grant GitHub or app permissions.

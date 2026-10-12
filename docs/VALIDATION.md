@@ -1,4 +1,34 @@
-# ACO v0.4.3 — validation record
+# Release validation
+
+For the current **1.0.3** consolidation, see the included [release test report](../ACO-TEST-REPORT-v1.0.3.md). Its results apply to the checks actually run for that package. Earlier reports retain their original versions, platforms and results.
+
+## Reproduce the current checks
+
+From the complete release, using Python 3.11 or newer:
+
+```bash
+python3 scripts/generate.py --check
+python3 scripts/aco_cli.py validate
+python3 -m unittest discover -s tests -v
+```
+
+Maintainers regenerate canonical derivatives with `python3 scripts/generate.py` and rebuild `release/manifest.json` with `python3 scripts/build_manifest.py` before validation. Do not regenerate files merely to hide unexpected differences in an extracted release.
+
+The GitHub workflow runs generated parity, validation and the unit suite on macOS and Ubuntu with Python 3.11 and 3.13. Local results and CI results must be reported separately.
+
+## Build the complete package
+
+```bash
+python3 scripts/build_release.py --output /absolute/path/outside/repo/ACO-agents-v1.0.3-complete.zip
+```
+
+Use an absolute output path without `..` components and keep the ZIP outside the source checkout. The builder uses the release manifest, preserves executable modes and emits a SHA-256 file. SHA-256 checks transfer integrity; it is not a developer digital signature. Include README, BEGINNER-GUIDE, CHATGPT, AGENTS, CHANGELOG, LICENSE, docs, runtime, profiles and the current test report.
+
+Local tests verify package behavior. They do not certify model outputs, artistic judgment or authenticated external integrations. Use [host acceptance tests](HOST-ACCEPTANCE-TESTS.md) with authorized synthetic inputs for actual host acceptance.
+
+---
+
+## Historical validation record — 0.4.3
 
 Checked 2026-09-19 with Python 3.13.5 on Linux.
 

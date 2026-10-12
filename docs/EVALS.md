@@ -1,4 +1,4 @@
-# ACO evaluation gates — v0.7.3
+# ACO evaluation gates
 
 Package tests establish mechanical behavior. They do **not** prove artistic quality, curatorial judgment, strategic value, legal correctness, security of third-party services or universal host reliability. ACO keeps separate gates for routing, behavior, execution policy, delegation, adapter resolution and privacy hygiene.
 
@@ -87,3 +87,7 @@ v0.7.3 closes only if:
 ## Future comparisons
 
 Keep deterministic policy tests distinct from model-quality evaluation. Freeze candidate behavior before fresh final holdouts when routing/model-mediated logic changes. Never reinterpret readiness as execution or an unavailable live-host test as passed evidence.
+
+## Current release verification
+
+The current release also validates the Goal Graph, adaptive evidence, OS bootstrap, token economy and technical skill registry. Use the commands in [CLI](CLI.md), the reproducible procedure in [Validation](VALIDATION.md), and the [1.0.3 report](../ACO-TEST-REPORT-v1.0.3.md) for executed results. Historical frozen holdouts keep their original version and hashes. Candidate skill structure tests do not establish live model-output quality.

@@ -1,4 +1,4 @@
-# Task methods — 0.6.2
+# Task methods
 
 These are the 19 original task methods introduced in 0.6.0, mapped to 114 existing roles and preserved in 0.6.2. Load the relevant method only. They do not train model weights, confer professional credentials or install a service.
 

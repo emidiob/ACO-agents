@@ -1,4 +1,4 @@
-> Current release is v0.5.1. Follow the new package migration prompt; Compact Memory affects future storage, not automatic deletion of existing private data.
+> Historical migration notes for the old plugin package. For the current release, use [Upgrading](UPGRADING.md) and the [Beginner Guide](../BEGINNER-GUIDE.md). Preserve private knowledge; no automatic cleanup.
 
 # Migration from ACO plugin v0.2.1
 
