@@ -9,6 +9,14 @@ class CompactTests(unittest.TestCase):
  def setUp(self):
   self.tmp=tempfile.TemporaryDirectory();self.b=Path(self.tmp.name);self.m=CompactMemory(self.b/'knowledge',self.b/'state');self.m.init();self.org=self.add('organization','studio','Studio');self.w=self.b/'work';self.w.mkdir()
  def tearDown(self):self.tmp.cleanup()
+ def test_git_tracked_handoff_refused_in_nested_workspace(self):
+  subprocess.run(['git','init','-q',str(self.w)],check=True)
+  self.w=self.w/'nested';self.w.mkdir()
+  private=self.w/'.agent-context';private.mkdir()
+  (private/'old.md').write_text('tracked fixture')
+  subprocess.run(['git','-C',str(self.w),'add','.agent-context/old.md'],check=True)
+  with self.assertRaises(Conflict):self.start()
+  self.assertFalse((private/'HANDOFF.md').exists())
  def add(self,kind,key,name,parent=None,**kw):return self.m.add_entity(kind,key,name,parent,commitment='existing_entity',approval_ref='user-test-approval',**kw)['entity']
  def files(self):return sorted(str(p.relative_to(self.m.root)) for p in self.m.root.rglob('*') if p.is_file())
  def doc(self,e=None):return (self.m.root/(e or self.org)['document']).read_text()

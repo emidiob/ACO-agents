@@ -5,6 +5,8 @@ import hashlib
 import json
 import os
 import re
+import stat
+import sys
 import tempfile
 import uuid
 from datetime import datetime, timezone
@@ -59,11 +61,60 @@ def safe_path(root: Path, relative: str | Path) -> Path:
     return cursor
 
 
+def _system_alias(path: Path) -> Path | None:
+    """Allow only root-owned macOS aliases with their exact OS targets."""
+    if sys.platform != 'darwin':
+        return None
+
+    expected = {
+        Path('/var'): Path('/private/var'),
+        Path('/tmp'): Path('/private/tmp'),
+        Path('/etc'): Path('/private/etc'),
+    }.get(path)
+    if expected is None:
+        return None
+
+    try:
+        info = path.lstat()
+        parent = path.parent.stat()
+        if (
+            not stat.S_ISLNK(info.st_mode)
+            or info.st_uid != 0
+            or parent.st_uid != 0
+            or parent.st_mode & 0o022
+        ):
+            return None
+
+        target = Path(os.readlink(path))
+        if not target.is_absolute():
+            target = path.parent / target
+        # Do not resolve: that would conceal further symlinks.
+        if target != expected:
+            return None
+        return expected
+    except OSError:
+        return None
+
+
 def no_symlinks(path: Path) -> None:
-    path = path.absolute()
-    for p in (path, *path.parents):
-        if p.is_symlink():
-            raise ACOError(f'Refusing symlink path component: {p}')
+    """Reject symlinks except verified macOS system aliases."""
+    path = Path(path).absolute()
+    # Do not normalize away components before checking them.
+    if '..' in path.parts:
+        raise ACOError(f'Refusing parent traversal: {path}')
+
+    cursor = Path(path.anchor)
+    for part in path.parts[1:]:
+        cursor /= part
+        if cursor.is_symlink():
+            target = _system_alias(cursor)
+            if target is None:
+                raise ACOError(
+                    f'Refusing symlink path component: {cursor}'
+                )
+            # Check /private and the destination itself before proceeding.
+            no_symlinks(target)
+            cursor = target
 
 
 def atomic_write(path: Path, data: bytes, mode: int = 0o600) -> None:

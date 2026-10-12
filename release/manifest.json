@@ -3,7 +3,7 @@
   "files": {
     ".github/workflows/validate.yml": {
       "mode": 420,
-      "sha256": "816b14a915577ab2d386ce950488865806b9386a5e81007a3847e681385cf989"
+      "sha256": "490da23cd0784bead663226c3bfcdc4cbefec08cac97bcd4038727effd720da3"
     },
     ".gitignore": {
       "mode": 420,
@@ -2303,11 +2303,11 @@
     },
     "scripts/aco/common.py": {
       "mode": 420,
-      "sha256": "1d576fe0f2bdb76638b87ab2de2b6327f61761c4df886eb04d869c6081769d16"
+      "sha256": "d099a3bbb26a318b5bbc38088f5c416a5a5395e0de2353b83a47be83ea20bc65"
     },
     "scripts/aco/compact.py": {
       "mode": 420,
-      "sha256": "d837584c630f595ac58ce237aa7c595505661262f2ef16f04b4125f2b005f7fc"
+      "sha256": "341f669cc657f9f722f9e13c537d1cc179edf5ea8198c88d12464fb632910cd0"
     },
     "scripts/aco/context.py": {
       "mode": 420,
@@ -2363,7 +2363,7 @@
     },
     "scripts/aco/memory.py": {
       "mode": 420,
-      "sha256": "2585c530e29f0189fbe75381ab24334743ad370d48b49f24afcfa13f10b51a20"
+      "sha256": "3f8d15e20663f0555bf01d52d5450921f1baa5ec7fad5577e7a0b092939b309f"
     },
     "scripts/aco/migrate.py": {
       "mode": 420,
@@ -4183,11 +4183,11 @@
     },
     "skills/aco-office-concierge/runtime/scripts/aco/common.py": {
       "mode": 420,
-      "sha256": "1d576fe0f2bdb76638b87ab2de2b6327f61761c4df886eb04d869c6081769d16"
+      "sha256": "d099a3bbb26a318b5bbc38088f5c416a5a5395e0de2353b83a47be83ea20bc65"
     },
     "skills/aco-office-concierge/runtime/scripts/aco/compact.py": {
       "mode": 420,
-      "sha256": "d837584c630f595ac58ce237aa7c595505661262f2ef16f04b4125f2b005f7fc"
+      "sha256": "341f669cc657f9f722f9e13c537d1cc179edf5ea8198c88d12464fb632910cd0"
     },
     "skills/aco-office-concierge/runtime/scripts/aco/context.py": {
       "mode": 420,
@@ -4239,7 +4239,7 @@
     },
     "skills/aco-office-concierge/runtime/scripts/aco/memory.py": {
       "mode": 420,
-      "sha256": "2585c530e29f0189fbe75381ab24334743ad370d48b49f24afcfa13f10b51a20"
+      "sha256": "3f8d15e20663f0555bf01d52d5450921f1baa5ec7fad5577e7a0b092939b309f"
     },
     "skills/aco-office-concierge/runtime/scripts/aco/os_benchmark.py": {
       "mode": 420,
@@ -5345,9 +5345,13 @@
       "mode": 420,
       "sha256": "86f1b929910ccdc85303631da86533496170dd85b824d3b732409efbe072458b"
     },
+    "tests/test_common_symlinks.py": {
+      "mode": 420,
+      "sha256": "e2781bbaf9cc6270cbfd09862c5ab5410f6805b5f00417c308884b8bd4c2808a"
+    },
     "tests/test_compact.py": {
       "mode": 420,
-      "sha256": "a9ab16797c6a4ac6ae2bc41f29a014816ffc929eb621d77b14369c06637acd93"
+      "sha256": "c8767b4a3b9261c3478ace87729bbcf556dcc7684a7912376e6c8e30846d8c71"
     },
     "tests/test_drive.py": {
       "mode": 420,
