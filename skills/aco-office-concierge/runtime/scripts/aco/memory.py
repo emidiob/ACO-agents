@@ -227,7 +227,8 @@ class Memory:
                                 capture_output=True, text=True) if __import__('shutil').which('git') else None
             if gp is not None and gp.returncode == 0:
                 top = Path(gp.stdout.strip())
-                relative = workspace.relative_to(top).as_posix()
+                # Compare canonical spellings only after no_symlinks has vetted the workspace.
+                relative = workspace.resolve().relative_to(top.resolve()).as_posix()
                 prefix = '' if relative == '.' else relative + '/'
                 check = subprocess.run(['git', '-C', str(top), 'ls-files', '-z', '--',
                                         prefix + '.agent-context', prefix + '.aco-binding.json'], capture_output=True)

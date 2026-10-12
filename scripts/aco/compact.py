@@ -307,7 +307,8 @@ class CompactMemory:
                 g=subprocess.run(['git','-C',str(workspace),'rev-parse','--show-toplevel'],capture_output=True,text=True)
             except FileNotFoundError:g=None
             if g and g.returncode==0:
-                top=Path(g.stdout.strip());prefix=workspace.relative_to(top).as_posix();prefix='' if prefix=='.' else prefix+'/'
+                # Resolve only after no_symlinks has vetted the workspace.
+                top=Path(g.stdout.strip());prefix=workspace.resolve().relative_to(top.resolve()).as_posix();prefix='' if prefix=='.' else prefix+'/'
                 tracked=subprocess.run(['git','-C',str(top),'ls-files','-z','--',prefix+'.agent-context'],capture_output=True)
                 if tracked.returncode or tracked.stdout:raise Conflict('Private handoff is tracked by Git; review/untrack first')
             ignore=workspace/'.gitignore';no_symlinks(ignore);txt=ignore.read_text() if ignore.exists() else ''
