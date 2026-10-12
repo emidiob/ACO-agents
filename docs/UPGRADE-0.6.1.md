@@ -1,3 +1,5 @@
+> Historical upgrade notes. For the current package, follow [Upgrading](UPGRADING.md) and the [Beginner Guide](../BEGINNER-GUIDE.md).
+
 # Upgrade to ACO v0.6.1
 
 v0.6.1 is an architectural refinement of v0.6.0. It preserves the same 363 roles, 16 skills, 61 workflows, 97 optional resources, Compact Memory model and proprietary license.

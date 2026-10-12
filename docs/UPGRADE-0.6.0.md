@@ -1,3 +1,5 @@
+> Historical upgrade notes. For the current package, follow [Upgrading](UPGRADING.md) and the [Beginner Guide](../BEGINNER-GUIDE.md).
+
 # Upgrade to ACO v0.6.0
 
 This complete release consolidates the supplied 0.5.2 package. It does not require installing intervening ZIPs. The remote repository version checked during preparation was 0.4.3; it was not updated by this packaging operation.

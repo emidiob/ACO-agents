@@ -1,5 +1,3 @@
-# History and handoff — v0.5.1
-
 # Compact history and truthful status
 
 Read COMPACT-MEMORY.md. Durable history is part of the existing scoped ACO.md, NOT per-session immutable files. Keep identity facts, proposals, approved decisions, work evidence and pending questions distinct inside that document.

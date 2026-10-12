@@ -1,4 +1,6 @@
-# ACO architecture — v0.7.3
+# ACO architecture — v1.0.3
+
+The current runtime includes the [ACO OS and token economy](ACO-OS-1.0.md): versioned code is resolved separately from private state, and task capsules load only the needed role, skills, policies and authorized context. The 1.0.3 consolidation keeps these contracts and includes macOS path compatibility fixes. Historical version labels below identify when a layer was introduced.
 
 ACO is organized around **selective loading**, not a giant always-on prompt.
 

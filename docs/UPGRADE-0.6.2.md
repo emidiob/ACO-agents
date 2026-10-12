@@ -1,3 +1,5 @@
+> Historical upgrade notes. For the current package, follow [Upgrading](UPGRADING.md) and the [Beginner Guide](../BEGINNER-GUIDE.md).
+
 # Upgrade to ACO v0.6.2
 
 0.6.2 is a Quality & Routing release. It adds no new canonical roles.

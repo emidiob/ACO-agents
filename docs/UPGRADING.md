@@ -2,7 +2,7 @@
 
 This is the evergreen repository-upgrade procedure. Release-specific copy/paste prompts belong next to a distributed ZIP, not inside `ACO-agents`.
 
-1. Extract the new complete ACO release **outside** the existing Git checkout.
+1. Extract the new complete ACO release **outside** the existing Git checkout. For this package, check that `VERSION` says `1.0.3` and that README, BEGINNER-GUIDE, LICENSE, `release/manifest.json` and the 1.0.3 test report are present. If a `.sha256` file was supplied, compare it with the ZIP before extracting.
 2. In the existing checkout inspect `git status`, current branch, origin and recent history. Resolve/preserve tracked edits before migration.
 3. From the **new** source run a dry-run migration:
    ```bash
@@ -24,3 +24,20 @@ This is the evergreen repository-upgrade procedure. Release-specific copy/paste 
 8. `git fetch origin`, compare histories, and push normally only when a reviewed fast-forward/merge is safe. Never force-push over remote work.
 
 Updating GitHub, updating locally installed ACO skills, and updating private knowledge are separate operations. A repository upgrade must not modify Drive/private context, connect accounts, install optional third-party tools, send messages, publish, purchase, sign or create schedules.
+
+
+## Finish a local installation update
+
+After the repository checks pass, updating installed skills is a separate authorized operation. From the complete new release:
+
+```bash
+python3 scripts/aco_cli.py install
+python3 scripts/aco_cli.py install --apply
+python3 scripts/aco_cli.py install-status
+```
+
+Review the preview first. Existing native-profile selection is preserved unless you deliberately choose offices; modified managed files may require collision review. Start a fresh host session and verify which release it actually reads. Do not move private `ACO_HOME` state into the public checkout.
+
+## What 1.0.3 consolidates
+
+This maintenance package includes the merged macOS system-alias and Git-relative-path fixes, current documentation and regenerated profiles/runtime. It keeps the existing integration resolver, permission policies and skill candidate states. Existing 1.0.2 users use the same reviewed migration and installation procedures; no account reconnection or private-knowledge restructuring is required by this release.

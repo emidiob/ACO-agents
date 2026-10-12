@@ -1,4 +1,4 @@
-# Known limitations — 0.7.3
+# Known limitations — 1.0.3
 
 - ACO is a role/method library plus local utilities, not an always-on service, fine-tuned model, professional staff or access-control product.
 - The 363 specialist roles are preserved. Automated checks verify structure, routing contracts and selected behavior cases; they do not establish professional quality across every role or domain.
@@ -24,3 +24,7 @@
 - Local cleanup uses snapshots and reviewed plans. Live Drive mutation requires actual authorized actions, an inspected scope and read-back verification. A local mirror is not synchronization.
 - Future changes to generated files require regenerate → manifest → validation → tests. User modifications or nonstandard old releases can make migration stop safely; do not bypass collisions with deletion.
 - Shell helpers target macOS/Linux with Python 3.11+. A real host/version must verify native skill/agent discovery. Windows users need an appropriately configured environment; native Windows installation is not certified.
+
+- The technical registry has 43 entries, of which 29 are candidates. Seedance, Nano Banana and Seedream candidates do not establish live output quality or grant model access; they remain non-selectable by default.
+- The 1.0.3 macOS compatibility fixes accept only verified standard system aliases. Other symlinks remain unsupported by guarded path operations.
+- A package upgrade cannot repair OAuth scopes or grant GitHub write access. Provider permissions and host approval/sandbox settings remain external to ACO.

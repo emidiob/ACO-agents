@@ -1,3 +1,5 @@
+> Historical upgrade notes. For the current package, follow [Upgrading](UPGRADING.md) and the [Beginner Guide](../BEGINNER-GUIDE.md).
+
 # Upgrade to ACO v0.7.0
 
 0.7.0 is the Execution & Integration release. It adds no canonical roles and no mandatory external runtime.
