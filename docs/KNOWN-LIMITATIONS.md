@@ -1,4 +1,4 @@
-# Known limitations — 1.0.3
+# Known limitations — 1.0.4
 
 - ACO is a role/method library plus local utilities, not an always-on service, fine-tuned model, professional staff or access-control product.
 - The 363 specialist roles are preserved. Automated checks verify structure, routing contracts and selected behavior cases; they do not establish professional quality across every role or domain.

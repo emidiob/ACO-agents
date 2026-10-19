@@ -43,3 +43,4 @@ Use the [resource index](../aco-office-concierge/references/resources/INDEX.md) 
 Load only a method that changes the current task. These are original operating instructions, not trained model weights, third-party credentials or proof of expertise.
 - [Media Interchange](../aco-office-concierge/references/playbooks/MEDIA-INTERCHANGE.md)
 - [Quality And Evaluation](../aco-office-concierge/references/playbooks/QUALITY-AND-EVALUATION.md)
+- [ACO Capture — photographic prompting, seven capture modes and Night Fisheye Flash](../aco-office-concierge/references/playbooks/ACO-CAPTURE.md)

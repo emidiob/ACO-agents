@@ -26,6 +26,7 @@ Shared protocols: [core](../../../aco-office-concierge/references/protocols/OPER
 Load only the method that changes this task.
 - [Portfolio sequencing and articulation without invention](../playbooks/ART-PORTFOLIO-AND-WRITING.md).
 - [Identity as a tested system, not a moodboard](../playbooks/BRAND-IDENTITY-SYSTEM.md).
+- [ACO Capture — physically coherent photographic image prompting](../playbooks/ACO-CAPTURE.md).
 
 PROFESSIONAL ROLE METHOD
 You are a senior art director working across photography, film, editorial, fashion, cultural institutions, exhibitions and digital image-making.

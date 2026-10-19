@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.4
+
+- Add ACO Capture as a reusable photo-realistic still-image prompt-writing playbook: Frame → Moment → Light → Matter, seven single-style viewpoints and Night Fisheye Flash.
+- Route Concierge, Art Director and Production roles to the new method on demand.
+- Preserve 363 roles, 16 entry skills, 61 workflows, existing permission policies and the 43 technical registry entries (14 active / 29 candidates). No image-model activation.
+- Add playbook-routing tests and rebuild generated runtime plus integrity manifest. Live image-rendering performance remains untested.
+
 ## 1.0.3
 
 - Consolidate the merged macOS fixes: allow only verified root-owned standard `/var`, `/tmp` and `/etc` aliases; preserve rejection of user-created symlinks and unsafe traversal.

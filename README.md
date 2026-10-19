@@ -2,7 +2,7 @@
 
 **A working library for an artist, studio, agency or cultural business — with scoped private knowledge and evidence-aware execution.**
 
-**ACO v1.0.3 · 363 roles · 16 entry skills · 61 workflows · 99 optional resources · token-aware OS + technical skill registry.**
+**ACO v1.0.4 · 363 roles · 16 entry skills · 61 workflows · 99 optional resources · token-aware OS + technical skill registry.**
 
 Proprietary, source-available. Redistribution is restricted by [LICENSE](LICENSE). No third-party software, fonts, models or private knowledge are bundled.
 
@@ -35,7 +35,7 @@ No office-by-office performance or unnecessary planning ceremony. A simple reque
 
 The current runtime resolves `aco://current` and loads the minimum role, skills, policies and context for a task. It keeps versioned code (`ACO_RUNTIME_ROOT`) separate from private saved state (`ACO_HOME`). Goal planning, execution receipts and shadow-only feedback support continuity without granting account access. See [ACO OS](docs/ACO-OS-1.0.md), [Goal Graph](docs/GOAL-GRAPH.md) and [Adaptive ACO](docs/ADAPTIVE-ACO.md).
 
-The technical registry has **43 entries: 14 active and 29 candidates**. Seedance and generative-image candidates remain available for explicit inspection and evaluation; inclusion does not establish live model availability or measured output quality.
+The technical registry has **43 entries: 14 active and 29 candidates**. The 1.0.4 update also adds [ACO Capture](skills/aco-office-concierge/references/playbooks/ACO-CAPTURE.md): a four-layer photographic prompt-writing method, seven photographic perspectives, and a repeatable Night Fisheye Flash preset. This method does not activate or validate any image-generation model. Seedance and generative-image candidates remain available for explicit inspection and evaluation; inclusion does not establish live model availability or measured output quality.
 
 **Artistic authority remains with the artist.** Do not construct a practice around open calls or sales metrics. Do not mistake approved strategy for validated evidence.
 

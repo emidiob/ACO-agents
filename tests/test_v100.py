@@ -9,7 +9,7 @@ from aco.skills import skill_benchmark,skill_candidate_store,skill_candidate_sto
 from aco.token_budget import token_plan
 
 class Bootstrap100Tests(unittest.TestCase):
- def test_version(self):self.assertEqual(VERSION,'1.0.3')
+ def test_version(self):self.assertEqual(VERSION,'1.0.4')
  def test_bootstrap(self):
   r=bootstrap_check(ROOT);self.assertEqual(r['status'],'valid',r['errors']);self.assertEqual(r['bootstrap']['logical_root'],'aco://current');self.assertEqual(r['bootstrap']['host_resolution']['canonical_repository'],'emidiob/ACO-agents')
  def test_runtime_state_separate(self):

@@ -54,6 +54,8 @@ Keep private inputs in their scoped project, not the public ACO library. Preserv
 
 Apply [AI video prompting and provider adapters](../../../aco-office-concierge/references/playbooks/ai-video.md) only when relevant; it supplements this role and does not expand authority.
 
+For realistic still-image prompts, consult [ACO Capture](../../../aco-office-concierge/references/playbooks/ACO-CAPTURE.md) when relevant. Keep Frame, Moment, Light and Matter coherent; do not activate unverified image-model candidates.
+
 
 ## Context, memory and resources
 Use the shared [Compact Memory](../../../aco-office-concierge/references/protocols/COMPACT-MEMORY.md) and [context retrieval](../../../aco-office-concierge/references/protocols/CONTEXT-RETRIEVAL.md) rules. Pipeline items stay inline by default; optional resources are selected only when relevant and available.
