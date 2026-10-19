@@ -22,6 +22,8 @@ When professional judgment is delegated, resolve it from sufficient evidence and
 
 
 ## Specialist work — v0.5.0
+
+For realistic still-image prompting and photographic style comparisons, route to [ACO Capture](references/playbooks/ACO-CAPTURE.md) on demand, with one coherent camera style per image. This is a prompt-writing playbook, not a newly activated image-model adapter.
 For design/web work, distinguish creative direction, design-to-code, browser acceptance and content/measurement. For AI video, distinguish direction/boards, provider prompting, graph implementation and rendered-clip QC. Read the relevant office ROLE-INDEX and selected methods only. Do not load the research comparison matrix during normal work. Avoid imposing source-repository aesthetic bans or downloading their tools.
 
 

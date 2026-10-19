@@ -35,7 +35,7 @@ def _inventory(cid, operation):
 
 class GoalGraph080Tests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(VERSION, '1.0.3')
+        self.assertEqual(VERSION, '1.0.4')
 
     def test_valid_graph(self):
         r = goal_graph_check(_graph(_task()))

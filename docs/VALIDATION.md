@@ -1,6 +1,6 @@
 # Release validation
 
-For the current **1.0.3** consolidation, see the included [release test report](../ACO-TEST-REPORT-v1.0.3.md). Its results apply to the checks actually run for that package. Earlier reports retain their original versions, platforms and results.
+For the current **1.0.4** ACO Capture update, see the included [release test report](../ACO-TEST-REPORT-v1.0.4.md). Its results apply to the checks actually run for that package. Earlier reports retain their original versions, platforms and results.
 
 ## Reproduce the current checks
 
@@ -19,7 +19,7 @@ The GitHub workflow runs generated parity, validation and the unit suite on macO
 ## Build the complete package
 
 ```bash
-python3 scripts/build_release.py --output /absolute/path/outside/repo/ACO-agents-v1.0.3-complete.zip
+python3 scripts/build_release.py --output /absolute/path/outside/repo/ACO-agents-v1.0.4-complete.zip
 ```
 
 Use an absolute output path without `..` components and keep the ZIP outside the source checkout. The builder uses the release manifest, preserves executable modes and emits a SHA-256 file. SHA-256 checks transfer integrity; it is not a developer digital signature. Include README, BEGINNER-GUIDE, CHATGPT, AGENTS, CHANGELOG, LICENSE, docs, runtime, profiles and the current test report.
