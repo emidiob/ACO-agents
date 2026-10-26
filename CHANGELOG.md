@@ -2,6 +2,9 @@
 
 ## Unreleased — original ACO prompt workflow
 
+- Complete local reference preparation with overview sheets, heuristic cut candidates, true frame timestamps and endpoint coverage. Add a reference-packet checker and require file/time bindings in the final prompt.
+- Specify sequential transformed-reference creation, reuse of verified appearance, source/result comparison and saved image prompts; local checks do not certify an untested video generation.
+
 - Fix reference delivery: Genjutsu must create, inspect and show usable reference image files before the final prompt. Missing video-provider settings do not block source extraction; requested transformations include the necessary reference stills.
 
 - Add original ACO authoring notation, operation selection, visual-anchor preparation, camera/appearance guidance, worked cases and render diagnosis.

@@ -63,7 +63,7 @@
     },
     "CHANGELOG.md": {
       "mode": 420,
-      "sha256": "bbd34314a217c9ed3beb4c59336cb97e9d066717a2db02ff9de706d56d84d788"
+      "sha256": "2b125728177650dbd2ad8cc6c6ccce3ed806ebdc1218dfd63ec33083bf72b056"
     },
     "CHATGPT.md": {
       "mode": 420,
@@ -3339,7 +3339,7 @@
     },
     "skills/aco-genjutsu/SKILL.md": {
       "mode": 420,
-      "sha256": "a429f7f8317bfdbacc22caf5686193caedb685232f097b9ef6de6b7d5a524d04"
+      "sha256": "b1a0fbc02e6d9fbec7496bc3f49d084a1edf9ec9ce4739e9196fefae05f32edd"
     },
     "skills/aco-genjutsu/references/diagnosis.md": {
       "mode": 420,
@@ -3355,7 +3355,7 @@
     },
     "skills/aco-genjutsu/references/reference-delivery.md": {
       "mode": 420,
-      "sha256": "4375c558d190ca91dcbeb43b186d4cec9437b98f00f763e4e5e9c92b6fa954d7"
+      "sha256": "04459a57bc0a92e3d48d8eed5dadf9f9c9cadc0c008581771c757de14ba5524a"
     },
     "skills/aco-genjutsu/references/visual-evidence.md": {
       "mode": 420,
@@ -3369,9 +3369,13 @@
       "mode": 420,
       "sha256": "db72fc3357375d33228814e6dcf10130a520ac029728b4596f4d274c9e0f4cb7"
     },
+    "skills/aco-genjutsu/scripts/check_reference_pack.py": {
+      "mode": 420,
+      "sha256": "e630b3c7157c2dd22f45b02cdec78c6c0365474484cd8c8654efef14eedf17ad"
+    },
     "skills/aco-genjutsu/scripts/inspect_video.py": {
       "mode": 420,
-      "sha256": "e280f492735bca798325d63d4b5b32dae847e2645eef5962ed52b8ad4d993654"
+      "sha256": "8ad8b6a6b1b217a6adaea83161ac3b3d97c096aea925c9edefc5ac27c5f0e8ba"
     },
     "skills/aco-help/SKILL.md": {
       "mode": 420,
@@ -5507,7 +5511,7 @@
     },
     "tests/test_prompt_inspection.py": {
       "mode": 420,
-      "sha256": "3fb882aa9542b3a6deff7236329f44500dd1706d5a7c5c58596136501ce6b5e8"
+      "sha256": "90b95c582635d1b919b947e908d717613d48611aed8aa177eb05b0e2cda0bc4f"
     },
     "tests/test_quality_routing.py": {
       "mode": 420,
