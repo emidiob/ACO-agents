@@ -1,6 +1,6 @@
 ---
 name: aco-genjutsu
-description: "Analyze a supplied video and prepare reference-guided recreation, motion-transfer or selective-edit prompts. Includes visual anchors, timed actions and render diagnosis; prompt preparation does not generate media."
+description: "Analyze a supplied video and prepare reference-guided recreation, motion-transfer or selective-edit prompts. Creates visual reference files before drafting timed prompts; video rendering remains a separate action."
 ---
 
 # ACO Genjutsu
@@ -9,10 +9,10 @@ Turn the user's source into an actionable recreation brief. Use the original ACO
 
 ## Choose the deliverable
 
-Read [prompt notation](references/prompt-notation.md), then the applicable case in [generation modes](references/generation-modes.md).
+Start with [reference delivery](references/reference-delivery.md) and the applicable case in [generation modes](references/generation-modes.md). Read [prompt notation](references/prompt-notation.md) only after preparing the references; it is an internal checklist, not a formula to return to the user.
 
-- **Same scene:** retain identity, wardrobe, setting, objects and movement. Use the original video and inspected source frames as anchors; replacement-character previews are unnecessary.
-- **Changed scene:** identify the requested changes and which source properties must survive. Read [visual evidence](references/visual-evidence.md) before assigning references.
+- **Same scene:** retain identity, wardrobe, setting, objects and movement. Extract, inspect and deliver actual source-frame files as anchors, together with a contact sheet; replacement-character previews are unnecessary.
+- **Changed scene:** identify the requested changes and which source properties must survive. Read [visual evidence](references/visual-evidence.md), then create and inspect the requested transformed reference stills through the available image tool before writing the final video prompt.
 - **Existing render has a defect:** read [diagnosis](references/diagnosis.md); compare the actual render with its source before suggesting a targeted repair.
 - **New video without a source:** route to `../aco-video/SKILL.md` and use the same notation without invented reference bindings.
 
@@ -22,13 +22,15 @@ For camera wording or character/image briefs, use [visual language](references/v
 
 Inspect source metadata, representative frames and the transition/contact moments. The local `scripts/inspect_video.py` helper can extract selected frames and metadata using existing ffmpeg/ffprobe. It samples images, not a complete playback or audio review. Read its help before execution. Inspect the extracted images, refine timestamps around uncertain events, and disclose uninspected audio. A scene detector may suggest cuts but cannot prove their absence.
 
-When the user has already said “as it is,” carry that instruction forward. Ask only for a missing choice that changes the deliverable, such as the target model/interface. Continue reference analysis while that choice is pending. If the provider is unknown, deliver a useful provider-neutral draft with unresolved controls clearly separated.
+When the user has already said “as it is,” carry that instruction forward. Ask only for a missing choice that changes the deliverable, such as the target model/interface. Continue reference analysis while that choice is pending. An unknown video provider must not block local extraction, visual inspection or delivery of references. Prepare those first; only the final provider bindings and settings remain unresolved.
 
 Use only real reference files. Preserve their exact paths privately; use short filenames in the result. Record each reference's job and the moment it represents. Translate ACO notation into the chosen provider's verified syntax before calling a prompt ready to paste into that interface. Strong wording does not guarantee pixel, identity or timing fidelity.
 
 ## Response
 
-Give a brief source reading, a reference-to-purpose table, supported settings (or unresolved fields), one English prompt, and only the QC notes that matter to this shot. Explain in the user's language. Frame extraction is local analysis; generating replacement stills, uploading, rendering, editing video or spending credits requires the user's corresponding request.
+Lead with the actual reference images: show a contact sheet and link the individual full-resolution files in time order. State which images are extracted and which are generated/edited. Then give a compact file/time/purpose map, supported settings (or unresolved fields), one shot-specific English prompt, and relevant QC notes. Do not finish with prose-only placeholders when the files can be made.
+
+A request to recreate/transform a supplied video through this skill includes preparing the reference stills needed for that requested result, unless the user explicitly asks for text only. Use the host image tool for requested image transformations and obey its actual permissions; do not ask for a redundant approval merely because a still must be produced. Preserve the user's chosen transformation. Video generation, external uploads and additional paid provider operations remain separate actions. If an essential reference or tool is missing, identify that specific blocker, deliver the source frames already available, and label unfinished previews accurately.
 
 The preexisting technical candidate `video.seedance.reference-video-replica` remains experimental and may be inspected explicitly through `skill-resolve --skill video.seedance.reference-video-replica --allow-candidate`. This original prompt workflow does not promote that or any other model-specific registry entry.
 

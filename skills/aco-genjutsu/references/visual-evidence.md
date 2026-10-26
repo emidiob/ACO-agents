@@ -17,10 +17,14 @@ Choose frames that constrain different failure risks:
 
 Keep source timestamp, extraction method and image dimensions with each anchor. Use enough anchors to remove ambiguity, within the provider's input budget; more images are not automatically better. Do not fabricate an intermediate action to fill a sampling gap.
 
-For unchanged recreation, keep the original frames. For a requested transformation, inspect generated/edited anchor images before using them: the intended change must be consistent while pose, scale and layout remain appropriate. Do not represent a proposed preview as a finished file. Never add hidden subjects merely because a character reference shows them.
+For unchanged recreation, extract and deliver the original frames as separate usable files; a contact sheet alone is not the reference package. For a requested transformation, inspect generated/edited anchor images before using them: the intended change must be consistent while pose, scale and layout remain appropriate. Do not represent a proposed preview as a finished file. Never add hidden subjects merely because a character reference shows them.
 
 ## Reference conflicts
 
 Resolve conflicts explicitly: a face reference may have different illumination, a wardrobe image may show a different pose, and a material photo may contain an irrelevant room. Assign influence per attribute. If equally authoritative references disagree, ask the one decisive choice rather than averaging incompatible designs.
 
 Local extraction produces analysis artifacts only. Leave the source untouched and save output outside the library, using a new destination. The supplied helper refuses an existing destination to prevent accidental overwrite.
+
+## Delivery check
+
+Before calling references ready, open the image outputs, verify their files exist and match the intended source moments, show the user the set, and provide individual download links. Follow [reference delivery](reference-delivery.md). Do not confuse a frame specification with an extracted or generated image.

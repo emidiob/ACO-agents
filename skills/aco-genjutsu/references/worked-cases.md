@@ -24,7 +24,7 @@ Draft:
 Transfer the seated performance from the supplied clip to the robot shown in the design reference. Preserve the performer's position and occupied space, the order of the stick strikes and the original camera framing. Use the robot reference for body design and materials only. The contact anchors define the stick grips and arm orientation. Keep the robot seated throughout, with the instrument layout unchanged. Match the visible performance timing; the separate audio plan governs sound.
 ```
 
-If the required contact anchors have not been made, label this a draft and list the missing references.
+First create and inspect the contact anchors for the requested robot transformation with the available image tool. If a real input/tool blocker prevents that, deliver any available source frames and identify the missing requirement; do not stop at this example prompt when the images can be made.
 
 ## Animate one photograph
 

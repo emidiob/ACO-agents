@@ -63,7 +63,7 @@
     },
     "CHANGELOG.md": {
       "mode": 420,
-      "sha256": "cc23e614ab354bcbe1e7fcc959a761c205fba5edabd990605c5751592ec142c8"
+      "sha256": "bbd34314a217c9ed3beb4c59336cb97e9d066717a2db02ff9de706d56d84d788"
     },
     "CHATGPT.md": {
       "mode": 420,
@@ -3339,7 +3339,7 @@
     },
     "skills/aco-genjutsu/SKILL.md": {
       "mode": 420,
-      "sha256": "39c616996622cdeefb7ce38d5d01ffe7e77d94dc01542f047860d6b0421e9ce1"
+      "sha256": "a429f7f8317bfdbacc22caf5686193caedb685232f097b9ef6de6b7d5a524d04"
     },
     "skills/aco-genjutsu/references/diagnosis.md": {
       "mode": 420,
@@ -3347,15 +3347,19 @@
     },
     "skills/aco-genjutsu/references/generation-modes.md": {
       "mode": 420,
-      "sha256": "f98d370683cbf9d27a44dcdf80e9f5078be24171280f33d862116c5f24b239f6"
+      "sha256": "11002a2cbbfe898f49f25921547cb9dc7786a5a5775a04e5014281797216b35e"
     },
     "skills/aco-genjutsu/references/prompt-notation.md": {
       "mode": 420,
       "sha256": "ec9bb25fcdcd204367bfa450f9a829b0abaa9b75cbaec6084779751bd76ae5df"
     },
+    "skills/aco-genjutsu/references/reference-delivery.md": {
+      "mode": 420,
+      "sha256": "4375c558d190ca91dcbeb43b186d4cec9437b98f00f763e4e5e9c92b6fa954d7"
+    },
     "skills/aco-genjutsu/references/visual-evidence.md": {
       "mode": 420,
-      "sha256": "91de9e0676880114b6976e985f914f304801ede9fc075fb1e325032e78f6e02b"
+      "sha256": "7ea3d9ca4e16e02f9d9c0b5eac6f4901763c17b95158cc399ffb79ab884b6c50"
     },
     "skills/aco-genjutsu/references/visual-language.md": {
       "mode": 420,
@@ -3363,7 +3367,7 @@
     },
     "skills/aco-genjutsu/references/worked-cases.md": {
       "mode": 420,
-      "sha256": "e8e498fc289c0ca2d32dde1a37992679050c2763847cb356a94bf15ecde4957c"
+      "sha256": "db72fc3357375d33228814e6dcf10130a520ac029728b4596f4d274c9e0f4cb7"
     },
     "skills/aco-genjutsu/scripts/inspect_video.py": {
       "mode": 420,

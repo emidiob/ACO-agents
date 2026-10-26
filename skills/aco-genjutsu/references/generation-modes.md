@@ -19,7 +19,7 @@ Do not invent a new face or redesign the set. Prepare anchors directly from the 
 
 ## Performance or identity change
 
-List source subjects by visible position and assign each requested target once. Distinguish movement, identity, wardrobe and scene references. Preserve body scale and staging unless the user requests otherwise. Back-facing moments do not need a fabricated face. A large pose or silhouette change may require reference stills matching those moments. Prepare those only within the authorized image-generation scope; otherwise deliver their specifications and mark them missing.
+List source subjects by visible position and assign each requested target once. Distinguish movement, identity, wardrobe and scene references. Preserve body scale and staging unless the user requests otherwise. Back-facing moments do not need a fabricated face. A large pose or silhouette change may require reference stills matching those moments. For a requested visual transformation, create the necessary stills with the available image tool and inspect them. Reuse the verified design consistently at subsequent source moments. Ask only for missing target design information or an actual tool-required permission; a prompt-only specification is a fallback for a concrete blocker, not the default deliverable.
 
 ## Editing and continuation
 
