@@ -18,6 +18,23 @@ def _semantic_json_sha(path: Path) -> str:
     return hashlib.sha256(raw).hexdigest()
 
 
+def _routing_catalog_sha(path: Path) -> str:
+    """Compare routing data with the historical freeze, excluding known command aliases.
+
+    Routing reads agents/offices, not the entry-skill inventory. Keep every other
+    field in the historical hash, including the original skill names and count.
+    """
+    data = read_json(path)
+    data.pop('aco_version', None)
+    shortcuts = {'aco', 'aco-genjutsu', 'aco-video', 'aco-image',
+                 'aco-capture', 'aco-skills', 'aco-help'}
+    present = shortcuts.intersection(data['skills'])
+    data['skills'] = [name for name in data['skills'] if name not in shortcuts]
+    data['skill_count'] -= len(present)
+    raw = (json.dumps(data, sort_keys=True, separators=(',', ':'), ensure_ascii=False) + '\n').encode()
+    return hashlib.sha256(raw).hexdigest()
+
+
 def validate() -> dict:
     if not (ROOT/'catalog.json').exists():raise ACOError('Validate from the full ACO release checkout')
     cat=read_json(ROOT/'catalog.json')
@@ -102,7 +119,8 @@ def validate() -> dict:
         errors.append('v0.7.3 development holdout chronology is invalid')
     if _sha(ROOT/'scripts/aco/routing.py')!=semantic_freeze.get('routing_py_sha256'):errors.append('Routing logic changed after final fresh holdout')
     for rel,key in [('config/routing-hints.json','routing_hints_semantic_sha256'),('config/routing-examples.json','routing_examples_semantic_sha256'),('config/role-contracts.json','role_contracts_semantic_sha256'),('catalog.json','catalog_semantic_sha256')]:
-        if _semantic_json_sha(ROOT/rel)!=semantic_freeze.get(key):errors.append('Routing semantics changed after final fresh holdout: '+rel)
+        digest = _routing_catalog_sha(ROOT/rel) if rel == 'catalog.json' else _semantic_json_sha(ROOT/rel)
+        if digest != semantic_freeze.get(key):errors.append('Routing semantics changed after final fresh holdout: '+rel)
     simulation=read_json(ROOT/'release/behavioral-simulation.json')
     if simulation.get('schema_version')!=1:errors.append('Behavioral simulation schema mismatch')
     if simulation.get('aco_version')!=VERSION:errors.append('Behavioral simulation version mismatch')
@@ -194,7 +212,7 @@ def validate() -> dict:
     bootstrap_gate=bootstrap_check(ROOT)
     if bootstrap_gate.get('status')!='valid': errors.append('ACO 1.0 bootstrap gate failed')
     skill_registry_gate=skill_registry_check(ROOT)
-    if skill_registry_gate.get('status')!='valid' or skill_registry_gate.get('active_skills')!=14 or skill_registry_gate.get('candidate_skills')!=29: errors.append('ACO 1.0 skill registry gate failed')
+    if skill_registry_gate.get('status')!='valid' or skill_registry_gate.get('active_skills')!=14 or skill_registry_gate.get('candidate_skills')!=30: errors.append('ACO 1.0 skill registry gate failed')
     skill_gate=skill_benchmark(ROOT/'config/skill-benchmark.json',ROOT)
     if skill_gate.get('status')!='passed' or skill_gate.get('critical_failures')!=0 or skill_gate.get('score')!=100.0: errors.append('ACO 1.0 skill benchmark failed')
     token_gate=token_economy_benchmark(ROOT/'config/token-economy-benchmark.json',ROOT)

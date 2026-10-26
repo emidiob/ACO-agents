@@ -7,7 +7,7 @@ from scripts.aco.common import ACOError
 class SeedanceCandidateGates(unittest.TestCase):
     def test_registry_totals(self):
         r=skill_registry_check(ROOT)
-        self.assertEqual((r['status'],r['skills'],r['active_skills'],r['candidate_skills']),('valid',43,14,29))
+        self.assertEqual((r['status'],r['skills'],r['active_skills'],r['candidate_skills']),('valid',44,14,30))
     def test_candidates_excluded_by_default(self):
         rows=skill_search('seedance',limit=20,root=ROOT)['results']
         self.assertFalse(any(x['skill_id'].startswith('video.seedance.') for x in rows))

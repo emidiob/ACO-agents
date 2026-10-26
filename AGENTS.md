@@ -1,5 +1,10 @@
 # ACO — Codex instructions
 
+## ACO Quick Commands — optional host skills
+
+This distribution includes seven thin native skill entrypoints documented in [ACO-COMMANDS](docs/ACO-COMMANDS.md): `aco`, `aco-genjutsu`, `aco-video`, `aco-image`, `aco-capture`, `aco-skills`, and `aco-help`. In Claude Code invoke `/aco` or `/aco-genjutsu` after the local host discovers the skills; in Codex use `$aco` / `$aco-genjutsu` where supported. In ChatGPT these strings are plain text requests, not installed native slash commands. Follow the central Concierge and existing scope/permission/verification protocols. `aco-genjutsu` is **prompt-only**: do not render or send video without separate action authorization. Candidate technical methods can be explicitly inspected for experimental use but must not be called validated or silently promoted.
+
+
 This checkout is the generic ACO library, NOT a client project or private knowledge store. Do not write filled contexts, client work, keys, session history or private provider IDs here. When asked to use ACO for another task, work in that task's own repository/folder.
 
 Read `CHATGPT.md`, the relevant section of `ACO-INDEX.md` and only the relevant `skills/aco-*/SKILL.md` and canonical role methods. Native optional profiles are generated with `aco_` names. Do not assume a role file was spawned as an independent process; use actual delegation tools only when available.

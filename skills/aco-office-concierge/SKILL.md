@@ -7,6 +7,8 @@ description: "Front door: resolve the request, minimal team, scope and context; 
 
 Use this skill only for the task it covers. This is a readable workflow, not a plugin, connection or guarantee of autonomous work.
 
+The short native commands `/aco` and `/aco-genjutsu` are thin aliases into this Concierge and Production Office. See `../../docs/ACO-COMMANDS.md` in the source checkout for the complete command menu.
+
 ## Start
 Read `references/protocols/CONCIERGE.md`; for substantial dependent work apply `references/protocols/GOAL-EXECUTION.md`, and apply `references/protocols/DELEGATION.md` before returning a delegated professional judgment to the user, and use the common permissions/context contract as needed. Start from the local `references/ROLE-INDEX.md` when present, or `../aco-office-concierge/references/ROLE-INDEX.md` for shared methods. Read only the selected role files. The full `../aco-office-concierge/references/CATALOG.json` is a machine lookup fallback; do not load it wholesale by default. For GitHub reads, paths are relative to repository root under `skills/`.
 

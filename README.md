@@ -2,7 +2,7 @@
 
 **A working library for an artist, studio, agency or cultural business — with scoped private knowledge and evidence-aware execution.**
 
-**ACO v1.0.4 · 363 roles · 16 entry skills · 61 workflows · 99 optional resources · token-aware OS + technical skill registry.**
+**ACO v1.0.5 · 363 roles · 23 entry skills · 61 workflows · 99 optional resources · token-aware OS + technical skill registry.**
 
 Proprietary, source-available. Redistribution is restricted by [LICENSE](LICENSE). No third-party software, fonts, models or private knowledge are bundled.
 
@@ -31,11 +31,11 @@ A natural request
 
 No office-by-office performance or unnecessary planning ceremony. A simple request should receive a simple result. A commissioned essay, design system or codebase still needs a complete deliverable.
 
-**1.0.3 consolidates the existing fixes and documentation.** Standard macOS `/var`, `/tmp` and `/etc` system aliases work with the path checks, and Git-backed memory/handoff paths use canonical locations after safety validation. README, beginner setup, upgrade instructions and release metadata now describe the same package. See [Changelog](CHANGELOG.md) and the [1.0.3 test report](ACO-TEST-REPORT-v1.0.3.md).
+**1.0.3 consolidated the existing fixes and documentation.** Standard macOS `/var`, `/tmp` and `/etc` system aliases work with the path checks, and Git-backed memory/handoff paths use canonical locations after safety validation. README, beginner setup, upgrade instructions and release metadata now describe the same package. See [Changelog](CHANGELOG.md) and the [1.0.3 test report](ACO-TEST-REPORT-v1.0.3.md).
 
 The current runtime resolves `aco://current` and loads the minimum role, skills, policies and context for a task. It keeps versioned code (`ACO_RUNTIME_ROOT`) separate from private saved state (`ACO_HOME`). Goal planning, execution receipts and shadow-only feedback support continuity without granting account access. See [ACO OS](docs/ACO-OS-1.0.md), [Goal Graph](docs/GOAL-GRAPH.md) and [Adaptive ACO](docs/ADAPTIVE-ACO.md).
 
-The technical registry has **43 entries: 14 active and 29 candidates**. The 1.0.4 update also adds [ACO Capture](skills/aco-office-concierge/references/playbooks/ACO-CAPTURE.md): a four-layer photographic prompt-writing method, seven photographic perspectives, and a repeatable Night Fisheye Flash preset. This method does not activate or validate any image-generation model. Seedance and generative-image candidates remain available for explicit inspection and evaluation; inclusion does not establish live model availability or measured output quality.
+The technical registry has **44 entries: 14 active and 30 candidates (experimental, not validated)**. The 1.0.4 update also adds [ACO Capture](skills/aco-office-concierge/references/playbooks/ACO-CAPTURE.md): a four-layer photographic prompt-writing method, seven photographic perspectives, and a repeatable Night Fisheye Flash preset. This method does not activate or validate any image-generation model. Seedance and generative-image candidates remain available for explicit inspection and evaluation; inclusion does not establish live model availability or measured output quality.
 
 **Artistic authority remains with the artist.** Do not construct a practice around open calls or sales metrics. Do not mistake approved strategy for validated evidence.
 
@@ -75,6 +75,8 @@ These rules apply across the current release. They are explained in the task pro
 
 See the [architecture guide](docs/ARCHITECTURE.md), [Delegation](skills/aco-office-concierge/references/protocols/DELEGATION.md), [Hybrid Memory](skills/aco-office-concierge/references/protocols/HYBRID-MEMORY.md), [integration discovery](skills/aco-office-concierge/references/protocols/INTEGRATION-DISCOVERY.md) and [execution protocol](skills/aco-office-concierge/references/protocols/EXECUTION.md).
 
+See [ACO Quick Commands](docs/ACO-COMMANDS.md) for `/aco`, `/aco-genjutsu` and the 5 other lightweight native command skills. These expose existing ACO capabilities and explicit candidate inspection; no provider is automatically installed.
+
 ## Use in ChatGPT
 
 1. Make the repository available through an authorized repository/file-reading tool, or attach the required instructions. Merely typing `Use ACO` does not load files.
@@ -100,7 +102,7 @@ python3 scripts/aco_cli.py validate
 python3 scripts/aco_cli.py install
 ```
 
-The last command is an **installation preview**, not a completed install. To install the 16 skills:
+The last command is an **installation preview**, not a completed install. To install the 23 skills:
 
 ```bash
 python3 scripts/aco_cli.py install --apply
@@ -194,7 +196,7 @@ Use the returned action hash to bind explicit approval when the permission level
 
 ## What has and has not been verified
 
-The included [1.0.3 test report](ACO-TEST-REPORT-v1.0.3.md) records the gates actually run, with explicit scope and limitations. [Validation](docs/VALIDATION.md) explains how to reproduce the checks; earlier reports retain their historical results. Unit tests check local behavior, not taste, curatorial expertise, improved revenue or legal accuracy. Supplied evidence references are not proof of truth.
+The included [1.0.5 test report](ACO-TEST-REPORT-v1.0.5.md) records the gates actually run, with explicit scope and limitations. [Validation](docs/VALIDATION.md) explains how to reproduce the checks; earlier reports retain their historical results. Unit tests check local behavior, not taste, curatorial expertise, improved revenue or legal accuracy. Supplied evidence references are not proof of truth.
 
 This package does not establish that your Mac, Codex session, Drive connector, phone account, ComfyUI GPU or paid generation service works. It installs no schedules and makes no calls. [Host acceptance tests](docs/HOST-ACCEPTANCE-TESTS.md) are for your actual environment; unrun rows stay unrun.
 
@@ -230,3 +232,8 @@ python3 scripts/build_release.py --output /absolute/path/outside/repo/ACO-releas
 ```
 
 The [product decisions](docs/PRODUCT-DECISIONS.md), [source review](docs/SOURCE-REVIEW.md) and [known limits](docs/KNOWN-LIMITATIONS.md) are part of the release. Keep the proprietary license and third-party rights distinctions intact.
+
+
+## ACO 1.0.5 skills and command layer
+
+The 1.0.5 package includes seven quick-command Agent Skills and the prompt-only `/aco-genjutsu` candidate. All 14 previously active methods remain active. The other 30 technical candidates remain explicitly inspectable experimental methods, not default active. See [skill validation evidence](docs/SKILL-VALIDATION-v1.0.5.md). Provider/model performance is not claimed.

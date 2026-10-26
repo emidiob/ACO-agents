@@ -44,6 +44,30 @@ These are ACO-authored **creative drafts**, not tested renders or universal API 
 
 **Check:** inspect start/end alignment and velocity. A compositing/editing solution may be needed for a clean seam; the prompt alone cannot guarantee it.
 
+## 7. Recreate an inspected source video's motion with a different character — prompt only
+**Direction:** the source video controls movement and timing; a *separate existing* reference
+image controls the new character. These names are illustrative placeholders, not actual uploads.
+
+| Tag | Supplied file | Role |
+|---|---|---|
+| `@Video1` | `source.mp4` | Camera and gesture timing only |
+| `@Image1` | `character.png` | New fictional character's visible identity and outfit only |
+
+**Illustrative prompt (for a provider whose UI actually supports these tags):**
+
+> @Video1 is the reference for the camera path, framing and order of movements only. Do not
+> copy the source performer's identity, clothing or location. @Image1 defines one original
+> fictional character's face and clothing; do not copy the background or pose of @Image1.
+> The character performs the source's three confirmed actions in the same order and
+> approximate rhythm, keeping the source's original camera path and one-person blocking.
+> Retain the actual cut structure found in the source, and preserve the @Image1 character
+> consistently during turns and occlusion. No additional characters or unrequested text.
+
+**Check:** verify the video and image are present, timecode the *actual* actions and cuts,
+check current UI limits, then compare the real render against identity, scale, timing,
+framing and source-attribute leakage. This sample is untested and intentionally has no
+invented timestamps or provider settings.
+
 ## From a film idea to prompts
 First define the scene's purpose, beats and essential coverage. Assign shot IDs; build a timing/continuity table; choose the actual generation mode and model per shot. Draft and test a small authorized sample. Inspect full clips and the edit. Save prompts, settings, references and real receipts. A montage is usually assembled from separate shots; do not blindly request all cuts, dialogue, effects and transformations in one overloaded prompt.
 

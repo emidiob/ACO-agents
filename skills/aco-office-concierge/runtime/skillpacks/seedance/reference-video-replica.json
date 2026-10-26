@@ -1,0 +1,62 @@
+{
+  "skill_id": "video.seedance.reference-video-replica",
+  "title": "Prompt-only reference-video recreation and motion transfer",
+  "version": "0.1.0",
+  "status": "candidate",
+  "when_to_use": [
+    "On explicit inspection when the user wants a copy-ready AI-video prompt that recreates an authorized source video's timing, camera or performance with different image-referenced fictional characters or objects; no video rendering or account action."
+  ],
+  "inputs": [
+    "user's creative brief and allowed transformation scope",
+    "an available, authorized source video, or a declared lack of access",
+    "ordered character/object/location reference images and their intended roles",
+    "verified target provider/model/UI controls, if known",
+    "desired clip duration, audio treatment, aspect ratio and continuity constraints"
+  ],
+  "method": [
+    "Keep the four layers separate: source evidence, motion/shot specification, provider-specific prompt, and output verification. This method creates prompts only; it never invokes a video provider or claims to have rendered a clip.",
+    "Inspect the actual source video if accessible with authorized visual tools. Record confirmed duration, aspect, shot boundaries, positions, camera path, gestures, occlusions, notable props and audio. Timecode key beats. Never infer unseen frames from a filename or description; clearly mark uninspected elements.",
+    "Define what the recreation retains (camera, shot order, motion timing, staging, permitted audio) and changes (performers, identity, wardrobe, props or location). Require legitimate use rights for source and references; do not advise bypassing provider moderation or impersonating a real person without consent.",
+    "Build a literal upload-order map: @Video1 is the source motion/timing reference only when the chosen UI supports it; @Image1, @Image2 and later tags identify the user-supplied original character, wardrobe or prop references. Bind each reference to specific permitted attributes and explicitly exclude irrelevant original faces, backgrounds, outfits or other source attributes. Verify the exact provider's tag syntax rather than assuming it is universal.",
+    "For a hard character replacement, optionally design approved preview stills matching the source's critical poses, scale, gaze and silhouette before drafting the video prompt. Separate source motion from target identity; use distinct anchors for turns and back views only when genuinely supplied or generated and inspected.",
+    "Write a concise, English, copy-ready prompt with source-role mapping, the chronological actions and camera movement, timed beats or shots, sound/voice treatment, and end-state/continuity locks. Keep UI settings (model/mode, duration, ratio, reference upload order) outside the prompt. If the source has cuts, identify each cut; do not claim a single uninterrupted take.",
+    "Return: (1) source inspection and uncertainties, (2) ordered tag-to-file table, (3) verified UI settings or unresolved fields, (4) the copy-ready prompt, and (5) two or three targeted QA/failure-remedy notes. Never invent an uploaded file, a face reference, provider capability, rendered clip or result.",
+    "After an actual render is supplied, compare frame-wise against timing, cast count, framing, body scale, identity, costume, object continuity and audio. Describe timecoded defects and the smallest targeted prompt/reference/edit correction. No claimed improvement without inspecting new output."
+  ],
+  "failure_modes": [
+    "Copying the original actor, clothes, branded elements or setting from a motion source when only motion was intended",
+    "Reference-image attribute leakage or identity/wardrobe drift during turns",
+    "Imagined source timecodes or cuts when the original video was not inspected",
+    "Unsupported @Video/@Image tag syntax, duration, audio or motion-transfer features assumed for an unverified provider",
+    "Motion and identity prompts blended without explicit role separation",
+    "Overloaded timed beats, fictional preview images or unverified render-success claims"
+  ],
+  "output_contract": {
+    "type": "technical_skill_output",
+    "must_include": [
+      "result",
+      "source_or_verification_note"
+    ],
+    "recommended_result_sections": [
+      "source_evidence_and_unknowns",
+      "reference_upload_map",
+      "provider_and_ui_settings",
+      "english_copy_ready_prompt",
+      "qa_notes_and_remedies"
+    ]
+  },
+  "source_status": "verified_primary",
+  "sources": [
+    {
+      "url": "https://github.com/jutsuhq/higgsfield-seedance-prompt-skill/blob/main/references/motion-transfer.md",
+      "license": "MIT",
+      "note": "Upstream motion-transfer and reference-video prompting workflow; method independently adapted for ACO."
+    },
+    {
+      "url": "https://github.com/jutsuhq/higgsfield-seedance-prompt-skill/blob/main/SKILL.md",
+      "license": "MIT",
+      "note": "Upstream prompt-only skill intent and output pattern."
+    }
+  ],
+  "verification": "Non-selectable candidate only. Source inspected 2026-10-26; no real provider output tests or activation approval. Recheck current provider UI limits before use."
+}

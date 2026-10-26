@@ -83,7 +83,7 @@ class Installer:
                 p = Path(value)
                 if not p.is_absolute() or '..' in p.parts:
                     raise Conflict('Invalid path in installation inventory')
-                skill_ok = p.is_relative_to(self.skill_root) and p.relative_to(self.skill_root).parts and p.relative_to(self.skill_root).parts[0].startswith('aco-')
+                skill_ok = p.is_relative_to(self.skill_root) and p.relative_to(self.skill_root).parts and (p.relative_to(self.skill_root).parts[0] == 'aco' or p.relative_to(self.skill_root).parts[0].startswith('aco-'))
                 agent_ok = p.parent == self.agent_root and p.name.startswith('aco-') and p.suffix == '.toml'
                 if not (skill_ok or agent_ok):
                     raise Conflict('Inventory path is outside ACO installation ownership; no writes performed')
@@ -205,7 +205,7 @@ class Installer:
                     for p in sorted(root.rglob('*'), key=lambda x: len(x.parts), reverse=True):
                         if p.is_dir() and not p.is_symlink() and not any(p.iterdir()):
                             # ACO-created skill directories only, or no-op for agents.
-                            if p.is_relative_to(self.skill_root) and p.relative_to(self.skill_root).parts[0].startswith('aco-'):
+                            if p.is_relative_to(self.skill_root) and (p.relative_to(self.skill_root).parts[0] == 'aco' or p.relative_to(self.skill_root).parts[0].startswith('aco-')):
                                 p.rmdir()
             return {'status': 'uninstalled_verified', 'removed_files': len(changes), 'backups_preserved': str(self.state_root)}
 
