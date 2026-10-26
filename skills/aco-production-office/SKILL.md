@@ -7,6 +7,8 @@ description: "Production & Postproduction: Film, photography, CGI, editing, grad
 
 Read `references/ROLE-INDEX.md`, then the exact methods needed for the task. Lead: `production_orchestrator` (native name `aco_production_orchestrator`). Shared policies are in `../aco-office-concierge/references/protocols/`.
 
+For explicit source-video replication prompts, `/aco-genjutsu` uses the `ai_video_prompt_adapter` and the opt-in `video.seedance.reference-video-replica` candidate without rendering, uploading or asserting model validation.
+
 ## First pass
 Follow `INTERACTION.md`: read already-supplied/authorized facts, ask the essential missing questions early, then act with little narration. Use one lead and a few specialists. Do not turn execution into an organizational workshop.
 

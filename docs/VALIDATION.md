@@ -1,6 +1,6 @@
 # Release validation
 
-For the current **1.0.4** ACO Capture update, see the included [release test report](../ACO-TEST-REPORT-v1.0.4.md). Its results apply to the checks actually run for that package. Earlier reports retain their original versions, platforms and results.
+For the historical **1.0.4** ACO Capture update, see the included [release test report](../ACO-TEST-REPORT-v1.0.4.md). Its results apply to the checks actually run for that package. Earlier reports retain their original versions, platforms and results.
 
 ## Reproduce the current checks
 
@@ -81,3 +81,11 @@ python3 scripts/build_release.py --output ../ACO-agents-v0.4.3-complete.zip
 ```
 
 The release includes only fingerprinted public files, with hidden files and executable modes. SHA-256 detects transfer differences; it is not a developer digital signature.
+
+## ACO 1.0.5 Command Kit
+
+After applying the extension, rerun generated parity, the full ACO validation, the full unittest suite and verify the manifest. Native command wrappers are testable as file/routing/installation structure. Experimental technical candidate **method availability** is not proof of model-specific execution or output quality; promotion still needs the policy benchmarks and real output testing.
+
+## 1.0.5 skill evidence and delivery
+
+See [1.0.5 release report](../ACO-TEST-REPORT-v1.0.5.md) and [per-skill evidence](SKILL-VALIDATION-v1.0.5.md). This release preserves the technical promotion policy and runs static and unit tests; it does not silently certify model output.

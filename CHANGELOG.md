@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.0.5 — ACO Genjutsu and Quick Commands
+
+- Repair build-kit compatibility with both installer ownership guards, retain frozen routing checks while allowing the seven command aliases, and align current metadata/docs/tests with 1.0.5.
+
+- Add 7 thin native command skills: `/aco`, `/aco-genjutsu`, `/aco-video`, `/aco-image`, `/aco-capture`, `/aco-skills`, `/aco-help` (Codex `$skillname` equivalent).
+- Add `video.seedance.reference-video-replica` candidate, independently adapted with attribution from JutsuHQ (MIT); this performs prompt-writing only.
+- Existing 29 technical candidates plus new Genjutsu method are explicitly accessible on demand; all stay candidate/unverified until benchmarked release promotion (44 technical total, 14 active and 30 candidates).
+- Preserve 363 roles; 23 native entry skills (up from 16), 61 workflows, access policies, safety/provenance and no automatic API installation.
+- Patch ACO managed install ownership to support the `aco` root skill folder; add focused regressions and regenerate integrity manifest.
+
 ## 1.0.4
 
 - Add ACO Capture as a reusable photo-realistic still-image prompt-writing playbook: Frame → Moment → Light → Matter, seven single-style viewpoints and Night Fisheye Flash.

@@ -10,6 +10,7 @@ from aco.context import context_plan
 from aco.efficiency import context_benchmark, real_world_benchmark, scope_boundary_benchmark
 from aco.hybrid import memory_resolve
 from aco.routing import route_benchmark
+from aco.validate import _routing_catalog_sha
 
 
 def _sha(path: Path) -> str:
@@ -26,7 +27,7 @@ def _semantic_json_sha(path: Path) -> str:
 
 class ExactScopeAuthorization073Tests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(VERSION,'1.0.4')
+        self.assertEqual(VERSION,'1.0.5')
 
     def test_legacy_boolean_is_not_authorization(self):
         r=context_plan({'mode':'FULL','cross_scope_authorized':True,'sources':[
@@ -106,7 +107,7 @@ class RoutingFreshGate073Tests(unittest.TestCase):
         self.assertEqual(_semantic_json_sha(ROOT/'config/routing-hints.json'),freeze['routing_hints_semantic_sha256'])
         self.assertEqual(_semantic_json_sha(ROOT/'config/routing-examples.json'),freeze['routing_examples_semantic_sha256'])
         self.assertEqual(_semantic_json_sha(ROOT/'config/role-contracts.json'),freeze['role_contracts_semantic_sha256'])
-        self.assertEqual(_semantic_json_sha(ROOT/'catalog.json'),freeze['catalog_semantic_sha256'])
+        self.assertEqual(_routing_catalog_sha(ROOT/'catalog.json'),freeze['catalog_semantic_sha256'])
 
 
 class RegressionAndShape073Tests(unittest.TestCase):
@@ -127,7 +128,7 @@ class RegressionAndShape073Tests(unittest.TestCase):
         resources=json.loads((ROOT/'skills/aco-office-concierge/references/resources/REGISTRY.json').read_text())
         workflows=json.loads((ROOT/'skills/aco-office-concierge/references/WORKFLOWS.json').read_text())
         self.assertEqual(cat['role_count'],363)
-        self.assertEqual(cat['skill_count'],16)
+        self.assertEqual(cat['skill_count'],23)
         self.assertEqual(len(resources['resources']),99)
         self.assertEqual(len(workflows['workflows']),61)
 

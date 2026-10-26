@@ -1,17 +1,22 @@
 {
   "schema_version": 1,
-  "aco_version": "1.0.4",
-  "skill_count": 16,
+  "aco_version": "1.0.5",
+  "skill_count": 23,
   "role_count": 363,
   "skills": [
+    "aco",
     "aco-administration-office",
     "aco-agency-office",
     "aco-artist-office",
+    "aco-capture",
     "aco-commercial-office",
     "aco-context-setup",
     "aco-context-steward",
     "aco-delivery-office",
     "aco-finance-office",
+    "aco-genjutsu",
+    "aco-help",
+    "aco-image",
     "aco-legal-office",
     "aco-office-concierge",
     "aco-organization-office",
@@ -19,7 +24,9 @@
     "aco-product-office",
     "aco-production-office",
     "aco-publishing-office",
-    "aco-recruitment-office"
+    "aco-recruitment-office",
+    "aco-skills",
+    "aco-video"
   ],
   "offices": {
     "artist-office": {

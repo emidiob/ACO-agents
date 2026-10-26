@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "1.0.4",
+  "aco_version": "1.0.5",
   "skills": [
     {
       "skill_id": "visual_research.archive_first",
@@ -795,6 +795,30 @@
       "quality": 0.5,
       "token_estimate": 185,
       "body_path": "skillpacks/generative-image/adapters/seedream-5.json"
+    },
+    {
+      "skill_id": "video.seedance.reference-video-replica",
+      "title": "Prompt-only reference-video recreation and motion transfer",
+      "version": "0.1.0",
+      "status": "candidate",
+      "pack": "seedance",
+      "tags": [
+        "seedance",
+        "genjutsu",
+        "video-replica",
+        "reference-video",
+        "motion-transfer",
+        "character-swap",
+        "video-to-video",
+        "prompt-only",
+        "camera",
+        "timing",
+        "identity"
+      ],
+      "summary": "Inspect source-video timing and camera, map @Video1 motion to @ImageN identities without leaking the original performer, and deliver only a copy-ready, provider-verified prompt and QA guidance.",
+      "quality": 0.5,
+      "token_estimate": 470,
+      "body_path": "skillpacks/seedance/reference-video-replica.json"
     }
   ],
   "policy": "Compact index only. Load a skill body on demand; active/validated skills are selectable, candidates are fail-closed."

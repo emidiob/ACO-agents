@@ -21,6 +21,35 @@ Read supplied model/tool information first. Clarify generation mode, usable refe
 7. Run one small authorized test before a large batch. Track model version, reference IDs/hashes, exact prompt, seed when actually supported, settings, cost and result. Change one diagnostic variable at a time; do not promise identical results from a seed alone.
 8. Stop after the agreed trial budget. A rejected/refused request is not permission to switch accounts/providers to bypass a restriction.
 
+## Reference-video recreation — prompt-only method
+
+For an explicit request to recreate a *source video* using original replacement characters or
+objects, the optional `video.seedance.reference-video-replica` technical candidate can be
+inspected **only on request**. It is **not active or auto-selected**; apply the ordinary
+`ai_video_prompt_adapter` and this playbook for usable prompting without claiming provider
+validation.
+
+1. Inspect the actual authorized source video (or identify precisely what cannot be inspected).
+   Record shot/cut boundaries, camera trajectory, framing, key poses, timing, actor/object
+   positions, interaction and audio. Source timecodes require real visual evidence.
+2. Specify what stays (motion, staging, camera, permitted sound, cut rhythm) versus what
+   changes (character identity, wardrobe, props, setting). Do not assume the provider can
+   preserve exact choreography. Respect source/reference rights and personal likeness consent.
+3. If the verified provider uses them, bind `@Video1` to motion/camera/timing only and
+   `@Image1`, `@Image2`, etc. to the corresponding new identities and objects. Map the
+   actual upload order and reject unintentional source attributes; never invent assets.
+4. For significant character swaps, plan inspected preview stills at key poses and
+   occlusions before generation, when the user has authorized producing them. Reuse only
+   reference images that actually exist.
+5. Deliver **only** source observations/unknowns, a reference upload table, verified UI
+   settings, one English copy-ready prompt and short QA/repair guidance. Split incompatible
+   cuts into shots. Do not execute a render or claim a result from the prompt alone.
+
+Provenance: independently adapted from [JutsuHQ's MIT-licensed Higgsfield Seedance prompt
+skill](https://github.com/jutsuhq/higgsfield-seedance-prompt-skill), particularly its
+motion-transfer reference. Model capabilities and UI tag syntax require current verification.
+No upstream shell scripts, prompt corpus or generation service is bundled.
+
 ## Provider reading list (recheck before execution)
 - [Runway Gen-4 video prompting](https://help.runwayml.com/hc/en-us/articles/39789879462419-Gen-4-Video-Prompting-Guide): positive, concise motion guidance for that documented model; not a universal latest-model contract.
 - [Google video prompting](https://cloud.google.com/vertex-ai/generative-ai/docs/video/video-gen-prompt-guide): subject/action/context/camera and model-dependent controls.

@@ -1,6 +1,6 @@
-# ACO 1.0.3 — Beginner Guide
+# ACO 1.0.5 — Beginner Guide
 
-This guide covers the complete 1.0.3 package, including the macOS path fixes. For the shortest setup route, read [Start here](docs/START-HERE.md).
+This guide covers the complete 1.0.5 package, including the macOS path fixes. For the shortest setup route, read [Start here](docs/START-HERE.md).
 
 **You do not need to know every agent, install 99 optional resources, or create a folder for every idea.**
 
@@ -12,12 +12,12 @@ ACO is not a plugin to submit to a directory. Downloading it does not connect Dr
 
 ## 2. You have an older ACO repository: update it first
 
-1. Download the complete 1.0.3 ZIP and extract it into a **new folder**. Do not drop it over your old checkout.
+1. Download the complete 1.0.5 ZIP and extract it into a **new folder**. Do not drop it over your old checkout.
 2. Open your existing `ACO-agents` checkout in Codex. Make the extracted new folder available to Codex too.
 3. Paste this:
 
 ```text
-Update this ACO repository using the new 1.0.3 package.
+Update this ACO repository using the new 1.0.5 package.
 Read docs/UPGRADING.md FROM THE NEW PACKAGE.
 Follow its safe preview, backup, migration, validation and tests. If a release-specific Codex prompt was supplied beside the ZIP, you may use it as a convenience wrapper.
 Preserve .git, history, private, untracked and unrelated files.
@@ -49,7 +49,7 @@ Try:
 
 Use Python 3.11 or newer for the local tools. `python3 --version` shows the version. Install Python from an official or organization-approved source if it is missing.
 
-On macOS, open `Install ACO.command` from the extracted folder, inspect it, and answer the two questions. It installs the 16 skills. Native agent profiles are optional; you do not need every profile for every task. Follow normal macOS security guidance rather than disabling protections.
+On macOS, open `Install ACO.command` from the extracted folder, inspect it, and answer the two questions. It installs the 23 skills. Native agent profiles are optional; you do not need every profile for every task. Follow normal macOS security guidance rather than disabling protections.
 
 Or open a terminal in the extracted `ACO-agents` folder:
 
@@ -74,7 +74,7 @@ Start a new Codex session. Ask it which ACO skill it actually loaded. If discove
 
 ### Check that you are using the new release
 
-Before installation, open `VERSION` in the extracted folder: it must say `1.0.3`. After installation, use `install-status` from that same folder to inspect the managed files. Then start a fresh Codex session and ask:
+Before installation, open `VERSION` in the extracted folder: it must say `1.0.5`. After installation, use `install-status` from that same folder to inspect the managed files. Then start a fresh Codex session and ask:
 
 > Use ACO. Read the actual VERSION and bootstrap metadata from the release available to this session. Tell me the version and which relevant instructions you read, then help with this task: [describe the work].
 
@@ -190,7 +190,7 @@ In a worktree ACO can maintain one ignored `.agent-context/HANDOFF.md`. It is no
 | What you see | What to do |
 |---|---|
 | GitHub says “Resource not accessible by integration” | Ask the account owner to review that connector's access for the exact repository and operation. Keep the prepared work. Installing ACO cannot grant account permissions. |
-| macOS reports a symlink/path error | Confirm that the source and installed runtime are 1.0.3. Standard system aliases are supported; user-created symlinks remain rejected. Move the release to an ordinary folder rather than disabling checks. |
+| macOS reports a symlink/path error | Confirm that the source and installed runtime are 1.0.5. Standard system aliases are supported; user-created symlinks remain rejected. Move the release to an ordinary folder rather than disabling checks. |
 | “I can't read the repo” | Confirm the repository/file tool and permissions; provide the necessary files, not imaginary access. |
 | “Saved” but no Drive link/receipt | Ask for the actual write/read-back evidence; otherwise treat the update as pending. |
 | A file for every rejected idea | Stop, reload `COMPACT-MEMORY.md`, and update an existing pipeline row instead. |
@@ -200,4 +200,4 @@ In a worktree ACO can maintain one ignored `.agent-context/HANDOFF.md`. It is no
 | Test suite passed, output still looks bad | Local tests do not judge taste. Inspect actual outputs and revise against the brief. |
 | Chat keeps the old rules | Start a fresh session or explicitly reload the new version and relevant methods. |
 
-Read the full [README](README.md), [CLI](docs/CLI.md), [Studio checks](docs/STUDIO-CHECKS.md) and [Upgrading](docs/UPGRADING.md) for details. See the included [1.0.3 test report](ACO-TEST-REPORT-v1.0.3.md) for the checks actually run.
+Read the full [README](README.md), [CLI](docs/CLI.md), [Studio checks](docs/STUDIO-CHECKS.md) and [Upgrading](docs/UPGRADING.md) for details. See the included [1.0.5 test report](ACO-TEST-REPORT-v1.0.5.md) for the checks actually run.

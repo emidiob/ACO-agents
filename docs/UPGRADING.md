@@ -2,7 +2,7 @@
 
 This is the evergreen repository-upgrade procedure. Release-specific copy/paste prompts belong next to a distributed ZIP, not inside `ACO-agents`.
 
-1. Extract the new complete ACO release **outside** the existing Git checkout. For this package, check that `VERSION` says `1.0.3` and that README, BEGINNER-GUIDE, LICENSE, `release/manifest.json` and the 1.0.3 test report are present. If a `.sha256` file was supplied, compare it with the ZIP before extracting.
+1. Extract the new complete ACO release **outside** the existing Git checkout. For this package, check that `VERSION` says `1.0.5` and that README, BEGINNER-GUIDE, LICENSE, `release/manifest.json` and the 1.0.5 test report are present. If a `.sha256` file was supplied, compare it with the ZIP before extracting.
 2. In the existing checkout inspect `git status`, current branch, origin and recent history. Resolve/preserve tracked edits before migration.
 3. From the **new** source run a dry-run migration:
    ```bash

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "1.0.4",
+  "aco_version": "1.0.5",
   "gate": {
     "minimum_score": 100,
     "maximum_critical_failures": 0
@@ -12,9 +12,9 @@
       "critical": true,
       "expected": {
         "status": "valid",
-        "skills": 43,
+        "skills": 44,
         "active_skills": 14,
-        "candidate_skills": 29
+        "candidate_skills": 30
       }
     },
     {
@@ -825,6 +825,24 @@
       },
       "expected": {
         "status": "invalid"
+      }
+    },
+    {
+      "id": "reference-video-replica-excluded",
+      "operation": "search",
+      "query": "seedance reference video replica motion transfer",
+      "expected": {
+        "results": []
+      }
+    },
+    {
+      "id": "reference-video-replica-visible-for-inspection",
+      "operation": "search",
+      "query": "reference video replica motion transfer",
+      "include_candidates": true,
+      "expected": {
+        "results.0.skill_id": "video.seedance.reference-video-replica",
+        "results.0.selectable": false
       }
     }
   ]
