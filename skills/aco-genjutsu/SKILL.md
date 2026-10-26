@@ -20,7 +20,7 @@ For camera wording or character/image briefs, use [visual language](references/v
 
 ## Evidence before a final prompt
 
-Inspect source metadata, representative frames and the transition/contact moments. The local `scripts/inspect_video.py` helper can extract selected frames and metadata using existing ffmpeg/ffprobe. It samples images, not a complete playback or audio review. Read its help before execution. Inspect the extracted images, refine timestamps around uncertain events, and disclose uninspected audio. A scene detector may suggest cuts but cannot prove their absence.
+Inspect source metadata, representative frames and the transition/contact moments. The local `scripts/inspect_video.py` helper creates metadata, a chronological overview, cut candidates, selected full-size frames, a reference strip and a draft reference map using existing ffmpeg/ffprobe. It samples images, not a complete playback or audio review. Read its help before execution. Inspect the extracted images, refine timestamps around uncertain events, and disclose uninspected audio. A scene detector may suggest cuts but cannot prove their absence.
 
 When the user has already said “as it is,” carry that instruction forward. Ask only for a missing choice that changes the deliverable, such as the target model/interface. Continue reference analysis while that choice is pending. An unknown video provider must not block local extraction, visual inspection or delivery of references. Prepare those first; only the final provider bindings and settings remain unresolved.
 
@@ -28,7 +28,7 @@ Use only real reference files. Preserve their exact paths privately; use short f
 
 ## Response
 
-Lead with the actual reference images: show a contact sheet and link the individual full-resolution files in time order. State which images are extracted and which are generated/edited. Then give a compact file/time/purpose map, supported settings (or unresolved fields), one shot-specific English prompt, and relevant QC notes. Do not finish with prose-only placeholders when the files can be made.
+Complete the local preparation and packet checks in [reference delivery](references/reference-delivery.md), including the source-specific `shot-prompt.txt`; a generic template is not a finished prompt. Lead with the actual reference images: show a contact sheet and link the individual full-resolution files in time order. State which images are extracted and which are generated/edited. Then give a compact file/time/purpose map, supported settings (or unresolved fields), one shot-specific English prompt, and relevant QC notes. Do not finish with prose-only placeholders when the files can be made.
 
 A request to recreate/transform a supplied video through this skill includes preparing the reference stills needed for that requested result, unless the user explicitly asks for text only. Use the host image tool for requested image transformations and obey its actual permissions; do not ask for a redundant approval merely because a still must be produced. Preserve the user's chosen transformation. Video generation, external uploads and additional paid provider operations remain separate actions. If an essential reference or tool is missing, identify that specific blocker, deliver the source frames already available, and label unfinished previews accurately.
 
