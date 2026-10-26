@@ -2,6 +2,8 @@
 
 ## Unreleased — original ACO prompt workflow
 
+- Fix reference delivery: Genjutsu must create, inspect and show usable reference image files before the final prompt. Missing video-provider settings do not block source extraction; requested transformations include the necessary reference stills.
+
 - Add original ACO authoring notation, operation selection, visual-anchor preparation, camera/appearance guidance, worked cases and render diagnosis.
 - Connect Genjutsu, Video and Image entrypoints to the complete local method. Same-scene recreation uses source anchors without requiring replacement characters.
 - Add a local frame-inspection helper that records sampling limits and refuses output collisions. Existing registry candidate states and third-party notices are unchanged.
