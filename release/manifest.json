@@ -63,7 +63,7 @@
     },
     "CHANGELOG.md": {
       "mode": 420,
-      "sha256": "698ffa3ecc4307ddfd16db7ec5d073ffe8989f012ca8fc837699f627ba92c78c"
+      "sha256": "cc23e614ab354bcbe1e7fcc959a761c205fba5edabd990605c5751592ec142c8"
     },
     "CHATGPT.md": {
       "mode": 420,
@@ -367,7 +367,7 @@
     },
     "docs/ACO-COMMANDS.md": {
       "mode": 420,
-      "sha256": "533da612bc5b4b0038c782a8299e40ae34bb5651d3341af69f60349fbe9beb36"
+      "sha256": "af98f61026b13328b11ca1d0d897fcc3efd4f0d4d62b31c3c914df4484727d73"
     },
     "docs/ACO-OS-1.0.md": {
       "mode": 420,
@@ -3339,7 +3339,35 @@
     },
     "skills/aco-genjutsu/SKILL.md": {
       "mode": 420,
-      "sha256": "c3f8fb699eb2afb4aaecfef01068f3516c6947a717d4ce4f959fd0c0903da35d"
+      "sha256": "39c616996622cdeefb7ce38d5d01ffe7e77d94dc01542f047860d6b0421e9ce1"
+    },
+    "skills/aco-genjutsu/references/diagnosis.md": {
+      "mode": 420,
+      "sha256": "c2990e13ceba3890e30bfb6ed5a22b9577c3b8904171efcdf679b64ee9b189ed"
+    },
+    "skills/aco-genjutsu/references/generation-modes.md": {
+      "mode": 420,
+      "sha256": "f98d370683cbf9d27a44dcdf80e9f5078be24171280f33d862116c5f24b239f6"
+    },
+    "skills/aco-genjutsu/references/prompt-notation.md": {
+      "mode": 420,
+      "sha256": "ec9bb25fcdcd204367bfa450f9a829b0abaa9b75cbaec6084779751bd76ae5df"
+    },
+    "skills/aco-genjutsu/references/visual-evidence.md": {
+      "mode": 420,
+      "sha256": "91de9e0676880114b6976e985f914f304801ede9fc075fb1e325032e78f6e02b"
+    },
+    "skills/aco-genjutsu/references/visual-language.md": {
+      "mode": 420,
+      "sha256": "21c8289e6abfca4cd6d2dcb2c0dfe432490cd0321d5bf8afa9decae0dc0cc506"
+    },
+    "skills/aco-genjutsu/references/worked-cases.md": {
+      "mode": 420,
+      "sha256": "e8e498fc289c0ca2d32dde1a37992679050c2763847cb356a94bf15ecde4957c"
+    },
+    "skills/aco-genjutsu/scripts/inspect_video.py": {
+      "mode": 420,
+      "sha256": "e280f492735bca798325d63d4b5b32dae847e2645eef5962ed52b8ad4d993654"
     },
     "skills/aco-help/SKILL.md": {
       "mode": 420,
@@ -3347,7 +3375,7 @@
     },
     "skills/aco-image/SKILL.md": {
       "mode": 420,
-      "sha256": "39e61f5ca85dedda258b6b52371500efd099046b7bcf2e23448d119a58287a1c"
+      "sha256": "03477a704dc6bb5eeaf876ddead5c9b55f5c0d32d0da308fc4d1d0af598f95a3"
     },
     "skills/aco-legal-office/SKILL.md": {
       "mode": 420,
@@ -3695,7 +3723,7 @@
     },
     "skills/aco-office-concierge/references/playbooks/ai-video.md": {
       "mode": 420,
-      "sha256": "bfff050ae5fe7610b66e1eeb9875b47da7a9b5efbcb05ebdbd7f6194aaa45127"
+      "sha256": "09379349a72f4d9cbdd4c50a7ae97c6f63e2e0a9569a70fac50a38cf0cb1cad3"
     },
     "skills/aco-office-concierge/references/playbooks/continuity-qc.md": {
       "mode": 420,
@@ -5407,7 +5435,7 @@
     },
     "skills/aco-video/SKILL.md": {
       "mode": 420,
-      "sha256": "83a7fb46772db71154ec192e9de83bda189cfdf764fedaaf482f22b52b9d8eb7"
+      "sha256": "46b6e1dd5364b32e74ca54762ac09fc4af9234d577953beb0ee5e71608de0451"
     },
     "skills/aco/SKILL.md": {
       "mode": 420,
@@ -5472,6 +5500,10 @@
     "tests/test_production.py": {
       "mode": 420,
       "sha256": "f6ab40d11517423d82bb20f738998c92e7fcaca920b5e8f92db32d071c0cfe9c"
+    },
+    "tests/test_prompt_inspection.py": {
+      "mode": 420,
+      "sha256": "3fb882aa9542b3a6deff7236329f44500dd1706d5a7c5c58596136501ce6b5e8"
     },
     "tests/test_quality_routing.py": {
       "mode": 420,

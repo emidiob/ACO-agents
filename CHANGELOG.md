@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased — original ACO prompt workflow
+
+- Add original ACO authoring notation, operation selection, visual-anchor preparation, camera/appearance guidance, worked cases and render diagnosis.
+- Connect Genjutsu, Video and Image entrypoints to the complete local method. Same-scene recreation uses source anchors without requiring replacement characters.
+- Add a local frame-inspection helper that records sampling limits and refuses output collisions. Existing registry candidate states and third-party notices are unchanged.
+
 ## 1.0.5 — ACO Genjutsu and Quick Commands
 
 - Repair build-kit compatibility with both installer ownership guards, retain frozen routing checks while allowing the seven command aliases, and align current metadata/docs/tests with 1.0.5.

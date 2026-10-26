@@ -23,3 +23,7 @@ Alternative: `/aco genjutsu`, `/aco video`, `/aco image`, `/aco capture`, `/aco 
 **ChatGPT:** Typing `/aco` or `/aco-genjutsu` into chat is a textual instruction. This kit cannot register new native product slash commands by itself; the connected repository methods must remain accessible to the conversation.
 
 **Provenance:** JutsuHQ MIT prompt-only workflow, independently adapted for ACO (see Genjutsu technical body). No upstream scripts or external APIs installed.
+
+## Original prompt workflow
+
+`aco-genjutsu` now routes to the complete [ACO method](../skills/aco-genjutsu/SKILL.md), with original notation, visual evidence, operation selection, appearance/camera guidance, worked cases and diagnosis. `aco-video` and `aco-image` reuse the relevant references. The local frame helper performs analysis only; no provider is invoked. Existing third-party material retains its original notices.

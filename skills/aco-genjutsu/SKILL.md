@@ -1,18 +1,35 @@
 ---
 name: aco-genjutsu
-description: "Prompt-only source-video recreation, camera/actor motion transfer and character substitution. Trigger: /aco-genjutsu or $aco-genjutsu; never generate a video automatically."
+description: "Analyze a supplied video and prepare reference-guided recreation, motion-transfer or selective-edit prompts. Includes visual anchors, timed actions and render diagnosis; prompt preparation does not generate media."
 ---
 
-# /aco-genjutsu — video-reference replication prompts
+# ACO Genjutsu
 
-Route through the ACO `production-office` specialist `ai_video_prompt_adapter`; read `../aco-office-concierge/references/playbooks/ai-video.md` and the technical body `../../skillpacks/seedance/reference-video-replica.json` (when in source checkout). In an installed ACO runtime, use the canonical skill registry `video.seedance.reference-video-replica` with explicit `--allow-candidate`; do not guess a relative file path in a client project.
+Turn the user's source into an actionable recreation brief. Use the original ACO method in this folder; do not substitute a generic scene description for reference preparation. The name remains the existing ACO command alias.
 
-1. Inspect the **actual** user-authorized source video before claiming cuts, motion beats or duration. If the video cannot be viewed, distinguish user description from inspected facts; do not fabricate timecodes.
-2. Record what should remain: shot order, timing, camera, gesture, framing and allowed sound; and what must change: characters, wardrobe, props, setting. Preserve image/video rights and likeness consent.
-3. Map real uploads to `@Video1`, `@Image1`, `@Image2`… with explicit retain/exclude attributes. Syntax, input count, duration, audio and resolution are **provider-specific**, and must be checked before giving clickable settings. Never pretend previews, crops or references already exist.
-4. Provide **only** a short source analysis, ordered reference map, checked UI settings, one concise **English copy-ready prompt** and up to three QC/repair notes. No rendering, API calls, uploads or paid operations.
-5. For motion transfer, separate motion source from target identity; check turns/occlusion, silhouette scale and costume leakage. If reference materials are insufficient, give a clearly labeled provisional prompt.
+## Choose the deliverable
 
-Reference adapted independently from JutsuHQ's MIT-licensed `higgsfield-seedance-prompt-skill`, particularly `references/motion-transfer.md`, with attribution in the registry. Candidate method is available for *explicit experimental use*, but no real model-render benchmark or provider acceptance is claimed.
+Read [prompt notation](references/prompt-notation.md), then the applicable case in [generation modes](references/generation-modes.md).
 
-Before any persistent write, follow `../aco-office-concierge/references/protocols/COMPACT-MEMORY.md`; keep private context outside the public library.
+- **Same scene:** retain identity, wardrobe, setting, objects and movement. Use the original video and inspected source frames as anchors; replacement-character previews are unnecessary.
+- **Changed scene:** identify the requested changes and which source properties must survive. Read [visual evidence](references/visual-evidence.md) before assigning references.
+- **Existing render has a defect:** read [diagnosis](references/diagnosis.md); compare the actual render with its source before suggesting a targeted repair.
+- **New video without a source:** route to `../aco-video/SKILL.md` and use the same notation without invented reference bindings.
+
+For camera wording or character/image briefs, use [visual language](references/visual-language.md). Read the closest [worked case](references/worked-cases.md) before drafting; examples are fictional and never replace inspecting the user's file.
+
+## Evidence before a final prompt
+
+Inspect source metadata, representative frames and the transition/contact moments. The local `scripts/inspect_video.py` helper can extract selected frames and metadata using existing ffmpeg/ffprobe. It samples images, not a complete playback or audio review. Read its help before execution. Inspect the extracted images, refine timestamps around uncertain events, and disclose uninspected audio. A scene detector may suggest cuts but cannot prove their absence.
+
+When the user has already said “as it is,” carry that instruction forward. Ask only for a missing choice that changes the deliverable, such as the target model/interface. Continue reference analysis while that choice is pending. If the provider is unknown, deliver a useful provider-neutral draft with unresolved controls clearly separated.
+
+Use only real reference files. Preserve their exact paths privately; use short filenames in the result. Record each reference's job and the moment it represents. Translate ACO notation into the chosen provider's verified syntax before calling a prompt ready to paste into that interface. Strong wording does not guarantee pixel, identity or timing fidelity.
+
+## Response
+
+Give a brief source reading, a reference-to-purpose table, supported settings (or unresolved fields), one English prompt, and only the QC notes that matter to this shot. Explain in the user's language. Frame extraction is local analysis; generating replacement stills, uploading, rendering, editing video or spending credits requires the user's corresponding request.
+
+The preexisting technical candidate `video.seedance.reference-video-replica` remains experimental and may be inspected explicitly through `skill-resolve --skill video.seedance.reference-video-replica --allow-candidate`. This original prompt workflow does not promote that or any other model-specific registry entry.
+
+Before persistent writes, follow `../aco-office-concierge/references/protocols/COMPACT-MEMORY.md`. Keep media and private briefs outside the public ACO checkout.

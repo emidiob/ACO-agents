@@ -21,7 +21,11 @@ Read supplied model/tool information first. Clarify generation mode, usable refe
 7. Run one small authorized test before a large batch. Track model version, reference IDs/hashes, exact prompt, seed when actually supported, settings, cost and result. Change one diagnostic variable at a time; do not promise identical results from a seed alone.
 8. Stop after the agreed trial budget. A rejected/refused request is not permission to switch accounts/providers to bypass a restriction.
 
-## Reference-video recreation — prompt-only method
+## Original ACO prompt workflow
+
+For source-guided recreation and selective changes, read [ACO Genjutsu](../../../aco-genjutsu/SKILL.md) and its task-specific references. For ordinary new-video prompts, use its [authoring notation](../../../aco-genjutsu/references/prompt-notation.md) and [mode selection](../../../aco-genjutsu/references/generation-modes.md). The local method includes visual evidence, camera language, worked cases and diagnosis; provider controls still require verification.
+
+## Historical experimental reference-video method
 
 For an explicit request to recreate a *source video* using original replacement characters or
 objects, the optional `video.seedance.reference-video-replica` technical candidate can be
