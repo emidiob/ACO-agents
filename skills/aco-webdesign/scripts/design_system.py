@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import re
 from design_data import Catalog
+from project_system import from_proposal
 
 DOMAINS=('products','ui-reasoning','styles','colors','typography','landing','charts','motion','ux-guidelines')
 
@@ -44,6 +45,7 @@ def persist(result, output):
     if not output.parent.is_dir():raise ValueError('Output parent must exist')
     output.mkdir()
     (output/'design-system.json').write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n')
+    (output/'project-system.json').write_text(json.dumps(from_proposal(result),indent=2,ensure_ascii=False)+'\n')
     css=':root {\n'+''.join(f'  --{k}: {v};\n' for k,v in result['color_tokens'].items())+'}\n'
     (output/'tokens.css').write_text(css)
     return output

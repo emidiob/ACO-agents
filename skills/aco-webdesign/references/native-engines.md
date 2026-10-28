@@ -25,7 +25,7 @@ python3 scripts/design_system.py "SaaS analytics dashboard" \
   --output /existing-parent/new-system
 ```
 
-The result contains source-linked product, style, palette, typography, layout, chart, motion and UX recommendations where matching domains exist. A product recommendation supplies additional search terms for style, color and layout. The output includes `design-system.json` and CSS semantic color variables. An optional `--overrides colors.json` takes semantic-name/six-digit-hex pairs and preserves them over proposed colors. Existing outputs are never overwritten.
+The result contains source-linked product, style, palette, typography, layout, chart, motion and UX recommendations where matching domains exist. A product recommendation supplies additional search terms for style, color and layout. The output includes `design-system.json` and CSS semantic color variables. It also creates `project-system.json` for [master/page token inheritance](project-tools.md). An optional `--overrides colors.json` takes semantic-name/six-digit-hex pairs and preserves them over proposed colors. Existing outputs are never overwritten.
 
 This is a proposal, not an approved brand system. The tool outputs a proposal and a color-token file; existing project design decisions remain authoritative. Resolve conflicting recommendations using the brief and existing system. Verify actual rendered contrast, font rights and behavior before adoption. Never replace a working project system merely because a search returned a different style.
 

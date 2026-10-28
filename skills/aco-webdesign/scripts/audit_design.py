@@ -3,12 +3,14 @@
 import argparse
 import json
 from pathlib import Path
-from design_rules import RULES
+from design_rules import RULES, contrast
 
 
 def audit(snapshot,system=None,ignore=()):
     if snapshot.get('schema')!=2:raise ValueError('Design review requires a schema 2 DOM snapshot')
     system=system or {};rows=snapshot['elements'];byid={e['index']:e for e in rows}
+    siblings_by_parent={}
+    for row in rows:siblings_by_parent.setdefault(row.get('parent'),[]).append(row.get('text',''))
     body=[e['fontSize'] for e in rows if e['tag']=='p' and e.get('fontSize')]
     body_size=sorted(body)[len(body)//2] if body else 16
     spaces=[e['marginBottom'] for e in rows if e.get('tag')=='section' and e.get('marginBottom',0)>0]
@@ -28,12 +30,14 @@ def audit(snapshot,system=None,ignore=()):
         for e in rows:
             if rule_id in e.get('ignoreRules',[]):continue
             parent=byid.get(e.get('parent'),{});previous=byid.get(e.get('previous'),{})
-            siblings=[x.get('text','') for x in rows if x.get('parent')==e.get('parent')]
+            siblings=siblings_by_parent.get(e.get('parent'),[])
+            if rule_id=='text-contrast' and e.get('text') and contrast(e.get('color',''),e.get('effectiveBackground','')) is None:
+                unknown.append({'id':rule_id,'element':e['index'],'reason':'Opaque foreground/background colors unavailable'});continue
             try:matched=predicate(e,parent,previous,snapshot,system,body_size,spaces,snapshot['viewport']['width'],snapshot['viewport']['height'],siblings)
             except (TypeError,ValueError,KeyError,ZeroDivisionError) as exc:
                 raise ValueError(f'Invalid measurement for {rule_id}: {exc}') from exc
-            if matched:findings.append({'rule':rule_id,'category':category,'severity':'review','message':message,'element':{'index':e['index'],'tag':e['tag'],'id':e.get('id','')},'evidence':{k:e.get(k) for k in ('text','fontSize','color','background','width','height')}})
-    return {'rules':len(RULES),'findings':findings,'not_evaluated':unknown,'ignored':sorted(skipped),'viewport':snapshot['viewport'],'visual_judgment_required':True}
+            if matched:findings.append({'rule':rule_id,'category':category,'severity':'review','message':message,'element':{'index':e['index'],'tag':e['tag'],'id':e.get('id',''),'sourceKey':e.get('sourceKey')},'evidence':{k:e.get(k) for k in ('text','fontSize','color','background','width','height')}})
+    return {'capture_truncated':bool(snapshot.get('truncated')),'rules':len(RULES),'findings':findings,'not_evaluated':unknown,'ignored':sorted(skipped),'viewport':snapshot['viewport'],'visual_judgment_required':True}
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('snapshot',type=Path);p.add_argument('--system',type=Path);p.add_argument('--ignore',action='append',default=[]);a=p.parse_args()

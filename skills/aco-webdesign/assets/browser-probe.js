@@ -1,7 +1,8 @@
 () => {
   // ACO read-only DOM probe. Run through the host's authorized browser API.
   // It never clicks, edits, fetches, reads application stores or uploads data.
-  const elements = Array.from(document.querySelectorAll('body, body *')).filter(el => { const r=el.getBoundingClientRect(); return getComputedStyle(el).display !== 'none' && r.width>0 && r.height>0; });
+  const candidates = Array.from(document.querySelectorAll('body, body *')).filter(el => { const r=el.getBoundingClientRect(); return getComputedStyle(el).display !== 'none' && r.width>0 && r.height>0; });
+  const elements = candidates.slice(0,5000);
   const indices = new Map(elements.map((el, index) => [el, index]));
   let lastHeading = 0;
   const rows = elements.map((el, index) => {
@@ -48,7 +49,7 @@
       headingGap:!!headingGap,hasIcon:!!el.querySelector('svg,img'),primitiveCount:el.querySelectorAll('rect,circle,ellipse,line,polygon').length,
       src:el.tagName==='IMG' ? el.getAttribute('src') : null,imageComplete:el.complete,naturalWidth:el.naturalWidth,
       ignoreRules:(el.getAttribute('data-aco-ignore') || '').split(/\s+/).filter(Boolean),
-      tag:el.tagName.toLowerCase(), id:el.id, role:el.getAttribute('role'),
+      tag:el.tagName.toLowerCase(), id:el.id, sourceKey:el.getAttribute('data-aco-edit'), role:el.getAttribute('role'),
       text:ownText.slice(0,2000), name:name.slice(0,200),
       alt:el.getAttribute('alt'), href:el.getAttribute('href'), type:el.getAttribute('type'),
       disabled:el.matches(':disabled'), tabindex:el.getAttribute('tabindex'),
@@ -59,7 +60,7 @@
       overflowX:s.overflowX,whiteSpace:s.whiteSpace,animation:s.animationName,
       animationDuration:s.animationDuration,transition:s.transitionProperty};
   });
-  return {schema:2,lineMeasurement:true,occlusionMeasurement:true,url:location.origin+location.pathname,title:document.title,
+  return {schema:2,truncated:candidates.length>elements.length,totalElements:candidates.length,lineMeasurement:true,occlusionMeasurement:true,url:location.origin+location.pathname,title:document.title,
     lang:document.documentElement.lang,viewport:{width:innerWidth,height:innerHeight},
     scrollWidth:document.documentElement.scrollWidth,
     viewportMeta:document.querySelector('meta[name="viewport"]')?.content || '',
