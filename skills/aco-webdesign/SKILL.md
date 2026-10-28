@@ -7,6 +7,12 @@ description: "Design, build and redesign websites and product interfaces with or
 
 Use `/aco-webdesign` in Claude Code, `$aco-webdesign` in Codex, or `aco webdesign <task>` through Concierge. This is a native, independently installable ACO skill. It contains its own methods; external agent skills are not runtime dependencies. Inspect the existing project before choosing libraries or changing its design system.
 
+## Native operations
+
+For a named operation such as `polish`, `harden`, `typeset`, `prototype` or `motion-review`, use [the operation index](references/operations.md) and read only its selected method. `python3 scripts/operations.py list` lists all operations; `python3 scripts/operations.py show harden` prints the selected method. These are agent workflows, not claims of automated engine parity.
+
+Use [native engines](references/native-engines.md) for external-data retrieval/search, design-system proposals and rendered DOM analysis. Check [feature parity](references/feature-parity.json) before claiming equivalence to an upstream repository. Full parity is not yet implemented.
+
 ## Choose the needed work
 
 | Request | Method |

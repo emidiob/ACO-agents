@@ -236,6 +236,11 @@ def outputs():
              'Common terminal tools include `install`, `install-status`, `validate`, `skill-search`, `skill-resolve`, `capability-audit`, `goal-status` and `autonomy-plan`. Inspect `<command> --help` for arguments; these are not slash commands.', '',
              '## Native motion design', '',
              '`aco-motion` contains native ACO methods for create, animate, captions, maps, edit, preview, render, app, web, audit and upgrade. These are arguments to the skill, not additional registered commands. No external agent skill is required; real engines and project dependencies are checked per task.', '']
+    web_operations = json.loads((R/'skills/aco-webdesign/assets/operations.json').read_text())
+    menu += ['## Native web design', '',
+             '`aco-webdesign <operation> <target>` selects an ACO method. In Codex use `$aco-webdesign`; in Claude use `/aco-webdesign`. These arguments are not separate host commands.', '',
+             ', '.join('`' + item['name'] + '`' for item in web_operations) + '.', '',
+             'The native kit also provides external-data search, design-system proposals and a rendered-DOM audit. Full parity with the researched upstream repositories is not yet implemented.', '']
     out['skills/aco-help/references/commands.md'] = '\n'.join(menu).encode()
     out['docs/ACO-COMMANDS.md'] = '\n'.join(menu).encode()
 

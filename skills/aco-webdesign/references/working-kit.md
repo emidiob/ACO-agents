@@ -26,3 +26,7 @@ Add `--project /absolute/project` for project-local installation. Use the integr
 ## Verified scope
 
 The two examples were visually reviewed at 390 and 1440 CSS pixels. Workspace search/filter/empty-state recovery and editorial filtering/dialog keyboard close/focus return were exercised. Isolated packages installed in both host layouts. These checks do not establish fresh host discovery, screen-reader conformance, measured production performance or arbitrary-site design quality.
+
+## Extended native engines
+
+See [native engines](native-engines.md) for independent BM25 search, checksum-pinned external data, design-system proposals and DOM snapshot analysis. See [operations](operations.md) for the 33 native agent methods. These additions remain below full upstream feature parity.

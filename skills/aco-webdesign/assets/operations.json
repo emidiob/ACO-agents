@@ -1,0 +1,233 @@
+[
+  {
+    "name": "init",
+    "title": "Establish product context",
+    "reference": "references/operations/init.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "document",
+    "title": "Document the existing design",
+    "reference": "references/operations/document.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "extract",
+    "title": "Extract reusable elements",
+    "reference": "references/operations/extract.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "shape",
+    "title": "Plan the interface",
+    "reference": "references/operations/shape.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "craft",
+    "title": "Build and iterate",
+    "reference": "references/operations/craft.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "critique",
+    "title": "Review design judgment",
+    "reference": "references/operations/critique.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "audit",
+    "title": "Review technical behavior",
+    "reference": "references/operations/audit.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "polish",
+    "title": "Finish an implemented surface",
+    "reference": "references/operations/polish.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "bolder",
+    "title": "Increase visual emphasis",
+    "reference": "references/operations/bolder.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "quieter",
+    "title": "Reduce visual competition",
+    "reference": "references/operations/quieter.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "distill",
+    "title": "Simplify the interface",
+    "reference": "references/operations/distill.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "harden",
+    "title": "Handle edge cases",
+    "reference": "references/operations/harden.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "onboard",
+    "title": "Design first use",
+    "reference": "references/operations/onboard.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "animate",
+    "title": "Implement purposeful motion",
+    "reference": "references/operations/animate.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "colorize",
+    "title": "Give color a semantic role",
+    "reference": "references/operations/colorize.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "typeset",
+    "title": "Refine typography",
+    "reference": "references/operations/typeset.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "layout",
+    "title": "Refine composition",
+    "reference": "references/operations/layout.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "delight",
+    "title": "Add useful moments of delight",
+    "reference": "references/operations/delight.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "overdrive",
+    "title": "Build an advanced effect",
+    "reference": "references/operations/overdrive.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "clarify",
+    "title": "Improve interface language",
+    "reference": "references/operations/clarify.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "adapt",
+    "title": "Adapt across devices",
+    "reference": "references/operations/adapt.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "optimize",
+    "title": "Improve measured performance",
+    "reference": "references/operations/optimize.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "live",
+    "title": "Compare a rendered change",
+    "reference": "references/operations/live.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "generate",
+    "title": "Generate scoped variants",
+    "reference": "references/operations/generate.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "motion-review",
+    "title": "Review transitions",
+    "reference": "references/operations/motion-review.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "motion-opportunities",
+    "title": "Find useful transitions",
+    "reference": "references/operations/motion-opportunities.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "motion-performance",
+    "title": "Diagnose animation performance",
+    "reference": "references/operations/motion-performance.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "motion-vocabulary",
+    "title": "Specify motion precisely",
+    "reference": "references/operations/motion-vocabulary.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "mobile-native",
+    "title": "Improve mobile web behavior",
+    "reference": "references/operations/mobile-native.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "break-ui",
+    "title": "Stress-test interface content",
+    "reference": "references/operations/break-ui.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "prototype",
+    "title": "Compare functional alternatives",
+    "reference": "references/operations/prototype.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "react-review",
+    "title": "Review React implementation",
+    "reference": "references/operations/react-review.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  },
+  {
+    "name": "libraries",
+    "title": "Select real libraries",
+    "reference": "references/operations/libraries.md",
+    "kind": "agent_method",
+    "runtime_verified": false
+  }
+]
