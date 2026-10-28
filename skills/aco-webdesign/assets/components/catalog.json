@@ -1,0 +1,450 @@
+[
+  {
+    "id": "accordion",
+    "name": "Accordion",
+    "category": "disclosure",
+    "behavior": "Exclusive native disclosure with keyboard support",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "alert",
+    "name": "Alert",
+    "category": "feedback",
+    "behavior": "Polite status announcement",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "dialog",
+    "name": "Dialog",
+    "category": "overlay",
+    "behavior": "Native modal, focus containment, Escape and focus return",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "alert-dialog",
+    "name": "Alert Dialog",
+    "category": "overlay",
+    "behavior": "Native modal, focus containment, Escape and focus return",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "drawer",
+    "name": "Drawer",
+    "category": "overlay",
+    "behavior": "Native modal, focus containment, Escape and focus return",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "sheet",
+    "name": "Sheet",
+    "category": "overlay",
+    "behavior": "Native modal, focus containment, Escape and focus return",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "aspect-ratio",
+    "name": "Aspect Ratio",
+    "category": "layout",
+    "behavior": "Responsive intrinsic 16:9 frame",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "attachment",
+    "name": "Attachment",
+    "category": "input",
+    "behavior": "Shows selected filenames locally; does not upload",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "avatar",
+    "name": "Avatar",
+    "category": "display",
+    "behavior": "Accessible initials fallback",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "badge",
+    "name": "Badge",
+    "category": "display",
+    "behavior": "Compact status label",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "breadcrumb",
+    "name": "Breadcrumb",
+    "category": "navigation",
+    "behavior": "Semantic ordered navigation trail",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "bubble",
+    "name": "Bubble",
+    "category": "display",
+    "behavior": "Message bubble with readable wrapping",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "button",
+    "name": "Button",
+    "category": "input",
+    "behavior": "Native keyboard activation with counter example",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "button-group",
+    "name": "Button Group",
+    "category": "input",
+    "behavior": "Bounded zoom example, 50\u2013200 percent",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "calendar",
+    "name": "Calendar",
+    "category": "input",
+    "behavior": "Native localized date selection; browser presentation varies",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "card",
+    "name": "Card",
+    "category": "display",
+    "behavior": "Semantic content surface",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "carousel",
+    "name": "Carousel",
+    "category": "navigation",
+    "behavior": "Manual wraparound slides, keyboard buttons, no autoplay",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "chart",
+    "name": "Chart",
+    "category": "display",
+    "behavior": "Native SVG bar chart with accessible data table",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "checkbox",
+    "name": "Checkbox",
+    "category": "input",
+    "behavior": "Native checked and unchecked states",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "code-block",
+    "name": "Code Block",
+    "category": "display",
+    "behavior": "Clipboard copy with explicit failure feedback",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "collapsible",
+    "name": "Collapsible",
+    "category": "disclosure",
+    "behavior": "Native disclosure",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "combobox",
+    "name": "Combobox",
+    "category": "input",
+    "behavior": "Filter selectable options, arrow navigation, Escape clears, selection announcement",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "command",
+    "name": "Command",
+    "category": "input",
+    "behavior": "Filter selectable options, arrow navigation, Escape clears, selection announcement",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "context-menu",
+    "name": "Context Menu",
+    "category": "navigation",
+    "behavior": "Toggle action list, arrow/Home/End navigation, Escape/outside dismissal; context menu also opens on secondary click",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "dropdown-menu",
+    "name": "Dropdown Menu",
+    "category": "navigation",
+    "behavior": "Toggle action list, arrow/Home/End navigation, Escape/outside dismissal; context menu also opens on secondary click",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "menubar",
+    "name": "Menubar",
+    "category": "navigation",
+    "behavior": "Toggle action list, arrow/Home/End navigation, Escape/outside dismissal; context menu also opens on secondary click",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "navigation-menu",
+    "name": "Navigation Menu",
+    "category": "navigation",
+    "behavior": "Toggle action list, arrow/Home/End navigation, Escape/outside dismissal; context menu also opens on secondary click",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "direction",
+    "name": "Direction",
+    "category": "layout",
+    "behavior": "Switches text direction between LTR and RTL",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "empty",
+    "name": "Empty",
+    "category": "feedback",
+    "behavior": "Empty state with explicit next step",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "field",
+    "name": "Field",
+    "category": "input",
+    "behavior": "Native required/email validation with success feedback",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "hover-card",
+    "name": "Hover Card",
+    "category": "disclosure",
+    "behavior": "Supplementary content on hover or keyboard focus; Escape dismisses",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "input",
+    "name": "Input",
+    "category": "input",
+    "behavior": "Labeled text entry",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "input-group",
+    "name": "Input Group",
+    "category": "input",
+    "behavior": "Labeled field with noninteractive prefix and suffix",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "input-otp",
+    "name": "Input Otp",
+    "category": "input",
+    "behavior": "Sanitizes numeric entry and paste; single accessible field",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "item",
+    "name": "Item",
+    "category": "display",
+    "behavior": "Flexible list item composition",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "kbd",
+    "name": "Kbd",
+    "category": "display",
+    "behavior": "Keyboard shortcut notation",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "label",
+    "name": "Label",
+    "category": "input",
+    "behavior": "Explicit label-to-control association",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "marker",
+    "name": "Marker",
+    "category": "display",
+    "behavior": "Native text highlighting",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "message",
+    "name": "Message",
+    "category": "display",
+    "behavior": "Authored message with semantic timestamp",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "message-scroller",
+    "name": "Message Scroller",
+    "category": "layout",
+    "behavior": "Local message append and scroll to latest; no network send",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "native-select",
+    "name": "Native Select",
+    "category": "input",
+    "behavior": "Native accessible selection",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "pagination",
+    "name": "Pagination",
+    "category": "navigation",
+    "behavior": "Bounded page state with disabled endpoints",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "popover",
+    "name": "Popover",
+    "category": "overlay",
+    "behavior": "Native light-dismiss popover and Escape behavior",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "progress",
+    "name": "Progress",
+    "category": "feedback",
+    "behavior": "Determinate native progress",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "questionnaire",
+    "name": "Questionnaire",
+    "category": "input",
+    "behavior": "Required answer validation and local response summary",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "radio-group",
+    "name": "Radio Group",
+    "category": "input",
+    "behavior": "Native mutually exclusive selection and arrow navigation",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "resizable",
+    "name": "Resizable",
+    "category": "layout",
+    "behavior": "Pointer and keyboard range resizes two panes between 20\u201380 percent",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "scroll-area",
+    "name": "Scroll Area",
+    "category": "layout",
+    "behavior": "Keyboard focusable overflow region",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "select",
+    "name": "Select",
+    "category": "input",
+    "behavior": "Grouped selection via native control",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "separator",
+    "name": "Separator",
+    "category": "layout",
+    "behavior": "Semantic thematic separator",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "sidebar",
+    "name": "Sidebar",
+    "category": "navigation",
+    "behavior": "Collapsible labeled navigation",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "skeleton",
+    "name": "Skeleton",
+    "category": "feedback",
+    "behavior": "Static loading placeholder without unnecessary animation",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "slider",
+    "name": "Slider",
+    "category": "input",
+    "behavior": "Native pointer and keyboard range with live value",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "notification-stack",
+    "name": "Notification Stack",
+    "category": "feedback",
+    "behavior": "Stacked dismissible notifications, no automatic timeout",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "toast",
+    "name": "Toast",
+    "category": "feedback",
+    "behavior": "Stacked dismissible notifications, no automatic timeout",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "spinner",
+    "name": "Spinner",
+    "category": "feedback",
+    "behavior": "Loading indicator with reduced-motion fallback",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "switch",
+    "name": "Switch",
+    "category": "input",
+    "behavior": "Accessible native binary switch",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "table",
+    "name": "Table",
+    "category": "display",
+    "behavior": "Sortable text/numeric columns with aria-sort state",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "tabs",
+    "name": "Tabs",
+    "category": "navigation",
+    "behavior": "Roving focus with arrows/Home/End, linked panels",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "textarea",
+    "name": "Textarea",
+    "category": "input",
+    "behavior": "Multiline entry with character count",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "toggle",
+    "name": "Toggle",
+    "category": "input",
+    "behavior": "Persistent pressed state",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "toggle-group",
+    "name": "Toggle Group",
+    "category": "input",
+    "behavior": "Exclusive pressed state with native keyboard buttons",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "tooltip",
+    "name": "Tooltip",
+    "category": "disclosure",
+    "behavior": "Supplementary text on hover or focus; Escape dismisses",
+    "format": "HTML/CSS/JavaScript"
+  },
+  {
+    "id": "trace",
+    "name": "Trace",
+    "category": "display",
+    "behavior": "Ordered expandable process history",
+    "format": "HTML/CSS/JavaScript"
+  }
+]

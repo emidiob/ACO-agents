@@ -1,0 +1,98 @@
+[
+  {
+    "id": "word-reveal",
+    "name": "Word reveal",
+    "category": "text",
+    "description": "Staggered words rise and fade into view."
+  },
+  {
+    "id": "text-scramble",
+    "name": "Text scramble",
+    "category": "text",
+    "description": "Characters resolve progressively into readable text."
+  },
+  {
+    "id": "count-up",
+    "name": "Count up",
+    "category": "text",
+    "description": "A numeric value approaches its target with cubic deceleration."
+  },
+  {
+    "id": "typewriter",
+    "name": "Typewriter",
+    "category": "text",
+    "description": "A phrase is revealed one character at a time."
+  },
+  {
+    "id": "text-wave",
+    "name": "Text wave",
+    "category": "text",
+    "description": "Individual characters follow a sinusoidal wave."
+  },
+  {
+    "id": "gradient-text",
+    "name": "Gradient text",
+    "category": "text",
+    "description": "A moving color field is clipped to a stable text layer."
+  },
+  {
+    "id": "pointer-spotlight",
+    "name": "Pointer spotlight",
+    "category": "interaction",
+    "description": "A radial light follows the pointer inside a surface."
+  },
+  {
+    "id": "perspective-tilt",
+    "name": "Perspective tilt",
+    "category": "interaction",
+    "description": "A surface tilts around its center and resets on exit."
+  },
+  {
+    "id": "magnetic-button",
+    "name": "Magnetic button",
+    "category": "interaction",
+    "description": "A control follows nearby pointer movement within bounded travel."
+  },
+  {
+    "id": "particle-field",
+    "name": "Particle field",
+    "category": "canvas",
+    "description": "Deterministic particles drift and connect to close neighbors."
+  },
+  {
+    "id": "flow-lines",
+    "name": "Flow lines",
+    "category": "canvas",
+    "description": "Parallel lines bend through a time-varying sinusoidal field."
+  },
+  {
+    "id": "orbit-system",
+    "name": "Orbit system",
+    "category": "canvas",
+    "description": "Points revolve on elliptical paths at different speeds."
+  },
+  {
+    "id": "ripple-field",
+    "name": "Ripple field",
+    "category": "canvas",
+    "description": "Clicking the canvas emits expanding circular waves."
+  },
+  {
+    "id": "noise-field",
+    "name": "Noise field",
+    "category": "canvas",
+    "description": "A seeded monochrome grain field changes over time."
+  },
+  {
+    "id": "aurora-field",
+    "name": "Aurora field",
+    "category": "canvas",
+    "description": "Soft moving color ribbons are composited on a dark field."
+  },
+  {
+    "id": "dot-wave",
+    "name": "Dot wave",
+    "category": "canvas",
+    "description": "A grid of dots changes radius according to a wave field."
+  }
+]

@@ -1,4 +1,6 @@
-# Libraries are project choices, not native ACO ownership
+# Components and project libraries
+
+For independently written ACO component recipes and effects, use [interactive tools](interactive-tools.md). Search the catalog, export the relevant sources, integrate them into the project and test their actual behavior.
 
 Keep the project's stack unless changing it solves a real requirement. Verify current APIs, compatibility and terms from official sources before installing or copying components. The examples in this skill require no npm package, network font or image service.
 

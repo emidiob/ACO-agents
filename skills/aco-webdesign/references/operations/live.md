@@ -1,7 +1,7 @@
-# Compare a rendered change
+# Edit and compare a rendered change
 
-Use available authorized browser tools to inspect a named element. Implement reversible variants in project source, preview identical content and viewport, compare results and keep the selected implementation. Do not attach an unapproved browser bridge or alter security policy.
+For a trusted static HTML project, use the source-backed editor described in [interactive tools](../interactive-tools.md). Select the actual element, save text or supported inline style, and verify both the rendered result and source. Use undo/redo for reversible comparisons. A stale-source conflict must be resolved by reloading, not overwriting another change.
 
-Completion evidence: Variants are actually rendered and source-backed; this manual workflow is not the upstream live engine or browser extension.
+For application components or shared styles, use the project's source editor and existing development preview. Compare variants using identical content and viewport. Keep the selected implementation in source and verify relevant behavior after the change.
 
-Use the project’s existing conventions and available tools. Report missing capabilities explicitly; a written procedure is not runtime proof.
+Completion evidence: the selected change is saved in the correct source file and visibly rendered. Report any unsupported source format or unavailable preview.
