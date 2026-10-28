@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "1.0.5",
+  "aco_version": "1.0.6",
   "levels": {
     "READ": {
       "approval_required": false,
