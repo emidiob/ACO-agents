@@ -240,7 +240,7 @@ def outputs():
     menu += ['## Native web design', '',
              '`aco-webdesign <operation> <target>` selects an ACO method. In Codex use `$aco-webdesign`; in Claude use `/aco-webdesign`. These arguments are not separate host commands.', '',
              ', '.join('`' + item['name'] + '`' for item in web_operations) + '.', '',
-             'The native kit also provides external-data search, design-system proposals and a rendered-DOM audit.', '']
+             'The native kit provides external-data search, design-system proposals, 17 structural checks, 62 design-review rules, a source-backed static HTML live editor, 64 component recipes and 16 original effects. See `aco-webdesign/references/interactive-tools.md` for executable commands and supported formats.', '']
     out['skills/aco-help/references/commands.md'] = '\n'.join(menu).encode()
     out['docs/ACO-COMMANDS.md'] = '\n'.join(menu).encode()
 

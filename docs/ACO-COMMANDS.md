@@ -61,4 +61,4 @@ Common terminal tools include `install`, `install-status`, `validate`, `skill-se
 
 `init`, `document`, `extract`, `shape`, `craft`, `critique`, `audit`, `polish`, `bolder`, `quieter`, `distill`, `harden`, `onboard`, `animate`, `colorize`, `typeset`, `layout`, `delight`, `overdrive`, `clarify`, `adapt`, `optimize`, `live`, `generate`, `motion-review`, `motion-opportunities`, `motion-performance`, `motion-vocabulary`, `mobile-native`, `break-ui`, `prototype`, `react-review`, `libraries`.
 
-The native kit also provides external-data search, design-system proposals and a rendered-DOM audit.
+The native kit provides external-data search, design-system proposals, 17 structural checks, 62 design-review rules, a source-backed static HTML live editor, 64 component recipes and 16 original effects. See `aco-webdesign/references/interactive-tools.md` for executable commands and supported formats.

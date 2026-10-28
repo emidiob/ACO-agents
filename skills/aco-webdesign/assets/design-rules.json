@@ -1,0 +1,312 @@
+[
+  {
+    "id": "accent-edge",
+    "message": "One border dominates a surface",
+    "category": "border"
+  },
+  {
+    "id": "rounded-accent",
+    "message": "Strong border and curved corners",
+    "category": "border"
+  },
+  {
+    "id": "common-font",
+    "message": "Review whether the typeface suits the brief",
+    "category": "type"
+  },
+  {
+    "id": "flat-hierarchy",
+    "message": "Heading and body sizes have little separation",
+    "category": "type"
+  },
+  {
+    "id": "gradient-ink",
+    "message": "Text uses a gradient fill",
+    "category": "style"
+  },
+  {
+    "id": "charged-palette",
+    "message": "Saturated cool colors compete for attention",
+    "category": "style"
+  },
+  {
+    "id": "warm-ground",
+    "message": "Review the contextual purpose of a warm neutral ground",
+    "category": "style"
+  },
+  {
+    "id": "nested-surfaces",
+    "message": "Multiple nested framed surfaces",
+    "category": "layout"
+  },
+  {
+    "id": "uniform-spacing",
+    "message": "Repeated groups use the same spacing everywhere",
+    "category": "layout"
+  },
+  {
+    "id": "overshoot-easing",
+    "message": "Motion timing overshoots the settled state",
+    "category": "motion"
+  },
+  {
+    "id": "animated-status",
+    "message": "A small status marker animates continuously",
+    "category": "motion"
+  },
+  {
+    "id": "decorative-caret",
+    "message": "A non-editable element resembles an animated caret",
+    "category": "motion"
+  },
+  {
+    "id": "primitive-scene",
+    "message": "A large SVG uses many primitive shapes",
+    "category": "media"
+  },
+  {
+    "id": "complex-clip",
+    "message": "Complex clipping needs visual review",
+    "category": "style"
+  },
+  {
+    "id": "dim-image",
+    "message": "A raster image is almost invisible",
+    "category": "media"
+  },
+  {
+    "id": "hard-shadow",
+    "message": "Review the intentional use of displaced hard shadows",
+    "category": "style"
+  },
+  {
+    "id": "colored-glow",
+    "message": "Colored shadow creates a halo",
+    "category": "style"
+  },
+  {
+    "id": "radial-wash",
+    "message": "Saturated radial background wash",
+    "category": "style"
+  },
+  {
+    "id": "radial-spotlight",
+    "message": "A fading radial decoration sits behind content",
+    "category": "style"
+  },
+  {
+    "id": "moving-banner",
+    "message": "Continuously moving banner needs a pause strategy",
+    "category": "motion"
+  },
+  {
+    "id": "icon-above-title",
+    "message": "Repeated icon-over-heading composition",
+    "category": "layout"
+  },
+  {
+    "id": "italic-display",
+    "message": "Large italic serif display needs contextual review",
+    "category": "type"
+  },
+  {
+    "id": "hero-label",
+    "message": "Small label competes with the hero title",
+    "category": "type"
+  },
+  {
+    "id": "heading-label",
+    "message": "A heading has a separate tracked uppercase label",
+    "category": "type"
+  },
+  {
+    "id": "section-index",
+    "message": "Small section indexes may add redundant structure",
+    "category": "type"
+  },
+  {
+    "id": "dash-density",
+    "message": "Long dashes dominate the prose rhythm",
+    "category": "copy"
+  },
+  {
+    "id": "vague-promise",
+    "message": "Copy makes a generic promise instead of naming a benefit",
+    "category": "copy"
+  },
+  {
+    "id": "rebuttal-pattern",
+    "message": "Repeated short rebuttals deserve an editorial pass",
+    "category": "copy"
+  },
+  {
+    "id": "large-sentence-title",
+    "message": "Long title dominates the viewport",
+    "category": "type"
+  },
+  {
+    "id": "compressed-tracking",
+    "message": "Negative tracking may harm legibility",
+    "category": "type"
+  },
+  {
+    "id": "failed-image",
+    "message": "Image has no loaded raster",
+    "category": "media"
+  },
+  {
+    "id": "runtime-error",
+    "message": "Browser reported a JavaScript error",
+    "category": "runtime"
+  },
+  {
+    "id": "invisible-content",
+    "message": "Substantial content remains invisible",
+    "category": "layout"
+  },
+  {
+    "id": "scroll-edge",
+    "message": "Framed content touches the clipping edge",
+    "category": "layout"
+  },
+  {
+    "id": "covered-text",
+    "message": "Text is overlapped at a sampled visible point",
+    "category": "layout"
+  },
+  {
+    "id": "tall-first-column",
+    "message": "One column pushes introductory content below the fold",
+    "category": "layout"
+  },
+  {
+    "id": "neutral-on-color",
+    "message": "Neutral text sits on a chromatic background",
+    "category": "color"
+  },
+  {
+    "id": "text-contrast",
+    "message": "Opaque text/background contrast is below the text-size threshold",
+    "category": "color"
+  },
+  {
+    "id": "long-measure",
+    "message": "Text measure is unusually long",
+    "category": "type"
+  },
+  {
+    "id": "tight-container",
+    "message": "A framed text container has very small padding",
+    "category": "layout"
+  },
+  {
+    "id": "viewport-text-edge",
+    "message": "Body copy is too close to the viewport edge",
+    "category": "layout"
+  },
+  {
+    "id": "tight-lines",
+    "message": "Paragraph line height is tight",
+    "category": "type"
+  },
+  {
+    "id": "heading-level-gap",
+    "message": "Heading order skips a level",
+    "category": "structure"
+  },
+  {
+    "id": "heading-top-gap",
+    "message": "Heading is crowded against preceding content",
+    "category": "layout"
+  },
+  {
+    "id": "justified-prose",
+    "message": "Justified paragraphs can create uneven word spacing",
+    "category": "type"
+  },
+  {
+    "id": "orphan-word",
+    "message": "Last text line contains a single word",
+    "category": "type"
+  },
+  {
+    "id": "uneven-title",
+    "message": "Heading lines have a large width imbalance",
+    "category": "type"
+  },
+  {
+    "id": "tiny-prose",
+    "message": "Body copy is unusually small",
+    "category": "type"
+  },
+  {
+    "id": "tiny-control-copy",
+    "message": "Functional labels are unusually small",
+    "category": "type"
+  },
+  {
+    "id": "uppercase-paragraph",
+    "message": "Extended prose uses uppercase",
+    "category": "type"
+  },
+  {
+    "id": "wide-prose-tracking",
+    "message": "Body copy uses very wide tracking",
+    "category": "type"
+  },
+  {
+    "id": "container-overflow",
+    "message": "Content exceeds its container",
+    "category": "layout"
+  },
+  {
+    "id": "duplicate-copy",
+    "message": "Repeated sibling copy may be accidental",
+    "category": "copy"
+  },
+  {
+    "id": "clipped-position",
+    "message": "Positioned child extends beyond a clipping ancestor",
+    "category": "layout"
+  },
+  {
+    "id": "system-font",
+    "message": "Typeface is outside the supplied design system",
+    "category": "system"
+  },
+  {
+    "id": "system-color",
+    "message": "Text color is outside the supplied design system",
+    "category": "system"
+  },
+  {
+    "id": "system-radius",
+    "message": "Corner radius is outside the supplied scale",
+    "category": "system"
+  },
+  {
+    "id": "system-type-size",
+    "message": "Type size is outside the supplied scale",
+    "category": "system"
+  },
+  {
+    "id": "fine-border-large-shadow",
+    "message": "A fine border combines with a very wide shadow",
+    "category": "style"
+  },
+  {
+    "id": "stripe-background",
+    "message": "Repeating stripes need contextual review",
+    "category": "style"
+  },
+  {
+    "id": "grid-background",
+    "message": "Intersecting gradient lines form a decorative grid",
+    "category": "style"
+  },
+  {
+    "id": "theatrical-copy",
+    "message": "Copy uses theatrical framing instead of specific information",
+    "category": "copy"
+  }
+]

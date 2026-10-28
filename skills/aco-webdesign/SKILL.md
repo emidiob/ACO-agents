@@ -11,6 +11,8 @@ Use `/aco-webdesign` in Claude Code, `$aco-webdesign` in Codex, or `aco webdesig
 
 For a named operation such as `polish`, `harden`, `typeset`, `prototype` or `motion-review`, use [the operation index](references/operations.md) and read only its selected method. `python3 scripts/operations.py list` lists all operations; `python3 scripts/operations.py show harden` prints the selected method. These are agent workflows, not claims of automated engine parity.
 
+Use [interactive tools](references/interactive-tools.md) for source-backed static HTML editing, the 62-rule design review, 64 component recipes and 16 original effects. Run the selected tool and verify its output; do not substitute a written plan for a requested export or edit.
+
 Use [native engines](references/native-engines.md) for external-data retrieval/search, design-system proposals and rendered DOM analysis.
 
 ## Choose the needed work

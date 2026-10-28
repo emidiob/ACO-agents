@@ -9,8 +9,8 @@ import re
 RULES=('document-title','document-language','viewport-meta','zoom-disabled','page-overflow','main-landmark','page-heading','duplicate-id','image-alt','control-name','field-label','placeholder-link','positive-tabindex','small-target','small-text','text-overflow','motion-review')
 
 def audit(snapshot):
-    if snapshot.get('schema') != 1 or not isinstance(snapshot.get('elements'),list):
-        raise ValueError('Expected an ACO schema 1 browser probe snapshot')
+    if snapshot.get('schema') not in (1,2) or not isinstance(snapshot.get('elements'),list):
+        raise ValueError('Expected an ACO schema 1 or 2 browser probe snapshot')
     if not isinstance(snapshot.get('viewport',{}).get('width'),(int,float)):
         raise ValueError('Missing viewport width')
     findings=[]
