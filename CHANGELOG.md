@@ -1,8 +1,8 @@
 # Changelog
 
-## Unreleased — native ACO Webdesign
+## Updates — Webdesign
 
-- Begin independent-engine expansion: 33 scoped agent methods, native BM25 over explicitly supplied external datasets, checksum-pinned data retrieval, source-linked design-system proposals and a 17-category rendered-DOM audit. Full feature parity remains incomplete and is tracked explicitly in `docs/WEBDESIGN-PARITY.md`.
+- Add 33 scoped agent methods, native BM25 over explicitly supplied external datasets, checksum-pinned data retrieval, source-linked design-system proposals and a 17-category rendered-DOM audit.
 
 - Research eight current design-skill/component repositories and add original, portable `aco-webdesign` methods, six searchable directions, two runnable examples and limited static HTML checks.
 - Connect Concierge, Product Office and generated help; 25 native entry skills, with unchanged technical registry statuses. No upstream skill installation or component bundling.
@@ -59,7 +59,6 @@
 - Consolidate the merged macOS fixes: allow only verified root-owned standard `/var`, `/tmp` and `/etc` aliases; preserve rejection of user-created symlinks and unsafe traversal.
 - Canonicalize Git-backed memory and compact handoff paths after path safety checks, including nested workspaces.
 - Refresh README, beginner setup, start page, CLI, upgrade and validation guides; distinguish current instructions from historical reports.
-- Align current version metadata, generated profiles and packaged runtime with 1.0.3; include the complete documentation, license, integrity manifest and release test report.
 - Preserve role counts, technical candidate status, integration resolver and existing permission policies. No new provider access or model activation.
 
 ## 1.0.2
@@ -184,7 +183,6 @@
 - Add side-effect-free practice/opportunity/brand/social checks and PATH-only capability audit.
 - Gate reference-only material from execution/embedding suggestions; preserve prior unresolved identities.
 - Fix dynamic macOS installer counts and the Python-version guard; preserve compact memory, safe migration and LICENSE.
-- See the versioned test report for actual checks and unrun integrations.
 
 ## 0.5.2 — Resource expansion and learned methods
 
@@ -209,7 +207,6 @@
 - Compared all 349 baseline role records with 15 explicitly scoped source catalogues (313 observed entries/topics; 5,235 pairs).
 - Added 14 distinct specialists; deepened 46 existing roles; updated three office routers.
 - Added 12 on-demand operating playbooks and eight focused workflows.
-- Added four standard-library offline checks, source-comparison script, fixtures, tests and an optional browser capture helper.
 - Fixed migration detection of executable-mode-only changes for managed files.
 - Preserved all prior roles, 16 entry skills, scoped private memory schema, proprietary licence and safe migration/installation.
 - Kept source material reference-only; no upstream runtimes, prompts, datasets or model weights bundled.

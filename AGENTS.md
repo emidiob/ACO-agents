@@ -40,3 +40,7 @@ Use the task-specific method links in the selected role/office, not every method
 ## Execution boundary — 0.7.1
 
 Resolve real actions through the shared `EXECUTION.md` protocol. A role or optional resource does not prove a tool is connected. External sends, publications, applications, deployments, deletions, purchases, signatures and access changes require the exact available capability plus scoped approval where defined. Preserve actual receipts and reconcile unknown outcomes before retrying.
+
+## Public distribution boundary
+
+Publish product usage, implemented capabilities, necessary limitations, executable source/tests and required dependency attribution. Keep research comparisons, competitor inventories, development plans, product deliberations and internal execution reports outside this repository and outside release archives. Do not publish private working paths or links to internal archives. Keep licenses and attribution intact. User-facing documentation describes the shipped behavior; it must not imply unsupported capabilities. Before pushing or packaging, run the publication-boundary check.

@@ -11,6 +11,7 @@ from pathlib import Path
 from aco.common import ACOError, ROOT, VERSION, no_symlinks
 from aco.install import verify_release
 from aco.privacy import privacy_scan
+from publication_check import check as publication_check
 
 
 def build(output: Path) -> dict:
@@ -24,6 +25,8 @@ def build(output: Path) -> dict:
     if privacy.get('status')!='passed':
         kinds=', '.join(sorted({x['type'] for x in privacy.get('findings',[])}))
         raise ACOError('Privacy/PII release gate failed: '+kinds)
+    if publication_check(ROOT)['status'] != 'passed':
+        raise ACOError('Internal working documents must be archived outside the public package.')
     manifest=verify_release()
     files=dict(manifest['files'])
     files['release/manifest.json']={'mode':0o644}

@@ -10,4 +10,4 @@ Copyright © 2026 Emidio Battipaglia. All rights reserved.
 
 ## Referenced third-party projects
 
-The specialist-upgrade research identifies external repositories and their observed licences. These references are not relicensed by ACO. This release does not vendor their prompt/code files, datasets, fonts or model weights. Preserve source attribution and actual applicable notices if a future change incorporates protected third-party material; ACO's restrictions cannot replace upstream rights. See `research/specialist-upgrade/sources.json`.
+External resources retain their applicable rights. Preserve source attribution and required notices when incorporating third-party material; ACO licensing does not replace upstream terms.

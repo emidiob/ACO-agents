@@ -200,4 +200,4 @@ In a worktree ACO can maintain one ignored `.agent-context/HANDOFF.md`. It is no
 | Test suite passed, output still looks bad | Local tests do not judge taste. Inspect actual outputs and revise against the brief. |
 | Chat keeps the old rules | Start a fresh session or explicitly reload the new version and relevant methods. |
 
-Read the full [README](README.md), [CLI](docs/CLI.md), [Studio checks](docs/STUDIO-CHECKS.md) and [Upgrading](docs/UPGRADING.md) for details. See the included [1.0.6 test report](ACO-TEST-REPORT-v1.0.6.md) for the checks actually run.
+Read the full README, [CLI](docs/CLI.md), [Studio checks](docs/STUDIO-CHECKS.md) and [Upgrading](docs/UPGRADING.md) for details. See the included 1.0.6 test report for the checks actually run.

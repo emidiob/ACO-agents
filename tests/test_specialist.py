@@ -148,16 +148,9 @@ class EvidenceChecks(unittest.TestCase):
   with self.assertRaises(ACOError):self.check()
 
 class SpecialistCoverage(unittest.TestCase):
- def test_all_baseline_roles_preserved(self):
-  b=json.loads((ROOT/'research/specialist-upgrade/baseline-roles.json').read_text());c=json.loads((ROOT/'catalog.json').read_text());self.assertTrue({r['key'] for r in b['roles']}<=set(c['agents']))
- def test_new_roles_distinct_and_count(self):
-  d=json.loads((ROOT/'research/specialist-upgrade/decisions.json').read_text())['decisions'];new=[x['key'] for x in d if x['action']=='add_distinct_role'];self.assertEqual(len(new),14);self.assertEqual(len(set(new)),14)
- def test_every_baseline_role_compared_with_every_source(self):
-  from compare_specialists import compare
-  d=ROOT/'research/specialist-upgrade';r=compare(d/'sources.json',d/'baseline-roles.json',d/'decisions.json');self.assertEqual(len(r['pairs']),349*15);self.assertEqual(len({(p['role'],p['source_id']) for p in r['pairs']}),349*15)
- def test_every_playbook_exists(self):
-  d=json.loads((ROOT/'research/specialist-upgrade/playbooks.json').read_text());self.assertEqual(len(d),12)
-  for key in d:self.assertTrue((ROOT/'skills/aco-office-concierge/references/playbooks'/f'{key}.md').exists())
+ def test_public_role_catalog_is_complete_and_unique(self):
+  c=json.loads((ROOT/'catalog.json').read_text());self.assertEqual(len(c['agents']),363)
+  self.assertEqual(len(set(c['agents'])),363)
  def test_runtime_module_mirrors_source(self):
   self.assertEqual((ROOT/'scripts/aco/specialist.py').read_bytes(),(ROOT/'skills/aco-office-concierge/runtime/scripts/aco/specialist.py').read_bytes())
  def test_cli_usable(self):

@@ -7,7 +7,7 @@
 ## What changes
 363 roles (349 preserved + 14 distinct additions), 16 entry skills, 32 workflows, 12 specialist playbooks, offline design/video/evidence checks and optional passive browser capture. Existing private knowledge schema, licence and account boundaries are unchanged.
 
-Read [the comparison](SPECIALIST-GAP-ANALYSIS.md) for all 15 source repositories and explicit research limits. The package is English-only, remains a skill library, and contains no private company/client data or third-party runtimes.
+Read the comparison for all 15 source repositories and explicit research limits. The package is English-only, remains a skill library, and contains no private company/client data or third-party runtimes.
 
 ## Safe update
 1. Extract the new ZIP outside your existing ACO checkout.
