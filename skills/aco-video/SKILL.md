@@ -3,12 +3,18 @@ name: aco-video
 description: "AI video direction and provider-aware prompting, including Seedance candidate techniques, storyboard, camera, timing and QC."
 ---
 
-# /aco-video
+# ACO Video
 
-Read `../aco-production-office/SKILL.md`, the `ai_video_prompt_adapter` role and the `ai-video.md` playbook. Choose only those Seedance technical modules relevant to the brief (camera-motion, action, identity, timeline, audio, performance, compact, QA, fashion, commercial, found-footage, storyboard). They are candidate methods: explicitly inspect with `--allow-candidate`; do not silently change registry status. Verify provider UI limitations; output prompt and settings. For recreating a supplied video route to `../aco-genjutsu/SKILL.md`.
+Choose [generation mode](references/generation-modes.md) from the requested operation. For new shots use [prompt notation](references/prompt-notation.md) as an internal brief and consult [worked cases](references/worked-cases.md) only when relevant. These are authoring methods, not special provider syntax or fixed templates.
 
-Before any persistent write, follow `../aco-office-concierge/references/protocols/COMPACT-MEMORY.md`; keep private context outside the public library.
+For source recreation use ACO Genjutsu when installed. If unavailable, identify that missing source-analysis workflow rather than pretending the source was inspected; new-shot and still-animation work remain usable independently.
 
-## Original ACO prompt method
+Read [video execution](references/video-workflow.md) for storyboard, reference preparation, provider translation, rendering and review. Bind actual inspected images to their roles. Distinguish requested timing from observed timing. Preserve identity and movement direction across shots; separate cuts from beats within a continuous shot. Sound, speech and visible text need their own explicit requirements.
 
-For source-guided work, read `../aco-genjutsu/SKILL.md`. For new shots, read `../aco-genjutsu/references/prompt-notation.md`, select a mode from `../aco-genjutsu/references/generation-modes.md`, and inspect the closest worked case in `../aco-genjutsu/references/worked-cases.md`. Keep provider syntax distinct from the ACO authoring notation.
+In a full ACO runtime the Seedance modules are optional technical candidates. Inspect only relevant modules with explicit candidate access; do not change registry status. No specific provider, API key, model package or upstream skill is required to use the method. Actual generation needs an available provider and scoped authorization.
+
+## Project and host
+
+Read [project contract](references/project-contract.md) before persistent writes. In a full ACO installation also follow its COMPACT-MEMORY.md protocol; standalone use does not require sibling skills. Keep private media outside the public library. Claude Code and Codex (including their VS Code extensions) use the same method; VS Code itself is not an agent host.
+
+[Portable workflow](references/portable-workflow.md) explains local reference inventories, standalone installation and verification boundaries.

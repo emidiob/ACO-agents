@@ -239,6 +239,33 @@ def outputs():
     out['skills/aco-help/references/commands.md'] = '\n'.join(menu).encode()
     out['docs/ACO-COMMANDS.md'] = '\n'.join(menu).encode()
 
+    # Portable creative skills share maintained sources; never hand-edit derived copies.
+    creative = ('aco-capture', 'aco-image', 'aco-video', 'aco-genjutsu')
+    for name in creative:
+        base = 'skills/' + name + '/'
+        out[base + 'references/project-contract.md'] = (R/'skills/aco-motion/references/project-contract.md').read_bytes()
+        installer = (R/'skills/aco-motion/scripts/install_standalone.py').read_text().replace('aco-motion', name)
+        out[base + 'scripts/install_standalone.py'] = installer.encode()
+        out[base + 'references/portable-workflow.md'] = (            '# Portable creative workflow\n\n'
+            'This skill works independently in Claude Code or Codex, including their VS Code extensions. '
+            'Use `python3 scripts/install_standalone.py --host claude` or `--host codex` from this skill folder to preview installation; '
+            'add `--apply` to install, optionally `--project /absolute/project` for project-local discovery. '
+            'Use the integrated ACO installer for existing full installations; the standalone installer preserves modified or unowned destinations.\n\n'
+            'For Capture, Image and Video, `python3 scripts/reference_inventory.py /absolute/reference.png --output /new/private/references.json` '
+            'records existing files and SHA-256 hashes. Inspect each image separately, assign purpose, and map provider bindings only after verifying the interface. '
+            'The inventory never claims visual review or upload. Genjutsu instead uses its richer `inspect_video.py` and `check_reference_pack.py` workflow.\n\n'
+            'The package contains original ACO methods and local helpers, not model weights or upstream skills. '
+            'Python 3 is required for helpers; Genjutsu extraction additionally needs ffmpeg/ffprobe. '
+            'Actual image/video generation needs a connected tool. Packaging and unit tests do not prove generation quality or fresh host discovery.\n'
+        ).encode()
+        if name != 'aco-genjutsu':
+            out[base + 'scripts/reference_inventory.py'] = (R/'scripts/creative_reference_inventory.py').read_bytes()
+    for name in ('aco-capture', 'aco-image'):
+        out['skills/' + name + '/references/capture.md'] = (R/'skills/aco-office-concierge/references/playbooks/ACO-CAPTURE.md').read_bytes()
+    for name, refs in {'aco-image': ('visual-language',), 'aco-video': ('prompt-notation', 'generation-modes', 'worked-cases')}.items():
+        for ref in refs:
+            out['skills/' + name + '/references/' + ref + '.md'] = (R/'skills/aco-genjutsu/references'/ (ref + '.md')).read_bytes()
+
     return out
 
 

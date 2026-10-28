@@ -3,12 +3,18 @@ name: aco-image
 description: "Photographic and generative-image prompts using ACO methods, including Nano Banana and Seedream candidate adapters."
 ---
 
-# /aco-image
+# ACO Image
 
-Read the relevant ACO Artist/Production role, `../aco-office-concierge/references/playbooks/ACO-CAPTURE.md` if photographic, and only needed `image.shared.*` technical candidates. Apply 4 model-specific adapters (`image.adapter.nano-banana-2`, `image.adapter.nano-banana-2-1`, `image.adapter.seedream-4-5`, `image.adapter.seedream-5`) only if the user's model matches and its current UI is verified. The image skillpack is *candidate* in 1.0.4: opt-in method inspection is allowed via `--allow-candidate` but is not measured model output validation. Never claim a generated picture until one is inspected.
+Create or edit images from the actual brief and references. Start with the requested output: new image, bounded edit, consistent series or video anchor. Read [visual language](references/visual-language.md) for design versus pose; for photographic treatment use [Capture](references/capture.md).
 
-Before any persistent write, follow `../aco-office-concierge/references/protocols/COMPACT-MEMORY.md`; keep private context outside the public library.
+Inspect supplied images before assigning identity, pose, composition, material and illumination roles. State what each reference must not transfer when ambiguous. Preserve the original file and the user's requested changes. For a bounded edit identify the region/property that may change and what must survive; do not silently redesign the whole scene. For a series establish an approved design anchor and compare each result with it.
 
-## Original ACO prompt method
+Use [image execution](references/image-workflow.md) to move from brief to actual output. If the user asks for an image, execute through an available image tool rather than ending with a prompt. If no tool is available, deliver the useful prompt and identify the execution blocker. Provider-specific syntax must come from the actual interface or official documentation.
 
-For character, object or scene briefs and video anchor images, read `../aco-genjutsu/references/visual-language.md` and `../aco-genjutsu/references/visual-evidence.md`. Separate visual design from pose, inspect reference conflicts, and generate images only when requested.
+In a full ACO runtime the Nano Banana and Seedream adapters are optional technical candidates. Inspect them only when relevant and explicitly allowed; they are not required dependencies and their registry status remains unchanged. Never equate a candidate method with measured model performance.
+
+## Project and host
+
+Read [project contract](references/project-contract.md) before persistent writes. In a full ACO installation also follow its COMPACT-MEMORY.md protocol; standalone use does not require sibling skills. Keep private media outside the public library. Claude Code and Codex (including their VS Code extensions) use the same method; VS Code itself is not an agent host.
+
+[Portable workflow](references/portable-workflow.md) explains local reference inventories, standalone installation and verification boundaries.
