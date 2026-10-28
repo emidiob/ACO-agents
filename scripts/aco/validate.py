@@ -27,7 +27,7 @@ def _routing_catalog_sha(path: Path) -> str:
     data = read_json(path)
     data.pop('aco_version', None)
     shortcuts = {'aco', 'aco-genjutsu', 'aco-video', 'aco-image',
-                 'aco-capture', 'aco-skills', 'aco-help', 'aco-motion'}
+                 'aco-capture', 'aco-skills', 'aco-help', 'aco-motion', 'aco-webdesign'}
     present = shortcuts.intersection(data['skills'])
     data['skills'] = [name for name in data['skills'] if name not in shortcuts]
     data['skill_count'] -= len(present)

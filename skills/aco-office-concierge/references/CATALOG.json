@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "aco_version": "1.0.6",
-  "skill_count": 24,
+  "skill_count": 25,
   "role_count": 363,
   "skills": [
     "aco",
@@ -27,7 +27,8 @@
     "aco-publishing-office",
     "aco-recruitment-office",
     "aco-skills",
-    "aco-video"
+    "aco-video",
+    "aco-webdesign"
   ],
   "offices": {
     "artist-office": {

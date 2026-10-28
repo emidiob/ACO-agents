@@ -6,7 +6,7 @@ from scripts.aco.common import ROOT
 from scripts.aco.skills import skill_registry_check, skill_resolve, skill_search
 from scripts.aco.install import Installer
 
-COMMANDS = ['aco','aco-genjutsu','aco-video','aco-image','aco-capture','aco-skills','aco-help','aco-motion']
+COMMANDS = ['aco','aco-genjutsu','aco-video','aco-image','aco-capture','aco-skills','aco-help','aco-motion','aco-webdesign']
 
 class ACOCommandKitTests(unittest.TestCase):
     def test_entry_points(self):

@@ -1,0 +1,4 @@
+const search=document.querySelector('#search');const status=document.querySelector('#status');const rows=[...document.querySelectorAll('[data-state]')];
+function filter(){let shown=0;const q=search.value.toLocaleLowerCase().trim();rows.forEach(row=>{row.hidden=!(row.textContent.toLocaleLowerCase().includes(q)&&(status.value==='all'||row.dataset.state===status.value));if(!row.hidden)shown++;});document.querySelector('#count').textContent=`${shown} ${shown===1?'project':'projects'} shown`;document.querySelector('#empty').hidden=shown!==0;}
+function reset(){search.value='';status.value='all';filter();search.focus();}
+search.addEventListener('input',filter);status.addEventListener('change',filter);document.querySelector('#reset').addEventListener('click',reset);document.querySelector('#clear').addEventListener('click',reset);

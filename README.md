@@ -2,7 +2,7 @@
 
 **A working library for an artist, studio, agency or cultural business — with scoped private knowledge and evidence-aware execution.**
 
-**ACO v1.0.6 · 363 roles · 24 entry skills · 61 workflows · 99 optional resources · token-aware OS + technical skill registry.**
+**ACO v1.0.6 · 363 roles · 25 entry skills · 61 workflows · 99 optional resources · token-aware OS + technical skill registry.**
 
 Proprietary, source-available. Redistribution is restricted by [LICENSE](LICENSE). No third-party software, fonts, models or private knowledge are bundled.
 
@@ -237,3 +237,7 @@ The [product decisions](docs/PRODUCT-DECISIONS.md), [source review](docs/SOURCE-
 ## ACO 1.0.6 skills and command layer
 
 The 1.0.6 package includes eight quick-command Agent Skills and the prompt-only `/aco-genjutsu` candidate. All 14 previously active methods remain active. The other 30 technical candidates remain explicitly inspectable experimental methods, not default active. See [skill validation evidence](docs/SKILL-VALIDATION-v1.0.6.md). Provider/model performance is not claimed.
+
+## Native web design (development update)
+
+`aco-webdesign` adds original direction, design-system, implementation, redesign and review methods, six searchable recipes, two editable examples and a scoped static HTML checker. Use `/aco-webdesign` in Claude or `$aco-webdesign` in Codex. See [research and scope](skills/aco-webdesign/references/sources.md) and [working kit](skills/aco-webdesign/references/working-kit.md). This source update is newer than the published 1.0.6 archives.
