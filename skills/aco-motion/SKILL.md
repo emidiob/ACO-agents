@@ -1,29 +1,35 @@
 ---
 name: aco-motion
-description: "Design and implement motion graphics, animated typography, explainers and UI animation. Route to Remotion for video or Motion/CSS/GSAP for interactive work, with visual verification and editable source."
+description: "Native ACO motion design: create, animate, preview and export video graphics; captions, maps, editable timelines and video apps; build and audit CSS/Motion/GSAP UI animation."
 ---
 
-# ACO Motion
+# ACO Motion — native method
 
-Invoke `/aco-motion` in Claude Code or `$aco-motion` in Codex; `aco motion <task>` is also routed by Concierge. This is a workflow, not a renderer or proof that dependencies are installed.
+Use `/aco-motion` in Claude Code, `$aco-motion` in Codex, or the Concierge route `aco motion <task>`. All required authoring methods are included here. Do not load, install, or delegate to external Remotion/Motion agent skills to perform this workflow. Animation libraries and renderers remain real project dependencies; skill instructions cannot replace them.
 
-## Choose the deliverable
+## Select only the needed native module
 
-Read the existing brief, assets and project before choosing tools. For a video or animated graphic, use Production's `motion_designer` and `remotion_video_engineer` methods when needed. For interactive UI, use Product's frontend methods. Roles do not imply spawned agents.
+| Task / argument | ACO method |
+|---|---|
+| `create`, storyboard, animated typography, explainer | [Video creation](references/video.md) |
+| `animate`, media, transitions, effects, 3D | [Frame-based composition](references/composition.md) |
+| `captions`, subtitles, audio | [Captions and sound](references/captions-audio.md) |
+| `maps`, geographic animation | [Maps](references/maps.md) |
+| `edit`, selectable layers, Studio controls | [Editable timelines](references/editable.md) |
+| `preview`, `render`, transparent export | [Preview and export](references/preview-render.md) |
+| `app`, embedded player, render service | [Video applications and multimedia](references/apps-media.md) |
+| `web`, UI, scroll, SVG, gestures | [Interactive motion](references/interactive.md) |
+| `audit`, performance, reduced motion | [Motion review](references/review.md) |
+| `upgrade`, API lookup, package compatibility | [Dependencies and documentation](references/dependencies.md) |
 
-- **Video / typography / explainers:** read [video workflow](references/video.md). Prefer the official `remotion-best-practices` skill when installed, then only its task-specific references.
-- **UI / web / scroll / SVG:** read [interactive workflow](references/interactive.md). Prefer the official `motion` skill for Motion/CSS; keep an existing GSAP implementation when it fits.
-- **Commercial / launch film:** use the video workflow with a story and audio pass. Motion Video Kit is an optional research reference, not a universal style specification.
-- **Recreate a supplied live-action video:** route to `../aco-genjutsu/SKILL.md`; motion graphics are not reference-video generation.
+These arguments are natural-language routing inside this skill, not new CLI flags or registered slash commands. For live-action reference-video recreation use `../aco-genjutsu/SKILL.md`. For a commercial use video creation plus captions/audio and review; preserve the brief's pacing instead of applying a fixed ad formula.
 
-Locate external skills in the selected host's actual skills root (`~/.agents/skills`, `~/.codex/skills`, `~/.claude/skills`, or project equivalents). Read files before claiming to use them. ACO does not bundle third-party skill bodies; [sources and selection](references/sources.md) records inspected upstream revisions and installation paths. Missing external skills do not block drafting the brief or using the original methods below. Do not invent tool availability.
+## Execute
 
-## Working contract
+Read supplied assets, existing code and target output first. For substantive work establish a concrete visual idea and a time/state plan, then build a representative motion proof. Identify moving objects, trigger, timing, spatial relationship and readable landing. Reuse supplied references at observed timestamps; do not invent unseen motion. Proceed with reversible choices without asking the user to choose internal specialists.
 
-For substantial work, state the visual idea and timing in a compact storyboard, then implement a representative motion proof before extending the sequence. Use supplied references at actual timestamps. Avoid generic effect lists: specify what moves, why, when, and how the next state becomes readable. Preserve brand and creative intent; no mandatory cinematic look, scene count, bounce or transitions.
+Implement in the user's project, using the relevant module above. Deliver editable source and the requested preview/export. An explicit MP4/export request includes the required local render; a preview request does not imply a paid/cloud render. Check actual tooling before promising a file.
 
-Deliver the requested artifact plus editable source. A user request for an MP4 or export authorizes the necessary local render; do not ask again merely because a source skill prefers preview. Preview-only requests remain preview-only. Check current dependencies and license terms before adding a renderer to a project. Installation of instruction files is not installation of Node packages, a paid service, or an MCP connection.
+Review actual output, fix observed failures and distinguish code checks, still inspection, playback, interaction and listening. Do not claim artistic quality or runtime success from instruction installation. [Coverage and provenance](references/sources.md) documents what is implemented and what requires a separate provider; it is research context, not a runtime dependency.
 
-Inspect representative frames and playback/interaction with available tools, repair observable failures, and report what was actually viewed, rendered, or measured. If only stills were inspected, do not claim temporal quality. Audio must be listened to before claiming its quality. Tests passing is not creative approval.
-
-Before persistent writes follow `../aco-office-concierge/references/protocols/COMPACT-MEMORY.md`; client footage and deliverables stay outside the public ACO library.
+Follow `../aco-office-concierge/references/protocols/COMPACT-MEMORY.md` before persistent writes. Private assets and outputs belong in their project, outside the ACO library. Internal roles may inform work but do not imply independently running agents.

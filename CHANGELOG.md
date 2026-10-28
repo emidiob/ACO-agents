@@ -2,6 +2,9 @@
 
 ## Unreleased — motion design and complete help
 
+- Replace external-skill routing with original, self-contained ACO motion modules covering creation, composition, captions/audio, maps, editing, preview/export, video apps/media, interactive UI, review and upgrades.
+- Native ACO motion no longer loads or installs third-party agent skills; preserve real software requirements and distinguish local review from proprietary hosted services.
+
 - Add original `aco-motion` routing and reference-guided video/UI workflows, with official Remotion and Motion skill selection and explicit service limits.
 - Generate the complete Claude/Codex command menu from all 24 native entry skills, including offices and context; distinguish roles and terminal tools.
 - Preserve technical registry candidate states and existing third-party licensing.

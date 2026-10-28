@@ -234,8 +234,8 @@ def outputs():
              '`aco-skills` shows the separate technical registry and its active/candidate status. Native entry skills and external upstream skills are not additional validated registry entries.',
              'From a complete source checkout: `python3 scripts/aco_cli.py --help` lists every actual terminal subcommand. In an installed root use `aco-office-concierge/runtime/scripts/aco_cli.py --help`.',
              'Common terminal tools include `install`, `install-status`, `validate`, `skill-search`, `skill-resolve`, `capability-audit`, `goal-status` and `autonomy-plan`. Inspect `<command> --help` for arguments; these are not slash commands.', '',
-             '## Optional upstream motion skills', '',
-             '`remotion-best-practices` routes the official Remotion suite; `motion` provides official Motion/CSS guidance. Check the local host before claiming they are installed. `aco-motion` includes source links and availability limits.', '']
+             '## Native motion design', '',
+             '`aco-motion` contains native ACO methods for create, animate, captions, maps, edit, preview, render, app, web, audit and upgrade. These are arguments to the skill, not additional registered commands. No external agent skill is required; real engines and project dependencies are checked per task.', '']
     out['skills/aco-help/references/commands.md'] = '\n'.join(menu).encode()
     out['docs/ACO-COMMANDS.md'] = '\n'.join(menu).encode()
 

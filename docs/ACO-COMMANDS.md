@@ -13,7 +13,7 @@ Use `/aco motion`, `/aco video`, `/aco image`, `/aco capture`, `/aco genjutsu`, 
 | `/aco-genjutsu` | `$aco-genjutsu` | Analyze a supplied video and prepare reference-guided recreation, motion-transfer or selective-edit prompts. Creates visual reference files before drafting timed prompts; video rendering remains a separate action. |
 | `/aco-help` | `$aco-help` | Show all ACO commands: creative shortcuts, offices, context tools and terminal/runtime discovery, with Claude Code and Codex syntax. |
 | `/aco-image` | `$aco-image` | Photographic and generative-image prompts using ACO methods, including Nano Banana and Seedream candidate adapters. |
-| `/aco-motion` | `$aco-motion` | Design and implement motion graphics, animated typography, explainers and UI animation. Route to Remotion for video or Motion/CSS/GSAP for interactive work, with visual verification and editable source. |
+| `/aco-motion` | `$aco-motion` | Native ACO motion design: create, animate, preview and export video graphics; captions, maps, editable timelines and video apps; build and audit CSS/Motion/GSAP UI animation. |
 | `/aco-skills` | `$aco-skills` | Display ACO technical skills and clear experimental status; /aco-skills lists the whole registry without running models. |
 | `/aco-video` | `$aco-video` | AI video direction and provider-aware prompting, including Seedance candidate techniques, storyboard, camera, timing and QC. |
 
@@ -50,6 +50,6 @@ Role IDs such as `motion_designer` are internal methods, not native commands. Us
 From a complete source checkout: `python3 scripts/aco_cli.py --help` lists every actual terminal subcommand. In an installed root use `aco-office-concierge/runtime/scripts/aco_cli.py --help`.
 Common terminal tools include `install`, `install-status`, `validate`, `skill-search`, `skill-resolve`, `capability-audit`, `goal-status` and `autonomy-plan`. Inspect `<command> --help` for arguments; these are not slash commands.
 
-## Optional upstream motion skills
+## Native motion design
 
-`remotion-best-practices` routes the official Remotion suite; `motion` provides official Motion/CSS guidance. Check the local host before claiming they are installed. `aco-motion` includes source links and availability limits.
+`aco-motion` contains native ACO methods for create, animate, captions, maps, edit, preview, render, app, web, audit and upgrade. These are arguments to the skill, not additional registered commands. No external agent skill is required; real engines and project dependencies are checked per task.
