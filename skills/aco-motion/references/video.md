@@ -1,11 +1,17 @@
-# Motion graphics and video
+# ACO — create a motion piece
 
-1. Establish target duration, format, audience, typography, real assets and output from the supplied context; ask only for facts that would materially change the result. Keep unconfirmed content labelled.
-2. Inspect the existing project and installed Remotion versions. Read `remotion-best-practices`, then its create/markup/render references as relevant. All Remotion packages must be version compatible. Use official documentation for actual APIs; do not silently upgrade an existing project.
-3. Storyboard time → visible composition → movement → readable landing → transition. Let meaning determine timing, not a fixed scene density. Tie typography reveals to reading time. Keep important content within the requested crop and safe areas.
-4. Use deterministic frame-driven state: `useCurrentFrame()` and the composition fps, bounded interpolation, seeded variation, and explicit sequence durations. Browser CSS animations or wall-clock timers must not drive exported Remotion motion. Preload fonts/media and verify that seeks produce the same state.
-5. Implement a representative scene and inspect beginning, movement, landing and boundary frames. Confirm final-frame duration, text overflow, alpha/background, asset loading and transitions. Extend after the proof works.
-6. Preview in Studio when available. Render the requested local export with known composition ID, props, fps, dimensions and codec. For a preview request, show the working preview rather than declaring an MP4 exists. Do not enable cloud rendering by default.
-7. Inspect the export itself, not only code: metadata, representative frames, transition playback and audio if present. Deliver source, export/preview and actual limitations. Keep screenshots/contact sheets alongside the requested project when useful.
+## From brief to timeline
 
-A contact sheet cannot demonstrate pacing, smoothness or sync. A successful render cannot demonstrate taste. Review against the actual brief and references; avoid imposing scene counts, maximum hold times or one stock visual language on every film.
+Determine output (preview, export, editable composition), duration, frame rate, dimensions, audience, copy and supplied brand assets. Keep uncertain claims labelled. Ask only for missing choices that would materially change the piece. Use an existing project when present; never scaffold over user files. In a new project inspect Node, package manager and current official setup instructions using [dependencies](dependencies.md). A nonempty unrelated folder needs a new scoped subfolder, not cleanup.
+
+Describe the visual system in concrete terms: type hierarchy, palette, grid, materials and the visual relationship being communicated. Build a timeline with time range, visible content, action, readable landing and transition. A useful transition carries meaning or an object across scenes; it is not an arbitrary effect between slides. Long reading holds, sparse compositions and playful motion are valid when the brief needs them.
+
+Create one representative scene using [composition](composition.md). Test the hardest relationship early: text reflow, asset crop, object handoff, or synchronized movement. Show the proof before multiplying it across the film; do not require a new approval for every reversible edit. Register distinct composition IDs and expose user-relevant inputs with [editable timelines](editable.md).
+
+## Commercials and product stories
+
+Build the story around a real claim and demonstrable change. Preserve actual product geometry and UI content. Distinguish a concept from real customer evidence. At each beat identify what the viewer learns, what moves into focus, and what remains consistent. Choose sound against the actual piece with [captions and sound](captions-audio.md). No fixed scene count, shot density or audio style is mandatory.
+
+## Finish
+
+Continue through [preview/export](preview-render.md) and [review](review.md). Hand over the requested file or working preview, source entrypoint, composition ID and asset dependencies. If rendering is unavailable, deliver source with the precise missing capability and do not label it a completed video.

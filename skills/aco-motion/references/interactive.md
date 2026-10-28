@@ -1,11 +1,25 @@
-# Interactive motion
+# ACO — web and UI animation
 
-Select by behavior: CSS for simple state transitions, Motion for React/Vue state/layout/gestures, GSAP for coordinated timelines and scroll/SVG. Prefer the project's existing compatible stack. Read the installed official `motion` skill's best-practices entry and relevant platform file; its local guidance works without MCP. Use current official docs for APIs.
+## Select by behavior
 
-Define trigger, initial state, transition, interrupt/reverse behavior and resting state. Test fast repeated activation and route changes, not just a first entrance. Preserve focus, keyboard operation, DOM semantics and reduced-motion preferences. Reduced motion should preserve the state change with less spatial movement, not hide content.
+Keep the existing compatible stack. Use CSS transitions for simple class-driven changes, Motion for interruptible state/layout/gesture work, and GSAP for coordinated timelines, SVG or complex scroll behavior. A full video render uses [composition](composition.md), not these free-running browser mechanisms.
 
-Keep animation state out of unnecessary React rerenders. Avoid forced layout in per-frame callbacks. Clean up timelines, observers and subscriptions on unmount. Do not assume filters or clipping are cheap on every device: measure relevant real interactions before claiming performance.
+Define trigger, initial/rest state, duration or spring behavior, interruption/reversal and keyboard equivalent. Motion should explain a state or support the visual brief. Avoid universal bounce, hover-scale or stagger recipes. Treat timing as contextual: frequently repeated utility actions must not wait for decorative sequences.
 
-Verify in the browser: entrance/exit, interruption, resize, keyboard and reduced-motion state. Include the relevant mobile viewport. Check console failures and broken interactions. Report measured performance only when a trace was actually captured. MotionScore is a separate upstream capability requiring its actual connected service; a local code review is not a MotionScore audit.
+## Framework implementation
 
-Use the available Figma motion workflow only for actual Figma tasks. A Figma animation or web component is not automatically a rendered video, a Lottie export, or an After Effects project.
+For React identify the installed package/version before choosing `motion/react` versus a legacy integration. Keep hooks and interaction state in client components. Use presence handling for exit transitions, stable keys for identity, and layout/shared-layout mechanisms for relationships that survive DOM movement. Preserve focus restoration and semantic state when animation delays removal.
+
+Drive high-frequency animation through motion values or the library's animation clock rather than per-frame React state. Compose derived values, clean up subscriptions, and avoid competing CSS and JavaScript owners of the same property. Animate the source of a derived value rather than attempting to animate its computed result independently.
+
+For Vue use the installed supported Vue binding and its reactivity semantics. For vanilla JS scope element selection, retain cancel/cleanup handles and test removal/navigation. With Base UI or Radix preserve their accessibility and portal contracts: use the documented render/as-child mechanism for the installed version, control mount lifetime when exit animation needs it, and test focus and dismissal. Do not paste React patterns into Vue or assume every primitive accepts the same props.
+
+## Scroll, SVG and springs
+
+Choose viewport-triggered entrances versus continuous scroll progress deliberately. Preserve native anchors, keyboard scrolling and restoration. Recompute bounds when layout/media changes and tear down observers on navigation. A GSAP context/timeline must be reverted or disposed through its actual API; never add a second animation clock accidentally.
+
+For SVG keep a valid viewBox, transform origin and geometric interpolation. Path drawing and shape morphing are different problems; normalize path compatibility or use a verified library. Preserve meaning when stroke or motion is suppressed.
+
+Use a spring when interruption and velocity continuity matter. Use a duration/easing curve when an exact schedule matters. A browser-native CSS spring approximation can be authored locally and visually compared without a paid service; do not call it Motion's generated spring output. Prefer a supported easing fallback over unsupported syntax on target browsers.
+
+Finish with [motion review](review.md). Library choice is not proof of accessibility or frame performance.
