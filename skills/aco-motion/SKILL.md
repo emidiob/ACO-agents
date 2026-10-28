@@ -22,7 +22,7 @@ Use `/aco-motion` in Claude Code, `$aco-motion` in Codex, or the Concierge route
 | `audit`, performance, reduced motion | [Motion review](references/review.md) |
 | `upgrade`, API lookup, package compatibility | [Dependencies and documentation](references/dependencies.md) |
 
-These arguments are natural-language routing inside this skill, not new CLI flags or registered slash commands. For live-action reference-video recreation use `../aco-genjutsu/SKILL.md`. For a commercial use video creation plus captions/audio and review; preserve the brief's pacing instead of applying a fixed ad formula.
+These arguments are natural-language routing inside this skill, not new CLI flags or registered slash commands. For live-action reference-video recreation use ACO Genjutsu when available; without it, explain that this motion package does not contain a generative live-action replica engine. For a commercial use video creation plus captions/audio and review; preserve the brief's pacing instead of applying a fixed ad formula.
 
 ## Execute
 
@@ -32,4 +32,8 @@ Implement in the user's project, using the relevant module above. Deliver editab
 
 Review actual output, fix observed failures and distinguish code checks, still inspection, playback, interaction and listening. Do not claim artistic quality or runtime success from instruction installation. [Coverage and provenance](references/sources.md) documents what is implemented and what requires a separate provider; it is research context, not a runtime dependency.
 
-Follow `../aco-office-concierge/references/protocols/COMPACT-MEMORY.md` before persistent writes. Private assets and outputs belong in their project, outside the ACO library. Internal roles may inform work but do not imply independently running agents.
+Follow the local [project contract](references/project-contract.md) before persistent writes. In a full ACO installation also apply its existing `COMPACT-MEMORY.md` scoped memory protocol when available. Private assets and outputs belong in their project, outside the ACO library. Internal roles may inform work but do not imply independently running agents.
+
+## Working kit
+
+For a new project, concrete commands, standalone installation and host differences read [the executable kit](references/working-kit.md). This is the same canonical skill in both integrated and standalone distributions.
