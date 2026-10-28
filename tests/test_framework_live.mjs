@@ -1,0 +1,24 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import acoLive,{SourceProject} from '../skills/aco-webdesign/assets/framework-live/aco-vite.mjs';
+function fixture(t,source,filename='App.jsx'){const root=fs.mkdtempSync(path.join(fs.realpathSync(os.tmpdir()),'aco-source-'));t.after(()=>fs.rmSync(root,{recursive:true,force:true}));fs.writeFileSync(path.join(root,filename),source);return new SourceProject(root);}
+test('React source edit preserves surrounding code and escapes literal braces',t=>{const p=fixture(t,'export default () => <main><h1 data-aco-edit="hero">Hello</h1><p>{value}</p></main>');const binding=p.resolve('hero');p.apply({...binding,kind:'text',value:'<Hello> {name}'});assert.match(p.read('App.jsx').source,/&lt;Hello&gt; &#123;name&#125;/);assert.match(p.read('App.jsx').source,/<p>{value}<\/p>/);p.history('undo');assert.equal(p.read('App.jsx').hash,binding.hash);p.history('redo');assert.match(p.read('App.jsx').source,/&#123;/);});
+test('Vue binding and literal classes',t=>{const p=fixture(t,'<script setup>const value=1</script><template><h1 data-aco-edit="hero" class="old">Hello</h1></template>','App.vue');p.apply({...p.resolve('hero'),kind:'class',value:'new large'});assert.match(p.read('App.vue').source,/class="new large"/);});
+test('rejects dynamic content, nested markup and dynamic classes',t=>{for(const source of ['<h1 data-aco-edit="hero">{name}</h1>','<h1 data-aco-edit="hero"><b>Hello</b></h1>']){const p=fixture(t,'export default () => '+source);assert.throws(()=>p.apply({...p.resolve('hero'),kind:'text',value:'No'}),/Dynamic or nested/);}const p=fixture(t,'export default () => <h1 data-aco-edit="hero" className={classes}>Hello</h1>');assert.throws(()=>p.apply({...p.resolve('hero'),kind:'class',value:'new'}),/Dynamic classes/);});
+test('rejects markers in strings and comments',t=>{for(const source of ["const example = '<h1 data-aco-edit=\"hero\">Hello</h1>';",'// <h1 data-aco-edit="hero">Hello</h1>','/* <h1 data-aco-edit="hero">Hello</h1> */', 'const example=/<h1 data-aco-edit="hero">Hello<\\/h1>/;']){const p=fixture(t,source);assert.throws(()=>p.resolve('hero'),/literal marker/);}});
+test('detects stale edits and stale history',t=>{const p=fixture(t,'export default () => <h1 data-aco-edit="hero">Hello</h1>');const binding=p.resolve('hero');p.apply({...binding,kind:'text',value:'Changed'});assert.throws(()=>p.apply({...binding,kind:'text',value:'Stale'}),/Source changed/);fs.appendFileSync(p.file('App.jsx'),'\n// external');assert.throws(()=>p.history('undo'),/changed externally/);});
+test('rejects duplicate bindings, outside files and symlinks',t=>{const p=fixture(t,'export default () => <h1 data-aco-edit="hero">Hello</h1>');fs.copyFileSync(p.file('App.jsx'),path.join(p.root,'Other.jsx'));assert.throws(()=>p.resolve('hero'),/duplicated/);assert.throws(()=>p.read('../other.jsx'),/not allowed/);fs.symlinkSync(p.file('App.jsx'),path.join(p.root,'Link.jsx'));assert.throws(()=>p.read('Link.jsx'),/Symlink/);});
+test('development only plugin refuses public host',()=>{const plugin=acoLive();assert.equal(plugin.apply,'serve');assert.throws(()=>plugin.configResolved({root:'.',base:'/',server:{host:'0.0.0.0'}}),/loopback/);});
+
+test('HTTP bridge authenticates edits and binds mutations to the same origin',async t=>{
+  const http=await import('node:http');const project=fixture(t,'export default () => <h1 data-aco-edit="hero">Hello</h1>');const plugin=acoLive();plugin.configResolved({root:project.root,base:'/',server:{host:'127.0.0.1'}});let middleware;plugin.configureServer({middlewares:{use:fn=>middleware=fn}});
+  const server=http.createServer((req,res)=>middleware(req,res,()=>{res.writeHead(404);res.end();}));await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));t.after(()=>new Promise(resolve=>server.close(resolve)));const origin='http://127.0.0.1:'+server.address().port;
+  const html=await(await fetch(origin+'/__aco/live')).text(),token=/token:'([a-f0-9]{64})'/.exec(html)[1];
+  assert.equal((await fetch(origin+'/__aco/resolve',{method:'POST',body:'{"key":"hero"}'})).status,403);
+  const headers={'Content-Type':'application/json','Origin':origin,'X-ACO-Token':token};const binding=await(await fetch(origin+'/__aco/resolve',{method:'POST',headers,body:'{"key":"hero"}'})).json();assert.equal(binding.file,'App.jsx');
+  const response=await fetch(origin+'/__aco/edit',{method:'POST',headers,body:JSON.stringify({...binding,kind:'text',value:'Saved through HTTP'})});assert.equal(response.status,200);assert.match(project.read('App.jsx').source,/Saved through HTTP/);
+  assert.equal((await fetch(origin+'/__aco/undo',{method:'POST',headers:{...headers,Origin:'https://other.example'},body:'{}'})).status,403);
+});
