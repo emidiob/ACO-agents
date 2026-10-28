@@ -1,6 +1,12 @@
 # Changelog
 
-## Unreleased — original ACO prompt workflow
+## Unreleased — motion design and complete help
+
+- Add original `aco-motion` routing and reference-guided video/UI workflows, with official Remotion and Motion skill selection and explicit service limits.
+- Generate the complete Claude/Codex command menu from all 24 native entry skills, including offices and context; distinguish roles and terminal tools.
+- Preserve technical registry candidate states and existing third-party licensing.
+
+### Original ACO prompt workflow
 
 - Complete local reference preparation with overview sheets, heuristic cut candidates, true frame timestamps and endpoint coverage. Add a reference-packet checker and require file/time bindings in the final prompt.
 - Specify sequential transformed-reference creation, reuse of verified appearance, source/result comparison and saved image prompts; local checks do not certify an untested video generation.

@@ -200,7 +200,7 @@ class ConsolidationTests(unittest.TestCase):
    self.assertTrue((ROOT/f'skills/aco-office-concierge/references/playbooks/{key}.md').exists());roles.update(p['roles'])
   self.assertEqual(len(roles),114)
  def test_no_persona_inflation(self):
-  c=json.loads((ROOT/'catalog.json').read_text());self.assertEqual(len(c['agents']),363);self.assertEqual(len(c['skills']),23)
+  c=json.loads((ROOT/'catalog.json').read_text());self.assertEqual(len(c['agents']),363);self.assertEqual(len(c['skills']),24)
  def test_reference_only_cannot_be_embedded_by_plan(self):
   q=dict(resource_id='spectrum',action='install',purpose='archive',data_scope='none',approval_ref='u',license_review_ref='not-a-licence')
   inv=dict(checked_on='2026-09-20',evidence_ref='fixture',capabilities=[])

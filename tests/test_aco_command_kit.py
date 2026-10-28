@@ -6,7 +6,7 @@ from scripts.aco.common import ROOT
 from scripts.aco.skills import skill_registry_check, skill_resolve, skill_search
 from scripts.aco.install import Installer
 
-COMMANDS = ['aco','aco-genjutsu','aco-video','aco-image','aco-capture','aco-skills','aco-help']
+COMMANDS = ['aco','aco-genjutsu','aco-video','aco-image','aco-capture','aco-skills','aco-help','aco-motion']
 
 class ACOCommandKitTests(unittest.TestCase):
     def test_entry_points(self):
@@ -40,3 +40,12 @@ class ACOCommandKitTests(unittest.TestCase):
                 body=(ROOT / doc).read_text(encoding='utf-8')
                 self.assertIn('/aco-genjutsu',body)
                 self.assertIn('/aco',body)
+
+class CompleteHelpTests(unittest.TestCase):
+    def test_every_native_entry_is_discoverable_in_both_hosts(self):
+        menu = (ROOT/'skills/aco-help/references/commands.md').read_text()
+        for skill in (ROOT/'skills').glob('*/SKILL.md'):
+            name = skill.parent.name
+            self.assertEqual(menu.count('| `/' + name + '` |'), 1, name)
+            self.assertEqual(menu.count('| `$' + name + '` |'), 1, name)
+        self.assertEqual(menu, (ROOT/'docs/ACO-COMMANDS.md').read_text())

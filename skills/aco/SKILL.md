@@ -12,6 +12,7 @@ Use the canonical ACO 1.0.5 runtime (`aco://current`) in this checkout or a veri
 - `/aco` or `/aco <task>`: Concierge handles the request and selects the smallest relevant team.
 - `/aco help`: show the short menu from `../aco-help/SKILL.md`.
 - `/aco skills`: inspect registry with `skill-registry-check` / `skill-search`; report candidate status truthfully.
+- `/aco motion <task>`: route via `../aco-motion/SKILL.md`.
 - `/aco image <task>`: route via `../aco-image/SKILL.md`.
 - `/aco video <task>`: route via `../aco-video/SKILL.md`.
 - `/aco capture <task>`: route via `../aco-capture/SKILL.md`.

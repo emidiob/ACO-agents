@@ -9,6 +9,8 @@ Read `references/ROLE-INDEX.md`, then the exact methods needed for the task. Lea
 
 For explicit source-video replication prompts, `/aco-genjutsu` uses the `ai_video_prompt_adapter` and the opt-in `video.seedance.reference-video-replica` candidate without rendering, uploading or asserting model validation.
 
+For motion graphics, animated typography and interactive motion, use [ACO Motion](../aco-motion/SKILL.md) and its task-specific video or UI workflow.
+
 ## First pass
 Follow `INTERACTION.md`: read already-supplied/authorized facts, ask the essential missing questions early, then act with little narration. Use one lead and a few specialists. Do not turn execution into an organizational workshop.
 

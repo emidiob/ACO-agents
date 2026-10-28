@@ -215,6 +215,30 @@ def outputs():
         visual += ['']
     out['docs/AGENT-CATALOG.md']='\n'.join(visual).encode()
 
+    # Native help is derived from every real skill entrypoint, so offices cannot disappear.
+    menu = ['# ACO — complete command menu', '',
+            'Claude Code uses `/name`; Codex uses `$name`. Availability requires host discovery.', '',
+            'Use `/aco motion`, `/aco video`, `/aco image`, `/aco capture`, `/aco genjutsu`, `/aco skills` or `/aco help` as Concierge routes. In Codex pass these arguments to `$aco`.', '']
+    groups = [('Creative shortcuts and help', [n for n in skill_names if not n.endswith('-office') and n not in ('aco-office-concierge', 'aco-context-setup', 'aco-context-steward')]),
+              ('Offices', [n for n in skill_names if n.endswith('-office') or n == 'aco-office-concierge']),
+              ('Context', [n for n in skill_names if n in ('aco-context-setup', 'aco-context-steward')])]
+    for heading, entries in groups:
+        menu += ['## ' + heading, '', '| Claude Code | Codex | Purpose |', '|---|---|---|']
+        for name in entries:
+            body = (R/'skills'/name/'SKILL.md').read_text()
+            description = re.search(r'^description: (.+)$', body, re.M).group(1).strip().strip('"')
+            menu += [f'| `/{name}` | `${name}` | {description.replace("|", "/")} |']
+        menu += ['']
+    menu += ['## Internal methods and terminal tools', '',
+             'Role IDs such as `motion_designer` are internal methods, not native commands. Use the office role index when you need them.',
+             '`aco-skills` shows the separate technical registry and its active/candidate status. Native entry skills and external upstream skills are not additional validated registry entries.',
+             'From a complete source checkout: `python3 scripts/aco_cli.py --help` lists every actual terminal subcommand. In an installed root use `aco-office-concierge/runtime/scripts/aco_cli.py --help`.',
+             'Common terminal tools include `install`, `install-status`, `validate`, `skill-search`, `skill-resolve`, `capability-audit`, `goal-status` and `autonomy-plan`. Inspect `<command> --help` for arguments; these are not slash commands.', '',
+             '## Optional upstream motion skills', '',
+             '`remotion-best-practices` routes the official Remotion suite; `motion` provides official Motion/CSS guidance. Check the local host before claiming they are installed. `aco-motion` includes source links and availability limits.', '']
+    out['skills/aco-help/references/commands.md'] = '\n'.join(menu).encode()
+    out['docs/ACO-COMMANDS.md'] = '\n'.join(menu).encode()
+
     return out
 
 

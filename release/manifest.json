@@ -11,7 +11,7 @@
     },
     "ACO-INDEX.md": {
       "mode": 420,
-      "sha256": "75abd8d52b0343d92502f900ab0e7915847d8e043d49244ec19f0cd42d41413b"
+      "sha256": "b496e6a6381a4c08d94a244c8aa426b5daa332da2a8d5db8de24f0585ca795ae"
     },
     "ACO-TEST-REPORT-v0.7.2.md": {
       "mode": 420,
@@ -55,7 +55,7 @@
     },
     "AGENTS.md": {
       "mode": 420,
-      "sha256": "9a83c8644b8c6cf84775cd0da979bf99494ba16d9623dc4b780f380205a8f176"
+      "sha256": "761725f71365929931eca528751eb094ec9c3c00efa2522d129383b31da8a250"
     },
     "BEGINNER-GUIDE.md": {
       "mode": 420,
@@ -63,7 +63,7 @@
     },
     "CHANGELOG.md": {
       "mode": 420,
-      "sha256": "2b125728177650dbd2ad8cc6c6ccce3ed806ebdc1218dfd63ec33083bf72b056"
+      "sha256": "81994e8e218b9a926534c52d295797ac2ec4433d0c63254bac6c3dde587c4d58"
     },
     "CHATGPT.md": {
       "mode": 420,
@@ -195,7 +195,7 @@
     },
     "catalog.json": {
       "mode": 420,
-      "sha256": "c40749c5c6f0b3ef888f6974f4ce7fa25ec23227ec3dc3565db9ea7eaa266c8c"
+      "sha256": "549f51cec9bfe5bce8430abb095f48b6bd8632bc76b610a4326eebf253d3e9d5"
     },
     "config/aco-os-benchmark.json": {
       "mode": 420,
@@ -367,7 +367,7 @@
     },
     "docs/ACO-COMMANDS.md": {
       "mode": 420,
-      "sha256": "af98f61026b13328b11ca1d0d897fcc3efd4f0d4d62b31c3c914df4484727d73"
+      "sha256": "44480c8a299ce8fe1e3197fbb1f1649298d458b4cbc46a647d33bdc835188cbf"
     },
     "docs/ACO-OS-1.0.md": {
       "mode": 420,
@@ -383,7 +383,7 @@
     },
     "docs/AGENT-CATALOG.md": {
       "mode": 420,
-      "sha256": "c9dcf28f44bdff55a3f8dadb8db1e23941b66b3f732dbe9c125c1696946c4e29"
+      "sha256": "76d6d7ca82562b0b783f2f94e839808e8574d750e9d3d73d15bd061c5f8ec154"
     },
     "docs/AI-VIDEO-PROMPT-EXAMPLES.md": {
       "mode": 420,
@@ -2451,7 +2451,7 @@
     },
     "scripts/aco/validate.py": {
       "mode": 420,
-      "sha256": "d9946cc511b7b76c67d0ed852fc898c3616da204810d4c2ed5ec7afd7b99fea1"
+      "sha256": "d29cbd2b76c9a9f4ca5d6babd3a6fc30f9ddde1197ceb167542d08d39ea67370"
     },
     "scripts/aco_cli.py": {
       "mode": 420,
@@ -2475,7 +2475,7 @@
     },
     "scripts/generate.py": {
       "mode": 420,
-      "sha256": "fbca4cbbd819f9c403c8ae55ec443d5a504866eaa3f93346245efddf78d45a23"
+      "sha256": "aac00471b12dcaffa633cb6440a6822d679d25e68762113f971fa2a26d023b81"
     },
     "scripts/install_aco_claude_shortcuts.py": {
       "mode": 420,
@@ -3379,7 +3379,11 @@
     },
     "skills/aco-help/SKILL.md": {
       "mode": 420,
-      "sha256": "fe000b3f9ef73a5bf48e45f5c3f074c0886835a890a7908d2dec333dd9a8681e"
+      "sha256": "7d836550ada8d3590864cac8ce81fc96246b5e5a20739b66fdd43efbde63d496"
+    },
+    "skills/aco-help/references/commands.md": {
+      "mode": 420,
+      "sha256": "44480c8a299ce8fe1e3197fbb1f1649298d458b4cbc46a647d33bdc835188cbf"
     },
     "skills/aco-image/SKILL.md": {
       "mode": 420,
@@ -3509,6 +3513,22 @@
       "mode": 420,
       "sha256": "5d418ef2486660c7f21195d4d771dbf32b58222d89aa9d8116754036e10bab7d"
     },
+    "skills/aco-motion/SKILL.md": {
+      "mode": 420,
+      "sha256": "5da48d038028800c14ae9e92e8235bf102290b7416993e3c6eb6a151611a864a"
+    },
+    "skills/aco-motion/references/interactive.md": {
+      "mode": 420,
+      "sha256": "3426117a7277d3d8f58e8d9f35c1b3420775405f6e94328127c211394d92f52e"
+    },
+    "skills/aco-motion/references/sources.md": {
+      "mode": 420,
+      "sha256": "8906bee674eb762a923f0a526add7ad14379a4209b72468f88c5b2c25a2e2404"
+    },
+    "skills/aco-motion/references/video.md": {
+      "mode": 420,
+      "sha256": "ccb34d45c61f2f7ee54721430f254010f578693e6236f73d52366cb5878fe92f"
+    },
     "skills/aco-office-concierge/SKILL.md": {
       "mode": 420,
       "sha256": "faa2cb7b0b01ec5409fe46116e466b564683ccc747bfb695070b3d2aa49d278c"
@@ -3519,7 +3539,7 @@
     },
     "skills/aco-office-concierge/references/CATALOG.json": {
       "mode": 420,
-      "sha256": "c40749c5c6f0b3ef888f6974f4ce7fa25ec23227ec3dc3565db9ea7eaa266c8c"
+      "sha256": "549f51cec9bfe5bce8430abb095f48b6bd8632bc76b610a4326eebf253d3e9d5"
     },
     "skills/aco-office-concierge/references/ROLE-INDEX.md": {
       "mode": 420,
@@ -5007,7 +5027,7 @@
     },
     "skills/aco-production-office/SKILL.md": {
       "mode": 420,
-      "sha256": "85d52f1764c3e0863b4f860eff08ed1ffd52e50b3277a5257b68a9d4544cb307"
+      "sha256": "3af087e4792725534212e454b3a3e6fdea20b924244d5e966a811a5fb05d6c5e"
     },
     "skills/aco-production-office/agents/openai.yaml": {
       "mode": 420,
@@ -5439,7 +5459,7 @@
     },
     "skills/aco-skills/SKILL.md": {
       "mode": 420,
-      "sha256": "aff28f5937ed17bd5035398eb301fc248f4fbf79f67895054aff75325791ba2e"
+      "sha256": "7d0cd6687b3eae07fdbdd424655132b2acec05655a4610e675bd8ad9a29410f9"
     },
     "skills/aco-video/SKILL.md": {
       "mode": 420,
@@ -5447,7 +5467,7 @@
     },
     "skills/aco/SKILL.md": {
       "mode": 420,
-      "sha256": "6182de0292b1937ae24226284442d5d7c89e1c7bfe99fae0af5c16a0a15805ec"
+      "sha256": "0321ac850e4150bc5ab436cd93342e90d5c1ddf3cbda0113def6cb38e5fb6079"
     },
     "tests/fixtures/legacy-plugin.txt": {
       "mode": 420,
@@ -5459,7 +5479,7 @@
     },
     "tests/test_aco_command_kit.py": {
       "mode": 420,
-      "sha256": "565afbed702d33b627c5ecaf727a33e2547e4256c73a861a6f284da47fe13a90"
+      "sha256": "984076811b2c1cc3ab3398954c8a1b10164541c7921b05cd8d17428535f2d183"
     },
     "tests/test_common_symlinks.py": {
       "mode": 420,
@@ -5479,7 +5499,7 @@
     },
     "tests/test_expansion.py": {
       "mode": 420,
-      "sha256": "45ce05af51701d2a62b648b0bd942d2edeaee539dada3da588305958e23cc8d6"
+      "sha256": "dff50565868ef3a4064751645cfb4646dfb02249ba336eaef366247fa722554f"
     },
     "tests/test_finance.py": {
       "mode": 420,
@@ -5531,7 +5551,7 @@
     },
     "tests/test_studio_readiness.py": {
       "mode": 420,
-      "sha256": "695e3b71e4b36071ad341f8709f949ff50e4ee8622f3c3132daa9a84805836c4"
+      "sha256": "50f8a48ca1272e4ef7e403fb2bbffc9a3095adbbca019e27977ec8f9dee76e23"
     },
     "tests/test_tidy_compact_sync.py": {
       "mode": 420,
@@ -5547,7 +5567,7 @@
     },
     "tests/test_v073.py": {
       "mode": 420,
-      "sha256": "ad21926a4b6fd16fd6022cf8064e74902e0b09f57e72ae9882db9b67418cd4e6"
+      "sha256": "f22b9d15a1b11dfd2f6042e6b0a9b918aecae652f9921f954ee48657000e26a9"
     },
     "tests/test_v080.py": {
       "mode": 420,
