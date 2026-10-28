@@ -44,6 +44,6 @@ Current licensing applies per source, component, model and asset. ACO’s licens
 
 ## Curated 0.6.0 selection
 
-Read [source review](SOURCE-REVIEW.md) for the 35 additions, inherited provenance, original method links and current limitations. Reference-only entries can be consulted but are blocked from use/install/deploy recommendations by `resource-plan`; an ACO approval cannot grant a publisher's commercial reuse permission. Scale-only applications remain optional and are not recommended as default studio infrastructure.
+Read source review for the 35 additions, inherited provenance, original method links and current limitations. Reference-only entries can be consulted but are blocked from use/install/deploy recommendations by `resource-plan`; an ACO approval cannot grant a publisher's commercial reuse permission. Scale-only applications remain optional and are not recommended as default studio infrastructure.
 
 `capability-audit` checks PATH presence without running commands or reading credentials. Do not treat it as connected-account discovery. Source review, command availability, actual connector permission and execution receipts are separate.

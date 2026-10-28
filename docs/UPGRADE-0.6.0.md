@@ -27,4 +27,4 @@ No additional Drive folders or structured event files are needed. The new Artist
 
 ## What to review
 
-Read [product decisions](PRODUCT-DECISIONS.md), [method map](METHODS.md), [source review](SOURCE-REVIEW.md), [local check contracts](STUDIO-CHECKS.md) and [test evidence](TEST-REPORT-0.6.0.md).
+Read product decisions, [method map](METHODS.md), source review, [local check contracts](STUDIO-CHECKS.md) and test evidence.

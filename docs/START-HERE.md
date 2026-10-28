@@ -38,9 +38,8 @@ Follow [Upgrading](UPGRADING.md) from the new package. Extracting a ZIP, pushing
 
 ## I want the plain-language explanation
 
-Read the [Beginner Guide](../BEGINNER-GUIDE.md) for daily requests, memory, troubleshooting and resuming work. The [README](../README.md) explains the library; [CLI](CLI.md) describes optional commands. You do not need to install the resource catalogue or connect Drive to start.
+Read the [Beginner Guide](../BEGINNER-GUIDE.md) for daily requests, memory, troubleshooting and resuming work. The README explains the library; [CLI](CLI.md) describes optional commands. You do not need to install the resource catalogue or connect Drive to start.
 
-The [1.0.6 report](../ACO-TEST-REPORT-v1.0.6.md) records release checks. Earlier test reports describe their own versions.
 
 ## Quick command skills (ACO 1.0.6 command pack)
 

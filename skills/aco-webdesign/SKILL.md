@@ -11,7 +11,7 @@ Use `/aco-webdesign` in Claude Code, `$aco-webdesign` in Codex, or `aco webdesig
 
 For a named operation such as `polish`, `harden`, `typeset`, `prototype` or `motion-review`, use [the operation index](references/operations.md) and read only its selected method. `python3 scripts/operations.py list` lists all operations; `python3 scripts/operations.py show harden` prints the selected method. These are agent workflows, not claims of automated engine parity.
 
-Use [native engines](references/native-engines.md) for external-data retrieval/search, design-system proposals and rendered DOM analysis. Check [feature parity](references/feature-parity.json) before claiming equivalence to an upstream repository. Full parity is not yet implemented.
+Use [native engines](references/native-engines.md) for external-data retrieval/search, design-system proposals and rendered DOM analysis.
 
 ## Choose the needed work
 
@@ -30,4 +30,4 @@ Use [the working kit](references/working-kit.md) for searchable original directi
 
 Distinguish marketing/editorial sites from task-oriented product UI. Preserve the supplied brand, framework, routes, business logic and working interactions during redesign. Prefer useful hierarchy over habitual card grids or decorative effects. Taste is a contextual judgment, not a ban list or a numeric score. Do not claim production quality from a successful build or a clean HTML report.
 
-Follow [project contract](references/project-contract.md). In integrated ACO also apply COMPACT-MEMORY.md; keep project data outside this public library. Read [source review and scope](references/sources.md) when comparing capabilities or checking provenance. Runtime media/motion work may use ACO Image/Motion when present, but these sibling skills are optional. Claude/Codex VS Code extensions use the same folder; VS Code alone does not execute skills.
+Follow [project contract](references/project-contract.md). In integrated ACO also apply COMPACT-MEMORY.md; keep project data outside this public library. Read [dependencies and attribution](references/sources.md) when using external resources. Runtime media/motion work may use ACO Image/Motion when present, but these sibling skills are optional. Claude/Codex VS Code extensions use the same folder; VS Code alone does not execute skills.

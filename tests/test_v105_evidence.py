@@ -8,7 +8,6 @@ class Evidence105Tests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.r=json.loads((ROOT/'registry/skills.json').read_text(encoding='utf-8'))
-        cls.e=json.loads((ROOT/'release/skill-evidence-v1.0.5.json').read_text(encoding='utf-8'))
         cls.p=json.loads((ROOT/'config/skill-policy.json').read_text(encoding='utf-8'))
 
     def test_104_baseline_roles_and_new_entrypoints(self):
@@ -36,18 +35,6 @@ class Evidence105Tests(unittest.TestCase):
                 x=skill_resolve(skill['skill_id'],allow_candidate=True,root=ROOT)
                 self.assertFalse(x['selectable'])
                 self.assertEqual(x['body']['status'],skill['status'])
-
-    def test_evidence_coverage_and_disclosure(self):
-        ev=self.e
-        self.assertEqual(ev['aco_version'],'1.0.5')
-        self.assertEqual(ev['technical_total'],44)
-        self.assertEqual(ev['existing_active_methods'],14)
-        self.assertEqual(ev['candidates_unvalidated_for_default_use'],30)
-        self.assertEqual(ev['provider_renders_tested_this_build'],0)
-        self.assertEqual({s['skill_id'] for s in ev['skills']},{s['skill_id'] for s in self.r['skills']})
-        for s in ev['skills']:
-            self.assertFalse(s['real_provider_output_test_verified'])
-            self.assertFalse(s['promotion_requested_or_performed'])
 
     def test_non_weakened_promotion_contract(self):
         q=self.p['promotion']

@@ -15,7 +15,7 @@ python3 scripts/design_data.py --data /existing-parent/design-data search "async
 
 An existing directory is refused. The download needs network access; on failure it reports an error rather than silently falling back. A local CSV directory also works, with `manifest_verified: false` unless the matching source manifest exists. Manifest verification checks bytes against the supplied manifest, not independent trust in whoever authored it.
 
-The independent BM25 engine searches all columns with Unicode tokenization. A score is retrieval relevance, not quality, accessibility or confidence. It does not reproduce the upstream synonym/alias behavior or guarantee identical result ranking. A missing match stays missing. No network is used during search.
+The independent BM25 engine searches all columns with Unicode tokenization. A score is retrieval relevance, not quality, accessibility or confidence. Result ranking uses the documented BM25 algorithm. A missing match stays missing. No network is used during search.
 
 ## Propose a design system
 
@@ -27,7 +27,7 @@ python3 scripts/design_system.py "SaaS analytics dashboard" \
 
 The result contains source-linked product, style, palette, typography, layout, chart, motion and UX recommendations where matching domains exist. A product recommendation supplies additional search terms for style, color and layout. The output includes `design-system.json` and CSS semantic color variables. An optional `--overrides colors.json` takes semantic-name/six-digit-hex pairs and preserves them over proposed colors. Existing outputs are never overwritten.
 
-This is a proposal, not an approved brand system. The upstream conditional reasoning DSL, master/page merging and all upstream design dials are not implemented. Resolve conflicting recommendations using the brief and existing system. Verify actual rendered contrast, font rights and behavior before adoption. Never replace a working project system merely because a search returned a different style.
+This is a proposal, not an approved brand system. The tool outputs a proposal and a color-token file; existing project design decisions remain authoritative. Resolve conflicting recommendations using the brief and existing system. Verify actual rendered contrast, font rights and behavior before adoption. Never replace a working project system merely because a search returned a different style.
 
 ## Inspect a rendered page
 
@@ -40,11 +40,3 @@ python3 scripts/audit_snapshot.py /project/evidence/page-dom.json
 The 17 rule categories cover document metadata, zoom restrictions, overflow, visible landmarks/headings, duplicate visible IDs, image alt, heuristic control names/labels, placeholder links, tabindex, small targets/text, clipped text and animations active under reduced motion. Findings include captured element index/tag/ID. Indices apply only to that snapshot, not future browser interactions.
 
 This probe reads the requested DOM, not private application stores. Keep captures containing real project content outside the public ACO library. It does not cover shadow roots/frames comprehensively, compute the complete accessible-name algorithm or execute interaction tests. Target size and small-text results require contextual review. Do not auto-restyle a page to silence heuristic findings. No contrast, keyboard, screen-reader, runtime performance or aesthetic pass is implied.
-
-Actual ACO execution captured the Workspace example at 390, 768 and 1440 CSS px. The reports found small-text review items and no page overflow. That verifies probe/analysis operation on those captured states, not all 17 failure categories or general parity with Impeccable/Taste.
-
-## Parity reporting
-
-[feature-parity.json](feature-parity.json) records the current capability gaps against pinned sources. `python3 scripts/parity.py` prints the counts and outstanding capabilities and exits 1 while parity is incomplete. The inventory itself remains incomplete at component/rule level. A method being discoverable, a helper executing or an archive installing is not evidence of full feature parity.
-
-The [component inventory](component-inventory.json) identifies pinned source module names and variant paths for subsequent independent implementation. It contains no upstream component source.

@@ -6,6 +6,10 @@ import json
 import re
 import zipfile
 from pathlib import Path
+try:
+    from publication_check import check as publication_check
+except ModuleNotFoundError:
+    from scripts.publication_check import check as publication_check
 
 ROOT=Path(__file__).resolve().parents[1]
 def package(output, skill="aco-motion"):
@@ -15,6 +19,7 @@ def package(output, skill="aco-motion"):
     if any(p.is_symlink() for p in (output,*output.parents)):raise ValueError('Symlink output refused')
     if output.exists():raise ValueError('Output already exists')
     if output.is_relative_to(ROOT):raise ValueError('Place the package outside the library')
+    if publication_check(ROOT)['status'] != 'passed':raise ValueError('Internal working documents must remain outside public packages')
     source=ROOT/'skills'/skill;files={}
     for p in source.rglob('*'):
         if p.is_symlink():raise ValueError('Symlink source refused')

@@ -3,7 +3,7 @@
   "files": {
     ".github/workflows/validate.yml": {
       "mode": 420,
-      "sha256": "490da23cd0784bead663226c3bfcdc4cbefec08cac97bcd4038727effd720da3"
+      "sha256": "633cba8844cbbf5924e591177375af2ab95016d618742ae4f2db1124a110f0a6"
     },
     ".gitignore": {
       "mode": 420,
@@ -13,65 +13,21 @@
       "mode": 420,
       "sha256": "b301e0e9aa5ca34db1ad1259086f043e58bfa80ba6a3291a6c6d6a7832b15c06"
     },
-    "ACO-TEST-REPORT-v0.7.2.md": {
-      "mode": 420,
-      "sha256": "24a91f46cae2dde4705d81a8f892bae5c03b68d6ebfaee5f98eb2b406c94789b"
-    },
-    "ACO-TEST-REPORT-v0.7.3.md": {
-      "mode": 420,
-      "sha256": "25fe9beb3c37a168e2921553e2446d0b4a1f415632afbe797641351e15da9fa3"
-    },
-    "ACO-TEST-REPORT-v0.8.0.md": {
-      "mode": 420,
-      "sha256": "624313e5fddc7c5639cbfaa4dda88328747f70ccdb9ab8f8dcb0d23f032e097f"
-    },
-    "ACO-TEST-REPORT-v0.9.0.md": {
-      "mode": 420,
-      "sha256": "3a12e17ade352e1c51dd9b072de02f300607a22cfd3c67592ffc5642dcbadf05"
-    },
-    "ACO-TEST-REPORT-v1.0.0.md": {
-      "mode": 420,
-      "sha256": "74c2836c08fb8651366533250ff22fefad0e944bb086a61cd50f812c24ddaee5"
-    },
-    "ACO-TEST-REPORT-v1.0.1.md": {
-      "mode": 420,
-      "sha256": "43019210c3215c7e019ecce6956ba43284f0ddb6222a8eb75cf3a412fe138bdb"
-    },
-    "ACO-TEST-REPORT-v1.0.2.md": {
-      "mode": 420,
-      "sha256": "c86af8b965293016f44735c24695a525beadd177809a2638db13f10d5d948686"
-    },
-    "ACO-TEST-REPORT-v1.0.3.md": {
-      "mode": 420,
-      "sha256": "839651bf4894e3d35e0f764037859cab73a20f44a6a284877c729a71d80ee5bc"
-    },
-    "ACO-TEST-REPORT-v1.0.4.md": {
-      "mode": 420,
-      "sha256": "e0ca15f032717d2308f47a7dc6a90b303adef15f2e918472623f7f71b22079ed"
-    },
-    "ACO-TEST-REPORT-v1.0.5.md": {
-      "mode": 420,
-      "sha256": "7a05af5f0be225c7ae14f43d3bc5804e3896ee3d6cf6d8a438dba06deffbc151"
-    },
-    "ACO-TEST-REPORT-v1.0.6.md": {
-      "mode": 420,
-      "sha256": "b0d8ec3471e5e9d82c8301210bb2668455a4957bd307631e1d35738c37a23971"
-    },
     "AGENTS.md": {
       "mode": 420,
-      "sha256": "14af9c161830f71fe2e3fc892f70bffed364ffc8839c7f7730a981d3c6bc872a"
+      "sha256": "8a8d8a39b330ce805b367cc329da899c8b3b0fe52ad2d2b0f0ab0abce2c3e9b5"
     },
     "BEGINNER-GUIDE.md": {
       "mode": 420,
-      "sha256": "c0570c9593aee80224b8016d2bdf7099de190d6e050de8d86a18abb1567f549f"
+      "sha256": "57f8d2c648231a10e480e72e42d9f339ffde90b359d6742b9de87bf5d28f8a4a"
     },
     "CHANGELOG.md": {
       "mode": 420,
-      "sha256": "db673159e7aed44adca7705b91aafcfd40f3f9c5a4bd0f75c2f5d890b8b1a47f"
+      "sha256": "d78e3d330fa3e7eee181d6e37dbd67e698baef5659975f6b222edf0d0c7344e2"
     },
     "CHATGPT.md": {
       "mode": 420,
-      "sha256": "f13c303cd3a21501d74d89d66bb6141e198e97ed8d2068a86b50de4bfb1e62ee"
+      "sha256": "24e4ec9d17d66318f1b0d2adda8e40695b3cca0624c1ebb519e2ac3caab89ff1"
     },
     "CONCIERGE.md": {
       "mode": 420,
@@ -91,11 +47,11 @@
     },
     "LICENSE-NOTICE.md": {
       "mode": 420,
-      "sha256": "0b72271e594481084af2b16605a4137b280babe863cce09fc78e4cafb295628b"
+      "sha256": "274baa2814a7ac7ada11ab424bf2acf2826c4f4a050cf4efdc5dc9da103e2246"
     },
     "README.md": {
       "mode": 420,
-      "sha256": "ee3670182011485ba882cd4e3f9aef8f9757a335611a8b9aca80656ac632ef69"
+      "sha256": "96396de609c51c6b1df023326ada273e3165ad1fdba9e6ec0d6d07a26fedada0"
     },
     "SECURITY.md": {
       "mode": 420,
@@ -371,7 +327,7 @@
     },
     "docs/ACO-COMMANDS.md": {
       "mode": 420,
-      "sha256": "65e34d6a0f174a6cc1f538d97e3abd7530927d28efeafc163e1cddb8e406ef8f"
+      "sha256": "39d3081e0a0a16062ebc0df0df32c9bc334b01e6aa69dd073762e1e4bf26fe7e"
     },
     "docs/ACO-OS-1.0.md": {
       "mode": 420,
@@ -431,7 +387,7 @@
     },
     "docs/CURATED-METHODS.json": {
       "mode": 420,
-      "sha256": "7be5f1a24677ccf6d99712b01e792a153d339a85cd7214bb0b1942a0f13ce38b"
+      "sha256": "489f719ec9fab64c9d4b38db85b67bf25417632278ca52611f1452ac11eb2ded"
     },
     "docs/DRIVE-KNOWLEDGE.md": {
       "mode": 420,
@@ -439,7 +395,7 @@
     },
     "docs/EVALS.md": {
       "mode": 420,
-      "sha256": "6c8afdb6420fc5469d963c508ff6a5ad673e628e693d26610b00d73e1382d5c9"
+      "sha256": "27bf7b6232d4a0b5dac0aceb42e56dccd52673c2814702269ed7c05f882fa928"
     },
     "docs/EVALUATION-CARDS.md": {
       "mode": 420,
@@ -479,15 +435,11 @@
     },
     "docs/METHODS.md": {
       "mode": 420,
-      "sha256": "26becb4723c61c05b9013754d9af03ccff9decdc74262e1fb966dcdcb78e878e"
+      "sha256": "6e9fa5b882079a96270e22db86879ea58f638c1961d301436de90d2f79b7efa8"
     },
     "docs/MIGRATION-FROM-PLUGIN.md": {
       "mode": 420,
       "sha256": "6044bc4931d5274dfb36470aceb66af646b84f4f61da8ff129ba5c2120294e48"
-    },
-    "docs/MOTION-KIT-VERIFICATION.md": {
-      "mode": 420,
-      "sha256": "370ca649f71ba244cb5cf8883a26626cab842819ec332b9aed22f544aa7c6b58"
     },
     "docs/OFFICE-MAP.md": {
       "mode": 420,
@@ -496,10 +448,6 @@
     "docs/OPTIONAL-DRIVE-BRIDGE.md": {
       "mode": 420,
       "sha256": "70fd0dd02397b28e1ee0752609ce13bfe34c65714fbdce3a79277313b8b7673f"
-    },
-    "docs/PRODUCT-DECISIONS.md": {
-      "mode": 420,
-      "sha256": "4257b473cf2c3000bf3227b9d9217b030a510ee9bacf10650e16b9faf3063599"
     },
     "docs/PRODUCTION-PLAYBOOKS.md": {
       "mode": 420,
@@ -515,27 +463,7 @@
     },
     "docs/RESOURCE-REGISTRY.md": {
       "mode": 420,
-      "sha256": "99871dfbef7502ae94b070b7046cbca8e2f1b1f4cb4a3e73f740db253866223b"
-    },
-    "docs/RESOURCE-REVIEW-NOTES.md": {
-      "mode": 420,
-      "sha256": "f18a5e83927b7e3150cbbebd6ed74b53d322bcb907b9d2757d5d1f973b7edb9f"
-    },
-    "docs/RESOURCE-SELECTION.json": {
-      "mode": 420,
-      "sha256": "c8fa7f2dbf09586280111efad52a1f1003c9a771b6178ba24595826c3e4a79a4"
-    },
-    "docs/SKILL-VALIDATION-v1.0.5.md": {
-      "mode": 420,
-      "sha256": "95f7faca6c1371d709ba98e281999427e0de36c62958be65cec875e5c86f3586"
-    },
-    "docs/SKILL-VALIDATION-v1.0.6.md": {
-      "mode": 420,
-      "sha256": "492fb54c604d7f8c7c3932abee7b65425ea169d9d2c38c22c18445f96a7f2b6b"
-    },
-    "docs/SOURCE-REVIEW.md": {
-      "mode": 420,
-      "sha256": "d9df704ca1f24447d276021b9eca0b5a4502eda4449ceebd316ff2b04e4e314a"
+      "sha256": "e262da37dfd02b63efbedd25465ae6a70d0555941db9b9ec4866aaf40112dd8f"
     },
     "docs/SOURCES.md": {
       "mode": 420,
@@ -545,49 +473,17 @@
       "mode": 420,
       "sha256": "f2c5e317ac96ce25af5ae5ba9306b7b27e4a21aeaa0cdc84cc7bc95f701b932f"
     },
-    "docs/SPECIALIST-GAP-ANALYSIS.md": {
-      "mode": 420,
-      "sha256": "20577a6522b4561396fba5115cd38e79e28b535266355dd8cb5bf27b4290ceef"
-    },
     "docs/SPECIALIST-TOOLS.md": {
       "mode": 420,
       "sha256": "0247594c6fd0a91d5f1f9112e85fb70eb8fb206a95972f015ababa07fdec150e"
     },
     "docs/START-HERE.md": {
       "mode": 420,
-      "sha256": "41ab786477397c4ce743e43817e370ae777ebd8fa18dd851764c46810b265747"
+      "sha256": "9ab46325a75530ecc34e51c4cca7e7afd714f7d23f4dc9f7e8a703831f4e7695"
     },
     "docs/STUDIO-CHECKS.md": {
       "mode": 420,
       "sha256": "43d074e7babba94fe31fee7b2c91db4ba1badd7551cb23844e406a72107329a3"
-    },
-    "docs/TEST-REPORT-0.5.0.md": {
-      "mode": 420,
-      "sha256": "29c27b3fcccfd34dec278f5d92c2539f4b37e366ea80af7ec324e9b3626a6b1d"
-    },
-    "docs/TEST-REPORT-0.5.1.md": {
-      "mode": 420,
-      "sha256": "e03255367fe2f73b65526dcc1d1d12d2578aaf1cb76d4529580c41255a35b5ea"
-    },
-    "docs/TEST-REPORT-0.5.2.md": {
-      "mode": 420,
-      "sha256": "2b0df51ddb3b65e1d7e41d50042795deb51eb59b6be50c9471c50626c0a18384"
-    },
-    "docs/TEST-REPORT-0.6.0.md": {
-      "mode": 420,
-      "sha256": "68b5cee4bac238f89d48d1aa7812a430443596a7ef4e5540f10e46b4e7d5bce9"
-    },
-    "docs/TEST-REPORT-0.6.1.md": {
-      "mode": 420,
-      "sha256": "f0165e5d9afce3461082a63a47c26f9bac3e44f7910afa66924981b174cbf835"
-    },
-    "docs/TEST-REPORT-0.6.2.md": {
-      "mode": 420,
-      "sha256": "4e9bfb3fc8fc36cea9a0bcd7e797ec63557e2ba428c95b8f18d648da4428fe89"
-    },
-    "docs/TEST-REPORT-0.7.0.md": {
-      "mode": 420,
-      "sha256": "8d8585888f0b8b3303eb903de3b3abfa134a3a8917ce6d9b322c5be24511454c"
     },
     "docs/UPGRADE-0.4.0.md": {
       "mode": 420,
@@ -595,7 +491,7 @@
     },
     "docs/UPGRADE-0.5.0.md": {
       "mode": 420,
-      "sha256": "4d0824acc0c285dff8a8d10806008b8dc20fedbf9c778b50260d5942b5d64f0d"
+      "sha256": "2979dbee3922e496539c77d36c9c6a2ba96aadaf531207e6f22ecb14a5de8d5b"
     },
     "docs/UPGRADE-0.5.1.md": {
       "mode": 420,
@@ -607,7 +503,7 @@
     },
     "docs/UPGRADE-0.6.0.md": {
       "mode": 420,
-      "sha256": "56f29da2f9511de0341cd01e663dcabaac0a5a8354bf97c67615a869b3796139"
+      "sha256": "8d95f2daf8031067211558b39965980ebb04a0c8bb7933e47dae10ca88818c24"
     },
     "docs/UPGRADE-0.6.1.md": {
       "mode": 420,
@@ -623,19 +519,11 @@
     },
     "docs/UPGRADING.md": {
       "mode": 420,
-      "sha256": "c0262b6cec22d7865cf6516e4e1b42bb71c1772d5939b272048308272ee7c1ae"
+      "sha256": "98bcef783aab1038692235095115486bceaf9d5077d59c8d6ce10d0d05431ffa"
     },
     "docs/VALIDATION.md": {
       "mode": 420,
-      "sha256": "2f50e82f170c00ec77cda0d3f168e9ed4d4c41c48b1404e1614203a843afb71c"
-    },
-    "docs/WEBDESIGN-PARITY.md": {
-      "mode": 420,
-      "sha256": "f62997b7ac9b96ca2dc8b6c170209271a27a8adea5e577166a3c89d3748f6450"
-    },
-    "docs/WEBDESIGN-VERIFICATION.md": {
-      "mode": 420,
-      "sha256": "9ac68a0ade96f6f33f5800079bb9c6b920cb2636a46e535d9f6c9ea0c799a00e"
+      "sha256": "0f64f5ffc43fc69f75d6dcd776918194eeee7e6e17c6df046ce4dbf54a6fb577"
     },
     "examples/action-whatsapp-draft.json": {
       "mode": 420,
@@ -2225,14 +2113,6 @@
       "mode": 420,
       "sha256": "3d1beeda9e5ff219fb6d73fb4f2be019ee1981eda43f41f50f76cf6b193bb5e5"
     },
-    "release/skill-evidence-v1.0.5.json": {
-      "mode": 420,
-      "sha256": "8069e98d49610ffa3243bddcf7cec8d8c2a5c22627eeda6d38398f2ca19f76f2"
-    },
-    "release/test-summary.json": {
-      "mode": 420,
-      "sha256": "9b38cdbb6e181d440df71e6f983e8b2f3257915dcc9eaf282509454f77f9e360"
-    },
     "release/v073-holdout-4-result.json": {
       "mode": 420,
       "sha256": "f34d799350e2ea25d80d5e3cba6297f2964fcd3364baaa01968f3df804c4aacd"
@@ -2292,42 +2172,6 @@
     "release/v100-v090-semantic-compat.json": {
       "mode": 420,
       "sha256": "aa7fe88f36ffca012bdc2430dcc43f03db69fc64fc85e7269bc4502321057ec6"
-    },
-    "release/verification.json": {
-      "mode": 420,
-      "sha256": "8d4111a990664d675dbba193a0288191aac8751349cb63c33797aaec01157e05"
-    },
-    "research/ECC-ARCHITECTURE-REVIEW.md": {
-      "mode": 420,
-      "sha256": "3e563b3b1ad4218b72b43b3cd2d3b2ea221edc957e6c9ca19a38eaae2d01d803"
-    },
-    "research/specialist-upgrade/README.md": {
-      "mode": 420,
-      "sha256": "7181a6747a657aa344394af9f66b03d105a25b6a9ae16274efc7ebcbfd048bfe"
-    },
-    "research/specialist-upgrade/baseline-roles.json": {
-      "mode": 420,
-      "sha256": "12efc740e5d0a3d11f2b2c42ab5d3185b4a949b6b07791262c0b2ea6c4bdbf0f"
-    },
-    "research/specialist-upgrade/comparison.html": {
-      "mode": 420,
-      "sha256": "fddd24230e97e964e268e03fa1fae657caed0482b99ecdc48779c693a067d4b2"
-    },
-    "research/specialist-upgrade/comparison.json": {
-      "mode": 420,
-      "sha256": "7a2be35c0cbb20953c4dc62a4875996be1af9e5a95fe2e212092a6f7bce86272"
-    },
-    "research/specialist-upgrade/decisions.json": {
-      "mode": 420,
-      "sha256": "67abba20273f6f859193e51acae95528bb22b4d74421dbc9c8373748dbf2dea2"
-    },
-    "research/specialist-upgrade/playbooks.json": {
-      "mode": 420,
-      "sha256": "4d05f402eaaa423f3607126963a3501ecc26da30011fa6143cfe921152d8d4ef"
-    },
-    "research/specialist-upgrade/sources.json": {
-      "mode": 420,
-      "sha256": "d63b01346e4e240e22e9a0bbf41a379f833dfb7d4858b1f38b756f34ddca9090"
     },
     "scripts/aco/__init__.py": {
       "mode": 420,
@@ -2487,15 +2331,11 @@
     },
     "scripts/build_release.py": {
       "mode": 420,
-      "sha256": "e73214b4627bfc5dc559ec7e7cc434420ccab382788a1b62d546197d7e2a87c0"
+      "sha256": "fb307726e7dee09f76a9886a6fac505e6f817fec85f8c515b6d81cf4f940d249"
     },
     "scripts/capture_web_evidence.py": {
       "mode": 420,
       "sha256": "cc226648a67e7443d9ad012a7e0f9a39f2d91cfb60dc47c6f7b40a2da1c32e88"
-    },
-    "scripts/compare_specialists.py": {
-      "mode": 420,
-      "sha256": "8f2438028955cc773134c5c7e77adf1504f00701a9bd2c59a8e3ca5c64a661f9"
     },
     "scripts/creative_reference_inventory.py": {
       "mode": 420,
@@ -2503,7 +2343,7 @@
     },
     "scripts/generate.py": {
       "mode": 420,
-      "sha256": "223618432214090482a106663f7ee784913f23d22548029c6ab4d2af24580238"
+      "sha256": "f9dd63dbbc61500d219ff434a3e5470b15794f42626eb05b28e9368aad15e6a0"
     },
     "scripts/install_aco_claude_shortcuts.py": {
       "mode": 420,
@@ -2515,7 +2355,11 @@
     },
     "scripts/package_motion_skill.py": {
       "mode": 420,
-      "sha256": "63565ed63b8b28a48155213a17773cf652972b56fb92d8e74b89aa0b1ca5d1fc"
+      "sha256": "d9e520980a1091f8c1db0f25093ab541a2014c2bd9361889a7cb1f64ee1680e4"
+    },
+    "scripts/publication_check.py": {
+      "mode": 420,
+      "sha256": "d05bf4d078eb7ab9e1e78c53ec0b604f446e4a7d375635756e49a5dfb81cdfab"
     },
     "skillpacks/frontend-motion/animejs.json": {
       "mode": 420,
@@ -3459,7 +3303,7 @@
     },
     "skills/aco-help/references/commands.md": {
       "mode": 420,
-      "sha256": "65e34d6a0f174a6cc1f538d97e3abd7530927d28efeafc163e1cddb8e406ef8f"
+      "sha256": "39d3081e0a0a16062ebc0df0df32c9bc334b01e6aa69dd073762e1e4bf26fe7e"
     },
     "skills/aco-image/SKILL.md": {
       "mode": 420,
@@ -3679,7 +3523,7 @@
     },
     "skills/aco-motion/references/sources.md": {
       "mode": 420,
-      "sha256": "f7e8b2963667c6d6f5797d706f19a8622e5bf3e9978070dc0b94c28850a9ae3e"
+      "sha256": "abcdf62b2d2e29b608bc8c91530ebccef9c49d8d499ea0e3a749c7aa0739f2a1"
     },
     "skills/aco-motion/references/video.md": {
       "mode": 420,
@@ -5671,7 +5515,7 @@
     },
     "skills/aco-webdesign/SKILL.md": {
       "mode": 420,
-      "sha256": "9d28a1afe1f4c394bd05114b1a197575fba346b020bbee4e0712fc1091b6a29a"
+      "sha256": "1a18e67beb50cddfefa5cd2c3d2ef7a6b26f405175c10d1fc09c2d1b5ee74b59"
     },
     "skills/aco-webdesign/assets/browser-probe.js": {
       "mode": 420,
@@ -5717,17 +5561,9 @@
       "mode": 420,
       "sha256": "b171f0328523431578d38687a104c32bcb6bf7502ad40d415dca6fe397395a3c"
     },
-    "skills/aco-webdesign/references/component-inventory.json": {
-      "mode": 420,
-      "sha256": "83939f3890e08f58cdf06bac3437cccb73b889927b6ee8ae4a83bf2dca9fe8f2"
-    },
     "skills/aco-webdesign/references/direction.md": {
       "mode": 420,
       "sha256": "e3bf5f4743fcf863370c8674cdf9cc2fb3ca44aded6c1ca9dbaee96f7c82d625"
-    },
-    "skills/aco-webdesign/references/feature-parity.json": {
-      "mode": 420,
-      "sha256": "862ed615da208670da7da5ee23f7d67fc274379926014df11357ff00bbe12040"
     },
     "skills/aco-webdesign/references/libraries.md": {
       "mode": 420,
@@ -5735,7 +5571,7 @@
     },
     "skills/aco-webdesign/references/native-engines.md": {
       "mode": 420,
-      "sha256": "f10ff6325ba5e31af3c5fb60562a1435771dcf8a11d1710b8465009be7b859f1"
+      "sha256": "147f4db233191aafc256ab87c9e9e4a5bd169722c0a8725532c616e071c5f4ff"
     },
     "skills/aco-webdesign/references/operations.md": {
       "mode": 420,
@@ -5881,17 +5717,13 @@
       "mode": 420,
       "sha256": "7cff18855278c8af14ac4ae2656de2c829ce7ae60c9605ffe3459e4d3507e8fd"
     },
-    "skills/aco-webdesign/references/research-snapshot.json": {
-      "mode": 420,
-      "sha256": "aff500980a1c42bcebef036d8ad093077db543860ed5a2c503480dc430f8abb8"
-    },
     "skills/aco-webdesign/references/review.md": {
       "mode": 420,
       "sha256": "d538206cf3aa84cffd1a20510b9eb419ba109c4d49e7531d42cf87608c149f34"
     },
     "skills/aco-webdesign/references/sources.md": {
       "mode": 420,
-      "sha256": "49a631f4846ab80c6e84e5be1323d716152d3892f3b9706f7d6d0893b538d590"
+      "sha256": "661cd6c76c72d2d7d43a7f398013eaecb1f51d0a40589c2c68d734fd0ecbf436"
     },
     "skills/aco-webdesign/references/system.md": {
       "mode": 420,
@@ -5899,7 +5731,7 @@
     },
     "skills/aco-webdesign/references/working-kit.md": {
       "mode": 420,
-      "sha256": "78ee8731a5fd82699eede48c44eb557b60cd2d7f999a26a76968e874027a5d55"
+      "sha256": "84768a8ae0ec544f13ada606a4916936b1e1e51e998281409a9080bd4e391b11"
     },
     "skills/aco-webdesign/scripts/audit_html.py": {
       "mode": 420,
@@ -5932,10 +5764,6 @@
     "skills/aco-webdesign/scripts/operations.py": {
       "mode": 420,
       "sha256": "5b1cfdda4ef111b9247ab9d63c2f0990c24f8687fd381e8dac137d25ed11ad69"
-    },
-    "skills/aco-webdesign/scripts/parity.py": {
-      "mode": 420,
-      "sha256": "b6782b7858f1aa43f652d924d9fae8010b70ba536704835d00efaffce36aa3f9"
     },
     "skills/aco-webdesign/scripts/scaffold.py": {
       "mode": 420,
@@ -6025,6 +5853,10 @@
       "mode": 420,
       "sha256": "f8bc8097de0bae3dba436ad4cebfcb0659e2d2ffe9e0344aa8647e62fbec76c7"
     },
+    "tests/test_publication.py": {
+      "mode": 420,
+      "sha256": "05761f5e64a68b36f1d8cd02f59b5be2907fc71715ee99a3ceb5f693e4b71c0f"
+    },
     "tests/test_quality_routing.py": {
       "mode": 420,
       "sha256": "8d749ce2a635c37f25faf41b2ecefccc729f578c268ac465f9b244ed01563d1b"
@@ -6039,7 +5871,7 @@
     },
     "tests/test_specialist.py": {
       "mode": 420,
-      "sha256": "76622affbe003dc731f052bb6dc4edeacef6b70e2bc83e1e3875fbccecde4b72"
+      "sha256": "2a95276b9e24e68f305cefb778cb833208b7c15a41f6c84be17f6857aee025e7"
     },
     "tests/test_studio_readiness.py": {
       "mode": 420,
@@ -6083,7 +5915,7 @@
     },
     "tests/test_v105_evidence.py": {
       "mode": 420,
-      "sha256": "ed4f82b43420319e8ead5114b7a04fc417d2dfbd6acc95ce0ac4be4613d75884"
+      "sha256": "8ca5f985f08bc8331351d51d42872023944be58bfee6f7e15e3b6f77b6b3b9cb"
     },
     "tests/test_v105_routing_freeze.py": {
       "mode": 420,

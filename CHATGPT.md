@@ -46,3 +46,7 @@ For substantial dependent work, read `skills/aco-office-concierge/references/pro
 ## Adaptive feedback — 0.9.0
 
 When the user explicitly corrects ACO or a verified outcome supplies useful evidence, record only structured, scope-bound feedback if persistence is appropriate. Do not capture hidden reasoning. One correction does not become policy. Use `skills/aco-office-concierge/references/protocols/ADAPTIVE-FEEDBACK.md`: candidate adaptations stay shadow-only until exact-hash benchmarked promotion review succeeds. Never learn away privacy, approval, verification or capability boundaries.
+
+## Public distribution boundary
+
+Publish product usage, implemented capabilities, necessary limitations, executable source/tests and required dependency attribution. Keep research comparisons, competitor inventories, development plans, product deliberations and internal execution reports outside this repository and outside release archives. Do not publish private working paths or links to internal archives. Keep licenses and attribution intact. User-facing documentation describes the shipped behavior; it must not imply unsupported capabilities. Before pushing or packaging, run the publication-boundary check.

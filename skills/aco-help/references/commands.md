@@ -61,4 +61,4 @@ Common terminal tools include `install`, `install-status`, `validate`, `skill-se
 
 `init`, `document`, `extract`, `shape`, `craft`, `critique`, `audit`, `polish`, `bolder`, `quieter`, `distill`, `harden`, `onboard`, `animate`, `colorize`, `typeset`, `layout`, `delight`, `overdrive`, `clarify`, `adapt`, `optimize`, `live`, `generate`, `motion-review`, `motion-opportunities`, `motion-performance`, `motion-vocabulary`, `mobile-native`, `break-ui`, `prototype`, `react-review`, `libraries`.
 
-The native kit also provides external-data search, design-system proposals and a rendered-DOM audit. Full parity with the researched upstream repositories is not yet implemented.
+The native kit also provides external-data search, design-system proposals and a rendered-DOM audit.

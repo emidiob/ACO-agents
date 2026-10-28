@@ -31,7 +31,6 @@ A natural request
 
 No office-by-office performance or unnecessary planning ceremony. A simple request should receive a simple result. A commissioned essay, design system or codebase still needs a complete deliverable.
 
-**1.0.3 consolidated the existing fixes and documentation.** Standard macOS `/var`, `/tmp` and `/etc` system aliases work with the path checks, and Git-backed memory/handoff paths use canonical locations after safety validation. README, beginner setup, upgrade instructions and release metadata now describe the same package. See [Changelog](CHANGELOG.md) and the [1.0.3 test report](ACO-TEST-REPORT-v1.0.3.md).
 
 The current runtime resolves `aco://current` and loads the minimum role, skills, policies and context for a task. It keeps versioned code (`ACO_RUNTIME_ROOT`) separate from private saved state (`ACO_HOME`). Goal planning, execution receipts and shadow-only feedback support continuity without granting account access. See [ACO OS](docs/ACO-OS-1.0.md), [Goal Graph](docs/GOAL-GRAPH.md) and [Adaptive ACO](docs/ADAPTIVE-ACO.md).
 
@@ -164,7 +163,6 @@ python3 scripts/aco_cli.py capability-audit
 
 The second command **only checks a fixed allowlist of executables on PATH**; it runs none, reads no credentials and discovers no remote accounts. A registry entry, local executable, connected capability and verified result are four different facts.
 
-Some learning sources are reference-only. In particular, Spectrum's commercial reuse terms require separate scrutiny; ACO does not reproduce the standard or claim conformance. Creative Capital written course access is currently limited according to the publisher page; do not promise access from a bookmark. See [source review and selection](docs/SOURCE-REVIEW.md).
 
 ## Practical readiness checks
 
@@ -196,7 +194,6 @@ Use the returned action hash to bind explicit approval when the permission level
 
 ## What has and has not been verified
 
-The included [1.0.6 test report](ACO-TEST-REPORT-v1.0.6.md) records the gates actually run, with explicit scope and limitations. [Validation](docs/VALIDATION.md) explains how to reproduce the checks; earlier reports retain their historical results. Unit tests check local behavior, not taste, curatorial expertise, improved revenue or legal accuracy. Supplied evidence references are not proof of truth.
 
 This package does not establish that your Mac, Codex session, Drive connector, phone account, ComfyUI GPU or paid generation service works. It installs no schedules and makes no calls. [Host acceptance tests](docs/HOST-ACCEPTANCE-TESTS.md) are for your actual environment; unrun rows stay unrun.
 
@@ -231,13 +228,12 @@ python3 -m unittest discover -s tests -v
 python3 scripts/build_release.py --output /absolute/path/outside/repo/ACO-release.zip
 ```
 
-The [product decisions](docs/PRODUCT-DECISIONS.md), [source review](docs/SOURCE-REVIEW.md) and [known limits](docs/KNOWN-LIMITATIONS.md) are part of the release. Keep the proprietary license and third-party rights distinctions intact.
 
 
 ## ACO 1.0.6 skills and command layer
 
-The 1.0.6 package includes eight quick-command Agent Skills and the prompt-only `/aco-genjutsu` candidate. All 14 previously active methods remain active. The other 30 technical candidates remain explicitly inspectable experimental methods, not default active. See [skill validation evidence](docs/SKILL-VALIDATION-v1.0.6.md). Provider/model performance is not claimed.
+The 1.0.6 package includes eight quick-command Agent Skills and the prompt-only `/aco-genjutsu` candidate. All 14 previously active methods remain active. The other 30 technical candidates remain explicitly inspectable experimental methods, not default active. See skill validation evidence. Provider/model performance is not claimed.
 
-## Native web design (development update)
+## Native web design
 
-`aco-webdesign` adds original direction, design-system, implementation, redesign and review methods, six searchable recipes, two editable examples and a scoped static HTML checker. Use `/aco-webdesign` in Claude or `$aco-webdesign` in Codex. See [research and scope](skills/aco-webdesign/references/sources.md) and [working kit](skills/aco-webdesign/references/working-kit.md). This source update is newer than the published 1.0.6 archives.
+Use `$aco-webdesign` in Codex or `/aco-webdesign` in Claude for direction, design systems, interface implementation and review. The skill includes optional external-data search, design-system proposals and DOM inspection helpers. See [available commands](docs/ACO-COMMANDS.md).

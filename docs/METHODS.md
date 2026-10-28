@@ -24,4 +24,4 @@ These are the 19 original task methods introduced in 0.6.0, mapped to 114 existi
 | [Capability-first tools and office integrations](../skills/aco-office-concierge/references/playbooks/VERIFIED-TOOLING.md) | `administration_orchestrator`, `communications_operator`, `context_steward`, `devops_engineer`, `office_concierge`, `programme_delivery_manager`, `sales_operations_manager`, `software_architect` |
 | [Release quality, regression tests and realistic evaluation](../skills/aco-office-concierge/references/playbooks/QUALITY-AND-EVALUATION.md) | `code_reviewer`, `fact_checker`, `qa_engineer`, `qa_lead`, `release_manager`, `security_engineer`, `security_reviewer`, `skill_evaluation_engineer`, `tech_lead` |
 
-The machine-readable [method map](CURATED-METHODS.json) preserves exact mappings and public source references. All existing roles remain. Read [product decisions](PRODUCT-DECISIONS.md) for the scope of this upgrade.
+The machine-readable [method map](CURATED-METHODS.json) preserves exact mappings and public source references. All existing roles remain. Read product decisions for the scope of this upgrade.
