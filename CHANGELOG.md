@@ -2,6 +2,9 @@
 
 ## Unreleased — motion design and complete help
 
+- Add an original runnable Remotion/UI starter, collision-safe project scaffolding, export metadata checks and standalone skill packaging/install/update.
+- Integrated and standalone ACO Motion now use the same source and self-contained project contract; document Claude/Codex and VS Code extension boundaries.
+
 - Replace external-skill routing with original, self-contained ACO motion modules covering creation, composition, captions/audio, maps, editing, preview/export, video apps/media, interactive UI, review and upgrades.
 - Native ACO motion no longer loads or installs third-party agent skills; preserve real software requirements and distinguish local review from proprietary hosted services.
 
