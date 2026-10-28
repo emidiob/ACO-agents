@@ -3,7 +3,7 @@
   "files": {
     ".github/workflows/validate.yml": {
       "mode": 420,
-      "sha256": "633cba8844cbbf5924e591177375af2ab95016d618742ae4f2db1124a110f0a6"
+      "sha256": "dbce473d3ec78a97fe19194de09153fa4b31c24a3e291464ba10c7ff5e77cc63"
     },
     ".gitignore": {
       "mode": 420,
@@ -327,7 +327,7 @@
     },
     "docs/ACO-COMMANDS.md": {
       "mode": 420,
-      "sha256": "83f6500f9fd8fe56ee03dc19c15d8c7d0b84c88612b24adcdbaa968b4db7b1c5"
+      "sha256": "eb9c1d0c9402498fd75cfb4377721cce3f43767fcace8a13cb791fd7ea69dab2"
     },
     "docs/ACO-OS-1.0.md": {
       "mode": 420,
@@ -2343,7 +2343,7 @@
     },
     "scripts/generate.py": {
       "mode": 420,
-      "sha256": "ad9062a7ad9bbbd9dbce3490eaf11bb22973bec807cfad04e19076ec25394e72"
+      "sha256": "1de42b9e99e60d5b92e6df29c8a48131f421c1be1f26cc69173a4914cdd5ad6a"
     },
     "scripts/install_aco_claude_shortcuts.py": {
       "mode": 420,
@@ -3303,7 +3303,7 @@
     },
     "skills/aco-help/references/commands.md": {
       "mode": 420,
-      "sha256": "83f6500f9fd8fe56ee03dc19c15d8c7d0b84c88612b24adcdbaa968b4db7b1c5"
+      "sha256": "eb9c1d0c9402498fd75cfb4377721cce3f43767fcace8a13cb791fd7ea69dab2"
     },
     "skills/aco-image/SKILL.md": {
       "mode": 420,
@@ -5515,7 +5515,7 @@
     },
     "skills/aco-webdesign/SKILL.md": {
       "mode": 420,
-      "sha256": "58143b24e22eec321122c0bc024e3ae0538a9470d34126988387637b68d84a8f"
+      "sha256": "af1ead3462615604d9aaf5b3d28c4402285f989cb41c527f0959caa698c24079"
     },
     "skills/aco-webdesign/assets/browser-probe.js": {
       "mode": 420,
@@ -5825,6 +5825,30 @@
       "mode": 420,
       "sha256": "e044f94b1f37b7dc0f2c3ef2df84c529990b46c80afdde4c640ebef973aae766"
     },
+    "skills/aco-webdesign/assets/framework-components/react.jsx": {
+      "mode": 420,
+      "sha256": "6c464e9740db27bd13447ea31c16c402c8b35a7323b9a167d1bf80ab29ffdd5e"
+    },
+    "skills/aco-webdesign/assets/framework-components/vue.mjs": {
+      "mode": 420,
+      "sha256": "9622cc8b6f1bbfc360e0fb3d4d9e92f5a7f77b10e192e5aef1d4dfdde3df1b6a"
+    },
+    "skills/aco-webdesign/assets/framework-live/aco-vite.mjs": {
+      "mode": 420,
+      "sha256": "0e0542206735c33386f09bf307010ad1d741143902178a065f0da65af24f8f16"
+    },
+    "skills/aco-webdesign/assets/framework-live/client.js": {
+      "mode": 420,
+      "sha256": "259bbbfa9856ed84266dd957ce1e7dc189f58e254887d747866a8ff65c321a1c"
+    },
+    "skills/aco-webdesign/assets/framework-live/editor.html": {
+      "mode": 420,
+      "sha256": "58a3959088247b8e0d93362ab5c30aac3bc1b716cea4895bdd79d594c48528e0"
+    },
+    "skills/aco-webdesign/assets/framework-live/editor.js": {
+      "mode": 420,
+      "sha256": "c561bfe019c603b376c1d66d8755b7ddf45f229735375281968e9df23db269d6"
+    },
     "skills/aco-webdesign/assets/live/editor.html": {
       "mode": 420,
       "sha256": "2d3388a0025474284321d8774680ee6de0c55a6b116be34e80a0c3891c90a37a"
@@ -5861,9 +5885,13 @@
       "mode": 420,
       "sha256": "e3bf5f4743fcf863370c8674cdf9cc2fb3ca44aded6c1ca9dbaee96f7c82d625"
     },
+    "skills/aco-webdesign/references/framework-tools.md": {
+      "mode": 420,
+      "sha256": "2f63b6e7cfa961851b6b536d51156dc98aa413c1cb6c5a981c47b4fe5c27a738"
+    },
     "skills/aco-webdesign/references/interactive-tools.md": {
       "mode": 420,
-      "sha256": "75e13915bc380c818b191af4a7e5568a61f6cfa5cd2f16e19d2fe1cfba0fd029"
+      "sha256": "b20091beca30ca4dd628834d6e647d96180f2a67a58f84cccebd30c3f33c7fd2"
     },
     "skills/aco-webdesign/references/libraries.md": {
       "mode": 420,
@@ -5951,7 +5979,7 @@
     },
     "skills/aco-webdesign/references/operations/live.md": {
       "mode": 420,
-      "sha256": "20b238af3fbaa763fc109a84cd2778d97bbd205680848f2328ffcb54c0fa8ece"
+      "sha256": "3acd104712829fae21dbdf507d917a562ee13b9aafedfaec2ed2a8679d018934"
     },
     "skills/aco-webdesign/references/operations/mobile-native.md": {
       "mode": 420,
@@ -6073,6 +6101,14 @@
       "mode": 420,
       "sha256": "d7e155a224d68a506fa5078f75b09fecb11a5682c4365f1e4aad0808f532c669"
     },
+    "skills/aco-webdesign/scripts/framework_components.py": {
+      "mode": 420,
+      "sha256": "4b7c0c8d87f2adac37fb11b10b4cb1598ba40fcda926d33ad7264a2bcd09534c"
+    },
+    "skills/aco-webdesign/scripts/framework_live.py": {
+      "mode": 420,
+      "sha256": "7707fcabac826da837e1dd3479f8683c8fad20a8f5183b58a5582dc111dd632e"
+    },
     "skills/aco-webdesign/scripts/install_standalone.py": {
       "mode": 420,
       "sha256": "46a4542867dcf496454976ddbd9b7a2a01383fd1d001ecb2bd1c2ed53f77826c"
@@ -6132,6 +6168,14 @@
     "tests/test_finance.py": {
       "mode": 420,
       "sha256": "925ae4d8f81acc1b25296985462765c9f10619dfcb8529aa824aaaf7ef3c46f6"
+    },
+    "tests/test_framework_exports.py": {
+      "mode": 420,
+      "sha256": "bf80116b217e73a3e19c5b2f204a6f4fcbd550224809ea51efb26031dc83e2fb"
+    },
+    "tests/test_framework_live.mjs": {
+      "mode": 420,
+      "sha256": "2f10fc44f0e02cf664689b55cf4b7a93d58c55225752aea708e404a2da84c5d5"
     },
     "tests/test_harness_refactor.py": {
       "mode": 420,
