@@ -67,7 +67,7 @@
     },
     "CHANGELOG.md": {
       "mode": 420,
-      "sha256": "34751529ac1437f9be3d9232c810de93484b67ff339e017701ed3309e580d95a"
+      "sha256": "9ebbe232a2ab1ed322bc8d00e2a60ed2d3f5ca8f3cc75593f319cddb6f7f17fb"
     },
     "CHATGPT.md": {
       "mode": 420,
@@ -3387,7 +3387,7 @@
     },
     "skills/aco-genjutsu/SKILL.md": {
       "mode": 420,
-      "sha256": "0c06840896f61be2922c0d286bec4c1b47a96cd6696422822330d469cb093b28"
+      "sha256": "04be1ec8bbc1485a334c81eff9cf83ff22c8278f0b83d3320a2768fe4f83520c"
     },
     "skills/aco-genjutsu/references/diagnosis.md": {
       "mode": 420,
@@ -3396,6 +3396,10 @@
     "skills/aco-genjutsu/references/generation-modes.md": {
       "mode": 420,
       "sha256": "11002a2cbbfe898f49f25921547cb9dc7786a5a5775a04e5014281797216b35e"
+    },
+    "skills/aco-genjutsu/references/motion-transfer.md": {
+      "mode": 420,
+      "sha256": "a56da7528786c59be5024c74051ac99b13d0fedac38796ad5af42656b43944d1"
     },
     "skills/aco-genjutsu/references/portable-workflow.md": {
       "mode": 420,
@@ -3411,7 +3415,7 @@
     },
     "skills/aco-genjutsu/references/reference-delivery.md": {
       "mode": 420,
-      "sha256": "04459a57bc0a92e3d48d8eed5dadf9f9c9cadc0c008581771c757de14ba5524a"
+      "sha256": "a09b0b2024be7357209d0ca11c1a7b7e93ba659d50a5d2f6e4edc0b9376e2ef9"
     },
     "skills/aco-genjutsu/references/visual-evidence.md": {
       "mode": 420,
@@ -3425,9 +3429,13 @@
       "mode": 420,
       "sha256": "db72fc3357375d33228814e6dcf10130a520ac029728b4596f4d274c9e0f4cb7"
     },
+    "skills/aco-genjutsu/scripts/check_motion_plan.py": {
+      "mode": 420,
+      "sha256": "4317ab3230ab3867f3fb573ecae0e107e43e683e2fe95127fde078c5a03a6cf4"
+    },
     "skills/aco-genjutsu/scripts/check_reference_pack.py": {
       "mode": 420,
-      "sha256": "e630b3c7157c2dd22f45b02cdec78c6c0365474484cd8c8654efef14eedf17ad"
+      "sha256": "947fa4589c849a6469fbe9998a9b33184c121a145e5c44598a8ecc1bd83c50f2"
     },
     "skills/aco-genjutsu/scripts/inspect_video.py": {
       "mode": 420,
@@ -5717,6 +5725,10 @@
       "mode": 420,
       "sha256": "4bfe9cae05426185a1250743b94f62d33b044b833c425f2f8c0ec6602582cf17"
     },
+    "tests/test_motion_transfer.py": {
+      "mode": 420,
+      "sha256": "cff4032171315df3afc8360ab9f77d819e993414c0cdd2c940331139973fe585"
+    },
     "tests/test_native_motion.py": {
       "mode": 420,
       "sha256": "774e46adcf06d30d96de0443477e9068926285cb44b43efd49f8d6a6c523679b"
@@ -5731,7 +5743,7 @@
     },
     "tests/test_prompt_inspection.py": {
       "mode": 420,
-      "sha256": "90b95c582635d1b919b947e908d717613d48611aed8aa177eb05b0e2cda0bc4f"
+      "sha256": "f8bc8097de0bae3dba436ad4cebfcb0659e2d2ffe9e0344aa8647e62fbec76c7"
     },
     "tests/test_quality_routing.py": {
       "mode": 420,

@@ -76,6 +76,13 @@ class ReferencePacketTests(unittest.TestCase):
             (root / 'shot-prompt.txt').write_text('Use frame.png at 0 s for the initial grip.')
             ref['visually_reviewed'] = True
             save()
+            plan = {'source_duration_seconds': 1, 'target_duration_seconds': 1,
+                    'reviewed_intervals': [[0, 1]], 'entities': {'hand': 'same hand', 'camera': 'same camera'},
+                    'events': [{'id': track, 'actor': actor, 'track': track, 'source_interval': [0, 1],
+                                'target_interval': [0, 1], 'observed': 'Holds still', 'target_action': 'Holds still',
+                                'certainty': 'observed', 'evidence': ['frame.png'],
+                                'prompt_excerpt': 'initial grip'} for track, actor in [('subject', 'hand'), ('camera', 'camera')]]}
+            (root / 'motion-plan.json').write_text(json.dumps(plan))
             self.assertEqual(checker.check(root)['status'], 'reference_packet_consistent')
             (root / 'shot-prompt.txt').write_text('Use frame.png at 10 s for the initial grip.')
             self.assertEqual(checker.check(root)['status'], 'incomplete')

@@ -26,6 +26,10 @@ When the user has already said “as it is,” carry that instruction forward. A
 
 Use only real reference files. Preserve their exact paths privately; use short filenames in the result. Record each reference's job and the moment it represents. Translate ACO notation into the chosen provider's verified syntax before calling a prompt ready to paste into that interface. Strong wording does not guarantee pixel, identity or timing fidelity.
 
+## Complete motion transfer
+
+For every source recreation or transformation, follow [motion reconstruction and transfer](references/motion-transfer.md) before drafting the final prompt. Inspect the entire temporal sequence, record meaningful subject/object/camera events in `motion-plan.json`, map each to the target and retain its concrete action in `shot-prompt.txt`. Anchors supplement this sequence; they do not replace it. Recheck coverage after shortening or translating the prompt. Uncertain or uninspected motion must remain unresolved, never filled with invented choreography.
+
 ## Response
 
 Complete the local preparation and packet checks in [reference delivery](references/reference-delivery.md), including the source-specific `shot-prompt.txt`; a generic template is not a finished prompt. Lead with the actual reference images: show a contact sheet and link the individual full-resolution files in time order. State which images are extracted and which are generated/edited. Then give a compact file/time/purpose map, supported settings (or unresolved fields), one shot-specific English prompt, and relevant QC notes. Do not finish with prose-only placeholders when the files can be made.
