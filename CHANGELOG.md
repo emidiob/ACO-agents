@@ -1,12 +1,9 @@
 # Changelog
 
-## Unreleased — complete Genjutsu motion transfer
+## 1.0.6 — Creative methods, motion design and complete help (2026-10-28)
 
 - Require observed subject/object/camera motion events, source-to-target action mapping and final-prompt coverage before declaring a reference packet consistent.
 - Detect missing motion records, unreviewed intervals, unresolved actions, lost prompt excerpts and timing gaps; these are declared-consistency checks, not automatic visual recognition or generation-quality evidence.
-
-
-## 1.0.6 — Creative methods, motion design and complete help (2026-10-28)
 
 - Make Capture, Image, Video and Genjutsu portable from the same canonical sources, with ownership-safe Claude/Codex installers and reference inventories that distinguish files from visual review and provider uploads.
 - Add independent package/install/hash tests and explicit image/video execution and acceptance workflows.
