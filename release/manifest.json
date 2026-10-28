@@ -63,7 +63,7 @@
     },
     "CHANGELOG.md": {
       "mode": 420,
-      "sha256": "13e226406c173c39b7aedd19f12bd15f1ddfedcdc265d2cf78d0d964aee7dbc8"
+      "sha256": "4d2e8203ddcee1146e5d20e62a2fc0e1be2cb03fc42d1806f958c2fb25f32a02"
     },
     "CHATGPT.md": {
       "mode": 420,
@@ -420,6 +420,10 @@
     "docs/COMPACT-MEMORY.md": {
       "mode": 420,
       "sha256": "56d913a305d52f58d31cfb386a18aee18827a2ebaf4f72d5cbf6b1c0741c523d"
+    },
+    "docs/CREATIVE-METHODS.md": {
+      "mode": 420,
+      "sha256": "d8effa9aee313fe82304c6a4640fd18478d05275b51881c3c4c207358b2d0473"
     },
     "docs/CURATED-METHODS.json": {
       "mode": 420,
@@ -2477,17 +2481,25 @@
       "mode": 420,
       "sha256": "8f2438028955cc773134c5c7e77adf1504f00701a9bd2c59a8e3ca5c64a661f9"
     },
+    "scripts/creative_reference_inventory.py": {
+      "mode": 420,
+      "sha256": "542df1c882e5ebca7efa0f7fd3ed07ed7326397d68a395a140d3c2a9cb6d5913"
+    },
     "scripts/generate.py": {
       "mode": 420,
-      "sha256": "672cbaaa44df9a84ebf51a1230a6ff0b18ecde8c0aec660eaabf1f12d2d9d7f8"
+      "sha256": "4c8aea37c730d78c4e37f7ef7b258cdd0dcda18a1eef359f76079968683cd70a"
     },
     "scripts/install_aco_claude_shortcuts.py": {
       "mode": 420,
       "sha256": "b24427f9e2a1d266592a69269eb1caa1603d9c03b99845c9dba69cb892b1c5be"
     },
+    "scripts/package_creative_skill.py": {
+      "mode": 420,
+      "sha256": "ef5d633df4862592228e5d37c7ac29df6a213302f7e2e2dac7fe6a7d2fe3ef2e"
+    },
     "scripts/package_motion_skill.py": {
       "mode": 420,
-      "sha256": "3646d1a1a5bcdb192802987a6964c8f7fe9cb48caf0cefae1cae76aef545c1b3"
+      "sha256": "28b7e6046b5e08db5f98dda972851627d700fa39392566c885164bfbaf8e105b"
     },
     "skillpacks/frontend-motion/animejs.json": {
       "mode": 420,
@@ -3107,7 +3119,27 @@
     },
     "skills/aco-capture/SKILL.md": {
       "mode": 420,
-      "sha256": "e8c04016694196d7a09883b5ca0988398f29a28050ce94fb1b806a895ce37e33"
+      "sha256": "0df5aa1d5624a24a05af88484322fbc3c922d9adb794ee7fe13efe19ea77c722"
+    },
+    "skills/aco-capture/references/capture.md": {
+      "mode": 420,
+      "sha256": "7ed1d214f229bd640ef39d624aef5346795df80929b34141e46ee715752e9136"
+    },
+    "skills/aco-capture/references/portable-workflow.md": {
+      "mode": 420,
+      "sha256": "2349194c30a21bda6f6d6e33ec9974b4e71eb399eb50803f2cd2c7088af56a99"
+    },
+    "skills/aco-capture/references/project-contract.md": {
+      "mode": 420,
+      "sha256": "b43de6cf3a67c7bf96d3ca8d68db9d99ad359ae2ecca3a7e8d8d0a80e6313273"
+    },
+    "skills/aco-capture/scripts/install_standalone.py": {
+      "mode": 420,
+      "sha256": "df830cb61f9029f9980ee4a081e4f0efc830d406631d0783b5fed24863fd688e"
+    },
+    "skills/aco-capture/scripts/reference_inventory.py": {
+      "mode": 420,
+      "sha256": "542df1c882e5ebca7efa0f7fd3ed07ed7326397d68a395a140d3c2a9cb6d5913"
     },
     "skills/aco-commercial-office/SKILL.md": {
       "mode": 420,
@@ -3347,7 +3379,7 @@
     },
     "skills/aco-genjutsu/SKILL.md": {
       "mode": 420,
-      "sha256": "b1a0fbc02e6d9fbec7496bc3f49d084a1edf9ec9ce4739e9196fefae05f32edd"
+      "sha256": "0c06840896f61be2922c0d286bec4c1b47a96cd6696422822330d469cb093b28"
     },
     "skills/aco-genjutsu/references/diagnosis.md": {
       "mode": 420,
@@ -3356,6 +3388,14 @@
     "skills/aco-genjutsu/references/generation-modes.md": {
       "mode": 420,
       "sha256": "11002a2cbbfe898f49f25921547cb9dc7786a5a5775a04e5014281797216b35e"
+    },
+    "skills/aco-genjutsu/references/portable-workflow.md": {
+      "mode": 420,
+      "sha256": "2349194c30a21bda6f6d6e33ec9974b4e71eb399eb50803f2cd2c7088af56a99"
+    },
+    "skills/aco-genjutsu/references/project-contract.md": {
+      "mode": 420,
+      "sha256": "b43de6cf3a67c7bf96d3ca8d68db9d99ad359ae2ecca3a7e8d8d0a80e6313273"
     },
     "skills/aco-genjutsu/references/prompt-notation.md": {
       "mode": 420,
@@ -3385,6 +3425,10 @@
       "mode": 420,
       "sha256": "8ad8b6a6b1b217a6adaea83161ac3b3d97c096aea925c9edefc5ac27c5f0e8ba"
     },
+    "skills/aco-genjutsu/scripts/install_standalone.py": {
+      "mode": 420,
+      "sha256": "0dcbb952f0f0f3f6422af52f89760c4207bf1dce32b54fabd7602fd50a1bc997"
+    },
     "skills/aco-help/SKILL.md": {
       "mode": 420,
       "sha256": "7d836550ada8d3590864cac8ce81fc96246b5e5a20739b66fdd43efbde63d496"
@@ -3395,7 +3439,35 @@
     },
     "skills/aco-image/SKILL.md": {
       "mode": 420,
-      "sha256": "03477a704dc6bb5eeaf876ddead5c9b55f5c0d32d0da308fc4d1d0af598f95a3"
+      "sha256": "8f92433feac7cd8fcf2b85fbc74bf33c7c5c733390582c9358c0cb065826a3c7"
+    },
+    "skills/aco-image/references/capture.md": {
+      "mode": 420,
+      "sha256": "7ed1d214f229bd640ef39d624aef5346795df80929b34141e46ee715752e9136"
+    },
+    "skills/aco-image/references/image-workflow.md": {
+      "mode": 420,
+      "sha256": "1ff82a53b5856dd1ad165b33a78268654521e5762224fc6229cd9f3a8a16f08b"
+    },
+    "skills/aco-image/references/portable-workflow.md": {
+      "mode": 420,
+      "sha256": "2349194c30a21bda6f6d6e33ec9974b4e71eb399eb50803f2cd2c7088af56a99"
+    },
+    "skills/aco-image/references/project-contract.md": {
+      "mode": 420,
+      "sha256": "b43de6cf3a67c7bf96d3ca8d68db9d99ad359ae2ecca3a7e8d8d0a80e6313273"
+    },
+    "skills/aco-image/references/visual-language.md": {
+      "mode": 420,
+      "sha256": "21c8289e6abfca4cd6d2dcb2c0dfe432490cd0321d5bf8afa9decae0dc0cc506"
+    },
+    "skills/aco-image/scripts/install_standalone.py": {
+      "mode": 420,
+      "sha256": "43737f40cc8a9d13db0455789f82d3f53f7a4570a7cdc63279ef2a199267ac22"
+    },
+    "skills/aco-image/scripts/reference_inventory.py": {
+      "mode": 420,
+      "sha256": "542df1c882e5ebca7efa0f7fd3ed07ed7326397d68a395a140d3c2a9cb6d5913"
     },
     "skills/aco-legal-office/SKILL.md": {
       "mode": 420,
@@ -5539,7 +5611,39 @@
     },
     "skills/aco-video/SKILL.md": {
       "mode": 420,
-      "sha256": "46b6e1dd5364b32e74ca54762ac09fc4af9234d577953beb0ee5e71608de0451"
+      "sha256": "90b116745e7b895974b22f56d87f133afe7e86554f008a9b095c19ac2bbd9b2b"
+    },
+    "skills/aco-video/references/generation-modes.md": {
+      "mode": 420,
+      "sha256": "11002a2cbbfe898f49f25921547cb9dc7786a5a5775a04e5014281797216b35e"
+    },
+    "skills/aco-video/references/portable-workflow.md": {
+      "mode": 420,
+      "sha256": "2349194c30a21bda6f6d6e33ec9974b4e71eb399eb50803f2cd2c7088af56a99"
+    },
+    "skills/aco-video/references/project-contract.md": {
+      "mode": 420,
+      "sha256": "b43de6cf3a67c7bf96d3ca8d68db9d99ad359ae2ecca3a7e8d8d0a80e6313273"
+    },
+    "skills/aco-video/references/prompt-notation.md": {
+      "mode": 420,
+      "sha256": "ec9bb25fcdcd204367bfa450f9a829b0abaa9b75cbaec6084779751bd76ae5df"
+    },
+    "skills/aco-video/references/video-workflow.md": {
+      "mode": 420,
+      "sha256": "be7cf4f330e76813e0d37b0643eb8ed92ab24c20b83761b4472804aff442b3aa"
+    },
+    "skills/aco-video/references/worked-cases.md": {
+      "mode": 420,
+      "sha256": "db72fc3357375d33228814e6dcf10130a520ac029728b4596f4d274c9e0f4cb7"
+    },
+    "skills/aco-video/scripts/install_standalone.py": {
+      "mode": 420,
+      "sha256": "53a5e2e03de14760183261c4a8c1f324bef2b7f10b4f2d909363d065977dec98"
+    },
+    "skills/aco-video/scripts/reference_inventory.py": {
+      "mode": 420,
+      "sha256": "542df1c882e5ebca7efa0f7fd3ed07ed7326397d68a395a140d3c2a9cb6d5913"
     },
     "skills/aco/SKILL.md": {
       "mode": 420,
@@ -5564,6 +5668,10 @@
     "tests/test_compact.py": {
       "mode": 420,
       "sha256": "c8767b4a3b9261c3478ace87729bbcf556dcc7684a7912376e6c8e30846d8c71"
+    },
+    "tests/test_creative_portability.py": {
+      "mode": 420,
+      "sha256": "25e5d34e63bde9738bd37b9a55898892f7379ceed7241fff1a8152d5eefc6018"
     },
     "tests/test_drive.py": {
       "mode": 420,

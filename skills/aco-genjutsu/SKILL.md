@@ -14,7 +14,7 @@ Start with [reference delivery](references/reference-delivery.md) and the applic
 - **Same scene:** retain identity, wardrobe, setting, objects and movement. Extract, inspect and deliver actual source-frame files as anchors, together with a contact sheet; replacement-character previews are unnecessary.
 - **Changed scene:** identify the requested changes and which source properties must survive. Read [visual evidence](references/visual-evidence.md), then create and inspect the requested transformed reference stills through the available image tool before writing the final video prompt.
 - **Existing render has a defect:** read [diagnosis](references/diagnosis.md); compare the actual render with its source before suggesting a targeted repair.
-- **New video without a source:** route to `../aco-video/SKILL.md` and use the same notation without invented reference bindings.
+- **New video without a source:** use ACO Video when available; otherwise use the local generation modes and prompt notation for a new shot without invented reference bindings.
 
 For camera wording or character/image briefs, use [visual language](references/visual-language.md). Read the closest [worked case](references/worked-cases.md) before drafting; examples are fictional and never replace inspecting the user's file.
 
@@ -34,4 +34,9 @@ A request to recreate/transform a supplied video through this skill includes pre
 
 The preexisting technical candidate `video.seedance.reference-video-replica` remains experimental and may be inspected explicitly through `skill-resolve --skill video.seedance.reference-video-replica --allow-candidate`. This original prompt workflow does not promote that or any other model-specific registry entry.
 
-Before persistent writes, follow `../aco-office-concierge/references/protocols/COMPACT-MEMORY.md`. Keep media and private briefs outside the public ACO checkout.
+
+## Project and host
+
+Read [project contract](references/project-contract.md) before persistent writes. In a full ACO installation also follow its COMPACT-MEMORY.md protocol; standalone use does not require sibling skills. Keep private media outside the public library. Claude Code and Codex (including their VS Code extensions) use the same method; VS Code itself is not an agent host.
+
+[Portable workflow](references/portable-workflow.md) explains local reference inventories, standalone installation and verification boundaries.

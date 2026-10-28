@@ -1,6 +1,9 @@
 # Changelog
 
-## Unreleased — motion design and complete help
+## Unreleased — creative methods, motion design and complete help
+
+- Make Capture, Image, Video and Genjutsu portable from the same canonical sources, with ownership-safe Claude/Codex installers and reference inventories that distinguish files from visual review and provider uploads.
+- Add independent package/install/hash tests and explicit image/video execution and acceptance workflows.
 
 - Add an original runnable Remotion/UI starter, collision-safe project scaffolding, export metadata checks and standalone skill packaging/install/update.
 - Integrated and standalone ACO Motion now use the same source and self-contained project contract; document Claude/Codex and VS Code extension boundaries.
