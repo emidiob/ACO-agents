@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Check local reference files and prompt bindings, not model output quality or provider acceptance."""
 import argparse
+import importlib.util
 import hashlib
 import json
 import math
@@ -54,8 +55,12 @@ def check(folder):
                     errors.append(f'Missing {field} for {name}')
     if data.get('intent') == 'requested transformation' and not any(r.get('type') in ('generated', 'edited') for r in refs):
         errors.append('Transformation has no generated/edited references')
+    spec = importlib.util.spec_from_file_location('aco_motion_plan', Path(__file__).with_name('check_motion_plan.py'))
+    motion = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(motion)
+    errors.extend(motion.check_motion(folder, prompt, refs))
     return {'status': 'incomplete' if errors else 'reference_packet_consistent', 'errors': errors,
-            'limitations': 'Checks file integrity and declared review/bindings only; does not verify visual quality, provider settings or generated video.'}
+            'limitations': 'Checks file integrity, declared temporal coverage and literal prompt excerpts only; does not recognize movement or prove observation completeness; does not verify visual quality, provider settings or generated video.'}
 
 
 if __name__ == '__main__':
