@@ -1,20 +1,12 @@
 ---
 name: aco-help
-description: "Quick ACO command menu: /aco, /aco-genjutsu, /aco-video, /aco-image, /aco-capture and /aco-skills."
+description: "Show all ACO commands: creative shortcuts, offices, context tools and terminal/runtime discovery, with Claude Code and Codex syntax."
 ---
 
-# /aco-help — quick menu
+# ACO Help
 
-| Command | Action |
-|---|---|
-| `/aco` | General Concierge routing |
-| `/aco-genjutsu` | Source-video analysis and **prompt-only** motion replica |
-| `/aco-video` | Video AI, cinematography and model-adapted prompts |
-| `/aco-image` | Image/photographic prompting and model adapters |
-| `/aco-capture` | Frame → Moment → Light → Matter |
-| `/aco-skills` | Show skill inventory and validation status |
-| `/aco-help` | This menu |
+Read [the complete generated command menu](references/commands.md) and show all ACO entry skills, grouped into creative shortcuts, offices and context. Use `/name` for Claude Code and `$name` for Codex. Do not omit offices by default; a requested short menu can show common shortcuts and link the full list.
 
-In Claude Code use slash skill names when installed; in Codex native skill invocation typically uses `$aco` / `$aco-genjutsu`; in ChatGPT these are natural-language conventions only unless the product registers a command. Alternate single entrypoint: `/aco video`, `/aco genjutsu`, `/aco image`, `/aco capture`, `/aco skills`, `/aco help`.
+The menu is generated from actual `skills/*/SKILL.md` files, not a fixed seven-command list. Explain that internal role IDs, technical registry entries and Python CLI subcommands are different things, not extra native slash commands. For a specific CLI command inspect its actual `--help` before suggesting flags. Third-party skill discovery must be checked in the current host before reporting it installed.
 
-Before any persistent write, follow `../aco-office-concierge/references/protocols/COMPACT-MEMORY.md`; keep private context outside the public library.
+Before persistent writes follow `../aco-office-concierge/references/protocols/COMPACT-MEMORY.md`; keep private context outside the public library.
