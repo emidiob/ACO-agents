@@ -54,3 +54,11 @@ Common terminal tools include `install`, `install-status`, `validate`, `skill-se
 ## Native motion design
 
 `aco-motion` contains native ACO methods for create, animate, captions, maps, edit, preview, render, app, web, audit and upgrade. These are arguments to the skill, not additional registered commands. No external agent skill is required; real engines and project dependencies are checked per task.
+
+## Native web design
+
+`aco-webdesign <operation> <target>` selects an ACO method. In Codex use `$aco-webdesign`; in Claude use `/aco-webdesign`. These arguments are not separate host commands.
+
+`init`, `document`, `extract`, `shape`, `craft`, `critique`, `audit`, `polish`, `bolder`, `quieter`, `distill`, `harden`, `onboard`, `animate`, `colorize`, `typeset`, `layout`, `delight`, `overdrive`, `clarify`, `adapt`, `optimize`, `live`, `generate`, `motion-review`, `motion-opportunities`, `motion-performance`, `motion-vocabulary`, `mobile-native`, `break-ui`, `prototype`, `react-review`, `libraries`.
+
+The native kit also provides external-data search, design-system proposals and a rendered-DOM audit. Full parity with the researched upstream repositories is not yet implemented.

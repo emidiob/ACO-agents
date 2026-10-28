@@ -2,6 +2,8 @@
 
 ## Unreleased — native ACO Webdesign
 
+- Begin independent-engine expansion: 33 scoped agent methods, native BM25 over explicitly supplied external datasets, checksum-pinned data retrieval, source-linked design-system proposals and a 17-category rendered-DOM audit. Full feature parity remains incomplete and is tracked explicitly in `docs/WEBDESIGN-PARITY.md`.
+
 - Research eight current design-skill/component repositories and add original, portable `aco-webdesign` methods, six searchable directions, two runnable examples and limited static HTML checks.
 - Connect Concierge, Product Office and generated help; 25 native entry skills, with unchanged technical registry statuses. No upstream skill installation or component bundling.
 

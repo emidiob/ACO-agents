@@ -15,6 +15,16 @@ def module(name):
     m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);return m
 
 class WebdesignTests(unittest.TestCase):
+    def test_operations_resolve_and_reject_unknown_paths(self):
+        op=module('operations')
+        rows=op.operations()
+        self.assertEqual(len({x['name'] for x in rows}),len(rows))
+        for row in rows:
+            self.assertTrue(op.show(row['name']).startswith('# '))
+            self.assertFalse(row['runtime_verified'])
+        with self.assertRaises(ValueError):op.show('../../LICENSE')
+        with self.assertRaises(ValueError):op.show('unknown')
+
     def test_search_has_real_matches_and_no_invented_confidence(self):
         search=module('directions').search
         self.assertEqual(search('editorial archive')['directions'][0]['id'],'editorial-fieldnotes')
