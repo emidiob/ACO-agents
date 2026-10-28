@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased — native ACO Webdesign
+
+- Research eight current design-skill/component repositories and add original, portable `aco-webdesign` methods, six searchable directions, two runnable examples and limited static HTML checks.
+- Connect Concierge, Product Office and generated help; 25 native entry skills, with unchanged technical registry statuses. No upstream skill installation or component bundling.
+
+
 ## 1.0.6 — Creative methods, motion design and complete help (2026-10-28)
 
 - Require observed subject/object/camera motion events, source-to-target action mapping and final-prompt coverage before declaring a reference packet consistent.

@@ -7,7 +7,7 @@ from aco.install import agent_set
 class ExpansionTests(unittest.TestCase):
  def setUp(self):self.c=read_json(ROOT/'catalog.json')
  def test_expected_release_coverage(self):
-  self.assertEqual(len(self.c['agents']),363);self.assertEqual(self.c['skill_count'],24)
+  self.assertEqual(len(self.c['agents']),363);self.assertEqual(self.c['skill_count'],25)
   self.assertEqual(self.c['offices']['product-office']['count'],58)
  def test_new_offices_have_leads(self):
   for o in ['finance-office','commercial-office','people-office','delivery-office','production-office','publishing-office','administration-office']:

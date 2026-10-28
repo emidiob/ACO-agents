@@ -128,7 +128,7 @@ class RegressionAndShape073Tests(unittest.TestCase):
         resources=json.loads((ROOT/'skills/aco-office-concierge/references/resources/REGISTRY.json').read_text())
         workflows=json.loads((ROOT/'skills/aco-office-concierge/references/WORKFLOWS.json').read_text())
         self.assertEqual(cat['role_count'],363)
-        self.assertEqual(cat['skill_count'],24)
+        self.assertEqual(cat['skill_count'],25)
         self.assertEqual(len(resources['resources']),99)
         self.assertEqual(len(workflows['workflows']),61)
 

@@ -2,7 +2,7 @@
 
 Claude Code uses `/name`; Codex uses `$name`. Availability requires host discovery.
 
-Use `/aco motion`, `/aco video`, `/aco image`, `/aco capture`, `/aco genjutsu`, `/aco skills` or `/aco help` as Concierge routes. In Codex pass these arguments to `$aco`.
+Use `/aco webdesign`, `/aco motion`, `/aco video`, `/aco image`, `/aco capture`, `/aco genjutsu`, `/aco skills` or `/aco help` as Concierge routes. In Codex pass these arguments to `$aco`.
 
 ## Creative shortcuts and help
 
@@ -16,6 +16,7 @@ Use `/aco motion`, `/aco video`, `/aco image`, `/aco capture`, `/aco genjutsu`, 
 | `/aco-motion` | `$aco-motion` | Native ACO motion design: create, animate, preview and export video graphics; captions, maps, editable timelines and video apps; build and audit CSS/Motion/GSAP UI animation. |
 | `/aco-skills` | `$aco-skills` | Display ACO technical skills and clear experimental status; /aco-skills lists the whole registry without running models. |
 | `/aco-video` | `$aco-video` | AI video direction and provider-aware prompting, including Seedance candidate techniques, storyboard, camera, timing and QC. |
+| `/aco-webdesign` | `$aco-webdesign` | Design, build and redesign websites and product interfaces with original ACO art direction, searchable design recipes, reusable tokens, functional states and browser verification. |
 
 ## Offices
 

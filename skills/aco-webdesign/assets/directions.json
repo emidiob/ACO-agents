@@ -1,0 +1,100 @@
+[
+  {
+    "id": "editorial-fieldnotes",
+    "tags": [
+      "editorial",
+      "culture",
+      "archive",
+      "publication",
+      "journal",
+      "museum"
+    ],
+    "principle": "Let a clear reading hierarchy and one meaningful image lead.",
+    "layout": "Asymmetric opening, compact index, generous long-form measure.",
+    "color": "Warm paper and dark ink; one restrained navigation accent.",
+    "type": "Serif display with utilitarian sans labels.",
+    "content": "Real titles, dates, excerpts and image captions.",
+    "risk": "Do not disguise navigation as oversized decorative text."
+  },
+  {
+    "id": "working-console",
+    "tags": [
+      "dashboard",
+      "workspace",
+      "operations",
+      "tasks",
+      "data",
+      "admin"
+    ],
+    "principle": "Make the next action and current state easy to scan.",
+    "layout": "Stable navigation, aligned records, visible filters and contextual details.",
+    "color": "Neutral surfaces with distinct status roles.",
+    "type": "Readable sans, tabular numerals for comparisons.",
+    "content": "Long names, empty results, errors and realistic record counts.",
+    "risk": "Avoid spacious marketing cards where users need dense comparison."
+  },
+  {
+    "id": "object-catalog",
+    "tags": [
+      "commerce",
+      "catalog",
+      "product",
+      "shop",
+      "furniture"
+    ],
+    "principle": "Give the object and its useful attributes priority.",
+    "layout": "Consistent image scale, compareable metadata and clear purchase path.",
+    "color": "Quiet base that allows materials and product colors to carry expression.",
+    "type": "Clear product names with subordinate specifications.",
+    "content": "Actual dimensions, availability, variants and image rights.",
+    "risk": "Do not trade discoverability for editorial mystery."
+  },
+  {
+    "id": "service-evidence",
+    "tags": [
+      "service",
+      "consulting",
+      "studio",
+      "professional",
+      "booking"
+    ],
+    "principle": "Build understanding through specific work and credible process.",
+    "layout": "Direct proposition, relevant proof, scope and an actionable next step.",
+    "color": "Brand-led colors with a readable long-form neutral base.",
+    "type": "Confident headings, calm reading text.",
+    "content": "Real cases and bounded claims, not fictional endorsements.",
+    "risk": "Avoid repetitive promotional sections with no new information."
+  },
+  {
+    "id": "cultural-poster",
+    "tags": [
+      "event",
+      "festival",
+      "music",
+      "exhibition",
+      "poster"
+    ],
+    "principle": "Make identity expressive while dates and attendance stay obvious.",
+    "layout": "One expressive visual field with a practical event schedule.",
+    "color": "A deliberate high-contrast pair rather than effects everywhere.",
+    "type": "Display type for identity; separate functional text hierarchy.",
+    "content": "Venue, date, access information and real booking destination.",
+    "risk": "Keep animation and typography from obstructing the schedule."
+  },
+  {
+    "id": "quiet-expertise",
+    "tags": [
+      "research",
+      "documentation",
+      "education",
+      "technical",
+      "knowledge"
+    ],
+    "principle": "Help readers find, trust and understand substantial content.",
+    "layout": "Navigable content outline, calm body measure and contextual examples.",
+    "color": "Restrained neutral system with semantic callout roles.",
+    "type": "Durable body text with clear code and annotation styles.",
+    "content": "Long articles, tables, citations and descriptive link labels.",
+    "risk": "Do not treat every paragraph as a card or hide important text behind motion."
+  }
+]

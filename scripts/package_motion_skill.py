@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 def package(output, skill="aco-motion"):
-    if skill not in ("aco-motion", "aco-capture", "aco-image", "aco-video", "aco-genjutsu"):
+    if skill not in ("aco-motion", "aco-capture", "aco-image", "aco-video", "aco-genjutsu", "aco-webdesign"):
         raise ValueError("Unsupported portable skill")
     output=Path(output).expanduser().absolute()
     if any(p.is_symlink() for p in (output,*output.parents)):raise ValueError('Symlink output refused')

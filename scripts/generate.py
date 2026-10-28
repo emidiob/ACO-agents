@@ -218,7 +218,7 @@ def outputs():
     # Native help is derived from every real skill entrypoint, so offices cannot disappear.
     menu = ['# ACO — complete command menu', '',
             'Claude Code uses `/name`; Codex uses `$name`. Availability requires host discovery.', '',
-            'Use `/aco motion`, `/aco video`, `/aco image`, `/aco capture`, `/aco genjutsu`, `/aco skills` or `/aco help` as Concierge routes. In Codex pass these arguments to `$aco`.', '']
+            'Use `/aco webdesign`, `/aco motion`, `/aco video`, `/aco image`, `/aco capture`, `/aco genjutsu`, `/aco skills` or `/aco help` as Concierge routes. In Codex pass these arguments to `$aco`.', '']
     groups = [('Creative shortcuts and help', [n for n in skill_names if not n.endswith('-office') and n not in ('aco-office-concierge', 'aco-context-setup', 'aco-context-steward')]),
               ('Offices', [n for n in skill_names if n.endswith('-office') or n == 'aco-office-concierge']),
               ('Context', [n for n in skill_names if n in ('aco-context-setup', 'aco-context-steward')])]
@@ -265,6 +265,9 @@ def outputs():
     for name, refs in {'aco-image': ('visual-language',), 'aco-video': ('prompt-notation', 'generation-modes', 'worked-cases')}.items():
         for ref in refs:
             out['skills/' + name + '/references/' + ref + '.md'] = (R/'skills/aco-genjutsu/references'/ (ref + '.md')).read_bytes()
+
+    out['skills/aco-webdesign/references/project-contract.md'] = (R/'skills/aco-motion/references/project-contract.md').read_bytes()
+    out['skills/aco-webdesign/scripts/install_standalone.py'] = (R/'skills/aco-motion/scripts/install_standalone.py').read_text().replace('aco-motion', 'aco-webdesign').encode()
 
     return out
 

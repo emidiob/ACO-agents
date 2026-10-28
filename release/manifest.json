@@ -11,7 +11,7 @@
     },
     "ACO-INDEX.md": {
       "mode": 420,
-      "sha256": "35fb74220227019ade8e887532dae9860ad5d2a0704e5860ffd0c2cf74611fe7"
+      "sha256": "b301e0e9aa5ca34db1ad1259086f043e58bfa80ba6a3291a6c6d6a7832b15c06"
     },
     "ACO-TEST-REPORT-v0.7.2.md": {
       "mode": 420,
@@ -59,7 +59,7 @@
     },
     "AGENTS.md": {
       "mode": 420,
-      "sha256": "761725f71365929931eca528751eb094ec9c3c00efa2522d129383b31da8a250"
+      "sha256": "14af9c161830f71fe2e3fc892f70bffed364ffc8839c7f7730a981d3c6bc872a"
     },
     "BEGINNER-GUIDE.md": {
       "mode": 420,
@@ -67,7 +67,7 @@
     },
     "CHANGELOG.md": {
       "mode": 420,
-      "sha256": "b438fff868135b932d1268adfcd82d599ba683ab830f7a9419e043e3c7b2b6e0"
+      "sha256": "5409d993c3f579af8d505d2756bab8ca8b9a461394bfb1ae553cb1c1e4ac49ea"
     },
     "CHATGPT.md": {
       "mode": 420,
@@ -95,7 +95,7 @@
     },
     "README.md": {
       "mode": 420,
-      "sha256": "3badb3274984ab80a0057f0a3293fc71e0343e1bb89690cc573469a32529e1d9"
+      "sha256": "ee3670182011485ba882cd4e3f9aef8f9757a335611a8b9aca80656ac632ef69"
     },
     "SECURITY.md": {
       "mode": 420,
@@ -199,7 +199,7 @@
     },
     "catalog.json": {
       "mode": 420,
-      "sha256": "14817fc3acdc4fa5198cd24637dd5d76b544eebdb04053cd477769d9a110af24"
+      "sha256": "47885ed01edb026da126ba962255a062402b095889511ccafe67e902900e8078"
     },
     "config/aco-os-benchmark.json": {
       "mode": 420,
@@ -371,7 +371,7 @@
     },
     "docs/ACO-COMMANDS.md": {
       "mode": 420,
-      "sha256": "de1a24fccef0a70476f1ecbab186e6bade411dab45d3be1ba1b1466b89f13ace"
+      "sha256": "27b403bc692a89e9146361e5c844ac0051d4c0105f6051cb47f7f903833af428"
     },
     "docs/ACO-OS-1.0.md": {
       "mode": 420,
@@ -387,7 +387,7 @@
     },
     "docs/AGENT-CATALOG.md": {
       "mode": 420,
-      "sha256": "a3253230aa235d0c78b2f5df3ebc3e938b5fa4fef6cb6af7547f6a29a8b7b873"
+      "sha256": "b72c8eb43d82c8e637e3d81abc062a2e6d5db28adbda55319b4bb841cd7edb7a"
     },
     "docs/AI-VIDEO-PROMPT-EXAMPLES.md": {
       "mode": 420,
@@ -427,7 +427,7 @@
     },
     "docs/CREATIVE-METHODS.md": {
       "mode": 420,
-      "sha256": "d8effa9aee313fe82304c6a4640fd18478d05275b51881c3c4c207358b2d0473"
+      "sha256": "c06796916178e21a26476839e6e2c004babada920058d2053279f44b5a2e7a52"
     },
     "docs/CURATED-METHODS.json": {
       "mode": 420,
@@ -628,6 +628,10 @@
     "docs/VALIDATION.md": {
       "mode": 420,
       "sha256": "2f50e82f170c00ec77cda0d3f168e9ed4d4c41c48b1404e1614203a843afb71c"
+    },
+    "docs/WEBDESIGN-VERIFICATION.md": {
+      "mode": 420,
+      "sha256": "9ac68a0ade96f6f33f5800079bb9c6b920cb2636a46e535d9f6c9ea0c799a00e"
     },
     "examples/action-whatsapp-draft.json": {
       "mode": 420,
@@ -2467,7 +2471,7 @@
     },
     "scripts/aco/validate.py": {
       "mode": 420,
-      "sha256": "d29cbd2b76c9a9f4ca5d6babd3a6fc30f9ddde1197ceb167542d08d39ea67370"
+      "sha256": "b4084caf2e81b173a155d887e2449cb813fe6af46be5079adc000ae49a472cc2"
     },
     "scripts/aco_cli.py": {
       "mode": 420,
@@ -2495,7 +2499,7 @@
     },
     "scripts/generate.py": {
       "mode": 420,
-      "sha256": "4c8aea37c730d78c4e37f7ef7b258cdd0dcda18a1eef359f76079968683cd70a"
+      "sha256": "4825e0e0d941bde1173ab0fd71699b41fcf3343c0adf9566b4f4cdd6b4a329e3"
     },
     "scripts/install_aco_claude_shortcuts.py": {
       "mode": 420,
@@ -2503,11 +2507,11 @@
     },
     "scripts/package_creative_skill.py": {
       "mode": 420,
-      "sha256": "ef5d633df4862592228e5d37c7ac29df6a213302f7e2e2dac7fe6a7d2fe3ef2e"
+      "sha256": "c305896d1247a1cefa19ca94cdfc73dab596f75ff59d20efd5d86bbdf260c05c"
     },
     "scripts/package_motion_skill.py": {
       "mode": 420,
-      "sha256": "28b7e6046b5e08db5f98dda972851627d700fa39392566c885164bfbaf8e105b"
+      "sha256": "63565ed63b8b28a48155213a17773cf652972b56fb92d8e74b89aa0b1ca5d1fc"
     },
     "skillpacks/frontend-motion/animejs.json": {
       "mode": 420,
@@ -3451,7 +3455,7 @@
     },
     "skills/aco-help/references/commands.md": {
       "mode": 420,
-      "sha256": "de1a24fccef0a70476f1ecbab186e6bade411dab45d3be1ba1b1466b89f13ace"
+      "sha256": "27b403bc692a89e9146361e5c844ac0051d4c0105f6051cb47f7f903833af428"
     },
     "skills/aco-image/SKILL.md": {
       "mode": 420,
@@ -3703,7 +3707,7 @@
     },
     "skills/aco-office-concierge/references/CATALOG.json": {
       "mode": 420,
-      "sha256": "14817fc3acdc4fa5198cd24637dd5d76b544eebdb04053cd477769d9a110af24"
+      "sha256": "47885ed01edb026da126ba962255a062402b095889511ccafe67e902900e8078"
     },
     "skills/aco-office-concierge/references/ROLE-INDEX.md": {
       "mode": 420,
@@ -4947,7 +4951,7 @@
     },
     "skills/aco-product-office/SKILL.md": {
       "mode": 420,
-      "sha256": "adff79385dcf4db0038f014ab84ac6c9ebc0fd7af3f1f98c979fd2ebe15825da"
+      "sha256": "4a765c5cd835ec8ba0e9968f21c0fa63950f8973c001f0b6375cc80fc09819e7"
     },
     "skills/aco-product-office/agents/openai.yaml": {
       "mode": 420,
@@ -5661,9 +5665,97 @@
       "mode": 420,
       "sha256": "542df1c882e5ebca7efa0f7fd3ed07ed7326397d68a395a140d3c2a9cb6d5913"
     },
+    "skills/aco-webdesign/SKILL.md": {
+      "mode": 420,
+      "sha256": "8f1568c83acb4c1ea0b204e6bd33f5bec4be0ee5be1c5d756b8067de0cdef6c0"
+    },
+    "skills/aco-webdesign/assets/directions.json": {
+      "mode": 420,
+      "sha256": "f82f220ff39bec8978d23e2c58f7319fc6046cee266c6ecc9b5be08c4e42ddda"
+    },
+    "skills/aco-webdesign/assets/editorial/app.js": {
+      "mode": 420,
+      "sha256": "9709ca0e8023adfaa87eeb79eb66d57e8fff6564cacdddb87e7eda8f98c1d7ce"
+    },
+    "skills/aco-webdesign/assets/editorial/index.html": {
+      "mode": 420,
+      "sha256": "083bd0cf194d4ba5d58afe62db15ae55847566ccee55079a2dec9a81f32f3a3d"
+    },
+    "skills/aco-webdesign/assets/editorial/style.css": {
+      "mode": 420,
+      "sha256": "f3d651dd33c716627f2b332eb4291d5d3704cdffe6d3da35cfd447a19f14f0a4"
+    },
+    "skills/aco-webdesign/assets/workspace/app.js": {
+      "mode": 420,
+      "sha256": "08a8037b3384494806f1f90a060c78625b2aa3170f9fb17b8c3c47ff9de2f223"
+    },
+    "skills/aco-webdesign/assets/workspace/index.html": {
+      "mode": 420,
+      "sha256": "b774fbde62307f813393276804c4e4a0d7c8e5cf2e1a4e490aae4fbea9c5803c"
+    },
+    "skills/aco-webdesign/assets/workspace/style.css": {
+      "mode": 420,
+      "sha256": "5276b6c1c7cdad0686f3b80db22d939221b6242e82d48463fb35527c0b6c16dc"
+    },
+    "skills/aco-webdesign/references/build.md": {
+      "mode": 420,
+      "sha256": "b171f0328523431578d38687a104c32bcb6bf7502ad40d415dca6fe397395a3c"
+    },
+    "skills/aco-webdesign/references/direction.md": {
+      "mode": 420,
+      "sha256": "e3bf5f4743fcf863370c8674cdf9cc2fb3ca44aded6c1ca9dbaee96f7c82d625"
+    },
+    "skills/aco-webdesign/references/libraries.md": {
+      "mode": 420,
+      "sha256": "17079f9b18316dc8eb0732e36e5b2b6d86ed2a6e067262d7c66721da965cf212"
+    },
+    "skills/aco-webdesign/references/project-contract.md": {
+      "mode": 420,
+      "sha256": "b43de6cf3a67c7bf96d3ca8d68db9d99ad359ae2ecca3a7e8d8d0a80e6313273"
+    },
+    "skills/aco-webdesign/references/redesign.md": {
+      "mode": 420,
+      "sha256": "7cff18855278c8af14ac4ae2656de2c829ce7ae60c9605ffe3459e4d3507e8fd"
+    },
+    "skills/aco-webdesign/references/research-snapshot.json": {
+      "mode": 420,
+      "sha256": "aff500980a1c42bcebef036d8ad093077db543860ed5a2c503480dc430f8abb8"
+    },
+    "skills/aco-webdesign/references/review.md": {
+      "mode": 420,
+      "sha256": "d538206cf3aa84cffd1a20510b9eb419ba109c4d49e7531d42cf87608c149f34"
+    },
+    "skills/aco-webdesign/references/sources.md": {
+      "mode": 420,
+      "sha256": "e8c98c246cac2f90245e9c0677b4f784c84af54c0f83b2a5120b9983210112a7"
+    },
+    "skills/aco-webdesign/references/system.md": {
+      "mode": 420,
+      "sha256": "ae08c90745a450ec2e8164077ca1ef93bf5d0c13db122dcda7e4fb8d7623e05a"
+    },
+    "skills/aco-webdesign/references/working-kit.md": {
+      "mode": 420,
+      "sha256": "88a80a9ed0831ea7feb4a4abaeffa0cf9698f5b149cf6c76c71d185f348b100d"
+    },
+    "skills/aco-webdesign/scripts/audit_html.py": {
+      "mode": 420,
+      "sha256": "1406972286acae32c76da2a6e77e169c85c1d067173dae1b8214ad0e930e76dc"
+    },
+    "skills/aco-webdesign/scripts/directions.py": {
+      "mode": 420,
+      "sha256": "61b888cebdb3cae7fae1149259a373363796f1f4da6dcc37c08b08cd9e0470a9"
+    },
+    "skills/aco-webdesign/scripts/install_standalone.py": {
+      "mode": 420,
+      "sha256": "46a4542867dcf496454976ddbd9b7a2a01383fd1d001ecb2bd1c2ed53f77826c"
+    },
+    "skills/aco-webdesign/scripts/scaffold.py": {
+      "mode": 420,
+      "sha256": "8207c67ced2ad302ea0e66e8d9c4f92bcee40599952cd1f3634f452a38923064"
+    },
     "skills/aco/SKILL.md": {
       "mode": 420,
-      "sha256": "17ced5724a51601efc1a3086d9bcffee1f3d86d5371fa3417931aae1e1d523ff"
+      "sha256": "b2ec357a80f38d07aa5306786630bd779ac7b8f4fd6614a9dd5ec321623fd5c6"
     },
     "tests/fixtures/legacy-plugin.txt": {
       "mode": 420,
@@ -5675,7 +5767,7 @@
     },
     "tests/test_aco_command_kit.py": {
       "mode": 420,
-      "sha256": "984076811b2c1cc3ab3398954c8a1b10164541c7921b05cd8d17428535f2d183"
+      "sha256": "7ca3a198412b1dd23d5eade8c7b4e0c55bbfe0794137b339611036691171dc1b"
     },
     "tests/test_common_symlinks.py": {
       "mode": 420,
@@ -5699,7 +5791,7 @@
     },
     "tests/test_expansion.py": {
       "mode": 420,
-      "sha256": "dff50565868ef3a4064751645cfb4646dfb02249ba336eaef366247fa722554f"
+      "sha256": "8f245092507c70e8f4b3c7db428b1ac36e82036c839e463cad8b643b42931e98"
     },
     "tests/test_finance.py": {
       "mode": 420,
@@ -5763,7 +5855,7 @@
     },
     "tests/test_studio_readiness.py": {
       "mode": 420,
-      "sha256": "50f8a48ca1272e4ef7e403fb2bbffc9a3095adbbca019e27977ec8f9dee76e23"
+      "sha256": "4d14cf18bc1c510db73058dacc23007f935192d9b85c4ee410c21ce1ab0293d1"
     },
     "tests/test_tidy_compact_sync.py": {
       "mode": 420,
@@ -5779,7 +5871,7 @@
     },
     "tests/test_v073.py": {
       "mode": 420,
-      "sha256": "7689a970426c67534be874fc4971ba5da2c700112cf5a5382326fea3c775d90a"
+      "sha256": "20cac82d47ce6973bc997db5e65b242830e92f6f4e11e31e1cfebec466df3b3f"
     },
     "tests/test_v080.py": {
       "mode": 420,
@@ -5808,6 +5900,10 @@
     "tests/test_v105_routing_freeze.py": {
       "mode": 420,
       "sha256": "6ace2db863440195052378ba5a49202ee138bd4ba7437dba894eae0124fcab42"
+    },
+    "tests/test_webdesign.py": {
+      "mode": 420,
+      "sha256": "d72fcea4fd02c097031540d6f16eea5ee2da5b4dd7fb55c4f0210e3f9259c74b"
     }
   },
   "schema_version": 1
