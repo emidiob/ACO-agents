@@ -12,7 +12,7 @@ class Evidence105Tests(unittest.TestCase):
         cls.p=json.loads((ROOT/'config/skill-policy.json').read_text(encoding='utf-8'))
 
     def test_104_baseline_roles_and_new_entrypoints(self):
-        self.assertEqual((ROOT/'VERSION').read_text().strip(),'1.0.5')
+        self.assertEqual((ROOT/'VERSION').read_text().strip(),'1.0.6')
         for name in ('aco','aco-genjutsu','aco-video','aco-image','aco-capture','aco-skills','aco-help'):
             self.assertTrue((ROOT/'skills'/name/'SKILL.md').exists())
 

@@ -1,4 +1,4 @@
-# Start here — ACO 1.0.5
+# Start here — ACO 1.0.6
 
 ACO supplies instructions and optional local tools. Start with the route that matches how you work.
 
@@ -12,7 +12,7 @@ No local installation is required for reading instructions. If retrieval fails, 
 
 ## I use Codex on my computer
 
-1. Extract the complete **1.0.5** ZIP into a new folder and check `VERSION`.
+1. Extract the complete **1.0.6** ZIP into a new folder and check `VERSION`.
 2. Open a terminal in the extracted `ACO-agents` folder. Use Python 3.11 or newer:
 
    ```bash
@@ -40,8 +40,8 @@ Follow [Upgrading](UPGRADING.md) from the new package. Extracting a ZIP, pushing
 
 Read the [Beginner Guide](../BEGINNER-GUIDE.md) for daily requests, memory, troubleshooting and resuming work. The [README](../README.md) explains the library; [CLI](CLI.md) describes optional commands. You do not need to install the resource catalogue or connect Drive to start.
 
-The [1.0.5 report](../ACO-TEST-REPORT-v1.0.5.md) records release checks. Earlier test reports describe their own versions.
+The [1.0.6 report](../ACO-TEST-REPORT-v1.0.6.md) records release checks. Earlier test reports describe their own versions.
 
-## Quick command skills (ACO 1.0.5 command pack)
+## Quick command skills (ACO 1.0.6 command pack)
 
 The merged package includes 23 source skill folders, including seven lightweight shortcuts such as `/aco` and `/aco-genjutsu`. Claude Code and Codex support their own native invocation only after installing and confirming discovery. In regular ChatGPT, typing these is a conversational cue; see [ACO Quick Commands](ACO-COMMANDS.md). Technical candidates can be examined explicitly, but they are not production-validated.

@@ -5,7 +5,7 @@ description: "ACO Concierge entrypoint. Invoke as /aco in Claude Code or $aco in
 
 # /aco — ACO Concierge
 
-Use the canonical ACO 1.0.5 runtime (`aco://current`) in this checkout or a verified installed ACO skills root. This is a command **router**, not an independent model or process. Read `../aco-office-concierge/SKILL.md`, its relevant shared protocol, then only the selected office and specialist methods. Ask no unnecessary questions; follow authorization, source and verification rules.
+Use the canonical ACO 1.0.6 runtime (`aco://current`) in this checkout or a verified installed ACO skills root. This is a command **router**, not an independent model or process. Read `../aco-office-concierge/SKILL.md`, its relevant shared protocol, then only the selected office and specialist methods. Ask no unnecessary questions; follow authorization, source and verification rules.
 
 ## Argument dispatch
 

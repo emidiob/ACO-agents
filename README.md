@@ -2,7 +2,7 @@
 
 **A working library for an artist, studio, agency or cultural business — with scoped private knowledge and evidence-aware execution.**
 
-**ACO v1.0.5 · 363 roles · 23 entry skills · 61 workflows · 99 optional resources · token-aware OS + technical skill registry.**
+**ACO v1.0.6 · 363 roles · 24 entry skills · 61 workflows · 99 optional resources · token-aware OS + technical skill registry.**
 
 Proprietary, source-available. Redistribution is restricted by [LICENSE](LICENSE). No third-party software, fonts, models or private knowledge are bundled.
 
@@ -196,7 +196,7 @@ Use the returned action hash to bind explicit approval when the permission level
 
 ## What has and has not been verified
 
-The included [1.0.5 test report](ACO-TEST-REPORT-v1.0.5.md) records the gates actually run, with explicit scope and limitations. [Validation](docs/VALIDATION.md) explains how to reproduce the checks; earlier reports retain their historical results. Unit tests check local behavior, not taste, curatorial expertise, improved revenue or legal accuracy. Supplied evidence references are not proof of truth.
+The included [1.0.6 test report](ACO-TEST-REPORT-v1.0.6.md) records the gates actually run, with explicit scope and limitations. [Validation](docs/VALIDATION.md) explains how to reproduce the checks; earlier reports retain their historical results. Unit tests check local behavior, not taste, curatorial expertise, improved revenue or legal accuracy. Supplied evidence references are not proof of truth.
 
 This package does not establish that your Mac, Codex session, Drive connector, phone account, ComfyUI GPU or paid generation service works. It installs no schedules and makes no calls. [Host acceptance tests](docs/HOST-ACCEPTANCE-TESTS.md) are for your actual environment; unrun rows stay unrun.
 
@@ -234,6 +234,6 @@ python3 scripts/build_release.py --output /absolute/path/outside/repo/ACO-releas
 The [product decisions](docs/PRODUCT-DECISIONS.md), [source review](docs/SOURCE-REVIEW.md) and [known limits](docs/KNOWN-LIMITATIONS.md) are part of the release. Keep the proprietary license and third-party rights distinctions intact.
 
 
-## ACO 1.0.5 skills and command layer
+## ACO 1.0.6 skills and command layer
 
-The 1.0.5 package includes seven quick-command Agent Skills and the prompt-only `/aco-genjutsu` candidate. All 14 previously active methods remain active. The other 30 technical candidates remain explicitly inspectable experimental methods, not default active. See [skill validation evidence](docs/SKILL-VALIDATION-v1.0.5.md). Provider/model performance is not claimed.
+The 1.0.6 package includes eight quick-command Agent Skills and the prompt-only `/aco-genjutsu` candidate. All 14 previously active methods remain active. The other 30 technical candidates remain explicitly inspectable experimental methods, not default active. See [skill validation evidence](docs/SKILL-VALIDATION-v1.0.6.md). Provider/model performance is not claimed.
