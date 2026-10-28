@@ -10,6 +10,9 @@ def export(destination):
     if destination.exists():raise ValueError('Destination already exists')
     if destination.is_relative_to(SOURCE.parents[1]):raise ValueError('Export outside the skill directory')
     shutil.copytree(SOURCE,destination)
+    audit=destination/'audit';audit.mkdir()
+    for name in ('audit_design.py','design_rules.py'):shutil.copy2(SOURCE.parents[1]/'scripts'/name,audit/name)
+    (destination/'browser-probe.mjs').write_text('export default '+(SOURCE.parent/'browser-probe.js').read_text()+';\n')
     return destination
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('destination',type=Path);a=p.parse_args()

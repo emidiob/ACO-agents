@@ -19,7 +19,9 @@ import acoLive from './tools/aco-live/aco-vite.mjs';
 
 Use the project's normal development command. Open `/__aco/live` on its local origin (or `<base>/__aco/live` when Vite uses a base path). The bridge uses the documented [Vite plugin hooks](https://vite.dev/guide/api-plugin.html), runs only during development and is absent from production builds.
 
-Place a stable, globally unique literal identifier on each editable native element:
+Static leaf text in JSX/TSX and Vue templates is bound automatically during development. Select it in the preview to edit the original source. Generated attributes are not written into source files and are absent from production builds. Reselect after each automatic edit because a source change invalidates its binding. Mapping is limited to 256 leaf elements per source file and files of at most 500,000 characters; larger files can use explicit bindings. Set `acoLive({automatic: false})` to disable automatic mapping.
+
+For other supported elements, place a stable, globally unique literal identifier:
 
 ```jsx
 <h1 data-aco-edit="home-title" className="hero-title">A specific title</h1>
@@ -31,9 +33,17 @@ Place a stable, globally unique literal identifier on each editable native eleme
 
 Select the element in the preview. The editor resolves its file and hash, then saves static text or literal class/className values. Vite performs its normal HMR; component state retention follows the framework's normal refresh boundaries. Switch to interaction mode to use the application. Repeated rendered instances of one source element share its edit. Duplicate identifiers in distinct source locations are refused.
 
-The independent lexical mapper is deliberately conservative. Supported files are UTF-8 `.jsx`, `.tsx`, `.vue` templates and `.html`. It rejects strings/comments, nested or expression-based text, dynamic classes and ambiguous bindings. JSX inside expression-generated fragments may be unavailable. Edit these cases in the source editor; this bridge is not a complete JavaScript/TypeScript parser or automatic component source-map engine. Class changes must refer to actual project styles; the tool does not invent utility classes or modify CSS files.
+The independent lexical mapper is deliberately conservative. Supported files are UTF-8 `.jsx`, `.tsx`, `.vue` templates and `.html`. It rejects strings/comments, nested or expression-based text, dynamic classes and ambiguous bindings. JSX inside expression-generated fragments may be unavailable. Edit these cases in the source editor; this bridge is not a complete JavaScript/TypeScript parser. Automatic bindings refer to literal source locations and cannot edit runtime-generated text or component props. Class changes must refer to actual project styles; the tool does not invent utility classes or modify CSS files.
 
 Undo/redo holds 50 edits in the current server session. Stale hashes and external modifications block overwrites. Writes use same-directory atomic replacement. The bridge accepts loopback clients only and requires a session token plus matching origin for mutations. Keep project code trusted. Symlinks, hidden paths, vendor directories and files larger than 2 MB are excluded. Existing Vite CSP, iframe restrictions or unusual proxies can prevent the preview; preserve those protections and use the normal project preview when needed.
+
+## Rendered review and runtime measurements
+
+The exported bridge includes the native DOM probe and Python review engine. **Review rendered page** measures the current preview and evaluates the 62 ACO predicates; Python 3 must be on the development server's PATH. It runs without a shell, with a 10-second timeout. The snapshot and report stay local. Export the report only to the project's private evidence folder. Missing log/system/color evidence is reported as unevaluated, not passed. Captures are capped at 5,000 elements and truncated captures are identified. Findings are review prompts, not automatic restyling decisions.
+
+Selecting an element also shows its computed font stack, size, weight, line height, tracking, variation and feature settings. This describes computed CSS, not a font file identification for every glyph.
+
+**Measure 3 seconds** records animation callback intervals, long-task/long-animation-frame entries and layout shifts where the browser supports them. Enter the display's actual refresh rate. Use interaction mode to reproduce the workload during capture. Background/hidden captures are inconclusive. Export before/after reports under the same workload and environment; callback timing is not a GPU trace or a substitute for a browser profiler. The collector accounts for [requestAnimationFrame behavior](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame) and feature-detects [long animation frame timing](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceLongAnimationFrameTiming).
 
 ## Framework-owned components
 

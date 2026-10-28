@@ -22,3 +22,43 @@ test('HTTP bridge authenticates edits and binds mutations to the same origin',as
   const response=await fetch(origin+'/__aco/edit',{method:'POST',headers,body:JSON.stringify({...binding,kind:'text',value:'Saved through HTTP'})});assert.equal(response.status,200);assert.match(project.read('App.jsx').source,/Saved through HTTP/);
   assert.equal((await fetch(origin+'/__aco/undo',{method:'POST',headers:{...headers,Origin:'https://other.example'},body:'{}'})).status,403);
 });
+
+test('automatic React mapping edits original bytes without persisting instrumentation',t=>{
+  const source='export default () => <main><h1>Hello</h1><p>{name}</p><p>World</p></main>',p=fixture(t,source);
+  const result=p.instrument('App.jsx',source),keys=[...result.code.matchAll(/data-aco-edit="([^"]+)"/g)].map(m=>m[1]);
+  assert.equal(keys.length,2);assert.equal(result.map.sourcesContent[0],source);
+  p.apply({...p.resolve(keys[0]),kind:'text',value:'Changed'});
+  assert.equal(p.read('App.jsx').source,source.replace('Hello','Changed'));
+  assert.throws(()=>p.resolve(keys[1]),/changed/);
+  const refreshed=p.instrument('App.jsx',p.read('App.jsx').source);assert.match(refreshed.code,/Changed/);
+  p.history('undo');assert.equal(p.read('App.jsx').source,source);
+});
+test('automatic Vue mapping respects explicit bindings and dynamic text',t=>{
+  const source='<template><main><h1 class="old">Hello</h1><p>{{name}}</p><p data-aco-edit="manual">Keep</p></main></template>',p=fixture(t,source,'App.vue');
+  const result=p.instrument('App.vue',source),key=/data-aco-edit="(aco-auto-[^"]+)"/.exec(result.code)[1];
+  assert.equal([...result.code.matchAll(/aco-auto-/g)].length,1);
+  p.apply({...p.resolve(key),kind:'class',value:'new'});assert.equal(p.read('App.vue').source,source.replace('class="old"','class="new"'));
+  assert.equal(p.resolve('manual').file,'App.vue');
+});
+test('automatic bindings exclude examples, comments, virtual sources and unsafe paths',t=>{
+  const source='const sample = "<h1>Example</h1>"; /* <h2>Comment</h2> */ export default () => <p>Actual</p>',p=fixture(t,source);
+  const result=p.instrument('App.jsx',source);assert.equal([...result.code.matchAll(/aco-auto-/g)].length,1);
+  assert.equal(p.instrument('App.jsx',source+'\n'),null);
+  assert.throws(()=>p.instrument('../Outside.jsx',source),/not allowed/);
+  const plugin=acoLive({automatic:false});plugin.configResolved({root:p.root,base:'/',server:{host:'127.0.0.1'}});assert.equal(plugin.transform(source,p.file('App.jsx')),null);
+});
+
+test('frame summary distinguishes expected refresh rates and rejects invalid inputs',async()=>{
+  const {summarizeFrames}=await import('../skills/aco-webdesign/assets/framework-live/runtime-review.mjs');
+  const normal=summarizeFrames([16.67,16.67,16.67],60);assert.equal(normal.over_budget,0);assert.equal(normal.estimated_missed_refreshes,0);
+  const stalled=summarizeFrames([16.67,50,16.67],60);assert.equal(stalled.over_budget,1);assert.equal(stalled.estimated_missed_refreshes,2);
+  assert.equal(summarizeFrames([8.33,8.33,16.67],120).estimated_missed_refreshes,1);
+  assert.equal(summarizeFrames([]).median_ms,null);assert.throws(()=>summarizeFrames([1],0),/refresh rate/);
+});
+
+test('rendered audit uses the native predicates and exposes missing measurements',async()=>{
+  const {auditSnapshot}=await import('../skills/aco-webdesign/assets/framework-live/aco-vite.mjs');
+  const result=auditSnapshot({schema:2,elements:[{index:0,tag:'p',text:'Low contrast',color:'#aaaaaa',effectiveBackground:'#ffffff',fontSize:16}],viewport:{width:1000,height:700}});
+  assert.ok(result.findings.some(f=>f.rule==='text-contrast'));assert.ok(result.not_evaluated.some(f=>f.id==='runtime-error'));
+  assert.throws(()=>auditSnapshot({schema:2,elements:Array(5001).fill({})}),/5000/);
+});
