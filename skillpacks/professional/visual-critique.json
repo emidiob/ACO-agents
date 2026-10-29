@@ -1,0 +1,77 @@
+{
+  "failure_modes": [
+    "Una pagina d’archivio può essere densa: privilegia orientamento e metadati, non spazi bianchi indiscriminati.",
+    "Una pagina editoriale può rompere una griglia: mantieni però una lettura intenzionale e un percorso praticabile.",
+    "Una richiesta di conversione non autorizza urgenza falsa o occultamento delle condizioni.",
+    "Se manca il rendering, consegna una diagnosi di sorgente e ipotesi da verificare, non una recensione visiva osservata.",
+    "Inventing observations, approvals, rights, professional certification or external execution."
+  ],
+  "inputs": [
+    "brief, authorized project scope and non-negotiable constraints",
+    "the available evidence and material unknowns",
+    "format and audience of the required deliverable"
+  ],
+  "method": [
+    "Definisci il compito visivo: cosa deve capire, trovare o decidere il visitatore; registra gli elementi dell’identità che non sono in discussione. Non trasformare una revisione di gerarchia in un rebranding.",
+    "Classifica le prove disponibili: screenshot a una misura, pagina interattiva, sorgente o descrizione. Per ciascuna indica ciò che non permette di valutare: un’immagine non dimostra hover, focus, navigazione o velocità.",
+    "Costruisci una mappa dei livelli: messaggio principale, contenuto di supporto, dettaglio e azione. Descrivi dimensioni relative, allineamenti, gruppi e vuoti con riferimenti a regioni riconoscibili, senza inventare misure.",
+    "Separa difetti funzionali, incoerenze con il brief e preferenze stilistiche. Prioritizza prima ciò che ostacola il compito; la preferenza deve restare una proposta, non un errore certificato.",
+    "Estrai dalla reference relazioni trasferibili: rapporto titolo/immagine, ritmo tra gruppi, densità, contrasto tra registri. Non copiare font, fotografie, marchi o composizione distintiva senza diritti.",
+    "Sviluppa almeno due correzioni coerenti con l’identità: una minima e una più strutturale. Per ogni correzione specifica l’effetto atteso e il costo, non un generico «più premium».",
+    "Definisci token semantici e stati dei componenti soltanto dopo la direzione: testo, sfondo, azione, errore e focus. Un effetto entra solo se ha una funzione descrivibile; prepara anche il comportamento statico.",
+    "Confronta prima/dopo sul medesimo contenuto e alle stesse dimensioni. Registra quali controlli sono stati eseguiti e quali necessitano di persone o browser; conserva le scelte già efficaci."
+  ],
+  "output_contract": {
+    "must_include": [
+      "result",
+      "source_or_verification_note",
+      "uncertainties",
+      "decision_criteria"
+    ],
+    "reference_method": "skills/aco-office-concierge/references/competencies/visual-critique/OUTPUT.md",
+    "type": "professional_procedural_skill_output"
+  },
+  "rollback_ref": "v1.0.6",
+  "skill_id": "professional.visual_critique",
+  "source_status": "validated_internal",
+  "sources": [
+    {
+      "reuse": "reference_only",
+      "review_scope": "Critique documentation, not the complete skill catalogue.",
+      "url": "https://impeccable.style/docs/critique/"
+    },
+    {
+      "reuse": "reference_only",
+      "review_scope": "Documentation and theming model.",
+      "url": "https://ui.shadcn.com/docs/theming"
+    },
+    {
+      "reuse": "reference_only",
+      "review_scope": "Catalogue and installation overview, not component-by-component code or performance review.",
+      "url": "https://reactbits.dev/"
+    }
+  ],
+  "status": "validated",
+  "title": "Critica visiva e web design",
+  "verification": {
+    "benchmark_cases": 20,
+    "level": "deterministic_procedural_contract",
+    "max_critical_failures": 0,
+    "method_files": [
+      "skills/aco-office-concierge/references/competencies/visual-critique/METHOD.md",
+      "skills/aco-office-concierge/references/competencies/visual-critique/DECISIONS.md",
+      "skills/aco-office-concierge/references/competencies/visual-critique/OUTPUT.md",
+      "skills/aco-office-concierge/references/competencies/visual-critique/EXAMPLES.md",
+      "skills/aco-office-concierge/references/competencies/visual-critique/EVALS.json",
+      "skills/aco-office-concierge/references/competencies/visual-critique/SOURCES.json"
+    ],
+    "minimum_score": 95,
+    "professional_quality_review": "not independently assessed",
+    "third_party_rights": "reference_only"
+  },
+  "version": "1.0.0",
+  "when_to_use": [
+    "Use for specific visual critique layout hierarchy preserve brand identity accessibility.",
+    "Select only within agency-office, product-office and when the task requires this specific method."
+  ]
+}

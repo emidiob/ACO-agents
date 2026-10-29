@@ -1,0 +1,72 @@
+{
+  "failure_modes": [
+    "Una dichiarazione «è facile» non annulla un fallimento osservato nello stesso compito.",
+    "Una richiesta di funzionalità è un dato di ricerca, non automaticamente un requisito approvato.",
+    "Con evidenze contraddittorie mantieni ipotesi concorrenti, non una media che cancella il problema.",
+    "Una revisione euristica genera domande; non può essere etichettata test con utenti.",
+    "Inventing observations, approvals, rights, professional certification or external execution."
+  ],
+  "inputs": [
+    "brief, authorized project scope and non-negotiable constraints",
+    "the available evidence and material unknowns",
+    "format and audience of the required deliverable"
+  ],
+  "method": [
+    "Scrivi la decisione che la ricerca deve rendere possibile: per esempio scegliere tra salvataggio automatico e conferma esplicita, non semplicemente «conoscere gli utenti».",
+    "Trasforma ogni supposizione in una domanda falsificabile, indicando quale comportamento la smentirebbe. Mantieni distinte ipotesi di bisogno, soluzione e disponibilità a pagare.",
+    "Seleziona partecipanti in relazione al compito, includendo condizioni che potrebbero cambiare l’esperienza. Non dedurre bisogni o competenza da età, provenienza o titolo professionale.",
+    "Prepara compiti realistici con un obiettivo, dati e criterio di riuscita, senza nominare il controllo che dovrebbe essere scoperto. Raccogli consenso e minimizza dati personali e registrazioni.",
+    "Annota separatamente citazione, comportamento, contesto e interpretazione. Collega ogni nota a partecipante pseudonimo, compito e posizione nella sessione; non inventare verbatim da un riassunto.",
+    "Raggruppa per problema e cerca deliberatamente casi contrari. Se due note divergono, verifica differenze di contesto o di compito prima di scegliere la versione più comoda.",
+    "Classifica il risultato come osservato, interpretato o da verificare. La frequenza nel campione non è una stima della popolazione; la severità dipende anche dalle conseguenze del fallimento.",
+    "Consegna una decisione proporzionata all’evidenza, il rischio residuo e il prossimo esperimento. Estendi la mappa a email, assistenza e passaggi umani quando fanno parte dello stesso servizio."
+  ],
+  "output_contract": {
+    "must_include": [
+      "result",
+      "source_or_verification_note",
+      "uncertainties",
+      "decision_criteria"
+    ],
+    "reference_method": "skills/aco-office-concierge/references/competencies/ux-research/OUTPUT.md",
+    "type": "professional_procedural_skill_output"
+  },
+  "rollback_ref": "v1.0.6",
+  "skill_id": "professional.ux_research",
+  "source_status": "validated_internal",
+  "sources": [
+    {
+      "reuse": "reference_only",
+      "review_scope": "The ten heuristic definitions and examples.",
+      "url": "https://www.nngroup.com/articles/ten-usability-heuristics/"
+    },
+    {
+      "reuse": "reference_only",
+      "review_scope": "Observation-to-findings analysis procedure.",
+      "url": "https://www.gov.uk/service-manual/user-research/analyse-a-research-session"
+    }
+  ],
+  "status": "validated",
+  "title": "UX, ricerca utenti e servizi",
+  "verification": {
+    "benchmark_cases": 20,
+    "level": "deterministic_procedural_contract",
+    "max_critical_failures": 0,
+    "method_files": [
+      "skills/aco-office-concierge/references/competencies/ux-research/METHOD.md",
+      "skills/aco-office-concierge/references/competencies/ux-research/DECISIONS.md",
+      "skills/aco-office-concierge/references/competencies/ux-research/OUTPUT.md",
+      "skills/aco-office-concierge/references/competencies/ux-research/EXAMPLES.md",
+      "skills/aco-office-concierge/references/competencies/ux-research/EVALS.json",
+      "skills/aco-office-concierge/references/competencies/ux-research/SOURCES.json"
+    ],
+    "minimum_score": 95,
+    "professional_quality_review": "not independently assessed",
+    "third_party_rights": "reference_only"
+  },
+  "version": "1.0.0",
+  "when_to_use": [
+    "Use for user research observations service journey contradictory evidence test tasks.",
+    "Select only within product-office, agency-office, organization-office and when the task requires this specific method."
+  ]
+}

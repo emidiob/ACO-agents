@@ -1,0 +1,72 @@
+{
+  "failure_modes": [
+    "Esempio scritto dall’autore e risposta scritta dallo stesso autore sono materiale di sviluppo, non validazione indipendente.",
+    "Un test che cerca una parola misura quella parola, non la verità dell’affermazione.",
+    "Una soglia superata su un dataset non dimostra affidabilità universale.",
+    "Un aggiornamento che migliora un ufficio ma peggiora un altro non può essere dichiarato globalmente migliore senza discutere il compromesso.",
+    "Inventing observations, approvals, rights, professional certification or external execution."
+  ],
+  "inputs": [
+    "brief, authorized project scope and non-negotiable constraints",
+    "the available evidence and material unknowns",
+    "format and audience of the required deliverable"
+  ],
+  "method": [
+    "Definisci la capacità come comportamento osservabile, insieme al perimetro e ai casi in cui non deve essere usata. «Scrive meglio» è troppo vago senza criteri e compito.",
+    "Traccia fonti, versione del metodo e modifiche originali. Il riuso deve avere condizioni esplicite; una fonte consultata non è una dipendenza installata né una competenza acquisita.",
+    "Separa esempi didattici, casi di sviluppo, regressioni note e prove nuove per la valutazione. Se l’autore ha visto o usato un caso per migliorare il metodo, non chiamarlo holdout indipendente.",
+    "Definisci criteri meccanici e professionali separati. Una struttura corretta può contenere un ragionamento debole; un giudizio umano positivo non annulla un errore aritmetico critico.",
+    "Congela versione, input, criteri e configurazione prima dell’esecuzione significativa. Conserva il primo risultato, incluse le failure, e distingui una correzione dalla riuscita al primo tentativo.",
+    "Esegui baseline e candidato sullo stesso compito con condizioni comparabili. Per confronti ciechi nascondi versione e ordine al valutatore, senza pretendere di cancellare il contesto già visto dal modello.",
+    "Riporta risultati per dominio, gravità e costo; includi regressioni e casi avversari. Controlla risposte apparentemente eleganti che inventano fatti, accordi, diritti o capacità.",
+    "Promuovi soltanto attraverso la policy ACO vigente e una revisione autorizzata; conserva rollback e limiti. Un test locale del loader non promuove i metodi che carica e non modifica i pesi del modello."
+  ],
+  "output_contract": {
+    "must_include": [
+      "result",
+      "source_or_verification_note",
+      "uncertainties",
+      "decision_criteria"
+    ],
+    "reference_method": "skills/aco-office-concierge/references/competencies/skill-evaluation/OUTPUT.md",
+    "type": "professional_procedural_skill_output"
+  },
+  "rollback_ref": "v1.0.6",
+  "skill_id": "professional.skill_evaluation",
+  "source_status": "validated_internal",
+  "sources": [
+    {
+      "reuse": "reference_only",
+      "review_scope": "Evaluation architecture: prompts, providers, tests and results.",
+      "url": "https://www.promptfoo.dev/docs/intro/"
+    },
+    {
+      "reuse": "reference_only",
+      "review_scope": "Deterministic and model-based assertions.",
+      "url": "https://www.promptfoo.dev/docs/configuration/expected-outputs/"
+    }
+  ],
+  "status": "validated",
+  "title": "Apprendimento e verifica delle competenze ACO",
+  "verification": {
+    "benchmark_cases": 20,
+    "level": "deterministic_procedural_contract",
+    "max_critical_failures": 0,
+    "method_files": [
+      "skills/aco-office-concierge/references/competencies/skill-evaluation/METHOD.md",
+      "skills/aco-office-concierge/references/competencies/skill-evaluation/DECISIONS.md",
+      "skills/aco-office-concierge/references/competencies/skill-evaluation/OUTPUT.md",
+      "skills/aco-office-concierge/references/competencies/skill-evaluation/EXAMPLES.md",
+      "skills/aco-office-concierge/references/competencies/skill-evaluation/EVALS.json",
+      "skills/aco-office-concierge/references/competencies/skill-evaluation/SOURCES.json"
+    ],
+    "minimum_score": 95,
+    "professional_quality_review": "not independently assessed",
+    "third_party_rights": "reference_only"
+  },
+  "version": "1.0.0",
+  "when_to_use": [
+    "Use for technical skill evaluation regression holdout source provenance.",
+    "Select only within shared, product-office, delivery-office and when the task requires this specific method."
+  ]
+}

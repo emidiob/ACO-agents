@@ -1,0 +1,72 @@
+{
+  "failure_modes": [
+    "Output, esito e impatto non sono sinonimi.",
+    "Pesi scelti dal modello senza mandato vanno presentati come scenario, non come valori dell’organizzazione.",
+    "Un programma può essere efficace sul proprio obiettivo e incoerente con un altro programma.",
+    "L’interruzione può essere la scelta corretta quando le assunzioni centrali falliscono.",
+    "Inventing observations, approvals, rights, professional certification or external execution."
+  ],
+  "inputs": [
+    "brief, authorized project scope and non-negotiable constraints",
+    "the available evidence and material unknowns",
+    "format and audience of the required deliverable"
+  ],
+  "method": [
+    "Definisci la decisione e il problema, distinguendo sintomi, vincoli e obiettivi. Verifica quale parte è osservata e quale è un’interpretazione del committente.",
+    "Esplora alternative realmente diverse prima di scegliere un progetto; includi mantenimento, riduzione o interruzione quando pertinenti. Non chiamare strategia una lista di tutte le iniziative desiderabili.",
+    "Per ogni opzione collega attività, output, esito atteso e impatto ipotizzato, esplicitando le assunzioni tra livelli. Un output prodotto non prova da solo un effetto sociale o commerciale.",
+    "Scegli le domande di valutazione rilevanti al contesto: pertinenza, coerenza, efficacia, efficienza, impatto e sostenibilità sono lenti differenti, non sei punteggi obbligatori identici.",
+    "Esplicita vincoli e preferenze decisionali: budget, capacità, tempi, rischi e finalità. Se usi pesi o punteggi, mostrane origine e sensibilità; una tabella non rende oggettiva una preferenza.",
+    "Confronta combinazioni fattibili, dipendenze e costo opportunità. Un progetto economico ma incompatibile con le risorse chiave può essere meno praticabile di uno più caro.",
+    "Definisci un esperimento che possa cambiare la scelta, con soglia decisionale e metodo di raccolta. Non chiamare validazione un’approvazione interna senza evidenza sul bisogno.",
+    "Consegna scelta motivata, alternativa esclusa, condizioni di revisione e criteri di arresto. Documenta cosa è ancora ipotesi invece di proteggere il piano da ogni esito contrario."
+  ],
+  "output_contract": {
+    "must_include": [
+      "result",
+      "source_or_verification_note",
+      "uncertainties",
+      "decision_criteria"
+    ],
+    "reference_method": "skills/aco-office-concierge/references/competencies/strategy-evaluation/OUTPUT.md",
+    "type": "professional_procedural_skill_output"
+  },
+  "rollback_ref": "v1.0.6",
+  "skill_id": "professional.strategy_evaluation",
+  "source_status": "validated_internal",
+  "sources": [
+    {
+      "reuse": "reference_only",
+      "review_scope": "Discovery/definition and development/delivery model.",
+      "url": "https://www.designcouncil.org.uk/resources/the-double-diamond/"
+    },
+    {
+      "reuse": "reference_only",
+      "review_scope": "Purpose and six criteria; Figure 4.2 inspected on PDF page 39 / printed 37.",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/03/applying-evaluation-criteria-thoughtfully_45a54ea7/543e84ed-en.pdf"
+    }
+  ],
+  "status": "validated",
+  "title": "Strategia e valutazione dei programmi",
+  "verification": {
+    "benchmark_cases": 20,
+    "level": "deterministic_procedural_contract",
+    "max_critical_failures": 0,
+    "method_files": [
+      "skills/aco-office-concierge/references/competencies/strategy-evaluation/METHOD.md",
+      "skills/aco-office-concierge/references/competencies/strategy-evaluation/DECISIONS.md",
+      "skills/aco-office-concierge/references/competencies/strategy-evaluation/OUTPUT.md",
+      "skills/aco-office-concierge/references/competencies/strategy-evaluation/EXAMPLES.md",
+      "skills/aco-office-concierge/references/competencies/strategy-evaluation/EVALS.json",
+      "skills/aco-office-concierge/references/competencies/strategy-evaluation/SOURCES.json"
+    ],
+    "minimum_score": 95,
+    "professional_quality_review": "not independently assessed",
+    "third_party_rights": "reference_only"
+  },
+  "version": "1.0.0",
+  "when_to_use": [
+    "Use for strategy program evaluation portfolio budget tradeoffs.",
+    "Select only within organization-office, commercial-office, delivery-office and when the task requires this specific method."
+  ]
+}

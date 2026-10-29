@@ -11,13 +11,13 @@ class Evidence105Tests(unittest.TestCase):
         cls.p=json.loads((ROOT/'config/skill-policy.json').read_text(encoding='utf-8'))
 
     def test_104_baseline_roles_and_new_entrypoints(self):
-        self.assertEqual((ROOT/'VERSION').read_text().strip(),'1.0.6')
+        self.assertEqual((ROOT/'VERSION').read_text().strip(),'1.0.7')
         for name in ('aco','aco-genjutsu','aco-video','aco-image','aco-capture','aco-skills','aco-help'):
             self.assertTrue((ROOT/'skills'/name/'SKILL.md').exists())
 
     def test_all_technical_registry_bodies(self):
         v=skill_registry_check(ROOT)
-        self.assertEqual((v['status'],v['skills'],v['active_skills'],v['candidate_skills']),('valid',44,14,30))
+        self.assertEqual((v['status'],v['skills'],v['active_skills'],v['candidate_skills']),('valid',64,34,30))
         self.assertEqual(v['errors'],[])
 
     def test_previous_active_skills_kept(self):

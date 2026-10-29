@@ -1,0 +1,72 @@
+{
+  "failure_modes": [
+    "Una camera ferma va dichiarata se verificata; un soggetto che attraversa il quadro non dimostra una carrellata.",
+    "Un frame prima e uno dopo un’occlusione non provano il percorso dell’oggetto.",
+    "Un’omissione richiesta non è una regressione; un’omissione nascosta sì.",
+    "La copertura del registro è misurabile; la completezza rispetto a una scena arbitraria richiede osservazione competente.",
+    "Inventing observations, approvals, rights, professional certification or external execution."
+  ],
+  "inputs": [
+    "brief, authorized project scope and non-negotiable constraints",
+    "the available evidence and material unknowns",
+    "format and audience of the required deliverable"
+  ],
+  "method": [
+    "Carica il metodo motion-transfer canonico di ACO e verifica che esista un video autorizzato. Senza video puoi preparare il protocollo, ma non attribuire movimenti a una reference inesistente.",
+    "Registra durata, rate, eventuali tagli, intervalli realmente ispezionati e disponibilità audio. Prima passata continua, seconda sui contatti o cambi di direzione ambigui; i frame isolati non attestano la continuità.",
+    "Assegna identificatori separati a soggetto, oggetti, camera ed eventuali effetti. Definisci se destra/sinistra è anatomica o sullo schermo; conserva l’orientamento durante il trasferimento.",
+    "Segmenta gli eventi osservabili in stato iniziale, anticipazione, azione, contatto, rilascio e assestamento dove presenti. Registra anche pause e simultaneità; non imporre fasi che il materiale non mostra.",
+    "Collega ogni evento a frame effettivamente disponibili e marca l’occlusione come incertezza. Non riempire un intervallo non visto con un gesto plausibile; restringi il prompt a ciò che il supporto permette.",
+    "Mappa ogni attore e oggetto sulla nuova scena e verifica compatibilità di scala, presa, arti e appoggio. Se il nuovo soggetto non può eseguire un contatto, proponi una modifica esplicita invece di omettere il vincolo.",
+    "Conserva tempi sorgente e destinazione separati. Il prompt finale deve esprimere ogni evento trasferito, mentre un’omissione richiede una richiesta esplicita e motivata; non usare «stesso movimento» come sostituto della descrizione.",
+    "Confronta fonte, registro e prompt evento per evento. Se arriva un video generato, confronta anche ordine, direzione, contatto e stato finale; il controllo testuale non certifica il risultato del modello video."
+  ],
+  "output_contract": {
+    "must_include": [
+      "result",
+      "source_or_verification_note",
+      "uncertainties",
+      "decision_criteria"
+    ],
+    "reference_method": "skills/aco-office-concierge/references/competencies/genjutsu-motion/OUTPUT.md",
+    "type": "professional_procedural_skill_output"
+  },
+  "rollback_ref": "v1.0.6",
+  "skill_id": "professional.genjutsu_motion",
+  "source_status": "validated_internal",
+  "sources": [
+    {
+      "reuse": "reference_only",
+      "review_scope": "Complete canonical movement method.",
+      "url": "https://github.com/emidiob/ACO-agents/blob/08a285ea747d283d65919237ba926803a064dab1/skills/aco-genjutsu/references/motion-transfer.md"
+    },
+    {
+      "reuse": "reference_only",
+      "review_scope": "RationalTime and TimeRange API definitions in versioned documentation.",
+      "url": "https://opentimelineio.readthedocs.io/en/v0.17.0/api/python/opentimelineio.opentime.html"
+    }
+  ],
+  "status": "validated",
+  "title": "Genjutsu: osservazione e trasferimento del movimento",
+  "verification": {
+    "benchmark_cases": 20,
+    "level": "deterministic_procedural_contract",
+    "max_critical_failures": 0,
+    "method_files": [
+      "skills/aco-office-concierge/references/competencies/genjutsu-motion/METHOD.md",
+      "skills/aco-office-concierge/references/competencies/genjutsu-motion/DECISIONS.md",
+      "skills/aco-office-concierge/references/competencies/genjutsu-motion/OUTPUT.md",
+      "skills/aco-office-concierge/references/competencies/genjutsu-motion/EXAMPLES.md",
+      "skills/aco-office-concierge/references/competencies/genjutsu-motion/EVALS.json",
+      "skills/aco-office-concierge/references/competencies/genjutsu-motion/SOURCES.json"
+    ],
+    "minimum_score": 95,
+    "professional_quality_review": "not independently assessed",
+    "third_party_rights": "reference_only"
+  },
+  "version": "1.0.0",
+  "when_to_use": [
+    "Use for Genjutsu reference video motion transfer camera subject events.",
+    "Select only within production-office, agency-office and when the task requires this specific method."
+  ]
+}

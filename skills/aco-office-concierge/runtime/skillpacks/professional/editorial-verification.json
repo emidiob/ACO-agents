@@ -1,0 +1,67 @@
+{
+  "failure_modes": [
+    "Numero di link e indipendenza delle fonti non sono equivalenti.",
+    "Una fonte vera può non sostenere la frase che le viene attribuita.",
+    "«Non verificato» non equivale a «falso»; «non trovato» non equivale a «inesistente».",
+    "Una sintesi può eliminare dettagli, non condizioni che cambiano il significato.",
+    "Inventing observations, approvals, rights, professional certification or external execution."
+  ],
+  "inputs": [
+    "brief, authorized project scope and non-negotiable constraints",
+    "the available evidence and material unknowns",
+    "format and audience of the required deliverable"
+  ],
+  "method": [
+    "Definisci la versione del documento e l’obiettivo della revisione: accuratezza, fedeltà, completezza o pubblicazione. Non riscrivere una fonte per renderla coerente con il testo.",
+    "Scomponi in affermazioni verificabili: evento, soggetto, data, quantità, attribuzione, relazione causale e citazione. Una frase può contenere più affermazioni con livelli di prova differenti.",
+    "Per ciascuna collega la fonte alla posizione pertinente, distinguendo fonte primaria, resoconto e ripetizione. Due articoli che riprendono lo stesso comunicato costituiscono una sola origine informativa per quel fatto.",
+    "Controlla ambito e tempo: un progetto annunciato non è completato, una stima non è un consuntivo e un dato di campione non descrive automaticamente la popolazione.",
+    "Per citazioni e traduzioni confronta il contesto e il significato. Correggi forma solo entro il mandato; una citazione diretta non va «migliorata» introducendo parole o certezza assenti.",
+    "Cerca controevidenza e omissioni che cambiano la lettura. Quando le fonti divergono, rendi visibile il disaccordo e spiega quale verifica manca.",
+    "Rivedi conservando il livello di certezza sostenuto. Se un fatto resta irrisolto, attribuiscilo, qualificalo o rimuovilo con motivazione, senza inserire un fatto alternativo plausibile.",
+    "Consegna versione corretta, registro delle modifiche sostanziali e questioni aperte. Per documenti già pubblicati, prepara una correzione trasparente senza alterare silenziosamente la storia."
+  ],
+  "output_contract": {
+    "must_include": [
+      "result",
+      "source_or_verification_note",
+      "uncertainties",
+      "decision_criteria"
+    ],
+    "reference_method": "skills/aco-office-concierge/references/competencies/editorial-verification/OUTPUT.md",
+    "type": "professional_procedural_skill_output"
+  },
+  "rollback_ref": "v1.0.6",
+  "skill_id": "professional.editorial_verification",
+  "source_status": "validated_internal",
+  "sources": [
+    {
+      "reuse": "reference_only",
+      "review_scope": "Accuracy, sourcing, quotation and correction guidance.",
+      "url": "https://reutersagency.com/about/standards-values/"
+    }
+  ],
+  "status": "validated",
+  "title": "Giornalismo, editing e revisione documentale",
+  "verification": {
+    "benchmark_cases": 20,
+    "level": "deterministic_procedural_contract",
+    "max_critical_failures": 0,
+    "method_files": [
+      "skills/aco-office-concierge/references/competencies/editorial-verification/METHOD.md",
+      "skills/aco-office-concierge/references/competencies/editorial-verification/DECISIONS.md",
+      "skills/aco-office-concierge/references/competencies/editorial-verification/OUTPUT.md",
+      "skills/aco-office-concierge/references/competencies/editorial-verification/EXAMPLES.md",
+      "skills/aco-office-concierge/references/competencies/editorial-verification/EVALS.json",
+      "skills/aco-office-concierge/references/competencies/editorial-verification/SOURCES.json"
+    ],
+    "minimum_score": 95,
+    "professional_quality_review": "not independently assessed",
+    "third_party_rights": "reference_only"
+  },
+  "version": "1.0.0",
+  "when_to_use": [
+    "Use for journalism editorial fact checking source independence claims.",
+    "Select only within publishing-office, administration-office, legal-office, agency-office and when the task requires this specific method."
+  ]
+}

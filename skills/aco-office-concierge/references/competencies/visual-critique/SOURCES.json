@@ -1,0 +1,12 @@
+{
+  "source_ids": [
+    "impeccable",
+    "shadcn",
+    "react-bits"
+  ],
+  "canonical_source_register": "../SOURCES.json",
+  "existing_aco_paths": [
+    "skills/aco-office-concierge/references/playbooks/visual-direction.md"
+  ],
+  "upstream_content_bundled": false
+}

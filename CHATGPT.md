@@ -5,7 +5,12 @@
 If a user types `/aco`, route to the Concierge using the available authorized ACO source; if `/aco-genjutsu`, use Production Office / `ai_video_prompt_adapter` and the prompt-only reference-video-replica candidate on **explicit** opt-in. Other entrypoints: `/aco-video`, `/aco-image`, `/aco-capture`, `/aco-skills`, `/aco-help`; see `docs/ACO-COMMANDS.md`. Never claim these are built-in ChatGPT slash commands, independent agents, or provider activations. Describe missing source access and observed checks. The technical registry remains fail-closed for unvalidated candidates outside explicit inspection.
 
 
-Version 1.0.6. This is a public skill library, not an installed plugin or a source of access permissions.
+Version 1.0.7. This is a public skill library, not an installed plugin or a source of access permissions.
+
+The office-shared [Competence Library](docs/COMPETENCE-LIBRARY.md) adds
+20 professional methods and matching, procedurally `validated` technical skillpacks.
+Consult only the task-relevant entries; independent professional quality has not
+been certified. Original 30 unverified candidates remain gated.
 
 Read `skills/aco-office-concierge/SKILL.md`, its `references/protocols/CONCIERGE.md`, and the needed portion of `ACO-INDEX.md`; use `catalog.json` only as a path lookup fallback. Select the smallest relevant office and read its SKILL.md plus exact role methods. Pin a repository revision when possible and record it in the private session.
 

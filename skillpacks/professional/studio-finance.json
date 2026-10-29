@@ -1,0 +1,72 @@
+{
+  "failure_modes": [
+    "Un ordine da €2.000 già pagato per €500 ha residuo impegnato €1.500, non €2.000 da sommare al pagamento.",
+    "Margine sul ricavo e ricarico sul costo sono rapporti diversi.",
+    "Un acconto migliora cassa ma non è automaticamente ricavo aggiuntivo.",
+    "Una valuta o imposta sconosciuta non va ricavata dall’indirizzo del cliente.",
+    "Inventing observations, approvals, rights, professional certification or external execution."
+  ],
+  "inputs": [
+    "brief, authorized project scope and non-negotiable constraints",
+    "the available evidence and material unknowns",
+    "format and audience of the required deliverable"
+  ],
+  "method": [
+    "Dichiara valuta, periodo, perimetro, trattamento di imposte e livello dei dati. Non assumere IVA, cambio o regime fiscale; lascia l’ipotesi esplicita e separata dal calcolo.",
+    "Separa ricavi concordati, ricavi attesi e incassi per data. Allo stesso modo distingue spesa sostenuta, impegno residuo e stima non ancora impegnata, evitando doppi conteggi.",
+    "Costruisci il preventivo con quantità, unità, costo e provenienza; registra costi interni anche se non generano una fattura immediata, quando sono pertinenti al margine.",
+    "Calcola il costo finale previsto come sostenuto più residuo impegnato più residuo stimato non sovrapposto. Confrontalo con baseline e ricavi nello stesso perimetro.",
+    "Costruisci il flusso di cassa per periodo con saldo iniziale, incassi e pagamenti effettivi o previsti. Profitto positivo non esclude un saldo negativo prima dell’incasso.",
+    "Usa aritmetica decimale e formule trasparenti; riconcilia subtotali, segni, unità e collegamenti. Se un totale non torna, quantifica la differenza e risali al dato, non aggiungere una voce di pareggio.",
+    "Simula separatamente aumento costi, ritardo incassi e perdita di scope. Evita di presentare lo scenario favorevole come previsione certa e non usare percentuali prive di base.",
+    "Consegna budget, consuntivo, cassa e domande per il commercialista con ipotesi e fonti. Nessun pagamento, finanziamento o decisione fiscale viene autorizzato dal modello."
+  ],
+  "output_contract": {
+    "must_include": [
+      "result",
+      "source_or_verification_note",
+      "uncertainties",
+      "decision_criteria"
+    ],
+    "reference_method": "skills/aco-office-concierge/references/competencies/studio-finance/OUTPUT.md",
+    "type": "professional_procedural_skill_output"
+  },
+  "rollback_ref": "v1.0.6",
+  "skill_id": "professional.studio_finance",
+  "source_status": "validated_internal",
+  "sources": [
+    {
+      "reuse": "reference_only",
+      "review_scope": "Formula audit and model integrity guidance, lines 1–180.",
+      "url": "https://github.com/anthropics/financial-services/blob/main/plugins/vertical-plugins/financial-analysis/skills/audit-xls/SKILL.md"
+    },
+    {
+      "reuse": "reference_only",
+      "review_scope": "Planning/control, change, verification/validation and transition sections; HTML version.",
+      "url": "https://projectdelivery.gov.uk/library-products/government-functional-standard-govs-002-project-delivery/"
+    }
+  ],
+  "status": "validated",
+  "title": "Finanza di studio e controllo economico",
+  "verification": {
+    "benchmark_cases": 20,
+    "level": "deterministic_procedural_contract",
+    "max_critical_failures": 0,
+    "method_files": [
+      "skills/aco-office-concierge/references/competencies/studio-finance/METHOD.md",
+      "skills/aco-office-concierge/references/competencies/studio-finance/DECISIONS.md",
+      "skills/aco-office-concierge/references/competencies/studio-finance/OUTPUT.md",
+      "skills/aco-office-concierge/references/competencies/studio-finance/EXAMPLES.md",
+      "skills/aco-office-concierge/references/competencies/studio-finance/EVALS.json",
+      "skills/aco-office-concierge/references/competencies/studio-finance/SOURCES.json"
+    ],
+    "minimum_score": 95,
+    "professional_quality_review": "not independently assessed",
+    "third_party_rights": "reference_only"
+  },
+  "version": "1.0.0",
+  "when_to_use": [
+    "Use for financial studio budgeting cost margin cash flow.",
+    "Select only within finance-office, commercial-office, production-office and when the task requires this specific method."
+  ]
+}

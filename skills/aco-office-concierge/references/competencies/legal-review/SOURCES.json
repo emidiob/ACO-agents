@@ -1,0 +1,12 @@
+{
+  "source_ids": [
+    "anthropic-legal",
+    "docassemble",
+    "gdpr"
+  ],
+  "canonical_source_register": "../SOURCES.json",
+  "existing_aco_paths": [
+    "skills/aco-legal-office/references/agents/document-review-specialist.md"
+  ],
+  "upstream_content_bundled": false
+}

@@ -1,0 +1,77 @@
+{
+  "failure_modes": [
+    "Una data più recente può descrivere un movimento precedente: considera data dell’evento e data del documento.",
+    "Il titolo dell’artista prevale come denominazione attribuita, ma non cancella titoli storici necessari alla ricerca.",
+    "Un vocabolo controllato va proposto, non imposto al significato dell’opera.",
+    "Spectrum rimane una fonte da consultare: il presente modello è originale e non dichiara conformità o autorizzazione derivativa.",
+    "Inventing observations, approvals, rights, professional certification or external execution."
+  ],
+  "inputs": [
+    "brief, authorized project scope and non-negotiable constraints",
+    "the available evidence and material unknowns",
+    "format and audience of the required deliverable"
+  ],
+  "method": [
+    "Definisci l’oggetto della scheda: opera, edizione, componente, versione software o documentazione. Assegna un identificatore locale stabile senza sostituire identificativi storici ancora utili.",
+    "Raccogli le fonti in un registro con data, autore e tipo di attestazione. Un’email, un’etichetta e un documento di trasporto possono riferirsi a momenti o entità diversi.",
+    "Per ogni campo conserva valore, fonte, data di validità e stato: confermato, attribuito, da riconciliare o sconosciuto. Non risolvere discrepanze scegliendo il valore più recente senza verificarne l’autorità.",
+    "Separa descrizione artistica, dati materiali, proprietà e diritti. La presenza fisica o una fotografia non prova titolarità o licenza di esposizione.",
+    "Collega componenti e versioni con relazioni esplicite; un file sostituito non è automaticamente una nuova opera. Registra dipendenze tecniche e condizioni d’installazione documentate.",
+    "Aggiungi, dove utile, termini controllati con identificatore e stato di riconciliazione, mantenendo il testo libero dell’artista. Non trasformare un suggerimento lessicale in attribuzione certa.",
+    "Prima di ingresso, uscita o prestito verifica identità, ubicazione, responsabilità, condizione e documenti necessari secondo il caso. Un campo mancante critico blocca la consegna, non viene riempito con un default.",
+    "Consegna una scheda riconciliata e un elenco di conflitti irrisolti. Conserva la cronologia delle correzioni; non eliminare i documenti discordanti. Per restauro fisico o conservazione specialistica coinvolgi chi è qualificato."
+  ],
+  "output_contract": {
+    "must_include": [
+      "result",
+      "source_or_verification_note",
+      "uncertainties",
+      "decision_criteria"
+    ],
+    "reference_method": "skills/aco-office-concierge/references/competencies/collections-records/OUTPUT.md",
+    "type": "professional_procedural_skill_output"
+  },
+  "rollback_ref": "v1.0.6",
+  "skill_id": "professional.collections_records",
+  "source_status": "validated_internal",
+  "sources": [
+    {
+      "reuse": "reference_only",
+      "review_scope": "Inventory procedure overview.",
+      "url": "https://collectionstrust.org.uk/spectrum/primary-procedures/inventory/"
+    },
+    {
+      "reuse": "reference_only",
+      "review_scope": "Licensing restrictions and permission requirements.",
+      "url": "https://collectionstrust.org.uk/spectrum/spectrum-licensing/"
+    },
+    {
+      "reuse": "reference_only",
+      "review_scope": "AAT/TGN/ULAN data-service and licensing overview.",
+      "url": "https://www.getty.edu/research-conservation/tools-databases/vocabularies/data-services/"
+    }
+  ],
+  "status": "validated",
+  "title": "Archivi, opere e conservazione documentale",
+  "verification": {
+    "benchmark_cases": 20,
+    "level": "deterministic_procedural_contract",
+    "max_critical_failures": 0,
+    "method_files": [
+      "skills/aco-office-concierge/references/competencies/collections-records/METHOD.md",
+      "skills/aco-office-concierge/references/competencies/collections-records/DECISIONS.md",
+      "skills/aco-office-concierge/references/competencies/collections-records/OUTPUT.md",
+      "skills/aco-office-concierge/references/competencies/collections-records/EXAMPLES.md",
+      "skills/aco-office-concierge/references/competencies/collections-records/EVALS.json",
+      "skills/aco-office-concierge/references/competencies/collections-records/SOURCES.json"
+    ],
+    "minimum_score": 95,
+    "professional_quality_review": "not independently assessed",
+    "third_party_rights": "reference_only"
+  },
+  "version": "1.0.0",
+  "when_to_use": [
+    "Use for museum collection archive catalogue provenance conflicting records.",
+    "Select only within artist-office, organization-office, administration-office and when the task requires this specific method."
+  ]
+}

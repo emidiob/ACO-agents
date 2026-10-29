@@ -1,0 +1,12 @@
+{
+  "source_ids": [
+    "aco-genjutsu",
+    "otio"
+  ],
+  "canonical_source_register": "../SOURCES.json",
+  "existing_aco_paths": [
+    "skills/aco-genjutsu/references/motion-transfer.md",
+    "skills/aco-genjutsu/references/visual-evidence.md"
+  ],
+  "upstream_content_bundled": false
+}

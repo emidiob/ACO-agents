@@ -212,9 +212,13 @@ def validate() -> dict:
     bootstrap_gate=bootstrap_check(ROOT)
     if bootstrap_gate.get('status')!='valid': errors.append('ACO 1.0 bootstrap gate failed')
     skill_registry_gate=skill_registry_check(ROOT)
-    if skill_registry_gate.get('status')!='valid' or skill_registry_gate.get('active_skills')!=14 or skill_registry_gate.get('candidate_skills')!=30: errors.append('ACO 1.0 skill registry gate failed')
+    if skill_registry_gate.get('status')!='valid' or skill_registry_gate.get('active_skills')!=34 or skill_registry_gate.get('candidate_skills')!=30: errors.append('ACO 1.0 skill registry gate failed')
     skill_gate=skill_benchmark(ROOT/'config/skill-benchmark.json',ROOT)
     if skill_gate.get('status')!='passed' or skill_gate.get('critical_failures')!=0 or skill_gate.get('score')!=100.0: errors.append('ACO 1.0 skill benchmark failed')
+    from professional_skill_validation import run as validate_professional_skills
+    professional_gate=validate_professional_skills(ROOT)
+    if professional_gate.get('status')!='passed' or professional_gate.get('skills')!=20 or professional_gate.get('total_cases')!=400 or professional_gate.get('critical_failures')!=0 or professional_gate.get('score',0)<95.0:
+        errors.append('ACO 1.0.7 professional skillpack procedural gate failed')
     token_gate=token_economy_benchmark(ROOT/'config/token-economy-benchmark.json',ROOT)
     if token_gate.get('status')!='passed' or token_gate.get('critical_failures')!=0 or token_gate.get('median_input_reduction',0)<0.70: errors.append('ACO 1.0 token economy benchmark failed')
     os_gate=os_benchmark(ROOT/'config/aco-os-benchmark.json',ROOT)
@@ -237,7 +241,7 @@ def validate() -> dict:
     for rel,expected in final_sem.get('files',{}).items():
         if rel=='registry/skills.json':
             current=read_json(ROOT/rel).get('skills',[])
-            legacy=[x for x in current if not str(x.get('skill_id','')).startswith(('video.seedance.','image.'))]
+            legacy=[x for x in current if not str(x.get('skill_id','')).startswith(('video.seedance.','image.','professional.'))]
             canonical=hashlib.sha256(json.dumps(legacy,sort_keys=True,separators=(',',':'),ensure_ascii=False).encode()).hexdigest()
             if canonical!='9e33b4eabd566db04659e56909ea82003c23bd769cf07e3bac72d776680ebe6d':errors.append('ACO 1.0 original skills changed in 1.0.1')
         elif rel in {'config/skill-policy.json', 'registry/bootstrap.json', 'config/token-policy.json'}:

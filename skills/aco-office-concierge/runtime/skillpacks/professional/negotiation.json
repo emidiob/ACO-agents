@@ -1,0 +1,72 @@
+{
+  "failure_modes": [
+    "Un prezzo più basso con meno scope non è la stessa offerta scontata.",
+    "Esclusiva, territorio e durata vanno separati: «tutti i diritti» nasconde più variabili.",
+    "Un’alternativa debole può imporre prudenza, non giustifica un bluff.",
+    "La relazione conta, ma non cancella capacità, costi o autorizzazioni.",
+    "Inventing observations, approvals, rights, professional certification or external execution."
+  ],
+  "inputs": [
+    "brief, authorized project scope and non-negotiable constraints",
+    "the available evidence and material unknowns",
+    "format and audience of the required deliverable"
+  ],
+  "method": [
+    "Definisci mandato e autorità: chi può proporre, concedere e accettare; separa obiettivo, limite e preferenza. Non negoziare una condizione che l’utente non ha autorizzato a cambiare.",
+    "Mappa posizioni dichiarate e possibili interessi sottostanti, etichettando questi ultimi come ipotesi da verificare. «Prezzo troppo alto» può riguardare cassa, rischio o valore percepito.",
+    "Documenta l’alternativa all’accordo con probabilità, costi e tempi realistici. Un’alternativa desiderata ma non disponibile non è una leva da presentare alla controparte.",
+    "Costruisci una mappa di variabili: prezzo, scope, tempi, revisioni, pagamenti, diritti, esclusiva e crediti. Distingui ciò che costa molto a una parte e poco all’altra.",
+    "Prepara tre pacchetti coerenti, ciascuno con uno scambio esplicito. Una concessione importante deve ottenere una contropartita pertinente, non solo una speranza di relazione futura.",
+    "Usa criteri esterni verificabili quando esistono: costi, capacità, benchmark pertinenti, uso richiesto. Non inventare tariffe standard, concorrenza o offerte alternative.",
+    "Prevedi domande, obiezioni e punti di arresto. La scelta tra accordo e alternativa dipende dal valore complessivo e dall’esposizione, non dal solo prezzo nominale.",
+    "Dopo il confronto registra accordato, da confermare e respinto; il recap non può ampliare l’accordo. Sottoponi clausole e diritti sostanziali al controllo competente prima di firmare."
+  ],
+  "output_contract": {
+    "must_include": [
+      "result",
+      "source_or_verification_note",
+      "uncertainties",
+      "decision_criteria"
+    ],
+    "reference_method": "skills/aco-office-concierge/references/competencies/negotiation/OUTPUT.md",
+    "type": "professional_procedural_skill_output"
+  },
+  "rollback_ref": "v1.0.6",
+  "skill_id": "professional.negotiation",
+  "source_status": "validated_internal",
+  "sources": [
+    {
+      "reuse": "reference_only",
+      "review_scope": "Interests, options, objective criteria and alternatives.",
+      "url": "https://www.pon.harvard.edu/daily/negotiation-skills-daily/principled-negotiation-focus-interests-create-value/"
+    },
+    {
+      "reuse": "reference_only",
+      "review_scope": "Intake, whole-contract review and deviation triage, lines 1–230.",
+      "url": "https://github.com/anthropics/knowledge-work-plugins/blob/main/legal/skills/review-contract/SKILL.md"
+    }
+  ],
+  "status": "validated",
+  "title": "Negoziazione, offerte e partnership",
+  "verification": {
+    "benchmark_cases": 20,
+    "level": "deterministic_procedural_contract",
+    "max_critical_failures": 0,
+    "method_files": [
+      "skills/aco-office-concierge/references/competencies/negotiation/METHOD.md",
+      "skills/aco-office-concierge/references/competencies/negotiation/DECISIONS.md",
+      "skills/aco-office-concierge/references/competencies/negotiation/OUTPUT.md",
+      "skills/aco-office-concierge/references/competencies/negotiation/EXAMPLES.md",
+      "skills/aco-office-concierge/references/competencies/negotiation/EVALS.json",
+      "skills/aco-office-concierge/references/competencies/negotiation/SOURCES.json"
+    ],
+    "minimum_score": 95,
+    "professional_quality_review": "not independently assessed",
+    "third_party_rights": "reference_only"
+  },
+  "version": "1.0.0",
+  "when_to_use": [
+    "Use for commercial negotiation partnership offers scope price rights.",
+    "Select only within commercial-office, legal-office, artist-office and when the task requires this specific method."
+  ]
+}

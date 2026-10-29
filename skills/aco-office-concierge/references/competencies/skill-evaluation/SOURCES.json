@@ -1,0 +1,11 @@
+{
+  "source_ids": [
+    "promptfoo",
+    "promptfoo-assertions"
+  ],
+  "canonical_source_register": "../SOURCES.json",
+  "existing_aco_paths": [
+    "skills/aco-office-concierge/references/playbooks/QUALITY-AND-EVALUATION.md"
+  ],
+  "upstream_content_bundled": false
+}

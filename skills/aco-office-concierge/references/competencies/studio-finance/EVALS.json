@@ -1,0 +1,45 @@
+{
+  "competency_id": "studio-finance",
+  "method_version": "0.3.0",
+  "qualitative_status": "development_examples_not_independent_validation",
+  "independent_validation": false,
+  "same_author": true,
+  "worked_examples": [
+    {
+      "brief": "Produzione sintetica: ricavo €10.000; baseline costi €7.000; sostenuto €3.000; impegni residui €2.000; stime residue €2.500. Saldo iniziale €1.000, acconto €3.000, pagamenti iniziali €4.500, saldo cliente €7.000 il mese dopo.",
+      "weak": "Profitto €3.000 e nessun problema perché il ricavo supera il costo.",
+      "application": "Costo finale previsto €7.500, scostamento +€500, margine €2.500 pari al 25% del ricavo. Cassa dopo il primo periodo: €1.000+€3.000−€4.500=−€500. Il progetto può essere redditizio e richiedere comunque una copertura temporanea. Il ritardo dell’ultimo incasso prolunga il fabbisogno, non modifica da solo il margine.",
+      "commentary": "Il caso distingue redditività prevista e liquidità, con numeri riproducibili nello script.",
+      "limits": "Imposte, costo del capitale e regime contabile sono esclusi dal caso, non presunti nulli nel mondo reale."
+    },
+    {
+      "brief": "Fattura di fornitore €2.000, €500 già pagati. Il foglio somma €500 sostenuti e €2.000 impegnati.",
+      "weak": "Totale costo finale €2.500.",
+      "application": "Se i €2.000 sono il totale dell’ordine e non il residuo, registrare €500 sostenuti e €1.500 ancora impegnati: totale €2.000. Se il campo invece descrive un ordine aggiuntivo, chiedere la relazione prima di correggere.",
+      "commentary": "Il controllo aritmetico dipende dalla semantica della colonna, non solo dalla somma.",
+      "limits": "Non si altera una contabilità reale senza identificare i documenti e il loro stato."
+    }
+  ],
+  "rubric": {
+    "criteria": [
+      "Totali riconciliati con Decimal e assenza di doppio conteggio.",
+      "Importi di scenari separati da dati documentati.",
+      "Margine e cassa non confusi.",
+      "Ipotesi fiscali e di cambio non inventate."
+    ],
+    "rating_anchors": {
+      "insufficient": "Contraddice un vincolo critico o inventa un dato materiale.",
+      "acceptable": "Rispetta il compito e i vincoli, ma alcune scelte o incertezze non sono ancora ben sviluppate.",
+      "strong": "Decisioni specifiche, prove tracciabili, alternative pertinenti e limiti espliciti; revisione esterna ancora necessaria."
+    },
+    "critical_failures": [
+      "Inventare prove o risultati di test.",
+      "Confondere proposta e approvazione / esecuzione.",
+      "Violare diritti, riservatezza o perimetro autorizzato."
+    ]
+  },
+  "new_case_brief": "Riconciliare un budget nuovo con nota di credito, valuta diversa e acconto: mantenere le incognite invece di usare un cambio o un trattamento fiscale impliciti.",
+  "new_case_status": "not_run",
+  "new_case_is_independent_holdout": false,
+  "promotion_requirements": "Curated professional method; not a technical-skill activation. If later proposed as a technical skill, preserve ACO separate policy: >=20 benchmark cases, >=95 score, 0 critical failures, explicit approval, rollback reference, frozen first run. The two authored examples do not establish independent quality validation."
+}
