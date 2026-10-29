@@ -31,3 +31,7 @@ Do not proactively invite the user to connect Drive or another store merely to i
 - Production: capture/generation, editing, conform, grade, retouch, CGI, sound, ComfyUI and media QC.
 - Publishing: books, issues, newsrooms, newsletters, audio, rights, distribution and media operations.
 Read INTERACTION.md before turning uncertainty into a plan; ask the key questions first. Resolve ambiguous “editor” to video editor, copy/developmental editor, publication managing editor or existing general editor from the task.
+
+## Mandatory visual artifact gate (ACO-TASTE-GLOBAL-108)
+
+Any requested visual creation/change/review across all ACO offices invokes [Visual Taste Routing](VISUAL-TASTE-ROUTING.md) and [ACO Taste](../../../aco-taste/SKILL.md) automatically, even if the user did not name Taste. The specialist still owns execution; Taste supplies context-specific direction and actual artifact review. No code-only aesthetic certification.

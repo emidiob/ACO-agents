@@ -1,0 +1,9 @@
+{
+ "name":"Publishing Studio","scope":"one site",
+ "constraints":["Use the approved logo; do not replace the typographic identity"],
+ "evidence":[
+  {"role":"paper","value":"#ede8da","source":"approved brand sheet","scope":"site","confidence":"confirmed"},
+  {"role":"heading","value":"Existing typeface","source":"site design brief","scope":"site","confidence":"confirmed"},
+  {"role":"accent","value":"looks green","source":"one screenshot","scope":"hero","confidence":"guess"}
+ ]
+}

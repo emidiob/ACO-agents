@@ -27,7 +27,7 @@ def _semantic_json_sha(path: Path) -> str:
 
 class ExactScopeAuthorization073Tests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(VERSION,'1.0.7')
+        self.assertEqual(VERSION,'1.0.8')
 
     def test_legacy_boolean_is_not_authorization(self):
         r=context_plan({'mode':'FULL','cross_scope_authorized':True,'sources':[
@@ -128,7 +128,7 @@ class RegressionAndShape073Tests(unittest.TestCase):
         resources=json.loads((ROOT/'skills/aco-office-concierge/references/resources/REGISTRY.json').read_text())
         workflows=json.loads((ROOT/'skills/aco-office-concierge/references/WORKFLOWS.json').read_text())
         self.assertEqual(cat['role_count'],363)
-        self.assertEqual(cat['skill_count'],25)
+        self.assertEqual(cat['skill_count'],26)
         self.assertEqual(len(resources['resources']),99)
         self.assertEqual(len(workflows['workflows']),61)
 

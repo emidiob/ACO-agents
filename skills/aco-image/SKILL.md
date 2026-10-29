@@ -18,3 +18,7 @@ In a full ACO runtime the Nano Banana and Seedream adapters are optional technic
 Read [project contract](references/project-contract.md) before persistent writes. In a full ACO installation also follow its COMPACT-MEMORY.md protocol; standalone use does not require sibling skills. Keep private media outside the public library. Claude Code and Codex (including their VS Code extensions) use the same method; VS Code itself is not an agent host.
 
 [Portable workflow](references/portable-workflow.md) explains local reference inventories, standalone installation and verification boundaries.
+
+## Automatic visual-taste gate (ACO-TASTE-GLOBAL-108)
+
+When this task produces, edits or reviews a visual artifact, load the automatic cross-office Taste contract and ACO Taste skill **without requiring the user to invoke it**. Use the appropriate medium method and inspect real output. Nonvisual work stays direct; exact small changes preserve approved design.

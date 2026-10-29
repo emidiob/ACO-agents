@@ -31,3 +31,7 @@ professional method helps the task. Use the relevant office mapping; load the sm
 set on demand. Curated methods and the matching procedural `validated` skillpacks need no
 experimental opt-in, but source rights, client scope, approvals and uncertain conclusions
 remain binding. Original 30 technical candidates remain gated.
+
+## Visual quality always on (ACO-TASTE-GLOBAL-108)
+
+For visual deliverables across offices, invoke [ACO Taste Intelligence](skills/aco-taste/SKILL.md) with the shared [visual gate](skills/aco-office-concierge/references/protocols/VISUAL-TASTE-ROUTING.md) automatically before visual decisions and again before completion; this applies to photo, generated image, video, graphics, UI, web, slides, documents, 3D and motion, without `/aco-taste`. For small edits use proportional inspection, not a forced redesign.

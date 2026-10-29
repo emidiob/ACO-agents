@@ -1,0 +1,1206 @@
+{
+  "schema_version": 1,
+  "kind": "ACO-original visual-material repertoire",
+  "directions": [
+    {
+      "id": "aco-ledger-field-notes",
+      "title": "Ledgerfield / Field Notes",
+      "family": "ledger",
+      "layout": "asymmetric-ledger",
+      "surface": "light",
+      "material": "ink on ledger paper",
+      "palette": {
+        "paper": "#F2F0EA",
+        "ink": "#17212B",
+        "accent": "#AE5B31"
+      },
+      "typography": "grotesk with restrained tabular numerals",
+      "mechanism": "a working notebook whose evidence leads the hierarchy",
+      "image_role": "documentation",
+      "motion": "no motion",
+      "tradeoff": "precise but can read too administrative; explain from primary sources",
+      "keywords": [
+        "archive",
+        "records",
+        "research"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-ledger-index-atlas",
+      "title": "Ledgerfield / Index Atlas",
+      "family": "ledger",
+      "layout": "index-first",
+      "surface": "light",
+      "material": "ink on ledger paper",
+      "palette": {
+        "paper": "#F2F0EA",
+        "ink": "#17212B",
+        "accent": "#AE5B31"
+      },
+      "typography": "grotesk with restrained tabular numerals",
+      "mechanism": "an index that becomes a spatial navigation instrument",
+      "image_role": "documentation",
+      "motion": "no motion",
+      "tradeoff": "precise but can read too administrative; scan versus browse",
+      "keywords": [
+        "archive",
+        "records",
+        "research"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-ledger-split-argument",
+      "title": "Ledgerfield / Split Argument",
+      "family": "ledger",
+      "layout": "asymmetric-split",
+      "surface": "light",
+      "material": "ink on ledger paper",
+      "palette": {
+        "paper": "#F2F0EA",
+        "ink": "#17212B",
+        "accent": "#AE5B31"
+      },
+      "typography": "grotesk with restrained tabular numerals",
+      "mechanism": "an editorial confrontation between work and interpretation",
+      "image_role": "documentation",
+      "motion": "no motion",
+      "tradeoff": "precise but can read too administrative; immediacy versus reading depth",
+      "keywords": [
+        "archive",
+        "records",
+        "research"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-ledger-chapter-arc",
+      "title": "Ledgerfield / Chapter Arc",
+      "family": "ledger",
+      "layout": "narrative-drift",
+      "surface": "light",
+      "material": "ink on ledger paper",
+      "palette": {
+        "paper": "#F2F0EA",
+        "ink": "#17212B",
+        "accent": "#AE5B31"
+      },
+      "typography": "grotesk with restrained tabular numerals",
+      "mechanism": "a sequence of chapters grounded in one subject ritual",
+      "image_role": "documentation",
+      "motion": "no motion",
+      "tradeoff": "precise but can read too administrative; story flow versus task speed",
+      "keywords": [
+        "archive",
+        "records",
+        "research"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-ledger-instrument-view",
+      "title": "Ledgerfield / Instrument View",
+      "family": "ledger",
+      "layout": "product-proof",
+      "surface": "light",
+      "material": "ink on ledger paper",
+      "palette": {
+        "paper": "#F2F0EA",
+        "ink": "#17212B",
+        "accent": "#AE5B31"
+      },
+      "typography": "grotesk with restrained tabular numerals",
+      "mechanism": "a live demonstration or measurable instrument",
+      "image_role": "documentation",
+      "motion": "no motion",
+      "tradeoff": "precise but can read too administrative; practical proof versus visual expression",
+      "keywords": [
+        "archive",
+        "records",
+        "research"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-nocturne-field-notes",
+      "title": "Nocturne Room / Field Notes",
+      "family": "nocturne",
+      "layout": "asymmetric-ledger",
+      "surface": "dark",
+      "material": "luminous image against deep slate",
+      "palette": {
+        "paper": "#131B21",
+        "ink": "#E8E5DA",
+        "accent": "#EC8E53"
+      },
+      "typography": "wide humanist sans, compact metadata",
+      "mechanism": "a working notebook whose evidence leads the hierarchy",
+      "image_role": "single-source photography",
+      "motion": "one calm reveal",
+      "tradeoff": "images must be actual and cleared; explain from primary sources",
+      "keywords": [
+        "photography",
+        "night",
+        "art"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-nocturne-index-atlas",
+      "title": "Nocturne Room / Index Atlas",
+      "family": "nocturne",
+      "layout": "index-first",
+      "surface": "dark",
+      "material": "luminous image against deep slate",
+      "palette": {
+        "paper": "#131B21",
+        "ink": "#E8E5DA",
+        "accent": "#EC8E53"
+      },
+      "typography": "wide humanist sans, compact metadata",
+      "mechanism": "an index that becomes a spatial navigation instrument",
+      "image_role": "single-source photography",
+      "motion": "one calm reveal",
+      "tradeoff": "images must be actual and cleared; scan versus browse",
+      "keywords": [
+        "photography",
+        "night",
+        "art"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-nocturne-split-argument",
+      "title": "Nocturne Room / Split Argument",
+      "family": "nocturne",
+      "layout": "asymmetric-split",
+      "surface": "dark",
+      "material": "luminous image against deep slate",
+      "palette": {
+        "paper": "#131B21",
+        "ink": "#E8E5DA",
+        "accent": "#EC8E53"
+      },
+      "typography": "wide humanist sans, compact metadata",
+      "mechanism": "an editorial confrontation between work and interpretation",
+      "image_role": "single-source photography",
+      "motion": "one calm reveal",
+      "tradeoff": "images must be actual and cleared; immediacy versus reading depth",
+      "keywords": [
+        "photography",
+        "night",
+        "art"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-nocturne-chapter-arc",
+      "title": "Nocturne Room / Chapter Arc",
+      "family": "nocturne",
+      "layout": "narrative-drift",
+      "surface": "dark",
+      "material": "luminous image against deep slate",
+      "palette": {
+        "paper": "#131B21",
+        "ink": "#E8E5DA",
+        "accent": "#EC8E53"
+      },
+      "typography": "wide humanist sans, compact metadata",
+      "mechanism": "a sequence of chapters grounded in one subject ritual",
+      "image_role": "single-source photography",
+      "motion": "one calm reveal",
+      "tradeoff": "images must be actual and cleared; story flow versus task speed",
+      "keywords": [
+        "photography",
+        "night",
+        "art"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-nocturne-instrument-view",
+      "title": "Nocturne Room / Instrument View",
+      "family": "nocturne",
+      "layout": "product-proof",
+      "surface": "dark",
+      "material": "luminous image against deep slate",
+      "palette": {
+        "paper": "#131B21",
+        "ink": "#E8E5DA",
+        "accent": "#EC8E53"
+      },
+      "typography": "wide humanist sans, compact metadata",
+      "mechanism": "a live demonstration or measurable instrument",
+      "image_role": "single-source photography",
+      "motion": "one calm reveal",
+      "tradeoff": "images must be actual and cleared; practical proof versus visual expression",
+      "keywords": [
+        "photography",
+        "night",
+        "art"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-ceramic-field-notes",
+      "title": "Kiln Surface / Field Notes",
+      "family": "ceramic",
+      "layout": "asymmetric-ledger",
+      "surface": "mid",
+      "material": "muted glazed surface and hairline edges",
+      "palette": {
+        "paper": "#D4CEBD",
+        "ink": "#242621",
+        "accent": "#B95D42"
+      },
+      "typography": "rounded humanist serif with utilitarian sans",
+      "mechanism": "a working notebook whose evidence leads the hierarchy",
+      "image_role": "material macrophotography",
+      "motion": "slow editorial transitions",
+      "tradeoff": "warmth can obscure dense data; explain from primary sources",
+      "keywords": [
+        "craft",
+        "objects",
+        "heritage"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-ceramic-index-atlas",
+      "title": "Kiln Surface / Index Atlas",
+      "family": "ceramic",
+      "layout": "index-first",
+      "surface": "mid",
+      "material": "muted glazed surface and hairline edges",
+      "palette": {
+        "paper": "#D4CEBD",
+        "ink": "#242621",
+        "accent": "#B95D42"
+      },
+      "typography": "rounded humanist serif with utilitarian sans",
+      "mechanism": "an index that becomes a spatial navigation instrument",
+      "image_role": "material macrophotography",
+      "motion": "slow editorial transitions",
+      "tradeoff": "warmth can obscure dense data; scan versus browse",
+      "keywords": [
+        "craft",
+        "objects",
+        "heritage"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-ceramic-split-argument",
+      "title": "Kiln Surface / Split Argument",
+      "family": "ceramic",
+      "layout": "asymmetric-split",
+      "surface": "mid",
+      "material": "muted glazed surface and hairline edges",
+      "palette": {
+        "paper": "#D4CEBD",
+        "ink": "#242621",
+        "accent": "#B95D42"
+      },
+      "typography": "rounded humanist serif with utilitarian sans",
+      "mechanism": "an editorial confrontation between work and interpretation",
+      "image_role": "material macrophotography",
+      "motion": "slow editorial transitions",
+      "tradeoff": "warmth can obscure dense data; immediacy versus reading depth",
+      "keywords": [
+        "craft",
+        "objects",
+        "heritage"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-ceramic-chapter-arc",
+      "title": "Kiln Surface / Chapter Arc",
+      "family": "ceramic",
+      "layout": "narrative-drift",
+      "surface": "mid",
+      "material": "muted glazed surface and hairline edges",
+      "palette": {
+        "paper": "#D4CEBD",
+        "ink": "#242621",
+        "accent": "#B95D42"
+      },
+      "typography": "rounded humanist serif with utilitarian sans",
+      "mechanism": "a sequence of chapters grounded in one subject ritual",
+      "image_role": "material macrophotography",
+      "motion": "slow editorial transitions",
+      "tradeoff": "warmth can obscure dense data; story flow versus task speed",
+      "keywords": [
+        "craft",
+        "objects",
+        "heritage"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-ceramic-instrument-view",
+      "title": "Kiln Surface / Instrument View",
+      "family": "ceramic",
+      "layout": "product-proof",
+      "surface": "mid",
+      "material": "muted glazed surface and hairline edges",
+      "palette": {
+        "paper": "#D4CEBD",
+        "ink": "#242621",
+        "accent": "#B95D42"
+      },
+      "typography": "rounded humanist serif with utilitarian sans",
+      "mechanism": "a live demonstration or measurable instrument",
+      "image_role": "material macrophotography",
+      "motion": "slow editorial transitions",
+      "tradeoff": "warmth can obscure dense data; practical proof versus visual expression",
+      "keywords": [
+        "craft",
+        "objects",
+        "heritage"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-signal-field-notes",
+      "title": "Signal Bench / Field Notes",
+      "family": "signal",
+      "layout": "asymmetric-ledger",
+      "surface": "light",
+      "material": "bright clean signals on neutral infrastructure",
+      "palette": {
+        "paper": "#F3F6F4",
+        "ink": "#143542",
+        "accent": "#00877E"
+      },
+      "typography": "engineering grotesk, legible labels",
+      "mechanism": "a working notebook whose evidence leads the hierarchy",
+      "image_role": "real working interface",
+      "motion": "brief feedback only",
+      "tradeoff": "can look like generic SaaS if subject is lost; explain from primary sources",
+      "keywords": [
+        "software",
+        "product",
+        "tools"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-signal-index-atlas",
+      "title": "Signal Bench / Index Atlas",
+      "family": "signal",
+      "layout": "index-first",
+      "surface": "light",
+      "material": "bright clean signals on neutral infrastructure",
+      "palette": {
+        "paper": "#F3F6F4",
+        "ink": "#143542",
+        "accent": "#00877E"
+      },
+      "typography": "engineering grotesk, legible labels",
+      "mechanism": "an index that becomes a spatial navigation instrument",
+      "image_role": "real working interface",
+      "motion": "brief feedback only",
+      "tradeoff": "can look like generic SaaS if subject is lost; scan versus browse",
+      "keywords": [
+        "software",
+        "product",
+        "tools"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-signal-split-argument",
+      "title": "Signal Bench / Split Argument",
+      "family": "signal",
+      "layout": "asymmetric-split",
+      "surface": "light",
+      "material": "bright clean signals on neutral infrastructure",
+      "palette": {
+        "paper": "#F3F6F4",
+        "ink": "#143542",
+        "accent": "#00877E"
+      },
+      "typography": "engineering grotesk, legible labels",
+      "mechanism": "an editorial confrontation between work and interpretation",
+      "image_role": "real working interface",
+      "motion": "brief feedback only",
+      "tradeoff": "can look like generic SaaS if subject is lost; immediacy versus reading depth",
+      "keywords": [
+        "software",
+        "product",
+        "tools"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-signal-chapter-arc",
+      "title": "Signal Bench / Chapter Arc",
+      "family": "signal",
+      "layout": "narrative-drift",
+      "surface": "light",
+      "material": "bright clean signals on neutral infrastructure",
+      "palette": {
+        "paper": "#F3F6F4",
+        "ink": "#143542",
+        "accent": "#00877E"
+      },
+      "typography": "engineering grotesk, legible labels",
+      "mechanism": "a sequence of chapters grounded in one subject ritual",
+      "image_role": "real working interface",
+      "motion": "brief feedback only",
+      "tradeoff": "can look like generic SaaS if subject is lost; story flow versus task speed",
+      "keywords": [
+        "software",
+        "product",
+        "tools"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-signal-instrument-view",
+      "title": "Signal Bench / Instrument View",
+      "family": "signal",
+      "layout": "product-proof",
+      "surface": "light",
+      "material": "bright clean signals on neutral infrastructure",
+      "palette": {
+        "paper": "#F3F6F4",
+        "ink": "#143542",
+        "accent": "#00877E"
+      },
+      "typography": "engineering grotesk, legible labels",
+      "mechanism": "a live demonstration or measurable instrument",
+      "image_role": "real working interface",
+      "motion": "brief feedback only",
+      "tradeoff": "can look like generic SaaS if subject is lost; practical proof versus visual expression",
+      "keywords": [
+        "software",
+        "product",
+        "tools"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-folio-field-notes",
+      "title": "Folio Counterpoint / Field Notes",
+      "family": "folio",
+      "layout": "asymmetric-ledger",
+      "surface": "light",
+      "material": "large image and small typographic captions",
+      "palette": {
+        "paper": "#F8F5EE",
+        "ink": "#222A27",
+        "accent": "#946446"
+      },
+      "typography": "humanist serif with editorial sans",
+      "mechanism": "a working notebook whose evidence leads the hierarchy",
+      "image_role": "one documentary image per idea",
+      "motion": "spatial dissolve only",
+      "tradeoff": "image access needed; explain from primary sources",
+      "keywords": [
+        "publication",
+        "book",
+        "archive"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-folio-index-atlas",
+      "title": "Folio Counterpoint / Index Atlas",
+      "family": "folio",
+      "layout": "index-first",
+      "surface": "light",
+      "material": "large image and small typographic captions",
+      "palette": {
+        "paper": "#F8F5EE",
+        "ink": "#222A27",
+        "accent": "#946446"
+      },
+      "typography": "humanist serif with editorial sans",
+      "mechanism": "an index that becomes a spatial navigation instrument",
+      "image_role": "one documentary image per idea",
+      "motion": "spatial dissolve only",
+      "tradeoff": "image access needed; scan versus browse",
+      "keywords": [
+        "publication",
+        "book",
+        "archive"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-folio-split-argument",
+      "title": "Folio Counterpoint / Split Argument",
+      "family": "folio",
+      "layout": "asymmetric-split",
+      "surface": "light",
+      "material": "large image and small typographic captions",
+      "palette": {
+        "paper": "#F8F5EE",
+        "ink": "#222A27",
+        "accent": "#946446"
+      },
+      "typography": "humanist serif with editorial sans",
+      "mechanism": "an editorial confrontation between work and interpretation",
+      "image_role": "one documentary image per idea",
+      "motion": "spatial dissolve only",
+      "tradeoff": "image access needed; immediacy versus reading depth",
+      "keywords": [
+        "publication",
+        "book",
+        "archive"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-folio-chapter-arc",
+      "title": "Folio Counterpoint / Chapter Arc",
+      "family": "folio",
+      "layout": "narrative-drift",
+      "surface": "light",
+      "material": "large image and small typographic captions",
+      "palette": {
+        "paper": "#F8F5EE",
+        "ink": "#222A27",
+        "accent": "#946446"
+      },
+      "typography": "humanist serif with editorial sans",
+      "mechanism": "a sequence of chapters grounded in one subject ritual",
+      "image_role": "one documentary image per idea",
+      "motion": "spatial dissolve only",
+      "tradeoff": "image access needed; story flow versus task speed",
+      "keywords": [
+        "publication",
+        "book",
+        "archive"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-folio-instrument-view",
+      "title": "Folio Counterpoint / Instrument View",
+      "family": "folio",
+      "layout": "product-proof",
+      "surface": "light",
+      "material": "large image and small typographic captions",
+      "palette": {
+        "paper": "#F8F5EE",
+        "ink": "#222A27",
+        "accent": "#946446"
+      },
+      "typography": "humanist serif with editorial sans",
+      "mechanism": "a live demonstration or measurable instrument",
+      "image_role": "one documentary image per idea",
+      "motion": "spatial dissolve only",
+      "tradeoff": "image access needed; practical proof versus visual expression",
+      "keywords": [
+        "publication",
+        "book",
+        "archive"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-oxide-field-notes",
+      "title": "Oxide Press / Field Notes",
+      "family": "oxide",
+      "layout": "asymmetric-ledger",
+      "surface": "mid",
+      "material": "dense print, strong ink, tactile halftone",
+      "palette": {
+        "paper": "#D7C6A5",
+        "ink": "#2D2B2C",
+        "accent": "#A63C2E"
+      },
+      "typography": "condensed blackletter-free display + readable body",
+      "mechanism": "a working notebook whose evidence leads the hierarchy",
+      "image_role": "print textures as content",
+      "motion": "almost static",
+      "tradeoff": "text can become overpowering; explain from primary sources",
+      "keywords": [
+        "poster",
+        "campaign",
+        "typography"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-oxide-index-atlas",
+      "title": "Oxide Press / Index Atlas",
+      "family": "oxide",
+      "layout": "index-first",
+      "surface": "mid",
+      "material": "dense print, strong ink, tactile halftone",
+      "palette": {
+        "paper": "#D7C6A5",
+        "ink": "#2D2B2C",
+        "accent": "#A63C2E"
+      },
+      "typography": "condensed blackletter-free display + readable body",
+      "mechanism": "an index that becomes a spatial navigation instrument",
+      "image_role": "print textures as content",
+      "motion": "almost static",
+      "tradeoff": "text can become overpowering; scan versus browse",
+      "keywords": [
+        "poster",
+        "campaign",
+        "typography"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-oxide-split-argument",
+      "title": "Oxide Press / Split Argument",
+      "family": "oxide",
+      "layout": "asymmetric-split",
+      "surface": "mid",
+      "material": "dense print, strong ink, tactile halftone",
+      "palette": {
+        "paper": "#D7C6A5",
+        "ink": "#2D2B2C",
+        "accent": "#A63C2E"
+      },
+      "typography": "condensed blackletter-free display + readable body",
+      "mechanism": "an editorial confrontation between work and interpretation",
+      "image_role": "print textures as content",
+      "motion": "almost static",
+      "tradeoff": "text can become overpowering; immediacy versus reading depth",
+      "keywords": [
+        "poster",
+        "campaign",
+        "typography"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-oxide-chapter-arc",
+      "title": "Oxide Press / Chapter Arc",
+      "family": "oxide",
+      "layout": "narrative-drift",
+      "surface": "mid",
+      "material": "dense print, strong ink, tactile halftone",
+      "palette": {
+        "paper": "#D7C6A5",
+        "ink": "#2D2B2C",
+        "accent": "#A63C2E"
+      },
+      "typography": "condensed blackletter-free display + readable body",
+      "mechanism": "a sequence of chapters grounded in one subject ritual",
+      "image_role": "print textures as content",
+      "motion": "almost static",
+      "tradeoff": "text can become overpowering; story flow versus task speed",
+      "keywords": [
+        "poster",
+        "campaign",
+        "typography"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-oxide-instrument-view",
+      "title": "Oxide Press / Instrument View",
+      "family": "oxide",
+      "layout": "product-proof",
+      "surface": "mid",
+      "material": "dense print, strong ink, tactile halftone",
+      "palette": {
+        "paper": "#D7C6A5",
+        "ink": "#2D2B2C",
+        "accent": "#A63C2E"
+      },
+      "typography": "condensed blackletter-free display + readable body",
+      "mechanism": "a live demonstration or measurable instrument",
+      "image_role": "print textures as content",
+      "motion": "almost static",
+      "tradeoff": "text can become overpowering; practical proof versus visual expression",
+      "keywords": [
+        "poster",
+        "campaign",
+        "typography"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-mineral-field-notes",
+      "title": "Mineral Field / Field Notes",
+      "family": "mineral",
+      "layout": "asymmetric-ledger",
+      "surface": "light",
+      "material": "quiet mineral planes and asymmetric scale",
+      "palette": {
+        "paper": "#E9E9E4",
+        "ink": "#1A2621",
+        "accent": "#60776B"
+      },
+      "typography": "light slab serif paired with neutral sans",
+      "mechanism": "a working notebook whose evidence leads the hierarchy",
+      "image_role": "scientific detail and material surface",
+      "motion": "gentle sequencing",
+      "tradeoff": "quietness must not become emptiness; explain from primary sources",
+      "keywords": [
+        "research",
+        "environment",
+        "science"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-mineral-index-atlas",
+      "title": "Mineral Field / Index Atlas",
+      "family": "mineral",
+      "layout": "index-first",
+      "surface": "light",
+      "material": "quiet mineral planes and asymmetric scale",
+      "palette": {
+        "paper": "#E9E9E4",
+        "ink": "#1A2621",
+        "accent": "#60776B"
+      },
+      "typography": "light slab serif paired with neutral sans",
+      "mechanism": "an index that becomes a spatial navigation instrument",
+      "image_role": "scientific detail and material surface",
+      "motion": "gentle sequencing",
+      "tradeoff": "quietness must not become emptiness; scan versus browse",
+      "keywords": [
+        "research",
+        "environment",
+        "science"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-mineral-split-argument",
+      "title": "Mineral Field / Split Argument",
+      "family": "mineral",
+      "layout": "asymmetric-split",
+      "surface": "light",
+      "material": "quiet mineral planes and asymmetric scale",
+      "palette": {
+        "paper": "#E9E9E4",
+        "ink": "#1A2621",
+        "accent": "#60776B"
+      },
+      "typography": "light slab serif paired with neutral sans",
+      "mechanism": "an editorial confrontation between work and interpretation",
+      "image_role": "scientific detail and material surface",
+      "motion": "gentle sequencing",
+      "tradeoff": "quietness must not become emptiness; immediacy versus reading depth",
+      "keywords": [
+        "research",
+        "environment",
+        "science"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-mineral-chapter-arc",
+      "title": "Mineral Field / Chapter Arc",
+      "family": "mineral",
+      "layout": "narrative-drift",
+      "surface": "light",
+      "material": "quiet mineral planes and asymmetric scale",
+      "palette": {
+        "paper": "#E9E9E4",
+        "ink": "#1A2621",
+        "accent": "#60776B"
+      },
+      "typography": "light slab serif paired with neutral sans",
+      "mechanism": "a sequence of chapters grounded in one subject ritual",
+      "image_role": "scientific detail and material surface",
+      "motion": "gentle sequencing",
+      "tradeoff": "quietness must not become emptiness; story flow versus task speed",
+      "keywords": [
+        "research",
+        "environment",
+        "science"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-mineral-instrument-view",
+      "title": "Mineral Field / Instrument View",
+      "family": "mineral",
+      "layout": "product-proof",
+      "surface": "light",
+      "material": "quiet mineral planes and asymmetric scale",
+      "palette": {
+        "paper": "#E9E9E4",
+        "ink": "#1A2621",
+        "accent": "#60776B"
+      },
+      "typography": "light slab serif paired with neutral sans",
+      "mechanism": "a live demonstration or measurable instrument",
+      "image_role": "scientific detail and material surface",
+      "motion": "gentle sequencing",
+      "tradeoff": "quietness must not become emptiness; practical proof versus visual expression",
+      "keywords": [
+        "research",
+        "environment",
+        "science"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-warmtech-field-notes",
+      "title": "Human Circuit / Field Notes",
+      "family": "warmtech",
+      "layout": "asymmetric-ledger",
+      "surface": "light",
+      "material": "warm light and tangible working instruments",
+      "palette": {
+        "paper": "#F4EFE5",
+        "ink": "#2A2926",
+        "accent": "#C94D2E"
+      },
+      "typography": "workmanlike sans, distinctive oversized headings",
+      "mechanism": "a working notebook whose evidence leads the hierarchy",
+      "image_role": "tools-in-use evidence",
+      "motion": "gesture-led functional response",
+      "tradeoff": "restrained to avoid gimmicks; explain from primary sources",
+      "keywords": [
+        "technology",
+        "craft",
+        "agency"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-warmtech-index-atlas",
+      "title": "Human Circuit / Index Atlas",
+      "family": "warmtech",
+      "layout": "index-first",
+      "surface": "light",
+      "material": "warm light and tangible working instruments",
+      "palette": {
+        "paper": "#F4EFE5",
+        "ink": "#2A2926",
+        "accent": "#C94D2E"
+      },
+      "typography": "workmanlike sans, distinctive oversized headings",
+      "mechanism": "an index that becomes a spatial navigation instrument",
+      "image_role": "tools-in-use evidence",
+      "motion": "gesture-led functional response",
+      "tradeoff": "restrained to avoid gimmicks; scan versus browse",
+      "keywords": [
+        "technology",
+        "craft",
+        "agency"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-warmtech-split-argument",
+      "title": "Human Circuit / Split Argument",
+      "family": "warmtech",
+      "layout": "asymmetric-split",
+      "surface": "light",
+      "material": "warm light and tangible working instruments",
+      "palette": {
+        "paper": "#F4EFE5",
+        "ink": "#2A2926",
+        "accent": "#C94D2E"
+      },
+      "typography": "workmanlike sans, distinctive oversized headings",
+      "mechanism": "an editorial confrontation between work and interpretation",
+      "image_role": "tools-in-use evidence",
+      "motion": "gesture-led functional response",
+      "tradeoff": "restrained to avoid gimmicks; immediacy versus reading depth",
+      "keywords": [
+        "technology",
+        "craft",
+        "agency"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-warmtech-chapter-arc",
+      "title": "Human Circuit / Chapter Arc",
+      "family": "warmtech",
+      "layout": "narrative-drift",
+      "surface": "light",
+      "material": "warm light and tangible working instruments",
+      "palette": {
+        "paper": "#F4EFE5",
+        "ink": "#2A2926",
+        "accent": "#C94D2E"
+      },
+      "typography": "workmanlike sans, distinctive oversized headings",
+      "mechanism": "a sequence of chapters grounded in one subject ritual",
+      "image_role": "tools-in-use evidence",
+      "motion": "gesture-led functional response",
+      "tradeoff": "restrained to avoid gimmicks; story flow versus task speed",
+      "keywords": [
+        "technology",
+        "craft",
+        "agency"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-warmtech-instrument-view",
+      "title": "Human Circuit / Instrument View",
+      "family": "warmtech",
+      "layout": "product-proof",
+      "surface": "light",
+      "material": "warm light and tangible working instruments",
+      "palette": {
+        "paper": "#F4EFE5",
+        "ink": "#2A2926",
+        "accent": "#C94D2E"
+      },
+      "typography": "workmanlike sans, distinctive oversized headings",
+      "mechanism": "a live demonstration or measurable instrument",
+      "image_role": "tools-in-use evidence",
+      "motion": "gesture-led functional response",
+      "tradeoff": "restrained to avoid gimmicks; practical proof versus visual expression",
+      "keywords": [
+        "technology",
+        "craft",
+        "agency"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-verdigris-field-notes",
+      "title": "Living Diagram / Field Notes",
+      "family": "verdigris",
+      "layout": "asymmetric-ledger",
+      "surface": "mid",
+      "material": "muted green-gray with annotated drawings",
+      "palette": {
+        "paper": "#CBD1CA",
+        "ink": "#1B3734",
+        "accent": "#587D68"
+      },
+      "typography": "instrument serif / technical sans",
+      "mechanism": "a working notebook whose evidence leads the hierarchy",
+      "image_role": "observed diagrams and maps",
+      "motion": "data change only",
+      "tradeoff": "avoid nature-brand cliches; explain from primary sources",
+      "keywords": [
+        "ecology",
+        "maps",
+        "systems"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-verdigris-index-atlas",
+      "title": "Living Diagram / Index Atlas",
+      "family": "verdigris",
+      "layout": "index-first",
+      "surface": "mid",
+      "material": "muted green-gray with annotated drawings",
+      "palette": {
+        "paper": "#CBD1CA",
+        "ink": "#1B3734",
+        "accent": "#587D68"
+      },
+      "typography": "instrument serif / technical sans",
+      "mechanism": "an index that becomes a spatial navigation instrument",
+      "image_role": "observed diagrams and maps",
+      "motion": "data change only",
+      "tradeoff": "avoid nature-brand cliches; scan versus browse",
+      "keywords": [
+        "ecology",
+        "maps",
+        "systems"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-verdigris-split-argument",
+      "title": "Living Diagram / Split Argument",
+      "family": "verdigris",
+      "layout": "asymmetric-split",
+      "surface": "mid",
+      "material": "muted green-gray with annotated drawings",
+      "palette": {
+        "paper": "#CBD1CA",
+        "ink": "#1B3734",
+        "accent": "#587D68"
+      },
+      "typography": "instrument serif / technical sans",
+      "mechanism": "an editorial confrontation between work and interpretation",
+      "image_role": "observed diagrams and maps",
+      "motion": "data change only",
+      "tradeoff": "avoid nature-brand cliches; immediacy versus reading depth",
+      "keywords": [
+        "ecology",
+        "maps",
+        "systems"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-verdigris-chapter-arc",
+      "title": "Living Diagram / Chapter Arc",
+      "family": "verdigris",
+      "layout": "narrative-drift",
+      "surface": "mid",
+      "material": "muted green-gray with annotated drawings",
+      "palette": {
+        "paper": "#CBD1CA",
+        "ink": "#1B3734",
+        "accent": "#587D68"
+      },
+      "typography": "instrument serif / technical sans",
+      "mechanism": "a sequence of chapters grounded in one subject ritual",
+      "image_role": "observed diagrams and maps",
+      "motion": "data change only",
+      "tradeoff": "avoid nature-brand cliches; story flow versus task speed",
+      "keywords": [
+        "ecology",
+        "maps",
+        "systems"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-verdigris-instrument-view",
+      "title": "Living Diagram / Instrument View",
+      "family": "verdigris",
+      "layout": "product-proof",
+      "surface": "mid",
+      "material": "muted green-gray with annotated drawings",
+      "palette": {
+        "paper": "#CBD1CA",
+        "ink": "#1B3734",
+        "accent": "#587D68"
+      },
+      "typography": "instrument serif / technical sans",
+      "mechanism": "a live demonstration or measurable instrument",
+      "image_role": "observed diagrams and maps",
+      "motion": "data change only",
+      "tradeoff": "avoid nature-brand cliches; practical proof versus visual expression",
+      "keywords": [
+        "ecology",
+        "maps",
+        "systems"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-monogram-field-notes",
+      "title": "Monogram Studio / Field Notes",
+      "family": "monogram",
+      "layout": "asymmetric-ledger",
+      "surface": "light",
+      "material": "high contrast typography with purposeful whitespace",
+      "palette": {
+        "paper": "#FFFFFF",
+        "ink": "#151515",
+        "accent": "#AE1A3C"
+      },
+      "typography": "characterful display + straightforward body",
+      "mechanism": "a working notebook whose evidence leads the hierarchy",
+      "image_role": "project-specific visual archive",
+      "motion": "editorial cut",
+      "tradeoff": "requires an expressive content idea; explain from primary sources",
+      "keywords": [
+        "studio",
+        "fashion",
+        "portfolio"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-monogram-index-atlas",
+      "title": "Monogram Studio / Index Atlas",
+      "family": "monogram",
+      "layout": "index-first",
+      "surface": "light",
+      "material": "high contrast typography with purposeful whitespace",
+      "palette": {
+        "paper": "#FFFFFF",
+        "ink": "#151515",
+        "accent": "#AE1A3C"
+      },
+      "typography": "characterful display + straightforward body",
+      "mechanism": "an index that becomes a spatial navigation instrument",
+      "image_role": "project-specific visual archive",
+      "motion": "editorial cut",
+      "tradeoff": "requires an expressive content idea; scan versus browse",
+      "keywords": [
+        "studio",
+        "fashion",
+        "portfolio"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-monogram-split-argument",
+      "title": "Monogram Studio / Split Argument",
+      "family": "monogram",
+      "layout": "asymmetric-split",
+      "surface": "light",
+      "material": "high contrast typography with purposeful whitespace",
+      "palette": {
+        "paper": "#FFFFFF",
+        "ink": "#151515",
+        "accent": "#AE1A3C"
+      },
+      "typography": "characterful display + straightforward body",
+      "mechanism": "an editorial confrontation between work and interpretation",
+      "image_role": "project-specific visual archive",
+      "motion": "editorial cut",
+      "tradeoff": "requires an expressive content idea; immediacy versus reading depth",
+      "keywords": [
+        "studio",
+        "fashion",
+        "portfolio"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-monogram-chapter-arc",
+      "title": "Monogram Studio / Chapter Arc",
+      "family": "monogram",
+      "layout": "narrative-drift",
+      "surface": "light",
+      "material": "high contrast typography with purposeful whitespace",
+      "palette": {
+        "paper": "#FFFFFF",
+        "ink": "#151515",
+        "accent": "#AE1A3C"
+      },
+      "typography": "characterful display + straightforward body",
+      "mechanism": "a sequence of chapters grounded in one subject ritual",
+      "image_role": "project-specific visual archive",
+      "motion": "editorial cut",
+      "tradeoff": "requires an expressive content idea; story flow versus task speed",
+      "keywords": [
+        "studio",
+        "fashion",
+        "portfolio"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    },
+    {
+      "id": "aco-monogram-instrument-view",
+      "title": "Monogram Studio / Instrument View",
+      "family": "monogram",
+      "layout": "product-proof",
+      "surface": "light",
+      "material": "high contrast typography with purposeful whitespace",
+      "palette": {
+        "paper": "#FFFFFF",
+        "ink": "#151515",
+        "accent": "#AE1A3C"
+      },
+      "typography": "characterful display + straightforward body",
+      "mechanism": "a live demonstration or measurable instrument",
+      "image_role": "project-specific visual archive",
+      "motion": "editorial cut",
+      "tradeoff": "requires an expressive content idea; practical proof versus visual expression",
+      "keywords": [
+        "studio",
+        "fashion",
+        "portfolio"
+      ],
+      "provenance": "ACO-original synthesized concept material; NOT a Hallmark theme copy"
+    }
+  ]
+}

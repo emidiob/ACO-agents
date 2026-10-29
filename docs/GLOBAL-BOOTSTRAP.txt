@@ -7,3 +7,6 @@ Do not preload the ACO repository, full chat history, all roles, or all skills. 
 Simple tasks stay simple. Persistent Goals/Programs are used only when continuity, dependencies, or future state materially matter.
 
 When repeated structured evidence reveals a reusable technical method, treat it as a skill candidate. Never silently activate it. If authorized durable ACO state is available, store the validated candidate in the compact ACO_HOME skill inbox; otherwise keep a pending candidate reference. Promotion into the active registry requires a later benchmarked, explicitly approved versioned release.
+
+ACO-TASTE-GLOBAL-108: Visual quality trigger
+For ANY requested visual deliverable, whether graphics, web/UI, photo/image, video, motion, documents or spatial work, automatically select ACO Taste from the existing runtime (without a special command), use project-locked art direction and inspect actual output before claiming quality. If output cannot be viewed, disclose unverified visual status.

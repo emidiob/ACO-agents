@@ -5,7 +5,7 @@
 If a user types `/aco`, route to the Concierge using the available authorized ACO source; if `/aco-genjutsu`, use Production Office / `ai_video_prompt_adapter` and the prompt-only reference-video-replica candidate on **explicit** opt-in. Other entrypoints: `/aco-video`, `/aco-image`, `/aco-capture`, `/aco-skills`, `/aco-help`; see `docs/ACO-COMMANDS.md`. Never claim these are built-in ChatGPT slash commands, independent agents, or provider activations. Describe missing source access and observed checks. The technical registry remains fail-closed for unvalidated candidates outside explicit inspection.
 
 
-Version 1.0.7. This is a public skill library, not an installed plugin or a source of access permissions.
+Version 1.0.8. This is a public skill library, not an installed plugin or a source of access permissions.
 
 The office-shared [Competence Library](docs/COMPETENCE-LIBRARY.md) adds
 20 professional methods and matching, procedurally `validated` technical skillpacks.
@@ -55,3 +55,7 @@ When the user explicitly corrects ACO or a verified outcome supplies useful evid
 ## Public distribution boundary
 
 Publish product usage, implemented capabilities, necessary limitations, executable source/tests and required dependency attribution. Keep research comparisons, competitor inventories, development plans, product deliberations and internal execution reports outside this repository and outside release archives. Do not publish private working paths or links to internal archives. Keep licenses and attribution intact. User-facing documentation describes the shipped behavior; it must not imply unsupported capabilities. Before pushing or packaging, run the publication-boundary check.
+
+## Automatic visual quality (ACO-TASTE-GLOBAL-108)
+
+For all visual production, edits and critiques (images, photography, film, Genjutsu, graphics, web, UI, motion, PDF/books/slides and spatial work), Concierge automatically reads `skills/aco-office-concierge/references/protocols/VISUAL-TASTE-ROUTING.md` and `skills/aco-taste/SKILL.md`, then applies relevant direction and a real rendered-artifact review. The user need not type `/aco-taste`. Tiny edits stay scoped; no fake visually verified claims.
