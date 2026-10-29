@@ -1,0 +1,11 @@
+{
+ "medium":"video","evidence":{
+  "source and final video viewed over full timeline":true,
+  "subject/object/camera movement tracked":true,
+  "contact sheet or timecoded frame notes":false,
+  "continuity and sound review":false
+ },
+ "observations":["At 03:01 the hand's contact is inconsistent with the reference"],
+ "reviewed_by":"one ACO visual critique pass",
+ "user_approved":false
+}

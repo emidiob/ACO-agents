@@ -64,3 +64,7 @@ For limits see `docs/PROFESSIONAL-SKILLS.md`.
 Preserve author intent, source rights, project/client scope and external-action approval.
 CLI: `python3 scripts/competence_library.py show --id visual-critique` in the full checkout.
 <!-- END ACO-COMPETENCE-LIBRARY-v1.0.7 -->
+
+## Automatically route visual tasks through Taste (ACO-TASTE-GLOBAL-108)
+
+For any creation, modification, review or delivery of images, photography, film/video, motion, graphics, 3D, web/UI, editorial PDF or presentations, **MUST** load the shared [visual quality gate](references/protocols/VISUAL-TASTE-ROUTING.md) and [ACO Taste Intelligence](../aco-taste/SKILL.md) automatically. Do not require `/aco-taste`. Preserve scope for small edits and verify the real visual artifact.

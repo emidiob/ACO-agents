@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "created_for": "ACO 1.0.7 extension",
+  "license_warning": "Third-party sources are not installed, bundled or treated as active ACO plugins. Review nested asset licenses, particularly images/fonts. Incline lacks a repository-root LICENSE in inspected tree; its code is not redistributed.",
+  "sources": [
+    {
+      "id": "incline",
+      "repository": "allisonllx/incline",
+      "revision": "ea1a1c7cb695176ed86ae4f895e98bf115cb86e8",
+      "license": "license_not_declared",
+      "integration": "source_reference_only",
+      "coverage": "Reference collections, local/project and cross-project choice, history, feedback, insights and evidence-scoped preferences.",
+      "homepage": "https://github.com/allisonllx/incline"
+    },
+    {
+      "id": "hallmark",
+      "repository": "Nutlope/hallmark",
+      "revision": "8f6969f8922caabde9de1784959eae11ddf68073",
+      "license": "MIT",
+      "integration": "optional_vendor_import",
+      "coverage": "50 design-material concepts, alternative directions, anti-template controls, browser audit, redesign.",
+      "homepage": "https://github.com/Nutlope/hallmark"
+    },
+    {
+      "id": "anthropic",
+      "repository": "anthropics/skills",
+      "revision": "ca45fc496a3436251f191354091d557da31c15b5",
+      "license": "Apache-2.0 (selected skills)",
+      "integration": "optional_vendor_import",
+      "coverage": "frontend-design art direction and canvas-design static composition methods.",
+      "homepage": "https://github.com/anthropics/skills"
+    },
+    {
+      "id": "gstack",
+      "repository": "garrytan/gstack",
+      "revision": "29f8ca053e7417d4702a094ce867f00cb7081a46",
+      "license": "MIT",
+      "integration": "optional_vendor_import",
+      "coverage": "Multi-variant explore, comparison board, review and fix evidence, design preference distillation.",
+      "homepage": "https://github.com/garrytan/gstack"
+    },
+    {
+      "id": "emil",
+      "repository": "emilkowalski/skills",
+      "revision": "a81dbca07f2217b7103e510c0f13f8d5b017afc9",
+      "license": "MIT",
+      "integration": "optional_vendor_import",
+      "coverage": "Interaction and animation craft, performance, restraint, review and removal.",
+      "homepage": "https://github.com/emilkowalski/skills"
+    },
+    {
+      "id": "ui-skills",
+      "repository": "ibelick/ui-skills",
+      "revision": "59193a75432e5f41c6980f53b9e6a7bd56919947",
+      "license": "MIT",
+      "integration": "optional_vendor_import",
+      "coverage": "DESIGN.md, audited visual system, component canvas, accessibility and interface planning.",
+      "homepage": "https://github.com/ibelick/ui-skills"
+    },
+    {
+      "id": "frontend-stack",
+      "repository": "JaimeJunr/claude-code-frontend-skills",
+      "revision": "8a6f9021fcd1754ca5f0f28dba3dd071db6e7ffb",
+      "license": "MIT for original code; third-party plugins separate",
+      "integration": "original_router_only",
+      "coverage": "Phase-based routing, one lead skill, conflict precedence and handoff.",
+      "homepage": "https://github.com/JaimeJunr/claude-code-frontend-skills"
+    }
+  ]
+}

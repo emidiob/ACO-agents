@@ -1,0 +1,10 @@
+{
+ "subject":"A publishing studio whose editions are printed on recovered paper",
+ "audience":"Curators, book collectors and independent publishers",
+ "action":"Understand the editions and ask for an appointment",
+ "surface":"editorial",
+ "facts":["Every copy has a visible paper-origin label","Editions are numbered"],
+ "materials":["Recovered uncoated paper","Stamped edition numbers"],
+ "locked":{"palette":{"paper":"#ede8da","ink":"#22201c","accent":"#a84828"}},
+ "sections":["work","edition process","contact"]
+}

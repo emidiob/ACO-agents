@@ -26,3 +26,7 @@ Ask essential missing facts early, in one short batch after reading supplied con
 [Compact Memory](../aco-office-concierge/references/protocols/COMPACT-MEMORY.md) replaces the former event/session file layout. Keep ideas, applications, leads, proposals and rejected items in chat or compact pipeline rows; active small items may remain sections. Do not create files merely for sessions, status changes, decisions or handoffs. Requested deliverables are not memory clutter. Existing files require reviewed consolidation, never automatic deletion.
 
 Use the [resource index](../aco-office-concierge/references/resources/INDEX.md) only when a relevant capability or reference improves the task. Choose a few candidates, read their exact entries and linked original methods, and verify actual host access. Resources are optional, not installed dependencies. No guessed identities, unapproved asset purchases, private-code uploads or account changes.
+
+## Automatic visual-taste gate (ACO-TASTE-GLOBAL-108)
+
+When this task produces, edits or reviews a visual artifact, load [the automatic cross-office Taste contract](../aco-office-concierge/references/protocols/VISUAL-TASTE-ROUTING.md) and [ACO Taste](../aco-taste/SKILL.md) **without requiring the user to invoke it**. Use the appropriate medium method and inspect real output. Nonvisual work stays direct; exact small changes preserve approved design.

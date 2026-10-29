@@ -24,3 +24,7 @@ Use the canonical ACO 1.0.6 runtime (`aco://current`) in this checkout or a veri
 Invocation is host-specific: Claude Code Agent Skills can expose `/aco` when installed; Codex uses `$aco` when discovered; writing `/aco` in ChatGPT is a plain text request, not a registered native slash command.
 
 Before any persistent write, follow `../aco-office-concierge/references/protocols/COMPACT-MEMORY.md`; keep private context outside the public library.
+
+## Automatic visual-taste gate (ACO-TASTE-GLOBAL-108)
+
+When this task produces, edits or reviews a visual artifact, load [the automatic cross-office Taste contract](../aco-office-concierge/references/protocols/VISUAL-TASTE-ROUTING.md) and [ACO Taste](../aco-taste/SKILL.md) **without requiring the user to invoke it**. Use the appropriate medium method and inspect real output. Nonvisual work stays direct; exact small changes preserve approved design.

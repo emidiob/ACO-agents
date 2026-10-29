@@ -1,0 +1,5 @@
+# Film, video, Genjutsu, AI video and motion quality contract
+
+Start from story/shot objective, real video reference and desired transformation scope. Decompose into timing intervals: subject, camera, environment, props, dialogue/audio, occlusion and contacts. Preserve chronological continuity; differentiate verified frames from inferred movement. For a generated clip review the real movie at opening/middle/tail, transitions, face/wardrobe consistency, object contacts, camera movement, lens/lighting coherence, typography/subtitles, rhythm and audio. Use actual contact sheets and playback for evidence, not prompt text.
+
+Motion graphics need a hierarchy and temporal argument: what to understand first, what survives at mobile dimensions, whether a transition aids recognition, and whether text is visible long enough. UI motion should be interruptible and reduced when requested. Never impose interface animation durations on cinema. Technical source/time mapping from Genjutsu remains the canonical action correspondence record. Report missing/misordered movement even if the output looks polished.

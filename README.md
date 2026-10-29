@@ -2,7 +2,7 @@
 
 **A working library for an artist, studio, agency or cultural business — with scoped private knowledge and evidence-aware execution.**
 
-**ACO v1.0.7 · 363 roles · 25 entry skills · 61 workflows · 99 optional resources · token-aware OS + technical skill registry.**
+**ACO v1.0.8 · 363 roles · 25 entry skills · 61 workflows · 99 optional resources · token-aware OS + technical skill registry.**
 
 Proprietary, source-available. Redistribution is restricted by [LICENSE](LICENSE). No third-party software, fonts, models or private knowledge are bundled.
 

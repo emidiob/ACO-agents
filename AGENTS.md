@@ -52,3 +52,7 @@ Resolve real actions through the shared `EXECUTION.md` protocol. A role or optio
 ## Public distribution boundary
 
 Publish product usage, implemented capabilities, necessary limitations, executable source/tests and required dependency attribution. Keep research comparisons, competitor inventories, development plans, product deliberations and internal execution reports outside this repository and outside release archives. Do not publish private working paths or links to internal archives. Keep licenses and attribution intact. User-facing documentation describes the shipped behavior; it must not imply unsupported capabilities. Before pushing or packaging, run the publication-boundary check.
+
+## Automatic cross-office visual taste (ACO-TASTE-GLOBAL-108)
+
+When the user asks ACO to create/edit/review any visual deliverable (web/UI, graphics, image/photo, video/Genjutsu, motion, 3D, print/PDF or presentations), you MUST load `skills/aco-office-concierge/references/protocols/VISUAL-TASTE-ROUTING.md` and the selected `skills/aco-taste/SKILL.md` alongside the existing specialist, even when `/aco-taste` was not typed. Use the medium-specific actual-artifact quality gate before completion; do not pretend source lint or a prompt proves good taste.

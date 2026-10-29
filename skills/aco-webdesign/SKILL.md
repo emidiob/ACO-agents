@@ -44,3 +44,7 @@ Follow [project contract](references/project-contract.md). In integrated ACO als
 
 When the full ACO library is available, for task-specific critical procedure consult the validated professional skill `professional.visual_critique` (synthetic procedural checks only) and its original method at `skills/aco-office-concierge/references/competencies/visual-critique/METHOD.md` in that library. Existing provider-specific technical candidates remain gated. No new provider activation, professional certification or rendering authorization is implied.
 <!-- END ACO-V107-PROFESSIONAL-BRIDGE -->
+
+## Automatic visual-taste gate (ACO-TASTE-GLOBAL-108)
+
+When this task produces, edits or reviews a visual artifact, load the automatic cross-office Taste contract and ACO Taste skill **without requiring the user to invoke it**. Use the appropriate medium method and inspect real output. Nonvisual work stays direct; exact small changes preserve approved design.

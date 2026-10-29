@@ -35,3 +35,7 @@ Load only a method that changes the current task. These are original operating i
 - [Opportunities And Residencies](../aco-office-concierge/references/playbooks/OPPORTUNITIES-AND-RESIDENCIES.md)
 - [Artistic Research And Sources](../aco-office-concierge/references/playbooks/ARTISTIC-RESEARCH-AND-SOURCES.md)
 - [Art Archive And Preservation](../aco-office-concierge/references/playbooks/ART-ARCHIVE-AND-PRESERVATION.md)
+
+## Automatic visual-taste gate (ACO-TASTE-GLOBAL-108)
+
+When this task produces, edits or reviews a visual artifact, load [the automatic cross-office Taste contract](../aco-office-concierge/references/protocols/VISUAL-TASTE-ROUTING.md) and [ACO Taste](../aco-taste/SKILL.md) **without requiring the user to invoke it**. Use the appropriate medium method and inspect real output. Nonvisual work stays direct; exact small changes preserve approved design.
