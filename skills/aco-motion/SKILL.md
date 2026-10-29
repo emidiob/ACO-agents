@@ -37,3 +37,10 @@ Follow the local [project contract](references/project-contract.md) before persi
 ## Working kit
 
 For a new project, concrete commands, standalone installation and host differences read [the executable kit](references/working-kit.md). This is the same canonical skill in both integrated and standalone distributions.
+
+
+<!-- ACO-V107-PROFESSIONAL-BRIDGE -->
+## Professional method companion (ACO 1.0.7)
+
+When the full ACO library is available, for task-specific critical procedure consult the validated professional skill `professional.interface_motion` (synthetic procedural checks only) and its original method at `skills/aco-office-concierge/references/competencies/interface-motion/METHOD.md` in that library. Existing provider-specific technical candidates remain gated. No new provider activation, professional certification or rendering authorization is implied.
+<!-- END ACO-V107-PROFESSIONAL-BRIDGE -->

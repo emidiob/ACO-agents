@@ -49,7 +49,7 @@ class ACOCaptureTests(unittest.TestCase):
     def test_prior_candidates_not_activated(self):
         r = skill_registry_check(ROOT)
         self.assertEqual((r["status"], r["skills"], r["active_skills"], r["candidate_skills"]),
-                         ("valid", 44, 14, 30))
+                         ("valid", 64, 34, 30))
         found = skill_search("nano banana", root=ROOT, limit=20)["results"]
         self.assertFalse(any(x["skill_id"].startswith("image.") for x in found))
 

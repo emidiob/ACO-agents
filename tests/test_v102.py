@@ -14,7 +14,7 @@ IDS = [
 class ImageCandidateRegressions(unittest.TestCase):
  def test_registry_and_counts(self):
   r=skill_registry_check(ROOT)
-  self.assertEqual((r['status'],r['skills'],r['active_skills'],r['candidate_skills']),('valid',44,14,30))
+  self.assertEqual((r['status'],r['skills'],r['active_skills'],r['candidate_skills']),('valid',64,34,30))
  def test_all_candidates_hidden_by_default(self):
   for query in ['nano banana','seedream','fashion editorial image']:
    result=skill_search(query,limit=20,root=ROOT)

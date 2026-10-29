@@ -18,3 +18,10 @@ In a full ACO runtime the Seedance modules are optional technical candidates. In
 Read [project contract](references/project-contract.md) before persistent writes. In a full ACO installation also follow its COMPACT-MEMORY.md protocol; standalone use does not require sibling skills. Keep private media outside the public library. Claude Code and Codex (including their VS Code extensions) use the same method; VS Code itself is not an agent host.
 
 [Portable workflow](references/portable-workflow.md) explains local reference inventories, standalone installation and verification boundaries.
+
+
+<!-- ACO-V107-PROFESSIONAL-BRIDGE -->
+## Professional method companion (ACO 1.0.7)
+
+When the full ACO library is available, for task-specific critical procedure consult the validated professional skill `professional.video_editing` (synthetic procedural checks only) and its original method at `skills/aco-office-concierge/references/competencies/video-editing/METHOD.md` in that library. Existing provider-specific technical candidates remain gated. No new provider activation, professional certification or rendering authorization is implied.
+<!-- END ACO-V107-PROFESSIONAL-BRIDGE -->

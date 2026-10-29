@@ -1,0 +1,45 @@
+{
+  "competency_id": "interface-motion",
+  "method_version": "0.3.0",
+  "qualitative_status": "development_examples_not_independent_validation",
+  "independent_validation": false,
+  "same_author": true,
+  "worked_examples": [
+    {
+      "brief": "Aprire un dettaglio a partire da una card, in tre registri sintetici.",
+      "weak": "Cambiare soltanto la velocità di uno stesso effetto spettacolare.",
+      "application": "Discreto: opacità 160 ms senza traslazione; editoriale: traslazione verticale 12 px e opacità 280 ms; espressivo: scala 0,96→1 e opacità 420 ms. Sono scelte progettuali dell’esercizio. Tutte mantengono il pulsante chiudi, una destinazione stabile e lo stesso testo. Con movimento ridotto la transizione è immediata.",
+      "commentary": "Le differenze riguardano proprietà e ampiezza, oltre alla durata. Il file browser dimostra la meccanica, non una preferenza universale.",
+      "limits": "Il prototipo usa CSS originale: non certifica un’integrazione Motion o GSAP."
+    },
+    {
+      "brief": "Un pannello di stato si muove in parallasse ma contains una conferma importante.",
+      "weak": "Disattivare l’intero pannello quando l’utente riduce il movimento.",
+      "application": "Conservare pannello e conferma; eliminare la parallasse, assicurando un cambiamento visivo statico e un annuncio di stato quando pertinente. Rimuovere gli ascoltatori o gli effetti obsoleti al cambio delle condizioni.",
+      "commentary": "L’accessibilità cambia la modalità, non sottrae l’informazione.",
+      "limits": "L’effettiva percezione assistiva richiede una prova sul prodotto finale."
+    }
+  ],
+  "rubric": {
+    "criteria": [
+      "Stato finale identico tra modalità standard e ridotta.",
+      "Ripetizioni non generano doppie azioni o elementi bloccati.",
+      "Focus e testo non scompaiono durante la transizione.",
+      "Il giudizio di fluidità resta distinto dai controlli di durata."
+    ],
+    "rating_anchors": {
+      "insufficient": "Contraddice un vincolo critico o inventa un dato materiale.",
+      "acceptable": "Rispetta il compito e i vincoli, ma alcune scelte o incertezze non sono ancora ben sviluppate.",
+      "strong": "Decisioni specifiche, prove tracciabili, alternative pertinenti e limiti espliciti; revisione esterna ancora necessaria."
+    },
+    "critical_failures": [
+      "Inventare prove o risultati di test.",
+      "Confondere proposta e approvazione / esecuzione.",
+      "Violare diritti, riservatezza o perimetro autorizzato."
+    ]
+  },
+  "new_case_brief": "Valutare una transizione non presente negli esempi con inversione a metà animazione e connessione lenta; confrontare tre registri senza alterare la disponibilità del comando.",
+  "new_case_status": "not_run",
+  "new_case_is_independent_holdout": false,
+  "promotion_requirements": "Curated professional method; not a technical-skill activation. If later proposed as a technical skill, preserve ACO separate policy: >=20 benchmark cases, >=95 score, 0 critical failures, explicit approval, rollback reference, frozen first run. The two authored examples do not establish independent quality validation."
+}

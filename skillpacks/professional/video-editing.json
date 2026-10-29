@@ -1,0 +1,82 @@
+{
+  "failure_modes": [
+    "Un messaggio nuovo nel cut breve non è un adattamento fedele senza approvazione.",
+    "I sottotitoli non devono competere con un titolo diverso nello stesso istante senza una ragione editoriale.",
+    "A 30000/1001 fps una durata in secondi può non corrispondere a un numero intero di frame: chiedi una convenzione, non arrotondare di nascosto.",
+    "Una transizione può sovrapporsi a due clip; non contare due volte la durata totale.",
+    "Inventing observations, approvals, rights, professional certification or external execution."
+  ],
+  "inputs": [
+    "brief, authorized project scope and non-negotiable constraints",
+    "the available evidence and material unknowns",
+    "format and audience of the required deliverable"
+  ],
+  "method": [
+    "Riduci il brief a un messaggio indispensabile, una prova e un’azione o un’apertura finale. Distingui ciò che si può tagliare da ciò che rende comprensibile la sequenza.",
+    "Prepara una scaletta di unità narrative, ciascuna con funzione, immagine, testo, suono e durata proposta. Non iniziare da un template tecnico se il racconto non è risolto.",
+    "Dichiara frame rate come frazione, durata e formato. Rappresenta le clip con intervalli semiaperti: inizio incluso, fine esclusa; esplicita retime, sovrapposizioni e frame locale rispetto a globale.",
+    "Assegna una sola priorità attentiva dominante per beat. Quando voce, titoli e immagini richiedono letture incompatibili, accorcia il testo o distribuisci le informazioni nel tempo.",
+    "Misura la leggibilità come segnale di rischio: caratteri e parole per secondo aiutano il confronto ma non sono una soglia universale. Verifica lingua, dimensione, pubblico e contenuto effettivo.",
+    "Costruisci 15, 30 e 60 secondi riscrivendo la gerarchia dei beat, non accelerando uniformemente. Mantieni messaggio e prova essenziale; aggiungi contesto solo quando la durata lo consente.",
+    "Traduci la scaletta nel motore realmente disponibile con proprietà parametrizzate e tempi deterministici. Istruzioni Remotion, HTML seekable e OTIO sono rappresentazioni diverse, non formati intercambiabili senza verifica.",
+    "Esegui controlli di durata, gap e sovrapposizioni, poi guarda e ascolta il risultato completo. Un export con durata giusta non dimostra ritmo, intelligibilità o sincronizzazione labiale."
+  ],
+  "output_contract": {
+    "must_include": [
+      "result",
+      "source_or_verification_note",
+      "uncertainties",
+      "decision_criteria"
+    ],
+    "reference_method": "skills/aco-office-concierge/references/competencies/video-editing/OUTPUT.md",
+    "type": "professional_procedural_skill_output"
+  },
+  "rollback_ref": "v1.0.6",
+  "skill_id": "professional.video_editing",
+  "source_status": "validated_internal",
+  "sources": [
+    {
+      "reuse": "reference_only",
+      "review_scope": "Skill integration documentation only.",
+      "url": "https://www.remotion.dev/docs/ai/skills"
+    },
+    {
+      "reuse": "reference_only",
+      "review_scope": "Timing, local frame coordinates and nested placement.",
+      "url": "https://www.remotion.dev/docs/sequence"
+    },
+    {
+      "reuse": "reference_only",
+      "review_scope": "README production loop and deterministic seekable animation concept.",
+      "url": "https://github.com/heygen-com/hyperframes/blob/main/README.md"
+    },
+    {
+      "reuse": "reference_only",
+      "review_scope": "RationalTime and TimeRange API definitions in versioned documentation.",
+      "url": "https://opentimelineio.readthedocs.io/en/v0.17.0/api/python/opentimelineio.opentime.html"
+    }
+  ],
+  "status": "validated",
+  "title": "Video, montaggio e narrazione temporale",
+  "verification": {
+    "benchmark_cases": 20,
+    "level": "deterministic_procedural_contract",
+    "max_critical_failures": 0,
+    "method_files": [
+      "skills/aco-office-concierge/references/competencies/video-editing/METHOD.md",
+      "skills/aco-office-concierge/references/competencies/video-editing/DECISIONS.md",
+      "skills/aco-office-concierge/references/competencies/video-editing/OUTPUT.md",
+      "skills/aco-office-concierge/references/competencies/video-editing/EXAMPLES.md",
+      "skills/aco-office-concierge/references/competencies/video-editing/EVALS.json",
+      "skills/aco-office-concierge/references/competencies/video-editing/SOURCES.json"
+    ],
+    "minimum_score": 95,
+    "professional_quality_review": "not independently assessed",
+    "third_party_rights": "reference_only"
+  },
+  "version": "1.0.0",
+  "when_to_use": [
+    "Use for video editing timeline shots narration duration format.",
+    "Select only within production-office, agency-office, publishing-office and when the task requires this specific method."
+  ]
+}

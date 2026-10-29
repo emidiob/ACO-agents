@@ -1,0 +1,45 @@
+{
+  "competency_id": "administration",
+  "method_version": "0.3.0",
+  "qualitative_status": "development_examples_not_independent_validation",
+  "independent_validation": false,
+  "same_author": true,
+  "worked_examples": [
+    {
+      "brief": "Thread sintetico: m1 Ada: «Posso preparare il preventivo venerdì». m2 Bruno: «Confermo il formato A4». m3 Ada: «Preparo io il preventivo; manca il costo stampa». m4 Bruno: «Forse spostiamo a lunedì».",
+      "weak": "Ada consegnerà lunedì il preventivo approvato in A4.",
+      "application": "Decisione: formato A4 confermato da m2. Impegno: Ada prepara il preventivo, sostenuto da m3. Scadenza: non confermata; venerdì era disponibilità e lunedì proposta. Dipendenza: costo stampa mancante. Domanda operativa: «Confermiamo la scadenza del preventivo e chi fornisce il costo stampa?» Nessuna approvazione del preventivo risulta dal thread.",
+      "commentary": "Il riepilogo mantiene le due ambiguità decisive invece di produrre un piano falsamente completo.",
+      "limits": "I nomi e i messaggi sono inventati; nessuna email o attività reale è stata creata."
+    },
+    {
+      "brief": "Riunione sintetica: una persona propone di inviare il dossier, un’altra risponde «ne parliamo quando arriva il nuovo budget».",
+      "weak": "Decisione: inviare il dossier appena possibile.",
+      "application": "Stato: proposta di invio sospesa in attesa del nuovo budget; responsabile e scadenza non definiti. Nel briefing inserire budget come prerequisito e invio come punto da decidere, non come azione già autorizzata.",
+      "commentary": "La dipendenza è più importante di una scadenza inventata per completare la tabella.",
+      "limits": "L’assenza di accordo non impedisce di preparare una bozza interna chiaramente etichettata."
+    }
+  ],
+  "rubric": {
+    "criteria": [
+      "Responsabili e scadenze riconducibili a messaggi espliciti.",
+      "Proposte e disponibilità non convertite in accordi.",
+      "Revoche e versioni precedenti conservate quando materialmente rilevanti.",
+      "Nessun invio o modifica calendario dichiarato senza strumento e ricevuta."
+    ],
+    "rating_anchors": {
+      "insufficient": "Contraddice un vincolo critico o inventa un dato materiale.",
+      "acceptable": "Rispetta il compito e i vincoli, ma alcune scelte o incertezze non sono ancora ben sviluppate.",
+      "strong": "Decisioni specifiche, prove tracciabili, alternative pertinenti e limiti espliciti; revisione esterna ancora necessaria."
+    },
+    "critical_failures": [
+      "Inventare prove o risultati di test.",
+      "Confondere proposta e approvazione / esecuzione.",
+      "Violare diritti, riservatezza o perimetro autorizzato."
+    ]
+  },
+  "new_case_brief": "Riassumere un thread nuovo con due «confermo» riferiti a oggetti diversi, una revoca e un allegato non accessibile; zero impegni inventati.",
+  "new_case_status": "not_run",
+  "new_case_is_independent_holdout": false,
+  "promotion_requirements": "Curated professional method; not a technical-skill activation. If later proposed as a technical skill, preserve ACO separate policy: >=20 benchmark cases, >=95 score, 0 critical failures, explicit approval, rollback reference, frozen first run. The two authored examples do not establish independent quality validation."
+}

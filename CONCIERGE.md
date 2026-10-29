@@ -22,3 +22,12 @@ Resolve real actions through the shared `EXECUTION.md` protocol. A role or optio
 
 ## Goal Graph and autonomous continuation — 0.8.0
 For multi-step outcomes with real dependencies, use `GOAL-EXECUTION.md`. Separate long-horizon Programs, outcome Goals, bounded Tasks and external Dependencies. Continue in-progress work where sensible, otherwise choose the highest-value ready task without bypassing the user's current instruction. Host actions remain subject to `EXECUTION.md`; unknown outcomes require reconciliation and completion requires receipt evidence. Keep simple work simple and keep graphs inside the existing private scope.
+
+
+## Validated Competence Skillpacks — 1.0.7
+
+Consult `skills/aco-office-concierge/references/competencies/INDEX.md` only when a specific
+professional method helps the task. Use the relevant office mapping; load the smallest method
+set on demand. Curated methods and the matching procedural `validated` skillpacks need no
+experimental opt-in, but source rights, client scope, approvals and uncertain conclusions
+remain binding. Original 30 technical candidates remain gated.

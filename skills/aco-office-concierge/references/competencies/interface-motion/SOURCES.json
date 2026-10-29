@@ -1,0 +1,9 @@
+{
+  "source_ids": [
+    "motion",
+    "gsap"
+  ],
+  "canonical_source_register": "../SOURCES.json",
+  "existing_aco_paths": [],
+  "upstream_content_bundled": false
+}

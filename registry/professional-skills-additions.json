@@ -1,0 +1,368 @@
+{
+  "aco_version": "1.0.7",
+  "base_technical_registry_preserved": true,
+  "baseline": "08a285ea747d283d65919237ba926803a064dab1",
+  "count": 20,
+  "new_status": "validated",
+  "professional_quality_certification": false,
+  "schema_version": 1,
+  "skills": [
+    {
+      "body_path": "skillpacks/professional/visual-critique.json",
+      "pack": "professional",
+      "quality": 0.86,
+      "skill_id": "professional.visual_critique",
+      "status": "validated",
+      "summary": "ACO professional method for specific visual critique layout hierarchy preserve brand identity accessibility.",
+      "tags": [
+        "visual-critique",
+        "aco-professional-visual-critique",
+        "agency",
+        "product"
+      ],
+      "title": "Critica visiva e web design",
+      "token_estimate": 404,
+      "version": "1.0.0"
+    },
+    {
+      "body_path": "skillpacks/professional/ux-research.json",
+      "pack": "professional",
+      "quality": 0.86,
+      "skill_id": "professional.ux_research",
+      "status": "validated",
+      "summary": "ACO professional method for user research observations service journey contradictory evidence test tasks.",
+      "tags": [
+        "ux-research",
+        "aco-professional-ux-research",
+        "product",
+        "agency",
+        "organization"
+      ],
+      "title": "UX, ricerca utenti e servizi",
+      "token_estimate": 368,
+      "version": "1.0.0"
+    },
+    {
+      "body_path": "skillpacks/professional/accessibility.json",
+      "pack": "professional",
+      "quality": 0.86,
+      "skill_id": "professional.accessibility",
+      "status": "validated",
+      "summary": "ACO professional method for accessibility keyboard form labels errors accessible states.",
+      "tags": [
+        "accessibility",
+        "aco-professional-accessibility",
+        "product",
+        "agency",
+        "publishing"
+      ],
+      "title": "Accessibilità contestuale",
+      "token_estimate": 384,
+      "version": "1.0.0"
+    },
+    {
+      "body_path": "skillpacks/professional/interface-motion.json",
+      "pack": "professional",
+      "quality": 0.86,
+      "skill_id": "professional.interface_motion",
+      "status": "validated",
+      "summary": "ACO professional method for motion interface timing easing reduced motion final state.",
+      "tags": [
+        "interface-motion",
+        "aco-professional-interface-motion",
+        "agency",
+        "product",
+        "production"
+      ],
+      "title": "Motion design delle interfacce",
+      "token_estimate": 362,
+      "version": "1.0.0"
+    },
+    {
+      "body_path": "skillpacks/professional/video-editing.json",
+      "pack": "professional",
+      "quality": 0.86,
+      "skill_id": "professional.video_editing",
+      "status": "validated",
+      "summary": "ACO professional method for video editing timeline shots narration duration format.",
+      "tags": [
+        "video-editing",
+        "aco-professional-video-editing",
+        "production",
+        "agency",
+        "publishing"
+      ],
+      "title": "Video, montaggio e narrazione temporale",
+      "token_estimate": 376,
+      "version": "1.0.0"
+    },
+    {
+      "body_path": "skillpacks/professional/genjutsu-motion.json",
+      "pack": "professional",
+      "quality": 0.86,
+      "skill_id": "professional.genjutsu_motion",
+      "status": "validated",
+      "summary": "ACO professional method for Genjutsu reference video motion transfer camera subject events.",
+      "tags": [
+        "genjutsu-motion",
+        "aco-professional-genjutsu-motion",
+        "production",
+        "agency"
+      ],
+      "title": "Genjutsu: osservazione e trasferimento del movimento",
+      "token_estimate": 416,
+      "version": "1.0.0"
+    },
+    {
+      "body_path": "skillpacks/professional/curatorial-practice.json",
+      "pack": "professional",
+      "quality": 0.86,
+      "skill_id": "professional.curatorial_practice",
+      "status": "validated",
+      "summary": "ACO professional method for curatorial exhibition artworks thesis spatial order interpretation.",
+      "tags": [
+        "curatorial-practice",
+        "aco-professional-curatorial-practice",
+        "artist",
+        "organization"
+      ],
+      "title": "Ricerca curatoriale e costruzione di mostre",
+      "token_estimate": 373,
+      "version": "1.0.0"
+    },
+    {
+      "body_path": "skillpacks/professional/art-criticism.json",
+      "pack": "professional",
+      "quality": 0.86,
+      "skill_id": "professional.art_criticism",
+      "status": "validated",
+      "summary": "ACO professional method for contemporary art criticism visual evidence counter readings.",
+      "tags": [
+        "art-criticism",
+        "aco-professional-art-criticism",
+        "artist",
+        "organization",
+        "publishing"
+      ],
+      "title": "Critica d’arte e sviluppo della pratica",
+      "token_estimate": 364,
+      "version": "1.0.0"
+    },
+    {
+      "body_path": "skillpacks/professional/collections-records.json",
+      "pack": "professional",
+      "quality": 0.86,
+      "skill_id": "professional.collections_records",
+      "status": "validated",
+      "summary": "ACO professional method for museum collection archive catalogue provenance conflicting records.",
+      "tags": [
+        "collections-records",
+        "aco-professional-collections-records",
+        "artist",
+        "organization",
+        "administration"
+      ],
+      "title": "Archivi, opere e conservazione documentale",
+      "token_estimate": 384,
+      "version": "1.0.0"
+    },
+    {
+      "body_path": "skillpacks/professional/cultural-marketing.json",
+      "pack": "professional",
+      "quality": 0.86,
+      "skill_id": "professional.cultural_marketing",
+      "status": "validated",
+      "summary": "ACO professional method for cultural audience development participation outreach messages.",
+      "tags": [
+        "cultural-marketing",
+        "aco-professional-cultural-marketing",
+        "organization",
+        "agency",
+        "artist"
+      ],
+      "title": "Marketing culturale e sviluppo del pubblico",
+      "token_estimate": 349,
+      "version": "1.0.0"
+    },
+    {
+      "body_path": "skillpacks/professional/copy-positioning.json",
+      "pack": "professional",
+      "quality": 0.86,
+      "skill_id": "professional.copy_positioning",
+      "status": "validated",
+      "summary": "ACO professional method for copywriting brand positioning verifiable claims message evidence.",
+      "tags": [
+        "copy-positioning",
+        "aco-professional-copy-positioning",
+        "agency",
+        "commercial",
+        "publishing"
+      ],
+      "title": "Copywriting, contenuti e posizionamento",
+      "token_estimate": 340,
+      "version": "1.0.0"
+    },
+    {
+      "body_path": "skillpacks/professional/editorial-verification.json",
+      "pack": "professional",
+      "quality": 0.86,
+      "skill_id": "professional.editorial_verification",
+      "status": "validated",
+      "summary": "ACO professional method for journalism editorial fact checking source independence claims.",
+      "tags": [
+        "editorial-verification",
+        "aco-professional-editorial-verification",
+        "publishing",
+        "administration",
+        "legal",
+        "agency"
+      ],
+      "title": "Giornalismo, editing e revisione documentale",
+      "token_estimate": 364,
+      "version": "1.0.0"
+    },
+    {
+      "body_path": "skillpacks/professional/legal-review.json",
+      "pack": "professional",
+      "quality": 0.86,
+      "skill_id": "professional.legal_review",
+      "status": "validated",
+      "summary": "ACO professional method for legal contract review clauses rights jurisdiction facts.",
+      "tags": [
+        "legal-review",
+        "aco-professional-legal-review",
+        "legal",
+        "commercial",
+        "administration"
+      ],
+      "title": "Contratti, diritti e preparazione legale",
+      "token_estimate": 382,
+      "version": "1.0.0"
+    },
+    {
+      "body_path": "skillpacks/professional/administration.json",
+      "pack": "professional",
+      "quality": 0.86,
+      "skill_id": "professional.administration",
+      "status": "validated",
+      "summary": "ACO professional method for executive secretary administration meeting inbox decisions actions.",
+      "tags": [
+        "administration",
+        "aco-professional-administration",
+        "administration",
+        "delivery"
+      ],
+      "title": "Amministrazione, segreteria e continuità operativa",
+      "token_estimate": 356,
+      "version": "1.0.0"
+    },
+    {
+      "body_path": "skillpacks/professional/project-delivery.json",
+      "pack": "professional",
+      "quality": 0.86,
+      "skill_id": "professional.project_delivery",
+      "status": "validated",
+      "summary": "ACO professional method for project management delivery dependency schedule changes.",
+      "tags": [
+        "project-delivery",
+        "aco-professional-project-delivery",
+        "delivery",
+        "agency",
+        "production"
+      ],
+      "title": "Project management e consegna",
+      "token_estimate": 363,
+      "version": "1.0.0"
+    },
+    {
+      "body_path": "skillpacks/professional/negotiation.json",
+      "pack": "professional",
+      "quality": 0.86,
+      "skill_id": "professional.negotiation",
+      "status": "validated",
+      "summary": "ACO professional method for commercial negotiation partnership offers scope price rights.",
+      "tags": [
+        "negotiation",
+        "aco-professional-negotiation",
+        "commercial",
+        "legal",
+        "artist"
+      ],
+      "title": "Negoziazione, offerte e partnership",
+      "token_estimate": 351,
+      "version": "1.0.0"
+    },
+    {
+      "body_path": "skillpacks/professional/studio-finance.json",
+      "pack": "professional",
+      "quality": 0.86,
+      "skill_id": "professional.studio_finance",
+      "status": "validated",
+      "summary": "ACO professional method for financial studio budgeting cost margin cash flow.",
+      "tags": [
+        "studio-finance",
+        "aco-professional-studio-finance",
+        "finance",
+        "commercial",
+        "production"
+      ],
+      "title": "Finanza di studio e controllo economico",
+      "token_estimate": 349,
+      "version": "1.0.0"
+    },
+    {
+      "body_path": "skillpacks/professional/people-recruitment.json",
+      "pack": "professional",
+      "quality": 0.86,
+      "skill_id": "professional.people_recruitment",
+      "status": "validated",
+      "summary": "ACO professional method for human resources recruitment structured interview evidence.",
+      "tags": [
+        "people-recruitment",
+        "aco-professional-people-recruitment",
+        "people",
+        "recruitment"
+      ],
+      "title": "HR, recruitment e sviluppo competenze",
+      "token_estimate": 375,
+      "version": "1.0.0"
+    },
+    {
+      "body_path": "skillpacks/professional/strategy-evaluation.json",
+      "pack": "professional",
+      "quality": 0.86,
+      "skill_id": "professional.strategy_evaluation",
+      "status": "validated",
+      "summary": "ACO professional method for strategy program evaluation portfolio budget tradeoffs.",
+      "tags": [
+        "strategy-evaluation",
+        "aco-professional-strategy-evaluation",
+        "organization",
+        "commercial",
+        "delivery"
+      ],
+      "title": "Strategia e valutazione dei programmi",
+      "token_estimate": 363,
+      "version": "1.0.0"
+    },
+    {
+      "body_path": "skillpacks/professional/skill-evaluation.json",
+      "pack": "professional",
+      "quality": 0.86,
+      "skill_id": "professional.skill_evaluation",
+      "status": "validated",
+      "summary": "ACO professional method for technical skill evaluation regression holdout source provenance.",
+      "tags": [
+        "skill-evaluation",
+        "aco-professional-skill-evaluation",
+        "shared",
+        "product",
+        "delivery"
+      ],
+      "title": "Apprendimento e verifica delle competenze ACO",
+      "token_estimate": 376,
+      "version": "1.0.0"
+    }
+  ],
+  "type": "new_aco_professional_skill_additions"
+}

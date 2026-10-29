@@ -1,0 +1,11 @@
+{
+  "source_ids": [
+    "govs"
+  ],
+  "canonical_source_register": "../SOURCES.json",
+  "existing_aco_paths": [
+    "skills/aco-delivery-office/references/agents/delivery-orchestrator.md",
+    "skills/aco-agency-office/references/agents/project-manager.md"
+  ],
+  "upstream_content_bundled": false
+}

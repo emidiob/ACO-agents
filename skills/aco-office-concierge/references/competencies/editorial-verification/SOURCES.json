@@ -1,0 +1,10 @@
+{
+  "source_ids": [
+    "reuters"
+  ],
+  "canonical_source_register": "../SOURCES.json",
+  "existing_aco_paths": [
+    "skills/aco-office-concierge/references/playbooks/PUBLISHING-AND-DOCUMENTS.md"
+  ],
+  "upstream_content_bundled": false
+}

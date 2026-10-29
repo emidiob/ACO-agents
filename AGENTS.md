@@ -22,6 +22,14 @@ Preserve the supplied proprietary `LICENSE` and `.git/`. Do not silently change 
 
 The task owner and actual host approval/sandbox policies outrank ACO role preferences. Report partial failures, untested integrations and conflicts explicitly.
 
+## Validated Competence Skillpacks — 1.0.7
+
+For professional-method work, read `skills/aco-office-concierge/references/competencies/INDEX.md`,
+then load only the selected method, decisions and output. The 20 corresponding
+technical skillpacks are `validated` for structured procedural checks and load without
+experimental opt-in; they are not additional slash commands or professional certification.
+Existing 30 unrelated technical candidates remain non-selectable.
+
 ## Short actions and early questions
 Read the relevant already-authorized material; resolve delegated professional judgment when evidence is sufficient, ask only decisive missing facts/preferences/scope/authorization, then execute. Use the `INTERACTION.md` and `COMMUNICATIONS.md` protocols under `skills/aco-office-concierge/references/protocols/`. Routine tasks need no office-by-office narration. Full commissioned deliverables remain complete. Finance, Commercial, People, Delivery, Administration, Production and Publishing offices are indexed in ACO-INDEX.md; engineering remains Product Office. WhatsApp via a user-connected MCP is optional and never presumed connected.
 

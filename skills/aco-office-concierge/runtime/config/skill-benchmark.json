@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "1.0.6",
+  "aco_version": "1.0.7",
   "gate": {
     "minimum_score": 100,
     "maximum_critical_failures": 0
@@ -12,8 +12,8 @@
       "critical": true,
       "expected": {
         "status": "valid",
-        "skills": 44,
-        "active_skills": 14,
+        "skills": 64,
+        "active_skills": 34,
         "candidate_skills": 30
       }
     },
@@ -832,7 +832,9 @@
       "operation": "search",
       "query": "seedance reference video replica motion transfer",
       "expected": {
-        "results": []
+        "results.0.skill_id": "professional.genjutsu_motion",
+        "results.0.selectable": true,
+        "candidate_results_included": false
       }
     },
     {
@@ -843,6 +845,266 @@
       "expected": {
         "results.0.skill_id": "video.seedance.reference-video-replica",
         "results.0.selectable": false
+      }
+    },
+    {
+      "id": "professional-resolve-search-professional.visual_critique",
+      "operation": "search",
+      "query": "professional.visual_critique",
+      "tags": [
+        "aco-professional-visual-critique"
+      ],
+      "critical": true,
+      "expected": {
+        "results.0.skill_id": "professional.visual_critique",
+        "results.0.selectable": true
+      }
+    },
+    {
+      "id": "professional-resolve-search-professional.ux_research",
+      "operation": "search",
+      "query": "professional.ux_research",
+      "tags": [
+        "aco-professional-ux-research"
+      ],
+      "critical": true,
+      "expected": {
+        "results.0.skill_id": "professional.ux_research",
+        "results.0.selectable": true
+      }
+    },
+    {
+      "id": "professional-resolve-search-professional.accessibility",
+      "operation": "search",
+      "query": "professional.accessibility",
+      "tags": [
+        "aco-professional-accessibility"
+      ],
+      "critical": true,
+      "expected": {
+        "results.0.skill_id": "professional.accessibility",
+        "results.0.selectable": true
+      }
+    },
+    {
+      "id": "professional-resolve-search-professional.interface_motion",
+      "operation": "search",
+      "query": "professional.interface_motion",
+      "tags": [
+        "aco-professional-interface-motion"
+      ],
+      "critical": true,
+      "expected": {
+        "results.0.skill_id": "professional.interface_motion",
+        "results.0.selectable": true
+      }
+    },
+    {
+      "id": "professional-resolve-search-professional.video_editing",
+      "operation": "search",
+      "query": "professional.video_editing",
+      "tags": [
+        "aco-professional-video-editing"
+      ],
+      "critical": true,
+      "expected": {
+        "results.0.skill_id": "professional.video_editing",
+        "results.0.selectable": true
+      }
+    },
+    {
+      "id": "professional-resolve-search-professional.genjutsu_motion",
+      "operation": "search",
+      "query": "professional.genjutsu_motion",
+      "tags": [
+        "aco-professional-genjutsu-motion"
+      ],
+      "critical": true,
+      "expected": {
+        "results.0.skill_id": "professional.genjutsu_motion",
+        "results.0.selectable": true
+      }
+    },
+    {
+      "id": "professional-resolve-search-professional.curatorial_practice",
+      "operation": "search",
+      "query": "professional.curatorial_practice",
+      "tags": [
+        "aco-professional-curatorial-practice"
+      ],
+      "critical": true,
+      "expected": {
+        "results.0.skill_id": "professional.curatorial_practice",
+        "results.0.selectable": true
+      }
+    },
+    {
+      "id": "professional-resolve-search-professional.art_criticism",
+      "operation": "search",
+      "query": "professional.art_criticism",
+      "tags": [
+        "aco-professional-art-criticism"
+      ],
+      "critical": true,
+      "expected": {
+        "results.0.skill_id": "professional.art_criticism",
+        "results.0.selectable": true
+      }
+    },
+    {
+      "id": "professional-resolve-search-professional.collections_records",
+      "operation": "search",
+      "query": "professional.collections_records",
+      "tags": [
+        "aco-professional-collections-records"
+      ],
+      "critical": true,
+      "expected": {
+        "results.0.skill_id": "professional.collections_records",
+        "results.0.selectable": true
+      }
+    },
+    {
+      "id": "professional-resolve-search-professional.cultural_marketing",
+      "operation": "search",
+      "query": "professional.cultural_marketing",
+      "tags": [
+        "aco-professional-cultural-marketing"
+      ],
+      "critical": true,
+      "expected": {
+        "results.0.skill_id": "professional.cultural_marketing",
+        "results.0.selectable": true
+      }
+    },
+    {
+      "id": "professional-resolve-search-professional.copy_positioning",
+      "operation": "search",
+      "query": "professional.copy_positioning",
+      "tags": [
+        "aco-professional-copy-positioning"
+      ],
+      "critical": true,
+      "expected": {
+        "results.0.skill_id": "professional.copy_positioning",
+        "results.0.selectable": true
+      }
+    },
+    {
+      "id": "professional-resolve-search-professional.editorial_verification",
+      "operation": "search",
+      "query": "professional.editorial_verification",
+      "tags": [
+        "aco-professional-editorial-verification"
+      ],
+      "critical": true,
+      "expected": {
+        "results.0.skill_id": "professional.editorial_verification",
+        "results.0.selectable": true
+      }
+    },
+    {
+      "id": "professional-resolve-search-professional.legal_review",
+      "operation": "search",
+      "query": "professional.legal_review",
+      "tags": [
+        "aco-professional-legal-review"
+      ],
+      "critical": true,
+      "expected": {
+        "results.0.skill_id": "professional.legal_review",
+        "results.0.selectable": true
+      }
+    },
+    {
+      "id": "professional-resolve-search-professional.administration",
+      "operation": "search",
+      "query": "professional.administration",
+      "tags": [
+        "aco-professional-administration"
+      ],
+      "critical": true,
+      "expected": {
+        "results.0.skill_id": "professional.administration",
+        "results.0.selectable": true
+      }
+    },
+    {
+      "id": "professional-resolve-search-professional.project_delivery",
+      "operation": "search",
+      "query": "professional.project_delivery",
+      "tags": [
+        "aco-professional-project-delivery"
+      ],
+      "critical": true,
+      "expected": {
+        "results.0.skill_id": "professional.project_delivery",
+        "results.0.selectable": true
+      }
+    },
+    {
+      "id": "professional-resolve-search-professional.negotiation",
+      "operation": "search",
+      "query": "professional.negotiation",
+      "tags": [
+        "aco-professional-negotiation"
+      ],
+      "critical": true,
+      "expected": {
+        "results.0.skill_id": "professional.negotiation",
+        "results.0.selectable": true
+      }
+    },
+    {
+      "id": "professional-resolve-search-professional.studio_finance",
+      "operation": "search",
+      "query": "professional.studio_finance",
+      "tags": [
+        "aco-professional-studio-finance"
+      ],
+      "critical": true,
+      "expected": {
+        "results.0.skill_id": "professional.studio_finance",
+        "results.0.selectable": true
+      }
+    },
+    {
+      "id": "professional-resolve-search-professional.people_recruitment",
+      "operation": "search",
+      "query": "professional.people_recruitment",
+      "tags": [
+        "aco-professional-people-recruitment"
+      ],
+      "critical": true,
+      "expected": {
+        "results.0.skill_id": "professional.people_recruitment",
+        "results.0.selectable": true
+      }
+    },
+    {
+      "id": "professional-resolve-search-professional.strategy_evaluation",
+      "operation": "search",
+      "query": "professional.strategy_evaluation",
+      "tags": [
+        "aco-professional-strategy-evaluation"
+      ],
+      "critical": true,
+      "expected": {
+        "results.0.skill_id": "professional.strategy_evaluation",
+        "results.0.selectable": true
+      }
+    },
+    {
+      "id": "professional-resolve-search-professional.skill_evaluation",
+      "operation": "search",
+      "query": "professional.skill_evaluation",
+      "tags": [
+        "aco-professional-skill-evaluation"
+      ],
+      "critical": true,
+      "expected": {
+        "results.0.skill_id": "professional.skill_evaluation",
+        "results.0.selectable": true
       }
     }
   ]

@@ -1,0 +1,45 @@
+{
+  "competency_id": "strategy-evaluation",
+  "method_version": "0.3.0",
+  "qualitative_status": "development_examples_not_independent_validation",
+  "independent_validation": false,
+  "same_author": true,
+  "worked_examples": [
+    {
+      "brief": "Tre progetti sintetici, budget 10 unità: A costa 8 e genera un prototipo strategico; B costa 5 e prova un servizio a pagamento; C costa 4 e amplia l’accesso a un archivio. Risorse tecniche per uno solo tra A e B.",
+      "weak": "Finanziare tutti perché creano sinergie.",
+      "application": "Combinazioni entro budget: A, B, C, B+C. A+C costa 12 ed è esclusa. Se il mandato prioritario è apprendere sulla sostenibilità economica mantenendo accesso culturale, B+C è una scelta coerente; se il prototipo A è una dipendenza indispensabile per il programma successivo, A può prevalere. Chiarire il mandato e confrontare il costo opportunità, senza inventare un punteggio «oggettivo».",
+      "commentary": "Il vincolo produce una scelta reale; la raccomandazione cambia quando cambia una preferenza sostanziale.",
+      "limits": "Benefici e costi sono inventati e non costituiscono business case verificati."
+    },
+    {
+      "brief": "Un laboratorio conta 50 partecipanti e il report dichiara «abbiamo ridotto l’esclusione digitale».",
+      "weak": "Usare il numero di partecipanti come prova d’impatto.",
+      "application": "50 partecipanti è un output di partecipazione. Per un esito servono prove di capacità o accesso cambiati; per attribuire riduzione dell’esclusione servono definizione, periodo e spiegazioni alternative. Riformulare: «Il laboratorio ha coinvolto 50 partecipanti; gli effetti sull’accesso digitale restano da valutare».",
+      "commentary": "La precisione protegge sia la comunicazione sia la possibilità di apprendere davvero.",
+      "limits": "Non è escluso un impatto positivo: semplicemente non è dimostrato da quel dato."
+    }
+  ],
+  "rubric": {
+    "criteria": [
+      "Risorse e combinazioni fattibili esplicite.",
+      "Nessuna causalità attribuita senza disegno o evidenza adeguata.",
+      "Punteggi e pesi tracciati a preferenze o scenari.",
+      "Almeno una condizione potrebbe cambiare la raccomandazione."
+    ],
+    "rating_anchors": {
+      "insufficient": "Contraddice un vincolo critico o inventa un dato materiale.",
+      "acceptable": "Rispetta il compito e i vincoli, ma alcune scelte o incertezze non sono ancora ben sviluppate.",
+      "strong": "Decisioni specifiche, prove tracciabili, alternative pertinenti e limiti espliciti; revisione esterna ancora necessaria."
+    },
+    "critical_failures": [
+      "Inventare prove o risultati di test.",
+      "Confondere proposta e approvazione / esecuzione.",
+      "Violare diritti, riservatezza o perimetro autorizzato."
+    ]
+  },
+  "new_case_brief": "Valutare tre progetti nuovi con un beneficio non monetizzabile, una dipendenza e un costo futuro nascosto; verificare la sensibilità della scelta a preferenze dichiarate.",
+  "new_case_status": "not_run",
+  "new_case_is_independent_holdout": false,
+  "promotion_requirements": "Curated professional method; not a technical-skill activation. If later proposed as a technical skill, preserve ACO separate policy: >=20 benchmark cases, >=95 score, 0 critical failures, explicit approval, rollback reference, frozen first run. The two authored examples do not establish independent quality validation."
+}

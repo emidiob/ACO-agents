@@ -1,0 +1,45 @@
+{
+  "competency_id": "people-recruitment",
+  "method_version": "0.3.0",
+  "qualitative_status": "development_examples_not_independent_validation",
+  "independent_validation": false,
+  "same_author": true,
+  "worked_examples": [
+    {
+      "brief": "Ruolo sintetico: coordinare una produzione. Candidato A documenta un ritardo gestito ma non descrive budget; B mostra un budget dettagliato ma nessuna gestione di conflitti.",
+      "weak": "A è più carismatico, quindi è il migliore.",
+      "application": "Matrice: gestione ritardo A=prova disponibile, B=non verificata; controllo economico A=non verificato, B=prova disponibile. Presentare a entrambi lo stesso caso di variazione scope con risorsa indisponibile e chiedere priorità, comunicazione e controllo economico. Nessuna classifica definitiva finché i requisiti critici restano non confrontabili.",
+      "commentary": "Le evidenze diverse diventano un piano di verifica equo, non una penalità automatica.",
+      "limits": "Nessun candidato reale è valutato e nessuna decisione di lavoro viene eseguita."
+    },
+    {
+      "brief": "Nuovo collaboratore dichiara di conoscere il montaggio ma non il workflow di consegna dello studio.",
+      "weak": "Assegnare subito consegna finale perché il CV è forte.",
+      "application": "Primo obiettivo: preparare una consegna simulata con versioni, sottotitoli e checksum; affiancamento su naming e ricevute; revisione entro il primo ciclo concordato. Valutare l’output contro criteri del workflow, non l’anzianità dichiarata.",
+      "commentary": "L’onboarding trasforma una lacuna contestuale in prova osservabile senza svalutare l’esperienza pregressa.",
+      "limits": "Tempi e responsabilità sono proposte finché non concordati."
+    }
+  ],
+  "rubric": {
+    "criteria": [
+      "Ogni requisito ha una funzione lavorativa esplicita.",
+      "Stessi criteri e opportunità di prova per i candidati.",
+      "Nessuna inferenza sensibile o punteggio automatico per dato mancante.",
+      "Decisione finale umana e limiti della valutazione visibili."
+    ],
+    "rating_anchors": {
+      "insufficient": "Contraddice un vincolo critico o inventa un dato materiale.",
+      "acceptable": "Rispetta il compito e i vincoli, ma alcune scelte o incertezze non sono ancora ben sviluppate.",
+      "strong": "Decisioni specifiche, prove tracciabili, alternative pertinenti e limiti espliciti; revisione esterna ancora necessaria."
+    },
+    "critical_failures": [
+      "Inventare prove o risultati di test.",
+      "Confondere proposta e approvazione / esecuzione.",
+      "Violare diritti, riservatezza o perimetro autorizzato."
+    ]
+  },
+  "new_case_brief": "Confrontare dossier nuovi con qualità di scrittura diverse ma prove equivalenti; verificare che la rubrica non premi stile, prestigio o disponibilità di informazioni non richieste.",
+  "new_case_status": "not_run",
+  "new_case_is_independent_holdout": false,
+  "promotion_requirements": "Curated professional method; not a technical-skill activation. If later proposed as a technical skill, preserve ACO separate policy: >=20 benchmark cases, >=95 score, 0 critical failures, explicit approval, rollback reference, frozen first run. The two authored examples do not establish independent quality validation."
+}

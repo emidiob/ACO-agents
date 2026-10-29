@@ -1,0 +1,72 @@
+{
+  "failure_modes": [
+    "Alt vuoto è corretto per un’immagine realmente decorativa, non per un’azione priva di nome.",
+    "Rosso, icona o animazione da soli non devono comunicare errore o successo.",
+    "Un messaggio dinamico non deve spostare sempre il focus: scegli tra annuncio e spostamento in base al compito.",
+    "Un test senza screen reader va dichiarato come tale, anche se l’albero semantico sembra corretto.",
+    "Inventing observations, approvals, rights, professional certification or external execution."
+  ],
+  "inputs": [
+    "brief, authorized project scope and non-negotiable constraints",
+    "the available evidence and material unknowns",
+    "format and audience of the required deliverable"
+  ],
+  "method": [
+    "Definisci il percorso e i contesti di uso da verificare: tastiera, ingrandimento, lettura assistita e movimento ridotto. Identifica le versioni e gli strumenti davvero disponibili.",
+    "Parti dalla struttura semantica e dal flusso: titoli ordinati, controlli nativi, etichette associate e istruzioni prima dell’errore. Non applicare ARIA per nascondere una struttura inadatta.",
+    "Per ogni immagine scegli il ruolo nel contesto: informativa, funzionale, decorativa o complessa. Descrivi la funzione di un’immagine-link; ometti la ridondanza decorativa e offri spiegazioni estese quando necessarie.",
+    "Specifica tutti gli stati del form: iniziale, compilazione, errore, invio, successo e indisponibilità. Mantieni i dati validi, collega l’errore al campo e fornisci un’azione di riparazione.",
+    "Dopo un invio non valido rendi localizzabile il riepilogo degli errori e il campo interessato, evitando doppi annunci inutili. La strategia di focus dipende da navigazione o aggiornamento dinamico.",
+    "Esegui il percorso senza puntatore: ordine, visibilità del focus, attivazione, uscita da eventuali dialoghi e recupero. Registra passi e risultati, non soltanto una checkbox «accessibile».",
+    "Affianca ai controlli automatici prove manuali e tecnologie assistive appropriate. I rapporti devono distinguere presenza degli attributi, comportamento browser e comprensibilità per le persone.",
+    "Correggi il difetto più a monte e ripeti il percorso completo; conserva una regressione che fallisce sulla versione precedente. Non dichiarare conformità generale da un singolo form."
+  ],
+  "output_contract": {
+    "must_include": [
+      "result",
+      "source_or_verification_note",
+      "uncertainties",
+      "decision_criteria"
+    ],
+    "reference_method": "skills/aco-office-concierge/references/competencies/accessibility/OUTPUT.md",
+    "type": "professional_procedural_skill_output"
+  },
+  "rollback_ref": "v1.0.6",
+  "skill_id": "professional.accessibility",
+  "source_status": "validated_internal",
+  "sources": [
+    {
+      "reuse": "reference_only",
+      "review_scope": "Form error, success, overall and inline feedback guidance.",
+      "url": "https://www.w3.org/WAI/tutorials/forms/notifications/"
+    },
+    {
+      "reuse": "reference_only",
+      "review_scope": "Context-sensitive image alternative decision tree.",
+      "url": "https://www.w3.org/WAI/tutorials/images/decision-tree/"
+    }
+  ],
+  "status": "validated",
+  "title": "Accessibilità contestuale",
+  "verification": {
+    "benchmark_cases": 20,
+    "level": "deterministic_procedural_contract",
+    "max_critical_failures": 0,
+    "method_files": [
+      "skills/aco-office-concierge/references/competencies/accessibility/METHOD.md",
+      "skills/aco-office-concierge/references/competencies/accessibility/DECISIONS.md",
+      "skills/aco-office-concierge/references/competencies/accessibility/OUTPUT.md",
+      "skills/aco-office-concierge/references/competencies/accessibility/EXAMPLES.md",
+      "skills/aco-office-concierge/references/competencies/accessibility/EVALS.json",
+      "skills/aco-office-concierge/references/competencies/accessibility/SOURCES.json"
+    ],
+    "minimum_score": 95,
+    "professional_quality_review": "not independently assessed",
+    "third_party_rights": "reference_only"
+  },
+  "version": "1.0.0",
+  "when_to_use": [
+    "Use for accessibility keyboard form labels errors accessible states.",
+    "Select only within product-office, agency-office, publishing-office and when the task requires this specific method."
+  ]
+}
