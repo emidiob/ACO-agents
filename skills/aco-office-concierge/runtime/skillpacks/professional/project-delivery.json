@@ -1,0 +1,67 @@
+{
+  "failure_modes": [
+    "Un’attività «90% completa» non sostituisce criteri di accettazione osservabili.",
+    "Parallelizzare è possibile soltanto se le dipendenze e le risorse lo consentono.",
+    "Un ritardo esterno non autorizza a ridurre silenziosamente lo scope.",
+    "La consegna tecnica può essere completata mentre l’accettazione del committente resta aperta.",
+    "Inventing observations, approvals, rights, professional certification or external execution."
+  ],
+  "inputs": [
+    "brief, authorized project scope and non-negotiable constraints",
+    "the available evidence and material unknowns",
+    "format and audience of the required deliverable"
+  ],
+  "method": [
+    "Trasforma l’obiettivo in un risultato accettabile con criteri osservabili, destinatario e condizioni di consegna. Distingui il successo dell’attività dal beneficio che ci si attende dopo.",
+    "Scomponi solo quanto serve per eseguire: attività, dipendenze, risorse e decisioni. Assegna responsabili documentati o proposti, senza fingere accettazione del carico.",
+    "Crea una baseline con durate e unità dichiarate, prerequisiti e assunzioni. Giorni di lavoro, giorni di calendario e date di disponibilità non sono intercambiabili.",
+    "Controlla la rete: dipendenze mancanti, cicli, risorse condivise e approvazioni esterne. Una semplice somma delle durate non basta quando i compiti sono paralleli o in attesa.",
+    "Per ogni rischio specifica evento, conseguenza, indicatore e risposta; per un problema già avvenuto registra effetto reale e decisione necessaria. Non nascondere problemi attuali nel registro rischi.",
+    "Valuta una variazione confrontando baseline e scenario: scope, percorso critico, carico, costi, qualità e diritti. Mantieni almeno un’alternativa credibile quando la scadenza non è recuperabile.",
+    "Applica la modifica solo dopo l’autorità pertinente, conservando versione e motivazione. Un piano ricalcolato non prova che collaboratori o cliente abbiano accettato la nuova consegna.",
+    "Chiudi con evidenze dei criteri, file corretti, responsabilità dopo la consegna e problemi residui accettati. Verifica specifiche e utilità per il destinatario come domande distinte."
+  ],
+  "output_contract": {
+    "must_include": [
+      "result",
+      "source_or_verification_note",
+      "uncertainties",
+      "decision_criteria"
+    ],
+    "reference_method": "skills/aco-office-concierge/references/competencies/project-delivery/OUTPUT.md",
+    "type": "professional_procedural_skill_output"
+  },
+  "rollback_ref": "v1.0.6",
+  "skill_id": "professional.project_delivery",
+  "source_status": "validated_internal",
+  "sources": [
+    {
+      "reuse": "reference_only",
+      "review_scope": "Planning/control, change, verification/validation and transition sections; HTML version.",
+      "url": "https://projectdelivery.gov.uk/library-products/government-functional-standard-govs-002-project-delivery/"
+    }
+  ],
+  "status": "validated",
+  "title": "Project management e consegna",
+  "verification": {
+    "benchmark_cases": 20,
+    "level": "deterministic_procedural_contract",
+    "max_critical_failures": 0,
+    "method_files": [
+      "skills/aco-office-concierge/references/competencies/project-delivery/METHOD.md",
+      "skills/aco-office-concierge/references/competencies/project-delivery/DECISIONS.md",
+      "skills/aco-office-concierge/references/competencies/project-delivery/OUTPUT.md",
+      "skills/aco-office-concierge/references/competencies/project-delivery/EXAMPLES.md",
+      "skills/aco-office-concierge/references/competencies/project-delivery/EVALS.json",
+      "skills/aco-office-concierge/references/competencies/project-delivery/SOURCES.json"
+    ],
+    "minimum_score": 95,
+    "professional_quality_review": "not independently assessed",
+    "third_party_rights": "reference_only"
+  },
+  "version": "1.0.0",
+  "when_to_use": [
+    "Use for project management delivery dependency schedule changes.",
+    "Select only within delivery-office, agency-office, production-office and when the task requires this specific method."
+  ]
+}

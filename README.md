@@ -2,11 +2,20 @@
 
 **A working library for an artist, studio, agency or cultural business — with scoped private knowledge and evidence-aware execution.**
 
-**ACO v1.0.6 · 363 roles · 25 entry skills · 61 workflows · 99 optional resources · token-aware OS + technical skill registry.**
+**ACO v1.0.7 · 363 roles · 25 entry skills · 61 workflows · 99 optional resources · token-aware OS + technical skill registry.**
 
 Proprietary, source-available. Redistribution is restricted by [LICENSE](LICENSE). No third-party software, fonts, models or private knowledge are bundled.
 
 **Start with [BEGINNER-GUIDE.md](BEGINNER-GUIDE.md).** For an existing checkout, follow the evergreen [upgrade procedure](docs/UPGRADING.md). Release-specific Codex prompts are distributed beside release ZIPs, not stored in the repository.
+
+## ACO 1.0.7 — Validated Professional Skillpacks
+
+The [Competence Library](docs/COMPETENCE-LIBRARY.md) provides **20 original, office-indexed
+professional methods** and [20 technical skillpack counterparts](docs/PROFESSIONAL-SKILLS.md).
+The 20 new registry entries are `validated` on 400 frozen synthetic procedural cases,
+not independently certified professional judgment. The technical registry now holds
+14 original active, 20 new validated and 30 original candidates. No experimental flag
+is needed for the new validated entries; native entrypoint count remains 25.
 
 ## What ACO is — and is not
 
@@ -34,7 +43,7 @@ No office-by-office performance or unnecessary planning ceremony. A simple reque
 
 The current runtime resolves `aco://current` and loads the minimum role, skills, policies and context for a task. It keeps versioned code (`ACO_RUNTIME_ROOT`) separate from private saved state (`ACO_HOME`). Goal planning, execution receipts and shadow-only feedback support continuity without granting account access. See [ACO OS](docs/ACO-OS-1.0.md), [Goal Graph](docs/GOAL-GRAPH.md) and [Adaptive ACO](docs/ADAPTIVE-ACO.md).
 
-The technical registry has **44 entries: 14 active and 30 candidates (experimental, not validated)**. The 1.0.4 update also adds [ACO Capture](skills/aco-office-concierge/references/playbooks/ACO-CAPTURE.md): a four-layer photographic prompt-writing method, seven photographic perspectives, and a repeatable Night Fisheye Flash preset. This method does not activate or validate any image-generation model. Seedance and generative-image candidates remain available for explicit inspection and evaluation; inclusion does not establish live model availability or measured output quality.
+The technical registry now has **64 entries: 14 active, 20 validated procedural skills and 30 candidates (experimental, not validated)**. The 20 new entries have synthetic structured-contract checks, not independent professional certification. The 1.0.4 update also adds [ACO Capture](skills/aco-office-concierge/references/playbooks/ACO-CAPTURE.md): a four-layer photographic prompt-writing method, seven photographic perspectives, and a repeatable Night Fisheye Flash preset. This method does not activate or validate any image-generation model. Seedance and generative-image candidates remain available for explicit inspection and evaluation; inclusion does not establish live model availability or measured output quality.
 
 **Artistic authority remains with the artist.** Do not construct a practice around open calls or sales metrics. Do not mistake approved strategy for validated evidence.
 

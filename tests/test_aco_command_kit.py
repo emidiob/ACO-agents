@@ -18,7 +18,7 @@ class ACOCommandKitTests(unittest.TestCase):
 
     def test_registry_and_experimental_method(self):
         r = skill_registry_check(ROOT)
-        self.assertEqual((r['skills'], r['active_skills'], r['candidate_skills']),(44,14,30))
+        self.assertEqual((r['skills'], r['active_skills'], r['candidate_skills']),(64,34,30))
         self.assertFalse(any(x['skill_id']=='video.seedance.reference-video-replica'
                              for x in skill_search('reference video replica motion transfer',root=ROOT)['results']))
         resolved=skill_resolve('video.seedance.reference-video-replica',allow_candidate=True,root=ROOT)

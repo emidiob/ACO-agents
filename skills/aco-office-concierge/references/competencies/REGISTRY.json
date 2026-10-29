@@ -1,0 +1,428 @@
+{
+  "schema_version": 2,
+  "library_version": "0.3.0",
+  "baseline": {
+    "aco_version": "1.0.6",
+    "repository": "emidiob/ACO-agents",
+    "commit": "08a285ea747d283d65919237ba926803a064dab1"
+  },
+  "policy": {
+    "competence_kind": "curated_professional_method",
+    "normal_office_selection": true,
+    "changes_technical_skill_registry": false,
+    "changes_role_routing": false,
+    "changes_aco_version": false,
+    "auto_promotion": false,
+    "new_methods_require_explicit_experimental_use": false,
+    "upstream_content_bundled": false,
+    "independent_professional_validation": false,
+    "promotion_uses_existing_aco_policy": true,
+    "quality_statement": "Curated usage is not independent professional validation or technical-skill promotion."
+  },
+  "competencies": [
+    {
+      "id": "visual-critique",
+      "title": "Critica visiva e web design",
+      "version": "0.3.0",
+      "status": "curated",
+      "auto_selectable": true,
+      "offices": [
+        "agency-office",
+        "product-office"
+      ],
+      "source_ids": [
+        "impeccable",
+        "shadcn",
+        "react-bits"
+      ],
+      "directory": "visual-critique",
+      "existing_aco_paths": [
+        "skills/aco-office-concierge/references/playbooks/visual-direction.md"
+      ],
+      "kind": "professional_method"
+    },
+    {
+      "id": "ux-research",
+      "title": "UX, ricerca utenti e servizi",
+      "version": "0.3.0",
+      "status": "curated",
+      "auto_selectable": true,
+      "offices": [
+        "product-office",
+        "agency-office",
+        "organization-office"
+      ],
+      "source_ids": [
+        "nng",
+        "govuk-research"
+      ],
+      "directory": "ux-research",
+      "existing_aco_paths": [],
+      "kind": "professional_method"
+    },
+    {
+      "id": "accessibility",
+      "title": "Accessibilità contestuale",
+      "version": "0.3.0",
+      "status": "curated",
+      "auto_selectable": true,
+      "offices": [
+        "product-office",
+        "agency-office",
+        "publishing-office"
+      ],
+      "source_ids": [
+        "wai-forms",
+        "wai-images"
+      ],
+      "directory": "accessibility",
+      "existing_aco_paths": [],
+      "kind": "professional_method"
+    },
+    {
+      "id": "interface-motion",
+      "title": "Motion design delle interfacce",
+      "version": "0.3.0",
+      "status": "curated",
+      "auto_selectable": true,
+      "offices": [
+        "agency-office",
+        "product-office",
+        "production-office"
+      ],
+      "source_ids": [
+        "motion",
+        "gsap"
+      ],
+      "directory": "interface-motion",
+      "existing_aco_paths": [],
+      "kind": "professional_method"
+    },
+    {
+      "id": "video-editing",
+      "title": "Video, montaggio e narrazione temporale",
+      "version": "0.3.0",
+      "status": "curated",
+      "auto_selectable": true,
+      "offices": [
+        "production-office",
+        "agency-office",
+        "publishing-office"
+      ],
+      "source_ids": [
+        "remotion-skills",
+        "remotion-sequence",
+        "hyperframes",
+        "otio"
+      ],
+      "directory": "video-editing",
+      "existing_aco_paths": [],
+      "kind": "professional_method"
+    },
+    {
+      "id": "genjutsu-motion",
+      "title": "Genjutsu: osservazione e trasferimento del movimento",
+      "version": "0.3.0",
+      "status": "curated",
+      "auto_selectable": true,
+      "offices": [
+        "production-office",
+        "agency-office"
+      ],
+      "source_ids": [
+        "aco-genjutsu",
+        "otio"
+      ],
+      "directory": "genjutsu-motion",
+      "existing_aco_paths": [
+        "skills/aco-genjutsu/references/motion-transfer.md",
+        "skills/aco-genjutsu/references/visual-evidence.md"
+      ],
+      "kind": "professional_method"
+    },
+    {
+      "id": "curatorial-practice",
+      "title": "Ricerca curatoriale e costruzione di mostre",
+      "version": "0.3.0",
+      "status": "curated",
+      "auto_selectable": true,
+      "offices": [
+        "artist-office",
+        "organization-office"
+      ],
+      "source_ids": [
+        "ici",
+        "eflux-curating"
+      ],
+      "directory": "curatorial-practice",
+      "existing_aco_paths": [
+        "skills/aco-office-concierge/references/playbooks/CURATORIAL-PRACTICE.md",
+        "skills/aco-office-concierge/references/playbooks/ARTISTIC-RESEARCH-AND-SOURCES.md"
+      ],
+      "kind": "professional_method"
+    },
+    {
+      "id": "art-criticism",
+      "title": "Critica d’arte e sviluppo della pratica",
+      "version": "0.3.0",
+      "status": "curated",
+      "auto_selectable": true,
+      "offices": [
+        "artist-office",
+        "organization-office",
+        "publishing-office"
+      ],
+      "source_ids": [
+        "eflux-criticism",
+        "eflux-curating"
+      ],
+      "directory": "art-criticism",
+      "existing_aco_paths": [
+        "skills/aco-office-concierge/references/playbooks/PEER-CRITIQUE.md"
+      ],
+      "kind": "professional_method"
+    },
+    {
+      "id": "collections-records",
+      "title": "Archivi, opere e conservazione documentale",
+      "version": "0.3.0",
+      "status": "curated",
+      "auto_selectable": true,
+      "offices": [
+        "artist-office",
+        "organization-office",
+        "administration-office"
+      ],
+      "source_ids": [
+        "spectrum",
+        "spectrum-rights",
+        "getty"
+      ],
+      "directory": "collections-records",
+      "existing_aco_paths": [
+        "skills/aco-office-concierge/references/playbooks/ART-ARCHIVE-AND-PRESERVATION.md"
+      ],
+      "kind": "professional_method"
+    },
+    {
+      "id": "cultural-marketing",
+      "title": "Marketing culturale e sviluppo del pubblico",
+      "version": "0.3.0",
+      "status": "curated",
+      "auto_selectable": true,
+      "offices": [
+        "organization-office",
+        "agency-office",
+        "artist-office"
+      ],
+      "source_ids": [
+        "culturehive",
+        "marketing-skills"
+      ],
+      "directory": "cultural-marketing",
+      "existing_aco_paths": [],
+      "kind": "professional_method"
+    },
+    {
+      "id": "copy-positioning",
+      "title": "Copywriting, contenuti e posizionamento",
+      "version": "0.3.0",
+      "status": "curated",
+      "auto_selectable": true,
+      "offices": [
+        "agency-office",
+        "commercial-office",
+        "publishing-office"
+      ],
+      "source_ids": [
+        "marketing-skills"
+      ],
+      "directory": "copy-positioning",
+      "existing_aco_paths": [],
+      "kind": "professional_method"
+    },
+    {
+      "id": "editorial-verification",
+      "title": "Giornalismo, editing e revisione documentale",
+      "version": "0.3.0",
+      "status": "curated",
+      "auto_selectable": true,
+      "offices": [
+        "publishing-office",
+        "administration-office",
+        "legal-office",
+        "agency-office"
+      ],
+      "source_ids": [
+        "reuters"
+      ],
+      "directory": "editorial-verification",
+      "existing_aco_paths": [
+        "skills/aco-office-concierge/references/playbooks/PUBLISHING-AND-DOCUMENTS.md"
+      ],
+      "kind": "professional_method"
+    },
+    {
+      "id": "legal-review",
+      "title": "Contratti, diritti e preparazione legale",
+      "version": "0.3.0",
+      "status": "curated",
+      "auto_selectable": true,
+      "offices": [
+        "legal-office",
+        "commercial-office",
+        "administration-office"
+      ],
+      "source_ids": [
+        "anthropic-legal",
+        "docassemble",
+        "gdpr"
+      ],
+      "directory": "legal-review",
+      "existing_aco_paths": [
+        "skills/aco-legal-office/references/agents/document-review-specialist.md"
+      ],
+      "kind": "professional_method"
+    },
+    {
+      "id": "administration",
+      "title": "Amministrazione, segreteria e continuità operativa",
+      "version": "0.3.0",
+      "status": "curated",
+      "auto_selectable": true,
+      "offices": [
+        "administration-office",
+        "delivery-office"
+      ],
+      "source_ids": [
+        "workspace",
+        "reuters"
+      ],
+      "directory": "administration",
+      "existing_aco_paths": [
+        "skills/aco-administration-office/references/agents/executive-assistant.md",
+        "skills/aco-administration-office/references/agents/meeting-calendar-coordinator.md"
+      ],
+      "kind": "professional_method"
+    },
+    {
+      "id": "project-delivery",
+      "title": "Project management e consegna",
+      "version": "0.3.0",
+      "status": "curated",
+      "auto_selectable": true,
+      "offices": [
+        "delivery-office",
+        "agency-office",
+        "production-office"
+      ],
+      "source_ids": [
+        "govs"
+      ],
+      "directory": "project-delivery",
+      "existing_aco_paths": [
+        "skills/aco-delivery-office/references/agents/delivery-orchestrator.md",
+        "skills/aco-agency-office/references/agents/project-manager.md"
+      ],
+      "kind": "professional_method"
+    },
+    {
+      "id": "negotiation",
+      "title": "Negoziazione, offerte e partnership",
+      "version": "0.3.0",
+      "status": "curated",
+      "auto_selectable": true,
+      "offices": [
+        "commercial-office",
+        "legal-office",
+        "artist-office"
+      ],
+      "source_ids": [
+        "pon",
+        "anthropic-legal"
+      ],
+      "directory": "negotiation",
+      "existing_aco_paths": [],
+      "kind": "professional_method"
+    },
+    {
+      "id": "studio-finance",
+      "title": "Finanza di studio e controllo economico",
+      "version": "0.3.0",
+      "status": "curated",
+      "auto_selectable": true,
+      "offices": [
+        "finance-office",
+        "commercial-office",
+        "production-office"
+      ],
+      "source_ids": [
+        "anthropic-finance",
+        "govs"
+      ],
+      "directory": "studio-finance",
+      "existing_aco_paths": [],
+      "kind": "professional_method"
+    },
+    {
+      "id": "people-recruitment",
+      "title": "HR, recruitment e sviluppo competenze",
+      "version": "0.3.0",
+      "status": "curated",
+      "auto_selectable": true,
+      "offices": [
+        "people-office",
+        "recruitment-office"
+      ],
+      "source_ids": [
+        "opm",
+        "esco",
+        "anthropic-hr"
+      ],
+      "directory": "people-recruitment",
+      "existing_aco_paths": [],
+      "kind": "professional_method"
+    },
+    {
+      "id": "strategy-evaluation",
+      "title": "Strategia e valutazione dei programmi",
+      "version": "0.3.0",
+      "status": "curated",
+      "auto_selectable": true,
+      "offices": [
+        "organization-office",
+        "commercial-office",
+        "delivery-office"
+      ],
+      "source_ids": [
+        "double-diamond",
+        "oecd"
+      ],
+      "directory": "strategy-evaluation",
+      "existing_aco_paths": [],
+      "kind": "professional_method"
+    },
+    {
+      "id": "skill-evaluation",
+      "title": "Apprendimento e verifica delle competenze ACO",
+      "version": "0.3.0",
+      "status": "curated",
+      "auto_selectable": true,
+      "offices": [
+        "shared",
+        "product-office",
+        "delivery-office"
+      ],
+      "source_ids": [
+        "promptfoo",
+        "promptfoo-assertions"
+      ],
+      "directory": "skill-evaluation",
+      "existing_aco_paths": [
+        "skills/aco-office-concierge/references/playbooks/QUALITY-AND-EVALUATION.md"
+      ],
+      "kind": "professional_method"
+    }
+  ],
+  "aco_target_version": "1.0.7"
+}

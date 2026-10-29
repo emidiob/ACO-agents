@@ -1,0 +1,1342 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "visual",
+      "kind": "visual",
+      "record": {
+        "inspection_mode": "rendered",
+        "visual_review_complete": true,
+        "directions": [
+          {
+            "task": "trovare una raccolta",
+            "preserved_identity": "catalogo denso",
+            "structure": "search-filter-grid",
+            "correction": "distinguere metadati",
+            "reason": "orientamento"
+          },
+          {
+            "task": "leggere una rivista",
+            "preserved_identity": "asimmetria editoriale",
+            "structure": "oversized-title-index",
+            "correction": "separare indice",
+            "reason": "ritmo"
+          },
+          {
+            "task": "prenotare",
+            "preserved_identity": "servizio chiaro",
+            "structure": "service-price-form",
+            "correction": "esplicitare prezzo",
+            "reason": "decisione informata"
+          }
+        ]
+      },
+      "negative_mutations": [
+        {
+          "name": "one_style",
+          "path": [
+            "directions",
+            1,
+            "structure"
+          ],
+          "value": "search-filter-grid"
+        },
+        {
+          "name": "unseen_render",
+          "path": [
+            "inspection_mode"
+          ],
+          "value": "source_only"
+        }
+      ],
+      "expected": {},
+      "scope": "Synthetic annotated record; deterministic invariants only."
+    },
+    {
+      "id": "ux",
+      "kind": "research",
+      "record": {
+        "observations": [
+          {
+            "id": "P1-T1",
+            "text": "dice facile; non completa"
+          },
+          {
+            "id": "P2-T1",
+            "text": "completa, dubita esito"
+          },
+          {
+            "id": "P3-T1",
+            "text": "trova ricevuta email"
+          }
+        ],
+        "findings": [
+          {
+            "evidence_refs": [
+              "P1-T1",
+              "P2-T1"
+            ],
+            "uncertainties": [
+              "causa del mancato invio"
+            ],
+            "population_prevalence_claim": false
+          }
+        ],
+        "conflicts_discarded": false
+      },
+      "negative_mutations": [
+        {
+          "name": "invented_observation",
+          "path": [
+            "findings",
+            0,
+            "evidence_refs"
+          ],
+          "value": [
+            "P99"
+          ]
+        },
+        {
+          "name": "prevalence",
+          "path": [
+            "findings",
+            0,
+            "population_prevalence_claim"
+          ],
+          "value": true
+        }
+      ],
+      "expected": {},
+      "scope": "Synthetic annotated record; deterministic invariants only."
+    },
+    {
+      "id": "a11y",
+      "kind": "accessibility",
+      "record": {
+        "controls": [
+          {
+            "name": "Nome"
+          },
+          {
+            "name": "Email"
+          },
+          {
+            "name": "Registrati"
+          }
+        ],
+        "field_ids": [
+          "name",
+          "email"
+        ],
+        "errors": [
+          {
+            "field": "email",
+            "repair": "Inserisci un indirizzo email valido.",
+            "association": "aria-describedby=email-error"
+          }
+        ],
+        "keyboard_complete": true,
+        "global_conformance_claim": false,
+        "screen_reader_pass": false,
+        "screen_reader_receipt": null
+      },
+      "negative_mutations": [
+        {
+          "name": "empty_name",
+          "path": [
+            "controls",
+            1,
+            "name"
+          ],
+          "value": ""
+        },
+        {
+          "name": "unsupported_conformance",
+          "path": [
+            "global_conformance_claim"
+          ],
+          "value": true
+        }
+      ],
+      "expected": {},
+      "scope": "Synthetic annotated record; deterministic invariants only."
+    },
+    {
+      "id": "ui-motion",
+      "kind": "ui-motion",
+      "record": {
+        "expected_final": "details-open",
+        "variants": [
+          {
+            "name": "discreto",
+            "final_state": "details-open",
+            "reduced_final_state": "details-open",
+            "interruptible": true,
+            "reduced_transform": "none"
+          },
+          {
+            "name": "editoriale",
+            "final_state": "details-open",
+            "reduced_final_state": "details-open",
+            "interruptible": true,
+            "reduced_transform": "none"
+          },
+          {
+            "name": "espressivo",
+            "final_state": "details-open",
+            "reduced_final_state": "details-open",
+            "interruptible": true,
+            "reduced_transform": "none"
+          }
+        ]
+      },
+      "negative_mutations": [
+        {
+          "name": "reduced_state_lost",
+          "path": [
+            "variants",
+            1,
+            "reduced_final_state"
+          ],
+          "value": "hidden"
+        },
+        {
+          "name": "not_interruptible",
+          "path": [
+            "variants",
+            2,
+            "interruptible"
+          ],
+          "value": false
+        }
+      ],
+      "expected": {},
+      "scope": "Synthetic annotated record; deterministic invariants only."
+    },
+    {
+      "id": "timeline-15",
+      "kind": "timeline",
+      "record": {
+        "fps": [
+          25,
+          1
+        ],
+        "duration_frames": 375,
+        "expected_seconds": 15,
+        "tracks": [
+          {
+            "id": "picture",
+            "continuous": true,
+            "clips": [
+              {
+                "id": "problem",
+                "start": 0,
+                "end": 75
+              },
+              {
+                "id": "repair",
+                "start": 75,
+                "end": 250
+              },
+              {
+                "id": "result",
+                "start": 250,
+                "end": 300
+              },
+              {
+                "id": "invitation",
+                "start": 300,
+                "end": 375
+              }
+            ]
+          }
+        ]
+      },
+      "negative_mutations": [
+        {
+          "name": "gap",
+          "path": [
+            "tracks",
+            0,
+            "clips",
+            1,
+            "start"
+          ],
+          "value": 76
+        },
+        {
+          "name": "wrong_duration",
+          "path": [
+            "duration_frames"
+          ],
+          "value": 376
+        }
+      ],
+      "expected": {
+        "duration_frames": 375,
+        "duration_seconds": "15"
+      },
+      "scope": "Synthetic annotated record; deterministic invariants only."
+    },
+    {
+      "id": "timeline-30",
+      "kind": "timeline",
+      "record": {
+        "fps": [
+          25,
+          1
+        ],
+        "duration_frames": 750,
+        "expected_seconds": 30,
+        "tracks": [
+          {
+            "id": "picture",
+            "continuous": true,
+            "clips": [
+              {
+                "id": "problem",
+                "start": 0,
+                "end": 125
+              },
+              {
+                "id": "diagnosis",
+                "start": 125,
+                "end": 250
+              },
+              {
+                "id": "repair",
+                "start": 250,
+                "end": 525
+              },
+              {
+                "id": "result",
+                "start": 525,
+                "end": 650
+              },
+              {
+                "id": "invitation",
+                "start": 650,
+                "end": 750
+              }
+            ]
+          }
+        ]
+      },
+      "negative_mutations": [
+        {
+          "name": "gap",
+          "path": [
+            "tracks",
+            0,
+            "clips",
+            1,
+            "start"
+          ],
+          "value": 126
+        },
+        {
+          "name": "wrong_duration",
+          "path": [
+            "duration_frames"
+          ],
+          "value": 751
+        }
+      ],
+      "expected": {
+        "duration_frames": 750,
+        "duration_seconds": "30"
+      },
+      "scope": "Synthetic annotated record; deterministic invariants only."
+    },
+    {
+      "id": "timeline-60",
+      "kind": "timeline",
+      "record": {
+        "fps": [
+          25,
+          1
+        ],
+        "duration_frames": 1500,
+        "expected_seconds": 60,
+        "tracks": [
+          {
+            "id": "picture",
+            "continuous": true,
+            "clips": [
+              {
+                "id": "context",
+                "start": 0,
+                "end": 200
+              },
+              {
+                "id": "problem",
+                "start": 200,
+                "end": 400
+              },
+              {
+                "id": "diagnosis",
+                "start": 400,
+                "end": 650
+              },
+              {
+                "id": "repair",
+                "start": 650,
+                "end": 1075
+              },
+              {
+                "id": "comparison",
+                "start": 1075,
+                "end": 1325
+              },
+              {
+                "id": "invitation",
+                "start": 1325,
+                "end": 1500
+              }
+            ]
+          }
+        ]
+      },
+      "negative_mutations": [
+        {
+          "name": "gap",
+          "path": [
+            "tracks",
+            0,
+            "clips",
+            1,
+            "start"
+          ],
+          "value": 201
+        },
+        {
+          "name": "wrong_duration",
+          "path": [
+            "duration_frames"
+          ],
+          "value": 1501
+        }
+      ],
+      "expected": {
+        "duration_frames": 1500,
+        "duration_seconds": "60"
+      },
+      "scope": "Synthetic annotated record; deterministic invariants only."
+    },
+    {
+      "id": "genjutsu",
+      "kind": "motion-transfer",
+      "record": {
+        "source_events": [
+          {
+            "id": "approach",
+            "track": "subject"
+          },
+          {
+            "id": "grip-lift",
+            "track": "subject"
+          },
+          {
+            "id": "carry",
+            "track": "subject"
+          },
+          {
+            "id": "release",
+            "track": "subject"
+          },
+          {
+            "id": "retract",
+            "track": "subject"
+          },
+          {
+            "id": "camera",
+            "track": "camera"
+          }
+        ],
+        "target_events": [
+          {
+            "source_id": "approach",
+            "disposition": "transfer",
+            "certainty": "observed",
+            "evidence": [
+              "frame_000.png"
+            ],
+            "interval": [
+              "0",
+              "0.40"
+            ],
+            "prompt_excerpt": "La pinza si avvicina senza contatto."
+          },
+          {
+            "source_id": "grip-lift",
+            "disposition": "transfer",
+            "certainty": "observed",
+            "evidence": [
+              "frame_000.png"
+            ],
+            "interval": [
+              "0.40",
+              "0.80"
+            ],
+            "prompt_excerpt": "La pinza afferra e solleva il disco."
+          },
+          {
+            "source_id": "carry",
+            "disposition": "transfer",
+            "certainty": "observed",
+            "evidence": [
+              "frame_000.png"
+            ],
+            "interval": [
+              "0.80",
+              "1.40"
+            ],
+            "prompt_excerpt": "La pinza trasporta il disco verso destra."
+          },
+          {
+            "source_id": "release",
+            "disposition": "transfer",
+            "certainty": "observed",
+            "evidence": [
+              "frame_000.png"
+            ],
+            "interval": [
+              "1.40",
+              "1.60"
+            ],
+            "prompt_excerpt": "La pinza abbassa e rilascia il disco."
+          },
+          {
+            "source_id": "retract",
+            "disposition": "transfer",
+            "certainty": "observed",
+            "evidence": [
+              "frame_000.png"
+            ],
+            "interval": [
+              "1.60",
+              "2.00"
+            ],
+            "prompt_excerpt": "La pinza si allontana; il disco resta fermo."
+          },
+          {
+            "source_id": "camera",
+            "disposition": "transfer",
+            "certainty": "observed",
+            "evidence": [
+              "frame_000.png"
+            ],
+            "interval": [
+              "0",
+              "2.00"
+            ],
+            "prompt_excerpt": "La camera resta ferma."
+          }
+        ],
+        "authorized_omissions": [],
+        "available_evidence": [
+          "frame_000.png"
+        ],
+        "target_duration": "2.00",
+        "prompt": "La pinza si avvicina senza contatto. La pinza afferra e solleva il disco. La pinza trasporta il disco verso destra. La pinza abbassa e rilascia il disco. La pinza si allontana; il disco resta fermo. La camera resta ferma.",
+        "generation_verified": false
+      },
+      "negative_mutations": [
+        {
+          "name": "lost_release",
+          "path": [
+            "target_events"
+          ],
+          "value": [
+            {
+              "source_id": "approach",
+              "disposition": "transfer",
+              "certainty": "observed",
+              "evidence": [
+                "frame_000.png"
+              ],
+              "interval": [
+                "0",
+                "0.40"
+              ],
+              "prompt_excerpt": "La pinza si avvicina senza contatto."
+            },
+            {
+              "source_id": "grip-lift",
+              "disposition": "transfer",
+              "certainty": "observed",
+              "evidence": [
+                "frame_000.png"
+              ],
+              "interval": [
+                "0.40",
+                "0.80"
+              ],
+              "prompt_excerpt": "La pinza afferra e solleva il disco."
+            },
+            {
+              "source_id": "carry",
+              "disposition": "transfer",
+              "certainty": "observed",
+              "evidence": [
+                "frame_000.png"
+              ],
+              "interval": [
+                "0.80",
+                "1.40"
+              ],
+              "prompt_excerpt": "La pinza trasporta il disco verso destra."
+            },
+            {
+              "source_id": "retract",
+              "disposition": "transfer",
+              "certainty": "observed",
+              "evidence": [
+                "frame_000.png"
+              ],
+              "interval": [
+                "1.60",
+                "2.00"
+              ],
+              "prompt_excerpt": "La pinza si allontana; il disco resta fermo."
+            },
+            {
+              "source_id": "camera",
+              "disposition": "transfer",
+              "certainty": "observed",
+              "evidence": [
+                "frame_000.png"
+              ],
+              "interval": [
+                "0",
+                "2.00"
+              ],
+              "prompt_excerpt": "La camera resta ferma."
+            }
+          ]
+        },
+        {
+          "name": "invented_frame",
+          "path": [
+            "target_events",
+            0,
+            "evidence"
+          ],
+          "value": [
+            "unseen.png"
+          ]
+        }
+      ],
+      "expected": {},
+      "scope": "Synthetic annotated record; deterministic invariants only."
+    },
+    {
+      "id": "curating",
+      "kind": "curating",
+      "record": {
+        "available_work_ids": [
+          "audio",
+          "print",
+          "ledger"
+        ],
+        "exhibitions": [
+          {
+            "thesis": "durata del mantenere",
+            "order": [
+              "audio",
+              "print",
+              "ledger"
+            ],
+            "spatial_consequence": "seduta prima della stampa"
+          },
+          {
+            "thesis": "autorità del conservare",
+            "order": [
+              "ledger",
+              "print",
+              "audio"
+            ],
+            "spatial_consequence": "registro come soglia"
+          }
+        ],
+        "loans_confirmed": false
+      },
+      "negative_mutations": [
+        {
+          "name": "invented_work",
+          "path": [
+            "exhibitions",
+            1,
+            "order"
+          ],
+          "value": [
+            "ledger",
+            "sculpture",
+            "audio"
+          ]
+        },
+        {
+          "name": "same_order",
+          "path": [
+            "exhibitions",
+            1,
+            "order"
+          ],
+          "value": [
+            "audio",
+            "print",
+            "ledger"
+          ]
+        }
+      ],
+      "expected": {},
+      "scope": "Synthetic annotated record; deterministic invariants only."
+    },
+    {
+      "id": "criticism",
+      "kind": "criticism",
+      "record": {
+        "visible_evidence_ids": [
+          "compression",
+          "monitors"
+        ],
+        "readings": [
+          {
+            "evidence_ids": [
+              "compression"
+            ],
+            "counterevidence": "accesso alla copia chiuso"
+          },
+          {
+            "evidence_ids": [
+              "compression",
+              "monitors"
+            ],
+            "counterevidence": "possibilità di variazione"
+          }
+        ],
+        "artist_intent_asserted": false,
+        "experiment": "Aprire un nodo al pubblico e confrontare una versione chiusa."
+      },
+      "negative_mutations": [
+        {
+          "name": "unsupported_interpretation",
+          "path": [
+            "readings",
+            0,
+            "evidence_ids"
+          ],
+          "value": [
+            "biography"
+          ]
+        },
+        {
+          "name": "intent",
+          "path": [
+            "artist_intent_asserted"
+          ],
+          "value": true
+        }
+      ],
+      "expected": {},
+      "scope": "Synthetic annotated record; deterministic invariants only."
+    },
+    {
+      "id": "archive",
+      "kind": "archive",
+      "record": {
+        "sources": [
+          {
+            "id": "label"
+          },
+          {
+            "id": "invoice"
+          },
+          {
+            "id": "artist-email"
+          }
+        ],
+        "fields": [
+          {
+            "name": "dimensions",
+            "source_ids": [
+              "label",
+              "invoice"
+            ],
+            "conflict": true,
+            "status": "unresolved",
+            "resolution_ref": null
+          }
+        ],
+        "ownership_inferred_from_location": false,
+        "spectrum_compliance_claim": false
+      },
+      "negative_mutations": [
+        {
+          "name": "conflict_erased",
+          "path": [
+            "fields",
+            0,
+            "status"
+          ],
+          "value": "confirmed"
+        },
+        {
+          "name": "ownership_invented",
+          "path": [
+            "ownership_inferred_from_location"
+          ],
+          "value": true
+        }
+      ],
+      "expected": {},
+      "scope": "Synthetic annotated record; deterministic invariants only."
+    },
+    {
+      "id": "audience",
+      "kind": "audience",
+      "record": {
+        "participation": null,
+        "attendance_evidence": null,
+        "causal_claim": false,
+        "sensitive_profiles_inferred": false,
+        "messages": [
+          {
+            "entry_point": "criteri conservativi",
+            "project_promise": "manutenzione e memoria"
+          },
+          {
+            "entry_point": "tenere in vita oggetti",
+            "project_promise": "manutenzione e memoria"
+          }
+        ]
+      },
+      "negative_mutations": [
+        {
+          "name": "reach_as_attendance",
+          "path": [
+            "participation"
+          ],
+          "value": 10000
+        },
+        {
+          "name": "causal_invention",
+          "path": [
+            "causal_claim"
+          ],
+          "value": true
+        }
+      ],
+      "expected": {},
+      "scope": "Synthetic annotated record; deterministic invariants only."
+    },
+    {
+      "id": "copy",
+      "kind": "copy",
+      "record": {
+        "verified_fact_ids": [
+          "research",
+          "prototype"
+        ],
+        "material_claims": [
+          {
+            "text": "Un dossier e un prototipo",
+            "fact_ids": [
+              "research",
+              "prototype"
+            ]
+          }
+        ],
+        "authorized_units": [
+          "headline"
+        ],
+        "changed_units": [
+          "headline"
+        ],
+        "declined_claims": [
+          {
+            "claim": "doppio impatto",
+            "missing_evidence": "misura comparabile e attribuzione del risultato"
+          }
+        ]
+      },
+      "negative_mutations": [
+        {
+          "name": "invented_statistic",
+          "path": [
+            "material_claims",
+            0,
+            "fact_ids"
+          ],
+          "value": [
+            "growth-200"
+          ]
+        },
+        {
+          "name": "scope_creep",
+          "path": [
+            "changed_units"
+          ],
+          "value": [
+            "headline",
+            "pricing"
+          ]
+        }
+      ],
+      "expected": {},
+      "scope": "Synthetic annotated record; deterministic invariants only."
+    },
+    {
+      "id": "editorial",
+      "kind": "claims",
+      "record": {
+        "sources": [
+          {
+            "id": "A",
+            "origin_group": "press-release"
+          },
+          {
+            "id": "B",
+            "origin_group": "press-release"
+          }
+        ],
+        "claims": [
+          {
+            "source_ids": [
+              "A",
+              "B"
+            ],
+            "independent_origins": 1,
+            "status": "reported",
+            "source_status": "announced",
+            "material_qualifiers_preserved": true
+          }
+        ],
+        "new_unverified_facts_added": false
+      },
+      "negative_mutations": [
+        {
+          "name": "dependent_sources",
+          "path": [
+            "claims",
+            0,
+            "independent_origins"
+          ],
+          "value": 2
+        },
+        {
+          "name": "announced_as_completed",
+          "path": [
+            "claims",
+            0,
+            "status"
+          ],
+          "value": "verified"
+        }
+      ],
+      "expected": {},
+      "scope": "Synthetic annotated record; deterministic invariants only."
+    },
+    {
+      "id": "legal",
+      "kind": "legal",
+      "record": {
+        "clause_ids": [
+          "cap",
+          "exclusion"
+        ],
+        "findings": [
+          {
+            "clause_refs": [
+              "cap",
+              "exclusion"
+            ],
+            "legal_rule": false,
+            "primary_source": null
+          }
+        ],
+        "notification_rules": [
+          {
+            "role": "processor",
+            "universal_deadline_hours": null,
+            "text": "senza ingiustificato ritardo"
+          }
+        ],
+        "legal_validity_certified": false,
+        "signed_or_sent": false
+      },
+      "negative_mutations": [
+        {
+          "name": "wrong_gdpr",
+          "path": [
+            "notification_rules",
+            0,
+            "universal_deadline_hours"
+          ],
+          "value": 72
+        },
+        {
+          "name": "missing_clause",
+          "path": [
+            "findings",
+            0,
+            "clause_refs"
+          ],
+          "value": [
+            "invented"
+          ]
+        }
+      ],
+      "expected": {},
+      "scope": "Synthetic annotated record; deterministic invariants only."
+    },
+    {
+      "id": "admin",
+      "kind": "administration",
+      "record": {
+        "messages": [
+          {
+            "id": "m1",
+            "kind": "availability",
+            "owner": "Ada"
+          },
+          {
+            "id": "m2",
+            "kind": "decision",
+            "subject": "A4"
+          },
+          {
+            "id": "m3",
+            "kind": "commitment",
+            "owner": "Ada"
+          },
+          {
+            "id": "m4",
+            "kind": "proposal",
+            "deadline": "2026-11-09"
+          }
+        ],
+        "activities": [
+          {
+            "id": "estimate",
+            "owner": "Ada",
+            "commitment_ref": "m3",
+            "deadline": null,
+            "deadline_ref": null
+          }
+        ],
+        "sent": false
+      },
+      "negative_mutations": [
+        {
+          "name": "availability_as_commitment",
+          "path": [
+            "activities",
+            0,
+            "commitment_ref"
+          ],
+          "value": "m1"
+        },
+        {
+          "name": "invented_deadline",
+          "path": [
+            "activities",
+            0,
+            "deadline"
+          ],
+          "value": "2026-11-09"
+        }
+      ],
+      "expected": {},
+      "scope": "Synthetic annotated record; deterministic invariants only."
+    },
+    {
+      "id": "delivery",
+      "kind": "schedule",
+      "record": {
+        "tasks": [
+          {
+            "id": "brief",
+            "duration": 2,
+            "depends_on": []
+          },
+          {
+            "id": "assets",
+            "duration": 3,
+            "depends_on": [
+              "brief"
+            ]
+          },
+          {
+            "id": "edit",
+            "duration": 4,
+            "depends_on": [
+              "assets"
+            ]
+          },
+          {
+            "id": "qa",
+            "duration": 2,
+            "depends_on": [
+              "edit"
+            ]
+          }
+        ]
+      },
+      "negative_mutations": [
+        {
+          "name": "cycle",
+          "path": [
+            "tasks",
+            0,
+            "depends_on"
+          ],
+          "value": [
+            "qa"
+          ]
+        },
+        {
+          "name": "missing_dependency",
+          "path": [
+            "tasks",
+            1,
+            "depends_on"
+          ],
+          "value": [
+            "approval"
+          ]
+        }
+      ],
+      "expected": {
+        "duration": "11"
+      },
+      "scope": "Synthetic annotated record; deterministic invariants only."
+    },
+    {
+      "id": "negotiation",
+      "kind": "negotiation",
+      "record": {
+        "packages": [
+          {
+            "price": "6000",
+            "scope": "research+prototype",
+            "duration": "4 weeks",
+            "rights": "limited use",
+            "concession": null,
+            "counterpart": null
+          },
+          {
+            "price": "4500",
+            "scope": "research-light+concept",
+            "duration": "5 weeks",
+            "rights": "limited use",
+            "concession": "lower price",
+            "counterpart": "reduced scope"
+          },
+          {
+            "price": "8500",
+            "scope": "research+prototype+adaptation",
+            "duration": "3 weeks conditional on capacity",
+            "rights": "limited exclusivity subject to defined territory",
+            "concession": null,
+            "counterpart": null
+          }
+        ],
+        "alternative_fabricated": false,
+        "market_rate_claim": false
+      },
+      "negative_mutations": [
+        {
+          "name": "free_concession",
+          "path": [
+            "packages",
+            1,
+            "counterpart"
+          ],
+          "value": null
+        },
+        {
+          "name": "invented_batna",
+          "path": [
+            "alternative_fabricated"
+          ],
+          "value": true
+        }
+      ],
+      "expected": {},
+      "scope": "Synthetic annotated record; deterministic invariants only."
+    },
+    {
+      "id": "finance",
+      "kind": "budget",
+      "record": {
+        "currency": "EUR",
+        "revenue": "10000",
+        "baseline_cost": "7000",
+        "actual": "3000",
+        "committed_remaining": "2000",
+        "uncommitted_remaining": "2500",
+        "opening_cash": "1000",
+        "cash_periods": [
+          {
+            "id": "p1",
+            "receipts": "3000",
+            "payments": "4500"
+          },
+          {
+            "id": "p2",
+            "receipts": "7000",
+            "payments": "3000"
+          }
+        ]
+      },
+      "negative_mutations": [
+        {
+          "name": "nan",
+          "path": [
+            "actual"
+          ],
+          "value": "NaN"
+        },
+        {
+          "name": "mixed_currency",
+          "path": [
+            "cash_periods",
+            0,
+            "currency"
+          ],
+          "value": "USD"
+        }
+      ],
+      "expected": {
+        "forecast_cost": "7500.00",
+        "cost_variance": "500.00",
+        "margin": "2500.00",
+        "margin_percent": "25.00"
+      },
+      "scope": "Synthetic annotated record; deterministic invariants only."
+    },
+    {
+      "id": "people",
+      "kind": "people",
+      "record": {
+        "protected_traits_used": false,
+        "automated_hiring_decision": false,
+        "ratings": [
+          {
+            "candidate": "A",
+            "competence": "budget",
+            "score": null,
+            "evidence_ids": []
+          },
+          {
+            "candidate": "B",
+            "competence": "budget",
+            "score": 3,
+            "evidence_ids": [
+              "case-B"
+            ]
+          }
+        ],
+        "common_criteria": true
+      },
+      "negative_mutations": [
+        {
+          "name": "missing_as_zero",
+          "path": [
+            "ratings",
+            0,
+            "score"
+          ],
+          "value": 0
+        },
+        {
+          "name": "sensitive_proxy",
+          "path": [
+            "protected_traits_used"
+          ],
+          "value": true
+        }
+      ],
+      "expected": {},
+      "scope": "Synthetic annotated record; deterministic invariants only."
+    },
+    {
+      "id": "strategy",
+      "kind": "portfolio",
+      "record": {
+        "budget": "10",
+        "projects": [
+          {
+            "id": "A",
+            "cost": "8"
+          },
+          {
+            "id": "B",
+            "cost": "5"
+          },
+          {
+            "id": "C",
+            "cost": "4"
+          }
+        ],
+        "mutually_exclusive": [
+          [
+            "A",
+            "B"
+          ]
+        ]
+      },
+      "negative_mutations": [
+        {
+          "name": "negative_cost",
+          "path": [
+            "projects",
+            0,
+            "cost"
+          ],
+          "value": "-8"
+        },
+        {
+          "name": "invalid_budget",
+          "path": [
+            "budget"
+          ],
+          "value": "Infinity"
+        }
+      ],
+      "expected": {},
+      "scope": "Synthetic annotated record; deterministic invariants only."
+    },
+    {
+      "id": "evaluation",
+      "kind": "evaluation",
+      "record": {
+        "same_author": true,
+        "independent_validation": false,
+        "mechanical_tests_only": true,
+        "professional_validation": false,
+        "promoted": false,
+        "first_failures_preserved": true
+      },
+      "negative_mutations": [
+        {
+          "name": "false_blind",
+          "path": [
+            "independent_validation"
+          ],
+          "value": true
+        },
+        {
+          "name": "false_professional",
+          "path": [
+            "professional_validation"
+          ],
+          "value": true
+        }
+      ],
+      "expected": {},
+      "scope": "Synthetic annotated record; deterministic invariants only."
+    }
+  ]
+}

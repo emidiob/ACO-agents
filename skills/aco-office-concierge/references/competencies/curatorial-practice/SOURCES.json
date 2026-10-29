@@ -1,0 +1,12 @@
+{
+  "source_ids": [
+    "ici",
+    "eflux-curating"
+  ],
+  "canonical_source_register": "../SOURCES.json",
+  "existing_aco_paths": [
+    "skills/aco-office-concierge/references/playbooks/CURATORIAL-PRACTICE.md",
+    "skills/aco-office-concierge/references/playbooks/ARTISTIC-RESEARCH-AND-SOURCES.md"
+  ],
+  "upstream_content_bundled": false
+}

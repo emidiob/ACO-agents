@@ -1,0 +1,1248 @@
+{
+  "aco_version": "1.0.7",
+  "candidates": [
+    {
+      "benchmark_kind": "deterministic_structured_contract",
+      "candidate": {
+        "candidate_sha256": "2f3e150d57b7a245443f9286ed482b30e482dadff40ccfca7f4a73771b433c47",
+        "evidence": [
+          {
+            "outcome": "mixed",
+            "source_ref": "ACO-1.0.7:authored-example:visual-critique"
+          },
+          {
+            "outcome": "source_verified",
+            "source_ref": "ACO-1.0.6:existing-playbook:visual-critique"
+          },
+          {
+            "outcome": "success",
+            "source_ref": "ACO-1.0.7:synthetic-structured-contract:visual-critique"
+          }
+        ],
+        "failure_modes": [
+          "Una pagina d’archivio può essere densa: privilegia orientamento e metadati, non spazi bianchi indiscriminati.",
+          "Una pagina editoriale può rompere una griglia: mantieni però una lettura intenzionale e un percorso praticabile.",
+          "Una richiesta di conversione non autorizza urgenza falsa o occultamento delle condizioni.",
+          "Se manca il rendering, consegna una diagnosi di sorgente e ipotesi da verificare, non una recensione visiva osservata."
+        ],
+        "inputs": [
+          "brief, authorized project scope and non-negotiable constraints",
+          "the available evidence and material unknowns",
+          "format and audience of the required deliverable"
+        ],
+        "method": [
+          "Definisci il compito visivo: cosa deve capire, trovare o decidere il visitatore; registra gli elementi dell’identità che non sono in discussione. Non trasformare una revisione di gerarchia in un rebranding.",
+          "Classifica le prove disponibili: screenshot a una misura, pagina interattiva, sorgente o descrizione. Per ciascuna indica ciò che non permette di valutare: un’immagine non dimostra hover, focus, navigazione o velocità.",
+          "Costruisci una mappa dei livelli: messaggio principale, contenuto di supporto, dettaglio e azione. Descrivi dimensioni relative, allineamenti, gruppi e vuoti con riferimenti a regioni riconoscibili, senza inventare misure.",
+          "Separa difetti funzionali, incoerenze con il brief e preferenze stilistiche. Prioritizza prima ciò che ostacola il compito; la preferenza deve restare una proposta, non un errore certificato.",
+          "Estrai dalla reference relazioni trasferibili: rapporto titolo/immagine, ritmo tra gruppi, densità, contrasto tra registri. Non copiare font, fotografie, marchi o composizione distintiva senza diritti.",
+          "Sviluppa almeno due correzioni coerenti con l’identità: una minima e una più strutturale. Per ogni correzione specifica l’effetto atteso e il costo, non un generico «più premium».",
+          "Definisci token semantici e stati dei componenti soltanto dopo la direzione: testo, sfondo, azione, errore e focus. Un effetto entra solo se ha una funzione descrivibile; prepara anche il comportamento statico.",
+          "Confronta prima/dopo sul medesimo contenuto e alle stesse dimensioni. Registra quali controlli sono stati eseguiti e quali necessitano di persone o browser; conserva le scelte già efficaci."
+        ],
+        "output_contract": {
+          "must_include": [
+            "result",
+            "source_or_verification_note",
+            "uncertainties",
+            "decision_criteria"
+          ],
+          "reference_method": "skills/aco-office-concierge/references/competencies/visual-critique/OUTPUT.md",
+          "type": "professional_procedural_skill_output"
+        },
+        "rollback_ref": "v1.0.6",
+        "schema_version": 1,
+        "scope_id": "aco-public-professional",
+        "skill_id": "professional.visual_critique",
+        "source_status": "validated_internal",
+        "status": "candidate",
+        "title": "Critica visiva e web design",
+        "version": "1.0.0"
+      },
+      "candidate_sha256": "2f3e150d57b7a245443f9286ed482b30e482dadff40ccfca7f4a73771b433c47",
+      "professional_quality": "not independently validated",
+      "skill_id": "professional.visual_critique"
+    },
+    {
+      "benchmark_kind": "deterministic_structured_contract",
+      "candidate": {
+        "candidate_sha256": "a7fa4489a0fb68f6723565593b635b03b1b5152ed4c3ee21181dccb4e5ea93ab",
+        "evidence": [
+          {
+            "outcome": "mixed",
+            "source_ref": "ACO-1.0.7:authored-example:ux-research"
+          },
+          {
+            "outcome": "source_verified",
+            "source_ref": "ACO-1.0.6:existing-playbook:ux-research"
+          },
+          {
+            "outcome": "success",
+            "source_ref": "ACO-1.0.7:synthetic-structured-contract:ux-research"
+          }
+        ],
+        "failure_modes": [
+          "Una dichiarazione «è facile» non annulla un fallimento osservato nello stesso compito.",
+          "Una richiesta di funzionalità è un dato di ricerca, non automaticamente un requisito approvato.",
+          "Con evidenze contraddittorie mantieni ipotesi concorrenti, non una media che cancella il problema.",
+          "Una revisione euristica genera domande; non può essere etichettata test con utenti."
+        ],
+        "inputs": [
+          "brief, authorized project scope and non-negotiable constraints",
+          "the available evidence and material unknowns",
+          "format and audience of the required deliverable"
+        ],
+        "method": [
+          "Scrivi la decisione che la ricerca deve rendere possibile: per esempio scegliere tra salvataggio automatico e conferma esplicita, non semplicemente «conoscere gli utenti».",
+          "Trasforma ogni supposizione in una domanda falsificabile, indicando quale comportamento la smentirebbe. Mantieni distinte ipotesi di bisogno, soluzione e disponibilità a pagare.",
+          "Seleziona partecipanti in relazione al compito, includendo condizioni che potrebbero cambiare l’esperienza. Non dedurre bisogni o competenza da età, provenienza o titolo professionale.",
+          "Prepara compiti realistici con un obiettivo, dati e criterio di riuscita, senza nominare il controllo che dovrebbe essere scoperto. Raccogli consenso e minimizza dati personali e registrazioni.",
+          "Annota separatamente citazione, comportamento, contesto e interpretazione. Collega ogni nota a partecipante pseudonimo, compito e posizione nella sessione; non inventare verbatim da un riassunto.",
+          "Raggruppa per problema e cerca deliberatamente casi contrari. Se due note divergono, verifica differenze di contesto o di compito prima di scegliere la versione più comoda.",
+          "Classifica il risultato come osservato, interpretato o da verificare. La frequenza nel campione non è una stima della popolazione; la severità dipende anche dalle conseguenze del fallimento.",
+          "Consegna una decisione proporzionata all’evidenza, il rischio residuo e il prossimo esperimento. Estendi la mappa a email, assistenza e passaggi umani quando fanno parte dello stesso servizio."
+        ],
+        "output_contract": {
+          "must_include": [
+            "result",
+            "source_or_verification_note",
+            "uncertainties",
+            "decision_criteria"
+          ],
+          "reference_method": "skills/aco-office-concierge/references/competencies/ux-research/OUTPUT.md",
+          "type": "professional_procedural_skill_output"
+        },
+        "rollback_ref": "v1.0.6",
+        "schema_version": 1,
+        "scope_id": "aco-public-professional",
+        "skill_id": "professional.ux_research",
+        "source_status": "validated_internal",
+        "status": "candidate",
+        "title": "UX, ricerca utenti e servizi",
+        "version": "1.0.0"
+      },
+      "candidate_sha256": "a7fa4489a0fb68f6723565593b635b03b1b5152ed4c3ee21181dccb4e5ea93ab",
+      "professional_quality": "not independently validated",
+      "skill_id": "professional.ux_research"
+    },
+    {
+      "benchmark_kind": "deterministic_structured_contract",
+      "candidate": {
+        "candidate_sha256": "b4982aa7723afc66c6b2db398281f80aac89062565cbdfbd2fb9a75b11cd67bf",
+        "evidence": [
+          {
+            "outcome": "mixed",
+            "source_ref": "ACO-1.0.7:authored-example:accessibility"
+          },
+          {
+            "outcome": "source_verified",
+            "source_ref": "ACO-1.0.6:existing-playbook:accessibility"
+          },
+          {
+            "outcome": "success",
+            "source_ref": "ACO-1.0.7:synthetic-structured-contract:accessibility"
+          }
+        ],
+        "failure_modes": [
+          "Alt vuoto è corretto per un’immagine realmente decorativa, non per un’azione priva di nome.",
+          "Rosso, icona o animazione da soli non devono comunicare errore o successo.",
+          "Un messaggio dinamico non deve spostare sempre il focus: scegli tra annuncio e spostamento in base al compito.",
+          "Un test senza screen reader va dichiarato come tale, anche se l’albero semantico sembra corretto."
+        ],
+        "inputs": [
+          "brief, authorized project scope and non-negotiable constraints",
+          "the available evidence and material unknowns",
+          "format and audience of the required deliverable"
+        ],
+        "method": [
+          "Definisci il percorso e i contesti di uso da verificare: tastiera, ingrandimento, lettura assistita e movimento ridotto. Identifica le versioni e gli strumenti davvero disponibili.",
+          "Parti dalla struttura semantica e dal flusso: titoli ordinati, controlli nativi, etichette associate e istruzioni prima dell’errore. Non applicare ARIA per nascondere una struttura inadatta.",
+          "Per ogni immagine scegli il ruolo nel contesto: informativa, funzionale, decorativa o complessa. Descrivi la funzione di un’immagine-link; ometti la ridondanza decorativa e offri spiegazioni estese quando necessarie.",
+          "Specifica tutti gli stati del form: iniziale, compilazione, errore, invio, successo e indisponibilità. Mantieni i dati validi, collega l’errore al campo e fornisci un’azione di riparazione.",
+          "Dopo un invio non valido rendi localizzabile il riepilogo degli errori e il campo interessato, evitando doppi annunci inutili. La strategia di focus dipende da navigazione o aggiornamento dinamico.",
+          "Esegui il percorso senza puntatore: ordine, visibilità del focus, attivazione, uscita da eventuali dialoghi e recupero. Registra passi e risultati, non soltanto una checkbox «accessibile».",
+          "Affianca ai controlli automatici prove manuali e tecnologie assistive appropriate. I rapporti devono distinguere presenza degli attributi, comportamento browser e comprensibilità per le persone.",
+          "Correggi il difetto più a monte e ripeti il percorso completo; conserva una regressione che fallisce sulla versione precedente. Non dichiarare conformità generale da un singolo form."
+        ],
+        "output_contract": {
+          "must_include": [
+            "result",
+            "source_or_verification_note",
+            "uncertainties",
+            "decision_criteria"
+          ],
+          "reference_method": "skills/aco-office-concierge/references/competencies/accessibility/OUTPUT.md",
+          "type": "professional_procedural_skill_output"
+        },
+        "rollback_ref": "v1.0.6",
+        "schema_version": 1,
+        "scope_id": "aco-public-professional",
+        "skill_id": "professional.accessibility",
+        "source_status": "validated_internal",
+        "status": "candidate",
+        "title": "Accessibilità contestuale",
+        "version": "1.0.0"
+      },
+      "candidate_sha256": "b4982aa7723afc66c6b2db398281f80aac89062565cbdfbd2fb9a75b11cd67bf",
+      "professional_quality": "not independently validated",
+      "skill_id": "professional.accessibility"
+    },
+    {
+      "benchmark_kind": "deterministic_structured_contract",
+      "candidate": {
+        "candidate_sha256": "a8ad3222c80b5f0bfc3dc4e049c29f1ba324236d0b34d079d94a33beaa94ab47",
+        "evidence": [
+          {
+            "outcome": "mixed",
+            "source_ref": "ACO-1.0.7:authored-example:interface-motion"
+          },
+          {
+            "outcome": "source_verified",
+            "source_ref": "ACO-1.0.6:existing-playbook:interface-motion"
+          },
+          {
+            "outcome": "success",
+            "source_ref": "ACO-1.0.7:synthetic-structured-contract:interface-motion"
+          }
+        ],
+        "failure_modes": [
+          "Discreto: riduci ampiezza e sequenza, non visibilità del feedback.",
+          "Editoriale: usa ritmo e relazione tra blocchi, non un ritardo indiscriminato su ogni parola.",
+          "Espressivo: ammetti maggiore contrasto solo se il compito rimane leggibile e interrompibile.",
+          "Il prefer-reduced-motion non equivale automaticamente a disabilitare ogni aggiornamento di stato."
+        ],
+        "inputs": [
+          "brief, authorized project scope and non-negotiable constraints",
+          "the available evidence and material unknowns",
+          "format and audience of the required deliverable"
+        ],
+        "method": [
+          "Definisci il cambiamento di stato che il movimento rende leggibile: comparsa, relazione, avanzamento o ritorno. Se non aggiunge informazione, considera una versione ferma.",
+          "Descrivi origine, destinazione e gerarchia dell’attenzione prima di scegliere la libreria. Conserva corrispondenze spaziali tra oggetto attivato e dettaglio aperto.",
+          "Scrivi una scheda con trigger, proprietà animate, durata proposta, curva, eventuale ritardo, ordine e stato finale. Durate e curve sono ipotesi locali da provare, non leggi estetiche.",
+          "Modella interruzione e input ripetuto: invertire, completare o annullare la transizione deve portare a uno stato definito. Non bloccare la disponibilità di un’azione essenziale per attenderne l’effetto.",
+          "Adatta la grammatica a spazio e dispositivo, senza trasferire meccanicamente distanze desktop su mobile. Se il movimento comunica una relazione, preserva la relazione con meno ampiezza.",
+          "Prevedi movimento ridotto come comportamento alternativo: stato immediato o dissolvenza discreta, nessuna perdita di testo o controllo. Evita che il fallback lasci un elemento invisibile.",
+          "Implementa con le primitive già disponibili; per Motion/GSAP verifica versione, media condition e cleanup. Nessun motore viene considerato presente perché citato nella biblioteca.",
+          "Confronta il gesto in tre registri, poi prova input rapido, resize e preferenza reduced-motion. Registra durata CSS o browser misurata separatamente dall’impressione qualitativa."
+        ],
+        "output_contract": {
+          "must_include": [
+            "result",
+            "source_or_verification_note",
+            "uncertainties",
+            "decision_criteria"
+          ],
+          "reference_method": "skills/aco-office-concierge/references/competencies/interface-motion/OUTPUT.md",
+          "type": "professional_procedural_skill_output"
+        },
+        "rollback_ref": "v1.0.6",
+        "schema_version": 1,
+        "scope_id": "aco-public-professional",
+        "skill_id": "professional.interface_motion",
+        "source_status": "validated_internal",
+        "status": "candidate",
+        "title": "Motion design delle interfacce",
+        "version": "1.0.0"
+      },
+      "candidate_sha256": "a8ad3222c80b5f0bfc3dc4e049c29f1ba324236d0b34d079d94a33beaa94ab47",
+      "professional_quality": "not independently validated",
+      "skill_id": "professional.interface_motion"
+    },
+    {
+      "benchmark_kind": "deterministic_structured_contract",
+      "candidate": {
+        "candidate_sha256": "8f9ebb790f438421ad0f5e78acc09d045ecc76318c97938b9d3996e94fdf44b9",
+        "evidence": [
+          {
+            "outcome": "mixed",
+            "source_ref": "ACO-1.0.7:authored-example:video-editing"
+          },
+          {
+            "outcome": "source_verified",
+            "source_ref": "ACO-1.0.6:existing-playbook:video-editing"
+          },
+          {
+            "outcome": "success",
+            "source_ref": "ACO-1.0.7:synthetic-structured-contract:video-editing"
+          }
+        ],
+        "failure_modes": [
+          "Un messaggio nuovo nel cut breve non è un adattamento fedele senza approvazione.",
+          "I sottotitoli non devono competere con un titolo diverso nello stesso istante senza una ragione editoriale.",
+          "A 30000/1001 fps una durata in secondi può non corrispondere a un numero intero di frame: chiedi una convenzione, non arrotondare di nascosto.",
+          "Una transizione può sovrapporsi a due clip; non contare due volte la durata totale."
+        ],
+        "inputs": [
+          "brief, authorized project scope and non-negotiable constraints",
+          "the available evidence and material unknowns",
+          "format and audience of the required deliverable"
+        ],
+        "method": [
+          "Riduci il brief a un messaggio indispensabile, una prova e un’azione o un’apertura finale. Distingui ciò che si può tagliare da ciò che rende comprensibile la sequenza.",
+          "Prepara una scaletta di unità narrative, ciascuna con funzione, immagine, testo, suono e durata proposta. Non iniziare da un template tecnico se il racconto non è risolto.",
+          "Dichiara frame rate come frazione, durata e formato. Rappresenta le clip con intervalli semiaperti: inizio incluso, fine esclusa; esplicita retime, sovrapposizioni e frame locale rispetto a globale.",
+          "Assegna una sola priorità attentiva dominante per beat. Quando voce, titoli e immagini richiedono letture incompatibili, accorcia il testo o distribuisci le informazioni nel tempo.",
+          "Misura la leggibilità come segnale di rischio: caratteri e parole per secondo aiutano il confronto ma non sono una soglia universale. Verifica lingua, dimensione, pubblico e contenuto effettivo.",
+          "Costruisci 15, 30 e 60 secondi riscrivendo la gerarchia dei beat, non accelerando uniformemente. Mantieni messaggio e prova essenziale; aggiungi contesto solo quando la durata lo consente.",
+          "Traduci la scaletta nel motore realmente disponibile con proprietà parametrizzate e tempi deterministici. Istruzioni Remotion, HTML seekable e OTIO sono rappresentazioni diverse, non formati intercambiabili senza verifica.",
+          "Esegui controlli di durata, gap e sovrapposizioni, poi guarda e ascolta il risultato completo. Un export con durata giusta non dimostra ritmo, intelligibilità o sincronizzazione labiale."
+        ],
+        "output_contract": {
+          "must_include": [
+            "result",
+            "source_or_verification_note",
+            "uncertainties",
+            "decision_criteria"
+          ],
+          "reference_method": "skills/aco-office-concierge/references/competencies/video-editing/OUTPUT.md",
+          "type": "professional_procedural_skill_output"
+        },
+        "rollback_ref": "v1.0.6",
+        "schema_version": 1,
+        "scope_id": "aco-public-professional",
+        "skill_id": "professional.video_editing",
+        "source_status": "validated_internal",
+        "status": "candidate",
+        "title": "Video, montaggio e narrazione temporale",
+        "version": "1.0.0"
+      },
+      "candidate_sha256": "8f9ebb790f438421ad0f5e78acc09d045ecc76318c97938b9d3996e94fdf44b9",
+      "professional_quality": "not independently validated",
+      "skill_id": "professional.video_editing"
+    },
+    {
+      "benchmark_kind": "deterministic_structured_contract",
+      "candidate": {
+        "candidate_sha256": "b1b75596ba4e9d0b3708e568db121ee5285e2fc4e818ff5e8a873bd775b7cd4d",
+        "evidence": [
+          {
+            "outcome": "mixed",
+            "source_ref": "ACO-1.0.7:authored-example:genjutsu-motion"
+          },
+          {
+            "outcome": "source_verified",
+            "source_ref": "ACO-1.0.6:existing-playbook:genjutsu-motion"
+          },
+          {
+            "outcome": "success",
+            "source_ref": "ACO-1.0.7:synthetic-structured-contract:genjutsu-motion"
+          }
+        ],
+        "failure_modes": [
+          "Una camera ferma va dichiarata se verificata; un soggetto che attraversa il quadro non dimostra una carrellata.",
+          "Un frame prima e uno dopo un’occlusione non provano il percorso dell’oggetto.",
+          "Un’omissione richiesta non è una regressione; un’omissione nascosta sì.",
+          "La copertura del registro è misurabile; la completezza rispetto a una scena arbitraria richiede osservazione competente."
+        ],
+        "inputs": [
+          "brief, authorized project scope and non-negotiable constraints",
+          "the available evidence and material unknowns",
+          "format and audience of the required deliverable"
+        ],
+        "method": [
+          "Carica il metodo motion-transfer canonico di ACO e verifica che esista un video autorizzato. Senza video puoi preparare il protocollo, ma non attribuire movimenti a una reference inesistente.",
+          "Registra durata, rate, eventuali tagli, intervalli realmente ispezionati e disponibilità audio. Prima passata continua, seconda sui contatti o cambi di direzione ambigui; i frame isolati non attestano la continuità.",
+          "Assegna identificatori separati a soggetto, oggetti, camera ed eventuali effetti. Definisci se destra/sinistra è anatomica o sullo schermo; conserva l’orientamento durante il trasferimento.",
+          "Segmenta gli eventi osservabili in stato iniziale, anticipazione, azione, contatto, rilascio e assestamento dove presenti. Registra anche pause e simultaneità; non imporre fasi che il materiale non mostra.",
+          "Collega ogni evento a frame effettivamente disponibili e marca l’occlusione come incertezza. Non riempire un intervallo non visto con un gesto plausibile; restringi il prompt a ciò che il supporto permette.",
+          "Mappa ogni attore e oggetto sulla nuova scena e verifica compatibilità di scala, presa, arti e appoggio. Se il nuovo soggetto non può eseguire un contatto, proponi una modifica esplicita invece di omettere il vincolo.",
+          "Conserva tempi sorgente e destinazione separati. Il prompt finale deve esprimere ogni evento trasferito, mentre un’omissione richiede una richiesta esplicita e motivata; non usare «stesso movimento» come sostituto della descrizione.",
+          "Confronta fonte, registro e prompt evento per evento. Se arriva un video generato, confronta anche ordine, direzione, contatto e stato finale; il controllo testuale non certifica il risultato del modello video."
+        ],
+        "output_contract": {
+          "must_include": [
+            "result",
+            "source_or_verification_note",
+            "uncertainties",
+            "decision_criteria"
+          ],
+          "reference_method": "skills/aco-office-concierge/references/competencies/genjutsu-motion/OUTPUT.md",
+          "type": "professional_procedural_skill_output"
+        },
+        "rollback_ref": "v1.0.6",
+        "schema_version": 1,
+        "scope_id": "aco-public-professional",
+        "skill_id": "professional.genjutsu_motion",
+        "source_status": "validated_internal",
+        "status": "candidate",
+        "title": "Genjutsu: osservazione e trasferimento del movimento",
+        "version": "1.0.0"
+      },
+      "candidate_sha256": "b1b75596ba4e9d0b3708e568db121ee5285e2fc4e818ff5e8a873bd775b7cd4d",
+      "professional_quality": "not independently validated",
+      "skill_id": "professional.genjutsu_motion"
+    },
+    {
+      "benchmark_kind": "deterministic_structured_contract",
+      "candidate": {
+        "candidate_sha256": "3fa181d7a9c28799f91b669d60480be9bd531bd3def4fa7f55e65c68020eb45b",
+        "evidence": [
+          {
+            "outcome": "mixed",
+            "source_ref": "ACO-1.0.7:authored-example:curatorial-practice"
+          },
+          {
+            "outcome": "source_verified",
+            "source_ref": "ACO-1.0.6:existing-playbook:curatorial-practice"
+          },
+          {
+            "outcome": "success",
+            "source_ref": "ACO-1.0.7:synthetic-structured-contract:curatorial-practice"
+          }
+        ],
+        "failure_modes": [
+          "Una mostra tematica non deve ridurre le opere a prove di una tesi già decisa.",
+          "Due percorsi sono diversi se cambiano relazioni ed esperienza, non soltanto i titoli.",
+          "Un documento storico non è neutro: specifica provenienza, selezione e condizioni di accesso.",
+          "L’argomento curatoriale resta una proposta finché artisti, prestatori e istituzione non hanno approvato i rispettivi impegni."
+        ],
+        "inputs": [
+          "brief, authorized project scope and non-negotiable constraints",
+          "the available evidence and material unknowns",
+          "format and audience of the required deliverable"
+        ],
+        "method": [
+          "Parti da un inventario delle opere realmente disponibili: materiali, durata, scala, requisiti, provenienza e limiti. Non scegliere prima un tema e poi inventare opere che lo illustrano.",
+          "Formula una domanda espositiva discutibile: quale relazione rende percepibile la mostra e quale interpretazione alternativa potrebbe contestarla? Una parola come «memoria» non è ancora una tesi.",
+          "Per ogni opera separa osservazione, dichiarazione dell’artista e inferenza curatoriale. Indica quali aspetti materiali sostengono l’inclusione e quali resistono alla tesi.",
+          "Costruisci almeno due ordinamenti: per ciascuno registra entrata, relazioni tra opere, tempi di attenzione e condizioni dello spazio. Il testo non può compensare una relazione che non sarà esperibile.",
+          "Metti alla prova le esclusioni e le voci mancanti. Considera se la selezione attribuisce rappresentanza o consenso non dichiarati e se l’istituzione stessa contraddice l’argomento.",
+          "Progetta il rapporto con pubblico e artisti: accessibilità, mediazione, agency, compensi e approvazione dei testi. La presenza in mostra non equivale a condivisione di ogni interpretazione.",
+          "Scrivi una tesi breve, un percorso e una controproposta concreta. Collega conseguenze concettuali e produttive: luce, suono, conservazione, autorizzazioni e tempi di installazione.",
+          "Valuta il progetto con una visita immaginata dichiarata e, quando possibile, un allestimento o mock-up osservabile. Mantieni aperte le contraddizioni produttive anziché risolverle in uno slogan."
+        ],
+        "output_contract": {
+          "must_include": [
+            "result",
+            "source_or_verification_note",
+            "uncertainties",
+            "decision_criteria"
+          ],
+          "reference_method": "skills/aco-office-concierge/references/competencies/curatorial-practice/OUTPUT.md",
+          "type": "professional_procedural_skill_output"
+        },
+        "rollback_ref": "v1.0.6",
+        "schema_version": 1,
+        "scope_id": "aco-public-professional",
+        "skill_id": "professional.curatorial_practice",
+        "source_status": "validated_internal",
+        "status": "candidate",
+        "title": "Ricerca curatoriale e costruzione di mostre",
+        "version": "1.0.0"
+      },
+      "candidate_sha256": "3fa181d7a9c28799f91b669d60480be9bd531bd3def4fa7f55e65c68020eb45b",
+      "professional_quality": "not independently validated",
+      "skill_id": "professional.curatorial_practice"
+    },
+    {
+      "benchmark_kind": "deterministic_structured_contract",
+      "candidate": {
+        "candidate_sha256": "48a66fd36d6118f886f569a88e46d228bdf12117a0af5ce219910d92c60fa9e2",
+        "evidence": [
+          {
+            "outcome": "mixed",
+            "source_ref": "ACO-1.0.7:authored-example:art-criticism"
+          },
+          {
+            "outcome": "source_verified",
+            "source_ref": "ACO-1.0.6:existing-playbook:art-criticism"
+          },
+          {
+            "outcome": "success",
+            "source_ref": "ACO-1.0.7:synthetic-structured-contract:art-criticism"
+          }
+        ],
+        "failure_modes": [
+          "Bassa risoluzione non implica automaticamente valore critico o povertà tecnica.",
+          "Un testo teorico aiuta a formulare domande, non certifica il significato dell’opera.",
+          "L’ambiguità intenzionale non giustifica ogni incoerenza; chiedi quale esperienza produce.",
+          "Un esperimento di studio non richiede di promettere in anticipo un risultato positivo."
+        ],
+        "inputs": [
+          "brief, authorized project scope and non-negotiable constraints",
+          "the available evidence and material unknowns",
+          "format and audience of the required deliverable"
+        ],
+        "method": [
+          "Descrivi prima ciò che l’opera rende disponibile: materiale, scala, comportamento, durata, relazione con lo spettatore. Distingui l’opera da una fotografia documentale o da una descrizione dell’artista.",
+          "Costruisci una prima lettura collegando ogni passaggio interpretativo a un elemento osservabile. Evita di usare un riferimento teorico come prova dell’intenzione dell’artista.",
+          "Costruisci una seconda lettura realmente concorrente, non una semplice parafrasi. Indica quali stessi dettagli potrebbero sostenere conclusioni differenti.",
+          "Esamina la relazione tra forma e statement: ciò che il testo promette è esperibile, soltanto dichiarato, oppure contraddetto dal dispositivo? Una contraddizione può essere produttiva ma va dimostrata.",
+          "Contestualizza solo con riferimenti verificati e pertinenti. Una somiglianza formale non stabilisce influenza, plagio o appartenenza a una tradizione.",
+          "Formula la valutazione con criteri espliciti: precisione del problema, necessità delle scelte e qualità dell’esperienza. Non convertire gusto personale o familiarità culturale in un verdetto universale.",
+          "Proponi un esperimento materiale che discrimini tra le letture: togliere una didascalia, cambiare il tempo, invertire il punto d’ascolto. Specifica cosa osservare e cosa significherebbe un esito contrario.",
+          "Consegna al massimo poche revisioni ad alto effetto, conservando l’autorità artistica. Non sostituire la ricerca con la ricerca di bandi o con una narrativa commerciale."
+        ],
+        "output_contract": {
+          "must_include": [
+            "result",
+            "source_or_verification_note",
+            "uncertainties",
+            "decision_criteria"
+          ],
+          "reference_method": "skills/aco-office-concierge/references/competencies/art-criticism/OUTPUT.md",
+          "type": "professional_procedural_skill_output"
+        },
+        "rollback_ref": "v1.0.6",
+        "schema_version": 1,
+        "scope_id": "aco-public-professional",
+        "skill_id": "professional.art_criticism",
+        "source_status": "validated_internal",
+        "status": "candidate",
+        "title": "Critica d’arte e sviluppo della pratica",
+        "version": "1.0.0"
+      },
+      "candidate_sha256": "48a66fd36d6118f886f569a88e46d228bdf12117a0af5ce219910d92c60fa9e2",
+      "professional_quality": "not independently validated",
+      "skill_id": "professional.art_criticism"
+    },
+    {
+      "benchmark_kind": "deterministic_structured_contract",
+      "candidate": {
+        "candidate_sha256": "bfebcad5969835b446f9c8134864e617fda9cc4c05ee6c697b4989479eb28b8e",
+        "evidence": [
+          {
+            "outcome": "mixed",
+            "source_ref": "ACO-1.0.7:authored-example:collections-records"
+          },
+          {
+            "outcome": "source_verified",
+            "source_ref": "ACO-1.0.6:existing-playbook:collections-records"
+          },
+          {
+            "outcome": "success",
+            "source_ref": "ACO-1.0.7:synthetic-structured-contract:collections-records"
+          }
+        ],
+        "failure_modes": [
+          "Una data più recente può descrivere un movimento precedente: considera data dell’evento e data del documento.",
+          "Il titolo dell’artista prevale come denominazione attribuita, ma non cancella titoli storici necessari alla ricerca.",
+          "Un vocabolo controllato va proposto, non imposto al significato dell’opera.",
+          "Spectrum rimane una fonte da consultare: il presente modello è originale e non dichiara conformità o autorizzazione derivativa."
+        ],
+        "inputs": [
+          "brief, authorized project scope and non-negotiable constraints",
+          "the available evidence and material unknowns",
+          "format and audience of the required deliverable"
+        ],
+        "method": [
+          "Definisci l’oggetto della scheda: opera, edizione, componente, versione software o documentazione. Assegna un identificatore locale stabile senza sostituire identificativi storici ancora utili.",
+          "Raccogli le fonti in un registro con data, autore e tipo di attestazione. Un’email, un’etichetta e un documento di trasporto possono riferirsi a momenti o entità diversi.",
+          "Per ogni campo conserva valore, fonte, data di validità e stato: confermato, attribuito, da riconciliare o sconosciuto. Non risolvere discrepanze scegliendo il valore più recente senza verificarne l’autorità.",
+          "Separa descrizione artistica, dati materiali, proprietà e diritti. La presenza fisica o una fotografia non prova titolarità o licenza di esposizione.",
+          "Collega componenti e versioni con relazioni esplicite; un file sostituito non è automaticamente una nuova opera. Registra dipendenze tecniche e condizioni d’installazione documentate.",
+          "Aggiungi, dove utile, termini controllati con identificatore e stato di riconciliazione, mantenendo il testo libero dell’artista. Non trasformare un suggerimento lessicale in attribuzione certa.",
+          "Prima di ingresso, uscita o prestito verifica identità, ubicazione, responsabilità, condizione e documenti necessari secondo il caso. Un campo mancante critico blocca la consegna, non viene riempito con un default.",
+          "Consegna una scheda riconciliata e un elenco di conflitti irrisolti. Conserva la cronologia delle correzioni; non eliminare i documenti discordanti. Per restauro fisico o conservazione specialistica coinvolgi chi è qualificato."
+        ],
+        "output_contract": {
+          "must_include": [
+            "result",
+            "source_or_verification_note",
+            "uncertainties",
+            "decision_criteria"
+          ],
+          "reference_method": "skills/aco-office-concierge/references/competencies/collections-records/OUTPUT.md",
+          "type": "professional_procedural_skill_output"
+        },
+        "rollback_ref": "v1.0.6",
+        "schema_version": 1,
+        "scope_id": "aco-public-professional",
+        "skill_id": "professional.collections_records",
+        "source_status": "validated_internal",
+        "status": "candidate",
+        "title": "Archivi, opere e conservazione documentale",
+        "version": "1.0.0"
+      },
+      "candidate_sha256": "bfebcad5969835b446f9c8134864e617fda9cc4c05ee6c697b4989479eb28b8e",
+      "professional_quality": "not independently validated",
+      "skill_id": "professional.collections_records"
+    },
+    {
+      "benchmark_kind": "deterministic_structured_contract",
+      "candidate": {
+        "candidate_sha256": "952ca1a75c5400a10ccb1b3a6ed3d4e50cee183e0cbe0e14c31fb141e7b4d1db",
+        "evidence": [
+          {
+            "outcome": "mixed",
+            "source_ref": "ACO-1.0.7:authored-example:cultural-marketing"
+          },
+          {
+            "outcome": "source_verified",
+            "source_ref": "ACO-1.0.6:existing-playbook:cultural-marketing"
+          },
+          {
+            "outcome": "success",
+            "source_ref": "ACO-1.0.7:synthetic-structured-contract:cultural-marketing"
+          }
+        ],
+        "failure_modes": [
+          "Due pubblici richiedono porte d’ingresso differenti, non due versioni contraddittorie del progetto.",
+          "Un grande numero di visualizzazioni non dimostra una relazione continuativa.",
+          "Non attribuire segmenti proprietari o tratti personali a individui senza una base legittima e pertinente.",
+          "L’obiettivo culturale può giustificare una scelta meno efficiente sul solo costo per click."
+        ],
+        "inputs": [
+          "brief, authorized project scope and non-negotiable constraints",
+          "the available evidence and material unknowns",
+          "format and audience of the required deliverable"
+        ],
+        "method": [
+          "Dichiara l’obiettivo culturale e quello operativo separatamente: per esempio aprire una ricerca a nuovi visitatori e ottenere prenotazioni, senza ridurre il primo al secondo.",
+          "Definisci pubblici come relazioni e situazioni di partecipazione, non come profili psicologici inventati. Usa comportamenti o bisogni dichiarati e registra le lacune di ricerca.",
+          "Mappa ostacoli concreti: comprensione dell’invito, costo, tempo, distanza, lingua, accesso, familiarità con l’istituzione. Non presumere che una bassa risposta sia disinteresse.",
+          "Costruisci una matrice messaggio/prova/azione per ogni pubblico. Cambia l’accesso al tema senza alterare il progetto o promettere esperienze che non offre.",
+          "Scegli canali come ipotesi: chi può essere raggiunto, attraverso quale relazione e con quale costo? Una presenza già autorizzata non giustifica acquisto di liste o profilazione sensibile.",
+          "Disegna il percorso dall’invito alla visita e al ritorno, includendo assistenza e conferme. Identifica il punto dove una promessa può rompersi.",
+          "Definisci indicatori distinti di copertura, partecipazione e continuità, con denominatore e periodo. Riduci dati personali e conserva solo quanto necessario per il consenso e l’obiettivo.",
+          "Valuta risultati e spiegazioni alternative: un calo può dipendere da accesso o calendario, non dalla qualità dell’opera. Proponi un esperimento piccolo e confrontabile prima di ampliare la campagna."
+        ],
+        "output_contract": {
+          "must_include": [
+            "result",
+            "source_or_verification_note",
+            "uncertainties",
+            "decision_criteria"
+          ],
+          "reference_method": "skills/aco-office-concierge/references/competencies/cultural-marketing/OUTPUT.md",
+          "type": "professional_procedural_skill_output"
+        },
+        "rollback_ref": "v1.0.6",
+        "schema_version": 1,
+        "scope_id": "aco-public-professional",
+        "skill_id": "professional.cultural_marketing",
+        "source_status": "validated_internal",
+        "status": "candidate",
+        "title": "Marketing culturale e sviluppo del pubblico",
+        "version": "1.0.0"
+      },
+      "candidate_sha256": "952ca1a75c5400a10ccb1b3a6ed3d4e50cee183e0cbe0e14c31fb141e7b4d1db",
+      "professional_quality": "not independently validated",
+      "skill_id": "professional.cultural_marketing"
+    },
+    {
+      "benchmark_kind": "deterministic_structured_contract",
+      "candidate": {
+        "candidate_sha256": "7c7ab50a390cbcea73cf85ef3c9439cdc9e6ace92bdf5db3500d283db5d4507e",
+        "evidence": [
+          {
+            "outcome": "mixed",
+            "source_ref": "ACO-1.0.7:authored-example:copy-positioning"
+          },
+          {
+            "outcome": "source_verified",
+            "source_ref": "ACO-1.0.6:existing-playbook:copy-positioning"
+          },
+          {
+            "outcome": "success",
+            "source_ref": "ACO-1.0.7:synthetic-structured-contract:copy-positioning"
+          }
+        ],
+        "failure_modes": [
+          "Una testimonianza autorizzata non giustifica automaticamente un risultato medio.",
+          "Una promessa specifica non è migliore di una generica se è inventata.",
+          "Una modifica locale deve lasciare invariato il resto salvo necessità esplicita.",
+          "La voce può essere informale senza perdere precisione su prezzo, scope o diritti."
+        ],
+        "inputs": [
+          "brief, authorized project scope and non-negotiable constraints",
+          "the available evidence and material unknowns",
+          "format and audience of the required deliverable"
+        ],
+        "method": [
+          "Classifica il mandato: nuovo testo, revisione che preserva una voce o modifica puntuale. Riprendi contesto già fornito e non chiedere nuovamente dati presenti.",
+          "Definisci destinatario, decisione e azione primaria. Distingui caratteristiche del servizio, benefici attesi e risultati dimostrati; non promuovere una speranza a garanzia.",
+          "Costruisci un registro delle affermazioni materiali con prova, ambito, data e limiti. Per una promessa non sostenuta scrivi l’alternativa documentabile e l’evidenza necessaria a sbloccarla.",
+          "Individua il linguaggio effettivo del pubblico da materiale autorizzato. Non fingere citazioni di clienti o una ricerca lessicale mai svolta.",
+          "Progetta varianti che cambino argomento, punto d’ingresso o struttura, non solo aggettivi. Mantieni gli stessi fatti verificati in ogni variante.",
+          "Scrivi per unità funzionali: apertura, prova, obiezione, azione. Preserva le frasi che già svolgono il compito e la voce approvata; evita una riscrittura totale per un piccolo problema.",
+          "Rivedi ogni passaggio chiedendo se chiarisce qualcosa, richiede una prova o introduce una condizione nascosta. La forma espressiva può variare per lingua e progetto: nessun divieto stilistico importato è universale.",
+          "Consegna testo pronto, poche motivazioni e un elenco separato di fatti mancanti. Non pubblicare né trasformare segnaposto in promesse al momento dell’invio."
+        ],
+        "output_contract": {
+          "must_include": [
+            "result",
+            "source_or_verification_note",
+            "uncertainties",
+            "decision_criteria"
+          ],
+          "reference_method": "skills/aco-office-concierge/references/competencies/copy-positioning/OUTPUT.md",
+          "type": "professional_procedural_skill_output"
+        },
+        "rollback_ref": "v1.0.6",
+        "schema_version": 1,
+        "scope_id": "aco-public-professional",
+        "skill_id": "professional.copy_positioning",
+        "source_status": "validated_internal",
+        "status": "candidate",
+        "title": "Copywriting, contenuti e posizionamento",
+        "version": "1.0.0"
+      },
+      "candidate_sha256": "7c7ab50a390cbcea73cf85ef3c9439cdc9e6ace92bdf5db3500d283db5d4507e",
+      "professional_quality": "not independently validated",
+      "skill_id": "professional.copy_positioning"
+    },
+    {
+      "benchmark_kind": "deterministic_structured_contract",
+      "candidate": {
+        "candidate_sha256": "2179e316c031a103ed02b4ccdfbd1a57627ae5bd202af0460f94ffb84a8ab54f",
+        "evidence": [
+          {
+            "outcome": "mixed",
+            "source_ref": "ACO-1.0.7:authored-example:editorial-verification"
+          },
+          {
+            "outcome": "source_verified",
+            "source_ref": "ACO-1.0.6:existing-playbook:editorial-verification"
+          },
+          {
+            "outcome": "success",
+            "source_ref": "ACO-1.0.7:synthetic-structured-contract:editorial-verification"
+          }
+        ],
+        "failure_modes": [
+          "Numero di link e indipendenza delle fonti non sono equivalenti.",
+          "Una fonte vera può non sostenere la frase che le viene attribuita.",
+          "«Non verificato» non equivale a «falso»; «non trovato» non equivale a «inesistente».",
+          "Una sintesi può eliminare dettagli, non condizioni che cambiano il significato."
+        ],
+        "inputs": [
+          "brief, authorized project scope and non-negotiable constraints",
+          "the available evidence and material unknowns",
+          "format and audience of the required deliverable"
+        ],
+        "method": [
+          "Definisci la versione del documento e l’obiettivo della revisione: accuratezza, fedeltà, completezza o pubblicazione. Non riscrivere una fonte per renderla coerente con il testo.",
+          "Scomponi in affermazioni verificabili: evento, soggetto, data, quantità, attribuzione, relazione causale e citazione. Una frase può contenere più affermazioni con livelli di prova differenti.",
+          "Per ciascuna collega la fonte alla posizione pertinente, distinguendo fonte primaria, resoconto e ripetizione. Due articoli che riprendono lo stesso comunicato costituiscono una sola origine informativa per quel fatto.",
+          "Controlla ambito e tempo: un progetto annunciato non è completato, una stima non è un consuntivo e un dato di campione non descrive automaticamente la popolazione.",
+          "Per citazioni e traduzioni confronta il contesto e il significato. Correggi forma solo entro il mandato; una citazione diretta non va «migliorata» introducendo parole o certezza assenti.",
+          "Cerca controevidenza e omissioni che cambiano la lettura. Quando le fonti divergono, rendi visibile il disaccordo e spiega quale verifica manca.",
+          "Rivedi conservando il livello di certezza sostenuto. Se un fatto resta irrisolto, attribuiscilo, qualificalo o rimuovilo con motivazione, senza inserire un fatto alternativo plausibile.",
+          "Consegna versione corretta, registro delle modifiche sostanziali e questioni aperte. Per documenti già pubblicati, prepara una correzione trasparente senza alterare silenziosamente la storia."
+        ],
+        "output_contract": {
+          "must_include": [
+            "result",
+            "source_or_verification_note",
+            "uncertainties",
+            "decision_criteria"
+          ],
+          "reference_method": "skills/aco-office-concierge/references/competencies/editorial-verification/OUTPUT.md",
+          "type": "professional_procedural_skill_output"
+        },
+        "rollback_ref": "v1.0.6",
+        "schema_version": 1,
+        "scope_id": "aco-public-professional",
+        "skill_id": "professional.editorial_verification",
+        "source_status": "validated_internal",
+        "status": "candidate",
+        "title": "Giornalismo, editing e revisione documentale",
+        "version": "1.0.0"
+      },
+      "candidate_sha256": "2179e316c031a103ed02b4ccdfbd1a57627ae5bd202af0460f94ffb84a8ab54f",
+      "professional_quality": "not independently validated",
+      "skill_id": "professional.editorial_verification"
+    },
+    {
+      "benchmark_kind": "deterministic_structured_contract",
+      "candidate": {
+        "candidate_sha256": "d1401075fbc5562d8633ce77cb8ecb06476f2f663891f48bd4525936c0875c6d",
+        "evidence": [
+          {
+            "outcome": "mixed",
+            "source_ref": "ACO-1.0.7:authored-example:legal-review"
+          },
+          {
+            "outcome": "source_verified",
+            "source_ref": "ACO-1.0.6:existing-playbook:legal-review"
+          },
+          {
+            "outcome": "success",
+            "source_ref": "ACO-1.0.7:synthetic-structured-contract:legal-review"
+          }
+        ],
+        "failure_modes": [
+          "Un limite di responsabilità non può essere letto senza esclusioni e indennizzi collegati.",
+          "Una licenza d’uso e una cessione di proprietà hanno conseguenze diverse; non uniformarle per brevità.",
+          "Per GDPR art. 33 non attribuire al responsabile un universale termine di 72 ore verso il titolare: i ruoli e i destinatari differiscono.",
+          "Le preferenze di negoziazione dipendono dalla parte; una clausola favorevole al cliente può essere rischiosa per il fornitore."
+        ],
+        "inputs": [
+          "brief, authorized project scope and non-negotiable constraints",
+          "the available evidence and material unknowns",
+          "format and audience of the required deliverable"
+        ],
+        "method": [
+          "Acquisisci testo completo, allegati e versione; identifica parte rappresentata, tipo di accordo, giurisdizione, obiettivo e scadenza solo dai dati disponibili. Le lacune decisive restano esplicite.",
+          "Raccogli posizioni approvate: preferita, alternativa accettabile e soglia di escalation. In assenza di playbook non presentare una preferenza negoziale come standard legale o di mercato.",
+          "Leggi l’accordo come sistema: definizioni, obblighi, condizioni di pagamento, diritti, limitazioni, indennizzi, recesso e clausole sopravviventi possono modificarsi a vicenda.",
+          "Crea una scheda per ciascun problema con posizione esatta, formulazione rilevante, effetto possibile per la parte e informazione mancante. Distingui rischio commerciale, ambiguità testuale e questione di diritto.",
+          "Per una regola legale cerca la fonte primaria vigente e verifica soggetto, territorio, fattispecie, decorrenza ed eccezioni. Non trasferire automaticamente istituti o tempi da un plugin statunitense.",
+          "Proponi una modifica circoscritta e una posizione di ripiego, spiegando cosa cambia nell’allocazione del rischio. Non dichiarare una clausola invalida senza analisi e autorità pertinenti.",
+          "Usa questionari condizionali per i dati realmente necessari: se non c’è trattamento di dati personali non inventare ruoli privacy; se ci sono, chiariscili prima di assegnare obblighi.",
+          "Consegna un fascicolo per il professionista con priorità, fonti, testo comparato e decisioni richieste. Firma, invio alla controparte, accettazione e validazione legale sono azioni separate."
+        ],
+        "output_contract": {
+          "must_include": [
+            "result",
+            "source_or_verification_note",
+            "uncertainties",
+            "decision_criteria"
+          ],
+          "reference_method": "skills/aco-office-concierge/references/competencies/legal-review/OUTPUT.md",
+          "type": "professional_procedural_skill_output"
+        },
+        "rollback_ref": "v1.0.6",
+        "schema_version": 1,
+        "scope_id": "aco-public-professional",
+        "skill_id": "professional.legal_review",
+        "source_status": "validated_internal",
+        "status": "candidate",
+        "title": "Contratti, diritti e preparazione legale",
+        "version": "1.0.0"
+      },
+      "candidate_sha256": "d1401075fbc5562d8633ce77cb8ecb06476f2f663891f48bd4525936c0875c6d",
+      "professional_quality": "not independently validated",
+      "skill_id": "professional.legal_review"
+    },
+    {
+      "benchmark_kind": "deterministic_structured_contract",
+      "candidate": {
+        "candidate_sha256": "a68a6e62d7bb464a0c9fe794a718c6cecbbb6177ced23144db82044a5f1c10e4",
+        "evidence": [
+          {
+            "outcome": "mixed",
+            "source_ref": "ACO-1.0.7:authored-example:administration"
+          },
+          {
+            "outcome": "source_verified",
+            "source_ref": "ACO-1.0.6:existing-playbook:administration"
+          },
+          {
+            "outcome": "success",
+            "source_ref": "ACO-1.0.7:synthetic-structured-contract:administration"
+          }
+        ],
+        "failure_modes": [
+          "«Confermo» va collegato a ciò che conferma, non interpretato come approvazione dell’intero thread.",
+          "La disponibilità di un orario non prova che la riunione sia stata prenotata.",
+          "Un impegno senza scadenza rimane tale, senza inventare «entro domani».",
+          "Un verbale sintetico deve preservare dissensi e dipendenze che cambiano l’azione."
+        ],
+        "inputs": [
+          "brief, authorized project scope and non-negotiable constraints",
+          "the available evidence and material unknowns",
+          "format and audience of the required deliverable"
+        ],
+        "method": [
+          "Definisci il perimetro della conversazione e la data di riferimento. Leggi il thread in ordine, mantenendo identificatori dei messaggi e distinguendo allegati nominati da allegati realmente letti.",
+          "Estrai unità separate: informazione, domanda, proposta, disponibilità, decisione, impegno e revoca. «Posso farlo» non equivale necessariamente a «lo farò».",
+          "Per ogni attività registra oggetto, responsabile esplicito, scadenza esplicita e messaggio che le sostiene. Usa sconosciuto quando manca un campo; non assegnare automaticamente tutto all’ultimo mittente.",
+          "Riconcilia modifiche e conflitti: una proposta di rinvio non annulla da sola una scadenza confermata. Conserva lo stato precedente e il punto che richiede chiarimento.",
+          "Tratta date relative con riferimento al messaggio e al fuso pertinente. Se il giorno resta ambiguo, non convertirlo in un invito definitivo; evidenzia la domanda minima da risolvere.",
+          "Prepara il briefing separando decisioni già prese, questioni da decidere, materiali disponibili e azioni. Includi solo il contesto che cambia la riunione o il lavoro successivo.",
+          "Redigi verbale e follow-up con formule che rispecchiano lo stato reale. Chiedere un documento, avere una bozza e averlo ricevuto sono stati diversi.",
+          "Prima di inviare, modificare calendario o archiviare verifica strumento, destinatari, contenuto e autorizzazione; conserva la ricevuta. La preparazione locale non costituisce un’azione sull’account."
+        ],
+        "output_contract": {
+          "must_include": [
+            "result",
+            "source_or_verification_note",
+            "uncertainties",
+            "decision_criteria"
+          ],
+          "reference_method": "skills/aco-office-concierge/references/competencies/administration/OUTPUT.md",
+          "type": "professional_procedural_skill_output"
+        },
+        "rollback_ref": "v1.0.6",
+        "schema_version": 1,
+        "scope_id": "aco-public-professional",
+        "skill_id": "professional.administration",
+        "source_status": "validated_internal",
+        "status": "candidate",
+        "title": "Amministrazione, segreteria e continuità operativa",
+        "version": "1.0.0"
+      },
+      "candidate_sha256": "a68a6e62d7bb464a0c9fe794a718c6cecbbb6177ced23144db82044a5f1c10e4",
+      "professional_quality": "not independently validated",
+      "skill_id": "professional.administration"
+    },
+    {
+      "benchmark_kind": "deterministic_structured_contract",
+      "candidate": {
+        "candidate_sha256": "47311f4cdfd2fa2a3be68871aea6781ef3b07cf28b61d6e9c66c96f525b52827",
+        "evidence": [
+          {
+            "outcome": "mixed",
+            "source_ref": "ACO-1.0.7:authored-example:project-delivery"
+          },
+          {
+            "outcome": "source_verified",
+            "source_ref": "ACO-1.0.6:existing-playbook:project-delivery"
+          },
+          {
+            "outcome": "success",
+            "source_ref": "ACO-1.0.7:synthetic-structured-contract:project-delivery"
+          }
+        ],
+        "failure_modes": [
+          "Un’attività «90% completa» non sostituisce criteri di accettazione osservabili.",
+          "Parallelizzare è possibile soltanto se le dipendenze e le risorse lo consentono.",
+          "Un ritardo esterno non autorizza a ridurre silenziosamente lo scope.",
+          "La consegna tecnica può essere completata mentre l’accettazione del committente resta aperta."
+        ],
+        "inputs": [
+          "brief, authorized project scope and non-negotiable constraints",
+          "the available evidence and material unknowns",
+          "format and audience of the required deliverable"
+        ],
+        "method": [
+          "Trasforma l’obiettivo in un risultato accettabile con criteri osservabili, destinatario e condizioni di consegna. Distingui il successo dell’attività dal beneficio che ci si attende dopo.",
+          "Scomponi solo quanto serve per eseguire: attività, dipendenze, risorse e decisioni. Assegna responsabili documentati o proposti, senza fingere accettazione del carico.",
+          "Crea una baseline con durate e unità dichiarate, prerequisiti e assunzioni. Giorni di lavoro, giorni di calendario e date di disponibilità non sono intercambiabili.",
+          "Controlla la rete: dipendenze mancanti, cicli, risorse condivise e approvazioni esterne. Una semplice somma delle durate non basta quando i compiti sono paralleli o in attesa.",
+          "Per ogni rischio specifica evento, conseguenza, indicatore e risposta; per un problema già avvenuto registra effetto reale e decisione necessaria. Non nascondere problemi attuali nel registro rischi.",
+          "Valuta una variazione confrontando baseline e scenario: scope, percorso critico, carico, costi, qualità e diritti. Mantieni almeno un’alternativa credibile quando la scadenza non è recuperabile.",
+          "Applica la modifica solo dopo l’autorità pertinente, conservando versione e motivazione. Un piano ricalcolato non prova che collaboratori o cliente abbiano accettato la nuova consegna.",
+          "Chiudi con evidenze dei criteri, file corretti, responsabilità dopo la consegna e problemi residui accettati. Verifica specifiche e utilità per il destinatario come domande distinte."
+        ],
+        "output_contract": {
+          "must_include": [
+            "result",
+            "source_or_verification_note",
+            "uncertainties",
+            "decision_criteria"
+          ],
+          "reference_method": "skills/aco-office-concierge/references/competencies/project-delivery/OUTPUT.md",
+          "type": "professional_procedural_skill_output"
+        },
+        "rollback_ref": "v1.0.6",
+        "schema_version": 1,
+        "scope_id": "aco-public-professional",
+        "skill_id": "professional.project_delivery",
+        "source_status": "validated_internal",
+        "status": "candidate",
+        "title": "Project management e consegna",
+        "version": "1.0.0"
+      },
+      "candidate_sha256": "47311f4cdfd2fa2a3be68871aea6781ef3b07cf28b61d6e9c66c96f525b52827",
+      "professional_quality": "not independently validated",
+      "skill_id": "professional.project_delivery"
+    },
+    {
+      "benchmark_kind": "deterministic_structured_contract",
+      "candidate": {
+        "candidate_sha256": "bebde87871b85b9012f6116f64201593a4fcd6409ba420eb1aaf94e355a8dfc0",
+        "evidence": [
+          {
+            "outcome": "mixed",
+            "source_ref": "ACO-1.0.7:authored-example:negotiation"
+          },
+          {
+            "outcome": "source_verified",
+            "source_ref": "ACO-1.0.6:existing-playbook:negotiation"
+          },
+          {
+            "outcome": "success",
+            "source_ref": "ACO-1.0.7:synthetic-structured-contract:negotiation"
+          }
+        ],
+        "failure_modes": [
+          "Un prezzo più basso con meno scope non è la stessa offerta scontata.",
+          "Esclusiva, territorio e durata vanno separati: «tutti i diritti» nasconde più variabili.",
+          "Un’alternativa debole può imporre prudenza, non giustifica un bluff.",
+          "La relazione conta, ma non cancella capacità, costi o autorizzazioni."
+        ],
+        "inputs": [
+          "brief, authorized project scope and non-negotiable constraints",
+          "the available evidence and material unknowns",
+          "format and audience of the required deliverable"
+        ],
+        "method": [
+          "Definisci mandato e autorità: chi può proporre, concedere e accettare; separa obiettivo, limite e preferenza. Non negoziare una condizione che l’utente non ha autorizzato a cambiare.",
+          "Mappa posizioni dichiarate e possibili interessi sottostanti, etichettando questi ultimi come ipotesi da verificare. «Prezzo troppo alto» può riguardare cassa, rischio o valore percepito.",
+          "Documenta l’alternativa all’accordo con probabilità, costi e tempi realistici. Un’alternativa desiderata ma non disponibile non è una leva da presentare alla controparte.",
+          "Costruisci una mappa di variabili: prezzo, scope, tempi, revisioni, pagamenti, diritti, esclusiva e crediti. Distingui ciò che costa molto a una parte e poco all’altra.",
+          "Prepara tre pacchetti coerenti, ciascuno con uno scambio esplicito. Una concessione importante deve ottenere una contropartita pertinente, non solo una speranza di relazione futura.",
+          "Usa criteri esterni verificabili quando esistono: costi, capacità, benchmark pertinenti, uso richiesto. Non inventare tariffe standard, concorrenza o offerte alternative.",
+          "Prevedi domande, obiezioni e punti di arresto. La scelta tra accordo e alternativa dipende dal valore complessivo e dall’esposizione, non dal solo prezzo nominale.",
+          "Dopo il confronto registra accordato, da confermare e respinto; il recap non può ampliare l’accordo. Sottoponi clausole e diritti sostanziali al controllo competente prima di firmare."
+        ],
+        "output_contract": {
+          "must_include": [
+            "result",
+            "source_or_verification_note",
+            "uncertainties",
+            "decision_criteria"
+          ],
+          "reference_method": "skills/aco-office-concierge/references/competencies/negotiation/OUTPUT.md",
+          "type": "professional_procedural_skill_output"
+        },
+        "rollback_ref": "v1.0.6",
+        "schema_version": 1,
+        "scope_id": "aco-public-professional",
+        "skill_id": "professional.negotiation",
+        "source_status": "validated_internal",
+        "status": "candidate",
+        "title": "Negoziazione, offerte e partnership",
+        "version": "1.0.0"
+      },
+      "candidate_sha256": "bebde87871b85b9012f6116f64201593a4fcd6409ba420eb1aaf94e355a8dfc0",
+      "professional_quality": "not independently validated",
+      "skill_id": "professional.negotiation"
+    },
+    {
+      "benchmark_kind": "deterministic_structured_contract",
+      "candidate": {
+        "candidate_sha256": "26fc3d03297146bdade622abacb4a4c956eb93448a03d0416b85eb857e641674",
+        "evidence": [
+          {
+            "outcome": "mixed",
+            "source_ref": "ACO-1.0.7:authored-example:studio-finance"
+          },
+          {
+            "outcome": "source_verified",
+            "source_ref": "ACO-1.0.6:existing-playbook:studio-finance"
+          },
+          {
+            "outcome": "success",
+            "source_ref": "ACO-1.0.7:synthetic-structured-contract:studio-finance"
+          }
+        ],
+        "failure_modes": [
+          "Un ordine da €2.000 già pagato per €500 ha residuo impegnato €1.500, non €2.000 da sommare al pagamento.",
+          "Margine sul ricavo e ricarico sul costo sono rapporti diversi.",
+          "Un acconto migliora cassa ma non è automaticamente ricavo aggiuntivo.",
+          "Una valuta o imposta sconosciuta non va ricavata dall’indirizzo del cliente."
+        ],
+        "inputs": [
+          "brief, authorized project scope and non-negotiable constraints",
+          "the available evidence and material unknowns",
+          "format and audience of the required deliverable"
+        ],
+        "method": [
+          "Dichiara valuta, periodo, perimetro, trattamento di imposte e livello dei dati. Non assumere IVA, cambio o regime fiscale; lascia l’ipotesi esplicita e separata dal calcolo.",
+          "Separa ricavi concordati, ricavi attesi e incassi per data. Allo stesso modo distingue spesa sostenuta, impegno residuo e stima non ancora impegnata, evitando doppi conteggi.",
+          "Costruisci il preventivo con quantità, unità, costo e provenienza; registra costi interni anche se non generano una fattura immediata, quando sono pertinenti al margine.",
+          "Calcola il costo finale previsto come sostenuto più residuo impegnato più residuo stimato non sovrapposto. Confrontalo con baseline e ricavi nello stesso perimetro.",
+          "Costruisci il flusso di cassa per periodo con saldo iniziale, incassi e pagamenti effettivi o previsti. Profitto positivo non esclude un saldo negativo prima dell’incasso.",
+          "Usa aritmetica decimale e formule trasparenti; riconcilia subtotali, segni, unità e collegamenti. Se un totale non torna, quantifica la differenza e risali al dato, non aggiungere una voce di pareggio.",
+          "Simula separatamente aumento costi, ritardo incassi e perdita di scope. Evita di presentare lo scenario favorevole come previsione certa e non usare percentuali prive di base.",
+          "Consegna budget, consuntivo, cassa e domande per il commercialista con ipotesi e fonti. Nessun pagamento, finanziamento o decisione fiscale viene autorizzato dal modello."
+        ],
+        "output_contract": {
+          "must_include": [
+            "result",
+            "source_or_verification_note",
+            "uncertainties",
+            "decision_criteria"
+          ],
+          "reference_method": "skills/aco-office-concierge/references/competencies/studio-finance/OUTPUT.md",
+          "type": "professional_procedural_skill_output"
+        },
+        "rollback_ref": "v1.0.6",
+        "schema_version": 1,
+        "scope_id": "aco-public-professional",
+        "skill_id": "professional.studio_finance",
+        "source_status": "validated_internal",
+        "status": "candidate",
+        "title": "Finanza di studio e controllo economico",
+        "version": "1.0.0"
+      },
+      "candidate_sha256": "26fc3d03297146bdade622abacb4a4c956eb93448a03d0416b85eb857e641674",
+      "professional_quality": "not independently validated",
+      "skill_id": "professional.studio_finance"
+    },
+    {
+      "benchmark_kind": "deterministic_structured_contract",
+      "candidate": {
+        "candidate_sha256": "33648187ae63f361161018cf1c0928df3911e81d8ff21328310f9a4c813afb86",
+        "evidence": [
+          {
+            "outcome": "mixed",
+            "source_ref": "ACO-1.0.7:authored-example:people-recruitment"
+          },
+          {
+            "outcome": "source_verified",
+            "source_ref": "ACO-1.0.6:existing-playbook:people-recruitment"
+          },
+          {
+            "outcome": "success",
+            "source_ref": "ACO-1.0.7:synthetic-structured-contract:people-recruitment"
+          }
+        ],
+        "failure_modes": [
+          "Mancanza di esempio non significa incapacità: registra evidenza insufficiente e prevedi un follow-up equivalente.",
+          "Un portfolio elegante non dimostra gestione di stakeholder o responsabilità sul lavoro mostrato.",
+          "ESCO aiuta a nominare capacità, ma non decide il livello di una persona.",
+          "Una rubrica non elimina il bias: richiede revisione di pertinenza, applicazione e impatto."
+        ],
+        "inputs": [
+          "brief, authorized project scope and non-negotiable constraints",
+          "the available evidence and material unknowns",
+          "format and audience of the required deliverable"
+        ],
+        "method": [
+          "Definisci risultati del ruolo e compiti essenziali prima di requisiti o titoli. Ogni competenza richiesta deve avere una relazione spiegabile con il lavoro.",
+          "Distingui requisiti indispensabili, apprendibili e preferiti; non trasformare familiarità con un marchio o un percorso prestigioso in una capacità provata.",
+          "Prepara domande core comparabili e follow-up neutrali, insieme a un esercizio proporzionato. Comunica condizioni e accomodamenti; non chiedere lavoro produttivo gratuito mascherato da test.",
+          "Costruisci ancore di valutazione comportamentali prima di vedere i candidati. Definisci cosa conta come evidenza, cosa contraddice un’ipotesi e quando la risposta è semplicemente insufficiente per giudicare.",
+          "Registra fatti e citazioni pertinenti, minimizzando dati personali. Escludi caratteristiche protette, inferenze sensibili e proxy non necessari; non derivare personalità da foto, accento o stile espressivo.",
+          "Valuta ogni competenza separatamente e conserva sconosciuto quando manca evidenza. Il confronto deve utilizzare gli stessi criteri, non impressioni complessive o somme che nascondono requisiti critici.",
+          "Conduci un debrief umano che distingua capacità osservata, contesto dell’opportunità e necessità di ulteriore verifica. Le raccomandazioni non costituiscono decisione automatica di assunzione o esclusione.",
+          "Per onboarding e sviluppo traduci il gap in un comportamento praticabile con supporto, prova e revisione. Un corso completato è un input, non dimostrazione automatica della competenza."
+        ],
+        "output_contract": {
+          "must_include": [
+            "result",
+            "source_or_verification_note",
+            "uncertainties",
+            "decision_criteria"
+          ],
+          "reference_method": "skills/aco-office-concierge/references/competencies/people-recruitment/OUTPUT.md",
+          "type": "professional_procedural_skill_output"
+        },
+        "rollback_ref": "v1.0.6",
+        "schema_version": 1,
+        "scope_id": "aco-public-professional",
+        "skill_id": "professional.people_recruitment",
+        "source_status": "validated_internal",
+        "status": "candidate",
+        "title": "HR, recruitment e sviluppo competenze",
+        "version": "1.0.0"
+      },
+      "candidate_sha256": "33648187ae63f361161018cf1c0928df3911e81d8ff21328310f9a4c813afb86",
+      "professional_quality": "not independently validated",
+      "skill_id": "professional.people_recruitment"
+    },
+    {
+      "benchmark_kind": "deterministic_structured_contract",
+      "candidate": {
+        "candidate_sha256": "23f752e158e1e6fc4e6cf9981f0e7837f2fe41e69ca4a8ec9f0c8ad6f609dc5a",
+        "evidence": [
+          {
+            "outcome": "mixed",
+            "source_ref": "ACO-1.0.7:authored-example:strategy-evaluation"
+          },
+          {
+            "outcome": "source_verified",
+            "source_ref": "ACO-1.0.6:existing-playbook:strategy-evaluation"
+          },
+          {
+            "outcome": "success",
+            "source_ref": "ACO-1.0.7:synthetic-structured-contract:strategy-evaluation"
+          }
+        ],
+        "failure_modes": [
+          "Output, esito e impatto non sono sinonimi.",
+          "Pesi scelti dal modello senza mandato vanno presentati come scenario, non come valori dell’organizzazione.",
+          "Un programma può essere efficace sul proprio obiettivo e incoerente con un altro programma.",
+          "L’interruzione può essere la scelta corretta quando le assunzioni centrali falliscono."
+        ],
+        "inputs": [
+          "brief, authorized project scope and non-negotiable constraints",
+          "the available evidence and material unknowns",
+          "format and audience of the required deliverable"
+        ],
+        "method": [
+          "Definisci la decisione e il problema, distinguendo sintomi, vincoli e obiettivi. Verifica quale parte è osservata e quale è un’interpretazione del committente.",
+          "Esplora alternative realmente diverse prima di scegliere un progetto; includi mantenimento, riduzione o interruzione quando pertinenti. Non chiamare strategia una lista di tutte le iniziative desiderabili.",
+          "Per ogni opzione collega attività, output, esito atteso e impatto ipotizzato, esplicitando le assunzioni tra livelli. Un output prodotto non prova da solo un effetto sociale o commerciale.",
+          "Scegli le domande di valutazione rilevanti al contesto: pertinenza, coerenza, efficacia, efficienza, impatto e sostenibilità sono lenti differenti, non sei punteggi obbligatori identici.",
+          "Esplicita vincoli e preferenze decisionali: budget, capacità, tempi, rischi e finalità. Se usi pesi o punteggi, mostrane origine e sensibilità; una tabella non rende oggettiva una preferenza.",
+          "Confronta combinazioni fattibili, dipendenze e costo opportunità. Un progetto economico ma incompatibile con le risorse chiave può essere meno praticabile di uno più caro.",
+          "Definisci un esperimento che possa cambiare la scelta, con soglia decisionale e metodo di raccolta. Non chiamare validazione un’approvazione interna senza evidenza sul bisogno.",
+          "Consegna scelta motivata, alternativa esclusa, condizioni di revisione e criteri di arresto. Documenta cosa è ancora ipotesi invece di proteggere il piano da ogni esito contrario."
+        ],
+        "output_contract": {
+          "must_include": [
+            "result",
+            "source_or_verification_note",
+            "uncertainties",
+            "decision_criteria"
+          ],
+          "reference_method": "skills/aco-office-concierge/references/competencies/strategy-evaluation/OUTPUT.md",
+          "type": "professional_procedural_skill_output"
+        },
+        "rollback_ref": "v1.0.6",
+        "schema_version": 1,
+        "scope_id": "aco-public-professional",
+        "skill_id": "professional.strategy_evaluation",
+        "source_status": "validated_internal",
+        "status": "candidate",
+        "title": "Strategia e valutazione dei programmi",
+        "version": "1.0.0"
+      },
+      "candidate_sha256": "23f752e158e1e6fc4e6cf9981f0e7837f2fe41e69ca4a8ec9f0c8ad6f609dc5a",
+      "professional_quality": "not independently validated",
+      "skill_id": "professional.strategy_evaluation"
+    },
+    {
+      "benchmark_kind": "deterministic_structured_contract",
+      "candidate": {
+        "candidate_sha256": "6c1755c68dd60a929795664e1df6679aedf7f107599db428d4bc68c973b27d93",
+        "evidence": [
+          {
+            "outcome": "mixed",
+            "source_ref": "ACO-1.0.7:authored-example:skill-evaluation"
+          },
+          {
+            "outcome": "source_verified",
+            "source_ref": "ACO-1.0.6:existing-playbook:skill-evaluation"
+          },
+          {
+            "outcome": "success",
+            "source_ref": "ACO-1.0.7:synthetic-structured-contract:skill-evaluation"
+          }
+        ],
+        "failure_modes": [
+          "Esempio scritto dall’autore e risposta scritta dallo stesso autore sono materiale di sviluppo, non validazione indipendente.",
+          "Un test che cerca una parola misura quella parola, non la verità dell’affermazione.",
+          "Una soglia superata su un dataset non dimostra affidabilità universale.",
+          "Un aggiornamento che migliora un ufficio ma peggiora un altro non può essere dichiarato globalmente migliore senza discutere il compromesso."
+        ],
+        "inputs": [
+          "brief, authorized project scope and non-negotiable constraints",
+          "the available evidence and material unknowns",
+          "format and audience of the required deliverable"
+        ],
+        "method": [
+          "Definisci la capacità come comportamento osservabile, insieme al perimetro e ai casi in cui non deve essere usata. «Scrive meglio» è troppo vago senza criteri e compito.",
+          "Traccia fonti, versione del metodo e modifiche originali. Il riuso deve avere condizioni esplicite; una fonte consultata non è una dipendenza installata né una competenza acquisita.",
+          "Separa esempi didattici, casi di sviluppo, regressioni note e prove nuove per la valutazione. Se l’autore ha visto o usato un caso per migliorare il metodo, non chiamarlo holdout indipendente.",
+          "Definisci criteri meccanici e professionali separati. Una struttura corretta può contenere un ragionamento debole; un giudizio umano positivo non annulla un errore aritmetico critico.",
+          "Congela versione, input, criteri e configurazione prima dell’esecuzione significativa. Conserva il primo risultato, incluse le failure, e distingui una correzione dalla riuscita al primo tentativo.",
+          "Esegui baseline e candidato sullo stesso compito con condizioni comparabili. Per confronti ciechi nascondi versione e ordine al valutatore, senza pretendere di cancellare il contesto già visto dal modello.",
+          "Riporta risultati per dominio, gravità e costo; includi regressioni e casi avversari. Controlla risposte apparentemente eleganti che inventano fatti, accordi, diritti o capacità.",
+          "Promuovi soltanto attraverso la policy ACO vigente e una revisione autorizzata; conserva rollback e limiti. Un test locale del loader non promuove i metodi che carica e non modifica i pesi del modello."
+        ],
+        "output_contract": {
+          "must_include": [
+            "result",
+            "source_or_verification_note",
+            "uncertainties",
+            "decision_criteria"
+          ],
+          "reference_method": "skills/aco-office-concierge/references/competencies/skill-evaluation/OUTPUT.md",
+          "type": "professional_procedural_skill_output"
+        },
+        "rollback_ref": "v1.0.6",
+        "schema_version": 1,
+        "scope_id": "aco-public-professional",
+        "skill_id": "professional.skill_evaluation",
+        "source_status": "validated_internal",
+        "status": "candidate",
+        "title": "Apprendimento e verifica delle competenze ACO",
+        "version": "1.0.0"
+      },
+      "candidate_sha256": "6c1755c68dd60a929795664e1df6679aedf7f107599db428d4bc68c973b27d93",
+      "professional_quality": "not independently validated",
+      "skill_id": "professional.skill_evaluation"
+    }
+  ],
+  "exact_hash_approval_required_before_publication": true,
+  "promotion_policy": "config/skill-policy.json",
+  "schema_version": 1
+}

@@ -1,0 +1,12 @@
+{
+  "source_ids": [
+    "spectrum",
+    "spectrum-rights",
+    "getty"
+  ],
+  "canonical_source_register": "../SOURCES.json",
+  "existing_aco_paths": [
+    "skills/aco-office-concierge/references/playbooks/ART-ARCHIVE-AND-PRESERVATION.md"
+  ],
+  "upstream_content_bundled": false
+}

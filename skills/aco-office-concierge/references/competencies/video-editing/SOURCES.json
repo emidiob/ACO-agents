@@ -1,0 +1,11 @@
+{
+  "source_ids": [
+    "remotion-skills",
+    "remotion-sequence",
+    "hyperframes",
+    "otio"
+  ],
+  "canonical_source_register": "../SOURCES.json",
+  "existing_aco_paths": [],
+  "upstream_content_bundled": false
+}
