@@ -48,3 +48,19 @@ Use [Integration discovery](references/protocols/INTEGRATION-DISCOVERY.md) befor
 
 ## Goal Graph & execution — v0.8.0
 Use a Program → Goal → Task → Dependency graph only when continuity and dependencies justify it. `goal-status` chooses a bounded next task; `autonomy-plan` resolves action DAGs through existing capability/permission/receipt contracts. Simulation is side-effect free. The local engine never executes a provider, and a task is not verified until receipts meet its evidence rule. Do not create a file per node or use a graph to cross private scopes.
+
+
+<!-- ACO-COMPETENCE-LIBRARY-v1.0.7 -->
+## Validated professional skillpacks — ACO 1.0.7
+
+When the current task benefits from a professional method, select the applicable office
+and read [the competence index](references/competencies/INDEX.md). Use only the
+selected `METHOD.md`, `DECISIONS.md`, and `OUTPUT.md`; consult examples, sources and
+evaluation evidence when material. Twenty original professional method packs
+are also registered as technical ACO skill bodies with status `validated`. The 400
+frozen synthetic checks test structured procedural consistency, not professional
+judgment or output quality. Original experimental candidates stay gated.
+For limits see `docs/PROFESSIONAL-SKILLS.md`.
+Preserve author intent, source rights, project/client scope and external-action approval.
+CLI: `python3 scripts/competence_library.py show --id visual-critique` in the full checkout.
+<!-- END ACO-COMPETENCE-LIBRARY-v1.0.7 -->

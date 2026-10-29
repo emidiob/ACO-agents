@@ -1,0 +1,45 @@
+{
+  "competency_id": "editorial-verification",
+  "method_version": "0.3.0",
+  "qualitative_status": "development_examples_not_independent_validation",
+  "independent_validation": false,
+  "same_author": true,
+  "worked_examples": [
+    {
+      "brief": "Testo sintetico: «Il museo ha inaugurato il 10 maggio una mostra con 20 opere». Fonte A: comunicato «apertura prevista il 10 maggio, fino a 20 opere». Fonte B copia A.",
+      "weak": "Due fonti confermano inaugurazione e numero di opere.",
+      "application": "Revisione: «Il museo ha annunciato una mostra con apertura prevista per il 10 maggio e un massimo di 20 opere». Stato dell’inaugurazione e numero effettivo non verificati. A e B condividono la stessa origine. Verifica successiva: documentazione dell’apertura e lista definitiva delle opere.",
+      "commentary": "Le parole «prevista» e «fino a» sono condizioni sostanziali, non dettagli sacrificabili.",
+      "limits": "Nessun museo reale è coinvolto; la data non ha anno e non va collocata arbitrariamente."
+    },
+    {
+      "brief": "Due versioni di una delega sintetica: la prima autorizza a ritirare un documento; la seconda aggiunge «e sottoscrivere ogni dichiarazione necessaria».",
+      "weak": "Le versioni sono sostanzialmente uguali, cambia solo la fluidità.",
+      "application": "Differenza materiale: la seconda amplia gli atti autorizzati oltre il ritiro. Evidenziare la clausola aggiunta, chiedere conferma dell’intenzione e rinviare al professionista la sufficienza formale o legale nel contesto applicabile. Non eliminare o approvare la formula come semplice correzione stilistica.",
+      "commentary": "La revisione documentale deve individuare differenze di potere e impegno, non solo errori grammaticali.",
+      "limits": "Non è una valutazione della validità di una delega reale."
+    }
+  ],
+  "rubric": {
+    "criteria": [
+      "Ogni affermazione materiale mantiene ambito, data e attribuzione.",
+      "Citazioni fedeli e rintracciabili.",
+      "Fonti dipendenti non vengono contate come conferme indipendenti.",
+      "La correzione non introduce fatti nuovi non verificati."
+    ],
+    "rating_anchors": {
+      "insufficient": "Contraddice un vincolo critico o inventa un dato materiale.",
+      "acceptable": "Rispetta il compito e i vincoli, ma alcune scelte o incertezze non sono ancora ben sviluppate.",
+      "strong": "Decisioni specifiche, prove tracciabili, alternative pertinenti e limiti espliciti; revisione esterna ancora necessaria."
+    },
+    "critical_failures": [
+      "Inventare prove o risultati di test.",
+      "Confondere proposta e approvazione / esecuzione.",
+      "Violare diritti, riservatezza o perimetro autorizzato."
+    ]
+  },
+  "new_case_brief": "Controllare un testo nuovo con cinque fonti genuine, tre dipendenti e una citazione troncata: identificare l’errore senza introdurre una controtesi non documentata.",
+  "new_case_status": "not_run",
+  "new_case_is_independent_holdout": false,
+  "promotion_requirements": "Curated professional method; not a technical-skill activation. If later proposed as a technical skill, preserve ACO separate policy: >=20 benchmark cases, >=95 score, 0 critical failures, explicit approval, rollback reference, frozen first run. The two authored examples do not establish independent quality validation."
+}

@@ -1,0 +1,12 @@
+{
+  "source_ids": [
+    "workspace",
+    "reuters"
+  ],
+  "canonical_source_register": "../SOURCES.json",
+  "existing_aco_paths": [
+    "skills/aco-administration-office/references/agents/executive-assistant.md",
+    "skills/aco-administration-office/references/agents/meeting-calendar-coordinator.md"
+  ],
+  "upstream_content_bundled": false
+}

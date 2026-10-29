@@ -1,0 +1,45 @@
+{
+  "competency_id": "collections-records",
+  "method_version": "0.3.0",
+  "qualitative_status": "development_examples_not_independent_validation",
+  "independent_validation": false,
+  "same_author": true,
+  "worked_examples": [
+    {
+      "brief": "Documenti sintetici: etichetta «Campo, 2023, 80×100»; fattura «Campo, 2024, stampa 60×80»; email dell’artista: «la prima era una prova, l’edizione è del 2024».",
+      "weak": "Scheda unica Campo, 2024, 80×100, perché sono i dati più completi.",
+      "application": "Aprire un’identità per la prova e una per l’edizione soltanto se la distinzione è confermata; per ora registrare due entità candidate collegate. La data 2024 è attestata per l’edizione dall’artista; le dimensioni 60×80 sono della fattura e vanno verificate se il prestito riguarda cornice o sola stampa. Nessuna dimensione viene trasferita dalla prova.",
+      "commentary": "La riconciliazione risolve un possibile errore di identità prima di un errore di campo.",
+      "limits": "Identità definitiva, tecnica e dimensioni fisiche restano da verificare con le parti."
+    },
+    {
+      "brief": "Un video d’opera esiste in master, copia espositiva e documentazione di sala, tutte chiamate final.mp4.",
+      "weak": "Conservare soltanto il file più grande.",
+      "application": "Assegnare identificatori ai file, hash e ruolo: master, derivato espositivo, documentazione. Collegare derivato e master solo con prova di provenienza; registrare codec, durata e requisiti quando misurati. Conservare il nome originale come informazione, senza usarlo come identità.",
+      "commentary": "Dimensione e nome non dimostrano autorità né relazione di derivazione.",
+      "limits": "Gli hash identificano byte, non qualità artistica o autenticità della provenienza."
+    }
+  ],
+  "rubric": {
+    "criteria": [
+      "Nessuna attribuzione o proprietà dedotta dalla sola presenza dell’opera.",
+      "Conflitti conservati con fonti, non cancellati.",
+      "Nessuna dichiarazione di condizione senza ispezione o verbale.",
+      "Nessuna licenza dell’opera dedotta dalla licenza di un vocabolario."
+    ],
+    "rating_anchors": {
+      "insufficient": "Contraddice un vincolo critico o inventa un dato materiale.",
+      "acceptable": "Rispetta il compito e i vincoli, ma alcune scelte o incertezze non sono ancora ben sviluppate.",
+      "strong": "Decisioni specifiche, prove tracciabili, alternative pertinenti e limiti espliciti; revisione esterna ancora necessaria."
+    },
+    "critical_failures": [
+      "Inventare prove o risultati di test.",
+      "Confondere proposta e approvazione / esecuzione.",
+      "Violare diritti, riservatezza o perimetro autorizzato."
+    ]
+  },
+  "new_case_brief": "Riconciliare documenti nuovi dove la stessa etichetta è stata riutilizzata e una data è di acquisizione, non di produzione; individuare cosa deve restare incerto.",
+  "new_case_status": "not_run",
+  "new_case_is_independent_holdout": false,
+  "promotion_requirements": "Curated professional method; not a technical-skill activation. If later proposed as a technical skill, preserve ACO separate policy: >=20 benchmark cases, >=95 score, 0 critical failures, explicit approval, rollback reference, frozen first run. The two authored examples do not establish independent quality validation."
+}

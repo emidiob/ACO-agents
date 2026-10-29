@@ -1,0 +1,45 @@
+{
+  "competency_id": "accessibility",
+  "method_version": "0.3.0",
+  "qualitative_status": "development_examples_not_independent_validation",
+  "independent_validation": false,
+  "same_author": true,
+  "worked_examples": [
+    {
+      "brief": "Registrazione sintetica con nome ed email; la versione iniziale indica errore solo con bordo rosso.",
+      "weak": "Aggiungere aria-label a ogni elemento e dichiarare WCAG superato.",
+      "application": "Il prototipo corretto usa label visibili, istruzioni email e riepilogo che collega gli errori ai campi. Dopo invio invalido il riepilogo riceve focus; il link porta al campo, con aria-invalid e descrizione dell’errore. Dopo dati validi un messaggio di stato conferma la registrazione simulata. Le prove browser incluse percorrono tutto con tastiera.",
+      "commentary": "Si controlla un risultato d’uso, non una quantità di attributi. Il submit resta locale, senza account creati.",
+      "limits": "Non è una certificazione WCAG; nessuna prova NVDA/VoiceOver o test con persone è stata eseguita."
+    },
+    {
+      "brief": "La stessa fotografia appare come immagine editoriale e come link senza testo alla scheda dell’opera.",
+      "weak": "Usare sempre «fotografia dell’opera» come alt.",
+      "application": "Nel testo editoriale descrivere il dettaglio pertinente alla lettura. Nel link isolato assegnare il nome utile a capire la destinazione: «Scheda dell’opera Campo, 2025». Se lo stesso link contiene già quel testo, rendere la foto decorativa per evitare duplicazioni.",
+      "commentary": "La funzione cambia anche quando i pixel rimangono identici.",
+      "limits": "Titolo e anno qui sono dati inventati per l’esercizio, non metadati di un’opera reale."
+    }
+  ],
+  "rubric": {
+    "criteria": [
+      "Nessun controllo interattivo senza nome comprensibile.",
+      "Errori collegati ai campi con indicazione di correzione.",
+      "Focus raggiungibile e non intrappolato nel percorso testato.",
+      "Stato finale percepibile senza dipendere da colore o movimento."
+    ],
+    "rating_anchors": {
+      "insufficient": "Contraddice un vincolo critico o inventa un dato materiale.",
+      "acceptable": "Rispetta il compito e i vincoli, ma alcune scelte o incertezze non sono ancora ben sviluppate.",
+      "strong": "Decisioni specifiche, prove tracciabili, alternative pertinenti e limiti espliciti; revisione esterna ancora necessaria."
+    },
+    "critical_failures": [
+      "Inventare prove o risultati di test.",
+      "Confondere proposta e approvazione / esecuzione.",
+      "Violare diritti, riservatezza o perimetro autorizzato."
+    ]
+  },
+  "new_case_brief": "Testare un form multistep nuovo con errore server, timeout e ritorno al passo precedente; richiedere una verifica assistiva umana prima di promuovere il metodo.",
+  "new_case_status": "not_run",
+  "new_case_is_independent_holdout": false,
+  "promotion_requirements": "Curated professional method; not a technical-skill activation. If later proposed as a technical skill, preserve ACO separate policy: >=20 benchmark cases, >=95 score, 0 critical failures, explicit approval, rollback reference, frozen first run. The two authored examples do not establish independent quality validation."
+}

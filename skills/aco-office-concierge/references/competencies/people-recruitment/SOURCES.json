@@ -1,0 +1,10 @@
+{
+  "source_ids": [
+    "opm",
+    "esco",
+    "anthropic-hr"
+  ],
+  "canonical_source_register": "../SOURCES.json",
+  "existing_aco_paths": [],
+  "upstream_content_bundled": false
+}

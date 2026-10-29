@@ -1,0 +1,72 @@
+{
+  "failure_modes": [
+    "Bassa risoluzione non implica automaticamente valore critico o povertà tecnica.",
+    "Un testo teorico aiuta a formulare domande, non certifica il significato dell’opera.",
+    "L’ambiguità intenzionale non giustifica ogni incoerenza; chiedi quale esperienza produce.",
+    "Un esperimento di studio non richiede di promettere in anticipo un risultato positivo.",
+    "Inventing observations, approvals, rights, professional certification or external execution."
+  ],
+  "inputs": [
+    "brief, authorized project scope and non-negotiable constraints",
+    "the available evidence and material unknowns",
+    "format and audience of the required deliverable"
+  ],
+  "method": [
+    "Descrivi prima ciò che l’opera rende disponibile: materiale, scala, comportamento, durata, relazione con lo spettatore. Distingui l’opera da una fotografia documentale o da una descrizione dell’artista.",
+    "Costruisci una prima lettura collegando ogni passaggio interpretativo a un elemento osservabile. Evita di usare un riferimento teorico come prova dell’intenzione dell’artista.",
+    "Costruisci una seconda lettura realmente concorrente, non una semplice parafrasi. Indica quali stessi dettagli potrebbero sostenere conclusioni differenti.",
+    "Esamina la relazione tra forma e statement: ciò che il testo promette è esperibile, soltanto dichiarato, oppure contraddetto dal dispositivo? Una contraddizione può essere produttiva ma va dimostrata.",
+    "Contestualizza solo con riferimenti verificati e pertinenti. Una somiglianza formale non stabilisce influenza, plagio o appartenenza a una tradizione.",
+    "Formula la valutazione con criteri espliciti: precisione del problema, necessità delle scelte e qualità dell’esperienza. Non convertire gusto personale o familiarità culturale in un verdetto universale.",
+    "Proponi un esperimento materiale che discrimini tra le letture: togliere una didascalia, cambiare il tempo, invertire il punto d’ascolto. Specifica cosa osservare e cosa significherebbe un esito contrario.",
+    "Consegna al massimo poche revisioni ad alto effetto, conservando l’autorità artistica. Non sostituire la ricerca con la ricerca di bandi o con una narrativa commerciale."
+  ],
+  "output_contract": {
+    "must_include": [
+      "result",
+      "source_or_verification_note",
+      "uncertainties",
+      "decision_criteria"
+    ],
+    "reference_method": "skills/aco-office-concierge/references/competencies/art-criticism/OUTPUT.md",
+    "type": "professional_procedural_skill_output"
+  },
+  "rollback_ref": "v1.0.6",
+  "skill_id": "professional.art_criticism",
+  "source_status": "validated_internal",
+  "sources": [
+    {
+      "reuse": "reference_only",
+      "review_scope": "Selected 2009 essay on image circulation, value and quality.",
+      "url": "https://www.e-flux.com/journal/10/61362/in-defense-of-the-poor-image?v=1668240862541"
+    },
+    {
+      "reuse": "reference_only",
+      "review_scope": "Selected 2026 essay on revisiting exhibition histories.",
+      "url": "https://www.e-flux.com/journal/166/6776941/the-goldfish-remembers-on-the-curatorial-flex-of-exhibition-histories"
+    }
+  ],
+  "status": "validated",
+  "title": "Critica d’arte e sviluppo della pratica",
+  "verification": {
+    "benchmark_cases": 20,
+    "level": "deterministic_procedural_contract",
+    "max_critical_failures": 0,
+    "method_files": [
+      "skills/aco-office-concierge/references/competencies/art-criticism/METHOD.md",
+      "skills/aco-office-concierge/references/competencies/art-criticism/DECISIONS.md",
+      "skills/aco-office-concierge/references/competencies/art-criticism/OUTPUT.md",
+      "skills/aco-office-concierge/references/competencies/art-criticism/EXAMPLES.md",
+      "skills/aco-office-concierge/references/competencies/art-criticism/EVALS.json",
+      "skills/aco-office-concierge/references/competencies/art-criticism/SOURCES.json"
+    ],
+    "minimum_score": 95,
+    "professional_quality_review": "not independently assessed",
+    "third_party_rights": "reference_only"
+  },
+  "version": "1.0.0",
+  "when_to_use": [
+    "Use for contemporary art criticism visual evidence counter readings.",
+    "Select only within artist-office, organization-office, publishing-office and when the task requires this specific method."
+  ]
+}

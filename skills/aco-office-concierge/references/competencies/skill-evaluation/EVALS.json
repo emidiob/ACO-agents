@@ -1,0 +1,45 @@
+{
+  "competency_id": "skill-evaluation",
+  "method_version": "0.3.0",
+  "qualitative_status": "development_examples_not_independent_validation",
+  "independent_validation": false,
+  "same_author": true,
+  "worked_examples": [
+    {
+      "brief": "Metodo A produce 8 righe formalmente corrette ma inventa una scadenza; metodo B produce 6 righe e lascia la data sconosciuta.",
+      "weak": "Premiare A perché è più completo e contiene la parola «evidenza».",
+      "application": "Criterio critico: nessuna scadenza inventata. A fallisce indipendentemente dallo stile; B supera questo controllo e va poi valutato su copertura degli impegni reali. Il confronto deve conservare input, risposte e motivazione della valutazione.",
+      "commentary": "La metrica è legata al rischio del compito e non alla ricchezza superficiale della risposta.",
+      "limits": "Il caso è sintetico e noto all’autore, quindi una regressione di sviluppo."
+    },
+    {
+      "brief": "Il pacchetto passa tutti i test Python, ma nessun professionista ha valutato le mostre proposte.",
+      "weak": "Tutte le competenze ACO sono validate al 100%.",
+      "application": "Conclusione corretta: integrità e specifici invarianti testati passano nei casi documentati; giudizio curatoriale e trasferimento a casi nuovi non sono indipendentemente validati. Stato dei metodi professionali: curated, richiamabili normalmente dagli uffici; non equivalgono a skill tecniche attivate o a validazione professionale indipendente.",
+      "commentary": "Questa distinzione viene applicata al pacchetto stesso, non soltanto raccomandata agli altri.",
+      "limits": "Per una promozione servono le prove e le approvazioni richieste dalla policy ACO corrente."
+    }
+  ],
+  "rubric": {
+    "criteria": [
+      "Nessun test dichiarato eseguito senza log effettivo.",
+      "Nessun caso autorevisionato etichettato blind o indipendente.",
+      "Esiti meccanici separati da giudizi professionali.",
+      "Policy di promozione, autorizzazione e rollback non indeboliti."
+    ],
+    "rating_anchors": {
+      "insufficient": "Contraddice un vincolo critico o inventa un dato materiale.",
+      "acceptable": "Rispetta il compito e i vincoli, ma alcune scelte o incertezze non sono ancora ben sviluppate.",
+      "strong": "Decisioni specifiche, prove tracciabili, alternative pertinenti e limiti espliciti; revisione esterna ancora necessaria."
+    },
+    "critical_failures": [
+      "Inventare prove o risultati di test.",
+      "Confondere proposta e approvazione / esecuzione.",
+      "Violare diritti, riservatezza o perimetro autorizzato."
+    ]
+  },
+  "new_case_brief": "Un valutatore esterno crea almeno 20 nuovi casi per la competenza da promuovere, congela i criteri prima del primo run e conserva anche gli esiti negativi.",
+  "new_case_status": "not_run",
+  "new_case_is_independent_holdout": false,
+  "promotion_requirements": "Curated professional method; not a technical-skill activation. If later proposed as a technical skill, preserve ACO separate policy: >=20 benchmark cases, >=95 score, 0 critical failures, explicit approval, rollback reference, frozen first run. The two authored examples do not establish independent quality validation."
+}

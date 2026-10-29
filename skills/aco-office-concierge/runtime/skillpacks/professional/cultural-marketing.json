@@ -1,0 +1,72 @@
+{
+  "failure_modes": [
+    "Due pubblici richiedono porte d’ingresso differenti, non due versioni contraddittorie del progetto.",
+    "Un grande numero di visualizzazioni non dimostra una relazione continuativa.",
+    "Non attribuire segmenti proprietari o tratti personali a individui senza una base legittima e pertinente.",
+    "L’obiettivo culturale può giustificare una scelta meno efficiente sul solo costo per click.",
+    "Inventing observations, approvals, rights, professional certification or external execution."
+  ],
+  "inputs": [
+    "brief, authorized project scope and non-negotiable constraints",
+    "the available evidence and material unknowns",
+    "format and audience of the required deliverable"
+  ],
+  "method": [
+    "Dichiara l’obiettivo culturale e quello operativo separatamente: per esempio aprire una ricerca a nuovi visitatori e ottenere prenotazioni, senza ridurre il primo al secondo.",
+    "Definisci pubblici come relazioni e situazioni di partecipazione, non come profili psicologici inventati. Usa comportamenti o bisogni dichiarati e registra le lacune di ricerca.",
+    "Mappa ostacoli concreti: comprensione dell’invito, costo, tempo, distanza, lingua, accesso, familiarità con l’istituzione. Non presumere che una bassa risposta sia disinteresse.",
+    "Costruisci una matrice messaggio/prova/azione per ogni pubblico. Cambia l’accesso al tema senza alterare il progetto o promettere esperienze che non offre.",
+    "Scegli canali come ipotesi: chi può essere raggiunto, attraverso quale relazione e con quale costo? Una presenza già autorizzata non giustifica acquisto di liste o profilazione sensibile.",
+    "Disegna il percorso dall’invito alla visita e al ritorno, includendo assistenza e conferme. Identifica il punto dove una promessa può rompersi.",
+    "Definisci indicatori distinti di copertura, partecipazione e continuità, con denominatore e periodo. Riduci dati personali e conserva solo quanto necessario per il consenso e l’obiettivo.",
+    "Valuta risultati e spiegazioni alternative: un calo può dipendere da accesso o calendario, non dalla qualità dell’opera. Proponi un esperimento piccolo e confrontabile prima di ampliare la campagna."
+  ],
+  "output_contract": {
+    "must_include": [
+      "result",
+      "source_or_verification_note",
+      "uncertainties",
+      "decision_criteria"
+    ],
+    "reference_method": "skills/aco-office-concierge/references/competencies/cultural-marketing/OUTPUT.md",
+    "type": "professional_procedural_skill_output"
+  },
+  "rollback_ref": "v1.0.6",
+  "skill_id": "professional.cultural_marketing",
+  "source_status": "validated_internal",
+  "sources": [
+    {
+      "reuse": "reference_only",
+      "review_scope": "Audience motivations and segmentation introduction.",
+      "url": "https://culturehive.co.uk/resources/segmentation-introducing-culture-segments/"
+    },
+    {
+      "reuse": "reference_only",
+      "review_scope": "Copywriting skill lines 1–210, including scope diagnosis and proof discipline.",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/copywriting/SKILL.md"
+    }
+  ],
+  "status": "validated",
+  "title": "Marketing culturale e sviluppo del pubblico",
+  "verification": {
+    "benchmark_cases": 20,
+    "level": "deterministic_procedural_contract",
+    "max_critical_failures": 0,
+    "method_files": [
+      "skills/aco-office-concierge/references/competencies/cultural-marketing/METHOD.md",
+      "skills/aco-office-concierge/references/competencies/cultural-marketing/DECISIONS.md",
+      "skills/aco-office-concierge/references/competencies/cultural-marketing/OUTPUT.md",
+      "skills/aco-office-concierge/references/competencies/cultural-marketing/EXAMPLES.md",
+      "skills/aco-office-concierge/references/competencies/cultural-marketing/EVALS.json",
+      "skills/aco-office-concierge/references/competencies/cultural-marketing/SOURCES.json"
+    ],
+    "minimum_score": 95,
+    "professional_quality_review": "not independently assessed",
+    "third_party_rights": "reference_only"
+  },
+  "version": "1.0.0",
+  "when_to_use": [
+    "Use for cultural audience development participation outreach messages.",
+    "Select only within organization-office, agency-office, artist-office and when the task requires this specific method."
+  ]
+}

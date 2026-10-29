@@ -1,0 +1,77 @@
+{
+  "failure_modes": [
+    "Un limite di responsabilità non può essere letto senza esclusioni e indennizzi collegati.",
+    "Una licenza d’uso e una cessione di proprietà hanno conseguenze diverse; non uniformarle per brevità.",
+    "Per GDPR art. 33 non attribuire al responsabile un universale termine di 72 ore verso il titolare: i ruoli e i destinatari differiscono.",
+    "Le preferenze di negoziazione dipendono dalla parte; una clausola favorevole al cliente può essere rischiosa per il fornitore.",
+    "Inventing observations, approvals, rights, professional certification or external execution."
+  ],
+  "inputs": [
+    "brief, authorized project scope and non-negotiable constraints",
+    "the available evidence and material unknowns",
+    "format and audience of the required deliverable"
+  ],
+  "method": [
+    "Acquisisci testo completo, allegati e versione; identifica parte rappresentata, tipo di accordo, giurisdizione, obiettivo e scadenza solo dai dati disponibili. Le lacune decisive restano esplicite.",
+    "Raccogli posizioni approvate: preferita, alternativa accettabile e soglia di escalation. In assenza di playbook non presentare una preferenza negoziale come standard legale o di mercato.",
+    "Leggi l’accordo come sistema: definizioni, obblighi, condizioni di pagamento, diritti, limitazioni, indennizzi, recesso e clausole sopravviventi possono modificarsi a vicenda.",
+    "Crea una scheda per ciascun problema con posizione esatta, formulazione rilevante, effetto possibile per la parte e informazione mancante. Distingui rischio commerciale, ambiguità testuale e questione di diritto.",
+    "Per una regola legale cerca la fonte primaria vigente e verifica soggetto, territorio, fattispecie, decorrenza ed eccezioni. Non trasferire automaticamente istituti o tempi da un plugin statunitense.",
+    "Proponi una modifica circoscritta e una posizione di ripiego, spiegando cosa cambia nell’allocazione del rischio. Non dichiarare una clausola invalida senza analisi e autorità pertinenti.",
+    "Usa questionari condizionali per i dati realmente necessari: se non c’è trattamento di dati personali non inventare ruoli privacy; se ci sono, chiariscili prima di assegnare obblighi.",
+    "Consegna un fascicolo per il professionista con priorità, fonti, testo comparato e decisioni richieste. Firma, invio alla controparte, accettazione e validazione legale sono azioni separate."
+  ],
+  "output_contract": {
+    "must_include": [
+      "result",
+      "source_or_verification_note",
+      "uncertainties",
+      "decision_criteria"
+    ],
+    "reference_method": "skills/aco-office-concierge/references/competencies/legal-review/OUTPUT.md",
+    "type": "professional_procedural_skill_output"
+  },
+  "rollback_ref": "v1.0.6",
+  "skill_id": "professional.legal_review",
+  "source_status": "validated_internal",
+  "sources": [
+    {
+      "reuse": "reference_only",
+      "review_scope": "Intake, whole-contract review and deviation triage, lines 1–230.",
+      "url": "https://github.com/anthropics/knowledge-work-plugins/blob/main/legal/skills/review-contract/SKILL.md"
+    },
+    {
+      "reuse": "reference_only",
+      "review_scope": "Official overview of guided interviews and document assembly.",
+      "url": "https://docassemble.org/"
+    },
+    {
+      "reuse": "reference_only",
+      "review_scope": "Article 33(1)–(2), used to correct an overbroad 72-hour shorthand.",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679"
+    }
+  ],
+  "status": "validated",
+  "title": "Contratti, diritti e preparazione legale",
+  "verification": {
+    "benchmark_cases": 20,
+    "level": "deterministic_procedural_contract",
+    "max_critical_failures": 0,
+    "method_files": [
+      "skills/aco-office-concierge/references/competencies/legal-review/METHOD.md",
+      "skills/aco-office-concierge/references/competencies/legal-review/DECISIONS.md",
+      "skills/aco-office-concierge/references/competencies/legal-review/OUTPUT.md",
+      "skills/aco-office-concierge/references/competencies/legal-review/EXAMPLES.md",
+      "skills/aco-office-concierge/references/competencies/legal-review/EVALS.json",
+      "skills/aco-office-concierge/references/competencies/legal-review/SOURCES.json"
+    ],
+    "minimum_score": 95,
+    "professional_quality_review": "not independently assessed",
+    "third_party_rights": "reference_only"
+  },
+  "version": "1.0.0",
+  "when_to_use": [
+    "Use for legal contract review clauses rights jurisdiction facts.",
+    "Select only within legal-office, commercial-office, administration-office and when the task requires this specific method."
+  ]
+}

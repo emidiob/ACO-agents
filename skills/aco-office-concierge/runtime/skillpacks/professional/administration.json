@@ -1,0 +1,72 @@
+{
+  "failure_modes": [
+    "«Confermo» va collegato a ciò che conferma, non interpretato come approvazione dell’intero thread.",
+    "La disponibilità di un orario non prova che la riunione sia stata prenotata.",
+    "Un impegno senza scadenza rimane tale, senza inventare «entro domani».",
+    "Un verbale sintetico deve preservare dissensi e dipendenze che cambiano l’azione.",
+    "Inventing observations, approvals, rights, professional certification or external execution."
+  ],
+  "inputs": [
+    "brief, authorized project scope and non-negotiable constraints",
+    "the available evidence and material unknowns",
+    "format and audience of the required deliverable"
+  ],
+  "method": [
+    "Definisci il perimetro della conversazione e la data di riferimento. Leggi il thread in ordine, mantenendo identificatori dei messaggi e distinguendo allegati nominati da allegati realmente letti.",
+    "Estrai unità separate: informazione, domanda, proposta, disponibilità, decisione, impegno e revoca. «Posso farlo» non equivale necessariamente a «lo farò».",
+    "Per ogni attività registra oggetto, responsabile esplicito, scadenza esplicita e messaggio che le sostiene. Usa sconosciuto quando manca un campo; non assegnare automaticamente tutto all’ultimo mittente.",
+    "Riconcilia modifiche e conflitti: una proposta di rinvio non annulla da sola una scadenza confermata. Conserva lo stato precedente e il punto che richiede chiarimento.",
+    "Tratta date relative con riferimento al messaggio e al fuso pertinente. Se il giorno resta ambiguo, non convertirlo in un invito definitivo; evidenzia la domanda minima da risolvere.",
+    "Prepara il briefing separando decisioni già prese, questioni da decidere, materiali disponibili e azioni. Includi solo il contesto che cambia la riunione o il lavoro successivo.",
+    "Redigi verbale e follow-up con formule che rispecchiano lo stato reale. Chiedere un documento, avere una bozza e averlo ricevuto sono stati diversi.",
+    "Prima di inviare, modificare calendario o archiviare verifica strumento, destinatari, contenuto e autorizzazione; conserva la ricevuta. La preparazione locale non costituisce un’azione sull’account."
+  ],
+  "output_contract": {
+    "must_include": [
+      "result",
+      "source_or_verification_note",
+      "uncertainties",
+      "decision_criteria"
+    ],
+    "reference_method": "skills/aco-office-concierge/references/competencies/administration/OUTPUT.md",
+    "type": "professional_procedural_skill_output"
+  },
+  "rollback_ref": "v1.0.6",
+  "skill_id": "professional.administration",
+  "source_status": "validated_internal",
+  "sources": [
+    {
+      "reuse": "reference_only",
+      "review_scope": "Full read-only meeting preparation skill.",
+      "url": "https://github.com/googleworkspace/cli/blob/main/skills/gws-workflow-meeting-prep/SKILL.md"
+    },
+    {
+      "reuse": "reference_only",
+      "review_scope": "Accuracy, sourcing, quotation and correction guidance.",
+      "url": "https://reutersagency.com/about/standards-values/"
+    }
+  ],
+  "status": "validated",
+  "title": "Amministrazione, segreteria e continuità operativa",
+  "verification": {
+    "benchmark_cases": 20,
+    "level": "deterministic_procedural_contract",
+    "max_critical_failures": 0,
+    "method_files": [
+      "skills/aco-office-concierge/references/competencies/administration/METHOD.md",
+      "skills/aco-office-concierge/references/competencies/administration/DECISIONS.md",
+      "skills/aco-office-concierge/references/competencies/administration/OUTPUT.md",
+      "skills/aco-office-concierge/references/competencies/administration/EXAMPLES.md",
+      "skills/aco-office-concierge/references/competencies/administration/EVALS.json",
+      "skills/aco-office-concierge/references/competencies/administration/SOURCES.json"
+    ],
+    "minimum_score": 95,
+    "professional_quality_review": "not independently assessed",
+    "third_party_rights": "reference_only"
+  },
+  "version": "1.0.0",
+  "when_to_use": [
+    "Use for executive secretary administration meeting inbox decisions actions.",
+    "Select only within administration-office, delivery-office and when the task requires this specific method."
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "source_ids": [
+    "nng",
+    "govuk-research"
+  ],
+  "canonical_source_register": "../SOURCES.json",
+  "existing_aco_paths": [],
+  "upstream_content_bundled": false
+}

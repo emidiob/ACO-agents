@@ -1,0 +1,45 @@
+{
+  "competency_id": "genjutsu-motion",
+  "method_version": "0.3.0",
+  "qualitative_status": "development_examples_not_independent_validation",
+  "independent_validation": false,
+  "same_author": true,
+  "worked_examples": [
+    {
+      "brief": "Fixture originale di 2 secondi: un cursore a pinza si avvicina a un disco, lo afferra, lo sposta, lo lascia e si allontana; camera fissa.",
+      "weak": "Una pinza prende un disco e lo sposta con movimento fluido.",
+      "application": "0–0,40 s: avvicinamento senza contatto. 0,40–0,80: contatto e sollevamento. 0,80–1,40: trasporto verso destra con disco vincolato alla pinza. 1,40–1,60: abbassamento e rilascio. 1,60–2,00: pinza si allontana, disco fermo. Camera statica per tutto l’intervallo. La variante negativa omette il rilascio: il disco continua con la pinza, quindi fallisce lo stato finale.",
+      "commentary": "La fixture è generata da noi e dichiarata sintetica; permette un controllo reale di tempi e oggetti senza fingere una prova su un video commerciale o un provider AI.",
+      "limits": "Il generatore fornisce ground truth: questo test non dimostra riconoscimento automatico di movimenti in video sconosciuti."
+    },
+    {
+      "brief": "Reference ipotetica: una mano ruota una chiave, poi la chiave scompare dietro una scatola. Destinazione proposta: un soggetto senza mani.",
+      "weak": "Attribuire la rotazione a una mano invisibile e ricostruire anche il tratto nascosto.",
+      "application": "Segnalare due problemi distinti: manipolatore incompatibile e traiettoria non osservata. Conservare la rotazione solo con un meccanismo alternativo esplicitamente approvato; per il tratto occultato chiedere evidenza aggiuntiva o non promettere fedeltà.",
+      "commentary": "La trasformazione non può mascherare incompatibilità fisiche con una descrizione generica.",
+      "limits": "Nessuna reference reale è stata analizzata in questo secondo esempio."
+    }
+  ],
+  "rubric": {
+    "criteria": [
+      "Tempi ordinati, nel dominio corretto e senza intervalli dichiarati osservati ma non ispezionati.",
+      "Ogni evento trasferito compare nel prompt e cita prove valide.",
+      "Incertezze e impossibilità fisiche non vengono trasformate in certezza.",
+      "Nessuna dichiarazione di rendering, upload o movimento riprodotto senza ricevuta e video."
+    ],
+    "rating_anchors": {
+      "insufficient": "Contraddice un vincolo critico o inventa un dato materiale.",
+      "acceptable": "Rispetta il compito e i vincoli, ma alcune scelte o incertezze non sono ancora ben sviluppate.",
+      "strong": "Decisioni specifiche, prove tracciabili, alternative pertinenti e limiti espliciti; revisione esterna ancora necessaria."
+    },
+    "critical_failures": [
+      "Inventare prove o risultati di test.",
+      "Confondere proposta e approvazione / esecuzione.",
+      "Violare diritti, riservatezza o perimetro autorizzato."
+    ]
+  },
+  "new_case_brief": "Usare un video nuovo con due attori, occlusione e camera mobile; un annotatore indipendente confronta eventi mancanti prima di vedere il prompt prodotto.",
+  "new_case_status": "not_run",
+  "new_case_is_independent_holdout": false,
+  "promotion_requirements": "Curated professional method; not a technical-skill activation. If later proposed as a technical skill, preserve ACO separate policy: >=20 benchmark cases, >=95 score, 0 critical failures, explicit approval, rollback reference, frozen first run. The two authored examples do not establish independent quality validation."
+}

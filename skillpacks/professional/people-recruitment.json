@@ -1,0 +1,77 @@
+{
+  "failure_modes": [
+    "Mancanza di esempio non significa incapacità: registra evidenza insufficiente e prevedi un follow-up equivalente.",
+    "Un portfolio elegante non dimostra gestione di stakeholder o responsabilità sul lavoro mostrato.",
+    "ESCO aiuta a nominare capacità, ma non decide il livello di una persona.",
+    "Una rubrica non elimina il bias: richiede revisione di pertinenza, applicazione e impatto.",
+    "Inventing observations, approvals, rights, professional certification or external execution."
+  ],
+  "inputs": [
+    "brief, authorized project scope and non-negotiable constraints",
+    "the available evidence and material unknowns",
+    "format and audience of the required deliverable"
+  ],
+  "method": [
+    "Definisci risultati del ruolo e compiti essenziali prima di requisiti o titoli. Ogni competenza richiesta deve avere una relazione spiegabile con il lavoro.",
+    "Distingui requisiti indispensabili, apprendibili e preferiti; non trasformare familiarità con un marchio o un percorso prestigioso in una capacità provata.",
+    "Prepara domande core comparabili e follow-up neutrali, insieme a un esercizio proporzionato. Comunica condizioni e accomodamenti; non chiedere lavoro produttivo gratuito mascherato da test.",
+    "Costruisci ancore di valutazione comportamentali prima di vedere i candidati. Definisci cosa conta come evidenza, cosa contraddice un’ipotesi e quando la risposta è semplicemente insufficiente per giudicare.",
+    "Registra fatti e citazioni pertinenti, minimizzando dati personali. Escludi caratteristiche protette, inferenze sensibili e proxy non necessari; non derivare personalità da foto, accento o stile espressivo.",
+    "Valuta ogni competenza separatamente e conserva sconosciuto quando manca evidenza. Il confronto deve utilizzare gli stessi criteri, non impressioni complessive o somme che nascondono requisiti critici.",
+    "Conduci un debrief umano che distingua capacità osservata, contesto dell’opportunità e necessità di ulteriore verifica. Le raccomandazioni non costituiscono decisione automatica di assunzione o esclusione.",
+    "Per onboarding e sviluppo traduci il gap in un comportamento praticabile con supporto, prova e revisione. Un corso completato è un input, non dimostrazione automatica della competenza."
+  ],
+  "output_contract": {
+    "must_include": [
+      "result",
+      "source_or_verification_note",
+      "uncertainties",
+      "decision_criteria"
+    ],
+    "reference_method": "skills/aco-office-concierge/references/competencies/people-recruitment/OUTPUT.md",
+    "type": "professional_procedural_skill_output"
+  },
+  "rollback_ref": "v1.0.6",
+  "skill_id": "professional.people_recruitment",
+  "source_status": "validated_internal",
+  "sources": [
+    {
+      "reuse": "reference_only",
+      "review_scope": "Structured, job-related questions and common anchored scoring.",
+      "url": "https://www.opm.gov/policy-data-oversight/assessment-and-selection/structured-interviews/"
+    },
+    {
+      "reuse": "reference_only",
+      "review_scope": "API and skill-taxonomy overview.",
+      "url": "https://esco.ec.europa.eu/en/use-esco/use-esco-services-api"
+    },
+    {
+      "reuse": "reference_only",
+      "review_scope": "Full interview design skill.",
+      "url": "https://github.com/anthropics/knowledge-work-plugins/blob/main/human-resources/skills/interview-prep/SKILL.md"
+    }
+  ],
+  "status": "validated",
+  "title": "HR, recruitment e sviluppo competenze",
+  "verification": {
+    "benchmark_cases": 20,
+    "level": "deterministic_procedural_contract",
+    "max_critical_failures": 0,
+    "method_files": [
+      "skills/aco-office-concierge/references/competencies/people-recruitment/METHOD.md",
+      "skills/aco-office-concierge/references/competencies/people-recruitment/DECISIONS.md",
+      "skills/aco-office-concierge/references/competencies/people-recruitment/OUTPUT.md",
+      "skills/aco-office-concierge/references/competencies/people-recruitment/EXAMPLES.md",
+      "skills/aco-office-concierge/references/competencies/people-recruitment/EVALS.json",
+      "skills/aco-office-concierge/references/competencies/people-recruitment/SOURCES.json"
+    ],
+    "minimum_score": 95,
+    "professional_quality_review": "not independently assessed",
+    "third_party_rights": "reference_only"
+  },
+  "version": "1.0.0",
+  "when_to_use": [
+    "Use for human resources recruitment structured interview evidence.",
+    "Select only within people-office, recruitment-office and when the task requires this specific method."
+  ]
+}

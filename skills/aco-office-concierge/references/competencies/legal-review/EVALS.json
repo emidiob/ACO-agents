@@ -1,0 +1,45 @@
+{
+  "competency_id": "legal-review",
+  "method_version": "0.3.0",
+  "qualitative_status": "development_examples_not_independent_validation",
+  "independent_validation": false,
+  "same_author": true,
+  "worked_examples": [
+    {
+      "brief": "Contratti sintetici A e B: entrambi limitano la responsabilità al compenso; B esclude dal limite «qualsiasi violazione degli obblighi del fornitore».",
+      "weak": "A e B hanno lo stesso tetto, quindi il rischio è uguale.",
+      "application": "Nel contratto B l’esclusione può svuotare ampiamente il limite perché richiama gli obblighi del fornitore in generale. Segnalare l’interazione tra tetto ed esclusione, chiedere l’elenco dei rischi che si intende davvero escludere e proporre una formulazione specifica da verificare con il legale. Non concludere automaticamente che B sia nullo.",
+      "commentary": "La differenza sostanziale emerge leggendo le due clausole insieme.",
+      "limits": "Non sono contratti reali e non viene valutata l’efficacia in una giurisdizione determinata."
+    },
+    {
+      "brief": "Un playbook scrive: «Ogni soggetto deve notificare ogni data breach entro 72 ore».",
+      "weak": "Riutilizzare la frase come regola europea generale.",
+      "application": "Correzione di metodo: l’art. 33(1) tratta la notifica del titolare all’autorità, senza ingiustificato ritardo e ove possibile entro 72 ore dalla conoscenza, con le condizioni previste. Il responsabile informa il titolare senza ingiustificato ritardo secondo l’art. 33(2). La comunicazione agli interessati è un ulteriore tema, non la stessa regola. Identificare ruolo e destinatario prima di usare una scadenza.",
+      "commentary": "Una fonte secondaria utile non sostituisce la verifica puntuale della norma primaria.",
+      "limits": "Non è un piano di risposta a un incidente reale; altre norme, contratti e fatti possono introdurre ulteriori obblighi."
+    }
+  ],
+  "rubric": {
+    "criteria": [
+      "Nessuna conclusione giuridica universale da un esempio generico.",
+      "Ogni criticità richiama la clausola o l’assenza verificata.",
+      "Nessuna clausola modificata, firmata o inviata implicitamente.",
+      "US default, preferenza commerciale e requisito legale restano separati."
+    ],
+    "rating_anchors": {
+      "insufficient": "Contraddice un vincolo critico o inventa un dato materiale.",
+      "acceptable": "Rispetta il compito e i vincoli, ma alcune scelte o incertezze non sono ancora ben sviluppate.",
+      "strong": "Decisioni specifiche, prove tracciabili, alternative pertinenti e limiti espliciti; revisione esterna ancora necessaria."
+    },
+    "critical_failures": [
+      "Inventare prove o risultati di test.",
+      "Confondere proposta e approvazione / esecuzione.",
+      "Violare diritti, riservatezza o perimetro autorizzato."
+    ]
+  },
+  "new_case_brief": "Confrontare due accordi nuovi in cui una definizione cambia l’ambito della licenza; chiedere a un giurista indipendente di verificare i problemi e non solo la presenza delle sezioni.",
+  "new_case_status": "not_run",
+  "new_case_is_independent_holdout": false,
+  "promotion_requirements": "Curated professional method; not a technical-skill activation. If later proposed as a technical skill, preserve ACO separate policy: >=20 benchmark cases, >=95 score, 0 critical failures, explicit approval, rollback reference, frozen first run. The two authored examples do not establish independent quality validation."
+}

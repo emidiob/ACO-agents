@@ -1,0 +1,45 @@
+{
+  "competency_id": "ux-research",
+  "method_version": "0.3.0",
+  "qualitative_status": "development_examples_not_independent_validation",
+  "independent_validation": false,
+  "same_author": true,
+  "worked_examples": [
+    {
+      "brief": "Note sintetiche: P1 dice «semplice» ma non completa l’invio; P2 completa, poi chiede se la richiesta è partita; P3 trova subito la ricevuta in email.",
+      "weak": "Tutti apprezzano il servizio; aggiungiamo solo un colore più visibile.",
+      "application": "Finding: la conferma dell’esito è incerta per P1/P2; P3 mostra che l’email aiuta quando viene cercata. Non sappiamo se P1 abbia incontrato un errore tecnico o informativo. Decisione reversibile: rendere espliciti stato e riferimento della richiesta sul sito; prossimo test: completare e spiegare con parole proprie cosa accadrà, osservando anche l’arrivo dell’email.",
+      "commentary": "Le tre note non sono rese artificialmente concordi. Il testo distingue invio fallito, dubbio sull’esito e recupero su un altro canale.",
+      "limits": "Tre partecipanti sintetici non supportano una stima di frequenza o una validazione reale."
+    },
+    {
+      "brief": "Il team sostiene che gli utenti abbandonano perché il form è lungo. Si conosce solo il numero di aperture.",
+      "weak": "Tagliare metà dei campi perché la lunghezza causa abbandono.",
+      "application": "Ipotesi A: campi non comprensibili; B: documenti necessari non disponibili; C: visita informativa senza intenzione di invio. Raccogliere progressione per fase in forma minimizzata e osservare un compito con dati realistici. Non eliminare campi obbligatori prima di chiarire la funzione.",
+      "commentary": "Una soluzione prediletta viene trasformata in alternative verificabili.",
+      "limits": "Non c’è evidenza causale sull’abbandono e non si è avviato alcun tracciamento."
+    }
+  ],
+  "rubric": {
+    "criteria": [
+      "Nessuna citazione inventata o percentuale della popolazione ricavata dal campione.",
+      "Ogni finding cita osservazioni e almeno un limite o controllo di contrasto.",
+      "Compiti non suggeriscono il percorso nell’interfaccia.",
+      "Decisioni di prodotto restano separate da preferenze espresse."
+    ],
+    "rating_anchors": {
+      "insufficient": "Contraddice un vincolo critico o inventa un dato materiale.",
+      "acceptable": "Rispetta il compito e i vincoli, ma alcune scelte o incertezze non sono ancora ben sviluppate.",
+      "strong": "Decisioni specifiche, prove tracciabili, alternative pertinenti e limiti espliciti; revisione esterna ancora necessaria."
+    },
+    "critical_failures": [
+      "Inventare prove o risultati di test.",
+      "Confondere proposta e approvazione / esecuzione.",
+      "Violare diritti, riservatezza o perimetro autorizzato."
+    ]
+  },
+  "new_case_brief": "Fornire note nuove con un osservatore discordante e un compito svolto su assistenza telefonica; verificare che l’analisi non privilegi automaticamente il canale web.",
+  "new_case_status": "not_run",
+  "new_case_is_independent_holdout": false,
+  "promotion_requirements": "Curated professional method; not a technical-skill activation. If later proposed as a technical skill, preserve ACO separate policy: >=20 benchmark cases, >=95 score, 0 critical failures, explicit approval, rollback reference, frozen first run. The two authored examples do not establish independent quality validation."
+}

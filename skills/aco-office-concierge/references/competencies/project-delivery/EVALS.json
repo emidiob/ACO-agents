@@ -1,0 +1,45 @@
+{
+  "competency_id": "project-delivery",
+  "method_version": "0.3.0",
+  "qualitative_status": "development_examples_not_independent_validation",
+  "independent_validation": false,
+  "same_author": true,
+  "worked_examples": [
+    {
+      "brief": "Piano sintetico sequenziale: brief 2 giorni, asset 3, montaggio 4, QA 2. Gli asset richiedono 2 giorni in più; nuovo scope aggiunge 1 giorno di montaggio.",
+      "weak": "Manteniamo 11 giorni e chiediamo al team di fare uno sforzo.",
+      "application": "Baseline: 11 giorni di unità di lavoro ipotizzate. Scenario: brief 2, asset 5, montaggio 5, QA 2 = 14. Scostamento +3. Opzioni: spostare consegna di 3 unità, ridurre scope con approvazione o anticipare una parte non dipendente del lavoro dopo verifica delle risorse. QA non viene azzerato per far tornare il numero.",
+      "commentary": "Il calcolo esplicita il conflitto reale; nessuna disponibilità extra viene inventata.",
+      "limits": "Non sono date di calendario e il calcolo non include festività, capacità condivise o attese non dichiarate."
+    },
+    {
+      "brief": "Un progetto ha esportato il video, ma mancano sottotitoli richiesti e conferma del destinatario.",
+      "weak": "Progetto concluso perché l’export esiste.",
+      "application": "Stato: export preparato, consegna incompleta rispetto al requisito sottotitoli; accettazione non ricevuta. Aprire due controlli distinti: file sottotitoli conforme e ricevuta/approvazione del destinatario. Registrare eventuale deroga solo se autorizzata.",
+      "commentary": "File, consegna e accettazione sono livelli diversi di completamento.",
+      "limits": "Non è stato effettuato alcun invio reale."
+    }
+  ],
+  "rubric": {
+    "criteria": [
+      "Rete priva di cicli e riferimenti inesistenti.",
+      "Baseline preservata e conseguenze della variazione esplicite.",
+      "Responsabili proposti distinti da impegni confermati.",
+      "Chiusura collegata a evidenze e stato dell’accettazione."
+    ],
+    "rating_anchors": {
+      "insufficient": "Contraddice un vincolo critico o inventa un dato materiale.",
+      "acceptable": "Rispetta il compito e i vincoli, ma alcune scelte o incertezze non sono ancora ben sviluppate.",
+      "strong": "Decisioni specifiche, prove tracciabili, alternative pertinenti e limiti espliciti; revisione esterna ancora necessaria."
+    },
+    "critical_failures": [
+      "Inventare prove o risultati di test.",
+      "Confondere proposta e approvazione / esecuzione.",
+      "Violare diritti, riservatezza o perimetro autorizzato."
+    ]
+  },
+  "new_case_brief": "Ricalcolare un progetto nuovo con due rami paralleli, una risorsa condivisa e un cambio di criterio di accettazione; verificare con un PM esterno la fattibilità del piano.",
+  "new_case_status": "not_run",
+  "new_case_is_independent_holdout": false,
+  "promotion_requirements": "Curated professional method; not a technical-skill activation. If later proposed as a technical skill, preserve ACO separate policy: >=20 benchmark cases, >=95 score, 0 critical failures, explicit approval, rollback reference, frozen first run. The two authored examples do not establish independent quality validation."
+}

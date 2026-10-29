@@ -37,3 +37,10 @@ Use [the working kit](references/working-kit.md) for searchable original directi
 Distinguish marketing/editorial sites from task-oriented product UI. Preserve the supplied brand, framework, routes, business logic and working interactions during redesign. Prefer useful hierarchy over habitual card grids or decorative effects. Taste is a contextual judgment, not a ban list or a numeric score. Do not claim production quality from a successful build or a clean HTML report.
 
 Follow [project contract](references/project-contract.md). In integrated ACO also apply COMPACT-MEMORY.md; keep project data outside this public library. Read [dependencies and attribution](references/sources.md) when using external resources. Runtime media/motion work may use ACO Image/Motion when present, but these sibling skills are optional. Claude/Codex VS Code extensions use the same folder; VS Code alone does not execute skills.
+
+
+<!-- ACO-V107-PROFESSIONAL-BRIDGE -->
+## Professional method companion (ACO 1.0.7)
+
+When the full ACO library is available, for task-specific critical procedure consult the validated professional skill `professional.visual_critique` (synthetic procedural checks only) and its original method at `skills/aco-office-concierge/references/competencies/visual-critique/METHOD.md` in that library. Existing provider-specific technical candidates remain gated. No new provider activation, professional certification or rendering authorization is implied.
+<!-- END ACO-V107-PROFESSIONAL-BRIDGE -->

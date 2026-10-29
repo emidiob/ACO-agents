@@ -1,0 +1,72 @@
+{
+  "failure_modes": [
+    "Discreto: riduci ampiezza e sequenza, non visibilità del feedback.",
+    "Editoriale: usa ritmo e relazione tra blocchi, non un ritardo indiscriminato su ogni parola.",
+    "Espressivo: ammetti maggiore contrasto solo se il compito rimane leggibile e interrompibile.",
+    "Il prefer-reduced-motion non equivale automaticamente a disabilitare ogni aggiornamento di stato.",
+    "Inventing observations, approvals, rights, professional certification or external execution."
+  ],
+  "inputs": [
+    "brief, authorized project scope and non-negotiable constraints",
+    "the available evidence and material unknowns",
+    "format and audience of the required deliverable"
+  ],
+  "method": [
+    "Definisci il cambiamento di stato che il movimento rende leggibile: comparsa, relazione, avanzamento o ritorno. Se non aggiunge informazione, considera una versione ferma.",
+    "Descrivi origine, destinazione e gerarchia dell’attenzione prima di scegliere la libreria. Conserva corrispondenze spaziali tra oggetto attivato e dettaglio aperto.",
+    "Scrivi una scheda con trigger, proprietà animate, durata proposta, curva, eventuale ritardo, ordine e stato finale. Durate e curve sono ipotesi locali da provare, non leggi estetiche.",
+    "Modella interruzione e input ripetuto: invertire, completare o annullare la transizione deve portare a uno stato definito. Non bloccare la disponibilità di un’azione essenziale per attenderne l’effetto.",
+    "Adatta la grammatica a spazio e dispositivo, senza trasferire meccanicamente distanze desktop su mobile. Se il movimento comunica una relazione, preserva la relazione con meno ampiezza.",
+    "Prevedi movimento ridotto come comportamento alternativo: stato immediato o dissolvenza discreta, nessuna perdita di testo o controllo. Evita che il fallback lasci un elemento invisibile.",
+    "Implementa con le primitive già disponibili; per Motion/GSAP verifica versione, media condition e cleanup. Nessun motore viene considerato presente perché citato nella biblioteca.",
+    "Confronta il gesto in tre registri, poi prova input rapido, resize e preferenza reduced-motion. Registra durata CSS o browser misurata separatamente dall’impressione qualitativa."
+  ],
+  "output_contract": {
+    "must_include": [
+      "result",
+      "source_or_verification_note",
+      "uncertainties",
+      "decision_criteria"
+    ],
+    "reference_method": "skills/aco-office-concierge/references/competencies/interface-motion/OUTPUT.md",
+    "type": "professional_procedural_skill_output"
+  },
+  "rollback_ref": "v1.0.6",
+  "skill_id": "professional.interface_motion",
+  "source_status": "validated_internal",
+  "sources": [
+    {
+      "reuse": "reference_only",
+      "review_scope": "Reduced motion configuration and custom alternatives.",
+      "url": "https://motion.dev/docs/react-accessibility"
+    },
+    {
+      "reuse": "reference_only",
+      "review_scope": "Responsive conditions, scoped animation and cleanup.",
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.matchMedia()/"
+    }
+  ],
+  "status": "validated",
+  "title": "Motion design delle interfacce",
+  "verification": {
+    "benchmark_cases": 20,
+    "level": "deterministic_procedural_contract",
+    "max_critical_failures": 0,
+    "method_files": [
+      "skills/aco-office-concierge/references/competencies/interface-motion/METHOD.md",
+      "skills/aco-office-concierge/references/competencies/interface-motion/DECISIONS.md",
+      "skills/aco-office-concierge/references/competencies/interface-motion/OUTPUT.md",
+      "skills/aco-office-concierge/references/competencies/interface-motion/EXAMPLES.md",
+      "skills/aco-office-concierge/references/competencies/interface-motion/EVALS.json",
+      "skills/aco-office-concierge/references/competencies/interface-motion/SOURCES.json"
+    ],
+    "minimum_score": 95,
+    "professional_quality_review": "not independently assessed",
+    "third_party_rights": "reference_only"
+  },
+  "version": "1.0.0",
+  "when_to_use": [
+    "Use for motion interface timing easing reduced motion final state.",
+    "Select only within agency-office, product-office, production-office and when the task requires this specific method."
+  ]
+}

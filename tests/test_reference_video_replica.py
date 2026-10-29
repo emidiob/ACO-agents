@@ -9,7 +9,7 @@ class ReferenceVideoReplicaCandidateTests(unittest.TestCase):
     def test_registry_counts(self):
         got = skill_registry_check(ROOT)
         self.assertEqual((got["status"], got["skills"], got["active_skills"], got["candidate_skills"]),
-                         ("valid", 44, 14, 30))
+                         ("valid", 64, 34, 30))
 
     def test_not_automatically_selectable(self):
         self.assertFalse(any(row["skill_id"] == SKILL_ID for row in

@@ -1,0 +1,24 @@
+{
+  "aco_version": "1.0.7",
+  "combined_aco_1_0_7_run": "not_executed_in_this_environment",
+  "first_attempt": {
+    "reason": "NameError in first execution of newly authored validation harness (specs/spec variable typo); no frozen case or skill-body files modified",
+    "status": "failed"
+  },
+  "frozen_cases_sha256": "6682c52b643763ed4d1cab12a64dc1bc6051fba1a9f873a48dc1123f11e74e6a",
+  "holdout_frozen_before_first_attempt": true,
+  "independent_human_review": false,
+  "model_based_assessment": false,
+  "professional_quality_certified": false,
+  "recovery": {
+    "change": "Fixed validator local variable name only",
+    "critical_failures": 0,
+    "rerun_status": "passed",
+    "score": 100.0,
+    "skill_count": 20,
+    "synthetic_cases": 400
+  },
+  "release_status": "not_published",
+  "schema_version": 1,
+  "test_scope": "synthetic_structured_procedural_contract"
+}

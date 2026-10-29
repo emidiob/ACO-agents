@@ -1,0 +1,635 @@
+{
+  "schema_version": 1,
+  "consultation_date": "2026-10-28",
+  "sources": [
+    {
+      "id": "impeccable",
+      "title": "Impeccable · Critique",
+      "url": "https://impeccable.style/docs/critique/",
+      "kind": "agent_method",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Critique documentation, not the complete skill catalogue.",
+      "lesson": "Evaluate against the specific task and retain strengths; distinguish rendered evidence from source-only inspection.",
+      "limits": "A simulated walkthrough is not user research. Do not import a house aesthetic or general prohibitions.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "shadcn",
+      "title": "shadcn/ui · Theming",
+      "url": "https://ui.shadcn.com/docs/theming",
+      "kind": "technical_documentation",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Documentation and theming model.",
+      "lesson": "Semantic foreground/background tokens support consistent component states; editable components require local ownership and QA.",
+      "limits": "A component system is not a finished visual direction or evidence of accessible integration.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "react-bits",
+      "title": "React Bits",
+      "url": "https://reactbits.dev/",
+      "kind": "component_catalogue",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Catalogue and installation overview, not component-by-component code or performance review.",
+      "lesson": "Effects are optional ingredients selected for a specific communication or interaction purpose.",
+      "limits": "No claim that its entire library was studied, installed, benchmarked or cleared for reuse.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "nng",
+      "title": "Nielsen Norman Group · Ten Usability Heuristics",
+      "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+      "kind": "professional_method",
+      "consulted_on": "2026-10-28",
+      "review_scope": "The ten heuristic definitions and examples.",
+      "lesson": "Visibility, recovery and prevention are lenses for examining interaction breakdowns.",
+      "limits": "Heuristic findings are not observed user behavior, prevalence estimates or WCAG conformance.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "govuk-research",
+      "title": "GOV.UK · Analyse a research session",
+      "url": "https://www.gov.uk/service-manual/user-research/analyse-a-research-session",
+      "kind": "professional_method",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Observation-to-findings analysis procedure.",
+      "lesson": "Keep what was seen or heard separate from interpretations before combining notes into findings and actions.",
+      "limits": "Small purposive samples do not support population percentages.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "OGL v3 indicated on the site, with exceptions; no source text redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "wai-forms",
+      "title": "W3C WAI · User Notification",
+      "url": "https://www.w3.org/WAI/tutorials/forms/notifications/",
+      "kind": "technical_documentation",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Form error, success, overall and inline feedback guidance.",
+      "lesson": "Errors need recognizable labels, repair instructions and access to the affected controls; dynamic updates need perceivable notification.",
+      "limits": "Implementation guidance is not a complete accessibility audit or certification.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "wai-images",
+      "title": "W3C WAI · An alt Decision Tree",
+      "url": "https://www.w3.org/WAI/tutorials/images/decision-tree/",
+      "kind": "technical_documentation",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Context-sensitive image alternative decision tree.",
+      "lesson": "Choose alternative text from the image function in this page, not from visual description alone.",
+      "limits": "Do not infer a person’s identity or sensitive traits; complex content may need adjacent descriptions.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "motion",
+      "title": "Motion · Accessibility",
+      "url": "https://motion.dev/docs/react-accessibility",
+      "kind": "technical_documentation",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Reduced motion configuration and custom alternatives.",
+      "lesson": "Treat reduced motion as an alternative behavior; disable disorienting transforms while keeping state feedback.",
+      "limits": "Verify the installed library version and imports; documentation examples may change.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "gsap",
+      "title": "GSAP · matchMedia",
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.matchMedia()/",
+      "kind": "technical_documentation",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Responsive conditions, scoped animation and cleanup.",
+      "lesson": "Adapt motion to media conditions and clean up earlier effects when conditions change.",
+      "limits": "No third-party engine bundled; native CSS fixtures do not prove GSAP integration.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "remotion-skills",
+      "title": "Remotion · AI Skills",
+      "url": "https://www.remotion.dev/docs/ai/skills",
+      "kind": "agent_method",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Skill integration documentation only.",
+      "lesson": "Separate composition and timing instructions from actual render execution.",
+      "limits": "No claim to have installed or inspected every upstream skill file; license review is per product/use.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "remotion-sequence",
+      "title": "Remotion · Sequence",
+      "url": "https://www.remotion.dev/docs/sequence",
+      "kind": "technical_documentation",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Timing, local frame coordinates and nested placement.",
+      "lesson": "Frames have precise ranges and nested timing offsets; a child frame clock is not necessarily the global timeline clock.",
+      "limits": "The consulted page describes direct Sequence usage as legacy; verify current APIs before implementation.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "hyperframes",
+      "title": "HyperFrames · README",
+      "url": "https://github.com/heygen-com/hyperframes/blob/main/README.md",
+      "kind": "agent_repository",
+      "consulted_on": "2026-10-28",
+      "review_scope": "README production loop and deterministic seekable animation concept.",
+      "lesson": "Video composition must be seekable and reproducible, rather than depend on wall-clock animation.",
+      "limits": "README inspected, not the entire skill bundle; no HyperFrames renderer run.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": "blob:ffe9f4c2c439c263ae3f3040fc22480fdd877c15"
+    },
+    {
+      "id": "otio",
+      "title": "OpenTimelineIO · opentime 0.17.0",
+      "url": "https://opentimelineio.readthedocs.io/en/v0.17.0/api/python/opentimelineio.opentime.html",
+      "kind": "technical_documentation",
+      "consulted_on": "2026-10-28",
+      "review_scope": "RationalTime and TimeRange API definitions in versioned documentation.",
+      "lesson": "Represent rate with time, and distinguish exclusive end from last included frame.",
+      "limits": "Versioned reference 0.17.0, not a claim about the latest release; no OTIO interchange compatibility test.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "aco-genjutsu",
+      "title": "ACO · Motion transfer",
+      "url": "https://github.com/emidiob/ACO-agents/blob/08a285ea747d283d65919237ba926803a064dab1/skills/aco-genjutsu/references/motion-transfer.md",
+      "kind": "existing_aco_method",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Complete canonical movement method.",
+      "lesson": "Preserve event-level actor, object, camera, contact and temporal correspondence, with uncertainty explicit.",
+      "limits": "Coverage of declared events cannot prove no source event was omitted; actual generated video is a separate test.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Existing ACO proprietary source remains canonical, linked rather than copied."
+      },
+      "revision": "blob:4480a8dcc65fe8ca15edff99ec659897b4a30eb3"
+    },
+    {
+      "id": "ici",
+      "title": "Independent Curators International · Curatorial Intensive",
+      "url": "https://curatorsintl.org/learning/categories/59-curatorial-intensive",
+      "kind": "professional_programme",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Public programme description and learning approach.",
+      "lesson": "Curating involves situated research, exchange and context-sensitive practice.",
+      "limits": "Programme overview is not the course content and not a single universal curatorial method.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "eflux-curating",
+      "title": "Lucy Steeds · The Goldfish Remembers",
+      "url": "https://www.e-flux.com/journal/166/6776941/the-goldfish-remembers-on-the-curatorial-flex-of-exhibition-histories",
+      "kind": "critical_case",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Selected 2026 essay on revisiting exhibition histories.",
+      "lesson": "Exhibition history can be reworked through material display and institutional framing, rather than faithfully restaged.",
+      "limits": "One situated critical argument, not universal curatorial consensus; no essay or exhibition images bundled.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "eflux-criticism",
+      "title": "Hito Steyerl · In Defense of the Poor Image",
+      "url": "https://www.e-flux.com/journal/10/61362/in-defense-of-the-poor-image?v=1668240862541",
+      "kind": "critical_case",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Selected 2009 essay on image circulation, value and quality.",
+      "lesson": "Resolution, access and circulation have different political and economic stakes; degraded images are not automatically emancipatory.",
+      "limits": "Do not reduce an artwork to a low-resolution aesthetic or infer intent from compression alone.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "spectrum",
+      "title": "Collections Trust · Spectrum Inventory",
+      "url": "https://collectionstrust.org.uk/spectrum/primary-procedures/inventory/",
+      "kind": "professional_standard",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Inventory procedure overview.",
+      "lesson": "Reconcile identity, responsibility and location before enriching descriptive records.",
+      "limits": "The original ACO record below is not a Spectrum translation, derivative schema or compliance claim.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "spectrum-rights",
+      "title": "Collections Trust · Spectrum licensing",
+      "url": "https://collectionstrust.org.uk/spectrum/spectrum-licensing/",
+      "kind": "reuse_terms",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Licensing restrictions and permission requirements.",
+      "lesson": "Use a pointer to the standard; do not package a translated or adapted version without permission.",
+      "limits": "Permission has not been obtained.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Restrictive: derivative/translated material and competing-product use require attention/permission; reference-only, no source content imported."
+      },
+      "revision": null
+    },
+    {
+      "id": "getty",
+      "title": "Getty Vocabularies · Data services",
+      "url": "https://www.getty.edu/research-conservation/tools-databases/vocabularies/data-services/",
+      "kind": "controlled_vocabulary",
+      "consulted_on": "2026-10-28",
+      "review_scope": "AAT/TGN/ULAN data-service and licensing overview.",
+      "lesson": "Keep stable vocabulary identifiers alongside local descriptions and reconciliation status.",
+      "limits": "Vocabulary data terms do not automatically license photographs or all website content.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "ODC-By 1.0 stated for vocabulary data; no data imported, attribution obligations must be reviewed on future use."
+      },
+      "revision": null
+    },
+    {
+      "id": "culturehive",
+      "title": "CultureHive · Introducing Culture Segments",
+      "url": "https://culturehive.co.uk/resources/segmentation-introducing-culture-segments/",
+      "kind": "professional_case",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Audience motivations and segmentation introduction.",
+      "lesson": "Different barriers and motivations require different invitations and participation measures.",
+      "limits": "Do not reproduce a proprietary segmentation system or infer named segments from personal characteristics.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "marketing-skills",
+      "title": "Marketing Skills · Copywriting",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/copywriting/SKILL.md",
+      "kind": "agent_repository",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Copywriting skill lines 1–210, including scope diagnosis and proof discipline.",
+      "lesson": "Distinguish a fresh brief from a voice-preserving revision or a bounded edit; support material promises with evidence.",
+      "limits": "Do not import unverified uplift statistics or universal English-language stylistic bans.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": "blob:2453731ab7a5e52535b7cf29beccbebe687d5a62"
+    },
+    {
+      "id": "reuters",
+      "title": "Reuters · Standards and Values",
+      "url": "https://reutersagency.com/about/standards-values/",
+      "kind": "professional_standard",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Accuracy, sourcing, quotation and correction guidance.",
+      "lesson": "Attribute material claims, preserve quotation meaning, assess source independence and correct errors visibly.",
+      "limits": "Reference for editorial method; no Reuters endorsement or certification.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "anthropic-legal",
+      "title": "Anthropic · Review Contract",
+      "url": "https://github.com/anthropics/knowledge-work-plugins/blob/main/legal/skills/review-contract/SKILL.md",
+      "kind": "agent_repository",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Intake, whole-contract review and deviation triage, lines 1–230.",
+      "lesson": "Compare clauses against an explicitly supplied party position, including interactions and acceptable fallback terms.",
+      "limits": "Generic commercial defaults and US concepts cannot be assumed applicable in Italy; specific legal rules need primary verification.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": "blob:030204860ec70bf80254f9894721504df7c81bd5"
+    },
+    {
+      "id": "docassemble",
+      "title": "Docassemble",
+      "url": "https://docassemble.org/",
+      "kind": "technical_documentation",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Official overview of guided interviews and document assembly.",
+      "lesson": "Ask conditional questions only when needed to determine document content or a branch.",
+      "limits": "No Docassemble instance installed or interview run.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "gdpr",
+      "title": "EUR-Lex · Regulation (EU) 2016/679",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679",
+      "kind": "primary_law",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Article 33(1)–(2), used to correct an overbroad 72-hour shorthand.",
+      "lesson": "Controller-to-authority and processor-to-controller notification duties are different; the latter is without undue delay.",
+      "limits": "This narrow check is not advice on an actual breach; applicability, exceptions and other duties require case review.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "workspace",
+      "title": "Google Workspace CLI · Meeting prep",
+      "url": "https://github.com/googleworkspace/cli/blob/main/skills/gws-workflow-meeting-prep/SKILL.md",
+      "kind": "agent_repository",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Full read-only meeting preparation skill.",
+      "lesson": "Read agenda, participants and linked material before assembling a brief; preparing a brief does not edit an event.",
+      "limits": "No Workspace CLI installed or account accessed for these synthetic examples.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": "blob:f0edea82e4c23d7074668fa941f1256e477580df"
+    },
+    {
+      "id": "govs",
+      "title": "GovS 002 · Project delivery",
+      "url": "https://projectdelivery.gov.uk/library-products/government-functional-standard-govs-002-project-delivery/",
+      "kind": "professional_standard",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Planning/control, change, verification/validation and transition sections; HTML version.",
+      "lesson": "Trace outcomes through plans and accepted changes; distinguish checking specifications from meeting user needs and handing over operation.",
+      "limits": "UK government requirements are not automatically mandatory for a private studio; apply proportionate original procedures.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "pon",
+      "title": "Harvard PON · Principled Negotiation",
+      "url": "https://www.pon.harvard.edu/daily/negotiation-skills-daily/principled-negotiation-focus-interests-create-value/",
+      "kind": "professional_method",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Interests, options, objective criteria and alternatives.",
+      "lesson": "Build packages around different interests and compare the agreement with a credible alternative.",
+      "limits": "Do not fabricate alternatives, budgets, authority or claims of market rates.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "anthropic-finance",
+      "title": "Anthropic · Audit Spreadsheet",
+      "url": "https://github.com/anthropics/financial-services/blob/main/plugins/vertical-plugins/financial-analysis/skills/audit-xls/SKILL.md",
+      "kind": "agent_repository",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Formula audit and model integrity guidance, lines 1–180.",
+      "lesson": "Separate inputs/calculations and trace unit, range, sign and reconciliation errors to their origin.",
+      "limits": "Investment-bank model conventions are not studio assumptions; no investment, tax or accounting certification.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": "blob:a2cae1d11c5e6704b95623a0ffeec8863ef1b8c2"
+    },
+    {
+      "id": "opm",
+      "title": "OPM · Structured Interviews",
+      "url": "https://www.opm.gov/policy-data-oversight/assessment-and-selection/structured-interviews/",
+      "kind": "professional_method",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Structured, job-related questions and common anchored scoring.",
+      "lesson": "Ask comparable core questions and judge observable evidence against the same role-related criteria.",
+      "limits": "US federal selection context is not Italian employment law; no automated hiring decision authorized.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "esco",
+      "title": "European Commission · ESCO API",
+      "url": "https://esco.ec.europa.eu/en/use-esco/use-esco-services-api",
+      "kind": "controlled_vocabulary",
+      "consulted_on": "2026-10-28",
+      "review_scope": "API and skill-taxonomy overview.",
+      "lesson": "Link skills to stable identifiers and preserve local job meaning instead of matching titles alone.",
+      "limits": "No live API or candidate database queried; software/API licensing does not automatically resolve all data reuse rights.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "anthropic-hr",
+      "title": "Anthropic · Interview Prep",
+      "url": "https://github.com/anthropics/knowledge-work-plugins/blob/main/human-resources/skills/interview-prep/SKILL.md",
+      "kind": "agent_repository",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Full interview design skill.",
+      "lesson": "Map questions, observations, anchored ratings and panel debrief to explicit job competencies.",
+      "limits": "Missing evidence is unknown, not proof of inability; protected traits and proxies are excluded.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": "blob:853cf0f9e4f395c76a21ac55d5c902fcdc8495f6"
+    },
+    {
+      "id": "double-diamond",
+      "title": "Design Council · Double Diamond",
+      "url": "https://www.designcouncil.org.uk/resources/the-double-diamond/",
+      "kind": "professional_method",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Discovery/definition and development/delivery model.",
+      "lesson": "Alternate exploring the problem and testing solutions; revisit assumptions as evidence changes.",
+      "limits": "A process diagram does not prove market demand or justify a rigid linear sequence.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Diagram described as CC BY 4.0; no diagram copied, no blanket license claim for all resources."
+      },
+      "revision": null
+    },
+    {
+      "id": "oecd",
+      "title": "OECD · Applying Evaluation Criteria Thoughtfully",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/03/applying-evaluation-criteria-thoughtfully_45a54ea7/543e84ed-en.pdf",
+      "kind": "professional_method",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Purpose and six criteria; Figure 4.2 inspected on PDF page 39 / printed 37.",
+      "lesson": "Use relevance, coherence, effectiveness, efficiency, impact and sustainability as distinct context-sensitive questions.",
+      "limits": "Do not collapse output into causal impact or force equal weights. Selected chapters and figure, not a claimed cover-to-cover course.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "promptfoo",
+      "title": "Promptfoo · Introduction",
+      "url": "https://www.promptfoo.dev/docs/intro/",
+      "kind": "technical_documentation",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Evaluation architecture: prompts, providers, tests and results.",
+      "lesson": "Make the evaluation input/output and comparison reproducible, retaining failure cases.",
+      "limits": "No provider connected or Promptfoo execution performed in this package.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    },
+    {
+      "id": "promptfoo-assertions",
+      "title": "Promptfoo · Expected outputs",
+      "url": "https://www.promptfoo.dev/docs/configuration/expected-outputs/",
+      "kind": "technical_documentation",
+      "consulted_on": "2026-10-28",
+      "review_scope": "Deterministic and model-based assertions.",
+      "lesson": "Separate exact constraints from judgment-based criteria and report evaluator limitations.",
+      "limits": "A successful assertion is not independent proof of professional competence or broad generalization.",
+      "reuse": {
+        "mode": "reference_only",
+        "content_bundled": false,
+        "permission_to_redistribute_content": false,
+        "note": "Reference-only; no upstream text, code, assets or data redistributed."
+      },
+      "revision": null
+    }
+  ]
+}

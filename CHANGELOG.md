@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.0.7 — Validated Professional Skillpacks (2026-10-29)
+
+- Integrate 20 original office-shared professional methods and matching selectable
+  technical skill bodies, with 37 reference-only sources and 40 annotated examples.
+- Label the 20 new skill bodies `validated` for *synthetic procedural contract* checks,
+  based on a frozen 400-case set (20 per skill), 95% minimum and zero critical errors.
+- Preserve all 14 original active and 30 original experimental technical skills,
+  role/office definitions, private scope, authorization policies and frozen history.
+- Require exact candidate-hash approval before GitHub publication; no independent
+  professional-quality certification or live model/provider execution is claimed.
+
+
 ## Updates — Webdesign
 
 - Add 33 scoped agent methods, native BM25 over explicitly supplied external datasets, checksum-pinned data retrieval, source-linked design-system proposals and a 17-category rendered-DOM audit.
