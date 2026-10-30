@@ -1,0 +1,106 @@
+{
+  "schema": "aco-open-design/gallery-v1",
+  "license": "Original ACO material; no third-party assets or brand identifiers",
+  "examples": [
+    {
+      "id": "research-studio",
+      "kind": "landing",
+      "system": "editorial",
+      "title": "Ideas beyond the obvious.",
+      "description": "A contemporary studio where research, culture and creative direction meet.",
+      "audience": "Cultural partners",
+      "sections": [
+        {"heading": "Research", "body": "We investigate complex themes and discover useful perspectives."},
+        {"heading": "Direction", "body": "We build visual worlds with conceptual precision."},
+        {"heading": "Production", "body": "We turn independent thinking into tangible experiences."}
+      ]
+    },
+    {
+      "id": "product-launch",
+      "kind": "landing",
+      "system": "minimal",
+      "title": "Technology, made approachable.",
+      "description": "A clear and considered interface for a more useful everyday product.",
+      "audience": "Early adopters",
+      "cta": {"label": "Read the story", "href": "#features"},
+      "sections": [
+        {"heading": "Thoughtful by design", "body": "Give people control without unnecessary complexity."},
+        {"heading": "Built to last", "body": "A disciplined visual system that grows with the product."}
+      ]
+    },
+    {
+      "id": "civic-dashboard",
+      "kind": "dashboard",
+      "system": "utility",
+      "title": "City in motion",
+      "description": "Public-space activity at a glance, with transparent data provenance.",
+      "audience": "Urban research team",
+      "metrics": [
+        {"label": "Active spaces", "value": "142", "detail": "Monitored this month"},
+        {"label": "Public events", "value": "38", "detail": "Scheduled"},
+        {"label": "Data coverage", "value": "87%", "detail": "Within scope"}
+      ],
+      "sections": [
+        {"heading": "Overview", "body": "A curated snapshot of the monitored districts."},
+        {"heading": "Data note", "body": "Figures are demonstration values, not live observations."}
+      ]
+    },
+    {
+      "id": "climate-observatory",
+      "kind": "dashboard",
+      "system": "forest",
+      "title": "Living systems",
+      "description": "An environmental monitoring prototype for public education.",
+      "audience": "Research and education",
+      "metrics": [
+        {"label": "Observation sites", "value": "24"},
+        {"label": "Recent observations", "value": "1,280"},
+        {"label": "Validation", "value": "Pending"}
+      ],
+      "sections": [{"heading": "Methodology", "body": "All values are illustrative until connected to a verified dataset."}]
+    },
+    {
+      "id": "culture-deck",
+      "kind": "deck",
+      "system": "editorial",
+      "title": "Culture is infrastructure",
+      "description": "An argument for long-term cultural investment.",
+      "audience": "Institutional partners",
+      "sections": [
+        {"heading": "The question", "body": "How can institutions support contemporary cultural practices beyond events?"},
+        {"heading": "The approach", "body": "Develop partnerships around knowledge, production and participation."},
+        {"heading": "The opportunity", "body": "Create shared value through long-term programmes."}
+      ]
+    },
+    {
+      "id": "creative-pitch",
+      "kind": "deck",
+      "system": "electric",
+      "title": "A different kind of launch",
+      "description": "A visual proposition for a new public programme.",
+      "audience": "Creative stakeholders",
+      "sections": [
+        {"heading": "Insight", "body": "Participation grows when audiences can influence the story."},
+        {"heading": "Concept", "body": "An evolving public programme with connected digital and physical moments."}
+      ]
+    },
+    {
+      "id": "editorial-social",
+      "kind": "social",
+      "system": "ink",
+      "title": "Look closer.",
+      "description": "New perspectives often begin with a better question.",
+      "audience": "Contemporary culture",
+      "sections": [{"heading": "01 / Inquiry", "body": "Make room for another point of view."}]
+    },
+    {
+      "id": "event-social",
+      "kind": "social",
+      "system": "electric",
+      "title": "Open studio / 30.10",
+      "description": "An evening of experiments, conversations and new ideas.",
+      "audience": "Open invitation",
+      "sections": [{"heading": "Doors open", "body": "Details and access information to be confirmed by the organizer."}]
+    }
+  ]
+}

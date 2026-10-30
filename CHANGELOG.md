@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.9 — Unified Taste and Open Design (2026-10-30)
+
+- Combine automatic cross-office ACO Taste direction and review with Open Design planning, tokens, gallery, HTML, SVG and optional export.
+- Preserve the native `aco-taste` skill and automatic visual review routing across creative offices.
+- Include Open Design in the portable Concierge runtime; keep static checks distinct from actual rendered review and external handoff execution.
+
 ## 1.0.8 — ACO Taste global visual quality (release candidate)
 
 - Add `aco-taste` as a native, original visual direction/review skill for graphics, photography, video, motion, web/UI, editorial documents and spatial outputs.

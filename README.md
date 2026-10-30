@@ -2,7 +2,7 @@
 
 **A working library for an artist, studio, agency or cultural business — with scoped private knowledge and evidence-aware execution.**
 
-**ACO v1.0.8 · 363 roles · 25 entry skills · 61 workflows · 99 optional resources · token-aware OS + technical skill registry.**
+**ACO v1.0.9 · 363 roles · 26 entry skills · 61 workflows · 99 optional resources · token-aware OS + technical skill registry.**
 
 Proprietary, source-available. Redistribution is restricted by [LICENSE](LICENSE). No third-party software, fonts, models or private knowledge are bundled.
 
@@ -205,6 +205,10 @@ Use the returned action hash to bind explicit approval when the permission level
 
 
 This package does not establish that your Mac, Codex session, Drive connector, phone account, ComfyUI GPU or paid generation service works. It installs no schedules and makes no calls. [Host acceptance tests](docs/HOST-ACCEPTANCE-TESTS.md) are for your actual environment; unrun rows stay unrun.
+
+## Unified visual tools
+
+ACO 1.0.9 includes both [ACO Taste](skills/aco-taste/SKILL.md) for automatic visual direction and review, and [Open Design](docs/OPEN-DESIGN.md) for bounded briefs, original tokens and gallery examples, HTML/SVG composition and optional PDF/PNG export. Open Design output goes through the existing Taste gate before completion. Static checks do not establish visual quality.
 
 ## Updating GitHub and local installs
 

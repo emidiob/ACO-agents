@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "aco_version": "1.0.8",
+  "aco_version": "1.0.9",
   "kind": "pointer_only",
   "canonical_registry": "skills/aco-office-concierge/references/competencies/REGISTRY.json",
   "no_duplicate_entries": true

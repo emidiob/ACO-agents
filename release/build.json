@@ -1,0 +1,13 @@
+{
+  "version": "1.0.9",
+  "built_at": "2026-10-30T14:59:04+00:00",
+  "features": [
+    "aco-taste",
+    "open-design"
+  ],
+  "source_releases": [
+    "1.0.8 Taste integration",
+    "1.0.8 Open Design candidate"
+  ],
+  "validation_scope": "Local automated checks; external providers and rendered visual review are task-specific."
+}

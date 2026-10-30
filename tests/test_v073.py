@@ -27,7 +27,7 @@ def _semantic_json_sha(path: Path) -> str:
 
 class ExactScopeAuthorization073Tests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(VERSION,'1.0.8')
+        self.assertEqual(VERSION,'1.0.9')
 
     def test_legacy_boolean_is_not_authorization(self):
         r=context_plan({'mode':'FULL','cross_scope_authorized':True,'sources':[

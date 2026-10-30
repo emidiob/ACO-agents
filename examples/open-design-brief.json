@@ -1,0 +1,12 @@
+{
+  "kind": "landing",
+  "system": "editorial",
+  "title": "Culture shapes futures.",
+  "description": "An independent research-led studio connecting cultural inquiry and contemporary visual practice.",
+  "audience": "Institutions and creative partners",
+  "sections": [
+    {"heading": "Research", "body": "We identify meaningful questions and build evidence-led cultural narratives."},
+    {"heading": "Creative direction", "body": "We translate research into distinct visual experiences and collaborations."},
+    {"heading": "Production", "body": "We connect conceptual development, prototyping, and delivery."}
+  ]
+}

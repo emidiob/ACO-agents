@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "1.0.8",
+  "aco_version": "1.0.9",
   "classes": {
     "durable_context": {
       "primary": "canonical_aco_document",

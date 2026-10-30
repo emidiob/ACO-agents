@@ -13,7 +13,7 @@ from aco.routing import route_benchmark, suggest_route
 
 class ContextEngine072Tests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(VERSION, '1.0.8')
+        self.assertEqual(VERSION, '1.0.9')
 
     def test_full_does_not_cross_client_boundary(self):
         r=context_plan({'mode':'FULL','sources':[
