@@ -68,3 +68,7 @@ CLI: `python3 scripts/competence_library.py show --id visual-critique` in the fu
 ## Automatically route visual tasks through Taste (ACO-TASTE-GLOBAL-108)
 
 For any creation, modification, review or delivery of images, photography, film/video, motion, graphics, 3D, web/UI, editorial PDF or presentations, **MUST** load the shared [visual quality gate](references/protocols/VISUAL-TASTE-ROUTING.md) and [ACO Taste Intelligence](../aco-taste/SKILL.md) automatically. Do not require `/aco-taste`. Preserve scope for small edits and verify the real visual artifact.
+
+## Open Design composition
+
+For bounded visual briefs, original token presets, gallery remix, HTML/SVG composition or optional export, use the Open Design CLI in the Concierge runtime: `scripts/aco_open_design.py --help`. Combine it with ACO Taste direction and the automatic visual review gate; inspect actual rendered output before completion. Export availability and external handoff authorization are checked separately.

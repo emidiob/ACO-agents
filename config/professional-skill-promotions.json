@@ -1,5 +1,5 @@
 {
-  "aco_version": "1.0.7",
+  "aco_version": "1.0.9",
   "candidates": [
     {
       "benchmark_kind": "deterministic_structured_contract",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "1.0.8",
+  "aco_version": "1.0.9",
   "gate": {
     "minimum_score": 100,
     "maximum_critical_failures": 0

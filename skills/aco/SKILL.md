@@ -5,7 +5,7 @@ description: "ACO Concierge entrypoint. Invoke as /aco in Claude Code or $aco in
 
 # /aco — ACO Concierge
 
-Use the canonical ACO 1.0.6 runtime (`aco://current`) in this checkout or a verified installed ACO skills root. This is a command **router**, not an independent model or process. Read `../aco-office-concierge/SKILL.md`, its relevant shared protocol, then only the selected office and specialist methods. Ask no unnecessary questions; follow authorization, source and verification rules.
+Use the canonical ACO 1.0.9 runtime (`aco://current`) in this checkout or a verified installed ACO skills root. This is a command **router**, not an independent model or process. Read `../aco-office-concierge/SKILL.md`, its relevant shared protocol, then only the selected office and specialist methods. Ask no unnecessary questions; follow authorization, source and verification rules.
 
 ## Argument dispatch
 
@@ -28,3 +28,7 @@ Before any persistent write, follow `../aco-office-concierge/references/protocol
 ## Automatic visual-taste gate (ACO-TASTE-GLOBAL-108)
 
 When this task produces, edits or reviews a visual artifact, load [the automatic cross-office Taste contract](../aco-office-concierge/references/protocols/VISUAL-TASTE-ROUTING.md) and [ACO Taste](../aco-taste/SKILL.md) **without requiring the user to invoke it**. Use the appropriate medium method and inspect real output. Nonvisual work stays direct; exact small changes preserve approved design.
+
+## Open Design composition
+
+For bounded visual briefs, original token presets, gallery remix, HTML/SVG composition or optional export, use the Open Design CLI in the Concierge runtime: `scripts/aco_open_design.py --help`. Combine it with ACO Taste direction and the automatic visual review gate; inspect actual rendered output before completion. Export availability and external handoff authorization are checked separately.
