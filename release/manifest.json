@@ -563,7 +563,7 @@
     },
     "docs/aco-logo.svg": {
       "mode": 420,
-      "sha256": "1c77e274fafe999afb538c893e59cc11ab1bb1128e603399ea1cd1f7b4895e66"
+      "sha256": "b74d2969bf91efef9032bcccad231492c5ab2a3799f59f988117a51a4a7a77d5"
     },
     "docs/index.html": {
       "mode": 420,
@@ -571,7 +571,7 @@
     },
     "docs/site.css": {
       "mode": 420,
-      "sha256": "22be498401fac7a93701d188d6eff4b2d806838dd78a4c39f439c4770af62554"
+      "sha256": "7d30ce645dd54effcef026ad9120d2dfbc0cf7df434941f2ea12c0e6970eb194"
     },
     "examples/action-whatsapp-draft.json": {
       "mode": 420,
