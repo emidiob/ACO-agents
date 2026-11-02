@@ -9,6 +9,10 @@
       "mode": 420,
       "sha256": "c0c9c86994f56bf3bd3ac43f86e8a1d0576f236f534d2add9d99c66e5c7db559"
     },
+    ".mailmap": {
+      "mode": 420,
+      "sha256": "0cc8de436db486ff1688fe3e6c4253b8589e85e254d851fe2e1971251a6e843f"
+    },
     "ACO-INDEX.md": {
       "mode": 420,
       "sha256": "299bd2516d0a068bfcc7b7e79b19e9ab5cd57d04441f2c96c97b8cd1ba6c55c8"
