@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 356 280" role="img" aria-labelledby="title desc">
+<title id="title">ACO working sequence</title>
+<desc id="desc">Four connected stages: input, select, produce and verify.</desc>
+<defs><pattern id="grain" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".55" fill="#f8f6ee" opacity=".28"/></pattern></defs>
+<rect x="1" y="1" width="354" height="278" fill="#11110f" fill-opacity=".75" stroke="#f8f6ee" stroke-opacity=".7"/>
+<rect x="10" y="10" width="336" height="260" fill="url(#grain)" opacity=".28"/>
+<g fill="none" stroke="#f8f6ee" stroke-opacity=".7" stroke-width="1">
+<path d="M18 18h12M18 18v12M338 18h-12M338 18v12M18 262h12M18 262v-12M338 262h-12M338 262v-12"/>
+<path d="M24 65h308M24 213h308"/>
+<path d="M42 140h270" stroke-dasharray="4 4"/>
+<path d="M42 140C89 70 125 176 176 140s83-72 136 0" stroke="#ff4a0a" stroke-width="1.5"/>
+<path d="M42 132v16M132 132v16M222 132v16M312 132v16"/>
+<circle cx="42" cy="140" r="5" fill="#11110f"/><circle cx="132" cy="140" r="5" fill="#11110f"/><circle cx="222" cy="140" r="5" fill="#11110f"/>
+<circle cx="312" cy="140" r="8" stroke="#ff4a0a" stroke-width="2" fill="#11110f"/>
+<circle cx="312" cy="140" r="2" fill="#ff4a0a" stroke="none"/>
+</g>
+<g fill="#f8f6ee" font-family="Menlo,Consolas,monospace" font-size="9" font-weight="700" letter-spacing="1.2">
+<text x="24" y="38">ACO / WORKING SEQUENCE</text><text x="332" y="38" text-anchor="end">01—04</text>
+<text x="42" y="107" text-anchor="middle">01</text><text x="132" y="107" text-anchor="middle">02</text><text x="222" y="107" text-anchor="middle">03</text><text x="312" y="107" text-anchor="middle" fill="#ff4a0a">04</text>
+<text x="42" y="170" text-anchor="middle">INPUT</text><text x="132" y="170" text-anchor="middle">SELECT</text><text x="222" y="170" text-anchor="middle">PRODUCE</text><text x="312" y="170" text-anchor="middle">VERIFY</text>
+<text x="24" y="236">TASK IN</text><text x="332" y="236" text-anchor="end">REVIEWABLE RESULT OUT</text>
+</g>
+<g fill="none" stroke="#f8f6ee" opacity=".35" stroke-width=".7">
+<path d="M52 60v-9m10 9v-5m10 5v-9m10 9v-5m10 5v-9m10 9v-5m10 5v-9m10 9v-5m10 5v-9m10 9v-5m10 9v-9m10 9v-5m10 5v-9m10 9v-5m10 5v-9m10 9v-5m10 5v-9m10 9v-5m10 5v-9m10 9v-5m10 5v-9m10 9v-5m10 5v-9m10 9v-5m10 5v-9"/>
+</g>
+</svg>

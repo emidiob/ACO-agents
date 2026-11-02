@@ -46,3 +46,21 @@ h2{font-size:clamp(3.3rem,6.8vw,7.4rem);max-width:17ch;margin:0 0 .35em;text-tra
 .example:nth-child(3) h3{font-size:clamp(1.6rem,2.6vw,3.1rem);letter-spacing:-.06em}
 .signal-band{white-space:nowrap;overflow:hidden}
 @media(max-width:700px){.signal-band{font-size:.59rem;letter-spacing:.04em}.signal-band span:first-child{word-spacing:.25rem}.method-plate figcaption{font-size:.55rem}}
+/* Operational micrographics: every label names a real stage or output. */
+.hero-instrument{position:absolute;right:clamp(28px,5vw,82px);top:31%;width:clamp(245px,25vw,356px);z-index:1;transform:rotate(1deg);filter:drop-shadow(0 12px 24px #0008)}
+.hero-instrument img{display:block;width:100%;height:auto}.hero-instrument span{display:block;color:var(--white);font:700 .64rem/1.2 var(--mono);letter-spacing:.09em;text-transform:uppercase;text-align:right;margin-top:.4rem;text-shadow:0 1px 3px #000}
+.micro-ledger{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-bottom:1px solid var(--ink);background:var(--white);color:var(--ink);padding:0 max(36px,calc((100vw - 1340px)/2))}
+.micro-ledger span{position:relative;display:flex;align-items:center;gap:.6rem;min-height:52px;padding:.6rem 1.05rem .6rem 0;font:600 .68rem/1.2 var(--mono);letter-spacing:.015em;text-transform:uppercase;white-space:nowrap}
+.micro-ledger span+span{border-left:1px solid var(--line);padding-left:1.05rem}.micro-ledger b{color:#ba3109;font-weight:800}.micro-ledger span::after{content:"";display:block;height:7px;flex:1;max-width:27px;min-width:7px;margin-left:auto;background:repeating-linear-gradient(90deg,var(--ink) 0 1px,transparent 1px 4px);opacity:.5}
+.section-micro{display:flex;align-items:center;gap:1.2rem;margin:2.1rem 0 .75rem;padding:.5rem 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);font:700 .67rem/1.2 var(--mono);letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+.section-micro span:last-child{text-align:right}.tick-rule{height:12px;flex:1;min-width:20px;background:repeating-linear-gradient(90deg,currentColor 0 1px,transparent 1px 9px);mask-image:linear-gradient(90deg,transparent,#000 25%,#000 75%,transparent);opacity:.45}
+#iniziare .section-micro,#iniziare .selection-key{border-color:#77776e;color:#e4e4db}.selection-key{display:flex;justify-content:space-between;gap:1rem;margin:2rem 0 -.1rem;padding:.55rem 0;border-top:1px solid #77776e;font:700 .67rem/1.2 var(--mono);letter-spacing:.06em;text-transform:uppercase}
+#selection-state{color:var(--orange)}.chooser{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:0}.choice+.choice{border-left:1px solid #73736c}.choice{font-size:clamp(1.25rem,2vw,2.2rem)}
+.example-kind{position:absolute;top:1.25rem;left:1.5rem;font:700 .67rem/1.2 var(--mono);text-transform:uppercase;letter-spacing:.06em}.example-kind::before{content:"↳ ";color:inherit}.example:nth-child(2) .example-kind{color:#ff7445}
+#domande .section-micro{margin-bottom:0}.faq{margin-top:0}
+@media(max-width:1100px){.hero-instrument{right:24px;top:26%;width:260px}.micro-ledger{padding-inline:24px}.micro-ledger span{font-size:.61rem;gap:.3rem}.micro-ledger span::after{display:none}}
+@media(max-width:900px){.hero-instrument{display:none}.micro-ledger{grid-template-columns:repeat(2,minmax(0,1fr))}.micro-ledger span:nth-child(3){border-left:0;padding-left:0;border-top:1px solid var(--line)}.micro-ledger span:nth-child(4){border-top:1px solid var(--line)}}
+@media(max-width:700px){.micro-ledger{padding-inline:16px}.micro-ledger span{min-height:42px;font-size:.59rem;white-space:normal}.section-micro{font-size:.55rem;gap:.5rem;white-space:normal}.section-micro span:last-child{max-width:40%;text-align:right}.selection-key{font-size:.57rem}.chooser{grid-template-columns:1fr}.choice+.choice{border-left:0;border-top:1px solid #73736c}}
+@media(max-width:700px){.micro-ledger span{display:block;min-height:58px;padding:.7rem .55rem;font-size:.62rem;line-height:1.3}.micro-ledger span b{display:block;margin-bottom:.14rem}.micro-ledger span:nth-child(odd){padding-left:0}}
+.chooser{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:700px){.chooser{grid-template-columns:1fr}}
