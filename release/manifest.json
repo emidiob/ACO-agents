@@ -19,7 +19,7 @@
     },
     "BEGINNER-GUIDE.md": {
       "mode": 420,
-      "sha256": "57f8d2c648231a10e480e72e42d9f339ffde90b359d6742b9de87bf5d28f8a4a"
+      "sha256": "f9cb06a32e44b178e9897fe30ffd13f8355a121c4912c9533efface820a6a3bb"
     },
     "CHANGELOG.md": {
       "mode": 420,
@@ -51,7 +51,7 @@
     },
     "README.md": {
       "mode": 420,
-      "sha256": "9033384a3e7e1026540c0a66c916265121b6793e7acaf83734601fe700c3763d"
+      "sha256": "d7d390ca4d2557cd350dd809c0912a6b40b0cae755e103e0d89faf8b1ea61554"
     },
     "SECURITY.md": {
       "mode": 420,
@@ -437,6 +437,10 @@
       "mode": 420,
       "sha256": "e720a39102403915316fa65704a8ce55203d9fd5ec15ef9fb7c51f4900521078"
     },
+    "docs/GUIDA.html": {
+      "mode": 420,
+      "sha256": "5036b78171e302e9548e10d14d3a2e3284cefc8e467e111be2a12346a6c367e9"
+    },
     "docs/HISTORY-AND-SYNC.md": {
       "mode": 420,
       "sha256": "fe93ea9d3ab309c81d46dec1a6507f03e54cc772c41f983194a4cf9b53cd04c1"
@@ -511,7 +515,7 @@
     },
     "docs/START-HERE.md": {
       "mode": 420,
-      "sha256": "9ab46325a75530ecc34e51c4cca7e7afd714f7d23f4dc9f7e8a703831f4e7695"
+      "sha256": "684bcaf62d3572ebeb0966e4040d6c9fabb0e7308949997633eb32a1ce527d20"
     },
     "docs/STUDIO-CHECKS.md": {
       "mode": 420,

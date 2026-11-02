@@ -1,5 +1,7 @@
 # ACO 1.0.6 — Beginner Guide
 
+> Historical guide for version 1.0.6. For the current 1.0.9 release, start with the [interactive guide](docs/GUIDA.html) or [current short guide](docs/START-HERE.md). Version-specific counts and installation steps below apply to 1.0.6 only.
+
 This guide covers the complete 1.0.6 package, including the macOS path fixes. For the shortest setup route, read [Start here](docs/START-HERE.md).
 
 **You do not need to know every agent, install 99 optional resources, or create a folder for every idea.**
