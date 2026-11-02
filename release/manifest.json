@@ -439,7 +439,7 @@
     },
     "docs/GUIDA.html": {
       "mode": 420,
-      "sha256": "79b25b2dcaf9d34ab8b130c3a33904fbd999499632735dba732c0e058c523cd3"
+      "sha256": "f3ad510954813008d128ac4ff16c2de3a9cf66aeadfb0b83cfc3ed2793d20ede"
     },
     "docs/HISTORY-AND-SYNC.md": {
       "mode": 420,
@@ -569,13 +569,17 @@
       "mode": 420,
       "sha256": "79d41777dae0a8911f92fcba330dbb6706bf393683b16d82c8e7be02e9d4b2a5"
     },
+    "docs/aco-worktable.jpg": {
+      "mode": 420,
+      "sha256": "54b87873fabbe2d77a6a1237d82e1e3c05cf224390d5bddfd1ed16509b788528"
+    },
     "docs/index.html": {
       "mode": 420,
       "sha256": "022a9da8329103e4a75c7c1e77007019716b18c950d99f969afd30509ad75b6a"
     },
     "docs/site.css": {
       "mode": 420,
-      "sha256": "c4169479d07a2b0f50ea41bf497c06c237f58a6838864a7cb95352e594370d24"
+      "sha256": "45414874bbd69e887345706b3e1803687f7774f637912fb361fa83efde563829"
     },
     "examples/action-whatsapp-draft.json": {
       "mode": 420,
