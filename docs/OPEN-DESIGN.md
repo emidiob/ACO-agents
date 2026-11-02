@@ -1,4 +1,4 @@
-# ACO Open Design — native design kit (ACO 1.0.9)
+# ACO Open Design — native design kit (ACO 1.1.0)
 
 ACO Open Design is a **file-based, original** design kit inside ACO. It combines bounded creative briefs, a small original gallery, reusable design tokens, four HTML composition types, a project manifest, static evidence checks and optional browser export. It works alongside the existing `aco-webdesign` skill, which owns deeper visual direction, interaction design, framework code editing and actual rendered review.
 
@@ -73,6 +73,19 @@ SVG output is a separate original vector composition based on the same brief, no
 `kind`: `landing`, `dashboard`, `deck`, `social`. Dashboards may specify up to eight `metrics` objects with `label`, `value` and optional `detail`; all figures are user-supplied and are not represented as live. For a custom system, pass `tokens` with `background`, `foreground`, `surface`, `accent` as six-digit hex colors, plus an approved `font` stack. The contrast report checks text against background/surface and warns when the ratios fall below 4.5:1. This is not a WCAG certification.
 
 Use `--overrides /path/to/content.json` with `remix` to replace approved content and tokens. Links accept local fragment anchors, HTTPS or `mailto:`; arbitrary JavaScript URLs and raw HTML injection are rejected.
+
+<!-- ACO-DEEP-DESIGN-109-20261102 --> #0
+## Deep Design Production — advanced composition and campaign outputs
+
+For three structurally different concept compositions, safe reference-control adaptations and
+multichannel/multilocale HTML generation, see [Deep Design Production](ACO-DESIGN-DEEP-PRODUCTION.md).
+`python3 scripts/aco_open_design.py deep-plan --packet examples/deep-design-campaign.json`
+validates a factual anchor, explicitly supplied translations and reference observations.
+`python3 scripts/aco_open_design.py campaign --packet ... --output /tmp/aco-deep-campaign`
+creates separate landing/social/deck/dashboard compositions and local receipts, without replacing
+existing output or claiming visual review. Run `browser-check` with the separate native helper
+only if Chromium/Playwright is already installed and authorized; inspect screenshots yourself.
+No third-party design system is imported and the existing Open Design examples remain unchanged.
 
 ## ACO workflow
 

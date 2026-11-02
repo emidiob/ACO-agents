@@ -24,6 +24,15 @@ The input packets are JSON objects. See `tests/test_taste_deepening.py` for smal
 python3 -m unittest discover -s tests -p 'test_taste_deepening.py' -v
 ```
 
+<!-- ACO-DEEP-DESIGN-109-20261102 --> #0
+## Deep Design Production companion
+
+The next additive module is [ACO Deep Design Production](ACO-DESIGN-DEEP-PRODUCTION.md),
+which turns structural variation into real HTML artifacts, adds reference-control adaptations,
+requires explicitly supplied locale content, and supports optional screenshot smoke tests.
+Use the existing local feedback and review-cycle checks for project-scoped learning and correction.
+Neither the production module nor these Taste Deepening checks certify aesthetic quality.
+
 ## Local integration ZIP
 
 The optional patch ZIP contains these commands, documentation, tests and a dry-run installer for an existing ACO 1.0.9 checkout. Extract it outside the checkout, run `python3 apply_to_aco.py /path/to/ACO-checkout` to preview, then add `--apply` to install. Rebuild the release manifest and run validation after installation. The patch is not a standalone ACO release.

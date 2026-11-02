@@ -35,6 +35,15 @@ Choose medium guidance: [Web + UI](references/MEDIUM-WEB-UI.md) · [Photography 
 
 Source art and local visual evidence may require browser, image, FFmpeg, or actual rendering tools. ACO cannot claim images were inspected because it read metadata or code. External upstream implementations are **not bundled**; see `assets/sources.json` for attribution and rights information. No silent installation or media upload.
 
+<!-- ACO-DEEP-DESIGN-109-20261102 --> #0
+## Deep Design Production: reference-to-artifact bridge
+
+For substantive exploratory compositions with actual output targets, use the original
+Deep Design Production (see `docs/ACO-DESIGN-DEEP-PRODUCTION.md` in the full ACO checkout) module and inspect its
+three rendered HTML variants. It interprets *provided observations*, never unviewed URLs.
+Select no more than one lead specialist; do not treat a direction preset as an artist's approval.
+Use the existing Taste Deepening project-feedback retrieval and before/after review cycles.
+
 ## Release acceptance
 
 For substantial exploratory visual work, the optional local checks in [ACO Taste Deepening](../../docs/ACO-TASTE-DEEPENING.md) can compare declared structural variants, retrieve scoped feedback, verify before/after receipts and triage UI motion. Use `deepen.py` for these checks and still inspect actual rendered artifacts. Green results describe evidence contracts, not visual quality.

@@ -193,6 +193,16 @@ def main(argv=None):
     p_handoff = sub.add_parser("handoff", help="Prepare a provider-specific pending-action packet")
     p_handoff.add_argument("--artifact", required=True, type=Path)
     p_handoff.add_argument("--target", required=True, choices=TARGETS)
+    # ACO-DEEP-DESIGN-109-20261102 #0
+    # ACO Deep Design: original concept/production kit, no external packages.
+    p_dp = sub.add_parser("deep-plan", help="Plan three structural composition variants")
+    p_dp.add_argument("--packet", required=True, type=Path)
+    p_ds = sub.add_parser("deep-study", help="Validate supplied reference observations")
+    p_ds.add_argument("--packet", required=True, type=Path)
+    p_dc = sub.add_parser("campaign", help="Build a multichannel, multilocale HTML matrix")
+    p_dc.add_argument("--packet", required=True, type=Path)
+    p_dc.add_argument("--output", required=True, type=Path)
+
     parser.add_argument("--brief", type=Path, help=argparse.SUPPRESS)
     parser.add_argument("--output", type=Path, help=argparse.SUPPRESS)
     args = parser.parse_args(argv)
@@ -231,6 +241,16 @@ def main(argv=None):
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(svg, encoding="utf-8")
         result = {"vector": str(args.output.resolve()), "editable_svg": True, "visual_review": "not performed"}
+    # ACO-DEEP-DESIGN-109-20261102 #1
+    elif args.command in ("deep-plan", "deep-study", "campaign"):
+        from .open_design_deep import validate_campaign, directions, study, build_campaign
+        raw = _load(args.packet)
+        if args.command == "campaign":
+            result = build_campaign(raw, args.output)
+        else:
+            contract = validate_campaign(raw)
+            result = {"directions": directions(contract), "reference_study": study(contract),
+                      "channels": contract["channels"]} if args.command == "deep-plan" else study(contract)
     elif args.command == "handoff":
         result = prepare_handoff(args.artifact, args.target)
     else:

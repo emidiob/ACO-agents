@@ -1,4 +1,4 @@
-# Start here — ACO 1.0.9
+# Start here — ACO 1.1.0
 
 For a plain-language walkthrough, open the [interactive guide](GUIDA.html). It works as a local HTML file, with separate steps for ChatGPT and Codex, examples to copy and common questions.
 
@@ -10,7 +10,7 @@ Make the ACO instructions available through an authorized repository/file tool, 
 
 ## Codex on your computer
 
-Open the complete ACO checkout or extracted release and check that `VERSION` says `1.0.9`. Python 3.11+ is needed for local ACO tools. From the source folder, `python3 scripts/aco_cli.py doctor` checks prerequisites, `python3 scripts/aco_cli.py validate` checks the package, and `python3 scripts/aco_cli.py install` previews installation. Use `install --apply` only after reviewing the preview. Start a new Codex session to check that the installed skills are discovered. See the [README](../README.md#updating-github-and-local-installs) for the full procedure.
+Open the complete ACO checkout or extracted release and check that `VERSION` says `1.1.0`. Python 3.11+ is needed for local ACO tools. From the source folder, `python3 scripts/aco_cli.py doctor` checks prerequisites, `python3 scripts/aco_cli.py validate` checks the package, and `python3 scripts/aco_cli.py install` previews installation. Use `install --apply` only after reviewing the preview. Start a new Codex session to check that the installed skills are discovered. See the [README](../README.md#updating-github-and-local-installs) for the full procedure.
 
 If you have an older checkout, use [Upgrading](UPGRADING.md) and preserve your Git history, private files and unrelated work.
 

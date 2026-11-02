@@ -12,6 +12,14 @@
 6. **Visual Finish Gate:** look at the real artifact, compare to brief/reference and relevant previous version, critique the top three issues, correct material faults, and recheck. For movies inspect the temporal sequence, not only a hero frame. For UI inspect functional states and responsive behavior. For print/documents inspect exported pages.
 7. If actual visual inspection isn't possible, explicitly mark the output *unverified visually*, identify missing evidence, and do not claim professional taste certification. Human approval is explicit, never inferred.
 
+<!-- ACO-DEEP-DESIGN-109-20261102 --> #0
+## Advanced campaign and reference workflows
+
+For requested campaign families or multiple visual directions, after brief/reference scope
+use `scripts/aco_open_design.py deep-plan` and `campaign` as an optional original execution
+path, with the browser QA command where available. Preserve project-specific decisions and
+real approval. The generated references/manifest are evidence, not independent creative agents.
+
 ## Short edits
 Use the light path: confirm locked direction → make only the requested change → visually inspect changed region and likely regressions. Do not impose three new concepts or automatically restyle the interface. If the user asked for review-only, report instead of editing.
 

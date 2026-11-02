@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.1.0 — Deep Design Production (2026-11-02)
+
+- Deliver an original, source-based Deep Design production engine on top of ACO Taste and Open Design: three structurally distinct concept layouts, bounded reference observations, and explicit adaptation controls.
+- Add deterministic multiformat/multilocale HTML production with approved content only, local artifact SHA-256 manifests and conservative static checks; optional real Chromium screenshot and overflow checks require an installed browser.
+- Add `deep-plan`, `deep-study`, and `campaign` routes to Open Design; mirror the executable into the compact Concierge runtime, including its example packet.
+- Reuse the existing Taste Deepening project-local feedback and review-cycle checks; do not claim model training, inferred translations, visual certification, independent human review or third-party assets.
+- Keep 26 native entry skills and existing technical-registry candidate statuses; this is not a new background agent or remote design provider.
+- Require the entire canonical generator/manifest/validator/publication and Python/Node suites on the actual 1.0.9 checkout before release; local compatibility tests alone are not sufficient.
+
 ## 1.0.9 — Unified Taste and Open Design (2026-10-30)
 
 - Combine automatic cross-office ACO Taste direction and review with Open Design planning, tokens, gallery, HTML, SVG and optional export.

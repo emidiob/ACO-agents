@@ -19,6 +19,15 @@ Use [project systems and prototype review](references/project-tools.md) for mast
 
 Use [native engines](references/native-engines.md) for external-data retrieval/search, design-system proposals and rendered DOM analysis.
 
+<!-- ACO-DEEP-DESIGN-109-20261102 --> #0
+## Multichannel design synthesis
+
+When a task needs multiple visual directions and a related campaign family, route through
+Deep Design Production (see `docs/ACO-DESIGN-DEEP-PRODUCTION.md` in the full ACO checkout). Its deterministic native
+renderer produces distinct original HTML composition families and bounded content/locale
+adaptations. This supplements the normal ACO Webdesign editor; it does not replace framework
+source editing, actual browser interaction review or visual QA.
+
 ## Choose the needed work
 
 | Request | Method |

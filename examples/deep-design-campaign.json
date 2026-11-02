@@ -1,0 +1,38 @@
+{
+  "project": "Fictional Research Office",
+  "audience": "Museums and cultural collaborators",
+  "purpose": "Present a research practice and invite partners",
+  "anchor": "A water archive organized through observed visual marks",
+  "locked_identity": false,
+  "content": {
+    "en": {
+      "title": "The Archive Is a River",
+      "description": "An experimental index of traces, water and machine vision.",
+      "sections": [
+        {"heading":"Index","body":"Records are organized by their documented sources."},
+        {"heading":"Methods","body":"Field observations are compared with generated marks."}
+      ],
+      "cta": {"label":"Get in touch","href":"mailto:hello@example.org"}
+    },
+    "it": {
+      "title": "L’archivio è un fiume",
+      "description": "Un indice sperimentale di tracce, acqua e visione artificiale.",
+      "sections": [
+        {"heading":"Indice","body":"I documenti sono organizzati secondo le fonti riportate."},
+        {"heading":"Metodi","body":"Le osservazioni vengono confrontate con segni generati."}
+      ]
+    }
+  },
+  "channels": [
+    {"id":"landing-en","kind":"landing","locale":"en","format":"desktop"},
+    {"id":"square-it","kind":"social","locale":"it","format":"square"},
+    {"id":"portrait-it","kind":"social","locale":"it","format":"portrait"},
+    {"id":"deck-en","kind":"deck","locale":"en","format":"slides"}
+  ],
+  "references": [
+    {"id":"reference-01","source":"User-described image reference (no actual image bundled)","role":"inspiration",
+     "observations":[{"lens":"hierarchy","observation":"Title is substantially larger than supporting metadata","effect":"Establishes an editorial starting point","adaptation":"Enlarge the project title while preserving our original text","controls":{"hero_scale":"large"}}]},
+    {"id":"negative-01","source":"User-described negative example","role":"negative",
+     "observations":[{"lens":"whitespace","observation":"Small captions are crammed together","effect":"Makes mobile reading difficult","adaptation":"Avoid densely packed explanatory captions"}]}
+  ]
+}

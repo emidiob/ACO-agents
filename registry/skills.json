@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "aco_version": "1.0.9",
+  "aco_version": "1.1.0",
   "skills": [
     {
       "skill_id": "visual_research.archive_first",

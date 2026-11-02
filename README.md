@@ -4,11 +4,15 @@
 
 **A working library for an artist, studio, agency or cultural business — with scoped private knowledge and evidence-aware execution.**
 
-**ACO v1.0.9 · 363 roles · 26 entry skills · 61 workflows · 99 optional resources · token-aware OS + technical skill registry.**
+**ACO v1.1.0 · 363 roles · 26 entry skills · 61 workflows · 99 optional resources · token-aware OS + technical skill registry.**
 
 Proprietary, source-available. Redistribution is restricted by [LICENSE](LICENSE). No third-party software, fonts, models or private knowledge are bundled.
 
 **New to ACO? Open the [interactive guide](https://emidiob.github.io/ACO-agents/GUIDA.html)**, or read the [short text guide](docs/START-HERE.md). For an existing checkout, follow the evergreen [upgrade procedure](docs/UPGRADING.md). Release-specific Codex prompts are distributed beside release ZIPs, not stored in the repository.
+
+## ACO 1.1.0 — Deep Design Production
+
+ACO Taste and Open Design now include an **original, optional Deep Design production path** for three structurally distinct compositions, reference-evidence checks, and bounded multichannel/multilingual HTML output. It extends existing visual methods; it does not create a new slash skill, automatically inspect third-party URLs or certify design quality. See [Deep Design Production](docs/ACO-DESIGN-DEEP-PRODUCTION.md) and [release notes](docs/ACO-1.1.0.md). Browser rendering and human review remain distinct from static checks.
 
 ## ACO 1.0.7 — Validated Professional Skillpacks
 
