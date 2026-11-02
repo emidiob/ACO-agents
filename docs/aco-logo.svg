@@ -1,6 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 392 140" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="70 30 260 240" role="img" aria-labelledby="title desc">
   <title id="title">ACO</title>
-  <desc id="desc">Bold uppercase ACO lettering in black on white.</desc>
-  <path fill="#fff" d="M0 0h392v140H0z"/>
-  <path fill="#111" transform="translate(-160 -10)" d="M176 126 213 36h30l37 90h-27l-7-19h-38l-7 19h-25Zm40-40h23l-11-31-12 31Zm146 40c-16 0-29-4-39-13-10-9-15-20-15-34s5-25 15-34c10-9 23-13 39-13 15 0 27 3 38 9l-10 21c-8-5-17-7-27-7-9 0-16 2-21 7-5 4-8 10-8 17s3 13 8 17c5 5 12 7 21 7 10 0 19-2 27-7l10 21c-11 6-23 9-38 9Zm118 0c-16 0-29-4-39-13-10-9-15-20-15-34s5-25 15-34c10-9 23-13 39-13s29 4 39 13c10 9 15 20 15 34s-5 25-15 34c-10 9-23 13-39 13Zm0-23c9 0 16-2 21-7 5-4 8-10 8-17s-3-13-8-17c-5-5-12-7-21-7s-16 2-21 7c-5 4-8 10-8 17s3 13 8 17c5 5 12 7 21 7Z"/>
+  <desc id="desc">Black uppercase A above C and O on a white background, arranged in a triangle.</desc>
+  <path fill="#fff" d="M70 30h260v240H70z"/>
+  <path fill="#111" transform="translate(-28 9)" d="M176 126 213 36h30l37 90h-27l-7-19h-38l-7 19h-25Zm40-40h23l-11-31-12 31Z"/>
+  <path fill="#111" transform="translate(-218 123)" d="M362 126c-16 0-29-4-39-13-10-9-15-20-15-34s5-25 15-34c10-9 23-13 39-13 15 0 27 3 38 9l-10 21c-8-5-17-7-27-7-9 0-16 2-21 7-5 4-8 10-8 17s3 13 8 17c5 5 12 7 21 7 10 0 19-2 27-7l10 21c-11 6-23 9-38 9Z"/>
+  <path fill="#111" transform="translate(-216 123)" d="M480 126c-16 0-29-4-39-13-10-9-15-20-15-34s5-25 15-34c10-9 23-13 39-13s29 4 39 13c10 9 15 20 15 34s-5 25-15 34c-10 9-23 13-39 13Zm0-23c9 0 16-2 21-7 5-4 8-10 8-17s-3-13-8-17c-5-5-12-7-21-7s-16 2-21 7c-5 4-8 10-8 17s3 13 8 17c5 5 12 7 21 7Z"/>
 </svg>
