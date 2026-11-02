@@ -11,7 +11,7 @@
 - Add `aco-taste` as a native, original visual direction/review skill for graphics, photography, video, motion, web/UI, editorial documents and spatial outputs.
 - Wire Taste into Concierge and existing creative offices automatically; no explicit `/aco-taste` required for visual work.
 - Add 50 ACO-original direction materials, project-scoped references/feedback, compare board, media evidence gate, motion and HTML heuristics and evidence-based DESIGN.md.
-- Record seven upstream research sources, attribution, feature gaps and bounded synthetic tests. No blanket third-party code copying, cloud integration or aesthetic quality certification.
+- Record third-party attribution and bounded synthetic tests. No blanket third-party code copying, cloud integration or aesthetic quality certification.
 
 
 ## 1.0.7 — Validated Professional Skillpacks (2026-10-29)

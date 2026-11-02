@@ -33,7 +33,7 @@ Choose medium guidance: [Web + UI](references/MEDIUM-WEB-UI.md) · [Photography 
 
 `python3 scripts/taste.py gate --packet /path/to/evidence.json`
 
-Source art and local visual evidence may require browser, image, FFmpeg, or actual rendering tools. ACO cannot claim images were inspected because it read metadata or code. External upstream implementations are **not bundled**; see `assets/sources.json`, attribution and feature coverage. No silent installation or media upload.
+Source art and local visual evidence may require browser, image, FFmpeg, or actual rendering tools. ACO cannot claim images were inspected because it read metadata or code. External upstream implementations are **not bundled**; see `assets/sources.json` for attribution and rights information. No silent installation or media upload.
 
 ## Release acceptance
 

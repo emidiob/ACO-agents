@@ -23,11 +23,11 @@
     },
     "CHANGELOG.md": {
       "mode": 420,
-      "sha256": "2e307bcf082832143efb1e1f16669f4ed729db1a3e55f42eee771200555d3cf0"
+      "sha256": "1f1d94f24f870277c50c28a520ff66cd539b3bef6a733d354000844927932724"
     },
     "CHATGPT.md": {
       "mode": 420,
-      "sha256": "668ce58aab561eb30e32f82fd0144084ab8dc76c5d595a160a0e5d74149ef19d"
+      "sha256": "4baaaa4a7f44923ae4d3bf54892692eaa2bfe5e70b672350aa4247888598e6aa"
     },
     "CONCIERGE.md": {
       "mode": 420,
@@ -51,7 +51,7 @@
     },
     "README.md": {
       "mode": 420,
-      "sha256": "ebd981b055e0525d86b2c457dbc9c02ed178bced59123c16e1820bbb01c6d4e9"
+      "sha256": "9033384a3e7e1026540c0a66c916265121b6793e7acaf83734601fe700c3763d"
     },
     "SECURITY.md": {
       "mode": 420,
@@ -347,11 +347,11 @@
     },
     "docs/ACO-TASTE-INTELLIGENCE.md": {
       "mode": 420,
-      "sha256": "0d348e2cbb8b4406973f4b8c70653a6af35ca338cd7c7293d88d892ee6abac76"
+      "sha256": "7695ce7a404ad0a2d590a94c32089985e4b3e908227f2cdabc9e5f8c7152b5fb"
     },
     "docs/ACO-TASTE-SOURCE-COVERAGE.md": {
       "mode": 420,
-      "sha256": "1eac6be9b1fc259383ca22fe0173a063b9162a7edec7fb97d095c937e9c6fcde"
+      "sha256": "ba7e49dce72774a671c96e1c75ee97b6e3c448c0b9b02d9d6b43402383e6ccdd"
     },
     "docs/ACTIVITY-RECIPES.md": {
       "mode": 420,
@@ -6271,7 +6271,7 @@
     },
     "skills/aco-taste/SKILL.md": {
       "mode": 420,
-      "sha256": "6f561054bdd1c74c2c244179fbe3ace97e134322d00bb0fd31450f61e7f9582d"
+      "sha256": "4bb7d8d0976fb516d41222c5660108838a80cf6cd9b6674ca1b13d41bc64379f"
     },
     "skills/aco-taste/assets/directions.json": {
       "mode": 420,

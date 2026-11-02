@@ -1,6 +1,6 @@
-# ACO Taste Intelligence · global automatic visual quality (ACO v1.0.7+)
+# ACO Taste Intelligence · automatic visual direction and review (ACO v1.0.8+)
 
-This add-on is an **original ACO adaptation of the main capabilities** studied in Incline, Hallmark, Anthropic Skills (`frontend-design`, `canvas-design`), gstack (`design-shotgun`, `design-review`), Emil Kowalski Skills, UI Skills and Frontend Stack. It does **not copy proprietary code or claim exact parity** with seven independently evolving software projects. It preserves source references, license classification, deployment limitations and a feature coverage matrix.
+ACO Taste is an original visual direction and review layer. It does not bundle third-party implementations or guarantee a particular aesthetic result. Third-party references and rights information are recorded in `skills/aco-taste/assets/sources.json`.
 
 **Most important:** ACO's Concierge and creative offices load Taste automatically for requests that create/edit/review visual artifacts: images, photography, video, motion, web, UI, graphics, presentations, PDFs and spatial work. `/aco-taste` is an optional explicit route, not a required incantation.
 
@@ -8,15 +8,15 @@ This add-on is an **original ACO adaptation of the main capabilities** studied i
 
 `ACO Concierge → existing ACO specialist + Taste direction → media production → Taste observed QA → corrections → verified output`
 
-- Incline → taste collections, negative references, user feedback and scoped insights.
-- Hallmark → 50 ACO-original visual directions, concept-first layout, bounded static slop warnings.
-- Anthropic → intentional frontend and static-canvas composition.
-- gstack → diverse variants and accessible browser compare board, skeptical QA.
-- Emil → motion intent, easing, interruptibility, accessibility and performance audit.
-- UI Skills → evidence-based `DESIGN.md` and component contract, protected project source.
-- Frontend Stack → route by task and medium, lead + ≤2 supporting methods, precedence rules.
+- Scoped reference collections, negative examples, user feedback and qualified insights.
+- Fifty original visual directions and bounded static warnings.
+- Composition guidance for web, graphics, photography, video and motion.
+- Variant comparison, rendered output review and prioritized corrections.
+- Motion, accessibility and performance checks where relevant.
+- Evidence-based `DESIGN.md` and component contracts.
+- One lead method with up to two supporting methods per phase.
 
-Seven methods cannot magically guarantee human-level taste. The key measurable upgrade is the **mandatory real output inspection**, with visibility into unrun checks and human-approved direction.
+These methods do not guarantee visual quality. The required completion gate is **inspection of the actual rendered output**, with any unrun checks made visible.
 
 ## Requirements
 
@@ -33,4 +33,4 @@ python3 skills/aco-taste/scripts/taste.py media-preflight --file clip.mp4
 python3 skills/aco-taste/scripts/taste.py compare --packet variants.json --output /tmp/variants.html
 ```
 
-For an existing ACO 1.0.7 checkout, see `integration/aco_patch.py`; run a dry run first and then `--apply --backup-dir` on a clean checkout. After applying, run ACO's existing generator, manifest, validation, tests and release builder. Do not merge to `main` or tag a release until CI is green and the owner approves.
+For an existing checkout, follow the [upgrade procedure](UPGRADING.md). After updating, run the generator, manifest builder, validation and tests listed in the root `AGENTS.md`.

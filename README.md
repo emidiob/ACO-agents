@@ -15,7 +15,7 @@ professional methods** and [20 technical skillpack counterparts](docs/PROFESSION
 The 20 new registry entries are `validated` on 400 frozen synthetic procedural cases,
 not independently certified professional judgment. The technical registry now holds
 14 original active, 20 new validated and 30 original candidates. No experimental flag
-is needed for the new validated entries; native entrypoint count remains 25.
+is needed for the new validated entries; the current native entrypoint count is 26.
 
 ## What ACO is — and is not
 
