@@ -7,7 +7,7 @@
     },
     ".gitignore": {
       "mode": 420,
-      "sha256": "c0c9c86994f56bf3bd3ac43f86e8a1d0576f236f534d2add9d99c66e5c7db559"
+      "sha256": "40f826e460124a92a32e026f9ea703222a50cd4bda6faaf9aeb807646a748f09"
     },
     "ACO-INDEX.md": {
       "mode": 420,
@@ -345,6 +345,10 @@
       "mode": 420,
       "sha256": "9ec3b368c8649ef9665a8973ec48497dafdaf200272a2a688cab6b1d65cb698f"
     },
+    "docs/ACO-TASTE-DEEPENING.md": {
+      "mode": 420,
+      "sha256": "42d66427e70efba903bbd93de7b104bc400020151aa7b9a7e6ee32625af1c1a0"
+    },
     "docs/ACO-TASTE-INTELLIGENCE.md": {
       "mode": 420,
       "sha256": "7695ce7a404ad0a2d590a94c32089985e4b3e908227f2cdabc9e5f8c7152b5fb"
@@ -439,7 +443,7 @@
     },
     "docs/GUIDA.html": {
       "mode": 420,
-      "sha256": "41cb0cc22bb86afa29d9846137eac8cf47b86dea67cffcb18922e402c14d0293"
+      "sha256": "2a2294ab3af4fdcc28b9a071dc4f9043550f6e4e973ae146311a862095c57221"
     },
     "docs/HISTORY-AND-SYNC.md": {
       "mode": 420,
@@ -577,13 +581,17 @@
       "mode": 420,
       "sha256": "54b87873fabbe2d77a6a1237d82e1e3c05cf224390d5bddfd1ed16509b788528"
     },
+    "docs/downloads/ACO_Taste_Deepening_1.0.9_patch.zip": {
+      "mode": 420,
+      "sha256": "5933138863940a25f6abf45861e43021ae13d2068fc2f71e8972535a3728c483"
+    },
     "docs/index.html": {
       "mode": 420,
       "sha256": "022a9da8329103e4a75c7c1e77007019716b18c950d99f969afd30509ad75b6a"
     },
     "docs/site.css": {
       "mode": 420,
-      "sha256": "da1a67bcab3e34b5a955e3e30d75e5327e2333e9baf40c3d136a62ad7c5db673"
+      "sha256": "b16c1d126d955feb1f61bd4583a69ef7231806e6f0871fd989005fdcf6527e9b"
     },
     "examples/action-whatsapp-draft.json": {
       "mode": 420,
@@ -6299,7 +6307,7 @@
     },
     "skills/aco-taste/SKILL.md": {
       "mode": 420,
-      "sha256": "4bb7d8d0976fb516d41222c5660108838a80cf6cd9b6674ca1b13d41bc64379f"
+      "sha256": "b7af4eaa6062670f3855ef7fe8d22b1ec6355a9c72e8b1820a39b6d6b67a02ba"
     },
     "skills/aco-taste/assets/directions.json": {
       "mode": 420,
@@ -6367,7 +6375,7 @@
     },
     "skills/aco-taste/references/TASTE-PROTOCOL.md": {
       "mode": 420,
-      "sha256": "61c9b7fd71f9ac8a583bec1dccdfe8bee73f3418a9b2446456d2d76de20169a0"
+      "sha256": "5ee3f15571442947ee47dff29c53cba90f1cb2546e1a5cb47c8e2cfcde61ed69"
     },
     "skills/aco-taste/references/VARIANTS-AND-REVIEW.md": {
       "mode": 420,
@@ -6385,6 +6393,10 @@
       "mode": 420,
       "sha256": "4c3548b40a2043349295e1131f87a10137b14477dd0861cc5b829b2525551157"
     },
+    "skills/aco-taste/scripts/aco_taste/deepening.py": {
+      "mode": 420,
+      "sha256": "6c92f424494abfbf01509dba9aef4e422fd89143d645fe5551730f68a3450206"
+    },
     "skills/aco-taste/scripts/aco_taste/directions.py": {
       "mode": 420,
       "sha256": "0a627521cd134a1d0e7080c02b403e6452714a6b3480932a510ec293d722a8a0"
@@ -6400,6 +6412,10 @@
     "skills/aco-taste/scripts/aco_taste/system.py": {
       "mode": 420,
       "sha256": "8fb6b1b6e0bce62d5d1e9c74fb18c00083c9f7243e2d7935fc62f7e5bfa81a07"
+    },
+    "skills/aco-taste/scripts/deepen.py": {
+      "mode": 420,
+      "sha256": "1f743db8e18731abaf07405d762b7240ce75c8b6a453241e1ae813d698ec855b"
     },
     "skills/aco-taste/scripts/taste.py": {
       "mode": 420,
@@ -7216,6 +7232,10 @@
     "tests/test_studio_readiness.py": {
       "mode": 420,
       "sha256": "d103134b8485574a62f728a4203ebf6c2920a5bbeb99addbff79edf604f1eabf"
+    },
+    "tests/test_taste_deepening.py": {
+      "mode": 420,
+      "sha256": "9c0d0aafd39576b0da8dc940b0c1882b8b7803414928a096ed5bc0e6725bfee0"
     },
     "tests/test_tidy_compact_sync.py": {
       "mode": 420,

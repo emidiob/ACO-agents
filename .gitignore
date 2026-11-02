@@ -31,3 +31,5 @@ dist/
 build/
 # ZIPs are release artifacts, not repository sources
 *.zip
+# The public guide serves this small, reviewed integration package directly.
+!docs/downloads/ACO_Taste_Deepening_1.0.9_patch.zip

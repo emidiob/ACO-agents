@@ -37,4 +37,6 @@ Source art and local visual evidence may require browser, image, FFmpeg, or actu
 
 ## Release acceptance
 
+For substantial exploratory visual work, the optional local checks in [ACO Taste Deepening](../../docs/ACO-TASTE-DEEPENING.md) can compare declared structural variants, retrieve scoped feedback, verify before/after receipts and triage UI motion. Use `deepen.py` for these checks and still inspect actual rendered artifacts. Green results describe evidence contracts, not visual quality.
+
 Before declaring visual work finished, apply the medium gate to **actual** screenshots, images, rendered pages, video timecodes or page exports. Give the user a specific before/after judgment, observed improvements, unresolved faults and named unrun checks. Human approval is not inferred from test success, silence or reference selection. Do not invoke fake independent agents; separate the reviewer pass or use a real reviewer only when available.

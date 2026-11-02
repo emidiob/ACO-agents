@@ -15,6 +15,8 @@ Do not start Taste just to answer an unrelated factual question containing a vis
 7. **Evidence-based delivery** — State what was produced, how the aesthetic goals relate to evidence, what was actually viewed, and what still needs review. Do not claim user approval, artistic merit or perfect quality.
 
 ## Review independence
+
+The [Taste Deepening](../../../docs/ACO-TASTE-DEEPENING.md) commands support the existing gates: compare different declared directions before rendering, retrieve scoped feedback reasons, record corrected regions with real before/after artifact hashes, and triage new UI motion. These checks do not replace visual inspection, functional testing or human judgment.
 A genuine second reviewer, blinded to which variation is newer, is preferable when supported. Without actual independent review, run a separate skeptical critique pass. Do not call it an independent expert or pretend a split prompt produces real human taste.
 
 ## Precedence
