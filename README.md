@@ -1,3 +1,5 @@
+<img src="docs/aco-logo.svg" width="260" alt="ACO">
+
 # ACO — Art & Commerce Office
 
 **A working library for an artist, studio, agency or cultural business — with scoped private knowledge and evidence-aware execution.**
