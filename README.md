@@ -6,7 +6,7 @@
 
 Proprietary, source-available. Redistribution is restricted by [LICENSE](LICENSE). No third-party software, fonts, models or private knowledge are bundled.
 
-**New to ACO? Open the [interactive guide](https://emidiob.github.io/ACO-agents/GUIDA.html)** (in Italian), or read the [short text guide](docs/START-HERE.md). For an existing checkout, follow the evergreen [upgrade procedure](docs/UPGRADING.md). Release-specific Codex prompts are distributed beside release ZIPs, not stored in the repository.
+**New to ACO? Open the [interactive guide](https://emidiob.github.io/ACO-agents/GUIDA.html)**, or read the [short text guide](docs/START-HERE.md). For an existing checkout, follow the evergreen [upgrade procedure](docs/UPGRADING.md). Release-specific Codex prompts are distributed beside release ZIPs, not stored in the repository.
 
 ## ACO 1.0.7 — Validated Professional Skillpacks
 

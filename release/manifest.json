@@ -51,7 +51,7 @@
     },
     "README.md": {
       "mode": 420,
-      "sha256": "d7d390ca4d2557cd350dd809c0912a6b40b0cae755e103e0d89faf8b1ea61554"
+      "sha256": "071737cb53be3ad30b41fac2908aadb2d54ad0fb98fb5953fbfbcabf77d0f40b"
     },
     "SECURITY.md": {
       "mode": 420,
@@ -439,7 +439,7 @@
     },
     "docs/GUIDA.html": {
       "mode": 420,
-      "sha256": "7c1a7e5fc9bc64ee6a0f2f54a0a64a77244fc2a937bfcf7040b39078f7b9d068"
+      "sha256": "21149e815a791eb8617e532d996264537d87aa64e86c1fdfb7f88d363c7e84ba"
     },
     "docs/HISTORY-AND-SYNC.md": {
       "mode": 420,
@@ -563,7 +563,7 @@
     },
     "docs/index.html": {
       "mode": 420,
-      "sha256": "92e5b3362dfa9b9e3910ec505792b81227736844f6ac2c851dec84f0b6a9aada"
+      "sha256": "022a9da8329103e4a75c7c1e77007019716b18c950d99f969afd30509ad75b6a"
     },
     "examples/action-whatsapp-draft.json": {
       "mode": 420,
