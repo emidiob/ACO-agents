@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
-  <title id="title">ACO route symbol</title>
-  <desc id="desc">Three orange waypoints connected across a square field.</desc>
-  <path fill="none" stroke="#eeeae1" stroke-width="8" d="M16 144V16h128v128H16Z"/>
-  <path fill="none" stroke="#eeeae1" stroke-width="9" stroke-linecap="square" stroke-linejoin="miter" d="m31 128 31-36 29 12 39-67"/>
-  <g fill="#ed5b2a"><circle cx="31" cy="128" r="10"/><circle cx="91" cy="104" r="10"/><circle cx="130" cy="37" r="10"/></g>
-</svg>
