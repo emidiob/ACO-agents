@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+<title id="title">ACO signal map</title>
+<desc id="desc">Many task signals converge through a method and continue as a checked result.</desc>
+<rect width="640" height="260" fill="#f6f5f0"/>
+<defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#111714" stroke-opacity=".1" stroke-width=".7"/></pattern><pattern id="dots" width="5" height="5" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".55" fill="#111714" opacity=".43"/></pattern></defs>
+<rect width="640" height="260" fill="url(#grid)"/>
+<path d="M0 240 L215 240 L298 145 L390 145 L484 48 L640 48" fill="none" stroke="#111714" stroke-width=".8" stroke-dasharray="2 4" opacity=".45"/>
+<path d="M110 60 L230 24 L291 109 L198 179 L86 156 Z" fill="url(#dots)" opacity=".72"/>
+<path d="M 0 18.0 C 87 18.0, 145 92.8, 268 92.8 S 354 119.7, 391 119.7" fill="none" stroke="#111714" stroke-width="1.25" opacity="0.8"/>
+<path d="M 0 27.3 C 87 37.3, 145 105.0, 268 95.0 S 354 120.5, 391 120.5" fill="none" stroke="#111714" stroke-width="0.6" opacity="0.55"/>
+<path d="M 0 36.6 C 87 52.8, 145 113.2, 268 97.0 S 354 121.5, 391 121.5" fill="none" stroke="#111714" stroke-width="0.6" opacity="0.55"/>
+<path d="M 0 45.9 C 87 62.0, 145 115.3, 268 99.2 S 354 122.3, 391 122.3" fill="none" stroke="#111714" stroke-width="0.6" opacity="0.55"/>
+<path d="M 0 55.2 C 87 65.1, 145 111.1, 268 101.2 S 354 123.2, 391 123.2" fill="none" stroke="#111714" stroke-width="0.6" opacity="0.55"/>
+<path d="M 0 64.5 C 87 64.4, 145 103.2, 268 103.3 S 354 124.2, 391 124.2" fill="none" stroke="#111714" stroke-width="1.25" opacity="0.8"/>
+<path d="M 0 73.8 C 87 63.7, 145 95.3, 268 105.5 S 354 125.0, 391 125.0" fill="none" stroke="#111714" stroke-width="0.6" opacity="0.55"/>
+<path d="M 0 83.1 C 87 66.9, 145 91.3, 268 107.5 S 354 126.0, 391 126.0" fill="none" stroke="#111714" stroke-width="0.6" opacity="0.55"/>
+<path d="M 0 92.4 C 87 76.3, 145 93.6, 268 109.7 S 354 126.8, 391 126.8" fill="none" stroke="#111714" stroke-width="0.6" opacity="0.55"/>
+<path d="M 0 101.7 C 87 91.9, 145 102.0, 268 111.8 S 354 127.8, 391 127.8" fill="none" stroke="#111714" stroke-width="0.6" opacity="0.55"/>
+<path d="M 0 111.0 C 87 111.3, 145 114.1, 268 113.8 S 354 128.7, 391 128.7" fill="none" stroke="#111714" stroke-width="1.25" opacity="0.8"/>
+<path d="M 0 120.3 C 87 130.5, 145 126.2, 268 116.0 S 354 129.6, 391 129.6" fill="none" stroke="#111714" stroke-width="0.6" opacity="0.55"/>
+<path d="M 0 129.6 C 87 145.9, 145 134.3, 268 118.0 S 354 130.4, 391 130.4" fill="none" stroke="#111714" stroke-width="0.6" opacity="0.55"/>
+<path d="M 0 138.9 C 87 154.9, 145 136.2, 268 120.2 S 354 131.3, 391 131.3" fill="none" stroke="#111714" stroke-width="0.6" opacity="0.55"/>
+<path d="M 0 148.2 C 87 157.9, 145 131.9, 268 122.2 S 354 132.2, 391 132.2" fill="none" stroke="#111714" stroke-width="0.6" opacity="0.55"/>
+<path d="M 0 157.5 C 87 157.1, 145 123.9, 268 124.3 S 354 133.2, 391 133.2" fill="none" stroke="#111714" stroke-width="1.25" opacity="0.8"/>
+<path d="M 0 166.8 C 87 156.4, 145 116.1, 268 126.5 S 354 134.1, 391 134.1" fill="none" stroke="#111714" stroke-width="0.6" opacity="0.55"/>
+<path d="M 0 176.1 C 87 159.8, 145 112.2, 268 128.6 S 354 134.9, 391 134.9" fill="none" stroke="#111714" stroke-width="0.6" opacity="0.55"/>
+<path d="M 0 185.4 C 87 169.4, 145 114.6, 268 130.7 S 354 135.8, 391 135.8" fill="none" stroke="#111714" stroke-width="0.6" opacity="0.55"/>
+<path d="M 0 194.7 C 87 185.2, 145 123.2, 268 132.8 S 354 136.8, 391 136.8" fill="none" stroke="#111714" stroke-width="0.6" opacity="0.55"/>
+<path d="M 0 204.0 C 87 204.6, 145 135.4, 268 134.8 S 354 137.7, 391 137.7" fill="none" stroke="#111714" stroke-width="1.25" opacity="0.8"/>
+<path d="M 0 213.3 C 87 223.8, 145 147.4, 268 136.9 S 354 138.6, 391 138.6" fill="none" stroke="#111714" stroke-width="0.6" opacity="0.55"/>
+<path d="M 0 222.6 C 87 239.0, 145 155.4, 268 139.1 S 354 139.4, 391 139.4" fill="none" stroke="#111714" stroke-width="0.6" opacity="0.55"/>
+<path d="M 0 231.9 C 87 247.9, 145 157.1, 268 141.2 S 354 140.3, 391 140.3" fill="none" stroke="#111714" stroke-width="0.6" opacity="0.55"/>
+<path d="M391 107.0 C 448 99.0, 481 67.0, 640 55.0" fill="none" stroke="#111714" stroke-width="1" opacity=".7"/>
+<path d="M391 114.1 C 448 106.1, 481 88.0, 640 76.0" fill="none" stroke="#111714" stroke-width="0.7" opacity=".7"/>
+<path d="M391 121.2 C 448 113.2, 481 109.0, 640 97.0" fill="none" stroke="#111714" stroke-width="0.7" opacity=".7"/>
+<path d="M391 128.3 C 448 120.3, 481 130.0, 640 118.0" fill="none" stroke="#111714" stroke-width="0.7" opacity=".7"/>
+<path d="M391 135.4 C 448 127.4, 481 151.0, 640 139.0" fill="none" stroke="#111714" stroke-width="0.7" opacity=".7"/>
+<path d="M391 142.5 C 448 134.5, 481 172.0, 640 160.0" fill="none" stroke="#111714" stroke-width="0.7" opacity=".7"/>
+<path d="M391 149.6 C 448 141.6, 481 193.0, 640 181.0" fill="none" stroke="#111714" stroke-width="1" opacity=".7"/>
+<path d="M0 176 C102 161 176 120 268 129 S350 129 391 128 C480 127 492 103 640 93" fill="none" stroke="#ed5b2a" stroke-width="3"/>
+<circle cx="268" cy="129" r="11" fill="#f6f5f0" stroke="#111714" stroke-width="1.5"/>
+<circle cx="268" cy="129" r="3" fill="#ed5b2a"/>
+<rect x="382" y="119" width="18" height="18" fill="#111714"/>
+<rect x="388" y="125" width="6" height="6" fill="#f6f5f0"/>
+<circle cx="550" cy="105" r="31" fill="none" stroke="#111714" stroke-width="1" stroke-dasharray="2 3"/>
+<path d="M531 105h38M550 86v38" stroke="#111714" stroke-width=".8"/>
+<rect x="558" y="164" width="47" height="47" fill="#ed5b2a"/>
+<path d="m568 185 9 10 18-20" fill="none" stroke="#111714" stroke-width="3"/>
+<path d="M0 0h640v260H0z" fill="none" stroke="#111714" stroke-width="1"/>
+<g font-family="monospace" font-size="9" font-weight="700" letter-spacing="1" fill="#111714"><text x="10" y="249">01 / INPUT FIELD</text><text x="274" y="249">02 / SELECT</text><text x="524" y="249">04 / VERIFIED</text></g>
+</svg>
