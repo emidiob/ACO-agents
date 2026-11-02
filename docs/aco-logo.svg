@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 232" role="img" aria-labelledby="title desc">
   <title id="title">ACO</title>
-  <desc id="desc">Geometric black A above C and O on white, forming a triangular composition.</desc>
+  <desc id="desc">Black uppercase A above C and O on white, arranged in a triangular composition.</desc>
   <path fill="#fff" d="M0 0h256v232H0z"/>
-  <g fill="#111714" fill-rule="evenodd">
-    <path d="M110 16h36l38 88h-28l-8-20h-40l-8 20H72l38-88Zm18 24-12 25h24l-12-25Z"/>
-    <path d="M42 128h44l18 18-16 17-10-11H52l-12 11v18l12 11h26l10-11 16 17-18 18H42l-26-24v-40l26-24Z"/>
-    <path d="M168 128h48l24 24v40l-24 24h-48l-24-24v-40l24-24Zm8 24-8 8v24l8 8h32l8-8v-24l-8-8h-32Z"/>
+  <g fill="#111714" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text x="128" y="103" font-size="116">A</text>
+    <text x="70" y="215" font-size="116">C</text>
+    <text x="186" y="215" font-size="116">O</text>
   </g>
 </svg>
