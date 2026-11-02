@@ -1,8 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="70 30 260 240" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 232" role="img" aria-labelledby="title desc">
   <title id="title">ACO</title>
-  <desc id="desc">Black uppercase A above C and O on a white background, arranged in a triangle.</desc>
-  <path fill="#fff" d="M70 30h260v240H70z"/>
-  <path fill="#111" transform="translate(-28 9)" d="M176 126 213 36h30l37 90h-27l-7-19h-38l-7 19h-25Zm40-40h23l-11-31-12 31Z"/>
-  <path fill="#111" transform="translate(-218 123)" d="M362 126c-16 0-29-4-39-13-10-9-15-20-15-34s5-25 15-34c10-9 23-13 39-13 15 0 27 3 38 9l-10 21c-8-5-17-7-27-7-9 0-16 2-21 7-5 4-8 10-8 17s3 13 8 17c5 5 12 7 21 7 10 0 19-2 27-7l10 21c-11 6-23 9-38 9Z"/>
-  <path fill="#111" transform="translate(-216 123)" d="M480 126c-16 0-29-4-39-13-10-9-15-20-15-34s5-25 15-34c10-9 23-13 39-13s29 4 39 13c10 9 15 20 15 34s-5 25-15 34c-10 9-23 13-39 13Zm0-23c9 0 16-2 21-7 5-4 8-10 8-17s-3-13-8-17c-5-5-12-7-21-7s-16 2-21 7c-5 4-8 10-8 17s3 13 8 17c5 5 12 7 21 7Z"/>
+  <desc id="desc">Geometric black A above C and O on white, forming a triangular composition.</desc>
+  <path fill="#fff" d="M0 0h256v232H0z"/>
+  <g fill="#111714" fill-rule="evenodd">
+    <path d="M110 16h36l38 88h-28l-8-20h-40l-8 20H72l38-88Zm18 24-12 25h24l-12-25Z"/>
+    <path d="M42 128h44l18 18-16 17-10-11H52l-12 11v18l12 11h26l10-11 16 17-18 18H42l-26-24v-40l26-24Z"/>
+    <path d="M168 128h48l24 24v40l-24 24h-48l-24-24v-40l24-24Zm8 24-8 8v24l8 8h32l8-8v-24l-8-8h-32Z"/>
+  </g>
 </svg>

@@ -439,7 +439,7 @@
     },
     "docs/GUIDA.html": {
       "mode": 420,
-      "sha256": "6c242d6b3749415d193581c66cc77003440a5019c84945ea055f6a4570c17e89"
+      "sha256": "6d13a66433e13c7eef1abaa65558f24c1eaffda0f8bf28319ea8e45879bdafc0"
     },
     "docs/HISTORY-AND-SYNC.md": {
       "mode": 420,
@@ -563,7 +563,7 @@
     },
     "docs/aco-logo.svg": {
       "mode": 420,
-      "sha256": "48089ba0d1017da9da69953e0329dedcaede047816c58a44fdae18f915fe9ef7"
+      "sha256": "7588cd2d8021a4abc5129cf0b9dd6548569d57af94897a4a1a00576a32e17104"
     },
     "docs/index.html": {
       "mode": 420,
@@ -571,7 +571,7 @@
     },
     "docs/site.css": {
       "mode": 420,
-      "sha256": "afac68475fe811d39c28d260b6a9216217c35a3015d83679ab9ff7f038ee6c19"
+      "sha256": "9685a184d9cc1786b7946d11323920cb60bea193a228ba7b1648f5bfb4576ec7"
     },
     "examples/action-whatsapp-draft.json": {
       "mode": 420,
